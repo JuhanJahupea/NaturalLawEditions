@@ -100,8 +100,8 @@
       "otherTitle": "1758 reading, dropped in 1773"
     },
     {
-      "id": "wolff-divergences",
-      "file": "layers/wolff-divergences.json",
+      "id": "divergences",
+      "file": "layers/divergences.json",
       "kind": "comments",
       "label": "Divergences",
       "default": true,

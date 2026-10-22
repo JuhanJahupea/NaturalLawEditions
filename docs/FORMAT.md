@@ -14,7 +14,8 @@ editions/<edition id>/
   CHANGELOG.md                  what changed in each version
   text.json                     the base text, one record per unit
   layers/<layer id>.json        standoff layers on the text
-  provenance/                   inputs kept to check the text against
+  passes/<name>.json            later passes that replace part of what the working edition built (see below)
+  provenance/                   inputs kept to check the text against; superseded/ holds the rows a pass replaced
 reuse/<from>__<to>.json         reuse table between two texts
 tools/                          conversion and checks
 ```
@@ -116,9 +117,9 @@ One item per change between the base printing and another printing.
 - `otherReadings`: readings of the other printing that the base text drops, as `[part, offset, text]`. The viewer shows them struck through at that offset.
 - `placed: false` means the change could not be located in the base text. The viewer shows it under the unit.
 
-### `kind: "comments"` (`layers/wolff-divergences.json`)
+### `kind: "comments"` (`layers/divergences.json`)
 
-One item per comment shown under a unit.
+One item per comment shown under a unit. `family` (optional) gives the note the colour of that source family instead of the layer's.
 
 ```json
 {
@@ -169,3 +170,14 @@ One item per comment shown under a unit.
 - `toUnit` and `toScore`: where `to` is an edition, the unit of that edition that holds the source passage, set by `tools/link_editions.py`. It takes the units printed on the row's page or the next, and keeps the one holding the largest share of the source passage's 5-letter sequences (accents folded, long s and f as one letter), if that share is at least 0.5. The viewer turns the source citation into a link to `viewer/?ed=<to>#<toUnit>` and lists the row under that unit as "reused in".
 - `repeats`: where `to` is a later text that repeats an edition (Burlamaqui's PDP 1751 repeats his 1747 text), the unit of that edition the source passage repeats: `{edition, unit, route, score}`. Route `table`: the edition's own table for the later text has a row on the same page whose passage overlaps (≥ 0.5). Route `text`: the passage's wording stands in that unit (≥ 0.7). Set by `tools/link_editions.py`; the catalogue entry of such a table carries `repeats: <edition>`. The viewer shows the link and lists the row under that unit as "reused in … through PDP 1751".
 - Optional fields: `nearer` (`DNG` or `Devoirs`: which of the two Pufendorf texts the wording is nearer), `quoting` (an author quoted inside the source passage), `noteRef`, `sourcePart` (the part of the source volume: `barbeyrac_note`, `reflexions`, …), `relation` (in a table whose header lists `relations`).
+- A table header can carry `sourceLabel`, the label the viewer puts on the table's source passages (it overrides the family's and the edition's).
+
+## Later passes
+
+A working edition is converted once from its `data.json`. A later pass replaces part of it without touching the rest: a new transcription of a source, judged again. It sits in `editions/<edition>/passes/`:
+
+- `<text id>.json`: `{"format": "nle-pass/1", "edition", "text", "date", "textLayer", "table": {...}, "rows": [...]}`. The converter writes `rows` as the reuse table for that text, with the header fields in `table` (`pass`, `steps`, `description`, `sourceLabel`), and sets the catalogue's `layer` for the text to `textLayer`. The rows `data.json` holds for that text go to `provenance/superseded/<from>__<to>.json`. Row ids of a pass start above every id of the working edition. Rows of a pass quote the edition exactly: `passage` is the text at `at`.
+- `divergences-<text id>.json`: `{"format": "nle-pass/1", "edition", "text", "source", "items": [...]}`, items of the comments layer for that source. The converter adds them to `layers/divergences.json`.
+
+`tools/check_edition.js` loads the viewer twice. With `?asbuilt=1` the viewer swaps each pass table back for its superseded rows; that edition must rebuild `data.json` exactly. Without it, every pass row and item must appear as the pass file has it.
+

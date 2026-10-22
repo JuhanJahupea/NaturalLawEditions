@@ -29,6 +29,8 @@ async function load(){
  const got=await Promise.all([getJSON(BASE+M.text),...files.map(l=>getJSON(BASE+l.file)),...out.map(t=>getJSON('../'+t.path)),...inc.map(t=>getJSON('../'+t.path)),
   ...linked.map(id=>getJSON('../'+edEntry(id).path+'edition.json'))]);
  let k=1;const T=got[0],data={};files.forEach(l=>data[l.id]=got[k++]);const outT=out.map(()=>got[k++]),incT=inc.map(()=>got[k++]);linked.forEach(id=>MAN[id]=prepMan(got[k++]));
+ // ?asbuilt=1: the tables as the working edition built them, with the rows a later pass replaced (for tools/check_edition.js)
+ if(QS.get('asbuilt'))for(let i=0;i<outT.length;i++)if(outT[i].pass)outT[i]=await getJSON(BASE+'provenance/superseded/'+ED+'__'+outT[i].to+'.json').catch(()=>({to:outT[i].to,rows:[]}));
  build(T,data,outT,incT);return true}
 const pageLink=p=>{const vol=(V.volumes||{})[p.vol]||{};return V.pageLink?fill(V.pageLink.url,Object.assign({},vol,p)):''};
 function famColors(fams){const L=fams.map(f=>`--f${f.key}:${f.color}`).join(';'),D=fams.map(f=>`--f${f.key}:${f.dark||f.color}`).join(';');
@@ -37,7 +39,8 @@ function famColors(fams){const L=fams.map(f=>`--f${f.key}:${f.color}`).join(';')
 function rowObj(r,tb){const o={id:r.id,sec:r.unit,fam:r.family,work:r.work,locus:r.locus,page:r.page,note:r.inNote,label:r.label,conf:r.confidence,status:r.status,vp:r.passage,sp:r.source,reason:r.reason,links:r.links||[],
   where:r.at.length?r.at[0][0]:r.where==='margin'?'m':'',step:r.step};
  if(r.french)o.fr=r.french;if(r.earliest)o.ew=r.earliest;if(r.nearer)o.near=r.nearer;if(r.quoting)o.qa=r.quoting;if(r.noteRef)o.noteref=r.noteRef;if(r.sourcePart)o.part=r.sourcePart;
- o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;return o}
+ o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;
+ if(tb.sourceLabel)Object.defineProperty(o,'slab',{value:tb.sourceLabel,enumerable:false});return o}
 function build(T,data,tables,incoming){
  TITLES=T.titles||{};DIVS=M._divs;
  const fams=RU.families||[];FAMS=fams.map(f=>[f.key,f.label]);FAMI=Object.fromEntries(fams.map(f=>[f.key,f]));FN=Object.fromEntries(FAMS);famColors(fams);
@@ -59,7 +62,7 @@ function build(T,data,tables,incoming){
    (v.at||[]).forEach(([p,a,b])=>mk(v.unit,'vars',p).push([a,b,v.id]));(v.wholeNotes||[]).forEach(n=>e.added.add(n));
    (v.otherReadings||[]).forEach(([p,pos,txt])=>{const o=mk(v.unit,'old',p);(o[pos]=o[pos]||[]).push(`<span class="old" data-v="${v.id}" title="${Compose.esc(l.otherTitle)}">${Compose.esc(txt)}</span>`)})});
   if(l.kind==='comments')L.items.forEach(d=>{const o={w:d.locus,wid:d.sourceId,rel:d.relation,sev:d.severity,c:d.comment,lat:d.sourcePassage,vp:d.passage,conf:d.confidence,q:d.question,link:d.links||[]};
-   Object.defineProperty(o,'src',{value:textShort(d.text),enumerable:false});ex(d.unit).div.push(o)});
+   Object.defineProperty(o,'src',{value:textShort(d.text),enumerable:false});Object.defineProperty(o,'fam',{value:d.family||'',enumerable:false});ex(d.unit).div.push(o)});
   if(l.kind==='translation')Object.assign(EN,L.units)});
  const order={},cited={};T.units.forEach((u,i)=>order[u.id]=i);
  T.units.forEach(u=>[...(u.xr||[]),...(u.notes||[]).flatMap(n=>n.xr||[])].forEach(x=>(cited[x[2]]=cited[x[2]]||new Set()).add(u.id)));
@@ -114,7 +117,7 @@ function secHTML(s){const vars=s.vars||[];const unplaced=vars.filter(v=>!v.place
  const inc=IN[s.id]?[...new Set(IN[s.id].filter(visIn).map(r=>r.from+'#'+r.sec))]:[];
  const ri=inc.length?`<span class="rin">reused in ${inc.map(x=>{const [e,u]=x.split('#');return xref(e,u)}).join(', ')}</span>`:'';
  const notes=s.notes.length?`<div class="notes">${s.notes.map(n=>`<div class="note${n.added?' added':''}"><span class="mk">${esc(n.mark)}</span>${n.html}</div>`).join('')}</div>`:'';
- const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}"><summary><span class="wm">${esc(LC.chip)} ${esc(d.src)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
+ const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}"${d.fam?` style="--cmt:var(--f${d.fam})"`:''}><summary><span class="wm">${esc(LC.chip)} ${esc(d.src)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
  const del=unplaced.map(v=>`<div class="del"><b style="font:12px var(--ui)">${esc(v.type)}</b> · ${esc(v.content)}${v.otherPassage?`<br>${esc(LV.otherTag)}: <i>${esc(v.otherPassage)}</i>`:''}${v.otherLink?` · <a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div>`).join('');
  return `<section class="sec" id="${s.id}"><div class="sh">${s.para?`<span class="no">${esc((DIVS[s.book]||{}).unitMark||'')} ${s.para}</span>`:''}${s.unnum?`<span class="unn" title="${esc(V.unnumberedTitle)}">${esc(V.unnumberedLabel)}</span>`:''}${(s.div||[]).length?`<button class="dvc" data-dv="${s.id}" title="${esc(LC.chipTitle)}: ${s.div.length}">${esc(LC.chip)} ${s.div.length}</button>`:''}<button class="dots" data-s="${s.id}" aria-label="Show sources for ${lbl(s.id)}">${famDots(s)}</button>
  <span class="tools">${s.en?`<button data-en="${s.id}">${esc(LAY.translation.label)}</button>`:''}<button data-copy="${s.id}">Copy citation</button><button data-link="${s.id}">Link</button></span>${s.margin?`<span class="marg">${esc(s.margin)}</span>`:''}</div>
@@ -142,7 +145,7 @@ function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{}
 function rowHTML(r,hl){const l=r.links.map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join('');const N=RU.nearer||{},P=RU.partLabels||{};
  const near=r.near&&N.title?`<div class="ew"><b>${esc(N.title)}</b> ${esc(N.prefix)}${esc((N.labels||{})[r.near]||(N.labels||{})['*']||r.near)}</div>`:'';
  return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${repLink(r)}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${esc(r.label)}</span><span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
- <div class="q"><small>${esc(RU.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc((FAMI[r.fam]||{}).sourceLabel||RU.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>${esc(RU.frenchLabel||'working French')}</small>${esc(r.fr)}</div>`:''}${r.ew?ewHTML(r.ew):''}${near}<div class="why">${esc(r.reason)}</div><div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
+ <div class="q"><small>${esc(RU.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc(r.slab||(FAMI[r.fam]||{}).sourceLabel||RU.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>${esc(RU.frenchLabel||'working French')}</small>${esc(r.fr)}</div>`:''}${r.ew?ewHTML(r.ew):''}${near}<div class="why">${esc(r.reason)}</div><div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
 function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();document.querySelectorAll('.sec.sel').forEach(e=>e.classList.remove('sel'));const el=$(sid);if(el)el.classList.add('sel');
  const focus=ids&&ids.length;
  const all=(rowsBySec[sid]||[]).filter(visRow);

@@ -36,6 +36,8 @@ for (const c of cat.reuse) {
     for (const [p, a, b] of r.at) {
       const s = p === 't' ? u.text : (u.notes || [])[Number(p.slice(1))]?.text;
       if (s === undefined || !(0 <= a && a < b && b <= s.length)) note('row span out of range', `${c.path} row ${r.id}`);
+      // rows of a later pass quote the edition exactly
+      else if (t.pass && r.at.length === 1 && s.slice(a, b) !== r.passage) note('pass row passage differs from its span', `${c.path} row ${r.id}`);
     }
     if (r.repeats) {
       if (!shown(r.repeats.edition, r.repeats.unit)) note('repeats unit not shown', `${c.path} row ${r.id} ${r.repeats.unit}`);

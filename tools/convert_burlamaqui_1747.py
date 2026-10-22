@@ -3,7 +3,7 @@
 # Reads edition/data.json and step10_elemens1783/matches_step10.json (the same/expands relation). Writes editions/burlamaqui-1747/, reuse/, catalogue.json.
 # The 1757 Latin translation (step 11) is not in data.json and stays out.
 import collections, os, re, sys
-from nle import ROOT, Split, load, provenance, update_catalogue, write_tables, write_text
+from nle import ROOT, Split, load, load_pass, provenance, update_catalogue, write_tables, write_text
 
 SRC = sys.argv[1]
 ED = 'burlamaqui-1747'
@@ -102,11 +102,11 @@ EXTRA = {
                                               'pdn_abridges': 'the 1747 text abridges it', 'pdn_changes': 'the doctrine changes'}},
     'burlamaqui-droit-politique-1751': {'direction': 'derivative'},
 }
-cat_reuse = write_tables(ED, tables, TX, STEPS,
+cat_reuse, replaced = write_tables(ED, tables, TX, STEPS,
                          'Reuse between the edition and the text, found by retrieval and judged by a language model; hand checks as in the method log. '
                          'status match: confidence >= 0.5; possible: below. Source passages are quoted from the text layer named in the catalogue.',
                          EXTRA)
-assert sum(c['rows'] for c in cat_reuse) == len(ROWS)
+assert sum(c['rows'] for c in cat_reuse if not load_pass(ED, c['to'])) + replaced == len(ROWS)
 
 provenance(ED, 'burlamaqui-reuse/', [('edition/data.json', DATA), ('step10_elemens1783/matches_step10.json', S10)])
 entry = {'id': ED, 'path': 'editions/%s/' % ED, 'author': MAN['author'], 'authorShort': 'Burlamaqui', 'title': MAN['title'], 'short': MAN['short'],
@@ -117,5 +117,5 @@ update_catalogue(entry, [t for t in TX if t['id'] in used], cat_reuse)
 units = X.units
 print('units', len(units), 'kinds', dict(collections.Counter(u['kind'] for u in units)), 'notes', sum(len(u.get('notes', [])) for u in units),
       'pb', sum(len(u.get('pb', [])) for u in units), 'xr', sum(len(u.get('xr', [])) + sum(len(n.get('xr', [])) for n in u.get('notes', [])) for u in units))
-print('reuse rows', len(ROWS), 'tables', len(cat_reuse), 'where', dict(collections.Counter(r['where'][:1] or '-' for r in ROWS)))
+print('reuse rows', len(ROWS), 'replaced by passes', replaced, 'tables', len(cat_reuse), 'where', dict(collections.Counter(r['where'][:1] or '-' for r in ROWS)))
 for c in cat_reuse: print('  ', c['to'], c['rows'])

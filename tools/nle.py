@@ -184,27 +184,48 @@ def write_text(ed, titles, units):
     dump({'format': 'nle-text/1', 'edition': ed, 'titles': titles, 'units': units}, os.path.join(ROOT, 'editions', ed, 'text.json'))
 
 
+def load_pass(ed, name):
+    """A later pass that replaces part of what the working edition holds: editions/<ed>/passes/<name>.json, or None."""
+    p = os.path.join(ROOT, 'editions', ed, 'passes', name + '.json')
+    return load(p) if os.path.exists(p) else None
+
+
 def write_tables(ed, tables, texts, steps, description, extra=None):
-    """One reuse table per source text, in the order of `texts`. Returns the catalogue entries."""
-    rdir = os.path.join(ROOT, 'reuse')
+    """One reuse table per source text, in the order of `texts`. Returns the catalogue entries and the number of
+    working-edition rows replaced by passes.
+    A text with a pass (editions/<ed>/passes/<text id>.json) takes the pass's rows and table header, and the pass's
+    text layer description; the working edition's rows for that text go to editions/<ed>/provenance/superseded/."""
+    rdir = os.path.join(ROOT, 'reuse'); sdir = os.path.join(ROOT, 'editions', ed, 'provenance', 'superseded')
     os.makedirs(rdir, exist_ok=True)
     for f in os.listdir(rdir):
         if f.startswith(ed + '__'): os.remove(os.path.join(rdir, f))
-    out = []
+    if os.path.isdir(sdir):
+        for f in os.listdir(sdir): os.remove(os.path.join(sdir, f))
+    out = []; replaced = 0
     for t in texts:
         rows = sorted(tables.get(t['id'], []), key=lambda r: r['id'])
-        if not rows: continue
+        P = load_pass(ed, t['id'])
+        if not rows and not P: continue
         path = 'reuse/%s__%s.json' % (ed, t['id'])
         head = {'format': 'nle-reuse/1', 'from': ed, 'to': t['id']}
         head.update((extra or {}).get(t['id'], {}))
-        head['steps'] = {str(k): steps[k] for k in sorted({r['step'] for r in rows}, key=str)}
-        head['description'] = description
-        head['rows'] = rows
+        if P:
+            if rows:
+                dump({'format': 'nle-reuse/1', 'from': ed, 'to': t['id'], 'supersededBy': 'editions/%s/passes/%s.json' % (ed, t['id']),
+                      'steps': {str(k): steps[k] for k in sorted({r['step'] for r in rows}, key=str)}, 'description': description,
+                      'rows': rows}, os.path.join(sdir, '%s__%s.json' % (ed, t['id'])))
+                replaced += len(rows)
+            head.update(P['table']); head['rows'] = P['rows']
+            if P.get('textLayer'): t['layer'] = P['textLayer']
+        else:
+            head['steps'] = {str(k): steps[k] for k in sorted({r['step'] for r in rows}, key=str)}
+            head['description'] = description
+            head['rows'] = rows
         dump(head, os.path.join(ROOT, path))
-        e = {'path': path, 'from': ed, 'to': t['id'], 'rows': len(rows)}
+        e = {'path': path, 'from': ed, 'to': t['id'], 'rows': len(head['rows'])}
         if 'toLayer' in head: e['toLayer'] = head['toLayer']
         out.append(e)
-    return out
+    return out, replaced
 
 
 def update_catalogue(edition, texts, reuse):

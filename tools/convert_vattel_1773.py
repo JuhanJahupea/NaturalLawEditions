@@ -2,7 +2,7 @@
 # Usage: python tools/convert_vattel_1773.py <edition_data folder>
 # Reads data.json, en_sections.json, align.json, flags.json, para_final.json. Writes editions/vattel-1773/, reuse/, catalogue.json.
 import os, re, shutil, sys
-from nle import ROOT, Split, dump, load, provenance, update_catalogue, write_tables, write_text
+from nle import ROOT, Split, dump, load, load_pass, provenance, update_catalogue, write_tables, write_text
 
 SRC = sys.argv[1]
 ED = 'vattel-1773'
@@ -92,7 +92,7 @@ dump({'format': 'nle-layer/1', 'edition': ED, 'layer': 'changes-1773', 'kind': '
                      'Changes under 8 tokens are not detected. otherReadings are 1758 readings dropped in 1773, cleaned by hand from the OCR.',
       'items': items}, os.path.join(OUT, 'layers', 'changes-1773.json'))
 
-# ---------- Wolff divergences ----------
+# ---------- divergences: Wolff from the working edition, other sources from passes ----------
 div = []
 for s in SECS:
     for d in s.get('div', []):
@@ -100,11 +100,19 @@ for s in SECS:
                     'relation': d['rel'], 'severity': d['sev'], 'question': d['q'], 'comment': d['c'],
                     'passage': d['vp'], 'sourcePassage': d['lat'], 'confidence': d['conf'], 'links': d['link']})
 assert all(re.match(r'(JG|INST)\.', d['sourceId']) for d in div)
-dump({'format': 'nle-layer/1', 'edition': ED, 'layer': 'wolff-divergences', 'kind': 'comments',
-      'description': "Places where Wolff answers the question of a section and Vattel answers it differently (method log, divergence layer). "
+div_sources = ['Wolff (method log, divergence layer)']
+for t in TEXTS:
+    P = load_pass(ED, 'divergences-' + t[1])
+    if P: div += P['items']; div_sources.append(P['source'])
+order = {s['id']: i for i, s in enumerate(SECS)}
+div.sort(key=lambda d: order[d['unit']])
+dump({'format': 'nle-layer/1', 'edition': ED, 'layer': 'divergences', 'kind': 'comments',
+      'description': "Places where a source answers the question of a section and Vattel answers it differently. Sources: %s. "
                      "relation: diverges or partly. severity: 3 incompatible answers, 2 different ground or a condition that changes cases, 1 a qualification. "
-                     "Machine judgements, not checked by hand.",
-      'items': div}, os.path.join(OUT, 'layers', 'wolff-divergences.json'))
+                     "family: the source family whose colour the note takes, where it is not the layer's. "
+                     "Machine judgements, not checked by hand." % '; '.join(div_sources),
+      'items': div}, os.path.join(OUT, 'layers', 'divergences.json'))
+if os.path.exists(os.path.join(OUT, 'layers', 'wolff-divergences.json')): os.remove(os.path.join(OUT, 'layers', 'wolff-divergences.json'))
 
 # ---------- English ----------
 ens = {}
@@ -133,11 +141,11 @@ assert set(X.reuse_at) == {r['id'] for r in ROWS}
 STEPS = {'3b': 'Wolff re-scanned on a transcription (step 3b)', 4: 'Burlamaqui, Grotius and Pufendorf (step 4)',
          6: 'Montesquieu, Wicquefort, Bynkershoek, Formey, Loisir (step 6)', 8: "Vattel's other works (step 8)", 'P': 'Préface, all pools (Préface pass)'}
 TX = [{'id': t[1], 'sigla': [t[0]], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
-cat_reuse = write_tables(ED, tables, TX, STEPS,
+cat_reuse, replaced = write_tables(ED, tables, TX, STEPS,
                          'Reuse of the source in the edition, found by retrieval and judged by a language model. '
                          'status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the text layer named in the catalogue.',
                          {'burlamaqui-1747': {'toLayer': 'Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from.'}})
-assert sum(c['rows'] for c in cat_reuse) == len(ROWS)
+assert sum(c['rows'] for c in cat_reuse if not load_pass(ED, c['to'])) + replaced == len(ROWS)
 
 # ---------- provenance ----------
 prov = os.path.join(OUT, 'provenance'); os.makedirs(prov, exist_ok=True)
@@ -159,5 +167,5 @@ print('units', len(units), 'notes', sum(len(u.get('notes', [])) for u in units),
 print('variants', len(items), 'placed spans', sum(len(i.get('at', [])) for i in items), 'whole notes', sum(len(i.get('wholeNotes', [])) for i in items),
       '1758 readings', sum(len(i.get('otherReadings', [])) for i in items))
 print('divergences', len(div), 'english units', len(ens), 'flags', sum(len(v['flags']) for v in ens.values()))
-print('reuse rows', len(ROWS), 'tables', len(cat_reuse))
+print('reuse rows', len(ROWS), 'replaced by passes', replaced, 'tables', len(cat_reuse))
 for c in cat_reuse: print('  ', c['to'], c['rows'])
