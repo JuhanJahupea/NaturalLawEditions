@@ -7,10 +7,23 @@
       "id": "vattel-1773",
       "path": "editions/vattel-1773/",
       "author": "Emer de Vattel",
+      "authorShort": "Vattel",
       "title": "Le droit des gens, ou principes de la loi naturelle, appliqués à la conduite et aux affaires des nations et des souverains",
       "short": "Le droit des gens · 1773",
       "imprint": "Neuchâtel: Société typographique, 1773",
       "date": "1773",
+      "lang": "fr",
+      "status": "working edition"
+    },
+    {
+      "id": "burlamaqui-1747",
+      "path": "editions/burlamaqui-1747/",
+      "author": "Jean-Jacques Burlamaqui",
+      "authorShort": "Burlamaqui",
+      "title": "Principes du droit naturel",
+      "short": "Principes du droit naturel · 1747",
+      "imprint": "Genève: Barrillot, 1747",
+      "date": "1747",
       "lang": "fr",
       "status": "working edition"
     }
@@ -58,7 +71,7 @@
     },
     {
       "id": "burlamaqui-droit-politique-1751",
-      "siglum": "BUR51",
+      "siglum": "PDP51",
       "author": "Jean-Jacques Burlamaqui",
       "title": "Principes du droit politique",
       "imprint": "Amsterdam, 1751. 2 vols",
@@ -175,6 +188,176 @@
       "date": "1765",
       "lang": "fr",
       "layer": "Text layer of the library PDF. Reissue of the Mélanges (1760)."
+    },
+    {
+      "id": "pufendorf-devoirs-barbeyrac-1756",
+      "siglum": "DEV56",
+      "author": "Samuel Pufendorf",
+      "title": "Les devoirs de l'homme et du citoyen, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam and Leipzig: Arkstée et Merkus, 1756. 2 vols",
+      "date": "1756",
+      "lang": "fr",
+      "layer": "archive.org OCR (bub_gb_dDKCHraV9BoC, hOCR; bub_gb_unXpgRJJud0C, djvu text in 166 chunks). T. II holds Leibniz's Jugement d'un anonyme with Barbeyrac's Réflexions (family Lz for Leibniz)."
+    },
+    {
+      "id": "locke-coste-1729",
+      "siglum": "LOC29",
+      "author": "John Locke",
+      "title": "Essai philosophique concernant l'entendement humain, trad. Pierre Coste",
+      "imprint": "Amsterdam, 1729. 3rd ed.",
+      "date": "1729",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "malebranche-recherche-1712",
+      "siglum": "MAL12",
+      "author": "Nicolas Malebranche",
+      "title": "De la recherche de la vérité",
+      "imprint": "Paris, 1712. 4 vols",
+      "date": "1712",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "port-royal-logique-1685",
+      "siglum": "PRL85",
+      "author": "Antoine Arnauld and Pierre Nicole",
+      "title": "La logique ou l'art de penser",
+      "imprint": "1685",
+      "date": "1685",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "descartes-meditations-1724",
+      "siglum": "DES24",
+      "author": "René Descartes",
+      "title": "Les méditations métaphysiques, T. I",
+      "imprint": "Paris, 1724",
+      "date": "1724",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "pouilly-theorie-1749",
+      "siglum": "POU49",
+      "author": "Louis-Jean Lévesque de Pouilly",
+      "title": "Théorie des sentimens agréables",
+      "imprint": "1749",
+      "date": "1749",
+      "lang": "fr",
+      "layer": "archive.org OCR of the 1749 Dublin printing. Burlamaqui cites the Geneva 1747 edition; no text layer of it was found."
+    },
+    {
+      "id": "cumberland-barbeyrac-1744",
+      "siglum": "CUM44",
+      "author": "Richard Cumberland",
+      "title": "Traité philosophique des loix naturelles, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam, 1744",
+      "date": "1744",
+      "lang": "fr",
+      "layer": "archive.org djvu text in 369 chunks of about 3,000 characters; Barbeyrac's notes mixed in."
+    },
+    {
+      "id": "hutcheson-inquiry-1726",
+      "siglum": "HUT26",
+      "author": "Francis Hutcheson",
+      "title": "An Inquiry into the Original of our Ideas of Beauty and Virtue",
+      "imprint": "1726. 2nd ed.",
+      "date": "1726",
+      "lang": "en",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "hutcheson-passions-1730",
+      "siglum": "HUT30",
+      "author": "Francis Hutcheson",
+      "title": "An Essay on the Nature and Conduct of the Passions and Affections",
+      "imprint": "1730. 2nd ed.",
+      "date": "1730",
+      "lang": "en",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "leclerc-logica-1716",
+      "siglum": "CLE16",
+      "author": "Jean Le Clerc",
+      "title": "Logica, Ontologia et Pneumatologia",
+      "imprint": "London, 1716. 5th ed.",
+      "date": "1716",
+      "lang": "la",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "cicero-latin-library",
+      "siglum": "CIC",
+      "author": "Cicero",
+      "title": "De officiis, Tusculanae disputationes, De finibus, De legibus, De natura deorum, De senectute, De amicitia",
+      "imprint": "",
+      "date": "",
+      "lang": "la",
+      "layer": "Text of The Latin Library, chunked at 1,500 characters."
+    },
+    {
+      "id": "seneca-latin-library",
+      "siglum": "SEN",
+      "author": "Seneca",
+      "title": "Epistulae, De beneficiis, De ira, De clementia, De vita beata",
+      "imprint": "",
+      "date": "",
+      "lang": "la",
+      "layer": "Text of The Latin Library, chunked at 1,500 characters."
+    },
+    {
+      "id": "digest-latin-library",
+      "siglum": "DIG",
+      "author": "Justinian",
+      "title": "Digest, Liv. I",
+      "imprint": "",
+      "date": "",
+      "lang": "la",
+      "layer": "Text of The Latin Library, chunked at 1,500 characters."
+    },
+    {
+      "id": "clarke-ricotier-1727",
+      "siglum": "CLA",
+      "author": "Samuel Clarke",
+      "title": "Traités de l'existence et des attributs de Dieu, trad. Pierre Ricotier",
+      "imprint": "1727–1728. 3 vols",
+      "date": "1727",
+      "lang": "fr",
+      "layer": "archive.org OCR, chunked at about 2,500 characters."
+    },
+    {
+      "id": "crousaz-logique-1720",
+      "siglum": "CRO",
+      "author": "Jean-Pierre de Crousaz",
+      "title": "La Logique",
+      "imprint": "1720 and 1725",
+      "date": "1720",
+      "lang": "fr",
+      "layer": "archive.org OCR, chunked at about 2,500 characters."
+    },
+    {
+      "id": "spectateur-1716",
+      "siglum": "SPE",
+      "author": "Joseph Addison, Richard Steele and others",
+      "title": "Le Spectateur ou le Socrate moderne",
+      "imprint": "1716–1721",
+      "date": "1716",
+      "lang": "fr",
+      "layer": "archive.org OCR, chunked at about 2,500 characters."
+    },
+    {
+      "id": "burlamaqui-elemens-1783",
+      "siglum": "ELE83",
+      "author": "Jean-Jacques Burlamaqui",
+      "title": "Élémens du droit naturel",
+      "imprint": "Lausanne: Grasset, 1783",
+      "date": "1783",
+      "lang": "fr",
+      "layer": "MDZ OCR (bsb10040023, hOCR, one unit per scan). The lecture course; printed 35 years after the 1747 text from student copies."
     }
   ],
   "reuse": [
@@ -273,6 +456,126 @@
       "from": "vattel-1773",
       "to": "vattel-amusemens-1765",
       "rows": 24
+    },
+    {
+      "path": "reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json",
+      "from": "burlamaqui-1747",
+      "to": "pufendorf-barbeyrac-1734",
+      "rows": 639
+    },
+    {
+      "path": "reuse/burlamaqui-1747__pufendorf-devoirs-barbeyrac-1756.json",
+      "from": "burlamaqui-1747",
+      "to": "pufendorf-devoirs-barbeyrac-1756",
+      "rows": 350
+    },
+    {
+      "path": "reuse/burlamaqui-1747__grotius-barbeyrac-1724.json",
+      "from": "burlamaqui-1747",
+      "to": "grotius-barbeyrac-1724",
+      "rows": 87
+    },
+    {
+      "path": "reuse/burlamaqui-1747__locke-coste-1729.json",
+      "from": "burlamaqui-1747",
+      "to": "locke-coste-1729",
+      "rows": 22
+    },
+    {
+      "path": "reuse/burlamaqui-1747__malebranche-recherche-1712.json",
+      "from": "burlamaqui-1747",
+      "to": "malebranche-recherche-1712",
+      "rows": 15
+    },
+    {
+      "path": "reuse/burlamaqui-1747__port-royal-logique-1685.json",
+      "from": "burlamaqui-1747",
+      "to": "port-royal-logique-1685",
+      "rows": 4
+    },
+    {
+      "path": "reuse/burlamaqui-1747__descartes-meditations-1724.json",
+      "from": "burlamaqui-1747",
+      "to": "descartes-meditations-1724",
+      "rows": 2
+    },
+    {
+      "path": "reuse/burlamaqui-1747__pouilly-theorie-1749.json",
+      "from": "burlamaqui-1747",
+      "to": "pouilly-theorie-1749",
+      "rows": 17
+    },
+    {
+      "path": "reuse/burlamaqui-1747__cumberland-barbeyrac-1744.json",
+      "from": "burlamaqui-1747",
+      "to": "cumberland-barbeyrac-1744",
+      "rows": 19
+    },
+    {
+      "path": "reuse/burlamaqui-1747__hutcheson-inquiry-1726.json",
+      "from": "burlamaqui-1747",
+      "to": "hutcheson-inquiry-1726",
+      "rows": 4
+    },
+    {
+      "path": "reuse/burlamaqui-1747__hutcheson-passions-1730.json",
+      "from": "burlamaqui-1747",
+      "to": "hutcheson-passions-1730",
+      "rows": 3
+    },
+    {
+      "path": "reuse/burlamaqui-1747__leclerc-logica-1716.json",
+      "from": "burlamaqui-1747",
+      "to": "leclerc-logica-1716",
+      "rows": 5
+    },
+    {
+      "path": "reuse/burlamaqui-1747__cicero-latin-library.json",
+      "from": "burlamaqui-1747",
+      "to": "cicero-latin-library",
+      "rows": 12
+    },
+    {
+      "path": "reuse/burlamaqui-1747__seneca-latin-library.json",
+      "from": "burlamaqui-1747",
+      "to": "seneca-latin-library",
+      "rows": 3
+    },
+    {
+      "path": "reuse/burlamaqui-1747__digest-latin-library.json",
+      "from": "burlamaqui-1747",
+      "to": "digest-latin-library",
+      "rows": 1
+    },
+    {
+      "path": "reuse/burlamaqui-1747__clarke-ricotier-1727.json",
+      "from": "burlamaqui-1747",
+      "to": "clarke-ricotier-1727",
+      "rows": 10
+    },
+    {
+      "path": "reuse/burlamaqui-1747__crousaz-logique-1720.json",
+      "from": "burlamaqui-1747",
+      "to": "crousaz-logique-1720",
+      "rows": 9
+    },
+    {
+      "path": "reuse/burlamaqui-1747__spectateur-1716.json",
+      "from": "burlamaqui-1747",
+      "to": "spectateur-1716",
+      "rows": 2
+    },
+    {
+      "path": "reuse/burlamaqui-1747__burlamaqui-elemens-1783.json",
+      "from": "burlamaqui-1747",
+      "to": "burlamaqui-elemens-1783",
+      "rows": 323
+    },
+    {
+      "path": "reuse/burlamaqui-1747__burlamaqui-droit-politique-1751.json",
+      "from": "burlamaqui-1747",
+      "to": "burlamaqui-droit-politique-1751",
+      "rows": 84
     }
   ]
 }

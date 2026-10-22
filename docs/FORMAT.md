@@ -7,8 +7,8 @@ Version `nle/1`. All files are UTF-8 JSON.
 ```
 catalogue.json                  the collection: editions, source texts, reuse tables
 index.html                      landing page, built from catalogue.json
-viewer/index.html               shared viewer: viewer/?ed=<edition id>#<unit id>
-viewer/compose.js               builds display HTML from a text and its layers
+viewer/index.html, app.js       shared viewer: viewer/?ed=<edition id>#<unit id>
+viewer/compose.js               builds display HTML from a text and its marks
 editions/<edition id>/
   edition.json                  manifest: metadata, divisions, layers, viewer settings
   text.json                     the base text, one record per unit
@@ -22,7 +22,7 @@ tools/                          conversion and checks
 
 - **Edition id.** Author and date, lower case: `vattel-1773`.
 - **Text id.** Author, short title, date: `wolff-jus-gentium-1749`. Every source text named by a reuse table has a `texts` entry in the catalogue. An edited text uses its edition id.
-- **Unit id.** `<division>.<number>`. Unit ids are fixed. They are never renumbered. A correction that splits or merges units adds new ids and keeps the old ones as aliases in `edition.json`.
+- **Unit id.** `<division>.<number>` (Vattel: `I.51`) or `<division>.<chapter>.<number>` where numbers restart in each chapter (Burlamaqui: `P2.6.9`). Unit ids are fixed. They are never renumbered. A correction that splits or merges units adds new ids and keeps the old ones as aliases in `edition.json`.
 - **Global reference.** `<edition id>#<unit id>`, e.g. `vattel-1773#I.51`. The viewer address takes the same pair: `viewer/?ed=vattel-1773#I.51`.
 
 ## Offsets
@@ -35,7 +35,7 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
 {
   "format": "nle-catalogue/1",
   "title": "...",
-  "editions": [{"id", "path", "author", "title", "short", "imprint", "date", "lang", "status"}],
+  "editions": [{"id", "path", "author", "authorShort", "title", "short", "imprint", "date", "lang", "status"}],
   "texts":    [{"id", "siglum", "author", "title", "imprint", "date", "lang", "layer"}],
   "reuse":    [{"path", "from", "to", "rows"}]
 }
@@ -45,7 +45,12 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
 
 ## editions/&lt;id&gt;/edition.json
 
-Metadata of the base witness, the list of divisions, the layer files with their labels, and the settings the shared viewer reads: brand line, start unit, unit labels, citation patterns, link templates for scans, source families for the reuse filter.
+- Metadata of the base witness and of the transcription.
+- `aliases`: retired unit ids mapped to their successors. The viewer resolves them.
+- `divisions`: one entry per division, in order: `key` (the first part of the unit id), `label`, `chapters` (true when units are grouped by chapter), `chapterTitle` for a division without chapters, `unitLabel` (`{chap}`, `{n}` from the unit id), `unitMark`, `cite` (`{prefix}`, `{chap}`, `{n}`, `{unnum}`, `{page}`).
+- `layers`: one entry per layer, with the `label` and `tooltip` of its checkbox and `default` (on unless false). A layer with a `file` is a layer file in `layers/`. A layer of `kind: "reuse"` is a view on one reuse table: `table` names it, `family` names the family its checkbox switches.
+- `reuse`: `families` (key, label, `chip`, `color`, `dark`, `sourceLabel`) and the wording of the source panel (`baseTag`, `sourceLabel`, `noteLabel`, `partLabels`, `earliest`, `nearer`).
+- `viewer`: brand line, start unit, search placeholder, `goto` patterns (a regular expression and an id template), citation prefix and page pattern, `volumes`, `pageLink` (template for a scan link), `pageBreak` (the HTML of a page-break marker).
 
 ## text.json
 
@@ -53,7 +58,7 @@ Metadata of the base witness, the list of divisions, the layer files with their 
 {
   "format": "nle-text/1",
   "edition": "vattel-1773",
-  "titles": {"I.I": "Des Nations, ou Etats souverains.", "...": "..."},
+  "titles": {"I.I": "Des Nations, ou Etats souverains.", "...": "..."},   // keyed <division>.<chapter>
   "units": [
     {
       "id": "I.51", "div": "I", "chap": "IV", "n": 51,
@@ -72,10 +77,10 @@ Metadata of the base witness, the list of divisions, the layer files with their 
 }
 ```
 
-- `kind`: `section` for a numbered unit, `page` for a unit that is a printed page (the Préface), `heading` for the book heading printed before § 1 (`<div>.0`).
+- `kind`: `section` for a numbered unit, `page` for a unit that is a printed page (the Préface), `front` for unnumbered front matter (Burlamaqui's Avertissement), `heading` for a part, book or chapter heading (number 0). The viewer does not show headings.
 - `n`: the number the unit carries in the edition. `unnumbered` marks a unit the print gives no number.
 - `pages`: the printed pages the unit runs over, with scan numbers.
-- `i`: italic ranges. `para`: paragraph starts inside the unit. `pb`: page breaks inside the unit (offset, volume, scan, printed page). `xr`: cross-references to other units.
+- `i`: italic ranges. `para`: paragraph starts inside the unit. `pb`: page breaks inside the unit (offset, volume or "", scan, printed page). `xr`: cross-references to other units.
 - Text is the reading text: long s resolved, line-end hyphens joined, line breaks removed. Spelling, accents and printed misprints are kept.
 
 ## Layers
@@ -129,7 +134,7 @@ One item per comment shown under a unit.
 
 ## Reuse tables
 
-`reuse/<from>__<to>.json` holds the reuse found between two texts. `from` is the later, reusing text. `to` is the source.
+`reuse/<from>__<to>.json` holds the reuse found between two texts. Rows are anchored in the units of `from`. `to` is the other text: by default the earlier source that `from` draws on; with `"direction": "derivative"` the later text that repeats `from` (Burlamaqui's *Principes du droit politique*, 1751).
 
 ```json
 {
@@ -152,3 +157,5 @@ One item per comment shown under a unit.
 - `family` groups rows by author for the viewer filter. A table between two physical texts can hold more than one family (Grotius and Barbeyrac's notes in the same 1724 volume).
 - `status`: `match` (confidence ≥ 0.5) or `possible` (0.3–0.5). `step` names the pipeline step in the method log.
 - `earliest`: where an earlier text (Grotius 1625, Pufendorf 1672) already holds the passage.
+- `at` is empty for a row the build could not place on the letters of the text. `where` then says `margin` (the passage is in the marginal summary) or `unplaced`.
+- Optional fields: `nearer` (`DNG` or `Devoirs`: which of the two Pufendorf texts the wording is nearer), `quoting` (an author quoted inside the source passage), `noteRef`, `sourcePart` (the part of the source volume: `barbeyrac_note`, `reflexions`, …), `relation` (in a table whose header lists `relations`).

@@ -1,0 +1,230 @@
+{
+  "format": "nle-edition/1",
+  "id": "burlamaqui-1747",
+  "author": "Jean-Jacques Burlamaqui",
+  "title": "Principes du droit naturel",
+  "short": "Principes du droit naturel · 1747",
+  "imprint": "Genève: Barrillot, 1747",
+  "date": "1747",
+  "lang": "fr",
+  "witness": {
+    "copy": "Google Books scan of a copy with the ex libris De Saussure, 386 PDF pages",
+    "contents": "Avertissement (pdf 9–10); text pdf 31–382, printed pp. 1–352: Partie I ch. I–XI, Partie II ch. I–XIV"
+  },
+  "transcription": "Vision transcription of the page images, one diplomatic file per scan; reading text with long s resolved and line-end hyphens joined. § numbers restart in each chapter. The Table (pdf 11–30) was not transcribed.",
+  "text": "text.json",
+  "aliases": {},
+  "divisions": [
+    {
+      "key": "AV",
+      "label": "Front matter",
+      "chapterTitle": "Avertissement",
+      "unitLabel": "Avert.",
+      "unitMark": "",
+      "cite": "{prefix}, Avertissement{page}."
+    },
+    {
+      "key": "P1",
+      "label": "Partie I · Principes généraux du droit",
+      "chapters": true,
+      "unitLabel": "I.{chap} § {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, part. I, chap. {chap}, § {n}{page}."
+    },
+    {
+      "key": "P2",
+      "label": "Partie II · Loix naturelles",
+      "chapters": true,
+      "unitLabel": "II.{chap} § {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, part. II, chap. {chap}, § {n}{page}."
+    }
+  ],
+  "layers": [
+    {
+      "id": "elemens-1783",
+      "kind": "reuse",
+      "family": "El",
+      "table": "reuse/burlamaqui-1747__burlamaqui-elemens-1783.json",
+      "label": "Élémens 1783",
+      "tooltip": "Burlamaqui's lecture course, printed in 1783 as Élémens du droit naturel. Each row says whether the 1747 text is the same, expands, abridges or changes the lecture text."
+    },
+    {
+      "id": "pdp-1751",
+      "kind": "reuse",
+      "family": "Bu",
+      "table": "reuse/burlamaqui-1747__burlamaqui-droit-politique-1751.json",
+      "label": "PDP 1751",
+      "tooltip": "Principes du droit politique (1751), printed after the 1747 text. The rows mark passages the PDP repeats."
+    }
+  ],
+  "reuse": {
+    "baseTag": "Burlamaqui",
+    "sourceLabel": "source (OCR)",
+    "noteLabel": "(Barbeyrac's note)",
+    "partLabels": {
+      "reflexions": "(Réflexions on Leibniz)",
+      "discours": "(Discours)",
+      "jugement": "(Leibniz, Jugement)"
+    },
+    "earliest": {
+      "latinLabel": "Latin original (OCR)",
+      "locusNeedsLatin": true,
+      "showReason": true
+    },
+    "nearer": {
+      "title": "Same passage in both Pufendorf texts.",
+      "prefix": "Burlamaqui's wording is nearest: ",
+      "labels": {
+        "DNG": "the Droit de la nature et des gens",
+        "Devoirs": "the Devoirs",
+        "*": "cannot tell"
+      }
+    },
+    "families": [
+      {
+        "key": "P",
+        "label": "Pufendorf",
+        "color": "#2c4f86",
+        "dark": "#8fb0ea"
+      },
+      {
+        "key": "Bb",
+        "label": "Barbeyrac notes",
+        "chip": "Barbeyrac",
+        "color": "#8a5a00",
+        "dark": "#e3b65a"
+      },
+      {
+        "key": "G",
+        "label": "Grotius",
+        "color": "#2f6b4f",
+        "dark": "#7cc4a0"
+      },
+      {
+        "key": "Lz",
+        "label": "Leibniz",
+        "color": "#7a7a74",
+        "dark": "#a9aaa4"
+      },
+      {
+        "key": "Lo",
+        "label": "Locke",
+        "color": "#b5462f",
+        "dark": "#f08a72"
+      },
+      {
+        "key": "Po",
+        "label": "Pouilly",
+        "color": "#0f7480",
+        "dark": "#6fcbd6"
+      },
+      {
+        "key": "Cu",
+        "label": "Cumberland",
+        "color": "#5a6b12",
+        "dark": "#bccf5f"
+      },
+      {
+        "key": "Ma",
+        "label": "Malebranche",
+        "color": "#8a3a5a",
+        "dark": "#e591b4"
+      },
+      {
+        "key": "Ca",
+        "label": "Descartes, Port-Royal",
+        "chip": "Descartes",
+        "color": "#4a4ab0",
+        "dark": "#a8a8f2"
+      },
+      {
+        "key": "Hu",
+        "label": "Hutcheson",
+        "color": "#a0522d",
+        "dark": "#e8a070"
+      },
+      {
+        "key": "Le",
+        "label": "Le Clerc",
+        "color": "#6b6b2f",
+        "dark": "#c9c97a"
+      },
+      {
+        "key": "An",
+        "label": "Cicero, Seneca, Roman law",
+        "chip": "Ancients",
+        "color": "#5c4b2a",
+        "dark": "#d9b77a"
+      },
+      {
+        "key": "Cl",
+        "label": "Clarke",
+        "color": "#3f6f8f",
+        "dark": "#8fc0e0"
+      },
+      {
+        "key": "Cr",
+        "label": "Crousaz",
+        "color": "#7a5f8f",
+        "dark": "#c0a8e0"
+      },
+      {
+        "key": "Sp",
+        "label": "Spectateur",
+        "color": "#8f6f3f",
+        "dark": "#e0b878"
+      },
+      {
+        "key": "Ab",
+        "label": "Abbadie",
+        "color": "#6f6f6f",
+        "dark": "#b0b0b0"
+      },
+      {
+        "key": "El",
+        "label": "Élémens (lecture course)",
+        "chip": "Élémens",
+        "color": "#b3005a",
+        "dark": "#ff7fb5",
+        "sourceLabel": "Élémens 1783 (OCR)"
+      },
+      {
+        "key": "Bu",
+        "label": "Burlamaqui 1751 (later)",
+        "chip": "PDP 1751",
+        "color": "#7a3e8f",
+        "dark": "#c69ad2",
+        "sourceLabel": "PDP 1751, later (OCR)"
+      }
+    ]
+  },
+  "viewer": {
+    "brand": "Principes du droit naturel · 1747",
+    "start": "P1.1.1",
+    "searchPlaceholder": "Search, or go to II 9 4",
+    "chapterWord": "Chapitre",
+    "unitsWord": "§§",
+    "citePrefix": "Burlamaqui, Principes du droit naturel (Genève 1747)",
+    "citePage": ", p. {printed}",
+    "pageLink": {
+      "url": "zotero://open-pdf/library/items/XKNMUHV3?page={scan}",
+      "title": "Open in Zotero at scan {scan}"
+    },
+    "pageBreak": " <span class=\"pb\" data-pg=\"{scan}\">p. {printed}</span> ",
+    "goto": [
+      {
+        "re": "^(?:p(?:art)?\\.?\\s*)?(?:2|II)[\\s.,]+(?:ch\\.?\\s*)?(\\d+)[\\s.,§]+(\\d+)$",
+        "id": "P2.{1}.{2}"
+      },
+      {
+        "re": "^(?:p(?:art)?\\.?\\s*)?(?:1|I)[\\s.,]+(?:ch\\.?\\s*)?(\\d+)[\\s.,§]+(\\d+)$",
+        "id": "P1.{1}.{2}"
+      },
+      {
+        "re": "^av\\w*\\.?$",
+        "id": "AV"
+      }
+    ]
+  }
+}

@@ -1,20 +1,19 @@
 # Convert the Vattel 1773 working edition (edition_data/*.json) into the collection format (docs/FORMAT.md).
 # Usage: python tools/convert_vattel_1773.py <edition_data folder>
 # Reads data.json, en_sections.json, align.json, flags.json, para_final.json. Writes editions/vattel-1773/, reuse/, catalogue.json.
-import collections, hashlib, html, json, os, re, shutil, sys
-from html.parser import HTMLParser
+import os, re, shutil, sys
+from nle import ROOT, Split, dump, load, provenance, update_catalogue, write_tables, write_text
 
 SRC = sys.argv[1]
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ED = 'vattel-1773'
 OUT = os.path.join(ROOT, 'editions', ED)
-MAN = json.load(open(os.path.join(OUT, 'edition.json'), encoding='utf-8'))
+MAN = load(os.path.join(OUT, 'edition.json'))
 OLD_TITLE = next(l for l in MAN['layers'] if l['kind'] == 'variants')['otherTitle']
 
-D = json.load(open(os.path.join(SRC, 'data.json'), encoding='utf-8'))
-EN = json.load(open(os.path.join(SRC, 'en_sections.json'), encoding='utf-8'))['en']
-AL = json.load(open(os.path.join(SRC, 'align.json'), encoding='utf-8'))
-FL = json.load(open(os.path.join(SRC, 'flags.json'), encoding='utf-8'))
+D = load(os.path.join(SRC, 'data.json'))
+EN = load(os.path.join(SRC, 'en_sections.json'))['en']
+AL = load(os.path.join(SRC, 'align.json'))
+FL = load(os.path.join(SRC, 'flags.json'))
 LF_OFFSET = 27  # Liberty Fund page = PDF page index - 27 (method log, English layer)
 
 # Source texts named by the reuse rows, keyed by the page-id prefix of the step tables.
@@ -60,130 +59,20 @@ def text_id(page):
     return TEXT_OF[m.group(1)]
 
 
-class Parse(HTMLParser):
-    """Split the display HTML of one part back into plain text and marks."""
-    def __init__(self, src):
-        super().__init__(convert_charrefs=True)
-        self.chars = []; self.stack = []; self.cap = None
-        self.at = collections.defaultdict(list)  # offset -> inserted elements, in order
-        self.feed(src); self.close()
-        assert not self.stack and self.cap is None
-
-    def handle_starttag(self, tag, attrs):
-        a = dict(attrs); c = a.get('class', '')
-        key = (tag, c)
-        assert key in {('i', ''), ('a', 'xr'), ('span', 'u'), ('span', 'v73'), ('span', 'para'), ('span', 'pb'), ('span', 'd58')}, key
-        assert self.cap is None
-        if c == 'para': self.at[len(self.chars)].append(('para',))
-        if c in ('pb', 'd58'): self.cap = [c, a, '']
-        self.stack.append(key + (a,))
-
-    def handle_endtag(self, tag):
-        t, c, a = self.stack.pop(); assert t == tag
-        if c in ('pb', 'd58'):
-            kind, a, txt = self.cap; self.cap = None
-            if kind == 'pb':
-                vol, scan = a['data-pg'].split(':')
-                m = re.fullmatch(r' (T\d) p\. (.*) ', txt, re.S); assert m and m.group(1) == vol, txt
-                self.at[len(self.chars)].append(('pb', vol, int(scan), m.group(2)))
-            else:
-                assert a['title'] == OLD_TITLE
-                self.at[len(self.chars)].append(('d58', a['data-v'], txt))
-
-    def handle_data(self, d):
-        if self.cap is not None: self.cap[2] += d; return
-        ital = ref = var = None; cov = ()
-        for t, c, a in self.stack:
-            if t == 'i': ital = True
-            elif c == 'xr': ref = a['href'][1:]
-            elif c == 'u': cov = tuple(int(x) for x in a['data-m'].split(','))
-            elif c == 'v73': var = a['data-v']
-            elif c == 'para': raise AssertionError('text inside para')
-        for ch in d: self.chars.append((ch, ital, ref, var, cov))
-
-
-def runs(vals):
-    """[(start, end, value)] for maximal runs of equal non-empty values."""
-    out = []; i = 0; n = len(vals)
-    while i < n:
-        j = i + 1
-        while j < n and vals[j] == vals[i]: j += 1
-        if vals[i]: out.append((i, j, vals[i]))
-        i = j
-    return out
-
-
-def segments(pos):
-    """Contiguous [a, b) segments of a sorted list of offsets."""
-    out = []
-    for p in pos:
-        if out and out[-1][1] == p: out[-1][1] = p + 1
-        else: out.append([p, p + 1])
-    return out
-
-
-SECS = D['sections']; ROWS = D['rows']
-units = []; reuse_at = collections.defaultdict(list); var_at = collections.defaultdict(list)
-older = collections.defaultdict(list); whole = collections.defaultdict(list)
-order_check = collections.Counter()
-for s in SECS:
+def unit_head(s):
     sid = s['id']
-    parts = [('t', s['html'])] + [('n%d' % k, n['html']) for k, n in enumerate(s['notes'])]
     rec = {'id': sid, 'div': s['book'], 'chap': s['chap'], 'n': s['para'],
            'kind': 'heading' if sid.endswith('.0') else 'page' if s['book'] == 'Pref' else 'section'}
     if s['unnum']: rec['unnumbered'] = True
     if s['margin']: rec['margin'] = s['margin']
     rec['pages'] = [{'vol': p['vol'], 'scan': p['scan'], 'printed': p['printed']} for p in s['pages']]
-    notes = []
-    for part, src in parts:
-        P = Parse(src); ch = P.chars
-        text = ''.join(c[0] for c in ch)
-        assert all(ord(c) <= 0xFFFF for c in text)  # offsets in UTF-16 code units equal code points
-        o = {'text': text}
-        it = [[a, b] for a, b, _ in runs([c[1] for c in ch])]
-        xr = [[a, b, v] for a, b, v in runs([c[2] for c in ch])]
-        if it: o['i'] = it
-        if xr: o['xr'] = xr
-        pos_rows = collections.defaultdict(list); pos_vars = collections.defaultdict(list)
-        for k, c in enumerate(ch):
-            for rid in c[4]: pos_rows[rid].append(k)
-            if c[3]: pos_vars[c[3]].append(k)
-        for rid, ps in pos_rows.items(): reuse_at[rid] += [[part, a, b] for a, b in segments(ps)]
-        for vid, ps in pos_vars.items(): var_at[vid] += [[part, a, b] for a, b in segments(ps)]
-        para = []; pb = []
-        for k in sorted(P.at):
-            els = P.at[k]
-            order_check[tuple(e[0] for e in els)] += 1
-            for e in els:
-                if e[0] == 'para': assert part == 't'; para.append(k)
-                elif e[0] == 'pb': assert part == 't'; pb.append([k, e[1], e[2], e[3]])
-                else: older[e[1]].append([part, k, e[2]])
-        if part == 't':
-            rec.update(o)
-            if para: rec['para'] = para
-            if pb: rec['pb'] = pb
-        else:
-            ni = int(part[1:]); nt = s['notes'][ni]
-            notes.append(dict({'mark': nt['mark']}, **o))
-            if nt['added']:
-                ln = len(text)
-                cand = [vid for vid, ps in pos_vars.items() if ps[0] == 0 and ps[-1] == ln - 1]
-                assert len(cand) == 1, (sid, ni, cand)
-                whole[cand[0]].append(ni)
-    if notes: rec['notes'] = notes
-    units.append(rec)
+    return rec
 
-# every inserted element sequence follows the build order: paragraph, 1758 readings, page break
-for seq in order_check:
-    assert list(seq) == sorted(seq, key=lambda x: {'para': 0, 'd58': 1, 'pb': 2}[x]), seq
 
-# ---------- text ----------
-os.makedirs(os.path.join(OUT, 'layers'), exist_ok=True)
-def dump(obj, path):
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(obj, f, ensure_ascii=False, separators=(',', ':'))
-        f.write('\n')
-dump({'format': 'nle-text/1', 'edition': ED, 'titles': D['titles'], 'units': units}, os.path.join(OUT, 'text.json'))
+SECS = D['sections']; ROWS = D['rows']
+X = Split(SECS, unit_head, MAN['viewer']['pageBreak'], OLD_TITLE)
+write_text(ED, D['titles'], X.units)
+var_at, whole, older = X.var_at, X.whole, X.older
 
 # ---------- 1773 changes ----------
 items = []; vids = set()
@@ -238,67 +127,31 @@ dump({'format': 'nle-layer/1', 'edition': ED, 'layer': 'english', 'kind': 'trans
       'units': ens}, os.path.join(OUT, 'layers', 'english.json'))
 
 # ---------- reuse tables ----------
-tables = collections.defaultdict(list)
-for r in ROWS:
-    at = reuse_at.get(r['id'], [])
-    assert len(at) == 1 and at[0][0] == r['where'], (r['id'], at, r['where'])
-    row = {'id': r['id'], 'unit': r['sec'], 'at': at, 'family': r['fam'], 'work': r['work'], 'locus': r['locus'], 'page': r['page'],
-           'inNote': r['note'], 'label': r['label'], 'confidence': r['conf'], 'status': r['status'], 'step': r['step'],
-           'passage': r['vp'], 'source': r['sp']}
-    if r.get('fr'): row['french'] = r['fr']
-    row['reason'] = r['reason']; row['links'] = r['links']
-    if r.get('ew'): row['earliest'] = r['ew']
-    tables[text_id(r['page'])].append(row)
-assert set(reuse_at) == {r['id'] for r in ROWS}
-# each row's span lies in its own unit
-unit_of_span = {}
-for s in SECS:
-    for m in re.finditer(r'data-m="([\d,]+)"', s['html'] + ''.join(n['html'] for n in s['notes'])):
-        for x in m.group(1).split(','): unit_of_span.setdefault(int(x), set()).add(s['id'])
-assert all(unit_of_span[r['id']] == {r['sec']} for r in ROWS)
-
+tables = {}
+for r in ROWS: tables.setdefault(text_id(r['page']), []).append(X.reuse_row(r))
+assert set(X.reuse_at) == {r['id'] for r in ROWS}
 STEPS = {'3b': 'Wolff re-scanned on a transcription (step 3b)', 4: 'Burlamaqui, Grotius and Pufendorf (step 4)',
          6: 'Montesquieu, Wicquefort, Bynkershoek, Formey, Loisir (step 6)', 8: "Vattel's other works (step 8)", 'P': 'Préface, all pools (Préface pass)'}
-os.makedirs(os.path.join(ROOT, 'reuse'), exist_ok=True)
-for f in os.listdir(os.path.join(ROOT, 'reuse')):
-    if f.startswith(ED + '__'): os.remove(os.path.join(ROOT, 'reuse', f))
-cat_reuse = []
-for t in TEXTS:
-    rows = sorted(tables.get(t[1], []), key=lambda r: r['id'])
-    if not rows: continue
-    path = 'reuse/%s__%s.json' % (ED, t[1])
-    steps = sorted({str(r['step']) for r in rows})
-    dump({'format': 'nle-reuse/1', 'from': ED, 'to': t[1],
-          'steps': {k: STEPS[k if k in STEPS else int(k)] for k in steps},
-          'description': 'Reuse of the source in the edition, found by retrieval and judged by a language model. '
-                         'status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the text layer named in the catalogue.',
-          'rows': rows}, os.path.join(ROOT, path))
-    cat_reuse.append({'path': path, 'from': ED, 'to': t[1], 'rows': len(rows)})
+TX = [{'id': t[1], 'siglum': t[0], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
+cat_reuse = write_tables(ED, tables, TX, STEPS,
+                         'Reuse of the source in the edition, found by retrieval and judged by a language model. '
+                         'status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the text layer named in the catalogue.')
 assert sum(c['rows'] for c in cat_reuse) == len(ROWS)
 
 # ---------- provenance ----------
 prov = os.path.join(OUT, 'provenance'); os.makedirs(prov, exist_ok=True)
 shutil.copyfile(os.path.join(SRC, 'para_final.json'), os.path.join(prov, 'para_final.json'))
-def sha(p): return hashlib.sha256(open(p, 'rb').read()).hexdigest()
-inputs = ['data.json', 'en_sections.json', 'align.json', 'flags.json', 'para_final.json']
-pf = json.load(open(os.path.join(SRC, 'para_final.json')))
-with open(os.path.join(prov, 'README.md'), 'w', encoding='utf-8') as f:
-    f.write('# Provenance\n\nConverted by `tools/convert_vattel_1773.py` from `vattel-reuse/edition_data/`:\n\n| File | Bytes | SHA-256 |\n|---|---|---|\n')
-    for n in inputs:
-        p = os.path.join(SRC, n); f.write('| `%s` | %d | `%s` |\n' % (n, os.path.getsize(p), sha(p)))
-    f.write('\n`para_final.json` lists the paragraph starts inside a § confirmed on the scans: %d breaks on %d pages, keyed by `<volume>:<scan>` '
-            'with transcription line indices. `text.json` carries the breaks as `para` offsets.\n' % (sum(map(len, pf.values())), len(pf)))
+pf = load(os.path.join(SRC, 'para_final.json'))
+provenance(ED, 'vattel-reuse/edition_data/', [(n, os.path.join(SRC, n)) for n in ['data.json', 'en_sections.json', 'align.json', 'flags.json', 'para_final.json']],
+           '`para_final.json` lists the paragraph starts inside a § confirmed on the scans: %d breaks on %d pages, keyed by `<volume>:<scan>` '
+           'with transcription line indices. `text.json` carries the breaks as `para` offsets.' % (sum(map(len, pf.values())), len(pf)))
 
 # ---------- catalogue ----------
-cp = os.path.join(ROOT, 'catalogue.json'); cat = json.load(open(cp, encoding='utf-8'))
 used = {c['to'] for c in cat_reuse} | {d['text'] for d in div}
-cat['texts'] = [t for t in cat.get('texts', []) if t['id'] not in TEXT_OF.values()] + [
-    {'id': t[1], 'siglum': t[0], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]}
-    for t in TEXTS if t[1] in used]
-cat['reuse'] = [c for c in cat.get('reuse', []) if c['from'] != ED] + cat_reuse
-with open(cp, 'w', encoding='utf-8') as f:
-    json.dump(cat, f, ensure_ascii=False, indent=2); f.write('\n')
+entry = next(e for e in load(os.path.join(ROOT, 'catalogue.json'))['editions'] if e['id'] == ED)
+update_catalogue(entry, [t for t in TX if t['id'] in used], cat_reuse)
 
+units = X.units
 print('units', len(units), 'notes', sum(len(u.get('notes', [])) for u in units),
       'para', sum(len(u.get('para', [])) for u in units), 'pb', sum(len(u.get('pb', [])) for u in units),
       'xr', sum(len(u.get('xr', [])) + sum(len(n.get('xr', [])) for n in u.get('notes', [])) for u in units))

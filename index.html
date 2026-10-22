@@ -23,6 +23,7 @@ table{width:100%;border-collapse:collapse;font:13.5px/1.45 var(--ui)}
 td,th{text-align:left;padding:5px 8px 5px 0;border-top:1px solid var(--line);vertical-align:top}
 th{color:var(--mut);font-weight:500}
 td.n{text-align:right;font-variant-numeric:tabular-nums;padding-right:0}
+tr.grp th{color:var(--fg);font-weight:600;padding-top:18px;border-top:0}
 .foot{margin-top:36px;font:13px var(--ui);color:var(--mut)}
 </style>
 </head><body>
@@ -40,8 +41,11 @@ const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 fetch('catalogue.json').then(r=>r.json()).then(c=>{
   document.getElementById('desc').textContent=c.description||'';
   document.getElementById('eds').innerHTML=c.editions.map(e=>`<a class="ed" href="viewer/?ed=${encodeURIComponent(e.id)}"><b>${esc(e.author)}, ${esc(e.short||e.title)}</b><span>${esc(e.imprint)} · ${esc(e.status)}</span></a>`).join('');
-  const T=Object.fromEntries((c.texts||[]).map(t=>[t.id,t]));
-  const rows=(c.reuse||[]).map(r=>{const t=T[r.to]||{};return `<tr><td>${esc(t.author||r.to)}, <i>${esc(t.title||'')}</i> (${esc(t.date||'')})</td><td>${esc(t.layer||'')}</td><td class="n">${r.rows}</td></tr>`});
+  const T=Object.fromEntries((c.texts||[]).map(t=>[t.id,t]));c.editions.forEach(e=>T[e.id]=Object.assign({edition:true},e));
+  const rows=c.editions.flatMap(e=>{const tb=(c.reuse||[]).filter(r=>r.from===e.id);if(!tb.length)return [];
+   return [`<tr class="grp"><th colspan="3">${esc(e.author)}, <i>${esc(e.title)}</i> (${esc(e.date)}): ${tb.reduce((a,r)=>a+r.rows,0)} rows in ${tb.length} tables</th></tr>`]
+    .concat(tb.map(r=>{const t=T[r.to]||{};const name=`${esc(t.author||r.to)}, <i>${esc(t.title||'')}</i>${t.date?` (${esc(t.date)})`:''}`;
+     return `<tr><td>${t.edition?`<a href="viewer/?ed=${encodeURIComponent(r.to)}">${name}</a> · edition`:name}</td><td>${esc(t.layer||'')}</td><td class="n">${r.rows}</td></tr>`}))});
   document.getElementById('reuse').innerHTML=rows.join('')||'<tr><td colspan="3">None yet.</td></tr>';
 }).catch(()=>{document.getElementById('eds').textContent='Could not read catalogue.json.'});
 </script>
