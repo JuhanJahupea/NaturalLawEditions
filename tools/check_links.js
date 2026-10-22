@@ -37,6 +37,10 @@ for (const c of cat.reuse) {
       const s = p === 't' ? u.text : (u.notes || [])[Number(p.slice(1))]?.text;
       if (s === undefined || !(0 <= a && a < b && b <= s.length)) note('row span out of range', `${c.path} row ${r.id}`);
     }
+    if (r.repeats) {
+      if (!shown(r.repeats.edition, r.repeats.unit)) note('repeats unit not shown', `${c.path} row ${r.id} ${r.repeats.unit}`);
+      else { (targets[r.repeats.edition] = targets[r.repeats.edition] || new Set()).add(r.repeats.unit); (back[c.from] = back[c.from] || new Set()).add(r.unit); }
+    }
     if (r.toUnit) {
       if (!ED[c.to]) note('toUnit but to is no edition', `${c.path} row ${r.id}`);
       else if (!shown(c.to, r.toUnit)) note('toUnit not shown in target edition', `${c.path} row ${r.id} ${r.toUnit}`);
@@ -89,7 +93,8 @@ for (const [id, s] of Object.entries(fams)) for (const f of s)
     // the links the viewer draws: every "reused in" and every row link must name a unit of the other edition
     const drawn = await page.evaluate(() => { const o = [];
       for (const s of SEC) for (const r of (IN[s.id] || [])) o.push(r.from + '#' + r.sec);
-      for (const r of ROWS) if (r && r.toUnit) o.push(r.to + '#' + r.toUnit); return [...new Set(o)]; });
+      for (const r of ROWS) { if (r && r.toUnit) o.push(r.to + '#' + r.toUnit); if (r && r.rep) o.push(r.rep.edition + '#' + r.rep.unit); }
+      for (const r of INROWS) o.push(ED + '#' + r.toUnit); return [...new Set(o)]; });
     for (const x of drawn) { const [e, u] = x.split('#'); if (!ED[e] || !shown(e, u)) note('viewer draws a dead link', `${id} -> ${x}`); }
     await page.close();
   }

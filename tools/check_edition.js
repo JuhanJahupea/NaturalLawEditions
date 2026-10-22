@@ -14,7 +14,7 @@ D.sections.forEach(s => {
   if (s.vars) s.vars = s.vars.map(v => ({ id: v.id, type: v.type, content: v.content, passage: v.p1773, otherPassage: v.p1758, otherPages: v.pages1758, otherLink: v.link1758, placed: v.placed }));
 });
 // fields the collection adds to a row
-const ADDED = ['to', 'toUnit', 'relation'];
+const ADDED = ['to', 'toUnit', 'relation', 'rep'];
 
 (async () => {
   const browser = await chromium.launch();

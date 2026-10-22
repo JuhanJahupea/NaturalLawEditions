@@ -60,3 +60,45 @@ for entry in cat['reuse']:
     n = sum('toUnit' in r for r in tb['rows'])
     report.append((entry['path'], len(tb['rows']), n, sorted(scores)[:5]))
 for p, total, n, low in report: print(p, 'rows', total, 'linked', n, 'lowest scores', [round(x, 2) for x in low])
+
+# A later text that repeats an edition (Burlamaqui's PDP 1751 repeats his 1747 text) carries reuse into that edition.
+# For a row whose source is such a text, `repeats` names the unit of the edition the source passage repeats:
+#   route "table": the edition's own table for the later text has a row on the same page whose passage overlaps (>= 0.5);
+#   route "text":  else, the source passage's wording stands in one unit of the edition (>= 0.7, passage of 25 sequences or more).
+TABLE_MIN, TEXT_MIN, MIN_GRAMS = 0.5, 0.7, 25
+def page_key(p):
+    m = re.search(r'(T\d)?\.(?:pdf|p|s)(\d+)$', p); return (m.group(1) or '', int(m.group(2))) if m else None
+derived = {}
+for entry in cat['reuse']:
+    if entry['to'] in editions: continue
+    t = load(os.path.join(ROOT, entry['path']))
+    if t.get('direction') == 'derivative' and entry['from'] in editions: derived[entry['to']] = (entry['from'], t['rows'])
+for entry in cat['reuse']:
+    entry.pop('repeats', None)
+    if entry['to'] not in derived or entry['from'] == derived[entry['to']][0]: continue
+    ed, drows = derived[entry['to']]
+    T = load(os.path.join(ROOT, editions[ed]['path'], 'text.json'))
+    UG = {u['id']: grams(key(unit_text(u))) for u in T['units'] if u['kind'] != 'heading'}
+    by_page = collections.defaultdict(list)
+    for d in drows: by_page[page_key(d['page'])].append(d)
+    path = os.path.join(ROOT, entry['path']); tb = load(path); n = collections.Counter()
+    for r in tb['rows']:
+        r.pop('repeats', None)
+        q = grams(key(r['source'])); best = None
+        for d in by_page.get(page_key(r['page']), []):
+            g = grams(key(d['source'])); o = len(q & g) / max(1, min(len(q), len(g)))
+            if o >= TABLE_MIN and d['unit'] in UG and (best is None or o > best[1]): best = (d['unit'], o, 'table')
+        if best is None and len(q) >= MIN_GRAMS:
+            s, uid = max((len(q & g) / len(q), uid) for uid, g in UG.items())
+            if s >= TEXT_MIN: best = (uid, s, 'text')
+        if best:
+            r['repeats'] = {'edition': ed, 'unit': best[0], 'route': best[2], 'score': round(best[1], 2)}; n[best[2]] += 1
+    tb['repeatsNote'] = ('repeats: the unit of %s that the source passage repeats. Route "table": a row of %s on the same page '
+                         'with an overlapping passage (>= %.1f). Route "text": the passage stands in that unit (>= %.1f).') % (ed, ed, TABLE_MIN, TEXT_MIN)
+    tb = {k: v for k, v in tb.items() if k != 'rows'} | {'rows': tb['rows']}
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(tb, f, ensure_ascii=False, separators=(',', ':')); f.write('\n')
+    if n: entry['repeats'] = ed
+    print(entry['path'], 'rows', len(tb['rows']), 'repeat', ed, dict(n))
+with open(os.path.join(ROOT, 'catalogue.json'), 'w', encoding='utf-8') as f:
+    json.dump(cat, f, ensure_ascii=False, indent=2); f.write('\n')

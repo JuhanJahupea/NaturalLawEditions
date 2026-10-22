@@ -24,8 +24,8 @@ async function load(){
  if(!E){fail('Choose an edition:'+CAT.editions.map(e=>`<a href="?ed=${encodeURIComponent(e.id)}">${esc(e.author)}, ${esc(e.short||e.title)}</a>`).join(''));return false}
  BASE='../'+E.path;
  M=prepMan(await getJSON(BASE+'edition.json'));V=M.viewer||{};RU=M.reuse||{};MAN[ED]=M;
- const out=(CAT.reuse||[]).filter(t=>t.from===ED),inc=(CAT.reuse||[]).filter(t=>t.to===ED&&t.from!==ED),files=M.layers.filter(l=>l.file);
- const linked=[...new Set([...inc.map(t=>t.from),...out.map(t=>t.to)])].filter(id=>id!==ED&&edEntry(id));
+ const out=(CAT.reuse||[]).filter(t=>t.from===ED),inc=(CAT.reuse||[]).filter(t=>(t.to===ED||t.repeats===ED)&&t.from!==ED),files=M.layers.filter(l=>l.file);
+ const linked=[...new Set([...inc.map(t=>t.from),...out.map(t=>t.to),...out.map(t=>t.repeats)])].filter(id=>id&&id!==ED&&edEntry(id));
  const got=await Promise.all([getJSON(BASE+M.text),...files.map(l=>getJSON(BASE+l.file)),...out.map(t=>getJSON('../'+t.path)),...inc.map(t=>getJSON('../'+t.path)),
   ...linked.map(id=>getJSON('../'+edEntry(id).path+'edition.json'))]);
  let k=1;const T=got[0],data={};files.forEach(l=>data[l.id]=got[k++]);const outT=out.map(()=>got[k++]),incT=inc.map(()=>got[k++]);linked.forEach(id=>MAN[id]=prepMan(got[k++]));
@@ -37,7 +37,7 @@ function famColors(fams){const L=fams.map(f=>`--f${f.key}:${f.color}`).join(';')
 function rowObj(r,tb){const o={id:r.id,sec:r.unit,fam:r.family,work:r.work,locus:r.locus,page:r.page,note:r.inNote,label:r.label,conf:r.confidence,status:r.status,vp:r.passage,sp:r.source,reason:r.reason,links:r.links||[],
   where:r.at.length?r.at[0][0]:r.where==='margin'?'m':'',step:r.step};
  if(r.french)o.fr=r.french;if(r.earliest)o.ew=r.earliest;if(r.nearer)o.near=r.nearer;if(r.quoting)o.qa=r.quoting;if(r.noteRef)o.noteref=r.noteRef;if(r.sourcePart)o.part=r.sourcePart;
- o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;return o}
+ o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;return o}
 function build(T,data,tables,incoming){
  TITLES=T.titles||{};DIVS=M._divs;
  const fams=RU.families||[];FAMS=fams.map(f=>[f.key,f.label]);FAMI=Object.fromEntries(fams.map(f=>[f.key,f]));FN=Object.fromEntries(FAMS);famColors(fams);
@@ -47,7 +47,11 @@ function build(T,data,tables,incoming){
  tables.forEach(tb=>tb.rows.forEach(r=>{const o=rowObj(r,tb);ROWS[r.id]=o;(rowsBySec[r.unit]=rowsBySec[r.unit]||[]).push(o);
   r.at.forEach(([p,a,b])=>mk(r.unit,'reuse',p).push([a,b,r.id]))}));
  // rows of other texts' tables that point into this edition
- incoming.forEach(tb=>tb.rows.forEach(r=>{if(!r.toUnit)return;const o=Object.assign(rowObj(r,tb),{from:tb.from});INROWS.push(o);(IN[r.toUnit]=IN[r.toUnit]||[]).push(o)}));
+ incoming.forEach(tb=>tb.rows.forEach(r=>{
+  // a row of another edition whose source is this edition, or a later text that repeats this edition's unit
+  let u=tb.to===ED?r.toUnit:null,via='';
+  if(!u&&r.repeats&&r.repeats.edition===ED){u=r.repeats.unit;via=textShort(tb.to)+' '+(((CAT.texts||[]).find(x=>x.id===tb.to)||{}).date||'')}
+  if(!u)return;const o=Object.assign(rowObj(r,tb),{from:tb.from,toUnit:u,via});INROWS.push(o);(IN[u]=IN[u]||[]).push(o)}));
  const EN={};
  M.layers.forEach(l=>{const L=data[l.id];LAYS.push(l);if(!LAY[l.kind])LAY[l.kind]=l;
   if(l.kind==='variants')L.items.forEach(v=>{const e=ex(v.unit);
@@ -78,6 +82,8 @@ function unitLabel(man,id){const p=id.split('.'),d=man&&man._divs[p[0]];return d
 const lbl=id=>unitLabel(M,id);
 // the surname of a source text's author, from the catalogue
 const textShort=id=>{const t=(CAT.texts||[]).find(x=>x.id===id)||edEntry(id)||{};return t.authorShort||String(t.author||id).split(' ').pop()};
+// a source text that repeats a unit of an edition: link to that unit
+const repLink=r=>r.rep&&MAN[r.rep.edition]?` <span class="via" title="${esc(textShort(r.to))}'s passage repeats this unit (${r.rep.route}, ${r.rep.score})">repeats</span> ${xref(r.rep.edition,r.rep.unit)}`:'';
 const edShort=id=>{const e=edEntry(id)||{};return e.authorShort||e.short||id};
 const xref=(ed,u)=>`<a class="xed" href="?ed=${encodeURIComponent(ed)}#${u}" title="Open in the ${esc((edEntry(ed)||{}).short||ed)} edition">${esc(edShort(ed))} ${esc(unitLabel(MAN[ed],u))}</a>`;
 // sort key from a unit id: division order, then its numbers
@@ -134,7 +140,7 @@ function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{}
  return h+'</div>'}
 function rowHTML(r,hl){const l=r.links.map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join('');const N=RU.nearer||{},P=RU.partLabels||{};
  const near=r.near&&N.title?`<div class="ew"><b>${esc(N.title)}</b> ${esc(N.prefix)}${esc((N.labels||{})[r.near]||(N.labels||{})['*']||r.near)}</div>`:'';
- return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${esc(r.label)}</span><span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
+ return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${repLink(r)}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${esc(r.label)}</span><span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
  <div class="q"><small>${esc(RU.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc((FAMI[r.fam]||{}).sourceLabel||RU.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>${esc(RU.frenchLabel||'working French')}</small>${esc(r.fr)}</div>`:''}${r.ew?ewHTML(r.ew):''}${near}<div class="why">${esc(r.reason)}</div><div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
 function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();document.querySelectorAll('.sec.sel').forEach(e=>e.classList.remove('sel'));const el=$(sid);if(el)el.classList.add('sel');
  const focus=ids&&ids.length;
@@ -155,12 +161,12 @@ function edInfo(){const n=SEC.filter(s=>s.kind!=='heading').length;
 // a sortable table of reuse rows; the list view and the panel's 'reused in' use it
 const COLS={
  unit:{label:'Unit',key:r=>unitKey(M,r.sec),html:r=>`<a href="#${r.sec}" data-row="${r.id}">${esc(lbl(r.sec))}</a>`},
- source:{label:'Source',key:r=>r.work+' '+r.locus,html:r=>`<span class="fam" style="--c:var(--f${r.fam})">${esc(r.fam)}</span> ${esc(r.work)}${r.locus?' · '+esc(r.locus):''}${r.toUnit&&MAN[r.to]?' '+xref(r.to,r.toUnit):''}`},
+ source:{label:'Source',key:r=>r.work+' '+r.locus,html:r=>`<span class="fam" style="--c:var(--f${r.fam})">${esc(r.fam)}</span> ${esc(r.work)}${r.locus?' · '+esc(r.locus):''}${r.toUnit&&MAN[r.to]?' '+xref(r.to,r.toUnit):''}${repLink(r)}`},
  label:{label:'Label',key:r=>r.label,html:r=>esc(r.label)},
  conf:{label:'Conf.',key:r=>-r.conf,html:r=>r.conf.toFixed(2)+(r.status==='possible'?' <span class="poss">possible</span>':'')},
  passage:{label:'Passage',key:r=>r.vp,html:r=>`<span class="pas">${esc(r.vp)}</span>`},
  here:{label:'Unit',key:r=>unitKey(M,r.toUnit),html:r=>`<a href="#${r.toUnit}">${esc(lbl(r.toUnit))}</a>`},
- there:{label:'Reused in',key:r=>[r.from,...unitKey(MAN[r.from],r.sec)],html:r=>xref(r.from,r.sec)},
+ there:{label:'Reused in',key:r=>[r.from,...unitKey(MAN[r.from],r.sec)],html:r=>xref(r.from,r.sec)+(r.via?` <span class="via">through ${esc(r.via)}</span>`:'')},
  theirs:{label:'Passage reused',key:r=>r.sp,html:r=>`<span class="pas">${esc(r.sp)}</span>`},
 };
 const TBL={};

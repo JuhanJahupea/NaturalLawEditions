@@ -44,7 +44,7 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
   "title": "...",
   "editions": [{"id", "path", "author", "authorShort", "title", "short", "imprint", "date", "lang", "status"}],
   "texts":    [{"id", "sigla", "author", "title", "imprint", "date", "lang", "layer"}],
-  "reuse":    [{"path", "from", "to", "rows", "toLayer"}]
+  "reuse":    [{"path", "from", "to", "rows", "toLayer", "repeats"}]
 }
 ```
 
@@ -167,4 +167,5 @@ One item per comment shown under a unit.
 - `earliest`: where an earlier text (Grotius 1625, Pufendorf 1672) already holds the passage.
 - `at` is empty for a row the build could not place on the letters of the text. `where` then says `margin` (the passage is in the marginal summary) or `unplaced`.
 - `toUnit` and `toScore`: where `to` is an edition, the unit of that edition that holds the source passage, set by `tools/link_editions.py`. It takes the units printed on the row's page or the next, and keeps the one holding the largest share of the source passage's 5-letter sequences (accents folded, long s and f as one letter), if that share is at least 0.5. The viewer turns the source citation into a link to `viewer/?ed=<to>#<toUnit>` and lists the row under that unit as "reused in".
+- `repeats`: where `to` is a later text that repeats an edition (Burlamaqui's PDP 1751 repeats his 1747 text), the unit of that edition the source passage repeats: `{edition, unit, route, score}`. Route `table`: the edition's own table for the later text has a row on the same page whose passage overlaps (≥ 0.5). Route `text`: the passage's wording stands in that unit (≥ 0.7). Set by `tools/link_editions.py`; the catalogue entry of such a table carries `repeats: <edition>`. The viewer shows the link and lists the row under that unit as "reused in … through PDP 1751".
 - Optional fields: `nearer` (`DNG` or `Devoirs`: which of the two Pufendorf texts the wording is nearer), `quoting` (an author quoted inside the source passage), `noteRef`, `sourcePart` (the part of the source volume: `barbeyrac_note`, `reflexions`, …), `relation` (in a table whose header lists `relations`).

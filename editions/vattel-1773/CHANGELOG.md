@@ -2,6 +2,11 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.2 (2026-10-22)
+
+- 30 of the 382 rows comparing Vattel with Burlamaqui's *Principes du droit politique* (1751) now name the unit of Burlamaqui's 1747 text that the PDP passage repeats (`repeats`). 28 through Burlamaqui's own PDP table (same page, overlapping passage), 2 because the wording stands in the 1747 unit. The Burlamaqui edition lists them as "reused in Vattel … through Burlamaqui 1751".
+- The Wolff divergence layer is labelled "Divergences"; each note names its source.
+
 ## 1.1 (2026-10-22)
 
 - The 62 rows comparing Vattel with Burlamaqui's *Principes du droit naturel* (1747) now point to the `burlamaqui-1747` edition (`reuse/vattel-1773__burlamaqui-1747.json`). Each row names the Burlamaqui unit that holds the source passage (`toUnit`).

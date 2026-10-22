@@ -445,7 +445,8 @@
       "path": "reuse/vattel-1773__burlamaqui-droit-politique-1751.json",
       "from": "vattel-1773",
       "to": "burlamaqui-droit-politique-1751",
-      "rows": 382
+      "rows": 382,
+      "repeats": "burlamaqui-1747"
     },
     {
       "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
