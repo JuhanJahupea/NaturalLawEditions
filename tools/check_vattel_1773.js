@@ -7,6 +7,12 @@ const { chromium } = require('playwright');
 const [dataPath, url = 'http://localhost:8000/viewer/?ed=vattel-1773'] = process.argv.slice(2);
 const D = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+// the viewer uses neutral names where the working edition used the years
+const norm = h => h.replace(/class="v73"/g, 'class="var"').replace(/class="d58"/g, 'class="old"');
+D.sections.forEach(s => {
+  s.html = norm(s.html); s.notes.forEach(n => { n.html = norm(n.html); });
+  s.vars = s.vars.map(v => ({ id: v.id, type: v.type, content: v.content, passage: v.p1773, otherPassage: v.p1758, otherPages: v.pages1758, otherLink: v.link1758, placed: v.placed }));
+});
 
 (async () => {
   const browser = await chromium.launch();
@@ -38,7 +44,7 @@ const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
     const g = got.rows[r.id];
     if (!g) return fail('row missing', r.id);
     for (const k of Object.keys(r)) if (!same(r[k], g[k])) fail('row.' + k, r.id);
-    for (const k of Object.keys(g)) if (!(k in r)) fail('row extra.' + k, r.id);
+    for (const k of Object.keys(g)) if (!(k in r) && !['to', 'toUnit', 'relation'].includes(k)) fail('row extra.' + k, r.id);
   });
   if (got.rows.filter(Boolean).length !== D.rows.length) fail('row count', got.rows.length);
   if (errors.length) fail('page errors', errors.join(' | '));

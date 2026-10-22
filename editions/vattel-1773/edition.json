@@ -10,55 +10,193 @@
   "witness": {
     "copy": "Bayerische Staatsbibliothek, 4 Bibl.Mont. 4579-1/2",
     "volumes": {
-      "T1": {"scans": "MDZ bsb10725331", "contents": "Préface pp. 1–24, Préliminaires §§ 1–28, Livre I §§ 1–295, Livre II §§ 1–354"},
-      "T2": {"scans": "MDZ bsb10725332", "contents": "Livre III §§ 1–296, Livre IV §§ 1–127"}
+      "T1": {
+        "scans": "MDZ bsb10725331",
+        "contents": "Préface pp. 1–24, Préliminaires §§ 1–28, Livre I §§ 1–295, Livre II §§ 1–354"
+      },
+      "T2": {
+        "scans": "MDZ bsb10725332",
+        "contents": "Livre III §§ 1–296, Livre IV §§ 1–127"
+      }
     },
     "excluded": "Abrégé de la vie de M. de Vattel (T2 pp. i–vi), editorial"
   },
   "transcription": "Vision transcription of the page images, one diplomatic file per scan; reading text with long s resolved and line-end hyphens joined. Paragraph breaks inside a § checked against the scans (provenance/para_final.json).",
   "text": "text.json",
-  "aliases": {},
+  "aliases": {
+    "Preface": "Pref.1"
+  },
   "divisions": [
-    {"key": "Pref", "label": "Front matter", "kind": "page", "chapterTitle": "Préface", "unitLabel": "Préf. p. {n}", "unitMark": "p.", "cite": "{prefix}, t. I, Préface, p. {n}.", "goto": ["pr[ée]f\\w*\\.?"]},
-    {"key": "Prelim", "label": "Préliminaires", "chapterTitle": "Idée et principes généraux", "pageTitle": "Idée et principes généraux du droit des gens", "unitLabel": "Prél. § {n}", "unitMark": "§", "cite": "{prefix}, Préliminaires, § {n}{unnum}{page}.", "goto": ["pr[ée]l\\w*\\.?"]},
-    {"key": "I", "label": "Livre I", "chapters": true, "unitLabel": "I § {n}", "unitMark": "§", "cite": "{prefix}, liv. I, chap. {chap}, § {n}{unnum}{page}.", "goto": ["I", "livre\\s+I"]},
-    {"key": "II", "label": "Livre II", "chapters": true, "unitLabel": "II § {n}", "unitMark": "§", "cite": "{prefix}, liv. II, chap. {chap}, § {n}{unnum}{page}.", "goto": ["II", "livre\\s+II"]},
-    {"key": "III", "label": "Livre III", "chapters": true, "unitLabel": "III § {n}", "unitMark": "§", "cite": "{prefix}, liv. III, chap. {chap}, § {n}{unnum}{page}.", "goto": ["III", "livre\\s+III"]},
-    {"key": "IV", "label": "Livre IV", "chapters": true, "unitLabel": "IV § {n}", "unitMark": "§", "cite": "{prefix}, liv. IV, chap. {chap}, § {n}{unnum}{page}.", "goto": ["IV", "livre\\s+IV"]}
+    {
+      "key": "Pref",
+      "label": "Front matter",
+      "kind": "page",
+      "chapterTitle": "Préface",
+      "unitLabel": "Préf. p. {n}",
+      "unitMark": "p.",
+      "cite": "{prefix}, t. I, Préface, p. {n}."
+    },
+    {
+      "key": "Prelim",
+      "label": "Préliminaires",
+      "chapterTitle": "Idée et principes généraux",
+      "pageTitle": "Idée et principes généraux du droit des gens",
+      "unitLabel": "Prél. § {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, Préliminaires, § {n}{unnum}{page}."
+    },
+    {
+      "key": "I",
+      "label": "Livre I",
+      "chapters": true,
+      "unitLabel": "I § {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, liv. I, chap. {chap}, § {n}{unnum}{page}."
+    },
+    {
+      "key": "II",
+      "label": "Livre II",
+      "chapters": true,
+      "unitLabel": "II § {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, liv. II, chap. {chap}, § {n}{unnum}{page}."
+    },
+    {
+      "key": "III",
+      "label": "Livre III",
+      "chapters": true,
+      "unitLabel": "III § {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, liv. III, chap. {chap}, § {n}{unnum}{page}."
+    },
+    {
+      "key": "IV",
+      "label": "Livre IV",
+      "chapters": true,
+      "unitLabel": "IV § {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, liv. IV, chap. {chap}, § {n}{unnum}{page}."
+    }
   ],
   "layers": [
     {
-      "id": "changes-1773", "file": "layers/changes-1773.json", "kind": "variants",
-      "label": "1773 changes", "default": false,
+      "id": "changes-1773",
+      "file": "layers/changes-1773.json",
+      "kind": "variants",
+      "label": "1773 changes",
+      "default": false,
       "tooltip": "Green: added in 1773. Struck through: 1758 reading dropped in 1773.",
-      "tag": "1773", "otherTag": "1758", "otherLinkLabel": "1758 page", "otherTitle": "1758 reading, dropped in 1773"
+      "tag": "1773",
+      "otherTag": "1758",
+      "otherLinkLabel": "1758 page",
+      "otherTitle": "1758 reading, dropped in 1773"
     },
     {
-      "id": "wolff-divergences", "file": "layers/wolff-divergences.json", "kind": "comments",
-      "label": "Wolff diverges", "default": true,
+      "id": "wolff-divergences",
+      "file": "layers/wolff-divergences.json",
+      "kind": "comments",
+      "label": "Wolff diverges",
+      "default": true,
       "tooltip": "Places where Wolff gives an answer to the question of the section and Vattel answers it differently. Shown as footnotes under the section.",
-      "chip": "≠ Wolff", "chipTitle": "Wolff answers this question differently", "sourceTag": "Wolff", "baseTag": "Vattel"
+      "chip": "≠ Wolff",
+      "chipTitle": "Wolff answers this question differently",
+      "sourceTag": "Wolff",
+      "baseTag": "Vattel",
+      "family": "W"
     },
     {
-      "id": "english", "file": "layers/english.json", "kind": "translation",
+      "id": "english",
+      "file": "layers/english.json",
+      "kind": "translation",
       "label": "English",
-      "panelNote": "1797 translation, Liberty Fund ed. (2008), p. {page}. Sentence alignment by machine."
+      "panelNote": "1797 translation, Liberty Fund ed. (2008), p. {page}. Sentence alignment by machine.",
+      "default": true
     }
   ],
   "reuse": {
     "baseTag": "Vattel",
     "sourceLabel": "source (OCR)",
+    "frenchLabel": "working French",
+    "noteLabel": "(note)",
+    "earliest": {
+      "witnessLabels": {
+        "intermediate": "none earlier found in Grotius or Pufendorf"
+      },
+      "hideLocusFor": [
+        "intermediate"
+      ],
+      "nearestPrefix": "Vattel's wording is nearest: ",
+      "nearestLabels": {
+        "intermediate": "the intermediate text",
+        "earlier": "the earlier text",
+        "*": "cannot tell"
+      }
+    },
     "families": [
-      {"key": "W", "label": "Wolff", "sourceLabel": "Wolff (Latin)"},
-      {"key": "G", "label": "Grotius"},
-      {"key": "P", "label": "Pufendorf"},
-      {"key": "Bb", "label": "Barbeyrac notes", "chip": "Barbeyrac"},
-      {"key": "Bu", "label": "Burlamaqui"},
-      {"key": "M", "label": "Montesquieu"},
-      {"key": "Wi", "label": "Wicquefort"},
-      {"key": "By", "label": "Bynkershoek"},
-      {"key": "F", "label": "Formey (parallel)", "chip": "Formey"},
-      {"key": "L", "label": "Vattel (own works)", "chip": "Vattel"}
+      {
+        "key": "W",
+        "label": "Wolff",
+        "sourceLabel": "Wolff (Latin)",
+        "color": "#b5462f",
+        "dark": "#f08a72"
+      },
+      {
+        "key": "G",
+        "label": "Grotius",
+        "color": "#2f6b4f",
+        "dark": "#7cc4a0"
+      },
+      {
+        "key": "P",
+        "label": "Pufendorf",
+        "color": "#2c4f86",
+        "dark": "#8fb0ea"
+      },
+      {
+        "key": "Bb",
+        "label": "Barbeyrac notes",
+        "chip": "Barbeyrac",
+        "color": "#8a5a00",
+        "dark": "#e3b65a"
+      },
+      {
+        "key": "Bu",
+        "label": "Burlamaqui",
+        "color": "#7a3e8f",
+        "dark": "#c69ad2"
+      },
+      {
+        "key": "M",
+        "label": "Montesquieu",
+        "color": "#0f7480",
+        "dark": "#6fcbd6"
+      },
+      {
+        "key": "Wi",
+        "label": "Wicquefort",
+        "color": "#8a3a5a",
+        "dark": "#e591b4"
+      },
+      {
+        "key": "By",
+        "label": "Bynkershoek",
+        "color": "#5a6b12",
+        "dark": "#bccf5f"
+      },
+      {
+        "key": "F",
+        "label": "Formey (parallel)",
+        "chip": "Formey",
+        "color": "#7a7a74",
+        "dark": "#a9aaa4"
+      },
+      {
+        "key": "L",
+        "label": "Vattel (own works)",
+        "chip": "Vattel",
+        "color": "#4a4ab0",
+        "dark": "#a8a8f2"
+      }
     ]
   },
   "viewer": {
@@ -73,9 +211,34 @@
     "citePage": ", t. {vol}, p. {printed}",
     "citeUnnumbered": " (unnumbered in 1773)",
     "volumes": {
-      "T1": {"label": "I", "zotero": "X36KM5VQ"},
-      "T2": {"label": "II", "zotero": "C5DTPFGF"}
+      "T1": {
+        "label": "I",
+        "zotero": "X36KM5VQ"
+      },
+      "T2": {
+        "label": "II",
+        "zotero": "C5DTPFGF"
+      }
     },
-    "pageLink": {"url": "zotero://open-pdf/library/items/{zotero}?page={scan}", "title": "Open in Zotero at scan {scan}"}
+    "pageLink": {
+      "url": "zotero://open-pdf/library/items/{zotero}?page={scan}",
+      "title": "Open in Zotero at scan {scan}"
+    },
+    "pageBreak": "<span class=\"pb\" data-pg=\"{vol}:{scan}\"> {vol} p. {printed} </span>",
+    "goto": [
+      {
+        "re": "^pr[ée]f\\w*\\.?[\\s.,§¶]*(\\d+)$",
+        "id": "Pref.{1}"
+      },
+      {
+        "re": "^pr[ée]l\\w*\\.?[\\s.,§¶]*(\\d+)$",
+        "id": "Prelim.{1}"
+      },
+      {
+        "re": "^(?:livre\\s+)?(IV|III|II|I)[\\s.,§¶]*(\\d+)$",
+        "id": "{1}.{2}",
+        "upper": true
+      }
+    ]
   }
 }
