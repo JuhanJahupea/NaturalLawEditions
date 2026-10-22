@@ -37,11 +37,11 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
   "title": "...",
   "editions": [{"id", "path", "author", "authorShort", "title", "short", "imprint", "date", "lang", "status"}],
   "texts":    [{"id", "siglum", "author", "title", "imprint", "date", "lang", "layer"}],
-  "reuse":    [{"path", "from", "to", "rows"}]
+  "reuse":    [{"path", "from", "to", "rows", "toLayer"}]
 }
 ```
 
-`texts.layer` says what text the comparison read (vision transcription, OCR and whose).
+`texts.layer` says what text the comparison read (vision transcription, OCR and whose). Where `to` is an edition, `reuse.toLayer` says it, since the comparison read the OCR, not the edition's transcription.
 
 ## editions/&lt;id&gt;/edition.json
 
@@ -158,4 +158,5 @@ One item per comment shown under a unit.
 - `status`: `match` (confidence ≥ 0.5) or `possible` (0.3–0.5). `step` names the pipeline step in the method log.
 - `earliest`: where an earlier text (Grotius 1625, Pufendorf 1672) already holds the passage.
 - `at` is empty for a row the build could not place on the letters of the text. `where` then says `margin` (the passage is in the marginal summary) or `unplaced`.
+- `toUnit` and `toScore`: where `to` is an edition, the unit of that edition that holds the source passage, set by `tools/link_editions.py`. It takes the units printed on the row's page or the next, and keeps the one holding the largest share of the source passage's 5-letter sequences (accents folded, long s and f as one letter), if that share is at least 0.5. The viewer turns the source citation into a link to `viewer/?ed=<to>#<toUnit>` and lists the row under that unit as "reused in".
 - Optional fields: `nearer` (`DNG` or `Devoirs`: which of the two Pufendorf texts the wording is nearer), `quoting` (an author quoted inside the source passage), `noteRef`, `sourcePart` (the part of the source volume: `barbeyrac_note`, `reflexions`, …), `relation` (in a table whose header lists `relations`).

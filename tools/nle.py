@@ -201,12 +201,15 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
         head['description'] = description
         head['rows'] = rows
         dump(head, os.path.join(ROOT, path))
-        out.append({'path': path, 'from': ed, 'to': t['id'], 'rows': len(rows)})
+        e = {'path': path, 'from': ed, 'to': t['id'], 'rows': len(rows)}
+        if 'toLayer' in head: e['toLayer'] = head['toLayer']
+        out.append(e)
     return out
 
 
 def update_catalogue(edition, texts, reuse):
-    """Add or replace the edition, the source texts it names, and its reuse tables. Other entries keep their place."""
+    """Add or replace the edition, the source texts it names, and its reuse tables. Other entries keep their place.
+    Texts that no reuse table names any more are dropped."""
     cp = os.path.join(ROOT, 'catalogue.json'); cat = load(cp)
     eds = cat['editions']; i = next((k for k, e in enumerate(eds) if e['id'] == edition['id']), None)
     if i is None: eds.append(edition)
@@ -216,6 +219,9 @@ def update_catalogue(edition, texts, reuse):
         if t['id'] in have: cat['texts'][have[t['id']]] = t
         else: cat['texts'].append(t)
     cat['reuse'] = [c for c in cat['reuse'] if c['from'] != edition['id']] + reuse
+    # a source text stays in the catalogue while a reuse table names it; an edited text is listed under editions
+    named = {c['to'] for c in cat['reuse']} - {e['id'] for e in eds}
+    cat['texts'] = [t for t in cat['texts'] if t['id'] in named]
     with open(cp, 'w', encoding='utf-8') as f:
         json.dump(cat, f, ensure_ascii=False, indent=2); f.write('\n')
 

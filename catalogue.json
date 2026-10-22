@@ -60,18 +60,8 @@
       "layer": "Google Books OCR, cleaned. Working French by machine."
     },
     {
-      "id": "burlamaqui-droit-naturel-1747",
-      "siglum": "BUR47",
-      "author": "Jean-Jacques Burlamaqui",
-      "title": "Principes du droit naturel",
-      "imprint": "Genève, 1747",
-      "date": "1747",
-      "lang": "fr",
-      "layer": "Google Books PDF text layer."
-    },
-    {
       "id": "burlamaqui-droit-politique-1751",
-      "siglum": "PDP51",
+      "siglum": "BUR51",
       "author": "Jean-Jacques Burlamaqui",
       "title": "Principes du droit politique",
       "imprint": "Amsterdam, 1751. 2 vols",
@@ -362,102 +352,6 @@
   ],
   "reuse": [
     {
-      "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
-      "from": "vattel-1773",
-      "to": "wolff-jus-gentium-1749",
-      "rows": 1205
-    },
-    {
-      "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
-      "from": "vattel-1773",
-      "to": "wolff-institutiones-1750",
-      "rows": 285
-    },
-    {
-      "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
-      "from": "vattel-1773",
-      "to": "wolff-jus-naturae-8-1748",
-      "rows": 91
-    },
-    {
-      "path": "reuse/vattel-1773__burlamaqui-droit-naturel-1747.json",
-      "from": "vattel-1773",
-      "to": "burlamaqui-droit-naturel-1747",
-      "rows": 62
-    },
-    {
-      "path": "reuse/vattel-1773__burlamaqui-droit-politique-1751.json",
-      "from": "vattel-1773",
-      "to": "burlamaqui-droit-politique-1751",
-      "rows": 382
-    },
-    {
-      "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
-      "from": "vattel-1773",
-      "to": "grotius-barbeyrac-1724",
-      "rows": 464
-    },
-    {
-      "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
-      "from": "vattel-1773",
-      "to": "pufendorf-barbeyrac-1734",
-      "rows": 284
-    },
-    {
-      "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
-      "from": "vattel-1773",
-      "to": "montesquieu-esprit-des-loix-1749",
-      "rows": 23
-    },
-    {
-      "path": "reuse/vattel-1773__wicquefort-ambassadeur-1724.json",
-      "from": "vattel-1773",
-      "to": "wicquefort-ambassadeur-1724",
-      "rows": 60
-    },
-    {
-      "path": "reuse/vattel-1773__bynkershoek-juge-competent-1723.json",
-      "from": "vattel-1773",
-      "to": "bynkershoek-juge-competent-1723",
-      "rows": 31
-    },
-    {
-      "path": "reuse/vattel-1773__bynkershoek-quaestiones-1737.json",
-      "from": "vattel-1773",
-      "to": "bynkershoek-quaestiones-1737",
-      "rows": 6
-    },
-    {
-      "path": "reuse/vattel-1773__formey-principes-1758.json",
-      "from": "vattel-1773",
-      "to": "formey-principes-1758",
-      "rows": 329
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-loisir-1747.json",
-      "from": "vattel-1773",
-      "to": "vattel-loisir-1747",
-      "rows": 16
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-questions-1762.json",
-      "from": "vattel-1773",
-      "to": "vattel-questions-1762",
-      "rows": 134
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-poliergie-1757.json",
-      "from": "vattel-1773",
-      "to": "vattel-poliergie-1757",
-      "rows": 31
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-amusemens-1765.json",
-      "from": "vattel-1773",
-      "to": "vattel-amusemens-1765",
-      "rows": 24
-    },
-    {
       "path": "reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json",
       "from": "burlamaqui-1747",
       "to": "pufendorf-barbeyrac-1734",
@@ -576,6 +470,103 @@
       "from": "burlamaqui-1747",
       "to": "burlamaqui-droit-politique-1751",
       "rows": 84
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-gentium-1749",
+      "rows": 1205
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
+      "from": "vattel-1773",
+      "to": "wolff-institutiones-1750",
+      "rows": 285
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-naturae-8-1748",
+      "rows": 91
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-1747.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-1747",
+      "rows": 62,
+      "toLayer": "Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from."
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-droit-politique-1751.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-droit-politique-1751",
+      "rows": 382
+    },
+    {
+      "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
+      "from": "vattel-1773",
+      "to": "grotius-barbeyrac-1724",
+      "rows": 464
+    },
+    {
+      "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
+      "from": "vattel-1773",
+      "to": "pufendorf-barbeyrac-1734",
+      "rows": 284
+    },
+    {
+      "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
+      "from": "vattel-1773",
+      "to": "montesquieu-esprit-des-loix-1749",
+      "rows": 23
+    },
+    {
+      "path": "reuse/vattel-1773__wicquefort-ambassadeur-1724.json",
+      "from": "vattel-1773",
+      "to": "wicquefort-ambassadeur-1724",
+      "rows": 60
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-juge-competent-1723.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-juge-competent-1723",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-quaestiones-1737.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-quaestiones-1737",
+      "rows": 6
+    },
+    {
+      "path": "reuse/vattel-1773__formey-principes-1758.json",
+      "from": "vattel-1773",
+      "to": "formey-principes-1758",
+      "rows": 329
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-loisir-1747.json",
+      "from": "vattel-1773",
+      "to": "vattel-loisir-1747",
+      "rows": 16
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-questions-1762.json",
+      "from": "vattel-1773",
+      "to": "vattel-questions-1762",
+      "rows": 134
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-poliergie-1757.json",
+      "from": "vattel-1773",
+      "to": "vattel-poliergie-1757",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-amusemens-1765.json",
+      "from": "vattel-1773",
+      "to": "vattel-amusemens-1765",
+      "rows": 24
     }
   ]
 }

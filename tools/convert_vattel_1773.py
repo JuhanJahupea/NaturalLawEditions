@@ -24,8 +24,8 @@ TEXTS = [
      'Vision transcription of the Google Books copy (scans 30–811). Working French by machine.'),
     ('JN8', 'wolff-jus-naturae-8-1748', 'Christian Wolff', 'Jus naturae methodo scientifica pertractatum, pars VIII', '1748', '1748', 'la',
      'Google Books OCR, cleaned. Working French by machine.'),
-    ('BUR47', 'burlamaqui-droit-naturel-1747', 'Jean-Jacques Burlamaqui', 'Principes du droit naturel', 'Genève, 1747', '1747', 'fr',
-     'Google Books PDF text layer.'),
+    ('BUR47', 'burlamaqui-1747', 'Jean-Jacques Burlamaqui', 'Principes du droit naturel', 'Genève, 1747', '1747', 'fr',
+     'Google Books PDF text layer.'),  # an edition in the collection
     ('BUR51', 'burlamaqui-droit-politique-1751', 'Jean-Jacques Burlamaqui', 'Principes du droit politique', 'Amsterdam, 1751. 2 vols', '1751', 'fr',
      'MDZ OCR (bsb10040032/33).'),
     ('GRO24', 'grotius-barbeyrac-1724', 'Hugo Grotius', 'Le droit de la guerre et de la paix, trad. Jean Barbeyrac', 'Amsterdam, 1724. 2 vols', '1724', 'fr',
@@ -135,7 +135,8 @@ STEPS = {'3b': 'Wolff re-scanned on a transcription (step 3b)', 4: 'Burlamaqui, 
 TX = [{'id': t[1], 'siglum': t[0], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
 cat_reuse = write_tables(ED, tables, TX, STEPS,
                          'Reuse of the source in the edition, found by retrieval and judged by a language model. '
-                         'status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the text layer named in the catalogue.')
+                         'status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the text layer named in the catalogue.',
+                         {'burlamaqui-1747': {'toLayer': 'Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from.'}})
 assert sum(c['rows'] for c in cat_reuse) == len(ROWS)
 
 # ---------- provenance ----------

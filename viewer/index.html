@@ -146,6 +146,19 @@ mark.tf.s3{border-bottom-color:#b0412e;border-bottom-width:3px}
 .msg{font:15px/1.5 var(--ui);color:var(--mut);padding:40px 0}
 .msg a{display:block;margin:6px 0}
 [hidden]{display:none!important}
+.xed{font:12.5px var(--ui);text-decoration:none;border:1px solid var(--accent);border-radius:10px;padding:0 6px;white-space:nowrap}
+.xed:hover{background:var(--accent-soft)}
+.foot .rin{display:inline-flex;flex-wrap:wrap;gap:4px;align-items:baseline}
+.ph{font:13px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:18px 0 6px}
+.rt{width:100%;border-collapse:collapse;font:13px/1.4 var(--ui)}
+.rt th{text-align:left;font-weight:500;color:var(--mut);padding:4px 8px 4px 0;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;position:sticky;top:0;background:var(--paper)}
+.rt th[aria-sort=ascending]::after{content:" ▲";font-size:10px}.rt th[aria-sort=descending]::after{content:" ▼";font-size:10px}
+.rt td{padding:5px 8px 5px 0;border-top:1px solid var(--line);vertical-align:top}
+.rt td.c-conf{font-variant-numeric:tabular-nums;white-space:nowrap}
+.rt td.c-unit a,.rt td.c-here a{white-space:nowrap;text-decoration:none}
+.rt .pas{font:13.5px/1.45 var(--text);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rt .poss{color:var(--mut);font-size:11px}
+.rt .fam{font:600 10.5px var(--ui);color:var(--paper);background:var(--c);border-radius:8px;padding:0 5px}
 @media (max-width:1100px){.app{grid-template-columns:var(--wr,230px) 6px minmax(0,1fr)}.gut[data-g=p]{display:none}.panel{position:fixed;right:0;top:0;bottom:0;width:min(420px,100%);z-index:10;box-shadow:-6px 0 20px rgba(0,0,0,.18);padding-top:calc(14px + env(safe-area-inset-top,0px))}.panel[data-open=false]{display:none}.only-narrow{display:inline-block}}
 @media (max-width:760px){.gut{display:none}.only-phone{display:inline-block}.filt{display:flex;flex-wrap:wrap;gap:8px;flex-basis:100%}.filt[data-open=false]{display:none}.brand{font-size:17px}.bar input[type=search]{flex:1 1 140px}.app{grid-template-columns:minmax(0,1fr)}.rail{position:fixed;left:0;top:0;bottom:0;width:min(300px,88%);z-index:10;box-shadow:6px 0 20px rgba(0,0,0,.18);padding-top:calc(14px + env(safe-area-inset-top,0px))}.rail[data-open=false]{display:none}.read{padding-inline:16px}.tx{text-align:left}}
 @media (prefers-reduced-motion:no-preference){.sec.flash .tx{animation:fl 1.2s ease-out}@keyframes fl{from{background:var(--accent-soft)}to{background:transparent}}}
