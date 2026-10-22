@@ -4,7 +4,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fill=(t,o)=>String(t??'').replace(/\{(\w+)\}/g,(m,k)=>o[k]??'');
 const QS=new URLSearchParams(location.search);
-let VIEW=QS.get('view')==='list'?'list':'text',LTAB='out';
+let VIEW=QS.get('view')==='list'?'list':'text',LTAB='out',LCH=QS.get('ch')||'';
 let CAT=null,ED='',BASE='',M=null,V={},RU={},DIVS={},TITLES={},FAMS=[],FAMI={},FN={},st={};
 const LAYS=[],LAY={},MAN={};
 const SEC=[],ROWS=[],byId={},rowsBySec={},CH=[],chOf={},IN={},INROWS=[];
@@ -123,7 +123,8 @@ function layerClasses(){const p=$('page');p.classList.toggle('chg',layerOn('vari
 function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[0];st.chap=c.key;save();
  document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',a.dataset.ch===c.key));
  const d=DIVS[c.book]||{};const t=d.pageTitle||ctitle(c);
- const h=`<div class="chead">${esc(d.label)}${d.chapters?' · '+esc(V.chapterWord)+' '+c.chap:''}</div><h1 class="ctitle">${esc(t)}</h1>`+c.secs.map(secHTML).join('');
+ const nr=c.secs.reduce((a,s)=>a+(rowsBySec[s.id]||[]).filter(visRow).length,0);
+ const h=`<div class="chead">${esc(d.label)}${d.chapters?' · '+esc(V.chapterWord)+' '+c.chap:''}</div><h1 class="ctitle">${esc(t)}</h1>${nr?`<p class="lsub"><a href="?ed=${encodeURIComponent(ED)}&view=list&ch=${encodeURIComponent(c.key)}" data-chlist="${esc(c.key)}">${nr} reuse rows in this chapter, as a list</a></p>`:''}`+c.secs.map(secHTML).join('');
  $('page').innerHTML=h;layerClasses();applyFilters();
  if(target){const el=$(target);if(el){el.scrollIntoView({block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1300);if(!keep)select(target)}}else $('read').scrollTop=0;
  if(innerWidth<=760)$('rail').dataset.open='false'}
@@ -176,16 +177,22 @@ function rowsTable(id,rows,cols){const t=TBL[id]=TBL[id]||{sort:cols[0],dir:1};t
  return `<div class="rtw"><table class="rt" data-t="${esc(id)}"><thead><tr>${cols.map(c=>`<th data-sort="${c}" aria-sort="${t.sort===c?(t.dir>0?'ascending':'descending'):'none'}">${COLS[c].label}</th>`).join('')}</tr></thead>
  <tbody>${v.map(([,r])=>`<tr>${cols.map(c=>`<td class="c-${c}">${COLS[c].html(r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
 // list view: viewer/?ed=<id>&view=list
-function viewChrome(){const q=new URLSearchParams(location.search),v=VIEW;if(v==='list')q.set('view','list');else q.delete('view');
+function viewChrome(){const q=new URLSearchParams(location.search),v=VIEW;if(v==='list')q.set('view','list');else q.delete('view');if(v==='list'&&LCH)q.set('ch',LCH);else q.delete('ch');
  history.replaceState(null,'','?'+q.toString()+(v==='text'&&st.sel?'#'+st.sel:''));$('vText').setAttribute('aria-pressed',v==='text');$('vList').setAttribute('aria-pressed',v==='list');
  document.body.classList.toggle('listing',v==='list')}
 function setView(v){VIEW=v;viewChrome();if(v==='list')listView();else go(st.sel&&byId[st.sel]?st.sel:V.start||CH[0].secs[0].id)}
-function listView(){const all=ROWS.filter(Boolean),out=all.filter(visRow),inc=INROWS.filter(visIn),isIn=LTAB==='in'&&INROWS.length>0;
+// a chapter's label for menus: division, chapter, title
+const chLabel=c=>{const d=DIVS[c.book]||{};return (d.chapters?`${d.label.split(' · ')[0]}, ch. ${c.chap}: `:'')+ctitle(c)};
+function listView(){const C=CH.find(c=>c.key===LCH);if(!C)LCH='';
+ const inCh=u=>!LCH||(chOf[u]&&chOf[u].key===LCH);
+ const all=ROWS.filter(r=>r&&inCh(r.sec)),out=all.filter(visRow),inA=INROWS.filter(r=>inCh(r.toUnit)),inc=inA.filter(visIn),isIn=LTAB==='in'&&INROWS.length>0;
  const tabs=INROWS.length?`<div class="seg" role="group"><button data-ltab="out" aria-pressed="${!isIn}">Sources used (${out.length})</button><button data-ltab="in" aria-pressed="${isIn}">Reused in other editions (${inc.length})</button></div>`:'';
- const n=isIn?`${inc.length} of ${INROWS.length} rows`:`${out.length} of ${all.length} rows`;
- $('page').innerHTML=`<div class="chead">${esc(M.short)}</div><h1 class="ctitle">Reuse, row by row</h1>${tabs}<p class="lsub">${n} shown. The filters in the top bar apply. Click a column head to sort, a unit to read it.</p>`+
+ const n=isIn?`${inc.length} of ${inA.length} rows`:`${out.length} of ${all.length} rows`;
+ const sel=`<select id="lch" class="edsel lch" aria-label="Chapter"><option value="">All chapters</option>${CH.map(c=>`<option value="${esc(c.key)}"${c.key===LCH?' selected':''}>${esc(chLabel(c))}</option>`).join('')}</select>`;
+ $('page').innerHTML=`<div class="chead">${esc(M.short)}</div><h1 class="ctitle">${C?esc(ctitle(C)):'Reuse, row by row'}</h1><div class="lbar">${sel}${tabs}</div><p class="lsub">${n} shown${C?' in this chapter':''}. The filters in the top bar apply. Click a column head to sort, a unit to read it. The contents list picks a chapter.</p>`+
   (isIn?rowsTable('list:in',inc,['here','there','label','conf','theirs']):rowsTable('list:out',out,['unit','source','label','conf','passage']));
- document.querySelectorAll('.rail a').forEach(a=>a.classList.remove('on'))}
+ $('lch').onchange=e=>{LCH=e.target.value;viewChrome();listView()};
+ document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',!!LCH&&a.dataset.ch===LCH))}
 function resort(th){const tb=th.closest('table'),id=tb.dataset.t,t=TBL[id],c=th.dataset.sort;if(t.sort===c)t.dir=-t.dir;else{t.sort=c;t.dir=1}tb.outerHTML=rowsTable(id,t.rows,t.cols)}
 // translation layer
 let enMode='tr';try{enMode=localStorage.getItem('nleEnMode')||'tr'}catch(e){}
@@ -241,6 +248,8 @@ function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.r
 document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('panel').dataset.open='false';return}const u=e.target.closest('.u:not(.off)');if(u){e.preventDefault();document.querySelectorAll('.u.hit').forEach(x=>x.classList.remove('hit'));u.classList.add('hit');const sec=u.closest('.sec');select(sec.id,u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i])));return}
  const th=e.target.closest('th[data-sort]');if(th){resort(th);return}
  const lt=e.target.closest('[data-ltab]');if(lt){LTAB=lt.dataset.ltab;listView();return}
+ const cl=e.target.closest('[data-chlist]');if(cl){e.preventDefault();LCH=cl.dataset.chlist;setView('list');edInfo();return}
+ const rc=e.target.closest('.rail a[data-ch]');if(rc&&VIEW==='list'){e.preventDefault();LCH=rc.dataset.ch;viewChrome();listView();if(innerWidth<=760)$('rail').dataset.open='false';return}
  const rl=e.target.closest('a[data-row]');if(rl){e.preventDefault();const id=rl.getAttribute('href').slice(1);go(id,true);select(id,[Number(rl.dataset.row)]);$('panel').dataset.open='true';return}
  const al=e.target.closest('[data-all]');if(al){select(al.dataset.all);return}
  const en=e.target.closest('[data-en]');if(en){showEN(en.dataset.en,null);return}

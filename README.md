@@ -9,7 +9,7 @@ Each edition is a base text cut into units with fixed ids, plus layers on that t
 ```
 catalogue.json          editions, source texts and reuse tables in the collection
 index.html              landing page
-viewer/                 one viewer for every edition: viewer/?ed=<edition id>#<unit id>; the list of reuse rows: viewer/?ed=<edition id>&view=list
+viewer/                 one viewer for every edition: viewer/?ed=<edition id>#<unit id>; the list of reuse rows: viewer/?ed=<edition id>&view=list[&ch=<chapter>]
 editions/<id>/          one folder per edition: manifest, text, layers, changelog, provenance
 reuse/                  reuse tables between texts
 docs/FORMAT.md          the file formats
