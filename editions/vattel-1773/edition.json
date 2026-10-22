@@ -1,0 +1,81 @@
+{
+  "format": "nle-edition/1",
+  "id": "vattel-1773",
+  "author": "Emer de Vattel",
+  "title": "Le droit des gens, ou principes de la loi naturelle, appliqués à la conduite et aux affaires des nations et des souverains",
+  "short": "Le droit des gens · 1773",
+  "imprint": "Neuchâtel: Société typographique, 1773",
+  "date": "1773",
+  "lang": "fr",
+  "witness": {
+    "copy": "Bayerische Staatsbibliothek, 4 Bibl.Mont. 4579-1/2",
+    "volumes": {
+      "T1": {"scans": "MDZ bsb10725331", "contents": "Préface pp. 1–24, Préliminaires §§ 1–28, Livre I §§ 1–295, Livre II §§ 1–354"},
+      "T2": {"scans": "MDZ bsb10725332", "contents": "Livre III §§ 1–296, Livre IV §§ 1–127"}
+    },
+    "excluded": "Abrégé de la vie de M. de Vattel (T2 pp. i–vi), editorial"
+  },
+  "transcription": "Vision transcription of the page images, one diplomatic file per scan; reading text with long s resolved and line-end hyphens joined. Paragraph breaks inside a § checked against the scans (provenance/para_final.json).",
+  "text": "text.json",
+  "aliases": {},
+  "divisions": [
+    {"key": "Pref", "label": "Front matter", "kind": "page", "chapterTitle": "Préface", "unitLabel": "Préf. p. {n}", "unitMark": "p.", "cite": "{prefix}, t. I, Préface, p. {n}.", "goto": ["pr[ée]f\\w*\\.?"]},
+    {"key": "Prelim", "label": "Préliminaires", "chapterTitle": "Idée et principes généraux", "pageTitle": "Idée et principes généraux du droit des gens", "unitLabel": "Prél. § {n}", "unitMark": "§", "cite": "{prefix}, Préliminaires, § {n}{unnum}{page}.", "goto": ["pr[ée]l\\w*\\.?"]},
+    {"key": "I", "label": "Livre I", "chapters": true, "unitLabel": "I § {n}", "unitMark": "§", "cite": "{prefix}, liv. I, chap. {chap}, § {n}{unnum}{page}.", "goto": ["I", "livre\\s+I"]},
+    {"key": "II", "label": "Livre II", "chapters": true, "unitLabel": "II § {n}", "unitMark": "§", "cite": "{prefix}, liv. II, chap. {chap}, § {n}{unnum}{page}.", "goto": ["II", "livre\\s+II"]},
+    {"key": "III", "label": "Livre III", "chapters": true, "unitLabel": "III § {n}", "unitMark": "§", "cite": "{prefix}, liv. III, chap. {chap}, § {n}{unnum}{page}.", "goto": ["III", "livre\\s+III"]},
+    {"key": "IV", "label": "Livre IV", "chapters": true, "unitLabel": "IV § {n}", "unitMark": "§", "cite": "{prefix}, liv. IV, chap. {chap}, § {n}{unnum}{page}.", "goto": ["IV", "livre\\s+IV"]}
+  ],
+  "layers": [
+    {
+      "id": "changes-1773", "file": "layers/changes-1773.json", "kind": "variants",
+      "label": "1773 changes", "default": false,
+      "tooltip": "Green: added in 1773. Struck through: 1758 reading dropped in 1773.",
+      "tag": "1773", "otherTag": "1758", "otherLinkLabel": "1758 page", "otherTitle": "1758 reading, dropped in 1773"
+    },
+    {
+      "id": "wolff-divergences", "file": "layers/wolff-divergences.json", "kind": "comments",
+      "label": "Wolff diverges", "default": true,
+      "tooltip": "Places where Wolff gives an answer to the question of the section and Vattel answers it differently. Shown as footnotes under the section.",
+      "chip": "≠ Wolff", "chipTitle": "Wolff answers this question differently", "sourceTag": "Wolff", "baseTag": "Vattel"
+    },
+    {
+      "id": "english", "file": "layers/english.json", "kind": "translation",
+      "label": "English",
+      "panelNote": "1797 translation, Liberty Fund ed. (2008), p. {page}. Sentence alignment by machine."
+    }
+  ],
+  "reuse": {
+    "baseTag": "Vattel",
+    "sourceLabel": "source (OCR)",
+    "families": [
+      {"key": "W", "label": "Wolff", "sourceLabel": "Wolff (Latin)"},
+      {"key": "G", "label": "Grotius"},
+      {"key": "P", "label": "Pufendorf"},
+      {"key": "Bb", "label": "Barbeyrac notes", "chip": "Barbeyrac"},
+      {"key": "Bu", "label": "Burlamaqui"},
+      {"key": "M", "label": "Montesquieu"},
+      {"key": "Wi", "label": "Wicquefort"},
+      {"key": "By", "label": "Bynkershoek"},
+      {"key": "F", "label": "Formey (parallel)", "chip": "Formey"},
+      {"key": "L", "label": "Vattel (own works)", "chip": "Vattel"}
+    ]
+  },
+  "viewer": {
+    "brand": "Le droit des gens · 1773",
+    "start": "Prelim.1",
+    "searchPlaceholder": "Search, or go to II 141, Préf 3",
+    "chapterWord": "Chapitre",
+    "unitsWord": "§§",
+    "unnumberedLabel": "no number in 1773 print",
+    "unnumberedTitle": "This paragraph has no § number in the 1773 print; it is numbered in the 1797 English translation.",
+    "citePrefix": "Vattel, Le droit des gens (Neuchâtel 1773)",
+    "citePage": ", t. {vol}, p. {printed}",
+    "citeUnnumbered": " (unnumbered in 1773)",
+    "volumes": {
+      "T1": {"label": "I", "zotero": "X36KM5VQ"},
+      "T2": {"label": "II", "zotero": "C5DTPFGF"}
+    },
+    "pageLink": {"url": "zotero://open-pdf/library/items/{zotero}?page={scan}", "title": "Open in Zotero at scan {scan}"}
+  }
+}

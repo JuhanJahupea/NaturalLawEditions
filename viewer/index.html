@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Natural Law Editions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: contents rail | reading column (~66ch) | source panel; on phones the rail and panel become sheets. */
+:root{
+  --bg:#f5f6f3; --paper:#fbfbf9; --fg:#1d211f; --mut:#5e6662; --line:#d9ddd6; --soft:#eceee9;
+  --accent:#27507c; --accent-soft:#e3eaf2; --add:#e3efe1; --add-line:#5f8f55; --del:#f4e3df;
+  --fW:#b5462f; --fG:#2f6b4f; --fP:#2c4f86; --fBb:#8a5a00; --fBu:#7a3e8f; --fM:#0f7480; --fWi:#8a3a5a; --fBy:#5a6b12; --fF:#7a7a74; --fL:#4a4ab0;
+  --display:"IM Fell French Canon SC", "Iowan Old Style", Georgia, serif;
+  --text:"Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --ui:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121514; --paper:#181c1a; --fg:#e2e5e1; --mut:#9aa39e; --line:#2c322f; --soft:#202522;
+  --accent:#8fb3dc; --accent-soft:#1e2a37; --add:#1d2b1d; --add-line:#8cc580; --del:#352321;
+  --fW:#f08a72; --fG:#7cc4a0; --fP:#8fb0ea; --fBb:#e3b65a; --fBu:#c69ad2; --fM:#6fcbd6; --fWi:#e591b4; --fBy:#bccf5f; --fF:#a9aaa4; --fL:#a8a8f2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121514; --paper:#181c1a; --fg:#e2e5e1; --mut:#9aa39e; --line:#2c322f; --soft:#202522;
+  --accent:#8fb3dc; --accent-soft:#1e2a37; --add:#1d2b1d; --add-line:#8cc580; --del:#352321;
+  --fW:#f08a72; --fG:#7cc4a0; --fP:#8fb0ea; --fBb:#e3b65a; --fBu:#c69ad2; --fM:#6fcbd6; --fWi:#e591b4; --fBy:#bccf5f; --fF:#a9aaa4; --fL:#a8a8f2; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--text)}
+a{color:var(--accent)}
+button,input,select{font:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{display:grid;grid-template-columns:var(--wr,260px) 6px minmax(0,1fr) 6px var(--wp,400px);grid-template-rows:auto minmax(0,1fr);height:100%}
+.gut{cursor:col-resize;background:var(--bg);position:relative;touch-action:none}
+.gut::after{content:"";position:absolute;inset:0 2px;border-radius:2px}
+.gut:hover::after,.gut.drag::after{background:var(--accent-soft)}
+body.resizing{user-select:none;cursor:col-resize}
+.filt{display:contents}
+/* top bar */
+.bar{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:8px 16px;border-bottom:1px solid var(--line);background:var(--paper);font:14px var(--ui);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.brand{font:20px/1 var(--display);letter-spacing:.02em;margin-right:6px;white-space:nowrap}
+.bar input[type=search]{width:min(260px,100%);padding:5px 9px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg)}
+.tg{display:flex;align-items:center;gap:5px;color:var(--mut);white-space:nowrap;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:12px;padding:1px 8px 1px 6px;font:12.5px var(--ui);cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.chip i{width:9px;height:9px;border-radius:50%;display:inline-block;background:var(--c)}
+.chip[aria-pressed=false]{opacity:.45}
+.btn{border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:4px;padding:3px 9px;cursor:pointer;font:13px var(--ui)}
+.btn:hover{border-color:var(--accent)}
+.only-narrow,.only-phone{display:none}
+/* rail */
+.rail{overflow:auto;border-right:1px solid var(--line);padding-block:12px;padding-inline:14px;font:13.5px/1.4 var(--ui);background:var(--paper)}
+.rail h3{font:15px var(--display);margin:14px 0 4px;letter-spacing:.03em}
+.rail a{display:flex;gap:6px;text-decoration:none;color:var(--fg);padding:3px 4px;border-radius:3px}
+.rail a .n{color:var(--mut);min-width:2.6em;font-variant-numeric:tabular-nums}
+.rail a.on{background:var(--accent-soft)}
+.rail .meter{margin-left:auto;align-self:center;width:34px;height:4px;background:var(--soft);border-radius:2px;flex:none}
+.rail .meter b{display:block;height:100%;background:var(--accent);border-radius:2px}
+/* reading column */
+.read{overflow:auto;padding-block:20px 80px;padding-inline:24px}
+.page{max-width:68ch;margin:0 auto}
+.chead{font:13px var(--ui);color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.ctitle{font:28px/1.25 var(--display);margin:4px 0 22px;text-wrap:balance}
+.sec{margin:0 0 26px;scroll-margin-top:70px}
+.sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;font:13px var(--ui);color:var(--mut);margin-bottom:4px}
+.sh .no{font:600 15px var(--ui);color:var(--fg)}
+.sh .unn{font:11.5px var(--ui);color:var(--mut);border:1px dashed var(--line);border-radius:3px;padding:0 5px}
+.sh .marg{font-style:italic;font-family:var(--text);font-size:14.5px;color:var(--mut);flex-basis:100%}
+.sh .dots{display:inline-flex;gap:3px;cursor:pointer;border:0;background:none;padding:0}
+.sh .dots span{font:600 11px var(--ui);color:var(--paper);background:var(--c);border-radius:8px;padding:0 5px}
+.sh .tools{margin-left:auto;display:flex;gap:6px}
+.sh .tools button{border:0;background:none;color:var(--mut);cursor:pointer;font:12.5px var(--ui);padding:0}
+.sh .tools button:hover{color:var(--accent)}
+.sec.sel .tx{background:var(--paper);box-shadow:0 0 0 8px var(--paper)}
+.tx{text-align:justify;hyphens:auto}
+.tx .para{display:block;height:.3em}
+.tx .para::after{content:"";display:inline-block;width:1.6em;height:1px}
+.u{text-decoration:underline;text-decoration-color:var(--c,var(--accent));text-decoration-thickness:2px;text-underline-offset:3px;cursor:pointer}
+.u.multi{text-decoration-style:double}
+.u.poss{text-decoration-style:dashed;text-decoration-thickness:1.5px}
+.u.off{text-decoration:none;cursor:auto}
+.u.hit{background:var(--accent-soft)}
+.chg .v73{background:var(--add);box-shadow:inset 2px 0 var(--add-line);padding:0 2px}
+.d58{display:none}
+.chg .d58{display:inline;text-decoration:line-through;text-decoration-color:#b0412e;background:var(--del);color:var(--mut);padding:0 2px}
+.chg .d58::before{content:var(--old-tag,"");font:10px var(--ui);text-decoration:none;display:inline-block;margin-right:2px;color:#b0412e}
+.pb{font:11px var(--ui);color:var(--mut);border:1px solid var(--line);border-radius:3px;padding:0 3px;margin:0 3px;vertical-align:1px;white-space:nowrap;cursor:pointer}
+.xr{text-decoration:none;border-bottom:1px dotted var(--accent)}
+.notes{margin-top:8px;padding-top:6px;border-top:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--fg)}
+.note{margin:4px 0}.note .mk{font:12px var(--ui);color:var(--mut);margin-right:4px}
+.chg .note.added{background:var(--add);box-shadow:inset 3px 0 var(--add-line);padding:2px 8px}
+.chg .note.added .v73{background:none;box-shadow:none}
+.foot{font:12.5px var(--ui);color:var(--mut);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 10px}
+.foot a{text-decoration:none}
+.del{background:var(--del);padding:4px 8px;font-size:14px;margin-top:6px}
+.dvs{margin-top:8px;border-top:1px dotted var(--line);padding-top:4px}
+.dv{font:13px/1.5 var(--ui);color:var(--fg);margin:3px 0}
+.dv summary{cursor:pointer;list-style:none;display:flex;gap:8px;align-items:baseline;color:var(--mut)}
+.dv summary::-webkit-details-marker{display:none}
+.dv summary .wm{font:600 11px var(--ui);color:var(--paper);background:var(--fW);border-radius:8px;padding:0 6px;white-space:nowrap}
+.dv.partly summary .wm{background:none;color:var(--fW);box-shadow:inset 0 0 0 1px var(--fW)}
+.dv summary .q{font-style:italic}
+.dv summary:hover .q{color:var(--accent)}
+.dv[open] summary .q{color:var(--fg)}
+.dvb{margin:4px 0 6px 0;padding-left:10px;border-left:2px solid var(--fW);font-size:13.5px}
+.dvb .q{margin:3px 0;padding-left:8px;border-left:2px solid var(--line);font-size:12.5px;color:var(--mut)}
+.dvb .q small{display:block;font:10.5px var(--ui);text-transform:uppercase;letter-spacing:.3px}
+.dvb .q.la{font-family:var(--text);font-style:italic;font-size:13px}
+.dvb .q.fr{font-family:var(--text);font-size:13px}
+.dvb .lk{font:12px var(--ui);color:var(--mut);margin-top:3px}
+.sh .dvc{font:600 11px var(--ui);color:var(--fW);border:1px solid var(--fW);border-radius:8px;padding:0 6px;cursor:pointer;background:none}
+.nodiv .dvs,.nodiv .dvc{display:none}
+/* panel */
+.panel{overflow:auto;border-left:1px solid var(--line);background:var(--paper);padding-block:14px 40px;padding-inline:16px;font:14px/1.5 var(--ui)}
+.panel h2{font:20px var(--display);margin:0 0 4px}
+.panel .sub{color:var(--mut);font-size:13px;margin-bottom:10px}
+.m{border-top:1px solid var(--line);padding:10px 0}
+.m.hl{background:var(--accent-soft);margin-inline:-16px;padding-inline:16px}
+.mh{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;font-size:13px}
+.fam{font:600 11px var(--ui);color:var(--paper);background:var(--c);border-radius:8px;padding:0 6px}
+.lab{border:1px solid var(--line);border-radius:3px;padding:0 5px;font-size:12px}
+.q{font:15px/1.5 var(--text);margin:6px 0 0;padding-left:10px;border-left:3px solid var(--c)}
+.q.src{border-left-color:var(--line);color:var(--fg)}
+.q small{display:block;font:11px var(--ui);color:var(--mut);letter-spacing:.05em;text-transform:uppercase}
+.ew{margin-top:8px;padding:6px 8px;background:var(--soft);border-radius:4px;font-size:13px}
+.why{color:var(--mut);font-size:12.5px;margin-top:6px}
+.lk{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;font-size:12.5px}
+.empty{color:var(--mut)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);font:13px var(--ui);padding:6px 12px;border-radius:4px;z-index:20}
+.res a{display:block;padding:6px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--fg)}
+.res a b{color:var(--accent);font-family:var(--ui);font-size:13px;margin-right:6px}
+.res mark{background:var(--accent-soft);color:inherit}
+.res a.on{background:var(--accent-soft);margin-inline:-16px;padding-inline:16px}
+.enpop{position:fixed;z-index:30;font:600 12px var(--ui);background:var(--fg);color:var(--bg);border:0;border-radius:12px;padding:3px 10px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.enpop[hidden]{display:none}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:4px 0 10px}
+.seg button{border:0;background:var(--bg);color:var(--fg);font:12.5px var(--ui);padding:3px 9px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--accent);color:var(--paper)}
+.ent{font:15.5px/1.6 var(--text);margin:0 0 8px}
+.cmp{border-top:1px solid var(--line);padding:8px 0}
+.cmp .fr,.cmp .en{font:14.5px/1.5 var(--text)}
+.cmp .fr{color:var(--mut);margin-bottom:4px}
+mark.tf{background:none;border-bottom:2px solid #c0762b;color:inherit;cursor:help}
+mark.tf.s3{border-bottom-color:#b0412e;border-bottom-width:3px}
+.tfl{font:12.5px/1.45 var(--ui);margin:4px 0 0;padding:4px 8px;background:var(--soft);border-radius:3px}
+.tfl b{font-weight:600;color:#a0561c}
+.enhd{color:var(--mut);font-size:12.5px}
+::highlight(shl){background:#f3d36b;color:#1d211f}
+.pref p{text-align:justify;margin:0 0 12px}
+.msg{font:15px/1.5 var(--ui);color:var(--mut);padding:40px 0}
+.msg a{display:block;margin:6px 0}
+[hidden]{display:none!important}
+@media (max-width:1100px){.app{grid-template-columns:var(--wr,230px) 6px minmax(0,1fr)}.gut[data-g=p]{display:none}.panel{position:fixed;right:0;top:0;bottom:0;width:min(420px,100%);z-index:10;box-shadow:-6px 0 20px rgba(0,0,0,.18);padding-top:calc(14px + env(safe-area-inset-top,0px))}.panel[data-open=false]{display:none}.only-narrow{display:inline-block}}
+@media (max-width:760px){.gut{display:none}.only-phone{display:inline-block}.filt{display:flex;flex-wrap:wrap;gap:8px;flex-basis:100%}.filt[data-open=false]{display:none}.brand{font-size:17px}.bar input[type=search]{flex:1 1 140px}.app{grid-template-columns:minmax(0,1fr)}.rail{position:fixed;left:0;top:0;bottom:0;width:min(300px,88%);z-index:10;box-shadow:6px 0 20px rgba(0,0,0,.18);padding-top:calc(14px + env(safe-area-inset-top,0px))}.rail[data-open=false]{display:none}.read{padding-inline:16px}.tx{text-align:left}}
+@media (prefers-reduced-motion:no-preference){.sec.flash .tx{animation:fl 1.2s ease-out}@keyframes fl{from{background:var(--accent-soft)}to{background:transparent}}}
+</style>
+</head><body>
+
+<div class="app" id="app">
+  <div class="bar">
+    <a class="brand" id="brand" href="../" style="color:inherit;text-decoration:none">Natural Law Editions</a>
+    <button class="btn only-narrow" id="railBtn" aria-controls="rail">Contents</button>
+    <input type="search" id="q" placeholder="Search" aria-label="Search the text or go to a section">
+    <button class="btn only-phone" id="filtBtn" aria-controls="filt">Filters</button>
+    <div class="filt" id="filt" data-open="false">
+    <label class="tg" id="lSrc"><input type="checkbox" id="tSrc" checked> Sources</label>
+    <label class="tg" id="lPos"><input type="checkbox" id="tPos"> Possible matches <span style="text-decoration:underline dashed;text-underline-offset:3px">dashed</span></label>
+    <label class="tg" id="l73"><input type="checkbox" id="t73"> <span></span></label>
+    <label class="tg" id="lDiv"><input type="checkbox" id="tDiv" checked> <span></span></label>
+    <div class="chips" id="fams" aria-label="Source filter"></div>
+    </div>
+    <button class="btn only-narrow" id="panelBtn" aria-controls="panel">Panel</button>
+  </div>
+  <nav class="rail" id="rail" data-open="false" aria-label="Contents"></nav>
+  <div class="gut" data-g="r" role="separator" aria-label="Resize contents"></div>
+  <main class="read" id="read"><div class="page" id="page"></div></main>
+  <div class="gut" data-g="p" role="separator" aria-label="Resize panel"></div>
+  <aside class="panel" id="panel" data-open="false" aria-live="polite"></aside>
+</div>
+<button class="enpop" id="enPop" hidden>English</button>
+<script src="compose.js"></script>
+<script>
+// Shared viewer. Reads catalogue.json, then the edition named by ?ed=: its text, layers and reuse tables.
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fill=(t,o)=>String(t??'').replace(/\{(\w+)\}/g,(m,k)=>o[k]??'');
+let ED='',M=null,V={},DIVS={},LAY={},TITLES={},FAMS=[],FAMI={},FN={},st={};
+const SEC=[],ROWS=[],byId={},rowsBySec={},CH=[],chOf={};
+function save(){try{localStorage.setItem('nle:'+ED,JSON.stringify({src:st.src,pos:st.pos,v73:st.v73,div:st.div,widths:st.widths,fams:st.fams,chap:st.chap,sel:st.sel}))}catch(e){}}
+async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error(u+' ('+r.status+')');return r.json()}
+function fail(h){$('page').innerHTML=`<div class="msg">${h}</div>`}
+async function load(){
+ fail('Loading…');
+ const cat=await getJSON('../catalogue.json');
+ ED=new URLSearchParams(location.search).get('ed')||(cat.editions.length===1?cat.editions[0].id:'');
+ const E=cat.editions.find(e=>e.id===ED);
+ if(!E){fail('Choose an edition:'+cat.editions.map(e=>`<a href="?ed=${encodeURIComponent(e.id)}">${esc(e.author)}, ${esc(e.short||e.title)}</a>`).join(''));return false}
+ const base='../'+E.path;
+ M=await getJSON(base+'edition.json');V=M.viewer||{};
+ const tables=(cat.reuse||[]).filter(t=>t.from===ED);
+ const got=await Promise.all([getJSON(base+M.text),...M.layers.map(l=>getJSON(base+l.file)),...tables.map(t=>getJSON('../'+t.path))]);
+ build(got[0],got.slice(1,1+M.layers.length),got.slice(1+M.layers.length));return true}
+const pageLink=p=>{const vol=(V.volumes||{})[p.vol]||{};return V.pageLink?fill(V.pageLink.url,Object.assign({},vol,p)):''};
+function build(T,layers,tables){
+ TITLES=T.titles||{};DIVS=Object.fromEntries(M.divisions.map(d=>[d.key,d]));
+ const fams=(M.reuse&&M.reuse.families)||[];FAMS=fams.map(f=>[f.key,f.label]);FAMI=Object.fromEntries(fams.map(f=>[f.key,f]));FN=Object.fromEntries(FAMS);
+ const marks={},extra={};
+ const mk=(u,kind,p)=>{const m=marks[u]=marks[u]||{reuse:{},vars:{},old:{}};return m[kind][p]=m[kind][p]||(kind==='old'?{}:[])};
+ const ex=u=>extra[u]=extra[u]||{vars:[],div:[],added:new Set()};
+ tables.forEach(tb=>tb.rows.forEach(r=>{const o={id:r.id,sec:r.unit,fam:r.family,work:r.work,locus:r.locus,page:r.page,note:r.inNote,label:r.label,conf:r.confidence,status:r.status,vp:r.passage,sp:r.source,reason:r.reason,links:r.links||[],where:r.at.length?r.at[0][0]:'',step:r.step};
+  if(r.french)o.fr=r.french;if(r.earliest)o.ew=r.earliest;ROWS[r.id]=o;(rowsBySec[r.unit]=rowsBySec[r.unit]||[]).push(o);
+  r.at.forEach(([p,a,b])=>mk(r.unit,'reuse',p).push([a,b,r.id]))}));
+ const EN={};
+ M.layers.forEach((l,k)=>{const L=layers[k];LAY[l.kind]=l;
+  if(l.kind==='variants')L.items.forEach(v=>{const e=ex(v.unit);
+   e.vars.push({id:v.id,type:v.type,content:v.content,p1773:v.passage,p1758:v.otherPassage,pages1758:v.otherPages,link1758:v.otherLink,placed:v.placed});
+   (v.at||[]).forEach(([p,a,b])=>mk(v.unit,'vars',p).push([a,b,v.id]));(v.wholeNotes||[]).forEach(n=>e.added.add(n));
+   (v.otherReadings||[]).forEach(([p,pos,txt])=>{const o=mk(v.unit,'old',p);(o[pos]=o[pos]||[]).push(`<span class="d58" data-v="${v.id}" title="${Compose.esc(l.otherTitle)}">${Compose.esc(txt)}</span>`)})});
+  if(l.kind==='comments')L.items.forEach(d=>ex(d.unit).div.push({w:d.locus,wid:d.sourceId,rel:d.relation,sev:d.severity,c:d.comment,lat:d.sourcePassage,vp:d.passage,conf:d.confidence,q:d.question,link:d.links||[]}));
+  if(l.kind==='translation')Object.assign(EN,L.units)});
+ const order={},cited={};T.units.forEach((u,i)=>order[u.id]=i);
+ T.units.forEach(u=>[...(u.xr||[]),...(u.notes||[]).flatMap(n=>n.xr||[])].forEach(x=>(cited[x[2]]=cited[x[2]]||new Set()).add(u.id)));
+ const famOf=id=>ROWS[id].fam;
+ T.units.forEach((u,i)=>{const e=extra[u.id]||{vars:[],div:[],added:new Set()};const c=Compose.composeUnit(u,marks[u.id]||{},famOf);
+  const s={id:u.id,i,book:u.div,chap:u.chap,para:u.n,margin:u.margin||'',kind:u.kind,unnum:!!u.unnumbered,html:c.html,
+   notes:c.notes.map((n,k)=>({mark:n.mark,html:n.html,added:e.added.has(k)})),pages:(u.pages||[]).map(p=>Object.assign({z:pageLink(p)},p)),
+   vars:e.vars,citedBy:[...(cited[u.id]||[])].sort((a,b)=>order[a]-order[b])};
+  if(e.div.length)s.div=e.div;
+  const en=EN[u.id];if(en){s.en={s:en.sents,g:en.align,p:en.page,f:en.flags||[]};s.fs=en.fr}
+  SEC.push(s);byId[s.id]=s});
+ SEC.forEach(s=>{if(s.kind==='heading')return;const d=DIVS[s.book]||{};const k=d.chapters?s.book+'.'+s.chap:s.chap;let c=CH[CH.length-1];if(!c||c.key!==k){c={key:k,book:s.book,chap:s.chap,secs:[]};CH.push(c)}c.secs.push(s);chOf[s.id]=c});
+ st={src:true,pos:false,v73:!!(LAY.variants&&LAY.variants.default),div:!LAY.comments||LAY.comments.default!==false,fams:Object.fromEntries(FAMS.map(f=>[f[0],true])),chap:null,sel:null};
+ try{const s=JSON.parse(localStorage.getItem('nle:'+ED)||'{}');Object.assign(st,s,{fams:Object.assign(st.fams,s.fams||{})})}catch(e){}}
+const lbl=id=>{const i=id.indexOf('.'),d=DIVS[id.slice(0,i)];return d?fill(d.unitLabel,{n:id.slice(i+1)}):id};
+const ctitle=c=>{const d=DIVS[c.book]||{};return d.chapters?(TITLES[c.key]||''):(d.chapterTitle||'')};
+const visRow=r=>st.src&&st.fams[r.fam]&&((r.status==='match'&&r.label!=='commonplace')||st.pos);
+function famDots(s){const c={};(rowsBySec[s.id]||[]).filter(visRow).forEach(r=>c[r.fam]=(c[r.fam]||0)+1);return FAMS.filter(f=>c[f[0]]).map(f=>`<span style="--c:var(--f${f[0]})" title="${f[1]}: ${c[f[0]]}">${f[0]} ${c[f[0]]}</span>`).join('')}
+// rail
+function rail(){let h='',last='';CH.forEach(c=>{if(c.book!==last){h+=`<h3>${esc(DIVS[c.book].label)}</h3>`;last=c.book}
+ const t=ctitle(c);h+=`<a href="#${c.secs[0].id}" data-ch="${c.key}" data-t="${esc(t)}"><span class="n">${DIVS[c.book].chapters?'ch. '+c.chap:''}</span><span>${esc(t)}</span><span class="meter"><b></b></span></a>`});$('rail').innerHTML=h;meters()}
+const secOn=s=>(rowsBySec[s.id]||[]).some(visRow)||(st.div&&(s.div||[]).length>0)||(st.v73&&(s.vars||[]).length>0);
+function meters(){document.querySelectorAll('.rail a[data-t]').forEach(a=>{const c=CH.find(x=>x.key===a.dataset.ch);const n=c.secs.length,m=c.secs.filter(secOn).length;a.querySelector('.meter b').style.width=Math.round(100*m/n)+'%';const parts=['sources'].filter(()=>st.src).concat(st.div&&LAY.comments?[LAY.comments.label]:[],st.v73&&LAY.variants?[LAY.variants.label]:[]);a.title=`${a.dataset.t} · ${m} of ${n} ${V.unitsWord||'units'} with ${parts.join(', ')||'nothing'} shown by the current filters`})}
+// render chapter
+function cite(s){const d=DIVS[s.book]||{},pg=s.pages[0];
+ return fill(d.cite,{prefix:V.citePrefix,n:s.para,chap:s.chap,unnum:s.unnum?V.citeUnnumbered:'',page:pg?fill(V.citePage,{vol:((V.volumes||{})[pg.vol]||{}).label||pg.vol,printed:pg.printed||'?'}):''})}
+function secHTML(s){const vars=s.vars||[];const unplaced=vars.filter(v=>!v.placed);const LV=LAY.variants||{},LC=LAY.comments||{};
+ const pages=s.pages.map(p=>`<a href="${p.z}" title="${esc(fill(V.pageLink&&V.pageLink.title,p))}">${p.vol} p. ${esc(p.printed||'s'+p.scan)}</a>`).join(' ');
+ const cb=s.citedBy.length?`<span>cited at ${s.citedBy.map(x=>`<a href="#${x}">${lbl(x)}</a>`).join(', ')}</span>`:'';
+ const vt=vars.length?`<span>${esc(LV.label)}: ${vars.length}</span>`:'';
+ const notes=s.notes.length?`<div class="notes">${s.notes.map(n=>`<div class="note${n.added?' added':''}"><span class="mk">${esc(n.mark)}</span>${n.html}</div>`).join('')}</div>`:'';
+ const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}"><summary><span class="wm">${esc(LC.chip)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
+ const del=unplaced.map(v=>`<div class="del"><b style="font:12px var(--ui)">${esc(v.type)}</b> · ${esc(v.content)}${v.p1758?`<br>${esc(LV.otherTag)}: <i>${esc(v.p1758)}</i>`:''}${v.link1758?` · <a href="${v.link1758}">${esc(LV.otherLinkLabel)}</a>`:''}</div>`).join('');
+ return `<section class="sec" id="${s.id}"><div class="sh"><span class="no">${esc((DIVS[s.book]||{}).unitMark||'')} ${s.para}</span>${s.unnum?`<span class="unn" title="${esc(V.unnumberedTitle)}">${esc(V.unnumberedLabel)}</span>`:''}${(s.div||[]).length?`<button class="dvc" data-dv="${s.id}" title="${esc(LC.chipTitle)}: ${s.div.length}">${esc(LC.chip)} ${s.div.length}</button>`:''}<button class="dots" data-s="${s.id}" aria-label="Show sources for ${lbl(s.id)}">${famDots(s)}</button>
+ <span class="tools">${s.en?`<button data-en="${s.id}">${esc(LAY.translation.label)}</button>`:''}<button data-copy="${s.id}">Copy citation</button><button data-link="${s.id}">Link</button></span>${s.margin?`<span class="marg">${esc(s.margin)}</span>`:''}</div>
+ <div class="tx">${s.html}</div>${notes}${dvs}${del}<div class="foot">${pages}${cb}${vt}</div></section>`}
+function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[1];st.chap=c.key;save();
+ document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',a.dataset.ch===c.key));
+ let h='';
+ {const d=DIVS[c.book]||{};const t=d.pageTitle||ctitle(c);h=`<div class="chead">${esc(d.label)}${d.chapters?' · '+esc(V.chapterWord)+' '+c.chap:''}</div><h1 class="ctitle">${esc(t)}</h1>`+c.secs.map(secHTML).join('')}
+ const page=$('page');page.innerHTML=h;page.classList.toggle('chg',st.v73);page.classList.toggle('nodiv',!st.div);applyFilters();
+ if(target){const el=$(target);if(el){el.scrollIntoView({block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1300);if(!keep)select(target)}}else $('read').scrollTop=0;
+ if(innerWidth<=760)$('rail').dataset.open='false'}
+function applyFilters(){document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('off',!ids.length);u.classList.toggle('multi',new Set(ids.map(i=>ROWS[i].fam)).size>1);u.classList.toggle('poss',ids.length>0&&ids.every(i=>ROWS[i].status!=='match'||ROWS[i].label==='commonplace'));if(ids.length)u.style.setProperty('--c',`var(--f${ROWS[ids[0]].fam})`)});
+ document.querySelectorAll('#page .dots').forEach(b=>b.innerHTML=famDots(byId[b.dataset.s]));meters()}
+// panel
+function rowHTML(r,hl){const l=r.links.map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join('');const ew=r.ew?`<div class="ew"><b>Earliest witness:</b> ${esc(r.ew.witness==='intermediate'?'none earlier found in Grotius or Pufendorf':r.ew.witness)}${r.ew.locus&&r.ew.witness!=='intermediate'?' · '+esc(r.ew.locus):''}${r.ew.passage?`<div class="q src"><small>earlier text</small>${esc(r.ew.passage)}</div>`:''}${r.ew.latin&&r.ew.latin!==r.ew.passage?`<div class="q src"><small>Latin</small>${esc(r.ew.latin)}</div>`:''}${r.ew.nearest&&r.ew.nearest!=='n/a'?`<div class="why">Vattel's wording is nearest: ${esc(r.ew.nearest==='intermediate'?'the intermediate text':r.ew.nearest==='earlier'?'the earlier text':'cannot tell')}</div>`:''}</div>`:'';
+ return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.note?'<span>(note)</span>':''}<span class="lab">${esc(r.label)}</span><span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
+ <div class="q"><small>${esc(M.reuse.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc((FAMI[r.fam]||{}).sourceLabel||M.reuse.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>working French</small>${esc(r.fr)}</div>`:''}${ew}<div class="why">${esc(r.reason)}</div><div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
+function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();document.querySelectorAll('.sec.sel').forEach(e=>e.classList.remove('sel'));const el=$(sid);if(el)el.classList.add('sel');
+ const focus=ids&&ids.length;
+ const all=(rowsBySec[sid]||[]).filter(visRow);
+ const rs=(focus?all.filter(r=>ids.includes(r.id)):all).sort((a,b)=>b.conf-a.conf);
+ const hidden=focus?0:(rowsBySec[sid]||[]).length-rs.length;
+ const more=focus&&all.length>rs.length?`<p><button class="btn" data-all="${sid}">All ${all.length} sources for this section</button></p>`:'';
+ const LV=LAY.variants||{};const vars=(s.vars||[]).map(v=>`<div class="m" style="--c:var(--add-line)"><div class="mh"><span class="fam" style="--c:var(--add-line)">${esc(LV.tag)}</span><b>${esc(v.type)}</b>${v.link1758?`<a href="${v.link1758}">${esc(LV.otherLinkLabel)}</a>`:''}</div><div class="why" style="color:var(--fg)">${esc(v.content)}</div></div>`).join('');
+ $('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button><h2>${lbl(s.id)}</h2><div class="sub">${esc(s.margin)}</div>${rs.length?rs.map(r=>rowHTML(r,false)).join(''):'<p class="empty">No source shown for this section with the current filters.</p>'}${more}${hidden?`<p class="empty">${hidden} more hidden by filters (possible matches, commonplaces or a switched-off source).</p>`:''}${focus?'':vars}`;
+ $('panel').scrollTop=0;
+ if(innerWidth<=1100&&ids)$('panel').dataset.open='true'}
+// translation layer
+let enMode='tr';try{enMode=localStorage.getItem('nleEnMode')||'tr'}catch(e){}
+function txOffset(tx,node,off){const w=document.createTreeWalker(tx,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.d58,.pb')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});let pos=0,n;
+ if(node.nodeType!==3){const r=document.createRange();r.setStart(tx,0);r.setEnd(node,off);const f=r.cloneContents();const d=document.createElement('div');d.appendChild(f);d.querySelectorAll('.d58,.pb').forEach(x=>x.remove());return d.textContent.length}
+ while(n=w.nextNode()){if(n===node)return pos+off;pos+=n.data.length}return pos}
+function selIdx(){const sel=getSelection();if(!sel.rangeCount||sel.isCollapsed)return null;const r=sel.getRangeAt(0);const tx=r.commonAncestorContainer.nodeType===1?r.commonAncestorContainer.closest('.tx'):r.commonAncestorContainer.parentElement.closest('.tx');
+ if(!tx)return null;const sec=tx.closest('.sec');const s=byId[sec.id];if(!s||!s.en)return null;
+ const a=txOffset(tx,r.startContainer,r.startOffset),b=txOffset(tx,r.endContainer,r.endOffset);
+ const idx=s.fs.map((sp,i)=>sp[0]<b&&sp[1]>a?i:-1).filter(i=>i>=0);return idx.length?{sid:sec.id,idx,rect:r.getBoundingClientRect()}:null}
+function markPhrase(text,phrases){let h=esc(text);phrases.forEach(f=>{if(!f.ph)return;const e=esc(f.ph);const i=h.indexOf(e);if(i>=0)h=h.slice(0,i)+`<mark class="tf s${f.sev}" title="${esc(f.type+': '+f.note)}">${e}</mark>`+h.slice(i+e.length)});return h}
+function showEN(sid,idx){const s=byId[sid];if(!s||!s.en)return;const E=s.en;const frT=i=>{const sp=s.fs[i];return plainOf(s).slice(sp[0],sp[1])};
+ const gs=E.g.map((g,k)=>({k,f:g[0],e:g[1]})).filter(g=>!idx||g.f.some(i=>idx.includes(i))||(!g.f.length&&false));
+ const fl=k=>(E.f||[]).filter(f=>f.k===k);
+ const tl=t=>({mistranslation:'Mistranslation',shift:'Shift',omission:'Omission',addition:'Addition',terminology:'Term','false friend':'False friend'}[t]||t);
+ const flagHTML=k=>fl(k).map(f=>`<div class="tfl"><b>${tl(f.type)}${f.sev>=3?' · major':''}</b> · <i>${esc(f.fr)}</i>${f.en?` → “${esc(f.en)}”`:' → (not translated)'}. ${esc(f.note)}</div>`).join('');
+ let body='';
+ if(enMode==='tr'){body=`<div class="ent">${gs.map(g=>markPhrase(g.e.map(j=>E.s[j]).join(' '),fl(g.k).map(f=>({ph:f.en,sev:f.sev,type:tl(f.type),note:f.note})))).join(' ')}</div>`;const n=gs.reduce((a,g)=>a+fl(g.k).length,0);if(n)body+=`<p class="enhd">${n} translation ${n>1?'problems':'problem'} in this passage. Underlined; see Compare.</p>`}
+ else body=gs.map(g=>`<div class="cmp"><div class="fr">${markPhrase(g.f.map(frT).join(' '),fl(g.k).map(f=>({ph:f.fr,sev:f.sev,type:tl(f.type),note:f.note})))}</div><div class="en">${markPhrase(g.e.map(j=>E.s[j]).join(' ')||'—',fl(g.k).map(f=>({ph:f.en,sev:f.sev,type:tl(f.type),note:f.note})))}</div>${flagHTML(g.k)}</div>`).join('');
+ const all=idx&&gs.length<E.g.length?`<button class="btn" data-enall="${sid}">Whole section</button>`:'';
+ $('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button><h2>${lbl(s.id)} · ${esc(LAY.translation.label)}</h2><div class="sub">${esc(fill(LAY.translation.panelNote,{page:E.p}))}</div>
+ <div class="seg" role="group"><button data-enmode="tr" aria-pressed="${enMode==='tr'}">Translation</button><button data-enmode="cmp" aria-pressed="${enMode==='cmp'}">Compare</button></div> ${all}${body}`;
+ $('panel').dataset.open='true';$('panel').scrollTop=0;enState={sid,idx}}
+let enState=null;const plainCache={};
+function plainOf(s){if(!plainCache[s.id]){const d=document.createElement('div');d.innerHTML=s.html;d.querySelectorAll('.d58,.pb').forEach(x=>x.remove());plainCache[s.id]=d.textContent}return plainCache[s.id]}
+const onSelEnd=e=>{if(e.target.closest('#enPop'))return;setTimeout(()=>{const r=selIdx();const pop=$('enPop');if(!r){pop.hidden=true;return}pop.hidden=false;pop.style.left=Math.min(innerWidth-90,r.rect.right+6)+'px';pop.style.top=Math.max(4,r.rect.top-30)+'px';pop.onclick=ev=>{ev.stopPropagation();pop.hidden=true;showEN(r.sid,r.idx)}},10)};
+document.addEventListener('mouseup',onSelEnd);document.addEventListener('touchend',e=>setTimeout(()=>onSelEnd(e),250));
+$('read').addEventListener('scroll',()=>{$('enPop').hidden=true},{passive:true});
+// search
+let plain=null;
+let lastQ='';
+function doSearch(q){q=q.trim();if(!q){return}lastQ=q;
+ const m=q.match(/^(.+?)[\s.,§¶]*?(\d+)$/);
+ if(m){const tok=m[1].trim();const d=M.divisions.find(d=>(d.goto||[]).some(g=>new RegExp('^(?:'+g+')$','i').test(tok)));const id=d&&d.key+'.'+m[2];if(id&&byId[id]){go(id);return}}
+ if(!plain){const d=document.createElement('div');plain=SEC.map(s=>{d.innerHTML=s.html+' '+s.notes.map(n=>n.html).join(' ');return d.textContent})}
+ const ql=q.toLowerCase();const res=[];SEC.forEach((s,i)=>{const t=plain[i];const j=t.toLowerCase().indexOf(ql);if(j>=0&&s.kind!=='heading')res.push([s,t.slice(Math.max(0,j-60),j+q.length+80),j])});
+ $('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button><h2>Search</h2><div class="sub">${res.length} sections contain “${esc(q)}”${res.length>300?' (first 300 shown)':''}</div><div class="res">${res.slice(0,300).map(([s,t])=>`<a href="#${s.id}" data-hit="${s.id}"><b>${lbl(s.id)}</b>${esc(t).replace(new RegExp(esc(q).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig'),x=>`<mark>${x}</mark>`)}</a>`).join('')}</div>`;
+ $('panel').dataset.open='true';$('panel').scrollTop=0}
+function go(id,keep){if(!byId[id]){const k=CH.find(x=>x.key===id);if(k)id=k.secs[0].id}const c=chOf[id];if(!c)return;if(st.chap===c.key&&$(id)){$(id).scrollIntoView({block:'start'});$(id).classList.add('flash');setTimeout(()=>$(id).classList.remove('flash'),1300);if(!keep)select(id)}else show(c.key,id,keep);if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}
+function hitRanges(root,q){const ranges=[];if(!root||!q)return ranges;const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.d58,.pb,.mk')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});const nodes=[];let txt='',n;while(n=w.nextNode()){nodes.push([n,txt.length]);txt+=n.data}
+ const low=txt.toLowerCase(),ql=q.toLowerCase();let i=low.indexOf(ql);
+ const at=pos=>{let k=nodes.length-1;while(k>0&&nodes[k][1]>pos)k--;return [nodes[k][0],pos-nodes[k][1]]};
+ while(i>=0&&ranges.length<50){const r=document.createRange();const [a,ao]=at(i),[b,bo]=at(i+ql.length-1);r.setStart(a,ao);r.setEnd(b,bo+1);ranges.push(r);i=low.indexOf(ql,i+ql.length)}
+ return ranges}
+function markHits(id,q){if(window.CSS&&CSS.highlights)CSS.highlights.delete('shl');const rs=hitRanges($(id),q);if(!rs.length)return;
+ if(window.CSS&&CSS.highlights&&window.Highlight)CSS.highlights.set('shl',new Highlight(...rs));
+ const sel=getSelection();sel.removeAllRanges();sel.addRange(rs[0].cloneRange());
+ const r=rs[0].getBoundingClientRect(),rd=$('read');rd.scrollTop+=r.top-rd.getBoundingClientRect().top-rd.clientHeight/3}
+function toast(t){const e=document.createElement('div');e.className='toast';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),1600)}
+function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Copied')).catch(()=>{const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast('Copied')}catch(e){toast(t)}ta.remove()})}
+// events
+document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('panel').dataset.open='false';return}const u=e.target.closest('.u:not(.off)');if(u){e.preventDefault();document.querySelectorAll('.u.hit').forEach(x=>x.classList.remove('hit'));u.classList.add('hit');const sec=u.closest('.sec');select(sec.id,u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i])));return}
+ const al=e.target.closest('[data-all]');if(al){select(al.dataset.all);return}
+ const en=e.target.closest('[data-en]');if(en){showEN(en.dataset.en,null);return}
+ const ea=e.target.closest('[data-enall]');if(ea){showEN(ea.dataset.enall,null);return}
+ const em=e.target.closest('[data-enmode]');if(em){enMode=em.dataset.enmode;try{localStorage.setItem('nleEnMode',enMode)}catch(x){}if(enState)showEN(enState.sid,enState.idx);return}
+ const d=e.target.closest('.dots');if(d){select(d.dataset.s);if(innerWidth<=1100)$('panel').dataset.open='true';return}
+ const dv=e.target.closest('[data-dv]');if(dv){if(!st.div){st.div=true;$('tDiv').checked=true;save();$('page').classList.remove('nodiv')}document.querySelectorAll(`#${CSS.escape(dv.dataset.dv)} details.dv`).forEach((x,i)=>{x.open=true;if(!i)x.scrollIntoView({block:'nearest'})});return}
+ const c=e.target.closest('[data-copy]');if(c){copy(cite(byId[c.dataset.copy]));return}
+ const l=e.target.closest('[data-link]');if(l){copy(location.href.split('#')[0]+'#'+l.dataset.link);return}
+ const hit=e.target.closest('[data-hit]');if(hit){e.preventDefault();document.querySelectorAll('.res a.on').forEach(x=>x.classList.remove('on'));hit.classList.add('on');go(hit.dataset.hit,true);markHits(hit.dataset.hit,lastQ);return}
+ const a=e.target.closest('a[href^="#"]');if(a){e.preventDefault();go(a.getAttribute('href').slice(1));return}
+ const sec=e.target.closest('.sec');if(sec&&!e.target.closest('a')){if(getSelection().toString().trim())return;if(window.CSS&&CSS.highlights)CSS.highlights.delete('shl');select(sec.id)}});
+$('q').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch(e.target.value)});
+function init(){
+document.title=M.short||M.title;$('brand').textContent=V.brand||M.short;$('q').placeholder=V.searchPlaceholder||'Search';
+const LV=LAY.variants,LC=LAY.comments,hasRows=ROWS.length>0;
+$('lSrc').hidden=$('lPos').hidden=$('fams').hidden=!hasRows;
+$('l73').hidden=!LV;if(LV){$('l73').title=LV.tooltip||'';document.documentElement.style.setProperty('--old-tag',JSON.stringify((LV.otherTag||'')+' '));$('l73').querySelector('span').textContent=LV.label}
+$('lDiv').hidden=!LC;if(LC){$('lDiv').title=LC.tooltip||'';$('lDiv').querySelector('span').textContent=LC.label}
+if(LAY.translation)$('enPop').textContent=LAY.translation.label;
+$('tSrc').checked=st.src;$('tPos').checked=st.pos;$('t73').checked=st.v73;
+$('tSrc').onchange=e=>{st.src=e.target.checked;save();applyFilters();if(st.sel)select(st.sel)};
+$('tPos').onchange=e=>{st.pos=e.target.checked;save();applyFilters();if(st.sel)select(st.sel)};
+$('t73').onchange=e=>{st.v73=e.target.checked;save();$('page').classList.toggle('chg',st.v73);meters()};
+$('tDiv').checked=st.div;$('tDiv').onchange=e=>{st.div=e.target.checked;save();$('page').classList.toggle('nodiv',!st.div);meters()};
+$('fams').innerHTML=FAMS.map(([k,n])=>`<button class="chip" data-f="${k}" aria-pressed="${st.fams[k]}" style="--c:var(--f${k})" title="${esc(n)}"><i></i>${esc(FAMI[k].chip||n)}</button>`).join('');
+$('fams').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;st.fams[b.dataset.f]=!st.fams[b.dataset.f];b.setAttribute('aria-pressed',st.fams[b.dataset.f]);save();applyFilters();if(st.sel)select(st.sel)};
+$('filtBtn').onclick=()=>{$('filt').dataset.open=$('filt').dataset.open==='true'?'false':'true'};
+$('railBtn').onclick=()=>{$('rail').dataset.open=$('rail').dataset.open==='true'?'false':'true'};
+$('panelBtn').onclick=()=>{$('panel').dataset.open=$('panel').dataset.open==='true'?'false':'true'};
+addEventListener('hashchange',()=>{const h=decodeURIComponent(location.hash.slice(1));if(h)go(h)});
+applyW();rail();
+const h0=decodeURIComponent(location.hash.slice(1));
+if(h0&&(byId[h0]||CH.some(c=>c.key===h0)))go(h0);else if(st.sel&&byId[st.sel])go(st.sel);else go(V.start||CH[0].secs[0].id);
+if(innerWidth>1100){$('panel').dataset.open='true'}}
+// resizable frames
+function applyW(){const a=$('app');if(st.widths){if(st.widths.r)a.style.setProperty('--wr',st.widths.r+'px');if(st.widths.p)a.style.setProperty('--wp',st.widths.p+'px')}}
+document.querySelectorAll('.gut').forEach(g=>g.addEventListener('pointerdown',e=>{e.preventDefault();g.setPointerCapture(e.pointerId);g.classList.add('drag');document.body.classList.add('resizing');
+ const side=g.dataset.g;const mv=ev=>{st.widths=st.widths||{};if(side==='r')st.widths.r=Math.max(150,Math.min(520,ev.clientX));else st.widths.p=Math.max(260,Math.min(innerWidth*0.6,innerWidth-ev.clientX));applyW()};
+ const up=()=>{g.classList.remove('drag');document.body.classList.remove('resizing');g.removeEventListener('pointermove',mv);g.removeEventListener('pointerup',up);save()};
+ g.addEventListener('pointermove',mv);g.addEventListener('pointerup',up)}));
+document.querySelectorAll('.gut').forEach(g=>g.addEventListener('dblclick',()=>{st.widths={};$('app').style.removeProperty('--wr');$('app').style.removeProperty('--wp');save()}));
+load().then(ok=>{if(ok)init()}).catch(e=>fail(`Could not load the edition: ${esc(e.message)}`));
+</script>
+
+</body></html>

@@ -1,0 +1,20 @@
+{
+  "format": "nle-catalogue/1",
+  "title": "Natural Law Editions",
+  "description": "Text-compared editions of early modern natural law texts compiled by AI for scholarly use.",
+  "editions": [
+    {
+      "id": "vattel-1773",
+      "path": "editions/vattel-1773/",
+      "author": "Emer de Vattel",
+      "title": "Le droit des gens, ou principes de la loi naturelle, appliqués à la conduite et aux affaires des nations et des souverains",
+      "short": "Le droit des gens · 1773",
+      "imprint": "Neuchâtel: Société typographique, 1773",
+      "date": "1773",
+      "lang": "fr",
+      "status": "working edition"
+    }
+  ],
+  "texts": [],
+  "reuse": []
+}
