@@ -24,6 +24,14 @@ tools/                  conversion and checks
 
 The Vattel edition was converted from the working edition's `edition_data/` files by `tools/convert_vattel_1773.py`. `tools/check_vattel_1773.js` loads the viewer in Chromium and compares every unit and reuse row it builds with the original `data.json`.
 
+## Public address
+
+GitHub Pages serves the repository root from branch `claude/vattel-edition-setup-7jkvhg`.
+
+- Collection: https://juhanjahupea.github.io/NaturalLawEditions/
+- Vattel viewer: https://juhanjahupea.github.io/NaturalLawEditions/viewer/?ed=vattel-1773
+- A unit: https://juhanjahupea.github.io/NaturalLawEditions/viewer/?ed=vattel-1773#II.45
+
 ## Running the viewer locally
 
 The viewer reads JSON files, so it needs an HTTP server:
