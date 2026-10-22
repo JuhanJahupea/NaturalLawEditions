@@ -4,6 +4,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fill=(t,o)=>String(t??'').replace(/\{(\w+)\}/g,(m,k)=>o[k]??'');
 const QS=new URLSearchParams(location.search);
+let VIEW=QS.get('view')==='list'?'list':'text',LTAB='out';
 let CAT=null,ED='',BASE='',M=null,V={},RU={},DIVS={},TITLES={},FAMS=[],FAMI={},FN={},st={};
 const LAYS=[],LAY={},MAN={};
 const SEC=[],ROWS=[],byId={},rowsBySec={},CH=[],chOf={},IN={},INROWS=[];
@@ -116,7 +117,7 @@ function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[0];st.cha
  $('page').innerHTML=h;layerClasses();applyFilters();
  if(target){const el=$(target);if(el){el.scrollIntoView({block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1300);if(!keep)select(target)}}else $('read').scrollTop=0;
  if(innerWidth<=760)$('rail').dataset.open='false'}
-function applyFilters(){document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('off',!ids.length);u.classList.toggle('multi',new Set(ids.map(i=>ROWS[i].fam)).size>1);u.classList.toggle('poss',ids.length>0&&ids.every(i=>ROWS[i].status!=='match'||ROWS[i].label==='commonplace'));if(ids.length)u.style.setProperty('--c',`var(--f${ROWS[ids[0]].fam})`)});
+function applyFilters(){if(VIEW==='list')listView();document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('off',!ids.length);u.classList.toggle('multi',new Set(ids.map(i=>ROWS[i].fam)).size>1);u.classList.toggle('poss',ids.length>0&&ids.every(i=>ROWS[i].status!=='match'||ROWS[i].label==='commonplace'));if(ids.length)u.style.setProperty('--c',`var(--f${ROWS[ids[0]].fam})`)});
  document.querySelectorAll('#page .dots').forEach(b=>b.innerHTML=famDots(byId[b.dataset.s]));meters()}
 // panel
 function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{})[w]??w;
@@ -158,8 +159,19 @@ const TBL={};
 function rowsTable(id,rows,cols){const t=TBL[id]=TBL[id]||{sort:cols[0],dir:1};t.rows=rows;t.cols=cols;
  const K=COLS[t.sort].key,v=rows.map(r=>[K(r),r]);
  v.sort((a,b)=>{const x=a[0],y=b[0];const c=Array.isArray(x)?cmpKey(x,y):x<y?-1:x>y?1:0;return c*t.dir||a[1].id-b[1].id});
- return `<table class="rt" data-t="${esc(id)}"><thead><tr>${cols.map(c=>`<th data-sort="${c}" aria-sort="${t.sort===c?(t.dir>0?'ascending':'descending'):'none'}">${COLS[c].label}</th>`).join('')}</tr></thead>
- <tbody>${v.map(([,r])=>`<tr>${cols.map(c=>`<td class="c-${c}">${COLS[c].html(r)}</td>`).join('')}</tr>`).join('')}</tbody></table>`}
+ return `<div class="rtw"><table class="rt" data-t="${esc(id)}"><thead><tr>${cols.map(c=>`<th data-sort="${c}" aria-sort="${t.sort===c?(t.dir>0?'ascending':'descending'):'none'}">${COLS[c].label}</th>`).join('')}</tr></thead>
+ <tbody>${v.map(([,r])=>`<tr>${cols.map(c=>`<td class="c-${c}">${COLS[c].html(r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
+// list view: viewer/?ed=<id>&view=list
+function viewChrome(){const q=new URLSearchParams(location.search),v=VIEW;if(v==='list')q.set('view','list');else q.delete('view');
+ history.replaceState(null,'','?'+q.toString()+(v==='text'&&st.sel?'#'+st.sel:''));$('viewBtn').textContent=v==='list'?'Text':'List';$('viewBtn').setAttribute('aria-pressed',v==='list');
+ document.body.classList.toggle('listing',v==='list')}
+function setView(v){VIEW=v;viewChrome();if(v==='list')listView();else go(st.sel&&byId[st.sel]?st.sel:V.start||CH[0].secs[0].id)}
+function listView(){const all=ROWS.filter(Boolean),out=all.filter(visRow),inc=INROWS.filter(visIn),isIn=LTAB==='in'&&INROWS.length>0;
+ const tabs=INROWS.length?`<div class="seg" role="group"><button data-ltab="out" aria-pressed="${!isIn}">Sources used (${out.length})</button><button data-ltab="in" aria-pressed="${isIn}">Reused in other editions (${inc.length})</button></div>`:'';
+ const n=isIn?`${inc.length} of ${INROWS.length} rows`:`${out.length} of ${all.length} rows`;
+ $('page').innerHTML=`<div class="chead">${esc(M.short)}</div><h1 class="ctitle">Reuse, row by row</h1>${tabs}<p class="lsub">${n} shown. The filters in the top bar apply. Click a column head to sort, a unit to read it.</p>`+
+  (isIn?rowsTable('list:in',inc,['here','there','label','conf','theirs']):rowsTable('list:out',out,['unit','source','label','conf','passage']));
+ document.querySelectorAll('.rail a').forEach(a=>a.classList.remove('on'))}
 function resort(th){const tb=th.closest('table'),id=tb.dataset.t,t=TBL[id],c=th.dataset.sort;if(t.sort===c)t.dir=-t.dir;else{t.sort=c;t.dir=1}tb.outerHTML=rowsTable(id,t.rows,t.cols)}
 // translation layer
 let enMode='tr';try{enMode=localStorage.getItem('nleEnMode')||'tr'}catch(e){}
@@ -199,7 +211,7 @@ function doSearch(q){q=q.trim();if(!q){return}lastQ=q;
  panel(`<h2>Search</h2><div class="sub">${res.length} sections contain “${esc(q)}”${res.length>300?' (first 300 shown)':''}</div><div class="res">${res.slice(0,300).map(([s,t])=>`<a href="#${s.id}" data-hit="${s.id}"><b>${lbl(s.id)}</b>${esc(t).replace(new RegExp(esc(q).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig'),x=>`<mark>${x}</mark>`)}</a>`).join('')}</div>`);
  $('panel').dataset.open='true'}
 function resolve(id){if(!byId[id]&&M.aliases&&M.aliases[id])id=M.aliases[id];if(!byId[id]){const k=CH.find(x=>x.key===id);if(k)id=k.secs[0].id}return chOf[id]?id:null}
-function go(id,keep){id=resolve(id);if(!id)return;const c=chOf[id];if(st.chap===c.key&&$(id)){$(id).scrollIntoView({block:'start'});$(id).classList.add('flash');setTimeout(()=>$(id).classList.remove('flash'),1300);if(!keep)select(id)}else show(c.key,id,keep);if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}
+function go(id,keep){id=resolve(id);if(!id)return;if(VIEW==='list'){VIEW='text';viewChrome()}const c=chOf[id];if(st.chap===c.key&&$(id)){$(id).scrollIntoView({block:'start'});$(id).classList.add('flash');setTimeout(()=>$(id).classList.remove('flash'),1300);if(!keep)select(id)}else show(c.key,id,keep);if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}
 function hitRanges(root,q){const ranges=[];if(!root||!q)return ranges;const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.old,.pb,.mk')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});const nodes=[];let txt='',n;while(n=w.nextNode()){nodes.push([n,txt.length]);txt+=n.data}
  const low=txt.toLowerCase(),ql=q.toLowerCase();let i=low.indexOf(ql);
  const at=pos=>{let k=nodes.length-1;while(k>0&&nodes[k][1]>pos)k--;return [nodes[k][0],pos-nodes[k][1]]};
@@ -214,6 +226,7 @@ function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.r
 // events
 document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('panel').dataset.open='false';return}const u=e.target.closest('.u:not(.off)');if(u){e.preventDefault();document.querySelectorAll('.u.hit').forEach(x=>x.classList.remove('hit'));u.classList.add('hit');const sec=u.closest('.sec');select(sec.id,u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i])));return}
  const th=e.target.closest('th[data-sort]');if(th){resort(th);return}
+ const lt=e.target.closest('[data-ltab]');if(lt){LTAB=lt.dataset.ltab;listView();return}
  const rl=e.target.closest('a[data-row]');if(rl){e.preventDefault();const id=rl.getAttribute('href').slice(1);go(id,true);select(id,[Number(rl.dataset.row)]);$('panel').dataset.open='true';return}
  const al=e.target.closest('[data-all]');if(al){select(al.dataset.all);return}
  const en=e.target.closest('[data-en]');if(en){showEN(en.dataset.en,null);return}
@@ -250,9 +263,11 @@ function init(){
  $('railBtn').onclick=()=>{$('rail').dataset.open=$('rail').dataset.open==='true'?'false':'true'};
  $('panelBtn').onclick=()=>{$('panel').dataset.open=$('panel').dataset.open==='true'?'false':'true'};
  addEventListener('hashchange',()=>{const h=decodeURIComponent(location.hash.slice(1));if(h)go(h)});
+ $('viewBtn').onclick=()=>setView(VIEW==='list'?'text':'list');
  applyW();rail();
  const h0=resolve(decodeURIComponent(location.hash.slice(1)));
- if(h0)go(h0);else if(st.sel&&byId[st.sel])go(st.sel);else go(V.start||CH[0].secs[0].id);
+ if(VIEW==='list'){if(h0)st.sel=h0;setView('list')}
+ else if(h0)go(h0);else if(st.sel&&byId[st.sel])go(st.sel);else go(V.start||CH[0].secs[0].id);
  if(innerWidth>1100){$('panel').dataset.open='true'}}
 // resizable frames
 function applyW(){const a=$('app');if(st.widths){if(st.widths.r)a.style.setProperty('--wr',st.widths.r+'px');if(st.widths.p)a.style.setProperty('--wp',st.widths.p+'px')}}

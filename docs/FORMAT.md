@@ -7,7 +7,7 @@ Version `nle/1`. All files are UTF-8 JSON.
 ```
 catalogue.json                  the collection: editions, source texts, reuse tables
 index.html                      landing page, built from catalogue.json
-viewer/index.html, app.js       shared viewer: viewer/?ed=<edition id>#<unit id>
+viewer/index.html, app.js       shared viewer: viewer/?ed=<edition id>#<unit id>; reuse list: viewer/?ed=<edition id>&view=list
 viewer/compose.js               builds display HTML from a text and its marks
 editions/<edition id>/
   edition.json                  manifest: metadata, divisions, layers, viewer settings

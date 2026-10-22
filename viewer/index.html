@@ -150,7 +150,10 @@ mark.tf.s3{border-bottom-color:#b0412e;border-bottom-width:3px}
 .xed:hover{background:var(--accent-soft)}
 .foot .rin{display:inline-flex;flex-wrap:wrap;gap:4px;align-items:baseline}
 .ph{font:13px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:18px 0 6px}
-.rt{width:100%;border-collapse:collapse;font:13px/1.4 var(--ui)}
+body.listing .page{max-width:min(1100px,100%)}
+.lsub{font:13px var(--ui);color:var(--mut);margin:0 0 10px}
+.rtw{overflow-x:auto;max-width:100%}
+.rt{width:100%;min-width:560px;border-collapse:collapse;font:13px/1.4 var(--ui)}
 .rt th{text-align:left;font-weight:500;color:var(--mut);padding:4px 8px 4px 0;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;position:sticky;top:0;background:var(--paper)}
 .rt th[aria-sort=ascending]::after{content:" ▲";font-size:10px}.rt th[aria-sort=descending]::after{content:" ▼";font-size:10px}
 .rt td{padding:5px 8px 5px 0;border-top:1px solid var(--line);vertical-align:top}
@@ -178,6 +181,7 @@ mark.tf.s3{border-bottom-color:#b0412e;border-bottom-width:3px}
     <span id="lays" class="lays"></span>
     <div class="chips" id="fams" aria-label="Source filter"></div>
     </div>
+    <button class="btn" id="viewBtn" aria-pressed="false" title="All reuse rows of this edition as a sortable list">List</button>
     <button class="btn only-narrow" id="panelBtn" aria-controls="panel">Panel</button>
   </div>
   <nav class="rail" id="rail" data-open="false" aria-label="Contents"></nav>
