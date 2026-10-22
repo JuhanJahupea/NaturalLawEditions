@@ -60,11 +60,11 @@ Metadata of the base witness, the list of divisions, the layer files with their 
       "kind": "section",
       "unnumbered": true,
       "margin": "marginal summary",
-      "pages": [{"vol": "T1", "scan": 89, "printed": "65"}],
+      "pages": [{"vol": "T1", "scan": 67, "printed": "65"}],
       "text": "plain text of the unit",
       "i":    [[a, b]],
       "para": [k],
-      "pb":   [[at, "T1", 90, "66"]],
+      "pb":   [[at, "T1", 68, "66"]],
       "xr":   [[a, b, "I.50"]],
       "notes": [{"mark": "(*)", "text": "...", "i": [[a, b]], "xr": [[a, b, "II.12"]]}]
     }
@@ -81,14 +81,51 @@ Metadata of the base witness, the list of divisions, the layer files with their 
 ## Layers
 
 ```json
-{"format": "nle-layer/1", "edition": "vattel-1773", "layer": "<layer id>", "kind": "...", "items": [...]}
+{"format": "nle-layer/1", "edition": "vattel-1773", "layer": "<layer id>", "kind": "...", "description": "...", "items": [...]}
 ```
 
-A layer item addresses the text by unit id and, where it marks a passage, by `at`: a list of `[part, start, end]`.
+An item names its unit. Where it marks a passage, `at` is a list of `[part, start, end]`.
 
-- `kind: "variants"` (`changes-1773`). One item per change between two printings: type, summary, the passages in each printing, the page of the older printing, `at` for the changed passage in the base text, `wholeNotes` for notes added entire, and `older` for readings of the older printing that the base text drops (`[part, offset, text]`, shown struck through).
-- `kind: "comments"` (`wolff-divergences`). One item per comment attached under a unit: the source text and locus compared, the question, the relation, severity, the comment, the passages quoted from both texts, confidence, links.
-- `kind: "translation"` (`english`). `units` maps a unit id to its translation: page, sentences, French sentence spans in the unit text (`fr`), the sentence alignment (`align`, groups of French and English sentence indices), and translation flags keyed by alignment group (`flags`).
+### `kind: "variants"` (`layers/changes-1773.json`)
+
+One item per change between the base printing and another printing.
+
+```json
+{
+  "id": "II.45~0", "unit": "II.45", "type": "deleted phrase", "content": "one-line summary", "placed": true,
+  "passage": "the passage in the base text", "at": [["t", 120, 214]], "wholeNotes": [0],
+  "otherPassage": "the passage in the other printing", "otherPages": "A1.p345 – A1.p346", "otherLink": "url",
+  "otherReadings": [["t", 764, " comme les spectres s’évanouissent au lever du soleil "]]
+}
+```
+
+- `at`: the changed passage in the base text. `wholeNotes`: notes added entire, by index.
+- `otherReadings`: readings of the other printing that the base text drops, as `[part, offset, text]`. The viewer shows them struck through at that offset.
+- `placed: false` means the change could not be located in the base text. The viewer shows it under the unit.
+
+### `kind: "comments"` (`layers/wolff-divergences.json`)
+
+One item per comment shown under a unit.
+
+```json
+{
+  "unit": "Prelim.14", "text": "wolff-jus-gentium-1749", "locus": "Jus gentium § 206", "sourceId": "JG.s206",
+  "relation": "partly", "severity": 1, "question": "...", "comment": "...",
+  "passage": "Vattel's words", "sourcePassage": "Wolff's words", "confidence": 0.55, "links": [["label", "url"]]
+}
+```
+
+### `kind: "translation"` (`layers/english.json`)
+
+`source` names the translation. `units` maps a unit id to:
+
+```json
+{"page": 68, "sents": ["..."], "notes": ["..."], "fr": [[0, 123]], "align": [[[0], [0]]], "flags": [{"k": 0, "fr": "...", "en": "...", "type": "shift", "sev": 2, "note": "..."}]}
+```
+
+- `page`: page of the printed translation. `sents`: sentences of the main text. `notes`: footnotes, not aligned.
+- `fr`: sentence spans in the unit's `text`. `align`: groups of `[[French sentence indices], [English sentence indices]]`.
+- `flags`: translation problems. `k` is the index of the alignment group.
 
 ## Reuse tables
 

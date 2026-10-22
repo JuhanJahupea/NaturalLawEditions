@@ -220,7 +220,7 @@ function build(T,layers,tables){
  const famOf=id=>ROWS[id].fam;
  T.units.forEach((u,i)=>{const e=extra[u.id]||{vars:[],div:[],added:new Set()};const c=Compose.composeUnit(u,marks[u.id]||{},famOf);
   const s={id:u.id,i,book:u.div,chap:u.chap,para:u.n,margin:u.margin||'',kind:u.kind,unnum:!!u.unnumbered,html:c.html,
-   notes:c.notes.map((n,k)=>({mark:n.mark,html:n.html,added:e.added.has(k)})),pages:(u.pages||[]).map(p=>Object.assign({z:pageLink(p)},p)),
+   notes:c.notes.map((n,k)=>({mark:n.mark,html:n.html,added:e.added.has(k)})),pages:(u.pages||[]).map(p=>Object.assign({},p,{z:pageLink(p)})),
    vars:e.vars,citedBy:[...(cited[u.id]||[])].sort((a,b)=>order[a]-order[b])};
   if(e.div.length)s.div=e.div;
   const en=EN[u.id];if(en){s.en={s:en.sents,g:en.align,p:en.page,f:en.flags||[]};s.fs=en.fr}
@@ -310,7 +310,7 @@ function doSearch(q){q=q.trim();if(!q){return}lastQ=q;
  const ql=q.toLowerCase();const res=[];SEC.forEach((s,i)=>{const t=plain[i];const j=t.toLowerCase().indexOf(ql);if(j>=0&&s.kind!=='heading')res.push([s,t.slice(Math.max(0,j-60),j+q.length+80),j])});
  $('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button><h2>Search</h2><div class="sub">${res.length} sections contain “${esc(q)}”${res.length>300?' (first 300 shown)':''}</div><div class="res">${res.slice(0,300).map(([s,t])=>`<a href="#${s.id}" data-hit="${s.id}"><b>${lbl(s.id)}</b>${esc(t).replace(new RegExp(esc(q).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig'),x=>`<mark>${x}</mark>`)}</a>`).join('')}</div>`;
  $('panel').dataset.open='true';$('panel').scrollTop=0}
-function go(id,keep){if(!byId[id]){const k=CH.find(x=>x.key===id);if(k)id=k.secs[0].id}const c=chOf[id];if(!c)return;if(st.chap===c.key&&$(id)){$(id).scrollIntoView({block:'start'});$(id).classList.add('flash');setTimeout(()=>$(id).classList.remove('flash'),1300);if(!keep)select(id)}else show(c.key,id,keep);if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}
+function go(id,keep){if(!byId[id]&&M.aliases&&M.aliases[id])id=M.aliases[id];if(!byId[id]){const k=CH.find(x=>x.key===id);if(k)id=k.secs[0].id}const c=chOf[id];if(!c)return;if(st.chap===c.key&&$(id)){$(id).scrollIntoView({block:'start'});$(id).classList.add('flash');setTimeout(()=>$(id).classList.remove('flash'),1300);if(!keep)select(id)}else show(c.key,id,keep);if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}
 function hitRanges(root,q){const ranges=[];if(!root||!q)return ranges;const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.d58,.pb,.mk')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});const nodes=[];let txt='',n;while(n=w.nextNode()){nodes.push([n,txt.length]);txt+=n.data}
  const low=txt.toLowerCase(),ql=q.toLowerCase();let i=low.indexOf(ql);
  const at=pos=>{let k=nodes.length-1;while(k>0&&nodes[k][1]>pos)k--;return [nodes[k][0],pos-nodes[k][1]]};

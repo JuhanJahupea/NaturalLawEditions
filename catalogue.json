@@ -15,6 +15,264 @@
       "status": "working edition"
     }
   ],
-  "texts": [],
-  "reuse": []
+  "texts": [
+    {
+      "id": "wolff-jus-gentium-1749",
+      "siglum": "JG",
+      "author": "Christian Wolff",
+      "title": "Jus gentium methodo scientifica pertractatum",
+      "imprint": "Halle, 1749",
+      "date": "1749",
+      "lang": "la",
+      "layer": "Vision transcription of the Google Books copy (scans 28–876); Praefatio and Prolegomena from MDZ bsb10008059. Working French by machine."
+    },
+    {
+      "id": "wolff-institutiones-1750",
+      "siglum": "INST",
+      "author": "Christian Wolff",
+      "title": "Institutiones juris naturae et gentium",
+      "imprint": "Halle, 1750",
+      "date": "1750",
+      "lang": "la",
+      "layer": "Vision transcription of the Google Books copy (scans 30–811). Working French by machine."
+    },
+    {
+      "id": "wolff-jus-naturae-8-1748",
+      "siglum": "JN8",
+      "author": "Christian Wolff",
+      "title": "Jus naturae methodo scientifica pertractatum, pars VIII",
+      "imprint": "1748",
+      "date": "1748",
+      "lang": "la",
+      "layer": "Google Books OCR, cleaned. Working French by machine."
+    },
+    {
+      "id": "burlamaqui-droit-naturel-1747",
+      "siglum": "BUR47",
+      "author": "Jean-Jacques Burlamaqui",
+      "title": "Principes du droit naturel",
+      "imprint": "Genève, 1747",
+      "date": "1747",
+      "lang": "fr",
+      "layer": "Google Books PDF text layer."
+    },
+    {
+      "id": "burlamaqui-droit-politique-1751",
+      "siglum": "BUR51",
+      "author": "Jean-Jacques Burlamaqui",
+      "title": "Principes du droit politique",
+      "imprint": "Amsterdam, 1751. 2 vols",
+      "date": "1751",
+      "lang": "fr",
+      "layer": "MDZ OCR (bsb10040032/33)."
+    },
+    {
+      "id": "grotius-barbeyrac-1724",
+      "siglum": "GRO24",
+      "author": "Hugo Grotius",
+      "title": "Le droit de la guerre et de la paix, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam, 1724. 2 vols",
+      "date": "1724",
+      "lang": "fr",
+      "layer": "archive.org OCR of the Gallica scans. Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+    },
+    {
+      "id": "pufendorf-barbeyrac-1734",
+      "siglum": "PUF34",
+      "author": "Samuel Pufendorf",
+      "title": "Le droit de la nature et des gens, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam, 1734. 2 vols",
+      "date": "1734",
+      "lang": "fr",
+      "layer": "archive.org PDF text layer. Stands in for Basle 1732. Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+    },
+    {
+      "id": "montesquieu-esprit-des-loix-1749",
+      "siglum": "MON49",
+      "author": "Montesquieu",
+      "title": "De l'esprit des loix",
+      "imprint": "Genève: Barrillot, 1749",
+      "date": "1749",
+      "lang": "fr",
+      "layer": "archive.org OCR (bub_gb_qq8hNilO1RkC). Stands in for 1748."
+    },
+    {
+      "id": "wicquefort-ambassadeur-1724",
+      "siglum": "WIC24",
+      "author": "Abraham de Wicquefort",
+      "title": "L'ambassadeur et ses fonctions",
+      "imprint": "La Haye, 1724",
+      "date": "1724",
+      "lang": "fr",
+      "layer": "archive.org OCR (lambassadeuretse12wicq, scans 1–1532)."
+    },
+    {
+      "id": "bynkershoek-juge-competent-1723",
+      "siglum": "BYN23",
+      "author": "Cornelius van Bynkershoek",
+      "title": "Traité du juge compétent des ambassadeurs, trad. Jean Barbeyrac",
+      "imprint": "1723",
+      "date": "1723",
+      "lang": "fr",
+      "layer": "archive.org OCR (lambassadeuretse12wicq, scans 1533–1902; bound with Wicquefort 1724)."
+    },
+    {
+      "id": "bynkershoek-quaestiones-1737",
+      "siglum": "BYN37",
+      "author": "Cornelius van Bynkershoek",
+      "title": "Quaestiones juris publici",
+      "imprint": "Leiden, 1737",
+      "date": "1737",
+      "lang": "la",
+      "layer": "archive.org OCR (corneliivanbynke00bijnx)."
+    },
+    {
+      "id": "formey-principes-1758",
+      "siglum": "FOR58",
+      "author": "Jean Henri Samuel Formey",
+      "title": "Principes du droit de la nature et des gens",
+      "imprint": "Amsterdam, 1758. 3 vols",
+      "date": "1758",
+      "lang": "fr",
+      "layer": "archive.org OCR (principesdudroi00–03wolfgoog), chunked at about 1,800 characters."
+    },
+    {
+      "id": "vattel-loisir-1747",
+      "siglum": "LOI47",
+      "author": "Emer de Vattel",
+      "title": "Le loisir philosophique",
+      "imprint": "1747",
+      "date": "1747",
+      "lang": "fr",
+      "layer": "Tesseract text layer of the library PDF."
+    },
+    {
+      "id": "vattel-questions-1762",
+      "siglum": "QUE62",
+      "author": "Emer de Vattel",
+      "title": "Questions de droit naturel, et observations sur le Traité du droit de la nature de M. le baron de Wolf",
+      "imprint": "Berne, 1762",
+      "date": "1762",
+      "lang": "fr",
+      "layer": "archive.org OCR (questionsdedroit00vatt). Written before 1758."
+    },
+    {
+      "id": "vattel-poliergie-1757",
+      "siglum": "POL57",
+      "author": "Emer de Vattel",
+      "title": "Poliergie",
+      "imprint": "1757",
+      "date": "1757",
+      "lang": "fr",
+      "layer": "archive.org OCR (poliergieoumla00vattuoft)."
+    },
+    {
+      "id": "vattel-amusemens-1765",
+      "siglum": "AMU65",
+      "author": "Emer de Vattel",
+      "title": "Amusemens de littérature, de morale et de politique",
+      "imprint": "1765",
+      "date": "1765",
+      "lang": "fr",
+      "layer": "Text layer of the library PDF. Reissue of the Mélanges (1760)."
+    }
+  ],
+  "reuse": [
+    {
+      "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-gentium-1749",
+      "rows": 1205
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
+      "from": "vattel-1773",
+      "to": "wolff-institutiones-1750",
+      "rows": 285
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-naturae-8-1748",
+      "rows": 91
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-droit-naturel-1747.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-droit-naturel-1747",
+      "rows": 62
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-droit-politique-1751.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-droit-politique-1751",
+      "rows": 382
+    },
+    {
+      "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
+      "from": "vattel-1773",
+      "to": "grotius-barbeyrac-1724",
+      "rows": 464
+    },
+    {
+      "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
+      "from": "vattel-1773",
+      "to": "pufendorf-barbeyrac-1734",
+      "rows": 284
+    },
+    {
+      "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
+      "from": "vattel-1773",
+      "to": "montesquieu-esprit-des-loix-1749",
+      "rows": 23
+    },
+    {
+      "path": "reuse/vattel-1773__wicquefort-ambassadeur-1724.json",
+      "from": "vattel-1773",
+      "to": "wicquefort-ambassadeur-1724",
+      "rows": 60
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-juge-competent-1723.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-juge-competent-1723",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-quaestiones-1737.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-quaestiones-1737",
+      "rows": 6
+    },
+    {
+      "path": "reuse/vattel-1773__formey-principes-1758.json",
+      "from": "vattel-1773",
+      "to": "formey-principes-1758",
+      "rows": 329
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-loisir-1747.json",
+      "from": "vattel-1773",
+      "to": "vattel-loisir-1747",
+      "rows": 16
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-questions-1762.json",
+      "from": "vattel-1773",
+      "to": "vattel-questions-1762",
+      "rows": 134
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-poliergie-1757.json",
+      "from": "vattel-1773",
+      "to": "vattel-poliergie-1757",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-amusemens-1765.json",
+      "from": "vattel-1773",
+      "to": "vattel-amusemens-1765",
+      "rows": 24
+    }
+  ]
 }

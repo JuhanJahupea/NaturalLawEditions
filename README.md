@@ -20,7 +20,9 @@ tools/                  conversion and checks
 
 | Id | Text | Units | Layers |
 |---|---|---|---|
-| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | Préface by page, Préliminaires and Livres I–IV by § | 1773 changes, Wolff divergences, English (1797), reuse |
+| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), Wolff divergences (169), English 1797 (1,124 units, 278 flags), reuse (3,427 rows in 16 tables) |
+
+The Vattel edition was converted from the working edition's `edition_data/` files by `tools/convert_vattel_1773.py`. `tools/check_vattel_1773.js` loads the viewer in Chromium and compares every unit and reuse row it builds with the original `data.json`.
 
 ## Running the viewer locally
 
