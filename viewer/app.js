@@ -54,7 +54,8 @@ function build(T,data,tables,incoming){
    e.vars.push({id:v.id,type:v.type,content:v.content,passage:v.passage,otherPassage:v.otherPassage,otherPages:v.otherPages,otherLink:v.otherLink,placed:v.placed});
    (v.at||[]).forEach(([p,a,b])=>mk(v.unit,'vars',p).push([a,b,v.id]));(v.wholeNotes||[]).forEach(n=>e.added.add(n));
    (v.otherReadings||[]).forEach(([p,pos,txt])=>{const o=mk(v.unit,'old',p);(o[pos]=o[pos]||[]).push(`<span class="old" data-v="${v.id}" title="${Compose.esc(l.otherTitle)}">${Compose.esc(txt)}</span>`)})});
-  if(l.kind==='comments')L.items.forEach(d=>ex(d.unit).div.push({w:d.locus,wid:d.sourceId,rel:d.relation,sev:d.severity,c:d.comment,lat:d.sourcePassage,vp:d.passage,conf:d.confidence,q:d.question,link:d.links||[]}));
+  if(l.kind==='comments')L.items.forEach(d=>{const o={w:d.locus,wid:d.sourceId,rel:d.relation,sev:d.severity,c:d.comment,lat:d.sourcePassage,vp:d.passage,conf:d.confidence,q:d.question,link:d.links||[]};
+   Object.defineProperty(o,'src',{value:textShort(d.text),enumerable:false});ex(d.unit).div.push(o)});
   if(l.kind==='translation')Object.assign(EN,L.units)});
  const order={},cited={};T.units.forEach((u,i)=>order[u.id]=i);
  T.units.forEach(u=>[...(u.xr||[]),...(u.notes||[]).flatMap(n=>n.xr||[])].forEach(x=>(cited[x[2]]=cited[x[2]]||new Set()).add(u.id)));
@@ -69,11 +70,14 @@ function build(T,data,tables,incoming){
  SEC.forEach(s=>{if(s.kind==='heading')return;const d=DIVS[s.book]||{};const k=d.chapters?s.book+'.'+s.chap:s.book;let c=CH[CH.length-1];if(!c||c.key!==k){c={key:k,book:s.book,chap:s.chap,secs:[]};CH.push(c)}c.secs.push(s);chOf[s.id]=c});
  st={src:true,pos:false,layers:{},fams:Object.fromEntries(FAMS.map(f=>[f[0],true])),chap:null,sel:null};
  LAYS.forEach(l=>{if(l.kind==='reuse'){if(l.default===false)st.fams[l.family]=false}else st.layers[l.id]=l.default!==false});
- try{const s=JSON.parse(localStorage.getItem('nle:'+ED)||'{}');Object.assign(st,s,{fams:Object.assign(st.fams,s.fams||{}),layers:Object.assign(st.layers,s.layers||{})})}catch(e){}}
+ try{const s=JSON.parse(localStorage.getItem('nle:'+ED)||'{}');Object.assign(st,s,{fams:Object.assign(st.fams,s.fams||{}),layers:Object.assign(st.layers,s.layers||{})})}catch(e){}
+ LAYS.forEach(l=>{if(l.toggle===false)st.layers[l.id]=true})}
 const layerOn=kind=>!!LAY[kind]&&!!st.layers[LAY[kind].id];
 // unit labels from the id and the manifest's divisions: <div>.<n> or <div>.<chap>.<n>
 function unitLabel(man,id){const p=id.split('.'),d=man&&man._divs[p[0]];return d?fill(d.unitLabel,{n:p[p.length-1],chap:p.length>2?p[1]:''}):id}
 const lbl=id=>unitLabel(M,id);
+// the surname of a source text's author, from the catalogue
+const textShort=id=>{const t=(CAT.texts||[]).find(x=>x.id===id)||edEntry(id)||{};return t.authorShort||String(t.author||id).split(' ').pop()};
 const edShort=id=>{const e=edEntry(id)||{};return e.authorShort||e.short||id};
 const xref=(ed,u)=>`<a class="xed" href="?ed=${encodeURIComponent(ed)}#${u}" title="Open in the ${esc((edEntry(ed)||{}).short||ed)} edition">${esc(edShort(ed))} ${esc(unitLabel(MAN[ed],u))}</a>`;
 // sort key from a unit id: division order, then its numbers
@@ -84,7 +88,7 @@ const ctitle=c=>{const d=DIVS[c.book]||{};return d.chapters?(TITLES[c.key]||''):
 const visRow=r=>st.src&&st.fams[r.fam]&&((r.status==='match'&&r.label!=='commonplace')||st.pos);
 function famDots(s){const c={};(rowsBySec[s.id]||[]).filter(visRow).forEach(r=>c[r.fam]=(c[r.fam]||0)+1);return FAMS.filter(f=>c[f[0]]).map(f=>`<span style="--c:var(--f${f[0]})" title="${esc(f[1])}: ${c[f[0]]}">${f[0]} ${c[f[0]]}</span>`).join('')}
 // edition menu
-function edMenu(){const s=$('edSel');s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}"${e.id===ED?' selected':''}>${esc(e.short||e.title)}</option>`).join('');
+function edMenu(){const s=$('edSel');s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}" title="${esc(e.author+', '+e.title+', '+e.date)}"${e.id===ED?' selected':''}>${esc((e.authorShort||e.author)+' '+e.date)}</option>`).join('');const E=edEntry(ED);if(E)s.title=`${E.author}, ${E.title} (${E.date})`;
  if(!edEntry(ED))s.insertAdjacentHTML('afterbegin','<option value="" selected>Choose an edition</option>');
  $('brand').textContent=CAT.title||'Natural Law Editions';
  s.onchange=()=>{if(!s.value)return;const q=new URLSearchParams(location.search);q.set('ed',s.value);location.href='?'+q.toString()+location.hash}}
@@ -104,7 +108,7 @@ function secHTML(s){const vars=s.vars||[];const unplaced=vars.filter(v=>!v.place
  const inc=IN[s.id]?[...new Set(IN[s.id].filter(visIn).map(r=>r.from+'#'+r.sec))]:[];
  const ri=inc.length?`<span class="rin">reused in ${inc.map(x=>{const [e,u]=x.split('#');return xref(e,u)}).join(', ')}</span>`:'';
  const notes=s.notes.length?`<div class="notes">${s.notes.map(n=>`<div class="note${n.added?' added':''}"><span class="mk">${esc(n.mark)}</span>${n.html}</div>`).join('')}</div>`:'';
- const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}"><summary><span class="wm">${esc(LC.chip)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
+ const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}"><summary><span class="wm">${esc(LC.chip)} ${esc(d.src)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
  const del=unplaced.map(v=>`<div class="del"><b style="font:12px var(--ui)">${esc(v.type)}</b> · ${esc(v.content)}${v.otherPassage?`<br>${esc(LV.otherTag)}: <i>${esc(v.otherPassage)}</i>`:''}${v.otherLink?` · <a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div>`).join('');
  return `<section class="sec" id="${s.id}"><div class="sh">${s.para?`<span class="no">${esc((DIVS[s.book]||{}).unitMark||'')} ${s.para}</span>`:''}${s.unnum?`<span class="unn" title="${esc(V.unnumberedTitle)}">${esc(V.unnumberedLabel)}</span>`:''}${(s.div||[]).length?`<button class="dvc" data-dv="${s.id}" title="${esc(LC.chipTitle)}: ${s.div.length}">${esc(LC.chip)} ${s.div.length}</button>`:''}<button class="dots" data-s="${s.id}" aria-label="Show sources for ${lbl(s.id)}">${famDots(s)}</button>
  <span class="tools">${s.en?`<button data-en="${s.id}">${esc(LAY.translation.label)}</button>`:''}<button data-copy="${s.id}">Copy citation</button><button data-link="${s.id}">Link</button></span>${s.margin?`<span class="marg">${esc(s.margin)}</span>`:''}</div>
@@ -167,7 +171,7 @@ function rowsTable(id,rows,cols){const t=TBL[id]=TBL[id]||{sort:cols[0],dir:1};t
  <tbody>${v.map(([,r])=>`<tr>${cols.map(c=>`<td class="c-${c}">${COLS[c].html(r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
 // list view: viewer/?ed=<id>&view=list
 function viewChrome(){const q=new URLSearchParams(location.search),v=VIEW;if(v==='list')q.set('view','list');else q.delete('view');
- history.replaceState(null,'','?'+q.toString()+(v==='text'&&st.sel?'#'+st.sel:''));$('viewBtn').textContent=v==='list'?'Text':'List';$('viewBtn').setAttribute('aria-pressed',v==='list');
+ history.replaceState(null,'','?'+q.toString()+(v==='text'&&st.sel?'#'+st.sel:''));$('vText').setAttribute('aria-pressed',v==='text');$('vList').setAttribute('aria-pressed',v==='list');
  document.body.classList.toggle('listing',v==='list')}
 function setView(v){VIEW=v;viewChrome();if(v==='list')listView();else go(st.sel&&byId[st.sel]?st.sel:V.start||CH[0].secs[0].id)}
 function listView(){const all=ROWS.filter(Boolean),out=all.filter(visRow),inc=INROWS.filter(visIn),isIn=LTAB==='in'&&INROWS.length>0;
@@ -245,20 +249,37 @@ document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('pa
  const sec=e.target.closest('.sec');if(sec&&!e.target.closest('a')){if(getSelection().toString().trim())return;if(window.CSS&&CSS.highlights)CSS.highlights.delete('shl');select(sec.id)}});
 $('q').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch(e.target.value)});
 // filters: Sources and Possible matches, one checkbox per layer, one button per source family
-function setLayer(l,on){if(l.kind==='reuse'){st.fams[l.family]=on;const b=document.querySelector(`.chip[data-f="${CSS.escape(l.family)}"]`);if(b)b.setAttribute('aria-pressed',on);applyFilters();if(st.sel)select(st.sel)}
- else{st.layers[l.id]=on;layerClasses();meters();if(l.kind==='translation'&&!on)$('enPop').hidden=true}
+function setLayer(l,on){if(l.kind==='reuse'){setFams({[l.family]:on});return}
+ st.layers[l.id]=on;layerClasses();meters();if(l.kind==='translation'&&!on)$('enPop').hidden=true;
  const cb=document.querySelector(`#lays input[data-l="${CSS.escape(l.id)}"]`);if(cb)cb.checked=on;save()}
-function filters(){const hasRows=ROWS.length>0;$('lSrc').hidden=$('lPos').hidden=$('fams').hidden=!hasRows;
- $('tSrc').checked=st.src;$('tPos').checked=st.pos;
- $('tSrc').onchange=e=>{st.src=e.target.checked;save();applyFilters();if(st.sel)select(st.sel)};
- $('tPos').onchange=e=>{st.pos=e.target.checked;save();applyFilters();if(st.sel)select(st.sel)};
- $('lays').innerHTML=LAYS.map(l=>`<label class="tg" title="${esc(l.tooltip||'')}"><input type="checkbox" data-l="${esc(l.id)}"${(l.kind==='reuse'?st.fams[l.family]:st.layers[l.id])?' checked':''}> ${esc(l.label)}</label>`).join('');
+// families: switch some on or off, then redraw everything that shows them
+function setFams(ch){Object.assign(st.fams,ch);save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop();
+ LAYS.filter(l=>l.kind==='reuse').forEach(l=>{const cb=document.querySelector(`#lays input[data-l="${CSS.escape(l.id)}"]`);if(cb)cb.checked=!!st.fams[l.family]})}
+// the Sources menu: one line per family with its colour, the rows it has under the current settings, a bar, and "only"
+function srcPop(){const n={};ROWS.forEach(r=>{if(r&&((r.status==='match'&&r.label!=='commonplace')||st.pos))n[r.fam]=(n[r.fam]||0)+1});
+ const fs=FAMS.map(([k,l])=>({k,l,n:n[k]||0})).sort((a,b)=>b.n-a.n),max=Math.max(1,...fs.map(f=>f.n)),on=fs.filter(f=>st.fams[f.k]);
+ $('srcDots').innerHTML=on.slice(0,12).map(f=>`<i style="--c:var(--f${f.k})"></i>`).join('');$('srcN').textContent=`${on.length}/${fs.length}`;
+ $('srcBtn').classList.toggle('dim',!st.src);
+ $('srcPop').innerHTML=`<div class="sph"><label class="tg"><input type="checkbox" id="tSrc"${st.src?' checked':''}> Show sources in the text</label><span class="spa"><button class="btn" data-fa="all">All</button><button class="btn" data-fa="none">None</button></span></div>
+ <ul>${fs.map(f=>`<li class="${st.fams[f.k]?'':'off'}" style="--c:var(--f${f.k})"><label title="${esc(f.l)}"><input type="checkbox" data-f="${f.k}"${st.fams[f.k]?' checked':''}><i></i><span>${esc(f.l)}</span></label><span class="mb"><b style="width:${Math.round(100*f.n/max)}%"></b></span><span class="n">${f.n}</span><button class="only" data-only="${f.k}">only</button></li>`).join('')}</ul>
+ <p class="spn">Rows per source${st.pos?', possible matches included':', confident matches'}.</p>`}
+function filters(){const hasRows=ROWS.length>0;$('srcW').hidden=$('lPos').hidden=!hasRows;
+ $('tPos').checked=st.pos;
+ $('tPos').onchange=e=>{st.pos=e.target.checked;save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop()};
+ $('lays').innerHTML=LAYS.filter(l=>l.toggle!==false).map(l=>`<label class="tg" title="${esc(l.tooltip||'')}"><input type="checkbox" data-l="${esc(l.id)}"${(l.kind==='reuse'?st.fams[l.family]:st.layers[l.id])?' checked':''}> ${esc(l.label)}</label>`).join('');
  $('lays').onchange=e=>{const l=LAYS.find(x=>x.id===e.target.dataset.l);if(l)setLayer(l,e.target.checked)};
  const LV=LAY.variants;if(LV)document.documentElement.style.setProperty('--old-tag',JSON.stringify((LV.otherTag||'')+' '));
  if(LAY.comments&&LAY.comments.family)document.documentElement.style.setProperty('--cmt',`var(--f${LAY.comments.family})`);
- $('fams').innerHTML=FAMS.map(([k,n])=>`<button class="chip" data-f="${k}" aria-pressed="${st.fams[k]}" style="--c:var(--f${k})" title="${esc(n)}"><i></i>${esc(FAMI[k].chip||n)}</button>`).join('');
- $('fams').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;const k=b.dataset.f,on=!st.fams[k];st.fams[k]=on;b.setAttribute('aria-pressed',on);
-  LAYS.filter(l=>l.kind==='reuse'&&l.family===k).forEach(l=>{const cb=document.querySelector(`#lays input[data-l="${CSS.escape(l.id)}"]`);if(cb)cb.checked=on});save();applyFilters();if(st.sel)select(st.sel)}}
+ srcPop();
+ const pop=$('srcPop'),btn=$('srcBtn'),open=o=>{pop.hidden=!o;btn.setAttribute('aria-expanded',o)};
+ btn.onclick=e=>{e.stopPropagation();open(pop.hidden)};
+ pop.onclick=e=>{e.stopPropagation();const o=e.target.closest('[data-only]'),a=e.target.closest('[data-fa]');
+  if(o)setFams(Object.fromEntries(FAMS.map(([k])=>[k,k===o.dataset.only])));
+  if(a)setFams(Object.fromEntries(FAMS.map(([k])=>[k,a.dataset.fa==='all'])))};
+ pop.onchange=e=>{const c=e.target;if(c.id==='tSrc'){st.src=c.checked;save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop();return}
+  if(c.dataset.f)setFams({[c.dataset.f]:c.checked})};
+ document.addEventListener('click',e=>{if(!pop.hidden&&!e.target.closest('#srcW'))open(false)});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!pop.hidden){open(false);btn.focus()}})}
 function init(){
  document.title=(M.short||M.title)+' · '+(CAT.title||'');$('q').placeholder=V.searchPlaceholder||'Search';
  if(LAY.translation)$('enPop').textContent=LAY.translation.label;
@@ -267,7 +288,7 @@ function init(){
  $('railBtn').onclick=()=>{$('rail').dataset.open=$('rail').dataset.open==='true'?'false':'true'};
  $('panelBtn').onclick=()=>{$('panel').dataset.open=$('panel').dataset.open==='true'?'false':'true'};
  addEventListener('hashchange',()=>{const h=decodeURIComponent(location.hash.slice(1));if(h)go(h)});
- $('viewBtn').onclick=()=>{setView(VIEW==='list'?'text':'list');if(VIEW==='list')edInfo()};
+ $('vText').onclick=()=>{if(VIEW!=='text')setView('text')};$('vList').onclick=()=>{if(VIEW!=='list'){setView('list');edInfo()}};
  applyW();rail();
  const h0=resolve(decodeURIComponent(location.hash.slice(1)));
  if(VIEW==='list'){if(h0)st.sel=h0;setView('list');edInfo()}

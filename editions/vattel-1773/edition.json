@@ -103,12 +103,12 @@
       "id": "wolff-divergences",
       "file": "layers/wolff-divergences.json",
       "kind": "comments",
-      "label": "Wolff diverges",
+      "label": "Divergences",
       "default": true,
-      "tooltip": "Places where Wolff gives an answer to the question of the section and Vattel answers it differently. Shown as footnotes under the section.",
-      "chip": "≠ Wolff",
-      "chipTitle": "Wolff answers this question differently",
-      "sourceTag": "Wolff",
+      "tooltip": "Places where a source answers the question of the section and Vattel answers it differently. Shown as notes under the section.",
+      "chip": "≠",
+      "chipTitle": "A source answers this question differently",
+      "sourceTag": "source",
       "baseTag": "Vattel",
       "family": "W"
     },
@@ -118,7 +118,7 @@
       "kind": "translation",
       "label": "English",
       "panelNote": "1797 translation, Liberty Fund ed. (2008), p. {page}. Sentence alignment by machine.",
-      "default": true
+      "toggle": false
     }
   ],
   "reuse": {
