@@ -143,7 +143,11 @@ function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();docume
  const inH=ins.length?`<h3 class="ph">Reused in other editions</h3>`+rowsTable('in:'+sid,ins,['there','label','conf','theirs']):'';
  panel(`<h2>${lbl(s.id)}</h2><div class="sub">${esc(s.margin)}</div>${rs.length?rs.map(r=>rowHTML(r,false)).join(''):'<p class="empty">No source shown for this section with the current filters.</p>'}${more}${hidden?`<p class="empty">${hidden} more hidden by filters (possible matches, commonplaces or a switched-off source).</p>`:''}${focus?'':vars}${inH}`);
  if(innerWidth<=1100&&ids)$('panel').dataset.open='true'}
-function panel(h){$('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button>${h}`;$('panel').scrollTop=0}
+function panel(h){$('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button>${h}${verLine()}`;$('panel').scrollTop=0}
+// the edition's version, at the foot of every panel
+const verLine=()=>`<p class="ver">${esc(M.short)} · version ${esc(M.version||'?')}${M.changed?' of '+esc(M.changed):''} · <a href="${BASE}CHANGELOG.md">changes</a></p>`;
+function edInfo(){const n=SEC.filter(s=>s.kind!=='heading').length;
+ panel(`<h2>${esc(M.short)}</h2><div class="sub">${esc(M.author)}, ${esc(M.title)}. ${esc(M.imprint)}.</div><p class="lsub">${n} units · ${ROWS.filter(Boolean).length} reuse rows${INROWS.length?` · ${INROWS.length} rows of other editions reuse it`:''}</p>`)}
 // a sortable table of reuse rows; the list view and the panel's 'reused in' use it
 const COLS={
  unit:{label:'Unit',key:r=>unitKey(M,r.sec),html:r=>`<a href="#${r.sec}" data-row="${r.id}">${esc(lbl(r.sec))}</a>`},
@@ -263,10 +267,10 @@ function init(){
  $('railBtn').onclick=()=>{$('rail').dataset.open=$('rail').dataset.open==='true'?'false':'true'};
  $('panelBtn').onclick=()=>{$('panel').dataset.open=$('panel').dataset.open==='true'?'false':'true'};
  addEventListener('hashchange',()=>{const h=decodeURIComponent(location.hash.slice(1));if(h)go(h)});
- $('viewBtn').onclick=()=>setView(VIEW==='list'?'text':'list');
+ $('viewBtn').onclick=()=>{setView(VIEW==='list'?'text':'list');if(VIEW==='list')edInfo()};
  applyW();rail();
  const h0=resolve(decodeURIComponent(location.hash.slice(1)));
- if(VIEW==='list'){if(h0)st.sel=h0;setView('list')}
+ if(VIEW==='list'){if(h0)st.sel=h0;setView('list');edInfo()}
  else if(h0)go(h0);else if(st.sel&&byId[st.sel])go(st.sel);else go(V.start||CH[0].secs[0].id);
  if(innerWidth>1100){$('panel').dataset.open='true'}}
 // resizable frames

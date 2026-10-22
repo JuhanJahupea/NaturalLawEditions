@@ -10,7 +10,8 @@ index.html                      landing page, built from catalogue.json
 viewer/index.html, app.js       shared viewer: viewer/?ed=<edition id>#<unit id>; reuse list: viewer/?ed=<edition id>&view=list
 viewer/compose.js               builds display HTML from a text and its marks
 editions/<edition id>/
-  edition.json                  manifest: metadata, divisions, layers, viewer settings
+  edition.json                  manifest: metadata, version, divisions, layers, viewer settings
+  CHANGELOG.md                  what changed in each version
   text.json                     the base text, one record per unit
   layers/<layer id>.json        standoff layers on the text
   provenance/                   inputs kept to check the text against
@@ -24,6 +25,12 @@ tools/                          conversion and checks
 - **Text id.** Author, short title, date: `wolff-jus-gentium-1749`. Every source text named by a reuse table has a `texts` entry in the catalogue. An edited text uses its edition id.
 - **Unit id.** `<division>.<number>` (Vattel: `I.51`) or `<division>.<chapter>.<number>` where numbers restart in each chapter (Burlamaqui: `P2.6.9`). Unit ids are fixed. They are never renumbered. A correction that splits or merges units adds new ids and keeps the old ones as aliases in `edition.json`.
 - **Global reference.** `<edition id>#<unit id>`, e.g. `vattel-1773#I.51`. The viewer address takes the same pair: `viewer/?ed=vattel-1773#I.51`.
+
+## Versions
+
+- Each manifest carries `version` and `changed`; each edition folder has a `CHANGELOG.md`. The viewer shows the version at the foot of the panel.
+- MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables.
+- Unit ids are the stable part of a citation. A retired id gets an `aliases` entry pointing to the unit that now holds its text; the viewer and the go-to box resolve it. An id that was reused with a new meaning cannot be aliased; the changelog then lists the old and new ids (Vattel's Préface, 2026-10-22).
 
 ## Offsets
 
@@ -46,6 +53,7 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
 ## editions/&lt;id&gt;/edition.json
 
 - Metadata of the base witness and of the transcription.
+- `version` (MAJOR.MINOR) and `changed` (date). See Versions below.
 - `aliases`: retired unit ids mapped to their successors. The viewer resolves them.
 - `divisions`: one entry per division, in order: `key` (the first part of the unit id), `label`, `chapters` (true when units are grouped by chapter), `chapterTitle` for a division without chapters, `unitLabel` (`{chap}`, `{n}` from the unit id), `unitMark`, `cite` (`{prefix}`, `{chap}`, `{n}`, `{unnum}`, `{page}`).
 - `layers`: one entry per layer, with the `label` and `tooltip` of its checkbox and `default` (on unless false). A layer with a `file` is a layer file in `layers/`. A layer of `kind: "reuse"` is a view on one reuse table: `table` names it, `family` names the family its checkbox switches.
