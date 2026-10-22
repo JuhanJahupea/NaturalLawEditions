@@ -33,6 +33,17 @@ GitHub Pages serves the repository root from branch `claude/vattel-edition-setup
 - Vattel viewer: https://juhanjahupea.github.io/NaturalLawEditions/viewer/?ed=vattel-1773
 - A unit: https://juhanjahupea.github.io/NaturalLawEditions/viewer/?ed=vattel-1773#II.45
 
+## Checks
+
+```
+tools/check_all.sh <vattel-reuse/edition_data/data.json> <burlamaqui-reuse/edition/data.json>
+```
+
+It serves the repository, then:
+
+- `tools/check_edition.js` loads each edition in Chromium and compares every unit (HTML, notes, pages, cross-references, layers) and every reuse row the viewer builds with the working edition's `data.json`.
+- `tools/check_links.js` checks every link: rows linked to another edition, the "reused in" lists, cross-references, aliases, catalogue paths, row spans. It opens every link target in the viewer and follows one link each way by clicking.
+
 ## Running the viewer locally
 
 The viewer reads JSON files, so it needs an HTTP server:

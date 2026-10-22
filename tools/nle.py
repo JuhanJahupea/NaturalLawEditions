@@ -208,20 +208,25 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
 
 
 def update_catalogue(edition, texts, reuse):
-    """Add or replace the edition, the source texts it names, and its reuse tables. Other entries keep their place.
+    """Add or replace the edition, the source texts it names, and its reuse tables.
+    The result does not depend on the order the converters run in: tables follow the order of the editions,
+    texts the order in which the tables first name them; a text named by two projects keeps both sigla.
     Texts that no reuse table names any more are dropped."""
     cp = os.path.join(ROOT, 'catalogue.json'); cat = load(cp)
     eds = cat['editions']; i = next((k for k, e in enumerate(eds) if e['id'] == edition['id']), None)
     if i is None: eds.append(edition)
     else: eds[i] = edition
-    have = {t['id']: k for k, t in enumerate(cat['texts'])}
+    have = {t['id']: t for t in cat['texts']}
     for t in texts:
-        if t['id'] in have: cat['texts'][have[t['id']]] = t
-        else: cat['texts'].append(t)
-    cat['reuse'] = [c for c in cat['reuse'] if c['from'] != edition['id']] + reuse
+        old = have.get(t['id'], {})
+        have[t['id']] = dict(t, sigla=sorted(set(old.get('sigla', [])) | set(t['sigla'])))
+    rank = {e['id']: k for k, e in enumerate(eds)}
+    cat['reuse'] = sorted([c for c in cat['reuse'] if c['from'] != edition['id']] + reuse, key=lambda c: rank[c['from']])
     # a source text stays in the catalogue while a reuse table names it; an edited text is listed under editions
-    named = {c['to'] for c in cat['reuse']} - {e['id'] for e in eds}
-    cat['texts'] = [t for t in cat['texts'] if t['id'] in named]
+    named = []
+    for c in cat['reuse']:
+        if c['to'] not in rank and c['to'] not in named: named.append(c['to'])
+    cat['texts'] = [have[n] for n in named]
     with open(cp, 'w', encoding='utf-8') as f:
         json.dump(cat, f, ensure_ascii=False, indent=2); f.write('\n')
 

@@ -96,7 +96,7 @@ STEPS = {3: "Barbeyrac's Pufendorf, Droit de la nature et des gens (step 3)", 4:
          6: 'Locke, Malebranche, Port-Royal, Descartes, Pouilly, Cumberland, Hutcheson, Le Clerc (step 6)',
          8: 'Principes du droit politique, 1751 (step 8)', 9: 'Ancient authors; Clarke, Crousaz, Spectateur, Abbadie (step 9)',
          10: 'The lecture course, Élémens du droit naturel, 1783 (step 10)'}
-TX = [{'id': t[1], 'siglum': t[0], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
+TX = [{'id': t[1], 'sigla': [t[0]], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
 EXTRA = {
     'burlamaqui-elemens-1783': {'relations': {'same': 'same text', 'pdn_expands': 'the 1747 text expands the lecture text',
                                               'pdn_abridges': 'the 1747 text abridges it', 'pdn_changes': 'the doctrine changes'}},

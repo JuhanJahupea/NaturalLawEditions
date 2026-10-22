@@ -31,7 +31,9 @@
   "texts": [
     {
       "id": "wolff-jus-gentium-1749",
-      "siglum": "JG",
+      "sigla": [
+        "JG"
+      ],
       "author": "Christian Wolff",
       "title": "Jus gentium methodo scientifica pertractatum",
       "imprint": "Halle, 1749",
@@ -41,7 +43,9 @@
     },
     {
       "id": "wolff-institutiones-1750",
-      "siglum": "INST",
+      "sigla": [
+        "INST"
+      ],
       "author": "Christian Wolff",
       "title": "Institutiones juris naturae et gentium",
       "imprint": "Halle, 1750",
@@ -51,7 +55,9 @@
     },
     {
       "id": "wolff-jus-naturae-8-1748",
-      "siglum": "JN8",
+      "sigla": [
+        "JN8"
+      ],
       "author": "Christian Wolff",
       "title": "Jus naturae methodo scientifica pertractatum, pars VIII",
       "imprint": "1748",
@@ -61,7 +67,10 @@
     },
     {
       "id": "burlamaqui-droit-politique-1751",
-      "siglum": "BUR51",
+      "sigla": [
+        "BUR51",
+        "PDP51"
+      ],
       "author": "Jean-Jacques Burlamaqui",
       "title": "Principes du droit politique",
       "imprint": "Amsterdam, 1751. 2 vols",
@@ -71,7 +80,9 @@
     },
     {
       "id": "grotius-barbeyrac-1724",
-      "siglum": "GRO24",
+      "sigla": [
+        "GRO24"
+      ],
       "author": "Hugo Grotius",
       "title": "Le droit de la guerre et de la paix, trad. Jean Barbeyrac",
       "imprint": "Amsterdam, 1724. 2 vols",
@@ -81,7 +92,9 @@
     },
     {
       "id": "pufendorf-barbeyrac-1734",
-      "siglum": "PUF34",
+      "sigla": [
+        "PUF34"
+      ],
       "author": "Samuel Pufendorf",
       "title": "Le droit de la nature et des gens, trad. Jean Barbeyrac",
       "imprint": "Amsterdam, 1734. 2 vols",
@@ -91,7 +104,9 @@
     },
     {
       "id": "montesquieu-esprit-des-loix-1749",
-      "siglum": "MON49",
+      "sigla": [
+        "MON49"
+      ],
       "author": "Montesquieu",
       "title": "De l'esprit des loix",
       "imprint": "Genève: Barrillot, 1749",
@@ -101,7 +116,9 @@
     },
     {
       "id": "wicquefort-ambassadeur-1724",
-      "siglum": "WIC24",
+      "sigla": [
+        "WIC24"
+      ],
       "author": "Abraham de Wicquefort",
       "title": "L'ambassadeur et ses fonctions",
       "imprint": "La Haye, 1724",
@@ -111,7 +128,9 @@
     },
     {
       "id": "bynkershoek-juge-competent-1723",
-      "siglum": "BYN23",
+      "sigla": [
+        "BYN23"
+      ],
       "author": "Cornelius van Bynkershoek",
       "title": "Traité du juge compétent des ambassadeurs, trad. Jean Barbeyrac",
       "imprint": "1723",
@@ -121,7 +140,9 @@
     },
     {
       "id": "bynkershoek-quaestiones-1737",
-      "siglum": "BYN37",
+      "sigla": [
+        "BYN37"
+      ],
       "author": "Cornelius van Bynkershoek",
       "title": "Quaestiones juris publici",
       "imprint": "Leiden, 1737",
@@ -131,7 +152,9 @@
     },
     {
       "id": "formey-principes-1758",
-      "siglum": "FOR58",
+      "sigla": [
+        "FOR58"
+      ],
       "author": "Jean Henri Samuel Formey",
       "title": "Principes du droit de la nature et des gens",
       "imprint": "Amsterdam, 1758. 3 vols",
@@ -141,7 +164,9 @@
     },
     {
       "id": "vattel-loisir-1747",
-      "siglum": "LOI47",
+      "sigla": [
+        "LOI47"
+      ],
       "author": "Emer de Vattel",
       "title": "Le loisir philosophique",
       "imprint": "1747",
@@ -151,7 +176,9 @@
     },
     {
       "id": "vattel-questions-1762",
-      "siglum": "QUE62",
+      "sigla": [
+        "QUE62"
+      ],
       "author": "Emer de Vattel",
       "title": "Questions de droit naturel, et observations sur le Traité du droit de la nature de M. le baron de Wolf",
       "imprint": "Berne, 1762",
@@ -161,7 +188,9 @@
     },
     {
       "id": "vattel-poliergie-1757",
-      "siglum": "POL57",
+      "sigla": [
+        "POL57"
+      ],
       "author": "Emer de Vattel",
       "title": "Poliergie",
       "imprint": "1757",
@@ -171,7 +200,9 @@
     },
     {
       "id": "vattel-amusemens-1765",
-      "siglum": "AMU65",
+      "sigla": [
+        "AMU65"
+      ],
       "author": "Emer de Vattel",
       "title": "Amusemens de littérature, de morale et de politique",
       "imprint": "1765",
@@ -181,7 +212,9 @@
     },
     {
       "id": "pufendorf-devoirs-barbeyrac-1756",
-      "siglum": "DEV56",
+      "sigla": [
+        "DEV56"
+      ],
       "author": "Samuel Pufendorf",
       "title": "Les devoirs de l'homme et du citoyen, trad. Jean Barbeyrac",
       "imprint": "Amsterdam and Leipzig: Arkstée et Merkus, 1756. 2 vols",
@@ -191,7 +224,9 @@
     },
     {
       "id": "locke-coste-1729",
-      "siglum": "LOC29",
+      "sigla": [
+        "LOC29"
+      ],
       "author": "John Locke",
       "title": "Essai philosophique concernant l'entendement humain, trad. Pierre Coste",
       "imprint": "Amsterdam, 1729. 3rd ed.",
@@ -201,7 +236,9 @@
     },
     {
       "id": "malebranche-recherche-1712",
-      "siglum": "MAL12",
+      "sigla": [
+        "MAL12"
+      ],
       "author": "Nicolas Malebranche",
       "title": "De la recherche de la vérité",
       "imprint": "Paris, 1712. 4 vols",
@@ -211,7 +248,9 @@
     },
     {
       "id": "port-royal-logique-1685",
-      "siglum": "PRL85",
+      "sigla": [
+        "PRL85"
+      ],
       "author": "Antoine Arnauld and Pierre Nicole",
       "title": "La logique ou l'art de penser",
       "imprint": "1685",
@@ -221,7 +260,9 @@
     },
     {
       "id": "descartes-meditations-1724",
-      "siglum": "DES24",
+      "sigla": [
+        "DES24"
+      ],
       "author": "René Descartes",
       "title": "Les méditations métaphysiques, T. I",
       "imprint": "Paris, 1724",
@@ -231,7 +272,9 @@
     },
     {
       "id": "pouilly-theorie-1749",
-      "siglum": "POU49",
+      "sigla": [
+        "POU49"
+      ],
       "author": "Louis-Jean Lévesque de Pouilly",
       "title": "Théorie des sentimens agréables",
       "imprint": "1749",
@@ -241,7 +284,9 @@
     },
     {
       "id": "cumberland-barbeyrac-1744",
-      "siglum": "CUM44",
+      "sigla": [
+        "CUM44"
+      ],
       "author": "Richard Cumberland",
       "title": "Traité philosophique des loix naturelles, trad. Jean Barbeyrac",
       "imprint": "Amsterdam, 1744",
@@ -251,7 +296,9 @@
     },
     {
       "id": "hutcheson-inquiry-1726",
-      "siglum": "HUT26",
+      "sigla": [
+        "HUT26"
+      ],
       "author": "Francis Hutcheson",
       "title": "An Inquiry into the Original of our Ideas of Beauty and Virtue",
       "imprint": "1726. 2nd ed.",
@@ -261,7 +308,9 @@
     },
     {
       "id": "hutcheson-passions-1730",
-      "siglum": "HUT30",
+      "sigla": [
+        "HUT30"
+      ],
       "author": "Francis Hutcheson",
       "title": "An Essay on the Nature and Conduct of the Passions and Affections",
       "imprint": "1730. 2nd ed.",
@@ -271,7 +320,9 @@
     },
     {
       "id": "leclerc-logica-1716",
-      "siglum": "CLE16",
+      "sigla": [
+        "CLE16"
+      ],
       "author": "Jean Le Clerc",
       "title": "Logica, Ontologia et Pneumatologia",
       "imprint": "London, 1716. 5th ed.",
@@ -281,7 +332,9 @@
     },
     {
       "id": "cicero-latin-library",
-      "siglum": "CIC",
+      "sigla": [
+        "CIC"
+      ],
       "author": "Cicero",
       "title": "De officiis, Tusculanae disputationes, De finibus, De legibus, De natura deorum, De senectute, De amicitia",
       "imprint": "",
@@ -291,7 +344,9 @@
     },
     {
       "id": "seneca-latin-library",
-      "siglum": "SEN",
+      "sigla": [
+        "SEN"
+      ],
       "author": "Seneca",
       "title": "Epistulae, De beneficiis, De ira, De clementia, De vita beata",
       "imprint": "",
@@ -301,7 +356,9 @@
     },
     {
       "id": "digest-latin-library",
-      "siglum": "DIG",
+      "sigla": [
+        "DIG"
+      ],
       "author": "Justinian",
       "title": "Digest, Liv. I",
       "imprint": "",
@@ -311,7 +368,9 @@
     },
     {
       "id": "clarke-ricotier-1727",
-      "siglum": "CLA",
+      "sigla": [
+        "CLA"
+      ],
       "author": "Samuel Clarke",
       "title": "Traités de l'existence et des attributs de Dieu, trad. Pierre Ricotier",
       "imprint": "1727–1728. 3 vols",
@@ -321,7 +380,9 @@
     },
     {
       "id": "crousaz-logique-1720",
-      "siglum": "CRO",
+      "sigla": [
+        "CRO"
+      ],
       "author": "Jean-Pierre de Crousaz",
       "title": "La Logique",
       "imprint": "1720 and 1725",
@@ -331,7 +392,9 @@
     },
     {
       "id": "spectateur-1716",
-      "siglum": "SPE",
+      "sigla": [
+        "SPE"
+      ],
       "author": "Joseph Addison, Richard Steele and others",
       "title": "Le Spectateur ou le Socrate moderne",
       "imprint": "1716–1721",
@@ -341,7 +404,9 @@
     },
     {
       "id": "burlamaqui-elemens-1783",
-      "siglum": "ELE83",
+      "sigla": [
+        "ELE83"
+      ],
       "author": "Jean-Jacques Burlamaqui",
       "title": "Élémens du droit naturel",
       "imprint": "Lausanne: Grasset, 1783",
@@ -351,6 +416,103 @@
     }
   ],
   "reuse": [
+    {
+      "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-gentium-1749",
+      "rows": 1205
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
+      "from": "vattel-1773",
+      "to": "wolff-institutiones-1750",
+      "rows": 285
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-naturae-8-1748",
+      "rows": 91
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-1747.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-1747",
+      "rows": 62,
+      "toLayer": "Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from."
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-droit-politique-1751.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-droit-politique-1751",
+      "rows": 382
+    },
+    {
+      "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
+      "from": "vattel-1773",
+      "to": "grotius-barbeyrac-1724",
+      "rows": 464
+    },
+    {
+      "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
+      "from": "vattel-1773",
+      "to": "pufendorf-barbeyrac-1734",
+      "rows": 284
+    },
+    {
+      "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
+      "from": "vattel-1773",
+      "to": "montesquieu-esprit-des-loix-1749",
+      "rows": 23
+    },
+    {
+      "path": "reuse/vattel-1773__wicquefort-ambassadeur-1724.json",
+      "from": "vattel-1773",
+      "to": "wicquefort-ambassadeur-1724",
+      "rows": 60
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-juge-competent-1723.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-juge-competent-1723",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-quaestiones-1737.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-quaestiones-1737",
+      "rows": 6
+    },
+    {
+      "path": "reuse/vattel-1773__formey-principes-1758.json",
+      "from": "vattel-1773",
+      "to": "formey-principes-1758",
+      "rows": 329
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-loisir-1747.json",
+      "from": "vattel-1773",
+      "to": "vattel-loisir-1747",
+      "rows": 16
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-questions-1762.json",
+      "from": "vattel-1773",
+      "to": "vattel-questions-1762",
+      "rows": 134
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-poliergie-1757.json",
+      "from": "vattel-1773",
+      "to": "vattel-poliergie-1757",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-amusemens-1765.json",
+      "from": "vattel-1773",
+      "to": "vattel-amusemens-1765",
+      "rows": 24
+    },
     {
       "path": "reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json",
       "from": "burlamaqui-1747",
@@ -470,103 +632,6 @@
       "from": "burlamaqui-1747",
       "to": "burlamaqui-droit-politique-1751",
       "rows": 84
-    },
-    {
-      "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
-      "from": "vattel-1773",
-      "to": "wolff-jus-gentium-1749",
-      "rows": 1205
-    },
-    {
-      "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
-      "from": "vattel-1773",
-      "to": "wolff-institutiones-1750",
-      "rows": 285
-    },
-    {
-      "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
-      "from": "vattel-1773",
-      "to": "wolff-jus-naturae-8-1748",
-      "rows": 91
-    },
-    {
-      "path": "reuse/vattel-1773__burlamaqui-1747.json",
-      "from": "vattel-1773",
-      "to": "burlamaqui-1747",
-      "rows": 62,
-      "toLayer": "Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from."
-    },
-    {
-      "path": "reuse/vattel-1773__burlamaqui-droit-politique-1751.json",
-      "from": "vattel-1773",
-      "to": "burlamaqui-droit-politique-1751",
-      "rows": 382
-    },
-    {
-      "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
-      "from": "vattel-1773",
-      "to": "grotius-barbeyrac-1724",
-      "rows": 464
-    },
-    {
-      "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
-      "from": "vattel-1773",
-      "to": "pufendorf-barbeyrac-1734",
-      "rows": 284
-    },
-    {
-      "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
-      "from": "vattel-1773",
-      "to": "montesquieu-esprit-des-loix-1749",
-      "rows": 23
-    },
-    {
-      "path": "reuse/vattel-1773__wicquefort-ambassadeur-1724.json",
-      "from": "vattel-1773",
-      "to": "wicquefort-ambassadeur-1724",
-      "rows": 60
-    },
-    {
-      "path": "reuse/vattel-1773__bynkershoek-juge-competent-1723.json",
-      "from": "vattel-1773",
-      "to": "bynkershoek-juge-competent-1723",
-      "rows": 31
-    },
-    {
-      "path": "reuse/vattel-1773__bynkershoek-quaestiones-1737.json",
-      "from": "vattel-1773",
-      "to": "bynkershoek-quaestiones-1737",
-      "rows": 6
-    },
-    {
-      "path": "reuse/vattel-1773__formey-principes-1758.json",
-      "from": "vattel-1773",
-      "to": "formey-principes-1758",
-      "rows": 329
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-loisir-1747.json",
-      "from": "vattel-1773",
-      "to": "vattel-loisir-1747",
-      "rows": 16
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-questions-1762.json",
-      "from": "vattel-1773",
-      "to": "vattel-questions-1762",
-      "rows": 134
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-poliergie-1757.json",
-      "from": "vattel-1773",
-      "to": "vattel-poliergie-1757",
-      "rows": 31
-    },
-    {
-      "path": "reuse/vattel-1773__vattel-amusemens-1765.json",
-      "from": "vattel-1773",
-      "to": "vattel-amusemens-1765",
-      "rows": 24
     }
   ]
 }

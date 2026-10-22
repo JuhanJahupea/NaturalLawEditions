@@ -132,7 +132,7 @@ for r in ROWS: tables.setdefault(text_id(r['page']), []).append(X.reuse_row(r))
 assert set(X.reuse_at) == {r['id'] for r in ROWS}
 STEPS = {'3b': 'Wolff re-scanned on a transcription (step 3b)', 4: 'Burlamaqui, Grotius and Pufendorf (step 4)',
          6: 'Montesquieu, Wicquefort, Bynkershoek, Formey, Loisir (step 6)', 8: "Vattel's other works (step 8)", 'P': 'Préface, all pools (Préface pass)'}
-TX = [{'id': t[1], 'siglum': t[0], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
+TX = [{'id': t[1], 'sigla': [t[0]], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
 cat_reuse = write_tables(ED, tables, TX, STEPS,
                          'Reuse of the source in the edition, found by retrieval and judged by a language model. '
                          'status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the text layer named in the catalogue.',
