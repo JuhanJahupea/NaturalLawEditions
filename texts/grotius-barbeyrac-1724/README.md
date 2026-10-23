@@ -32,7 +32,7 @@ Scan numbers are the PDF pages of these items. They equal the page numbers of th
 ## Checks
 
 - Structure: the § and chapter markers run in sequence through both volumes.
-- archive.org's OCR of the same scans was compared page by page (8-letter sequences of the main text, accents folded). The median page shares 79% of its sequences with the OCR. The pages that share less are pages where the OCR is garbled; where the OCR is legible the two agree.
+- archive.org's OCR of the same scans was compared page by page (8-letter sequences of the main text, accents folded). The median page shares 80% of its sequences with the OCR (`tools/transcription/qc_shingle.py`). The pages that share less are pages where the OCR is garbled; where the OCR is legible the two agree.
 - One scan (T1 214) was read against the image by hand: the main text agrees line for line.
 
 ## Known limits
