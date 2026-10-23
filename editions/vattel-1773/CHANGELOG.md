@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.3 (2026-10-23)
+
+- The Grotius table (`reuse/vattel-1773__grotius-barbeyrac-1724.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's Grotius (Amsterdam 1724, `texts/grotius-barbeyrac-1724/`); a language model judged the candidates in two rounds. 1,136 rows on 504 units (658 match, 478 possible) replace 464 rows on 329 units from the OCR of the same edition. 274 of the 282 old match rows have a new row on the same passage.
+- 190 rows quote Barbeyrac's notes (family Bb). Source passages are quoted from the transcription, under the label "source (transcription)".
+- The 464 old rows are kept in `provenance/superseded/vattel-1773__grotius-barbeyrac-1724.json`. The viewer shows them with `?asbuilt=1`.
+- Text, layers and the other reuse tables are unchanged. The edition holds 4,099 reuse rows.
+
 ## 1.2 (2026-10-22)
 
 - 30 of the 382 rows comparing Vattel with Burlamaqui's *Principes du droit politique* (1751) now name the unit of Burlamaqui's 1747 text that the PDP passage repeats (`repeats`). 28 through Burlamaqui's own PDP table (same page, overlapping passage), 2 because the wording stands in the 1747 unit. The Burlamaqui edition lists them as "reused in Vattel … through Burlamaqui 1751".

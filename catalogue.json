@@ -88,7 +88,7 @@
       "imprint": "Amsterdam, 1724. 2 vols",
       "date": "1724",
       "lang": "fr",
-      "layer": "archive.org OCR of the Gallica scans. Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+      "layer": "Vision transcription of the archive.org scans (texts/grotius-barbeyrac-1724/). Barbeyrac's notes are credited to Barbeyrac (family Bb)."
     },
     {
       "id": "pufendorf-barbeyrac-1734",
@@ -452,7 +452,7 @@
       "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
       "from": "vattel-1773",
       "to": "grotius-barbeyrac-1724",
-      "rows": 464
+      "rows": 1136
     },
     {
       "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
@@ -530,7 +530,7 @@
       "path": "reuse/burlamaqui-1747__grotius-barbeyrac-1724.json",
       "from": "burlamaqui-1747",
       "to": "grotius-barbeyrac-1724",
-      "rows": 87
+      "rows": 142
     },
     {
       "path": "reuse/burlamaqui-1747__locke-coste-1729.json",

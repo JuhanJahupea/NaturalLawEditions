@@ -12,16 +12,17 @@ index.html              landing page
 viewer/                 one viewer for every edition: viewer/?ed=<edition id>#<unit id>; the list of reuse rows: viewer/?ed=<edition id>&view=list[&ch=<chapter>]
 editions/<id>/          one folder per edition: manifest, text, layers, changelog, provenance
 reuse/                  reuse tables between texts
+texts/<id>/             transcriptions of source texts made for the collection
 docs/FORMAT.md          the file formats
-tools/                  conversion and checks
+tools/                  conversion and checks; tools/transcription/: the transcription and later-pass pipeline
 ```
 
 ## Editions
 
 | Id | Text | Units | Layers |
 |---|---|---|---|
-| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), Wolff divergences (169), English 1797 (1,124 units, 278 flags), reuse (3,427 rows in 16 tables) |
-| `burlamaqui-1747` | Burlamaqui, *Principes du droit naturel*, Genève 1747 | 331: Avertissement, Partie I ch. I–XI and Partie II ch. I–XIV by § (303), part and chapter headings (27) | Élémens 1783 (323 rows, with the same/expands relation), PDP 1751 (84 rows, later text), reuse (1,611 rows in 20 tables, the two layers included) |
+| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), divergences (169), English 1797 (1,124 units, 278 flags), reuse (4,099 rows in 16 tables; Grotius from a transcription pass) |
+| `burlamaqui-1747` | Burlamaqui, *Principes du droit naturel*, Genève 1747 | 331: Avertissement, Partie I ch. I–XI and Partie II ch. I–XIV by § (303), part and chapter headings (27) | Élémens 1783 (323 rows, with the same/expands relation), PDP 1751 (84 rows, later text), reuse (1,666 rows in 20 tables, the two layers included; Grotius from a transcription pass) |
 
 Each edition was converted from its working edition's `data.json` by `tools/convert_<edition>.py`, which use `tools/nle.py`. `tools/link_editions.py` then links the rows whose source is itself an edition (Vattel → Burlamaqui 1747) to that edition's units. `tools/check_edition.js` loads the viewer in Chromium and compares every unit and reuse row it builds with the original `data.json`.
 
