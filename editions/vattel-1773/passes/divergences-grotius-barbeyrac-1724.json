@@ -1,0 +1,2073 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-1773",
+ "text": "grotius-barbeyrac-1724",
+ "source": "Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724), from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "Pref.5",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Discours préliminaire § 41",
+   "sourceId": "GRO24.Prol.41",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Does Grotius's distinction of droit naturel (consequence from nature) from droit des gens (universal consent) capture the droit des gens, and does he recognise a natural droit des gens?",
+   "comment": "Grotius, DGP Prol. 41 refers what many peoples hold in common either to a just consequence from natural principles, which yields natural law, or to universal consent, which yields the law of nations. Vattel holds that there is a natural law of nations distinct from the natural law of individuals, because the rules of natural law cannot simply be transferred to nations without adaptation to their nature. Grotius's division leaves no place for such a law and reserves the name of law of nations for maxims founded on consent.",
+   "passage": "pour former ce droit des gens naturel, il ne suffit pas d'appliquer simplement aux nations ce que la loi naturelle décide à l'égard des particuliers",
+   "sourcePassage": "La prémiére nous découvre le Droit Naturel; & l'autre, le Droit des Gens",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 78",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=78"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n77/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "Pref.6",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 14",
+   "sourceId": "GRO24.1.1.14",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Is the droit des gens binding only through the consent of peoples, or is there a natural droit des gens with external obligation independent of will?",
+   "comment": "Grotius, DGP I.1.14 defines the law of nations as human law that has acquired binding force from the will of all peoples or of many, and sets natural law apart from it. Vattel holds that a natural law of nations, natural law applied to nations as political bodies, binds them even externally and independently of their will, and that consent founds only one species, the arbitrary law of nations. Vattel takes from Barbeyrac's note to this section the denial that consent grounds the obligation of the common rules between nations, but keeps consent as the source of an arbitrary law that Barbeyrac calls a chimera.",
+   "passage": "que ce droit produit entre les nations une obligation même externe , indépendamment de leur volonté , & que le consentement des peuples est seulement le fondement & la source d'une espece particuliere de droit des gens , que l'on appelle droit des gens arbitraire",
+   "sourcePassage": "ce qui a aquis force d'obliger par (3) un effet de la volonté de tous les Peuples, ou du moins (4) de plusieurs",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 110",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=110"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n109/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.49",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XIV § 2",
+   "sourceId": "GRO24.2.14.2",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "In what sense is the prince subject to the laws?",
+   "comment": "Grotius, DGP II.14.2 holds that no penal law and no constraint reaches the king, because punishment and constraint cannot proceed from the will of the person punished and require two distinct persons. Vattel places the prince above every civil penal law because the majesty of the sovereign does not allow him to be punished like a private person and his office must not be disturbed for a fault that does not touch the government. The rule is the same and the ground differs: Grotius argues from the impossibility of self-punishment, Vattel from the dignity and function of the sovereign.",
+   "passage": "La majesté du souverain ne souffre point qu'il soit puni comme un particulier , & ses fonctions sont trop sublimes , pour qu'il puisse être troublé , sous prétexte d'une faute qui n'intéresse pas directement le gouvernement de l'état",
+   "sourcePassage": "Car la Punition & la Contrainte ne peuvent pas venir de la volonté même de celui qui est puni ou contraint: il faut nécessairement que celui qui contraint & celui qui est contraint, soient deux personnes distinctes",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 518",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=518"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n517/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.51",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. III § 8",
+   "sourceId": "GRO24.1.3.8",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May a nation restrain, judge and withdraw obedience from a tyrant, even one holding full and absolute sovereignty?",
+   "comment": "Grotius, DGP I.3.8 holds that a people may transfer the right of government entirely without reserving any part, and rejects the view that the people may restrain and punish kings who abuse their power. Vattel holds that a grant of absolute power made without express reserve always carries a tacit reserve that it be used for the safety of the people, so that the nation may restrain, judge and withdraw obedience from a tyrant whether he is absolute or not. Vattel follows Barbeyrac's note to this section on the tacit reserve. Grotius admits only the exception of a king who sets out to destroy the whole people, at DGP I.4.11.",
+   "passage": "Lors donc qu'elle confere l'empire suprême & absolu , sans réserve expresse , c'est nécessairement avec la réserve tacite , que le souverain en usera pour le salut du peuple , & non pour sa ruine.",
+   "sourcePassage": "pourquoi donc un Peuple libre ne pourroit-il pas se soûmettre à une ou plusieurs personnes, en sorte qu'il leur transférât entiérement le droit de le gouverner, sans s'en reserver aucune partie?",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 175",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=175"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n174/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.54",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. IV § 1",
+   "sourceId": "GRO24.1.4.1",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "In what cases may a subject refuse obedience to the sovereign, or resist him by force?",
+   "comment": "Grotius, DGP I.4.1 holds that a subject must refuse commands contrary to natural or divine law but, if ill-treated for refusing or at the sovereign's pleasure, must suffer rather than oppose force with force. Vattel requires patience only for doubtful and tolerable injustices and allows a subject to resist a prince who without apparent reason attacks his life or goods whose loss makes life bitter, since such a prince degrades himself into an unjust enemy. Vattel follows Barbeyrac's note against Grotius and quotes it. Grotius allows resistance only in extreme and otherwise inevitable danger, at DGP I.4.7.",
+   "passage": "ce n'est plus qu'un ennemi injuste & violent, contre lequel il est permis de se défendre.",
+   "sourcePassage": "il faut souffrir, plûtôt que d'opposer la force à la force.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 224",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=224"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n223/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.54",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. IV § 2",
+   "sourceId": "GRO24.1.4.2",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "In what cases may a subject refuse obedience to the sovereign, or resist him by force?",
+   "comment": "Grotius, DGP I.4.2 holds that civil society gives the state a superior right to forbid the natural right of resistance, so that resistance to the sovereign is unlawful by the usage of all states. Vattel holds that subjects must bear doubtful and supportable injustices but may resist manifest and atrocious injuries to their life or to goods whose loss makes life bitter, since self-preservation is an obligation no one can wholly renounce. Grotius admits only a narrow exception for extreme and certain peril in DGP I.4.7. Vattel follows Barbeyrac's note against Grotius, taking over its distinction between supportable and manifest injustices and quoting it by name.",
+   "passage": "Mais lorsqu'il s'agit d'injures manifestes & atroces, lorsqu'un prince, sans aucune raisonapparente, voudroit nous ôter la vie, ou nous enlever des choses dont la perte rend la vie amere, qui nous disputera le droit de lui résister ?",
+   "sourcePassage": "Ainsi l'Etat peut, pour le bien de l'ordre & du repos public, interdire l'usage illimité de ce droit envers toute autre personne.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 225",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=225"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n224/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.62",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. VII § 26",
+   "sourceId": "GRO24.2.7.26",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Are renunciations of the succession valid, and whom do they bind?",
+   "comment": "Grotius, DGP II.7.26 holds that anyone may renounce the crown for himself, but that in a lineal succession a father's renunciation cannot prejudice children already born, who hold their own right under the law of succession, while the unborn lose theirs only by the people's will joined to the parents' renunciation. Vattel treats succession as a law of the state and not a property of the ruling family, so that renunciations required or approved by the state exclude the renouncer and all his posterity, and unauthorised ones bind only the prince, who may return if the state calls him. Vattel rejects the reasoning from the rights of born and unborn children and, with Barbeyrac's note, forbids a renunciation made out of season to the state's harm.",
+   "passage": "Ces renonciations exigées , ou approuvées par l'état, sont très - valides , puisqu'elles sont équivalentes à une loi que l'état feroit pour exclure ces mêmes personnes qui ont renoncé, & leur postérité.",
+   "sourcePassage": "Il y a néanmoins cette différence entre les Enfans déja nez, & ceux qui sont encore à naitre, que les derniers n'existant point, n'ont aquis encore aucun droit, & qu'ainsi il peut leur être ôté par la volonté du (2) Peuple, si en même tems les Péres, qui sont intéressez à faire passer ce droit à leurs Enfans, y renoncent.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 401",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=401"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n400/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.66",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. VII § 27",
+   "sourceId": "GRO24.2.7.27",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Who is to judge between rival claimants when the right of succession to a sovereignty is uncertain?",
+   "comment": "Grotius, DGP II.7.27 denies both the reigning king and the people the power to give a juridical and definitive sentence on a disputed succession, the people having transferred all its jurisdiction to the royal family. He allows only that the present people be consulted on the original order of succession and advises the claimants to choose arbiters. Vattel holds that the decision belongs to the nation alone, sovereign authority returning to the body of the state while the right is uncertain, and that no compromise or arbitration among the claimants binds the nation without its consent. Vattel concedes that Grotius is close in substance, but he follows Barbeyrac's note against Grotius in making the nation a judge with public authority.",
+   "passage": "Disons donc sans hésiter , que la décision de cette grande controverse appartient à la nation , & à la nation seule.",
+   "sourcePassage": "je répons, qu'ils ne le peuvent ni l'un ni l'autre, si on l'entend d'une Sentence (1) juridique & définitive.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 401",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=401"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n400/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.68",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. III § 11",
+   "sourceId": "GRO24.1.3.11",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What are \"patrimonial\" states, and can a state truly be the sovereign's patrimony?",
+   "comment": "Grotius, DGP I.3.11 holds that most kings hold sovereignty as a usufruct but that some possess the crown in full property, namely conquerors and those to whom a people has given itself without reserve. Vattel rejects the term patrimonial kingdom and holds that a state can never be a patrimony, so that a sovereign who names his successor or transfers the crown acts only on a trust conferred by the nation. Vattel follows Barbeyrac's note, which endorses Cocceius's and Thomasius's rejection of Grotius's division into patrimonial and usufructuary kingdoms.",
+   "passage": "Nous avons fait voir ( §. 61. ) que l'état ne peut être un patrimoine.",
+   "sourcePassage": "Mais il y a quelques Rois qui possédent la Couronne en pleine propriété (4), comme ceux qui ont aquis la Souveraineté par droit de conquête, ou ceux à qui un Peuple s'est donné sans reserve, pour éviter un plus grand mal.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 188",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=188"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n187/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.69",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. III § 12",
+   "sourceId": "GRO24.1.3.12",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Can the sovereign alienate sovereignty, or is true sovereignty inalienable?",
+   "comment": "Grotius, DGP I.3.12 holds that a king may have a right of property over certain peoples by which he may alienate them at will, since what is alienated is the perpetual right to govern a people and not free persons. Vattel holds that all true sovereignty is inalienable by nature, so that the right to alienate the state belongs to the sovereign only by express grant of the whole people. Vattel names Grotius and treats his examples, such as the bequests of Pergamum, Bithynia and Cyrene to Rome, as proofs of abuse of power and not of right. Barbeyrac's note already requires a formal or clearly tacit concession by the people, and Vattel goes further in demanding express consent.",
+   "passage": "Toute vraie souveraineté est inaliénable de sa nature.",
+   "sourcePassage": "Rien n'empêche donc, qu'un Roi n'ait un droit de Propriété sur (20) certains Peuples, en vertu duquel il pourra les aliéner, s'il veut",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 193",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=193"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n192/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.69",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. VI § 3",
+   "sourceId": "GRO24.2.6.3",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Can the sovereign alienate sovereignty, or is true sovereignty inalienable?",
+   "comment": "Grotius, DGP II.6.3 holds that sovereignty may be alienated like any other thing by its true owner, that is by the king who holds the kingdom as a patrimony, and otherwise by the people with the king's consent. Vattel holds that only the nation has the right to submit itself to a foreign power, so that the right to alienate the state can never belong to the sovereign unless the whole people expressly grants it. Vattel denies the patrimonial king the power of alienation that Grotius gives him.",
+   "passage": "Concluons donc que la nation seule ayant le droit de se soumettre à une puissance étrangere , le droit d'aliéner véritablement l'état ne peut jamais appartenir au souverain , s'il ne lui est expressément donné par le peuple entier.",
+   "sourcePassage": "LA Souveraineté (1) peut être aliénée, comme toutes les autres choses, par celui à qui elle appartient véritablement; c'est-à-dire, ainsi que nous l'avons remarqué (a) ci-dessus, par le Roi, s'il posséde le (2) Roiaume comme un patrimoine: hors de là, c'est le Peuple (3) qui doit aliéner, mais avec le consentement du Roi",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 369",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=369"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n368/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.233",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XXI § 4",
+   "sourceId": "GRO24.2.21.4",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Exception to territorial jurisdiction over crimes: habitual enemies of mankind may be punished anywhere; surrender to the state where the crimes were committed",
+   "comment": "Grotius, DGP II.21.4 holds that a state harbouring a criminal must, at the injured state's request, either punish him itself or surrender him, and that it is not bound to surrender him precisely, the obligation being alternative. Vattel holds that professional poisoners, assassins, incendiaries and pirates may be punished wherever they are seized, but that when the sovereign of the place of their crimes claims them they must be surrendered to him as the party chiefly interested and for a regular trial. For criminals of this class Vattel turns Grotius's alternative into a duty to surrender on demand.",
+   "passage": "Si le souverain du pays où des crimes de cette nature ont été commis, en réclame les auteurs pour en faire la punition, on doit les lui rendre, comme à celui qui est principalement intéressé à les punir exemplairement.",
+   "sourcePassage": "Mais il faut bien se souvenir de ce que nous avons déja insinué, c'est qu'un Peuple ou un Roi n'est pas tenu précisément & indispensablement de livrer les Coupables, mais de les livrer, ou de les punir.",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 126",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=126"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n125/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.233",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XXI § 3",
+   "sourceId": "GRO24.2.21.3",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Exception to territorial jurisdiction over crimes: habitual enemies of mankind may be punished anywhere; surrender to the state where the crimes were committed",
+   "comment": "Grotius, DGP II.21.3, holds that states have no exclusive right to punish crimes that concern human society in any way, so other states may pursue their punishment and the state harbouring the offender must not obstruct them. Vattel makes punishment of crimes committed in the territory the general rule and excepts only habitual criminals, such as professional poisoners, assassins, incendiaries and pirates, who attack the common security of all nations. He also holds that such offenders should be surrendered to the sovereign of the place of the crime when he claims them.",
+   "passage": "si la justice de chaque état doit en général se borner à punir les crimes commis dans son territoire, il faut excepter de la regle ces scélé-rats, qui, par la qualité & la fréquence habituelle de leurs crimes, violent toute sûreté publique, & se déclarent les ennemis du genre-humain",
+   "sourcePassage": "on ne leur a pas laissé un droit si absolu & si particulier à l'égard des Crimes qui intéressent en quelque façon la Société Humaine. Car, pour ce qui est de ceux-ci, les autres Etats, ou leurs Chefs, ont droit d'en poursuivre la punition",
+   "confidence": 0.7,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 125",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=125"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n124/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.294",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. III § 10",
+   "sourceId": "GRO24.2.3.10",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Can a sea wholly enclosed in one nation's lands be appropriated by that nation?",
+   "comment": "Grotius, DGP II.3.10, allows by natural law that a part of the sea lying within the lands of one or more peoples may become their property when it is small in proportion to those lands, even if not enclosed on all sides, but denies it wherever the law of nations has by common consent made the sea incapable of ownership. Vattel holds that a sea wholly enclosed in one nation's lands and joined to the ocean by a strait it can seize is as capable of property as land, and lets the Romans appropriate the whole Mediterranean. He sets no limit of size and makes no reservation for a contrary consent of nations, which Barbeyrac's note had said could never be proved.",
+   "passage": "il paroit qu'une pareille mer n'est pas moins susceptible d'occupation & de propriété que la terre ; elle doit suivre le sort des pays qui l'environnent",
+   "sourcePassage": "un Peuple ne pourra point s'approprier un coin de Mer, quelque petit qu'il soit, & encore qu'il se trouve renfermé dans ses terres pour la plus grande partie, par tout où cet usage aura eu lieu, sans avoir été aboli par un commun consentement",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 306",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=306"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n305/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.7",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XX § 40",
+   "sourceId": "GRO24.2.20.40",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May a nation use force to compel others to accept its perfecting (civilizing) or to punish their grave violations of natural law that do not concern it?",
+   "comment": "Grotius, DGP II.20.40, holds that sovereigns may punish, and make war to punish, enormous violations of the law of nature or of nations committed against anyone, even where neither they nor their subjects are injured, because the power to punish comes from natural law and not from civil jurisdiction. Vattel names Grotius and rejects this: the right to punish derives only from the right of security and so lies only against those who have offended the punisher. He concludes that no nation may use force to impose civilization or religion on another and that Grotius's doctrine supplies pretexts for conquest and fanaticism.",
+   "passage": "le droit de punir dérive uniquement pour les hommes, du droit de sûreté ; par conséquent il ne leur appartient que contre ceux qui les ont offensés",
+   "sourcePassage": "les Rois, & en général tous les Souverains, ont droit de punir, non seulement les injures faites à eux ou à leurs Sujets, mais encore celles qui ne les regardent point en particulier, lors qu'elles renferment une violation énorme du Droit de la Nature ou de celui des Gens, envers qui que ce soit",
+   "confidence": 0.95,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 98",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=98"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n97/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.33",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. II § 24",
+   "sourceId": "GRO24.2.2.24",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May a nation lawfully acquire a trade monopoly by treaty, and when does its use become wrongful?",
+   "comment": "Grotius, DGP II.2.24, allows a treaty giving one people the sole right to buy goods that grow nowhere else, on condition that it stands ready to resell them to others at a reasonable price. Vattel allows the same monopoly but holds that selling at an immoderate price breaches natural law without injuring other nations, since under external right an owner may keep his goods or set what price he likes. Only for necessaries of life does he give other nations a right to unite and compel the monopolist, so the reasonable-price condition binds the conscience but is enforceable only for necessaries.",
+   "passage": "mais elle ne leur fait point injure,parce qu'à rigueur, & suivant le droit externe, le propriétaire d'une chose est le maître de la garder ou d'y mettre le prix qu'il veut",
+   "sourcePassage": "bien entendu que le Peuple, qui aquiert le privilége d'acheter seul ces sortes de choses, soit tout prêt de les vendre aux autres à un prix raisonnable",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 298",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=298"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n297/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.86",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. II § 17",
+   "sourceId": "GRO24.2.2.17",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May others occupy uncultivated or desert land inside a nation's territory without its consent?",
+   "comment": "Grotius, DGP II.2.17, holds that a people must give desert and uncultivated land within its territory to foreigners who ask for it, and that they may even seize it, because uncultivated land is occupied only as to jurisdiction. Vattel holds that such land belongs to the nation even when unused and that nobody may seize it without its consent, subject only to the rule that no nation may appropriate a grossly disproportionate territory. Vattel follows Barbeyrac's note, which denies Grotius's distinction between jurisdiction and property and treats everything within a people's territory as truly occupied.",
+   "passage": "si elle a laissé dans le pays des lieux incultes & déserts , qui que ce soit n'est en droit de s'en emparer sans aveu",
+   "sourcePassage": "il doit les donner aux Etrangers qui les demandent ; ou même ceuxci peuvent légitimement s'en emparer",
+   "confidence": 0.92,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 295",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=295"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n294/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.122",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. II § 21",
+   "sourceId": "GRO24.2.2.21",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May a nation use force to obtain wives from neighbours who refuse, and may individual women be compelled (Sabines)?",
+   "comment": "Grotius, DGP II.2.21, counts the freedom to seek and take wives among neighbours as a right common to all men and adopts Augustine's view that the Romans, had they gone to war over an unjust refusal, could justly have taken wives by right of war. Vattel also allows a people without women to use force against neighbours who refuse them, but only to secure the liberty of seeking brides. No individual girl may be forced in her choice or become by right the wife of her abductor, and a band of brigands is no true nation entitled to the right at all.",
+   "passage": "Mais s'il est permis à une nation de se procurer, même à main armée, la liberté de rechercher des filles en mariage, aucune fille en particulier ne peut être contrainte dans son choix, ni devenir de droit la femme d'un ravisseur.",
+   "sourcePassage": "si les Romains eussent pris les armes contre leurs Voisins, pour le refus injuste que ceux-ci leur avoient fait, de leur donner des Femmes, ils auroient pû alors en prendre justement par droit de Guerre",
+   "confidence": 0.72,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 297",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=297"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n296/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.141",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. IV § 5",
+   "sourceId": "GRO24.2.4.5",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Are usucapion and prescription grounded in natural law, and on what basis?",
+   "comment": "Grotius, DGP II.4.5, founds the loss of ownership through long silence on a reasonable presumption of the owner's will to abandon, which requires that he knew of the other's possession and kept silent freely. Vattel holds that the absolute presumption of abandonment is not a conjecture about the owner's secret will but a position that natural law orders to be taken as true for the sake of order and peace, and that it gives the good-faith possessor a title as firm as property itself. The ground moves from the owner's actual intention to the nature and end of property, the line of Barbeyrac's note to DGP II.4.6 and of Wolf, whom Vattel cites.",
+   "passage": "La présomption absolue ne signifie pas ici une conjecture de la volonté secrette du propriétaire, mais une position, que la loi naturelle ordonne de prendre pour vraie & stable , & cela en vue de maintenir l'ordre & la paix parmi les hommes",
+   "sourcePassage": "il y a tout lieu de croire , qu'il n'a négligé cela , que parce qu'il ne vouloit plus regarder comme sienne la chose dont il s'agit",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 321",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=321"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n320/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.148",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. IV § 6",
+   "sourceId": "GRO24.2.4.6",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Why is prescription founded on presumed abandonment from long silence harder to apply between nations (fear of the strong; ruler cannot alienate)?",
+   "comment": "Grotius, DGP II.4.6, holds that fear may delay a claim for a time but cannot be supposed to last, since a long period gives the owner occasions to protest or to appeal to judges or arbitrators, so that long silence supports the presumption of abandonment. Vattel holds that between nations a weak state is commonly in danger whenever it shows any claim on the possessions of a powerful monarch, so that long silence seldom founds a legitimate presumption of abandonment. Vattel treats the fear of the stronger as a lasting excuse between nations where Grotius treats fear as a passing one.",
+   "passage": "Personne n'ignore combien il est dangereux pour l'ordinaire à un état foible, de laisser entrevoir seulement quelque prétention sur les possessions d'un monarque puissant.",
+   "sourcePassage": "la crainte peut bien avoir empêché pendant quelque tems qu'on ne redemandât son bien , mais on ne conçoit pas qu'elle dure toûjours",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 322",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=322"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n321/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.162",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XV § 8",
+   "sourceId": "GRO24.2.15.8",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May a nation ally with a nation of a different religion, and are such treaties valid?",
+   "comment": "Grotius, DGP II.15.8, holds that natural law permits alliances with those of another religion without any exception, and that the question arises only under divine law, which he goes on to examine. Vattel holds that natural law alone governs treaties between nations and sets the divine-law inquiry aside as superfluous. He places the limit within natural law itself, which forbids favouring a religion whose maxims call for its spread by violence or allying without necessity with its adherents.",
+   "passage": "Mais si les maximes d'une religion vont à s'établir par la violence, à opprimer tous ceux qui ne la reçoivent pas, la loi naturelle défend de favoriser cette religion, de s'unir sans nécessité à ses inhumains sectateurs",
+   "sourcePassage": "car le droit de faire des Alliances est commun à tous les Hommes généralement, & sans que la différence des Religions y apporte aucune exception.",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 534",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=534"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n533/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.204",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XV § 13",
+   "sourceId": "GRO24.2.15.13",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Do a state's existing alliances survive when it places itself under another's protection, and which prevails in a collision?",
+   "comment": "Grotius, DGP II.15.13, prefers the older ally but excepts the case where the later treaty carries some form of subjection, which prevails as a later buyer who has acquired ownership prevails over the first buyer. Vattel holds that a state acting freely cannot place itself under another's protection without reserving all its existing alliances, since it may make no treaty contrary to those that bind it. Only when necessity forces the submission does the treaty of protection override an old ally in a collision, on the ground of closer ties. Both cite the Nepesini, but Vattel makes necessity, not subjection as such, the condition.",
+   "passage": "il ne peut se mettre sous la protection d'un autre, sans réserver toutes ses alliances, tous ses traités subsistans.",
+   "sourcePassage": "Il y a ici néanmoins un cas à excepter, (a) c'est lors que l'Alliance postérieure renferme, outre la promesse de donner du secours, quelque chose (b) qui emporte une espéce de transport de propriété, je veux dire, quelque maniére de Sujettion.",
+   "confidence": 0.7,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 542",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=542"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n541/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.211",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XV § 16",
+   "sourceId": "GRO24.2.15.16",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "What is the sponsor (promisor) bound to when the state disavows his agreement?",
+   "comment": "Grotius, DGP II.15.16, holds that public persons who treat without the sovereign's order must indemnify the other party for its loss when ratification is refused, even if they never claimed authority, their goods being bound first and then their personal liberty. Vattel refuses to apply the private-law rule on promising another's act: a sponsor who acted in good faith and disclosed his want of power owes only an honest effort to obtain ratification, unless he expressly undertook to surrender himself, custom required it, or the matter lies within his power to make good, as with Fabius Maximus. Grotius uses the Samnites' imprudence only to deny that the Roman army was bound, while Vattel uses it to free the sponsors as well.",
+   "passage": "tout ce à quoi il semble que sa parole l'oblige, c'est de faire de bonne foi tout ce qu'il peut faire légitimement, pour engager le souverain à ratifier ce qu'il a promis",
+   "sourcePassage": "Mais s'ils n'avoient pas donné lieu de croire qu'ils fussent autorisez par le Peuple Romain, ils devoient toûjours dédommager les Samnites de ce qu'ils perdoient par le défaut de ratification, selon la nature même de l'affaire.",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 545",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=545"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n544/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.212",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XV § 16",
+   "sourceId": "GRO24.2.15.16",
+   "relation": "partly",
+   "severity": 2,
+   "question": "What is the sovereign who disavows a sponsio still bound to (restitution, indemnity, restoring the status quo, ratifying)?",
+   "comment": "Grotius, DGP II.15.16 holds that the sovereign is bound in no way by a treaty a public person made without his order, so the Roman people owed the Samnites neither indemnity nor restoration of the position before the Caudine accord. Vattel accepts the Caudine conclusion but requires a sovereign who refuses ratification to restore whatever the other party handed over under the accord, since keeping it would be holding another's property without title. He requires prompt disavowal, and holds that equity obliges the state to ratify or to make a new fair treaty when the enemy acted generously, and forbids refusing an equitable and honourable treaty only to save the price of deliverance. He limits to things actually received the argument from the advantage gained, which Barbeyrac's note reports from Thomasius.",
+   "passage": "le souverain de ce général doit sans doute restituer ce qu'il a reçu, s'il ne veut pas ratifier l'accord",
+   "sourcePassage": "le Souverain n'est lié en aucune maniére par des Traitez ainsi conclus sans son ordre",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 543",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=543"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n542/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.217",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XIV § 13",
+   "sourceId": "GRO24.2.14.13",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Can the state or the successor revoke a sovereign's donations and privileges (as against his debts)?",
+   "comment": "Grotius, DGP II.14.13 holds that favours a king grants from his own property have the force of a perfect donation and can be revoked only as punishment of a subject or for public utility, with compensation where possible, while mere dispensations from a law remain revocable. Vattel treats the sovereign's donations as gifts of state property, made without power when made without public cause, so that the successor or the state may always revoke them without compensation, and he classes gratuitous privileges with such donations. He reserves protection against revocation, save for abuse or the safety of the state and then with compensation, to immunities granted for cause, which he assimilates to onerous contracts.",
+   "passage": "Le successeur ou l'état peut toujours révoquer une pareille donation",
+   "sourcePassage": "Ces sortes de concessions ne peuvent (b) point être révoquées, à moins que ce ne soit, lors qu'il s'agit de Sujets, en forme de punition, ou pour l'utilité publique",
+   "confidence": 0.5,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 526",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=526"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n525/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.249",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 55",
+   "sourceId": "GRO24.3.20.55",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May hostages be retained for another claim once the promise they secured is fulfilled?",
+   "comment": "Grotius, DGP III.20.55 holds that hostages given for one cause cannot be kept as hostages for another, but that if the giver has broken faith in another matter or incurred another debt they may be held under the rule of the law of nations that permits seizing subjects for their sovereign's act, unless an express clause provides for their return. Vattel denies any retention for another cause and names Grotius and Wolff as the authors he rejects. He grants the right to seize subjects but holds that the hostage is in the holder's power only by the faith of the treaty, which permits no use beyond the one agreed.",
+   "passage": "Il n'est donc point permis de les retenir pour un autre sujet.",
+   "sourcePassage": "les Otages donnez peuvent alors être retenus, non comme Otages, mais en conséquence de cette régle du Droit des Gens",
+   "confidence": 0.95,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 454",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=454"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n453/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.254",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 54",
+   "sourceId": "GRO24.3.20.54",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May a hostage escape from the party holding him?",
+   "comment": "Grotius, DGP III.20.54 holds that a hostage who has not given his word may escape without wrong, since the state that gives him only hands him over to be guarded as the enemy sees fit, though the state may not receive and keep him. Vattel holds that the hostage must stay faithfully with the holder and not try to escape, because the intention presumed in his sovereign is that he be kept until the promise is fully performed. Both require the state to return a fugitive hostage. Vattel follows Barbeyrac's note, which sides with Buddeus and Battier against Grotius.",
+   "passage": "L'otage , de son côté , répondant à l'intention qui est à présumer dans son souverain, doit demeurer fidélement chez celui à qui il est remis , sans chercher à s'évader.",
+   "sourcePassage": "Autrement il semble que l'intention de l'Etat, en donnant quelcun pour otage, ne soit pas (1) de lui imposer l'obligation de ne pas s'enfuïr, mais seulement de le remettre entre les mains de l'Ennemi, avec pouvoir de le garder comme il l'entendra.",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 453",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=453"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n452/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.256",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 56",
+   "sourceId": "GRO24.3.20.56",
+   "relation": "partly",
+   "severity": 2,
+   "question": "What happens to the obligation of a hostage and his substitute when one of them dies?",
+   "comment": "Grotius, DGP III.20.56 holds that a person given as hostage to redeem a prisoner or another hostage is freed as soon as that other dies, because the right of the pledge ends with the death of the person pledged, and he approves Demetrius's claim to release after the death of Antiochus, for whom he had been given in exchange. Vattel frees the substitute on the hostage's natural death only where he took the hostage's place for a time. Where the hostage was exchanged for another, Vattel holds the first wholly free and the replacement alone bound, so the distinction between temporary substitution and exchange withdraws Grotius's release in the case of exchange.",
+   "passage": "Ce seroit tout le contraire , si l'otage avoit été échangé pour un autre : le premier seroit absolument libre de tout engagement , & celui qui l'auroit remplacé, seroit seul lié.",
+   "sourcePassage": "il est quitte de son obligation, du moment que cet autre vient à mourir.",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 454",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=454"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n453/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.300",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVI § 10",
+   "sourceId": "GRO24.2.16.10",
+   "relation": "partly",
+   "severity": 1,
+   "question": "What the distinction between favourable and odious matters is, and how it guides extension or restriction of indeterminate terms",
+   "comment": "Grotius, DGP II.16.10 defines favourable matters by their content, as those that involve equality or tend to common utility, and odious matters as those burdensome to one party, penal, annulling an act or altering what was settled. Vattel defends the distinction against Barbeyrac, who rejected it, but defines it by its interpretive effect: favourable matters are those where equity is better kept by extending the terms, odious those where restriction serves equity better. He confines the distinction to cases where the precise intention cannot be fixed by the other rules of interpretation.",
+   "passage": "Les choses odieuses , au contraire , sont celles dont la restriction tend plus sûrement à l'équité , que leur extension.",
+   "sourcePassage": "Les Favorables sont celles qui renferment de l'égalité, ou celles qui tendent à (2) l'Utilité commune",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 554",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=554"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n553/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.306",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVI § 10",
+   "sourceId": "GRO24.2.16.10",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "How things partly favorable and partly odious are to be classed (which side prevails)",
+   "comment": "Grotius, DGP II.16.10, holds that a thing partly favourable and partly odious counts as one or the other according to the size of the good and of the change, and that other things being equal the favourable side prevails. Vattel counts a mixed thing as favourable only when its good far exceeds its odious side, and ranks it among odious things when the two balance. The point of difference is the rule for the even case, which Vattel reverses on the ground that in doubt one must take the course least likely to injure equity.",
+   "passage": "Mais à moins de cette disproportion , & toutes choses d'ailleurs égales , la faveur est pour le parti qui n'offre rien d'odieux",
+   "sourcePassage": "le reste d'ailleurs égal, le Favorable l'emporte.",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 554",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=554"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n553/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.309",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVI § 13",
+   "sourceId": "GRO24.2.16.13",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether \"allies\" in a treaty clause (Rome-Carthage) covers future allies, and whether such a clause is odious",
+   "comment": "Grotius, DGP II.16.13, holds that the Roman-Carthaginian clause protecting each party's allies cannot extend to allies made after the treaty, because the extension would concern the rupture of an alliance, an odious matter, and would restrict the natural liberty to make war. Vattel treats the clause as favourable and extends it to all allies present and future. He denies that it is odious on either of Grotius's grounds, since it leaves intact the right to make war on an ally who gives just cause. Vattel follows Barbeyrac's note, which extends the clause to future allies.",
+   "passage": "il est si favorable à tous égards , si conforme à l'humanité & aux sentimens qui doivent unir deux alliés qu'on doit sans difficulté l'étendre à tous les alliés présens & à venir",
+   "sourcePassage": "on ne pouvoit pas expliquer le terme d'Alliez contenu dans le Traité d'une maniére qui s'étendît à ceux qui ne l'étoient pas encore alors",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 557",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=557"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n556/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.318",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVI § 29",
+   "sourceId": "GRO24.2.16.29",
+   "relation": "partly",
+   "severity": 1,
+   "question": "When two duties are in concurrence, does the one of higher honesty and utility prevail?",
+   "comment": "Grotius, DGP II.16.29, gives preference among conflicting provisions to the one founded on reasons of greater honesty or utility. Vattel keeps the rule for duties in competition but confines it to duties equally within our power and choice. In his view an earlier engagement removes the competition, so the older ally's claim to aid prevails over the more praiseworthy defence of another nation unless a new ally faces certain ruin.",
+   "passage": "Mais elle regarde les devoirs qui sont également en notre puissance , & pour ainsi dire , à notre choix",
+   "sourcePassage": "Il faut donner la préférence à ce qui est fondé (8) sur des raisons ou des vuës, qui renferment un plus grand degré d'Honnêteté, ou d'Utilité.",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 571",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=571"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n570/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.320",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVI § 29",
+   "sourceId": "GRO24.2.16.29",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Does a treaty confirmed by oath prevail over an unsworn treaty in conflict?",
+   "comment": "Grotius, DGP II.16.29, holds that a sworn convention prevails over an unsworn one in conflict, because of the religious act that accompanies it. Vattel lets the sworn treaty prevail only other things being equal, on the ground that the oath adds force to the obligation. He adds that the oath does not change the nature of treaties and so cannot give a new ally precedence over an older ally whose treaty is unsworn.",
+   "passage": "Mais comme il ne change rien à la nature des traités ; ( §§. 225. & suiv. ) il ne peut , par exemple , donner l'avantage à un nouvel allié sur un allié plus ancien , dont le traité ne sera pas juré.",
+   "sourcePassage": "si en certaines circonstances il y a du conflict entre une Convention faite avec serment, & une autre sans serment ; la prémiére (10) doit l'emporter, à cause de l'acte religieux (11) qui l'accompagne.",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 571",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=571"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n570/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.337",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XXIII § 11",
+   "sourceId": "GRO24.2.23.11",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May one take arms to obtain a thing to which one has only a doubtful right, against a possessor?",
+   "comment": "Grotius, DGP II.23.11, holds that a claimant without titles sufficient to convict the possessor of unjust possession cannot lawfully make war on him, and that both parties must seek accommodation, the claimant more than the possessor. Vattel equally forbids taking arms to gain possession on a doubtful right. He permits arms to compel the possessor to discuss the claim, accept a reasonable means of decision or settle on equitable terms. The point of difference is this permission, which makes war lawful against a possessor who refuses such means, a case Grotius's section does not admit.",
+   "passage": "On peut seulement obliger le possesseur même, s'il le faut, par les armes, à discuter la question, à accepter quelque moyen raisonnable de décision, ou d'accommodement ; ou enfin à transiger sur un pied équitable.",
+   "sourcePassage": "si l'on n'a pas en main des titres suffisans pour convaincre le Possesseur de l'injustice de sa possession, on ne peut pas légitimement lui déclarer la Guerre pour ce sujet",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 165",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=165"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n164/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.346",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. II § 7",
+   "sourceId": "GRO24.3.2.7",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Who may order and carry out reprisals (the sovereign only, or private persons)?",
+   "comment": "Grotius, DGP III.2.7, holds that the law of nations permits any person to take reprisals, and that only the civil laws of some countries require leave from the sovereign or the ordinary judges. Vattel holds that only sovereigns may exercise and order reprisals, because the goods of private persons count as the nation's only between state and state and because reprisals border on open war. The point of difference is the source of the requirement of the sovereign's leave, which Grotius places in civil law and Vattel in the law of nations. Vattel's second ground follows Barbeyrac's note, which requires the sovereign's permission because reprisals are a step toward war.",
+   "passage": "Il n'appartient donc qu'aux souverains d'exercer & d'ordonner les représailles",
+   "sourcePassage": "Le Droit des Gens permet à chacun (2) d'user du droit de Représailles",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 234",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=234"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n233/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.352",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. II § 6",
+   "sourceId": "GRO24.3.2.6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May force, even to the point of killing, be used against those who resist just reprisals?",
+   "comment": "Grotius, DGP III.2.6, allows the killing of those who resist reprisals only by accident and holds that charity requires abandoning the claim when one foresees having to kill. Vattel holds that a sovereign may repel resisters even at the cost of their lives, and names Grotius in rejecting his rule. He confines Grotius's counsel to private persons in matters of small importance and makes the true good of the state the rule between sovereigns. Vattel takes the side of Barbeyrac's note, which rejects Grotius's rule as making reprisals useless against resolute resisters.",
+   "passage": "Il est donc permis de repousser ceux qui entreprennent de s'opposer à de justes représailles, & s'il faut pour cela aller jusqu'à leur ôter la vie, on ne peut accuser de ce malheur que leur résistance injuste & inconsidérée.",
+   "sourcePassage": "quand on prévoit que l'on sera réduit à en venir là, la Charité veut qu'on néglige (2) plûtôt la poursuite de son droit",
+   "confidence": 0.95,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 234",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=234"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n233/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.22",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXII § 4",
+   "sourceId": "GRO24.3.22.4",
+   "relation": "partly",
+   "severity": 1,
+   "question": "What follows when a subordinate falsely claims a power he lacks and deceives the other party (even an enemy)?",
+   "comment": "Grotius, DGP III.22.4 holds that a public minister who falsely claims greater powers must pay the value of what he promised and repair the damage, answering with his goods and failing them with servitude or prison, and may also be punished in person or goods according to the gravity of the fraud. Vattel holds the faithless officer bound to repair the damage caused by his fraud and lays the duty of punishing him and compelling reparation on his own sovereign, as a debt to justice and to that sovereign's glory. Vattel thus moves the punishment of the deceiving officer from the party he deceived to his own sovereign.",
+   "passage": "Le souverain de cet officier de mauvaise foi , doit le punir & l'obliger à réparer sa faute , il le doit à la justice & à sa propre gloire.",
+   "sourcePassage": "Pour l'autre, on est en droit de s'en prendre ou à sa personne, ou à ses biens, ou à l'un & l'autre tout ensemble, selon la grandeur du crime.",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 472",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=472"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n471/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.40",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XXIII § 13",
+   "sourceId": "GRO24.2.23.13",
+   "relation": "partly",
+   "severity": 2,
+   "question": "When must a war nevertheless be treated as legitimate on both sides (good faith, doubtful cause, external effects)?",
+   "comment": "Grotius, DGP II.23.13 holds that a war cannot be just on both sides as to the action, that both parties may act without injustice through ignorance though in war some rashness or want of charity is hardly ever absent, and that wars are just on both sides only as to certain legal effects, which he refers to formal public wars. Vattel holds that in any doubtful cause the arms of both parties must pass as equally legitimate as to external effects until the cause is decided, because nations are equal and independent and cannot judge one another. Vattel grounds this bilateral legitimacy in the independence of nations and confines it to doubtful causes, where Grotius ties it to the forms of public war.",
+   "passage": "Puis donc que les nations sont égales & indépendantes ( Liv. II. §. 36. & Prélim. §§. 18. 19. ) & ne peuvent s'ériger en juges les unes des autres, il s'ensuit que dans toute cause susceptible de doute, les armes des deux parties qui se font la guerre doivent passer également pour légitimes, au moins quant aux effets extérieurs, & jusqu'à ce que la cause soit décidée.",
+   "sourcePassage": "Enfin, si l'on entend le mot de Juste par rapport à certains effets de droit, il est certain qu'en ce sens il y a des Guerres justes de part & d'autre; comme il paroîtra par ce que nous dirons ci-dessous des Guerres Publiques & dans les formes.",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 166",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=166"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n165/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.51",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. III § 6",
+   "sourceId": "GRO24.3.3.6",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Is a declaration of war necessary before taking up arms, and on what ground?",
+   "comment": "Grotius, DGP III.3.6 holds that natural law requires no declaration of war when one defends oneself, punishes the offender himself or merely retakes one's own, and that a prior summons in such cases is fine and praiseworthy but not owed. Vattel holds that after satisfaction has been refused a nation owes it to humanity and to the blood and repose of its subjects to declare to the unjust nation that it is about to use open force. Vattel turns Grotius's counsel into a duty of natural law, following Barbeyrac's note against Grotius that such a summons is obligatory whenever it can be made without prejudice.",
+   "passage": "nous devons encore ce ménagement à l'humanité , & sur-tout au sang & au repos des sujets , de déclarer à cette nation injuste , ou à son conducteur , que nous allons enfin recourir au dernier remede & employer la force ouverte",
+   "sourcePassage": "Selon le Droit Naturel, lors qu'il s'agit seulement de se défendre, ou de punir celui-là même qui s'est rendu coupable; il ne faut point de Déclaration de Guerre.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 240",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=240"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n239/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.66",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. III § 4",
+   "sourceId": "GRO24.1.3.4",
+   "relation": "partly",
+   "severity": 2,
+   "question": "What makes a war legitimate and in due form (sovereign authority plus formalities)?",
+   "comment": "Grotius, DGP I.3.4 holds that a solemn war requires sovereign authority on each side and certain formalities, and that the two conditions are equally necessary. Vattel adopts the two conditions but exempts defensive war from the declaration and, in pressing occasions, from an express order of the sovereign. Grotius classes a war begun by a magistrate under pressing danger as public but not solemn, and in DGP III.3.12 he denies that defensive war can dispense with a declaration.",
+   "passage": "car la guerre défensive n'a pas besoin d'une déclaration (§. 57.), ni même, dans les occasions pressantes, d'un ordre exprès du souverain",
+   "sourcePassage": "Ces conditions sont également nécessaires, en sorte que, l'une manquant, l'autre demeure inutile.",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 168",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=168"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n167/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.77",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. VIII § 4",
+   "sourceId": "GRO24.3.8.4",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Do incorporeal things (debts and rights owed by third parties to the enemy) count as enemy property open to war rights?",
+   "comment": "Grotius, DGP III.8.4 holds that the incorporeal rights, names and actions of a conquered state pass to the victor as far as he chooses to appropriate them, since the master of a person is master of all his rights. Vattel counts the enemy's rights, names and actions among his goods but excepts rights granted by a third party who has an interest in who holds them, such as rights of commerce. Grotius states no such exception.",
+   "passage": "ex-cepté cependant ces especes de droits qu'un tiers a concédés & qui l'intéressent, ensorte qu'il ne lui est pas indifférent par qui ils soient possédés",
+   "sourcePassage": "Car quiconque est maître d'une personne, est maître aussi & des choses, & de tous les droits qui lui appartenoient.",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 317",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=317"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n316/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.102",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. III § 10",
+   "sourceId": "GRO24.3.3.10",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Must war be declared on the associates of the enemy (and the Manlius-Galatians case)?",
+   "comment": "Grotius, DGP III.3.10 holds that a war made after the main war on a people that aided the enemy requires a fresh declaration, and judges Manlius's war on the Galatians not lawful under the law of nations for want of one. Vattel holds that the Galatians had declared themselves enemies of Rome by supplying troops for an offensive war, and that Manlius waged the expedition as a continuation of the war with Antiochus, whose treaty was not yet consummated and did not cover his adherents. Vattel accepts the rule but rejects Grotius's application of it to Manlius, while keeping his example of Ulysses and the Cicones.",
+   "passage": "Manlius entreprit donc l'expédition contre les Galates, comme une suite ou un reste de la guerre d'Antiochus.",
+   "sourcePassage": "parce que les Galates & Arioviste ne furent point attaquez comme adhérans à un autre Ennemi, mais comme étant eux-mêmes l'Ennemi principal: or il falloit pour cela, par le Droit des Gens, une nouvelle Déclaration de Guerre",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 248",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=248"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n247/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.111",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. I § 5",
+   "sourceId": "GRO24.3.1.5",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "May neutral nations trade with my enemy, and may I stop that trade?",
+   "comment": "Grotius, DGP III.1.5 holds that those who furnish the enemy with things needed for war may be regarded as belonging to the enemy's party. Vattel holds that neutrals who simply pursue their ordinary trade with the enemy remain neutral and exercise a right, and that only manifest partiality takes them out of neutrality. For Vattel the seizure of war goods carried by neutrals rests on necessity and is not counted as an act of hostility against them. His impartiality test is close to Barbeyrac's note on this section, which follows Cocceius against Grotius.",
+   "passage": "Mais si elles ne font que suivre tout uniment leur commerce, elles ne se déclarent point par là contre mes intérêts : elles exercent un droit que rien ne les oblige de me sacrifier.",
+   "sourcePassage": "A l'égard de la prémiére sorte, il est certain que l'on peut regarder comme du parti de nôtre Ennemi, ceux qui lui fournissent des choses nécessaires pour la Guerre",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 202",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=202"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n201/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.113",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. I § 5",
+   "sourceId": "GRO24.3.1.5",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "May contraband carried by neutrals to the enemy be confiscated, or only seized against payment?",
+   "comment": "Grotius, DGP III.1.5 allows goods of double use bound for the enemy to be stopped only under necessity and subject to restitution, and reserves damages or punishment for carriers who knowingly caused harm or who sustain an evidently unjust enemy. Vattel holds that all contraband that can be taken may be confiscated as good prize, on the grounds of deterrence, notification of the war and settled European usage. The difference lies in the sanction and its ground: confiscation for efficacy and by convention replaces seizure with restitution.",
+   "passage": "On prend donc le parti de confisquer toutes les marchandises de contrebande dont on peut se saisir, afin que la crainte de perdre servant de frein à l'avidité du gain, les marchands des pays neutres s'abstiennent d'en porter à l'ennemi.",
+   "sourcePassage": "la nécessité me donne droit alors de m'en saisir, comme nous (c) l'avons expliqué ailleurs, à la charge de restituer, s'il ne survient quelque autre raison qui m'en empêche",
+   "confidence": 0.7,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 202",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=202"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n201/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.117",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. I § 5",
+   "sourceId": "GRO24.3.1.5",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "May neutrals trade with a besieged or blockaded place, and how may violators be treated?",
+   "comment": "Grotius, DGP III.1.5 makes a neutral who supplies a besieged or blockaded place liable for damages only when the place was about to yield and he could know it, and allows punishment only where the enemy's injustice is evident. Vattel holds that all commerce with a besieged or blockaded place is forbidden and that anyone who tries to enter it or bring anything in without leave may be treated as an enemy. Vattel drops Grotius's conditions of actual harm, knowledge, imminent surrender and evident injustice.",
+   "passage": "Quand je tiens une place assiégée, ou seulement bloquée, je suis en droit d'empêcher que personne n'y entre, & de traiter en ennemi quiconque entreprend d'y entrer sans ma permission, ou d'y porter quoi que ce soit",
+   "sourcePassage": "comme si j'assiégeois une Place, si je tenois un Port bloqué, & que l'Ennemi fût sur le point de se rendre, ou de faire la paix: le tiers sera tenu de me dédommager du préjudice (d) qu'il m'a causé par sa faute",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 201",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=201"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n200/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.122",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. II § 13",
+   "sourceId": "GRO24.2.2.13",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "When may a nation force a passage through another's territory?",
+   "comment": "Grotius, DGP II.2.13 holds that passage for a just cause is owed, so that one must first ask for it but may force it if the master of the country refuses. Vattel holds that in doubtful cases the owner's judgment on the innocence of the passage prevails and his refusal must be borne even if thought unjust. Vattel allows force only where the innocence of the passage is manifest, which he thinks almost never true of an army, or in extreme necessity. His position moves toward Barbeyrac's note, which makes passage a strict right only in extreme necessity.",
+   "passage": "Dans tous les cas douteux, il faut s'en rapporter au jugement du maître, sur l'innocence de l'usage qu'on demande à faire des choses appartenantes à autrui, (L. II. §§. 128. & 130.) & souffrir son refus, bien qu'on le croye injuste.",
+   "sourcePassage": "L'opinion véritable est ici celle qui tient le milieu, c'est qu'il faut prémiérement (8) demander passage; mais que, si le Maître du Païs le refuse, on peut alors le forcer.",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 290",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=290"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n289/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.123",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. II § 13",
+   "sourceId": "GRO24.2.2.13",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Does fear of the danger of an army's passage justify refusing it?",
+   "comment": "Grotius, DGP II.2.13 holds that fear inspired by the numbers of those asking passage is no ground for refusing it, since that fear takes nothing from their right and precautions such as small detachments, disarming or hostages are available. Vattel, naming Grotius, holds that probable fear founded on good reasons justifies refusing entry to a powerful army when necessity does not require the passage. His ground is that the right of passage is imperfect except in pressing necessity or perfectly evident innocence. Vattel follows Barbeyrac's note, which objects that Grotius assumes the point in question.",
+   "passage": "Quand la nécessité n'exige pas le passage, le seul danger qu'il y a à recevoir chez soi une armée puissante peut autoriser à lui refuser l'entrée du pays.",
+   "sourcePassage": "En vain voudroit-on se dispenser de donner passage, à cause du grand nombre, qui nous fait appréhender quelque chose de la part de ceux qui le demandent.",
+   "confidence": 0.95,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 291",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=291"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n290/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.143",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XI § 16",
+   "sourceId": "GRO24.3.11.16",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May the victor put to death a commander for obstinately defending his place?",
+   "comment": "Grotius, DGP III.11.16 holds that obstinate defence of one's party, where the cause of the war is not wholly dishonourable, deserves no punishment or at least is never a capital crime. Vattel agrees in general but allows a governor to be threatened with death, and to suffer it, when his resistance is manifestly useless, as when the rest of the state is conquered and no relief can come. Vattel's exception turns on the uselessness of the resistance, not on the dishonesty of the cause, and he confines it to wars of doubtful justice.",
+   "passage": "La résistance poussée à l'extrêmité, ne devient punissable dans un subalterne, que dans les seules occasions où elle est manifestement inutile : c'est alors opiniâtreté, & non fermeté ou valeur.",
+   "sourcePassage": "Pour ce qui est de l'opiniâtreté à défendre son Parti, si le sujet de la Guerre n'est pas entiérement deshonnête, cela ne mérite aucune punition, comme le représentoient autrefois les Néapolitains, au rapport de (c) PROCOPE; ou du moins ce n'est pas un crime digne de mort.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 364",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=364"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n363/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.154",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 24",
+   "sourceId": "GRO24.3.21.24",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Is the state obliged to ransom its captured soldiers, and may it lawfully forbid their ransom?",
+   "comment": "Grotius, DGP III.21.24 holds that a law forbidding the ransom of prisoners of war is unjust unless experience shows such rigour necessary to prevent greater or more numerous evils, in which case charity obliges the prisoners to bear their lot. Vattel holds that any nation may, like the Romans, enact such a law to spur its soldiers to the most vigorous resistance, and that once the whole society has agreed to it no one can complain, though the law is very harsh. Grotius makes the justice of the law depend on proven necessity and censures the Roman practice; Vattel rests it on the consent of the society and a purpose of military discipline, with no test of necessity.",
+   "passage": "Cependant il faut convenir que toute nation peut, à l'exemple des Romains, & pour exciter les soldats à la plus vigoureuse résistance, faire une loi qui défende de racheter jamais les prisonniers de guerre.",
+   "sourcePassage": "On ne sauroit donc, à mon avis, regarder comme juste une Loi, qui défend de racheter les Prisonniers de Guerre; à moins que l'expérience ne fasse voir, qu'il est besoin d'une telle rigueur, pour prévenir des maux plus grands, ou en plus grand nombre, qui sans cela sont inévitables moralement parlant.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 467",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=467"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n466/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.155",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. IV § 15",
+   "sourceId": "GRO24.3.4.15",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "May one lawfully have an enemy assassinated or poisoned?",
+   "comment": "Grotius, DGP III.4.15 holds that by the law of nature it makes no difference whether an enemy who may lawfully be killed is killed by the sword or by poison, and that poison is forbidden only by the voluntary law of nations resting on the consent of the more civilised peoples. Vattel rejects as a strange maxim the view that the manner of killing is indifferent and holds assassination and poisoning to be forbidden by natural law itself, because the practice would be ruinous to human society, as well as by the consent of civilised peoples. The point of difference is the ground of the prohibition. For Vattel the sovereign who uses poison or assassins breaks natural law and becomes an enemy of mankind whom all nations may unite to punish.",
+   "passage": "L'assassinat & l'empoisonnement sont donc contraires aux loix de la guerre, également proscrits par la loi naturelle & par le consentement des peuples civilisés.",
+   "sourcePassage": "Par exemple, lors qu'il est permis de tuer quelcun, il n'importe, à considérer le Droit de Nature, qu'on se serve pour cela de l'Epée, ou du Poison.",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 262",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=262"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n261/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.173",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. IV § 4",
+   "sourceId": "GRO24.3.4.4",
+   "relation": "partly",
+   "severity": 2,
+   "question": "How far does the voluntary law of nations tolerate excess in hostilities against enemy property, and what does it condemn absolutely?",
+   "comment": "Grotius, DGP III.4.4 holds that the law of nations grants impunity for acts of hostility because outsiders cannot know how far necessity required them, and leaves the measure of hostility wholly to the conscience of the belligerents. Vattel gives the same reason for tolerating excess but holds that the voluntary law of nations still condemns every hostility that by its nature does nothing for the success of arms, such as the deliberate destruction of temples, tombs and public monuments, and any excess whose needlessness is fully evident. The difference is that Vattel sets an external limit, judged by the nature of the act, within the voluntary law itself, where Grotius leaves the whole matter to conscience.",
+   "passage": "condamne toute hostilité qui, de sa nature & indépendamment des circonstances, ne fait rien au succès de nos armes, n'augmente point nos forces, & n'affoiblit point l'ennemi",
+   "sourcePassage": "Ainsi il vaut mieux certainement laisser tout cela à la conscience de ceux qui sont en Guerre, que d'en faire juges les autres.",
+   "confidence": 0.7,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 254",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=254"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n253/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.178",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. I § 20",
+   "sourceId": "GRO24.3.1.20",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Which stratagems and ruses of war are legitimate (excluding perfidy), and were the peoples who refused them right?",
+   "comment": "Grotius, DGP III.1.20 holds that peoples who refused naturally permitted deceits acted from extraordinary greatness of soul, and that Christians ought to follow that maxim because simplicity is commanded them and they may not lie even to an enemy. Vattel holds that ruses free of perfidy are legitimate and, where they spare blood, more praiseworthy than a murderous siege or battle, and that the peoples who scorned stratagems showed more generosity than wisdom. Grotius ranks abstention from deceit as the higher course and urges it on Christians; Vattel ranks the surest lawful means as the most praiseworthy and prefers open force only on the prudential ground that it gives a more lasting advantage.",
+   "passage": "Il y avoit plus de générosité que de sagesse dans une pareille conduite.",
+   "sourcePassage": "Les (6) Chrétiens doivent suivre cette maxime, d'autant plus que la (a) simplicité leur est non seulement commandée, mais encore qu'il leur est défendu de (b) dire des paroles (7) vaines; & qu'ils ont à imiter l'exemple de celui (c) en la bouche duquel on n'a point remarqué de tromperie.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 225",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=225"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n224/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.179",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. IV § 18",
+   "sourceId": "GRO24.3.4.18",
+   "relation": "partly",
+   "severity": 1,
+   "question": "May spies be used and punished, and may a sovereign demand spying of his subjects?",
+   "comment": "Grotius, DGP III.4.18 holds that the law of nations permits sending spies and that a captured spy may be treated with great rigour, justly if the war is waged for a manifestly lawful cause and otherwise only with impunity by the right of war. Vattel holds that spies are justly put to death because there is hardly any other means of guarding against the harm they do. Grotius ties the justice of the penalty to the justice of the war; Vattel grounds it in the necessity of self-protection, which holds for either belligerent.",
+   "passage": "On punit communément les espions du dernier supplice, & cela avec justice, puisque l'on n'a guere d'autre moyen de se garantir du mal qu'ils peuvent faire",
+   "sourcePassage": "& cela justement, si on fait la Guerre pour un sujet manifestement légitime; toûjours impunément, & par droit de Guerre",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 266",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=266"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n265/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.192",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 14",
+   "sourceId": "GRO24.1.1.14",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Does the voluntary law of nations give the unjust belligerent only external impunity, and on what is that law founded (natural law vs consent)?",
+   "comment": "Grotius, DGP I.1.14 defines the law of nations as a human law that has acquired binding force from the will of all peoples or of many, proved like unwritten civil law by constant practice. Vattel holds that the voluntary law of nations rests not on the actual consent of peoples but on natural law, which obliges nations to consent and supplies a consent they are not free to withhold; a consent proved from history would only be conventional law binding those who gave it. Vattel follows Barbeyrac's note in denying that the consent of peoples founds this law, while rejecting Barbeyrac's conclusion that a law of nations distinct from natural law is a chimera.",
+   "passage": "ce que nous appellons droit des gens volontaire, consiste dans des regles de conduite, de droit externe, auxquelles la loi naturelle oblige les nations de consentir",
+   "sourcePassage": "ce qui a aquis force d'obliger par (3) un effet de la volonté de tous les Peuples, ou du moins (4) de plusieurs",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 110",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=110"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n109/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.201",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. VIII § 1",
+   "sourceId": "GRO24.3.8.1",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "What may a conqueror do with an entire conquered state or nation (limits of his right over the vanquished)?",
+   "comment": "Grotius, DGP III.8.1 holds that, as individual captives may be enslaved, a victor may impose on a whole conquered people a civil, a purely despotic or a mixed subjection, and may alienate a sovereignty that resided in the people. Vattel calls the conqueror's absolute mastery a monstrous principle and derives all his right from just self-defence, which allows reparation, punishment and a rigour that must end once danger ceases, but no enslavement of a submitted people. Vattel follows Barbeyrac's note in holding that a subjection the vanquished do not accept leaves the state of war in being.",
+   "passage": "Lorsqu'un souverain, se prétendant le maître absolu de la destinée d'un peuple qu'il a vaincu , veut le réduire en esclavage, il fait subsister l'état de guerre entre ce peuple & lui.",
+   "sourcePassage": "imposer à tout le Corps des Ennemis, soit qu'il fasse un Etat entier, ou seulement partie de l'Etat, une Sujettion ou purement civile, ou purement despotique, ou qui tienne de l'une & de l'autre",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 314",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=314"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n313/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.212",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. IX § 6",
+   "sourceId": "GRO24.3.9.6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Does postliminium restore to a retaken town (or private owners) goods alienated by the enemy while he held it?",
+   "comment": "Grotius, DGP III.9.6 holds that a captor acquires by the right of war a conditional ownership of his prisoner's goods lying in neutral countries; if he alienates them, goods capable of postliminium pass only at the buyer's risk and revert to the returning prisoner, while other goods pass outright. Vattel declares the question void, because the captor gains only a right to hold the prisoner until peace or ransom and acquires no right over goods he has not seized. Vattel reaches the result of Barbeyrac's note, that the prisoner recovers all such goods, on the different ground that captivity gives the captor no property in the prisoner or his goods.",
+   "passage": "car le souverain qui fait un prisonnier à la guerre , n'a d'autre droit que celui de le retenir jusqu'à la fin de la guerre, ou jusqu'à ce-qu'il soit racheté ( §§. 148 & suiv. ) ; & il n'en acquiert aucun sur ses biens, sinon en tant qu'il peut s'en saisir.",
+   "sourcePassage": "Ainsi le droit de Propriété qu'avoit sur les biens du Prisonnier celui qui le possedoit par droit de Guerre, n'étoit pas un droit absolu, mais un droit conditionel",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 324",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=324"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n323/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.223",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XVIII § 1",
+   "sourceId": "GRO24.3.18.1",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "May subjects commit acts of hostility without the sovereign's order?",
+   "comment": "Grotius, DGP III.18.1, holds that by natural law and true justice any person may act against the enemy in a just war, and that the ban on private hostilities rests only on civil law and military discipline. Vattel grounds the ban in the sovereign's exclusive right to make war and to direct its operations, and admits only self-defence as an exception. Vattel follows Barbeyrac's note against Grotius, which derives the ban from natural law and from the subject's engagements to the sovereign.",
+   "passage": "Les sujets ne peuvent donc agir ici d'eux - mêmes, & il ne leur est pas permis de commettre aucune hostilité, sans ordre du souverain.",
+   "sourcePassage": "C'est donc en vertu du Droit Civil, ou des Loix de la Discipline Militaire, qu'il est défendu à toute personne d'agir contre l'Ennemi, sans un ordre du Souverain, ou de ses Ministres.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 413",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=413"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n412/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.229",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XVIII § 2",
+   "sourceId": "GRO24.3.18.2",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Do privateers acquire the booty, how far may subjects serve in conscience, and what of foreigners taking commissions?",
+   "comment": "Grotius, DGP III.18.2, holds that privateers who fit out ships at their own cost acquire in true justice only so much of their captures as answers to the debt owed to the state, an equitable arbiter judging whether they have exceeded it. Vattel holds that privateers acquire the booty as a reward for their outlay and risk, by the sovereign's concession and in the measure fixed by their contract. Vattel drops the limit set by the debt and places the subject's question of conscience in the justice of the war, which he may serve unless it is evidently unjust.",
+   "passage": "Les armateurs, qui équippent à leurs frais des vaisseaux pour aller en course, acquierent la propriété du butin, en récompense de leurs avances & des périls qu'ils courent ; & ils l'acquierent par la concession du souverain, qui leur délivre des commissions.",
+   "sourcePassage": "ce n'est que jusqu'à la concurrence de la dette, qu'on aquiert la propriété de ce que l'on prend sur les Ennemis, coupables ou non",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 414",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=414"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n413/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.232",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 8",
+   "sourceId": "GRO24.3.20.8",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Must the state compensate subjects for losses suffered in war?",
+   "comment": "Grotius, DGP III.20.8, rejects the view that the state owes no compensation for losses caused by hostilities, since the members of one state must bear in common the damage that falls on some of them, though civil law may deny an action. Vattel holds that the state must pay for damage it causes freely by way of precaution, and that losses caused by necessity or by the enemy give no action against the state. He rests this on the presumed intention of those who formed the society and leaves only an equitable duty of relief.",
+   "passage": "on n'a point d'action contre l'état, pour des malheurs de cette nature, pour des pertes qu'il n'a pointcausées librement, mais par nécessité & par accident, en usant de ses droits.",
+   "sourcePassage": "il ne s'étend point jusqu'aux Membres d'un même Etat, dont l'association demande qu'ils supportent en commun (1) les dommages (d) qui arrivent aux uns ou aux autres en conséquence de la communauté où ils sont entrez.",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 432",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=432"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n431/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.237",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXII § 8",
+   "sourceId": "GRO24.3.22.8",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Who has authority to conclude truces and similar wartime accords (sovereign or commanders)?",
+   "comment": "Grotius, DGP III.22.8, holds that generals, and even their lieutenants and subordinate officers, may grant a truce binding themselves and their own troops, without distinction of scope or length. Vattel reserves a general truce to the sovereign or to one expressly empowered, requires ratification for a particular truce of long duration, and leaves to commanders only short particular truces. Vattel follows Barbeyrac's note against Grotius, which on Pufendorf's authority excepts general truces and truces of considerable length from the general's power.",
+   "passage": "Suivant cette regle, la treve générale ne peut être conclue & arrêtée que par le souverain lui-même, ou par celui à qui il en a expressément donné le pouvoir.",
+   "sourcePassage": "MAIS pour ce qui est d'accorder quelque (1) Trêve, les Généraux d'armée (a) le peuvent; & même leurs Lieutenans ou Officiers Subalternes",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 473",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=473"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n472/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.239",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 5",
+   "sourceId": "GRO24.3.21.5",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "From when does a truce bind the contracting parties and their subjects, and who bears the consequences of hostilities committed in ignorance of it?",
+   "comment": "Grotius, DGP III.21.5, holds that subjects are not punishable for hostilities committed before a truce was notified to them, and that the contracting powers must indemnify those who suffered from such acts in the interval. Vattel requires the sovereign only to restore captures made after the truce should have begun, and declares that neither the subjects nor their sovereign owe any indemnity for damage done in blameless ignorance. Vattel imposes a duty to repair damage only where ignorance of the publication is due to fault, against Grotius's rule and Barbeyrac's defence of it.",
+   "passage": "Les sujets qui ne l'ont pas observée, faute de la connoître, ne sont tenus à aucun dédommagement, non plus que leur souverain, qui n'a pu la leur notifier plutôt.",
+   "sourcePassage": "Ce qui n'empêche pas, que les Puissances qui ont conclu ensemble la Trêve (2) ne doivent dédommager (3) ceux qui ont souffert par les actes d'hostilité exercez dans cet intervalle.",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 460",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=460"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n459/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.244",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 4",
+   "sourceId": "GRO24.3.21.4",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "How to fix and count the beginning and end of a truce (inclusive/exclusive days, natural days, start without stated term)",
+   "comment": "Grotius, DGP III.21.4, holds that a day named as the point from which a period of truce is to run is not included in the period, because the preposition 'depuis' separates the term from what follows. Vattel holds that a truce agreed 'depuis le premier de mars' indubitably includes that day, hostilities ceasing on it. Vattel follows Barbeyrac's note against Grotius, which on the authority of Pufendorf and Strauchius rejects the exclusion as inconsistent with the favourable character of a truce.",
+   "passage": "A l'égard du premier de ces deux jours, il paroît indubitable qu'il est compris dans la treve ; car si l'on convient qu'il y aura treve depuis le premier de mars, cela veut dire naturellement, que les hostilités cesseront le premier de mars.",
+   "sourcePassage": "Mais quand on a marqué un Jour, depuis lequel un certain espace de tems commenceroit, ce Jour n'est point compris dans l'espace déterminé",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 459",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=459"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n458/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.245",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 7",
+   "sourceId": "GRO24.3.21.7",
+   "relation": "partly",
+   "severity": 2,
+   "question": "What a party may do within its own territory during a truce (general rule)",
+   "comment": "Grotius, DGP III.21.7, holds that withdrawing an army inland, repairing breaches in one's fortifications and levying troops do not breach a truce unless a special article forbids them. Vattel derives the same permissions from the rule that each party may do at home whatever it could do in full peace, and confines the repair of fortifications to a place not actually under siege. The qualification removes the besieged place from a permission that Grotius gives without exception.",
+   "passage": "Ainsi la treve n'empêche point qu'un prince ne puisse lever des soldats, assembler une armée dans ses états, y faire marcher des troupes, y appeller même des auxiliaires, réparer les fortifications d'une place qui n'est point actuellement assiégée.",
+   "sourcePassage": "il n'y a rien là de contraire à la Trêve: non plus que si l'on répare les brêches faites à ses Fortifications, ou si l'on léve des Troupes",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 461",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=461"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n460/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.249",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 10",
+   "sourceId": "GRO24.3.21.10",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May a governor bring in relief during an armistice made for a particular object (burying the dead)?",
+   "comment": "Grotius, DGP III.21.10, holds that during a truce granted only to bury the dead nothing new may be undertaken that changes the state of things, and he denies a besieged town relief or provisions during a truce granted to shelter it from attack. Vattel reads a burial armistice by its object alone: works that the suspended fire would have prevented are barred, but the governor may quietly bring relief in at a point far from the attack. Vattel's ground, that the besieger must blame his own lack of vigilance, is the argument of Pufendorf that Barbeyrac's note rejects in favour of Grotius.",
+   "passage": "Mais rien n'empêche que, pendant une suspension d'armes de cette nature, le gouverneur ne fasse entrer sans bruit quelque secours, par un endroit éloigné de l'attaque.",
+   "sourcePassage": "Si l'on a, par exemple, accordé une Trêve seulement pour enterrer les Morts, on ne doit rien entreprendre de nouveau, qui apporte aucun changement à l'état des choses (1) pendant ce court intervalle.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 462",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=462"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n461/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.250",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 10",
+   "sourceId": "GRO24.3.21.10",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May an army use an armistice for a particular object (burying the dead) to withdraw from a bad position?",
+   "comment": "Grotius, DGP III.21.10, holds that during a truce granted only to bury the dead nothing new may be undertaken that changes the state of things. Vattel holds that a burial armistice binds the parties only not to attack each other while the dead are buried, so an army that files off quietly by its rear to a place of safety breaks no promise, and proposing such an armistice to cover a retreat is an innocent stratagem. Barbeyrac's note to Grotius names withdrawal to a safer post as one of the acts this truce forbids.",
+   "passage": "Mais si cette armée défile sans bruit par ses derrieres, & se met en lieu de sûreté, elle n'aura rien fait contre la parole donnée.",
+   "sourcePassage": "Si l'on a, par exemple, accordé une Trêve seulement pour enterrer les Morts, on ne doit rien entreprendre de nouveau, qui apporte aucun changement à l'état des choses (1) pendant ce court intervalle.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 462",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=462"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n461/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.250",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 7",
+   "sourceId": "GRO24.3.21.7",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May an army use an armistice for a particular object (burying the dead) to withdraw from a bad position?",
+   "comment": "Grotius, DGP III.21.7, holds that withdrawing one's army further into one's own territory is not contrary to a truce unless a special article forbids it. Vattel allows an army that has concluded an armistice to bury the dead to file off quietly by its rear, but forbids it to march out of its defiles in sight of the enemy, who may lawfully repulse it. Vattel makes the lawfulness of the retreat depend on whether the army uses the armistice to do what it could not have done under hostilities.",
+   "passage": "De même, si une armée, engagée dans un mauvais pas, propose & conclut un armistice pour enterrer les morts après un combat, elle ne pourra, pendant la suspension d'armes, sortir de ses défilés à la vue de l'ennemi, & se retirer impunément.",
+   "sourcePassage": "POUR ce qui est de se retirer plus avant dans ses Etats avec son Armée, comme le fit autrefois Philippe, au rapport de (a) TITE LIVE; il n'y a rien là de contraire à la Trêve",
+   "confidence": 0.5,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 461",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=461"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n460/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.258",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 9",
+   "sourceId": "GRO24.3.21.9",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What is the position of persons held back by an insurmountable obstacle in enemy territory after the truce has expired?",
+   "comment": "Grotius, DGP III.21.9, holds that persons kept in enemy territory past the end of a truce by an unforeseen and insurmountable accident may be held as prisoners of war, because their detention is not a penalty that the accident could excuse but the use of a right of war only suspended for a time. Vattel reaches the same strict rule on the ground that the accident was one they could foresee and to which they chose to expose themselves. Grotius makes the foreseeability of the accident irrelevant to the right, while Vattel rests the right on the travellers' acceptance of the risk.",
+   "passage": "C'est un accident qu'ils pouvoient prévoir, & auquel ils ont bien voulu s'exposer.",
+   "sourcePassage": "Car dans ces exemples il s'agit d'une punition, dont l'accident imprévû & inévitable met à couvert; au lieu que, dans le cas dont nous traitons, il n'y a point proprement de peine, mais seulement l'usage d'un droit, qui n'étoit suspendu que pour un certain tems.",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 462",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=462"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n461/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.264",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXIII § 5",
+   "sourceId": "GRO24.3.23.5",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Are promises made to the enemy by private individuals (soldiers, subjects) valid?",
+   "comment": "Grotius, DGP III.23.5, holds that a private person may validly bind himself to the enemy concerning his own person and goods, because a convention that avoids a greater evil counts as advantageous and no duty to the state voids it without a law annulling it; he allows that a just law may annul such promises in advance and punish the promisor. Vattel grounds the validity of these promises on the subject's return to his natural rights when he can neither receive the sovereign's orders nor enjoy his protection. He concludes that the sovereign cannot release a subject from a promised ransom and must make him pay it. Grotius leaves the state a power to annul such promises by law, which Vattel's sovereign does not have.",
+   "passage": "Ainsi, quand ce particulier a promis une somme pour sa rançon, loin que le souverain puisse le dégager de sa promesse, il doit l'obliger à la tenir.",
+   "sourcePassage": "Les Loix pourroient sans doute ôter ce pouvoir aux Sujets, tant perpétuels, qu'à ceux qui ne le sont que pour un tems.",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 477",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=477"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n476/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.269",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 14",
+   "sourceId": "GRO24.3.21.14",
+   "relation": "partly",
+   "severity": 1,
+   "question": "How is the extent of the right given by a safe-conduct to be judged (return, stay)?",
+   "comment": "Grotius, DGP III.21.14, holds that a safe-conduct, as a privilege that harms no third party and costs the grantor little, is to be read broadly rather than narrowly, rejecting restrictions the words would allow unless absurdity or clear indications require them. Vattel measures its extent by the grantor's will alone, as shown by the purpose for which it was given. Vattel drops Grotius's presumption in favour of the broader reading.",
+   "passage": "Le droit que donne un sauf-conduit venant entiérement de la volonté de celui qui l'accorde , cette volonté est la regle sur laquelle on doit en mesurer l'étendue : & la volonté se découvre par la fin pour laquelle le sauf-conduit a été donné.",
+   "sourcePassage": "Ainsi en demeurant dans la propriété des termes, il faut en étendre le sens, plûtôt que le resserrer",
+   "confidence": 0.5,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 463",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=463"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n462/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.279",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 25",
+   "sourceId": "GRO24.3.21.25",
+   "relation": "partly",
+   "severity": 1,
+   "question": "May the right to demand a ransom from a prisoner be transferred to a third party?",
+   "comment": "Grotius, DGP III.21.25, holds that a captor may transfer to another his right to demand a ransom from his prisoner, since natural law permits the alienation of incorporeal rights, and he sets no limit to the transfer. Vattel admits the transfer but holds that the captor, who owes his prisoner fair and humane treatment, should not cede the right without limit to someone who might abuse it until the ransom has been agreed. Once the price is fixed the captor may cede the right to anyone.",
+   "passage": "Mais comme celui qui fait un prisonnier est obligé de le traiter équitablement & avec humanité ( §. 150 ), s'il veut se mettre à couvert de tout reproche, il ne doit point transférer son droit, d'une maniere illimitée, à quelqu'un qui pourroit en abuser : lorsqu'il est convenu avec son prisonnier du prix de la rançon , il peut céder à qui il lui plaira le droit de l'exiger.",
+   "sourcePassage": "je ne doute pourtant pas, que ceux qui ont pris quelcun à la Guerre ne puissent transferer à autrui le droit qu'ils ont d'exiger du Prisonnier une rançon",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 467",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=467"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n466/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.282",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XXI § 30",
+   "sourceId": "GRO24.3.21.30",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Must a prisoner released on condition of procuring another's release return to prison if that other dies?",
+   "comment": "Grotius, DGP III.21.30, holds that a prisoner released on condition of procuring another prisoner's release is not bound to return to prison when that other dies first, since no return was stipulated and liberty is too favoured to presume a tacit agreement; he owes only the value of what he promised. Vattel holds that in strict right the prisoner must return to prison, and that only equity suggests leaving him free on payment of a just equivalent. Vattel's strict rule is the result of the Roman jurists set out in Barbeyrac's note, which Grotius rejects as less agreeable to natural law.",
+   "passage": "Il suit, à rigueur, des mêmes principes, qu'un prisonnier relâché à condition d'en faire délivrer un autre, doit retourner en prison, au cas que celui - ci vienne à mourir avant qu'il ait pu lui procurer la liberté.",
+   "sourcePassage": "le Prisonnier, qui a été relâché, n'est point tenu véritablement de se remettre en prison: car cela n'a point été stipulé dans l'accord; & la Liberté est une cause trop favorable pour que l'on présume là-dessus une convention tacite.",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 468",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=468"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n467/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.291",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XIX § 7",
+   "sourceId": "GRO24.3.19.7",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Must the prince keep the promises he has made to rebels?",
+   "comment": "Grotius, DGP III.19.7 holds that the sovereign must ordinarily keep agreements made with rebel subjects because the public interest requires it, but may override them by his eminent right when circumstances demand, provided he compensates the subjects affected. Vattel rests the duty on the same inviolability of promises that binds individuals, sovereigns and enemies, and lets the prince revoke only extorted concessions contrary to the welfare of the nation, which he never had power to grant. Vattel makes such revocation depend on the nation's assent given in the forms of the constitution, where Grotius makes it depend on compensation.",
+   "passage": "il révoquera justement des concessions pernicieuses , en s'autorisant del'aveu de la nation, dont il prendra l'avis, de la maniere & dans les formes qui lui seront marquées par la constitution de l'état.",
+   "sourcePassage": "lors même que les circonstances demandent l'usage de ce droit éminent, il faut néanmoins dédommager de quelque autre maniére les Sujets, envers qui on en use",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 421",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=421"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n420/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.293",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVIII § 2",
+   "sourceId": "GRO24.2.18.2",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Does civil war make the two parties independent, so that they are treated as two separate nations?",
+   "comment": "Grotius, DGP II.18.2 regards one nation as two bodies of people for a time only in exceptional civil wars, where the parties are nearly equal and it is uncertain on which side sovereign power lies, or where two claimants to the crown have arguments hard to decide between. Vattel holds that civil war as such produces two independent parties, to be considered as two separate peoples. He applies this even where one side has wrongly resisted legitimate authority, since the parties are divided in fact and have no common judge.",
+   "passage": "Que l'un des deux ait eu tort de rompre l'unité de l'état , de résister à l'autorité légitime, ils n'en sont pas moins divisés de fait.",
+   "sourcePassage": "que le Peuple est divisé en deux Partis presqu'égaux, en sorte qu'on ne sait de quel côté est le Pouvoir Souverain",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 19",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=19"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n18/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.11",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 5",
+   "sourceId": "GRO24.3.20.5",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May the prince alienate parts of the state in a peace treaty without the nation's express consent?",
+   "comment": "Grotius, DGP III.20.5 holds that a king who holds his kingdom as usufructuary cannot alienate any part of it by treaty without the consent of the whole people and of the province or town concerned, the latter's consent alone sufficing under extreme necessity. Vattel holds that where the Estates have fallen into disuse the king alone judges what to cede for peace, and that the nation's consent is not required for parts already in the enemy's power. An absolute sovereign may abandon such parts on his own judgement, or at least promise that the nation will never take up arms to recover them.",
+   "passage": "c'est au souverain seul, s'il a l'administration pleine & absolue du gouvernement, le pouvoir de la guerre & de la paix ; c'est, dis-je , à lui seul de juger s'il convient d'abandonner ces parties de l'état, ou de continuer la guerre pour les recouvrer.",
+   "sourcePassage": "Mais, quand il s'agit de l'aliénation de quelque Partie du Roiaume, il faut un double consentement, savoir, celui de tout le Corps du Peuple, & celui de la Province ou de la Ville, que l'on veut aliéner, laquelle ne peut être détachée malgré soi du Corps avec lequel elle étoit unie.",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 430",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=430"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n429/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.11",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. VI § 8",
+   "sourceId": "GRO24.2.6.8",
+   "relation": "partly",
+   "severity": 1,
+   "question": "May the prince alienate parts of the state in a peace treaty without the nation's express consent?",
+   "comment": "Grotius, DGP II.6.8 admits the exceptions of utility and necessity to the ban on alienating parts of the state only as grounds for presuming the consent of the people and of the part from silence over a period, and holds the alienation void where the body or the part manifestly opposes it. Vattel holds that in pressing necessity the prince's alienations are ratified by the nation's silence alone where the nation has kept no ordinary means of express consent and has left the prince absolute power. Vattel treats that silence as a true consent required by the security of treaties, and rejects the plea that the people tolerated the loss of their Estates only through fear.",
+   "passage": "les aliénations que fait le prince pour sauver le reste de l'état, sont censées approuvées & ratifiées par le seul silence de la nation, lorsqu'elle n'a point conservé, dans la forme du gouvernement, quelque moyen aisé & ordinaire de donner son consentement exprès, & qu'elle a abandonné au prince une puissance absolue.",
+   "sourcePassage": "si l'aliénation d'une Partie de l'Etat lui est avantageuse, aussi bien qu'au Corps, le silence pendant un tems, quoi que pas fort long, fait aisément présumer le consentement & du Peuple, & de la Partie aliénée",
+   "confidence": 0.5,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 372",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=372"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n371/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.13",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 3",
+   "sourceId": "GRO24.3.20.3",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Can a king who is a prisoner of war validly make peace?",
+   "comment": "Grotius, DGP III.20.3 holds that a captive king cannot make peace only in kingdoms originally established by the people's consent, since the people cannot be presumed to have conferred a power to be exercised while the king is not master of his person, so that a patrimonial king may make peace from captivity. Vattel rejects the distinction between patrimonial and usufructuary kingdoms as false and dangerous, and holds that peace is the affair of the nation under every legitimate government. For Vattel the captive sovereign may negotiate, but the treaty binds the nation only when ratified by the nation, by the regency, or by the king after his release.",
+   "passage": "Nous croyons avoir détruit cette idée fausse & dangereuse, de royaume patrimonial",
+   "sourcePassage": "Il faut dire la même chose d'un Roi (1) Prisonnier, mais seulement (2) dans les Roiaumes originairement établis par le consentement du Peuple",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 429",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=429"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n428/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.22",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 16",
+   "sourceId": "GRO24.3.20.16",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Which claims fall outside the peace transaction or amnesty (prior debts and injuries unrelated to the war, movables)?",
+   "comment": "Grotius, DGP III.20.16 holds that debts between private persons contracted before the war are not extinguished by the peace, since war only suspends their exaction, and confines the presumption that pre-war rights survive to rights arising from contract. Vattel holds that claims founded on a debt or on an injury prior to the war survive the treaty unless it expressly extinguishes all pretensions, provided they had no part in the causes of the war. Vattel makes the claim's relation to the war the test, not its source in contract, so that claims for unrelated pre-war injuries survive, where Grotius, DGP III.20.17-18 presumes the right to punish pre-war injuries remitted by the peace.",
+   "passage": "Ainsi des répétitions fondées sur une dette, ou sur une injure antérieure à la guerre , qui n'a eu aucune part aux raisons qui l'ont fait entreprendre , demeurent en leur entier , & ne sont point abolies prr le traité",
+   "sourcePassage": "cela doit pourtant s'entendre des droits qui naissent d'un Contract, où il y auroit autrement de la lézion.",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 435",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=435"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n434/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.37",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XIX § 11",
+   "sourceId": "GRO24.3.19.11",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Can a nation free itself from a peace treaty by pleading that it was extorted by fear or force?",
+   "comment": "Grotius, DGP III.19.11 holds that promises made in a solemn war or to end it cannot be annulled on the plea of unjust fear, because the law of nations deems that fear just on both sides so that wars may be ended, and leaves the unjust victor bound only in conscience not to keep what he extorted. Vattel denies the plea of fear on the ground of the security of peace treaties and of the nation's free choice of a limited loss, but excepts a forced submission imposed by a conqueror who attacked without any pretext, which is oppression and not peace and may be thrown off at the first occasion. Vattel follows Barbeyrac's note against Grotius in distinguishing a war waged without any cause from one waged on a plausible pretext.",
+   "passage": "Si jamais l'exception de la contrainte peut être alléguée, c'est contre un acte, qui ne mérite pas le nom de traité de paix, contre une soumission forcée à des conditions , qui blessent également la justice & tous les devoirs de l'humanité.",
+   "sourcePassage": "qu'elles (1) ne peuvent point être annullées sous prétexte d'une crainte injuste, sans le consentement de celui-là même à qui l'on a promis",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 423",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=423"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n422/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.37",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XIX § 12",
+   "sourceId": "GRO24.3.19.12",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Can a nation free itself from a peace treaty by pleading that it was extorted by fear or force?",
+   "comment": "Grotius, DGP III.19.12 limits the rule that fear counts as just on both sides in a solemn war to fear tolerated by the law of nations, and leaves promises extorted by threats such as rape or breach of faith to natural law alone. Vattel rejects the plea of fear against a peace treaty on the ground of the common safety of treaties and the free choice of the vanquished, and admits it only against a forced submission to unjust and inhuman conditions imposed by an unjust conqueror. Grotius's exception turns on the unlawful means of coercion, Vattel's on the injustice of the war and of the terms.",
+   "passage": "Si jamais l'exception de la contrainte peut être alléguée, c'est contre un acte, qui ne mérite pas le nom de traité de paix, contre une soumission forcée à des conditions , qui blessent également la justice & tous les devoirs de l'humanité.",
+   "sourcePassage": "cela ne doit s'entendre que (1) d'une crainte tolérée par le Droit des Gens",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 423",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=423"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n422/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.43",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 32",
+   "sourceId": "GRO24.3.20.32",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Does lawful self-defence break a peace treaty, and how far may offenders be pursued onto foreign soil?",
+   "comment": "Grotius, DGP III.20.32 allows offenders to be pursued without judicial process only when they are habitual wrongdoers such as pirates, presumed to act against their sovereign's will and beyond the reach of justice, and permits their punishment as if their sovereign had delivered them up. Vattel allows armed pursuit into the neighbouring country whenever the culprits may escape, as with unknown raiders, and only until they are seized. Vattel grounds the pursuit on legitimate defence instead of a presumed surrender by the sovereign, and drops the right to punish.",
+   "passage": "Si l'on a lieu de craindre que les coupables n'échappent ; si, par exemple, des inconnus, d'un pays voisin, ont fait irruption sur nos terres, nous sommes en droit de les poursuivre chez eux à main armée, jusquesà-ce qu'ils soient saisis",
+   "sourcePassage": "on peut, sans autre forme de procès, courir après eux, pour leur enlever son bien, & pour les punir même, comme s'ils avoient été livrez entre nos mains par leur Souverain",
+   "confidence": 0.55,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 441",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=441"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n440/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.45",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 40",
+   "sourceId": "GRO24.3.20.40",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Which acts contrary to the particular nature (friendship) of a peace treaty break it?",
+   "comment": "Grotius, DGP III.20.40 holds that acts against friendship break a peace made on that condition, but presumes that an injury to the partner's kin or subjects is not aimed at the partner unless a manifest design to insult him appears. Vattel lists harsh treatment of the other nation's subjects among acts evidently contrary to friendship, with no such presumption. The difference lies in Grotius's rule of benign construction, which Vattel drops.",
+   "passage": "Favoriser les ennemis d'une nation, traiter durement ses sujets, la gêner sans raison dans son commerce",
+   "sourcePassage": "l'injure ne sera point censée faite à lui-même, à moins qu'on n'aît eu un dessein manifeste de l'insulter ou de l'outrager par là indirectement",
+   "confidence": 0.5,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 443",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=443"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n442/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.51",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XX § 37",
+   "sourceId": "GRO24.3.20.37",
+   "relation": "partly",
+   "severity": 2,
+   "question": "What follows when performance of an article becomes impossible through insurmountable obstacle?",
+   "comment": "Grotius, DGP III.20.37 holds that impossibility of performance does not break the peace, and leaves the other party the choice of waiting, demanding the value, or releasing itself from the corresponding engagements. Vattel denies the other party the right to break the treaty and requires it to accept compensation where compensation is due and practicable, but declares the whole treaty void when it was evidently made for the impossible thing alone. Grotius's option of release from the equivalent engagements disappears, and Vattel adds a ground of total nullity that Grotius does not state.",
+   "passage": "l'autre partie ne peut prendre occasion de son impuissance, pour rompre le traité; mais elle doit accepter un dédommagement, s'il y a lieu à dédommagement, & s'il est praticable",
+   "sourcePassage": "il doit être au choix de l'autre Partie, ou d'attendre quelque tems l'effet de ce qu'on lui avoit promis; s'il y a encore quelque espérance que la chose devienne possible, ou d'exiger la valeur de ce qui avoit été stipulé, ou bien de se liberer des engagemens réciproques ou équivalens à l'Article de la Paix",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 442",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=442"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n441/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.66",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVIII § 3",
+   "sourceId": "GRO24.2.18.3",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Must a state accept permanent resident ministers?",
+   "comment": "Grotius, DGP II.18.3 holds that ordinary embassies with permanent residence may freely be refused, since antiquity did without them. Vattel agrees that there is no obligation to admit resident ministers, but holds that the custom is now so established that a state needs very good reasons to refuse them without giving offence. Vattel turns established custom into a condition on refusal that Grotius does not impose.",
+   "passage": "La coutume d'entretenir par-tout des ministres continuellement résidens , est aujourd'hui si bien établie , qu'il faut alléguer de très-bonnes raisons pour refuser de s'y prêter sans offenser personne.",
+   "sourcePassage": "Pour ce qui est des Ambassades ordinaires & accompagnées d'une résidence perpétuelle , dont l'usage est aujourdhui fort fréquent, on peut fort bien les refuser.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 21",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=21"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n20/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.99",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVIII § 4",
+   "sourceId": "GRO24.2.18.4",
+   "relation": "partly",
+   "severity": 2,
+   "question": "What may be done to a conspiring ambassador as the danger requires (arrest, killing)?",
+   "comment": "Grotius, DGP II.18.4 allows an ambassador to be arrested and interrogated in pressing danger to the state, and allows him to be killed only when he resorts to armed force, by the natural right of defence. Vattel allows an ambassador who directs a conspiracy to be arrested and even put to death if that is necessary to defeat it. Vattel grounds this on the safety of the state and on a perfect right of defence created by the ambassador's own acts, by which he forfeits the protection of the law of nations.",
+   "passage": "S'il étoit nécessaire , pour déconcerter & prévenir une conjuration, d'arrêter , de faire périr même un ambassadeur qui l'anime & la dirige, je ne vois pas qu'il y eût à balancer",
+   "sourcePassage": "Que si un Ambassadeur entreprend quelque chose à main armée, on peut alors sans contredit le faire mourir, non en forme de punition, mais en usant du droit naturel de la Défense.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 26",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=26"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n25/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.102",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVIII § 7",
+   "sourceId": "GRO24.2.18.7",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May reprisals be taken against an ambassador?",
+   "comment": "Grotius, DGP II.18.7 denies any right of reprisal against an ambassador, since the law of nations protects the ambassador himself by a tacit agreement, and approves the Romans who released Carthaginian envoys after Carthage had ill-treated or put in chains envoys of Rome. Vattel forbids reprisals against an innocent minister as acts unlawful in themselves, but permits arresting the envoy of a prince who has arrested ours, without other ill-treatment, as a pledge for our envoy's life and liberty. Grotius admits no such exception.",
+   "passage": "quand un prince, violant le droit des gens, a fait arrêter notre ambassadeur, nous pouvons arrêter & retenir le sien, afin d'assurer par ce gage, la vie & la liberté du nôtre.",
+   "sourcePassage": "On est censé traiter aussi tacitement avec eux: & ainsi on leur fait du tort en les maltraitant, lors même qu'on n'en fait aucun à leur Maître.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 30",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=30"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n29/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.103",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. II ch. XVIII § 4",
+   "sourceId": "GRO24.2.18.4",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What do the consent and usage of nations contribute to ambassadors' privileges, and does the protection reach envoys of princes who violate the law of nations?",
+   "comment": "Grotius, DGP II.18.4 holds that the rules protecting ambassadors are not demonstrative consequences of natural law but depend on the will of peoples, so their extent must be sought in what peoples have consented to. Vattel deduces the independence and inviolability of the ambassador from the natural and necessary principles of the law of nations and treats usage and general consent only as confirming them. Vattel moves the ground of ambassadorial privilege from the voluntary to the necessary law of nations.",
+   "passage": "Nous avons déduit l'indépendance & l'inviolabité de l'ambassadeur des principes naturels & nécessaires du droit des gens.",
+   "sourcePassage": "les régles du Droit des Gens, dont il s'agit, ne sont pas des conséquences démonstratives , qui se déduisent de principes fixes & immuables, comme celles du Droit de Nature , mais des choses qui dépendent de-la volonté des Peuples.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 22",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=22"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n21/mode/1up"
+    ]
+   ]
+  }
+ ],
+ "date": "2026-10-23"
+}

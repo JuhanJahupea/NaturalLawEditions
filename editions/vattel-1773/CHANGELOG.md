@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.4 (2026-10-23)
+
+- The divergences layer adds 86 notes against Grotius (`passes/divergences-grotius-barbeyrac-1724.json`), on 80 units: 45 where Vattel's answer diverges from Grotius's, 41 where it differs in part. Severity 3: 21, 2: 55, 1: 10. The layer now holds 255 notes.
+- Method: for each Vattel § with a Grotius match, the Grotius §§ it reuses and the nearest other § (663 pairs) went to a screening model. It flagged 108 pairs. A second model read each flagged pair with the whole Grotius § and Barbeyrac's notes and kept 86. Four pairs the screeners named outside their candidates are not yet verified.
+- Each note cites Grotius as "Grotius, DGP II.16.25" and links to the page of the 1724 edition. The notes take the Grotius colour.
+
 ## 1.3 (2026-10-23)
 
 - The Grotius table (`reuse/vattel-1773__grotius-barbeyrac-1724.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's Grotius (Amsterdam 1724, `texts/grotius-barbeyrac-1724/`); a language model judged the candidates in two rounds. 1,136 rows on 504 units (658 match, 478 possible) replace 464 rows on 329 units from the OCR of the same edition. 274 of the 282 old match rows have a new row on the same passage.

@@ -4,7 +4,7 @@ import sys, os, re, json, glob, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import ROOT, WORK
 from merge_find import find
-from corpus import unroman
+from corpus import unroman, roman
 R = ROOT
 sd, vd, tid, out = sys.argv[1:5]
 S = json.load(open(sd + '/sections.json'))
@@ -25,6 +25,14 @@ def cite(loc):
     m = re.match(r'Liv\. ([IVX]+) ch\. ([IVXL]+) § (\d+)', loc)
     if m: return 'Droit de la guerre et de la paix, Liv. %s ch. %s § %s' % m.groups()
     return 'Droit de la guerre et de la paix, ' + loc
+def dgp(c):
+    # one citation form: book in roman, chapter and section in arabic ("Grotius, DGP II.16.25")
+    def fix(m):
+        b, ch, sec = m.groups()
+        b = roman(int(b)) if b.isdigit() else b
+        ch = ch if ch.isdigit() else str(unroman(ch))
+        return 'DGP %s.%s.%s' % (b, ch, sec)
+    return re.sub(r'DGP (\d+|[IVX]+)\.(\d+|[IVXL]+)\.(\d+)', fix, c)
 items = []; fails = collections.Counter(); order = list(units)
 for f in sorted(glob.glob(vd + '/out/v*.json')):
     for v in json.load(open(f))['items']:
@@ -47,11 +55,11 @@ for f in sorted(glob.glob(vd + '/out/v*.json')):
         vol, scan = pg.split('.p'); scan = int(scan)
         items.append({'unit': u['id'], 'text': tid, 'locus': cite(v['grotius_ref']), 'sourceId': sid(v['grotius_ref']),
                       'relation': v['relation'], 'severity': int(v['severity']), 'question': ins[key]['screen']['question'],
-                      'comment': v['comment'].strip(), 'passage': vp, 'sourcePassage': gp,
+                      'comment': dgp(v['comment'].strip()), 'passage': vp, 'sourcePassage': gp,
                       'confidence': round(float(v['confidence']), 2), 'family': 'G',
                       'links': [['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/%s?page=%d' % (ZOT[vol], scan)],
                                 ['archive.org', 'https://archive.org/details/%s/page/n%d/mode/1up' % (IA[vol], scan - 1)]]})
 items.sort(key=lambda d: (order.index(d['unit']), -d['severity']))
-json.dump({'format': 'nle-pass/1', 'edition': 'vattel-1773', 'text': tid, 'source': 'Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724)',
+json.dump({'format': 'nle-pass/1', 'edition': 'vattel-1773', 'text': tid, 'date': '2026-10-23', 'source': 'Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724), from the transcription: pairs screened by one model, kept or rejected by a second',
            'items': items}, open(out, 'w'), ensure_ascii=False, indent=1)
 print(len(items), 'items;', dict(collections.Counter(d['relation'] for d in items)), '; severity', dict(collections.Counter(d['severity'] for d in items)), '; dropped', dict(fails))

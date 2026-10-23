@@ -21,7 +21,7 @@ tools/                  conversion and checks; tools/transcription/: the transcr
 
 | Id | Text | Units | Layers |
 |---|---|---|---|
-| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), divergences (169), English 1797 (1,124 units, 278 flags), reuse (4,099 rows in 16 tables; Grotius from a transcription pass) |
+| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), divergences (255: Wolff 169, Grotius 86), English 1797 (1,124 units, 278 flags), reuse (4,099 rows in 16 tables; Grotius from a transcription pass) |
 | `burlamaqui-1747` | Burlamaqui, *Principes du droit naturel*, Genève 1747 | 331: Avertissement, Partie I ch. I–XI and Partie II ch. I–XIV by § (303), part and chapter headings (27) | Élémens 1783 (323 rows, with the same/expands relation), PDP 1751 (84 rows, later text), reuse (1,666 rows in 20 tables, the two layers included; Grotius from a transcription pass) |
 
 Each edition was converted from its working edition's `data.json` by `tools/convert_<edition>.py`, which use `tools/nle.py`. `tools/link_editions.py` then links the rows whose source is itself an edition (Vattel → Burlamaqui 1747) to that edition's units. `tools/check_edition.js` loads the viewer in Chromium and compares every unit and reuse row it builds with the original `data.json`.
