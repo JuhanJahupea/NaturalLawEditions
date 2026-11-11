@@ -1,4 +1,5 @@
-# build_div.py <WORK> <rows.json> <candidates.json> <outdir>: divergence screen batches for Vattel against a source's sections.
+# build_div.py <WORK> <rows.json> <candidates.json> <outdir> [edition]: divergence screen batches for an edition (default
+# vattel-1773) against a source's sections. Item keys carry the author's name: vattel_id, burlamaqui_id, ...
 # Pairs: the source §§ of the Vattel § 's reuse rows (status match, not commonplace; text and the author's notes),
 # plus the best source § by retrieval among the Vattel § 's candidate pages. Up to 4 per Vattel §. Source §§ longer than
 # 9000 characters are cut there.
@@ -8,9 +9,9 @@ from paths import ROOT, WORK
 from lex import toks
 B = WORK
 R = ROOT
-work, rf, cf, outdir = sys.argv[1:5]
+work, rf, cf, outdir = sys.argv[1:5]; ED = sys.argv[5] if len(sys.argv) > 5 else 'vattel-1773'; K = ED.split('-')[0]
 pages = json.load(open('%s/corpus/%s.json' % (B, work)))['pages']
-units = {u['id']: u for u in json.load(open('%s/editions/vattel-1773/text.json' % R))['units']}
+units = {u['id']: u for u in json.load(open('%s/editions/%s/text.json' % (R, ED)))['units']}
 order = list(units)
 # source sections: main text by locus (across pages), Barbeyrac's notes by the § they belong to
 SEC = collections.OrderedDict(); NOTES = collections.defaultdict(list); PAGES = collections.defaultdict(list)
@@ -45,12 +46,12 @@ for uid in order:
     pool = [loc for loc, pg in PAGES.items() if any(p in cand.get(uid, []) for p in pg) and loc not in c]
     if pool: c.append(max(pool, key=lambda l: overlap(full, SEC[l])))
     c = c[:4]
-    items.append({'vattel_id': uid, 'vattel_margin': u.get('margin', ''), 'vattel_text': u['text'],
-                  'vattel_notes': ' '.join('%s %s' % (n['mark'], n['text']) for n in u.get('notes', [])),
+    items.append({K + '_id': uid, K + '_margin': u.get('margin', ''), K + '_text': u['text'],
+                  K + '_notes': ' '.join('%s %s' % (n['mark'], n['text']) for n in u.get('notes', [])),
                   'candidates': [{'source_id': l, 'text': cap(SEC[l]), 'reuse': labels.get((uid, l), [])} for l in c]})
 os.makedirs(outdir + '/in', exist_ok=True); os.makedirs(outdir + '/out', exist_ok=True)
-json.dump({'sec': SEC, 'notes': NOTES, 'pages': PAGES}, open(outdir + '/sections.json', 'w'), ensure_ascii=False)
+json.dump({'edition': ED, 'sec': SEC, 'notes': NOTES, 'pages': PAGES}, open(outdir + '/sections.json', 'w'), ensure_ascii=False)
 BS = 10
 for b in range(0, len(items), BS):
     json.dump(items[b:b + BS], open('%s/in/d%03d.json' % (outdir, b // BS), 'w'), ensure_ascii=False)
-print(len(items), 'Vattel §§;', (len(items) + BS - 1) // BS, 'batches;', sum(len(i['candidates']) for i in items), 'pairs')
+print(len(items), K, '§§;', (len(items) + BS - 1) // BS, 'batches;', sum(len(i['candidates']) for i in items), 'pairs')

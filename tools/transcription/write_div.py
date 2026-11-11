@@ -1,5 +1,5 @@
 # write_div.py <work> <screen dir> <verify dir> <text id> <out> [date]: kept verdicts -> divergence items (nle-pass/1) for the
-# comments layer. Vattel's and the source's passages are placed exactly (or with free whitespace, or fuzzy >= 0.9) or the item is reported.
+# comments layer. The edition's and the source's passages are placed exactly (or with free whitespace, or fuzzy >= 0.9) or the item is reported.
 import sys, os, re, json, glob, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import ROOT, WORK
@@ -18,12 +18,12 @@ WORKS = {'GRO24': {'title': 'Droit de la guerre et de la paix', 'abbr': 'DGP', '
                    'ia': {'PUF34T1': 'ledroitdelanatur01pufe', 'PUF34T2': 'ledroitdelanatur02pufe'},
                    'source': 'Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734)'}}
 W = WORKS[work]
-S = json.load(open(sd + '/sections.json'))
-units = {u['id']: u for u in json.load(open('%s/editions/vattel-1773/text.json' % R))['units']}
+S = json.load(open(sd + '/sections.json')); ED = S.get('edition', 'vattel-1773'); K = ED.split('-')[0]
+units = {u['id']: u for u in json.load(open('%s/editions/%s/text.json' % (R, ED)))['units']}
 P = {p['id']: p for p in json.load(open('%s/corpus/%s.json' % (B, work)))['pages']}
 ins = {}
 for f in sorted(glob.glob(vd + '/in/v*.json')):
-    for it in json.load(open(f)): ins[(it['vattel_sec'], it['source_ref'])] = it
+    for it in json.load(open(f)): ins[(it[K + '_sec'], it['source_ref'])] = it
 def sid(loc):
     m = re.match(r'Liv\. ([IVX]+) ch\. ([IVXL]+) § (\d+)', loc)
     if m: return '%s.%d.%d.%s' % (work, unroman(m.group(1)), unroman(m.group(2)), m.group(3))
@@ -46,14 +46,14 @@ for f in sorted(glob.glob(vd + '/out/v*.json')):
     for v in json.load(open(f))['items']:
         if v.get('verdict') != 'keep': fails['rejected'] += 1; continue
         if float(v.get('confidence', 0)) < 0.5: fails['below 0.5'] += 1; continue
-        key = (v['vattel_sec'], v['source_ref'])
+        key = (v[K + '_sec'], v['source_ref'])
         if key not in ins: fails['unknown pair'] += 1; continue
-        u = units[v['vattel_sec']]
+        u = units[v[K + '_sec']]
         vp = None
         for h in [u['text']] + [n['text'] for n in u.get('notes', [])]:
-            r = find(h, v.get('vattel_passage', ''))
+            r = find(h, v.get(K + '_passage', ''))
             if r: vp = h[r[0]:r[1]]; break
-        if not vp: fails['vattel passage'] += 1; continue
+        if not vp: fails[K + ' passage'] += 1; continue
         src = S['sec'][v['source_ref']]
         r = find(src, v.get('source_passage', ''))
         if not r: fails['source passage'] += 1; continue
@@ -68,7 +68,7 @@ for f in sorted(glob.glob(vd + '/out/v*.json')):
                       'links': [['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/%s?page=%d' % (W['zot'][vol], scan)],
                                 ['archive.org', 'https://archive.org/details/%s/page/n%d/mode/1up' % (W['ia'][vol], scan - 1)]]})
 items.sort(key=lambda d: (order.index(d['unit']), -d['severity']))
-json.dump({'format': 'nle-pass/1', 'edition': 'vattel-1773', 'text': tid, 'date': date,
+json.dump({'format': 'nle-pass/1', 'edition': ED, 'text': tid, 'date': date,
            'source': W['source'] + ', from the transcription: pairs screened by one model, kept or rejected by a second',
            'items': items}, open(out, 'w'), ensure_ascii=False, indent=1)
 print(len(items), 'items;', dict(collections.Counter(d['relation'] for d in items)), '; severity', dict(collections.Counter(d['severity'] for d in items)), '; dropped', dict(fails))

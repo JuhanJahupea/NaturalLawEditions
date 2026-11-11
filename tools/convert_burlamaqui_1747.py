@@ -3,7 +3,7 @@
 # Reads edition/data.json and step10_elemens1783/matches_step10.json (the same/expands relation). Writes editions/burlamaqui-1747/, reuse/, catalogue.json.
 # The 1757 Latin translation (step 11) is not in data.json and stays out.
 import collections, os, re, sys
-from nle import ROOT, Split, load, load_pass, provenance, update_catalogue, write_tables, write_text
+from nle import ROOT, Split, dump, load, load_pass, provenance, update_catalogue, write_tables, write_text
 
 SRC = sys.argv[1]
 ED = 'burlamaqui-1747'
@@ -76,6 +76,21 @@ def unit_head(s):
 SECS = D['sections']; ROWS = D['rows']
 X = Split(SECS, unit_head, MAN['viewer']['pageBreak'])
 write_text(ED, {'P' + k: v for k, v in D['titles'].items()}, X.units)
+
+# ---------- divergences: from passes (editions/<ed>/passes/divergences-<text id>.json) ----------
+div, div_sources = [], []
+for t in TEXTS:
+    P = load_pass(ED, 'divergences-' + t[1])
+    if P: div += P['items']; div_sources.append(P['source'])
+if div:
+    order = {u['id']: i for i, u in enumerate(X.units)}
+    div.sort(key=lambda d: order[d['unit']])
+    dump({'format': 'nle-layer/1', 'edition': ED, 'layer': 'divergences', 'kind': 'comments',
+          'description': "Places where a source answers the question of a section and Burlamaqui answers it differently. Sources: %s. "
+                         "relation: diverges or partly. severity: 3 incompatible answers, 2 different ground or a condition that changes cases, 1 a qualification. "
+                         "family: the source family whose colour the note takes, where it is not the layer's. "
+                         "Machine judgements, not checked by hand." % '; '.join(div_sources),
+          'items': div}, os.path.join(ROOT, 'editions', ED, 'layers', 'divergences.json'))
 
 # the same/expands relation of step 10, matched on unit, page and passage
 REL = {}

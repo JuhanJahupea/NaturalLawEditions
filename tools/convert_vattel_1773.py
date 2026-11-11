@@ -19,9 +19,9 @@ LF_OFFSET = 27  # Liberty Fund page = PDF page index - 27 (method log, English l
 # Source texts named by the reuse rows, keyed by the page-id prefix of the step tables.
 TEXTS = [
     ('JG', 'wolff-jus-gentium-1749', 'Christian Wolff', 'Jus gentium methodo scientifica pertractatum', 'Halle, 1749', '1749', 'la',
-     'Vision transcription of the Google Books copy (scans 28–876); Praefatio and Prolegomena from MDZ bsb10008059. Working French by machine.'),
+     'Vision transcription of the Google Books copy (scans 28–876); Praefatio and Prolegomena from MDZ bsb10008059 (texts/wolff-jus-gentium-1749/). Working French by machine.'),
     ('INST', 'wolff-institutiones-1750', 'Christian Wolff', 'Institutiones juris naturae et gentium', 'Halle, 1750', '1750', 'la',
-     'Vision transcription of the Google Books copy (scans 30–811). Working French by machine.'),
+     'Vision transcription of the Google Books copy (scans 30–811; texts/wolff-institutiones-1750/). Working French by machine.'),
     ('JN8', 'wolff-jus-naturae-8-1748', 'Christian Wolff', 'Jus naturae methodo scientifica pertractatum, pars VIII', '1748', '1748', 'la',
      'Google Books OCR, cleaned. Working French by machine.'),
     ('BUR47', 'burlamaqui-1747', 'Jean-Jacques Burlamaqui', 'Principes du droit naturel', 'Genève, 1747', '1747', 'fr',

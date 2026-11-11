@@ -26,6 +26,17 @@ tools/                  conversion and checks; tools/transcription/: the transcr
 
 Each edition was converted from its working edition's `data.json` by `tools/convert_<edition>.py`, which use `tools/nle.py`. `tools/link_editions.py` then links the rows whose source is itself an edition (Vattel → Burlamaqui 1747) to that edition's units. `tools/check_edition.js` loads the viewer in Chromium and compares every unit and reuse row it builds with the original `data.json`.
 
+## Source texts
+
+Transcriptions made for the collection. Each folder in `texts/` has a README on method, checks and limits.
+
+| Id | Text | Pages |
+|---|---|---|
+| `grotius-barbeyrac-1724` | Grotius, *Le droit de la guerre et de la paix*, trad. Barbeyrac, Amsterdam 1724 | 1,099 scans in 2 vols |
+| `pufendorf-barbeyrac-1734` | Pufendorf, *Le droit de la nature et des gens*, trad. Barbeyrac, Amsterdam 1734 | 1,598 scans in 2 vols |
+| `wolff-jus-gentium-1749` | Wolff, *Jus gentium methodo scientifica pertractatum*, Halle 1749 | 849 pages; Praefatio and Prolegomena from a second copy (27 units) |
+| `wolff-institutiones-1750` | Wolff, *Institutiones juris naturae et gentium*, Halle 1750 | 782 pages |
+
 ## Public address
 
 GitHub Pages serves the repository root from branch `claude/vattel-edition-setup-7jkvhg`.
