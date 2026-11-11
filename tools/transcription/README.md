@@ -13,6 +13,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 ## 2. Transcription
 
 - Agent prompt `TRANSCRIBE_PROMPT.md`, ten scans per agent: "Your range: SIGLUM <SIGLUM>, scans <a> to <b>." Each page goes to `<WORK>/tr/<SIGLUM>/s<NNNN>.json`. An agent skips pages already written, so a batch cut short is run again as it was.
+- `TRANSCRIBE_PROMPT_DEVOIRS.md`: the same for Pufendorf's *Devoirs* (1756), twenty scans per agent: one-column pages, lettered Latin glosses in the margin, and the kinds of the other works in vol. II.
 - `TRANSCRIBE_PROMPT_WOLFF.md`: the prompt of the earlier Wolff run (*Jus gentium*, *Institutiones*; 24 scans per agent, Google Books scans). Its paths are those of that run.
 - `validate.py <work>` (`GRO24`, `PUF34`): the § and chapter markers run in sequence; running heads agree with the chapter; no scan is missing.
 - `fix_markers.py <SIGLUM>… [--write]`: where a § or chapter marker is missing, puts it before the printed "§. ROMAN." or "CHAPITRE ROMAN" line. Without `--write` it only lists the changes.

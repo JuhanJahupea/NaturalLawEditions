@@ -34,6 +34,7 @@ Transcriptions made for the collection. Each folder in `texts/` has a README on 
 |---|---|---|
 | `grotius-barbeyrac-1724` | Grotius, *Le droit de la guerre et de la paix*, trad. Barbeyrac, Amsterdam 1724 | 1,099 scans in 2 vols |
 | `pufendorf-barbeyrac-1734` | Pufendorf, *Le droit de la nature et des gens*, trad. Barbeyrac, Amsterdam 1734 | 1,598 scans in 2 vols |
+| `pufendorf-devoirs-barbeyrac-1756` | Pufendorf, *Les devoirs de l'homme et du citoyen*, trad. Barbeyrac, Amsterdam and Leipzig 1756 | 958 scans in 2 vols |
 | `wolff-jus-gentium-1749` | Wolff, *Jus gentium methodo scientifica pertractatum*, Halle 1749 | 849 pages; Praefatio and Prolegomena from a second copy (27 units) |
 | `wolff-institutiones-1750` | Wolff, *Institutiones juris naturae et gentium*, Halle 1750 | 782 pages |
 

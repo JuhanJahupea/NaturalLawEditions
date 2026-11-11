@@ -6,7 +6,8 @@ from paths import ROOT, WORK
 B = WORK
 R = ROOT
 IA = {'GRO24T1': 'le-droit-de-la-guerre-t-1-grotius', 'GRO24T2': 'le-droit-de-la-guerre-t-2',
-      'PUF34T1': 'ledroitdelanatur01pufe', 'PUF34T2': 'ledroitdelanatur02pufe'}
+      'PUF34T1': 'ledroitdelanatur01pufe', 'PUF34T2': 'ledroitdelanatur02pufe',
+      'DEV56T1': 'bub_gb_dDKCHraV9BoC', 'DEV56T2': 'bub_gb_unXpgRJJud0C'}
 KEYS = ['scan', 'kind', 'page', 'head', 'margin', 'body', 'notes', 'catch', 'catch_notes', 'sig', 'notes_scan']
 tid, vols = sys.argv[1], sys.argv[2:]
 os.makedirs('%s/texts/%s' % (R, tid), exist_ok=True)
