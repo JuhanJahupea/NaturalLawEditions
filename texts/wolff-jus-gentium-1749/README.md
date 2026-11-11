@@ -36,7 +36,8 @@ Scan numbers in `JG.json` are the PDF pages of the Google Books copy. The Vattel
 ## Checks
 
 - Structure: the § markers run 1–1068. 1,089 markers mark 1,067 §§: a § whose heading falls at the foot of a page is marked on both pages. The book prints § 392 twice (scans 341 and 343) and has no § 393; the transcription keeps the numbers as printed.
-- No comparison with an OCR and no hand check against the images has been made.
+- The Google Books OCR of the same PDF was compared page by page (8-letter sequences of the main text, accents folded, long s and f as one letter; `tools/transcription/qc_wolff.py`). Google Drive gives the OCR of the first 172 PDF pages only, so the check covers scans 28–171 (144 pages). The median page shares 96% of its sequences with the OCR. The lowest is scan 133 at 87%.
+- No page has been read against the image by hand. The Google Books PDF is larger than the session could download.
 
 ## Known limits
 

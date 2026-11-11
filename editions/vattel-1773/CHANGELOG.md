@@ -5,8 +5,9 @@ Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new
 ## 1.8 (2026-11-11)
 
 - The Pufendorf table now holds 581 rows on 354 units (364 match, 217 possible). It held 612 (322 match, 290 possible). The edition holds 4,396 reuse rows.
-- A second model (Claude Opus) read the 9 old match rows that no new row covered, with their pages. 5 rows were added. 132 of the 137 old match rows now have a new row on the same passage.
+- A second model (Claude Opus) read the 9 old match rows that no new row covered, with their pages. 5 rows were added. 132 of the 137 old match rows then had a new row on the same passage; after the review below, 130.
 - The same model read 289 of the 290 rows at status possible, each with the Vattel part and the Pufendorf part that hold its passages. It kept 80 (40 now match, 40 stay possible), marked 173 commonplace and dropped 36. By the model's reasons, many of the commonplaces are passages where Vattel's wording follows Wolff's *Jus gentium* or Grotius and Pufendorf only states the same doctrine. Each reviewed row carries the verdict in `review` (`docs/FORMAT.md`). The viewer hides commonplaces unless "Possible matches" is on.
+- The 7 old match rows with no new row on the same passage: I.244 (DNG VIII.5.7), II.32 (DNG IV.5, end), II.42 and II.43 (DNG VII.3.9), II.337 (DNG VIII.6.4), III.20 (DNG I.1.13), IV.19 (DNG VIII.7.4). They stay in `provenance/superseded/`. For I.244, II.32, II.337 and IV.19 the new rows sit on the same page but mark other sentences. For III.20 the recheck found only a stock formula (confidence 0.25) and kept no row.
 - Text, layers and the other reuse tables are unchanged.
 
 ## 1.7 (2026-11-11)

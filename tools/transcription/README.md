@@ -17,6 +17,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `validate.py <work>` (`GRO24`, `PUF34`): the § and chapter markers run in sequence; running heads agree with the chapter; no scan is missing.
 - `fix_markers.py <SIGLUM>… [--write]`: where a § or chapter marker is missing, puts it before the printed "§. ROMAN." or "CHAPITRE ROMAN" line. Without `--write` it only lists the changes.
 - `qc_ocr.py <SIGLUM>…` and `qc_shingle.py <SIGLUM>…`: each page against archive.org's OCR of the same scan (words of five letters or more; 8-letter sequences). `ocr_index.py` finds the leaf offset between OCR and scans (the OCR of a Toronto scan counts its colour card).
+- `qc_wolff.py <pages> <drive text>`: the Wolff pages against the Google Books OCR of the same PDF, as Google Drive gives it (the first pages only).
 - `export_tr.py <text id> <SIGLUM>…`: the pages, one file per volume, into `texts/<text id>/<SIGLUM>.json`.
 
 ## 3. Corpus

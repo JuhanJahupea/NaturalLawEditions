@@ -39,7 +39,7 @@ function famColors(fams){const L=fams.map(f=>`--f${f.key}:${f.color}`).join(';')
 function rowObj(r,tb){const o={id:r.id,sec:r.unit,fam:r.family,work:r.work,locus:r.locus,page:r.page,note:r.inNote,label:r.label,conf:r.confidence,status:r.status,vp:r.passage,sp:r.source,reason:r.reason,links:r.links||[],
   where:r.at.length?r.at[0][0]:r.where==='margin'?'m':'',step:r.step};
  if(r.french)o.fr=r.french;if(r.earliest)o.ew=r.earliest;if(r.nearer)o.near=r.nearer;if(r.quoting)o.qa=r.quoting;if(r.noteRef)o.noteref=r.noteRef;if(r.sourcePart)o.part=r.sourcePart;
- o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;
+ o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;if(r.review)o.rev=r.review;
  if(tb.sourceLabel)Object.defineProperty(o,'slab',{value:tb.sourceLabel,enumerable:false});return o}
 function build(T,data,tables,incoming){
  TITLES=T.titles||{};DIVS=M._divs;
@@ -145,7 +145,7 @@ function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{}
 function rowHTML(r,hl){const l=r.links.map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join('');const N=RU.nearer||{},P=RU.partLabels||{};
  const near=r.near&&N.title?`<div class="ew"><b>${esc(N.title)}</b> ${esc(N.prefix)}${esc((N.labels||{})[r.near]||(N.labels||{})['*']||r.near)}</div>`:'';
  return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${repLink(r)}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${esc(r.label)}</span><span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
- <div class="q"><small>${esc(RU.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc(r.slab||(FAMI[r.fam]||{}).sourceLabel||RU.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>${esc(RU.frenchLabel||'working French')}</small>${esc(r.fr)}</div>`:''}${r.ew?ewHTML(r.ew):''}${near}<div class="why">${esc(r.reason)}</div><div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
+ <div class="q"><small>${esc(RU.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc(r.slab||(FAMI[r.fam]||{}).sourceLabel||RU.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>${esc(RU.frenchLabel||'working French')}</small>${esc(r.fr)}</div>`:''}${r.ew?ewHTML(r.ew):''}${near}<div class="why">${esc(r.reason)}</div>${r.rev?`<div class="why rv"><b>Second judge:</b> ${esc(r.rev.verdict)}${r.rev.verdict==='keep'?` ${Number(r.rev.confidence).toFixed(2)}`:''}. ${esc(r.rev.reason)}</div>`:''}<div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
 function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();document.querySelectorAll('.sec.sel').forEach(e=>e.classList.remove('sel'));const el=$(sid);if(el)el.classList.add('sel');
  const focus=ids&&ids.length;
  const all=(rowsBySec[sid]||[]).filter(visRow);
