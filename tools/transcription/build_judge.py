@@ -5,6 +5,7 @@ from paths import ROOT, WORK
 B = WORK
 R = ROOT
 ed, work, cf, outdir = sys.argv[1:5]; size = int(sys.argv[5]) if len(sys.argv) > 5 else 10
+SH = json.load(open(sys.argv[6])) if len(sys.argv) > 6 else {}  # shared word runs (shared_scan.py)
 EDN = {'vattel-1773': 'Vattel, Le droit des gens (Neuchâtel 1773)', 'burlamaqui-1747': 'Burlamaqui, Principes du droit naturel (Genève 1747)'}
 SRC = {'GRO24': 'Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724)',
        'PUF34': 'Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734)'}
@@ -35,7 +36,9 @@ while i < len(order):
     js = {'edition': EDN[ed], 'source': SRC[work],
           'pages': {p: {'printed': P[p]['page'], 'parts': parts(P[p])} for p in pages},
           'items': [{'unit': u['id'], 'margin': u.get('margin', ''), 'text': u['text'],
-                     'notes': [{'mark': n['mark'], 'text': n['text']} for n in u.get('notes', [])], 'candidates': cand[u['id']]} for u in chunk]}
+                     'notes': [{'mark': n['mark'], 'text': n['text']} for n in u.get('notes', [])], 'candidates': cand[u['id']],
+                     **({'shared': sorted([{'page_id': r['page'], 'k': r['k'], 'words': r['words']} for r in SH.get(u['id'], []) if r['page'] in cand[u['id']]],
+                                          key=lambda r: -len(r['words']))[:12]} if SH else {})} for u in chunk]}
     s = json.dumps(js, ensure_ascii=False); chars.append(len(s))
     open('%s/in/b%03d.json' % (outdir, nb), 'w').write(s); nb += 1
 print(len(order), 'units,', nb, 'batches; chars per batch mean', sum(chars) // nb, 'max', max(chars))

@@ -80,6 +80,7 @@ def build(work):
             raw = re.sub(r'[ \t]*(<<\s*(?:LIVRE|CHAP|§)\s*\d+\s*>>)[ \t]*', r'\n\1\n', raw)
             for line in raw.split('\n'):
                 m = re.match(r'\s*<<\s*(LIVRE|CHAP|§)\s*(\d+)\s*>>\s*$', line)
+                if m and m.group(1) == '§' and int(m.group(2)) == st['para']: continue  # the same § marked again on the next page
                 if m:
                     close(); kind_m, n = m.group(1), int(m.group(2))
                     if kind_m == 'LIVRE':
