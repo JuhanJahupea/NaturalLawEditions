@@ -458,7 +458,7 @@
       "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
       "from": "vattel-1773",
       "to": "pufendorf-barbeyrac-1734",
-      "rows": 612
+      "rows": 581
     },
     {
       "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
@@ -518,7 +518,7 @@
       "path": "reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json",
       "from": "burlamaqui-1747",
       "to": "pufendorf-barbeyrac-1734",
-      "rows": 580
+      "rows": 587
     },
     {
       "path": "reuse/burlamaqui-1747__pufendorf-devoirs-barbeyrac-1756.json",

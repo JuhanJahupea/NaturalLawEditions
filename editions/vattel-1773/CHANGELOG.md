@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.8 (2026-11-11)
+
+- The Pufendorf table now holds 581 rows on 354 units (364 match, 217 possible). It held 612 (322 match, 290 possible). The edition holds 4,396 reuse rows.
+- A second model (Claude Opus) read the 9 old match rows that no new row covered, with their pages. 5 rows were added. 132 of the 137 old match rows now have a new row on the same passage.
+- The same model read 289 of the 290 rows at status possible, each with the Vattel part and the Pufendorf part that hold its passages. It kept 80 (40 now match, 40 stay possible), marked 173 commonplace and dropped 36. By the model's reasons, many of the commonplaces are passages where Vattel's wording follows Wolff's *Jus gentium* or Grotius and Pufendorf only states the same doctrine. Each reviewed row carries the verdict in `review` (`docs/FORMAT.md`). The viewer hides commonplaces unless "Possible matches" is on.
+- Text, layers and the other reuse tables are unchanged.
+
 ## 1.7 (2026-11-11)
 
 - The divergences layer adds 44 notes against Pufendorf (`passes/divergences-pufendorf-barbeyrac-1734.json`), on 43 units: 27 where Vattel's answer diverges from Pufendorf's, 17 where it differs in part. Severity 3: 12, 2: 24, 1: 8. The layer now holds 302 notes (Wolff 169, Grotius 89, Pufendorf 44).

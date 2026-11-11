@@ -1,7 +1,7 @@
 {
   "format": "nle-edition/1",
   "id": "burlamaqui-1747",
-  "version": "1.3",
+  "version": "1.4",
   "changed": "2026-11-11",
   "author": "Jean-Jacques Burlamaqui",
   "title": "Principes du droit naturel",
@@ -58,6 +58,19 @@
       "table": "reuse/burlamaqui-1747__burlamaqui-droit-politique-1751.json",
       "label": "PDP 1751",
       "tooltip": "Principes du droit politique (1751), printed after the 1747 text. The rows mark passages the PDP repeats."
+    },
+    {
+      "id": "divergences",
+      "file": "layers/divergences.json",
+      "kind": "comments",
+      "label": "Divergences",
+      "default": true,
+      "tooltip": "Places where a source answers the question of the section and Burlamaqui answers it differently. Shown as notes under the section.",
+      "chip": "≠",
+      "chipTitle": "A source answers this question differently",
+      "sourceTag": "source",
+      "baseTag": "Burlamaqui",
+      "family": "P"
     }
   ],
   "reuse": {

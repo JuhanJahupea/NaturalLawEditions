@@ -2,6 +2,15 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.4 (2026-11-11)
+
+- New divergences layer (`layers/divergences.json`, from `passes/divergences-pufendorf-barbeyrac-1734.json`): 38 notes on 33 units where Burlamaqui answers a question of Pufendorf's differently. 30 diverge, 8 differ in part. Severity 3: 15, 2: 19, 1: 4. Each note cites Pufendorf as "Pufendorf, DNG I.6.15" and links to the page of the 1734 edition. The notes take the Pufendorf colour. The "Divergences" checkbox hides the layer.
+- Method: for each Burlamaqui § with a Pufendorf match, the Pufendorf §§ it reuses and the nearest other § (350 pairs on 145 §§) went to a screening model (Claude Sonnet). It flagged 42 pairs and named one more outside its candidates (P1.9.9 against DNG I.6.12). A second model (Claude Opus) read the 43 pairs with the whole Pufendorf § and Barbeyrac's notes and kept 38. The comments say where Burlamaqui follows Barbeyrac's note against Pufendorf.
+- The Pufendorf table now holds 587 rows on 182 units (531 match, 56 possible). It held 580 (447 match, 133 possible). The edition holds 1,614 reuse rows.
+- Claude Opus read the old match rows that no new row covered (25 rows on 22 units; two units are chapter headings and were not read). 27 rows were added. 348 of the 359 old match rows now have a new row on the same passage.
+- The same model read 129 of the 133 rows at status possible, each with the Burlamaqui part and the Pufendorf part that hold its passages. It kept 74 (59 now match, 15 stay possible), marked 35 commonplace and dropped 20. By the model's reasons, several drops are passages Burlamaqui took from Pufendorf's *Devoirs* and Barbeyrac's notes to it, which the Devoirs table already holds. Each reviewed row carries the verdict in `review`.
+- Text and the other reuse tables are unchanged.
+
 ## 1.3 (2026-11-11)
 
 - The Pufendorf table adds the rows for P1.2.12 against DNG I.4.9 on p. 226 of vol. 1, a page a judge named outside the candidates (580 rows, 447 match). The edition holds 1,607 reuse rows.

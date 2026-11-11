@@ -12,6 +12,9 @@ P = {'format': 'nle-pass/1', 'edition': ed, 'text': tid, 'date': date, 'textLaye
                               'line-end hyphens joined). Rows of the earlier OCR pass are in editions/%s/provenance/superseded/.' % ed,
                'sourceLabel': 'source (transcription)'},
      'rows': rows}
+if any('review' in r for r in rows):
+    P['table']['description'] += (' Rows the first judge rated possible were read again by a second judge (field review): kept with its label and confidence, '
+                                  'relabelled commonplace, or dropped.')
 os.makedirs('%s/editions/%s/passes' % (R, ed), exist_ok=True)
 with open('%s/editions/%s/passes/%s.json' % (R, ed, tid), 'w', encoding='utf-8') as f:
     json.dump(P, f, ensure_ascii=False, separators=(',', ':')); f.write('\n')
