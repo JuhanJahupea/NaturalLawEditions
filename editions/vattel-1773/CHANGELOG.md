@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.7 (2026-11-11)
+
+- The divergences layer adds 44 notes against Pufendorf (`passes/divergences-pufendorf-barbeyrac-1734.json`), on 43 units: 27 where Vattel's answer diverges from Pufendorf's, 17 where it differs in part. Severity 3: 12, 2: 24, 1: 8. The layer now holds 302 notes (Wolff 169, Grotius 89, Pufendorf 44).
+- Method: for each Vattel § with a Pufendorf match, the Pufendorf §§ it reuses and the nearest other § (394 pairs) went to a screening model. It flagged 46 pairs. A second model read each flagged pair with the whole Pufendorf § and Barbeyrac's notes and kept 44. Each note cites Pufendorf as "Pufendorf, DNG II.3.23" and links to the page of the 1734 edition. The notes take the Pufendorf colour.
+- The Pufendorf table adds one row (612 rows, 322 match): Vattel II.170 against DNG VIII.9.5, a page a judge named outside the candidates. The edition holds 4,427 reuse rows.
+
 ## 1.6 (2026-11-11)
 
 - The Pufendorf table (`reuse/vattel-1773__pufendorf-barbeyrac-1734.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's Pufendorf (Amsterdam 1734, `texts/pufendorf-barbeyrac-1734/`); a language model judged the candidates in two rounds, then rechecked the earlier pass's matches that no new row covered. 611 rows on 373 units (321 match, 290 possible) replace 284 rows on 221 units from the PDF text layer of the same edition. 128 of the 137 old match rows have a new row on the same passage.

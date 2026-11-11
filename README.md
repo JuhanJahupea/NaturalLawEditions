@@ -21,8 +21,8 @@ tools/                  conversion and checks; tools/transcription/: the transcr
 
 | Id | Text | Units | Layers |
 |---|---|---|---|
-| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), divergences (258: Wolff 169, Grotius 89), English 1797 (1,124 units, 278 flags), reuse (4,426 rows in 16 tables; Grotius and Pufendorf from transcription passes) |
-| `burlamaqui-1747` | Burlamaqui, *Principes du droit naturel*, Genève 1747 | 331: Avertissement, Partie I ch. I–XI and Partie II ch. I–XIV by § (303), part and chapter headings (27) | Élémens 1783 (323 rows, with the same/expands relation), PDP 1751 (84 rows, later text), reuse (1,606 rows in 20 tables, the two layers included; Grotius and Pufendorf from transcription passes) |
+| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), divergences (302: Wolff 169, Grotius 89, Pufendorf 44), English 1797 (1,124 units, 278 flags), reuse (4,427 rows in 16 tables; Grotius and Pufendorf from transcription passes) |
+| `burlamaqui-1747` | Burlamaqui, *Principes du droit naturel*, Genève 1747 | 331: Avertissement, Partie I ch. I–XI and Partie II ch. I–XIV by § (303), part and chapter headings (27) | Élémens 1783 (323 rows, with the same/expands relation), PDP 1751 (84 rows, later text), reuse (1,607 rows in 20 tables, the two layers included; Grotius and Pufendorf from transcription passes) |
 
 Each edition was converted from its working edition's `data.json` by `tools/convert_<edition>.py`, which use `tools/nle.py`. `tools/link_editions.py` then links the rows whose source is itself an edition (Vattel → Burlamaqui 1747) to that edition's units. `tools/check_edition.js` loads the viewer in Chromium and compares every unit and reuse row it builds with the original `data.json`.
 

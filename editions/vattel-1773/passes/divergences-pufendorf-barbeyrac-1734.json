@@ -1,0 +1,1065 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-1773",
+ "text": "pufendorf-barbeyrac-1734",
+ "date": "2026-11-11",
+ "source": "Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734), from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "Pref.6",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 23",
+   "sourceId": "PUF34.2.3.23",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What is the foundation and status of the law of nations (natural obligation vs consent)",
+   "comment": "Pufendorf, DNG II.3.23, recognises no voluntary or positive law of nations with the force of law, and holds that customs resting on tacit consent bind no people universally and may be renounced by express declaration. Vattel holds that the consent of peoples is the source of a particular species of the law of nations, the arbitrary law of nations, beside a natural law of nations that forms a distinct science. Pufendorf reduces custom and treaty to natural law, civil law or mere usage and denies that they make any particular species of law, which is what Vattel makes them.",
+   "passage": "le consentement des peuples est seulement le fondement & la source d'une espece particuliere de droit des gens , que l'on appelle droit des gens arbitraire",
+   "sourcePassage": "je ne reconnois aucune autre sorte de Droit des Gens Volontaire ou Positif, du moins qui aît force de Loi proprement dite",
+   "confidence": 0.65,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 397",
+     "zotero://open-pdf/library/items/L42CQ82S?page=397"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n396/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "Pref.7",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 23",
+   "sourceId": "PUF34.2.3.23",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Is the law of nations simply natural law with the same maxims applied to states",
+   "comment": "Pufendorf, DNG II.3.23, subscribes without reserve to Hobbes's view that the law of nations is natural law applied to states and that the maxims of the two are precisely the same. Vattel accepts that the law of nations is natural law applied to states but holds that natural law undergoes necessary changes in that application. He rejects the identity of maxims that Pufendorf adopts and faults him for mixing the law of nations with natural law throughout instead of treating it separately.",
+   "passage": "il s'est trompé quand il a cru que le droit naturel ne souffroit aucun changement nécessaire dans cette application",
+   "sourcePassage": "Les maximes, ajoûte-t-il, de l'une & de l'autre de ces Loix, sont précisément les mêmes",
+   "confidence": 0.9,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 397",
+     "zotero://open-pdf/library/items/L42CQ82S?page=397"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n396/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "Pref.9",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 23",
+   "sourceId": "PUF34.2.3.23",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Must natural law decisions for individuals be modified when applied to nations",
+   "comment": "Pufendorf, DNG II.3.23, adopts Hobbes's view that the maxims of natural law and of the law of nations are precisely the same. Vattel credits Wolff with showing that, by virtue of natural law itself, its decisions for individuals must be changed and modified when applied to nations. The point of difference is whether applying natural law to states alters its decisions. Vattel states the doctrine in his own name at Prelim. § 6.",
+   "passage": "les décisions de ce droit à l'égard des particuliers doivent être changées & modifiées",
+   "sourcePassage": "Les maximes, ajoûte-t-il, de l'une & de l'autre de ces Loix, sont précisément les mêmes",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 397",
+     "zotero://open-pdf/library/items/L42CQ82S?page=397"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n396/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "Prelim.6",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 23",
+   "sourceId": "PUF34.2.3.23",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Is the law of nations identical to natural law with states substituted for individuals",
+   "comment": "Pufendorf, DNG II.3.23, adopts Hobbes's view that natural law and the law of nations have precisely the same maxims and differ only in name when the law is applied to states. Vattel holds that the law of nations is originally natural law applied to nations but is not precisely and everywhere the same, because a state is a subject very different from an individual. The same general rule yields different obligations and rights in many cases, so that natural law often does not decide between states as it would between individuals.",
+   "passage": "il ne faut pas croire que le droit des gens soit précisément & par - tout le même que le droit naturel",
+   "sourcePassage": "Les maximes, ajoûte-t-il, de l'une & de l'autre de ces Loix, sont précisément les mêmes",
+   "confidence": 0.9,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 397",
+     "zotero://open-pdf/library/items/L42CQ82S?page=397"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n396/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.66",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VII ch. VII § 15",
+   "sourceId": "PUF34.7.7.15",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Who judges between rival claimants when the right of succession is uncertain",
+   "comment": "Pufendorf, DNG VII.7.15, holds that disputes between claimants to the crown cannot be decided with authority, since judicial power extends only to subjects. For him the people's ruling on which line prevails is only a declaration of its own will, and a claimant who suspects it of partiality should go to neutral arbitrators. Vattel gives the decision to the nation alone, on the ground that sovereign authority reverts to the body of the state while the succession is uncertain, and denies that a compromise or arbitration between claimants binds the nation without its consent. Vattel calls the difference one of terms, but his ground makes the nation a true judge.",
+   "passage": "Aussitôt que le droit de succession se trouve incertain , l'autorité souveraine retourne pour un tems au corps de l'état, qui doit l'exercer de lui - même , ou par ses représentans, jusqu'à ce que le véritable souverain soit reconnu.",
+   "sourcePassage": "Il n'appartient pas non plus au Peuple, de prononcer avec autorité sur de tels différens.",
+   "confidence": 0.75,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 407",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=407"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n406/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.68",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VII ch. VI § 16",
+   "sourceId": "PUF34.7.6.16",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What are so-called patrimonial states, and may the sovereign choose his successor or transfer the crown",
+   "comment": "Pufendorf, DNG VII.6.16, recognises patrimonial kingdoms, arising chiefly from conquest or from a people's submission to escape destruction, in which the king may set the condition of his subjects as he pleases and transfer his right over them to whom he wills. Vattel rejects the expression and denies that a state can be a patrimony. He allows a ruler to name his successor or hand the crown to another only where the nation has entrusted him with that choice. Vattel follows Barbeyrac's note 5, which requires the people's express or tacit consent for any patrimonial kingdom, against Pufendorf.",
+   "passage": "Nous avons fait voir ( §. 61. ) que l'état ne peut être un patrimoine.",
+   "sourcePassage": "Le principal effet de cette maniére de posséder un Roiaume en pur patrimoine, consiste non seulement en ce que le Roi rend la condition de ses Sujets telle que bon lui semble, mais encore en ce qu'il peut transférer à qui il veut le droit qu'il a sur eux",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 391",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=391"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n390/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.69",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. V § 9",
+   "sourceId": "PUF34.8.5.9",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Whether a sovereign can alienate the state (or choose his successor) and on what condition",
+   "comment": "Pufendorf, DNG VIII.5.9, following Grotius, holds that a king cannot alienate a kingdom founded on the people's voluntary consent, or any part of it, without the consent of the people concerned, and sets patrimonial kingdoms aside as raising no difficulty. Vattel holds that all true sovereignty is inalienable by nature and that the right truly to alienate the state belongs to the sovereign only by express grant of the whole people, whatever the origin of his power, conquest included. Vattel keeps the consent rule but drops Pufendorf's exception for patrimonial kingdoms.",
+   "passage": "Concluons donc que la nation seule ayant le droit de se soumettre à une puissance étrangere , le droit d'aliéner véritablement l'état ne peut jamais appartenir au souverain , s'il ne lui est expressément donné par le peuple entier.",
+   "sourcePassage": "il s'agit ici des Roiaumes établis par un consentement volontaire du Peuple, & non pas des Roiaumes Patrimoniaux: car, à l'égard de ceux-ci, la chose ne souffre point de difficulté.",
+   "confidence": 0.75,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 557",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=557"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n556/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.176",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. V § 12",
+   "sourceId": "PUF34.2.5.12",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "How to suppress duelling: whether the offended man who fights is to be punished",
+   "comment": "Pufendorf, DNG II.5.12, denies that a slap truly dishonours, since the magistrate can repair the affront, and holds that the insulted man who kills his assailant in the fight that follows is to be punished less severely than for another homicide. Vattel treats worldly honour as a real and necessary good that the insulted gentleman may defend like his goods or his life while the law leaves him exposed, and would pardon him without difficulty and punish the aggressor without mercy. Both tie the repression of duelling to severe penalties for the insult itself, and the difference lies in Pufendorf mitigating the offended man's penalty where Vattel remits it.",
+   "passage": "d'accorder sans difficulté la grace du premier , quand il paroîtroit qu'il a été véritablement attaqué en son honneur",
+   "sourcePassage": "il est juste de punir l'Offensé moins rigoureusement , que s'il avoit tué son homme dans quelque autre occasion.",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 461",
+     "zotero://open-pdf/library/items/L42CQ82S?page=461"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n460/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.222",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. XI § 2",
+   "sourceId": "PUF34.8.11.2",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "May citizens leave the country, and how far do the laws on this vary and bind?",
+   "comment": "Pufendorf, DNG VIII.11.2, makes the liberty to emigrate depend on law and custom, presumes where both are silent that every free person entering a civil society tacitly reserved the right to leave it at will, and calls it tyranny to refuse leave to those who would better their condition elsewhere. Vattel holds that a liberty to leave the country at any time without giving reasons is contrary in itself to the good and safety of society and tolerable only in a country unable to provide for its inhabitants. Pufendorf grounds the liberty in the private ends for which men enter society, and Vattel grounds its limits in the devotion a society that can provide for its members may demand of them.",
+   "passage": "Cette licence, contraire par elle-même au bien & au salut de la société, ne peut se tolérer que dans un pays sans ressources, incapable de suffire aux besoins des habitans.",
+   "sourcePassage": "il y a lieu de présumer, que toute personne libre, en entrant dans une Société Civile, s'est tacitement réservé la permission d'en sortir quand elle voudroit",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 610",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=610"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n609/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.292",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. III ch. III § 6",
+   "sourceId": "PUF34.3.3.6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether the owner of a strait may refuse innocent passage or levy tolls",
+   "comment": "Pufendorf, DNG III.3.6, holds that the law of humanity imposes no indispensable duty to let foreign goods pass, necessaries excepted, and that a sovereign may stop them on land, on a river or on an arm of the sea within his dominion to secure the trade for his own subjects. Vattel holds that the nation possessing a strait between two seas open to common navigation cannot refuse innocent passage, because that passage is a remnant of the primitive community. Vattel allows the master of the strait only precautions and formalities for his own safety, and returns to the position of Grotius that Pufendorf qualifies here.",
+   "passage": "celle qui possede le détroit ne peut y refuser passage aux autres , pourvû que ce passage soit innocent & sans danger pour elle",
+   "sourcePassage": "Mais on peut avoir de bonnes raisons d'arrêter les marchandises étrangéres, tant sur terre, que sur une Rivière, ou sur un Bras de mer, qui est de nôtre dépendance.",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 535",
+     "zotero://open-pdf/library/items/L42CQ82S?page=535"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n534/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "I.292",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. III ch. III § 7",
+   "sourceId": "PUF34.3.3.7",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Whether the owner of a strait may refuse innocent passage or levy tolls",
+   "comment": "Pufendorf, DNG III.3.7, allows the master of a strait a toll proportioned to his costs for beacons, lights and the clearing of pirates, and holds any further toll harder to justify and more odious than tolls on land, to be kept modest, with some princes entitled to exemption. Vattel founds the strait toll also on the inconvenience of keeping guard and subjects it to the same reasons and rules as tolls on land and rivers. Pufendorf's further grounds, a reward for not closing the passage or for waiving a staple right, have no place in Vattel, for whom innocent passage of the strait is owed.",
+   "passage": "Pareils droits doivent être fondés sur les mêmes raisons & soumis aux mêmes regles que les péages établis sur terre , ou sur une riviere.",
+   "sourcePassage": "Il faut avouer pourtant, que ce péage pour la navigation de la Mer, a je ne sai quoi d'infiniment plus odieux, que ceux qui se lévent sur terre; & qu'ainsi on doit l'exiger sur un pié modique, sans extorsion & sans avarice.",
+   "confidence": 0.5,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 538",
+     "zotero://open-pdf/library/items/L42CQ82S?page=538"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n537/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.120",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. VI § 5",
+   "sourceId": "PUF34.2.6.5",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Whether a nation (or individuals) in extreme want of food may take it by force from others",
+   "comment": "Pufendorf, DNG II.6.5, holds that a man reduced to extreme want through no fault of his own, who has failed to obtain help by prayers, money or the offer of his labour, commits no theft in taking what he needs secretly or by force, especially if he intends to make restitution. Vattel gives the same right to a nation in absolute want against neighbours with a surplus who refuse to sell at a just price, and grounds it on the revival of the primitive community in extreme necessity. Pufendorf rests the right on the limited purpose of property and the owners' breach of a duty of humanity, and he makes absence of fault a condition that Vattel omits.",
+   "passage": "L'extrême nécessité fait renaître la communion primitive , dont l'abolition ne doit priver personne du nécessaire",
+   "sourcePassage": "je ne saurois me persuader qu'un homme se rende coupable de larcin, lors qu'étant réduit, sans qu'il y aît de sa faute, à une extrême disette de vivres pour se sustenter",
+   "confidence": 0.5,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 482",
+     "zotero://open-pdf/library/items/L42CQ82S?page=482"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n481/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.122",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. III ch. III § 13",
+   "sourceId": "PUF34.3.3.13",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether a nation lacking women may take them by force from neighbours who refuse",
+   "comment": "Pufendorf, DNG III.3.13, counts it a duty of humanity to let foreigners who lack women seek wives among one's citizens, and holds that a refusal does not by itself give a just cause of war, which arises only when the refusal is joined with outrage and insult. Vattel holds that a people of men has a right to the women absolutely necessary to its preservation and may justly use force if neighbours with a surplus refuse them. Vattel limits this right only by each woman's freedom of choice, a restriction he finds missing in Wolff, whom he cites.",
+   "passage": "si sesvoisins qui en ont de reste lui en refusent, il peut justement recourir à la force",
+   "sourcePassage": "quoi que ce refus par lui-même ne fournisse pas un juste sujet de guerre; on a droit de s'en venger par les armes, lors qu'il est accompagné d'outrage & d'insulte",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 549",
+     "zotero://open-pdf/library/items/L42CQ82S?page=549"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n548/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.126",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. III ch. III § 4",
+   "sourceId": "PUF34.3.3.4",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Whether things of inexhaustible use (running water, the sea) stay common in use though owned",
+   "comment": "Pufendorf, DNG III.3.4, holds that rivers and springs can be wholly owned and that their use is to be common to all only by the general laws of humanity, and he rejects Grotius's description of a river as owned in one respect and common in another. Vattel adopts the Grotian formula: a river may be subject to domain and empire, yet as running water it remains common, so that its master cannot prevent anyone from drinking or drawing water. Both except the case where the use would harm the owner, and the difference lies in the ground, a duty of humanity owed by the owner in Pufendorf and a use that never left the common stock in Vattel.",
+   "passage": "Ainsi un fleuve peut être soumis au domaine & à l'empire ; mais dans sa qualité d'eau courrante , il demeure commun ; c'est - à - dire , que le maître du fleuve ne peut empêcher personne d'y boire & d'y puiser de l'eau.",
+   "sourcePassage": "Il vaut mieux dire, à mon avis, que l'usage de ces sortes de choses, qui appartiennent entiérement à quelcun, doit néanmoins être commun à tout le monde, par les Loix générales de l'Humanité.",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 529",
+     "zotero://open-pdf/library/items/L42CQ82S?page=529"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n528/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.134",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. III ch. III § 6",
+   "sourceId": "PUF34.3.3.6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether passage of goods through a state must be granted, and tolls",
+   "comment": "Pufendorf, DNG III.3.6, holds that the law of humanity alone imposes no indispensable duty to grant passage to foreign goods other than necessaries, and that a sovereign may stop them to keep the carrying trade for his own subjects, as by a staple right. Vattel holds that passage must be granted to goods, since it is ordinarily harmless, and that refusing it without just reasons injures the nation concerned. Vattel allows only tolls to cover inconvenience and the upkeep of canals and roads, and returns to the position of Grotius that Pufendorf qualifies here.",
+   "passage": "le refuser sans de justes raisons , c'est blesser une nation & vouloir lui ôter les moyens de commercer avec les autres",
+   "sourcePassage": "Car les Loix de l'Humanité toute seule ne semblent pas nous imposer une obligation indispensable de donner passage à aucune marchandise étrangére, si l'on en excepte celles qui sont nécessaires à la Vie.",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 535",
+     "zotero://open-pdf/library/items/L42CQ82S?page=535"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n534/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.137",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. III ch. III § 14",
+   "sourceId": "PUF34.3.3.14",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether a general permission to foreigners may be withheld from one nation",
+   "comment": "Pufendorf, DNG III.3.14 rejects Grotius's view that a permission granted to all foreigners cannot be refused to one nation without injury. He treats such a permission as a favour or a tacit connivance that gives no perfect right and may be revoked when the state's interest requires it. Vattel restores Grotius's rule: a nation excluded from a general permission without a particular and legitimate reason suffers an injury, because the general permission is the state's own avowal that the use is innocent.",
+   "passage": "on ne peut exclure une nation de la permission générale , sans lui faire injure , à moins que l'on n'ait quelque raison particuliere & légitime de lui refuser ce que l'on accorde aux autres indifféremment",
+   "sourcePassage": "Pour ce qui n'est permis que tacitement & par une espéce de connivence, la concession en est réputée une simple faveur, libre dans sa durée, comme dans son origine.",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 551",
+     "zotero://open-pdf/library/items/L42CQ82S?page=551"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n550/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.141",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. IV ch. XII § 8",
+   "sourceId": "PUF34.4.12.8",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Whether usucapion and prescription are of natural law",
+   "comment": "Pufendorf, DNG IV.12.8 denies that a tacit abandonment inferred from long silence can be the general foundation of prescription, since the owner's silence may come from ignorance, fear or powerlessness. Vattel grounds usucapion and prescription on a presumption juris et de jure of abandonment against an owner who neglects his right for a long time without just reason. Vattel's presumption is not a conjecture about the owner's actual will but a position that natural law orders to be taken as true for the sake of peace, which removes the ground of Pufendorf's objection.",
+   "passage": "Voilà ce qui forme la présomption absolue , ou juris & de jure, de l'abandonnement , & sur laquelle un autre se fonde légitimement , pour s'approprier la chose abandonnée.",
+   "sourcePassage": "Ainsi ce principe ne peut être posé pour fondement général de toute sorte de Prescription",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 852",
+     "zotero://open-pdf/library/items/L42CQ82S?page=852"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n851/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.158",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. V ch. III § 9",
+   "sourceId": "PUF34.5.3.9",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether lesion invalidates a treaty",
+   "comment": "Pufendorf, DNG V.3.9 holds that even between parties who have no common law but natural law and the law of nations, a considerable lesion without bad faith entitles the injured party to rescission or compensation, though it falls short of half the just price. Vattel denies that lesion can ever invalidate a treaty, since each party must weigh the terms before concluding and treaties would otherwise have no stability. Pufendorf treats the Roman limit of half the just price as positive law made for the relief of courts. Vattel makes the absence of a judge between sovereigns a reason to exclude rescission for lesion altogether.",
+   "passage": "La lézion ne peut donc rendre un traité invalide.",
+   "sourcePassage": "lors que la lézion est considérable, encore qu'elle n'aille pas jusqu'à la (d) moitié du juste prix, ( 2 ) on peut lé- gitimement prétendre ou que le Contract soit cassé, ou que l'autre Contractant nous dédommage de ce qui manque au juste prix.",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 49",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=49"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n48/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.169",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 2",
+   "sourceId": "PUF34.8.9.2",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "How are treaties divided; what is the first class (matters already owed by natural law) for?",
+   "comment": "Pufendorf, DNG VIII.9.2 holds that treaties which merely promise the duties of humanity or abstention from harm are not at all necessary among civilized peoples who profess to follow natural law. Vattel holds that treaties on things already owed by natural law are useful even among the most civilized nations. They give a perfect right to what could before be asked only as an office of humanity, fix the aid to be expected, and settle what natural law leaves undetermined.",
+   "passage": "Ils sont utiles même entre les nations les plus policées , pour assurer d'autant mieux les secours qu'elles peuvent attendre , pour déterminer ces secours & savoir sur quoi compter",
+   "sourcePassage": "parmi les Peuples civilisez, qui font profession de suivre les Loix du Droit Naturel, ces sortes d'Alliances ne sont nullement nécessaires",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 596",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=596"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n595/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.171",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 2",
+   "sourceId": "PUF34.8.9.2",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Are treaties merely promising not to injure necessary or useful?",
+   "comment": "Pufendorf, DNG VIII.9.2 holds that treaties promising only not to injure are unnecessary among civilized peoples and that reasonable men should almost blush to make them. Vattel agrees that they create no new right and holds them useful even with peoples less fierce than barbarians, who are moved more by an obligation they have contracted than by a natural one. Vattel's point is close to Barbeyrac's note 4, which limits Pufendorf's censure to parties of the same disposition and allows such treaties as security against those one has reason to distrust.",
+   "passage": "Ils ne sont pas inutiles avec des peuples moins féroces , qui, sans dépouiller à ce point l'humanité, sont cependant beaucoup moins touchés d'une obligation naturelle, que de celle qu'ils ont eux - mêmes contractée par des engagemens solemnels",
+   "sourcePassage": "des gens (4) tant soit peu raisonnables devroient presque rougir, de faire un Traité dont les Articles se réduisent à une simple promesse de ne pas violér directement les maximes incontestables du Droit Naturel",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 596",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=596"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n595/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.175",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 4",
+   "sourceId": "PUF34.8.9.4",
+   "relation": "partly",
+   "severity": 1,
+   "question": "What are unequal treaties and unequal alliances, and when does an unequal alliance impair sovereignty?",
+   "comment": "Pufendorf, DNG VIII.9.4 calls an alliance unequal whenever the things promised are unequal or one ally is made inferior to the other, and counts a stronger power's promise of more aid than it receives as an unequal alliance. Vattel separates the unequal treaty, which concerns the things promised, from the unequal alliance, which concerns the dignity of the parties. A stronger power that gives more while treating on equal terms makes the treaty unequal and leaves the alliance equal.",
+   "passage": "ici l'alliance est égale , mais le traité est inégal",
+   "sourcePassage": "dans lesquelles ce que l'on promet de part & d'autre n'est pas égal, ou bien qui rendent l'un des Alliez inférieur à l'autre",
+   "confidence": 0.55,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 598",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=598"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n597/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.192",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 8",
+   "sourceId": "PUF34.8.9.8",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Do consummated peace treaties and conveyances belong to the real/personal question, and must successors keep them?",
+   "comment": "Pufendorf, DNG VIII.9.8 gives as rules for deciding whether successors must maintain alliances that they must keep the peace treaties and the legitimate conveyances of their predecessors. Vattel holds that these rules leave the question, since consummated acts bind by their nature and are not in view when one asks whether a treaty is real or personal. A peace treaty that contains successive and repeated prestations remains subject to that test, so the successor owes such prestations only if the treaty is real in that respect.",
+   "passage": "Que si le traité contient des engagemens à quelques prestations successives & réitérées , il sera toujours question d'examiner, suivant les regles que nous venons de donner, s'il est, à cet égard réel ou personnel",
+   "sourcePassage": "Prémiérement il est certain, que les Successeurs doivent garder les Traitez de Paix faits par leurs Prédécesseurs.",
+   "confidence": 0.5,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 602",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=602"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n601/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.193",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 8",
+   "sourceId": "PUF34.8.9.8",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What does a successor owe when the allied king dies after the other ally has already performed?",
+   "comment": "Pufendorf, DNG VIII.9.8 holds that when an ally has already performed and the king dies before performing in turn, his successor must perform or compensate in full, since the ally acquires the right of one who has paid what was not owed. Vattel confines this duty to determinate prestations exchanged as equivalents, which he treats as a payment made in advance. For contingent prestations under a personal alliance, such as defensive aid, the successor owes nothing but gratitude, because the treaty was an aleatory contract. Vattel keeps Pufendorf's analogy of payment of what was not owed only for an ally who performs after a personal alliance has expired.",
+   "passage": "L'alliance est finie , & le successeur du mort n'est tenu à rien , si ce n'est qu'il doit assurément de la reconnoissance au souverain qui a donné à son état un secours salutaire.",
+   "sourcePassage": "si l'autre Allié aiant déja exécuté quelque chose à quoi il étoit tenu en vertu du Traité, le Roi vient à mourir, avant que d'avoir effectué à son tour ses engagemens; son Successeur doit indispensablement y suppléer.",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 602",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=602"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n601/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.199",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 11",
+   "sourceId": "PUF34.8.9.11",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Can a treaty for a term be renewed tacitly?",
+   "comment": "Pufendorf, DNG VIII.9.11 holds that an alliance made for a fixed term is never renewed tacitly, and that acts conforming to the treaty after its expiry count only as marks of goodwill. Vattel holds that tacit renewal is not readily presumed but may rest on acts that can only be done in virtue of the treaty, and he separates such renewal from a mere continuation of the treaty for one year. Vattel follows Barbeyrac's note to this section, which admits renewal where the acts bear no other interpretation, against Pufendorf's unqualified rule.",
+   "passage": "On ne peut donc fonder le renouvellement tacite que sur des actes de telle nature, qu'ils ne peuvent être faits qu'en vertu du traité.",
+   "sourcePassage": "LORS qu'une Alliance a été faite pour un certain tems marqué dans le Traité, elle ne se renouvelle point tacitement",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 603",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=603"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n602/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.212",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 12",
+   "sourceId": "PUF34.8.9.12",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "What is the sovereign bound to after a treaty made by a sponsor without authority (Caudine Forks)?",
+   "comment": "Pufendorf, DNG VIII.9.12 holds that the Romans were not bound in strict law to ratify the Caudine peace or to restore the former state of things, but that natural equity required them to ratify it, since the consuls could presume the people's consent, the terms were bearable and the Samnites had performed their part. Vattel holds that a sovereign who disavows a treaty made without authority must return only what the state received under it, and may keep without scruple an advantage that consists in escape from danger. He requires ratification or a new treaty on fair terms only where the enemy acted generously, and he rejects by name Pufendorf's view that the Caudine terms contained nothing too harsh.",
+   "passage": "Mais si l'accord n'a rien donné à l'état qu'il n'eût déjà auparavant, si, comme dans celui des fourches caudines, tout l'avantage consiste à l'avoir tiré d'un danger, préservé d'une perte, c'est un bienfait de la fortune, dont on profite sans scrupule.",
+   "sourcePassage": "Mais, à en juger par les maximes de l'Equité Naturelle, le Peuple Romain, à mon avis, devoit certainement ratifier le Traité, quoi qu'il eût été fait sans son ordre.",
+   "confidence": 0.9,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 604",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=604"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n603/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.247",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. II § 6",
+   "sourceId": "PUF34.8.2.6",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Does giving hostages engage only their liberty or also their life?",
+   "comment": "Pufendorf, DNG VIII.2.6 holds that the state directly engages only the bodily liberty of hostages, but that once the treaty is broken the other power may use the right of war against them, so that their lives depend on the will of an angered enemy. Vattel holds that only the hostages' liberty is engaged and that on a breach they may be kept in captivity, and he calls putting them to death a barbarous cruelty resting on the error that the sovereign or the individual may dispose of life. Vattel follows Barbeyrac's note to this section, which denies that hostages can give power over their own lives and treats them after a breach as prisoners of war.",
+   "passage": "La liberté seule des otages est engagée ; & si celui qui les a donnés manque à sa parole , on peut les retenir en captivité.",
+   "sourcePassage": "il suffit que, du moment que le Traité a été enfraint, on puisse user envers eux du droit de la Guerre, & qu'ainsi leur vie dépende de la volonté d'un Ennemi irrité.",
+   "confidence": 0.75,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 460",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=460"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n459/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.259",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. II § 6",
+   "sourceId": "PUF34.8.2.6",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Does breach of a treaty wrong the hostages, and what is owed to them if abandoned?",
+   "comment": "Pufendorf, DNG VIII.2.6 holds that a state which abandons its hostages in order to resist a perfidious enemy does them no more wrong than it does soldiers posted to hold a position, and that the hostages must bear their lot as a simple misfortune without complaint against their country. Vattel holds that a sovereign forced by circumstances to abandon hostages must spare nothing to free them and cannot refuse to compensate and reward them or their relatives. Both hold that a breach of faith by the state wrongs the hostages. Vattel adds a positive duty of rescue and indemnity in the case of necessary abandonment.",
+   "passage": "on ne doit rien négliger pour délivrer ces otages infortunés , & l'état ne peut refuser de lesdédommager de leurs souffrances, de les récompenser , soit en leur personne , soit en celle de leurs proches.",
+   "sourcePassage": "Les Otages doivent donc alors regarder comme un simple malheur (c) le cas où ils se trouvent (3) & ne point murmurer contre leur Patrie, qui n'a pû le prévoir ni l'empêcher.",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 461",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=461"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n460/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.306",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. V ch. XII § 12",
+   "sourceId": "PUF34.5.12.12",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "How to class and interpret mixed favorable/odious matters",
+   "comment": "Pufendorf, DNG V.12.12 holds that mixed matters count as favourable or odious according to the size of the benefit or of the change they bring, and that the favourable prevails when all else is equal. Vattel holds that a mixed matter counts as favourable only when its benefit greatly outweighs its odious side, and that when the two are nearly balanced it is ranked among odious things. The rule for the balanced case is reversed, on Vattel's principle that in doubt one should take the course least likely to injure equity.",
+   "passage": "Pour peu que l'odieux & le favorable se balancent dans une de ces choses mixtes , elle est mise au rang des choses odieuses",
+   "sourcePassage": "en sorte néanmoins que, tout le reste d'ailleurs égal, le Favorable l'emporte.",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 164",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=164"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n163/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.309",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. IX § 10",
+   "sourceId": "PUF34.8.9.10",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Do allies in a treaty include future allies (Sagunto); and the Carthage liberty promise",
+   "comment": "Pufendorf, DNG VIII.9.10 adopts Grotius's decision that the Carthaginians could attack Saguntum, received into the Roman alliance after the treaty, without prejudice to a clause forbidding attacks on each other's allies, and that the Romans could defend it. Vattel holds that such a clause is favourable and extends to all allies present and future, so that Carthage could attack Saguntum without breach only if it had a lawful cause, as it could any older ally of Rome. Pufendorf allows the attack without any condition of just cause, while Vattel brings the later ally within the clause and makes just cause the condition.",
+   "passage": "Les Carthaginois pouvoient donc , sans préjudice du traité , attaquer Sagonte , s'ils en avoient un légitime sujet",
+   "sourcePassage": "Que, sans préjudice du Traité, les Carthaginois pouvoient attaquer Sagonte, & les Romains aussi pouvoient la défendre.",
+   "confidence": 0.75,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 603",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=603"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n602/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.320",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. V ch. XII § 23",
+   "sourceId": "PUF34.5.12.23",
+   "relation": "partly",
+   "severity": 1,
+   "question": "Does a sworn treaty prevail over an unsworn one in conflict",
+   "comment": "Pufendorf, DNG V.12.23 holds, after Grotius, that when a sworn and an unsworn convention cannot both be performed the unsworn one yields, unless it was added to the other as an exception, because the oath excludes tacit exceptions. Vattel holds that the sworn treaty prevails only when all else is equal, because the oath adds force to the obligation, and that the oath cannot give a new ally precedence over an older ally whose treaty is unsworn. Vattel follows Barbeyrac's note to this rule, which restricts it to cases where all else is equal.",
+   "passage": "Mais comme il ne change rien à la nature des traités ; ( §§. 225. & suiv. ) il ne peut , par exemple , donner l'avantage à un nouvel allié sur un allié plus ancien , dont le traité ne sera pas juré.",
+   "sourcePassage": "celle-ci doit céder à la prémiére; à moins que la Convention faite sans serment n'ait été ajoutée à l'autre, en forme d'exception ou de limitation.",
+   "confidence": 0.55,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 182",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=182"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n181/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "II.321",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. V ch. XII § 23",
+   "sourceId": "PUF34.5.12.23",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Does a law or treaty carrying a penalty (or a heavier one) prevail over one without in a conflict",
+   "comment": "Pufendorf, DNG V.12.23 reports Grotius's rule that a prohibition carrying a penalty, or a heavier penalty, prevails over one without, and judges it unsafe, since a prohibition without any penalty would be useless and the choice of the lesser evil does not apply to moral evil. He admits it only in the sense that, where one of two forbidden acts must be done, the one least important to avoid is taken as permitted by the legislator. Vattel adopts the rule without reservation, on the ground that a penal sanction shows a stronger will and strengthens the obligation in proportion to the penalty. Vattel follows Grotius and Cicero against Pufendorf's criticism.",
+   "passage": "ce qui est imposé sous une peine , l'emporte sur ce qui n'en est point accompagné ; & ce qui porte une plus grande peine , sur ce qui en porte une moindre.",
+   "sourcePassage": "Mais cette maxime ne paroît pas bien sûre.",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 181",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=181"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n180/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.5",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VI § 3",
+   "sourceId": "PUF34.8.6.3",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What defensive and offensive war are, and the objects of offensive war",
+   "comment": "Pufendorf, DNG VIII.6.3, sorts wars by their object: war to preserve and defend ourselves and our property is defensive, and he who takes up arms first may still be deemed to act defensively, as when he forestalls an enemy in the midst of preparations to attack. Vattel defines offensive war by the act of taking up arms first against a nation at peace, and lists the prevention of an injury the other nation is preparing among the objects of offensive war. The pre-emptive strike falls on opposite sides of the division in the two authors. Vattel's criterion is the one Barbeyrac reports and endorses in his note 3, that whoever begins hostilities acts offensively whatever the justice of his cause.",
+   "passage": "Celui qui prend les armes le premier & attaque une nation qui vivoit en paix avec lui , fait une guerre offensive.",
+   "sourcePassage": "Quelquefois néanmoins celui qui prend le prémier les armes, est censé agir défensivement; lors, par exemple, que l'on va attaquer un Ennemi, qui avoit de tems en tems fait des courses sur nos terres, & qui s'étoit retiré promtement, aussi-tôt qu'il nous avoit vû paroître pour le repousser; ou lors qu'on le (a) prévient au milieu des préparatifs qu'il faisoit pour venir fondre sur nous.",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 563",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=563"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n562/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.86",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VI § 14",
+   "sourceId": "PUF34.8.6.14",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Tacit clause in war alliances limiting aid to just wars",
+   "comment": "Pufendorf, DNG VIII.6.14, holds that since no one may undertake an unjust or rash war, no one is bound to assist an ally in such a war, even in a defensive war where the ally refuses tolerable terms and runs to certain ruin. Vattel reads the tacit clause of every alliance as reaching only an evidently unjust war: once bound, only the well-proven injustice of the ally's cause releases, and in doubtful cases the ally is presumed to be in the right. The difference lies in the standard of release, since Vattel requires proven injustice and leaves no room in this section for the rashness of the war as a ground for withholding aid.",
+   "passage": "Mais lorsque vous êtes déjà lié, l'injustice bien prouvée de sa cause peut seule vous dispenser de l'assister : en cas douteux, vous devez présumer que votre allié est fondé, puisque c'est son affaire.",
+   "sourcePassage": "comme personne ne doit entreprendre de son chef aucune Guerre injuste, ou téméraire; on n'est pas non plus tenu d'assister ses Alliez dans une pareille Guerre.",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 575",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=575"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n574/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.109",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 23",
+   "sourceId": "PUF34.2.3.23",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "On what the rules of neutrality rest (natural law and binding custom)",
+   "comment": "Pufendorf, DNG II.3.23, denies that the customs observed among nations, chiefly in war, form a law of nations: they rest on tacit convention, any people may release itself by express declaration, and a prince who disregards them in a just war is guilty only of a kind of impoliteness. Vattel holds that some things have passed into custom among civilised nations and must be followed, on pain of incurring the blame of unjustly breaking the peace. The point of difference is the binding force of custom, which Pufendorf reduces to politeness and Vattel treats as a source of rules whose breach exposes a nation to a charge of injustice.",
+   "passage": "Il est aussi des choses qui ont passé en coutume entre les nations policées, & auxquelles il faut se conformer, si l'on ne veut pas s'attirer le blâme de rompre injustement la paix.",
+   "sourcePassage": "Ainsi, tant qu'on ne fait que des Guerres justes, on peut consulter uniquement les maximes du Droit Naturel, & mépriser toutes les coûtumes des autres Peuples",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 400",
+     "zotero://open-pdf/library/items/L42CQ82S?page=400"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n399/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.122",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. III ch. III § 5",
+   "sourceId": "PUF34.3.3.5",
+   "relation": "partly",
+   "severity": 2,
+   "question": "When a nation may force passage through neutral territory",
+   "comment": "Pufendorf, DNG III.3.5, grounds passage on the duty of humanity to allow others an innocent use of one's property, so that those refused in pressing necessity without valid reason, or on ill-founded distrust, may take by force what is denied; for large armies he judges it safest to refuse and even prevent passage. Vattel requires the party seeking passage to defer to the owner's judgment in every doubtful case and to bear a refusal it thinks unjust, allowing force only where the passage is evidently harmless or in extreme necessity. Vattel adds that extreme necessity entitles an army to force its way through neutral territory and even to garrison a neutral place for a time, a right Pufendorf's section does not grant to armies.",
+   "passage": "Dans tous les cas douteux, il faut s'en rapporter au jugement du maître, sur l'innocence de l'usage qu'on demande à faire des choses appartenantes à autrui, (L. II. §§. 128. & 130.) & souffrir son refus, bien qu'on le croye injuste.",
+   "sourcePassage": "ceux à qui on le refuse, dans une nécessité pressante, sans aucune raison valable , ou sous prétexte d'une défiance mal fondée, peuvent alors avoir recours à la force",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 531",
+     "zotero://open-pdf/library/items/L42CQ82S?page=531"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n530/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.173",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VI § 15",
+   "sourceId": "PUF34.8.6.15",
+   "relation": "partly",
+   "severity": 2,
+   "question": "How far the voluntary law of nations tolerates excess in hostilities against property",
+   "comment": "Pufendorf, DNG VIII.6.15, leaves excesses in hostilities to the conscience of the belligerents, since neutrals tacitly agree not to meddle and the belligerents tacitly grant each other full liberty to exert or temper the force of arms. Vattel also tolerates excess between nations because they have no common judge, but holds that the voluntary law of nations condemns every hostility that by its nature does nothing for the success of arms. Under Vattel's voluntary law the wilful destruction of monuments, temples, tombs and works of art stands condemned absolutely, while Pufendorf's tacit convention sets no such outer limit.",
+   "passage": "condamne toute hostilité qui, de sa nature & indépendamment des circonstances, ne fait rien au succès de nos armes, n'augmente point nos forces, & n'affoiblit point l'ennemi.",
+   "sourcePassage": "ceux qui entrent en Guerre, se donnent eux-mêmes réciproquement, par une espéce de Convention tacite, une liberté entiére d'exercer ou de tempérer la fureur des Armes, selon que chacun le jugera à propos.",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 577",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=577"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n576/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.175",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VII § 2",
+   "sourceId": "PUF34.8.7.2",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Which treaties and promises remain binding between enemies",
+   "comment": "Pufendorf, DNG VIII.7.2, holds that conventions with an enemy which only suspend or moderate hostilities are contrary to nature, because treating does not here renounce the exceptions drawn from the other party's enmity; they are held valid only by the usage of civilised nations and for reasons of interest. Vattel holds that whatever is promised to the enemy in the course of the war binds, because treating with him in arms tacitly but necessarily renounces the power to break the convention. Vattel follows Barbeyrac's note 1, which maintains against Pufendorf that such conventions must be kept as religiously as any other.",
+   "passage": "dès que l'on traite avec lui pendant que l'on a les armes à la main, on renonce tacitement, mais nécessairement, au pouvoir de rompre la convention",
+   "sourcePassage": "Ainsi on ne sauroit appliquer ici le principe que nous avons établi ailleurs, que, du moment qu'on traite avec quelcun, on renonce par cela même à toutes les exceptions tirées de de sa personne",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 585",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=585"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n584/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.177",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. IV ch. I § 19",
+   "sourceId": "PUF34.4.1.19",
+   "relation": "partly",
+   "severity": 1,
+   "question": "What counts as a lie, and when must one tell the truth to an enemy?",
+   "comment": "Pufendorf, DNG IV.1.19, holds that the obligation to communicate one's thoughts has no place between enemies as such, so that false speech to an enemy is no lie, except in conventions to end or suspend hostilities and in charges laid before neutrals. Vattel also binds the belligerent to truth in conventions and treaties, but adds that truth is owed to the enemy wherever the laws of humanity oblige and the success of arms does not suspend them. His cases are the road shown to released prisoners and news asked by an enemy commander about his wife or child.",
+   "passage": "On doit encore dire la vérité à l'ennemi dans toutes les occasions où l'on s'y trouve naturellement obligé par les loix de l'humanité",
+   "sourcePassage": "COMME l'obligation de s'entrecommuniquer ses pensées n'a point de lieu entre ceux qui sont en guerre, considerez comme tels",
+   "confidence": 0.65,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 677",
+     "zotero://open-pdf/library/items/L42CQ82S?page=677"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n676/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.180",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VI § 16",
+   "sourceId": "PUF34.8.6.16",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "May one seduce the enemy's people into treason?",
+   "comment": "Pufendorf, DNG VIII.6.16, holds that in a just war one may lawfully corrupt the enemy's subjects to desert or betray, and that their crime is not imputed to the one who solicits it. Vattel holds that such practices do not breach the external law of nations but are dishonest and contrary to conscience, excusable at most in a very just war against an unjust conqueror. The two agree on external lawfulness and give opposite answers on whether the solicitor shares the guilt of the treason.",
+   "passage": "Mais sont-ils honnêtes, & compatibles avec les loix d'une conscience pure ? Non, sans doute",
+   "sourcePassage": "mais le Crime ne semble réjaillir en aucune maniére sur celui qui les y a sollicitez",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 578",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=578"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n577/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.248",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VII § 9",
+   "sourceId": "PUF34.8.7.9",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "May a besieged garrison bring in relief during a truce for capitulation terms or awaiting orders",
+   "comment": "Pufendorf, DNG VIII.7.9, holds that purely defensive acts remain lawful under any truce, so that the besieged may bring reinforcements and munitions into the place while the besiegers' attacks are suspended. Vattel holds that a governor may not use a truce made to settle a capitulation or to await the sovereigns' orders to bring relief or munitions into the place, because such a truce implies that all things stay as they are. Vattel makes the purpose of the truce decisive and here adopts the rule of Grotius that Pufendorf rejects. In III.249 he allows quiet relief during a truce made only to bury the dead.",
+   "passage": "le gouverneur assiégé ne peut en profiter pourfaire entrer du secours ou des munitions dans sa place",
+   "sourcePassage": "cela n'empêche pas que, pendant ce tems-là, les prémiers ne puissent faire entrer dans la Place des troupes de renfort, & des munitions.",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 589",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=589"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n588/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.250",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VII § 9",
+   "sourceId": "PUF34.8.7.9",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May an army retreat during a truce made only for burying the dead",
+   "comment": "Pufendorf, DNG VIII.7.9, holds that during a truce made only to bury the dead an army may withdraw to a safer post or entrench without breaking its word, since purely defensive acts are lawful under any truce. Vattel allows a quiet withdrawal by the rear and forbids an army caught in a bad position to march out of its defiles in sight of the enemy, whom he entitles to repulse it. For Vattel a retreat that only the truce makes possible turns the convention into a trap and breaks good faith.",
+   "passage": "elle ne pourra, pendant la suspension d'armes, sortir de ses défilés à la vue de l'ennemi, & se retirer impunément.",
+   "sourcePassage": "on pourra fort bien, sans contrevenir à sa parole, se retirer, pendant ce tems-là, dans quelque poste plus sûr, ou se bien retrancher.",
+   "confidence": 0.75,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 589",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=589"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n588/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.264",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. II § 2",
+   "sourceId": "PUF34.8.2.2",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Validity of promises made to the enemy by private persons acting alone (ransom, parole)",
+   "comment": "Pufendorf, DNG VIII.2.2, holds that a prisoner released on condition of not serving against the enemy must keep his word in an offensive war, but may take up arms again at his sovereign's order in a defensive war of necessity. Vattel holds that a prisoner released on parole must keep it religiously and that his sovereign has no right to oppose it, with no exception for defensive war. Vattel follows Grotius and Barbeyrac's note, which rejects Pufendorf's restriction as eluding the good faith of the agreement.",
+   "passage": "C'est ainsi qu'un prisonnier relâché sur sa parole, doit la tenir religieusement, & son souverain n'est point en droit de s'y opposer",
+   "sourcePassage": "Disons donc, que, malgré une telle Promesse, le Prisonnier, qui a été relâché, peut reprendre les armes pour la défense de l'Etat, lors que son Souverain le lui ordonne.",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 457",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=457"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n456/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.291",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. VIII ch. VIII § 2",
+   "sourceId": "PUF34.8.8.2",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Must the prince keep promises made to rebels?",
+   "comment": "Pufendorf, DNG VIII.8.2, holds that a sovereign who has made an accommodation with rebel subjects must keep it, since the agreement implies a pardon and has the force of a fundamental law of the state. Vattel requires the prince to keep his promises to rebels and allows him to revoke odious concessions extorted from him against the welfare of the nation, with the nation's consent given in constitutional form. Vattel adds this exception, to be used sparingly, where Pufendorf states none.",
+   "passage": "il révoquera justement des concessions pernicieuses , en s'autorisant del'aveu de la nation",
+   "sourcePassage": "il ne sauroit légitimement se dispenser de tenir sa parole, sous prétexte que c'est à des Sujets rebelles qu'il l'a donnée",
+   "confidence": 0.7,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 592",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=592"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n591/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "IV.92",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 23",
+   "sourceId": "PUF34.2.3.23",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Is the foreign minister independent of the host state's jurisdiction, and on what ground?",
+   "comment": "Pufendorf, DNG II.3.23, holds that natural law exempts ambassadors from the host's jurisdiction at least in matters that concern their character, and that their other privileges depend on the host's goodwill and may be refused without injustice. Vattel holds that the natural law of nations requires the minister's entire independence of the host's jurisdiction in civil and criminal matters, reinforced by a tacit convention between the two princes. The difference is whether immunity beyond official acts is a natural obligation or a revocable concession.",
+   "passage": "Il faut donc, pour assurer le succès de son ministere, qu'il soit indépendant de l'autorité souveraine de la jurisdiction du pays, tant pour le civil que pour le criminel.",
+   "sourcePassage": "les Ambassadeurs du moins à l'égard des choses qui concernent précisément leur caractére, doivent être hors de toute jurisdiction & de toute contrainte de la part de celui auprès de qui ils sont envoiez",
+   "confidence": 0.75,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 401",
+     "zotero://open-pdf/library/items/L42CQ82S?page=401"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n400/mode/1up"
+    ]
+   ]
+  }
+ ]
+}

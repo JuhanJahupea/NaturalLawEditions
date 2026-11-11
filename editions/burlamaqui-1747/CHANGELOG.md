@@ -2,6 +2,10 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.3 (2026-11-11)
+
+- The Pufendorf table adds the rows for P1.2.12 against DNG I.4.9 on p. 226 of vol. 1, a page a judge named outside the candidates (580 rows, 447 match). The edition holds 1,607 reuse rows.
+
 ## 1.2 (2026-11-11)
 
 - The Pufendorf table (`reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's Pufendorf (Amsterdam 1734, `texts/pufendorf-barbeyrac-1734/`); a language model judged the candidates in two rounds, then rechecked the earlier pass's matches that no new row covered. 579 rows on 183 units (446 match, 133 possible) replace 639 rows on 235 units from the PDF text layer of the same edition. 334 of the 359 old match rows have a new row on the same passage.
