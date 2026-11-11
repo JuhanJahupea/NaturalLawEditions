@@ -30,7 +30,7 @@
         const fams = [...new Set(cover[i].map(famOf))].sort().join(' ');
         h = `<span class="u" data-m="${ckey[i]}" data-f="${fams}">${h}</span>`;
       }
-      if (addv[i]) h = `<span class="v73" data-v="${addv[i]}">${h}</span>`;
+      if (addv[i]) h = `<span class="var" data-v="${addv[i]}">${h}</span>`;
       out += h; i = j;
     }
     if (breaks[n] !== undefined) out += breaks[n];
@@ -38,7 +38,9 @@
   }
 
   // unit: a record of text.json; marks: {reuse:{part:[[a,b,id]]}, vars:{part:[[a,b,vid]]}, old:{part:{pos:[html]}}}
-  function composeUnit(unit, marks, famOf) {
+  // pageBreak: HTML template for a page break, with {vol}, {scan} and {printed}
+  const PB = '<span class="pb" data-pg="{vol}:{scan}"> {vol} p. {printed} </span>';
+  function composeUnit(unit, marks, famOf, pageBreak) {
     const get = (o, p) => (o && o[p]) || [];
     const tb = {};
     const add = (b, pos, h) => { b[pos] = (b[pos] || '') + h; };
@@ -46,7 +48,7 @@
     const oldT = (marks.old && marks.old.t) || {};
     const pbAt = {};
     for (const [at, vol, scan, printed] of unit.pb || [])
-      pbAt[at] = `<span class="pb" data-pg="${vol}:${scan}"> ${vol} p. ${esc(printed)} </span>`;
+      pbAt[at] = (pageBreak || PB).replace(/\{(vol|scan|printed)\}/g, (m, k) => k === 'printed' ? esc(printed) : k === 'vol' ? vol : scan);
     const pos = new Set([...Object.keys(oldT), ...Object.keys(pbAt)].map(Number));
     for (const p of pos) { for (const h of oldT[p] || []) add(tb, p, h); if (pbAt[p]) add(tb, p, pbAt[p]); }
     const html = renderPart(unit, get(marks.reuse, 't'), get(marks.vars, 't'), tb, famOf);

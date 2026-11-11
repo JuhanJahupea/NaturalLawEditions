@@ -7,14 +7,632 @@
       "id": "vattel-1773",
       "path": "editions/vattel-1773/",
       "author": "Emer de Vattel",
+      "authorShort": "Vattel",
       "title": "Le droit des gens, ou principes de la loi naturelle, appliqués à la conduite et aux affaires des nations et des souverains",
       "short": "Le droit des gens · 1773",
       "imprint": "Neuchâtel: Société typographique, 1773",
       "date": "1773",
       "lang": "fr",
       "status": "working edition"
+    },
+    {
+      "id": "burlamaqui-1747",
+      "path": "editions/burlamaqui-1747/",
+      "author": "Jean-Jacques Burlamaqui",
+      "authorShort": "Burlamaqui",
+      "title": "Principes du droit naturel",
+      "short": "Principes du droit naturel · 1747",
+      "imprint": "Genève: Barrillot, 1747",
+      "date": "1747",
+      "lang": "fr",
+      "status": "working edition"
     }
   ],
-  "texts": [],
-  "reuse": []
+  "texts": [
+    {
+      "id": "wolff-jus-gentium-1749",
+      "sigla": [
+        "JG"
+      ],
+      "author": "Christian Wolff",
+      "title": "Jus gentium methodo scientifica pertractatum",
+      "imprint": "Halle, 1749",
+      "date": "1749",
+      "lang": "la",
+      "layer": "Vision transcription of the Google Books copy (scans 28–876); Praefatio and Prolegomena from MDZ bsb10008059 (texts/wolff-jus-gentium-1749/). Working French by machine."
+    },
+    {
+      "id": "wolff-institutiones-1750",
+      "sigla": [
+        "INST"
+      ],
+      "author": "Christian Wolff",
+      "title": "Institutiones juris naturae et gentium",
+      "imprint": "Halle, 1750",
+      "date": "1750",
+      "lang": "la",
+      "layer": "Vision transcription of the Google Books copy (scans 30–811; texts/wolff-institutiones-1750/). Working French by machine."
+    },
+    {
+      "id": "wolff-jus-naturae-8-1748",
+      "sigla": [
+        "JN8"
+      ],
+      "author": "Christian Wolff",
+      "title": "Jus naturae methodo scientifica pertractatum, pars VIII",
+      "imprint": "1748",
+      "date": "1748",
+      "lang": "la",
+      "layer": "Google Books OCR, cleaned. Working French by machine."
+    },
+    {
+      "id": "burlamaqui-droit-politique-1751",
+      "sigla": [
+        "BUR51",
+        "PDP51"
+      ],
+      "author": "Jean-Jacques Burlamaqui",
+      "title": "Principes du droit politique",
+      "imprint": "Amsterdam, 1751. 2 vols",
+      "date": "1751",
+      "lang": "fr",
+      "layer": "MDZ OCR (bsb10040032/33)."
+    },
+    {
+      "id": "grotius-barbeyrac-1724",
+      "sigla": [
+        "GRO24"
+      ],
+      "author": "Hugo Grotius",
+      "title": "Le droit de la guerre et de la paix, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam, 1724. 2 vols",
+      "date": "1724",
+      "lang": "fr",
+      "layer": "Vision transcription of the archive.org scans (texts/grotius-barbeyrac-1724/). Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+    },
+    {
+      "id": "pufendorf-barbeyrac-1734",
+      "sigla": [
+        "PUF34"
+      ],
+      "author": "Samuel Pufendorf",
+      "title": "Le droit de la nature et des gens, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam, 1734. 2 vols",
+      "date": "1734",
+      "lang": "fr",
+      "layer": "Vision transcription of the archive.org scans (texts/pufendorf-barbeyrac-1734/). Stands in for Basle 1732. Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+    },
+    {
+      "id": "montesquieu-esprit-des-loix-1749",
+      "sigla": [
+        "MON49"
+      ],
+      "author": "Montesquieu",
+      "title": "De l'esprit des loix",
+      "imprint": "Genève: Barrillot, 1749",
+      "date": "1749",
+      "lang": "fr",
+      "layer": "archive.org OCR (bub_gb_qq8hNilO1RkC). Stands in for 1748."
+    },
+    {
+      "id": "wicquefort-ambassadeur-1724",
+      "sigla": [
+        "WIC24"
+      ],
+      "author": "Abraham de Wicquefort",
+      "title": "L'ambassadeur et ses fonctions",
+      "imprint": "La Haye, 1724",
+      "date": "1724",
+      "lang": "fr",
+      "layer": "archive.org OCR (lambassadeuretse12wicq, scans 1–1532)."
+    },
+    {
+      "id": "bynkershoek-juge-competent-1723",
+      "sigla": [
+        "BYN23"
+      ],
+      "author": "Cornelius van Bynkershoek",
+      "title": "Traité du juge compétent des ambassadeurs, trad. Jean Barbeyrac",
+      "imprint": "1723",
+      "date": "1723",
+      "lang": "fr",
+      "layer": "archive.org OCR (lambassadeuretse12wicq, scans 1533–1902; bound with Wicquefort 1724)."
+    },
+    {
+      "id": "bynkershoek-quaestiones-1737",
+      "sigla": [
+        "BYN37"
+      ],
+      "author": "Cornelius van Bynkershoek",
+      "title": "Quaestiones juris publici",
+      "imprint": "Leiden, 1737",
+      "date": "1737",
+      "lang": "la",
+      "layer": "archive.org OCR (corneliivanbynke00bijnx)."
+    },
+    {
+      "id": "formey-principes-1758",
+      "sigla": [
+        "FOR58"
+      ],
+      "author": "Jean Henri Samuel Formey",
+      "title": "Principes du droit de la nature et des gens",
+      "imprint": "Amsterdam, 1758. 3 vols",
+      "date": "1758",
+      "lang": "fr",
+      "layer": "archive.org OCR (principesdudroi00–03wolfgoog), chunked at about 1,800 characters."
+    },
+    {
+      "id": "vattel-loisir-1747",
+      "sigla": [
+        "LOI47"
+      ],
+      "author": "Emer de Vattel",
+      "title": "Le loisir philosophique",
+      "imprint": "1747",
+      "date": "1747",
+      "lang": "fr",
+      "layer": "Tesseract text layer of the library PDF."
+    },
+    {
+      "id": "vattel-questions-1762",
+      "sigla": [
+        "QUE62"
+      ],
+      "author": "Emer de Vattel",
+      "title": "Questions de droit naturel, et observations sur le Traité du droit de la nature de M. le baron de Wolf",
+      "imprint": "Berne, 1762",
+      "date": "1762",
+      "lang": "fr",
+      "layer": "archive.org OCR (questionsdedroit00vatt). Written before 1758."
+    },
+    {
+      "id": "vattel-poliergie-1757",
+      "sigla": [
+        "POL57"
+      ],
+      "author": "Emer de Vattel",
+      "title": "Poliergie",
+      "imprint": "1757",
+      "date": "1757",
+      "lang": "fr",
+      "layer": "archive.org OCR (poliergieoumla00vattuoft)."
+    },
+    {
+      "id": "vattel-amusemens-1765",
+      "sigla": [
+        "AMU65"
+      ],
+      "author": "Emer de Vattel",
+      "title": "Amusemens de littérature, de morale et de politique",
+      "imprint": "1765",
+      "date": "1765",
+      "lang": "fr",
+      "layer": "Text layer of the library PDF. Reissue of the Mélanges (1760)."
+    },
+    {
+      "id": "pufendorf-devoirs-barbeyrac-1756",
+      "sigla": [
+        "DEV56"
+      ],
+      "author": "Samuel Pufendorf",
+      "title": "Les devoirs de l'homme et du citoyen, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam and Leipzig: Arkstée et Merkus, 1756. 2 vols",
+      "date": "1756",
+      "lang": "fr",
+      "layer": "archive.org OCR (bub_gb_dDKCHraV9BoC, hOCR; bub_gb_unXpgRJJud0C, djvu text in 166 chunks). T. II holds Leibniz's Jugement d'un anonyme with Barbeyrac's Réflexions (family Lz for Leibniz)."
+    },
+    {
+      "id": "locke-coste-1729",
+      "sigla": [
+        "LOC29"
+      ],
+      "author": "John Locke",
+      "title": "Essai philosophique concernant l'entendement humain, trad. Pierre Coste",
+      "imprint": "Amsterdam, 1729. 3rd ed.",
+      "date": "1729",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "malebranche-recherche-1712",
+      "sigla": [
+        "MAL12"
+      ],
+      "author": "Nicolas Malebranche",
+      "title": "De la recherche de la vérité",
+      "imprint": "Paris, 1712. 4 vols",
+      "date": "1712",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "port-royal-logique-1685",
+      "sigla": [
+        "PRL85"
+      ],
+      "author": "Antoine Arnauld and Pierre Nicole",
+      "title": "La logique ou l'art de penser",
+      "imprint": "1685",
+      "date": "1685",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "descartes-meditations-1724",
+      "sigla": [
+        "DES24"
+      ],
+      "author": "René Descartes",
+      "title": "Les méditations métaphysiques, T. I",
+      "imprint": "Paris, 1724",
+      "date": "1724",
+      "lang": "fr",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "pouilly-theorie-1749",
+      "sigla": [
+        "POU49"
+      ],
+      "author": "Louis-Jean Lévesque de Pouilly",
+      "title": "Théorie des sentimens agréables",
+      "imprint": "1749",
+      "date": "1749",
+      "lang": "fr",
+      "layer": "archive.org OCR of the 1749 Dublin printing. Burlamaqui cites the Geneva 1747 edition; no text layer of it was found."
+    },
+    {
+      "id": "cumberland-barbeyrac-1744",
+      "sigla": [
+        "CUM44"
+      ],
+      "author": "Richard Cumberland",
+      "title": "Traité philosophique des loix naturelles, trad. Jean Barbeyrac",
+      "imprint": "Amsterdam, 1744",
+      "date": "1744",
+      "lang": "fr",
+      "layer": "archive.org djvu text in 369 chunks of about 3,000 characters; Barbeyrac's notes mixed in."
+    },
+    {
+      "id": "hutcheson-inquiry-1726",
+      "sigla": [
+        "HUT26"
+      ],
+      "author": "Francis Hutcheson",
+      "title": "An Inquiry into the Original of our Ideas of Beauty and Virtue",
+      "imprint": "1726. 2nd ed.",
+      "date": "1726",
+      "lang": "en",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "hutcheson-passions-1730",
+      "sigla": [
+        "HUT30"
+      ],
+      "author": "Francis Hutcheson",
+      "title": "An Essay on the Nature and Conduct of the Passions and Affections",
+      "imprint": "1730. 2nd ed.",
+      "date": "1730",
+      "lang": "en",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "leclerc-logica-1716",
+      "sigla": [
+        "CLE16"
+      ],
+      "author": "Jean Le Clerc",
+      "title": "Logica, Ontologia et Pneumatologia",
+      "imprint": "London, 1716. 5th ed.",
+      "date": "1716",
+      "lang": "la",
+      "layer": "archive.org OCR."
+    },
+    {
+      "id": "cicero-latin-library",
+      "sigla": [
+        "CIC"
+      ],
+      "author": "Cicero",
+      "title": "De officiis, Tusculanae disputationes, De finibus, De legibus, De natura deorum, De senectute, De amicitia",
+      "imprint": "",
+      "date": "",
+      "lang": "la",
+      "layer": "Text of The Latin Library, chunked at 1,500 characters."
+    },
+    {
+      "id": "seneca-latin-library",
+      "sigla": [
+        "SEN"
+      ],
+      "author": "Seneca",
+      "title": "Epistulae, De beneficiis, De ira, De clementia, De vita beata",
+      "imprint": "",
+      "date": "",
+      "lang": "la",
+      "layer": "Text of The Latin Library, chunked at 1,500 characters."
+    },
+    {
+      "id": "digest-latin-library",
+      "sigla": [
+        "DIG"
+      ],
+      "author": "Justinian",
+      "title": "Digest, Liv. I",
+      "imprint": "",
+      "date": "",
+      "lang": "la",
+      "layer": "Text of The Latin Library, chunked at 1,500 characters."
+    },
+    {
+      "id": "clarke-ricotier-1727",
+      "sigla": [
+        "CLA"
+      ],
+      "author": "Samuel Clarke",
+      "title": "Traités de l'existence et des attributs de Dieu, trad. Pierre Ricotier",
+      "imprint": "1727–1728. 3 vols",
+      "date": "1727",
+      "lang": "fr",
+      "layer": "archive.org OCR, chunked at about 2,500 characters."
+    },
+    {
+      "id": "crousaz-logique-1720",
+      "sigla": [
+        "CRO"
+      ],
+      "author": "Jean-Pierre de Crousaz",
+      "title": "La Logique",
+      "imprint": "1720 and 1725",
+      "date": "1720",
+      "lang": "fr",
+      "layer": "archive.org OCR, chunked at about 2,500 characters."
+    },
+    {
+      "id": "spectateur-1716",
+      "sigla": [
+        "SPE"
+      ],
+      "author": "Joseph Addison, Richard Steele and others",
+      "title": "Le Spectateur ou le Socrate moderne",
+      "imprint": "1716–1721",
+      "date": "1716",
+      "lang": "fr",
+      "layer": "archive.org OCR, chunked at about 2,500 characters."
+    },
+    {
+      "id": "burlamaqui-elemens-1783",
+      "sigla": [
+        "ELE83"
+      ],
+      "author": "Jean-Jacques Burlamaqui",
+      "title": "Élémens du droit naturel",
+      "imprint": "Lausanne: Grasset, 1783",
+      "date": "1783",
+      "lang": "fr",
+      "layer": "MDZ OCR (bsb10040023, hOCR, one unit per scan). The lecture course; printed 35 years after the 1747 text from student copies."
+    }
+  ],
+  "reuse": [
+    {
+      "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-gentium-1749",
+      "rows": 1205
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
+      "from": "vattel-1773",
+      "to": "wolff-institutiones-1750",
+      "rows": 285
+    },
+    {
+      "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
+      "from": "vattel-1773",
+      "to": "wolff-jus-naturae-8-1748",
+      "rows": 91
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-1747.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-1747",
+      "rows": 62,
+      "toLayer": "Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from."
+    },
+    {
+      "path": "reuse/vattel-1773__burlamaqui-droit-politique-1751.json",
+      "from": "vattel-1773",
+      "to": "burlamaqui-droit-politique-1751",
+      "rows": 382,
+      "repeats": "burlamaqui-1747"
+    },
+    {
+      "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
+      "from": "vattel-1773",
+      "to": "grotius-barbeyrac-1724",
+      "rows": 1136
+    },
+    {
+      "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
+      "from": "vattel-1773",
+      "to": "pufendorf-barbeyrac-1734",
+      "rows": 581
+    },
+    {
+      "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
+      "from": "vattel-1773",
+      "to": "montesquieu-esprit-des-loix-1749",
+      "rows": 23
+    },
+    {
+      "path": "reuse/vattel-1773__wicquefort-ambassadeur-1724.json",
+      "from": "vattel-1773",
+      "to": "wicquefort-ambassadeur-1724",
+      "rows": 60
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-juge-competent-1723.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-juge-competent-1723",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__bynkershoek-quaestiones-1737.json",
+      "from": "vattel-1773",
+      "to": "bynkershoek-quaestiones-1737",
+      "rows": 6
+    },
+    {
+      "path": "reuse/vattel-1773__formey-principes-1758.json",
+      "from": "vattel-1773",
+      "to": "formey-principes-1758",
+      "rows": 329
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-loisir-1747.json",
+      "from": "vattel-1773",
+      "to": "vattel-loisir-1747",
+      "rows": 16
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-questions-1762.json",
+      "from": "vattel-1773",
+      "to": "vattel-questions-1762",
+      "rows": 134
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-poliergie-1757.json",
+      "from": "vattel-1773",
+      "to": "vattel-poliergie-1757",
+      "rows": 31
+    },
+    {
+      "path": "reuse/vattel-1773__vattel-amusemens-1765.json",
+      "from": "vattel-1773",
+      "to": "vattel-amusemens-1765",
+      "rows": 24
+    },
+    {
+      "path": "reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json",
+      "from": "burlamaqui-1747",
+      "to": "pufendorf-barbeyrac-1734",
+      "rows": 587
+    },
+    {
+      "path": "reuse/burlamaqui-1747__pufendorf-devoirs-barbeyrac-1756.json",
+      "from": "burlamaqui-1747",
+      "to": "pufendorf-devoirs-barbeyrac-1756",
+      "rows": 350
+    },
+    {
+      "path": "reuse/burlamaqui-1747__grotius-barbeyrac-1724.json",
+      "from": "burlamaqui-1747",
+      "to": "grotius-barbeyrac-1724",
+      "rows": 142
+    },
+    {
+      "path": "reuse/burlamaqui-1747__locke-coste-1729.json",
+      "from": "burlamaqui-1747",
+      "to": "locke-coste-1729",
+      "rows": 22
+    },
+    {
+      "path": "reuse/burlamaqui-1747__malebranche-recherche-1712.json",
+      "from": "burlamaqui-1747",
+      "to": "malebranche-recherche-1712",
+      "rows": 15
+    },
+    {
+      "path": "reuse/burlamaqui-1747__port-royal-logique-1685.json",
+      "from": "burlamaqui-1747",
+      "to": "port-royal-logique-1685",
+      "rows": 4
+    },
+    {
+      "path": "reuse/burlamaqui-1747__descartes-meditations-1724.json",
+      "from": "burlamaqui-1747",
+      "to": "descartes-meditations-1724",
+      "rows": 2
+    },
+    {
+      "path": "reuse/burlamaqui-1747__pouilly-theorie-1749.json",
+      "from": "burlamaqui-1747",
+      "to": "pouilly-theorie-1749",
+      "rows": 17
+    },
+    {
+      "path": "reuse/burlamaqui-1747__cumberland-barbeyrac-1744.json",
+      "from": "burlamaqui-1747",
+      "to": "cumberland-barbeyrac-1744",
+      "rows": 19
+    },
+    {
+      "path": "reuse/burlamaqui-1747__hutcheson-inquiry-1726.json",
+      "from": "burlamaqui-1747",
+      "to": "hutcheson-inquiry-1726",
+      "rows": 4
+    },
+    {
+      "path": "reuse/burlamaqui-1747__hutcheson-passions-1730.json",
+      "from": "burlamaqui-1747",
+      "to": "hutcheson-passions-1730",
+      "rows": 3
+    },
+    {
+      "path": "reuse/burlamaqui-1747__leclerc-logica-1716.json",
+      "from": "burlamaqui-1747",
+      "to": "leclerc-logica-1716",
+      "rows": 5
+    },
+    {
+      "path": "reuse/burlamaqui-1747__cicero-latin-library.json",
+      "from": "burlamaqui-1747",
+      "to": "cicero-latin-library",
+      "rows": 12
+    },
+    {
+      "path": "reuse/burlamaqui-1747__seneca-latin-library.json",
+      "from": "burlamaqui-1747",
+      "to": "seneca-latin-library",
+      "rows": 3
+    },
+    {
+      "path": "reuse/burlamaqui-1747__digest-latin-library.json",
+      "from": "burlamaqui-1747",
+      "to": "digest-latin-library",
+      "rows": 1
+    },
+    {
+      "path": "reuse/burlamaqui-1747__clarke-ricotier-1727.json",
+      "from": "burlamaqui-1747",
+      "to": "clarke-ricotier-1727",
+      "rows": 10
+    },
+    {
+      "path": "reuse/burlamaqui-1747__crousaz-logique-1720.json",
+      "from": "burlamaqui-1747",
+      "to": "crousaz-logique-1720",
+      "rows": 9
+    },
+    {
+      "path": "reuse/burlamaqui-1747__spectateur-1716.json",
+      "from": "burlamaqui-1747",
+      "to": "spectateur-1716",
+      "rows": 2
+    },
+    {
+      "path": "reuse/burlamaqui-1747__burlamaqui-elemens-1783.json",
+      "from": "burlamaqui-1747",
+      "to": "burlamaqui-elemens-1783",
+      "rows": 323
+    },
+    {
+      "path": "reuse/burlamaqui-1747__burlamaqui-droit-politique-1751.json",
+      "from": "burlamaqui-1747",
+      "to": "burlamaqui-droit-politique-1751",
+      "rows": 84
+    }
+  ]
 }
