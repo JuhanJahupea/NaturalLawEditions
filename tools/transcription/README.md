@@ -38,9 +38,9 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 ## 5. Divergences
 
 - `build_div.py <work> <rows> <candidates> <dir>`: for each Vattel § with a match, the source §§ it reuses and the nearest other §.
-- Agent prompt `DIV_SCREEN_PROMPT.md`: does the source answer the same question, and does Vattel answer it differently.
+- Agent prompt `DIV_SCREEN_PROMPT_<work>.md` (`GRO24`, `PUF34`): does the source answer the same question, and does Vattel answer it differently.
 - `build_verify.py <screen dir> <dir>`: the flagged pairs with the whole source § and Barbeyrac's notes.
-- Agent prompt `DIV_VERIFY_PROMPT.md`: keep or reject, relation, severity and a comment.
-- `write_div.py <screen dir> <verify dir> <text id> <out>`: writes `editions/vattel-1773/passes/divergences-<text id>.json`.
+- Agent prompt `DIV_VERIFY_PROMPT_<work>.md`: keep or reject, relation, severity and a comment.
+- `write_div.py <work> <screen dir> <verify dir> <text id> <out> [date]`: writes `editions/vattel-1773/passes/divergences-<text id>.json`.
 
 The converters then rebuild the editions from their working `data.json` and the pass files (`tools/convert_*.py`, `tools/nle.py`); `tools/check_all.sh` checks both.

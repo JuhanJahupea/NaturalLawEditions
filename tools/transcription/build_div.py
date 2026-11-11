@@ -47,7 +47,7 @@ for uid in order:
     c = c[:4]
     items.append({'vattel_id': uid, 'vattel_margin': u.get('margin', ''), 'vattel_text': u['text'],
                   'vattel_notes': ' '.join('%s %s' % (n['mark'], n['text']) for n in u.get('notes', [])),
-                  'candidates': [{'grotius_id': l, 'text': cap(SEC[l]), 'reuse': labels.get((uid, l), [])} for l in c]})
+                  'candidates': [{'source_id': l, 'text': cap(SEC[l]), 'reuse': labels.get((uid, l), [])} for l in c]})
 os.makedirs(outdir + '/in', exist_ok=True); os.makedirs(outdir + '/out', exist_ok=True)
 json.dump({'sec': SEC, 'notes': NOTES, 'pages': PAGES}, open(outdir + '/sections.json', 'w'), ensure_ascii=False)
 BS = 10

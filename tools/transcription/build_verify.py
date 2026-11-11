@@ -15,13 +15,13 @@ for f in sorted(glob.glob(sd + '/out/d*.json')):
         for pr in it.get('pairs', []):
             seen += 1
             if not pr.get('same_question') or pr.get('relation') not in ('diverges', 'partly'): continue
-            if float(pr.get('confidence', 0)) < mc or pr['grotius_id'] not in S['sec']: continue
+            if float(pr.get('confidence', 0)) < mc or pr['source_id'] not in S['sec']: continue
             items.append({'vattel_sec': u['id'], 'vattel_margin': u.get('margin', ''), 'vattel_text': u['text'],
                           'vattel_notes': ' '.join('%s %s' % (n['mark'], n['text']) for n in u.get('notes', [])),
-                          'grotius_ref': pr['grotius_id'], 'grotius_text': cap(S['sec'][pr['grotius_id']], 15000),
-                          'barbeyrac_notes': cap(' '.join(S['notes'].get(pr['grotius_id'], [])), 6000),
+                          'source_ref': pr['source_id'], 'source_text': cap(S['sec'][pr['source_id']], 15000),
+                          'barbeyrac_notes': cap(' '.join(S['notes'].get(pr['source_id'], [])), 6000),
                           'screen': {'question': it.get('question', ''), **{k: pr.get(k, '') for k in
-                                     ('relation', 'grotius_answer', 'vattel_answer', 'grotius_passage', 'vattel_passage')}}})
+                                     ('relation', 'source_answer', 'vattel_answer', 'source_passage', 'vattel_passage')}}})
 os.makedirs(outdir + '/in', exist_ok=True); os.makedirs(outdir + '/out', exist_ok=True)
 BS = 8
 for b in range(0, len(items), BS):
