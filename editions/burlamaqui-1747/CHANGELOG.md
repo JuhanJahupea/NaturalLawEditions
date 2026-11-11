@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.5 (2026-11-11)
+
+- The divergences layer adds 6 notes against Grotius (`passes/divergences-grotius-barbeyrac-1724.json`), on 6 units: 5 where Burlamaqui's answer diverges from Grotius's, 1 where it differs in part. Severity 3: 4, 2: 2. The layer now holds 44 notes (Pufendorf 38, Grotius 6).
+- Method: for each Burlamaqui § with a Grotius match, the Grotius §§ it reuses and the nearest other § (61 pairs on 29 §§) went to a screening model (Claude Sonnet). It flagged 7 pairs at confidence 0.5 or more. A second model (Claude Opus) read each with the whole Grotius § and Barbeyrac's notes and kept 6. Each note cites Grotius as "Grotius, DGP I.1.14" and links to the page of the 1724 edition. The notes take the Grotius colour.
+- P1.10.5 and P1.10.6 now carry a note against Grotius (DGP I.1.9) beside the one against Pufendorf (DNG I.6.15). Both authors deny that permission is an effect of law.
+
 ## 1.4 (2026-11-11)
 
 - New divergences layer (`layers/divergences.json`, from `passes/divergences-pufendorf-barbeyrac-1734.json`): 38 notes on 33 units where Burlamaqui answers a question of Pufendorf's differently. 30 diverge, 8 differ in part. Severity 3: 15, 2: 19, 1: 4. Each note cites Pufendorf as "Pufendorf, DNG I.6.15" and links to the page of the 1734 edition. The notes take the Pufendorf colour. The "Divergences" checkbox hides the layer.

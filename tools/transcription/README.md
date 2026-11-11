@@ -43,7 +43,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 ## 5. Divergences
 
 - `build_div.py <work> <rows> <candidates> <dir> [edition]`: for each § of the edition (default `vattel-1773`) with a match, the source §§ it reuses and the nearest other §. Item keys carry the author's name (`vattel_id`, `burlamaqui_id`).
-- Agent prompt `DIV_SCREEN_PROMPT_<work>.md` (`GRO24`, `PUF34`; `PUF34_BURLAMAQUI` for Burlamaqui): does the source answer the same question, and does the edition answer it differently.
+- Agent prompt `DIV_SCREEN_PROMPT_<work>.md` (`GRO24`, `PUF34`; `GRO24_BURLAMAQUI`, `PUF34_BURLAMAQUI` for Burlamaqui): does the source answer the same question, and does the edition answer it differently.
 - `build_verify.py <screen dir> <dir>`: the flagged pairs with the whole source § and Barbeyrac's notes. A pair the screen names outside its candidates can be added by hand as an extra screen file.
 - Agent prompt `DIV_VERIFY_PROMPT_<work>.md`: keep or reject, relation, severity and a comment.
 - `write_div.py <work> <screen dir> <verify dir> <text id> <out> [date]`: writes `editions/<edition>/passes/divergences-<text id>.json`.
