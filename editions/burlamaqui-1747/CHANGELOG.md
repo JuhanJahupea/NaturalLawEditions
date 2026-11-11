@@ -2,6 +2,14 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.2 (2026-11-11)
+
+- The Pufendorf table (`reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's Pufendorf (Amsterdam 1734, `texts/pufendorf-barbeyrac-1734/`); a language model judged the candidates in two rounds, then rechecked the earlier pass's matches that no new row covered. 579 rows on 183 units (446 match, 133 possible) replace 639 rows on 235 units from the PDF text layer of the same edition. 334 of the 359 old match rows have a new row on the same passage.
+- The judges also saw, for each section, the runs of five or more words it shares with a Pufendorf page (`tools/transcription/shared_scan.py`).
+- 220 rows quote Barbeyrac's notes (family Bb). Source passages are quoted from the transcription, under the label "source (transcription)".
+- The 639 old rows are kept in `provenance/superseded/burlamaqui-1747__pufendorf-barbeyrac-1734.json`. The viewer shows them with `?asbuilt=1`.
+- Text, layers and the other reuse tables are unchanged. The edition holds 1,606 reuse rows.
+
 ## 1.1 (2026-10-23)
 
 - The Grotius table (`reuse/burlamaqui-1747__grotius-barbeyrac-1724.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's Grotius (Amsterdam 1724, `texts/grotius-barbeyrac-1724/`); a language model judged the candidates in two rounds. 142 rows on 59 units (95 match, 47 possible) replace 87 rows on 50 units from the OCR of the same edition. 46 of the 50 old match rows have a new row on the same passage.

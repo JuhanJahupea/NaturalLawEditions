@@ -2,6 +2,14 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.6 (2026-11-11)
+
+- The Pufendorf table (`reuse/vattel-1773__pufendorf-barbeyrac-1734.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's Pufendorf (Amsterdam 1734, `texts/pufendorf-barbeyrac-1734/`); a language model judged the candidates in two rounds, then rechecked the earlier pass's matches that no new row covered. 611 rows on 373 units (321 match, 290 possible) replace 284 rows on 221 units from the PDF text layer of the same edition. 128 of the 137 old match rows have a new row on the same passage.
+- The judges also saw, for each section, the runs of five or more words it shares with a Pufendorf page (`tools/transcription/shared_scan.py`).
+- 120 rows quote Barbeyrac's notes (family Bb). Source passages are quoted from the transcription, under the label "source (transcription)".
+- The 284 old rows are kept in `provenance/superseded/vattel-1773__pufendorf-barbeyrac-1734.json`. The viewer shows them with `?asbuilt=1`.
+- Text, layers and the other reuse tables are unchanged. The edition holds 4,426 reuse rows.
+
 ## 1.5 (2026-11-11)
 
 - Three more Grotius divergence notes: III.66 against DGP III.3.12 (diverges), III.142 against DGP III.11.16 and III.180 against DGP III.1.21 (in part). These were the pairs the screeners named outside their candidates; the second model verified them. A fourth (III.31) fell below the confidence threshold. The layer holds 258 notes (Grotius 89).

@@ -1,4 +1,4 @@
-# build_expand.py <edition> <WORK> <judge dir> <candidates.json> <out candidates.json>: second pass.
+# build_expand.py <edition> <WORK> <judge dirs> <candidates.json files> <out candidates.json> [hints]: second pass (lists comma-separated).
 # For every unit, pages not yet judged for it from three sources:
 #  1. cited: the pages of a source locus the unit's text or notes cite ("GROTIUS ... Liv. II. Chap. III. §. 15");
 #  2. sections: the two source §§ nearest the unit by tf-idf over whole §§ (a chapter summary page often wins the
@@ -20,11 +20,13 @@ AUTH = AUTHS[work]
 units = [u for u in json.load(open('%s/editions/%s/text.json' % (R, ed)))['units'] if u['kind'] != 'heading']
 pages = json.load(open('%s/corpus/%s.json' % (B, work)))['pages']
 P = {p['id']: p for p in pages}
-cand = json.load(open(cf))['cand']
+cand = collections.defaultdict(list)  # candidate files and judge dirs may be comma-separated lists
+for c in cf.split(','):
+    for u, v in json.load(open(c))['cand'].items(): cand[u] += [p for p in v if p not in cand[u]]
 judged = collections.defaultdict(set); matched = collections.defaultdict(set)
-for f in glob.glob(jd + '/in/b*.json'):
+for f in [f for d in jd.split(',') for f in glob.glob(d + '/in/b*.json')]:
     for it in json.load(open(f))['items']: judged[it['unit']].update(it['candidates'])
-for f in glob.glob(jd + '/out/b*.json'):
+for f in [f for d in jd.split(',') for f in glob.glob(d + '/out/b*.json')]:
     for m in json.load(open(f)).get('matches', []):
         if float(m.get('confidence', 0)) >= 0.5 and m.get('label') != 'commonplace': matched[m['unit']].add(m['page_id'])
 # source §§: text and pages

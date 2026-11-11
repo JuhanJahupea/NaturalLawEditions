@@ -100,7 +100,7 @@
       "imprint": "Amsterdam, 1734. 2 vols",
       "date": "1734",
       "lang": "fr",
-      "layer": "archive.org PDF text layer. Stands in for Basle 1732. Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+      "layer": "Vision transcription of the archive.org scans (texts/pufendorf-barbeyrac-1734/). Stands in for Basle 1732. Barbeyrac's notes are credited to Barbeyrac (family Bb)."
     },
     {
       "id": "montesquieu-esprit-des-loix-1749",
@@ -458,7 +458,7 @@
       "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
       "from": "vattel-1773",
       "to": "pufendorf-barbeyrac-1734",
-      "rows": 284
+      "rows": 611
     },
     {
       "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
@@ -518,7 +518,7 @@
       "path": "reuse/burlamaqui-1747__pufendorf-barbeyrac-1734.json",
       "from": "burlamaqui-1747",
       "to": "pufendorf-barbeyrac-1734",
-      "rows": 639
+      "rows": 579
     },
     {
       "path": "reuse/burlamaqui-1747__pufendorf-devoirs-barbeyrac-1756.json",
