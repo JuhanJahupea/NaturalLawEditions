@@ -2,6 +2,7 @@
  "format": "nle-pass/1",
  "edition": "vattel-1773",
  "text": "grotius-barbeyrac-1724",
+ "date": "2026-10-23",
  "source": "Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724), from the transcription: pairs screened by one model, kept or rejected by a second",
  "items": [
   {
@@ -943,6 +944,30 @@
   {
    "unit": "III.66",
    "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. III § 12",
+   "sourceId": "GRO24.3.3.12",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Does a defensive war, or a war in a pressing case, need a declaration and an express order of the sovereign?",
+   "comment": "Grotius, DGP III.3.12 holds that a war taken up in defence of one's person or goods also requires a declaration, not by nature but for the effects of a solemn war under the law of nations. Vattel holds that a defensive war needs no declaration, since the enemy's declaration or open hostilities establish the state of war, and he counts it a war in form so long as the attacker has declared. Vattel follows Barbeyrac's note to DGP III.3.7 against Grotius.",
+   "passage": "Ces formalités consistent dans la demande d'une juste satisfaction ( rerum repetitio ) , & dans la déclaration de guerre, au moins de la part de celui qui attaque , car la guerre défensive n'a pas besoin d'une déclaration (§. 57.), ni même, dans les occasions pressantes, d'un ordre exprès du souverain.",
+   "sourcePassage": "Ceux-là se trompent aussi, qui croient, (b) que quand on prend les armes pour la défense de sa personne ou de ses biens, cette sorte de Guerre n'a besoin d'aucune Déclaration.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 249",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=249"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n248/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.66",
+   "text": "grotius-barbeyrac-1724",
    "locus": "Droit de la guerre et de la paix, Liv. I ch. III § 4",
    "sourceId": "GRO24.1.3.4",
    "relation": "partly",
@@ -1133,6 +1158,30 @@
    ]
   },
   {
+   "unit": "III.142",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. XI § 16",
+   "sourceId": "GRO24.3.11.16",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May a belligerent retaliate on prisoners or hostages for the enemy's cruelty?",
+   "comment": "Grotius, DGP III.11.16 holds that neither talion nor the need to intimidate the enemy justifies killing prisoners or refusing quarter, and that natural law permits talion only against the guilty themselves. Vattel forbids reprisal on a prisoner who has been promised his life and prefers that the enemy's crime not fall on innocent victims. He allows, on the ground that a prince may sacrifice enemy lives to his own safety, that against an inhuman enemy given to such excesses some prisoners may be refused quarter and treated as his own men were treated. The exception rests on the deterrent ground that Grotius expressly rejects.",
+   "passage": "Cependant, comme un prince, ou son général, est en droit de sacrifier la vie de ses ennemis à sa sûreté & à celle de ses gens, il semble que, s'il a affaire à un ennemi inhumain, qui s'abandonne souvent à de pareils excès, il peut refuser la vie à quelques-uns des prisonniers qu'il fera, & les traiter comme on aura traité les siens",
+   "sourcePassage": "Mais la Loi Naturelle ne permet d'exercer le droit du Talion, que contre les Coupables mêmes.",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 364",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=364"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n363/mode/1up"
+    ]
+   ]
+  },
+  {
    "unit": "III.143",
    "text": "grotius-barbeyrac-1724",
    "locus": "Droit de la guerre et de la paix, Liv. III ch. XI § 16",
@@ -1273,6 +1322,30 @@
     [
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n265/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "III.180",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. III ch. I § 21",
+   "sourceId": "GRO24.3.1.21",
+   "relation": "partly",
+   "severity": 2,
+   "question": "May a belligerent solicit enemy subjects to treason or desertion?",
+   "comment": "Grotius, DGP III.1.21 holds that it is never permitted to induce an enemy subject to surrender a place or do anything else forbidden to him, since whoever causes another to sin sins himself. Vattel holds that seducing a subject to spy or a commander to deliver his place does not breach the external law of nations, because it does not threaten the common safety of mankind, and condemns it only as contrary to conscience. Vattel also allows that such practices may be excused in a very just war waged to save the country from an unjust conqueror. Grotius grants impunity before men for such uses of the wicked only at DGP III.4.18.6, and on the ground of usage.",
+   "passage": "Ces moyens ne sont donc pas contraires au droit des gens externes dans la guerre ; & l'ennemi n'est point fondé à s'en plaindre, comme d'un attentat odieux.",
+   "sourcePassage": "il n'est pas permis à un Sujet d'assassiner son Prince, ni de rendre une Place de sa pure autorité & sans quelque délibération publique, ni de piller ses Concitoiens: il n'est pas non plus permis de le porter à de semblables choses, tant qu'il demeure Sujet.",
+   "confidence": 0.6,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 225",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=225"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n224/mode/1up"
     ]
    ]
   },
@@ -2068,6 +2141,5 @@
     ]
    ]
   }
- ],
- "date": "2026-10-23"
+ ]
 }
