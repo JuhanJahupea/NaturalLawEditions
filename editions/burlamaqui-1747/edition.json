@@ -1,8 +1,8 @@
 {
   "format": "nle-edition/1",
   "id": "burlamaqui-1747",
-  "version": "1.5",
-  "changed": "2026-11-11",
+  "version": "1.6",
+  "changed": "2026-11-12",
   "author": "Jean-Jacques Burlamaqui",
   "title": "Principes du droit naturel",
   "short": "Principes du droit naturel · 1747",
@@ -71,6 +71,14 @@
       "sourceTag": "source",
       "baseTag": "Burlamaqui",
       "family": "P"
+    },
+    {
+      "id": "english",
+      "file": "layers/english.json",
+      "kind": "translation",
+      "label": "English",
+      "panelNote": "Nugent's translation (London 1763), Liberty Fund ed. (2006), p. {page}. Sentence alignment by machine.",
+      "toggle": false
     }
   ],
   "reuse": {

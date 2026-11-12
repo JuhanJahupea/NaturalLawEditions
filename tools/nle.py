@@ -202,6 +202,17 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
     if os.path.isdir(sdir):
         for f in os.listdir(sdir): os.remove(os.path.join(sdir, f))
     out = []; replaced = 0
+    # attributions (editions/<ed>/passes/attributions.json): rows where the author names the source for the passage
+    A = load_pass(ed, 'attributions'); att = {}
+    for a in (A or {}).get('attributions', []):
+        k = (a['text'], a['unit'], a['page'], a['passage'], a['source']); assert k not in att, k; att[k] = a
+    used = set()
+    def attribute(tid, rows):
+        for r in rows:
+            a = att.get((tid, r['unit'], r['page'], r['passage'], r['source']))
+            if a:
+                r['attributed'] = {k: a[k] for k in ('form', 'cue', 'cuePart', 'confidence', 'reason')}
+                used.add((tid, r['unit'], r['page'], r['passage'], r['source']))
     for t in texts:
         rows = sorted(tables.get(t['id'], []), key=lambda r: r['id'])
         P = load_pass(ed, t['id'])
@@ -221,10 +232,12 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
             head['steps'] = {str(k): steps[k] for k in sorted({r['step'] for r in rows}, key=str)}
             head['description'] = description
             head['rows'] = rows
+        attribute(t['id'], head['rows'])
         dump(head, os.path.join(ROOT, path))
         e = {'path': path, 'from': ed, 'to': t['id'], 'rows': len(head['rows'])}
         if 'toLayer' in head: e['toLayer'] = head['toLayer']
         out.append(e)
+    assert used == set(att), 'attributions with no row: %s' % sorted(set(att) - used)[:5]
     return out, replaced
 
 

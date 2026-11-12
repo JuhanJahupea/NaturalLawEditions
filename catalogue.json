@@ -220,7 +220,7 @@
       "imprint": "Amsterdam and Leipzig: Arkstée et Merkus, 1756. 2 vols",
       "date": "1756",
       "lang": "fr",
-      "layer": "archive.org OCR (bub_gb_dDKCHraV9BoC, hOCR; bub_gb_unXpgRJJud0C, djvu text in 166 chunks). T. II holds Leibniz's Jugement d'un anonyme with Barbeyrac's Réflexions (family Lz for Leibniz)."
+      "layer": "Vision transcription of the archive.org scans (texts/pufendorf-devoirs-barbeyrac-1756/). Barbeyrac's notes are credited to Barbeyrac (family Bb). T. II holds Leibniz's Jugement d'un anonyme with Barbeyrac's Réflexions (family Lz for Leibniz)."
     },
     {
       "id": "locke-coste-1729",
@@ -524,7 +524,7 @@
       "path": "reuse/burlamaqui-1747__pufendorf-devoirs-barbeyrac-1756.json",
       "from": "burlamaqui-1747",
       "to": "pufendorf-devoirs-barbeyrac-1756",
-      "rows": 350
+      "rows": 391
     },
     {
       "path": "reuse/burlamaqui-1747__grotius-barbeyrac-1724.json",

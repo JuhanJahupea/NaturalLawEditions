@@ -35,6 +35,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `build_expand.py <edition> <work> <judge dirs> <candidates files> <out> [hints]` (lists comma-separated): the second pass. Pages a unit cites (by book, chapter and §, each reference given to the author named nearest before it), pages judges named for an item they could not match (hints), the source § nearest the unit by tf-idf when its cosine reaches 0.30 (0.40 for a unit already matched), and, for units with no match, the pages next to a neighbour's match. At most three new pages per unit.
 - `merge.py <edition> <work> <judge dirs, comma-separated> <old table> <first id> <out>`: places every passage in the edition and the source part (exact, free whitespace, or fuzzy ≥ 0.9), sets locus, family (Bb for Barbeyrac's notes), links and status (match ≥ 0.5, possible 0.3–0.5), drops rows under 0.3 and duplicates, and carries `earliest` over from an old row on the same span.
 - `cmp_old.py <old table> <rows>`: how many old rows the new rows cover.
+- `map_old.py <old table> <work> <out>`: for an old table whose page ids the corpus does not have (the *Devoirs* vol. II OCR came in chunks), the corpus page that shares most 8-letter sequences with each row's source passage.
 - `prep_earlier.py <old table> <rows> <candidates> <earlier>`: the old match rows no new row overlaps, as candidates and pointers for a recheck batch (`build_judge.py … - <earlier>`).
 - `build_review.py <edition> <work> <rows> <dir> [15]`: the rows at status possible, each with the edition part and the source part that hold its passages, for a second judge. `keys.json` ties each verdict to the row's unit, page and passages.
 - Agent prompt `REVIEW_PROMPT.md`, one batch per agent: keep (with a label and a confidence), commonplace, or drop.
@@ -44,9 +45,22 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 ## 5. Divergences
 
 - `build_div.py <work> <rows> <candidates> <dir> [edition]`: for each § of the edition (default `vattel-1773`) with a match, the source §§ it reuses and the nearest other §. Item keys carry the author's name (`vattel_id`, `burlamaqui_id`).
-- Agent prompt `DIV_SCREEN_PROMPT_<work>.md` (`GRO24`, `PUF34`; `GRO24_BURLAMAQUI`, `PUF34_BURLAMAQUI` for Burlamaqui): does the source answer the same question, and does the edition answer it differently.
+- Agent prompt `DIV_SCREEN_PROMPT_<work>.md` (`GRO24`, `PUF34`; `GRO24_BURLAMAQUI`, `PUF34_BURLAMAQUI`, `DEV56_BURLAMAQUI` for Burlamaqui): does the source answer the same question, and does the edition answer it differently.
+- `div_already.py <batch dir> <divergence pass> <field>`: adds to each screen or verify item the notes an earlier pass holds for its unit (the *Devoirs* screen gets the DNG notes as `dng_notes` and leaves out what they record).
 - `build_verify.py <screen dir> <dir>`: the flagged pairs with the whole source § and Barbeyrac's notes. A pair the screen names outside its candidates can be added by hand as an extra screen file.
 - Agent prompt `DIV_VERIFY_PROMPT_<work>.md`: keep or reject, relation, severity and a comment.
 - `write_div.py <work> <screen dir> <verify dir> <text id> <out> [date]`: writes `editions/<edition>/passes/divergences-<text id>.json`.
+
+## 6. Attributions
+
+- `attr_cand.py <out>`: the reuse rows of both editions (not citation, not commonplace) whose unit names the source's author or work anywhere in text, notes or margin. Name patterns per source text, accents folded.
+- `build_attr.py <candidates> <dir> [30]`: batches of about 30 rows, grouped by unit; each unit with its margin, text and notes. `keys.json` ties each key to the row.
+- Agent prompt `ATTRIBUTION_PROMPT.md`, one batch per agent: does the author name the source for this passage (its sentence, the sentence that introduces it, a note called there, the margin beside it); form quotation or reference; the words that name it.
+- `write_attr.py <dir> [date]`: the attributed verdicts whose cue is found in the unit go to `editions/<edition>/passes/attributions.json`. The converters copy each onto its row as `attributed`.
+
+## 7. English of Burlamaqui
+
+- `en_extract.py <pdf> <out>`: Nugent's translation from the Liberty Fund PDF, by section, with Burlamaqui's notes; the editor's notes and their calls are left out.
+- `en_align.py <units_en> <plain_fr> <text.json> <out>`: sentence alignment with the 1747 French, chapter by chapter (Gale–Church lengths; Nugent's § numbers as anchors). Writes `layers/english.json`. `plain_fr` is each unit's plain text as the viewer builds it (`plain_fr.js <out>`).
 
 The converters then rebuild the editions from their working `data.json` and the pass files (`tools/convert_*.py`, `tools/nle.py`); `tools/check_all.sh` checks both.

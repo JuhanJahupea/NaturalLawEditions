@@ -91,6 +91,9 @@ body.resizing{user-select:none;cursor:col-resize}
 .u{text-decoration:underline;text-decoration-color:var(--c,var(--accent));text-decoration-thickness:2px;text-underline-offset:3px;cursor:pointer}
 .u.multi{text-decoration-style:double}
 .u.poss{text-decoration-style:dashed;text-decoration-thickness:1.5px}
+.u.att{text-decoration-style:dotted;text-decoration-thickness:2.5px}
+.dotu{text-decoration:underline dotted;text-decoration-thickness:2px;text-underline-offset:3px}
+.mh .att{font-style:italic;color:var(--mut)}
 .u.off{text-decoration:none;cursor:auto}
 .u.hit{background:var(--accent-soft)}
 .chg .var{background:var(--add);box-shadow:inset 2px 0 var(--add-line);padding:0 2px}
@@ -202,6 +205,7 @@ body.listing .page{max-width:min(1100px,100%)}
       <div class="srcpop" id="srcPop" hidden></div>
     </div>
     <label class="tg" id="lPos"><input type="checkbox" id="tPos"> <span class="dash">Possible matches</span></label>
+    <label class="tg" id="lAtt" title="Rows where the author names the source for the passage: attributed quotations and paraphrases, and citations. Untick to see only unattributed reuse."><input type="checkbox" id="tAtt" checked> <span class="dotu">Attributed</span></label>
     <span id="lays" class="lays"></span>
     </div>
     <button class="btn only-narrow" id="panelBtn" aria-controls="panel">Panel</button>
