@@ -2,6 +2,11 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.11 (2026-11-13)
+
+- Claude Opus read each of the 89 attributed rows again with the whole unit. It confirmed 86 and rejected 3; those lose `attributed`. In two of the three (IV.93, IV.124) the footnote naming Wicquefort belongs to the neighbouring §, which shares the page. In III.155 (Bessus) the sentence calls a note on Quintus Curtius; the Grotius note has no call in the text. It gave a better cue for some rows and changed 2 from quotation to reference. Each attribution now carries the verdict and reason in `review`. Vattel attributes 86 rows: 13 quotations, 73 references.
+- Text, layers and the rows of the reuse tables are unchanged.
+
 ## 1.10 (2026-11-13)
 
 - New title pages (`titlepage.json`, images in `images/`): a diplomatic transcription of the title page of each volume, line by line, beside its scan (MDZ bsb10725331 and bsb10725332, scan 1). The viewer shows them before the Préface (t. I) and before Livre III (t. II), with a link in the contents. The two volumes differ in five places; `titlepage.json` lists them.

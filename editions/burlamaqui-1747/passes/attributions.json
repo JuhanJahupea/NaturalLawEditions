@@ -2,7 +2,7 @@
  "format": "nle-pass/1",
  "edition": "burlamaqui-1747",
  "date": "2026-11-12",
- "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (245 rows). Judged by a language model, not checked by hand. Rows labelled citation name the source by definition and are not listed.",
+ "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (245 rows). First judged by Claude Sonnet. Rows labelled citation name the source by definition and are not listed. A second model (Claude Opus) read each item with the whole unit: wrong items were removed; review holds its verdict (correct; three items the second reader left unsure were decided by hand) and reason.",
  "attributions": [
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -14,7 +14,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Pufendorf named in the sentence."
+   "reason": "Pufendorf named in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf is named in the passage and note (a) cites Droit de la Nature et des Gens Liv. I ch. V § 5, the source locus.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -23,10 +28,15 @@
    "passage": "Il semble que PUFENDORF (ᵃ) n'ait pas toûjours demêlé ces deux idées avec assez de soin.",
    "source": "deux choses que l'Auteur devoit distinguer.",
    "form": "reference",
-   "cue": "PUFENDORF",
-   "cuePart": "t",
+   "cue": "les Devoirs de l'Homme & du Citoy. Liv. I. Ch. I. § 17.",
+   "cuePart": "n0",
    "confidence": 0.6,
-   "reason": "Pufendorf named in sentence; Barbeyrac's note source, work cited in note (a)."
+   "reason": "Pufendorf named in sentence; Barbeyrac's note source, work cited in note (a).",
+   "review": {
+    "verdict": "correct",
+    "reason": "Barbeyrac is not named, but note (a) of the sentence cites the Devoirs Liv. I ch. I § 17, the place where Barbeyrac's note making this criticism stands.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -38,7 +48,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Pufendorf named in the sentence."
+   "reason": "Pufendorf named in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf is named in the passage and note (a) cites the Devoirs de l'Homme Liv. I ch. I § 17.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -50,7 +65,12 @@
    "cue": "Voyez la Note 3. de Monsr. Barbeyrac sur les Devoirs de l'Homme & du Citoyen Liv. I. Ch. I. §. XI.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Note (a) at sentence end cites Barbeyrac's note on the Devoirs."
+   "reason": "Note (a) at sentence end cites Barbeyrac's note on the Devoirs.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the sentence cites Barbeyrac's note 3 on the Devoirs Liv. I ch. I § XI, the source.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -62,7 +82,12 @@
    "cue": "Mr. Barbeyrac",
    "cuePart": "m",
    "confidence": 0.5,
-   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it."
+   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The view is set out in guillemets, and the margin calls this section 'Sentiment de Mr. Barbeyrac', which names Barbeyrac for this passage (the note points to his Remarks in the Devoirs rather than his Grotius note).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -74,7 +99,12 @@
    "cue": "Mr. Barbeyrac",
    "cuePart": "m",
    "confidence": 0.5,
-   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it."
+   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The view is set out in guillemets, and the margin calls this section 'Sentiment de Mr. Barbeyrac', which names Barbeyrac for this passage (the note points to his Remarks in the Devoirs rather than his Grotius note).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -86,7 +116,12 @@
    "cue": "Mr. Barbeyrac",
    "cuePart": "m",
    "confidence": 0.5,
-   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it."
+   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The view is set out in guillemets, and the margin calls this section 'Sentiment de Mr. Barbeyrac', which names Barbeyrac for this passage (the note points to his Remarks in the Devoirs rather than his Grotius note).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -98,7 +133,12 @@
    "cue": "Mr. Barbeyrac",
    "cuePart": "m",
    "confidence": 0.5,
-   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it."
+   "reason": "Quoted passage is a Barbeyrac note; the margin names Mr. Barbeyrac for it.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The view is set out in guillemets, and the margin calls this section 'Sentiment de Mr. Barbeyrac', which names Barbeyrac for this passage (the note points to his Remarks in the Devoirs rather than his Grotius note).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -107,10 +147,15 @@
    "passage": "duquel on se reconnoît dépendant",
    "source": "de laquelle on se reconnoît dépendant",
    "form": "quotation",
-   "cue": "Traduction des Devoirs de l'Homme & du Citoyen",
+   "cue": "Mr. Barbeyrac a fait des Remarques",
    "cuePart": "n0",
    "confidence": 0.55,
-   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs."
+   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) in the sentence introducing the guillemet quotation sends the reader to the Jugement d'un Anonyme § XV with Barbeyrac's Remarks in his Devoirs translation, which is this source, and the margin names Barbeyrac.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -119,10 +164,15 @@
    "passage": "qui puissent mettre un frein à la Liberté, & «nous assujettir à régler nos actions d'une certaine ma- «niére",
    "source": "il faut quelque chose de plus pour gêner notre liberté, pour nous assujettir à régler nos actions d'une certaine maniére",
    "form": "quotation",
-   "cue": "Traduction des Devoirs de l'Homme & du Citoyen",
+   "cue": "Mr. Barbeyrac a fait des Remarques",
    "cuePart": "n0",
    "confidence": 0.55,
-   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs."
+   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) in the sentence introducing the guillemet quotation sends the reader to the Jugement d'un Anonyme § XV with Barbeyrac's Remarks in his Devoirs translation, which is this source, and the margin names Barbeyrac.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -131,10 +181,15 @@
    "passage": "ni les rapports de proportion «& de convenance que nous reconnoissons dans les cho- «ses mêmes, ni l'approbation que la Raison leur donne, «ne nous mettent point dans une nécessité indispensa- «ble de suivre ces idées",
    "source": "Qu'il y ait tel ou tel rapport d'Egalité & de Proportion, de Convenance ou de Disconvenance, dans la nature des choses, cela seul ne nous engage qu'à reconnoître ce rapport: il faut quelque chose de plus pour gêner notre liberté, pour nous assujettir à régler nos actions d'une certaine maniére",
    "form": "quotation",
-   "cue": "Traduction des Devoirs de l'Homme & du Citoyen",
+   "cue": "Mr. Barbeyrac a fait des Remarques",
    "cuePart": "n0",
    "confidence": 0.55,
-   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs."
+   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) in the sentence introducing the guillemet quotation sends the reader to the Jugement d'un Anonyme § XV with Barbeyrac's Remarks in his Devoirs translation, which is this source, and the margin names Barbeyrac.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -143,10 +198,15 @@
    "passage": "Que notre Raison n'étant au fond autre chose «que nous - mêmes, personne ne peut, à proprement «parler, s'imposer à soi-même une obligation.",
    "source": "notre Raison, considérée hors de toute dépendance du Créateur de qui nous la tenons, n'est au fond autre chose que nous-mêmes. Or personne ne peut s'imposer à soi-même une nécessité indispensable",
    "form": "quotation",
-   "cue": "Traduction des Devoirs de l'Homme & du Citoyen",
+   "cue": "Mr. Barbeyrac a fait des Remarques",
    "cuePart": "n0",
    "confidence": 0.55,
-   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs."
+   "reason": "Note whose call introduces the quoted passage names Barbeyrac's translation of the Devoirs.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) in the sentence introducing the guillemet quotation sends the reader to the Jugement d'un Anonyme § XV with Barbeyrac's Remarks in his Devoirs translation, which is this source, and the margin names Barbeyrac.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -158,7 +218,12 @@
    "cue": "Pusend. Droit de la N. & des G. Liv. I. Ch. I. § 20.",
    "cuePart": "n1",
    "confidence": 0.95,
-   "reason": "Passage is quoted in the footnote that cites Pufendorf."
+   "reason": "Passage is quoted in the footnote that cites Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage is quoted in footnote (1), which ends with the Pufendorf reference and is called at 'PUFENDORF lui-même l'insinue'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -170,7 +235,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Sentence names Grotius and Pufendorf for the definitions the author departs from."
+   "reason": "Sentence names Grotius and Pufendorf for the definitions the author departs from.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence names Grotius for the definition the author departs from, and footnote (a) cites Grotius I.1.9.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -179,10 +249,15 @@
    "passage": "nous nous écartons un peu des définitions que GROTIUS & PUFENDORF en ont données",
    "source": "L'Auteur réduit tout l'effet de la Loi à l'Obligation : or il faut y joindre la Permission",
    "form": "reference",
-   "cue": "GROTIUS",
-   "cuePart": "t",
+   "cue": "Ajoutez-y les Notes de Mr. Barbeyrac.",
+   "cuePart": "n0",
    "confidence": 0.55,
-   "reason": "Same sentence names Grotius; the passage reflects Barbeyrac's note on his definition."
+   "reason": "Same sentence names Grotius; the passage reflects Barbeyrac's note on his definition.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius alone does not name Barbeyrac's note, but footnote (a), which documents this departure from the definitions, cites Grotius I.1.9 and adds Barbeyrac's notes on it.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -194,7 +269,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.65,
-   "reason": "'ces deux Auteurs' refers back to the Grotius and Pufendorf named just before."
+   "reason": "'ces deux Auteurs' refers back to the Grotius and Pufendorf named just before.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'Ces deux Auteurs' refers straight back to Grotius and Pufendorf, named in the sentence before, and footnote (a) cites Pufendorf I.6.4.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -206,7 +286,12 @@
    "cue": "Pusend. Droit de la N. & des G. Liv. I. Ch. VI. § 11.",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Call (b) ends this sentence and cites Pufendorf."
+   "reason": "Call (b) ends this sentence and cites Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Footnote (b), called at the end of this quoted item, cites Pufendorf DNG I.6.11 for the view; only the tail of the passage is inside guillemets.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -214,11 +299,16 @@
    "page": "PUF34T1.p264",
    "passage": "C'est dequoi, disent-ils, nous avons une «preuve dans la constitution même de l'homme ; car «c'est l'Ame qui gouverne, comme étant la partie la «plus noble",
    "source": "Ils tirent une preuve de la constitution même de l'Homme , dans laquelle l'Ame , comme la partie la plus noble , gouverne tout le reste.",
-   "form": "reference",
+   "form": "quotation",
    "cue": "Pusend. Droit de la N. & des G. Liv. I. Ch. VI. § 11.",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Call (b) ends this sentence and cites Pufendorf."
+   "reason": "Call (b) ends this sentence and cites Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence stands inside the guillemets of item 2, and its call (b) cites Pufendorf DNG I.6.11.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -230,7 +320,12 @@
    "cue": "Mr. BARBEYRAC",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Barbeyrac named for his view."
+   "reason": "Barbeyrac named for his view.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Barbeyrac is named as holder of this view ('Suivant ce judicieux Auteur'), and footnote (c) gives note 2 on DNG I.6.12.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -242,7 +337,12 @@
    "cue": "Mr. BARBEYRAC",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Barbeyrac's view introduced by his name."
+   "reason": "Barbeyrac's view introduced by his name.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Same sentence, which is introduced as Barbeyrac's view; footnote (c) also lists note 3 on Devoirs I.2.5.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -254,7 +354,12 @@
    "cue": "Mr. BARBEYRAC",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Quoted as Barbeyrac's words, 'ajoûte-t-il'."
+   "reason": "Quoted as Barbeyrac's words, 'ajoûte-t-il'.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Given in guillemets as Barbeyrac's words ('ajoûte-t-il'), and footnote (c) points to his note on Devoirs I.2.5.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -266,7 +371,12 @@
    "cue": "Mr. BARBEYRAC",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Quoted as Barbeyrac's words, 'ajoûte-t-il'."
+   "reason": "Quoted as Barbeyrac's words, 'ajoûte-t-il'.",
+   "review": {
+    "verdict": "correct",
+    "reason": "It continues the guillemet quotation that is given as Barbeyrac's words, with footnote (c) naming the note.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -278,7 +388,12 @@
    "cue": "Mr. BARBEYRAC",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Barbeyrac is named inside the passage itself."
+   "reason": "Barbeyrac is named inside the passage itself.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Barbeyrac is named in the passage itself as the one whose view the author qualifies.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -290,7 +405,12 @@
    "cue": "Mr. BARBEYRAC",
    "cuePart": "t",
    "confidence": 0.75,
-   "reason": "Barbeyrac, the translator, is named in the passage."
+   "reason": "Barbeyrac, the translator, is named in the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Barbeyrac, author of the note, is named in the passage for the view being qualified.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -302,7 +422,12 @@
    "cue": "la note 1. de Mr. Barbeyrac sur le §. 9. du grand Ouvrage de Puf. Liv. I. Ch. VI.",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "The footnote holding the passage cites Barbeyrac's note on Pufendorf."
+   "reason": "The footnote holding the passage cites Barbeyrac's note on Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The footnote names Barbeyrac's note 1 on DNG I.6.9 in the same clause as the rejected claim.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -311,22 +436,15 @@
    "passage": "la force n'entre pour rien dans le fondement de cette obligation, & qu'elle sert seulement à mettre le Supérieur en état de faire valoir son droit",
    "source": "force n'entre pour rien dans ce qui constitue le droit d'imposer quelque Obligation : elle sert seulement à mettre en état de faire valoir ce droit",
    "form": "reference",
-   "cue": "la note 1. de Mr. Barbeyrac sur le §. 9. du grand Ouvrage de Puf. Liv. I. Ch. VI.",
+   "cue": "Mr. Barbeyrac",
    "cuePart": "n0",
    "confidence": 0.85,
-   "reason": "The footnote holding the passage cites Barbeyrac's note on Pufendorf."
-  },
-  {
-   "text": "pufendorf-devoirs-barbeyrac-1756",
-   "unit": "P1.9.10",
-   "page": "DEV56T1.p155",
-   "passage": "Mais ce sont là plutôt des conditions nécessairement supposées & qui s'entendent d'elles-mêmes, que des causes précises & immédiates de la sujettion.",
-   "source": "C'est-là la raison précise & immédiate : l'autre n'est qu'une condition nécessairement supposée",
-   "form": "reference",
-   "cue": "PUFENDORF remarque,",
-   "cuePart": "t",
-   "confidence": 0.55,
-   "reason": "The preceding introducing sentence names Pufendorf and the passage comments on that remark."
+   "reason": "The footnote holding the passage cites Barbeyrac's note on Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Barbeyrac is named for this very claim, though the place cited is his parallel note on DNG I.6.9 and not the Devoirs note.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -338,7 +456,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Pufendorf is named in the clause."
+   "reason": "Pufendorf is named in the clause.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf is named in the clause that introduces the disputed view, and footnote (a) cites DNG I.6.1.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -350,7 +473,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Quoted in guillemets as Pufendorf's words."
+   "reason": "Quoted in guillemets as Pufendorf's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Given in guillemets as Pufendorf's words, with footnote (a) citing DNG I.6.1.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -362,7 +490,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Quoted in guillemets as Pufendorf's words."
+   "reason": "Quoted in guillemets as Pufendorf's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Part of the guillemet quotation attributed to Pufendorf, with footnote (a) citing DNG I.6.1.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -374,7 +507,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Part of the quotation attributed to Pufendorf."
+   "reason": "Part of the quotation attributed to Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Falls inside the closing words of the Pufendorf quotation, which ends with call (a) to DNG I.6.1.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -386,7 +524,12 @@
    "cue": "le sentiment de Mr. BARBEYRAC, expliqué dans ses notes sur les passages que l'on vient d'indiquer",
    "cuePart": "t",
    "confidence": 0.5,
-   "reason": "Preceding sentence introduces Barbeyrac's notes, whose view this sentence states."
+   "reason": "Preceding sentence introduces Barbeyrac's notes, whose view this sentence states.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence introducing the passage names Barbeyrac's notes on the Grotius and Pufendorf places just cited, and the passage states that view.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -398,7 +541,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Sentence names Grotius and, after him, Pufendorf, with note (b)."
+   "reason": "Sentence names Grotius and, after him, Pufendorf, with note (b).",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence names Pufendorf (with note b citing DNG I.VI.15) as holding this view.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -410,7 +558,12 @@
    "cue": "dit PUFENDORF",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Introduced as Pufendorf's words in guillemets."
+   "reason": "Introduced as Pufendorf's words in guillemets.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The words are given in guillemets, introduced by 'dit PUFENDORF'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -422,7 +575,12 @@
    "cue": "Voy. Pusend. Droit de la Nat. & des Gens. Liv. I. Ch. VI. § 14. avec les notes de Mr. Barbeyrac.",
    "cuePart": "n0",
    "confidence": 0.75,
-   "reason": "Footnote call (a) ends this sentence and cites Pufendorf with Barbeyrac's notes."
+   "reason": "Footnote call (a) ends this sentence and cites Pufendorf with Barbeyrac's notes.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the sentence cites Pufendorf I.VI.14 with Barbeyrac's notes.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -434,19 +592,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Pufendorf is named in the sentence."
-  },
-  {
-   "text": "pufendorf-barbeyrac-1734",
-   "unit": "P1.11.4",
-   "page": "PUF34T1.p289",
-   "passage": "La distinction que fait PUFENDORF de ces deux qualitez est tout-à-fait arbitraire",
-   "source": "Il auroit mieux valu distinguer les Bonnes Actions par rapport aux trois Objets qu'elles peuvent avoir",
-   "form": "reference",
-   "cue": "PUFENDORF",
-   "cuePart": "t",
-   "confidence": 0.8,
-   "reason": "Pufendorf is named in the sentence."
+   "reason": "Pufendorf is named in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf is named as the author of the distinction being rejected, with note (a) citing DNG I.VII.7.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -458,7 +609,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Pufendorf is named in the sentence."
+   "reason": "Pufendorf is named in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf, the source's author, is named in the sentence as making the distinction rejected, though the note cites DNG rather than the Devoirs.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -470,7 +626,12 @@
    "cue": "Grotius. Liv. I. Ch. I. § 3. num. 3.",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Note called right after the passage cites Grotius."
+   "reason": "Note called right after the passage cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (1), called at the end of the passage, refers the distinction to Grotius I.I.3 num. 3.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -479,10 +640,15 @@
    "passage": "Ce qui montre bien qu'il vaut mieux laisser là toutes ces divisions scholastiques, inventées à l'imitation de celles d'Aristote",
    "source": "il vaut mieux laisser là ARISTOTE avec sa division , qui , outre qu'elle a plusieurs défauts , est inutile aujourd'hui",
    "form": "reference",
-   "cue": "GROTIUS & PUFENDORF",
-   "cuePart": "t",
+   "cue": "avec les notes de Monsr. Barbeyrac",
+   "cuePart": "n4",
    "confidence": 0.4,
-   "reason": "Preceding sentence it follows names Grotius and Pufendorf; only Aristotle named in its own sentence."
+   "reason": "Preceding sentence it follows names Grotius and Pufendorf; only Aristotle named in its own sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Decided by hand: note (a), called at the end of the paragraph, cites Grotius I.1.8 and Pufendorf I.7.9-12 'avec les notes de Monsr. Barbeyrac'; it covers the paragraph's conclusion.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -491,10 +657,15 @@
    "passage": "celle de Justice universelle & particuliére, prise de la maniére que PUFENDORF l'explique, semble vicieuse, en ce que l'un des membres de la division se trouve renfermé dans l'autre (b)",
    "source": "L'épithéte d'Universelle qui distingue l'autre sorte générale de Justice, est aussi fort impropre, puis qu'il donne l'idée d'une division, dont un des membres renferme l'autre.",
    "form": "reference",
-   "cue": "PUFENDORF",
-   "cuePart": "t",
+   "cue": "avec les notes de Mr. Barbeyrac",
+   "cuePart": "n3",
    "confidence": 0.85,
-   "reason": "Pufendorf named in the sentence, note b cites his work with Barbeyrac's notes."
+   "reason": "Pufendorf named in the sentence, note b cites his work with Barbeyrac's notes.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b), called at the end of the passage, refers to Pufendorf's DNG 'avec les notes de Mr. Barbeyrac'; the name Pufendorf alone names only the author criticized.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -503,10 +674,15 @@
    "passage": "Ce qui montre bien qu'il vaut mieux laisser là toutes ces divisions scholastiques, inventées à l'imitation de celles d'Aristote",
    "source": "Tout cela montre, qu'il auroit mieux fait de laisser là toutes ces divisions embarrassées faites à l'imitation de celles d'ARISTOTE",
    "form": "reference",
-   "cue": "GROTIUS & PUFENDORF",
-   "cuePart": "t",
+   "cue": "avec les notes de Monsr. Barbeyrac",
+   "cuePart": "n4",
    "confidence": 0.4,
-   "reason": "Preceding sentence it follows names Pufendorf; only Aristotle named in its own sentence."
+   "reason": "Preceding sentence it follows names Pufendorf; only Aristotle named in its own sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Decided by hand: note (a), called at the end of the paragraph, cites Grotius I.1.8 and Pufendorf I.7.9-12 'avec les notes de Monsr. Barbeyrac'; it covers the paragraph's conclusion.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -515,10 +691,15 @@
    "passage": "celle de Justice universelle & particuliére, prise de la maniére que PUFENDORF l'explique, semble vicieuse, en ce que l'un des membres de la division se trouve renfermé dans l'autre",
    "source": "en Universelle & Particuliére est vicieuse, en ce que l'un des membres est renfermé dans l'autre",
    "form": "reference",
-   "cue": "PUFENDORF",
-   "cuePart": "t",
+   "cue": "les Dev. de l'Homme & du Citoy. Liv. I. Ch. II. § 14. avec les notes de Mr. Barbeyrac",
+   "cuePart": "n3",
    "confidence": 0.85,
-   "reason": "Pufendorf named in the sentence, which ends in note b citing his works."
+   "reason": "Pufendorf named in the sentence, which ends in note b citing his works.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b), called at the end of the passage, cites exactly Devoirs I.II.14 with Barbeyrac's notes.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -530,7 +711,12 @@
    "cue": "d'une note de Mr. BARBEYRAC sur PUFENDORF",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "The closing sentence credits the list of remarks to Barbeyrac's note on Pufendorf."
+   "reason": "The closing sentence credits the list of remarks to Barbeyrac's note on Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The closing sentence says these remarks are taken from a note of Barbeyrac on Pufendorf, with note (a) giving DNG I.VIII.5 note 1.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -542,7 +728,12 @@
    "cue": "d'une note de Mr. BARBEYRAC sur PUFENDORF",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "The closing sentence credits the list of remarks to Barbeyrac's note on Pufendorf."
+   "reason": "The closing sentence credits the list of remarks to Barbeyrac's note on Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The closing sentence credits the list of remarks to Barbeyrac's note on Pufendorf, DNG I.VIII.5 note 1.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -554,7 +745,12 @@
    "cue": "Cicéron",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "Note names Cicero and cites Tusc. Quaest."
+   "reason": "Note names Cicero and cites Tusc. Quaest.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note names Cicero and gives the Latin as his words with the Tusculans reference.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -566,7 +762,12 @@
    "cue": "De Offic. Lib. I. Cap. VII.",
    "cuePart": "n1",
    "confidence": 0.9,
-   "reason": "Note holding the Latin cites De Offic."
+   "reason": "Note holding the Latin cites De Offic.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The Latin in note (1) is Cicero's text, introduced in the main text by 'Ce qui fait dire à CICÉRON' and closed by the De Offic. reference.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -578,7 +779,12 @@
    "cue": "De Offic. Lib. I. Cap. VII.",
    "cuePart": "n1",
    "confidence": 0.9,
-   "reason": "Note holding the Latin cites De Offic."
+   "reason": "Note holding the Latin cites De Offic.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The Latin in note (1) is Cicero's text, introduced in the main text by 'Ce qui fait dire à CICÉRON' and closed by the De Offic. reference.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -587,10 +793,15 @@
    "passage": "Cet illustre Restaurateur du Droit Naturel déclare, qu'il n'a proprement en vue que d'expliquer les devoirs mutuels des hommes : (a) or il n'avoit besoin pour cela que du principe de la Sociabilité. Selon lui, nos devoirs envers Dieu sont partie de la Théologie Naturelle ; & la Religion ne trouve sa place dans un Traité de Droit Naturel, qu'entant qu'elle est le plus ferme appui de la Société. Quant aux devoirs qui concernent l'homme lui-même, il les fait dépendre en partie de la Religion, & en partie de la Sociabilité (b).",
    "source": "Nôtre Auteur déclare ( au commencement dit §. suivant de ce Chap. & dans son Specimen controvers. Cap. V. §. 25. comme aussi dans le Spicilegium controversiarum &c. Cap. I. §. 14 ) qu'il n'a prétendu proprement expliquer ici que les Devoirs mutuels des Hommes. Selon lui, nos Devoirs envers DIEU sont partie de la Théologie Naturelle , & la Religion ne trouve sa place dans un Traité de Droit Naturel, qu'entant qu'elle est le plus ferme ciment de la So ciété Humaine. Pour les Devoirs de l'Homme envers lui-même, ils découlent en partie de la Religion, en partie de la Sociabilité",
    "form": "reference",
-   "cue": "Voy. Droit de la Nat. & des Gens. Liv. II. C. III. § 19.",
-   "cuePart": "n0",
+   "cue": "suivant la judicieuse remarque de Mr. BARBEYRAC",
+   "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Footnote (a) inside the passage cites Pufendorf's work and place."
+   "reason": "Footnote (a) inside the passage cites Pufendorf's work and place.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence introducing the passage credits Barbeyrac's remark (his note 5 on DNG II.III.15, on the unfounded objections), which the passage then sets out; note (a) itself cites Pufendorf's own text at §19, not the note.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -599,10 +810,15 @@
    "passage": "Voy. Droit de la Nat. & des Gens. Liv. II. C. III. § 19. Specim. Controvers. Ch. V. § 25. Spicileg. Controvers. Ch. I. §. 14.",
    "source": "( au commencement dit §. suivant de ce Chap. & dans son Specimen controvers. Cap. V. §. 25. comme aussi dans le Spicilegium controversiarum &c. Cap. I. §. 14 )",
    "form": "reference",
-   "cue": "Voy. Droit de la Nat. & des Gens. Liv. II. C. III. § 19.",
-   "cuePart": "n0",
+   "cue": "suivant la judicieuse remarque de Mr. BARBEYRAC",
+   "cuePart": "t",
    "confidence": 0.9,
-   "reason": "The footnote itself holds the passage and cites the work and chapter."
+   "reason": "The footnote itself holds the passage and cites the work and chapter.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Decided by hand: the paragraph opens 'suivant la judicieuse remarque de Mr. BARBEYRAC', which covers the list of Pufendorf's places taken from his note.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -614,7 +830,12 @@
    "cue": "Voy. la note 5. de Mr. Barbeyrac sur le § 15. du Ch. 3. Liv. 2. du Droit de la Nat. & des Gens.",
    "cuePart": "n0",
    "confidence": 0.85,
-   "reason": "Footnote (a) at the end of this sentence names Barbeyrac's note and its place."
+   "reason": "Footnote (a) at the end of this sentence names Barbeyrac's note and its place.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the sentence cites Barbeyrac's note 5 on DNG II.III.15, exactly the source.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -626,7 +847,12 @@
    "cue": "Pufendorf Droit de la Nat. & des Gens. Liv. II. Ch. III. § 22.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Note (a) call at end of the sentence cites Pufendorf's work."
+   "reason": "Note (a) call at end of the sentence cites Pufendorf's work.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the sentence cites Pufendorf DNG II.III.22, the place where Barbeyrac's note 1 stands.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -638,7 +864,12 @@
    "cue": "Grotius Droit de la Guerre & de la Paix. Liv. I. Ch. I. § 10.",
    "cuePart": "n1",
    "confidence": 0.95,
-   "reason": "Quoted as Grotius's words with 'dit-il' and note b."
+   "reason": "Quoted as Grotius's words with 'dit-il' and note b.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Given in guillemets as Grotius's words ('Ecoutons le', 'dit-il') with note (b) citing DGP I.I.10.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -650,7 +881,12 @@
    "cue": "Grotius Droit de la Guerre & de la Paix. Liv. I. Ch. I. § 10.",
    "cuePart": "n1",
    "confidence": 0.95,
-   "reason": "Quoted as Grotius's words with 'dit-il' and note b."
+   "reason": "Quoted as Grotius's words with 'dit-il' and note b.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Continuation of the same guillemeted quotation of Grotius, note (b) citing DGP I.I.10.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -662,7 +898,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Pufendorf named in the sentence holding the criticism."
+   "reason": "Pufendorf named in the sentence holding the criticism.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf is named in the sentence that reports his criticism ('sans en excepter PUFENDORF'), and the next sentence quotes him with a note to DNG II.III.4.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -674,7 +915,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Pufendorf named in the sentence holding the criticism."
+   "reason": "Pufendorf named in the sentence holding the criticism.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Same sentence: Pufendorf is named as one of the critics who charged Grotius with a vicious circle, with DNG II.III.4 cited just after.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -683,10 +929,15 @@
    "passage": "«Si l'on demande, dit PUFENDORF, (a) «quelles sont les choses qui font la matiére des Loix «Naturelles, on répond que ce sont celles qui sont «honnêtes ou deshonnêtes de leur nature.",
    "source": "quelles sont les choses qui font la matiere de cette Loi , ils répondent que ce sont celles qui sont Honnêtes ou Deshonnêtes de leur nature",
    "form": "quotation",
-   "cue": "dit PUFENDORF",
-   "cuePart": "t",
+   "cue": "Pufendorf Droit de la Nat. & des Gens. Liv. II. Ch III. § 4.",
+   "cuePart": "n0",
    "confidence": 0.95,
-   "reason": "Quoted with 'dit PUFENDORF' and note a."
+   "reason": "Quoted with 'dit PUFENDORF' and note a.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Quoted in guillemets with 'dit PUFENDORF' and note (a) citing DNG II.III.4 (and Apol. § 19), the place where Barbeyrac's note 5 stands.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -698,7 +949,12 @@
    "cue": "la note 5. de Mr. Barbeyrac sur le Droit de la Nat. & des Gens. Liv. II. Ch. III. § 4.",
    "cuePart": "n2",
    "confidence": 0.8,
-   "reason": "Final note cites Barbeyrac's note on Pufendorf at the end of the sentence."
+   "reason": "Final note cites Barbeyrac's note on Pufendorf at the end of the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note call at the end of the sentence cites Barbeyrac's note 5 on DNG II.III.4, exactly the source.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -710,7 +966,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius named in the sentence holding the passage."
+   "reason": "Grotius named in the sentence holding the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named as holder of the view in the same sentence, with note (a) citing DGP I.I.15.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -722,7 +983,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius named in the sentence holding the passage."
+   "reason": "Grotius named in the sentence holding the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named in the sentence holding the passage, with note (a) citing DGP I.I.15.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -734,7 +1000,12 @@
    "cue": "avec les notes de Mr. Barbeyrac",
    "cuePart": "n0",
    "confidence": 0.5,
-   "reason": "Note call inside the passage cites Grotius I.I.15 with Barbeyrac's notes."
+   "reason": "Note call inside the passage cites Grotius I.I.15 with Barbeyrac's notes.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) called inside the sentence names Barbeyrac's notes on Grotius I.I.15, which make the same objection, and the paragraph's closing note cites his note 6 on Pufendorf.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -746,7 +1017,12 @@
    "cue": "Voy. la note 6. de Mr. Barbeyrac sur Pufendorf Droit de la Nat. & des Gens. Liv. I. Ch. XI. § 18.",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Note at end of the sentence cites Barbeyrac's note on Pufendorf."
+   "reason": "Note at end of the sentence cites Barbeyrac's note on Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the sentence cites Barbeyrac's note 6 on Pufendorf I.VI.18 (misprinted 'Ch. XI').",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -758,7 +1034,12 @@
    "cue": "Grotius Droit de la Guerre & de la Paix. Liv. I. Ch. I. § 10.",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "Note call at end of the sentence cites Grotius."
+   "reason": "Note call at end of the sentence cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b) at the end of the sentence cites Grotius DGP I.I.10.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -770,7 +1051,12 @@
    "cue": "Grotius Droit de la Guerre & de la Paix. Liv. I. Ch. I. § 10.",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "Note call at end of the sentence cites Grotius."
+   "reason": "Note call at end of the sentence cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b) at the end of the sentence cites Grotius DGP I.I.10.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -782,19 +1068,12 @@
    "cue": "Grotius Droit de la Guerre & de la Paix. Liv. I. Ch. I. § 10.",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "Note call at end of the sentence cites Grotius."
-  },
-  {
-   "text": "pufendorf-barbeyrac-1734",
-   "unit": "P2.5.10",
-   "page": "PUF34T1.p352",
-   "passage": "Etant lui-même l'auteur de notre constitution, il ne peut que prescrire ou défendre les choses qui ont une convenance ou une disconvenance nécessaire avec cette même constitution ; & par conséquent il ne sauroit rien changer aux Loix Naturelles, ni en dispenser jamais",
-   "source": "qu'il veut nécessairement prescrire ou défendre les choses qui ont une convenance ou disconvenance nécessaire avec la constitution de nôtre Nature, dont il est lui-même l'Auteur ; & par conséquent qu'il ne sauroit rien changer aux Loix Naturelles , ni en dispenser jamais",
-   "form": "reference",
-   "cue": "Pufendorf Droit de la Nat. & des Gens. Liv. II. Ch. III. § 6.",
-   "cuePart": "n0",
-   "confidence": 0.9,
-   "reason": "Note call at end of the sentence cites Pufendorf."
+   "reason": "Note call at end of the sentence cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b) directly after the passage cites Grotius DGP I.I.10, where natural law is said to be immutable even by God.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -806,7 +1085,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Grotius named in the sentence holding the passage."
+   "reason": "Grotius named in the sentence holding the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence reporting the view opens with GROTIUS, and note (a) at its end cites Grotius Liv. I Ch. I § 14.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -818,7 +1102,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.7,
-   "reason": "'Il ajoute' continues the Grotius sentence just before."
+   "reason": "'Il ajoute' continues the Grotius sentence just before.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'Il ajoûte' continues the report of Grotius named in the preceding sentence.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -830,7 +1119,12 @@
    "cue": "avec les notes de Monsr. Barbeyrac",
    "cuePart": "n1",
    "confidence": 0.5,
-   "reason": "Note at end of sentence names Barbeyrac's notes, though on Pufendorf."
+   "reason": "Note at end of sentence names Barbeyrac's notes, though on Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b) at the end of the sentence names Barbeyrac's notes for this critique, though it points to his notes on Pufendorf II.3.23.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -842,7 +1136,12 @@
    "cue": "avec les notes de Monsr. Barbeyrac",
    "cuePart": "n1",
    "confidence": 0.5,
-   "reason": "Note at end of sentence names Barbeyrac's notes, though on Pufendorf."
+   "reason": "Note at end of sentence names Barbeyrac's notes, though on Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The clause sits in the sentence closed by note (b), which names Barbeyrac's notes (on Pufendorf, where the phrase stands verbatim).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -851,10 +1150,15 @@
    "passage": "ce prétendu Droit des Gens, distinct du Droit Naturel, & qui ait néantmoins par lui-même la force d'obliger, soit que l'on veuille, ou qu'on ne veuille pas s'y soumettre",
    "source": "qu'il n'y a point de Droit des Gens , tel que celui dont il s'agit, qui soit distinct du Droit Naturel, & qui néanmoins aît par lui-même force d'obliger, soit qu'on veuille ou qu'on ne veuille pas s'y soûmettre",
    "form": "reference",
-   "cue": "Pufend. Droit de la Nat. & des Gens. Liv. II. Ch. III. § 23.",
+   "cue": "Voy. Pufend. Droit de la Nat. & des Gens. Liv. II. Ch. III. § 23. avec les notes de Monsr. Barbeyrac.",
    "cuePart": "n1",
    "confidence": 0.85,
-   "reason": "Note at end of the sentence cites Pufendorf with Barbeyrac's notes."
+   "reason": "Note at end of the sentence cites Pufendorf with Barbeyrac's notes.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b) at the end of the sentence cites this very place in Pufendorf together with Barbeyrac's notes.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -866,7 +1170,12 @@
    "cue": "CICERON",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "Note introduces the passage as Cicero's."
+   "reason": "Note introduces the passage as Cicero's.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note introduces the Latin as 'ce passage de CICERON' and cites De Offic. III.5.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -878,7 +1187,12 @@
    "cue": "Voy. Pufend. Droit de la Nat. & des Gens. Liv. II. Ch. III. § 3. note 10.",
    "cuePart": "n0",
    "confidence": 0.75,
-   "reason": "Sentence cites Pufendorf's work and note for this point."
+   "reason": "Sentence cites Pufendorf's work and note for this point.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The parenthesis after the sentence cites Pufendorf's Droit de la Nature and a (Barbeyrac) note for this distinction, though at II.3.3 n.10, a cross-reference taken over from the copied note II.3.23 n.3.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -890,7 +1204,12 @@
    "cue": "Voy. Pufend. Droit de la Nat. & des Gens. Liv. I. Ch. II. § 6.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Footnote (a) at the end of the sentence names Pufendorf and his work."
+   "reason": "Footnote (a) at the end of the sentence names Pufendorf and his work.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the sentence cites Pufendorf DNG I.2.6 for the view reported.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -902,7 +1221,12 @@
    "cue": "Voy. Pufend. Droit de la Nat. & des Gens. Liv. I. Ch. II. § 6.",
    "cuePart": "n0",
    "confidence": 0.5,
-   "reason": "Footnote (a) at the end of the sentence names Pufendorf, though a different work."
+   "reason": "Footnote (a) at the end of the sentence names Pufendorf, though a different work.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the passage names Pufendorf for this voluntarist view, though it cites the Droit de la Nature, not the Devoirs volume.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -914,7 +1238,12 @@
    "cue": "ce que dit GROTIUS dans son Discours préliminaire §. II",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Sentence names Grotius for his thought."
+   "reason": "Sentence names Grotius for his thought.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'il pose lui-même' refers to Grotius, named at the head of the paragraph whose thought is being explained.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -926,19 +1255,12 @@
    "cue": "ce que dit GROTIUS dans son Discours préliminaire §. II",
    "cuePart": "t",
    "confidence": 0.6,
-   "reason": "Grotius's thought is explained; source is Barbeyrac's note, work/place named."
-  },
-  {
-   "text": "grotius-barbeyrac-1724",
-   "unit": "P2.7.15",
-   "page": "GRO24T1.p64",
-   "passage": "la Raison seule impose déja à l'homme la nécessité de suivre ces maximes, & le met dans l'obligation d'y conformer sa conduite",
-   "source": "le Devoir & l'Obligation, ou la nécessité indispensable de se conformer à ces idées & ces maximes, suppose nécessairement un Supérieur",
-   "form": "reference",
-   "cue": "ce que dit GROTIUS dans son Discours préliminaire §. II",
-   "cuePart": "t",
-   "confidence": 0.6,
-   "reason": "Grotius's thought is explained; source is Barbeyrac's note, work/place named."
+   "reason": "Grotius's thought is explained; source is Barbeyrac's note, work/place named.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The gloss is given as the meaning of Grotius's Discours préliminaire § 11 (printed '§. II'), the very place where Barbeyrac's note stands.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -950,7 +1272,12 @@
    "cue": "De Offic. Lib. II. Cap. III.",
    "cuePart": "n1",
    "confidence": 0.9,
-   "reason": "Note holding the Latin cites De Offic."
+   "reason": "Note holding the Latin cites De Offic.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note giving the Latin cites De Offic. Lib. II Cap. III, and the text calls it a remark of CICÉRON.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -962,7 +1289,12 @@
    "cue": "Idem. Lib. III. Cap. III.",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Same note cites Cicero's De Offic. by Idem."
+   "reason": "Same note cites Cicero's De Offic. by Idem.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The same note cites it as 'Idem' (De Offic.) Lib. III Cap. III, following the Cicero remark.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -970,11 +1302,16 @@
    "page": "PUF34T1.p363",
    "passage": "beaucoup écartés de la vérité & de la «droite Raison, en séparant l'honnête de l'utile, & en se «persuadant qu'il y a des choses honnêtes qui ne sont «pas utiles, & qu'il y en a d'autres qui sont utiles, sans «être honnêtes.",
    "source": "beaucoup écartez de la Vérité & de la droite Raison, en distinguant l'Honnête de l'Utile, & en se persuadant qu'il y a des choses honnêtes qui ne sont pas utiles, & qu'il y en a qui sont utiles quoi qu'elles ne soient pas honnêtes.",
-   "form": "quotation",
+   "form": "reference",
    "cue": "Pufend. Droit de la Nat. & des Gens. Liv. II. Chap. III. § 10. 11.",
    "cuePart": "n0",
    "confidence": 0.6,
-   "reason": "Call (a) in the introducing sentence points to Pufendorf's work."
+   "reason": "Call (a) in the introducing sentence points to Pufendorf's work.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a), called in the sentence introducing the quotation, cites Pufendorf DNG II.3.10-11, though the words are presented as Cicero's.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pouilly-theorie-1749",
@@ -986,7 +1323,12 @@
    "cue": "Théorie des sentimens agréables, Ch. VIII.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Note (a) call ends this sentence and names the work."
+   "reason": "Note (a) call ends this sentence and names the work.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The only call (a) in the unit ends this sentence on page 253, and its note names the Théorie des sentimens agréables, Ch. VIII (the other (a) note belongs to the Ch. IX heading).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -998,7 +1340,12 @@
    "cue": "Voy. la Note 1ere. de Mr Barbeyrac sur les Dev. de l'homme & du Citoyen Liv. I. C. I. § 5.",
    "cuePart": "n1",
    "confidence": 0.55,
-   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note."
+   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Footnote (b), called at the end of the sentence announcing 'les deux régles suivantes', refers to Barbeyrac's note 1 on Devoirs I.1.5, and the passage is the statement of that announced rule.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1010,7 +1357,12 @@
    "cue": "Voy. la Note 1ere. de Mr Barbeyrac sur les Dev. de l'homme & du Citoyen Liv. I. C. I. § 5.",
    "cuePart": "n1",
    "confidence": 0.55,
-   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note."
+   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Footnote (b), called at the end of the sentence announcing 'les deux régles suivantes', refers to Barbeyrac's note 1 on Devoirs I.1.5, and the passage is the statement and gloss of that announced rule.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1022,7 +1374,12 @@
    "cue": "Voy. la Note 1ere. de Mr Barbeyrac sur les Dev. de l'homme & du Citoyen Liv. I. C. I. § 5.",
    "cuePart": "n1",
    "confidence": 0.55,
-   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note."
+   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Footnote (b), called at the end of the sentence announcing 'les deux régles suivantes', refers to Barbeyrac's note 1 on Devoirs I.1.5, and the passage is the illustration within the exposition of that announced rule.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1034,7 +1391,12 @@
    "cue": "Voy. la Note 1ere. de Mr Barbeyrac sur les Dev. de l'homme & du Citoyen Liv. I. C. I. § 5.",
    "cuePart": "n1",
    "confidence": 0.55,
-   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note."
+   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Footnote (b), called at the end of the sentence announcing 'les deux régles suivantes', refers to Barbeyrac's note 1 on Devoirs I.1.5, and the passage is the statement of that announced rule.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1046,7 +1408,12 @@
    "cue": "Voy. la Note 1ere. de Mr Barbeyrac sur les Dev. de l'homme & du Citoyen Liv. I. C. I. § 5.",
    "cuePart": "n1",
    "confidence": 0.55,
-   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note."
+   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Footnote (b), called at the end of the sentence announcing 'les deux régles suivantes', refers to Barbeyrac's note 1 on Devoirs I.1.5, and the passage is part of the statement of that announced rule.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1058,7 +1425,12 @@
    "cue": "Voy. la Note 1ere. de Mr Barbeyrac sur les Dev. de l'homme & du Citoyen Liv. I. C. I. § 5.",
    "cuePart": "n1",
    "confidence": 0.55,
-   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note."
+   "reason": "Footnote (b) at the end of the sentence introducing the two rules cites Barbeyrac's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Footnote (b), called at the end of the sentence announcing 'les deux régles suivantes', refers to Barbeyrac's note 1 on Devoirs I.1.5, and the passage is the comment closing the exposition of that announced rule.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -1070,7 +1442,12 @@
    "cue": "Dr. de la Nat. & des G. Liv. I. Ch. V. § 9.",
    "cuePart": "n0",
    "confidence": 0.75,
-   "reason": "Pufendorf's view reported; note at the sentence end cites the work and place."
+   "reason": "Pufendorf's view reported; note at the sentence end cites the work and place.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'il' is Pufendorf (named just before) and footnote (a) at the end of this sentence cites Droit de la Nat. & des G. I.5.9.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1082,7 +1459,12 @@
    "cue": "Sentiment de Pufendorf.",
    "cuePart": "m",
    "confidence": 0.75,
-   "reason": "Pufendorf's rule reported; margin names him beside the passage."
+   "reason": "Pufendorf's rule reported; margin names him beside the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf's rule is reported ('Il pose pour régle') right after his name, the margin reads 'Sentiment de Pufendorf', and note (a) cites Devoirs I.1.24.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1094,7 +1476,12 @@
    "cue": "Voy. les notes de Mr. Barbeyrac sur les Devoirs de l'homme & du Cit. Liv. I. Ch. I. § 27.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Sentence names Pufendorf and the footnote at its end cites Barbeyrac's notes on the Devoirs."
+   "reason": "Sentence names Pufendorf and the footnote at its end cites Barbeyrac's notes on the Devoirs.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The next sentence says the point 'n'a pas échappé à Mr. BARBEYRAC' and its footnote cites his notes on Devoirs I.1.27.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "seneca-latin-library",
@@ -1106,7 +1493,12 @@
    "cue": "Senec. Ep. 82.",
    "cuePart": "n0",
    "confidence": 0.95,
-   "reason": "Seneca quoted in the footnote with Senec. Ep. 82."
+   "reason": "Seneca quoted in the footnote with Senec. Ep. 82.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The footnote quotes Seneca's Latin under 'Senec. Ep. 82.' (letter number misgiven, author named).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -1118,7 +1510,12 @@
    "cue": "Cic. Tuscul. Disput. Lib. I. Cap. 27.",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "Cicero named in text and note."
+   "reason": "Cicero named in text and note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The Latin in the note is Cicero's text, cited as Tusculans I and translated in the text after 'CICÉRON ... dit-il'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "spectateur-1716",
@@ -1130,7 +1527,12 @@
    "cue": "SPECTATEUR ANGLOIS",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Quoted block introduced 'dit fort bien le SPECTATEUR ANGLOIS'."
+   "reason": "Quoted block introduced 'dit fort bien le SPECTATEUR ANGLOIS'.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The quoted block is introduced by 'dit fort bien le SPECTATEUR ANGLOIS' with a footnote to the tome and discourse.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "cicero-latin-library",
@@ -1142,7 +1544,12 @@
    "cue": "Tusculan. Quæst. Lib. I. Cap. 15.",
    "cuePart": "n0",
    "confidence": 0.95,
-   "reason": "Note holds the Latin quotation and cites Cicero's Tusculans with book and chapter."
+   "reason": "Note holds the Latin quotation and cites Cicero's Tusculans with book and chapter.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note quotes the Latin after 'CICÉRON dépeint fort bien' and cites Tusculan. Quæst. I.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1154,7 +1561,12 @@
    "cue": "Voy. la Préface de Pufendorf sur les Devoirs de l'homme & du Citoy. § 6. 7.",
    "cuePart": "n1",
    "confidence": 0.85,
-   "reason": "'Cet Auteur' (Pufendorf) with footnote at sentence end citing his Devoirs preface."
+   "reason": "'Cet Auteur' (Pufendorf) with footnote at sentence end citing his Devoirs preface.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'Cet Auteur' is Pufendorf, named in the previous sentence, and footnote (a) at the end of the sentence cites his preface to the Devoirs § 6-7.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-devoirs-barbeyrac-1756",
@@ -1166,7 +1578,12 @@
    "cue": "Voy. Droit de la Nat. & des Gens. Liv. II. Ch. III. §. 21.",
    "cuePart": "n2",
    "confidence": 0.5,
-   "reason": "'Il' refers to Pufendorf; footnote at sentence end cites his other work, not the Devoirs."
+   "reason": "'Il' refers to Pufendorf; footnote at sentence end cites his other work, not the Devoirs.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'Il reconnoît' continues the account of Pufendorf's views ('Cet Auteur'); the footnote at the end of the sentence cites his Droit de la Nat. rather than the Devoirs, but the author is named.",
+    "date": "2026-11-13"
+   }
   }
  ]
 }
