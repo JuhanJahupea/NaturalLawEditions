@@ -203,12 +203,20 @@ def apply_note_moves(sections, rows, moves):
             h = by[sid]['notes'][i]['html']
             for rid in re.findall(r'data-m="([\d,]+)"', h):
                 for x in rid.split(','): moved_rows[int(x)] = None
-            assert 'data-v=' not in h, (sid, i)  # no 1773 change is marked inside a moved note
-    dest = {}
+    dest = {}; vmove = []
     for m in moves:
-        for i in [m['note']] + m.get('cont', []):
-            for rid in re.findall(r'data-m="([\d,]+)"', by[m['from']]['notes'][i]['html']):
+        src = by[m['from']]; idx = [m['note']] + m.get('cont', [])
+        for i in idx:
+            for rid in re.findall(r'data-m="([\d,]+)"', src['notes'][i]['html']):
                 for x in rid.split(','): dest[int(x)] = m['to']
+        # a 1773 change marked only inside the moved note goes with it
+        inside = set(v for i in idx for v in re.findall(r'data-v="([^"]+)"', src['notes'][i]['html']))
+        rest = ' '.join([src['html']] + [n['html'] for k, n in enumerate(src['notes']) if k not in idx])
+        for vid in inside:
+            assert 'data-v="%s"' % vid not in rest, (m, vid)
+            vmove.append((m['from'], m['to'], vid))
+    for f, t, vid in vmove:
+        v = next(v for v in by[f]['vars'] if v['id'] == vid); by[f]['vars'].remove(v); by[t]['vars'].append(v)
     for sid in set(take) | set(add_back) | set(add_fwd):
         for i, n in enumerate(by[sid]['notes']): old[id(n)] = (sid, i)
     for sid in set(take) | set(add_back) | set(add_fwd):
@@ -216,12 +224,16 @@ def apply_note_moves(sections, rows, moves):
         fwd = [n for _, _, ns in sorted(add_fwd.get(sid, []), key=lambda x: (order[x[0]], x[1])) for n in ns]
         back = [n for _, _, ns in sorted(add_back.get(sid, []), key=lambda x: (order[x[0]], x[1])) for n in ns]
         s['notes'] = fwd + keep + back
-    for r in rows:
-        if r['id'] in dest: r['sec'] = dest[r['id']]
     nmap = {}
     for sid in set(take) | set(add_back) | set(add_fwd):
         for i, n in enumerate(by[sid]['notes']):
             if id(n) in old: nmap[old[id(n)]] = (sid, i)
+    # rows anchored in a note record its index in 'where': the note's new unit and index (rows inside a moved note move with it)
+    for r in rows:
+        w = r.get('where', '')
+        if w.startswith('n') and (r['sec'], int(w[1:])) in nmap:
+            u, i = nmap[(r['sec'], int(w[1:]))]; r['sec'], r['where'] = u, 'n%d' % i
+        assert r['id'] not in dest or r['sec'] == dest[r['id']], r['id']
     return dest, nmap
 
 

@@ -61,7 +61,14 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - Agent prompt `ATTRIBUTION_VERIFY_PROMPT.md` (Claude Opus, about 16 rows per agent): a second reading of each attribution with the whole unit; correct, wrong or unsure.
 - `apply_attr.py <items> <dir>`: wrong items leave `attributions.json`; kept items take the second reader's form and cue and carry the verdict in `review`. Unsure items stay for a decision by hand.
 
-## 7. English of Burlamaqui
+## 7. Footnotes on the wrong section (Vattel)
+
+- `note_clusters.py <out>`: the sections whose number of footnote calls differs from their number of notes, grouped with their neighbours on shared printed pages, with the MDZ scan of each page.
+- Agent prompt `NOTE_PAGE_PROMPT.md`, about 20 pages per agent: for each note, the page at whose foot it stands and the call it answers.
+- `note_moves.py <dir> <corrections>`: the certain answers whose two sections share a page become `noteMoves` in `editions/vattel-1773/corrections.json`.
+- `migrate_notes.py <data.json> [--write]`: remaps the later-pass files that point into notes (pass rows, attributions, divergence items) to the corrected numbering. Run once after the corrections change.
+
+## 8. English of Burlamaqui
 
 - `en_extract.py <pdf> <out>`: Nugent's translation from the Liberty Fund PDF, by section, with Burlamaqui's notes; the editor's notes and their calls are left out.
 - `en_align.py <units_en> <plain_fr> <text.json> <out>`: sentence alignment with the 1747 French, chapter by chapter (Gale–Church lengths; Nugent's § numbers as anchors). Writes `layers/english.json`. `plain_fr` is each unit's plain text as the viewer builds it (`plain_fr.js <out>`).

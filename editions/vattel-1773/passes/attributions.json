@@ -420,7 +420,7 @@
    "source": "On ne pouvoit pas coucher ensemble la première nuit des Noces, ni même les deux suivantes, sans en avoir achetté la permifïïon",
    "form": "reference",
    "cue": "Esprit des loix",
-   "cuePart": "n0",
+   "cuePart": "n2",
    "confidence": 0.8,
    "reason": "Note at end of the sentence cites Montesquieu for it.",
    "review": {
@@ -794,7 +794,7 @@
    "source": "les Otages donnez peuvent alors être retenus, non comme Otages, mais en conséquence de cette régle du Droit des Gens, (a) qui autorise à arrêter les Sujets pour le fait de leur Souverain.",
    "form": "reference",
    "cue": "GROTIUS , Liv. III. Chap. XX. §. LV.",
-   "cuePart": "n1",
+   "cuePart": "n0",
    "confidence": 0.85,
    "reason": "Call (a) inside the passage points to a note citing Grotius.",
    "review": {
@@ -845,7 +845,7 @@
    "source": "Il y avoit une Loi, qui défendoit (i) aux Corinthiens de donner aucun Vaisseau aux Athéniens. Pour éluder cette Loi, ils leur en vendirent à cinq drachmes la piéce.",
    "form": "reference",
    "cue": "PUFEND. ibid.",
-   "cuePart": "n0",
+   "cuePart": "n1",
    "confidence": 0.75,
    "reason": "Call (**) at end of the sentence leads to note naming Pufendorf.",
    "review": {
@@ -1015,7 +1015,7 @@
    "source": "Après la Paix de Vervins, la Reine Elizabeth continuant la Guerre avec l'Espagne, pria le Roi de France de permettre qu'elle fit visiter les Vaisseaux François qui alloient en Espagne, pour savoir s'ils n'y portoient point de munitions de Guerre cachées: mais on le refusa, par la raison que ce seroit une occasion de favoriser le pillage, & de troubler le Commerce.",
    "form": "quotation",
    "cue": "GROTIUS, ubi suprà.",
-   "cuePart": "n1",
+   "cuePart": "n0",
    "confidence": 0.8,
    "reason": "Quoted passage followed by note citing Grotius.",
    "review": {
@@ -1083,7 +1083,7 @@
    "source": "Phyton se voiant mener au supplice, par ordre de Denys le Tyran, parce qu'il avoit défendu opiniâtrement la Ville de Rhégium, dont il étoit Gouverneur, s'écria, qu'on le faisoit mourir injustement, pour n'avoir pas voulu trahir la Ville, & que le Ciel vengeroit bien tôt sa mort. DIODORE de Sicile appelle cela (10) une injuste punition",
    "form": "quotation",
    "cue": "cité par GROTIUS, Lib. III, chap. XI, §. XVI. n. 5.",
-   "cuePart": "n3",
+   "cuePart": "n1",
    "confidence": 0.85,
    "reason": "Quoted passage with note naming Grotius.",
    "review": {
@@ -1406,7 +1406,7 @@
    "source": "independentia legati ab imperio ejus, ad quem mittitur, quamdiu in territorio ejus commoratur, juris Gentium naturalis et voluntarii non est",
    "form": "reference",
    "cue": "Vide WOLF. Jus Gent. §. 1059.",
-   "cuePart": "n1",
+   "cuePart": "n0",
    "confidence": 0.9,
    "reason": "Note call inside passage names Wolff.",
    "review": {
@@ -1440,7 +1440,7 @@
    "source": "de semblable à ce que les Carthaginois ont fait aux nôtres",
    "form": "reference",
    "cue": "APPIEN , cité par GROTIUS , Liv. II , chap. 28. §. 7.",
-   "cuePart": "n1",
+   "cuePart": "n0",
    "confidence": 0.55,
    "reason": "Reply given in direct speech ('dit-il'), note after the sentence cites Grotius.",
    "review": {

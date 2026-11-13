@@ -2,6 +2,14 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.12 (2026-11-13)
+
+- 80 footnotes move to the section whose call they answer (`corrections.json`). Where two sections share a printed page, the working edition had attached the notes at the foot of that page to the wrong one: I.48, I.62, IV.91, IV.123 and III.156 had calls without notes, and their neighbours had notes without calls. Livre I 10, Livre II 14, Livre III 29, Livre IV 27 notes; 111 sections change.
+- Method: every section whose number of calls differs from its number of notes, with its neighbours on shared pages (49 runs, 215 pages), went to a reader (Claude Sonnet) with the MDZ scans. The reader gave, for each note, the page at whose foot it stands and the call it answers. 78 moves the reader marked certain are applied; two unmarked paragraphs that continue a note of the section before (IV.102 → IV.101, IV.111 → IV.110) were moved by hand.
+- The converter applies the moves to the working edition's notes (`tools/nle.py`, `apply_note_moves`); `tools/check_edition.js` makes the same moves before comparing. Reuse rows marked inside a moved note go with it (6 rows of the working edition; 35 rows of the Grotius and Pufendorf passes are renumbered), and so does the 1773 change III.145~0 (an added note, now on III.143). 7 attributions follow their rows.
+- Left as they are: III.113 (two star notes on p. 72, one with no visible call), I.220 (the Paykul note on p. 195 has no printed call), I.197 and IV.101 (unmarked notes whose call the transcription lacks), Pref.23 (a numbered note). The reader also found a note at the foot of p. 385 (vol. I, "Résolution des Etats-généraux 1726") that the transcription lacks.
+- Text and the reuse rows' passages are unchanged.
+
 ## 1.11 (2026-11-13)
 
 - Claude Opus read each of the 89 attributed rows again with the whole unit. It confirmed 86 and rejected 3; those lose `attributed`. In two of the three (IV.93, IV.124) the footnote naming Wicquefort belongs to the neighbouring §, which shares the page. In III.155 (Bessus) the sentence calls a note on Quintus Curtius; the Grotius note has no call in the text. It gave a better cue for some rows and changed 2 from quotation to reference. Each attribution now carries the verdict and reason in `review`. Vattel attributes 86 rows: 13 quotations, 73 references.
