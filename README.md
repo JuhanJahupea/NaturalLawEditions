@@ -42,7 +42,7 @@ Transcriptions made for the collection. Each folder in `texts/` has a README on 
 
 ## Public address
 
-GitHub Pages serves the repository root from branch `claude/vattel-edition-setup-7jkvhg`.
+GitHub Pages serves the repository root from branch `main`.
 
 - Collection: https://juhanjahupea.github.io/NaturalLawEditions/
 - Vattel viewer: https://juhanjahupea.github.io/NaturalLawEditions/viewer/?ed=vattel-1773
