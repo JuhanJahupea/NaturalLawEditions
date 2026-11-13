@@ -211,7 +211,7 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
         for r in rows:
             a = att.get((tid, r['unit'], r['page'], r['passage'], r['source']))
             if a:
-                r['attributed'] = {k: a[k] for k in ('form', 'cue', 'cuePart', 'confidence', 'reason')}
+                r['attributed'] = {k: a[k] for k in ('form', 'cue', 'cuePart', 'confidence', 'reason', 'review') if k in a}
                 used.add((tid, r['unit'], r['page'], r['passage'], r['source']))
     for t in texts:
         rows = sorted(tables.get(t['id'], []), key=lambda r: r['id'])
