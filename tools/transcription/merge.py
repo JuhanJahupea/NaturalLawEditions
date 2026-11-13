@@ -10,10 +10,20 @@ ed, work, jd, old, first, out = sys.argv[1:7]; first = int(first)
 units = {u['id']: u for u in json.load(open('%s/editions/%s/text.json' % (R, ed)))['units']}
 oldt = json.load(open(old)); oldrows = oldt['rows']
 WORKNAME = collections.Counter(r['work'] for r in oldrows).most_common(1)[0][0]
-FAM = {'GRO24': 'G', 'PUF34': 'P'}[work]
+FAM = {'GRO24': 'G', 'PUF34': 'P', 'DEV56': 'P'}[work]
 ZOT = {'GRO24T1': 'S9FQXVJC', 'GRO24T2': 'LL8RR8X3', 'PUF34T1': 'L42CQ82S', 'PUF34T2': 'S7XSE8FS'}
 IA = {'GRO24T1': 'le-droit-de-la-guerre-t-1-grotius', 'GRO24T2': 'le-droit-de-la-guerre-t-2',
-      'PUF34T1': 'ledroitdelanatur01pufe', 'PUF34T2': 'ledroitdelanatur02pufe'}
+      'PUF34T1': 'ledroitdelanatur01pufe', 'PUF34T2': 'ledroitdelanatur02pufe',
+      'DEV56T1': 'bub_gb_dDKCHraV9BoC', 'DEV56T2': 'bub_gb_unXpgRJJud0C'}
+# the Devoirs volumes hold other works: family and sourcePart (the viewer's part label) by the locus of the source part
+PARTS = [("Jugement d'un anonyme", 'Lz', 'jugement'), ('Réflexions du traducteur', 'Bb', 'reflexions'), ('Discours', 'Bb', 'discours'),
+         ("Préface de l'auteur", 'P', 'pufendorf_preface'), ('Préface du traducteur', 'Bb', 'barbeyrac_preface'),
+         ('Avertissement', 'Bb', 'barbeyrac_preface'), ('Avis postérieur', 'Bb', 'barbeyrac_preface')]
+def part_of(pt):
+    if pt['part'] == 'note' and pt.get('by') == 'Barbeyrac': return 'Bb', 'barbeyrac_note'
+    for pre, fam, sp in PARTS:
+        if pt['locus'].startswith(pre): return fam, sp
+    return FAM, 'pufendorf_text'
 LABELS = {'verbatim', 'close paraphrase', 'loose paraphrase', 'commonplace', 'citation', 'open disagreement'}
 
 def place(u, passage):
@@ -57,8 +67,9 @@ for fin in [f for d in jd.split(',') for f in sorted(glob.glob(d + '/in/b*.json'
                     'page': m['page_id'], 'inNote': pt['part'] == 'note', 'label': m['label'], 'confidence': round(conf, 2),
                     'status': 'match' if conf >= 0.5 else 'possible', 'step': 'T', 'passage': vp, 'source': stext,
                     'reason': m.get('reason', ''),
-                    'links': [['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/%s?page=%d' % (ZOT[vol], scan)],
-                              ['archive.org', 'https://archive.org/details/%s/page/n%d/mode/1up' % (IA[vol], scan - 1)]]})
+                    'links': ([['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/%s?page=%d' % (ZOT[vol], scan)]] if vol in ZOT else []) +
+                             [['archive.org', 'https://archive.org/details/%s/page/n%d/mode/1up' % (IA[vol], scan - 1)]]})
+        if work == 'DEV56': row['family'], row['sourcePart'] = part_of(pt)
         if m.get('quoting'): row['quoting'] = m['quoting']
         row['_q'] = (vq, sq)
         rows.append(row)

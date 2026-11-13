@@ -1,0 +1,29 @@
+{
+ "format": "nle-pass/1",
+ "edition": "burlamaqui-1747",
+ "text": "pufendorf-devoirs-barbeyrac-1756",
+ "date": "2026-11-12",
+ "source": "Pufendorf, Les devoirs de l'homme et du citoyen, trad. Barbeyrac (Amsterdam and Leipzig 1756), from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "P2.4.9",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Devoirs de l'homme et du citoyen, Liv. I ch. III § 13",
+   "sourceId": "DEV56.1.3.13",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What is the principle of the duties we owe ourselves?",
+   "comment": "Pufendorf, Devoirs I.3.13, derives the duties of man towards himself partly from religion and partly from sociability, since man may not dispose of himself at will either out of respect for God or so as to remain a useful member of society. Burlamaqui makes an enlightened and reasonable self-love the first principle of these duties, as the inclination through which God's will for our preservation, perfection and happiness is known. Religion and sociability enter in Burlamaqui only as limits on that self-love. He follows Barbeyrac's note to this section, which sets self-love beside religion and sociability as one of three distinct principles of natural law.",
+   "passage": "on peut dire que l'AMOUR DE SOIMEME, (j'entens un amour éclairé & raisonnable) peut tenir lieu de prémier principe à l'égard des devoirs qui concernent l'homme lui-même",
+   "sourcePassage": "Pour ce qui est des Devoirs de l'Homme à l'égard de lui-même, ils découlent en partie de la Religion, & en partie de la Sociabilité.",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n194/mode/1up"
+    ]
+   ]
+  }
+ ]
+}

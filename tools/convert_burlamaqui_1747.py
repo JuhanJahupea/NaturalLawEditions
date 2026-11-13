@@ -16,7 +16,7 @@ TEXTS = [
     ('PUF34', 'pufendorf-barbeyrac-1734', 'Samuel Pufendorf', 'Le droit de la nature et des gens, trad. Jean Barbeyrac', 'Amsterdam, 1734. 2 vols', '1734', 'fr',
      "archive.org PDF text layer. Stands in for Basle 1732. Barbeyrac's notes are credited to Barbeyrac (family Bb)."),
     ('DEV56', 'pufendorf-devoirs-barbeyrac-1756', 'Samuel Pufendorf', "Les devoirs de l'homme et du citoyen, trad. Jean Barbeyrac", 'Amsterdam and Leipzig: Arkstée et Merkus, 1756. 2 vols', '1756', 'fr',
-     "archive.org OCR (bub_gb_dDKCHraV9BoC, hOCR; bub_gb_unXpgRJJud0C, djvu text in 166 chunks). T. II holds Leibniz's Jugement d'un anonyme with Barbeyrac's Réflexions (family Lz for Leibniz)."),
+     "Vision transcription of the archive.org scans (texts/pufendorf-devoirs-barbeyrac-1756/). Barbeyrac's notes are credited to Barbeyrac (family Bb). T. II holds Leibniz's Jugement d'un anonyme with Barbeyrac's Réflexions (family Lz for Leibniz)."),
     ('GRO24', 'grotius-barbeyrac-1724', 'Hugo Grotius', 'Le droit de la guerre et de la paix, trad. Jean Barbeyrac', 'Amsterdam, 1724. 2 vols', '1724', 'fr',
      "archive.org OCR of the Gallica scans. Barbeyrac's notes are credited to Barbeyrac (family Bb)."),
     ('LOC29', 'locke-coste-1729', 'John Locke', "Essai philosophique concernant l'entendement humain, trad. Pierre Coste", 'Amsterdam, 1729. 3rd ed.', '1729', 'fr',

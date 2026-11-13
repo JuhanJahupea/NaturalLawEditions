@@ -14,16 +14,19 @@ D.sections.forEach(s => {
   if (s.vars) s.vars = s.vars.map(v => ({ id: v.id, type: v.type, content: v.content, passage: v.p1773, otherPassage: v.p1758, otherPages: v.pages1758, otherLink: v.link1758, placed: v.placed }));
 });
 // fields the collection adds to a row
-const ADDED = ['to', 'toUnit', 'relation', 'rep'];
+const ADDED = ['to', 'toUnit', 'relation', 'rep', 'attr'];
 // later passes (editions/<ed>/passes/): rows of data.json they replace are skipped; their own rows and divergence items
 // are compared with the pass files instead
 const root = __dirname + '/../editions/' + ed + '/';
 const readDir = d => fs.existsSync(d) ? fs.readdirSync(d).filter(f => f.endsWith('.json')).map(f => JSON.parse(fs.readFileSync(d + f, 'utf8'))) : [];
+const HAS_EN = D.sections.some(s => s.en);
 const SUPERSEDED = new Set(readDir(root + 'provenance/superseded/').flatMap(t => t.rows.map(r => r.id)));
 const PASSES = readDir(root + 'passes/');
 const PASS_ROWS = PASSES.flatMap(p => p.rows || []);
 const PASS_DIV = PASSES.flatMap(p => p.items || []);
 const PASS_DIV_IDS = new Set(PASS_DIV.map(d => d.unit + '|' + d.sourceId));
+// attributions (passes/attributions.json): each marks exactly one published row
+const ATTR = PASSES.flatMap(p => p.attributions || []);
 // collection row field -> viewer row field
 const FIELD = { unit: 'sec', family: 'fam', work: 'work', locus: 'locus', page: 'page', inNote: 'note', label: 'label', confidence: 'conf',
                 status: 'status', step: 'step', passage: 'vp', source: 'sp', reason: 'reason', links: 'links', earliest: 'ew', quoting: 'qa' };
@@ -38,7 +41,7 @@ const FIELD = { unit: 'sec', family: 'fam', work: 'work', locus: 'locus', page: 
     await page.waitForFunction(() => typeof SEC !== 'undefined' && SEC.length > 0 && document.querySelector('#page .sec'), null, { timeout: 60000 });
     const got = await page.evaluate(() => ({
       sec: SEC.map(s => ({ id: s.id, fs: s.fs, book: s.book, chap: s.chap, para: s.para, margin: s.margin, html: s.html, notes: s.notes,
-                           pages: s.pages, vars: s.vars, unnum: s.unnum, citedBy: s.citedBy, en: s.en, div: s.div })),
+                           pages: s.pages, vars: s.vars, unnum: s.unnum, citedBy: s.citedBy, en: s.en, div: s.div, plain: s.en ? plainOf(s) : undefined })),
       rows: ROWS.map(r => r),
     }));
     await page.close();
@@ -63,8 +66,10 @@ const FIELD = { unit: 'sec', family: 'fam', work: 'work', locus: 'locus', page: 
     for (const k of ['vars', 'unnum'])
       if (k in s && !same(s[k], g[k])) fail(k, s.id);
     if (!same(s.notes.map(n => [n.mark, n.html, !!n.added]), (g.notes || []).map(n => [n.mark, n.html, !!n.added]))) fail('notes', s.id);
-    if (!same(s.en, g.en)) fail('en', s.id);
+    // a translation layer added after the working edition (Burlamaqui's English) is not in data.json
+    if ((HAS_EN || 'en' in s) && !same(s.en, g.en)) fail('en', s.id);
     if (s.en && !same(s.fs, g.fs)) fail('fs', s.id);
+    if (g.en && (!g.fs || g.fs.some(([a, b]) => a < 0 || b > (g.plain || '').length || a >= b))) fail('en spans', s.id);
     const gdiv = (g.div || []).filter(d => !PASS_DIV_IDS.has(s.id + '|' + d.wid));
     if (!same(s.div, gdiv.length ? gdiv : undefined)) fail('div', s.id);
   });
@@ -90,10 +95,15 @@ const FIELD = { unit: 'sec', family: 'fam', work: 'work', locus: 'locus', page: 
     const n = pub.sec.reduce((a, s) => a + (s.div || []).length, 0);
     if (n !== D.sections.reduce((a, s) => a + (s.div || []).length, 0) + PASS_DIV.length) fail('published divergence count', n);
     if (pub.errors.length) fail('published page errors', pub.errors.join(' | '));
+    ATTR.forEach(a => {
+      const hits = pub.rows.filter(r => r && r.to === a.text && r.sec === a.unit && r.page === a.page && r.vp === a.passage && r.sp === a.source);
+      if (hits.length !== 1 || !hits[0].attr || hits[0].attr.cue !== a.cue) fail('attribution not on its row', a.unit + ' ' + a.text);
+    });
+    if (pub.rows.filter(r => r && r.attr).length !== ATTR.length) fail('attributed row count', pub.rows.filter(r => r && r.attr).length + ' vs ' + ATTR.length);
   }
   const n = Object.keys(bad).length;
   console.log(n ? 'MISMATCH' : 'OK', `${ed}: ${D.sections.length} units, ${D.rows.length} reuse rows compared with data.json` +
-    (PASSES.length ? `; ${PASS_ROWS.length} rows and ${PASS_DIV.length} divergence items of ${PASSES.length} later pass file(s), replacing ${SUPERSEDED.size} rows` : ''));
+    (PASSES.length ? `; ${PASS_ROWS.length} rows, ${PASS_DIV.length} divergence items and ${ATTR.length} attributions of ${PASSES.length} later pass file(s), replacing ${SUPERSEDED.size} rows` : ''));
   for (const [k, ids] of Object.entries(bad)) console.log(' ', k, ids.length, ids.slice(0, 8).join(' '));
   process.exit(n ? 1 : 0);
 })();

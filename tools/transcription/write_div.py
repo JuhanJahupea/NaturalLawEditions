@@ -16,7 +16,11 @@ WORKS = {'GRO24': {'title': 'Droit de la guerre et de la paix', 'abbr': 'DGP', '
          'PUF34': {'title': 'Droit de la nature et des gens', 'abbr': 'DNG', 'family': 'P', 'prol': ('Préface du traducteur', 'Pref'),
                    'zot': {'PUF34T1': 'L42CQ82S', 'PUF34T2': 'S7XSE8FS'},
                    'ia': {'PUF34T1': 'ledroitdelanatur01pufe', 'PUF34T2': 'ledroitdelanatur02pufe'},
-                   'source': 'Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734)'}}
+                   'source': 'Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734)'},
+         'DEV56': {'title': "Devoirs de l'homme et du citoyen", 'abbr': 'Devoirs', 'family': 'P', 'prol': ("Préface de l'auteur", 'Pref'),
+                   'zot': {},
+                   'ia': {'DEV56T1': 'bub_gb_dDKCHraV9BoC', 'DEV56T2': 'bub_gb_unXpgRJJud0C'},
+                   'source': "Pufendorf, Les devoirs de l'homme et du citoyen, trad. Barbeyrac (Amsterdam and Leipzig 1756)"}}
 W = WORKS[work]
 S = json.load(open(sd + '/sections.json')); ED = S.get('edition', 'vattel-1773'); K = ED.split('-')[0]
 units = {u['id']: u for u in json.load(open('%s/editions/%s/text.json' % (R, ED)))['units']}
@@ -65,8 +69,8 @@ for f in sorted(glob.glob(vd + '/out/v*.json')):
                       'relation': v['relation'], 'severity': int(v['severity']), 'question': ins[key]['screen']['question'],
                       'comment': norm(v['comment'].strip()), 'passage': vp, 'sourcePassage': gp,
                       'confidence': round(float(v['confidence']), 2), 'family': W['family'],
-                      'links': [['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/%s?page=%d' % (W['zot'][vol], scan)],
-                                ['archive.org', 'https://archive.org/details/%s/page/n%d/mode/1up' % (W['ia'][vol], scan - 1)]]})
+                      'links': ([['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/%s?page=%d' % (W['zot'][vol], scan)]] if vol in W['zot'] else [])
+                               + [['archive.org', 'https://archive.org/details/%s/page/n%d/mode/1up' % (W['ia'][vol], scan - 1)]]})
 items.sort(key=lambda d: (order.index(d['unit']), -d['severity']))
 json.dump({'format': 'nle-pass/1', 'edition': ED, 'text': tid, 'date': date,
            'source': W['source'] + ', from the transcription: pairs screened by one model, kept or rejected by a second',

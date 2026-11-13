@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.9 (2026-11-12)
+
+- 89 reuse rows on 58 units now carry `attributed`: Vattel names the source for the passage. 15 give the source's words as a quotation; 74 name it for the content. By source: Grotius 46, Wolff 23 (*Jus gentium* 17, *Institutiones* 5, *Jus naturae* 1), Pufendorf 9, Wicquefort 8, Montesquieu 2, Bynkershoek 1. The items are in `passes/attributions.json`.
+- Method: the candidates were the rows (not citation, not commonplace) whose unit names the source's author or work anywhere in its text, notes or margin (306 rows). A language model (Claude Sonnet) read each with the whole unit and decided whether the name belongs to this passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. The words that name the source (`cue`) were found in the unit by script. Not checked by hand.
+- Viewer: a new "Attributed" checkbox. Attributed rows (these, and the 135 rows labelled citation) have a dotted underline. Unticking the box hides them and leaves the reuse Vattel does not attribute. The panel shows the words that name the source.
+- Text, layers and the rows of the reuse tables are unchanged.
+
 ## 1.8 (2026-11-11)
 
 - The Pufendorf table now holds 581 rows on 354 units (364 match, 217 possible). It held 612 (322 match, 290 possible). The edition holds 4,396 reuse rows.

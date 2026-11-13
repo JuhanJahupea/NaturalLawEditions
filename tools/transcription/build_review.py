@@ -11,8 +11,10 @@ R = ROOT
 ed, work, rf, outdir = sys.argv[1:5]; size = int(sys.argv[5]) if len(sys.argv) > 5 else 12
 EDN = {'vattel-1773': 'Vattel, Le droit des gens (Neuchâtel 1773)', 'burlamaqui-1747': 'Burlamaqui, Principes du droit naturel (Genève 1747)'}
 SRC = {'GRO24': 'Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724)',
-       'PUF34': 'Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734)'}
-AUTH = {'GRO24': 'Grotius', 'PUF34': 'Pufendorf'}
+       'PUF34': 'Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734)',
+       'DEV56': "Pufendorf, Les devoirs de l'homme et du citoyen, trad. Barbeyrac (Amsterdam 1756), with Barbeyrac's prefaces, "
+                "Leibniz's Jugement with Barbeyrac's Réflexions, and Barbeyrac's two Discours"}
+AUTH = {'GRO24': 'Grotius', 'PUF34': 'Pufendorf', 'DEV56': 'Pufendorf'}
 units = {u['id']: u for u in json.load(open('%s/editions/%s/text.json' % (R, ed)))['units']}
 P = {p['id']: p for p in json.load(open('%s/corpus/%s.json' % (B, work)))['pages']}
 rows = [r for r in json.load(open(rf))['rows'] if r['status'] == 'possible']

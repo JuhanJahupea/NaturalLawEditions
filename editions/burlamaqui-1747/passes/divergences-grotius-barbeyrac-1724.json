@@ -1,0 +1,153 @@
+{
+ "format": "nle-pass/1",
+ "edition": "burlamaqui-1747",
+ "text": "grotius-barbeyrac-1724",
+ "date": "2026-11-11",
+ "source": "Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724), from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "P1.8.3",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 9",
+   "sourceId": "GRO24.1.1.9",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "How should law be defined?",
+   "comment": "Grotius, DGP I.1.9, defines law as a rule of moral actions obliging to what is good and praiseworthy, and denies that permission is properly an act of law. Burlamaqui defines law as a rule prescribed by the sovereign of a society to its subjects, which either imposes obligations under threat of penalty or leaves them liberty and secures the enjoyment of their rights. His definition derives obligation from a superior and counts permission as an effect of law, following both objections in Barbeyrac's note 3 on this section against Grotius.",
+   "passage": "JE définis la LOI une Régle prescrite par le Souverain d'une Société à ses Sujets ; soit pour leur imposer l'obligation de faire ou de ne pas faire certaines choses, sous la menace de quelque peine ; soit pour leur laisser la liberté d'agir ou de ne pas agir en d'autres choses, comme ils le trouveront à propos, & leur assurer une pleine jouissance de leurs Droits à cet égard.",
+   "sourcePassage": "une Rég[le?] des (2) Actions Morales, qui oblige (3) à ce qui est bon & louable",
+   "confidence": 0.85,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 101",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=101"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n100/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "P1.10.5",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 9",
+   "sourceId": "GRO24.1.1.9",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Is law divided into obligatory law and law of mere permission (is permission an effect of law)?",
+   "comment": "Grotius, DGP I.1.9, holds that permission is not properly an action of law but a mere inaction, so that law in the proper sense only obliges. Burlamaqui makes permission a second effect of law, by which the sovereign leaves to natural liberty whatever he has not commanded or forbidden, and divides law into obligatory law and law of simple permission. He follows Barbeyrac's notes 3 and 5 on this section against Grotius.",
+   "passage": "cette permission est un second effet de la Loi",
+   "sourcePassage": "ce n'est pas (5) proprement une action de la Loi, mais une pure inaction",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 101",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=101"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n100/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "P1.10.6",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 9",
+   "sourceId": "GRO24.1.1.9",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Is permission a positive effect of law or mere inaction of the legislator?",
+   "comment": "Grotius, DGP I.1.9, holds that permission is not properly an action of law but a mere inaction. Burlamaqui holds that the legislator's silence carries a positive though tacit permission, so that permission is as positive an effect of law as obligation. He names Grotius and Pufendorf and prefers Barbeyrac's note 5 on this section. He allows that the difference may be of little consequence.",
+   "passage": "La permission est donc un effet non-moins positif de la Loi que l'obligation.",
+   "sourcePassage": "ce n'est pas (5) proprement une action de la Loi, mais une pure inaction",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 101",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=101"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n100/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "P2.5.9",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 15",
+   "sourceId": "GRO24.1.1.15",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Is there a universal positive divine law binding all men?",
+   "comment": "Grotius, DGP I.1.15, holds that God gave voluntary laws to the whole human race after the Creation, after the Flood and under the Gospel, and that these bind all men once sufficiently known to them. Burlamaqui denies that there is a universal positive divine law, since no such law was clearly notified to all peoples and a law binding only those who know it is not universal. He holds that a positive law useful to all men at all times would rest on human nature and so be natural law. He follows Barbeyrac's note 3 on this section, which finds that the laws Grotius dates to the Creation rest on an uncertain tradition and were never duly notified.",
+   "passage": "Que si l'on se réduit à dire qu'elles n'obligent que ceux à la connoissance desquels elles sont parvenues, on détruit par-là l'idée d'universalité qu'on leur attribuoit, en supposant que ces Loix étoient faites pour tous les hommes.",
+   "sourcePassage": "Ces trois sortes de Loix Divines obligent sans contredit tous les Hommes, du moment qu'elles sont suffisamment venuës à leur connoissance.",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 112",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=112"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n111/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "P2.6.8",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 14",
+   "sourceId": "GRO24.1.1.14",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Is there a positive law of nations, distinct from natural law, binding by itself?",
+   "comment": "Grotius, DGP I.1.14, holds that the law of nations is a human law, wider than civil law, which has acquired binding force from the will of all or of many peoples and is proved by constant practice and the testimony of historians. Burlamaqui denies that a law of nations distinct from natural law can bind by itself, since independent nations have no common superior but God. Usages between nations bind only by a presumed tacit consent to an innocent usage, which lasts until a nation declares it will no longer follow it. He follows Barbeyrac's note 3 on this section, which calls a positive law of nations distinct from natural law a chimera.",
+   "passage": "ce prétendu Droit des Gens, distinct du Droit Naturel, & qui ait néantmoins par lui-même la force d'obliger, soit que l'on veuille, ou qu'on ne veuille pas s'y soumettre ; est une supposition destituée de fondement",
+   "sourcePassage": "Le Droit Humain, plus étendu que le Civil, est le DROIT DES GENS, c'està-dire, ce qui a aquis force d'obliger par (3) un effet de la volonté de tous les Peuples, ou du moins (4) de plusieurs.",
+   "confidence": 0.9,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 110",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=110"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n109/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "P2.6.9",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 14",
+   "sourceId": "GRO24.1.1.14",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Can two kinds of law of nations (necessary and arbitrary) reconcile the views?",
+   "comment": "Grotius, DGP I.1.14, holds that besides natural law, which is also called law of nations, there is a human law of nations which has acquired binding force from the will of all or of many peoples. Burlamaqui keeps a necessary law of nations identical with natural law, and admits the voluntary kind only as an arbitrary law founded on express or tacit convention. This arbitrary law binds only the nations that have submitted to it, only for as long as they choose, and draws its force from the natural law requiring fidelity to engagements. He follows Barbeyrac's note 3 on this section, which derives all such obligation from a tacit and particular convention.",
+   "passage": "qui n'oblige que ceux qui s'y sont volontairement soumis, & seulement pour aussi long-tems qu'ils le veulent, puisqu'il dépend toujours d'eux de le changer ou de le révoquer",
+   "sourcePassage": "c'està-dire, ce qui a aquis force d'obliger par (3) un effet de la volonté de tous les Peuples, ou du moins (4) de plusieurs.",
+   "confidence": 0.7,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 110",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=110"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n109/mode/1up"
+    ]
+   ]
+  }
+ ]
+}

@@ -8,7 +8,7 @@ let VIEW=QS.get('view')==='list'?'list':'text',LTAB='out',LCH=QS.get('ch')||'';
 let CAT=null,ED='',BASE='',M=null,V={},RU={},DIVS={},TITLES={},FAMS=[],FAMI={},FN={},st={};
 const LAYS=[],LAY={},MAN={};
 const SEC=[],ROWS=[],byId={},rowsBySec={},CH=[],chOf={},IN={},INROWS=[];
-function save(){try{localStorage.setItem('nle:'+ED,JSON.stringify({src:st.src,pos:st.pos,layers:st.layers,widths:st.widths,fams:st.fams,chap:st.chap,sel:st.sel}))}catch(e){}}
+function save(){try{localStorage.setItem('nle:'+ED,JSON.stringify({src:st.src,pos:st.pos,att:st.att,layers:st.layers,widths:st.widths,fams:st.fams,chap:st.chap,sel:st.sel}))}catch(e){}}
 async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error(u+' ('+r.status+')');return r.json()}
 function fail(h){$('page').innerHTML=`<div class="msg">${h}</div>`}
 const edEntry=id=>CAT.editions.find(e=>e.id===id);
@@ -39,7 +39,7 @@ function famColors(fams){const L=fams.map(f=>`--f${f.key}:${f.color}`).join(';')
 function rowObj(r,tb){const o={id:r.id,sec:r.unit,fam:r.family,work:r.work,locus:r.locus,page:r.page,note:r.inNote,label:r.label,conf:r.confidence,status:r.status,vp:r.passage,sp:r.source,reason:r.reason,links:r.links||[],
   where:r.at.length?r.at[0][0]:r.where==='margin'?'m':'',step:r.step};
  if(r.french)o.fr=r.french;if(r.earliest)o.ew=r.earliest;if(r.nearer)o.near=r.nearer;if(r.quoting)o.qa=r.quoting;if(r.noteRef)o.noteref=r.noteRef;if(r.sourcePart)o.part=r.sourcePart;
- o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;if(r.review)o.rev=r.review;
+ o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;if(r.review)o.rev=r.review;if(r.attributed)o.attr=r.attributed;
  if(tb.sourceLabel)Object.defineProperty(o,'slab',{value:tb.sourceLabel,enumerable:false});return o}
 function build(T,data,tables,incoming){
  TITLES=T.titles||{};DIVS=M._divs;
@@ -75,7 +75,7 @@ function build(T,data,tables,incoming){
   const en=EN[u.id];if(en){s.en={s:en.sents,g:en.align,p:en.page,f:en.flags||[]};s.fs=en.fr}
   SEC.push(s);byId[s.id]=s});
  SEC.forEach(s=>{if(s.kind==='heading')return;const d=DIVS[s.book]||{};const k=d.chapters?s.book+'.'+s.chap:s.book;let c=CH[CH.length-1];if(!c||c.key!==k){c={key:k,book:s.book,chap:s.chap,secs:[]};CH.push(c)}c.secs.push(s);chOf[s.id]=c});
- st={src:true,pos:false,layers:{},fams:Object.fromEntries(FAMS.map(f=>[f[0],true])),chap:null,sel:null};
+ st={src:true,pos:false,att:true,layers:{},fams:Object.fromEntries(FAMS.map(f=>[f[0],true])),chap:null,sel:null};
  LAYS.forEach(l=>{if(l.kind==='reuse'){if(l.default===false)st.fams[l.family]=false}else st.layers[l.id]=l.default!==false});
  try{const s=JSON.parse(localStorage.getItem('nle:'+ED)||'{}');Object.assign(st,s,{fams:Object.assign(st.fams,s.fams||{}),layers:Object.assign(st.layers,s.layers||{})})}catch(e){}
  LAYS.forEach(l=>{if(l.toggle===false)st.layers[l.id]=true})}
@@ -92,9 +92,12 @@ const xref=(ed,u)=>`<a class="xed" href="?ed=${encodeURIComponent(ed)}#${u}" tit
 // sort key from a unit id: division order, then its numbers
 const unitKey=(man,id)=>{const p=id.split('.'),d=man.divisions.findIndex(x=>x.key===p[0]);return [d<0?99:d,...p.slice(1).map(Number)]};
 const cmpKey=(a,b)=>{for(let i=0;i<Math.max(a.length,b.length);i++){const x=a[i]??-1,y=b[i]??-1;if(x!==y)return x<y?-1:1}return 0};
-const visIn=r=>st.src&&((r.status==='match'&&r.label!=='commonplace')||st.pos);
+// rows the filters let through: confident matches (possible matches and commonplaces with the box), attributed rows unless switched off
+const isAtt=r=>!!r.attr||r.label==='citation';
+const shown=r=>((r.status==='match'&&r.label!=='commonplace')||st.pos)&&(st.att||!isAtt(r));
+const visIn=r=>st.src&&shown(r);
 const ctitle=c=>{const d=DIVS[c.book]||{};return d.chapters?(TITLES[c.key]||''):(d.chapterTitle||'')};
-const visRow=r=>st.src&&st.fams[r.fam]&&((r.status==='match'&&r.label!=='commonplace')||st.pos);
+const visRow=r=>st.src&&st.fams[r.fam]&&shown(r);
 function famDots(s){const c={};(rowsBySec[s.id]||[]).filter(visRow).forEach(r=>c[r.fam]=(c[r.fam]||0)+1);return FAMS.filter(f=>c[f[0]]).map(f=>`<span style="--c:var(--f${f[0]})" title="${esc(f[1])}: ${c[f[0]]}">${f[0]} ${c[f[0]]}</span>`).join('')}
 // edition menu
 function edMenu(){const s=$('edSel');s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}" title="${esc(e.author+', '+e.title+', '+e.date)}"${e.id===ED?' selected':''}>${esc((e.authorShort||e.author)+' '+e.date)}</option>`).join('');const E=edEntry(ED);if(E)s.title=`${E.author}, ${E.title} (${E.date})`;
@@ -131,7 +134,7 @@ function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[0];st.cha
  $('page').innerHTML=h;layerClasses();applyFilters();
  if(target){const el=$(target);if(el){el.scrollIntoView({block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1300);if(!keep)select(target)}}else $('read').scrollTop=0;
  if(innerWidth<=760)$('rail').dataset.open='false'}
-function applyFilters(){if(VIEW==='list')listView();document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('off',!ids.length);u.classList.toggle('multi',new Set(ids.map(i=>ROWS[i].fam)).size>1);u.classList.toggle('poss',ids.length>0&&ids.every(i=>ROWS[i].status!=='match'||ROWS[i].label==='commonplace'));if(ids.length)u.style.setProperty('--c',`var(--f${ROWS[ids[0]].fam})`)});
+function applyFilters(){if(VIEW==='list')listView();document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('off',!ids.length);u.classList.toggle('multi',new Set(ids.map(i=>ROWS[i].fam)).size>1);u.classList.toggle('poss',ids.length>0&&ids.every(i=>ROWS[i].status!=='match'||ROWS[i].label==='commonplace'));u.classList.toggle('att',ids.length>0&&ids.every(i=>isAtt(ROWS[i])));if(ids.length)u.style.setProperty('--c',`var(--f${ROWS[ids[0]].fam})`)});
  document.querySelectorAll('#page .dots').forEach(b=>b.innerHTML=famDots(byId[b.dataset.s]));meters()}
 // panel
 function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{})[w]??w;
@@ -144,7 +147,7 @@ function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{}
  return h+'</div>'}
 function rowHTML(r,hl){const l=r.links.map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join('');const N=RU.nearer||{},P=RU.partLabels||{};
  const near=r.near&&N.title?`<div class="ew"><b>${esc(N.title)}</b> ${esc(N.prefix)}${esc((N.labels||{})[r.near]||(N.labels||{})['*']||r.near)}</div>`:'';
- return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${repLink(r)}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${esc(r.label)}</span><span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
+ return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${repLink(r)}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${esc(r.label)}</span>${r.attr?`<span class="att" title="${esc(r.attr.reason)}">${r.attr.form==='quotation'?'quoted from':'names'} ${esc(r.attr.cue.length>70?r.attr.cue.slice(0,68)+'…':r.attr.cue)}</span>`:''}<span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
  <div class="q"><small>${esc(RU.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc(r.slab||(FAMI[r.fam]||{}).sourceLabel||RU.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>${esc(RU.frenchLabel||'working French')}</small>${esc(r.fr)}</div>`:''}${r.ew?ewHTML(r.ew):''}${near}<div class="why">${esc(r.reason)}</div>${r.rev?`<div class="why rv"><b>Second judge:</b> ${esc(r.rev.verdict)}${r.rev.verdict==='keep'?` ${Number(r.rev.confidence).toFixed(2)}`:''}. ${esc(r.rev.reason)}</div>`:''}<div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
 function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();document.querySelectorAll('.sec.sel').forEach(e=>e.classList.remove('sel'));const el=$(sid);if(el)el.classList.add('sel');
  const focus=ids&&ids.length;
@@ -155,7 +158,7 @@ function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();docume
  const LV=LAY.variants||{};const vars=(s.vars||[]).map(v=>`<div class="m" style="--c:var(--add-line)"><div class="mh"><span class="fam" style="--c:var(--add-line)">${esc(LV.tag)}</span><b>${esc(v.type)}</b>${v.otherLink?`<a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div><div class="why" style="color:var(--fg)">${esc(v.content)}</div></div>`).join('');
  const ins=focus?[]:(IN[sid]||[]).filter(visIn);
  const inH=ins.length?`<h3 class="ph">Reused in other editions</h3>`+rowsTable('in:'+sid,ins,['there','label','conf','theirs']):'';
- panel(`<h2>${lbl(s.id)}</h2><div class="sub">${esc(s.margin)}</div>${rs.length?rs.map(r=>rowHTML(r,false)).join(''):'<p class="empty">No source shown for this section with the current filters.</p>'}${more}${hidden?`<p class="empty">${hidden} more hidden by filters (possible matches, commonplaces or a switched-off source).</p>`:''}${focus?'':vars}${inH}`);
+ panel(`<h2>${lbl(s.id)}</h2><div class="sub">${esc(s.margin)}</div>${rs.length?rs.map(r=>rowHTML(r,false)).join(''):'<p class="empty">No source shown for this section with the current filters.</p>'}${more}${hidden?`<p class="empty">${hidden} more hidden by filters (possible matches, commonplaces, attributed rows or a switched-off source).</p>`:''}${focus?'':vars}${inH}`);
  if(innerWidth<=1100&&ids)$('panel').dataset.open='true'}
 function panel(h){$('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button>${h}${verLine()}`;$('panel').scrollTop=0}
 // the edition's version, at the foot of every panel
@@ -166,7 +169,7 @@ function edInfo(){const n=SEC.filter(s=>s.kind!=='heading').length;
 const COLS={
  unit:{label:'Unit',key:r=>unitKey(M,r.sec),html:r=>`<a href="#${r.sec}" data-row="${r.id}">${esc(lbl(r.sec))}</a>`},
  source:{label:'Source',key:r=>r.work+' '+r.locus,html:r=>`<span class="fam" style="--c:var(--f${r.fam})">${esc(r.fam)}</span> ${esc(r.work)}${r.locus?' · '+esc(r.locus):''}${r.toUnit&&MAN[r.to]?' '+xref(r.to,r.toUnit):''}${repLink(r)}`},
- label:{label:'Label',key:r=>r.label,html:r=>esc(r.label)},
+ label:{label:'Label',key:r=>r.label,html:r=>esc(r.label)+(r.attr?` <span class="poss" title="${esc(r.attr.cue)}">attributed</span>`:'')},
  conf:{label:'Conf.',key:r=>-r.conf,html:r=>r.conf.toFixed(2)+(r.status==='possible'?' <span class="poss">possible</span>':'')},
  passage:{label:'Passage',key:r=>r.vp,html:r=>`<span class="pas">${esc(r.vp)}</span>`},
  here:{label:'Unit',key:r=>unitKey(M,r.toUnit),html:r=>`<a href="#${r.toUnit}">${esc(lbl(r.toUnit))}</a>`},
@@ -274,15 +277,16 @@ function setLayer(l,on){if(l.kind==='reuse'){setFams({[l.family]:on});return}
 function setFams(ch){Object.assign(st.fams,ch);save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop();
  LAYS.filter(l=>l.kind==='reuse').forEach(l=>{const cb=document.querySelector(`#lays input[data-l="${CSS.escape(l.id)}"]`);if(cb)cb.checked=!!st.fams[l.family]})}
 // the Sources menu: one line per family with its colour, the rows it has under the current settings, a bar, and "only"
-function srcPop(){const n={};ROWS.forEach(r=>{if(r&&((r.status==='match'&&r.label!=='commonplace')||st.pos))n[r.fam]=(n[r.fam]||0)+1});
+function srcPop(){const n={};ROWS.forEach(r=>{if(r&&shown(r))n[r.fam]=(n[r.fam]||0)+1});
  const fs=FAMS.map(([k,l])=>({k,l,n:n[k]||0})).sort((a,b)=>b.n-a.n),max=Math.max(1,...fs.map(f=>f.n)),on=fs.filter(f=>st.fams[f.k]);
  $('srcDots').innerHTML=on.slice(0,12).map(f=>`<i style="--c:var(--f${f.k})"></i>`).join('');$('srcN').textContent=`${on.length}/${fs.length}`;
  $('srcBtn').classList.toggle('dim',!st.src);
  $('srcPop').innerHTML=`<div class="sph"><label class="tg"><input type="checkbox" id="tSrc"${st.src?' checked':''}> Show sources in the text</label><span class="spa"><button class="btn" data-fa="all">All</button><button class="btn" data-fa="none">None</button></span></div>
  <ul>${fs.map(f=>`<li class="${st.fams[f.k]?'':'off'}" style="--c:var(--f${f.k})"><label title="${esc(f.l)}"><input type="checkbox" data-f="${f.k}"${st.fams[f.k]?' checked':''}><i></i><span>${esc(f.l)}</span></label><span class="mb"><b style="width:${Math.round(100*f.n/max)}%"></b></span><span class="n">${f.n}</span><button class="only" data-only="${f.k}">only</button></li>`).join('')}</ul>
- <p class="spn">Rows per source${st.pos?', possible matches included':', confident matches'}.</p>`}
-function filters(){const hasRows=ROWS.length>0;$('srcW').hidden=$('lPos').hidden=!hasRows;
- $('tPos').checked=st.pos;
+ <p class="spn">Rows per source${st.pos?', possible matches included':', confident matches'}${st.att?'':', attributed rows left out'}.</p>`}
+function filters(){const hasRows=ROWS.length>0;$('srcW').hidden=$('lPos').hidden=$('lAtt').hidden=!hasRows;
+ $('tPos').checked=st.pos;$('tAtt').checked=st.att!==false;
+ $('tAtt').onchange=e=>{st.att=e.target.checked;save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop()};
  $('tPos').onchange=e=>{st.pos=e.target.checked;save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop()};
  $('lays').innerHTML=LAYS.filter(l=>l.toggle!==false).map(l=>`<label class="tg" title="${esc(l.tooltip||'')}"><input type="checkbox" data-l="${esc(l.id)}"${(l.kind==='reuse'?st.fams[l.family]:st.layers[l.id])?' checked':''}> ${esc(l.label)}</label>`).join('');
  $('lays').onchange=e=>{const l=LAYS.find(x=>x.id===e.target.dataset.l);if(l)setLayer(l,e.target.checked)};

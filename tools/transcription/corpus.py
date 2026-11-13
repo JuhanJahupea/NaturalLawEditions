@@ -28,6 +28,14 @@ WORKS = {
         'PUF34T1': [(1, 'front', ''), (11, 'epitre', 'Épître dédicatoire'), (21, 'avertissement', 'Avertissement'),
                     (31, 'preface', 'Préface du traducteur'), (152, 'toc', ''), (155, 'text', None)],
         'PUF34T2': [(1, 'front', ''), (None, 'text', None)]}},
+    'DEV56': {'vols': ['DEV56T1', 'DEV56T2'], 'front': {
+        'DEV56T1': [(1, 'front', ''), (11, 'avertissement', 'Avertissement'), (34, 'avis', 'Avis postérieur'),
+                    (39, 'preface', 'Préface du traducteur'), (55, 'prefauteur', "Préface de l'auteur"), (79, 'toc', ''), (83, 'text', None)],
+        'DEV56T2': [(1, 'front', ''), (11, 'text', None), (205, 'jugement', "Jugement d'un anonyme"),
+                    (299, 'permission', 'Discours sur la permission des loix'), (353, 'benefice', 'Discours sur le bénéfice des loix'),
+                    (419, 'toc', '')]},
+              # in the Jugement, Leibniz's text has „ at the start of each line; the other lines are Barbeyrac's Réflexions
+              'split': ('jugement', "Jugement d'un anonyme", 'Réflexions du traducteur')},
 }
 
 def reading(s):
@@ -76,7 +84,12 @@ def build(work):
                 nonlocal start
                 if len(text) > start: spans.append([start, len(text), cur])
                 start = len(text)
-            raw = re.sub(r'(\w)-\n(?=[a-zſàâäéèêëîïôöùûüç])', lambda m: m.group(1) + '\x00', re.sub(r'</?i>', '', d.get('body', '')))
+            body = d.get('body', '')
+            sp_ = cfg.get('split')
+            if sp_ and st['sect'] == sp_[0]:  # mark the quoted lines (\x02) and drop their „
+                q = re.compile(r'^(\s*(?:§\.?\s*[IVXLC]+\.\s*)?)(„|,,)\s*')
+                body = '\n'.join(q.sub(lambda m: '\x02' + m.group(1), l) if q.match(l) else l for l in body.split('\n'))
+            raw = re.sub(r'(\w)-\n\x02?(?=[a-zſàâäéèêëîïôöùûüç])', lambda m: m.group(1) + '\x00', re.sub(r'</?i>', '', body))
             raw = re.sub(r'[ \t]*(<<\s*(?:LIVRE|CHAP|§)\s*\d+\s*>>)[ \t]*', r'\n\1\n', raw)
             for line in raw.split('\n'):
                 m = re.match(r'\s*<<\s*(LIVRE|CHAP|§)\s*(\d+)\s*>>\s*$', line)
@@ -94,6 +107,11 @@ def build(work):
                     seen.append((st['sect'], st['prefix'], st['livre'], st['chap'], st['para']))
                     cur = locus(st); continue
                 if not line.strip(): continue
+                sp_ = cfg.get('split')
+                if sp_ and st['sect'] == sp_[0]:
+                    who = sp_[1] if '\x02' in line else sp_[2]
+                    if st['prefix'] != who: close(); st['prefix'] = who; cur = locus(st)
+                    line = line.replace('\x02', '')
                 piece = reading(line.replace('\x00', ''))
                 text += (' ' if text and not text.endswith(' ') else '') + piece
             close()

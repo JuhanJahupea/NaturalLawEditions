@@ -15,7 +15,8 @@ B = WORK
 R = ROOT
 ed, work, jd, cf, out = sys.argv[1:6]  # [hints.json]
 AUTHS = {'GRO24': r'GROT|Grot|[Dd]roit de la [Gg](?:uerre|\.)|[Jj]ure [Bb](?:elli|\.)',
-         'PUF34': r'PUF+END|Puf+end|[Dd]roit de la [Nn]at|[Jj]us [Nn]at'}
+         'PUF34': r'PUF+END|Puf+end|[Dd]roit de la [Nn]at|[Jj]us [Nn]at',
+         'DEV56': r'PUF+END|Puf+end|[Dd]evoirs de l|[Dd]e [Oo]ffic'}
 AUTH = AUTHS[work]
 units = [u for u in json.load(open('%s/editions/%s/text.json' % (R, ed)))['units'] if u['kind'] != 'heading']
 pages = json.load(open('%s/corpus/%s.json' % (B, work)))['pages']
