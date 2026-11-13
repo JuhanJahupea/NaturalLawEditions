@@ -1,0 +1,725 @@
+{
+ "format": "nle-corrections/1",
+ "edition": "vattel-1773",
+ "description": "Corrections to the working edition (data.json), applied by the converter (tools/nle.py apply_note_moves) and by tools/check_edition.js. noteMoves: footnotes the working edition attached to the neighbouring section on a shared page. Each names the note by its section and index in data.json (cont: continuation notes that go with it), its mark, and the section whose call it answers. Read from the MDZ scans (bsb10725331, bsb10725332) by Claude Sonnet, one reader per run of sections; only answers the reader marked certain and whose two sections share a printed page are applied.",
+ "noteMoves": [
+  {
+   "from": "I.49",
+   "note": 0,
+   "mark": "(a)",
+   "to": "I.48",
+   "start": "Traité des droits de la reine sur divers états de la monarch",
+   "page": "63",
+   "reason": "Printed at the foot of p. 63; answers the call a in I.48 (Note stands at foot of p.63 and answers the call in I.48, not I.49.)."
+  },
+  {
+   "from": "I.61",
+   "note": 2,
+   "mark": "(*)",
+   "to": "I.62",
+   "start": "Esprit des loix , Liv. XXVI. Chap. XXIII. où l'on peut voir ",
+   "page": "77",
+   "reason": "Printed at the foot of p. 77; answers the call * in I.62 (Esprit des loix note is at foot of p.77 and answers the first call in I.62, not I.61.)."
+  },
+  {
+   "from": "I.106",
+   "note": 1,
+   "mark": "(*)",
+   "to": "I.107",
+   "start": "De la République , Liv. I. Chap. X.",
+   "page": "109",
+   "reason": "Printed at the foot of p. 109; answers the call * in I.107 (Bodin reference at foot of p.109 answers the BODIN call in I.107, not I.106.)."
+  },
+  {
+   "from": "I.144",
+   "note": 1,
+   "mark": "(*)",
+   "to": "I.145",
+   "start": "En Angleterre , sous HENRI VIII.",
+   "page": "138",
+   "reason": "Printed at the foot of p. 138; answers the call * in I.145 (Note at foot of p.138 answers the first call in I.145, not I.144.)."
+  },
+  {
+   "from": "I.146",
+   "note": 5,
+   "mark": "(*)",
+   "to": "I.148",
+   "start": "On peut voir dans les lettres du cardinal d'OSSAT , quelles ",
+   "page": "142",
+   "reason": "Printed at the foot of p. 142; answers the call * in I.148 (d'Ossat note is at foot of p.142 and answers the call in I.148, not I.146.)."
+  },
+  {
+   "from": "I.154",
+   "note": 4,
+   "mark": "( * )",
+   "to": "I.155",
+   "start": "Voyez LEIBNITII codex juris gent. diplomat. Dipl. LXVII. §. ",
+   "page": "152",
+   "reason": "Printed at the foot of p. 152; answers the call * in I.155 (Printed at foot of p.152, answers the call in I.155, not I.154.)."
+  },
+  {
+   "from": "I.154",
+   "note": 5,
+   "mark": "( ** )",
+   "to": "I.155",
+   "start": "Ibid. Alliance de Zurich avec les cantons d'Uri , de Schweit",
+   "page": "152",
+   "reason": "Printed at the foot of p. 152; answers the call ** in I.155 (Printed at foot of p.152, answers the call in I.155, not I.154.)."
+  },
+  {
+   "from": "I.155",
+   "note": 1,
+   "mark": "(**)",
+   "to": "I.157",
+   "start": "Droit de la guerre & de la paix , Liv. II. Chap. XXIV. à la ",
+   "page": "153",
+   "reason": "Printed at the foot of p. 153; answers the call ** in I.157 (Answers the call in I.157 (excommuniés pour trois ans), not I.155; the I.155 call ** on p.152 has the Leibnitz note (cluster 8 index 5).)."
+  },
+  {
+   "from": "I.208",
+   "note": 2,
+   "mark": "( * )",
+   "to": "I.209",
+   "start": "Histoire des colonies Angloises de l'Amérique septentrionale",
+   "page": "189",
+   "reason": "Printed at the foot of p. 189; answers the call * in I.209 (Printed at foot of p.189, answers the call in I.209, not I.208.)."
+  },
+  {
+   "from": "I.288",
+   "note": 1,
+   "mark": "(*)",
+   "to": "I.289",
+   "start": "De la République, Liv. I. chap. X.",
+   "page": "233",
+   "reason": "Printed at the foot of p. 233; answers the call * in I.289 (Printed at foot of p.233, answers the BODIN call in I.289, not I.288.)."
+  },
+  {
+   "from": "II.223",
+   "note": 4,
+   "mark": "(**)",
+   "to": "II.224",
+   "start": "CHOISY, histoire de Charles V. p. 282. 283.",
+   "page": "387",
+   "reason": "Printed at the foot of p. 387; answers the call ** in II.224 (Printed at foot of p.387, answers the call in II.224, not II.223.)."
+  },
+  {
+   "from": "II.233",
+   "note": 3,
+   "mark": "(*)",
+   "to": "II.234",
+   "start": "Liv. III. Chap. XXIV. §. 1.",
+   "page": "392",
+   "reason": "Printed at the foot of p. 392; answers the call * in II.234 (Edition attaches this note to the wrong section. Printed at foot of p. 392, answering a call in II.234.)."
+  },
+  {
+   "from": "II.233",
+   "note": 4,
+   "mark": "(**)",
+   "to": "II.234",
+   "start": "TITE-LIVE Lib. XXXVIII. cap. 25.",
+   "page": "392",
+   "reason": "Printed at the foot of p. 392; answers the call ** in II.234 (Edition attaches this note to the wrong section.)."
+  },
+  {
+   "from": "II.233",
+   "note": 5,
+   "mark": "(***)",
+   "to": "II.234",
+   "start": "Hist. des empereurs , par M. CREVIER , vie de VALERIEN.",
+   "page": "392",
+   "reason": "Printed at the foot of p. 392; answers the call *** in II.234 (Edition attaches this note to the wrong section.)."
+  },
+  {
+   "from": "II.249",
+   "note": 0,
+   "mark": "(a)",
+   "to": "II.248",
+   "start": "Histoire des révolutions de Suede.",
+   "page": "399",
+   "reason": "Printed at the foot of p. 399; answers the call a in II.248 (Edition attaches this note to the wrong section. Foot of p. 399 answers the call at end of II.248.)."
+  },
+  {
+   "from": "II.273",
+   "note": 0,
+   "mark": "(a)",
+   "to": "II.271",
+   "start": "Histoire d'Elisabeth, partie II.",
+   "page": "413",
+   "reason": "Printed at the foot of p. 413; answers the call a in II.271 (Edition attaches this note to the wrong section. Histoire d'Elisabeth, foot of p. 413, answers the CAMDEN call in II.271.)."
+  },
+  {
+   "from": "II.275",
+   "note": 0,
+   "mark": "(a)",
+   "to": "II.273",
+   "start": "Voyez PUFENDORF, Droit de la nat. & des gens, liv. V. chap. ",
+   "page": "414",
+   "reason": "Printed at the foot of p. 414; answers the call * in II.273 (Edition attaches this note to the wrong section. Foot of p. 414 answers the call in II.273; printed mark is (a) while the call is read as (*).)."
+  },
+  {
+   "from": "II.275",
+   "note": 1,
+   "mark": "(b)",
+   "to": "II.273",
+   "start": "Fraus enim adstringit, non dissolvit perjurium. De Offic. Li",
+   "page": "414",
+   "reason": "Printed at the foot of p. 414; answers the call ** in II.273 (Edition attaches this note to the wrong section. Printed mark (b); call read as (**).)."
+  },
+  {
+   "from": "II.290",
+   "note": 1,
+   "mark": "(*)",
+   "to": "II.291",
+   "start": "PUFENDORF, Liv. V. Chap. XII. §. 18. Il cite AMMI. MARCELL. ",
+   "page": "428",
+   "reason": "Printed at the foot of p. 428; answers the call * in II.291 (Edition attaches this note to the wrong section. Pufendorf note at foot of p. 428 answers the first call of II.291; printed mark (*).)."
+  },
+  {
+   "from": "II.303",
+   "note": 0,
+   "mark": "(*)",
+   "to": "II.301",
+   "start": "QUINT. Instit. Orat. Lib. VII. cap. IV.",
+   "page": "437",
+   "reason": "Printed at the foot of p. 437; answers the call a in II.301 (Edition attaches this note to the wrong section. Quintilian note at foot of p. 437 answers the call after the maxim in II.301; printed mark (*), call read as (a).)."
+  },
+  {
+   "from": "II.318",
+   "note": 0,
+   "mark": "(*)",
+   "to": "II.316",
+   "start": "Droit de la nat. & des gens , Liv. V. Chap. XII. §. XXIII.",
+   "page": "449",
+   "reason": "Printed at the foot of p. 449; answers the call a in II.316 (Note stands on p. 449 and answers the call in II.316; the edition attaches it to II.318.)."
+  },
+  {
+   "from": "II.319",
+   "note": 0,
+   "mark": "(*)",
+   "to": "II.318",
+   "start": "Primum igitur leges oportet contendere , considerando utra l",
+   "page": "450",
+   "reason": "Printed at the foot of p. 450; answers the call a in II.318 (Call is in II.318 on p. 450; the edition attaches the note to II.319. Note at foot of p. 451 (call (*) in II.321, 10th rule) is not in this cluster.)."
+  },
+  {
+   "from": "II.341",
+   "note": 0,
+   "mark": "(*)",
+   "to": "II.339",
+   "start": "Nam, ut Plato ait, nemo prudens punit quia peccatum est, sed",
+   "page": "464",
+   "reason": "Printed at the foot of p. 464; answers the call a in II.339 (Printed mark (*) but the call on that page is (a); only call and note on the page.)."
+  },
+  {
+   "from": "II.351",
+   "note": 2,
+   "mark": "(*)",
+   "to": "II.352",
+   "start": "Droit de la G. & de la P. Liv. III. Chap. II. §. VI.",
+   "page": "472",
+   "reason": "Printed at the foot of p. 472; answers the call a in II.352 (Printed mark (*) but the call on p. 472 is (a); belongs to II.352, not II.351.)."
+  },
+  {
+   "from": "III.114",
+   "note": 0,
+   "mark": "(*)",
+   "to": "III.113",
+   "start": "De nos jours le roi d'Espagne a interdit l'entrée de ses por",
+   "page": "74",
+   "reason": "Printed at the foot of p. 74; answers the call a in III.113 (Printed mark (*) but the call on p. 74 is (a), in III.113; the edition attaches the note to III.114.)."
+  },
+  {
+   "from": "III.143",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.142",
+   "start": "Neque se in obsides innoxios, sed in ipsos, si defecerint, s",
+   "page": "91",
+   "reason": "Printed at the foot of p. 91; answers the call a in III.142 (Call is in III.142 on p. 91; the edition attaches the note to III.143.)."
+  },
+  {
+   "from": "III.143",
+   "note": 1,
+   "mark": "( b )",
+   "to": "III.142",
+   "start": "QUINT. CURT. Lib. IV, cap. I, & cap. XI.",
+   "page": "91",
+   "reason": "Printed at the foot of p. 91; answers the call b in III.142 (Call is in III.142 on p. 91; the edition attaches the note to III.143.)."
+  },
+  {
+   "from": "III.145",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.143",
+   "start": "Mais toutes sortes de menaces ne sont pas permises pour obli",
+   "page": "94",
+   "reason": "Printed at the foot of p. 94; answers the call a in III.143 (Call is in III.143 on p. 94; the edition attaches the note to III.145.)."
+  },
+  {
+   "from": "III.155",
+   "note": 13,
+   "mark": "[c]",
+   "to": "III.156",
+   "start": "Voyez GROTIUS, Liv. III, chap. IV, §. XVI.",
+   "page": "109",
+   "reason": "Printed at the foot of p. 109; answers the call c in III.156 (Call [c] stands in III.156 (p. 109); edition attaches the note to III.155.)."
+  },
+  {
+   "from": "III.169",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.168",
+   "start": "Voyez sa lettre dans PROCOPE. Elle est rapportée par GROTIUS",
+   "page": "119",
+   "reason": "Printed at the foot of p. 119; answers the call a in III.168 (Procope note is at foot of p. 119 and answers the call in III.168, not III.169.)."
+  },
+  {
+   "from": "III.171",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.169",
+   "start": "Histoire de Guillaume III, Liv. VI, Tom II, p. 66.",
+   "page": "120",
+   "reason": "Printed at the foot of p. 120; answers the call a in III.169 (Note at foot of p. 120 answers the call (a) after \"renonceroit de part & d'autre\" in III.169; III.170/III.171 have no call.)."
+  },
+  {
+   "from": "III.175",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.174",
+   "start": "De salute certatum est.",
+   "page": "124",
+   "reason": "Printed at the foot of p. 124; answers the call a in III.174 (Note at foot of p. 124 answers the call in III.174.)."
+  },
+  {
+   "from": "III.177",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.176",
+   "start": "Histoire de Guillaume III, Tom. II, p. 148.",
+   "page": "125",
+   "reason": "Printed at the foot of p. 125; answers the call a in III.176 (Note at foot of p. 125 answers the Dixmude/Deinse call in III.176.)."
+  },
+  {
+   "from": "III.179",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.178",
+   "start": "TIT. LIV. Lib. XLII, cap. 47.",
+   "page": "130",
+   "reason": "Printed at the foot of p. 130; answers the call a in III.178 (Note at foot of p. 130 answers the Persee call in III.178.)."
+  },
+  {
+   "from": "III.181",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.180",
+   "start": "Xenophon exprime très - bien les raisons qui rendent la trah",
+   "page": "132",
+   "reason": "Printed at the foot of p. 132; answers the call a in III.180 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.181",
+   "note": 1,
+   "mark": "(b)",
+   "to": "III.180",
+   "start": "Viriati etiam cædes duplicem perfidiæ accusationem recepit :",
+   "page": "132",
+   "reason": "Printed at the foot of p. 132; answers the call b in III.180 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.181",
+   "note": 2,
+   "mark": "(c)",
+   "to": "III.180",
+   "start": "Quæ victoria, quia empta erat, à senatu non probata. Auct. d",
+   "page": "132",
+   "reason": "Printed at the foot of p. 132; answers the call c in III.180 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.182",
+   "note": 0,
+   "mark": "[a]",
+   "to": "III.181",
+   "start": "Eadem fide indicatum Pyrrho regi medicum, vitæ ejus insidian",
+   "page": "133",
+   "reason": "Printed at the foot of p. 133; answers the call a in III.181 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.183",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.182",
+   "start": "Lorsque le duc de Parme assiégeoit Berg - op - zoom, deux pr",
+   "page": "134",
+   "reason": "Printed at the foot of p. 134; answers the call a in III.182 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.199",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.198",
+   "start": "Par le traité de Schwedt du 6 octobre 1713.",
+   "page": "147",
+   "reason": "Printed at the foot of p. 147; answers the call a in III.198 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.205",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.203",
+   "start": "Histoire de la confédération Helvétique , par M. DE WATTEWIL",
+   "page": "155",
+   "reason": "Printed at the foot of p. 155; answers the call a in III.203 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.213",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.212",
+   "start": "Liv. III, chap. IX. §. 6.",
+   "page": "160",
+   "reason": "Printed at the foot of p. 160; answers the call a in III.212 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.223",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.222",
+   "start": "DIGEST. Lib. XLIX, de capt. & postlim. Leg. V, §. 2.",
+   "page": "164",
+   "reason": "Printed at the foot of p. 164; answers the call a in III.222 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.232",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.231",
+   "start": "VULCATIUS GALLICAN. cité par GROTIUS, Liv. III, ch. XVIII, §",
+   "page": "170",
+   "reason": "Printed at the foot of p. 170; answers the call a in III.231 (Edition attaches the note to a different section than the one whose call it answers. Vulcatius note answers the second call (a) of III.231 on p. 170.)."
+  },
+  {
+   "from": "III.234",
+   "note": 0,
+   "mark": "(a)",
+   "to": "III.233",
+   "start": "Liv. III, chap. XXI, §. 1.",
+   "page": "172",
+   "reason": "Printed at the foot of p. 172; answers the call a in III.233 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.234",
+   "note": 1,
+   "mark": "(b)",
+   "to": "III.233",
+   "start": "- - - - - - Belli commercia Turnus Sustulit ista prior - - -",
+   "page": "172",
+   "reason": "Printed at the foot of p. 172; answers the call b in III.233 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.234",
+   "note": 2,
+   "mark": "(c)",
+   "to": "III.233",
+   "start": "Annal. Lib. XIV, cap. 33.",
+   "page": "172",
+   "reason": "Printed at the foot of p. 172; answers the call c in III.233 (Edition attaches the note to a different section than the one whose call it answers.)."
+  },
+  {
+   "from": "III.261",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.260",
+   "start": "TIT. LIV. Lib. IV, cap. 30.",
+   "page": "185",
+   "reason": "Printed at the foot of p. 185; answers the call a in III.260 (Edition attaches note to wrong section; call stands in III.260.)."
+  },
+  {
+   "from": "III.264",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.263",
+   "start": "Mémoires de SULLY, rédigés par M. DE L'ECLUSE, Tom. IV, p. 1",
+   "page": "188",
+   "reason": "Printed at the foot of p. 188; answers the call a in III.263 (Edition attaches note to wrong section; call stands in III.263.)."
+  },
+  {
+   "from": "III.265",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.264",
+   "start": "PROCOP. Goth. Lib. II, c. 1, apud PUFFEND. Lib. VIII, cap. 7",
+   "page": "189",
+   "reason": "Printed at the foot of p. 189; answers the call a in III.264 (Edition attaches note to wrong section; call stands in III.264.)."
+  },
+  {
+   "from": "III.270",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.268",
+   "start": "A la fameuse entrevue de Péronne , Charles, duc de Bourgogne",
+   "page": "191",
+   "reason": "Printed at the foot of p. 191; answers the call a in III.268 (Edition attaches note to wrong section; call stands in III.268.)."
+  },
+  {
+   "from": "III.292",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.291",
+   "start": "On en trouve un exemple dans ce qui s'est passé après le sou",
+   "page": "202",
+   "reason": "Printed at the foot of p. 202; answers the call a in III.291 (Edition attaches note to wrong section; call stands in III.291.)."
+  },
+  {
+   "from": "III.295",
+   "note": 0,
+   "mark": "( a )",
+   "to": "III.294",
+   "start": "Voyez les historiens du regne de LOUIS XIII.",
+   "page": "205",
+   "reason": "Printed at the foot of p. 205; answers the call a in III.294 (Edition attaches note to wrong section; call stands in III.294.)."
+  },
+  {
+   "from": "IV.68",
+   "note": 0,
+   "mark": "( a )",
+   "to": "IV.66",
+   "start": "WICQUEFORT de l'ambassadeur , Liv. I. Sect. I. à la fin.",
+   "page": "249",
+   "reason": "Printed at the foot of p. 249; answers the call a in IV.66 (Edition attaches note to wrong section; call stands in IV.66.)."
+  },
+  {
+   "from": "IV.82",
+   "note": 0,
+   "mark": "( a )",
+   "to": "IV.81",
+   "start": "Un attentat énorme contre le droit des gens , causa la ruine",
+   "page": "260",
+   "reason": "Printed at the foot of p. 260; answers the call a in IV.81 (Edition attaches it to IV.82; the call stands at the end of IV.81 on the same page.)."
+  },
+  {
+   "from": "IV.85",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.84",
+   "start": "SOLIS, histoire de la conquête du Méxique.",
+   "page": "263",
+   "reason": "Printed at the foot of p. 263; answers the call a in IV.84 (Edition attaches it to IV.85; call is in IV.84 on p. 263.)."
+  },
+  {
+   "from": "IV.85",
+   "note": 1,
+   "mark": "(b)",
+   "to": "IV.84",
+   "start": "WICQUEFORT, ambassadeur, Liv. I, Sect. XVII.",
+   "page": "263",
+   "reason": "Printed at the foot of p. 263; answers the call b in IV.84 (Edition attaches it to IV.85; call is in IV.84 on p. 263.)."
+  },
+  {
+   "from": "IV.88",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.87",
+   "start": "WICQUEFORT, Liv. I, sect. III.",
+   "page": "265",
+   "reason": "Printed at the foot of p. 265; answers the call a in IV.87 (Edition attaches it to IV.88; call is in IV.87.)."
+  },
+  {
+   "from": "IV.88",
+   "note": 1,
+   "mark": "(b)",
+   "to": "IV.87",
+   "start": "Ibid.",
+   "page": "265",
+   "reason": "Printed at the foot of p. 265; answers the call b in IV.87 (Edition attaches it to IV.88; call is in IV.87.)."
+  },
+  {
+   "from": "IV.89",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.88",
+   "start": "Id. ibid.",
+   "page": "266",
+   "reason": "Printed at the foot of p. 266; answers the call a in IV.88 (Edition attaches it to IV.89; call is in IV.88 on p. 266.)."
+  },
+  {
+   "from": "IV.92",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.91",
+   "start": "Idem, ibid.",
+   "page": "268",
+   "reason": "Printed at the foot of p. 268; answers the call a in IV.91 (Edition attaches it to IV.92; call is the second call of IV.91 (p. 268).)."
+  },
+  {
+   "from": "IV.93",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.92",
+   "start": "Le fait est avancé par ANTOINE DE VERA , dans son idée du pa",
+   "page": "270",
+   "reason": "Printed at the foot of p. 270; answers the call a in IV.92 (Edition attaches it to IV.93; call is in IV.92 on p. 270 (Spanish king and ambassadors).)."
+  },
+  {
+   "from": "IV.97",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.96",
+   "start": "WICQUEFORT , ubi suprà. Liv. I, Sect. XXIX.",
+   "page": "275",
+   "reason": "Printed at the foot of p. 275; answers the call a in IV.96 (Edition attaches it to IV.97; call is in IV.96 on p. 275.)."
+  },
+  {
+   "from": "IV.97",
+   "note": 1,
+   "mark": "(b)",
+   "to": "IV.96",
+   "start": "Idem, ibid.",
+   "page": "275",
+   "reason": "Printed at the foot of p. 275; answers the call b in IV.96 (Edition attaches it to IV.97; call is in IV.96 on p. 275.)."
+  },
+  {
+   "from": "IV.98",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.97",
+   "start": "TIT. LIV. Lib. V, cap. [?]26. L'historien décide sans balanc",
+   "page": "276",
+   "reason": "Printed at the foot of p. 276; answers the call a in IV.97 (Edition attaches it to IV.98; call is in IV.97 (Clusium) on p. 276.)."
+  },
+  {
+   "from": "IV.101",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.100",
+   "start": "Dans ses notes sur le traité du juge compétant, des ambassad",
+   "page": "281",
+   "reason": "Printed at the foot of p. 281; answers the call a in IV.100 (Edition attaches it to IV.101; call is in IV.100 on p. 281 (Barbeyrac).)."
+  },
+  {
+   "from": "IV.101",
+   "note": 1,
+   "mark": "(b)",
+   "to": "IV.100",
+   "start": "Histoire des rois des deux Siciles , par M. D'EGLY.",
+   "page": "281",
+   "reason": "Printed at the foot of p. 281; answers the call b in IV.100 (Edition attaches it to IV.101; call is in IV.100 on p. 281 (Sauvage).)."
+  },
+  {
+   "from": "IV.103",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.102",
+   "start": "MEZERAY, histoire de France , tom. II, p. 470.",
+   "page": "284",
+   "reason": "Printed at the foot of p. 284; answers the call a in IV.102 (Mezeray note answers IV.102's call on p. 284, not IV.103.)."
+  },
+  {
+   "from": "IV.104",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.103",
+   "start": "ALVAKE & DI , histoire de la conquête de la Sirie.",
+   "page": "285",
+   "reason": "Printed at the foot of p. 285; answers the call a in IV.103 (Note answers IV.103's call on p. 285 (Arabes); IV.104 has no calls.)."
+  },
+  {
+   "from": "IV.104",
+   "note": 1,
+   "mark": "(b)",
+   "to": "IV.103",
+   "start": "Histoire des Sarrasins , par OCKLEY , tom. 1, p. 294. de la ",
+   "page": "285",
+   "reason": "Printed at the foot of p. 285; answers the call b in IV.103 (Belongs to IV.103.)."
+  },
+  {
+   "from": "IV.104",
+   "note": 2,
+   "mark": "(c)",
+   "to": "IV.103",
+   "start": "CHO[?] V , histoire de S. Louis.",
+   "page": "285",
+   "reason": "Printed at the foot of p. 285; answers the call c in IV.103 (Belongs to IV.103.)."
+  },
+  {
+   "from": "IV.108",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.107",
+   "start": "Voyez les mémoires de MARTIN DU BELLAY, Liv. IV, & l'histoir",
+   "page": "289",
+   "reason": "Printed at the foot of p. 289; answers the call a in IV.107 (Du Bellay note stands at foot of p. 289 and answers IV.107's call.)."
+  },
+  {
+   "from": "IV.110",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.109",
+   "start": "Voyez les historiens de France.",
+   "page": "292",
+   "reason": "Printed at the foot of p. 292; answers the call a in IV.109 (Answers IV.109's call on p. 292 (cardinal tue).)."
+  },
+  {
+   "from": "IV.111",
+   "note": 0,
+   "mark": "a",
+   "to": "IV.110",
+   "start": "M. DE BYNKERSHOEK, traité du juge compétent des ambassadeurs",
+   "page": "294",
+   "reason": "Printed at the foot of p. 294; answers the call a in IV.110 (Bynkershoek note at foot of p. 294 answers IV.110's call a on that page.)."
+  },
+  {
+   "from": "IV.111",
+   "note": 1,
+   "mark": "b",
+   "to": "IV.110",
+   "start": "Ibid.",
+   "page": "294",
+   "reason": "Printed at the foot of p. 294; answers the call b in IV.110 (Ibid.; answers IV.110's call b on p. 294.)."
+  },
+  {
+   "from": "IV.116",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.115",
+   "start": "Du juge compétent des ambassadeurs. chap. 16. §. 6.",
+   "page": "300",
+   "reason": "Printed at the foot of p. 300; answers the call a in IV.115 (Answers IV.115's call (Bynkershoek) on p. 300.)."
+  },
+  {
+   "from": "IV.122",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.119",
+   "start": "WICQUEFORT, ambass. Liv. I, Sect. XXVIII vers la fin.",
+   "page": "306",
+   "reason": "Printed at the foot of p. 306; answers the call a in IV.119 (Note stands at foot of p.306 and answers the call in IV.119; IV.122 has no call.)."
+  },
+  {
+   "from": "IV.124",
+   "note": 0,
+   "mark": "(a)",
+   "to": "IV.123",
+   "start": "WICQUEFORT, Liv. I, Sect. XXVII.",
+   "page": "307",
+   "reason": "Printed at the foot of p. 307; answers the call a in IV.123 (Note answers the call in IV.123, not IV.124.)."
+  },
+  {
+   "from": "IV.102",
+   "note": 0,
+   "mark": "",
+   "to": "IV.101",
+   "start": "Le même historien rapportant l'histoire de Barcouc, sultan d",
+   "reason": "Unmarked paragraph at the head of p. 283 ('Le même historien …'); continues the Timur-Bec note of IV.101."
+  },
+  {
+   "from": "IV.111",
+   "note": 2,
+   "mark": "",
+   "to": "IV.110",
+   "start": "Il n'y a pas long-tems qu'on a vu un ministre étranger en Fr",
+   "reason": "Unmarked paragraph on p. 294 after note (b); continues that note, whose call is in IV.110."
+  }
+ ]
+}

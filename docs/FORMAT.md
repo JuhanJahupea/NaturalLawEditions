@@ -141,6 +141,17 @@ One item per comment shown under a unit. `family` (optional) gives the note the 
 - `fr`: sentence spans in the unit's `text`. `align`: groups of `[[French sentence indices], [English sentence indices]]`.
 - `flags`: translation problems. `k` is the index of the alignment group.
 
+## Corrections (`corrections.json`)
+
+Corrections to the working edition that the converter applies before it builds the text, and that `tools/check_edition.js` applies to `data.json` before comparing.
+
+```json
+{"format": "nle-corrections/1", "edition": "vattel-1773", "description": "...",
+ "noteMoves": [{"from": "IV.92", "note": 0, "mark": "(a)", "to": "IV.91", "cont": [], "start": "Idem, ibid.", "page": "268", "reason": "..."}]}
+```
+
+- `noteMoves`: a footnote attached to the wrong section. `from` and `note` name it by section and index in `data.json`; `cont` lists the continuation notes that go with it; `mark` must match; `to` is the section whose call it answers. A note moved back to the section before goes after that section's notes, one moved forward before them. Reuse rows and 1773 changes marked inside the note move with it.
+
 ## Title pages (`titlepage.json`)
 
 Named by `titlePage` in `edition.json`. One page per volume:
