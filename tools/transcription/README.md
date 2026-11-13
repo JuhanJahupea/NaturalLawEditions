@@ -58,6 +58,9 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - Agent prompt `ATTRIBUTION_PROMPT.md`, one batch per agent: does the author name the source for this passage (its sentence, the sentence that introduces it, a note called there, the margin beside it); form quotation or reference; the words that name it.
 - `write_attr.py <dir> [date]`: the attributed verdicts whose cue is found in the unit go to `editions/<edition>/passes/attributions.json`. The converters copy each onto its row as `attributed`.
 
+- Agent prompt `ATTRIBUTION_VERIFY_PROMPT.md` (Claude Opus, about 16 rows per agent): a second reading of each attribution with the whole unit; correct, wrong or unsure.
+- `apply_attr.py <items> <dir>`: wrong items leave `attributions.json`; kept items take the second reader's form and cue and carry the verdict in `review`. Unsure items stay for a decision by hand.
+
 ## 7. English of Burlamaqui
 
 - `en_extract.py <pdf> <out>`: Nugent's translation from the Liberty Fund PDF, by section, with Burlamaqui's notes; the editor's notes and their calls are left out.

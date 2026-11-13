@@ -2,7 +2,7 @@
  "format": "nle-pass/1",
  "edition": "vattel-1773",
  "date": "2026-11-12",
- "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (306 rows). Judged by a language model, not checked by hand. Rows labelled citation name the source by definition and are not listed.",
+ "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (306 rows). First judged by Claude Sonnet. Rows labelled citation name the source by definition and are not listed. A second model (Claude Opus) read each item with the whole unit: wrong items were removed; review holds its verdict (correct) and reason.",
  "attributions": [
   {
    "text": "grotius-barbeyrac-1724",
@@ -14,7 +14,12 @@
    "cue": "Le célebre GROTIUS",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Quotation introduced by naming Grotius."
+   "reason": "Quotation introduced by naming Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The quotation is introduced in the same sentence by 'Le célebre GROTIUS ... il le distingue ainsi'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -26,7 +31,12 @@
    "cue": "Droit de la guerre & de la paix , traduit par BARBEYRAC ; Discours prélim. §. XLI.",
    "cuePart": "n0",
    "confidence": 0.85,
-   "reason": "Call (f) at end of quotation cites the work."
+   "reason": "Call (f) at end of quotation cites the work.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Call (f) at the end of the quotation leads to a note citing Grotius's work in Barbeyrac's translation, Disc. prélim. § XLI.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -38,7 +48,12 @@
    "cue": "GROTIUS, par sa distinction même",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Grotius named in the sentence holding the passage."
+   "reason": "Grotius named in the sentence holding the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named as the subject of the sentence that reports his restriction of droit des gens to maxims set by consent of peoples.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -50,7 +65,12 @@
    "cue": "GROTIUS eut de plus considéré",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Grotius named in the sentence that contains the passage."
+   "reason": "Grotius named in the sentence that contains the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence holding the passage names Grotius and corrects his consent-based droit des gens, so the source is named for this point.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -62,7 +82,12 @@
    "cue": "PUFENDORF , droit de la nature & des gens , Liv. II. Chap. III. §. XXIII.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Note after the passage says it uses Barbeyrac's translation of Pufendorf."
+   "reason": "Note after the passage says it uses Barbeyrac's translation of Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (g), called at the end of the passage, says the wording is taken from Barbeyrac's translation in Pufendorf, DNG II.III.23.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -74,7 +99,12 @@
    "cue": "GROTIUS , droit de la guerre & de la paix, Liv. I. Chap. I. §. XIV. Not. 3.",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Quoted note introduced with work and place and 'dit-il'."
+   "reason": "Quoted note introduced with work and place and 'dit-il'.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note is transcribed in quotation marks with 'dit-il', introduced by the translator and the work and place of the note (Grotius I.I.14 n.3).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -86,7 +116,12 @@
    "cue": "Note 2 , sur PUFENDORF, droit de la nat. & des gens, Liv. II. Chap. III. §. XXIII.",
    "cuePart": "n0",
    "confidence": 0.75,
-   "reason": "Quoted words are followed by a call to a note naming Pufendorf's work and place of Barbeyrac's note."
+   "reason": "Quoted words are followed by a call to a note naming Pufendorf's work and place of Barbeyrac's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The quoted words end with call (i), whose note gives the place of Barbeyrac's note on Pufendorf II.III.23.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-institutiones-1750",
@@ -98,7 +133,12 @@
    "cue": "M. le Baron de WOLF",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words."
+   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence 'Ce grand philosophe a vû que' directly follows the naming of Wolf and reports this view as his.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -110,7 +150,12 @@
    "cue": "M. le Baron de WOLF",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words."
+   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Phrase sits inside the sentence reporting what Wolf, named just before as 'ce grand philosophe', saw.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -122,7 +167,12 @@
    "cue": "M. le Baron de WOLF",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words."
+   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Phrase sits inside the sentence reporting Wolf's view, introduced by 'Ce grand philosophe a vû que' right after his name.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -134,7 +184,12 @@
    "cue": "M. le Baron de WOLF",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words."
+   "reason": "Preceding sentence names Wolf, and the next sentence reports his view in the author's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Phrase opens the clause reporting Wolf's view, introduced right after he is named.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -146,7 +201,12 @@
    "cue": "M. WOLF luimême dans sa préface",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Introduced as Wolff's own words, 'dit-il'."
+   "reason": "Introduced as Wolff's own words, 'dit-il'.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Given in quotation marks as Wolff's own words from his preface ('dit-il').",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -158,7 +218,12 @@
    "cue": "M. WOLF luimême dans sa préface",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Introduced as Wolff's own words, 'dit-il'."
+   "reason": "Introduced as Wolff's own words, 'dit-il'.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Part of the same quotation from Wolff's preface introduced by name.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-naturae-8-1748",
@@ -170,7 +235,12 @@
    "cue": "M. WOLF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Sentence names M. Wolf as the one treating patrimonial kingdoms."
+   "reason": "Sentence names M. Wolf as the one treating patrimonial kingdoms.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Wolf is the subject of the sentence, and note (k) points to Jus naturae part VIII and the Jus gentium.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-institutiones-1750",
@@ -182,7 +252,12 @@
    "cue": "suivant M. WOLF lui - même",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Sentence names Wolf for this view."
+   "reason": "Sentence names Wolf for this view.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence holding the passage says 'suivant M. WOLF lui-même'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -194,7 +269,12 @@
    "cue": "suivant M. WOLF lui - même",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Wolf named in the same sentence."
+   "reason": "Wolf named in the same sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Wolf is named inside the sentence that holds the passage.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -206,7 +286,12 @@
    "cue": "M. WOLF le déduit",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Wolf named in the sentence."
+   "reason": "Wolf named in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Wolf is the subject of the sentence holding the passage.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -218,7 +303,12 @@
    "cue": "M. WOLF le déduit",
    "cuePart": "t",
    "confidence": 0.6,
-   "reason": "'Suivant lui' follows the sentence naming Wolf."
+   "reason": "'Suivant lui' follows the sentence naming Wolf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'Suivant lui' refers back to Wolf, named in the immediately preceding sentence.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -230,7 +320,12 @@
    "cue": "suivant M. WOLF lui - même",
    "cuePart": "t",
    "confidence": 0.7,
-   "reason": "Same sentence as the Wolf attribution."
+   "reason": "Same sentence as the Wolf attribution.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Same sentence as 'suivant M. WOLF lui-même'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -242,7 +337,12 @@
    "cue": "dit M. WOLF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Sentence opens with 'dit M. WOLF', reporting his view."
+   "reason": "Sentence opens with 'dit M. WOLF', reporting his view.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage closes the sentence that Vattel opens with 'Mais, dit M. WOLF', so he reports it as Wolff's view.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -254,7 +354,12 @@
    "cue": "dit M. WOLF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Sentence opens with 'dit M. WOLF', reporting his view."
+   "reason": "Sentence opens with 'dit M. WOLF', reporting his view.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The civitas maxima idea sits inside the sentence introduced by 'dit M. WOLF'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -266,7 +371,12 @@
    "cue": "dit M. WOLF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Sentence opens with 'dit M. WOLF', reporting his view."
+   "reason": "Sentence opens with 'dit M. WOLF', reporting his view.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage stands in the same sentence that Vattel ascribes to Wolff with 'dit M. WOLF'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -278,7 +388,12 @@
    "cue": "dit M. WOLF",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Sentence opens with 'dit M. WOLF', reporting his view."
+   "reason": "Sentence opens with 'dit M. WOLF', reporting his view.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage stands in the same sentence that Vattel ascribes to Wolff with 'dit M. WOLF'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -290,7 +405,12 @@
    "cue": "M. WOLF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Wolf named for this reasoning."
+   "reason": "Wolf named for this reasoning.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Wolff is named inside the passage itself for his reasoning about individuals, though the work Vattel names is his treatise of natural law.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "montesquieu-esprit-des-loix-1749",
@@ -302,7 +422,12 @@
    "cue": "Esprit des loix",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Note at end of the sentence cites Montesquieu for it."
+   "reason": "Note at end of the sentence cites Montesquieu for it.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The (*) call ends the sentence, and its note (about the nights) cites the Esprit des loix and Montesquieu.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -314,7 +439,12 @@
    "cue": "GROTIUS en rapporte un exemple bien remarquable",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius named and quoted with \"dit-il\"."
+   "reason": "Grotius named and quoted with \"dit-il\".",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named in the introducing clause and quoted between „ marks with 'dit-il'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -326,7 +456,12 @@
    "cue": "On est surpris d'entendre le savant & judicieux GROTIUS nous dire",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius named in the introducing clause; his claim is rejected."
+   "reason": "Grotius named in the introducing clause; his claim is rejected.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named in the clause that introduces the claim, which Vattel then rejects; the note cites DGP II.XX.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -338,7 +473,12 @@
    "cue": "On est surpris d'entendre le savant & judicieux GROTIUS nous dire",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Part of the same claim ascribed to Grotius."
+   "reason": "Part of the same claim ascribed to Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "This example is part of the same claim that Vattel ascribes to Grotius in the same sentence.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -350,7 +490,12 @@
    "cue": "On est surpris d'entendre le savant & judicieux GROTIUS nous dire",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Part of the same claim ascribed to Grotius."
+   "reason": "Part of the same claim ascribed to Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "This example is part of the same claim that Vattel ascribes to Grotius in the same sentence.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -362,7 +507,12 @@
    "cue": "On est surpris d'entendre le savant & judicieux GROTIUS nous dire",
    "cuePart": "t",
    "confidence": 0.6,
-   "reason": "Follows directly with \"il\" referring to Grotius, no new name in the sentence."
+   "reason": "Follows directly with \"il\" referring to Grotius, no new name in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The next sentence opens 'Il est tombé dans cette erreur parce qu'il attribue', where 'il' plainly means Grotius, named just before.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -374,7 +524,12 @@
    "cue": "GROTIUS ne s'est-il point apperçu",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Grotius named in the sentence holding the passage."
+   "reason": "Grotius named in the sentence holding the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named as the subject of the sentence that holds the passage ('les précautions qu'il apporte').",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wicquefort-ambassadeur-1724",
@@ -386,7 +541,12 @@
    "cue": "WICQUEFORT dans son traité de l'ambassadeur, liv. I. section V",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Wicquefort named with work and place for this claim."
+   "reason": "Wicquefort named with work and place for this claim.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Wicquefort, his work and the place are named in the sentence that reports the claim with 'dit que'.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wicquefort-ambassadeur-1724",
@@ -398,7 +558,12 @@
    "cue": "WICQUEFORT dans son traité de l'ambassadeur, liv. I. section V",
    "cuePart": "t",
    "confidence": 0.7,
-   "reason": "Introduced as the examples he reports, in the same passage on Wicquefort."
+   "reason": "Introduced as the examples he reports, in the same passage on Wicquefort.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Introduced by 'les exemples qu'il rapporte', which refers to Wicquefort, named in the sentence before.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wicquefort-ambassadeur-1724",
@@ -410,7 +575,12 @@
    "cue": "WICQUEFORT dans son traité de l'ambassadeur, liv. I. section V",
    "cuePart": "t",
    "confidence": 0.65,
-   "reason": "Part of the examples Wicquefort reports, named in the preceding sentences."
+   "reason": "Part of the examples Wicquefort reports, named in the preceding sentences.",
+   "review": {
+    "verdict": "correct",
+    "reason": "This is the second of 'les exemples qu'il rapporte', which Vattel ascribes to Wicquefort, named just before.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -422,7 +592,12 @@
    "cue": "Voyez POLYBE, cité par BARBEYRAC, dans ses notes sur GROTIUS. Liv. III. Chap. XXIV. §. VII.",
    "cuePart": "n0",
    "confidence": 0.6,
-   "reason": "Note at end of the sentence refers to Barbeyrac's notes on Grotius for this story."
+   "reason": "Note at end of the sentence refers to Barbeyrac's notes on Grotius for this story.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note called at the end of the sentence names Barbeyrac's notes on Grotius, Liv. III Chap. XXIV § VII, as the place where Polybius is cited.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "montesquieu-esprit-des-loix-1749",
@@ -434,7 +609,12 @@
    "cue": "Je me sers de la traduction de M. le président de MONTESQUIEU",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Note at the end of the quotation names Montesquieu's translation."
+   "reason": "Note at the end of the quotation names Montesquieu's translation.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The Pomponius quotation's note (**) states that Vattel uses Montesquieu's translation in L'esprit des loix, so the wording is credited to Montesquieu.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-institutiones-1750",
@@ -446,7 +626,12 @@
    "cue": "WOLF jus Nat. Part. III. C. VII.",
    "cuePart": "n0",
    "confidence": 0.55,
-   "reason": "Note after the sentence on authors proving it names Wolf for this question."
+   "reason": "Note after the sentence on authors proving it names Wolf for this question.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The next sentence says illustrious authors have proved this very proposition, and its note names Wolf on usucapion and prescription.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -458,7 +643,12 @@
    "cue": "GROTIUS (**)a traité la question assez au long",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Grotius named for the question, with note."
+   "reason": "Grotius named for the question, with note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The following sentence names Grotius, with a note to II.XV.8, as having treated this very question.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -470,7 +660,12 @@
    "cue": "GROTIUS divise d'abord les traités en deux classes générales",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius named in the sentence, with note."
+   "reason": "Grotius named in the sentence, with note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The sentence holding the passage reports it as Grotius's division of treaties, with a note to II.XV.5.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -482,7 +677,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Pufendorf is named in the sentence introducing his rules."
+   "reason": "Pufendorf is named in the sentence introducing his rules.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf is named, with a note to VIII.IX.8, in the sentence that sets out his two rules.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -494,7 +694,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Pufendorf is named in the sentence holding the passage."
+   "reason": "Pufendorf is named in the sentence holding the passage.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage itself names Pufendorf as giving the rules, with a note to VIII.IX.8.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -506,7 +711,12 @@
    "cue": "PUFENDORF",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Sentence names Pufendorf's third rule."
+   "reason": "Sentence names Pufendorf's third rule.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage itself names Pufendorf's third rule.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -518,7 +728,12 @@
    "cue": "La 3me. regle de PUFENDORF",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Introduced by the preceding sentence naming Pufendorf's rule."
+   "reason": "Introduced by the preceding sentence naming Pufendorf's rule.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage reports the content of 'la 3me. regle de PUFENDORF' named in the immediately preceding sentence ('Elle porte').",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -530,7 +745,12 @@
    "cue": "Voyez Wolf. Jus. Gent. §. [432?].",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Footnote call in the introducing sentence ('Quelques-uns (*)') cites Wolff."
+   "reason": "Footnote call in the introducing sentence ('Quelques-uns (*)') cites Wolff.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The views of 'Quelques-uns (*)' continued by 'Ils prétendent' are tied by the note to Wolf, Jus Gent.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -542,7 +762,12 @@
    "cue": "l'exemple rapporté par Grotius",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Note holds the passage and its call follows 'rapporté par Grotius'."
+   "reason": "Note holds the passage and its call follows 'rapporté par Grotius'.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note holding the passage is called from 'l'exemple rapporté par Grotius' and gives the place in Grotius.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -554,7 +779,12 @@
    "cue": "Pufendorf",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Pufendorf named in the sentence."
+   "reason": "Pufendorf named in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Pufendorf is named, with a note to VIII.IX.12, in the sentence holding the passage.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -566,7 +796,12 @@
    "cue": "GROTIUS , Liv. III. Chap. XX. §. LV.",
    "cuePart": "n1",
    "confidence": 0.85,
-   "reason": "Call (a) inside the passage points to a note citing Grotius."
+   "reason": "Call (a) inside the passage points to a note citing Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The call (a) after 'd'habiles gens' fits, by content, the note citing Grotius III.XX.55 (and Wolf); the other (a) notes go to Swedish and Zurich history.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -578,7 +813,12 @@
    "cue": "Voyez GROTIUS Liv. III. Chap. XI. §. XVIII. not. 2.",
    "cuePart": "n1",
    "confidence": 0.85,
-   "reason": "Call at end of the sentence leads to a note naming Grotius."
+   "reason": "Call at end of the sentence leads to a note naming Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The call at the end of the passage's sentence leads to a note naming Grotius III.XI.18 n. 2.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -590,7 +830,12 @@
    "cue": "Voyez PUFFENDORF, Liv. V. Chap. XII. §. VII.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Call at end of the sentence leads to a note naming Pufendorf."
+   "reason": "Call at end of the sentence leads to a note naming Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The call at the end of the sentence leads to a note naming Pufendorf V.XII.7.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -602,7 +847,12 @@
    "cue": "PUFEND. ibid.",
    "cuePart": "n0",
    "confidence": 0.75,
-   "reason": "Call (**) at end of the sentence leads to note naming Pufendorf."
+   "reason": "Call (**) at end of the sentence leads to note naming Pufendorf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The call (**) at the end of the passage's sentence leads to a note citing 'PUFEND. ibid.' (alongside Herodotus).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -614,7 +864,12 @@
    "cue": "Voyez les remarques de BARBEYRAC , sur GROTIUS & sur PUFENDORF.",
    "cuePart": "n0",
    "confidence": 0.9,
-   "reason": "Call inside the passage points to a note naming Barbeyrac's remarks."
+   "reason": "Call inside the passage points to a note naming Barbeyrac's remarks.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The call inside the passage leads to a note naming Barbeyrac's remarks on Grotius and Pufendorf as those who rejected the distinction.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -626,7 +881,12 @@
    "cue": "GROTIUS propose cette question",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Sentence names Grotius and gives the question in the author's wording."
+   "reason": "Sentence names Grotius and gives the question in the author's wording.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The question is introduced by 'GROTIUS propose cette question' with note (a) citing Liv. II ch. XVI § XIII; given as indirect question, not quoted.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -638,7 +898,12 @@
    "cue": "GROTIUS propose cette question",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "'Il donne pour exemple' continues the Grotius sentence."
+   "reason": "'Il donne pour exemple' continues the Grotius sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'Et il donne pour exemple' continues directly from the Grotius sentence, so the treaty example is ascribed to Grotius.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -650,7 +915,12 @@
    "cue": "GROTIUS veut qu'en pareil cas, on s'abstienne plutôt d'user de représailles",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius named in the sentence."
+   "reason": "Grotius named in the sentence.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage opens with 'GROTIUS veut que', naming Grotius for the view Vattel then qualifies.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -662,7 +932,12 @@
    "cue": "GROTIUS (*) dit",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Introduced by Grotius with a note call."
+   "reason": "Introduced by Grotius with a note call.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'GROTIUS (*) dit' introduces the two conditions, with a note citing Liv. I ch. III § IV; reported speech without quotation marks.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -674,7 +949,12 @@
    "cue": "Voyez GROTIUS droit de la G. & de la P. Liv. III. Chap. VIII. §. IV.",
    "cuePart": "n0",
    "confidence": 0.85,
-   "reason": "Note call at end of the sentence cites Grotius."
+   "reason": "Note call at end of the sentence cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note call (*) at the end of the Alexander sentence leads to 'Voyez GROTIUS ... Liv. III. Chap. VIII. §. IV.'",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -686,7 +966,12 @@
    "cue": "GROTIUS (*) blâme",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Grotius named for this point."
+   "reason": "Grotius named for this point.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'GROTIUS (*) blâme' names Grotius for the censure of Manlius, with a note citing Liv. III ch. III § X.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -698,7 +983,12 @@
    "cue": "GROTIUS allegue",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Grotius named for the Ulysses example."
+   "reason": "Grotius named for the Ulysses example.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'GROTIUS allegue' introduces the Ulysses/Ciconians example, and the note cites 'GROTIUS ubi supra. not. 3.'",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -710,7 +1000,12 @@
    "cue": "la note de GROTIUS",
    "cuePart": "t",
    "confidence": 0.8,
-   "reason": "Sentence refers to Grotius's note."
+   "reason": "Sentence refers to Grotius's note.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The same sentence sends the reader to 'la note de GROTIUS' as the place where the French ordinances are reported.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -722,7 +1017,12 @@
    "cue": "GROTIUS, ubi suprà.",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Quoted passage followed by note citing Grotius."
+   "reason": "Quoted passage followed by note citing Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage is in quotation marks and its call (*) leads to 'GROTIUS, ubi suprà.'; the Hamburg note does not fit the quote and belongs to the previous paragraph.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -734,7 +1034,12 @@
    "cue": "GROTIUS, dans la note déjà citée.",
    "cuePart": "n1",
    "confidence": 0.85,
-   "reason": "Note at end of the sentence cites Grotius."
+   "reason": "Note at end of the sentence cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The call (**) at the end of the Dunkirk sentence leads to 'GROTIUS, dans la note déjà citée.'",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -746,7 +1051,12 @@
    "cue": "GROTIUS (**)",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius named for the claim."
+   "reason": "Grotius named for the claim.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named in the sentence for the view Vattel rejects, with a note citing Liv. II ch. II § XIII.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -758,7 +1068,12 @@
    "cue": "Voyez GROTIUS ibid.",
    "cuePart": "n0",
    "confidence": 0.85,
-   "reason": "Note call inside passage cites Grotius."
+   "reason": "Note call inside passage cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The call (*) inside the passage leads to a note giving the Elean and Cologne practice and 'Voyez GROTIUS ibid.'",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -770,7 +1085,12 @@
    "cue": "cité par GROTIUS, Lib. III, chap. XI, §. XVI. n. 5.",
    "cuePart": "n3",
    "confidence": 0.85,
-   "reason": "Quoted passage with note naming Grotius."
+   "reason": "Quoted passage with note naming Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The Phyton story is in quotation marks, and its note (d) says 'cité par GROTIUS, Lib. III, chap. XI, §. XVI.'",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -782,19 +1102,12 @@
    "cue": "Voyez GROTIUS, Liv. III, chap. IV, §. XVIII, n. 1.",
    "cuePart": "n1",
    "confidence": 0.85,
-   "reason": "Footnote (b) at the end of the Pepin sentence cites Grotius with book, chapter and section."
-  },
-  {
-   "text": "grotius-barbeyrac-1724",
-   "unit": "III.155",
-   "page": "GRO24T2.p267",
-   "passage": "Et c'est sur le même principe, qu'Alexandre jugea de l'action de BESSUS, qui avoit assassiné DARIUS",
-   "source": "comme le reconnut Aléxandre (20) le Grand, à l'occasion de Bessus, qui avoit tué Darius",
-   "form": "reference",
-   "cue": "Voyez GROTIUS, Liv. III, chap. IV, §. XVI.",
-   "cuePart": "n13",
-   "confidence": 0.5,
-   "reason": "Final note [c] cites Grotius, but its call is missing from the text; likely belongs at the end of the Bessus sentence."
+   "reason": "Footnote (b) at the end of the Pepin sentence cites Grotius with book, chapter and section.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Call (b) at the end of the Pepin sentence leads to 'Voyez GROTIUS, Liv. III, chap. IV, §. XVIII, n. 1.'",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -806,7 +1119,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius is named in the sentence for the position he takes."
+   "reason": "Grotius is named in the sentence for the position he takes.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named in the sentence for the affirmative view Vattel disputes, with a note citing Liv. III ch. 10.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -818,7 +1136,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius is named in the sentence as founding the rules on consent."
+   "reason": "Grotius is named in the sentence as founding the rules on consent.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named as subject of the sentence for founding these rules on the peoples' consent; Vattel then disputes it.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -830,7 +1153,12 @@
    "cue": "GROTIUS",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius is named in the sentence as relating the rules to arbitrary law of nations."
+   "reason": "Grotius is named in the sentence as relating the rules to arbitrary law of nations.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The same sentence names Grotius for referring these rules to the arbitrary law of nations.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -842,7 +1170,12 @@
    "cue": "GROTIUS rapporte",
    "cuePart": "t",
    "confidence": 0.95,
-   "reason": "Grotius is named as reporting the Lierre example."
+   "reason": "Grotius is named as reporting the Lierre example.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'GROTIUS rapporte' introduces the Lierre example, and note (a) gives Grotius III.6.3 n. 7; De Thou is only Grotius's own authority.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -854,7 +1187,12 @@
    "cue": "Voyez GROTIUS , ibid. & dans le texte.",
    "cuePart": "n1",
    "confidence": 0.8,
-   "reason": "Footnote (b) called inside the passage refers to Grotius."
+   "reason": "Footnote (b) called inside the passage refers to Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b), called inside this sentence, sends the reader to Grotius at the same place, text and note.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -866,7 +1204,12 @@
    "cue": "GROTIUS , ibid.",
    "cuePart": "n2",
    "confidence": 0.8,
-   "reason": "Footnote (c) called inside the passage cites Grotius."
+   "reason": "Footnote (c) called inside the passage cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (c), called inside the clause on state ordinances, reads 'GROTIUS, ibid.', which is III.6.3 n. 7, where the ordinances are discussed.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -878,7 +1221,12 @@
    "cue": "GROTIUS propose la question ( a )",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Grotius named for the question, then disputed."
+   "reason": "Grotius named for the question, then disputed.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Grotius is named as posing the question (note a, III.9.6), which Vattel then sets aside.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -890,7 +1238,12 @@
    "cue": "suivant la remarque de GROTIUS (a)",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Grotius named in the same sentence for the phrase."
+   "reason": "Grotius named in the same sentence for the phrase.",
+   "review": {
+    "verdict": "correct",
+    "reason": "'suivant la remarque de GROTIUS' introduces the 'commerces de guerre' phrase; Virgil and Tacitus are the ancients Grotius himself cites.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-institutiones-1750",
@@ -902,7 +1255,12 @@
    "cue": "WOLF. Jus Gent. §. 982.",
    "cuePart": "n0",
    "confidence": 0.75,
-   "reason": "Footnote call inside the passage cites Wolf."
+   "reason": "Footnote call inside the passage cites Wolf.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) after 'Quelques auteurs célebres' names Wolff for the patrimonial/usufructuary distinction (Jus gentium § 982, the parallel of this Institutiones section).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -914,7 +1272,12 @@
    "cue": "cité par GROTIUS , Lib. II, cap. 20. §. 22.",
    "cuePart": "n0",
    "confidence": 0.85,
-   "reason": "Footnote at end of sentence cites Grotius for the anecdote."
+   "reason": "Footnote at end of sentence cites Grotius for the anecdote.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The note at the end of the sentence says the Appian anecdote is 'cité par GROTIUS'; 'Lib. II' is a misprint for III.20.22.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -926,7 +1289,12 @@
    "cue": "GROTIUS observe avec raison",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Grotius named in the introducing clause, with note (a)."
+   "reason": "Grotius named in the introducing clause, with note (a).",
+   "review": {
+    "verdict": "correct",
+    "reason": "'GROTIUS observe avec raison' introduces the presumption, with note (a) citing III.20.28; it is indirect speech, not set off as quoted words.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -938,7 +1306,12 @@
    "cue": "Mais le sentiment de GROTIUS me paroit évidemment fondé",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Quoted as Grotius's words (\"Ce grand homme dit, que\")."
+   "reason": "Quoted as Grotius's words (\"Ce grand homme dit, que\").",
+   "review": {
+    "verdict": "correct",
+    "reason": "The passage is in quotation marks as Grotius's words: 'Ce grand homme', who follows straight on from GROTIUS, 'dit', and note (b) cites III.19.14.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -947,10 +1320,15 @@
    "passage": "on ajoute cette clause expresse, qu'encore, qu'on„ vienne à enfreindre quelqu'un des articles du traité , les au- „ tres ne laisseront pas de subsister dans toute leur force",
    "source": "on ajoûte cette clause expresse, qu'encore qu'on vienne à enfraindre quelcun des articles du Traité, les autres ne laisseront pas de subsister dans toute leur force",
    "form": "quotation",
-   "cue": "Et il ajoute avec raison",
+   "cue": "Mais le sentiment de GROTIUS me paroit évidemment fondé",
    "cuePart": "t",
    "confidence": 0.85,
-   "reason": "Quoted as Grotius's words, 'il' being Grotius."
+   "reason": "Quoted as Grotius's words, 'il' being Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The quotation continues with 'il ajoute', where 'il' is Grotius, named two sentences earlier; the pronoun cue alone does not name him.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-institutiones-1750",
@@ -962,7 +1340,12 @@
    "cue": "Vide WOLF. Jus Gent. §§. 1022. 1023.",
    "cuePart": "n0",
    "confidence": 0.7,
-   "reason": "Note at the call after 'Quelques-uns' names Wolf; a work other than the Institutiones."
+   "reason": "Note at the call after 'Quelques-uns' names Wolf; a work other than the Institutiones.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) after 'Quelques-uns' names Wolff for the connexi/diversi distinction; it cites the Jus gentium parallel, but the author is the same.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -974,7 +1357,12 @@
    "cue": "Vide WOLF. Jus Gent. §§. 1022. 1023.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Note at the call after 'Quelques-uns' names Wolf's Jus gentium."
+   "reason": "Note at the call after 'Quelques-uns' names Wolf's Jus gentium.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) after 'Quelques-uns' cites exactly 'WOLF. Jus Gent. §§. 1022. 1023.' for the distinction Vattel rejects.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wicquefort-ambassadeur-1724",
@@ -986,7 +1374,12 @@
    "cue": "WICQUEFORT, ubi suprà.",
    "cuePart": "n0",
    "confidence": 0.8,
-   "reason": "Call (a) at end of the sentence leads to note naming Wicquefort."
+   "reason": "Call (a) at end of the sentence leads to note naming Wicquefort.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The (a) call at the end of the Rhinberg sentence leads to a Wicquefort note; the two (a) calls fall on different pages, and the page's other note ('Idem, ibid.', misplaced into IV.92) also means Wicquefort.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wicquefort-ambassadeur-1724",
@@ -998,7 +1391,12 @@
    "cue": "WICQUEFORT, ubi suprà.",
    "cuePart": "n0",
    "confidence": 0.75,
-   "reason": "Call (a) at end of the sentence leads to note naming Wicquefort."
+   "reason": "Call (a) at end of the sentence leads to note naming Wicquefort.",
+   "review": {
+    "verdict": "correct",
+    "reason": "The (a) call at the end of the Spire sentence leads to the note 'WICQUEFORT, ubi suprà.' (Liv. I sect. III, cited in §88).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wolff-jus-gentium-1749",
@@ -1010,19 +1408,12 @@
    "cue": "Vide WOLF. Jus Gent. §. 1059.",
    "cuePart": "n1",
    "confidence": 0.9,
-   "reason": "Note call inside passage names Wolff."
-  },
-  {
-   "text": "wicquefort-ambassadeur-1724",
-   "unit": "IV.93",
-   "page": "WIC24.p1256",
-   "passage": "C'est sur ce pied là que HENRI IV disoit à l'ambassadeur d'Espagne, qu'il est permis à l'ambassadeur d'employer la corruption , pour découvrir les intrigues qui se font contre le service de son maître ( a ) ; ajoutant que les affaires de Marseille, de Metz , et plusieurs autres, faisoient assez voir qu'il avoit raison de tâcher de pénétrer les desseins qu'on formoit à Bruxelles, contre le repos de son royaume",
-   "source": "le Roy répondit , que cela ejioit permis à li^mbajfadeur ^ afin de découvrir par làlesintri- gués qui si sont contre le service de son Maiftre , et que l'as- faire de Marseille , deMetz et pi usjeurs autres, faisoient voir , qu'il avoit raison de tafcher de pénétrer les deflèins, qu'on formoit à Bruxelles contre le repos de son Roiaume",
-   "form": "reference",
-   "cue": "WICQUEFORT",
-   "cuePart": "n0",
-   "confidence": 0.65,
-   "reason": "Footnote call inside the passage; note names Wicquefort for this anecdote."
+   "reason": "Note call inside passage names Wolff.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b), called inside the passage, sends the reader to Wolff's Jus gentium (§ 1059, the paragraph Wolff himself refers back to for this claim).",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "wicquefort-ambassadeur-1724",
@@ -1034,7 +1425,12 @@
    "cue": "WICQUEFORT",
    "cuePart": "t",
    "confidence": 0.9,
-   "reason": "Wicquefort named in the sentence with a footnote call."
+   "reason": "Wicquefort named in the sentence with a footnote call.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Wicquefort is named in the sentence itself, with a note to his Ambassadeur, for the examples of sovereigns who only expelled guilty ambassadors.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "grotius-barbeyrac-1724",
@@ -1042,11 +1438,16 @@
    "page": "GRO24T2.p30",
    "passage": "de semblable à ce que les Carthaginois ont fait aux nôtres",
    "source": "de semblable à ce que les Carthaginois ont fait aux nôtres",
-   "form": "quotation",
+   "form": "reference",
    "cue": "APPIEN , cité par GROTIUS , Liv. II , chap. 28. §. 7.",
    "cuePart": "n1",
    "confidence": 0.55,
-   "reason": "Reply given in direct speech ('dit-il'), note after the sentence cites Grotius."
+   "reason": "Reply given in direct speech ('dit-il'), note after the sentence cites Grotius.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (a) at the end of the sentence cites Appian 'cité par GROTIUS, Liv. II, chap. 28 [=18]. §. 7', so Grotius is named as where the words are found, but they are given as Scipio's, not Grotius's.",
+    "date": "2026-11-13"
+   }
   },
   {
    "text": "bynkershoek-juge-competent-1723",
@@ -1054,23 +1455,16 @@
    "page": "BYN23.p1697",
    "passage": "qu'aucun sujet de l'état n'est reçu comme ambassadeur ou \" ministre d'une autre puissance , qu'à condition qu'il ne \" dépouillera point sa qualité de sujet , même à l'égard de la \" jurisdiction , tant pour les affaires civiles que pour les \" criminelles",
    "source": "Qu'au- cun Sujet de l'Etat n'est reçu comme Ambas» fadeur ou Miniftre d'une autre Puiftance , qu'à condition qu'il ne dépouillera point fa qualité de Sujet, même à l'égard de la Jurifdiftion , tant pour les affaires civiles, que pour les criminelles",
-   "form": "quotation",
+   "form": "reference",
    "cue": "BYNKERSHOEK , ubi supra , chap. 11 à la fin.",
    "cuePart": "n1",
    "confidence": 0.85,
-   "reason": "Quoted ordinance ends with call (b) citing Bynkershoek."
-  },
-  {
-   "text": "wicquefort-ambassadeur-1724",
-   "unit": "IV.124",
-   "page": "WIC24.p964",
-   "passage": "M. DE BEAUMONT, ambassadeur ordinaire de France, obtint du roi d'Angleterre la grace du jeune homme",
-   "source": "le Comte de Beaumont-Harlay , Ambafladeur ordinairede France",
-   "form": "reference",
-   "cue": "WICQUEFORT, Liv. I, Sect. XXVII.",
-   "cuePart": "n0",
-   "confidence": 0.55,
-   "reason": "Footnote call at the end of the sentence cites Wicquefort for the Rosny story."
+   "reason": "Quoted ordinance ends with call (b) citing Bynkershoek.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Note (b) closing the quoted ordinance cites Bynkershoek ch. 11; the words are given as the States General's ordinance, with Bynkershoek named as where it is found.",
+    "date": "2026-11-13"
+   }
   }
  ]
 }
