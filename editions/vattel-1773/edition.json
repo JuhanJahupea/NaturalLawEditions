@@ -1,8 +1,8 @@
 {
   "format": "nle-edition/1",
   "id": "vattel-1773",
-  "version": "1.9",
-  "changed": "2026-11-12",
+  "version": "1.10",
+  "changed": "2026-11-13",
   "author": "Emer de Vattel",
   "title": "Le droit des gens, ou principes de la loi naturelle, appliqués à la conduite et aux affaires des nations et des souverains",
   "short": "Le droit des gens · 1773",
@@ -25,6 +25,7 @@
   },
   "transcription": "Vision transcription of the page images, one diplomatic file per scan; reading text with long s resolved and line-end hyphens joined. Paragraph breaks inside a § checked against the scans (provenance/para_final.json).",
   "text": "text.json",
+  "titlePage": "titlepage.json",
   "aliases": {
     "Preface": "Pref.1",
     "Pref.25": "Pref.21",

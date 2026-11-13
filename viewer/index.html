@@ -55,7 +55,12 @@ body.resizing{user-select:none;cursor:col-resize}
 .srcpop .n{text-align:right;color:var(--mut);font-variant-numeric:tabular-nums}
 .srcpop .only{border:0;background:none;color:var(--accent);cursor:pointer;font:12px var(--ui);padding:0}
 .srcpop .spn{color:var(--mut);font-size:12px;margin:8px 0 0}
-.lays{display:contents}
+.laypop{width:min(340px,calc(100vw - 32px))}
+.laypop .lg{padding:6px 0;border-top:1px solid var(--soft)}.laypop .lg:first-child{border-top:0;padding-top:0}
+.laypop .tg{color:var(--fg);white-space:normal}.laypop .lsub{display:flex;flex-direction:column;gap:4px;margin:6px 0 2px 22px}
+.laypop .lsub .tg{color:var(--mut)}.laypop .lsub.dis{opacity:.45}.laypop .ld{margin:2px 0 0 22px;color:var(--mut);font-size:12px;line-height:1.4}
+.dv[hidden]{display:none}
+@media (max-width:760px){.srcw{position:static}.srcpop,.laypop{left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));top:100%;width:auto}}
 .bar input[type=search]{width:min(260px,100%);padding:5px 9px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg)}
 .tg{display:flex;align-items:center;gap:5px;color:var(--mut);white-space:nowrap;cursor:pointer}
 .btn{border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:4px;padding:3px 9px;cursor:pointer;font:13px var(--ui)}
@@ -74,6 +79,16 @@ body.resizing{user-select:none;cursor:col-resize}
 .page{max-width:68ch;margin:0 auto}
 .chead{font:13px var(--ui);color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
 .ctitle{font:28px/1.25 var(--display);margin:4px 0 22px;text-wrap:balance}
+.tp{margin:0 0 34px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.tpg{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:20px;align-items:start;margin-top:10px}
+.tpt{container-type:inline-size;text-align:center;font-family:var(--text);line-height:1.4;min-width:0}
+.tpt .tl{margin:1px 0;font-size:clamp(11px,4.1cqi,18px);white-space:nowrap}.tpt .xl{font:clamp(18px,8.4cqi,34px)/1.2 var(--display);letter-spacing:.08em}
+.tpt .deco{font-style:italic;font-size:clamp(13px,5.4cqi,22px);letter-spacing:.12em}.tpt .caps{letter-spacing:.14em}.tpt .s{font-size:clamp(10px,3cqi,13px);letter-spacing:.2em}
+.tpt .it{font-style:italic;font-size:clamp(10px,3.15cqi,14px);white-space:normal}.tpt .it .rm{font-style:normal}
+.tpt .device{font:12px/1.4 var(--ui);color:var(--mut);margin:12px 0;white-space:normal}.tpr{border:0;border-top:3px double var(--mut);width:60%;margin:8px auto}
+.tpi{margin:0}.tpi img{width:100%;height:auto;border:1px solid var(--line);display:block}.tpi figcaption{font:12px var(--ui);color:var(--mut);margin-top:4px}
+.rail a.tpl{font-style:italic;color:var(--mut)}
+@media (max-width:760px){.tpg{grid-template-columns:1fr}}
 .sec{margin:0 0 26px;scroll-margin-top:70px}
 .sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;font:13px var(--ui);color:var(--mut);margin-bottom:4px}
 .sh .no{font:600 15px var(--ui);color:var(--fg)}
@@ -201,12 +216,13 @@ body.listing .page{max-width:min(1100px,100%)}
     <button class="btn only-phone" id="filtBtn" aria-controls="filt">Filters</button>
     <div class="filt" id="filt" data-open="false">
     <div class="srcw" id="srcW">
-      <button class="btn srcbtn" id="srcBtn" aria-expanded="false" aria-controls="srcPop">Sources <span class="sdots" id="srcDots"></span><span class="srcn" id="srcN"></span></button>
+      <button class="btn srcbtn" id="srcBtn" aria-expanded="false" aria-controls="srcPop" title="Which authors the reuse rows and divergence notes show">Authors <span class="sdots" id="srcDots"></span><span class="srcn" id="srcN"></span></button>
       <div class="srcpop" id="srcPop" hidden></div>
     </div>
-    <label class="tg" id="lPos"><input type="checkbox" id="tPos"> <span class="dash">Possible matches</span></label>
-    <label class="tg" id="lAtt" title="Rows where the author names the source for the passage: attributed quotations and paraphrases, and citations. Untick to see only unattributed reuse."><input type="checkbox" id="tAtt" checked> <span class="dotu">Attributed</span></label>
-    <span id="lays" class="lays"></span>
+    <div class="srcw" id="layW">
+      <button class="btn srcbtn" id="layBtn" aria-expanded="false" aria-controls="layPop" title="Which layers the text shows">Layers <span class="srcn" id="layN"></span></button>
+      <div class="srcpop laypop" id="layPop" hidden></div>
+    </div>
     </div>
     <button class="btn only-narrow" id="panelBtn" aria-controls="panel">Panel</button>
   </div>

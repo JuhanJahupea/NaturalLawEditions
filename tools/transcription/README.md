@@ -63,4 +63,6 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `en_extract.py <pdf> <out>`: Nugent's translation from the Liberty Fund PDF, by section, with Burlamaqui's notes; the editor's notes and their calls are left out.
 - `en_align.py <units_en> <plain_fr> <text.json> <out>`: sentence alignment with the 1747 French, chapter by chapter (Gale–Church lengths; Nugent's § numbers as anchors). Writes `layers/english.json`. `plain_fr` is each unit's plain text as the viewer builds it (`plain_fr.js <out>`).
 
+- `en_flags.py batches <layer> <plain_fr> <dir>` and `en_flags.py merge <layer> <dir>`: the translation check. Agent prompt `TRANSLATE_CHECK_PROMPT_BURLAMAQUI.md`, 28 units per agent: mistranslation, shift, omission, addition, terminology and false friends that matter to an intellectual historian. The merge keeps the flags whose phrases stand in their pair.
+
 The converters then rebuild the editions from their working `data.json` and the pass files (`tools/convert_*.py`, `tools/nle.py`); `tools/check_all.sh` checks both.

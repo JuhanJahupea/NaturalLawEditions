@@ -5,7 +5,7 @@ const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const fill=(t,o)=>String(t??'').replace(/\{(\w+)\}/g,(m,k)=>o[k]??'');
 const QS=new URLSearchParams(location.search);
 let VIEW=QS.get('view')==='list'?'list':'text',LTAB='out',LCH=QS.get('ch')||'';
-let CAT=null,ED='',BASE='',M=null,V={},RU={},DIVS={},TITLES={},FAMS=[],FAMI={},FN={},st={};
+let TP=null,CAT=null,ED='',BASE='',M=null,V={},RU={},DIVS={},TITLES={},FAMS=[],FAMI={},FN={},st={};
 const LAYS=[],LAY={},MAN={};
 const SEC=[],ROWS=[],byId={},rowsBySec={},CH=[],chOf={},IN={},INROWS=[];
 function save(){try{localStorage.setItem('nle:'+ED,JSON.stringify({src:st.src,pos:st.pos,att:st.att,layers:st.layers,widths:st.widths,fams:st.fams,chap:st.chap,sel:st.sel}))}catch(e){}}
@@ -31,6 +31,7 @@ async function load(){
  let k=1;const T=got[0],data={};files.forEach(l=>data[l.id]=got[k++]);const outT=out.map(()=>got[k++]),incT=inc.map(()=>got[k++]);linked.forEach(id=>MAN[id]=prepMan(got[k++]));
  // ?asbuilt=1: the tables as the working edition built them, with the rows a later pass replaced (for tools/check_edition.js)
  if(QS.get('asbuilt'))for(let i=0;i<outT.length;i++)if(outT[i].pass)outT[i]=await getJSON(BASE+'provenance/superseded/'+ED+'__'+outT[i].to+'.json').catch(()=>({to:outT[i].to,rows:[]}));
+ if(M.titlePage)TP=await getJSON(BASE+M.titlePage).catch(()=>null);
  build(T,data,outT,incT);return true}
 const pageLink=p=>{const vol=(V.volumes||{})[p.vol]||{};return V.pageLink?fill(V.pageLink.url,Object.assign({},vol,p)):''};
 function famColors(fams){const L=fams.map(f=>`--f${f.key}:${f.color}`).join(';'),D=fams.map(f=>`--f${f.key}:${f.dark||f.color}`).join(';');
@@ -94,6 +95,9 @@ const unitKey=(man,id)=>{const p=id.split('.'),d=man.divisions.findIndex(x=>x.ke
 const cmpKey=(a,b)=>{for(let i=0;i<Math.max(a.length,b.length);i++){const x=a[i]??-1,y=b[i]??-1;if(x!==y)return x<y?-1:1}return 0};
 // rows the filters let through: confident matches (possible matches and commonplaces with the box), attributed rows unless switched off
 const isAtt=r=>!!r.attr||r.label==='citation';
+// a divergence note's family: its own, or the layer's
+const dvFam=d=>d.fam||((LAY.comments||{}).family)||'';
+const visDiv=d=>layerOn('comments')&&(!dvFam(d)||!!st.fams[dvFam(d)]);
 const shown=r=>((r.status==='match'&&r.label!=='commonplace')||st.pos)&&(st.att||!isAtt(r));
 const visIn=r=>st.src&&shown(r);
 const ctitle=c=>{const d=DIVS[c.book]||{};return d.chapters?(TITLES[c.key]||''):(d.chapterTitle||'')};
@@ -105,10 +109,15 @@ function edMenu(){const s=$('edSel');s.innerHTML=CAT.editions.map(e=>`<option va
  $('brand').textContent=CAT.title||'Natural Law Editions';
  s.onchange=()=>{if(!s.value)return;const q=new URLSearchParams(location.search);q.set('ed',s.value);location.href='?'+q.toString()+location.hash}}
 // rail
-function rail(){let h='',last='';CH.forEach(c=>{if(c.book!==last){h+=`<h3>${esc(DIVS[c.book].label)}</h3>`;last=c.book}
+// title pages (titlepage.json): one per volume, shown before the unit it precedes
+const tpBefore=id=>((TP&&TP.pages)||[]).find(p=>p.before===id);
+const tpLabel=p=>'Title page'+(((TP&&TP.pages)||[]).length>1?', '+((V.volumes||{})[p.vol]||{label:p.vol}).label.replace(/^/,'t. '):'');
+function tpHTML(p){const L=p.lines.map(([t,c])=>c==='rule'?'<hr class="tpr">':`<div class="tl ${c}">${esc(t).replace(/&lt;r&gt;(.*?)&lt;\/r&gt;/g,'<span class="rm">$1</span>')}</div>`).join('');
+ return `<section class="tp" id="title-${esc(p.vol)}"><div class="chead">${esc(tpLabel(p))}</div><div class="tpg"><div class="tpt">${L}</div><figure class="tpi"><a href="${esc(p.source[1])}" title="Open the scan at the library"><img src="${esc(BASE+p.image)}" alt="${esc(tpLabel(p))}: scan" loading="lazy"></a><figcaption><a href="${esc(p.source[1])}">${esc(p.source[0])}</a></figcaption></figure></div></section>`}
+function rail(){let h='',last='';CH.forEach(c=>{const tp=tpBefore(c.secs[0].id);if(c.book!==last){if(tp)h+=`<a class="tpl" href="#title-${esc(tp.vol)}">${esc(tpLabel(tp))}</a>`;h+=`<h3>${esc(DIVS[c.book].label)}</h3>`;last=c.book}else if(tp)h+=`<a class="tpl" href="#title-${esc(tp.vol)}">${esc(tpLabel(tp))}</a>`
  const t=ctitle(c);h+=`<a href="#${c.secs[0].id}" data-ch="${c.key}" data-t="${esc(t)}"><span class="n">${DIVS[c.book].chapters?'ch. '+c.chap:''}</span><span>${esc(t)}</span><span class="meter"><b></b></span></a>`});$('rail').innerHTML=h;meters()}
-const secOn=s=>(rowsBySec[s.id]||[]).some(visRow)||(layerOn('comments')&&(s.div||[]).length>0)||(layerOn('variants')&&(s.vars||[]).length>0);
-function meters(){const parts=['sources'].filter(()=>st.src).concat(['comments','variants'].filter(layerOn).map(k=>LAY[k].label));
+const secOn=s=>(rowsBySec[s.id]||[]).some(visRow)||(s.div||[]).some(visDiv)||(layerOn('variants')&&(s.vars||[]).length>0);
+function meters(){const parts=['reuse'].filter(()=>st.src).concat(['comments','variants'].filter(layerOn).map(k=>LAY[k].label));
  document.querySelectorAll('.rail a[data-t]').forEach(a=>{const c=CH.find(x=>x.key===a.dataset.ch);const n=c.secs.length,m=c.secs.filter(secOn).length;a.querySelector('.meter b').style.width=Math.round(100*m/n)+'%';a.title=`${a.dataset.t} · ${m} of ${n} ${V.unitsWord||'units'} with ${parts.join(', ')||'nothing'} shown by the current filters`})}
 // render chapter
 function cite(s){const d=DIVS[s.book]||{},pg=s.pages[0];
@@ -120,7 +129,7 @@ function secHTML(s){const vars=s.vars||[];const unplaced=vars.filter(v=>!v.place
  const inc=IN[s.id]?[...new Set(IN[s.id].filter(visIn).map(r=>r.from+'#'+r.sec))]:[];
  const ri=inc.length?`<span class="rin">reused in ${inc.map(x=>{const [e,u]=x.split('#');return xref(e,u)}).join(', ')}</span>`:'';
  const notes=s.notes.length?`<div class="notes">${s.notes.map(n=>`<div class="note${n.added?' added':''}"><span class="mk">${esc(n.mark)}</span>${n.html}</div>`).join('')}</div>`:'';
- const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}"${d.fam?` style="--cmt:var(--f${d.fam})"`:''}><summary><span class="wm">${esc(LC.chip)} ${esc(d.src)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
+ const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}" data-fam="${esc(dvFam(d))}"${d.fam?` style="--cmt:var(--f${d.fam})"`:''}><summary><span class="wm">${esc(LC.chip)} ${esc(d.src)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
  const del=unplaced.map(v=>`<div class="del"><b style="font:12px var(--ui)">${esc(v.type)}</b> · ${esc(v.content)}${v.otherPassage?`<br>${esc(LV.otherTag)}: <i>${esc(v.otherPassage)}</i>`:''}${v.otherLink?` · <a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div>`).join('');
  return `<section class="sec" id="${s.id}"><div class="sh">${s.para?`<span class="no">${esc((DIVS[s.book]||{}).unitMark||'')} ${s.para}</span>`:''}${s.unnum?`<span class="unn" title="${esc(V.unnumberedTitle)}">${esc(V.unnumberedLabel)}</span>`:''}${(s.div||[]).length?`<button class="dvc" data-dv="${s.id}" title="${esc(LC.chipTitle)}: ${s.div.length}">${esc(LC.chip)} ${s.div.length}</button>`:''}<button class="dots" data-s="${s.id}" aria-label="Show sources for ${lbl(s.id)}">${famDots(s)}</button>
  <span class="tools">${s.en?`<button data-en="${s.id}">${esc(LAY.translation.label)}</button>`:''}<button data-copy="${s.id}">Copy citation</button><button data-link="${s.id}">Link</button></span>${s.margin?`<span class="marg">${esc(s.margin)}</span>`:''}</div>
@@ -130,12 +139,15 @@ function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[0];st.cha
  document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',a.dataset.ch===c.key));
  const d=DIVS[c.book]||{};const t=d.pageTitle||ctitle(c);
  const nr=c.secs.reduce((a,s)=>a+(rowsBySec[s.id]||[]).filter(visRow).length,0);
- const h=`<div class="chead">${esc(d.label)}${d.chapters?' · '+esc(V.chapterWord)+' '+c.chap:''}</div><h1 class="ctitle">${esc(t)}</h1>${nr?`<p class="lsub"><a href="?ed=${encodeURIComponent(ED)}&view=list&ch=${encodeURIComponent(c.key)}" data-chlist="${esc(c.key)}">${nr} reuse rows in this chapter, as a list</a></p>`:''}`+c.secs.map(secHTML).join('');
- $('page').innerHTML=h;layerClasses();applyFilters();
+ const h=`<div class="chead">${esc(d.label)}${d.chapters?' · '+esc(V.chapterWord)+' '+c.chap:''}</div><h1 class="ctitle">${esc(t)}</h1>${nr?`<p class="lsub"><a href="?ed=${encodeURIComponent(ED)}&view=list&ch=${encodeURIComponent(c.key)}" data-chlist="${esc(c.key)}">${nr} reuse rows in this chapter, as a list</a></p>`:''}`+c.secs.map((s,i)=>{const tp=i?tpBefore(s.id):null;return (tp?tpHTML(tp):'')+secHTML(s)}).join('');
+ const tp0=tpBefore(c.secs[0].id);
+ $('page').innerHTML=(tp0?tpHTML(tp0):'')+h;layerClasses();applyFilters();
  if(target){const el=$(target);if(el){el.scrollIntoView({block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1300);if(!keep)select(target)}}else $('read').scrollTop=0;
  if(innerWidth<=760)$('rail').dataset.open='false'}
 function applyFilters(){if(VIEW==='list')listView();document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('off',!ids.length);u.classList.toggle('multi',new Set(ids.map(i=>ROWS[i].fam)).size>1);u.classList.toggle('poss',ids.length>0&&ids.every(i=>ROWS[i].status!=='match'||ROWS[i].label==='commonplace'));u.classList.toggle('att',ids.length>0&&ids.every(i=>isAtt(ROWS[i])));if(ids.length)u.style.setProperty('--c',`var(--f${ROWS[ids[0]].fam})`)});
- document.querySelectorAll('#page .dots').forEach(b=>b.innerHTML=famDots(byId[b.dataset.s]));meters()}
+ document.querySelectorAll('#page .dots').forEach(b=>b.innerHTML=famDots(byId[b.dataset.s]));
+ document.querySelectorAll('#page details.dv').forEach(x=>{x.hidden=!!x.dataset.fam&&!st.fams[x.dataset.fam]});
+ document.querySelectorAll('#page .dvc').forEach(b=>{const n=(byId[b.dataset.dv].div||[]).filter(d=>!dvFam(d)||st.fams[dvFam(d)]).length;b.hidden=!n;b.textContent=`${(LAY.comments||{}).chip||''} ${n}`});meters()}
 // panel
 function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{})[w]??w;
  const loc=ew.locus&&!(C.hideLocusFor||[]).includes(w)&&(!C.locusNeedsLatin||ew.latin);
@@ -238,7 +250,9 @@ function doSearch(q){q=q.trim();if(!q){return}lastQ=q;
  panel(`<h2>Search</h2><div class="sub">${res.length} sections contain “${esc(q)}”${res.length>300?' (first 300 shown)':''}</div><div class="res">${res.slice(0,300).map(([s,t])=>`<a href="#${s.id}" data-hit="${s.id}"><b>${lbl(s.id)}</b>${esc(t).replace(new RegExp(esc(q).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig'),x=>`<mark>${x}</mark>`)}</a>`).join('')}</div>`);
  $('panel').dataset.open='true'}
 function resolve(id){if(!byId[id]&&M.aliases&&M.aliases[id])id=M.aliases[id];if(!byId[id]){const k=CH.find(x=>x.key===id);if(k)id=k.secs[0].id}return chOf[id]?id:null}
-function go(id,keep){id=resolve(id);if(!id)return;if(VIEW==='list'){VIEW='text';viewChrome()}const c=chOf[id];if(st.chap===c.key&&$(id)){$(id).scrollIntoView({block:'start'});$(id).classList.add('flash');setTimeout(()=>$(id).classList.remove('flash'),1300);if(!keep)select(id)}else show(c.key,id,keep);if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}
+function go(id,keep){const tp=/^title-/.test(id)&&((TP&&TP.pages)||[]).find(p=>'title-'+p.vol===id);
+ if(tp){if(VIEW==='list'){VIEW='text';viewChrome()}const c=chOf[tp.before];if(!c)return;if(st.chap!==c.key||!$(id))show(c.key);const el=$(id);if(el)el.scrollIntoView({block:'start'});if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id);return}
+ id=resolve(id);if(!id)return;if(VIEW==='list'){VIEW='text';viewChrome()}const c=chOf[id];if(st.chap===c.key&&$(id)){$(id).scrollIntoView({block:'start'});$(id).classList.add('flash');setTimeout(()=>$(id).classList.remove('flash'),1300);if(!keep)select(id)}else show(c.key,id,keep);if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}
 function hitRanges(root,q){const ranges=[];if(!root||!q)return ranges;const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.old,.pb,.mk')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});const nodes=[];let txt='',n;while(n=w.nextNode()){nodes.push([n,txt.length]);txt+=n.data}
  const low=txt.toLowerCase(),ql=q.toLowerCase();let i=low.indexOf(ql);
  const at=pos=>{let k=nodes.length-1;while(k>0&&nodes[k][1]>pos)k--;return [nodes[k][0],pos-nodes[k][1]]};
@@ -262,46 +276,56 @@ document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('pa
  const ea=e.target.closest('[data-enall]');if(ea){showEN(ea.dataset.enall,null);return}
  const em=e.target.closest('[data-enmode]');if(em){enMode=em.dataset.enmode;try{localStorage.setItem('nleEnMode',enMode)}catch(x){}if(enState)showEN(enState.sid,enState.idx);return}
  const d=e.target.closest('.dots');if(d){select(d.dataset.s);if(innerWidth<=1100)$('panel').dataset.open='true';return}
- const dv=e.target.closest('[data-dv]');if(dv){if(!layerOn('comments')){setLayer(LAY.comments,true)}document.querySelectorAll(`#${CSS.escape(dv.dataset.dv)} details.dv`).forEach((x,i)=>{x.open=true;if(!i)x.scrollIntoView({block:'nearest'})});return}
+ const dv=e.target.closest('[data-dv]');if(dv){if(!layerOn('comments')){setLayer(LAY.comments,true)}document.querySelectorAll(`#${CSS.escape(dv.dataset.dv)} details.dv:not([hidden])`).forEach((x,i)=>{x.open=true;if(!i)x.scrollIntoView({block:'nearest'})});return}
  const c=e.target.closest('[data-copy]');if(c){copy(cite(byId[c.dataset.copy]));return}
  const l=e.target.closest('[data-link]');if(l){copy(location.href.split('#')[0]+'#'+l.dataset.link);return}
  const hit=e.target.closest('[data-hit]');if(hit){e.preventDefault();document.querySelectorAll('.res a.on').forEach(x=>x.classList.remove('on'));hit.classList.add('on');go(hit.dataset.hit,true);markHits(hit.dataset.hit,lastQ);return}
  const a=e.target.closest('a[href^="#"]');if(a){e.preventDefault();go(a.getAttribute('href').slice(1));return}
  const sec=e.target.closest('.sec');if(sec&&!e.target.closest('a')){if(getSelection().toString().trim())return;if(window.CSS&&CSS.highlights)CSS.highlights.delete('shl');select(sec.id)}});
 $('q').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch(e.target.value)});
-// filters: Sources and Possible matches, one checkbox per layer, one button per source family
+// filters: the Authors menu (source families; applies to reuse rows and divergence notes) and the Layers menu
+// (reuse with its options, divergences, variants)
+function redraw(){save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop();layPop()}
 function setLayer(l,on){if(l.kind==='reuse'){setFams({[l.family]:on});return}
- st.layers[l.id]=on;layerClasses();meters();if(l.kind==='translation'&&!on)$('enPop').hidden=true;
- const cb=document.querySelector(`#lays input[data-l="${CSS.escape(l.id)}"]`);if(cb)cb.checked=on;save()}
+ st.layers[l.id]=on;layerClasses();applyFilters();if(l.kind==='translation'&&!on)$('enPop').hidden=true;save();srcPop();layPop()}
 // families: switch some on or off, then redraw everything that shows them
-function setFams(ch){Object.assign(st.fams,ch);save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop();
- LAYS.filter(l=>l.kind==='reuse').forEach(l=>{const cb=document.querySelector(`#lays input[data-l="${CSS.escape(l.id)}"]`);if(cb)cb.checked=!!st.fams[l.family]})}
-// the Sources menu: one line per family with its colour, the rows it has under the current settings, a bar, and "only"
-function srcPop(){const n={};ROWS.forEach(r=>{if(r&&shown(r))n[r.fam]=(n[r.fam]||0)+1});
+function setFams(ch){Object.assign(st.fams,ch);redraw()}
+// the Authors menu: one line per family with its colour, what it shows under the current layers, a bar, and "only"
+function srcPop(){const n={};ROWS.forEach(r=>{if(r&&st.src&&shown(r))n[r.fam]=(n[r.fam]||0)+1});
+ if(layerOn('comments'))SEC.forEach(s=>(s.div||[]).forEach(d=>{const f=dvFam(d);if(f)n[f]=(n[f]||0)+1}));
  const fs=FAMS.map(([k,l])=>({k,l,n:n[k]||0})).sort((a,b)=>b.n-a.n),max=Math.max(1,...fs.map(f=>f.n)),on=fs.filter(f=>st.fams[f.k]);
  $('srcDots').innerHTML=on.slice(0,12).map(f=>`<i style="--c:var(--f${f.k})"></i>`).join('');$('srcN').textContent=`${on.length}/${fs.length}`;
- $('srcBtn').classList.toggle('dim',!st.src);
- $('srcPop').innerHTML=`<div class="sph"><label class="tg"><input type="checkbox" id="tSrc"${st.src?' checked':''}> Show sources in the text</label><span class="spa"><button class="btn" data-fa="all">All</button><button class="btn" data-fa="none">None</button></span></div>
+ const what=[st.src?'reuse rows'+(st.pos?' (possible matches included)':'')+(st.att?'':' (attributed rows left out)'):'',layerOn('comments')?'divergence notes':''].filter(Boolean);
+ $('srcPop').innerHTML=`<div class="sph"><b>Authors</b><span class="spa"><button class="btn" data-fa="all">All</button><button class="btn" data-fa="none">None</button></span></div>
  <ul>${fs.map(f=>`<li class="${st.fams[f.k]?'':'off'}" style="--c:var(--f${f.k})"><label title="${esc(f.l)}"><input type="checkbox" data-f="${f.k}"${st.fams[f.k]?' checked':''}><i></i><span>${esc(f.l)}</span></label><span class="mb"><b style="width:${Math.round(100*f.n/max)}%"></b></span><span class="n">${f.n}</span><button class="only" data-only="${f.k}">only</button></li>`).join('')}</ul>
- <p class="spn">Rows per source${st.pos?', possible matches included':', confident matches'}${st.att?'':', attributed rows left out'}.</p>`}
-function filters(){const hasRows=ROWS.length>0;$('srcW').hidden=$('lPos').hidden=$('lAtt').hidden=!hasRows;
- $('tPos').checked=st.pos;$('tAtt').checked=st.att!==false;
- $('tAtt').onchange=e=>{st.att=e.target.checked;save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop()};
- $('tPos').onchange=e=>{st.pos=e.target.checked;save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop()};
- $('lays').innerHTML=LAYS.filter(l=>l.toggle!==false).map(l=>`<label class="tg" title="${esc(l.tooltip||'')}"><input type="checkbox" data-l="${esc(l.id)}"${(l.kind==='reuse'?st.fams[l.family]:st.layers[l.id])?' checked':''}> ${esc(l.label)}</label>`).join('');
- $('lays').onchange=e=>{const l=LAYS.find(x=>x.id===e.target.dataset.l);if(l)setLayer(l,e.target.checked)};
+ <p class="spn">${what.length?'Counts: '+what.join(' and ')+'. The Layers menu sets which.':'No layer that shows sources is on. Turn on Reuse or Divergences in the Layers menu.'}</p>`}
+// the Layers menu: Reuse (with possible matches, attributed rows and the edition's reuse layers), then every other layer
+function layPop(){const RL=LAYS.filter(l=>l.kind==='reuse'&&l.toggle!==false),OL=LAYS.filter(l=>l.kind!=='reuse'&&l.toggle!==false&&l.kind!=='translation'),hasRows=ROWS.length>0;
+ const cb=(attrs,on,label,tip,cls)=>`<label class="tg${cls?' '+cls:''}"${tip?` title="${esc(tip)}"`:''}><input type="checkbox" ${attrs}${on?' checked':''}> ${label}</label>`;
+ const sub=[cb('id="tPos"',st.pos,'<span class="dash">Possible matches</span>','Rows the judge rated below 0.5, and commonplaces'),
+  cb('id="tAtt"',st.att!==false,'<span class="dotu">Attributed</span>','Rows where the author names the source for the passage: attributed quotations and paraphrases, and citations. Untick to see only unattributed reuse.'),
+  ...RL.map(l=>cb(`data-l="${esc(l.id)}"`,st.fams[l.family],esc(l.label),l.tooltip))].join('');
+ $('layPop').innerHTML=(hasRows?`<div class="lg">${cb('id="tSrc"',st.src,'<b>Reuse</b>','Underline the passages a source reuses, and list the rows in the panel')}<div class="lsub${st.src?'':' dis'}">${sub}</div></div>`:'')+
+  OL.map(l=>`<div class="lg">${cb(`data-l="${esc(l.id)}"`,!!st.layers[l.id],`<b>${esc(l.label)}</b>`,l.tooltip)}${l.tooltip?`<p class="ld">${esc(l.tooltip)}</p>`:''}</div>`).join('');
+ const act=(hasRows&&st.src?1:0)+OL.filter(l=>st.layers[l.id]).length,tot=(hasRows?1:0)+OL.length;$('layN').textContent=`${act}/${tot}`}
+function filters(){const hasRows=ROWS.length>0;$('srcW').hidden=!hasRows&&!LAY.comments;
  const LV=LAY.variants;if(LV)document.documentElement.style.setProperty('--old-tag',JSON.stringify((LV.otherTag||'')+' '));
  if(LAY.comments&&LAY.comments.family)document.documentElement.style.setProperty('--cmt',`var(--f${LAY.comments.family})`);
- srcPop();
- const pop=$('srcPop'),btn=$('srcBtn'),open=o=>{pop.hidden=!o;btn.setAttribute('aria-expanded',o)};
- btn.onclick=e=>{e.stopPropagation();open(pop.hidden)};
- pop.onclick=e=>{e.stopPropagation();const o=e.target.closest('[data-only]'),a=e.target.closest('[data-fa]');
+ srcPop();layPop();
+ const pops=[['srcW','srcBtn','srcPop'],['layW','layBtn','layPop']];
+ const open=(i,o)=>pops.forEach(([w,b,p],k)=>{const on=k===i&&o;$(p).hidden=!on;$(b).setAttribute('aria-expanded',on)});
+ pops.forEach(([w,b,p],i)=>{$(b).onclick=e=>{e.stopPropagation();open(i,$(p).hidden)};$(p).onclick=e=>e.stopPropagation()});
+ $('srcPop').addEventListener('click',e=>{const o=e.target.closest('[data-only]'),a=e.target.closest('[data-fa]');
   if(o)setFams(Object.fromEntries(FAMS.map(([k])=>[k,k===o.dataset.only])));
-  if(a)setFams(Object.fromEntries(FAMS.map(([k])=>[k,a.dataset.fa==='all'])))};
- pop.onchange=e=>{const c=e.target;if(c.id==='tSrc'){st.src=c.checked;save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop();return}
-  if(c.dataset.f)setFams({[c.dataset.f]:c.checked})};
- document.addEventListener('click',e=>{if(!pop.hidden&&!e.target.closest('#srcW'))open(false)});
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!pop.hidden){open(false);btn.focus()}})}
+  if(a)setFams(Object.fromEntries(FAMS.map(([k])=>[k,a.dataset.fa==='all'])))});
+ $('srcPop').onchange=e=>{const c=e.target;if(c.dataset.f)setFams({[c.dataset.f]:c.checked})};
+ $('layPop').onchange=e=>{const c=e.target;
+  if(c.id==='tSrc'){st.src=c.checked;redraw();return}
+  if(c.id==='tPos'){st.pos=c.checked;redraw();return}
+  if(c.id==='tAtt'){st.att=c.checked;redraw();return}
+  const l=LAYS.find(x=>x.id===c.dataset.l);if(l)setLayer(l,c.checked)};
+ document.addEventListener('click',e=>{if(!e.target.closest('#srcW,#layW'))open(-1,false)});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){const k=pops.findIndex(([w,b,p])=>!$(p).hidden);if(k>=0){open(-1,false);$(pops[k][1]).focus()}}})}
 function init(){
  document.title=(M.short||M.title)+' · '+(CAT.title||'');$('q').placeholder=V.searchPlaceholder||'Search';
  if(LAY.translation)$('enPop').textContent=LAY.translation.label;
@@ -312,8 +336,9 @@ function init(){
  addEventListener('hashchange',()=>{const h=decodeURIComponent(location.hash.slice(1));if(h)go(h)});
  $('vText').onclick=()=>{if(VIEW!=='text')setView('text')};$('vList').onclick=()=>{if(VIEW!=='list'){setView('list');edInfo()}};
  applyW();rail();
- const h0=resolve(decodeURIComponent(location.hash.slice(1)));
+ const hr=decodeURIComponent(location.hash.slice(1)),h0=resolve(hr);
  if(VIEW==='list'){if(h0)st.sel=h0;setView('list');edInfo()}
+ else if(/^title-/.test(hr))go(hr);
  else if(h0)go(h0);else if(st.sel&&byId[st.sel])go(st.sel);else go(V.start||CH[0].secs[0].id);
  if(innerWidth>1100){$('panel').dataset.open='true'}}
 // resizable frames

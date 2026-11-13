@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.7 (2026-11-13)
+
+- The English layer now flags translation problems: 133 flags on 106 units (shift 32, mistranslation 26, terminology 25, false friend 25, omission 13, addition 12; severity 1: 95, 2: 37, 3: 1). The panel shows them beside the aligned sentences, as in the Vattel edition. The one severity-3 flag: P1.1.1, where Nugent renders "la seule Raison" as "nature alone".
+- Method: Claude Sonnet read every aligned pair of French and English sentences, 28 sections per batch, with a list of Burlamaqui's key terms (droit / loi, obligation, sentiment, amour de soi, imputation …). All quoted phrases were checked against the pair by script; one flag whose English was not in its pair was dropped. Machine judgements, not checked by hand.
+- Viewer: the header has two menus instead of a row of checkboxes. **Authors** chooses the source families; it now filters the divergence notes as well as the reuse rows. **Layers** turns each layer on or off: Reuse (with Possible matches, Attributed and the edition's reuse layers under it), Divergences and the edition's other layers. Reuse can now be off while Divergences is on, so the text can show, for example, only the divergence notes against one author.
+- Text, the other layers and the reuse tables are unchanged.
+
 ## 1.6 (2026-11-12)
 
 - The Devoirs table (`reuse/burlamaqui-1747__pufendorf-devoirs-barbeyrac-1756.json`) comes from a new pass. Retrieval ran on a vision transcription of Barbeyrac's *Devoirs* (Amsterdam and Leipzig 1756, `texts/pufendorf-devoirs-barbeyrac-1756/`). 391 rows on 136 units (341 match, 50 possible) replace 350 rows on 140 units (248 match, 102 possible) from archive.org's OCR of the same edition. 222 rows quote Barbeyrac's notes (family Bb), 165 Pufendorf, 4 Leibniz's *Jugement*. The edition holds 1,655 reuse rows.
