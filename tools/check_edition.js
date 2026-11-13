@@ -13,6 +13,28 @@ D.sections.forEach(s => {
   s.html = norm(s.html); s.notes.forEach(n => { n.html = norm(n.html); });
   if (s.vars) s.vars = s.vars.map(v => ({ id: v.id, type: v.type, content: v.content, passage: v.p1773, otherPassage: v.p1758, otherPages: v.pages1758, otherLink: v.link1758, placed: v.placed }));
 });
+// corrections (editions/<ed>/corrections.json, noteMoves): footnotes the working edition attached to the wrong section.
+// The converter moves them (tools/nle.py apply_note_moves); the same moves are made here on data.json before comparing.
+function applyNoteMoves(D, moves) {
+  const by = Object.fromEntries(D.sections.map(s => [s.id, s])), order = Object.fromEntries(D.sections.map((s, i) => [s.id, i]));
+  const take = {}, back = {}, fwd = {}, dest = {}, cites = new Set();
+  for (const m of moves) {
+    const src = by[m.from], idx = [m.note, ...(m.cont || [])];
+    if (src.notes[m.note].mark !== m.mark) throw new Error('correction: mark ' + JSON.stringify(m));
+    (take[m.from] = take[m.from] || new Set()); idx.forEach(i => take[m.from].add(i));
+    const notes = idx.map(i => src.notes[i]);
+    notes.forEach(n => { for (const x of n.html.matchAll(/data-m="([\d,]+)"/g)) x[1].split(',').forEach(id => { dest[+id] = m.to }); for (const x of n.html.matchAll(/href="#([^"]+)"/g)) cites.add(x[1]) });
+    const box = order[m.to] < order[m.from] ? back : fwd; (box[m.to] = box[m.to] || []).push([m.from, m.note, notes]);
+  }
+  const sortk = (a, b) => order[a[0]] - order[b[0]] || a[1] - b[1];
+  for (const sid of new Set([...Object.keys(take), ...Object.keys(back), ...Object.keys(fwd)])) {
+    const s = by[sid], keep = s.notes.filter((n, i) => !(take[sid] && take[sid].has(i)));
+    s.notes = [...(fwd[sid] || []).sort(sortk).flatMap(x => x[2]), ...keep, ...(back[sid] || []).sort(sortk).flatMap(x => x[2])];
+  }
+  D.rows.forEach(r => { if (r.id in dest) r.sec = dest[r.id] });
+  // a moved note can carry a cross-reference: the cited sections' "cited at" lists change with it
+  for (const t of cites) if (by[t]) by[t].citedBy = D.sections.filter(s => s.id !== t && [s.html, ...s.notes.map(n => n.html)].some(h => h.includes('href="#' + t + '"'))).map(s => s.id);
+}
 // fields the collection adds to a row
 const ADDED = ['to', 'toUnit', 'relation', 'rep', 'attr'];
 // later passes (editions/<ed>/passes/): rows of data.json they replace are skipped; their own rows and divergence items
@@ -22,6 +44,8 @@ const readDir = d => fs.existsSync(d) ? fs.readdirSync(d).filter(f => f.endsWith
 const HAS_EN = D.sections.some(s => s.en);
 const SUPERSEDED = new Set(readDir(root + 'provenance/superseded/').flatMap(t => t.rows.map(r => r.id)));
 const PASSES = readDir(root + 'passes/');
+const CORR = fs.existsSync(root + 'corrections.json') ? JSON.parse(fs.readFileSync(root + 'corrections.json', 'utf8')) : null;
+if (CORR) applyNoteMoves(D, CORR.noteMoves || []);
 const PASS_ROWS = PASSES.flatMap(p => p.rows || []);
 const PASS_DIV = PASSES.flatMap(p => p.items || []);
 const PASS_DIV_IDS = new Set(PASS_DIV.map(d => d.unit + '|' + d.sourceId));

@@ -180,6 +180,51 @@ class Split:
         return row
 
 
+def apply_note_moves(sections, rows, moves):
+    """Corrections (editions/<ed>/corrections.json, noteMoves): footnotes the working edition attached to the wrong section.
+    Each move names a note by its section and index in data.json (with any continuation notes that follow it) and the
+    section whose call it answers. A note moved back to the section before goes after that section's notes; a note moved
+    forward goes before them. Reuse rows marked inside a moved note go with it (their unit changes); so do the 1773 changes
+    marked there. Returns {row id: new unit} for the rows that moved and {(unit, note index): (unit, note index)} for
+    every note of the sections involved, from data.json's numbering to the corrected one."""
+    by = {s['id']: s for s in sections}; order = {s['id']: i for i, s in enumerate(sections)}
+    old = {}
+    take = collections.defaultdict(set); add_back = collections.defaultdict(list); add_fwd = collections.defaultdict(list)
+    for m in moves:
+        src = by[m['from']]; idx = [m['note']] + m.get('cont', [])
+        assert all(0 <= i < len(src['notes']) for i in idx), m
+        assert src['notes'][m['note']]['mark'] == m['mark'], (m, src['notes'][m['note']]['mark'])
+        take[m['from']] |= set(idx)
+        notes = [src['notes'][i] for i in idx]
+        (add_back if order[m['to']] < order[m['from']] else add_fwd)[m['to']].append((m['from'], m['note'], notes))
+    moved_rows = {}
+    for sid, idx in take.items():
+        for i in idx:
+            h = by[sid]['notes'][i]['html']
+            for rid in re.findall(r'data-m="([\d,]+)"', h):
+                for x in rid.split(','): moved_rows[int(x)] = None
+            assert 'data-v=' not in h, (sid, i)  # no 1773 change is marked inside a moved note
+    dest = {}
+    for m in moves:
+        for i in [m['note']] + m.get('cont', []):
+            for rid in re.findall(r'data-m="([\d,]+)"', by[m['from']]['notes'][i]['html']):
+                for x in rid.split(','): dest[int(x)] = m['to']
+    for sid in set(take) | set(add_back) | set(add_fwd):
+        for i, n in enumerate(by[sid]['notes']): old[id(n)] = (sid, i)
+    for sid in set(take) | set(add_back) | set(add_fwd):
+        s = by[sid]; keep = [n for i, n in enumerate(s['notes']) if i not in take.get(sid, set())]
+        fwd = [n for _, _, ns in sorted(add_fwd.get(sid, []), key=lambda x: (order[x[0]], x[1])) for n in ns]
+        back = [n for _, _, ns in sorted(add_back.get(sid, []), key=lambda x: (order[x[0]], x[1])) for n in ns]
+        s['notes'] = fwd + keep + back
+    for r in rows:
+        if r['id'] in dest: r['sec'] = dest[r['id']]
+    nmap = {}
+    for sid in set(take) | set(add_back) | set(add_fwd):
+        for i, n in enumerate(by[sid]['notes']):
+            if id(n) in old: nmap[old[id(n)]] = (sid, i)
+    return dest, nmap
+
+
 def write_text(ed, titles, units):
     dump({'format': 'nle-text/1', 'edition': ed, 'titles': titles, 'units': units}, os.path.join(ROOT, 'editions', ed, 'text.json'))
 
