@@ -141,6 +141,20 @@ One item per comment shown under a unit. `family` (optional) gives the note the 
 - `fr`: sentence spans in the unit's `text`. `align`: groups of `[[French sentence indices], [English sentence indices]]`.
 - `flags`: translation problems. `k` is the index of the alignment group.
 
+## Title pages (`titlepage.json`)
+
+Named by `titlePage` in `edition.json`. One page per volume:
+
+```json
+{"format": "nle-titlepage/1", "edition": "vattel-1773", "description": "...",
+ "pages": [{"vol": "T1", "before": "Pref.1", "scan": 1, "image": "images/title-T1.jpg", "source": ["MDZ bsb10725331, scan 1", "url"],
+            "lines": [["LE DROIT", "xl"], ["Appliqués à la conduite & aux affaires des nations", ""], ["", "rule"]]}],
+ "notes": ["..."]}
+```
+
+- `before`: the unit the title page stands before in the viewer. `image`: the scan, relative to the edition folder; `source` names the copy and links to it.
+- `lines`: the printed lines in order, each `[text, style]`. Styles: `xl` large capitals, `deco` decorated capitals, `caps` spaced capitals, `s` small type, `it` italic (`<r>…</r>` marks roman type inside it), `device` a description of the printer's device, `rule` an ornamental rule, `""` roman. Diplomatic: long s as ſ, small capitals as capitals.
+
 ## Reuse tables
 
 `reuse/<from>__<to>.json` holds the reuse found between two texts. Rows are anchored in the units of `from`. `to` is the other text: by default the earlier source that `from` draws on; with `"direction": "derivative"` the later text that repeats `from` (Burlamaqui's *Principes du droit politique*, 1751).

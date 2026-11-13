@@ -1,0 +1,186 @@
+{
+ "format": "nle-titlepage/1",
+ "edition": "vattel-1773",
+ "description": "Diplomatic transcription of the title page of each volume, line by line, with the scan. Long s as ſ; small capitals as capitals. Line styles: xl large capitals, deco decorated capitals, caps spaced capitals, s small type, it italic (<r>…</r> marks roman type inside an italic line), device a description of the printer's device, rule an ornamental rule. Read from the scans; checked against them by eye.",
+ "pages": [
+  {
+   "vol": "T1",
+   "before": "Pref.1",
+   "scan": 1,
+   "image": "images/title-T1.jpg",
+   "source": [
+    "MDZ bsb10725331, scan 1",
+    "https://www.digitale-sammlungen.de/en/view/bsb10725331?page=1"
+   ],
+   "lines": [
+    [
+     "LE DROIT",
+     "xl"
+    ],
+    [
+     "DES GENS,",
+     "xl"
+    ],
+    [
+     "OU",
+     "s"
+    ],
+    [
+     "PRINCIPES",
+     "deco"
+    ],
+    [
+     "DE",
+     "s"
+    ],
+    [
+     "LA LOI NATURELLE,",
+     "deco"
+    ],
+    [
+     "Appliqués à la conduite & aux affaires des nations",
+     ""
+    ],
+    [
+     "& des ſouverains.",
+     ""
+    ],
+    [
+     "PAR M. DE VATTEL.",
+     "caps"
+    ],
+    [
+     "Nihil eſt enim illi principi Deo, qui omnem hunc mundum regit, quod",
+     "it"
+    ],
+    [
+     "quidem in terris fiat, acceptius, quam concilia cœtusque hominum",
+     "it"
+    ],
+    [
+     "jure ſociati, quæ civitates appellantur. <r>CICER. Somn. Scipion.</r>",
+     "it"
+    ],
+    [
+     "Nouvelle édition augmentée.",
+     ""
+    ],
+    [
+     "TOME I.",
+     "caps"
+    ],
+    [
+     "[Printer's device: two clasped hands holding a staff with a cap of liberty; scroll: APUD LIBEROS TUTIOR]",
+     "device"
+    ],
+    [
+     "A NEUCHATEL.",
+     "caps"
+    ],
+    [
+     "De l'Imprimerie de la Société Typographique.",
+     ""
+    ],
+    [
+     "",
+     "rule"
+    ],
+    [
+     "M. DCC. LXXIII.",
+     "caps"
+    ]
+   ]
+  },
+  {
+   "vol": "T2",
+   "before": "III.0",
+   "scan": 1,
+   "image": "images/title-T2.jpg",
+   "source": [
+    "MDZ bsb10725332, scan 1",
+    "https://www.digitale-sammlungen.de/en/view/bsb10725332?page=1"
+   ],
+   "lines": [
+    [
+     "LE DROIT",
+     "xl"
+    ],
+    [
+     "DES GENS,",
+     "xl"
+    ],
+    [
+     "OU",
+     "s"
+    ],
+    [
+     "PRINCIPES",
+     "deco"
+    ],
+    [
+     "DE",
+     "s"
+    ],
+    [
+     "LA LOI NATURELLE,",
+     "deco"
+    ],
+    [
+     "Appliqués à la conduite & aux affaires des Nations",
+     ""
+    ],
+    [
+     "& des Souverains.",
+     ""
+    ],
+    [
+     "PAR M. DE VATTEL.",
+     "caps"
+    ],
+    [
+     "Nihil eſt enim illi principi Deo, qui omnem hunc mundum regit, quod",
+     "it"
+    ],
+    [
+     "quidem in terris fiat, acceptius, quam conſilia cœtuſque hominum",
+     "it"
+    ],
+    [
+     "jure ſociati, quæ civitates appellantur. <r>CICER. Somn. Scipion.</r>",
+     "it"
+    ],
+    [
+     "Nouvelle édition augmentée.",
+     ""
+    ],
+    [
+     "TOME II.",
+     "caps"
+    ],
+    [
+     "[Printer's device: two clasped hands holding a staff with a cap of liberty; scroll: APUD LIBEROS TUTIOR]",
+     "device"
+    ],
+    [
+     "A NEUCHATEL,",
+     "caps"
+    ],
+    [
+     "De l'Imprimerie de la Société Typographique.",
+     ""
+    ],
+    [
+     "",
+     "rule"
+    ],
+    [
+     "M. DCC. LXXIII,",
+     "caps"
+    ]
+   ]
+  }
+ ],
+ "notes": [
+  "The two volumes differ: T1 prints \"nations\", \"ſouverains\", \"concilia cœtusque\", \"A NEUCHATEL.\" and \"M. DCC. LXXIII.\"; T2 prints \"Nations\", \"Souverains\", \"conſilia cœtuſque\", \"A NEUCHATEL,\" and \"M. DCC. LXXIII,\". Cicero's text (De re publica VI.13) reads concilia."
+ ]
+}

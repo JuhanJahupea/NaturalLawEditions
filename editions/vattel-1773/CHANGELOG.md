@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.10 (2026-11-13)
+
+- New title pages (`titlepage.json`, images in `images/`): a diplomatic transcription of the title page of each volume, line by line, beside its scan (MDZ bsb10725331 and bsb10725332, scan 1). The viewer shows them before the Préface (t. I) and before Livre III (t. II), with a link in the contents. The two volumes differ in five places; `titlepage.json` lists them.
+- Viewer: the header has two menus instead of a row of checkboxes. **Authors** chooses the source families; it now filters the divergence notes as well as the reuse rows. **Layers** turns each layer on or off: Reuse (with Possible matches, Attributed and the edition's reuse layers under it), Divergences and the edition's other layers. Reuse can now be off while Divergences is on, so the text can show, for example, only the divergence notes against one author.
+- Text, layers and reuse tables are unchanged.
+
 ## 1.9 (2026-11-12)
 
 - 89 reuse rows on 58 units now carry `attributed`: Vattel names the source for the passage. 15 give the source's words as a quotation; 74 name it for the content. By source: Grotius 46, Wolff 23 (*Jus gentium* 17, *Institutiones* 5, *Jus naturae* 1), Pufendorf 9, Wicquefort 8, Montesquieu 2, Bynkershoek 1. The items are in `passes/attributions.json`.
