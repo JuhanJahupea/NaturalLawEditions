@@ -720,6 +720,15 @@
    "to": "IV.110",
    "start": "Il n'y a pas long-tems qu'on a vu un ministre étranger en Fr",
    "reason": "Unmarked paragraph on p. 294 after note (b); continues that note, whose call is in IV.110."
+  },
+  {
+   "from": "III.113",
+   "note": 0,
+   "mark": "(*)",
+   "to": "III.112",
+   "start": "Voyez d&#x27;autres exemples dans GROTIUS, L. III. Ch. I. §.",
+   "page": "72",
+   "reason": "Printed at the foot of p. 72, where the only call is (a) in III.112 ('leur firent justice'); the print marks the call (a) and the note (*). Decided by hand from the reader's account of the scan."
   }
  ]
 }
