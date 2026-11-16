@@ -66,7 +66,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `note_clusters.py <out>`: the sections whose number of footnote calls differs from their number of notes, grouped with their neighbours on shared printed pages, with the MDZ scan of each page.
 - Agent prompt `NOTE_PAGE_PROMPT.md`, about 20 pages per agent: for each note, the page at whose foot it stands and the call it answers.
 - `note_moves.py <dir> <corrections>`: the certain answers whose two sections share a page become `noteMoves` in `editions/vattel-1773/corrections.json`.
-- `migrate_notes.py <data.json> [--write]`: remaps the later-pass files that point into notes (pass rows, attributions, divergence items) to the corrected numbering. Run once after the corrections change.
+- `migrate_notes.py <data.json> <edition> [--since K] [--write]`: remaps the later-pass files that point into notes (pass rows, attributions, divergence items) to the corrected numbering. Run once after the corrections change.
 
 ## 8. English of Burlamaqui
 

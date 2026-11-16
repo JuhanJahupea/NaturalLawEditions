@@ -2,6 +2,14 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.13 (2026-11-16)
+
+- One more footnote moves (`corrections.json`, 81 moves in all): the star note on Grotius (L. III ch. I § V n. 6) at the foot of p. 72 goes from III.113 to III.112, whose call "(a)" after "leur firent justice" is the only call on that page. Two rows of the Grotius pass follow it.
+- A reader (Claude Sonnet) checked the remaining doubtful notes against the scans. These notes have no call in the print, and stay where they are: I.197 (Provinces-Unies, p. 181), I.220 (Paykul, p. 195), III.113 (de Witt, p. 72) and IV.101 (Joseph Sofi and Barcouc, pp. 282–283).
+- The note at the foot of p. 385 that 1.12 listed as missing is in the edition: it is in II.221, with its call.
+- 15 sections have a call "(a)" in the text and a note marked "(*)" (I.54, II.273, II.301, II.307, II.309, II.310, II.314, II.316, II.318, II.339, II.352, II.354, III.60, III.95, III.132). The reader found the same marks in the print, so the edition keeps them.
+- Text and the reuse rows' passages are unchanged.
+
 ## 1.12 (2026-11-13)
 
 - 80 footnotes move to the section whose call they answer (`corrections.json`). Where two sections share a printed page, the working edition had attached the notes at the foot of that page to the wrong one: I.48, I.62, IV.91, IV.123 and III.156 had calls without notes, and their neighbours had notes without calls. Livre I 10, Livre II 14, Livre III 29, Livre IV 27 notes; 111 sections change.

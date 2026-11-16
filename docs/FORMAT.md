@@ -164,7 +164,7 @@ Named by `titlePage` in `edition.json`. One page per volume:
 ```
 
 - `before`: the unit the title page stands before in the viewer. `image`: the scan, relative to the edition folder; `source` names the copy and links to it.
-- `lines`: the printed lines in order, each `[text, style]`. Styles: `xl` large capitals, `deco` decorated capitals, `caps` spaced capitals, `s` small type, `it` italic (`<r>…</r>` marks roman type inside it), `device` a description of the printer's device, `rule` an ornamental rule, `""` roman. Diplomatic: long s as ſ, small capitals as capitals.
+- `lines`: the printed lines in order, each `[text, style]`. Styles: `xl` large capitals, `deco` decorated capitals, `caps` spaced capitals, `icaps` italic spaced capitals, `s` small type, `it` italic (`<r>…</r>` marks roman type inside it), `device` a description of the printer's device, `rule` an ornamental rule, `""` roman. Diplomatic: long s as ſ, small capitals as capitals.
 
 ## Reuse tables
 

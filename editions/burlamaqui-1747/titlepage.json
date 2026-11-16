@@ -1,0 +1,74 @@
+{
+ "format": "nle-titlepage/1",
+ "edition": "burlamaqui-1747",
+ "description": "Diplomatic transcription of the title page, line by line, with the scan. Small capitals as capitals. Line styles: xl large capitals, caps spaced capitals, icaps italic spaced capitals, it italic, device a description of the printer's device, rule an ornamental rule. Read from the scan; checked against it by eye.",
+ "pages": [
+  {
+   "vol": "1",
+   "before": "AV",
+   "scan": 7,
+   "image": "images/title.jpg",
+   "source": [
+    "Google Books scan, PDF p. 7",
+    "zotero://open-pdf/library/items/XKNMUHV3?page=7"
+   ],
+   "lines": [
+    [
+     "PRINCIPES",
+     "xl"
+    ],
+    [
+     "DU",
+     "caps"
+    ],
+    [
+     "DROIT NATUREL.",
+     "xl"
+    ],
+    [
+     "PAR",
+     "icaps"
+    ],
+    [
+     "J. J. BURLAMAQUI",
+     "caps"
+    ],
+    [
+     "CONSEILLER D'ETAT, & ci-devant",
+     "it"
+    ],
+    [
+     "PROFESSEUR en Droit Naturel &",
+     "it"
+    ],
+    [
+     "Civil à GENEVE.",
+     "it"
+    ],
+    [
+     "[Printer's device: a column between two leafy branches in a cartouche; scroll: EX RECTO DECUS]",
+     "device"
+    ],
+    [
+     "A GENEVE,",
+     "caps"
+    ],
+    [
+     "Chez BARRILLOT & FILS.",
+     ""
+    ],
+    [
+     "",
+     "rule"
+    ],
+    [
+     "M. DCCXLVII.",
+     "caps"
+    ]
+   ]
+  }
+ ],
+ "notes": [
+  "The copy carries a handwritten shelfmark beside the device (\"2AB 14489\"), not transcribed."
+ ]
+}
