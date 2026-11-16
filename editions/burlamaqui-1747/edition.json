@@ -1,8 +1,8 @@
 {
   "format": "nle-edition/1",
   "id": "burlamaqui-1747",
-  "version": "1.8",
-  "changed": "2026-11-13",
+  "version": "1.9",
+  "changed": "2026-11-16",
   "author": "Jean-Jacques Burlamaqui",
   "title": "Principes du droit naturel",
   "short": "Principes du droit naturel · 1747",
@@ -15,6 +15,7 @@
   },
   "transcription": "Vision transcription of the page images, one diplomatic file per scan; reading text with long s resolved and line-end hyphens joined. § numbers restart in each chapter. The Table (pdf 11–30) was not transcribed.",
   "text": "text.json",
+  "titlePage": "titlepage.json",
   "aliases": {},
   "divisions": [
     {

@@ -1,0 +1,63 @@
+{
+ "format": "nle-corrections/1",
+ "edition": "burlamaqui-1747",
+ "description": "Corrections to the working edition (data.json), applied by the converter (tools/nle.py apply_note_moves) and by tools/check_edition.js. noteMoves: footnotes the working edition attached to a neighbouring section. Each names the note by its section and index in data.json, its mark, and the section whose call it answers. Decided from the content of note and call and from the page breaks (the Google Books scan is not online to check against).",
+ "noteMoves": [
+  {
+   "from": "P1.6.9",
+   "note": 1,
+   "mark": "(a)",
+   "to": "P1.6.11",
+   "start": "Voy. Clark Rel. Nat. Tom. II. Ch. III. n. 7.",
+   "reason": "The note on Clarke answers the call after 'Quelques - uns prétendent' (p. 72), on the origin of obligation; the call in P1.6.9 has its own note ('Obligatio à ligando')."
+  },
+  {
+   "from": "P1.9.3",
+   "note": 3,
+   "mark": "(a)",
+   "to": "P1.9.4",
+   "start": "Chap. VI. &amp; VII.",
+   "reason": "'Chap. VI. & VII.' answers the call after 'telles qu'on les a expliquées ci-dessus' on p. 96; P1.9.3's three calls have their notes (a), (b), (c)."
+  },
+  {
+   "from": "P1.9.10",
+   "note": 1,
+   "mark": "(a)",
+   "to": "P1.9.11",
+   "start": "Voy. ci-dessus § 1.",
+   "reason": "'Voy. ci-dessus § 1.' answers the call on p. 108 after 'les principes que nous avons posés'; P1.9.10's one call has its note on Pufendorf."
+  },
+  {
+   "from": "P1.9.11",
+   "note": 1,
+   "mark": "(a)",
+   "to": "P1.9.12",
+   "start": "Voy. ci-dessus, Ch. VI. § 13.",
+   "reason": "'Voy. ci-dessus, Ch. VI. § 13.' answers the call on p. 110 after 'NOUS remarquions ci-devant, que l'on pouvoit distinguer deux sortes d'obligations'; it stands after note (b) of p. 109."
+  },
+  {
+   "from": "P2.8.6",
+   "note": 1,
+   "mark": "(a)",
+   "to": "P2.9.0",
+   "start": "Voy. Droit de la Nat. &amp; des Gens. Liv. I. Ch. III. § 4. ",
+   "reason": "Pufendorf on conscience (DNG I.3.4, Devoirs I.1.5) answers the call in the heading of Chapter IX, De la conscience, on p. 254."
+  },
+  {
+   "from": "P2.11.15",
+   "note": 1,
+   "mark": "(a)",
+   "to": "P2.12.0",
+   "start": "Voy. Pufendorf Droit de la Nat. &amp; des Gens Liv. II. Ch. ",
+   "reason": "Pufendorf DNG II.3.21, on the sanction of natural law, answers the call in the heading of Chapter XII, De l'autorité & de la sanction des loix naturelles, on p. 299."
+  },
+  {
+   "from": "P2.11.15",
+   "note": 2,
+   "mark": "(a)",
+   "to": "P2.12.1",
+   "start": "Voy. Part. I. Ch. X. § II.",
+   "reason": "'Voy. Part. I. Ch. X. § II.' answers the call on p. 299 after 'dépend principalement de leur Sanction'."
+  }
+ ]
+}

@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.9 (2026-11-16)
+
+- New title page (`titlepage.json`, `images/title.jpg`): a diplomatic transcription of the title page, line by line, beside its scan (Google Books copy, PDF p. 7). The viewer shows it before the Avertissement, with a link in the contents.
+- 7 footnotes move to the section whose call they answer (`corrections.json`): P1.6.9 → P1.6.11, P1.9.3 → P1.9.4, P1.9.10 → P1.9.11, P1.9.11 → P1.9.12, P2.8.6 → P2.9.0, P2.11.15 → P2.12.0 and P2.12.1. The scan is not online, so each was decided from the note's content against the sentence of the call, and from the page breaks. The converter and the check apply the moves as in the Vattel edition. Two rows of the Pufendorf passes follow their notes.
+- P1.2.12 and P1.3.3 keep a note whose call the transcription lacks.
+- Text and the reuse rows' passages are unchanged.
+
 ## 1.8 (2026-11-13)
 
 - Claude Opus read each of the 97 attributed rows again with the whole unit. It confirmed 90, rejected 4 and left 3 unsure; those lose `attributed`. The rejected rows name Pufendorf or Grotius for a passage taken from Barbeyrac's note, without naming Barbeyrac or the note. The 3 unsure rows were decided by hand and kept: P1.11.11 (2 rows; note (a) at the end of the paragraph cites the places "avec les notes de Monsr. Barbeyrac") and P2.4.20 (the paragraph opens "suivant la judicieuse remarque de Mr. BARBEYRAC"). Several cues now point at the words that name Barbeyrac. Each attribution carries the verdict and reason in `review`. Burlamaqui attributes 93 rows: 29 quotations, 64 references.
