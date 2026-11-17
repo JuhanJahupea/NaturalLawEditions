@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.14 (2026-11-17)
+
+- 6 more reuse rows carry `attributed`: rows in sections that designate the source without naming it in the passage's sentence. Barbeyrac as "l'auteur que nous venons d'entendre" after "ce savant traducteur sur GROTIUS" (Pref.8, 2 rows); Montesquieu by the note "Esprit des loix, Liv. XXVI. Chap. XXIII." (I.62); Grotius as "le savant & judicieux GROTIUS" for the view Vattel then rejects (II.7); Bynkershoek as "un illustre membre de cette même cour" with the notes "M. DE BYNKERSHOEK, traité du juge compétent" and "Ibid." (IV.110, 2 rows). Vattel attributes 92 rows.
+- Method: the candidates were the rows (not citation, commonplace or attributed) in sections with a designation such as "le savant", "cet illustre", "ce grand homme", "le traducteur", "l'auteur de …", "cet auteur" (110 rows). Claude Opus read each with the whole section; items it marked attributed at confidence 0.6 or more were added. 14 rows in both editions are introduced only by an anonymous designation ("quelques-uns", "des auteurs célebres, très-savans"); they are not marked.
+- A precision audit of the reuse rows is in `audit/` (160 match and 40 possible rows of this edition, read by Claude Opus): 84% of match rows right, 15% weak (the source states a common doctrine), 1% wrong.
+- Text, layers and the other rows are unchanged.
+
 ## 1.13 (2026-11-16)
 
 - One more footnote moves (`corrections.json`, 81 moves in all): the star note on Grotius (L. III ch. I § V n. 6) at the foot of p. 72 goes from III.113 to III.112, whose call "(a)" after "leur firent justice" is the only call on that page. Two rows of the Grotius pass follow it.
