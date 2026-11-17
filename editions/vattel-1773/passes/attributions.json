@@ -2,7 +2,7 @@
  "format": "nle-pass/1",
  "edition": "vattel-1773",
  "date": "2026-11-12",
- "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (306 rows). First judged by Claude Sonnet. Rows labelled citation name the source by definition and are not listed. A second model (Claude Opus) read each item with the whole unit: wrong items were removed; review holds its verdict (correct) and reason.",
+ "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (306 rows). First judged by Claude Sonnet. Rows labelled citation name the source by definition and are not listed. A second model (Claude Opus) read each item with the whole unit: wrong items were removed; review holds its verdict (correct) and reason. Indirect designations (2026-11-17): rows in units that designate a writer without naming him (\"le savant traducteur\", \"l'auteur de l'Esprit des loix\", \"cet illustre Restaurateur du Droit Naturel\") were judged once by Claude Opus; items it marked attributed at confidence 0.6 or more were added.",
  "attributions": [
   {
    "text": "grotius-barbeyrac-1724",
@@ -104,6 +104,40 @@
     "verdict": "correct",
     "reason": "The note is transcribed in quotation marks with 'dit-il', introduced by the translator and the work and place of the note (Grotius I.I.14 n.3).",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "text": "grotius-barbeyrac-1724",
+   "unit": "Pref.8",
+   "page": "GRO24T1.p110",
+   "passage": "L'auteur que nous venons d'entendre s'est bien apperçu que les regles & les décisions du droit naturel ne peuvent s'appliquer purement & simplement aux états souverains , & qu'elles doivent nécessairement souffrir quelques changemens",
+   "source": "toute la différence qu'il y a , consiste dans l'application , qui peut se faire un peu autrement",
+   "form": "reference",
+   "cue": "L'auteur que nous venons d'entendre",
+   "cuePart": "t",
+   "confidence": 0.9,
+   "reason": "The passage summarizes the note just quoted, and its subject 'L'auteur que nous venons d'entendre' points back to 'ce savant traducteur sur GROTIUS ... Not. 3', i.e. Barbeyrac.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "text": "grotius-barbeyrac-1724",
+   "unit": "Pref.8",
+   "page": "GRO24T1.p110",
+   "passage": "Mais il ne paroît pas qu'il ait vû toute l'étendue de cette idée , puisqu'il semble ne pas approuver que l'on traite le droit des gens séparément du droit naturel des particuliers",
+   "source": "les principes & les régles d'un tel Droit sont au fond les mêmes que celles du Droit Naturel , proprement ainsi nommé",
+   "form": "reference",
+   "cue": "L'auteur que nous venons d'entendre",
+   "cuePart": "t",
+   "confidence": 0.85,
+   "reason": "This criticism continues the previous sentence about 'L'auteur que nous venons d'entendre' (Barbeyrac, the translator of Grotius), and 'il' points back to him.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
    }
   },
   {
@@ -414,6 +448,23 @@
   },
   {
    "text": "montesquieu-esprit-des-loix-1749",
+   "unit": "I.62",
+   "page": "MON49.p461",
+   "passage": "Ainsi la loi de Russie faite au commencement du \" regne d'ELIZABETH , exclut - elle très-prudemment tout hé- \" ritier qui posséderoit une autre monarchie; ainsi la loi de \" Portugal rejette - t - elle tout étranger qui feroit appellé à \" la couronne par le droit du sang.",
+   "source": "Ainsi la Loi de RuAîe faite au commencement du Régné d'E- liiabeth , exclut-t-elle très prudemment tout héritier qui poAederoir une autre Monarchie ; ainsi la Loi de Portugal rejette -t -elle tout Etranger qui seroit appelle à la Couronne par le Droit du Sang.",
+   "form": "quotation",
+   "cue": "Esprit des loix , Liv. XXVI. Chap. XXIII.",
+   "cuePart": "n0",
+   "confidence": 0.95,
+   "reason": "The quoted sentence, inside quotation marks, ends with a note call whose note cites the Esprit des loix.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "text": "montesquieu-esprit-des-loix-1749",
    "unit": "I.155",
    "page": "MON49.p523",
    "passage": "Ils faisoient acheter aux nouveaux mariés la permission de coucher avec leurs femmes , les trois prémieres nuits après le mariage",
@@ -529,6 +580,23 @@
     "verdict": "correct",
     "reason": "Grotius is named as the subject of the sentence that holds the passage ('les précautions qu'il apporte').",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "text": "grotius-barbeyrac-1724",
+   "unit": "II.7",
+   "page": "GRO24T2.p101",
+   "passage": "le droit de punir dérive uniquement pour les hommes, du droit de sûreté ; par conséquent il ne leur appartient que contre ceux qui les ont offensés",
+   "source": "Le pouvoir de punir vient originairement du Droit même de Nature",
+   "form": "reference",
+   "cue": "le savant & judicieux GROTIUS",
+   "cuePart": "t",
+   "confidence": 0.7,
+   "reason": "Vattel's counter-principle on the right to punish is set directly against Grotius's view, named just before ('Il est tombé dans cette erreur'), so the source is named for the disputed point.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
    }
   },
   {
@@ -1447,6 +1515,40 @@
     "verdict": "correct",
     "reason": "Note (a) at the end of the sentence cites Appian 'cité par GROTIUS, Liv. II, chap. 28 [=18]. §. 7', so Grotius is named as where the words are found, but they are given as Scipio's, not Grotius's.",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "text": "bynkershoek-juge-competent-1723",
+   "unit": "IV.110",
+   "page": "BYN23.p1714",
+   "passage": "En l'année 1657, un résident de l'électeur de Brandebourg fut arrêté aussi pour dettes, en Angleterre. Mais on le relâcha, comme n'ayant pu être arrêté légitimement",
+   "source": "un Résident de l'Elefteur de Brandebourg en Angleterre fut auflj arrêté pour dettes > (k) mais on le relâcha , comme",
+   "form": "reference",
+   "cue": "Ibid.",
+   "cuePart": "n4",
+   "confidence": 0.85,
+   "reason": "Note (b) at the end of the sentence reads 'Ibid.', referring back to Bynkershoek's Traité du juge compétent cited in the preceding note; the episode is told in Vattel's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "text": "bynkershoek-juge-competent-1723",
+   "unit": "IV.110",
+   "page": "BYN23.p1714",
+   "passage": "cette procédure étoit illégitime et contraire au droit des gens",
+   "source": "Mais toutes ces procédures écoient illégitimes,",
+   "form": "reference",
+   "cue": "M. DE BYNKERSHOEK, traité du juge compétent des ambassadeurs, chap. 13. §. 1.",
+   "cuePart": "n3",
+   "confidence": 0.9,
+   "reason": "The indirect designation 'un illustre membre de cette même cour' carries note (a) naming Bynkershoek's treatise; his judgment is reported in Vattel's words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
    }
   },
   {

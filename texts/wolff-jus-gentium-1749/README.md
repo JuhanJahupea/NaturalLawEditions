@@ -37,7 +37,7 @@ Scan numbers in `JG.json` are the PDF pages of the Google Books copy. The Vattel
 
 - Structure: the § markers run 1–1068. 1,089 markers mark 1,067 §§: a § whose heading falls at the foot of a page is marked on both pages. The book prints § 392 twice (scans 341 and 343) and has no § 393; the transcription keeps the numbers as printed.
 - The Google Books OCR of the same PDF was compared page by page (8-letter sequences of the main text, accents folded, long s and f as one letter; `tools/transcription/qc_wolff.py`). Google Drive gives the OCR of the first 172 PDF pages only, so the check covers scans 28–171 (144 pages). The median page shares 96% of its sequences with the OCR. The lowest is scan 133 at 87%.
-- No page has been read against the image by hand. The Google Books PDF is larger than the session could download.
+- 30 random pages (7,649 words) were read against another copy of the same 1749 edition (MDZ bsb10008059, matched by printed page) by Claude Sonnet, strip by strip at 2x (2026-11-17; prompt `tools/transcription/PAGE_CHECK_PROMPT_WOLFF.md`). 10 differences, 1.3 per 1,000 words: 5 letters, 3 italics, 2 punctuation; no word or line missing. Seven were corrected in `JG.json` (p. 282 "indiget, nec"; p. 302 *Jur. nat.* italic; p. 372 *guaranda* italic; p. 461 "quantum", "eluceſcet"; p. 531 margin "clauſula,"; p. 710 "hoſtis"; p. 748 italic "&" restored). Two readings were left as they are: p. 531 "id quod" (the reader saw "id quæ") and p. 38 "conſentiant" (the print may abbreviate "cõſentiant").
 
 ## Known limits
 

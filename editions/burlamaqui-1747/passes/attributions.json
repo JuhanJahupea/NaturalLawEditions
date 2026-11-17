@@ -2,7 +2,7 @@
  "format": "nle-pass/1",
  "edition": "burlamaqui-1747",
  "date": "2026-11-12",
- "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (245 rows). First judged by Claude Sonnet. Rows labelled citation name the source by definition and are not listed. A second model (Claude Opus) read each item with the whole unit: wrong items were removed; review holds its verdict (correct; three items the second reader left unsure were decided by hand) and reason.",
+ "description": "Reuse rows where the author names the source for the passage: in its sentence, in the sentence that introduces it, in a note called there, or in the margin beside it. form quotation: the passage is given as the source's words; reference: the source is named for the content. cue: the words that name it; cuePart: t main text, m margin, n0 … notes. Candidates: rows (not citation or commonplace) whose unit names the source's author or work anywhere (245 rows). First judged by Claude Sonnet. Rows labelled citation name the source by definition and are not listed. A second model (Claude Opus) read each item with the whole unit: wrong items were removed; review holds its verdict (correct; three items the second reader left unsure were decided by hand) and reason. Indirect designations (2026-11-17): rows in units that designate a writer without naming him (\"le savant traducteur\", \"l'auteur de l'Esprit des loix\", \"cet illustre Restaurateur du Droit Naturel\") were judged once by Claude Opus; items it marked attributed at confidence 0.6 or more were added.",
  "attributions": [
   {
    "text": "pufendorf-barbeyrac-1734",
@@ -821,6 +821,57 @@
    }
   },
   {
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "unit": "P2.4.20",
+   "page": "DEV56T2.p248",
+   "passage": "il n'a proprement en vue que d'expliquer les devoirs mutuels des hommes",
+   "source": "je me suis principalement proposé d'expliquer les Devoirs mutuels des Hommes",
+   "form": "reference",
+   "cue": "Cet illustre Restaurateur du Droit Naturel",
+   "cuePart": "t",
+   "confidence": 0.75,
+   "reason": "The designation refers back to PUFENDORF and introduces his declaration ('déclare, qu'il...'), the words Barbeyrac quotes from him; note (a) cites Specim. Controvers. Ch. V § 25, where they stand.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "unit": "P2.4.20",
+   "page": "DEV56T2.p248",
+   "passage": "Selon lui, nos devoirs envers Dieu sont partie de la Théologie Naturelle",
+   "source": "cela fait partie de la Science Naturelle touchant la Divinité ; Science que les uns rapportent à la Premiére Philosophie, & les autres à la Théologie Naturelle",
+   "form": "reference",
+   "cue": "Selon lui",
+   "cuePart": "t",
+   "confidence": 0.7,
+   "reason": "'Selon lui' refers back to Pufendorf ('Cet illustre Restaurateur'), whose own words Barbeyrac quotes in the source; the claim is reported in the author's own words.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "unit": "P2.4.20",
+   "page": "DEV56T1.p195",
+   "passage": "la Religion ne trouve sa place dans un Traité de Droit Naturel, qu'entant qu'elle est le plus ferme appui de la Société",
+   "source": "la crainte d'une Divinité est le plus puissant motif pour porter les Hommes à s'acquitter de ce qu'ils se doivent les uns aux autres",
+   "form": "reference",
+   "cue": "Selon lui",
+   "cuePart": "t",
+   "confidence": 0.65,
+   "reason": "The clause is governed by 'Selon lui', which refers to Pufendorf, the source's author; note (b) on the next sentence cites Devoirs Liv. I C. III § 13.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
+   }
+  },
+  {
    "text": "pufendorf-barbeyrac-1734",
    "unit": "P2.4.22",
    "page": "PUF34T1.p378",
@@ -954,6 +1005,23 @@
     "verdict": "correct",
     "reason": "The note call at the end of the sentence cites Barbeyrac's note 5 on DNG II.III.4, exactly the source.",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "text": "pufendorf-barbeyrac-1734",
+   "unit": "P2.5.6",
+   "page": "PUF34T1.p353",
+   "passage": "qui nous font connoître «qu'une action est moralement honnête ou deshonnê- «te, selon la convenance ou la disconvenance nécessaire «qu'elle a avec une nature raisonnable & sociable",
+   "source": "qui nous font connoître qu'une Action est moralement Honnête ou Deshonnête , selon la convenance ou disconvenance nécessaire qu'elle a avec une Nature Raisonnable & Sociable",
+   "form": "quotation",
+   "cue": "la note 5. de Mr. Barbeyrac sur le Droit de la Nat. & des Gens. Liv. II. Ch. III. § 4.",
+   "cuePart": "n2",
+   "confidence": 0.6,
+   "reason": "The quoted block (with Barbeyrac's 'Voilà ce que le Critique fait dire') is credited at the paragraph's end to Barbeyrac's note 5 on DNG II.3.4, though the passage itself is framed as Grotius's words (n1).",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
    }
   },
   {
@@ -1447,6 +1515,40 @@
     "verdict": "correct",
     "reason": "'il' is Pufendorf (named just before) and footnote (a) at the end of this sentence cites Droit de la Nat. & des G. I.5.9.",
     "date": "2026-11-13"
+   }
+  },
+  {
+   "text": "pufendorf-barbeyrac-1734",
+   "unit": "P2.11.9",
+   "page": "PUF34T1.p236",
+   "passage": "la contrainte, aussi bien que la violence physique & actuelle, exclut toute imputation",
+   "source": "cette derniére sorte de Contrainte exclut, aussi bien que la prémiére, toute sorte d'Imputation",
+   "form": "reference",
+   "cue": "Dr. de la Nat. & des G. Liv. I. Ch. V. § 9. avec les notes de Mr. Barbeyrac.",
+   "cuePart": "n0",
+   "confidence": 0.65,
+   "reason": "Reported as Pufendorf's rule ('Il pose pour régle') and rejected; the note closing that exposition cites DNG I.5.9 with Barbeyrac's notes.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "text": "pufendorf-barbeyrac-1734",
+   "unit": "P2.11.9",
+   "page": "PUF34T1.p236",
+   "passage": "qu'une action extorquée par la crainte ne peut non plus être imputée à l'Agent immédiat, qu'à l'épée dont on se sert pour frapper",
+   "source": "on ne peut pas avec plus de fondement imputer à l'Agent immédiat les actions commises en pareille circonstance, qu'à l'Epée ou à la Hache dont il se sert pour frapper",
+   "form": "reference",
+   "cue": "Dr. de la Nat. & des G. Liv. I. Ch. V. § 9. avec les notes de Mr. Barbeyrac.",
+   "cuePart": "n0",
+   "confidence": 0.65,
+   "reason": "Part of Pufendorf's rule as reported and rejected; the note closing the exposition cites DNG I.5.9 with Barbeyrac's notes.",
+   "review": {
+    "verdict": "correct",
+    "reason": "Judged once by Claude Opus (indirect designations pass).",
+    "date": "2026-11-17"
    }
   },
   {

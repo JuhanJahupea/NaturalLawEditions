@@ -24,7 +24,7 @@ As in `texts/wolff-jus-gentium-1749/README.md`.
 
 - Structure: the § markers run 1–1246. A § whose heading falls at the foot of a page is marked on both pages. Three § numbers are misprinted in the book and kept as printed: 555 for 255 (scan 167), 1024 for 1124 (scan 729), 1048 for 1148 (scan 744).
 - The Google Books OCR of the same PDF was compared page by page (8-letter sequences of the main text, accents folded, long s and f as one letter; `tools/transcription/qc_wolff.py`). Google Drive gives the OCR of the first 195 PDF pages only, so the check covers scans 30–194 (165 pages). The median page shares 90% of its sequences with the OCR. The lowest are scans 30 and 190 at 72%.
-- No page has been read against the image by hand. The Google Books PDF is larger than the session could download.
+- No page has been read against an image. No other copy of the 1750 printing is online (2026-11-17): MDZ has the Latin–French edition of 1772, archive.org the Halle printings of 1754 and later. The *Jus gentium* transcription, made the same way, has 1.3 differences per 1,000 words against a second copy (see `texts/wolff-jus-gentium-1749/README.md`).
 
 ## Known limits
 

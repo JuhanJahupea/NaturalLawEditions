@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.10 (2026-11-17)
+
+- 6 more reuse rows carry `attributed`: rows in sections that designate the source without naming it in the passage's sentence. Pufendorf as "cet illustre Restaurateur du Droit Naturel" and "selon lui" (P2.4.20, 3 rows); Barbeyrac's note named in a note at the end of the paragraph (P2.5.6); Pufendorf DNG I.5.9 "avec les notes de Mr. Barbeyrac" in the note that closes the account (P2.11.9, 2 rows). Burlamaqui attributes 99 rows.
+- Method as in the Vattel edition's changelog, 1.14 (69 candidate rows of this edition).
+- A precision audit of the reuse rows is in `audit/` (160 match and 40 possible rows of this edition, read by Claude Opus): 94% of match rows right, 5% weak, 1% wrong.
+- Text, layers and the other rows are unchanged.
+
 ## 1.9 (2026-11-16)
 
 - New title page (`titlepage.json`, `images/title.jpg`): a diplomatic transcription of the title page, line by line, beside its scan (Google Books copy, PDF p. 7). The viewer shows it before the Avertissement, with a link in the contents.
