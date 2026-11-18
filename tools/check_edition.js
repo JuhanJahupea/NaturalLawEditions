@@ -55,10 +55,11 @@ const SUPERSEDED = new Set(readDir(root + 'provenance/superseded/').flatMap(t =>
 const PASSES = readDir(root + 'passes/');
 const CORR = fs.existsSync(root + 'corrections.json') ? JSON.parse(fs.readFileSync(root + 'corrections.json', 'utf8')) : null;
 if (CORR) applyNoteMoves(D, CORR.noteMoves || []);
-// row edits after the precision audit and the label check (corrections.json, rowEdits): label, status, audit, labelCheck
+// row edits after the audits (corrections.json, rowEdits): label, status, audit, labelCheck, locus, locusCheck
 if (CORR) { const byId = new Map(D.rows.map(r => [r.id, r]));
   for (const e of CORR.rowEdits || []) { const r = byId.get(e.id); if (!r) throw new Error('rowEdits: no row ' + e.id);
-    if ('label' in e) r.label = e.label; if ('status' in e) r.status = e.status; if ('audit' in e) r.audit = e.audit; if ('labelCheck' in e) r.labelCheck = e.labelCheck; } }
+    if ('label' in e) r.label = e.label; if ('status' in e) r.status = e.status; if ('audit' in e) r.audit = e.audit; if ('labelCheck' in e) r.labelCheck = e.labelCheck;
+    if ('locus' in e) r.locus = e.locus; if ('locusCheck' in e) r.locusCheck = e.locusCheck; } }
 const PASS_ROWS = PASSES.flatMap(p => p.rows || []);
 const PASS_DIV = PASSES.flatMap(p => p.items || []);
 const PASS_DIV_IDS = new Set(PASS_DIV.map(d => d.unit + '|' + d.sourceId));
@@ -66,7 +67,7 @@ const PASS_DIV_IDS = new Set(PASS_DIV.map(d => d.unit + '|' + d.sourceId));
 const ATTR = PASSES.flatMap(p => p.attributions || []);
 // collection row field -> viewer row field
 const FIELD = { unit: 'sec', family: 'fam', work: 'work', locus: 'locus', page: 'page', inNote: 'note', label: 'label', confidence: 'conf',
-                status: 'status', step: 'step', audit: 'audit', labelCheck: 'labelCheck', passage: 'vp', source: 'sp', reason: 'reason', links: 'links', earliest: 'ew', quoting: 'qa' };
+                status: 'status', step: 'step', audit: 'audit', labelCheck: 'labelCheck', locusCheck: 'locusCheck', passage: 'vp', source: 'sp', reason: 'reason', links: 'links', earliest: 'ew', quoting: 'qa' };
 
 (async () => {
   const browser = await chromium.launch();

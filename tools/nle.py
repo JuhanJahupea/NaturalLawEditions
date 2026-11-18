@@ -179,12 +179,14 @@ class Split:
             if r.get(k): row[n] = r[k]
         if r.get('audit'): row['audit'] = r['audit']
         if r.get('labelCheck'): row['labelCheck'] = r['labelCheck']
+        if r.get('locusCheck'): row['locusCheck'] = r['locusCheck']
         return row
 
 
 def apply_row_edits(rows, edits):
     """Corrections (corrections.json, rowEdits) to reuse rows of data.json: label, status (rejected: the viewer does not show
-    the row), audit (a verdict and reason) and labelCheck (a label changed by the label check). Rows are named by id."""
+    the row), audit (a verdict and reason), labelCheck (a label changed by the label check), locus and locusCheck (a corrected
+    locus and the one it replaces). Rows are named by id."""
     by = {r['id']: r for r in rows}
     for e in edits:
         r = by[e['id']]
@@ -192,6 +194,8 @@ def apply_row_edits(rows, edits):
         if 'status' in e: r['status'] = e['status']
         if 'audit' in e: r['audit'] = e['audit']
         if 'labelCheck' in e: r['labelCheck'] = e['labelCheck']
+        if 'locus' in e: r['locus'] = e['locus']
+        if 'locusCheck' in e: r['locusCheck'] = e['locusCheck']
 
 
 def apply_note_moves(sections, rows, moves):
