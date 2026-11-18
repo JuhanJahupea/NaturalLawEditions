@@ -420,13 +420,13 @@
       "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
       "from": "vattel-1773",
       "to": "wolff-jus-gentium-1749",
-      "rows": 1205
+      "rows": 1370
     },
     {
       "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
       "from": "vattel-1773",
       "to": "wolff-institutiones-1750",
-      "rows": 285
+      "rows": 326
     },
     {
       "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
@@ -452,13 +452,13 @@
       "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
       "from": "vattel-1773",
       "to": "grotius-barbeyrac-1724",
-      "rows": 1136
+      "rows": 1226
     },
     {
       "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
       "from": "vattel-1773",
       "to": "pufendorf-barbeyrac-1734",
-      "rows": 581
+      "rows": 626
     },
     {
       "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",

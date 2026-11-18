@@ -82,5 +82,12 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `label_overlap.py`: the word overlap of each row's passage and source passage (French sources), for the label check. Agent prompt `LABEL_CHECK_PROMPT.md` (Claude Opus, 30 rows per agent): the label that fits.
 - `apply_rejudge.py <work> <repo> <vattel data.json> <burlamaqui data.json> [--write]`: re-judge verdicts go in `audit` (weak match rows become possible, wrong rows `rejected`), label-check changes in `labelCheck`. Pass rows are edited in their pass files, working rows through `corrections.json` (`rowEdits`). Run once.
 - `demote_weak.py <repo> [--write]`: match rows an audit rated weak become possible.
+- `prec2_sample.py <dir>` and `prec2_stats.py <dir>`: the second precision sample (match rows no audit had read) and its estimate. Agent prompt `PRECISION_PROMPT.md`.
+- `wolff_loci.py <work>`: places each Wolff row's source passage in the transcription and compares the § it stands in with the row's locus.
+- `apply_checks2.py <work> <repo> <vattel data.json> <burlamaqui data.json> [--write]`: applies the second sample, the locus corrections (`locusCheck`) and the rows the recall readers judged wrong.
+- `src_pages.py <out>`: reading-form pages of Wolff's *Jus gentium* and *Institutiones* (long s as s, hyphens joined) with the offset where each § starts, for the readers below.
+- `add_cand.py <work> <out>`: the weak rows whose audit reason names a passage of Wolff or Grotius that the section has no row for, in batches by section. Agent prompt `ADDITIONS_PROMPT.md` (Claude Opus, about 14 sections per agent).
+- `recall_cand.py <out> [n]`: a random sample of Vattel's sections with their rows and the source pages cited nearby. Agent prompt `RECALL_PROMPT.md` (Claude Opus, 3 sections per agent). `rec_stats.py <dir>`: the share of found reuse that rows cover.
+- `add_merge.py <work> <first id> <date> <out> A:<dir> C:<dir>`: the rows the additions and recall readers wrote become `editions/vattel-1773/passes/additions.json`, each placed on its unit and its source page, duplicates left out.
 
 The converters then rebuild the editions from their working `data.json` and the pass files (`tools/convert_*.py`, `tools/nle.py`); `tools/check_all.sh` checks both.

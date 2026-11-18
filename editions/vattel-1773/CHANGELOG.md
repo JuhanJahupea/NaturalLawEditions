@@ -2,6 +2,15 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.17 (2026-11-18)
+
+- 341 reuse rows added (`passes/additions.json`, `audit/README.md`). 191 rows give the passage of Wolff or Grotius that the audits named for weak rows (144 match, 47 possible). 150 rows give reuse found by the recall check that no row covered (76 match, 74 possible). By table: Wolff *Jus gentium* 165, Grotius 90, Pufendorf 45, Wolff *Institutiones* 41.
+- A recall check of 24 random sections: the tables hold about a third of the reuse of Wolff, Grotius and Pufendorf that a reader finds and would defend (44 of 121).
+- A second precision sample (100 match rows no audit had read): 87 right, 13 weak, 0 wrong. Right match rows in all: 89% (82–93). The 13 weak rows now have status possible; 9 labels changed.
+- 191 Wolff rows had as locus a § that the source passage only cites; each now names the § the passage stands in (`locusCheck` keeps the old locus).
+- 2 rows the recall readers judged wrong are rejected (4022, Grotius; 1479, Wolff § 700).
+- Match rows: 2,325 → 2,532. Text and layers are unchanged.
+
 ## 1.16 (2026-11-18)
 
 - Every match row of the tables for Pufendorf (Barbeyrac 1734), Burlamaqui 1747 and Burlamaqui's *Droit politique* 1751 was read again by Claude Opus (494 rows; commonplaces and rows the audit had read left out; `audit/README.md`). 338 weak rows now have status possible: in most, Vattel follows Wolff or Grotius, and Pufendorf or Burlamaqui states the same doctrine. 8 wrong rows have status `rejected`. 78 labels are changed. Match rows: Pufendorf table 364 → 186, Burlamaqui 1747 16 → 3, PDP 1751 174 → 19.

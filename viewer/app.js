@@ -29,8 +29,8 @@ async function load(){
  const got=await Promise.all([getJSON(BASE+M.text),...files.map(l=>getJSON(BASE+l.file)),...out.map(t=>getJSON('../'+t.path)),...inc.map(t=>getJSON('../'+t.path)),
   ...linked.map(id=>getJSON('../'+edEntry(id).path+'edition.json'))]);
  let k=1;const T=got[0],data={};files.forEach(l=>data[l.id]=got[k++]);const outT=out.map(()=>got[k++]),incT=inc.map(()=>got[k++]);linked.forEach(id=>MAN[id]=prepMan(got[k++]));
- // ?asbuilt=1: the tables as the working edition built them, with the rows a later pass replaced (for tools/check_edition.js)
- if(QS.get('asbuilt'))for(let i=0;i<outT.length;i++)if(outT[i].pass)outT[i]=await getJSON(BASE+'provenance/superseded/'+ED+'__'+outT[i].to+'.json').catch(()=>({to:outT[i].to,rows:[]}));
+ // ?asbuilt=1: the tables as the working edition built them, with the rows a later pass replaced and without the rows of passes/additions.json (for tools/check_edition.js)
+ if(QS.get('asbuilt'))for(let i=0;i<outT.length;i++){const a=outT[i].addedSteps;if(outT[i].pass)outT[i]=await getJSON(BASE+'provenance/superseded/'+ED+'__'+outT[i].to+'.json').catch(()=>({to:outT[i].to,rows:[]}));else if(a)outT[i]=Object.assign({},outT[i],{rows:outT[i].rows.filter(r=>!a.includes(r.step))})}
  if(M.titlePage)TP=await getJSON(BASE+M.titlePage).catch(()=>null);
  build(T,data,outT,incT);return true}
 const pageLink=p=>{const vol=(V.volumes||{})[p.vol]||{};return V.pageLink?fill(V.pageLink.url,Object.assign({},vol,p)):''};

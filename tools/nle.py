@@ -314,6 +314,7 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
         if adds.get(t['id']):
             ar = adds.pop(t['id']); head['rows'] = head['rows'] + ar
             head['steps'] = dict(head.get('steps', {}), **{s: ADD['steps'][s] for s in sorted({r['step'] for r in ar})})
+            head['addedSteps'] = sorted({r['step'] for r in ar})   # the viewer's ?asbuilt=1 leaves these rows out
         attribute(t['id'], head['rows'])
         dump(head, os.path.join(ROOT, path))
         e = {'path': path, 'from': ed, 'to': t['id'], 'rows': len(head['rows'])}

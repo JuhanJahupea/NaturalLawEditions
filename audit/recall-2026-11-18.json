@@ -1,0 +1,2774 @@
+{
+ "format": "nle-audit/1",
+ "date": "2026-11-18",
+ "kind": "recall",
+ "description": "Recall check: 24 random sections of Vattel read by Claude Opus with Wolff (Jus gentium, Institutiones), Grotius and Pufendorf (tools/transcription/RECALL_PROMPT.md). found: every reuse the reader found; covered_by: the row that covers it, or null.",
+ "sample": [
+  "Prelim.7",
+  "Prelim.12",
+  "I.8",
+  "I.64",
+  "I.80",
+  "I.123",
+  "I.168",
+  "I.266",
+  "II.13",
+  "II.92",
+  "II.101",
+  "II.120",
+  "II.136",
+  "II.144",
+  "II.239",
+  "II.322",
+  "III.22",
+  "III.48",
+  "III.77",
+  "III.100",
+  "III.119",
+  "III.187",
+  "IV.36",
+  "IV.84"
+ ],
+ "summary": {
+  "sections": 24,
+  "totals": {
+   "all": {
+    "found": 208,
+    "covered": 57,
+    "covered by match": 44
+   },
+   "JG": {
+    "found": 77,
+    "covered": 29,
+    "covered by match": 25
+   },
+   "strong": {
+    "found": 121,
+    "covered": 44,
+    "covered by match": 41
+   },
+   "strong JG": {
+    "found": 49,
+    "covered": 23,
+    "covered by match": 23
+   },
+   "INST": {
+    "found": 21,
+    "covered": 3,
+    "covered by match": 2
+   },
+   "strong INST": {
+    "found": 13,
+    "covered": 3,
+    "covered by match": 2
+   },
+   "GRO24": {
+    "found": 57,
+    "covered": 17,
+    "covered by match": 12
+   },
+   "PUF34": {
+    "found": 53,
+    "covered": 8,
+    "covered by match": 5
+   },
+   "strong GRO24": {
+    "found": 34,
+    "covered": 13,
+    "covered by match": 11
+   },
+   "strong PUF34": {
+    "found": 25,
+    "covered": 5,
+    "covered by match": 5
+   }
+  },
+  "per_section": [
+   [
+    "Prelim.7",
+    10,
+    4
+   ],
+   [
+    "Prelim.12",
+    6,
+    3
+   ],
+   [
+    "I.8",
+    6,
+    4
+   ],
+   [
+    "I.64",
+    5,
+    0
+   ],
+   [
+    "I.80",
+    0,
+    0
+   ],
+   [
+    "I.123",
+    6,
+    2
+   ],
+   [
+    "I.168",
+    16,
+    3
+   ],
+   [
+    "I.266",
+    16,
+    4
+   ],
+   [
+    "II.13",
+    5,
+    4
+   ],
+   [
+    "II.92",
+    3,
+    0
+   ],
+   [
+    "II.101",
+    11,
+    1
+   ],
+   [
+    "II.120",
+    13,
+    4
+   ],
+   [
+    "II.136",
+    16,
+    5
+   ],
+   [
+    "II.144",
+    9,
+    4
+   ],
+   [
+    "II.239",
+    4,
+    1
+   ],
+   [
+    "II.322",
+    3,
+    0
+   ],
+   [
+    "III.22",
+    10,
+    7
+   ],
+   [
+    "III.48",
+    6,
+    1
+   ],
+   [
+    "III.77",
+    15,
+    6
+   ],
+   [
+    "III.100",
+    4,
+    1
+   ],
+   [
+    "III.119",
+    12,
+    2
+   ],
+   [
+    "III.187",
+    20,
+    1
+   ],
+   [
+    "IV.36",
+    2,
+    0
+   ],
+   [
+    "IV.84",
+    10,
+    0
+   ]
+  ]
+ },
+ "sections": [
+  {
+   "unit": "Prelim.7",
+   "found": [
+    {
+     "unit": "Prelim.7",
+     "passage": "Nous appellons droit des gens nécessaire celui qui consiste dans l'application du droit naturel aux nations.",
+     "text": "JG",
+     "page": "JG.pdf30",
+     "source_passage": "Jus Gentium necessarium appellamus, quod consistit in Jure naturae ad Gentes applicato.",
+     "french": "Nous appelons droit des gens nécessaire celui qui consiste dans le droit de la nature appliqué aux nations.",
+     "label": "translation",
+     "confidence": 0.95,
+     "reason": "Word-for-word rendering of Wolff's definition in JG § 4.",
+     "covered_by": 19
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "Ce droit contient les préceptes que la loi naturelle donne aux états, pour qui cette loi n'est pas moins obligatoire que pour les particuliers",
+     "text": "JG",
+     "page": "JG.pdf30",
+     "source_passage": "Nimirum Jus Gentium necessarium continet ea, quae lex naturae Gentibus praescribit, quae sicuti regit omnes actus hominum, ita etiam actus Gentium qua talium.",
+     "french": "À savoir, le droit des gens nécessaire contient ce que la loi de nature prescrit aux nations, laquelle, de même qu'elle règle toutes les actions des hommes, règle aussi les actions des nations en tant que telles.",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "Same statement of JG § 4: the necessary law contains what natural law prescribes to nations, ruling their acts as it rules those of individuals.",
+     "covered_by": 20
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "puisque les états sont composés d'hommes, que leurs délibérations sont prises par des hommes, & que la loi de la nature oblige tous les hommes, sous quel-que relation qu'ils agissent",
+     "text": "JG",
+     "page": "JG.pdf31",
+     "source_passage": "Actus Gentium ideo regit Jus naturae, quia homines in civitatem coëuntes & per hoc Gens facti (§. 5. part. 8. Jur. nat.) non exuunt naturam humanam, ac per consequens legi naturae subjecti manent (§. 136. part. 1. Phil. pract. univ.), etiam quatenus vires suas conjungere voluerunt ad commune bonum promovendum",
+     "french": "Le droit de la nature règle les actions des nations, parce que les hommes qui s'unissent en société civile et deviennent par là une nation ne dépouillent pas la nature humaine, et par conséquent demeurent soumis à la loi naturelle, même en tant qu'ils ont voulu unir leurs forces pour procurer le bien commun.",
+     "label": "loose paraphrase",
+     "confidence": 0.75,
+     "reason": "Wolff's reason (JG § 5 note) why natural law governs nations: men joined in a state keep human nature and stay subject to natural law even when acting jointly; Vattel's 'sous quelque relation qu'ils agissent' renders the final 'etiam quatenus' clause.",
+     "covered_by": 21
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "C'est ce même droit que GROTIUS & ceux qui le suivent appellent droit des gens interne , entant qu'il oblige les nations dans la conscience. Plusieurs le nomment aussi droit des gens naturel.",
+     "text": "JG",
+     "page": "JG.pdf30",
+     "source_passage": "Vocatur etiam a Grotio & aliis, qui eum sequuntur, Jus Gentium internum, quatenus scilicet in conscientia Gentes obligat. Dicitur etiam a nonnullis Jus Gentium naturale.",
+     "french": "Il est aussi appelé par Grotius et par d'autres qui le suivent droit des gens interne, en tant qu'il oblige les nations dans la conscience. Quelques-uns l'appellent aussi droit des gens naturel.",
+     "label": "translation",
+     "confidence": 0.95,
+     "reason": "Direct translation of the two naming sentences of JG § 4, including the attribution to Grotius.",
+     "covered_by": 18
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "Il est nécessaire, parce que les nations sont absolument obligées à l'observer.",
+     "text": "JG",
+     "page": "JG.pdf31",
+     "source_passage": "obligatio etiam, quae a Jure Gentium necessario venit, necessaria & immutabilis est, consequenter nec Gens ulla seipsam, nec alia aliam ab eadem liberare potest.",
+     "french": "l'obligation qui vient du droit des gens nécessaire est aussi nécessaire et immuable ; par conséquent aucune nation ne peut s'en libérer elle-même, ni une autre l'en libérer.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Vattel's gloss on the name 'nécessaire' compresses Wolff's JG § 6 claim that the obligation arising from the necessary law is necessary and cannot be shaken off by any nation.",
+     "covered_by": null
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "Nous appellons droit des gens nécessaire celui qui consiste dans l'application du droit naturel aux nations.",
+     "text": "INST",
+     "page": "INST.pdf708",
+     "source_passage": "Jus naturae ad Gentes applicatum vocatur Jus gentium necessarium, vel naturale.",
+     "french": "Le droit de la nature appliqué aux nations s'appelle droit des gens nécessaire, ou naturel.",
+     "label": "close paraphrase",
+     "confidence": 0.55,
+     "reason": "The Institutiones § 1088 restate the same definition (natural law applied to nations = necessary law of nations), a parallel to JG § 4.",
+     "covered_by": null
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "C'est ce même droit que GROTIUS & ceux qui le suivent appellent droit des gens interne",
+     "text": "INST",
+     "page": "INST.pdf708",
+     "source_passage": "Vocari etiam solet cum Grotio a nonnullis Jus Gentium internum.",
+     "french": "Quelques-uns, avec Grotius, ont aussi coutume de l'appeler droit des gens interne.",
+     "label": "close paraphrase",
+     "confidence": 0.55,
+     "reason": "Same attribution to Grotius of the name 'internal law of nations' in INST § 1088.",
+     "covered_by": null
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "pour qui cette loi n'est pas moins obligatoire que pour les particuliers ; puisque les états sont composés d'hommes",
+     "text": "INST",
+     "page": "INST.pdf708",
+     "source_passage": "ab obligatione autem naturali, propterea quod in civitatem coivere, se liberare non potuerunt (§. 42.); ad eadem officia tum erga se ipsas, tam erga gentes alias obligantur, qua singuli singulis tenentur",
+     "french": "mais elles n'ont pu se libérer de l'obligation naturelle parce qu'elles se sont unies en société civile ; elles sont donc obligées aux mêmes devoirs, tant envers elles-mêmes qu'envers les autres nations, que ceux auxquels les particuliers sont tenus les uns envers les autres",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "INST § 1088 gives the same argument: nations, formed by men who could not free themselves from natural obligation by forming a state, are bound to the same duties as individuals.",
+     "covered_by": null
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "C'est ce même droit que GROTIUS & ceux qui le suivent appellent droit des gens interne , entant qu'il oblige les nations dans la conscience",
+     "text": "GRO24",
+     "page": "GRO24T2.p453",
+     "source_passage": "selon le Droit des Gens extérieur, mais non pas selon les régles de la véritable Justice, qui obligent en conscience",
+     "label": "citation",
+     "confidence": 0.4,
+     "reason": "Vattel (after Wolff) names Grotius for an 'internal' law of nations binding in conscience; Grotius's nearest wording is his contrast between the external law of nations and the rules of true justice 'qui obligent en conscience' (III.xx.53, cf. III.x.1).",
+     "covered_by": null
+    },
+    {
+     "unit": "Prelim.7",
+     "passage": "Ce droit contient les préceptes que la loi naturelle donne aux états, pour qui cette loi n'est pas moins obligatoire que pour les particuliers",
+     "text": "PUF34",
+     "page": "PUF34T1.p397",
+     "source_passage": "la même Loi qui se nomme Naturelle, lors qu'on parle des Devoirs des Particuliers, s'appelle Droit des Gens, lors qu'on l'applique au Corps entier d'un Etat ou d'une Nation",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Possible secondary echo of the Hobbes view reported in Pufendorf II.iii.23 (which Vattel discusses in his preface): the same natural law, applied to states instead of individuals, is the law of nations; the direct source is Wolff.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [
+    {
+     "id": 4022,
+     "why": "Grotius I.i.14 only says natural law is sometimes called droit des gens; it has nothing of the 'droit des gens interne' binding 'dans la conscience' that Vattel's sentence attributes to Grotius (taken from Wolff JG § 4). Grotius's nearest wording is the external law of nations vs. justice 'qui obligent en conscience' (III.x.1, III.xx.53)."
+    }
+   ],
+   "searched": "JG §§ 3-6 (pdf29-31), INST §§ 1088-1090 (pdf708-709) and §§ 44-46; GRO24 for interne/conscience/droit des gens exterieur (I.i.10, I.i.14, III.x.1, III.xx.53); PUF34 II.iii.22-24 and nearby cited pages; phrases 'composés d'hommes', 'sous quelque relation'."
+  },
+  {
+   "unit": "Prelim.12",
+   "found": [
+    {
+     "unit": "Prelim.12",
+     "passage": "Le but de la société naturelle établie entre tous les hommes , étant qu'ils se prêtent une mutuelle assistance pour leur propre perfection & pour celle de leur état, & les nations , considérées comme autant de personnes libres qui vivent ensemble dans l'état de nature , étant obligées de cultiver entr'elles cette société humaine , le but de la grande société établie par la nature entre toutes les nations est aussi une assistance mutuelle , pour se perfectionner elles & leur état.",
+     "text": "JG",
+     "page": "JG.pdf33",
+     "source_passage": "Quoniam ipsa natura societatem inter omnes gentes instituit, quatenus eam instituit inter omnes homines, prouti ex demonstratione propositionis praecedentis patet (§. 7.), societatis autem naturalis, consequenter ejus, quem ipsa natura inter homines instituit (§. 142. part. 7. Jur. nat.), mutuum adjutorium est in se statuque suo perficiendo (§. 144. part. 7. Jur. nat.); societatis quoque, quam natura inter omnes gentes instituit, finis est mutuum adjutorium in se statuque suo perficiendo",
+     "french": "Puisque la nature même a établi une société entre toutes les nations, en tant qu'elle l'a établie entre tous les hommes, comme il ressort de la démonstration de la proposition précédente, et que le but de la société naturelle, et par conséquent de celle que la nature a établie entre les hommes, est l'assistance mutuelle pour se perfectionner soi-même et son état, le but de la société que la nature a établie entre toutes les nations est aussi l'assistance mutuelle pour se perfectionner elles-mêmes et leur état.",
+     "label": "translation",
+     "confidence": 0.9,
+     "reason": "Vattel translates the demonstration of JG § 8, keeping its structure: the end of natural society among men is mutual help in perfecting self and state, hence the same is the end of the society of nations.",
+     "covered_by": 31
+    },
+    {
+     "unit": "Prelim.12",
+     "passage": "Le but de la société naturelle établie entre tous les hommes , étant qu'ils se prêtent une mutuelle assistance pour leur propre perfection & pour celle de leur état, & les nations , considérées comme autant de personnes libres qui vivent ensemble dans l'état de nature , étant obligées de cultiver entr'elles cette société humaine , le but de la grande société établie par la nature entre toutes les nations est aussi une assistance mutuelle , pour se perfectionner elles & leur état.",
+     "text": "JG",
+     "page": "JG.pdf155",
+     "source_passage": "Quemadmodum magnae illius societatis naturalis, quam ipsa natura inter homines instituit (§. 138. part. 7. Jur. nat.), finis est mutuum adjutorium in se & statu suo perficiendo (§. 144. part. 7. Jur. nat.), ita idem finis est societatis, quam natura inter omnes Gentes instituit & ad quam colendam eas obligat.",
+     "french": "De même que le but de cette grande société naturelle que la nature a établie entre les hommes est l'assistance mutuelle pour se perfectionner eux-mêmes et leur état, ainsi le même est le but de la société que la nature a établie entre toutes les nations et qu'elle les oblige à cultiver.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Wolff repeats the § 8 argument in the note to JG § 161, with 'magnae' and 'ad quam colendam eas obligat' that Vattel's 'grande société' and 'obligées de cultiver' also reflect.",
+     "covered_by": 32
+    },
+    {
+     "unit": "Prelim.12",
+     "passage": "étant obligées de cultiver entr'elles cette société humaine",
+     "text": "JG",
+     "page": "JG.pdf32",
+     "source_passage": "ipsa quoque natura societatem instituisse dicenda est inter omnes gentes & ad societatem colendam eas obligare.",
+     "french": "il faut dire que la nature même a aussi établi une société entre toutes les nations et les oblige à cultiver cette société.",
+     "label": "loose paraphrase",
+     "confidence": 0.7,
+     "reason": "The premise that nations are bound to cultivate the natural society is the conclusion of JG § 7, which Vattel recalls here.",
+     "covered_by": 33
+    },
+    {
+     "unit": "Prelim.12",
+     "passage": "les nations , considérées comme autant de personnes libres qui vivent ensemble dans l'état de nature",
+     "text": "JG",
+     "page": "JG.pdf28",
+     "source_passage": "Gentes spectantur tanquam personae singulares liberae in statu naturali viventes.",
+     "french": "Les nations sont considérées comme autant de personnes particulières libres vivant dans l'état de nature.",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "reason": "Wolff's formula of JG § 2 (nations regarded as free individual persons living in the state of nature), which § 8 does not contain and Vattel inserts into the argument.",
+     "covered_by": null
+    },
+    {
+     "unit": "Prelim.12",
+     "passage": "les nations , considérées comme autant de personnes libres qui vivent ensemble dans l'état de nature",
+     "text": "INST",
+     "page": "INST.pdf708",
+     "source_passage": "Quoniam Gentes diversae inter se spectantur tanquam personae liberae in statu naturali viventes (§. 977.)",
+     "french": "Puisque les diverses nations sont considérées entre elles comme des personnes libres vivant dans l'état de nature",
+     "label": "close paraphrase",
+     "confidence": 0.5,
+     "reason": "Same formula in INST § 1088, parallel to JG § 2.",
+     "covered_by": null
+    },
+    {
+     "unit": "Prelim.12",
+     "passage": "le but de la grande société établie par la nature entre toutes les nations est aussi une assistance mutuelle , pour se perfectionner elles & leur état",
+     "text": "INST",
+     "page": "INST.pdf709",
+     "source_passage": "Cum gentes conjunctis viribus se statumque suum perficere obligentur (§. 44. 1088.); ipsa natura societatem quandam inter",
+     "french": "Comme les nations sont obligées de se perfectionner, elles et leur état, en unissant leurs forces, la nature même a établi une certaine société entre",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "INST § 1090 links the same two points: nations are obliged to perfect themselves and their state with joined forces, hence nature has instituted a society among them.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 2, 7-9, 161-162 (pdf28-34, 154-155); INST §§ 44, 1088, 1090 (pdf52, 708-710); GRO24 I.i.10/14 and PUF34 II.ii.4, II.iii.15-16, 23 (cited pages); phrases 'assistance mutuelle', 'personnes libres', 'secours mutuel'."
+  },
+  {
+   "unit": "I.8",
+   "found": [
+    {
+     "unit": "I.8",
+     "passage": "Les nations Germaniques introduisirent un autre usage",
+     "text": "GRO24",
+     "page": "GRO24T1.p220",
+     "source_passage": "Car, dans ce Contract, (1) qui est particulier à la Nation Germanique, en sorte qu'on ne le trouve pratiqué que dans les lieux où quelques Peuples de cette Nation se sont établis",
+     "label": "loose paraphrase",
+     "confidence": 0.65,
+     "reason": "Vattel's attribution of the feudal practice to the Germanic nations follows Grotius I.iii.23, the section on whether feudatory powers can be sovereign.",
+     "covered_by": 4033
+    },
+    {
+     "unit": "I.8",
+     "passage": "Lorsque l'hommage , laissant subsister l'indépendance &l'autorité souveraine dans l'administration de l'état, emporte seulement certains devoirs envers le seigneur du fief, ou même une simple reconnoissance honorifique, il n'empêche point que l'état, ou le prince feudataire ne soit véritablement souverain.",
+     "text": "GRO24",
+     "page": "GRO24T1.p221",
+     "source_passage": "une telle obligation ne détruit point sa liberté personnelle: elle ne donne non plus aucune atteinte à la Souveraineté, ou à la liberté civile d'un Roi ou d'un Peuple; ce qui paroît avec la derniére évidence par l'exemple des Fiefs francs, qui consistent uniquement dans une obligation personnelle",
+     "label": "loose paraphrase",
+     "confidence": 0.7,
+     "reason": "Same conclusion and reasoning as Grotius I.iii.23.2: a vassal's merely personal obligations leave sovereignty intact.",
+     "covered_by": 4034
+    },
+    {
+     "unit": "I.8",
+     "passage": "il n'empêche point que l'état, ou le prince feudataire ne soit véritablement souverain",
+     "text": "GRO24",
+     "page": "GRO24T1.p222",
+     "source_passage": "Mais cela n'empêche pas, que le Pouvoir qu'il avoit sur ses Sujets ne fût Souverain",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Vattel's turn of phrase echoes the close of Grotius I.iii.23 ('cela n'empêche pas que ... ne fût Souverain'), which says the same of feudatory sovereigns.",
+     "covered_by": 4034
+    },
+    {
+     "unit": "I.8",
+     "passage": "emporte seulement certains devoirs envers le seigneur du fief, ou même une simple reconnoissance honorifique",
+     "text": "GRO24",
+     "page": "GRO24T1.p220",
+     "source_passage": "en sorte que les engagemens du Vassal se réduisent à ce qu'emporte la foi & loiauté, qui consiste uniquement à honorer le Seigneur",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Barbeyrac's note 3 on I.iii.23 describes free fiefs whose duties reduce to honouring the lord, and notes that homage was often given for mere pensions; Vattel's 'simple reconnoissance honorifique' may draw on this.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.8",
+     "passage": "Lorsque l'hommage , laissant subsister l'indépendance &l'autorité souveraine dans l'administration de l'état, emporte seulement certains devoirs envers le seigneur du fief, ou même une simple reconnoissance honorifique, il n'empêche point que l'état, ou le prince feudataire ne soit véritablement souverain.",
+     "text": "JG",
+     "page": "JG.pdf364",
+     "source_passage": "Quamobrem cum imperii summitatem minime amittat, qui alteri nullum jus in actus ad exercitium imperii pertinentes dat ( §. 44. part. 8. Jur. nat. ); Gens tributaria facta summitatem imperii non amittit.",
+     "french": "C'est pourquoi, puisque celui qui ne donne à un autre aucun droit sur les actes qui appartiennent à l'exercice de l'empire ne perd nullement la souveraineté de l'empire, une nation devenue tributaire ne perd pas la souveraineté.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Vattel transfers to homage Wolff's argument for tributary nations in JG § 411: sovereignty is kept when the other party gets no right over the acts of government.",
+     "covered_by": 80
+    },
+    {
+     "unit": "I.8",
+     "passage": "Quelquefois même un puissance a donné des souverainetés en fief , & des souverains se sont rendus volontairement feudataires d'un autre.",
+     "text": "INST",
+     "page": "INST.pdf475",
+     "source_passage": "Feudum datum vocatur, quando dominus alteri constituit feudum in re sua : feudum vero oblatum, quando danti constituitur in re data.",
+     "french": "On appelle fief donné celui que le seigneur constitue à un autre sur sa propre chose ; fief offert, celui qui est constitué au donateur sur la chose qu'il a donnée.",
+     "label": "loose paraphrase",
+     "confidence": 0.3,
+     "reason": "Vattel's pair (sovereignties given in fief / sovereigns making themselves feudatories voluntarily) matches the feudum datum / feudum oblatum distinction of INST § 738, but that distinction is standard feudal law.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "GRO24 I.iii.21-24 with Barbeyrac notes (p219-222), all GRO24/PUF34 hits for fief/feudataire/hommage/vassal and Naples; PUF34 VII.iii.8-9, VII.v.16-18, VIII.iv.15, VIII.v.10; JG §§ 398, 410-411, 514 and all feud/homag hits; INST §§ 736-739, 1145."
+  },
+  {
+   "unit": "I.64",
+   "found": [
+    {
+     "unit": "I.64",
+     "passage": "la loi , ou l'état peut suppléer à l'incapacité du prince, en nommant un régent , comme cela se pratique dans les cas de minorité",
+     "text": "GRO24",
+     "page": "GRO24T1.p197",
+     "source_passage": "la Régence d'un Roiaume, pendant la Minorité de l'Héritier de la Couronne, ou lors que le Roi est tombé dans quelque maladie, qui l'empêche d'exercer les fonctions du Gouvernement. Car, dans les Roiaumes non-patrimoniaux, la Régence appartient à ceux qui sont établis par les Loix; ou, au défaut de Loi, par le consentement (1) du Peuple.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Grotius I.3.15 gives the same rule: in the minority of the heir a regency is set up by the laws or, failing a law, by the people, which Vattel restates as 'la loi, ou l'état' naming a regent in cases of minority.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.64",
+     "passage": "la loi , ou l'état peut suppléer à l'incapacité du prince, en nommant un régent",
+     "text": "JG",
+     "page": "JG.pdf807",
+     "source_passage": "administratio imperii necessario committenda aliis, sive id fiat per leges fundamentales, sive voluntate populi, sive patris in testamento, sive alio quocunque modo",
+     "french": "l'administration de l'empire doit nécessairement être confiée à d'autres, que cela se fasse par les lois fondamentales, ou par la volonté du peuple, ou par le testament du père, ou de quelque autre manière que ce soit",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Wolff JG § 981: when the king is incapable of administering, the administration is committed to others by the fundamental laws or the will of the people, the same pairing as Vattel's 'la loi, ou l'état'.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.64",
+     "passage": "Ce régent est revêtu , pour tout le tems de son administration, de l'autorité royale ; mais il l'exerce au nom du roi.",
+     "text": "JG",
+     "page": "JG.pdf807",
+     "source_passage": "Quando vero Reges ipsi imperium administrare nequeunt, dantur ipsis tutores vel curatores, qui eorum nomine administrant.",
+     "french": "Mais quand les rois ne peuvent eux-mêmes administrer l'empire, on leur donne des tuteurs ou des curateurs, qui l'administrent en leur nom.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff JG § 980 (king infant or impubes): tutors or curators are given who administer in the king's name, Vattel's regent who exercises royal authority 'au nom du roi'.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.64",
+     "passage": "Ce régent est revêtu , pour tout le tems de son administration, de l'autorité royale ; mais il l'exerce au nom du roi.",
+     "text": "PUF34",
+     "page": "PUF34T2.p389",
+     "source_passage": "Tout cela n'empêche point qu'ils n'exercent le Pouvoir Souverain au nom d'autrui, & non pas en leur propre nom",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Pufendorf VII.6.15, against Grotius, says regents of the realm hold the sovereign power but exercise it in another's name, the distinction Vattel draws ('revêtu ... de l'autorité royale; mais il l'exerce au nom du roi').",
+     "covered_by": null
+    },
+    {
+     "unit": "I.64",
+     "passage": "Ce régent est revêtu , pour tout le tems de son administration, de l'autorité royale",
+     "text": "GRO24",
+     "page": "GRO24T1.p190",
+     "source_passage": "sont établis Regens du Roiaume, (8) en sorte qu'ils ne dépendent point du Peuple, & qu'ils ne peuvent pas être dépouillez de leur autorité avant le tems fixé par les Loix.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Grotius I.3.11 treats regents set up during a minority as holding the supreme authority for a fixed term, close to Vattel's regent invested with royal authority for the whole time of his administration.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 979-982 (tutores/curatores regis), INST (rex infans, tutela), GRO24 I.3.11, I.3.15 and notes, II.7.26-27, PUF34 VII.6.15, VII.7.8-15 and cited nearby pages, for régent/régence/minorité/tuteur/au nom du roi/incapacité."
+  },
+  {
+   "unit": "I.80",
+   "found": [],
+   "rows_wrong": [],
+   "searched": "JG/INST for agricultura/agricola/aratrum/rusticus/Sinenses; GRO24 and PUF34 for labourage/laboureur/charrue/cultivateur/agriculture with mépris/honneur, Chine/empereur, dictateurs/consuls/Cincinnatus; cited nearby JG.pdf78-79, GRO24T1.p295, PUF34T2.p436-437 (no reuse found)."
+  },
+  {
+   "unit": "I.123",
+   "found": [
+    {
+     "unit": "I.123",
+     "passage": "Si tout homme est obligé d'aimer sincérement sa patrie, & d'en procurer le bonheur autant qu'il dépend de lui ; c'est un crime honteux & détestable de nuire à cette même patrie",
+     "text": "JG",
+     "page": "JG.pdf137",
+     "source_passage": "Quoniam quilibet, qui est de Gente, diligere debet Gentem suam (§. 135.), consequenter omni studio cavere, ne ea fiat infelix (§. 617. part. 1. Jur. nat.); nemo quicquam committere debet, quo Genti suae quomodocunque noceri potest",
+     "french": "Puisque quiconque fait partie d'une nation doit aimer sa nation (§ 135), et par conséquent prendre tout le soin possible qu'elle ne devienne pas malheureuse, personne ne doit rien commettre par quoi sa nation puisse être lésée de quelque manière que ce soit",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "Vattel restates the argument of JG § 136: since each member must love his nation and keep it from unhappiness, no one may do anything that harms it.",
+     "covered_by": 223
+    },
+    {
+     "unit": "I.123",
+     "passage": "tombe dans une lâche ingratitude",
+     "text": "JG",
+     "page": "JG.pdf137",
+     "source_passage": "Accedit enim ingratitudo, vitium turpissimum.",
+     "french": "Car il s'y ajoute l'ingratitude, vice très honteux.",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Wolff adds that harming one's country is ingratitude, a most shameful vice; Vattel's 'lâche ingratitude'.",
+     "covered_by": 224
+    },
+    {
+     "unit": "I.123",
+     "passage": "Aussi sont-ils justement détestés de tout le monde, comme les plus infâmes de tous les scélérats.",
+     "text": "JG",
+     "page": "JG.pdf137",
+     "source_passage": "Qui in patriam injurii sunt, merito omnium proborum indignationem merentur.",
+     "french": "Ceux qui font tort à leur patrie méritent à juste titre l'indignation de tous les gens de bien.",
+     "label": "loose paraphrase",
+     "confidence": 0.6,
+     "reason": "Same place in JG § 136: those who wrong their country justly earn the indignation of all good men, which Vattel renders as their being justly detested by everyone.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.123",
+     "passage": "dont le cœur est incapable de tout sentiment d'affection pour les autres.",
+     "text": "JG",
+     "page": "JG.pdf137",
+     "source_passage": "ac ex adverso naturam humanam exuisse videtur, qui patriam odit.",
+     "french": "et au contraire celui qui hait sa patrie semble avoir dépouillé la nature humaine.",
+     "label": "loose paraphrase",
+     "confidence": 0.3,
+     "reason": "Wolff ends § 136 saying that one who hates his country seems to have put off human nature; Vattel's traitor whose heart is incapable of affection for others may echo it.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.123",
+     "passage": "viole ses engagemens les plus sacrés",
+     "text": "JG",
+     "page": "JG.pdf136",
+     "source_passage": "singuli se obligant universis, quod commune bonum, consequenter felicitatem Gentis suae (§. 9. part. 8. Jur. nat.) promovere velint",
+     "french": "chacun s'oblige envers tous à vouloir promouvoir le bien commun, et par conséquent le bonheur de sa nation",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "The 'engagemens' violated are the obligation, set out in JG § 135, by which each citizen binds himself to all to promote the common good and the nation's happiness.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.123",
+     "passage": "c'est un crime honteux & détestable de nuire à cette même patrie",
+     "text": "PUF34",
+     "page": "PUF34T1.p492",
+     "source_passage": "C'est „ un crime de nuire à sa Patrie",
+     "label": "close paraphrase",
+     "confidence": 0.3,
+     "reason": "Barbeyrac's rendering of Seneca in Pufendorf III.1.1 n. 2 has the same phrase 'c'est un crime de nuire à sa Patrie', though Vattel's sentence follows Wolff and the wording may be coincidental.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 135-137 (pdf136-137), INST § 1105 and 'patria', JG for proditor/perfidia; GRO24 and PUF34 for nuire/trahir sa patrie, traîtres, ingratitude, perfidie, concitoyens; cited nearby PUF34T1.p382."
+  },
+  {
+   "unit": "I.168",
+   "found": [
+    {
+     "unit": "I.168",
+     "passage": "Il est une autre espece de justice, que l'on nomme attributive, ou distributive.",
+     "text": "GRO24",
+     "page": "GRO24T1.p98",
+     "source_passage": "de la Justice Attributive, qu'ARISTOTE appelle (3) Justice Distributive",
+     "label": "loose paraphrase",
+     "confidence": 0.6,
+     "reason": "Vattel's double name attributive/distributive is Grotius's Justice Attributive that Aristotle calls Distributive (I.I.8.2).",
+     "covered_by": 4100
+    },
+    {
+     "unit": "I.168",
+     "passage": "Elle consiste en général à traiter un chacun suivant ses mérites.",
+     "text": "GRO24",
+     "page": "GRO24T1.p98",
+     "source_passage": "Car la Justice , dont il s'agit , régle l'exercice des Vertus qui consistent à faire en faveur d'autrui des choses que personne ne peut exiger à la rigueur , & celle enseigne à appliquer convenablement les actes de ces Vertus , par un sage choix des personnes les plus dignes d'en ressentir les effets.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Barbeyrac's note defines attributive justice as applying benefits by choice of the most deserving, which Vattel condenses to treating each according to merit.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "Cette vertu doit régler dans un état la distribution des emplois publics, des honneurs & des récompenses.",
+     "text": "GRO24",
+     "page": "GRO24T1.p63",
+     "source_passage": "Nôtre Auteur entend parler ici des Récompenses que l'Etat, ou ceux qui le représentent, distribuent aux personnes qui les ont méritées; comme aussi de la collation des Emplois Publics",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Barbeyrac glosses the distribution in Grotius as the State's distribution of rewards and conferring of public offices, the scope Vattel gives attributive justice.",
+     "covered_by": 4101
+    },
+    {
+     "unit": "I.168",
+     "passage": "Bien qu'un souverain soit le maître de distribuer ses graces & les emplois à qui il lui plaît , & que personne n'ait un droit parfait à aucune charge , ou dignité",
+     "text": "GRO24",
+     "page": "GRO24T1.p98",
+     "source_passage": "quoi que le Souverain doive en cela préferer les personnes les plus dignes & les plus capables , aucun Particulier ne peut exiger à la rigueur cette préférence",
+     "label": "loose paraphrase",
+     "confidence": 0.6,
+     "reason": "Same concession: the sovereign should prefer the worthiest, yet no individual can strictly claim the office.",
+     "covered_by": 4102
+    },
+    {
+     "unit": "I.168",
+     "passage": "peuvent se plaindre avec justice, si le prince les laisse dans l'oubli , pour avancer des gens inutiles & sans mérite",
+     "text": "GRO24",
+     "page": "GRO24T1.p98",
+     "source_passage": "Je remarquois qu'on élevoit aux honneurs des gens „ sans mérite , & je me voiois éloigné des Emplois",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Vattel echoes Catilina's complaint (quoted in the same note) about men without merit being raised to honours, but treats such a complaint as just where Barbeyrac calls it a frivolous pretext.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "que personne n'ait un droit parfait à aucune charge , ou dignité",
+     "text": "GRO24",
+     "page": "GRO24T1.p63",
+     "source_passage": "car aucun de ceux qui reçoivent les premiéres, ou qui sont revêtus des derniers, n'avoit un plein droit de les demander",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Same point that no one has a full right to demand offices or rewards, in the note row 4101 pairs with a different Vattel sentence.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "de ne confier les emplois qu'à des sujets capables de les bien desservir",
+     "text": "GRO24",
+     "page": "GRO24T1.p63",
+     "source_passage": "de donner quelque Emploi Public à une personne qui en a grand besoin pour subsister, au préjudice d'un autre qui est beaucoup plus capable de se bien aquitter d'un tel Emploi",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Barbeyrac requires public offices to go to the one more capable of discharging them well, close to Vattel's 'capables de les bien desservir'.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "cependant , un homme qui par une grande ap-plication s'est mis en état de servir utilement la patrie, celui qui a rendu quelque service signalé à l'état , de pareils citoyens, dis - je , peuvent se plaindre avec justice, si le prince les laisse dans l'oubli , pour avancer des gens inutiles & sans mérite",
+     "text": "GRO24",
+     "page": "GRO24T1.p63",
+     "source_passage": "Mais quand le Souverain refuse quelque Charge à un de ses Sujets qui en est digne, ou qu'il lui préfére une autre personne moins capable, ou qu'il ne lui donne pas la récompense qu'il a méritée ; il péche à la vérité contre le Droit Naturel pris dans un sens impropre & plus étendu",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Barbeyrac's argument that a sovereign who passes over a worthy subject for a less capable one sins against natural law though doing no strict wrong is the structure of Vattel's 'bien que... cependant' passage.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "Bien qu'un souverain soit le maître de distribuer ses graces & les emplois à qui il lui plaît , & que personne n'ait un droit parfait à aucune charge , ou dignité",
+     "text": "PUF34",
+     "page": "PUF34T1.p494",
+     "source_passage": "CICERON soûtient aussi, que, quoi qu'un Citoien aît peut-être plus de mérite qu'un autre, il est libre au Peuple Romain de choisir celui-ci préférablement au prémier, dans la distribution des Charges, parce qu'aucun des deux n'a aquis un droit parfait sur tel ou tel Emploi.",
+     "label": "close paraphrase",
+     "confidence": 0.55,
+     "reason": "Shared argument and wording: the people may give offices to whom it pleases because no one has acquired a 'droit parfait' to any office.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "de pareils citoyens, dis - je , peuvent se plaindre avec justice, si le prince les laisse dans l'oubli , pour avancer des gens inutiles & sans mérite",
+     "text": "PUF34",
+     "page": "PUF34T1.p494",
+     "source_passage": "les autres Citoiens, à qui on les préfére, ne sauroient à la vérité, quelque mérite qu'ils aient, se plaindre qu'on leur fasse du tort",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Pufendorf says citizens passed over for unworthy men cannot complain of a wrong; Vattel answers the same case by allowing them to complain with justice of ingratitude.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "Elle doit aussi aux particuliers la juste attention de récompenser & d'honorer le mérite.",
+     "text": "PUF34",
+     "page": "PUF34T1.p293",
+     "source_passage": "Grotius met au même rang la sage administration du Gouvernement : ce qui , à mon avis, regarde sur tout la distribution des récompenses auxquelles les Citoiens n'ont qu'un droit imparfait : & même , quoi que dans cette occasion l'on aît beaucoup plus de liberté qu'en matiére de choses dues par Contract, le meilleur est d'y (2) avoir égard au mérite de chacun , pour prévenir les murmures & la jalousie qu'excite une distribution faite avec trop d'inégalité.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Pufendorf: citizens have only an imperfect right to rewards, yet the distributor should regard each one's merit; Vattel draws the same duty to particulars.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "de ne confier les emplois qu'à des sujets capables de les bien desservir",
+     "text": "PUF34",
+     "page": "PUF34T2.p536",
+     "source_passage": "pour ôter tout prétexte aux plaintes & aux murmures, & pour ne pas (d) avilir les Emplois mêmes, on n'en doit conférer aucun, qu'à ceux qui le méritent, & qui sont capables de s'en bien aquitter.",
+     "label": "close paraphrase",
+     "confidence": 0.55,
+     "reason": "Same rule in parallel wording: offices to be conferred only on those who deserve them and are capable of discharging them well.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "Une nation se doit premiérement à ellemême d'encourager les bons citoyens, d'exciter tout le monde à la vertu , par les honneurs & les récompenses",
+     "text": "PUF34",
+     "page": "PUF34T2.p434",
+     "source_passage": "le Souverain doit choisir (2) des personnes de probité, & capables des affaires qu'il leur confie; examiner de tems en tems leur conduite; & les punir, ou les recompenser, selon qu'ils le méritent pour intimider ou encourager par là les autres",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Pufendorf's duty of the sovereign to pick capable ministers and reward them by merit so as to encourage others matches Vattel's pairing of encouragement by rewards with entrusting offices to the capable.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "les affaires conduites par des mains mal - habiles, ne peuvent manquer d'avoir un mauvais succès",
+     "text": "PUF34",
+     "page": "PUF34T2.p434",
+     "source_passage": "puis que d'ailleurs les Ministres certainement s'aquittent (a) bien ou mal de leur Emploi, selon qu'ils ont de bonnes ou de mauvaises qualitez",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Same reason for choosing capable officers: business succeeds well or badly according to the qualities of those who conduct it.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "Cette vertu doit régler dans un état la distribution des emplois publics, des honneurs & des récompenses.",
+     "text": "PUF34",
+     "page": "PUF34T1.p294",
+     "source_passage": "La prémiere , c'est la Justice Distributive , qui consiste dans la distribution (2) des Honneurs , des Richesses , & des autres choses semblables qui peuvent être départies aux Membres d'un même Etat.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Distributive justice as the distribution of honours among members of a State; row 6069 pairs this source passage with Vattel's preceding sentence, not this one.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.168",
+     "passage": "d'encourager les bons citoyens, d'exciter tout le monde à la vertu , par les honneurs & les récompenses",
+     "text": "INST",
+     "page": "INST.pdf673",
+     "source_passage": "tituli & praecedentia esse debent signa meritorum in Remp. & per eos cives ad praeclara in Remp. merita obligantur",
+     "french": "les titres et la préséance doivent être des marques des mérites envers la république, et par eux les citoyens sont engagés à de beaux mérites envers la république",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Wolff makes honours signs of merit by which citizens are bound to deserve well of the state, the incentive role Vattel gives honours and rewards.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "Grotius I.I.8 with notes and Discours prélim. § 10 with notes; Pufendorf I.VII.11-12, III.I.3, VII.IX.9, VIII.IV.23 (searched emplois/mérite/capables/droit parfait); Wolff INST §§ 1041, 1060-1061 (merita, praemia, dignitates, officia publica); JG has no parallel (no attributive justice)."
+  },
+  {
+   "unit": "I.266",
+   "found": [
+    {
+     "unit": "I.266",
+     "passage": "On demande à qui ce fleuve appartiendra ? Il est manifeste, par les principes que nous avons établis au chapitre XVIII. qu'il doit appartenir à la nation qui s'en est emparée la premiere.",
+     "text": "JG",
+     "page": "JG.pdf115",
+     "source_passage": "Si flumen duo territoria disterminat, dominium & imperium in flumine erit ejus Gentis, quae prior id occupavit",
+     "french": "Si un fleuve sépare deux territoires, le domaine et l'empire sur le fleuve appartiendront à la nation qui l'a occupé la première",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Wolff's thesis of § 106 that the river belongs to the nation that first occupied it is Vattel's opening answer.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "1°. Quand une nation s'empare d'un pays terminé par un fleuve, elle est censée s'approprier aussi le fleuve même ; car un fleuve est d'un trop grand usage, pour que l'on puisse présumer que la nation n'ait pas eu intention de se le réserver.",
+     "text": "JG",
+     "page": "JG.pdf116",
+     "source_passage": "Quodsi duae Gentes regiones, quod flumen disterminat, eodem tempore occupent, cum fluminum usus utriusque utilitati serviat, hoc quoque simul occupasse intelliguntur.",
+     "french": "Si deux nations occupent en même temps les régions que sépare un fleuve, comme l'usage des fleuves sert à l'utilité de l'une et de l'autre, on entend qu'elles l'ont aussi occupé ensemble.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Same presumption and reason: occupying a country bounded by a river is understood to occupy the river too, because the river's use serves the occupier.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "3°. Si ni l'un ni l'autre des deux voisins du fleuve ne peut prouver que lui-même , ou celui dont il a le droit, s'est établi le premier dans ces contrées , on suppose que tous les deux y sont venus en même tems, puisqu'aucun n'a des raisons de préférence ; & en ce cas , la domination de l'un & de l'autre s'étend jusqu'au milieu du fleuve.",
+     "text": "JG",
+     "page": "JG.pdf116",
+     "source_passage": "Quodsi non constet, utrum Gens una prior flumen occupaverit, nec ne, neque etiam num pactionibus de dominio & imperio in flumine aliquid definitum fuerit; id praesumendum, quod magis naturale est. Quamobrem cum natura Genti nulli praerogativam tribuat prae altera (§. 94. part. 1. Jur. nat. & §. 2. h.), naturali autem aequitati maxime conveniat, ut dominia & imperia ad medietatem fluminis usque utrinque pertingant; hoc in casu dubio praesumitur.",
+     "french": "Que s'il n'est pas établi si l'une des nations a occupé la première le fleuve ou non, et que rien n'ait été défini par des conventions sur le domaine et l'empire dans le fleuve, il faut présumer ce qui est le plus naturel. Ainsi, comme la nature n'accorde à aucune nation de prérogative sur une autre, et qu'il convient le mieux à l'équité naturelle que les domaines et les empires s'étendent de part et d'autre jusqu'au milieu du fleuve, c'est ce qu'on présume dans le cas douteux.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Wolff's third case: when first occupation is unproved, since nature gives no nation a prerogative, dominion to the middle of the river is presumed; Vattel keeps the 'no preference' reason.",
+     "covered_by": 352
+    },
+    {
+     "unit": "I.266",
+     "passage": "5°. Enfin si les traités définissent quelque chose sur la question, il faut les observer.",
+     "text": "JG",
+     "page": "JG.pdf116",
+     "source_passage": "Quodsi res pactionibus definita, iis standum.",
+     "french": "Que si la chose a été définie par des conventions, il faut s'y tenir.",
+     "label": "translation",
+     "confidence": 0.75,
+     "reason": "Wolff's fourth rule, that what treaties settle on the river must be kept, rendered almost word for word.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "La décider par des conventions biens expresses , est le parti le plus sûr",
+     "text": "JG",
+     "page": "JG.pdf117",
+     "source_passage": "Ast cum in utroque casu facillime oriantur difficultates nimium molestae; hae ipsae Gentes permovent, ut certi quid pactionibus inter se definiant.",
+     "french": "Mais comme dans l'un et l'autre cas naissent très facilement des difficultés fort fâcheuses, celles-ci poussent ces nations à définir entre elles quelque chose de certain par des conventions.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff notes that the difficulties lead nations to settle the matter by agreement, which Vattel turns into the advice that express conventions are safest.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "& c'est en effet celui que prennent aujourd'hui la plupart des puissances.",
+     "text": "JG",
+     "page": "JG.pdf116",
+     "source_passage": "Cum nostra tempora longissimo absint a prima occupatione; vix dabitur in praesenti casu Jus Gentium aliud, quam pactitium.",
+     "french": "Comme notre temps est très éloigné de la première occupation, il n'y aura guère dans le cas présent d'autre droit des gens que le droit conventionnel.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff's remark that today the law on rivers between nations is hardly anything but conventional underlies Vattel's 'aujourd'hui la plupart des puissances'.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "Par conséquent le peuple , qui le premier a établi sa domination sur l'un des bords du fleuve, est censé le premier occupant de toute la partie de ce fleuve qui termine son territoire.",
+     "text": "GRO24",
+     "page": "GRO24T1.p315",
+     "source_passage": "MAIS, quoi que, dans un doute, les Jurisdictions de deux Peuples voisins s'étendent de part & d'autre jusqu'au milieu de la Riviére qui les sépare, comme nous venons de le dire ; rien n'empêche néanmoins, que la Riviére ne puisse être toute entiére à celui qui est d'un côté, comme nous le voions effectivement en quelques endroits ; parce que celui qui se trouve de l'autre côté ne s'est emparé que tard du païs, & lors que la Riviére (1) étoit déja occupée ; ou parce que cela a été aussi réglé par quelque Traité.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Grotius II.III.18 sets out the same scheme: the middle in doubt, but the whole river to the side that occupied first, or as a treaty settles it.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "5°. Enfin si les traités définissent quelque chose sur la question, il faut les observer.",
+     "text": "GRO24",
+     "page": "GRO24T1.p315",
+     "source_passage": "ou parce que cela a été aussi réglé par quelque Traité.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Grotius gives treaty settlement as the alternative ground for dominion over a boundary river, as Vattel's fifth rule does.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "on suppose que tous les deux y sont venus en même tems, puisqu'aucun n'a des raisons de préférence ; & en ce cas , la domination de l'un & de l'autre s'étend jusqu'au milieu du fleuve.",
+     "text": "GRO24",
+     "page": "GRO24T1.p313",
+     "source_passage": "parce que les deux Peuples, entre lesquels la Riviére coule, sont censez avoir pris (10) originairement le milieu de la Riviére pour borne naturelle de leurs Jurisdictions.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Grotius presumes the two riparian peoples took the middle of the river as their boundary (restated in § 18 'dans un doute ... jusqu'au milieu').",
+     "covered_by": 4136
+    },
+    {
+     "unit": "I.266",
+     "passage": "elle occupe tout ce que le pays renferme , terres , lacs , rivieres , &c.",
+     "text": "GRO24",
+     "page": "GRO24T1.p284",
+     "source_passage": "Que si, dans un Païs occupé en gros, il reste quelque chose qui n'ait été assigné à personne en particulier, on ne doit pas pour cela le regarder comme vacant ; car il appartient toûjours à celui qui s'est le prémier rendu maître du Païs, je veux dire, au Peuple ou au Roi. Telle est ordinairement la propriété des Riviéres, des Lacs, des Etangs, des Forêts, des Montagnes escarpées & incultes.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Grotius: what is not assigned in a country occupied as a whole, typically rivers and lakes, belongs to the people that occupied it.",
+     "covered_by": 4135
+    },
+    {
+     "unit": "I.266",
+     "passage": "2°. Si ce peuple a fait quelqu'usage du fleuve , comme pour la navigation , ou pour la pêche, on présume d'autant plus sûrement qu'il a voulu se l'approprier.",
+     "text": "GRO24",
+     "page": "GRO24T1.p314",
+     "source_passage": "C'est ainsi que les ROMAINS, comme le remarque GRONOVIUS, étoient seuls maîtres du Rhein, du Danube, & autres Fleuves : parce que, les Barbares qui habitoient de l'autre côté le long de ces Fleuves, n'aïant point de Batteaux ; les Romains y en tenoient toûjours, qu'ils appelloient Lusoria naves.",
+     "label": "loose paraphrase",
+     "confidence": 0.3,
+     "reason": "Barbeyrac's note on II.III.18 grounds Roman ownership of whole rivers in their keeping boats on them, i.e. in navigational use, as Vattel's second presumption does.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "4°. Une longue possession, non-contredite , établit le droit des nations ; autrement il n'y auroit point de paix , ni rien de stable entr'elles",
+     "text": "GRO24",
+     "page": "GRO24T1.p318",
+     "source_passage": "il en résultera un très-grand inconvénient, c'est qu'il n'y aura jamais de fin aux disputes touchant les Roiaumes, ou leurs limites ; ce qui est non seulement une source d'inquiétudes, de troubles, & de guerres, parmi les Hommes",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Same argument for long possession between nations: without it disputes over kingdoms and their limits would never end and breed war.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "Ainsi , lorsque depuis un tems immémorial, une nation exerce sans contradiction les droits de souveraineté sur un fleuve qui lui sert de limites , personne ne peut lui en disputer l'empire.",
+     "text": "JG",
+     "page": "JG.pdf316",
+     "source_passage": "Quoniam praescriptio immemorialis juris naturae est (§. 361.), jus vero naturae obtinet inter Gentes (§. 3.); praescriptio quoque immemorialis inter Gentes locum habet.",
+     "french": "Puisque la prescription immémoriale est de droit naturel, et que le droit naturel a lieu entre les nations, la prescription immémoriale a lieu aussi entre les nations.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Vattel applies Wolff's immemorial prescription between nations to sovereignty over a boundary river.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "Par conséquent le peuple , qui le premier a établi sa domination sur l'un des bords du fleuve, est censé le premier occupant de toute la partie de ce fleuve qui termine son territoire.",
+     "text": "PUF34",
+     "page": "PUF34T1.p758",
+     "source_passage": "soit parce que s'étant le prémier établi sur les Côtes du Détroit ou du Golfe, il se l'est d'abord approprié tout entier, & a maintenu actuellement son droit contre celui qui est venu depuis habiter l'autre Côte",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Pufendorf's rule for gulfs, that the people first settled on one shore appropriates the whole, is the analogue of Vattel's first-occupant rule for the river.",
+     "covered_by": null
+    },
+    {
+     "unit": "I.266",
+     "passage": "la domination de l'un & de l'autre s'étend jusqu'au milieu du fleuve",
+     "text": "PUF34",
+     "page": "PUF34T1.p758",
+     "source_passage": "Que si divers Peuples ont des Terres sur les Côtes d'un Golfe ou d'un Détroit, l'empire de chacun s'étend jusqu'au milieu",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Shared phrase 's'étend jusqu'au milieu' for the dominion of two riparian peoples, though Pufendorf speaks of gulfs and straits.",
+     "covered_by": 6091
+    },
+    {
+     "unit": "I.266",
+     "passage": "la domination de l'un & de l'autre s'étend jusqu'au milieu du fleuve",
+     "text": "PUF34",
+     "page": "PUF34T1.p790",
+     "source_passage": "Mais il est plus ordinaire & en même tems plus convenable, que les Terres voisines, qui sont sur le bord d'une Riviére, soient arcifinies de part & d'autre, de sorte que l'on conçoit alors les confins des deux Territoires comme placez au milieu de la Riviére.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Pufendorf IV.VII.11 makes the middle of a boundary river the usual and presumed limit between two peoples.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 98, 105-111 (rivers), 85-87, 358-363 (prescription); INST §§ 244-251; Grotius II.II.4, II.III.16-18 with notes, II.IV.1-2; Pufendorf IV.V.8, IV.VII.11-12 (searched milieu/rivière/fleuve/lacs/possession immémoriale)."
+  },
+  {
+   "unit": "II.13",
+   "found": [
+    {
+     "unit": "II.13",
+     "passage": "Si un homme doit se mettre en état d'être utile aux autres hommes, un citoyen de servir utilement sa patrie & ses concitoyens, une nation, en se perfectionnant elle-même, doit se proposer aussi de se rendre par-là plus capable d'avancer la perfection & le bonheur des autres peuples.",
+     "text": "JG",
+     "page": "JG.pdf167",
+     "source_passage": "Homo homini, civis Reip. Gens Genti utilis esse debet. Quamobrem sicuti homo seipsum perficere debet, ut aliis quoque ope ipsius indigentibus prodesse possit in se ac statu suo perficiendo, ac idem intelligitur de cive Reip. respectu ; ita etiam Gens se ac statum suum perficere debet, ut aliis Gentibus ope ipsius indigentibus in se ac statu suo perficiendo prodesse possit.",
+     "french": "L'homme doit être utile à l'homme, le citoyen à la république, la nation à la nation. C'est pourquoi, comme l'homme doit se perfectionner lui-même afin de pouvoir aussi être utile aux autres qui ont besoin de son aide pour se perfectionner eux et leur état, et qu'on entend la même chose du citoyen à l'égard de la république, ainsi la nation doit se perfectionner elle-même et son état afin de pouvoir être utile aux autres nations qui ont besoin de son aide pour se perfectionner elles et leur état.",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "Wolff's man/citizen/nation triad and the duty to perfect oneself so as to help others perfect themselves are kept in Vattel's sentence.",
+     "covered_by": 417
+    },
+    {
+     "unit": "II.13",
+     "passage": "Elle doit s'étudier à leur donner de bons exemples, & éviter de leur en présenter de mauvais.",
+     "text": "JG",
+     "page": "JG.pdf168",
+     "source_passage": "Gens quaelibet alias exemplo suo docere debet, quomodo se statumque suum perficere debeant, & per consequens ad exempla bona aliis praebenda, ac ideo quoque ad mala non prodenda obligatur",
+     "french": "Chaque nation doit enseigner aux autres par son exemple comment elles doivent se perfectionner, elles et leur état, et par conséquent elle est obligée à leur donner de bons exemples, et aussi à ne pas en produire de mauvais.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Wolff § 181: every nation must give good examples and not bad ones; row 418 pairs the same statement as restated in § 182.",
+     "covered_by": 418
+    },
+    {
+     "unit": "II.13",
+     "passage": "L'imitation est familiere au genre-humain ; on imite quelquefois les vertus d'une nation célebre, & plus souvent ses vices & ses travers.",
+     "text": "JG",
+     "page": "JG.pdf170",
+     "source_passage": "Gentium aliarum imitatio non infrequens est, praesertium in Europa ; ast plerumque coeca esse [solet?], non rationalis. Quoniam plerique, quibus rerum publicarum cura demandata est, omnia ex utilitate, aut, si mavis, ex quaestu metiuntur ; ideo imitari solent ea, quae a Gentibus aliis utiliter constituta vident. Sed coeca plerumque est imitatio, cum non perpendantur singulae circumstantiae, ob quas quid utiliter fuit constitutum, ut imitatio non fiat nisi in casu simili, id quod requiritur, si rationalis esse debet (§. 503. Psych. empir. & seqq. §. 208. part. 2. Phil. pract. univ.). Immo hinc etiam contingit gentem unam infici pravis aliarum moribus, praesertim si praeconcepta quaedam de Gente aliqua opinio menti nebulam offudit.",
+     "french": "L'imitation des autres nations n'est pas rare, surtout en Europe ; mais elle est d'ordinaire aveugle, et non raisonnée. Comme la plupart de ceux à qui le soin des affaires publiques est confié mesurent tout à l'utilité, ou si l'on veut au profit, ils imitent d'ordinaire ce qu'ils voient utilement établi chez les autres nations. Mais l'imitation est le plus souvent aveugle, parce qu'on ne pèse pas chacune des circonstances qui ont rendu utile ce qui a été établi, en sorte qu'on n'imite que dans un cas semblable, ce qui est requis pour qu'elle soit raisonnée. Bien plus, il arrive de là qu'une nation est infectée des mauvaises moeurs des autres, surtout si quelque opinion préconçue d'une nation a répandu un nuage sur l'esprit.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Wolff's note to § 184 observes that nations often imitate others, mostly blindly, and are thus infected with their vices, especially out of prejudice for a nation, the observation Vattel compresses.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.13",
+     "passage": "L'imitation est familiere au genre-humain ; on imite quelquefois les vertus d'une nation célebre, & plus souvent ses vices & ses travers.",
+     "text": "JG",
+     "page": "JG.pdf169",
+     "source_passage": "Gens quaelibet exemplis bonis aliarum Gentium se addere, mala vero sequi minime debet.",
+     "french": "Chaque nation doit se joindre aux bons exemples des autres nations et ne pas suivre les mauvais.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Same subject, following others' good and bad examples, but Wolff states a duty where Vattel describes a tendency.",
+     "covered_by": 419
+    },
+    {
+     "unit": "II.13",
+     "passage": "Si un homme doit se mettre en état d'être utile aux autres hommes",
+     "text": "JG",
+     "page": "JG.pdf34",
+     "source_passage": "Sicuti vero homo homini, ita etiam gens genti prodesse debet.",
+     "french": "De même que l'homme doit être utile à l'homme, la nation doit l'être à la nation.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "General form of the man/nation analogy on which § 180 and Vattel's sentence build.",
+     "covered_by": 420
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 8, 179-185 (perfection, examples, imitation); INST §§ 139, 1108-1109; Grotius and Pufendorf searched for imitation / bons et mauvais exemples (nothing specific)."
+  },
+  {
+   "unit": "II.92",
+   "found": [
+    {
+     "unit": "II.92",
+     "passage": "Puisque la moindre usurpation sur le territoire d'autrui est une injustice, pour éviter d'y tomber , & pour éloigner tout sujet de discorde, toute occasion de querelle , on doit marquer avec clarté & précision les limites des territoires.",
+     "text": "JG",
+     "page": "JG.pdf249",
+     "source_passage": "Quoniam nulli Genti competit jus fines imperii propagandi (§. 283.), seu ultra limites regionis imperium suum extendendi, consequenter necesse est, ut limites hi sint certi; limites regionum , aut, si mavis , territoriorum (§. 166. part. 8. Jur. nat.), sunt definiendi inter Gentes vicinas. Ita praescinduntur lites, quae inter Gentes vicinas oriri possunt.",
+     "french": "Puisqu'aucune nation n'a le droit d'étendre les bornes de son empire, c'est-à-dire de porter son empire au-delà des limites de son pays, il est nécessaire que ces limites soient certaines ; les limites des pays, ou si l'on veut des territoires, doivent être déterminées entre nations voisines. On prévient ainsi les différends qui peuvent naître entre nations voisines.",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "Same argument in the same order as JG § 284 (since no nation may extend its bounds, the limits of territories must be fixed between neighbours, which cuts off disputes), in the place Vattel's sequence II.90-93 follows JG §§ 282-294.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.92",
+     "passage": "pour éloigner tout sujet de discorde, toute occasion de querelle , on doit marquer avec clarté & précision les limites des territoires",
+     "text": "JG",
+     "page": "JG.pdf250",
+     "source_passage": "Quoniam Gentes inter se concordes esse debent (§. 285.); omni studio ea vitare tenentur, quae discordiis locum faciunt , aut iis fovendis inserviunt (§. 722. part. 1. Jur. nat.). Urget igitur etiam concordia Gentibus praecepta, ut limites territoriorum inter vicinas determinentur, & quaelibet imperium suum intra eos coërceat.",
+     "french": "Puisque les nations doivent vivre en concorde entre elles, elles sont tenues d'éviter avec le plus grand soin ce qui donne lieu aux discordes ou sert à les entretenir. La concorde prescrite aux nations exige donc aussi que les limites des territoires soient déterminées entre voisins, et que chacune renferme son empire en dedans.",
+     "label": "loose paraphrase",
+     "confidence": 0.6,
+     "reason": "JG § 286 grounds the fixing of territorial limits on avoiding whatever gives occasion to discord, the motive Vattel adds ('éloigner tout sujet de discorde').",
+     "covered_by": null
+    },
+    {
+     "unit": "II.92",
+     "passage": "Il faut délimiter soigneusement les territoires.",
+     "text": "JG",
+     "page": "JG.pdf249",
+     "source_passage": "De limitibus territoriorum definiendis.",
+     "french": "Qu'il faut définir les limites des territoires.",
+     "label": "translation",
+     "confidence": 0.45,
+     "reason": "Vattel's marginal summary renders Wolff's marginal title of § 284.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 282-288 (pdf247-251) read whole; INST §§ 1125-1137 (pdf729-737); JG/INST for limites/fines imperii/discordia/obscuritas/commissarii; GRO24 and PUF34 for limites/bornes with querelle/différend/contestation, deliberate ambiguity in treaties ('à dessein', 'sujet de rupture'); Utrecht and commissioners examples are Vattel's own."
+  },
+  {
+   "unit": "II.101",
+   "found": [
+    {
+     "unit": "II.101",
+     "passage": "le souverain est supposé ne lui donner accès que sous cette condition tacite , qu'il sera soumis aux loix",
+     "text": "JG",
+     "page": "JG.pdf258",
+     "source_passage": "Dominus territorii non permittere intelligitur peregrinis , ut in territorio suo versentur, vel ibidem commorentur, nisi sub hac conditione , ut legibus loci subsint eorum actiones.",
+     "french": "Le seigneur du territoire n'est censé permettre aux étrangers de se trouver ou de séjourner dans son territoire, que sous cette condition, que leurs actions soient soumises aux loix du lieu.",
+     "label": "close paraphrase",
+     "confidence": 0.9,
+     "reason": "JG § 299 is the proposition Vattel restates (the lord of the territory is understood to admit foreigners only on condition that they be subject to its laws), right after II.100 = JG § 298; row 557 pairs this stretch with § 1063, a later back-reference, not with § 299.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "l'étranger s'y soumet tacitement , dès qu'il entre dans le pays",
+     "text": "JG",
+     "page": "JG.pdf259",
+     "source_passage": "Si peregrini ad territorium alienum accedunt, in eoque versantur, vel commorantur, tacite promittere intelliguntur, consequenter sese obligant (§. 363. part. 3. Jur. nat.), quod actiones suas legibus loci subjicere velint",
+     "french": "Si des étrangers entrent dans un territoire étranger, et y passent ou y séjournent, ils sont censés promettre tacitement, et par conséquent s'obliger, à soumettre leurs actions aux loix du lieu.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "JG § 300: by entering a foreign territory foreigners tacitly promise to submit their actions to its laws.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "ne pouvant présumer d'y avoir accès sur un autre pied",
+     "text": "JG",
+     "page": "JG.pdf259",
+     "source_passage": "Quoniam vero contraria voluntas, quae exceptionem parit, non praesumitur; dominus territorii non praesumitur velle, ut peregrinorum actiones sint a lege exemtae.",
+     "french": "Mais comme une volonté contraire, qui ferait exception, ne se présume point, on ne présume pas que le seigneur du territoire veuille que les actions des étrangers soient exemptes de la loi.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Same presumption argument from JG § 299: an exemption of foreigners from the law is not to be presumed.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "L'empire est le droit de commander dans tout le pays , & les loix ne se bornent pas à régler la conduite des citoyens entr'eux , elles déterminent ce qui doit être observé dans toute l'étendue du territoire , par tout ordre de personnes",
+     "text": "JG",
+     "page": "JG.pdf258",
+     "source_passage": "In territorio enim imperium civile habet (§. 166. part. 8. Jur. nat.) & vi potestatis legislatoriae, quae ad idem pertinet (§. 813. part. 8. Jur. nat.), leges ferre potest de iis, quae in territorio suo, aut",
+     "french": "Car il a l'empire civil dans son territoire, et en vertu de la puissance législative qui en fait partie, il peut faire des loix sur ce qu'il veut qui se fasse, ou ne se fasse pas, dans son territoire ou",
+     "label": "close paraphrase",
+     "confidence": 0.65,
+     "reason": "Wolff's reason in JG § 299: the lord has civil empire in the territory and may make laws about whatever is to be done within it, which Vattel restates as the ground of the condition.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "les loix ne se bornent pas à régler la conduite des citoyens entr'eux",
+     "text": "JG",
+     "page": "JG.pdf259",
+     "source_passage": "Non est, quod urgeas leges civiles non obligare nisi membra ejus civitatis, in qua feruntur (§. 967. part. 8. Jur. nat.): id enim obtinet, quamdiu quis extra territorium penes Gentem suam est, ubi domino territorii nihil juris in ipsum competit.",
+     "french": "Il ne faut pas objecter que les loix civiles n'obligent que les membres de l'état dans lequel elles sont portées : cela n'a lieu que tant qu'on est hors du territoire, chez sa propre nation, où le seigneur du territoire n'a aucun droit sur nous.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Wolff's note to JG § 299 answers the objection that civil laws bind only members of the state, the point Vattel makes in denying that laws only regulate citizens among themselves.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "le souverain est supposé ne lui donner accès que sous cette condition tacite , qu'il sera soumis aux loix",
+     "text": "INST",
+     "page": "INST.pdf734",
+     "source_passage": "Quoniam itaque aliter id permittere non intelligitur, nisi expressa voluntate aliud significetur, quam ut legibus loci subsint peregrinorum actiones",
+     "french": "Puis donc qu'on n'est censé le permettre, à moins d'une volonté expresse contraire, que sous la condition que les actions des étrangers soient soumises aux loix du lieu",
+     "label": "close paraphrase",
+     "confidence": 0.65,
+     "reason": "INST § 1131 gives the same presumed condition of admission (that foreigners' actions be subject to the laws of the place).",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "j'entends aux loix générales , faites pour maintenir le bon ordre , & qui ne se rapportent pas à la qualité de citoyen ou de sujet de l'état",
+     "text": "INST",
+     "page": "INST.pdf734",
+     "source_passage": "peregrini, quamdiu in territorio alieno versantur, aut commorantur, ad ea facienda & non facienda obligantur, quae civibus isto tempore sub iisdem circumstantiis facienda vel non facienda essent, nisi quatenus leges",
+     "french": "les étrangers, tant qu'ils se trouvent ou séjournent dans un territoire étranger, sont obligés de faire et de ne pas faire ce que les citoyens devraient faire ou ne pas faire dans le même temps et les mêmes circonstances, sauf en tant que des loix",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "INST § 1131 limits the foreigner's obligation to what citizens owe in the same circumstances, a looser counterpart of Vattel's restriction to general laws not tied to citizenship.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "l'étranger s'y soumet tacitement , dès qu'il entre dans le pays , ne pouvant présumer d'y avoir accès sur un autre pied",
+     "text": "PUF34",
+     "page": "PUF34T1.p582",
+     "source_passage": "quoi qu'il ne donne point parole expresse de se conformer aux Loix du Païs; par cela seul qu'il y entre, il est censé s'engager tacitement à observer ces Loix selon son état & sa condition; car il doit savoir que c'est-là une chose qu'on exige indispensablement de tous ceux qui veulent demeurer dans les terres de la dépendance d'un Etat.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Pufendorf's example of tacit consent: by the mere fact of entering, the foreigner tacitly undertakes to observe the laws according to his condition, knowing it is required of all; Vattel has the same tacit submission on entry and the same 'cannot expect otherwise' reason.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "La sûreté publique , les droits de la nation & du prince exigent nécessairement cette condition",
+     "text": "PUF34",
+     "page": "PUF34T2.p313",
+     "source_passage": "comme chaque Etat a pris possession d'une certaine partie de la Terre, pour y mettre en sûreté la personne & les biens des Citoiens; & qu'il y auroit beaucoup à craindre pour eux à cet égard, si tous ceux qui ne reconnoissent pas l'Autorité de leur Souverain, pouvoient venir dans le Païs & y demeurer, comme bon leur sembleroit; c'est une maxime, qui passe pour une Loi commune à tous les Etats, que quiconque entre simplement dans les Terres d'un Etat",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Pufendorf grounds the submission of whoever enters a state's lands on the security of the citizens, the reason Vattel gives ('la sûreté publique ... exigent nécessairement').",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "j'entends aux loix générales , faites pour maintenir le bon ordre , & qui ne se rapportent pas à la qualité de citoyen ou de sujet de l'état",
+     "text": "PUF34",
+     "page": "PUF34T1.p769",
+     "source_passage": "c'est une chose établie dans tous les Etats, & qui est absolument nécessaire pour y maintenir la tranquilité publique, que quiconque entre dans les terres d'un Souverain, même pour peu de tems, doit se conformer aux Loix de l'Etat, autant qu'elles lui conviennent",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Pufendorf has the foreigner bound to the laws 'autant qu'elles lui conviennent' because this is necessary to keep public tranquillity, close to Vattel's restriction to general laws made to keep good order.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.101",
+     "passage": "le souverain est supposé ne lui donner accès que sous cette condition tacite , qu'il sera soumis aux loix",
+     "text": "JG",
+     "page": "JG.pdf870",
+     "source_passage": "inter dominum territorii & peregrinum in eodem versantem tacitum intercedit pactum, quo hic subjectionem temporariam, ille protectionem promittit",
+     "french": "entre le seigneur du territoire et l'étranger qui s'y trouve intervient un pacte tacite, par lequel celui-ci promet une sujétion temporaire, et celui-là sa protection.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Same tacit-subjection doctrine, but JG § 1063 is Wolff's later back-reference to § 300 in the chapter on the security of foreigners; Vattel's direct source is § 299 (listed above, uncovered).",
+     "covered_by": 557
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 298-303 (pdf258-260) read whole and JG § 1063 (pdf870, row 557); INST §§ 1125, 1131-1132 (pdf734-735); GRO24 and PUF34 for étrangers + soumis/sujets/Loix du païs, 'sujet à tems', 'tacitement' + Loix, 'entre dans les terres'; read PUF III.6.2, IV.6.7, VII.2.20 and GRO II.11.5, II.18.4 (generic, not counted). Row 557 (JG § 1063) left as acceptable but the direct source is JG §§ 299-300."
+  },
+  {
+   "unit": "II.120",
+   "found": [
+    {
+     "unit": "II.120",
+     "passage": "Lors donc qu'une nation manque absolument de vivres , elle peut contraindre ses voisins , qui en ont de reste , à lui en céder à juste prix , ou même en enlever de force , si on ne veut pas lui en vendre",
+     "text": "JG",
+     "page": "JG.pdf296",
+     "source_passage": "si tanta sit frumenti penuria, ut fame plurimis pereundum sit, nisi a Gente vicina copia frumenti ipsi fiat, haec ipsa Gens ad frumentum aequo pretio sibi vendendum cogi potest, immo frumentum vi auferre licet, si vendere nolit.",
+     "french": "si la disette de blé est telle que beaucoup doivent mourir de faim, à moins qu'une nation voisine ne leur en fournisse, cette nation peut être contrainte à lui vendre du blé à juste prix, et il est même permis de lui enlever du blé par force si elle ne veut pas en vendre.",
+     "label": "close paraphrase",
+     "confidence": 0.9,
+     "reason": "JG § 340: in a famine a nation may compel its neighbour to sell grain at a fair price, or take it by force if it will not sell.",
+     "covered_by": 591
+    },
+    {
+     "unit": "II.120",
+     "passage": "L'extrême nécessité fait renaître la communion primitive",
+     "text": "JG",
+     "page": "JG.pdf297",
+     "source_passage": "in extrema necessitate jus commune ad res reviviscat",
+     "french": "dans l'extrême nécessité le droit commun sur les choses revit",
+     "label": "translation",
+     "confidence": 0.85,
+     "reason": "Direct rendering of Wolff's clause in JG § 342.",
+     "covered_by": 592
+    },
+    {
+     "unit": "II.120",
+     "passage": "la propriété des uns ne peut réduire celui qui manque de tout à mourir de faim",
+     "text": "INST",
+     "page": "INST.pdf192",
+     "source_passage": "Dominia nimirum non introducta sunt, ut quis penitus carere cogatur usu rerum necessario",
+     "french": "La propriété n'a pas été introduite pour que quelqu'un soit contraint de manquer entièrement de l'usage des choses nécessaires.",
+     "label": "loose paraphrase",
+     "confidence": 0.65,
+     "reason": "INST § 304: ownership was not introduced so that anyone should be forced to go wholly without necessaries.",
+     "covered_by": 593
+    },
+    {
+     "unit": "II.120",
+     "passage": "la propriété des uns ne peut réduire celui qui manque de tout à mourir de faim",
+     "text": "PUF34",
+     "page": "PUF34T1.p482",
+     "source_passage": "faudra - t - il qu'elle meure de faim? Y a - t - il aucun établissement humain si sacré & si inviolable , que , quand les autres manquent inhumainement à leur devoir envers quelcun, celui - ci doive périr, plûtôt que de s'écarter tant soit peu de la régle ordinaire?",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Pufendorf's rhetorical question that no human institution (property) can require the destitute to die of hunger; shared 'mourir de faim' point.",
+     "covered_by": 6151
+    },
+    {
+     "unit": "II.120",
+     "passage": "Le même droit appartient à des particuliers , quand une nation étrangere leur refuse une assistance",
+     "text": "JG",
+     "page": "JG.pdf297",
+     "source_passage": "nil obstat, quo minus singulos, qui sunt diversarum Gentium cives, immo etiam eos, qui iisdem imperant, quoniam Gentes spectantur inter se tanquam personae liberae in statu naturali viventes (§. 2.), spectes tanquam in statu naturali adhuc viventes. Sane non alia de causa, quae de jure necessitatis respectu singulorum demonstrantur, ad integras Gentes applicanda veniunt (§. 3.).",
+     "french": "rien n'empêche de regarder les particuliers, citoyens de diverses nations, et même ceux qui leur commandent, comme vivant encore dans l'état de nature, puisque les nations sont considérées entre elles comme des personnes libres vivant dans l'état de nature. Et c'est bien pour cette raison que ce qui est démontré du droit de nécessité à l'égard des particuliers s'applique aux nations entières.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "In the same sentence of JG § 342 that row 592 draws on, Wolff extends the revived common right to individuals of different nations, which Vattel turns into 'le même droit appartient à des particuliers'.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "dont l'abolition ne doit priver personne du nécessaire",
+     "text": "INST",
+     "page": "INST.pdf192",
+     "source_passage": "Introductione igitur dominiorum nemini auferri penitus potuit usus rerum necessarius, consequenter dominia introduci non potuerunt nisi cum tacita hac restrictione",
+     "french": "L'introduction de la propriété n'a donc pu ôter entièrement à personne l'usage nécessaire des choses ; par conséquent la propriété n'a pu être introduite qu'avec cette restriction tacite",
+     "label": "close paraphrase",
+     "confidence": 0.65,
+     "reason": "INST § 304 (Vattel's own cross-reference § 117 rests on it): the introduction of ownership could not take from anyone the necessary use of things; row 593 pairs the earlier sentence 'la propriété des uns ...' with another sentence of this §, not this stretch.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "ou même en enlever de force , si on ne veut pas lui en vendre",
+     "text": "INST",
+     "page": "INST.pdf192",
+     "source_passage": "Quodsi ergo quis penitus destinatur usu rerum necessariarum, nec in potestate ipsius sit, ut eas aequo pretio vel praestitis operis sibi comparet, neque etiam eas precibus ab aliis impetrare possit; in statu naturali eas alteri inscio ac invito auferre, immo vi eripere licet, qui iisdem carere potest",
+     "french": "Si donc quelqu'un est entièrement privé de l'usage des choses nécessaires, et qu'il ne soit pas en son pouvoir de se les procurer à juste prix ou par son travail, ni de les obtenir des autres par ses prières, il lui est permis, dans l'état de nature, de les ôter à celui qui peut s'en passer, à son insu et malgré lui, et même de les lui arracher par force.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "INST § 305: one wholly deprived of necessaries who cannot buy them at a fair price may take them, even by force, from one who can do without them.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "elle peut contraindre ses voisins , qui en ont de reste , à lui en céder à juste prix",
+     "text": "INST",
+     "page": "INST.pdf193",
+     "source_passage": "necessitatem extremam dare jus cogendi alterum, ut pro aequo pretio, aut re, quae tantundem valet, res detur. Ita e. gr. in annonae difficultate, qui frumento abundant, ad vendendum cogi possunt",
+     "french": "que l'extrême nécessité donne le droit de contraindre un autre à céder la chose pour un juste prix, ou pour une chose de même valeur. Ainsi, par exemple, dans une disette de vivres, ceux qui ont du blé en abondance peuvent être contraints de le vendre",
+     "label": "close paraphrase",
+     "confidence": 0.65,
+     "reason": "INST § 307: extreme necessity gives a right to compel others to hand over things at a fair price, e.g. those who have grain in abundance can be forced to sell it in a dearth.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "L'extrême nécessité fait renaître la communion primitive",
+     "text": "GRO24",
+     "page": "GRO24T1.p286",
+     "source_passage": "dans un cas (1) d'extrême nécessité, le droit ancien de se servir des choses qui se présentent revit en quelque maniére, tout de même que si elles étoient encore communes",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Grotius II.2.6 is the origin of the formula Vattel uses: in extreme necessity the ancient right of common use revives.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "dont l'abolition ne doit priver personne du nécessaire",
+     "text": "GRO24",
+     "page": "GRO24T1.p286",
+     "source_passage": "la Propriété des biens est censée n'avoir été établie qu'avec cette exception favorable, que l'on rentreroit en ces cas-là dans les droits de la Communauté primitive",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Grotius: property was established with the tacit exception that in necessity one re-enters the rights of the primitive community, which Vattel compresses into a relative clause.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "Le même droit appartient à des particuliers , quand une nation étrangere leur refuse une assistance. Le capitaine Bontekoe , Hollandois , ayant perdu son vaisseau en pleine mer",
+     "text": "PUF34",
+     "page": "PUF34T1.p482",
+     "source_passage": "Ne peut-il pas aisément arriver qu'une personne, après un Naufrage, ou aiant été volée en chemin, ou aiant, depuis son départ de chez soi, perdu tout son bien par quelque accident, se trouve en Païs étranger, réduite à la derniére misere, sans aucun ami, ni aucune connoissance? Et si, dans ce triste état, aucun Habitant du Païs ne veut ni l'assister",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Pufendorf's case of a shipwrecked person in a foreign country whose inhabitants refuse to help is the scenario Vattel illustrates with Bontekoe's shipwreck and the natives' refusal of food.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "elle peut contraindre ses voisins , qui en ont de reste , à lui en céder à juste prix , ou même en enlever de force",
+     "text": "PUF34",
+     "page": "PUF34T1.p482",
+     "source_passage": "n'aiant pû obtenir des autres, qui en ont abondance, ni par priéres, ni par argent, ni en leur offrant son travail & son industrie, qu'ils lui fissent part de leur superflu dans une si pressante nécessité, il leur prend quelque chose ou en cachette, ou de vive force",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Same sequence in Pufendorf II.6.5: those who have abundance refuse even for money, so the needy may take by force.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.120",
+     "passage": "qui en ont de reste , à lui en céder à juste prix , ou même en enlever de force",
+     "text": "PUF34",
+     "page": "PUF34T1.p484",
+     "source_passage": "si on peut lui enlever quelque chose, ce n'est que quand il en a de reste, & qu'on ne trouve pas d'ailleurs dequoi subvenir à ses besoins",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Barbeyrac's note 1 on PUF II.6.6, defending Grotius's revived community, limits taking by force to what the owner 'a de reste', the wording Vattel uses.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 338-343 (pdf295-298) read whole; INST §§ 300-308 (pdf190-194) and INST pdf768; GRO24 II.2.6-10 and II.2.19 with notes; PUF34 II.6.5-7 with Barbeyrac's notes; all four for Bontekoe (absent), 'mourir de faim', 'de reste', grain/vivres + force/voisins, 'terre doit nourrir'."
+  },
+  {
+   "unit": "II.136",
+   "found": [
+    {
+     "unit": "II.136",
+     "passage": "Tout état doit sans doute à un peuple si malheureux l'assistance & les secours qu'il peut lui donner sans se manquer à soi - même.",
+     "text": "PUF34",
+     "page": "PUF34T1.p544",
+     "source_passage": "Certainement lors que des Etrangers sont chassez de leur Patrie pour un sujet qui les rend dignes de compassion, & que leur établissement dans nôtre Païs n'est point contraire au bien de l'Etat; l'Humanité veut qu'on leur accorde une grace, qui en ce cas-là n'est ni périlleuse, ni trop onéreuse. Mais personne ne sauroit blâmer ceux qui ne poussent pas si loin leur compassion pour les Malheureux, que de s'exposer à devenir bien-tôt eux-mêmes l'objet de celle d'autrui.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Pufendorf's balance between the humanity owed to the unfortunate and the limit set by the receiving state's own safety is restated as aid given \"sans se manquer à soi-même\".",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "Mais lui accorder un établissement dans les terres de la nation , est une démarche très - délicate , dont le conducteur de l'état doit peser mûrement les conséquences.",
+     "text": "PUF34",
+     "page": "PUF34T1.p544",
+     "source_passage": "Chaque Etat doit donc se régler ici sur ce que son propre intérêt lui permet de faire en faveur des Etrangers. C'est-à-dire, qu'il faut bien examiner avant toutes choses, s'il est avantageux que le nombre des Habitans s'augmente beaucoup",
+     "label": "loose paraphrase",
+     "confidence": 0.6,
+     "reason": "Pufendorf's point that each state must weigh its own interest before admitting a large body of foreigners becomes Vattel's \"démarche très-délicate\" whose consequences the ruler must weigh.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "Si le souverain y voit trop d'inconvéniens & de danger , il est en droit de refuser un établissement à ces peuples fugitifs , ou de prendre , en les recevant , toutes les précautions que lui dictera la prudence.",
+     "text": "PUF34",
+     "page": "PUF34T1.p544",
+     "source_passage": "Mais je ne sai si personne voudroit soûtenir, que l'on soit tenu indispensablement de recevoir une grande multitude d'Etrangers, sur tout si ce sont des gens belliqueux, & qui viennent les armes à la main; étant presque impossible que les anciens Habitans n'aient quelque chose à craindre de la part d'une telle Colonie.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Same argument: no state is bound to receive a large, possibly dangerous multitude of foreigners, so it may refuse or receive them with precautions.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "Si le souverain y voit trop d'inconvéniens & de danger , il est en droit de refuser un établissement à ces peuples fugitifs",
+     "text": "GRO24",
+     "page": "GRO24T1.p294",
+     "source_passage": "ON ne doit pas non plus refuser une demeure fixe à des Etrangers, qui étant chassez de leur païs cherchent ailleurs quelque retraite : (1) bien entendu qu'ils se soûmettent aux Loix de l'Etat, & qu'ils s'abstiennent d'ailleurs de tout ce qui pourroit donner lieu à quelque sédition.",
+     "label": "open disagreement",
+     "confidence": 0.3,
+     "reason": "Vattel, following Pufendorf's critique (which quotes this sentence), reverses Grotius's rule that a fixed abode must not be refused to expelled foreigners, but without naming Grotius.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "Si le souverain y voit trop d'inconvéniens & de danger , il est en droit de refuser un établissement à ces peuples fugitifs",
+     "text": "JG",
+     "page": "JG.pdf146",
+     "source_passage": "Quaenam sint rationes obstantes, quo minus recipiantur exules modo indicavimus (not. §. 148.). Gentes autem cum liberae sint (§. 2.); ipsis quoque de iisdem relinquendum est judicium, eoque standum",
+     "french": "Nous avons indiqué quelles sont les raisons qui empêchent de recevoir les exilés. Mais comme les nations sont libres, c'est aussi à elles qu'il faut en laisser le jugement, et il faut s'y tenir.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Wolff's rule that reception may be denied when particular reasons stand in the way, and that the nation itself judges those reasons, is the frame of the sovereign's right to refuse.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "Comment on doit agir envers les étrangers qui demandent une habitation perpétuelle.",
+     "text": "JG",
+     "page": "JG.pdf145",
+     "source_passage": "Quamobrem cum his, qui sedibus suis expulsi receptum quaerunt, perpetua habitatio in terris dominio suo subjectis denegari nequeat, nisi obstent rationes singulares (§. 693. part. 6. Jur. nat.)",
+     "french": "C'est pourquoi, comme on ne peut refuser à ceux qui, chassés de leurs demeures, cherchent une retraite, l'habitation perpétuelle dans les terres soumises à son domaine, à moins que des raisons particulières ne s'y opposent.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "The margin's \"habitation perpétuelle\" for those driven from their homes takes Wolff's \"perpetua habitatio\" for \"sedibus suis expulsi\" (JG § 149), the doctrine Vattel had applied in I.231 and II.125.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "Les empereurs PROBUS & VALENS se trouverent mal d'avoir reçu dans les terres de l'empire , des bandes nombreuses de Gépides , de Vandales , de Goths , & d'autres barbares.",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "L'Empereur Probus (f) plaça cent mille Bastarnes dans les terres de l'Empire, & ils lui demeurérent tous fidéles. Mais aiant voulu faire le même accueil à un grand nombre de gens de quelques autres Nations, comme des Gépidiens, des Grauthungiens, & des Vandales; ceux-ci se rebellérent tous",
+     "label": "loose paraphrase",
+     "confidence": 0.85,
+     "reason": "Probus's ill-fated reception of Gepids and Vandals is Pufendorf's example, with the same peoples named.",
+     "covered_by": 6165
+    },
+    {
+     "unit": "II.136",
+     "passage": "Les empereurs PROBUS & VALENS se trouverent mal d'avoir reçu dans les terres de l'empire , des bandes nombreuses de Gépides , de Vandales , de Goths , & d'autres barbares.",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "Les Goths (g) aiant abandonné leur Païs, dans la crainte qu'ils eurent des Huns, priérent l'Empereur Valens de les laisser établir dans la Thrace au deçà du Danube, lui promettant de se tenir en repos, & de lui donner du secours dans l'occasion. Quelques autres Barbares étant venus depuis, Valens leur accorda la même chose, dans l'espérance d'avoir par ce moien de bonnes Troupes, sans qu'il lui en coûtât beaucoup. Mais, comme il paroît par l'Histoire, cela servit ensuite à le perdre lui-même (h).",
+     "label": "loose paraphrase",
+     "confidence": 0.8,
+     "reason": "Valens's reception of the Goths and other barbarians, which ruined him, is Pufendorf's second example in the same paragraph.",
+     "covered_by": 6165
+    },
+    {
+     "unit": "II.136",
+     "passage": "VOPISCUS , Prob. c. XVIII.",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "Flavius Vopiscus in Probo, Cap. XVIII.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Vattel's reference for Probus copies Pufendorf's marginal reference.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "AMMIAN. MARCELL. Lib. XXXI.",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "Ammian. Marcellin. Lib. XXXI. Cap. IV.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Vattel's reference for Valens and the Goths copies Pufendorf's marginal reference.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "SOCRAT. Hist. Eccles. Lib. IV. c. 28.",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "Voiez ce qui suit dans Amm. Marcell. & Socrat. Hist. Eccles. Lib. IV. Cap. 28. (ou 34. Edit. Vales.)",
+     "label": "verbatim",
+     "confidence": 0.85,
+     "reason": "Vattel's reference to Socrates copies Pufendorf's margin, chapter number included.",
+     "covered_by": 6166
+    },
+    {
+     "unit": "II.136",
+     "passage": "Des gens qui n'ont point sçû défendre leurs foyers , ne peuvent prétendre aucun droit de s'établir dans le territoire d'autrui , pour s'y maintenir en corps de nation.",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "Sur quoi César répondit; Qu'il n'étoit pas juste qu'ils envahissent le bien d'autrui, après n'avoir pû défendre le leur: Qu'il n'y avoit point de terres vacantes dans la Gaule, principalement pour une si grande multitude.",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "The maxim in the text is Caesar's reply as Pufendorf gives it (invade others' land after failing to defend one's own), which Vattel's note then quotes; no row pairs the text sentence.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "CESAR répondit aux Teuctériens & aux Usipetes , qui vouloient garder les terres dont ils s'étoient emparés , qu'il n'étoit pas juste qu'ils envahissent le bien d'autrui , après qu'ils n'avoient pu défendre le leur",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "Les Tenctériens & les Usipétes disoient depuis à CÉSAR (8) qu'ils n'étoient pas sortis de leur Païs volontairement, mais qu'ils en avoient été chassez: Que, si les Romains vouloient être bons amis avec eux, ils ne leur seroient peut-être pas inutiles: Qu'ils leur assignassent eux-mêmes pour demeure les terres qu'ils jugeroient à propos, ou qu'ils les laissassent jouïr de celles qu'ils avoient conquises. Sur quoi César répondit; Qu'il n'étoit pas juste qu'ils envahissent le bien d'autrui, après n'avoir pû défendre le leur",
+     "label": "verbatim",
+     "confidence": 0.95,
+     "reason": "The note retells Pufendorf's account of the Tencteri and Usipetes and copies Caesar's answer word for word.",
+     "covered_by": 6167
+    },
+    {
+     "unit": "II.136",
+     "passage": "nequeverum esse , qui suos fines tueri non potuerint , alienos occupare De bello Gallico , Lib. IV. cap. VIII.",
+     "text": "PUF34",
+     "page": "PUF34T1.p546",
+     "source_passage": "Ad hæc Cæsar respondit. . . . neque verum esse, qui suos fines tueri non potuerint, alienos occupare: neque ullos in Gallia vacare agros, qui dari tanta præsertim multitudini sine injuria possint. Ibid. Cap. VIII.",
+     "label": "verbatim",
+     "confidence": 0.95,
+     "reason": "The Latin of Caesar and the chapter reference are copied from Barbeyrac's note 8.",
+     "covered_by": 6168
+    },
+    {
+     "unit": "II.136",
+     "passage": "Le souverain qui les reçoit peut les disperser , les distribuer dans les villes & provincesqui manquent d'habitans.",
+     "text": "PUF34",
+     "page": "PUF34T1.p544",
+     "source_passage": "s'il est avantageux que le nombre des Habitans s'augmente beaucoup; si le Païs est assez fertile pour les nourrir tous commodément; s'il y a assez de place pour loger les nouveaux Habitans, en sorte que les anciens ne se trouvent pas trop à l'étroit; si ceux qui demandent à s'établir, sont des gens industrieux & laborieux, ou si ce sont des fainéans & des bouches inutiles; si on peut les placer en sorte que l'Etat n'ait rien à appréhender de leur part, &c.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Pufendorf's checklist (is more population useful, is there room, can they be placed so the state has nothing to fear) underlies Vattel's advice to disperse the newcomers in under-peopled provinces.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.136",
+     "passage": "De cette maniere , sa charité tournera à son avantage , à l'accroissement de sa puissance & au plus grand bien de l'état.",
+     "text": "PUF34",
+     "page": "PUF34T1.p544",
+     "source_passage": "La bonne Politique veut aussi que, tant qu'on le peut sans aucun inconvénient, on fasse un bon accueil aux Etrangers. L'experience fait voir, que plusieurs Etats (3) se sont par-là extrêmement aggrandis; au lieu que ceux qui ont éloigné ou chassé les Etrangers, sont devenus foibles & pauvres avec le tems.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Pufendorf's remark that states have grown great by welcoming foreigners is Vattel's point that charity to refugees increases the state's power.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "PUF III.3.10 (pp. 544-547) with notes and margins; GRO II.2.15-17 (pp. 294-295) and Barbeyrac notes; JG §§ 147-150 (exiles) and § 343 list; INST § 312, § 1106; search for Probus/Valens/Usipetes/Gepids/demeure fixe/expulsi/perpetua habitatio in all four."
+  },
+  {
+   "unit": "II.144",
+   "found": [
+    {
+     "unit": "II.144",
+     "passage": "on ne peut opposer ce moyen à celui qui allegue de justes raisons de son silence",
+     "text": "JG",
+     "page": "JG.pdf316",
+     "source_passage": "Qui silentii diuturni rationes allegat, adversus eum non valet praescriptio.",
+     "french": "La prescription ne vaut point contre celui qui allègue les raisons de son long silence.",
+     "label": "translation",
+     "confidence": 0.9,
+     "reason": "Wolff's thesis of § 363, rendered almost word for word.",
+     "covered_by": 643
+    },
+    {
+     "unit": "II.144",
+     "passage": "parce qu'alors il n'y a plus de lieu de présomption qu'il a abandonné son droit",
+     "text": "JG",
+     "page": "JG.pdf316",
+     "source_passage": "Quodsi igitur rationes silentii diuturni allegantur, ratio praesumtionis cessat, consequenter etiam praescriptio",
+     "french": "Si donc on allègue les raisons d'un long silence, la raison de la présomption cesse, et par conséquent aussi la prescription.",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "Same reason as Wolff: once reasons for the silence are alleged the ground of the presumption of abandonment ceases.",
+     "covered_by": 643
+    },
+    {
+     "unit": "II.144",
+     "passage": "On ne peut refuser de l'admettre à prouver clairement sa propriété.",
+     "text": "JG",
+     "page": "JG.pdf317",
+     "source_passage": "ergo hae refutentur contrarium ostendendo, praesumtio utique cadit : immo si pars adversa rationes saltem probabiliores allegare valet, ob quas praesumi potest vel ignorantia juris sui, vel defectus occasionis jus suum persequendi, aut possessionem saltem interpellandi, praesumtio fortior vincit debiliorem.",
+     "french": "Si donc on les réfute en montrant le contraire, la présomption tombe; et même si la partie adverse peut alléguer des raisons au moins plus probables, qui font présumer ou l'ignorance de son droit, ou le défaut d'occasion de le poursuivre ou du moins d'interrompre la possession, la présomption la plus forte l'emporte sur la plus faible.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Wolff goes on in § 363 to say the presumption falls when the contrary is shown and the stronger presumption wins, which Vattel turns into the owner's right to be admitted to prove his property.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.144",
+     "passage": "Ce moyen de défense contre la prescription , a étésouvent employé contre des princes, dont les forces redoutables avoient long-tems réduit au silence les foibles victimes de leurs usurpations.",
+     "text": "JG",
+     "page": "JG.pdf314",
+     "source_passage": "Qui non ignorat, quantos bellum sumtus requirat & quantum cumulum malorum post se trahat, & quam parum valeant vires adversus potentiorem ; is in dubium minime revocabit, haud raro silendum esse, quod loqui non sit consultum, & commodam expectandam esse occasionem , qua oblata jus suum vi persequi datur adversus reddere nolentem.",
+     "french": "Quiconque sait combien la guerre exige de dépenses et quelle foule de maux elle traîne après elle, et combien peu valent les forces contre un plus puissant, ne doutera point qu'il faut assez souvent se taire, parce qu'il n'est pas prudent de parler, et attendre une occasion favorable de poursuivre son droit par la force contre celui qui refuse de rendre.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Wolff's argument (§ 359) that between nations the weak must often keep silent before a more powerful holder is the basis of Vattel's closing remark about princes whose power silenced their victims.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.144",
+     "passage": "comme l'impossibilité de parler , une crainte bien fondée",
+     "text": "GRO24",
+     "page": "GRO24T1.p321",
+     "source_passage": "à moins qu'il ne paroisse par les circonstances , que la crainte , ou quelque autre accident , a empêché de parler",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "reason": "Grotius's exception (fear or another accident has prevented one from speaking) supplies Vattel's examples of just reasons for silence.",
+     "covered_by": 4231
+    },
+    {
+     "unit": "II.144",
+     "passage": "parce qu'alors il n'y a plus de lieu de présomption qu'il a abandonné son droit",
+     "text": "GRO24",
+     "page": "GRO24T1.p322",
+     "source_passage": "& lors qu'il paroit quelque autre raison qui a empêché d'agir , la conjecture tirée du silence n'a plus de lieu.",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "reason": "Same conclusion and wording (\"n'a plus de lieu\"): another reason for not acting removes the conjecture drawn from silence.",
+     "covered_by": 4232
+    },
+    {
+     "unit": "II.144",
+     "passage": "comme l'impossibilité de parler , une crainte bien fondée, &c. parce qu'alors il n'y a plus de lieu de présomption qu'il a abandonné son droit",
+     "text": "PUF34",
+     "page": "PUF34T1.p852",
+     "source_passage": "Car il peut arriver que l'on ignore son droit pendant très-long tems, ou que l'on soit obligé de se taire par la crainte ou l'impuissance, (e) où l'on se trouve. D'ailleurs, lors qu'on vient à redemander son bien, quelque long tems qu'il y ait qu'on l'a perdu, il n'y a plus lieu de présumer qu'avant cela on l'eût abandonné véritablement.",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "reason": "Pufendorf IV.12.8 gives the same pair of excuses (fear, inability to speak) and the same wording \"il n'y a plus lieu de présumer ... abandonné\"; row 6179 cites IV.12.5 instead.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.144",
+     "passage": "Ce n'est pas sa faute , si on a cru pouvoir le présumer ; & il n'en doit pas souffrir.",
+     "text": "PUF34",
+     "page": "PUF34T1.p848",
+     "source_passage": "Il peut se faire, à la vérité, qu'il n'y aît pas de la faute du Propriétaire, & que l'impossibilité où il s'est trouvé de déterrer (4) le Possesseur de son bien, l'aît empêché, malgré lui, de le reclamer: mais le préjudice, qui revient à quelques Particuliers de l'établissement de cette régle générale, est recompensé par l'utilité publique.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Vattel takes up Pufendorf's case of the owner who is not at fault and was prevented by impossibility, but reverses his conclusion (here the owner must not suffer).",
+     "covered_by": null
+    },
+    {
+     "unit": "II.144",
+     "passage": "on ne peut opposer ce moyen à celui qui allegue de justes raisons de son silence",
+     "text": "INST",
+     "page": "INST.pdf277",
+     "source_passage": "Qui scit rem suam ab alio possideri, nec multo tempore contradicit, cum ratio nulla manifesta appareat, cur sileudum, is eam dereliquisse praesumitur.",
+     "french": "Celui qui sait que sa chose est possédée par un autre et ne s'y oppose pas pendant longtemps, sans qu'apparaisse aucune raison manifeste de se taire, est présumé l'avoir abandonnée.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "The Institutiones' rule that abandonment is presumed only when no evident reason for silence appears is the converse of Vattel's rule; same Wolffian argument.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 358-364 (pdf313-317); INST §§ 459-464, 1139; GRO II.4.4-7 (pp. 320-322) with notes; PUF IV.12.1-9 (pp. 842-854) for silence/crainte/impossibilité; cited pages nearby."
+  },
+  {
+   "unit": "II.239",
+   "found": [
+    {
+     "unit": "II.239",
+     "passage": "La garantie subsiste naturellement autant que le traité qui en fait l'objet",
+     "text": "JG",
+     "page": "JG.pdf401",
+     "source_passage": "Finito foedere, guaranda finitur. Guaranda enim praestatur securitatis causa, in foedere conventa servatum iri ( §. 442. ), consequenter ea non amplius opus est, si foedus fuerit finitum.",
+     "french": "Le traité fini, la garantie finit. Car la garantie se donne pour la sûreté que ce dont on est convenu dans le traité sera observé, et par conséquent on n'en a plus besoin quand le traité est fini.",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "Wolff § 461: the guarantee lasts as long as the treaty, because it is given for the security of the treaty.",
+     "covered_by": 798
+    },
+    {
+     "unit": "II.239",
+     "passage": "& en cas de doute, on doit toujours le pré-sumer ainsi , puisqu'elle est recherchée & donnée pour la sûreté du traité.",
+     "text": "JG",
+     "page": "JG.pdf402",
+     "source_passage": "In praesumtione attenditur, quinam fuerit animus guarandam petentis in casu dubio, quantum se eidem obligaverit guarandus. Nullum vero est dubium, quin is, qui guarandam petit, securitati servatum iri conventa prospectum esse velit tamdiu, quamdiu foedus durat. Quodsi ergo non expresse dicatur aliud, promissio guarandi utique extendenda ad durationem foederis",
+     "french": "Dans la présomption on regarde quelle a été, en cas de doute, l'intention de celui qui demande la garantie, et jusqu'où le garant s'est obligé envers lui. Or il n'y a aucun doute que celui qui demande la garantie veut qu'il soit pourvu à la sûreté de l'observation des conventions aussi longtemps que le traité dure. Si donc on ne dit pas expressément autre chose, la promesse du garant doit être étendue à la durée du traité.",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "reason": "Wolff § 462 gives the presumption in doubt that the guarantee lasts as long as the treaty, because whoever asks for it (\"petit\" = \"recherchée\") wants security; row 798 pairs this clause with § 461 instead.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.239",
+     "passage": "Mais rien n'empêche qu'elle ne puisse être restreinte à un certain tems , à la vie des contractans, à celle du garant, &c.",
+     "text": "JG",
+     "page": "JG.pdf402",
+     "source_passage": "guaranda restringi potest tum ad personam guarandi, tum ad personam ejus, cui praestatur, tum ad personam utramque, consequenter in casu primo guaranda expirat, guarando mortuo, in secundo mortuo eo, cui praestita, in tertio mortuo alterutro.",
+     "french": "La garantie peut être restreinte tantôt à la personne du garant, tantôt à celle de celui à qui elle est donnée, tantôt à l'une et l'autre; par conséquent dans le premier cas la garantie expire à la mort du garant, dans le second à la mort de celui à qui elle a été donnée, dans le troisième à la mort de l'un ou de l'autre.",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Wolff § 463 lists the same restrictions of a guarantee to the life of the guarantor or of the party guaranteed.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.239",
+     "passage": "En un mot, on peut appliquer à un traité de garantie tout ce que nous avons dit des traités en général.",
+     "text": "JG",
+     "page": "JG.pdf401",
+     "source_passage": "Guarandae enim praestatio foedus quoddam est a guarando cum eo, cui praestatur, initum ( §. 445. ). Quamobrem cum foedera tam personalia sint, quam realia ( §. 412. ); guaranda quoque vel personalis est, vel realis.",
+     "french": "Car l'acte de garantie est un traité conclu par le garant avec celui à qui il la donne. C'est pourquoi, comme les traités sont tant personnels que réels, la garantie aussi est ou personnelle, ou réelle.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff argues in § 462 that a guarantee is itself a treaty, so the rules for treaties (personal or real) apply to it, which Vattel generalises.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 441-463 on guaranda (pdf391-402); INST §§ 1149-1151; GRO24 and PUF34 searched for garant/guarant; PUF V.10.12-16 (pages cited nearby)."
+  },
+  {
+   "unit": "II.322",
+   "found": [
+    {
+     "unit": "II.322",
+     "passage": "CHAPITRE XVIII. De la maniere de terminer les différens entre les nations.",
+     "text": "JG",
+     "page": "JG.pdf475",
+     "source_passage": "CAPUT V. De modo componendi controversias Gentium.",
+     "french": "CHAPITRE V. De la manière de composer les différends des Nations.",
+     "label": "translation",
+     "confidence": 0.6,
+     "reason": "The title of the chapter that begins here renders Wolff's chapter title word for word (modus componendi controversias Gentium), and Vattel's ch. XVIII goes on to follow JG ch. V (§§ 562 ff.).",
+     "covered_by": null
+    },
+    {
+     "unit": "II.322",
+     "passage": "CHAPITRE XVIII. De la maniere de terminer les différens entre les nations.",
+     "text": "INST",
+     "page": "INST.pdf751",
+     "source_passage": "CAPUT VI. De modo componendi controversias Gentium.",
+     "french": "CHAPITRE VI. De la manière de composer les différends des Nations.",
+     "label": "translation",
+     "confidence": 0.45,
+     "reason": "Same chapter title in the Institutiones (Part IV ch. VI); a second witness of the Wolffian heading, which JG is the likelier source for.",
+     "covered_by": null
+    },
+    {
+     "unit": "II.322",
+     "passage": "CHAPITRE XVIII. De la maniere de terminer les différens entre les nations.",
+     "text": "PUF34",
+     "page": "PUF34T2.p183",
+     "source_passage": "CHAPITRE XIII. Comment se vuident les DIFFÉRENS SURVENUS ENTRE CEUX QUI VIVENT DANS L'ÉTAT DE LA LIBERTÉ NATURELLE.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Pufendorf likewise passes straight from interpretation (V.12) to a chapter on settling 'différens' between those in the state of nature; shared word and order, but the wording is Wolff's.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "GRO II.16 §§ 28-30 (+Barbeyrac notes), PUF V.12 § 23 and V.13 § 1, INST §§ 63-65, 794-817, JG §§ 375, 383-386, 424-428, 553, 562-570; keyword searches (toutes les regles, combiner, se balancent, se limitent, regulae interpretandi, collisio) in all four; nothing for the body of the remark, only the following chapter title."
+  },
+  {
+   "unit": "III.22",
+   "found": [
+    {
+     "unit": "III.22",
+     "passage": "Si une puissance inférieure s'attribue un pouvoir qu'elle n'a pas , & trompe ainsi celui qui traite avec elle , même un ennemi , elle est naturellement tenue du dommage causé par sa fraude , & obligée à le réparer.",
+     "text": "JG",
+     "page": "JG.pdf655",
+     "source_passage": "Si potestas minor in bello jus majus prae se fert, quam habet; tenetur ei, cum quo actum est tum de damno, tum ad poenam.",
+     "french": "Si une puissance inférieure, à la guerre, s'attribue un droit plus grand que celui qu'elle a, elle est tenue envers celui avec qui elle a traité tant du dommage que de la peine.",
+     "label": "close paraphrase",
+     "confidence": 0.9,
+     "reason": "Vattel's opening rule is Wolff's § 774 thesis (a minor power that claims more right than it has is liable for the damage), with the war setting turned into 'même un ennemi' and the penalty moved to the sovereign.",
+     "covered_by": 994
+    },
+    {
+     "unit": "III.22",
+     "passage": "trompe ainsi celui qui traite avec elle , même un ennemi , elle est naturellement tenue du dommage causé par sa fraude",
+     "text": "JG",
+     "page": "JG.pdf656",
+     "source_passage": "Si potestas minor in bello jus majus prae se fert, quam habet, & ideo alterum inducit ad pactum ineundum, quod, si non servetur, in damnum alterius vergit; fraudem committit",
+     "french": "Si une puissance inférieure, à la guerre, s'attribue un droit plus grand que celui qu'elle a, et amène ainsi l'autre à conclure un pacte qui, s'il n'est pas observé, tourne à son dommage, elle commet une fraude.",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "reason": "The deception of the other contracting party and the word 'fraude' come from Wolff's proof of the same § 774 (alterum inducit ad pactum ... fraudem committit).",
+     "covered_by": 994
+    },
+    {
+     "unit": "III.22",
+     "passage": "Le souverain de cet officier de mauvaise foi , doit le punir & l'obliger à réparer sa faute , il le doit à la justice & à sa propre gloire.",
+     "text": "JG",
+     "page": "JG.pdf656",
+     "source_passage": "summa tamen potestas, quae permittere dolum minoribus non debet, in eum animadvertere potest, qui dolum commisit jus majus prae se ferendo, quam habebat. Sanctitas fidei, quae summas potestates maxime decet",
+     "french": "la puissance souveraine, qui ne doit pas permettre la fraude aux inférieures, peut cependant sévir contre celui qui a commis la fraude en s'attribuant un droit plus grand qu'il n'avait. La sainteté de la foi, qui sied par-dessus tout aux souverains...",
+     "label": "loose paraphrase",
+     "confidence": 0.75,
+     "reason": "The sovereign's duty to punish the deceitful officer, grounded in the sanctity of faith that befits sovereigns (Vattel's 'justice' and 'propre gloire'), is the closing argument of Wolff § 774.",
+     "covered_by": 995
+    },
+    {
+     "unit": "III.22",
+     "passage": "la foi dans les traités doit être gardée entre ennemis",
+     "text": "JG",
+     "page": "JG.pdf679",
+     "source_passage": "hosti quoque, immo praedoni & latroni servanda fides.",
+     "french": "la foi doit être gardée même à l'ennemi, et même au pirate et au brigand.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Vattel's aside anticipates his later proof (III.174 ff.), which follows JG §§ 799-800; the wording 'servanda fides ... hosti' is shared but the maxim is common to all writers.",
+     "covered_by": 997
+    },
+    {
+     "unit": "III.22",
+     "passage": "Si une puissance inférieure s'attribue un pouvoir qu'elle n'a pas , & trompe ainsi celui qui traite avec elle",
+     "text": "GRO24",
+     "page": "GRO24T2.p471",
+     "source_passage": "Que s'il y a eu de la mauvaise foi de son côté, je veux dire, s'il a fait accroire qu'il étoit muni d'un plus grand pouvoir, qu'il n'en avoit effectivement; il doit alors, outre l'estimation de la chose promise, reparer le dom-",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Grotius III.22 § 4.3 states the same case (an agent who in bad faith makes the other party believe he has more power than he has must repair the damage); the rows pair this § only with the consequence clause and the punishment.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.22",
+     "passage": "s'attribue un pouvoir qu'elle n'a pas , & trompe ainsi celui qui traite avec elle",
+     "text": "GRO24",
+     "page": "GRO24T2.p472",
+     "source_passage": "Ce n'est pas tant pour cela, que parce que l'autre Partie a supposé, en traitant, que le Ministre Public agissoit de bonne foi; sans quoi elle n'auroit eu garde de traiter. Autrement, si elle avoit été assez imprudente pour traiter, quoi qu'elle n'ignorât pas que le Ministre s'attribuoit plus de pouvoir qu'il n'en a effectivement",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Barbeyrac's note 5 on the same § supplies Vattel's verb ('s'attribuoit plus de pouvoir qu'il n'en a') and the condition that the other party must actually be deceived ('& trompe ainsi').",
+     "covered_by": null
+    },
+    {
+     "unit": "III.22",
+     "passage": "elle est naturellement tenue du dommage causé par sa fraude , & obligée à le réparer",
+     "text": "GRO24",
+     "page": "GRO24T2.p472",
+     "source_passage": "Car l'obligation de reparer le dommage qu'on a causé, & la dette d'une juste peine, (5) ont avec le délit une liaison, qui n'est point arbitraire, mais naturelle.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Vattel's 'naturellement tenue du dommage ... & obligée à le réparer' echoes Grotius's natural link between the fraud and the duty to repair the damage, in the same § 4.",
+     "covered_by": 4583
+    },
+    {
+     "unit": "III.22",
+     "passage": "Le souverain de cet officier de mauvaise foi , doit le punir",
+     "text": "GRO24",
+     "page": "GRO24T2.p472",
+     "source_passage": "il peut même être puni de sa fourberie, à proportion de la grandeur du délit.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Grotius adds that the deceitful agent may also be punished; Vattel keeps the punishment but gives it to the agent's sovereign, as Wolff does.",
+     "covered_by": 4585
+    },
+    {
+     "unit": "III.22",
+     "passage": "car la foi dans les traités doit être gardée entre ennemis",
+     "text": "GRO24",
+     "page": "GRO24T2.p416",
+     "source_passage": "De la FOI que l'on doit garder ENTRE ENNEMIS.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "The forward reference names the matter of Grotius III.19, whose title Vattel's own chapter on faith between enemies repeats; wording shared, doctrine common.",
+     "covered_by": 4584
+    },
+    {
+     "unit": "III.22",
+     "passage": "comme en conviennent tous ceux qui ont du sentiment",
+     "text": "GRO24",
+     "page": "GRO24T2.p417",
+     "source_passage": "il n'y a personne qui n'estime & ne chérisse cette disposition d'esprit, qui porte non seulement à ne point chercher son propre intérêt, mais encore à garder la foi, lors même qu'on trouveroit son compte à y manquer.",
+     "label": "loose paraphrase",
+     "confidence": 0.3,
+     "reason": "Possible echo of the consensus appeal (via Cicero) that opens Grotius's chapter on faith between enemies; weak, general wording.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 771-776 (pdf652-657), §§ 799-800 (pdf678-679), INST §§ 1155-1156; GRO III.22 §§ 3-7 with Barbeyrac notes, III.19 § 1; PUF VIII.6 §§ 9-10, VIII.9 §§ 11-13 and searches for ministers exceeding powers/deceit (prae se fert, arrogat, fait accroire, s'attribu-, mauvaise foi). Note: rows 995 and 997 carry loci § 684 and § 759, but their Latin is from JG § 774 and § 800 (Wolff's internal citations of Jus naturae); pairings are sound."
+  },
+  {
+   "unit": "III.48",
+   "found": [
+    {
+     "unit": "III.48",
+     "passage": "Mais elle n'eût pu se réaliser sans injustice & sans violence. Et puis, cette égalité une fois établie, comment la maintenir toujours par des moyens légitimes ?",
+     "text": "JG",
+     "page": "JG.pdf550",
+     "source_passage": "Gentis igitur unius, impotentia nullos potentiae alterius limites praescribere potest, ultra quos ea potentiam suam augere minime debeat.",
+     "french": "L'impuissance d'une nation ne peut donc prescrire à la puissance d'une autre aucunes bornes au-delà desquelles celle-ci ne doive point accroître sa puissance.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Wolff § 649 rejects any duty to keep nations equal because one nation's weakness cannot set limits to another's lawful growth; Vattel's objection that forced equality needs injustice and cannot be kept by lawful means runs on the same argument.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.48",
+     "passage": "Le commerce , l'industrie , les vertus militaires la feront bientôt disparoître. Le droit d'héritage, même en faveur des femmes & de leurs descendans, établi avec tant d'absurdité pour les souverainetés , mais établi enfin, bouleversera votre systême.",
+     "text": "JG",
+     "page": "JG.pdf549",
+     "source_passage": "nemini jus succedendi in regno aliquo auferri, aut ne legitimo modo quis novis terrarum accessionibus territoria sua, vel quocunque modo alio potentiam suam augeat impediri potest, hac sola de causa, quod sic aequilibrium inter Gentes tollatur. Ita e. gr. impedire non licet, ne Rex quidam potens succedere possit in regno, in quo successio per legem successionis ibidem introducta ad eum devolvitur, aut si ab alia Gente eligitur, cui liberum est imperium transferre, in quem libuerit. Similiter si per commercia Gens quaedam praepotens fiat, nullum tibi jus est commercia ejus turbandi",
+     "french": "on ne peut ôter à personne le droit de succéder dans un royaume, ni empêcher quelqu'un d'accroître légitimement ses territoires par de nouvelles acquisitions, ou sa puissance de quelque autre manière, pour cette seule raison que l'équilibre entre les nations en serait détruit. Ainsi, par exemple, il n'est pas permis d'empêcher qu'un roi puissant succède dans un royaume où la succession lui est dévolue par la loi de succession qui y est établie, ou s'il est élu par une autre nation libre de transférer l'empire à qui elle veut. De même, si une nation devient prépondérante par le commerce, tu n'as aucun droit de troubler son commerce.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Wolff § 648 gives the same two lawful sources of preponderance that cannot be blocked for the sake of balance, hereditary succession and commerce; Vattel uses them to show that equality cannot be kept up.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.48",
+     "passage": "de former des con-fédérations, pour faire tête au plus puissant, & l'empêcher de donner la loi.",
+     "text": "JG",
+     "page": "JG.pdf544",
+     "source_passage": "Quodsi ergo inter Gentes aequilibrium esse debet, necesse est ut potentiae unius vel quarundam conjunctae semper aequalis potentia aliarum opponi possit, quatenus scilicet hae foedera ineuntes potentiam suam conjungere valent.",
+     "french": "Si donc il doit y avoir un équilibre entre les nations, il faut qu'on puisse toujours opposer à la puissance d'une seule, ou de quelques-unes jointes ensemble, une puissance égale des autres, en tant que celles-ci peuvent unir leurs forces en concluant des alliances.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Wolff § 642 makes the balance consist in the others joining their power by alliances so as to oppose an equal force to the preponderant one, the remedy Vattel prefers here.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.48",
+     "passage": "ils se joignent à la plus foible, comme autant de poids que l'on jette dans le bassin le moins chargé, pour le tenir en équilibre avec l'autre.",
+     "text": "JG",
+     "page": "JG.pdf544",
+     "source_passage": "Appellatio desumta est a libra, in qua aequiponderatio ab utraque parte aequilibrium facit.",
+     "french": "Le nom est tiré de la balance, où l'égalité des poids de part et d'autre fait l'équilibre.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Vattel works out the scale image that Wolff § 642 gives as the origin of the term; row 1046 pairs the same stretch with the definition in this §, but the metaphor is inherent in the word.",
+     "covered_by": 1046
+    },
+    {
+     "unit": "III.48",
+     "passage": "Politique très - sage & très - juste en elle - même , & qui sera à jamais louable, tant qu'elle ne s'aidera que d'alliances, de confédérations, ou d'autres moyens également légitimes.",
+     "text": "JG",
+     "page": "JG.pdf551",
+     "source_passage": "aequilibrium conservandum Gentibus jus est, quatenus sine violatione juris Gentis cujusdam fieri potest.",
+     "french": "les nations ont le droit de conserver l'équilibre, en tant que cela peut se faire sans violer le droit d'aucune nation.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff § 649 grants a right to preserve the balance only so far as it can be done without violating any nation's right; Vattel praises the balancing policy only while it uses lawful means.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.48",
+     "passage": "Le commerce , l'industrie , les vertus militaires la feront bientôt disparoître.",
+     "text": "PUF34",
+     "page": "PUF34T1.p453",
+     "source_passage": "Il ne faut pourtant pas mettre au nombre des soupçons qui donnent droit d'attaquer, cette seule raison qu'un Voisin devient trop puissant à nôtre gré, & plus fort que nous; sur tout s'il ne s'est aggrandi que par une innocente industrie, ou par un effet de son bonheur, sans opprimer qui que ce soit.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Possible echo: growth by innocent 'industrie' as a lawful source of power that cannot be undone; the passage belongs more to Vattel's III.43, here only the idea and one word are shared.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 640-652 (pdf541-555), INST §§ 1172 (pdf760-761) and 1183 (pdf769); GRO pages cited nearby (T2.p61,177,195,242,249) and searches for équilibre, balance, contrepoids, Henri IV, faire tête, donner la loi, puissance qui s'accroît; PUF VIII.6 §§ 5, 8-9, II.5 § 6. Nothing on Henri IV's design, the Austria/France rivalry or England holding the balance in any of the four."
+  },
+  {
+   "unit": "III.77",
+   "found": [
+    {
+     "unit": "III.77",
+     "passage": "Au nombre des choses appartenantes à l'ennemi, sont les choses incorporelles, tous ses droits, noms & actions",
+     "text": "JG",
+     "page": "JG.pdf617",
+     "source_passage": "consequenter tales quoque sunt res incorporales, adeoque jura ad rem, quae habet hostis meus",
+     "french": "par conséquent, les choses incorporelles sont aussi telles, et donc les droits à une chose que possède mon ennemi",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Wolff JG § 729 counts the enemy's incorporeal things and rights among hostile things, which Vattel restates.",
+     "covered_by": 1084
+    },
+    {
+     "unit": "III.77",
+     "passage": "Au nombre des choses appartenantes à l'ennemi, sont les choses incorporelles, tous ses droits, noms & actions",
+     "text": "INST",
+     "page": "INST.pdf771",
+     "source_passage": "Et quia res etiam incorporales hostium hostiles sunt",
+     "french": "Et parce que les choses incorporelles des ennemis sont aussi des choses ennemies",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "reason": "Inst. § 1184 abridges the same point of JG § 729: the enemy's incorporeal things are hostile.",
+     "covered_by": 1085
+    },
+    {
+     "unit": "III.77",
+     "passage": "Au nombre des choses appartenantes à l'ennemi, sont les choses incorporelles, tous ses droits, noms & actions",
+     "text": "GRO24",
+     "page": "GRO24T2.p317",
+     "source_passage": "Les Choses Incorporelles ou les droits, noms & actions, du Corps de l'Etat, passent donc aussi au Vainqueur, autant qu'il veut se les approprier.",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "Vattel reuses Barbeyrac's wording 'choses incorporelles ... droits, noms & actions' from Grotius III.8.4, which he cites.",
+     "covered_by": 4649
+    },
+    {
+     "unit": "III.77",
+     "passage": "ex-cepté cependant ces especes de droits qu'un tiers a concédés & qui l'intéressent, ensorte qu'il ne lui est pas indifférent par qui ils soient possédés ; tels que des droits de commerce, par exemple.",
+     "text": "PUF34",
+     "page": "PUF34T2.p581",
+     "source_passage": "Ceux qu'une Personne a sur une autre Personne , ne s'aquiérent que par le consentement de celle-ci; laquelle n'est pas censée avoir prétendu donner quelque pouvoir sur elle à tout autre, mais seulement à tel ou tel.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Vattel's exception for rights granted by a third party who cares who holds them follows Pufendorf VIII.6.19's limit on acquiring by war rights that the grantor gave only to a particular person.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "ex-cepté cependant ces especes de droits qu'un tiers a concédés & qui l'intéressent, ensorte qu'il ne lui est pas indifférent par qui ils soient possédés ; tels que des droits de commerce, par exemple.",
+     "text": "PUF34",
+     "page": "PUF34T2.p580",
+     "source_passage": "si celui qui y a le prémier attaché quelque droit, a établi qu'il suivroit toûjours le Possesseur, quel qu'il fût, & à quel titre qu'il eût aquis la chose; ou s'il a prétendu seulement, que ce droit n'eût son effet que quand telles ou telles personnes posséderoient la chose à certain titre",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Same Pufendorf § (VIII.6.19): incorporeal rights whose grantor meant them only for certain holders do not pass to the captor, the ground of Vattel's exception.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "Mais comme les noms & actions, ou les dettes actives, ne sont pas de ce nombre, la guerre nous donne sur les sommes d'argent que des nations neutres pourroient devoir à notre ennemi, les mêmes droits qu'elle peut nous donner sur ses autres biens.",
+     "text": "JG",
+     "page": "JG.pdf617",
+     "source_passage": "ea, quae debentur hosti meo, etiamsi debitor hostis non sit, in numero rerum hostilium sunt. E. gr. ponamus Titium, qui hostis non est, debere hosti meo ter mille thaleros: jus ad hoc debitum respectu mei in numero rerum hostilium est.",
+     "french": "ce qui est dû à mon ennemi, même si le débiteur n'est pas ennemi, est au nombre des choses ennemies. Par exemple, supposons que Titius, qui n'est pas ennemi, doive trois mille thalers à mon ennemi : le droit à cette dette est, à mon égard, au nombre des choses ennemies.",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "JG § 729's rule and example that debts owed to my enemy by a non-enemy are hostile things become Vattel's sums owed to the enemy by neutral nations (row 1084 quotes this Latin but pairs it only with Vattel's first sentence).",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "Mais comme les noms & actions, ou les dettes actives, ne sont pas de ce nombre, la guerre nous donne sur les sommes d'argent que des nations neutres pourroient devoir à notre ennemi, les mêmes droits qu'elle peut nous donner sur ses autres biens.",
+     "text": "INST",
+     "page": "INST.pdf771",
+     "source_passage": "conseq[ue]nter etiam jus ad ea, quae hosti debentur ab eo , qui hostis non est, eadem in numero rerum hostilium sunt.",
+     "french": "par conséquent, le droit à ce qui est dû à l'ennemi par quelqu'un qui n'est pas ennemi est aussi au nombre des choses ennemies.",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Inst. § 1184 gives the same rule on debts owed to the enemy by a non-enemy (row 1085 quotes it but pairs it only with Vattel's first sentence).",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "Mais comme les noms & actions, ou les dettes actives, ne sont pas de ce nombre, la guerre nous donne sur les sommes d'argent que des nations neutres pourroient devoir à notre ennemi, les mêmes droits qu'elle peut nous donner sur ses autres biens.",
+     "text": "GRO24",
+     "page": "GRO24T2.p318",
+     "source_passage": "Mais si la neutralité, qui dispense le Debiteur d'examiner la justice de la Guerre & de la Victoire, le met dans l'obligation de paier au Vainqueur, & le rend par là quitte envers le Créancier, aux devoirs duquel celui-ci est censé succéder",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Barbeyrac's note 5 on the Grotius § Vattel cites treats the neutral debtor of the vanquished as bound to pay the victor.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "Mais comme les noms & actions, ou les dettes actives, ne sont pas de ce nombre, la guerre nous donne sur les sommes d'argent que des nations neutres pourroient devoir à notre ennemi, les mêmes droits qu'elle peut nous donner sur ses autres biens.",
+     "text": "PUF34",
+     "page": "PUF34T2.p581",
+     "source_passage": "bre desquels sont les Dettes actives, quelque fondées qu'elles soient sur un Contract. Tout ce qu'il y a, c'est qúe cela n'a lieu que par rapport aux Peuples Neutres",
+     "label": "loose paraphrase",
+     "confidence": 0.3,
+     "reason": "Barbeyrac's note on Pufendorf VIII.6.19 counts 'Dettes actives' among goods acquired by war, as regards neutral peoples, a pairing Vattel repeats.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "ALEXANDRE, vainqueur & maître absolu de Thebes, fit présent aux Thessaliens de cent talens.",
+     "text": "GRO24",
+     "page": "GRO24T2.p317",
+     "source_passage": "Alexandre le Grand aiant pris la Ville de Thébes, fit présent de cette somme aux Thessaliens, comme Vainqueur des Thébains.",
+     "label": "close paraphrase",
+     "confidence": 0.9,
+     "reason": "Grotius III.8.4's example, worded closely ('fit présent ... aux Thessaliens', 'Vainqueur').",
+     "covered_by": 4650
+    },
+    {
+     "unit": "III.77",
+     "passage": "ALEXANDRE, vainqueur & maître absolu de Thebes, fit présent aux Thessaliens de cent talens.",
+     "text": "PUF34",
+     "page": "PUF34T2.p583",
+     "source_passage": "il étoit censé en effet avoir succédé à leur droit, du moment qu'il devint maitre de Thébes & de tout ce qui lui appartenoit; de sorte qu'il dépendoit de lui ou de faire paier les Thessaliens, ou de leur quitter les cent talens.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Pufendorf VIII.6.20 tells the same case and grounds Alexander's gift on his having become master of Thebes, echoed in Vattel's 'maître absolu de Thebes'.",
+     "covered_by": 6458
+    },
+    {
+     "unit": "III.77",
+     "passage": "Voyez GROTIUS droit de la G. & de la P. Liv. III. Chap. VIII. §. IV.",
+     "text": "GRO24",
+     "page": "GRO24T2.p316",
+     "source_passage": "§. IV. 1. COMME les biens de chaque Particulier sont aquis par droit de Guerre à celui qui l'a pris, & par là est devenu son Maître: de même, les biens, qui appartenoient à tout le Corps, passent à celui qui l'a subjugué",
+     "label": "citation",
+     "confidence": 1.0,
+     "reason": "Vattel's note cites Grotius III.8.4 exactly.",
+     "covered_by": 4652
+    },
+    {
+     "unit": "III.77",
+     "passage": "Le souverain a naturellement le même droit sur ce que ses sujets peuvent devoir aux ennemis. Il peut donc confisquer des dettes de cette nature, si le terme du payement tombe au tems de la guerre ; ou, au moins, défendre à ses sujets de payer, tant que la guerre durera.",
+     "text": "JG",
+     "page": "JG.pdf715",
+     "source_passage": "debitoribus quoque hostium, civibus suis, prohibere potest, ne creditoribus durante bello solvant debitum, immo ut veniente die solutionis solvant sibi imperare.",
+     "french": "il peut aussi défendre aux débiteurs des ennemis, ses citoyens, de payer leur dette aux créanciers pendant la guerre, et même leur ordonner, quand le jour du payement arrive, de le payer à lui-même.",
+     "label": "close paraphrase",
+     "confidence": 0.9,
+     "reason": "JG § 840: the sovereign may forbid his subjects who owe the enemy to pay during the war, or order them to pay him when the term falls due, which Vattel restates point by point.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "Le souverain a naturellement le même droit sur ce que ses sujets peuvent devoir aux ennemis. Il peut donc confisquer des dettes de cette nature, si le terme du payement tombe au tems de la guerre ; ou, au moins, défendre à ses sujets de payer, tant que la guerre durera.",
+     "text": "INST",
+     "page": "INST.pdf780",
+     "source_passage": "prohibere debitoribus hostium , civibus suis, ne creditoribus durante bello debitum solvant, immo imperare, ut die solutionis veniente sibi solvant.",
+     "french": "défendre aux débiteurs des ennemis, ses citoyens, de payer la dette aux créanciers pendant la guerre, et même leur ordonner de lui payer à lui-même quand le jour du payement arrive.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "Inst. § 1197 abridges JG § 840 in the same terms.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.77",
+     "passage": "Mais aujourd'hui, l'avantage & la sûreté du commerce ont engagé tous les souverains de l'Europe à se relâcher de cette rigueur.",
+     "text": "JG",
+     "page": "JG.pdf715",
+     "source_passage": "Durum equidem accidit iis, quorum res consiscantur; sed malum hoc necessarium est, quod bellum post se trahit, & infortunium, quod evitatu possibile non est.",
+     "french": "C'est certes une chose dure pour ceux dont les biens sont confisqués ; mais c'est un mal nécessaire que la guerre traîne après elle, et une infortune qu'il n'est pas possible d'éviter.",
+     "label": "open disagreement",
+     "confidence": 0.35,
+     "reason": "After following JG § 840, Vattel answers Wolff's defence of this harsh ('durum') necessity by noting that European usage has relaxed 'cette rigueur'.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 726-732 and 838-842 (pdf615-618, 714-716), INST §§ 1184, 1197; Grotius III.6.5-6 and III.8.1-4 with notes (T2.p282-283, 316-318); Pufendorf VIII.6.18-20 with notes (T2.p580-583); searched Thessaliens, incorporal, debentur hosti, creditor/confisc, dettes actives, foi publique."
+  },
+  {
+   "unit": "III.100",
+   "found": [
+    {
+     "unit": "III.100",
+     "passage": "L'alliance défensive, quoique générale & faite avant qu'il fût question de la guerre présente, produit encore le même effet, si elle porte une assistance de toutes les forces des alliés. Car alors c'est une vraie ligue ou société de guerre.",
+     "text": "JG",
+     "page": "JG.pdf620",
+     "source_passage": "Si foedus belli contra omnes jam ante fuit initum, quam de bello praesente cogitabatur; qui auxilia, vel subsidia promissa mittit, aut alio quocunque modo in bello adjuvat foederatum, prouti foedus postulat; hostis est ejus, contra quem bellum geritur a foederato.",
+     "french": "Si une alliance de guerre contre tous a été conclue avant qu'on pensât à la guerre présente, celui qui envoie les secours ou subsides promis, ou aide de quelque autre manière son allié dans la guerre, comme l'alliance l'exige, est l'ennemi de celui contre qui l'allié fait la guerre.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "JG § 736's case of a war alliance (foedus belli, 'société de guerre') made before the present war is Vattel's general defensive alliance for all forces.",
+     "covered_by": 1118
+    },
+    {
+     "unit": "III.100",
+     "passage": "Qu'est - ce qu'un auxiliaire, qui vient me faire la guerre, à la tête de toutes ses forces ? Il se joue, s'il prétend n'être pas mon ennemi. Que feroit - il de plus, s'il en prenoit hautement la qualité ? Il ne me ménage donc point ; il voudroit se ménager lui - même.",
+     "text": "JG",
+     "page": "JG.pdf621",
+     "source_passage": "Implicat omnino in bello esse velle medium & uni belligerantium parti in eodem opem ferre: qui enim medius esse vult, neutri parti adhaerere, nec ullo modo sese bello immiscere debet (§. 672.). Nulla vero est excusatio, quod, quia foedera sancte sunt servanda (§. 380. 547.), ea saltem quis praestare velit foederato, ad quae ipsi obligatus fuit, antequam de bello praesente cogitabatur, ceteroquin sese bello immiscere nolle, sed potius cum eo, contra quem bellum geritur, amicitiam culturum.",
+     "french": "Il est tout à fait contradictoire de vouloir être neutre dans une guerre et de porter secours à l'une des parties belligérantes : car qui veut être neutre ne doit s'attacher à aucune partie ni se mêler en aucune manière de la guerre. Et ce n'est pas une excuse de dire que, les traités devant être observés saintement, on veut seulement fournir à son allié ce à quoi l'on était obligé avant qu'on pensât à la guerre présente, sans vouloir d'ailleurs se mêler de la guerre, mais plutôt entretenir l'amitié avec celui contre qui la guerre se fait.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Vattel turns into rhetoric the argument of Wolff's note to § 736: an ally who fights for one side cannot claim to stay out of the war and keep friendship with the other.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.100",
+     "passage": "Et puis, il seroit absurde que je ne puisse porter laguerre chez une nation, qui s'oppose à moi de toutes ses forces, & tarir la source des secours qu'elle donne à mon ennemi.",
+     "text": "JG",
+     "page": "JG.pdf619",
+     "source_passage": "Cum qui hosti meo se associat, in eum & res ejus idem liceat, quod in hostem & res hostium (§. 732.); in terras ejus vi armata ingredi & ibidem hostiliter agere, seu bellum ei inferre licet.",
+     "french": "Puisqu'il est permis contre celui qui s'associe à mon ennemi, et contre ses biens, ce qui est permis contre l'ennemi et ses biens, il est permis d'entrer à main armée sur ses terres et d'y agir en ennemi, c'est-à-dire de lui faire la guerre.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "JG § 733: one may carry the war into the lands of him who joins my enemy, the right Vattel says it would be absurd to deny.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.100",
+     "passage": "Souffrirai - je qu'il conserve ses provinces en paix, à couvert de tout danger, tandis qu'il me fera tout le mal qu'il est capable de me faire ?",
+     "text": "JG",
+     "page": "JG.pdf620",
+     "source_passage": "Quodsi periculum ex eo, quod alteri in bello opem ferat, sibi non metuerit; id sibi imputet, quod de eo non cogitaverit, quod eventu possibile esse non ignorat, aut saltem ignorare non poterat.",
+     "french": "Que s'il n'a pas craint pour lui-même le danger de porter secours à un autre dans la guerre, qu'il s'impute de n'avoir pas pensé à ce qu'il savait, ou du moins ne pouvait ignorer, pouvoir arriver.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Wolff's note to § 735 denies the helper of my enemy any claim to be spared the danger of war on his lands, the point of Vattel's question.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 730-738 (pdf617-622), INST §§ 1185-1187; Grotius III.3.9-10 and III.17.3 (T2.p247-248, 410-411); Pufendorf VIII.6.7 n.2 and VIII.6.14 (T2.p568-569, 575); searched foedus belli, omnibus/totis viribus, toutes ses forces."
+  },
+  {
+   "unit": "III.119",
+   "found": [
+    {
+     "unit": "III.119",
+     "passage": "Le passage innocent est dû à toutes les nations avec lesquelles on vit en paix, (L. II. §. 123.) & ce devoir s'étend aux troupes comme aux particuliers.",
+     "text": "JG",
+     "page": "JG.pdf581",
+     "source_passage": "Gens una copiis militaribus Gentis alterius transitum innoxium permittere debet.",
+     "french": "Une nation doit permettre aux troupes d'une autre nation un passage innocent.",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "reason": "JG § 686 extends the duty of innocent passage to the troops of another nation, as Vattel does.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "Le passage innocent est dû à toutes les nations avec lesquelles on vit en paix, (L. II. §. 123.) & ce devoir s'étend aux troupes comme aux particuliers.",
+     "text": "INST",
+     "page": "INST.pdf768",
+     "source_passage": "gens una copiis militaribus gentis alterius transitum sibi innoxium & transeuntibus tutum permittere debet.",
+     "french": "une nation doit permettre aux troupes d'une autre nation un passage innocent pour elle et sûr pour ceux qui passent.",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Inst. § 1182 states the same duty of granting innocent passage to troops.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "Le passage innocent est dû à toutes les nations avec lesquelles on vit en paix, (L. II. §. 123.) & ce devoir s'étend aux troupes comme aux particuliers.",
+     "text": "GRO24",
+     "page": "GRO24T1.p289",
+     "source_passage": "ON est aussi tenu de laisser passer librement par les Terres, les Fleuves, & les endroits de la Mer qui peuvent nous appartenir, ceux qui veulent aller ailleurs pour de justes causes;",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Grotius II.2.13 grounds the duty of passage, including for those waging a just war, from which Wolff and Vattel derive the right of armies.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "c'est au maître du territoire de juger si le passage est innocent",
+     "text": "JG",
+     "page": "JG.pdf584",
+     "source_passage": "penes ipsam sit judicium de eo, utrum transitus sit innoxius, nec ne",
+     "french": "c'est à elle qu'appartient le jugement de savoir si le passage est innocent ou non",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "reason": "JG § 688 leaves to the territorial nation the judgment whether the passage is innocent.",
+     "covered_by": 1140
+    },
+    {
+     "unit": "III.119",
+     "passage": "c'est au maître du territoire de juger si le passage est innocent",
+     "text": "INST",
+     "page": "INST.pdf768",
+     "source_passage": "Cum tamen judicium de eo, an sit innoxius, sit permittentis",
+     "french": "Comme cependant le jugement de savoir s'il est innocent appartient à celui qui le permet",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Inst. § 1182: the judgment whether passage is innocent belongs to the one who grants it.",
+     "covered_by": 1141
+    },
+    {
+     "unit": "III.119",
+     "passage": "& il est très-difficile que celui d'une armée le soit entiérement.",
+     "text": "PUF34",
+     "page": "PUF34T1.p532",
+     "source_passage": "En ce cas- là, le service qu'on nous demande, n'est pas un office d'une utilité innocente. Il y a un dommage présent, & un peril encore plus grand pour l'avenir.",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Barbeyrac's note on Pufendorf III.3.5 argues that an army's passage is hardly ever of innocent use, Vattel's caveat.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "& il est très-difficile que celui d'une armée le soit entiérement.",
+     "text": "PUF34",
+     "page": "PUF34T1.p531",
+     "source_passage": "Il y a d'ailleurs peu de Généraux, qui, en pareille rencontre, méritent l'éloge, qui fut autrefois donné par Cicéron à Pompée le Grand; Que (2) ses Troupes traversérent toute l'Asie, sans laisser aucune plainte de leur insolence, non pas même la trace de leur passage.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Pufendorf III.3.5 doubts that armies ever pass without harm, the same doubt Vattel states.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "& il est très-difficile que celui d'une armée le soit entiérement.",
+     "text": "GRO24",
+     "page": "GRO24T1.p289",
+     "source_passage": "il suppose gratuitement , que la liberté de passer sur les Terres ou les Eaux qui appartiennent à autrui , est toûjours une chose d'une utilité innocente.",
+     "label": "loose paraphrase",
+     "confidence": 0.35,
+     "reason": "Barbeyrac's note 1 on Grotius II.2.13 denies that passage is always innocent, the reservation Vattel applies to armies.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "Les terres de la république de Venise, celles du pape, dans les dernieres guerres d'Italie, ont souffert de très-grands dommages, par le passage des armées, & sont devenues souvent le théatre de la guerre.",
+     "text": "JG",
+     "page": "JG.pdf591",
+     "source_passage": "Quanta vero emergant damna, si theatrum belli fuerit in aliquo territorio, nemo est, qui non intelligat, modo non ignoret cumulum malorum, quae bellum post se trahit.",
+     "french": "Quels dommages naissent lorsque le théâtre de la guerre se trouve dans un territoire, personne ne l'ignore, pourvu qu'il connaisse le monceau de maux que la guerre traîne après elle.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Wolff's note to JG § 695 on the great damage done when passage makes a neutral land the 'theatrum belli' is what Vattel illustrates with Venice and the Papal States.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "Les terres de la république de Venise, celles du pape, dans les dernieres guerres d'Italie, ont souffert de très-grands dommages, par le passage des armées, & sont devenues souvent le théatre de la guerre.",
+     "text": "INST",
+     "page": "INST.pdf768",
+     "source_passage": "transitus petendus , & quia innoxius non est, si metuendum , ne is concedenti bellum inferat , vel sedem belli in terra pacata figat",
+     "french": "le passage doit être demandé, et comme il n'est pas innocent s'il est à craindre que celui qui passe porte la guerre à celui qui le lui accorde, ou fixe le siège de la guerre dans une terre paisible",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Inst. § 1182 names the risk that passage fixes the seat of war in a peaceful land, as Vattel's example shows.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "Les terres de la république de Venise, celles du pape, dans les dernieres guerres d'Italie, ont souffert de très-grands dommages, par le passage des armées, & sont devenues souvent le théatre de la guerre.",
+     "text": "PUF34",
+     "page": "PUF34T1.p533",
+     "source_passage": "Ajoûtez à cela, qu'en donnant passage on court risque de faire de son propre Païs le théatre de la Guerre.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Pufendorf III.3.5 warns that granting passage risks making one's country 'le théatre de la Guerre', Vattel's very phrase.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.119",
+     "passage": "Les terres de la république de Venise, celles du pape, dans les dernieres guerres d'Italie, ont souffert de très-grands dommages, par le passage des armées, & sont devenues souvent le théatre de la guerre.",
+     "text": "GRO24",
+     "page": "GRO24T1.p291",
+     "source_passage": "Les Vénitiens laissérent passer les Allemands, & les François, qui se disputoient la ville de Marano. PAUL PARUTA, Hist. Venet. Lib. XI. Les Allemands s'étant plaints de ce qu'on avoit donné passage à leurs Ennemis, les Vénitiens, pour s'excuser, disent, qu'ils n'auroient pû l'empêcher qu'en prenant les armes ; & que ce n'étoit pas leur coûtume d'en venir là, à moins qu'ils n'eussent à faire à des Ennemis declarez. Ibid. Le Pape eut recours à la même excuse : Lib. XII. ejusdem. GROTIUS.",
+     "label": "loose paraphrase",
+     "confidence": 0.3,
+     "reason": "Grotius's note on passage pairs Venice and the Pope as neutrals crossed by armies; Vattel's example names the same two states, though for later wars.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "JG §§ 684-701 (pdf581-597), INST §§ 1131, 1181-1182 (pdf734, 768-769); Grotius II.2.13 with notes (T1.p289-291); Pufendorf III.3.5 with Barbeyrac notes (T1.p531-533); searched transit, sedes belli, theatrum, innoxius non."
+  },
+  {
+   "unit": "III.187",
+   "found": [
+    {
+     "unit": "III.187",
+     "passage": "les gens de guerre, généraux, officiers & soldats, sont-ils obligés en conscience à réparer des maux qu'ils ont faits, non par leur volonté propre, mais comme des instrumens dansdans la main du souverain ? Je suis supris que le judicieux GROTIUS prenne sans distinction l'affirmative",
+     "text": "GRO24",
+     "page": "GRO24T2.p340",
+     "source_passage": "Les Généraux & Officiers sont ensuite responsables de ce qui a été fait sous leur commandement. Les Soldats (c) qui ont concouru à un acte d'hostilité commis en commun, comme à l'incendie d'une Ville, sont tenus (1) solidairement du dom-",
+     "label": "open disagreement",
+     "confidence": 0.85,
+     "reason": "Vattel restates Grotius's thesis of III.10.4.2 in its own terms (généraux, officiers, soldats bound to repair) and rejects it as stated without distinction; row 4819 pairs the citing sentence with the § IV argument of the same §.",
+     "covered_by": 4819
+    },
+    {
+     "unit": "III.187",
+     "passage": "Lors donc que, dans cet esprit, ils ont prêté leur bras pour une guerre qui se trouve ensuite injuste, le souverain seul est coupable",
+     "text": "GRO24",
+     "page": "GRO24T2.p341",
+     "source_passage": "ET on ne doit pas, à mon avis, admettre l'exception que font ici (a) quelques-uns, au sujet de ceux qui servent sous d'autres, c'est qu'ils ne sont responsables du dommage, que quand il y a de leur part (1) quelque faute accompagnée de mauvaise foi. Car une simple faute, sans mauvaise intention, suffit pour obliger à restitution.",
+     "label": "open disagreement",
+     "confidence": 0.5,
+     "reason": "Vattel adopts for those who serve in good faith the exception that Grotius III.10.5.1 expressly rejects (subordinates liable only for fault with bad faith).",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Ils doivent seulement vuider leurs mains de ce qu'ils ont acquis dans une pareille guerre",
+     "text": "GRO24",
+     "page": "GRO24T2.p340",
+     "source_passage": "exhorta chacun à vuider ses mains des biens ravis à autrui; comprenant bien, par les seules lumieres de la Raison Naturelle, que, sans cette restitution, la repentance seroit feinte & inutile.",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "reason": "The distinctive phrase 'vuider ses mains' of what was taken, used by Grotius (III.10.3.2) for restitution after an unjust war, is reused for the one duty Vattel leaves to soldiers.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "La nation en corps, & les particuliers, connoissant l'injustice de leur possession, doivent se dessaisir, & restituer tout ce qui est mal acquis.",
+     "text": "GRO24",
+     "page": "GRO24T2.p341",
+     "source_passage": "il suffit que l'on soit en (1) possession d'une chose prise à autrui dans une Guerre injuste, pour être obligé de la rendre; puis qu'en ce cas-là on ne voit aucune raison, fondée sur le Droit Naturel, pourquoi celui à qui la chose appartient, pourroit en être justement privé.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Grotius III.10.6.1 grounds the duty to restore things held from an unjust war on possession alone (no just title); Vattel's restitution by nation and individuals, and his later 'sans titre légitime', follow this.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "le souverain seul est coupable, lui seul est tenu à réparer ses torts",
+     "text": "GRO24",
+     "page": "GRO24T2.p341",
+     "source_passage": "Après tout, comme les Puissances, qui entreprennent une Guerre injuste, sont toûjours plus coupables que ceux qui les servent dans une telle Guerre, elles peuvent aussi ordinairement reparer ou en tout, ou en partie, les maux dont elles sont la prémiére cause; & en s'aquittant ainsi de leur devoir, dispenser les Soldats de l'obligation de restituer, dans laquelle ils ne se croient guéres le plus souvent.",
+     "label": "loose paraphrase",
+     "confidence": 0.6,
+     "reason": "Barbeyrac's note on III.10.4 already shifts the reparation of the 'maux' to the powers that began the unjust war and frees the soldiers; Vattel hardens this into the sovereign alone being liable.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "le souverain seul est coupable, lui seul est tenu à réparer ses torts. Les sujets, & en particulier les gens de guerre, sont innocens ; ils n'ont agi que par une obéissance nécessaire.",
+     "text": "GRO24",
+     "page": "GRO24T2.p192",
+     "source_passage": "il peut se faire que le Prince soit coupable, d'avoir ordonné des choses injustes: mais la condition de Sujet, qui demande l'obéïssance, rend le Soldat innocent.",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Augustine's dictum quoted by Grotius II.26.4.4 (prince guilty, soldier made innocent by the subject's duty of obedience) is the same contrast in nearly the same terms.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "lui seul est tenu à réparer ses torts. Les sujets, & en particulier les gens de guerre, sont innocens",
+     "text": "GRO24",
+     "page": "GRO24T2.p191",
+     "source_passage": "L'Auteur du Dommage, c'est, dit-on, (2) celui qui a commandé de le faire: pour l'autre, qui a été contraint d'obéir, il n'y a pas de sa faute.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Grotius II.26.4.2 reports the maxim that liability for damage lies with the one who commanded, not with the one bound to obey, which Vattel applies to reparation after an unjust war.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "non par leur volonté propre, mais comme des instrumens dansdans la main du souverain",
+     "text": "GRO24",
+     "page": "GRO24T2.p191",
+     "source_passage": "On suppose, que celui qui obéït, ne le fait pas volontairement, & par conséquent n'est point coupable",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Grotius's note on II.26.4 (acting on command is not voluntary; n. 3 adds Aristotle's slave as an inanimate instrument or the hand that strikes) gives Vattel's 'not by their own will but as instruments in the sovereign's hand'.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "s'ils pouvoient refuser de marcher pour une guerre qui ne leur paroîtroit pas juste ? Souvent même la prudence ne permet pas au souvarain de publier toutes ses raisons.",
+     "text": "GRO24",
+     "page": "GRO24T2.p194",
+     "source_passage": "Si l'on établit, disent-ils, que les Sujets peuvent se dispenser de porter les armes, toutes les fois qu'ils doutent de la justice de la Guerre; l'Etat sera par là souvent en danger de périr; parce que pour l'ordinaire il n'est pas à propos de découvrir au Peuple les raisons des délibérations qui se prennent dans le Conseil du Souverain.",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "reason": "Vattel adopts as his own the objection Grotius II.26.4.8 reports and answers: subjects refusing to march whenever in doubt would ruin the state, and the sovereign often cannot reveal his reasons.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Le devoir des sujets est de les présumer justes & sages, tant que l'évidence pleine & absolue ne leur dit pas le contraire.",
+     "text": "GRO24",
+     "page": "GRO24T2.p194",
+     "source_passage": "En général, il est dangereux d'établir, qu'un simple doute puisse dispenser de l'obéïssance à un Supérieur légitime: & il suffit bien d'accorder cette dispense, dans les cas où l'on est pleinement persuadé de l'injustice de la chose commandée. Il est juste, que, dans un doute, la présomtion soit en faveur du Supérieur.",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "reason": "Barbeyrac's note 19 on II.26.4 gives exactly Vattel's rule: presumption for the superior in doubt, dispensation only on full persuasion of injustice.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Dans toutes les occasions susceptibles de doute, la nation entiere, les particuliers, & singuliérement les gens de guerre, doivent s'en ra porter à ceux qui gouvernent, au souverain.",
+     "text": "GRO24",
+     "page": "GRO24T2.p193",
+     "source_passage": "Ainsi le parti le plus sûr est d'obéïr, puis qu'on ne sauroit douter que l'on ne soit tenu d'obéïr à celui qui commande, & que le commandement peut n'avoir rien d'injuste, quoi qu'on ne soit point assuré s'il est tout-à-fait juste.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Barbeyrac's note 12 on II.26.4, against Grotius, makes obedience the course to follow when the justice of the war is doubtful, which is Vattel's position.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Leur cas est ici celui de tous ceux qui sont les ministres des ordres souverains. Le gouvernement devient impossible, si chacun de ses ministres veut peser & connoître à fond la justice des commandemens, avant que de les exécuter.",
+     "text": "GRO24",
+     "page": "GRO24T2.p192",
+     "source_passage": "C'est pourquoi SENE'QUE soûtient, (6) qu'un Esclave n'est pas le Censeur, mais l'Exécuteur des volontez de son Maître. TACITE dit la même chose des Sujets: (7) les Dieux, selon lui, ne leur ont laissé que la gloire d'obéïr; ils ont donné à leur Prince le pouvoir de juger souverainement.",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "The view Grotius II.26.4.3 reports (the subordinate is executor, not judge, of commands; judging belongs to the prince) underlies Vattel's ministers who must not weigh commands before executing them.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Où en feroit-on, si à chaque démarche du souverain les sujets pouvoient peser la justice ds ses raisons",
+     "text": "PUF34",
+     "page": "PUF34T2.p448",
+     "source_passage": "Si toutes les fois que le Souverain donne quelque ordre, chacun pouvoit en demander la raison, il n’y auroit plus d’obéïssance, ni par conséquent plus de Souveraineté.",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "reason": "Pufendorf VIII.1.5 has the same reductio (if each could ask the reason of every order there would be no obedience or sovereignty); row 6514 pairs this Vattel stretch only with Barbeyrac's note to § 6.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Le gouvernement devient impossible, si chacun de ses ministres veut peser & connoître à fond la justice des commandemens, avant que de les exécuter.",
+     "text": "PUF34",
+     "page": "PUF34T2.p450",
+     "source_passage": "que tous les Soldats, les Huissiers, les Bourreaux &c. doivent entendre la Politique, & la Jurisprudence, & qu’ils peuvent se dispenser d’obéïr, sous prétexte qu’ils ne sont pas bien convaincus de la justice de ce qu’on leur commande ; ce qui réduiroit à rien l’Autorité du Prince, & le mettroit hors d’état d’exercer les fonctions du Gouvernement.",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "reason": "Pufendorf's argument, reported in Barbeyrac's note 4 on VIII.1.6, that if soldiers, ushers and executioners had to be convinced of every command government would be impossible is Vattel's sentence on the ministers of sovereign orders (row 6514 uses the same note for a different Vattel sentence).",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Souvent même la prudence ne permet pas au souvarain de publier toutes ses raisons.",
+     "text": "PUF34",
+     "page": "PUF34T2.p449",
+     "source_passage": "car, en ce cas-là, il y a toûjours présomtion que le Souverain n’ordonne rien que de juste, & il peut souvent avoir des vûës qu’il n’est pas permis aux Particuliers d’examiner.",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Pufendorf VIII.1.6 pairs the presumption of the sovereign's justice with his often having views subjects may not examine, as Vattel pairs undisclosed reasons with the duty to presume them just.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "non par leur volonté propre, mais comme des instrumens dansdans la main du souverain",
+     "text": "PUF34",
+     "page": "PUF34T2.p449",
+     "source_passage": "En effet, on peut sans contredit exécuter en qualité de (4) simple instrument une action ordonnée par le Souve-",
+     "label": "loose paraphrase",
+     "confidence": 0.55,
+     "reason": "Pufendorf VIII.1.6: the subject may execute an order of the sovereign as a mere instrument; Vattel's soldiers act 'comme des instrumens dans la main du souverain'.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "le souverain seul est coupable",
+     "text": "PUF34",
+     "page": "PUF34T2.p450",
+     "source_passage": "verain, qui en est regardé comme l’unique auteur, sur qui toute la faute retombe.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Continuation of the same sentence of Pufendorf VIII.1.6: the sovereign is the sole author on whom all the fault falls.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Mais s'ils doivent, pour le salut de l'état, présumer justes les ordres du souverain, ils n'en sont pas responsables.",
+     "text": "PUF34",
+     "page": "PUF34T2.p453",
+     "source_passage": "Mais lors que l'action du Prince n'est pas manifestement injuste, un Sujet, & sur tout un Ministre Public (c), ne doit pas se hâter de la condamner; la présomtion étant toûjours pour la justice des actions du Souverain.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Pufendorf VIII.1.7 closes on the presumption for the justice of the sovereign's acts owed by subjects and especially by public ministers, the point Vattel ends on.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "Je suis supris que le judicieux GROTIUS prenne sans distinction l'affirmative ( a ). Cette décifion ne peut se soutenir que dans le cas d'une guerre si manifestement & si indubitablement injuste",
+     "text": "PUF34",
+     "page": "PUF34T2.p453",
+     "source_passage": "GROTIUS (a) croit, que, quand la Guerre est manifestement injuste, un Sujet ne doit jamais se rendre le ministre des crimes de son Prince; mais que, dans un doute, il faut prendre le parti le plus sûr, qui est de ne point s'enrôller. Ce sentiment a besoin de quelque modification",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Pufendorf VIII.1.8 already qualifies Grotius on subjects serving in an unjust war, confining the duty to refuse to the manifestly unjust case and not to doubt, the qualification Vattel applies to Grotius on restitution.",
+     "covered_by": null
+    },
+    {
+     "unit": "III.187",
+     "passage": "doivent s'en ra porter à ceux qui gouvernent, au souverain. Ils y sont obligés par les principes essentiels de la société politique, du gouvernement.",
+     "text": "PUF34",
+     "page": "PUF34T2.p454",
+     "source_passage": "Le plus sûr est donc alors d'obéïr (2), sans s'informer d'autre chose, & de laisser au Souverain le soin de rendre compte à Dieu de sa conduite.",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Pufendorf VIII.1.8 concludes that in doubt the subject should obey without inquiry and leave the account to the sovereign (who knows the state's interests better), the deference Vattel derives from the principles of political society.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "GRO24 III.10 §§3-6 with Barbeyrac notes, II.26 §§1-6 with notes, II.21; PUF34 VIII.1 §§5-8 with notes, VIII.6.15; JG §§777-809 (incl. §788 restitution, judged a commonplace recap of III.185), 886-890 and searches for milites/subditi/jussu/obedientia; INST §1215; keywords restitution, vuider, instrumens, présumer, doute, raisons secrètes."
+  },
+  {
+   "unit": "IV.36",
+   "found": [
+    {
+     "unit": "IV.36",
+     "passage": "Après tout ce que nous avons dit de la foi des traités, de l'obligation indispensable qu'ils imposent, il seroit superflu de s'étendre à montrer en particulier, combien les souverains & les peuples doivent être religieux observateurs des traités de paix.",
+     "text": "GRO24",
+     "page": "GRO24T2.p485",
+     "source_passage": "ET quand une fois on a fait la Paix, à quelques conditions que ce soit, il faut l'observer inviolablement, à cause de la foi donnée, dont nous avons établi l'obligation sacrée & indispensable.",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Grotius III.25.7 grounds the observance of peace on the faith already shown to bind with an 'obligation sacrée & indispensable'; Vattel repeats the move with the same back-reference and the same 'obligation indispensable'.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.36",
+     "passage": "Ces traités intéressent & obligent les nations entieres",
+     "text": "JG",
+     "page": "JG.pdf838",
+     "source_passage": "Pactio pacis etiam obligat Gentem, sive populum, & successores. Evidens est, pactionem pacis utilitatis publicae manentis causa fieri",
+     "french": "Le traité de paix oblige aussi la nation, ou le peuple, et les successeurs. Il est évident que le traité de paix se fait en vue d'une utilité publique permanente",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Wolff § 1017 (used for Vattel IV.35) says the peace treaty binds the whole nation and is made for lasting public utility; Vattel recalls it as a reason for fidelity.",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [],
+   "searched": "GRO24 III.19-20 and III.25 (searched paix + religieusement/inviolablement/foi); PUF34 VIII.7-9 (paix observer, rallumer); JG §§1017-1035 (pax servanda, rumpitur, fides sancta) and INST §§1227-1231."
+  },
+  {
+   "unit": "IV.84",
+   "found": [
+    {
+     "unit": "IV.84",
+     "passage": "A la vérité, le prince seul, à qui le ministre est envoyé, se trouve obligé & particuliérement engagé à le faire jouir de tous les droits attachés à son caractere",
+     "text": "GRO24",
+     "page": "GRO24T2.p27",
+     "source_passage": "LA Loi du Droit des Gens, dont je viens de parler, qui met les Ambassadeurs à l'abri de toute violence, doit aussi être entenduë en sorte qu'elle n'oblige d'autre Puissance, que celle auprès de qui l'Ambassadeur est envoié, & cela seulement depuis qu'elle l'a reçu",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "reason": "Vattel's concession that only the prince to whom the minister is sent is bound to his full rights is Grotius II.18.5.1.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "mais les autres sur les terres de qui il passe ne peuvent lui refuser les égards",
+     "text": "GRO24",
+     "page": "GRO24T2.p28",
+     "source_passage": "Cette Loi ne regarde donc pas les autres Puissances, sur les terres de qui les Ambassadeurs passent, sans en avoir permission.",
+     "label": "open disagreement",
+     "confidence": 0.75,
+     "reason": "Vattel reuses Grotius's wording ('les autres ... sur les terres de qui ... passe') from II.18.5.2 while denying its conclusion that third powers owe passing ambassadors nothing.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "L'insulter, ce seroit faire injure à son maître & à toute la nation : l'arrêter & lui faire violence, ce seroit blesser le droit d'ambassade qui appartient à tous les souverains",
+     "text": "GRO24",
+     "page": "GRO24T2.p29",
+     "source_passage": "Que si, sans qu'il y ait rien de tel, on maltraite des Ambassadeurs qui vont auprès d'une autre Puissance; ce sera bien une rupture d'amitié, & un affront fait ou à celui de la part de qui ces Ambassadeurs sont envoiez, ou à celui auprès de qui ils sont envoiez; mais non (10) pas une infraction du Droit des Gens, dont il s'agit.",
+     "label": "open disagreement",
+     "confidence": 0.65,
+     "reason": "Grotius II.18.5.3: mistreating ambassadors in transit is an affront to their master but no breach of the law of nations; Vattel keeps the affront and makes it a breach of the right of embassy.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "Ces deux ministres, destinés, l'un pour Constantinople, & l'autre pour Venise, s'étant embarqué sur le Pô, furent arrêtés & assassinés",
+     "text": "GRO24",
+     "page": "GRO24T2.p28",
+     "source_passage": "Les Espagnols prirent sur le Pô & firent mourir des Ambassadeurs que le Roi de France envoioit en Turquie ; sur quoi voiez le jugement de PARUTA , Lib. XI. & de BIZARO, Lib. XXI.",
+     "label": "loose paraphrase",
+     "confidence": 0.6,
+     "reason": "Same example (French ambassadors bound for Turkey seized and killed on the Po) given by Grotius in his own note to II.18.5, in the same context of ambassadors passing through third territory.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "ou qu'il n'aille pour donner certains avis à ses ennemis, ou pour lui en susciter de nouveaux ; nous avons déjà dit ( §. 64 ) qu'ilpeut lui refuser le passage. Mais il ne doit pas le maltraiter, ni souffrir qu'on attente à sa personne.",
+     "text": "GRO24",
+     "page": "GRO24T2.p28",
+     "source_passage": "Car, (4) s'ils sont envoiez auprès de leurs Ennemis, ou de la part de leurs Ennemis, ou qu'ils fassent quelque autre chose qui puisse être regardé comme un acte d'hostilité ; on est même en droit de les faire mourir",
+     "label": "open disagreement",
+     "confidence": 0.55,
+     "reason": "Grotius II.18.5.2 lets a third power kill ambassadors in transit who go to or come from its enemies; Vattel limits the remedy against such suspect ministers to refusing passage, never violence.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "Si le passage innocent est dû, même avec une entiere sûreté, à un simple particulier ; à plus forte raison le doit-on au ministre d'un souverain, qui va exécuter les ordres de son maître, & qui voyage pour les affaires d'une nation.",
+     "text": "JG",
+     "page": "JG.pdf871",
+     "source_passage": "Competit igitur legatis securitas communi peregrinorum in territorio alieno jure. Quod erat primum. Enimvero cum jus naturae etiam consulat dignitati mittentis (§. 1054.), ac ideo legati sint honorifice excipiendi & tractandi (§. 1051.); injuria legatis illata gravior censeri debet, quam peregrino privato",
+     "french": "Il revient donc aux légats la sûreté par le droit commun des étrangers en territoire étranger. Ce qui était le premier point. Mais comme le droit naturel a égard aussi à la dignité de celui qui envoie, et qu'ainsi les légats doivent être reçus et traités honorablement, l'injure faite aux légats doit être jugée plus grave que celle faite à un étranger privé",
+     "label": "loose paraphrase",
+     "confidence": 0.5,
+     "reason": "Wolff § 1064 argues from the security owed to any private foreigner to a stronger security owed to legates because of the dignity of the sender; Vattel applies the same a fortiori to ministers in transit.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "L'insulter, ce seroit faire injure à son maître & à toute la nation",
+     "text": "JG",
+     "page": "JG.pdf871",
+     "source_passage": "injuria legatis illata gravior censeri debet, quam peregrino privato, quatenus ea derivatur quodammodo in mittentem",
+     "french": "l'injure faite aux légats doit être jugée plus grave que celle faite à un étranger privé, en tant qu'elle rejaillit en quelque manière sur celui qui les envoie",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff § 1064: an injury to a legate is graver because it passes in some way to the one who sends him.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "c'est la querelle de toutes les na-tions, intéressées à maintenir comme sacrés, le droit & les moyens qu'elles ont de communiquer ensemble & de traiter de leurs affaires.",
+     "text": "JG",
+     "page": "JG.pdf873",
+     "source_passage": "Quoniam securitas legatis competit singulari ipsorum jure (§. 1064.), ut eam ab omni violatione immunem esse jubeat publica Gentium salus, quemadmodum necessitas legationum, quae jus mittendi legatos parit tam belli, quam pacis tempore (§. 1044.), abunde loquitur",
+     "french": "Puisque la sûreté revient aux légats par leur droit particulier, de sorte que le salut public des nations ordonne qu'elle soit exempte de toute violation, comme le montre abondamment la nécessité des légations, qui fait naître le droit d'envoyer des légats en temps de guerre comme en temps de paix",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff § 1065 makes the legates' security sacred because the common welfare of nations and the necessity of embassies require it, the ground of Vattel's 'querelle de toutes les nations'.",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "S'il n'a pas des raisons assez fortes pour lui refuser le passage ; il peut prendre des précautions contre l'abus que le ministre en pourrroit faire.",
+     "text": "JG",
+     "page": "JG.pdf596",
+     "source_passage": "Non sufficit, fieri forsan posse, ut sit noxius, sed demonstrandum est, aut maxima saltem probabilitate constare debet, eum fore noxium. Ita non sufficit ad denegandum transitum, quod mos omnium fere exercituum transeuntium sit grassari in incolas, cum id praecaveri possit partim diligentia propria",
+     "french": "Il ne suffit pas qu'il puisse peut-être arriver que le passage soit nuisible ; il faut le démontrer, ou du moins il doit être établi avec la plus grande probabilité qu'il le sera. Ainsi il ne suffit pas, pour refuser le passage, que la coutume de presque toutes les armées en passage soit de maltraiter les habitants, puisqu'on peut s'en prémunir en partie par sa propre diligence",
+     "label": "loose paraphrase",
+     "confidence": 0.45,
+     "reason": "Wolff § 701: a mere possibility of harm does not justify refusing passage, the risk being met by precautions; Vattel transfers this from armies to ministers (row 1480 pairs another Vattel sentence with § 701).",
+     "covered_by": null
+    },
+    {
+     "unit": "IV.84",
+     "passage": "mais les autres sur les terres de qui il passe ne peuvent lui refuser les égards",
+     "text": "PUF34",
+     "page": "PUF34T2.p604",
+     "source_passage": "Ce caractére n'empêche pas non plus, que, s'ils passent sur les terres d'un Ennemi de leur Maitre,",
+     "label": "loose paraphrase",
+     "confidence": 0.4,
+     "reason": "Barbeyrac's note to Pufendorf VIII.9.12 (after Buddeus) treats what a third power owes ambassadors passing through its lands; Vattel answers the same question (row 6602 pairs another sentence with this note).",
+     "covered_by": null
+    }
+   ],
+   "rows_wrong": [
+    {
+     "id": 1479,
+     "why": "JG § 700 concerns which of several territories must let an army pass; Vattel's a fortiori from private travellers to ministers shares only the generic term 'passage innocent' (the real Wolffian parallel is § 1064)."
+    }
+   ],
+   "searched": "GRO24 II.18 §§1-8 with notes (Rincon/Po example), searched Mexique/Westphalie/passeport; PUF34 VIII.9.12 n.1; JG §§698-701, 1044, 1058-1065 (securitas, sanctitas legatorum, transitus innoxius); INST legati/transitus."
+  }
+ ]
+}
