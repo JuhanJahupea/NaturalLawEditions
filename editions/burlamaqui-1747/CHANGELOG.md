@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.11 (2026-11-18)
+
+- The precision audit (`audit/README.md`) is applied: 3 rows rejected (P1.10.15, Devoirs; P1.6.12, Grotius; P2.12.5, Pouilly), 19 labels changed. Every audited row carries the verdict and reason in `audit` (`labelWas` keeps a changed label). Rejected rows have status `rejected`; the viewer does not show them, and the panel shows an audited row's verdict.
+- Rows of the working edition are changed through `corrections.json` (`rowEdits`), rows of later passes in their pass files.
+- Text and the other rows are unchanged.
+
 ## 1.10 (2026-11-17)
 
 - 6 more reuse rows carry `attributed`: rows in sections that designate the source without naming it in the passage's sentence. Pufendorf as "cet illustre Restaurateur du Droit Naturel" and "selon lui" (P2.4.20, 3 rows); Barbeyrac's note named in a note at the end of the paragraph (P2.5.6); Pufendorf DNG I.5.9 "avec les notes de Mr. Barbeyrac" in the note that closes the account (P2.11.9, 2 rows). Burlamaqui attributes 99 rows.
