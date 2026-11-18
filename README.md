@@ -31,7 +31,7 @@ Each edition was converted from its working edition's `data.json` by `tools/conv
 
 ## Accuracy
 
-A random sample of 400 reuse rows was read by Claude Opus (`audit/README.md`). Of the rows at status match, 84% (Vattel) and 94% (Burlamaqui) are right; most of the rest are weak (the source states a doctrine other writers state too); about 1% are wrong. Rows at status possible, shown with "Possible matches", are right in 35–40% of cases.
+A random sample of 400 reuse rows was read by Claude Opus (`audit/README.md`). Of the rows at status match, 84% (Vattel) and 94% (Burlamaqui) were right; most of the rest were weak (the source states a doctrine other writers state too); about 1% were wrong. Rows at status possible, shown with "Possible matches", were right in 35–40% of cases. Weak match rows are now possible. Vattel's tables for Pufendorf and Burlamaqui, where most weak rows were, were read again row by row: of 494 match rows, 148 are right, 338 weak (now possible) and 8 wrong (rejected). A label check read 210 rows whose word overlap sits far from their label's and changed 158 labels.
 
 ## Source texts
 

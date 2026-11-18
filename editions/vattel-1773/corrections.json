@@ -1083,8 +1083,10 @@
    "audit": {
     "verdict": "weak",
     "reason": "Both state Wolff's general voluntary-law principle that natural liberty leaves each nation to its own judgment, but Inst. 1215 applies it to the justice of both sides in war, not to trying peaceful means first.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
   },
   {
    "id": 932,
@@ -1155,8 +1157,10 @@
    "audit": {
     "verdict": "weak",
     "reason": "Both concern a balance in which joined weaker powers offset the preponderant one, but Wolff's definition has none of Vattel's scale image or coalition practice.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
   },
   {
    "id": 1056,
@@ -1301,8 +1305,10 @@
    "audit": {
     "verdict": "weak",
     "reason": "The rule that the public compensates individuals whose goods are disposed of by eminent domain is common stock (Grotius, Pufendorf); Wolff states it generally, not for peace treaties.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
   },
   {
    "id": 1399,
@@ -1337,11 +1343,160 @@
    }
   },
   {
+   "id": 1507
+  },
+  {
+   "id": 1508,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Personne morale' with its own will, rights and duties is stock (Pufendorf); Vattel's 'capable d'obligations & de droits' matches Wolff's Praefatio ('personae morales ... subjecta jurium & obligationum').",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1509,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Personne morale' is stock; Vattel's moral person with its own understanding and will follows Wolff's Jus gentium §§ 2, 56-57.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1510
+  },
+  {
+   "id": 1513,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'n'est originairement ... que le droit de la nature appliqué aux nations' is Wolff JG Prol. §3 ('originarie ... Jus naturae ad Gentes applicatum'); Burlamaqui gives the Hobbesian formula.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1514,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's inference (nations are free persons, so natural law must be applied to them) follows Wolff's Jus gentium §§ 2-3, which his next clause translates; Burlamaqui's phrasing is the same commonplace.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1515,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's preface names Hobbes and Pufendorf II.3.23 as targets, and Burlamaqui copies that sentence verbatim; Vattel's correction follows Wolff's Praefatio.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1516,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same sentence frame 'le droit des gens n'est autre chose que ... appliqué(e)', with natural law and nations substituted for sociability and non-individuals.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1517,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's § 7 translates Wolff's Jus gentium § 4, and the reason that states are made of men still bound by natural law echoes Wolff; 'composés d'hommes' is a commonplace.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1519,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's inference (necessary law is natural law applied, natural law is immutable, so necessary law is immutable) is Wolff JG Prol. §5; Burlamaqui only states it in passing.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1521,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's rule that treaties or customs contrary to necessary law are illegitimate follows Wolff's Prolegomena (§6); Burlamaqui's point that usages may be unjust is a different, general remark.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 1527,
    "audit": {
     "verdict": "weak",
     "reason": "Both state a general duty of states to promote other states' good as far as they can, but Vattel's Wolffian 'bonheur et perfection' formula has no specific link to Burlamaqui's passage.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1529,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Priority of duties to oneself is Wolff JG §206 ('officium gentis erga seipsam vincit'); Burlamaqui's ranked rule, qualified 'toutes choses égales', is common stock.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1530,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The limit that a duty to another nation ceases when it would harm oneself follows Wolff's Jus gentium §§ 156, 206 (duty to self prevails in a collision); Burlamaqui states the stock condition on imperfect duties.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1531,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The natural liberty and independence of nations is a stock premise, here from Wolff (Jus gentium § 2; Inst. § 1089) and Vattel's own Prelim. §§ 4-5.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1534,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's definition translates Wolff's Institutiones § 80 (jus cogendi alterum si obligationi satisfacere nolit); Burlamaqui gives the stock coercion-based definition in different words.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1535,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Only the terms match: Burlamaqui's internal/external obligation is reason versus a superior's command, while Vattel's is conscience versus obligation towards others producing rights, in Wolff's sense.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -1353,6 +1508,86 @@
    }
   },
   {
+   "id": 1558,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The union of distinct states under one king is Pufendorf VII.5.17 (and Grotius I.3.7), which Burlamaqui repeats; Vattel adds his own Neuchatel example.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1560,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's sentence copies Pufendorf VII.5.18 ('n'exercer que d'un commun consentement certaines parties de la Souveraineté'); Vattel's paragraph opens from Grotius I.3.7.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1573,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Fundamental laws as those fixing the form of government and the manner of governing is a common definition; Vattel drops Burlamaqui's contractual frame and nothing specific ties them.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1590,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Opposer la force à la violence' is a stock phrase of the resistance debate; Vattel's paragraph follows Grotius I.4 and Barbeyrac's notes.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1603,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rhetorical question comes from Barbeyrac's note 4 on Grotius II.7.27 ('Or qui peut mieux juger de cela que le Peuple même?'), which Burlamaqui copies and which Vattel is answering there.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1604,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac's same note on Grotius II.7.27 already has the people, back in interim independence, decide by itself 'ou ceux qui le représentent'; Burlamaqui restates it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1605,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The phrase is Pufendorf VII.7.12 ('nez d'un Mariage conforme aux Loix du Païs'), which Burlamaqui copies; Vattel's clause is as close to Pufendorf.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1608,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "That conquest without the conquered's consent leaves the state of war in being is Barbeyrac's note on Grotius (and Locke), which Burlamaqui copies; nothing points to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 1609,
    "audit": {
     "verdict": "weak",
@@ -1361,12 +1596,43 @@
    }
   },
   {
+   "id": 1611,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "That power is entrusted to the prince only for the public good is a commonplace; Vattel applies his own § 39 to the power of naming a successor, and the shared words are generic.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1612,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same phrase 'les nécessités et les commodités de la vie' with 'et même les agrémens' inserted.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1614,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's sentence copies Pufendorf VII.9.11 ('il ne doit rien négliger, pour procurer l'entretien & l'augmentation des biens'), so the frame Vattel shares is Pufendorf's.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 1617,
    "audit": {
     "verdict": "weak",
     "reason": "'Natural law applied to nations' is a stock formula that Vattel's preface traces to Hobbes and Pufendorf; nothing ties this sentence to Burlamaqui in particular.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
   },
   {
    "id": 1638,
@@ -1374,9 +1640,57 @@
     "verdict": "weak",
     "reason": "Religion's effect on society giving the sovereign authority over it is the common jus circa sacra argument, and the wording is different.",
     "date": "2026-11-17",
-    "labelWas": "close paraphrase"
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
    },
-   "label": "loose paraphrase"
+   "label": "loose paraphrase",
+   "status": "possible"
+  },
+  {
+   "id": 1639,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument against clerical independence in nearly the same words ('établir deux puissances indépendantes dans une même société'), not found in Pufendorf or Grotius.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1649,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Pardon as a sovereign right exercised for public utility is stock doctrine, and Burlamaqui's sentence is Barbeyrac's note to Pufendorf VII.4.4 word for word; nothing ties Vattel to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1653,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same sentence shape 'X des particuliers [font] la force de l'Etat', with biens for richesses and augmentent for sont.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1664,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's presumed stipulation for citizens' children is Pufendorf VII.2.20 (Barbeyrac) verbatim, and Vattel's wording follows neither closely, so the shared doctrine cannot be traced to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1672,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same phrase 'quitter la patrie sans la permission du souverain' with 'entiérement' and 'expresse' added.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 1683,
@@ -1396,6 +1710,101 @@
    }
   },
   {
+   "id": 1689,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's sentence is Pufendorf VIII.5.7 (Barbeyrac) verbatim, 'en même tems' included, and Vattel's claim that eminent domain is part of the empire follows Wolff (JG § 104); Burlamaqui only repeats the doctrine.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1701,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Abandoning a part of the state in extreme necessity, though it may not be alienated, comes from Barbeyrac's note 1 to Grotius II.6.6, which Burlamaqui paraphrases; the sentences differ in structure.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1704,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The abandoned part's right to defend itself 'si elle peut' is Barbeyrac's note to Grotius II.6.6, which Burlamaqui copies; Vattel words it differently, so the source cannot be told.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1705,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same claim as Barbeyrac's note to Grotius II.6.6, and Vattel's 'le nouveau maître qu'on voudroit lui donner' is closer to Barbeyrac ('auquel on veut la donner') than to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1707,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the generic consent of 'the people or its representatives' is shared (Grotius III.20.5 has the rule); Vattel makes it conditional on the fundamental law and lets an absolute prince cede, unlike Burlamaqui's flat rule.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1772,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The ends of punishment (deter the offender, intimidate others) are commonplace, and Burlamaqui's sentence is Barbeyrac's Locke quotation in the note to Pufendorf VIII.3, so nothing is specific to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1774,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's non-intervention sentence translates Wolff JG § 256 ('nullus Rector civitatis habet jus regimini alieno se immiscendi'); Burlamaqui only states the common principle, in the context of punitive war.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1777,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The doctrine that foreigners may aid subjects only when tyranny justifies their own resistance is Pufendorf VIII.6.14 (Barbeyrac), which Burlamaqui copies verbatim; Vattel shares it with that common source.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1785,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same clause frame 'tous [ses/les] droits ... lui deviendroient inutiles' closing the same argument that rights are useless without coercion.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1786,
    "audit": {
     "verdict": "weak",
@@ -1404,21 +1813,359 @@
    }
   },
   {
+   "id": 1791,
+   "label": "shared argument",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's brief sentence (demand justice of the culprit's sovereign) matches only the stock punish-or-deliver rule of Grotius II.21.4, which Burlamaqui copies from Barbeyrac; no wording is paraphrased.",
+    "date": "2026-11-18",
+    "labelWas": "loose paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 1794,
    "audit": {
     "verdict": "weak",
     "reason": "Punish or deliver up at the offended sovereign's request is Grotius's maxim (II.21.4), which Burlamaqui copies; nothing ties Vattel to Burlamaqui, and Vattel's wording differs too much for a close paraphrase.",
     "date": "2026-11-17",
-    "labelWas": "close paraphrase"
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
    },
-   "label": "loose paraphrase"
+   "label": "loose paraphrase",
+   "status": "possible"
+  },
+  {
+   "id": 1819,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Tolls that compensate road upkeep are in Pufendorf III.3.7 (Barbeyrac: 'on se dédommage ... des frais ... entretenir les chemins'), which Vattel's wording matches as well as Burlamaqui's.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1835,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel recalls his own Prelim. § 6, which translates Wolff's Jus gentium § 3 ('non est nisi jus naturae ad gentes applicatum'); Burlamaqui states the same common definition.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1838,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same frame 'le droit des gens n'est autre chose que' plus the application of natural law to nations, reworded from Burlamaqui's sociability formula.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1857,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel names Grotius II.15.5 here and copies Barbeyrac's wording exactly ('tenu', where Burlamaqui has 'obligé'), so the source is Grotius and Burlamaqui is a parallel copy.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1859,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The ancients' need for such treaties comes from Grotius II.15.5 (cited by Vattel) and Pufendorf VIII.9.2, which Burlamaqui paraphrases; Vattel's 'not among their allies' is closer to Grotius and Pufendorf than to Burlamaqui's 'Concitoyens'.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1861,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's point that treaties of non-injury are useful among nations who think they may harm foreigners follows Wolff JG § 392; Burlamaqui only repeats Pufendorf VIII.9.2 on the ancients.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1862,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's argument (non-injury treaties not necessary but useful, since contracted obligation binds more firmly) follows Wolff JG § 392-393; Burlamaqui's 'ne sont pas nécessaires' paraphrases Pufendorf VIII.9.2.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1864,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's definition follows Wolff JG § 395 ('eadem aut aequivalentia'), and Burlamaqui's is Pufendorf VIII.9.3 almost word for word; the proportion clause is common to that stock.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1873,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The division by the side of the inequality, with 'du côté de la Puissance la plus considérable', is Barbeyrac's Grotius II.15.7.2 verbatim, which Burlamaqui copies; Wolff JG § 398 has the same division.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1875,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's definition of unequal treaties renders Wolff JG § 398 ('eadem aut aequivalentia non promittuntur'); Burlamaqui only repeats Pufendorf VIII.9.4.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1881,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The division into personal and real treaties is stock (Grotius II.16.16, Pufendorf VIII.9.6, Wolff JG § 412).",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1885,
    "audit": {
     "verdict": "weak",
     "reason": "The rule that a treaty with a republic is real is stock. Vattel's 'toute alliance ... réelle de sa nature' matches Pufendorf VIII.ix.6 more closely than Burlamaqui's 'tout traité'.",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 1887,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Barbeyrac's Grotius II.16.16.2 ('changé de Républicain en Monarchique ... ne laisse pas de subsister'), which Vattel follows along with Wolff JG § 416; nothing points to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1889,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The exception for two republics allied to keep their liberty is Grotius II.16.16.2 and Pufendorf VIII.9.6; Burlamaqui only repeats it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1891,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's presumption is Barbeyrac's note 6 to Grotius II.16.16 (after Thomasius) verbatim, and Vattel, following Wolff JG § 423-424, states it only 'd'abord' and then qualifies it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1893,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's rule matches Wolff JG § 417 ('in perpetuum, aut ad certum tempus ... reale est') and Grotius II.16.16.4 ('certain tems limité') more closely than Burlamaqui's 'certain nombre d'années'.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1895,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Pour lui & ses Successeurs ... on voit assez par là que le Traité est réel' is Barbeyrac's Grotius II.16.16.4 verbatim, which Burlamaqui copies; Vattel follows that common source.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1917,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius II.15.14 (Barbeyrac): 'car une nouvelle obligation ne se présume pas aisément'; Vattel's phrase can come from Grotius as well, and his rule follows Wolff JG § 433.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1918,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'actes ... qui ne peuvent être faits qu'en vertu du traité' renders Wolff JG § 433 ('quod nonnisi vi ejusdem fieri poterat'); Burlamaqui only repeats Grotius II.15.14's exception, in a different sentence.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1919,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The annual-payment example is Barbeyrac's note 2 to Grotius II.15.14, which Burlamaqui copies verbatim; Vattel, who uses Barbeyrac's Grotius in the next §§, reworks it (continued, not renewed), so nothing points to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1922,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's choice between compelling the ally and breaking the treaty, with arms as the only means of compulsion, follows Wolff JG § 430 note; Burlamaqui only states Grotius II.15.15's stock rule.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1926,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel names Grotius and quotes Barbeyrac's Grotius II.15.15 word for word ('tous les articles du traité'); Burlamaqui only repeats the same sentence ('d'un traité').",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1927,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's clause matches Barbeyrac's Grotius II.15.15 exactly ('ne le rompra point', 'qu'une des parties'), where Burlamaqui differs ('pas entièrement', 'l'une des parties'): Vattel ('Il ajoute') follows Grotius, not Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1933,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Stock doctrine; Vattel's distinction of conventions by subordinate powers under express order or within their office follows Wolff JG § 464, and the wording differs from Burlamaqui's.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1934,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Reserved ratification must be express is Grotius II.15.17.2 with Barbeyrac's note 1 ('on entend par là ... une ratification expresse'), closer to Vattel's 'comme cela s'entend' than Burlamaqui is.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1935,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Stock rule (Grotius II.15.16.3; Wolff JG §§ 465, 468: sponsio binds only if ratified expressly or tacitly), which Vattel follows; Burlamaqui only states it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1936,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Tacit ratification by acts referable to no other cause is Grotius II.15.17.3 and Wolff JG § 468, which Vattel follows; Burlamaqui repeats the commonplace.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1939,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's definition of sponsio translates Wolff JG § 465 ('sine mandato potestatis summae, nec intra fines praepositionis' = 'hors des termes de sa commission, et sans ordre'); Burlamaqui gives the stock Grotian definition in other words.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1945,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Wolff JG § 470 (silence alone is no ratification; dissent should be declared as soon as the sovereign learns of the sponsio); Burlamaqui only states the same Grotian point.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1968,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same phrase 'jusqu'à l'accomplissement de ce' about hostages, with only the relative clause reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1971,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's passage (only liberty pledged; hostages kept captive, not killed; killing them an error about a right over life) follows Wolff JG §§ 501, 532; Burlamaqui states the common doctrine.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1974,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Hostages free once the engagement is fulfilled is Wolff JG § 502, which Vattel follows; a commonplace in Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -1427,9 +2174,43 @@
     "verdict": "weak",
     "reason": "That the sovereign may compel subjects to be hostages is a stock Grotian point, and the wording differs too much for a close paraphrase.",
     "date": "2026-11-17",
-    "labelWas": "close paraphrase"
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
    },
-   "label": "loose paraphrase"
+   "label": "loose paraphrase",
+   "status": "possible"
+  },
+  {
+   "id": 1983,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's ground (burdens borne equally by citizens) follows Wolff JG § 536 (obses solus id gratis subire non tenetur); Burlamaqui states indemnity in other words.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1989,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Pufendorf VIII.8.6 (Barbeyrac); Vattel's rule with an equivalent substitute and his argument that the treaty did not make the king a hostage follow Wolff JG § 519.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1990,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's reason is Barbeyrac's note 2 to Pufendorf VIII.8.6; Vattel's presumption of the state's non-consent matches Wolff JG § 519 and that note as much as Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1994,
@@ -1438,6 +2219,39 @@
     "reason": "Both hold that the sovereign who breaks faith cannot make hostages answer for it with their lives, and the next row shows both go on to make the hostage a mere prisoner.",
     "date": "2026-11-17"
    }
+  },
+  {
+   "id": 1996,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Hostage kept as captive (perpetual captivity) after breach of faith follows Wolff JG § 532; Burlamaqui only states the common rule.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2054,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's illicit-case exception is Grotius II.16.26.3 and the tacit just-war clause of alliances Wolff JG §§ 659-660; no aid in a manifestly unjust war is stock doctrine (also Pufendorf VIII.6.14).",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2060,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's exceptions follow Grotius II.16.27 (aid not owed when one needs one's forces for one's own defence); Burlamaqui's not perishing with an ally echoes Pufendorf VIII.6.14, a related but general point.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2145
   },
   {
    "id": 2152,
@@ -1450,11 +2264,362 @@
    "label": "loose paraphrase"
   },
   {
+   "id": 2153,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Clear cause and justice first sought is Grotius III.2.5, Wolff JG § 589 and Barbeyrac's note to Pufendorf VIII.6.13, which Burlamaqui follows; 'en venir' is a common idiom, not shared wording.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2158,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's first ground (only state to state are citizens' goods the nation's) is Wolff JG §§ 589-590; the reprisals-as-prelude-to-war argument is Barbeyrac's note to Pufendorf VIII.6.13, which Burlamaqui repeats.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2167
+  },
+  {
+   "id": 2171,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's definition of public war translates Wolff JG § 607 ('quod geritur inter gentes, seu auctoribus iis, qui summum imperium habent'); Burlamaqui's sentence is a remark on restricting the word 'guerre'.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2172,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Restricting a law-of-nations treatise to public war is a generic scoping remark; 'dont nous avons à traiter ici' is a stock formula and the source passage lacks Vattel's assignment of private war to natural law.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2178,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Pufendorf VIII.6.3's division of offensive war; Vattel's three ends (claim, punishment, prevention) follow Wolff JG §§ 615-619.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2180,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel translates Wolff JG § 745 ('Bellum publicum sine militibus geri non posse... jus conscribendi militem') and § 747 (droit de majesté); Burlamaqui only states the same inference in a different sentence.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2186,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same doctrine, but Vattel's sequence (all bound, unfit excepted, those with useful and necessary functions exempt unless necessity presses, clergy) follows Wolff JG §§ 749-752; Burlamaqui's 'aucun citoyen ne peut s'exempter de prendre les armes' is only a parallel statement.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2196,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's definition follows Wolff JG § 621 (justificae from right 'quibus evincitur', suasoriae 'ab utilitate'); Burlamaqui only relays Grotius's raisons justificatives / motifs distinction.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2198,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's sentence translates Wolff JG § 619 ('Fines duo priores intenduntur in bello offensivo; tertius in defensivo'); Burlamaqui gives Pufendorf's definition of offensive war (VIII.6.3) almost verbatim.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2199,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's concurrence of honest motives with justificative reasons and the justice/prudence pairing follow Wolff JG §§ 621-623; the Burlamaqui passage only states Grotius's distinction.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2205,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel naming apparent justificative reasons 'prétextes' follows Wolff JG §§ 624-625 (rationes quasi justificae 'tantummodo praetextus sunt'); Burlamaqui's third kind of unjust war is the common Grotius/Pufendorf classification.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2211,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Wolff JG § 629 ('injustum vero est defensivum si offensivum fuerit justum') and § 972; Burlamaqui copies Barbeyrac's note to Pufendorf VIII.6.3 almost word for word, and its sentence form differs from Vattel's.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2216,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's argument (nations independent, no judge, so both sides' arms count as legitimate as to effects) is Wolff JG § 888; Burlamaqui shares only Grotius's phrase 'effets extérieurs' (III.6.2), and he applies it to acquiring property, not to doubtful causes.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2221,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's syllogism (war allowed only for injury, so growth of power alone gives no right) is Wolff JG § 640; Burlamaqui, after Grotius II.1.17, only states the same rule.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 2222,
    "audit": {
     "verdict": "weak",
     "reason": "The power-plus-will condition comes from Grotius II.22.5 and is common stock; nothing in Vattel's wording points to Burlamaqui's Droit politique rather than Grotius.",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 2225,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's declaration as a last attempt to end the dispute without bloodshed is Wolff JG § 710, and 'exposer le sujet' matches Wolff § 740 ('rationes justificae exponuntur'); Burlamaqui's statement of the purpose is generic.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2227,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Wolff JG §§ 708-709 (conditional declaration joined to repetitio rerum, no new pure declaration needed); Burlamaqui copies Grotius III.3.7, and its sentence is not shaped like Vattel's.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2231,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's frame follows Wolff's Jus gentium § 707 and points back to his own Prelim. § 26; the 'binding until renounced' clause is also in Barbeyrac's note on Pufendorf II.3.23, and nothing here is specific to Burlamaqui.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2233,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Publication of war to one's own subjects is in Wolff JG § 737 (publicatio, distinct from denunciatio); Burlamaqui only shares the general point, without Vattel's specifics (dating of rights, effects in the peace treaty).",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2237,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Different point: Vattel's 'the nation can only blame itself' if it refuses envoys is Wolff JG § 714 ('qui culpa sua eam reddidit impossibilem'); Burlamaqui says modes of declaration are arbitrary provided the prince cannot be ignorant of it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2239,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's passage on declaring at the frontier and on the aim of the declaration follows Wolff JG § 716 ('non alio fine denunciandum, quam ut pars adversa... bellum avertere possit'); Burlamaqui's statement of the aim is generic.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2244,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's § 64 (publication to other powers, 'tel ou tel peuple' = 'cum hac vel ista Gente', manifestos with justificative reasons, orders to subjects) follows Wolff JG §§ 737-740; Burlamaqui's publication to subjects shares only the general idea.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2246,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel names Grotius and quotes Grotius-Barbeyrac I.3.4 verbatim, including 'selon le droit des gens' and 'de part et d'autre', which Burlamaqui's copy of the same formula leaves out.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2254,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Wolff JG § 728: the thing's nature depends on the owner and not on the place, enemy ships, and the presumption until proof; Burlamaqui gives Grotius III.6.5-6 doctrine only.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2260,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's rule (aid to a just war allowed and even owed, none to an unjust one) translates Wolff JG § 656; Burlamaqui, copying Grotius II.25.4, only says one cannot innocently aid a manifestly unjust war.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2261,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's ban on alliances with a party to an unjust war, then weighing the good of the state, follows Wolff JG §§ 658-659; Burlamaqui only gives the Grotian commonplace.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2273,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "No duty to aid an ally in a manifestly unjust war is common stock (Grotius II.15.13 and II.25.4, Pufendorf VIII.6.14), and Vattel cross-refers to his own §§ 86-89; the two sentences are shaped differently.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2278,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui here copies Barbeyrac's note to Pufendorf VIII.6.7; Vattel's two-part impartiality rule also follows Wolff JG § 678 (no troops, arms, supplies) and § 683 ('quod uni praestatur, id praestandum quoque alteri').",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2295,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's § 118 (offices owed outside war, access and purchase for both sides' subjects, exception by treaty) follows Wolff JG §§ 683-684; Burlamaqui's 'service d'humanité' rule is Barbeyrac's note to Pufendorf VIII.6.7 copied.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2296,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Opposite rules: Burlamaqui (Barbeyrac's note) forbids supplying war goods to either side unless an engagement permits it, while Vattel lets both sides buy everything unless a neutrality treaty forbids war goods, which is Wolff JG § 683 ('nisi expresse aliter conventum').",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2298,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific rule: in extreme necessity seize a neutral place and restore it as soon as the danger passes, paying the damage (Grotius II.2.10 has no payment); the wording is identical in Barbeyrac's note to Pufendorf VIII.6.7, which Burlamaqui copies, so either may be the source.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2304,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The equal-treatment rule is common (Wolff JG §§ 683-684, Barbeyrac's note which Burlamaqui copies); Vattel's exception for changed circumstances differs from Burlamaqui's 'raison manifeste' for favours not owed.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2307,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same stock rule that no hostility may be done on neutral soil, which Grotius III.4.8 states; Vattel grounds it in his own territorial-sovereignty principle, and only the phrase 'aucun acte d'hostilité' is shared.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2311,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui restates Grotius's first rule (III.1.2); Vattel's end-justifies-necessary-means wording follows Wolff, Jus gentium § 613.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -1462,7 +2627,251 @@
    "audit": {
     "verdict": "weak",
     "reason": "Sparing old men, women and children is the common Grotian temperamentum; the wording and grounds differ, since Vattel rests it on their offering no resistance.",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 2336,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The Leonidas sentence is Barbeyrac's Grotius III.4.18 word for word, which Burlamaqui copies; Vattel's Justin reference is Grotius's marginal note, and he follows Grotius through the whole section.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2338,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Grotius III.4.15, which he cites in the same sentence ('Il est de l'intérêt commun des Nations, qu'on ne donne point de tels exemples'); Burlamaqui only copies it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2340,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The Scaevola praise and Vattel's references (Livy, Cicero, Valerius Maximus) come from Grotius III.4.18; Burlamaqui only abridges the same sentence.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2345,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's weaken-the-enemy, strengthen-ourselves argument follows Wolff § 823; Burlamaqui copies Pufendorf VIII.6.17 on keeping captured goods up to the debt and war costs, which is stock doctrine.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2346,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Pufendorf VIII.6.18 (booty belongs first to the sovereign); Vattel's reasons (soldiers and auxiliaries are his instruments) follow Wolff §§ 852-854, and the wording is not close.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2351,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Sparing temples, public buildings and tombs that do not weaken the enemy is Grotius III.12.5-7, which Vattel cites in the same paragraph (Belisarius); Burlamaqui only condenses it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2352,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's rule that needless hostility is 'licence' echoes Wolff § 926; Burlamaqui only restates Grotius's general rule from the other side.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2355,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'tout lien d'humanité est rompu' is Barbeyrac's phrase (note 11 on Grotius III.4.18), and 'men remain men' is Grotius III.19.1; Burlamaqui states the same doctrine in other words.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2356,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'mettre des bornes à ses fureurs ... ses maux n'auroient plus de bornes' follows Barbeyrac's note 3 on Pufendorf VIII.7.2, and the capitulating towns follow Grotius III.19.1; Burlamaqui only states the common-interest doctrine.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2363,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius III.1.20 on the Romans; Vattel draws the Romans, the time-and-place custom, Achilles and Livy on Perseus all from Grotius III.1.20 and its notes, and his wording is not close.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2364,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "That ruses without perfidy are lawful is common doctrine; Vattel's framing follows Wolff, Institutiones § 1203.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2365,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'comme dans ACHILLES ... confiance dans sa valeur' is Grotius III.1.20 n. 1 ('la confiance qu'il avoit en sa valeur & en ses forces'); Burlamaqui only abridges Grotius's main text.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2367,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The phrase is Barbeyrac's note 11 on Grotius III.4.18 ('c'est les porter positivement & directement à commettre un crime abominable'), which Burlamaqui copies and Vattel follows throughout § 180.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2370,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Autre chose est, quand on ne fait que profiter de l'occasion' is Barbeyrac's note 11 on Grotius III.4.18, which Burlamaqui copies and Vattel follows.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2373,
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui applies the principal-cause rule specifically to subjects serving in an unjust war as mere instruments, the sovereign alone being responsible, which is the position Vattel takes against Grotius.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2381,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Keeping captured goods as the equivalent of the debt and costs is Grotius III.6.1 and Pufendorf VIII.6.17, which Burlamaqui copies; Vattel's punishment clause and expletio juris follow Grotius and Wolff.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2383,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the stock phrase 'frais de la guerre' is shared; the measure (debt, costs, security) is Pufendorf VIII.6.17, which Burlamaqui copies.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2385,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel names Grotius and cites III.6.3 n. 7 for Lierre, and his wording ('pendant vingt-quatre heures', 'de l'ennemi') follows Barbeyrac's Grotius rather than Burlamaqui's copy of it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2391,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The clause 'until renounced by a peace treaty' is Pufendorf VIII.6.17 (Burlamaqui copies it), but there it says acquisition is valid against a neutral, while Vattel says a neutral cannot acquire safely, so the argument differs.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2438,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'particuliere, ou universelle' follows Wolff § 930, and the split by places and by kinds of hostility follows Barbeyrac's note on Grotius III.21.6; Burlamaqui says 'générale' and covers only places.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2452,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Wolff § 934 (fides induciarum non violatur; the culprit punished and goods restored); Burlamaqui copies Grotius III.21.13.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2457,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's two-part rule is Grotius III.21.5 nearly verbatim; Vattel's 'incessamment publier' follows Wolff § 919.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2464,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule 'chez soi, tout ce qu'il seroit en droit de faire en pleine paix', with the extra reason from continued war and the list of acts, is Wolff §§ 926-927 (cf. Grotius III.21.7); Burlamaqui shares only the phrasing.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -1478,7 +2887,19 @@
    "audit": {
     "verdict": "weak",
     "reason": "The truce defined as suspending hostilities without ending the war is the stock Grotian definition; nothing ties Vattel's recall to Burlamaqui's wording.",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 2477,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius III.21.8.3; Vattel's test (abandonment means the enemy no longer wants the place; signs that he keeps his claim) follows Wolff § 924.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -1490,11 +2911,287 @@
    }
   },
   {
+   "id": 2484,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius III.21.6 (with the 'train' proviso Vattel lacks); Vattel's rule and its ground (hostilities suspended) follow Wolff JG § 925.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2487,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui restates Grotius III.21.9; Vattel's illness case and 'accident they could foresee' follow Wolff JG § 929, his 'à rigueur'/humanity close Grotius § 9.3, against Burlamaqui's 'accident imprévu'.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2493,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Stock phrase also in Grotius III.21.3 and Pufendorf VIII.7.7; Vattel's reason (everyone knows the war resumes) follows Wolff JG §§ 916, 929.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2497,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Barbeyrac's note to Grotius III.23.5 ('contributions pour se racheter du pillage'), which Vattel could equally follow; nothing points to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2500,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's definition (privilege, right to go and come in safety, for persons or things) translates Wolff JG § 937; Burlamaqui only expands Grotius III.21.14.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2507,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's paragraph translates Wolff JG § 943 (baggage, 'famulus unus atque alter pro conditione personae', advice to specify); Burlamaqui's 'davantage' is at most a small echo.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2508,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui repeats Grotius III.21.17, and Vattel's contrast (one settles with one's family but travels without it) is Grotius's own reason; the fragment is no close paraphrase.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2510,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius III.21.20; Vattel's reason (sovereign authority, not the person) is Grotius's, and Wolff JG § 946 states the same rule.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2512,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Barbeyrac's note 1 to Grotius III.21.20 (successor may revoke for good reasons); 'n'empêche point que ... ne puisse' is Vattel's habitual idiom (some 20 uses), so nothing points to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2513,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies the same Barbeyrac note (warn the bearer, give him time to reach safety); Vattel's 'donner le tems' is as close to Barbeyrac, and the sentence structure differs.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2514,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Wolff JG § 945 (precarious, revocable at will, valid until revoked); Burlamaqui repeats Barbeyrac's note to Grotius III.21.21.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2515,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'cesse de vouloir' translates Wolff JG § 945 'mortuus velle desinat'; Burlamaqui's fragment (from Barbeyrac's note) concerns loss of office, not death.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2519,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The clause is Grotius III.21.27 ('sous prétexte que le Prisonnier se trouve plus riche qu'on n'avoit crû'), which Burlamaqui copies; Vattel's 'rescinder' follows Wolff JG § 949.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2521,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same question as Grotius III.21.29 ('On demande ... si l'Héritier'), which Burlamaqui copies and Vattel's 'on demande' follows; Vattel's framing differs, so not a close paraphrase.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2522,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius III.21.29; Vattel's solution and its test of release follow Wolff JG §§ 950-951.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2525,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius III.21.30 word for word; Vattel's strict answer (he must return) follows Wolff JG § 954 against Grotius.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2527,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'juste équivalent' echoes Grotius III.21.30 ('doit l'équivalent') more than Burlamaqui's 'dédommagement ... valeur du prisonnier'.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2531,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui paraphrases Grotius III.21.28 ('il n'y a que ce qu'on leur a pris effectivement'); Vattel follows Grotius and Wolff JG § 956, in a different sentence structure.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2540,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The two-bodies, no-judge, war-between-states argument is in Barbeyrac's note to Grotius III.6.27 and Grotius II.18.2 (two pretenders); Burlamaqui's 'indépendans' is no proof of borrowing.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2542,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Defining man's natural state by his nature against Hobbes is stock (Pufendorf II.2, III.5.3 'destinez'), and the wording differs.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 2544,
    "audit": {
     "verdict": "weak",
     "reason": "That peace restores nations to their natural state follows from the common view that peace is the natural state; the wording overlap is slight.",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 2545,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Stock thesis already in Grotius III.20.2 ('ceux qui font la Guerre ... traiter pour la finir'); Vattel's development follows Wolff JG § 977, and Burlamaqui's 'only he who' differs in structure.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2549,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Compensation of the subjects is in Pufendorf VIII.8.3 ('l'Etat doit les en dédommager') and Grotius III.20.7 in the same eminent-domain frame; nothing specific to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2550,
+   "label": "close paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's question follows Grotius III.20.3 with Barbeyrac's note ('peut faire la Paix ... traiter validement') and his note cites Wolff JG § 982; Burlamaqui's similar question is not decisive.",
+    "date": "2026-11-18",
+    "labelWas": "loose paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2554,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Pufendorf VIII.7.4; Vattel's account of 'perpetual' peace (not no war ever, but none for the same cause) translates Wolff JG § 987.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2555,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel follows Wolff JG § 990 (amnesty the first article today, implied even unstated) and Barbeyrac's note to Grotius III.20.15; Burlamaqui restates Grotius.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2556,
+   "label": "loose paraphrase",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's rule (war damages forgotten, no action unless stipulated) follows Wolff JG §§992-993 ('damna... eorum nomine actio non est, nisi aliud convenerit'); Burlamaqui only restates Grotius III.20.15, and the wording is not close.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
    }
   },
   {
@@ -1503,9 +3200,41 @@
     "verdict": "weak",
     "reason": "Both say that some pre-war debts survive a peace treaty, but Burlamaqui follows Grotius III.20.16 on private debts suspended by war, while Vattel is about claims unrelated to the war's causes; different rules, different wording.",
     "date": "2026-11-17",
-    "labelWas": "close paraphrase"
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
    },
-   "label": "loose paraphrase"
+   "label": "loose paraphrase",
+   "status": "possible"
+  },
+  {
+   "id": 2561,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Parties bound on conclusion, subjects on notification is Grotius's truce rule (III.21.5, which Burlamaqui copies) and Wolff JG §§997-998, which Vattel's paragraph follows; nothing ties it to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2562,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Restoring what was taken after the peace is Grotius III.20.20 ('Il faut rendre tout ce qui a été pris depuis la paix conclue'), copied by Burlamaqui; Vattel's context follows Wolff JG §998.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2571,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "That a peace treaty is real and binds successors is stock doctrine; Vattel's argument (public treaty, made for the public good, hence real) is Wolff JG §1017, not Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
   },
   {
    "id": 2574,
@@ -1513,6 +3242,22 @@
     "verdict": "weak",
     "reason": "That treaties made with the state itself bind successors is the stock Grotian definition of real treaties; Vattel refers back to his own II § 189.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2575,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel opens the observance of peace treaties as Burlamaqui does (Droit politique IV.14 §3): faith already proved, no need to repeat, peace treaties most sacred, then the plea of fear (Vattel §37); this framing is not in Pufendorf, Barbeyrac or Wolff.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2576,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Burlamaqui §3 sequence: after the faith transition, peace treaties are singled out as most sacred and most important to the repose of mankind, then the fear exception follows, as in Vattel §§36-37.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1526,11 +3271,141 @@
    "label": "shared argument"
   },
   {
+   "id": 2583,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Prendre les armes au sujet des démêlés qui avoient allumé la guerre' is Barbeyrac's Pufendorf VIII.7.4, copied by Burlamaqui; Vattel's sentence (same cause or things done in the war) follows Wolff JG §1021.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2585,
+   "label": "shared argument",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Barbeyrac's note on Grotius III.20.27 (Buddeus) that peace binds to amity in all respects; Vattel's breach by wanton offence is a related corollary, not the same content, and the doctrine is Grotian.",
+    "date": "2026-11-18",
+    "labelWas": "loose paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 2603,
    "audit": {
     "verdict": "weak",
     "reason": "Both say peace is broken by violating treaty articles, a stock Grotian definition with nothing specific to these two texts.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2606,
+   "label": "verbatim",
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Vattel quotes Grotius III.19.14 by name and with a reference, verbatim from Barbeyrac's translation; Burlamaqui merely repeats the same Grotius formula, so there is no reuse of Burlamaqui.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2609,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel §48 follows Burlamaqui's point 7 (IV.14 §8): 'distinguer ici entre les articles de grande importance et ceux de peu d'importance', rejected as hard to apply ('quelle source de disputes'), an argument not in Grotius III.20.35.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2611,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The leniency qualification (forgive slight faults rather than break the peace) is Grotius III.20.35.2, which Burlamaqui restates; Vattel's 'charité' is as near Grotius's 'Bonté chrétienne', so nothing points to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2617,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's point is Grotius III.20.30 (subjects' violence breaks the peace only if the state approves); Vattel's imputation argument follows Wolff JG §1027 and his own II.6.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2621,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Barbeyrac's note on Grotius III.20.27 (Buddeus) about a new cause of war; Vattel's options for the injured party follow Wolff JG §1033, and the shared idea (refused satisfaction justifies arms) is common stock.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2624,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Grotius II.18.2 (the unequal ally stays independent and may send envoys); Vattel states the same doctrine as Grotius and Wolff JG §1046, with his own cross-references.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2625,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "The maxim 'celui qui a droit à la fin, a droit aux moyens' is word for word, minus 'sans contredit'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2627,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same clause 'réside originairement dans', with la nation for le peuple.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2628,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Not refusing an envoy without just cause is Grotius II.18.3, restated by Burlamaqui; Vattel grounds it on the duty of nations to communicate, as in Wolff JG §§1044-1045.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2631,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's sentence is the general Grotian rule (II.18.3); Vattel's maxim on enemy ministers and its peace rationale follow Wolff JG §1045, so nothing specific ties it to Burlamaqui.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2633,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies verbatim Bynkershoek, Juge compétent ch. I §1 (Barbeyrac's translation), on the ancients' single class of 'Legati'; Vattel shares the claim but develops it differently (pomp, ceremonial, representation, Louis XI).",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -1542,6 +3417,33 @@
    }
   },
   {
+   "id": 2646,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui copies Barbeyrac's note on Grotius II.18.4 (an ambassador who conspires or takes arms may be killed 'non comme sujet, mais comme ennemi'); Vattel states the same doctrine available in Grotius-Barbeyrac.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 2647,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same relative clause 'qui le premier viole ... droit des gens', Burlamaqui adding 'ouvertement les loix les plus sacrées'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2659,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel repeats Burlamaqui's own reworking of Barbeyrac: a custom innocent (indifferent) in itself, once introduced, binds a nation until it declares it will no longer conform.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 2660,
    "audit": {
     "verdict": "right",
@@ -1550,11 +3452,77 @@
    }
   },
   {
+   "id": 2668
+  },
+  {
    "id": 2673,
    "audit": {
     "verdict": "weak",
     "reason": "Conspiring against or favouring a plot against the state as grounds for acting against an ambassador is common doctrine; the shared verb pair is too slight to show reliance on Burlamaqui.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2676,
+   "label": "shared argument",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Shares only the stock Wolffian formula 'capable d'obligations et de droits', applied to a different subject.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2682,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same definition of the necessary law of nations, but the clauses are inverted and recast around shared technical terms.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2696,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same definition in the same order ('obligation ... interne, entant qu'elle lie/regarde la conscience'), reworded slightly.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2701,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same maxim form 'ce qui est permis à ..., l'est aussi', with the persons changed.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2704,
+   "label": "shared argument",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Shares only the stock formula 'une parfaite égalité de droits', applied by Vattel to nations.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2707,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Keeps 'société que la nature (même) a établi(e) entr'elles' with only the head noun changed.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2741,
+   "label": "shared argument",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Shares only the stock Wolffian formula 'capable d'obligations et de droits', said of the nation rather than of man.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1568,6 +3536,18 @@
    "label": "close paraphrase"
   },
   {
+   "id": 2756
+  },
+  {
+   "id": 2773,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same fact (buying permission for the first three wedding nights) but the sentence is recast from a negative 'sans' clause into an active one.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 2844,
    "audit": {
     "verdict": "right",
@@ -1576,12 +3556,26 @@
    }
   },
   {
+   "id": 2849,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Only the opening participle is close; the rest replaces Formey's general grant of rights with Vattel's own Indies example.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 2851,
    "audit": {
     "verdict": "weak",
     "reason": "The rule that foreigners' offences are punished under local law is a standard maxim, and the wording does not match beyond 'suivant les loix du pays/lieu'.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 2857
   },
   {
    "id": 2873,
@@ -1600,6 +3594,27 @@
    }
   },
   {
+   "id": 2892,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same sentence ('il n'est pas permis ... des traités contraires à ceux qui subsistent') with the verb changed and words dropped.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2898
+  },
+  {
+   "id": 2899,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same idea of revenues in lieu of interest, recast as a conditional definition of antichresis with other wording.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 2915,
    "audit": {
     "verdict": "right",
@@ -1610,11 +3625,55 @@
    "label": "loose paraphrase"
   },
   {
+   "id": 2918
+  },
+  {
+   "id": 2920,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same idea (restrict when strict terms are too onerous) in different words and structure.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2925,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "The same two cases (one word for genus and species, one name for both sexes of an animal) are recast in other sentences, with Vattel's own added examples (faute/dol, perdrix, alouette).",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2935,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same point (refusing the peaceful ways leaves the other side the use of force), but Vattel lists the ways where Formey says 'voies de douceur', in other words and syntax.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2938
+  },
+  {
    "id": 2953,
    "audit": {
     "verdict": "weak",
     "reason": "That the only just cause of war is an injury done or threatened is a Grotian commonplace; the two texts share only the maxim.",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 2958,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The same stock opener 'une funeste expérience ne ... que trop' with 'et constante' added and 'montre' for 'prouve': same structure and words, not other words.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1642,6 +3701,18 @@
    }
   },
   {
+   "id": 3020,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same rule that the goods may be conducted by others, put positively in other words where Formey says it negatively.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3021
+  },
+  {
    "id": 3024,
    "audit": {
     "verdict": "right",
@@ -1652,6 +3723,33 @@
    "label": "loose paraphrase"
   },
   {
+   "id": 3032,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same doctrine that a special transaction covers only its own object, stated positively in other words where Formey speaks of claims not renounced.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3033,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same concessive idea (even if one could later prove the thing was his), with the content words replaced (démontrer for prouver) and Vattel's additions.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3037,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same content (debts and injuries that did not cause the war survive the peace), but Vattel uses one sentence on 'répétitions' where Formey has two parallel clauses in other words.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 3042,
    "audit": {
     "verdict": "weak",
@@ -1660,11 +3758,56 @@
    }
   },
   {
+   "id": 3046
+  },
+  {
+   "id": 3065,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same point (agents now mere private commissioners of princes) in different words and a different structure.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 3076,
    "audit": {
     "verdict": "right",
     "reason": "Barbeyrac's note on Bynkershoek makes the same inference about Rincon and Fregoso: Charles V's neglect to seek the murderers shows he at least approved the deed after the fact.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3081,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Condenses and reorders Wicquefort's anecdote (garrison fires on trumpet, Maurice resents it) into one new sentence.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3085
+  },
+  {
+   "id": 3089
+  },
+  {
+   "id": 3092,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "verbatim",
+    "reason": "Only the gist (Elizabeth had Philip II asked to recall his ambassador) is kept, inside Vattel's own sentence; not verbatim.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3099,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same relative-clause frame with 'qui viole le premier le droit des gens' kept, the first clause reworded.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1688,12 +3831,18 @@
    "label": "loose paraphrase"
   },
   {
+   "id": 3119
+  },
+  {
    "id": 3123,
    "audit": {
     "verdict": "right",
     "reason": "Same rule and wording: respect due to the character, and in doubt whether goods belong to the minister's person, 'on explique toujours les choses' in his favour.",
     "date": "2026-11-17"
    }
+  },
+  {
+   "id": 3126
   },
   {
    "id": 3131,
@@ -1704,11 +3853,43 @@
    }
   },
   {
+   "id": 3132
+  },
+  {
+   "id": 3138,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same structure (need of help to live as befits ...) and wording 'vivre comme il convient à', with 'un animal raisonnable' for 'des hommes'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3151,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same clause 'droit à toutes les choses sans lesquelles ... ne peut ...' with person changed and 'remplir cette obligation' for 'satisfaire à nos obligations'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 3159,
    "audit": {
     "verdict": "weak",
     "reason": "Refusing obedience to commands evidently contrary to natural law is, as Vattel himself says, the view of all authors; nothing specific ties the passage to the Questions remark.",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
+  },
+  {
+   "id": 3171,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same paired phrases (animer l'industrie, exciter les talens) in infinitive form, with 'le Génie' dropped.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1717,6 +3898,15 @@
     "verdict": "weak",
     "reason": "Grounding the perfect/imperfect right distinction in natural liberty is Vattel's (and Wolff's) standing doctrine; the §904 remark shares no wording or example with the buying case.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3176,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The whole clause is the same words, only the person changed (les/soi for mes/moi).",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1733,6 +3923,75 @@
     "verdict": "right",
     "reason": "Both Vattel texts ground the measure of penalties in their end, to secure the safety of citizens and state, in shared wording.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3210,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same sentence frame word for word ('quand le peuple défère l'empire à quelqu'un ... en même tems ... à moins qu'il ne ...') with the object changed (domaine éminent for the right over religion).",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3224,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The clause 'il est libre à ... de renoncer à son droit' is identical except 'un chacun' for 'tout le monde'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3274,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The predicate 'mérite l'indignation de tous les hommes' is identical and the structure the same; only the subject is reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3329,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui's note copies Barbeyrac's note 3 on Pufendorf II.3.23 (Latin authors use the two terms indifferently, with the Cicero line), the section Vattel's preface quotes verbatim for Hobbes.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 3330,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The same truncated Cicero quotation (De officiis III.5) stands in Barbeyrac's note on Pufendorf II.3.23, Burlamaqui's own source; a shared ancient proof-text.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 3342,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's wording ('selon lui', 'ajoute-t-il', 'Les maximes...') is verbatim Pufendorf II.3.23; Burlamaqui only restates the same Hobbes division.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 3343,
+   "label": "verbatim",
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Vattel says in note (g) that he uses Barbeyrac's translation in Pufendorf II.3.23, and his wording matches it; Burlamaqui only repeats the same quotation of Hobbes.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
    }
   },
   {

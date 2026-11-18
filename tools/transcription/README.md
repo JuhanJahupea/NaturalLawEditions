@@ -75,4 +75,12 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 
 - `en_flags.py batches <layer> <plain_fr> <dir>` and `en_flags.py merge <layer> <dir>`: the translation check. Agent prompt `TRANSLATE_CHECK_PROMPT_BURLAMAQUI.md`, 28 units per agent: mistranslation, shift, omission, addition, terminology and false friends that matter to an intellectual historian. The merge keeps the flags whose phrases stand in their pair.
 
+## 9. Audits
+
+- `prec_sample.py`: the random sample of the precision audit (`audit/`). Agent prompt `PRECISION_PROMPT.md` (Claude Opus): right, weak or wrong, and whether the label fits.
+- Agent prompt `REJUDGE_PROMPT.md` (Claude Opus, 25 rows per agent): the same task for every match row of a table, with a note that Vattel often follows Wolff or Grotius where Pufendorf or Burlamaqui say the same.
+- `label_overlap.py`: the word overlap of each row's passage and source passage (French sources), for the label check. Agent prompt `LABEL_CHECK_PROMPT.md` (Claude Opus, 30 rows per agent): the label that fits.
+- `apply_rejudge.py <work> <repo> <vattel data.json> <burlamaqui data.json> [--write]`: re-judge verdicts go in `audit` (weak match rows become possible, wrong rows `rejected`), label-check changes in `labelCheck`. Pass rows are edited in their pass files, working rows through `corrections.json` (`rowEdits`). Run once.
+- `demote_weak.py <repo> [--write]`: match rows an audit rated weak become possible.
+
 The converters then rebuild the editions from their working `data.json` and the pass files (`tools/convert_*.py`, `tools/nle.py`); `tools/check_all.sh` checks both.

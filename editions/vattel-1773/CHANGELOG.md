@@ -2,6 +2,14 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.16 (2026-11-18)
+
+- Every match row of the tables for Pufendorf (Barbeyrac 1734), Burlamaqui 1747 and Burlamaqui's *Droit politique* 1751 was read again by Claude Opus (494 rows; commonplaces and rows the audit had read left out; `audit/README.md`). 338 weak rows now have status possible: in most, Vattel follows Wolff or Grotius, and Pufendorf or Burlamaqui states the same doctrine. 8 wrong rows have status `rejected`. 78 labels are changed. Match rows: Pufendorf table 364 → 186, Burlamaqui 1747 16 → 3, PDP 1751 174 → 19.
+- The 24 match rows the audit had rated weak (other tables included) now have status possible.
+- A label check: 108 rows whose word overlap sits far from their label's were read by Claude Opus; 72 labels are changed. A changed row carries `labelCheck` (`{was, reason, date}`).
+- `audit.statusWas` keeps a status an audit changed. The panel shows it, and the label check.
+- Match rows in all: 2,695 → 2,325. Text and layers are unchanged.
+
 ## 1.15 (2026-11-18)
 
 - The precision audit (`audit/README.md`) is applied: 2 rows rejected (Pref.9, Wolff JG; I.240, Burlamaqui PDP 1751), 27 labels changed. Every audited row carries the verdict and reason in `audit` (`labelWas` keeps a changed label). Rejected rows have status `rejected`; the viewer does not show them, and the panel shows an audited row's verdict.

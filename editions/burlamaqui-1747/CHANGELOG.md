@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.12 (2026-11-18)
+
+- The 8 match rows the precision audit had rated weak now have status possible (`audit.statusWas`), as in Vattel 1.16.
+- A label check (`audit/README.md`): 102 rows whose word overlap sits far from their label's were read by Claude Opus; 86 labels are changed. A changed row carries `labelCheck` (`{was, reason, date}`), and the panel shows it.
+- Match rows in all: 1,331 → 1,323. Text and layers are unchanged.
+
 ## 1.11 (2026-11-18)
 
 - The precision audit (`audit/README.md`) is applied: 3 rows rejected (P1.10.15, Devoirs; P1.6.12, Grotius; P2.12.5, Pouilly), 19 labels changed. Every audited row carries the verdict and reason in `audit` (`labelWas` keeps a changed label). Rejected rows have status `rejected`; the viewer does not show them, and the panel shows an audited row's verdict.
