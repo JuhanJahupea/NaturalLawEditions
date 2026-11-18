@@ -48,4 +48,55 @@ The wrong rows:
 - Burlamaqui P1.6.12, grotius-barbeyrac-1724, row 2011 (citation): Burlamaqui's note cites Leibniz's Jugement and Barbeyrac's remarks joined to the Devoirs, not Barbeyrac's Grotius; this source is not named, only the same reflections are mentioned in both.
 - Burlamaqui P2.12.5, pouilly-theorie-1749, row 1135 (loose paraphrase): Pouilly's 'joye secrette toujours prete à se developer' (ch. XVI) describes the contentment of people in moderate labour, not the joy that follows a good action; only the phrase is shared.
 
-Applied (2026-11-18, Vattel 1.15, Burlamaqui 1.11): every audited row carries its verdict in `audit`; the 5 wrong rows have status `rejected` and the viewer no longer shows them; the 46 labels the reader would change are changed (the old label is kept in `audit.labelWas`). Weak rows keep their status.
+Applied (2026-11-18, Vattel 1.15, Burlamaqui 1.11): every audited row carries its verdict in `audit`; the 5 wrong rows have status `rejected` and the viewer no longer shows them; the 46 labels the reader would change are changed (the old label is kept in `audit.labelWas`). Weak rows keep their status. From Vattel 1.16 and Burlamaqui 1.12, match rows rated weak have status possible (`audit.statusWas`): 24 rows of Vattel, 8 of Burlamaqui.
+
+## Re-judge of Vattel's Pufendorf and Burlamaqui tables (2026-11-18)
+
+`rejudge-2026-11-18.json` holds every verdict (`rejudge`).
+
+The audit found most weak match rows of Vattel in the tables for Pufendorf and Burlamaqui. Claude Opus read every other match row of the three tables: Vattel × Pufendorf (Barbeyrac 1734), Vattel × Burlamaqui 1747, Vattel × Burlamaqui, *Principes du droit politique* (1751). Commonplaces and rows the audit had read were left out. The reader had the same task and verdicts as the audit, and was told that Vattel often follows Wolff or Grotius where Pufendorf or Burlamaqui say the same. Where the repository has a transcription of Grotius, Pufendorf or Wolff, the reader checked the passage there.
+
+| Table | Rows | Right | Weak | Wrong | Label does not fit |
+|---|---|---|---|---|---|
+| Vattel × Pufendorf (Barbeyrac 1734) | 319 | 141 | 175 | 3 | 38 |
+| Vattel × Burlamaqui 1747 | 15 | 2 | 12 | 1 | 3 |
+| Vattel × Burlamaqui, PDP 1751 | 160 | 5 | 151 | 4 | 37 |
+
+In most weak rows, by the readers' notes, Vattel's wording or order follows Wolff's *Jus gentium* or *Institutiones*, or Grotius in Barbeyrac's translation, and Pufendorf states the same doctrine. Burlamaqui's *Droit politique* copies Grotius, Pufendorf or Barbeyrac's notes in most of the passages these rows pair with Vattel. Its chapter on neutrals (§§ I–XII) is Barbeyrac's note 2 to Pufendorf VIII.6.7. Right rows in the Pufendorf table rest on material found only in Pufendorf or Barbeyrac's notes: examples, references in the same order, Barbeyrac's wording.
+
+The editor changed one verdict: row 6305 (II.280, citation) is right, since Vattel's note names Pufendorf V.XII.7. The reader rated it wrong because the paired source sentence is not the one Vattel's examples follow.
+
+The wrong rows:
+
+- Vattel II.273, pufendorf-barbeyrac-1734, row 6289 (loose paraphrase): Vattel's anecdote follows Pufendorf's main text; Barbeyrac's note gives a different account, none of which Vattel uses.
+- Vattel III.93, pufendorf-barbeyrac-1734, row 6469 (loose paraphrase): Vattel's argument is Wolff JG § 669; Barbeyrac's note holds the opposite.
+- Vattel III.123, pufendorf-barbeyrac-1734, row 6484 (open disagreement): Vattel rejects a claim of Grotius that Pufendorf also rejects; there is no disagreement with Pufendorf.
+- Vattel Prelim.17, burlamaqui-1747, row 1535 (loose paraphrase): only the terms internal and external obligation match; the two authors draw different distinctions with them.
+- Vattel III.58, burlamaqui-droit-politique-1751, row 2237 (loose paraphrase): a different point; Vattel's is Wolff JG § 714.
+- Vattel III.118, burlamaqui-droit-politique-1751, row 2296 (loose paraphrase): opposite rules on supplying war goods; Vattel's is Wolff JG § 683.
+- Vattel IV.47, burlamaqui-droit-politique-1751, row 2606 (close paraphrase): Vattel quotes Grotius III.19.14 by name; Burlamaqui repeats the same quotation.
+- Vattel Pref.7, burlamaqui-droit-politique-1751, row 3343 (close paraphrase): Vattel's note says he uses Barbeyrac's translation of Pufendorf II.3.23; Burlamaqui repeats the same quotation of Hobbes.
+
+Applied (Vattel 1.16): weak rows have status possible, wrong rows `rejected` (`audit.statusWas` keeps the old status); 78 labels are changed (`audit.labelWas`). Match rows: Pufendorf table 364 → 186, Burlamaqui 1747 16 → 3, PDP 1751 174 → 19.
+
+## Label check (2026-11-18)
+
+`rejudge-2026-11-18.json` holds every answer (`labelCheck`).
+
+In the audit, about 12% of the rows had a label the reader would change. To find such rows in all tables, a script (`tools/transcription/label_overlap.py`) measured the word overlap of each row's passage and source passage: the share of the shorter passage's words that occur in the same order in the other, with accents and old spellings folded. Latin sources were left out. On the audit sample, verbatim rows have a median overlap of 0.97, close paraphrase 0.58, loose paraphrase 0.23. Rows whose overlap sits far from their label's were flagged:
+
+- verbatim below 0.7;
+- close paraphrase below 0.2, or at 0.92 or more with a run of 8 or more words;
+- loose paraphrase at 0.6 or more.
+
+On the audit sample, 12 of 27 flagged rows had a label the reader would change. In all tables the script flagged 210 rows (Vattel 108, Burlamaqui 102). Claude Opus read each pair and gave the label that fits. The prompt is `tools/transcription/LABEL_CHECK_PROMPT.md`.
+
+| Edition | Flagged | Changed |
+|---|---|---|
+| Vattel | 108 | 72 |
+| Burlamaqui | 102 | 86 |
+
+Changes: close paraphrase → loose paraphrase 62; loose paraphrase → close paraphrase 43; close paraphrase → verbatim 29; loose paraphrase → verbatim 13; close paraphrase → shared argument 5; loose paraphrase → shared argument 3; verbatim → loose paraphrase 1; verbatim → close paraphrase 1; verbatim → translation 1. Most changes are in the tables for Grotius (Vattel 31, Burlamaqui 5), the *Élémens* 1783 (29), Pufendorf (Burlamaqui 23, Vattel 1), the *Devoirs* (19) and Formey (17).
+
+Applied (Vattel 1.16, Burlamaqui 1.12): a changed row carries `labelCheck` `{was, reason, date}`, and the panel shows it. Status is unchanged.
+

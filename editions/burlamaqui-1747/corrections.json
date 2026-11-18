@@ -62,12 +62,24 @@
  ],
  "rowEdits": [
   {
+   "id": 1078,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same stock phrase 'les choses comme/telles qu'elles sont en elles-mêmes' with two words swapped.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1083,
    "audit": {
     "verdict": "weak",
     "reason": "The exposure of children by Greeks and Romans is a commonplace example; Locke uses it against innate principles, Burlamaqui as an error of law, and his note cites Matthew, not Locke.",
     "date": "2026-11-17"
    }
+  },
+  {
+   "id": 1087
   },
   {
    "id": 1089,
@@ -94,6 +106,27 @@
    }
   },
   {
+   "id": 1103,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same Lockean argument (nothing cannot produce anything, so something always existed) in other words and a reductio structure.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1104,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same claim that intelligence cannot come from a blind, unknowing cause, condensed into other words.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1105
+  },
+  {
    "id": 1106,
    "audit": {
     "verdict": "weak",
@@ -117,6 +150,24 @@
     "verdict": "weak",
     "reason": "Both explain away savage peoples' apparent lack of moral notions by their brutishness, but only the word 'abruti' is shared and this reply to the Lockean objection is common stock.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1118,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same words 'concilier notre bonheur avec celui des autres'; only the verb form and the dropped 'hommes' differ.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1125,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same pairing 'la santé du Corps' and 'le bon état de l'Ame' in the same order, slightly reworded.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -155,6 +206,15 @@
    "label": "close paraphrase"
   },
   {
+   "id": 1181,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The opening clause 'Quand nous recherchons ici' is identical in a chapter on the same subject.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1182,
    "audit": {
     "verdict": "right",
@@ -184,6 +244,24 @@
     "verdict": "right",
     "reason": "Both of Burlamaqui's texts grade an action's gravity by how noble its object is, in similar words ('objet... noble... criminelle').",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1212,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Long passage reproduced word for word with only minor changes ('engage' for 'oblige', punctuation).",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1215,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Identical sentence except the source's 'sans doute'.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -221,12 +299,32 @@
    }
   },
   {
+   "id": 1258,
+   "label": "translation",
+   "labelCheck": {
+    "was": "verbatim",
+    "reason": "The Latin 'sic serimus... sic uxores ducimus' and Crousaz's French 'on sème... on se marie' render the same list in two languages.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1264,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same sentence 'doit avoir une cause de son existence' with the subject changed from 'existe' to 'commence d'être'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1271,
    "audit": {
     "verdict": "weak",
     "reason": "Burlamaqui quotes and credits the stock Terence line; nothing ties it to Seneca's use of it.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
   },
   {
    "id": 1280,
@@ -303,11 +401,38 @@
    }
   },
   {
+   "id": 1299,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same long sentence; only 'en deux sens' and 'qu'elles ont/qui sont' differ.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1304,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Identical wording.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1306,
    "audit": {
     "verdict": "right",
     "reason": "Same definition of essential error, with the same structure and closing clause about its influence on the action taken.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1307,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Identical clause except one word ('Ennemis' for 'Grecs').",
+    "date": "2026-11-18"
    }
   },
   {
@@ -319,11 +444,38 @@
    }
   },
   {
+   "id": 1312,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "The passage is a word-for-word prefix of the source clause.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1313,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "The passage is a word-for-word prefix of the source.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1317,
    "audit": {
     "verdict": "right",
     "reason": "Near-identical clause limiting liberty to acts the soul can suspend or turn as it pleases.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1321,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Identical apart from the source's added word 'actions'.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -343,6 +495,15 @@
    }
   },
   {
+   "id": 1338,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "The passage is word for word identical to the source clause.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1341,
    "audit": {
     "verdict": "right",
@@ -359,6 +520,36 @@
     "reason": "Same sentence that men cannot do without one another's help, in the same argument on the natural state of society.",
     "date": "2026-11-17"
    }
+  },
+  {
+   "id": 1348,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The same clause word for word, with only 'donc' and 'd'union et' added.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1349,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same cleft structure 'c'est Dieu lui-même qui', with the predicate reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1353,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same sentence frame and list of family relations, with the verb and adjectives reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1359
   },
   {
    "id": 1363,
@@ -395,6 +586,15 @@
    }
   },
   {
+   "id": 1380,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Identical phrase except 'restriction' for 'limitation'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1383,
    "audit": {
     "verdict": "right",
@@ -403,11 +603,38 @@
    }
   },
   {
+   "id": 1384,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Long identical clauses ('le pouvoir qu'a l'homme de se servir...', 'entant que cet exercice... approuvé par la raison') with insertions only.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1387,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same sentence word for word apart from 'de ces idées' and 'un' for 'de'.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1388,
    "audit": {
     "verdict": "right",
     "reason": "Same transition to droit taken as loi, with the same example and the clause 'dans tous ces cas le droit est pris pour la loi'.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1402,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same sentence structure and most content words (porté, penchant naturel de sa volonté, se soumettre), reworded in places.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -437,11 +664,38 @@
    }
   },
   {
+   "id": 1420,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same definitional frame 'La loi naturelle est celle qui... si nécessaire... la nature de l'homme', with the predicate reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1425,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Shares nearly all content words and the clause 'on les considère comme susceptibles de règle(s)', with the main clause inverted.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1428,
    "audit": {
     "verdict": "right",
     "reason": "Both of Burlamaqui's texts give the same definition of the good or just action as one 'exactement conforme' to the law.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1437,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same frame 'l'art de... des loix, de les..., et de les appliquer aux actions humaines', reworded in places.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -481,6 +735,9 @@
    "label": "loose paraphrase"
   },
   {
+   "id": 1469
+  },
+  {
    "id": 1475,
    "audit": {
     "verdict": "right",
@@ -491,11 +748,29 @@
    "label": "verbatim"
   },
   {
+   "id": 1476,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "The fragment is identical to the source wording.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1480,
    "audit": {
     "verdict": "right",
     "reason": "Same inference that because society needs mutual benevolence, God wills men to have these sentiments, in parallel wording.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1484,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same clause word for word except the omitted 'lui-même'.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -507,6 +782,45 @@
    }
   },
   {
+   "id": 1492,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same series 'dans la nature de l'homme, dans sa constitution, et dans [son] état' with the framing and last item reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1495,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same structure 'chacun [est] chargé... du soin de sa X et de sa Y', with the adverb and objects reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1499,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The distinctive phrase is identical in both.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1500
+  },
+  {
+   "id": 1502,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "The clause is identical to the opening of the source sentence.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1505,
    "audit": {
     "verdict": "right",
@@ -515,12 +829,32 @@
    }
   },
   {
+   "id": 1506,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same idea (subordination replaces original independence) but in a different structure and mostly different words.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1509,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same frame 'se former par le concours ou l'union de la volonté de plusieurs personnes', applied to society instead of conventions.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1511,
    "audit": {
     "verdict": "weak",
     "reason": "Both give the stock definition of morality as the relation of actions to law; the edition sentence only recaps Part I ch. XI, so nothing ties this passage specifically to the Élémens sentence.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
   },
   {
    "id": 1519,
@@ -537,6 +871,9 @@
     "reason": "The Elemens line is the definition of droit (parallel to Principes I.5.10); P2.8.3 only restates the same doctrine that reason approves what leads to happiness.",
     "date": "2026-11-17"
    }
+  },
+  {
+   "id": 1522
   },
   {
    "id": 1527,
@@ -559,8 +896,10 @@
    "audit": {
     "verdict": "weak",
     "reason": "Both tie imputation to praise or blame and reward or punishment, but that pairing is stock; the Élémens' 'two manners' answers the PDN's simple/efficacious distinction (§ IX) more than this definition.",
-    "date": "2026-11-17"
-   }
+    "date": "2026-11-17",
+    "statusWas": "match"
+   },
+   "status": "possible"
   },
   {
    "id": 1540,
@@ -571,11 +910,38 @@
    }
   },
   {
+   "id": 1545,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same frame 'X est la cause principale, et Y n'est que la cause subalterne', with the agents made concrete.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1546,
+   "label": "loose paraphrase",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Defines collateral cause with a different structure and different wording.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1549,
    "audit": {
     "verdict": "right",
     "reason": "Same opening of the sanction chapter: the force of laws depends on sanction, so one must ask whether natural laws carry penalties and rewards, in nearly the same words.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1558,
+   "label": "verbatim",
+   "labelCheck": {
+    "was": "close paraphrase",
+    "reason": "Same words ('la nature de l'ame paroît tout-à-fait distincte de celle du corps') apart from 'même' and 'être'.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -594,6 +960,15 @@
     "verdict": "right",
     "reason": "Both of Burlamaqui's texts end the account of the faculties the same way: the faculties joined together lead to knowledge of truth and then to true happiness.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1573,
+   "label": "close paraphrase",
+   "labelCheck": {
+    "was": "loose paraphrase",
+    "reason": "Same heading with 'divers' for 'différens'.",
+    "date": "2026-11-18"
    }
   },
   {
