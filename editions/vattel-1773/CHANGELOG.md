@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.15 (2026-11-18)
+
+- The precision audit (`audit/README.md`) is applied: 2 rows rejected (Pref.9, Wolff JG; I.240, Burlamaqui PDP 1751), 27 labels changed. Every audited row carries the verdict and reason in `audit` (`labelWas` keeps a changed label). Rejected rows have status `rejected`; the viewer does not show them, and the panel shows an audited row's verdict.
+- Rows of the working edition are changed through `corrections.json` (`rowEdits`), rows of later passes in their pass files.
+- Text and the other rows are unchanged.
+
 ## 1.14 (2026-11-17)
 
 - 6 more reuse rows carry `attributed`: rows in sections that designate the source without naming it in the passage's sentence. Barbeyrac as "l'auteur que nous venons d'entendre" after "ce savant traducteur sur GROTIUS" (Pref.8, 2 rows); Montesquieu by the note "Esprit des loix, Liv. XXVI. Chap. XXIII." (I.62); Grotius as "le savant & judicieux GROTIUS" for the view Vattel then rejects (II.7); Bynkershoek as "un illustre membre de cette même cour" with the notes "M. DE BYNKERSHOEK, traité du juge compétent" and "Ibid." (IV.110, 2 rows). Vattel attributes 92 rows.

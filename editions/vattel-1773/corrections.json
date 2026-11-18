@@ -1,7 +1,7 @@
 {
  "format": "nle-corrections/1",
  "edition": "vattel-1773",
- "description": "Corrections to the working edition (data.json), applied by the converter (tools/nle.py apply_note_moves) and by tools/check_edition.js. noteMoves: footnotes the working edition attached to the neighbouring section on a shared page. Each names the note by its section and index in data.json (cont: continuation notes that go with it), its mark, and the section whose call it answers. Read from the MDZ scans (bsb10725331, bsb10725332) by Claude Sonnet, one reader per run of sections; only answers the reader marked certain and whose two sections share a printed page are applied.",
+ "description": "Corrections to the working edition (data.json), applied by the converter (tools/nle.py apply_note_moves) and by tools/check_edition.js. noteMoves: footnotes the working edition attached to the neighbouring section on a shared page. Each names the note by its section and index in data.json (cont: continuation notes that go with it), its mark, and the section whose call it answers. Read from the MDZ scans (bsb10725331, bsb10725332) by Claude Sonnet, one reader per run of sections; only answers the reader marked certain and whose two sections share a printed page are applied. rowEdits: changes to reuse rows of data.json after the precision audit (audit/precision-2026-11-17.json): label (the audit's better label), status rejected (the audit found the passages do not match; the viewer does not show the row), and audit (the verdict and reason) on every audited row.",
  "noteMoves": [
   {
    "from": "I.49",
@@ -729,6 +729,1046 @@
    "start": "Voyez d&#x27;autres exemples dans GROTIUS, L. III. Ch. I. §.",
    "page": "72",
    "reason": "Printed at the foot of p. 72, where the only call is (a) in III.112 ('leur firent justice'); the print marks the call (a) and the note (*). Decided by hand from the reader's account of the scan."
+  }
+ ],
+ "rowEdits": [
+  {
+   "id": 20,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff's Prolegomena §4 closely: necessary law of nations contains what natural law prescribes to nations, binding them as it binds men.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 85,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff's definition of the perfection of a nation and of its perfect state almost clause for clause.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 87,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel reproduces Wolff's two steps: perfection as the accord of a thing's parts toward one end, and the nation as a multitude united in civil society.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 120,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's ruler, holding the nation's rights, represents his nation in its dealings, which Vattel states as the sovereign's representative character.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 184,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates Wolff's definition of jura merae facultatis almost word for word (use or not use as one pleases, free of all constraint).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 208,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That the ruler should protect the sciences and arts is a general maxim; Wolff's definitional sentence gives nothing specific to Vattel's passage.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 220,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff's § 135 in deriving love of country from the citizen's undertaking to promote the common good, after the self-love step.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 221,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's clause renders Wolff's proposition that a nation must love itself nearly word for word, so it is closer than a loose paraphrase.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "close paraphrase"
+  },
+  {
+   "id": 248,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Wolffian argument that private war is not tolerated because judges render each his right, applied to the duel.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 284,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff's section is about the ruler's freedom to admit a foreigner as citizen or resident, not a definition of inhabitants; it overlaps with Vattel's only in the idea of allowing a foreigner to reside.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 291,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of domicile renders Wolff's Latin definition word for word.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "translation"
+  },
+  {
+   "id": 294,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's sentence is a word-for-word rendering of Wolff's Latin, so 'translation' fits better than 'close paraphrase'.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "translation"
+  },
+  {
+   "id": 349,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That an owner may alienate or pledge what is its own is a stock consequence of dominion, and Wolff §484 on what nations may pledge has none of Vattel's specific argument.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 380,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's limit of sea dominion to what a nation needs for security and can make respected restates Wolff § 128 (occupation as far as dominion can be defended, the sea as a rampart).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 389,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's general principle renders Wolff's: a nation owes another what it owes itself, insofar as the other needs it and it can give it without neglecting its duties to itself.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 407,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel restates Wolff's two conditions for offices of humanity (the other's need, and no neglect of duty to oneself) and goes on, as Wolff § 157 does, to the asked nation's right to judge and the grain example.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 422,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's sentence renders Wolff's thesis of par. 263 closely: no nation may refuse the offices of humanity to another because of a different religion.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 423,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's limit on offices to other nations ('sans manquer à ses devoirs envers elle-même') reproduces Wolff's 'citra neglectum officii erga se ipsam'.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 426,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Wolffian prohibition on hindering another nation from attaining the end of civil society, with near-identical structure.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 458,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of consuls follows Wolff's clause by clause: ports, commission, guarding the nation's rights and privileges, settling merchants' disputes.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 468,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's statement that the form of the republic makes no difference to what belongs to the nation is his argument on precedence (it stands in § 243, not § 153), which Vattel restates.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 495,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The maxim that self-government is the mark of independence is general. Vattel II.57's own point, the right to repel interference, is not in Wolff § 256.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 536,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument that ceding uncultivated land to incoming settlers is both a benefit to them and a gain in population and power for the nation.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 553,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel restates Wolff 322: a later occupant of a vacant country cannot take the places or rights already occupied by another nation.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 570,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific example: the widow's statutory portion cannot be reduced when a citizen makes his will abroad.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 572,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of the droit d'aubaine translates Wolff's definition of jus albinagii clause by clause.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 587,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel restates Wolff § 338's thesis that a nation keeps some right over another's property when deprived of a necessary use, clause by clause.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 659,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of pactions as agreements with transitory, non-repeated performances renders Wolff's definition.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 664,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'répugne en soi à tout traité de protection' renders Wolff's 'foederi omni protectionis per se inest', and the bar on aiding the protector's enemies follows from it.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 678,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's sentence renders Wolff's 'nothing wins nations and their rulers more praise than entire good faith' in the same comparative structure.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 692,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's treaties fixing 'ce qui ne peut être déterminé en général par le droit naturel' render Wolff § 392's 'quae jure naturali in genere determinata non sunt' in a treaty context.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 715,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same rule that a treaty made for the contractor and his successors is real, not personal; the wording and structure differ.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 748,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of inferior powers, with magistrates and generals as examples, translates Wolff's closely.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 809,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific explanation: hostages were once killed through the error that a man has a right over his own life or that the sovereign may dispose of it.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 810,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 501: only the hostage's liberty is pledged, not his life, and the old contrary opinion assumed a right over one's own life; Vattel gives the same thesis and correction.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 817,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff 504-505 lets a hostage be retained as a debtor for debts contracted while held, without breaching the release; Vattel states the same rule and adds crimes.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 818,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both hold the hostage liable for his own acts, but Wolff's section 533 concerns his personal suretyship for the main obligation, not crimes and private debts during hostageship (Wolff section 505).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 841,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's maxim that neither party may interpret the treaty at will is Wolff's rule for treaties, with the same two-sided reasoning.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 842,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's maxim translates Wolff's 'quod sufficienter significatur, id contra ipsum pro vero habetur' word for word, though Wolff applies it to war here.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "translation"
+  },
+  {
+   "id": 868,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel reproduces Wolff's rule that, since parties cannot be presumed to have meant to do nothing, an interpretation voiding the act is not admitted.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 904,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific argument: an oath cannot give a later ally priority over an earlier ally whose treaty is unsworn.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 907,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence of duties: give each his right, repair the injury, give satisfaction for the irreparable one, give security where faith is suspect.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 920,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both state Wolff's general voluntary-law principle that natural liberty leaves each nation to its own judgment, but Inst. 1215 applies it to the justice of both sides in war, not to trying peaceful means first.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 932,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of retorsion of right renders Wolff's definition closely.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 942,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'participe à l'action de son sujet & s'en charge' renders Wolff's ruler who 'concurrit ad factum civis', turning the subject's act into the nation's act.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 955,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument in the same order: milder means must be preferred while they suffice, reprisals are milder than war, and they must be used while they can obtain redress.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 987,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff's sequence: enrolling another's subjects is plagium, soldiers swear an oath, deserters are severely punished, and those who promote desertion share the plagium.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1000,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's two kinds of reasons follow Wolff's definitions (justificatory reasons from right, suasive ones from utility, each 'by which it is shown').",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1028,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 631: in a doubtful cause war is lawful only to force a party that refuses accommodation into a transaction; Vattel gives the same rule, then Wolff's § 632 point that war does not decide right.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1030,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel uses Wolff's specific analogy of two disputants over the truth of a proposition to show war cannot be just on both sides.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1042,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same rule: if a power shows designs of domination and does even the slightest injury, the other nations may join to weaken it by arms.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1046,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both concern a balance in which joined weaker powers offset the preponderant one, but Wolff's definition has none of Vattel's scale image or coalition practice.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1056,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 711 says fair peace terms follow from the cause of war and the costs the declaring party was forced to incur; Vattel lists the same two parts: the principal subject plus reimbursement of preparation costs.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1158,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel gives Wolff's two rules: whoever is granted passage repairs the damage, and the ruler sees that the injured subjects are compensated.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1177,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence as Wolff 875-876: non-resisting enemies are not to be harmed, so commanders must not permit soldiers to rape women and girls.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1188,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel rejects the view that 'the manner is indifferent' and condemns poison as contrary to natural law, against Wolff's claim (§§877-878) that killing the enemy by poison is naturally licit.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1189,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes up the case for poisoned weapons and declares them forbidden by natural law, against Wolff's claim that they are not naturally illicit.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1195,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's proposition that a nation may be punished by taking corporeal things and rights is what Vattel restates (things, rights, towns, provinces taken as punishment).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1198,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's argument that the war is not the auxiliaries' so booty is not theirs, with the same 'no difficulty' remark and the next point that the sovereign disposes of booty.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1247,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel grounds postliminy, as Wolff § 894 does, in the sovereign's duty to defend subjects, with restitution of persons to all their rights and goods to their owners.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1249,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff's paired definition of postliminy for persons and things falling back into their nation's power.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1269,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff's note in sequence: what holds of soldiers holds of subordinate officers, who are like private persons, military law forbids acting without orders, and war's outcomes are uncertain.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1286,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'since the truce cannot bind subjects unless known, it must be published' restates Wolff's inference that subjects are bound only after publication (also in Grotius III.21.5).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1287,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument as Wolff: a sovereign who will not punish or make restitution for private breaches takes part in them and himself violates the faith of the truce.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1300,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's specific rule that during a truce the besieged may not repair the rampart breached by enemy guns is restated by Vattel, with an echo of the enemy artillery.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1335,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel gives Wolff's specific reason why a father's safe-conduct excludes wife and children (they do not usually travel with him) but recasts it with a contrast to permission to settle.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 1341,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific argument: a safe-conduct granted at pleasure lapses on the grantor's death because he ceases to will.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1343,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-translation of Wolff's rule that a ransom agreement cannot be rescinded because the captive proves richer than believed.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1368,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's claim that foreign nations may not judge between prince and subjects, grounded on non-interference, renders Wolff 1011.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1384,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule that the public compensates individuals whose goods are disposed of by eminent domain is common stock (Grotius, Pufendorf); Wolff states it generally, not for peace treaties.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1399,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-translation of Wolff's rule that matters on which the peace treaty is silent remain as they are.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1420,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific rule as Wolff: a peace treaty may include stipulations unrelated to the war only if they are expressly stated.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1435,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's refusal to distinguish major from minor articles, since breach of the least article frees the other party, is Wolff § 1024's rule that peace is broken even by violating minor articles.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1455,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both concern not refusing enemy envoys, but Wolff speaks only of manifest necessity such as peace offers, while Vattel's general maxim and its exceptions are not in this passage.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1527,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both state a general duty of states to promote other states' good as far as they can, but Vattel's Wolffian 'bonheur et perfection' formula has no specific link to Burlamaqui's passage.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1544,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both deny that usages bind universally, but Vattel's sentence translates Wolff Prol. § 24, and Burlamaqui's point (usages not obligatory by themselves) differs in substance.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1609,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The idea that without consent or lawful government the state of war continues after conquest is common stock; Burlamaqui's clause itself copies Barbeyrac's note on Grotius, and Vattel's condition differs.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1617,
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Natural law applied to nations' is a stock formula that Vattel's preface traces to Hobbes and Pufendorf; nothing ties this sentence to Burlamaqui in particular.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1638,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Religion's effect on society giving the sovereign authority over it is the common jus circa sacra argument, and the wording is different.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 1683,
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Vattel's passage is about taxes supplementing an insufficient domain; the source passage distinguishes goods for the king's upkeep from goods for state expenses.",
+    "date": "2026-11-17"
+   },
+   "status": "rejected"
+  },
+  {
+   "id": 1684,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both mention public goods for the sovereign's upkeep and state expenses, but Burlamaqui distinguishes royal domain from public treasury while Vattel's point is that taxes are reserved to the nation; a commonplace overlap.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1786,
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Opposer la force à quiconque' attacks one's rights is a stock statement of the right of defence; Burlamaqui uses it as an example of perfect rights.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1794,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Punish or deliver up at the offended sovereign's request is Grotius's maxim (II.21.4), which Burlamaqui copies; nothing ties Vattel to Burlamaqui, and Vattel's wording differs too much for a close paraphrase.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 1885,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule that a treaty with a republic is real is stock. Vattel's 'toute alliance ... réelle de sa nature' matches Pufendorf VIII.ix.6 more closely than Burlamaqui's 'tout traité'.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1981,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That the sovereign may compel subjects to be hostages is a stock Grotian point, and the wording differs too much for a close paraphrase.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 1994,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both hold that the sovereign who breaks faith cannot make hostages answer for it with their lives, and the next row shows both go on to make the hostage a mere prisoner.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2152,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both texts give the same first condition of reprisals (the wrong or debt must be evident), followed by the prior demand for justice, but in different words.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 2222,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The power-plus-will condition comes from Grotius II.22.5 and is common stock; nothing in Vattel's wording points to Burlamaqui's Droit politique rather than Grotius.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2323,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Sparing old men, women and children is the common Grotian temperamentum; the wording and grounds differ, since Vattel rests it on their offering no resistance.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2467,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel denies a besieged governor the right to repair breaches during a truce, against the general permission that comes from Grotius III.21.7; nothing aims the correction at Burlamaqui in particular.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2474,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The truce defined as suspending hostilities without ending the war is the stock Grotian definition; nothing ties Vattel's recall to Burlamaqui's wording.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2480,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both treat corrupting the enemy's garrison as a breach of truce, a specific Grotian rule that Vattel widens to governors and subjects.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2544,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That peace restores nations to their natural state follows from the common view that peace is the natural state; the wording overlap is slight.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2557,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say that some pre-war debts survive a peace treaty, but Burlamaqui follows Grotius III.20.16 on private debts suspended by war, while Vattel is about claims unrelated to the war's causes; different rules, different wording.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 2574,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That treaties made with the state itself bind successors is the stock Grotian definition of real treaties; Vattel refers back to his own II § 189.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2580,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both deny binding force to grossly unjust imposed treaties, a Grotius-Barbeyrac commonplace; Vattel's naming of true peace treaties is not a restatement of Burlamaqui's clause.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "shared argument"
+  },
+  {
+   "id": 2603,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say peace is broken by violating treaty articles, a stock Grotian definition with nothing specific to these two texts.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2641,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both ground the safety of envoys between belligerents in the duty to seek means of restoring peace, with shared wording (devoir, moyens, retablir la paix).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2660,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same rule with the same opening construction: once a custom is established among nations it binds them by their tacit consent.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2673,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Conspiring against or favouring a plot against the state as grounds for acting against an ambassador is common doctrine; the shared verb pair is too slight to show reliance on Burlamaqui.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2748,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's sentence closely follows Esprit des loix XXVI.23 (a succession order destructive of the state may be changed by a new law), but he names Montesquieu only in the next section, I.62.",
+    "date": "2026-11-17",
+    "labelWas": "citation"
+   },
+   "label": "close paraphrase"
+  },
+  {
+   "id": 2844,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both say a state makes the citizen's act its own by approving or ratifying it; same Wolffian doctrine and key terms.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2851,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule that foreigners' offences are punished under local law is a standard maxim, and the wording does not match beyond 'suivant les loix du pays/lieu'.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2873,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both render Wolff's argument that the common welfare of nations requires secure, inviolable treaties and that this has nothing to do with religion.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2883,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The shared phrase 'prétend avoir le droit de son côté' and the Wolffian voluntary-law argument are general; Formey states the rule for belligerents, Vattel applies it to a deposed king, so nothing ties the two passages specifically.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2915,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both state the same Wolffian rule (obscure or equivocal wording explained by clearer wording elsewhere), but Vattel recasts the main clause ('il est le meilleur interprete de lui-même').",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 2953,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That the only just cause of war is an injury done or threatened is a Grotian commonplace; the two texts share only the maxim.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2962,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's sovereign who wages wars without reason and disturbs public tranquillity is the Wolffian disturber of public peace that Formey defines.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2970,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel and Formey give the same rule in the same order: a term to leave, enemy treatment after it, and a delay for an insurmountable obstacle such as illness.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 2971,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same rule for war manifestos with the same list of words to avoid (hatred, animosity, a third violent passion), in parallel structure.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3024,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific case (freed prisoner retaken before paying owes the first ransom and a second), but in different wording and sentence form.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 3042,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both state the stock Wolffian thesis that peace treaties are real and bind successors, but in different words and with different arguments.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3076,
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's note on Bynkershoek makes the same inference about Rincon and Fregoso: Charles V's neglect to seek the murderers shows he at least approved the deed after the fact.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3100,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Wicquefort for sovereigns who only expelled plotting ambassadors, the practice the dedication states; it is a reference, not a paraphrase.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "citation"
+  },
+  {
+   "id": 3114,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same thesis, that a prince abroad may exercise sovereign acts over his own subjects but not territorial jurisdiction, and Vattel's examples follow; the sentence structure differs, so it is a loose paraphrase.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 3123,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same rule and wording: respect due to the character, and in doubt whether goods belong to the minister's person, 'on explique toujours les choses' in his favour.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3131,
+   "audit": {
+    "verdict": "right",
+    "reason": "In the same Rosny-case discussion, Barbeyrac's note on Bynkershoek says jurisdiction over the household depends on the will of the ambassador's master, which is Vattel's point.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3159,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Refusing obedience to commands evidently contrary to natural law is, as Vattel himself says, the view of all authors; nothing specific ties the passage to the Questions remark.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3175,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Grounding the perfect/imperfect right distinction in natural liberty is Vattel's (and Wolff's) standing doctrine; the §904 remark shares no wording or example with the buying case.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3194,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same phrase in Vattel's own Questions, on the same point that the prince does best to entrust justice to a company of wise, upright and enlightened judges.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3195,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both Vattel texts ground the measure of penalties in their end, to secure the safety of citizens and state, in shared wording.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3355,
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Vattel's sentence on individual natural law being modified when applied to states paraphrases Wolff's earlier 'illis convenienter immutanda sunt'; this source sentence is about modifying the natural law of nations into the voluntary law, a different point.",
+    "date": "2026-11-17"
+   },
+   "status": "rejected"
+  },
+  {
+   "id": 3362,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's preface quotes Wolff's preface in French: the opening sentence on nations using only natural law, so a separate treatise may seem superfluous.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3365,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's quoted preface renders Wolff's sentence on natural and necessary law of nations word for word.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3422,
+   "audit": {
+    "verdict": "right",
+    "reason": "Formey's 'C'est encore un droit particulier' (customary law, after conventional law) shares Vattel's Wolffian classification in the same words, which is verbatim rather than loose paraphrase.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "verbatim"
   }
  ]
 }

@@ -3,7 +3,7 @@
 # Reads edition/data.json and step10_elemens1783/matches_step10.json (the same/expands relation). Writes editions/burlamaqui-1747/, reuse/, catalogue.json.
 # The 1757 Latin translation (step 11) is not in data.json and stays out.
 import collections, os, re, sys
-from nle import ROOT, Split, apply_note_moves, dump, load, load_pass, provenance, update_catalogue, write_tables, write_text
+from nle import ROOT, Split, apply_note_moves, apply_row_edits, dump, load, load_pass, provenance, update_catalogue, write_tables, write_text
 
 SRC = sys.argv[1]
 ED = 'burlamaqui-1747'
@@ -76,7 +76,7 @@ def unit_head(s):
 SECS = D['sections']; ROWS = D['rows']
 # corrections to the working edition: footnotes attached to a neighbouring section (corrections.json)
 CORR = os.path.join(ROOT, 'editions', ED, 'corrections.json')
-if os.path.exists(CORR): apply_note_moves(SECS, ROWS, load(CORR)['noteMoves'])
+if os.path.exists(CORR): apply_note_moves(SECS, ROWS, load(CORR).get('noteMoves', [])); apply_row_edits(ROWS, load(CORR).get('rowEdits', []))
 X = Split(SECS, unit_head, MAN['viewer']['pageBreak'])
 write_text(ED, {'P' + k: v for k, v in D['titles'].items()}, X.units)
 

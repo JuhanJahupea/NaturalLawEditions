@@ -2,7 +2,7 @@
 # Usage: python tools/convert_vattel_1773.py <edition_data folder>
 # Reads data.json, en_sections.json, align.json, flags.json, para_final.json. Writes editions/vattel-1773/, reuse/, catalogue.json.
 import os, re, shutil, sys
-from nle import ROOT, Split, apply_note_moves, dump, load, load_pass, provenance, update_catalogue, write_tables, write_text
+from nle import ROOT, Split, apply_note_moves, apply_row_edits, dump, load, load_pass, provenance, update_catalogue, write_tables, write_text
 
 SRC = sys.argv[1]
 ED = 'vattel-1773'
@@ -72,7 +72,7 @@ def unit_head(s):
 SECS = D['sections']; ROWS = D['rows']
 # corrections to the working edition: footnotes attached to the neighbouring section on a shared page (corrections.json)
 CORR = os.path.join(OUT, 'corrections.json')
-if os.path.exists(CORR): apply_note_moves(SECS, ROWS, load(CORR)['noteMoves'])
+if os.path.exists(CORR): apply_note_moves(SECS, ROWS, load(CORR).get('noteMoves', [])); apply_row_edits(ROWS, load(CORR).get('rowEdits', []))
 X = Split(SECS, unit_head, MAN['viewer']['pageBreak'], OLD_TITLE)
 write_text(ED, D['titles'], X.units)
 var_at, whole, older = X.var_at, X.whole, X.older

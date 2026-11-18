@@ -1,7 +1,7 @@
 {
  "format": "nle-corrections/1",
  "edition": "burlamaqui-1747",
- "description": "Corrections to the working edition (data.json), applied by the converter (tools/nle.py apply_note_moves) and by tools/check_edition.js. noteMoves: footnotes the working edition attached to a neighbouring section. Each names the note by its section and index in data.json, its mark, and the section whose call it answers. Decided from the content of note and call and from the page breaks (the Google Books scan is not online to check against).",
+ "description": "Corrections to the working edition (data.json), applied by the converter (tools/nle.py apply_note_moves) and by tools/check_edition.js. noteMoves: footnotes the working edition attached to a neighbouring section. Each names the note by its section and index in data.json, its mark, and the section whose call it answers. Decided from the content of note and call and from the page breaks (the Google Books scan is not online to check against). rowEdits: changes to reuse rows of data.json after the precision audit (audit/precision-2026-11-17.json): label (the audit's better label), status rejected (the audit found the passages do not match; the viewer does not show the row), and audit (the verdict and reason) on every audited row.",
  "noteMoves": [
   {
    "from": "P1.6.9",
@@ -58,6 +58,591 @@
    "to": "P2.12.1",
    "start": "Voy. Part. I. Ch. X. § II.",
    "reason": "'Voy. Part. I. Ch. X. § II.' answers the call on p. 299 after 'dépend principalement de leur Sanction'."
+  }
+ ],
+ "rowEdits": [
+  {
+   "id": 1083,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The exposure of children by Greeks and Romans is a commonplace example; Locke uses it against innate principles, Burlamaqui as an error of law, and his note cites Matthew, not Locke.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1089,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both define the right/straight as the shortest path to the end by the metaphor of the straight line, Cumberland's specific teleological analogy, which Burlamaqui applies to 'règle'.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1095,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The Locke source passage is a fragment, and deceptive appearances of good and evil are a commonplace; nothing specific links Burlamaqui to this Locke section.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1096,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the generic phrase 'faire un juste discernement' of goods and evils is shared; nothing specific ties Burlamaqui's rule to Pouilly.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1106,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both use the stock argument that matter at rest cannot move itself and needs an outside first mover, but the fragments state different propositions and share no wording.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "shared argument"
+  },
+  {
+   "id": 1111,
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui's note names Hutcheson ('Mr. Hutchinson') for the term moral sense, which the Inquiry sets out in Treatise II sect. 1.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1112,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both explain away savage peoples' apparent lack of moral notions by their brutishness, but only the word 'abruti' is shared and this reply to the Lockean objection is common stock.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1135,
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Pouilly's 'joye secrette toujours prete à se developer' (ch. XVI) describes the contentment of people in moderate labour, not the joy that follows a good action; only the phrase is shared.",
+    "date": "2026-11-17"
+   },
+   "status": "rejected"
+  },
+  {
+   "id": 1141,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Mind moving the body at its pleasure is a dualist commonplace, and Burlamaqui uses it to argue the soul is spiritual, which Locke's passage does not do.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1161,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That a wise being proposes an end and uses the necessary means is a stock idea, and nothing ties Burlamaqui's sentence to Cumberland's phrase.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1167,
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui reuses his own definitional sentence ('c'est le système ou l'assemblage de ces lois... que l'on appelle') nearly word for word for the law of nations; it is the same wording, not the same content in other words.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "close paraphrase"
+  },
+  {
+   "id": 1182,
+   "audit": {
+    "verdict": "right",
+    "reason": "PDP restates Burlamaqui's own PDN doctrine that sovereignty rests on a power joined with goodness and wisdom (a 'puissance bienfaisante').",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1183,
+   "audit": {
+    "verdict": "weak",
+    "reason": "They share only the stock Burlamaqui phrase 'un être intelligent et libre'. The PDN point (moral necessity leaves freedom intact) and the PDP point (man acts on his judgments) are not the same argument.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1186,
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui's own PDP repeats the PDN claim that laws reach inner actions and thoughts, with the same 'autant du moins que' restriction.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1190,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both of Burlamaqui's texts grade an action's gravity by how noble its object is, in similar words ('objet... noble... criminelle').",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1224,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say the punishing authority may pardon, a commonplace, but the PDP passage is about the transfer of the right to punish to the magistrate, not the legislator's discretion over the sanction.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1235,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The PDP sentence is a narrower case (a law forbidding even the thought) within the parallel section; only the general point that law reaches thoughts links it to this passage.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1249,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both treat the guilt of accomplices, but the Principes says a plot makes all ordinarily equally guilty while the Droit politique punishes each in proportion to his share.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "shared argument"
+  },
+  {
+   "id": 1254,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say mental faculties are unequal in degree among men, but this is a commonplace and the shared wording is minimal.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1271,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui quotes and credits the stock Terence line; nothing ties it to Seneca's use of it.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1280,
+   "audit": {
+    "verdict": "right",
+    "reason": "The note prints Cicero's Latin sentence word for word with its reference; for this Latin passage the relation is verbatim quotation, not translation.",
+    "date": "2026-11-17",
+    "labelWas": "translation"
+   },
+   "label": "verbatim"
+  },
+  {
+   "id": 1282,
+   "audit": {
+    "verdict": "right",
+    "reason": "The note prints Seneca's Attalus saying verbatim, under a slightly wrong letter number.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1284,
+   "audit": {
+    "verdict": "right",
+    "reason": "The note prints Cicero's Latin from De Senectute 21 word for word.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1286,
+   "audit": {
+    "verdict": "right",
+    "reason": "The note prints Cicero's Latin from Tusc. I.32-33 word for word.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1289,
+   "audit": {
+    "verdict": "right",
+    "reason": "The Élémens editor reports Burlamaqui's Avertissement on publishing this first part, uncertain whether the rest would follow, in near-identical words in the third person.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1293,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same definition of man as an animal endowed with intelligence and reason, composed of body and soul, in near-identical words.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1295,
+   "audit": {
+    "verdict": "right",
+    "reason": "The definition of human actions, as depending on the soul in origin or direction, and the inference that the soul is their principle are nearly word for word in both texts.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1296,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same list of the soul's principal faculties (understanding, will, liberty) in nearly the same words.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1297,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same definition of faculty as a power of acting, at the same point (list of the soul's faculties) in Burlamaqui's later Élémens.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1306,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same definition of essential error, with the same structure and closing clause about its influence on the action taken.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1309,
+   "audit": {
+    "verdict": "right",
+    "reason": "The two Burlamaqui texts share the definition of vincible error as error contracted by negligence, avoidable with all the attention one was capable of, in nearly the same words.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1317,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-identical clause limiting liberty to acts the soul can suspend or turn as it pleases.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1323,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-verbatim same conclusion that all free actions are voluntary but not all voluntary actions free.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1325,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same definition of moeurs as free actions considered as susceptible of rules, in nearly the same words.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1341,
+   "audit": {
+    "verdict": "right",
+    "reason": "The two sentences are identical except for 'd'une' ('Tel est premierement l'état de l'homme par rapport à Dieu, qui est un état de dépendance absolue').",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "verbatim"
+  },
+  {
+   "id": 1346,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sentence that men cannot do without one another's help, in the same argument on the natural state of society.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1363,
+   "audit": {
+    "verdict": "right",
+    "reason": "The figurative definition of a rule is word for word the same apart from the added 'une Maxime'.",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "verbatim"
+  },
+  {
+   "id": 1370,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-verbatim same transitional sentence: man acts only for happiness, but can reach it only by reason.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1373,
+   "audit": {
+    "verdict": "right",
+    "reason": "The same rhetorical question appears almost word for word.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1378,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same syllogism from direction, end and happiness to the definition of droit, nearly word for word.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1383,
+   "audit": {
+    "verdict": "right",
+    "reason": "The Élémens share the PDN's 'droit as faculty' sense with the same father-educating-children example, in condensed form.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1388,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same transition to droit taken as loi, with the same example and the clause 'dans tous ces cas le droit est pris pour la loi'.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1407,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both texts treat the end of law separately with respect to subjects and to the sovereign.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1409,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sentence on the lawgiver's own end (satisfaction and glory) in both Burlamaqui texts.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "close paraphrase"
+  },
+  {
+   "id": 1410,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sentence pattern: laws are not made 'proprement' to constrain subjects but 'plutôt' to make them act according to their true interests.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1428,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both of Burlamaqui's texts give the same definition of the good or just action as one 'exactement conforme' to the law.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1442,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same author and place: God's existence is a truth evident from all sides, with clear and convincing proofs; the Principes expand the Élémens sentence.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1445,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same author, same chapter on God's existence: the denial of a Creator (chance or atheism) is called the greatest chimera or extravagance of the human mind.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1460,
+   "audit": {
+    "verdict": "right",
+    "reason": "The Principes and the Élémens share the clause on holding life, reason and all advantages from God, in the same structure and nearly the same words.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "close paraphrase"
+  },
+  {
+   "id": 1467,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument from our inclination to good and aversion to evil, in the parallel chapter, but in different words and sentence form (rhetorical questions).",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "loose paraphrase"
+  },
+  {
+   "id": 1475,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both texts give the same French rendering of Seneca word for word ('Autant d'hommes, autant de proyes et de victimes').",
+    "date": "2026-11-17",
+    "labelWas": "close paraphrase"
+   },
+   "label": "verbatim"
+  },
+  {
+   "id": 1480,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same inference that because society needs mutual benevolence, God wills men to have these sentiments, in parallel wording.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1491,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both derive the general principles of natural law from the same three states of man, Burlamaqui's own scheme in the parallel chapter.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1505,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument in the same form: natural law or obligation is universal because all men are subject to God's empire.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1511,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both give the stock definition of morality as the relation of actions to law; the edition sentence only recaps Part I ch. XI, so nothing ties this passage specifically to the Élémens sentence.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1519,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both texts give Burlamaqui's own definition of obligation as a restriction of liberty produced by reason.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1521,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The Elemens line is the definition of droit (parallel to Principes I.5.10); P2.8.3 only restates the same doctrine that reason approves what leads to happiness.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1527,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same distinction of antecedent and subsequent conscience, with the same clause 'ou avant que de les faire, ou après les avoir faites'.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1529,
+   "audit": {
+    "verdict": "right",
+    "reason": "The Principes and the Élémens share the statement that subsequent conscience is tranquil or uneasy in nearly the same words.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1534,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both tie imputation to praise or blame and reward or punishment, but that pairing is stock; the Élémens' 'two manners' answers the PDN's simple/efficacious distinction (§ IX) more than this definition.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1540,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the stock formula of what one 'could and should' prevent is shared, used for different questions (imputing others' acts vs damage by omission).",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1549,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same opening of the sanction chapter: the force of laws depends on sanction, so one must ask whether natural laws carry penalties and rewards, in nearly the same words.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1563,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same question in the same structure and mostly the same words (body's death/dissolution necessarily brings the soul's annihilation), followed in both by the argument that the body itself is not annihilated.",
+    "date": "2026-11-17",
+    "labelWas": "loose paraphrase"
+   },
+   "label": "close paraphrase"
+  },
+  {
+   "id": 1572,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both of Burlamaqui's texts end the account of the faculties the same way: the faculties joined together lead to knowledge of truth and then to true happiness.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1577,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both Burlamaqui texts argue that power gives a right to command only if reason approves it, so a malevolent power gives none.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1582,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The phrase 'gêner la liberté des sujets' recurs, but this Élémens sentence belongs to the end-of-law discussion (parallel of § III), and the Élémens' own parallel for the utility condition is a different sentence.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1593,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both versions of the conscience chapter open on the point that law serves as rule or binds only when known, and go on to conscience as the immediate rule; shared passage in other words.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1594,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The observation that good men suffer like others is a commonplace, and the two works put it to different uses.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1609,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same remark, in parallel wording, that the desire for immortality grows as one cultivates reason, within the same proof.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1610,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the stock pairing praise/blame, reward/punishment is shared; the Principes speak of their degrees, the Elemens of the two modes of imputation.",
+    "date": "2026-11-17"
+   }
   }
  ]
 }
