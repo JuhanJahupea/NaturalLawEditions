@@ -1869,7 +1869,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n225/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The footnote names Pufendorf I.4.9, the section on mixed actions done under threat of a great evil, which the paragraph follows (some phrases word for word).",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 3049,
@@ -2588,7 +2593,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "T",
    "passage": "Car naturellement chacun est maître de soimême & égal à tout autre, aussi longtems qu'il ne se trouve point assujetti à quelcun par une convention.",
    "source": "ceux que l'on dit vivre respectivement dans l'Etat de Nature, ce sont ceux qui ne sont ni soûmis à l'empire l'un de l'autre, ni dépendans d'un Maître commun",
@@ -2609,6 +2614,12 @@
     "confidence": 0.5,
     "reason": "In the same sequence from Pufendorf I.i.7, Burlamaqui defines men's natural relation as independence and equality 'aussi longtems qu'il ne se trouve point assujetti à quelcun par une convention', echoing 'toute convention qui les aît assujettis' and 'ni soûmis à l'empire l'un de l'autre'.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Natural independence until subjection by convention is a stock definition; the Pufendorf sentence shares the idea but nothing ties Burlamaqui's wording to it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -2904,7 +2915,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "T",
    "passage": "Il n'en est pas ainsi des états accessoires ou adventifs ; qui, supposant un fait humain, ne sauroient par eux-mêmes, convenir à tous les hommes indifféremment",
    "source": "L'ETAT ACCESSOIRE, que nous avons opposé à l'Etat de Nature, c'est celui où l'on est mis en conséquence de quelque acte humain, soit en naissant ou après être né.",
@@ -2925,6 +2936,12 @@
     "confidence": 0.5,
     "reason": "Burlamaqui's 'états accessoires ou adventifs' supposing 'un fait humain' restates Barbeyrac's rendering of Pufendorf's definition of the 'Etat accessoire' arising 'en conséquence de quelque acte humain', in a section whose other sentences are drawn from DJNG I.1 §§ 11 and 14.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the Pufendorfian notion of the accessory state as arising from a human act is shared; Burlamaqui's point that such states are not common to all men is not in this source sentence.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -4433,6 +4450,11 @@
     "latin": "vocabulum valde eft ambiguum",
     "nearest": "french",
     "reason": "Burlamaqui only cites Pufendorf I.1 for the ambiguity of 'droit'; the Latin § 20 opens 'Jus vocabulum valde est ambiguum' (OCR 'fares'), matching Barbeyrac's 'Le terme de Droit est fort ambigu'."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Note (a) cites Pufendorf DNG I.I § 19, where the four kinds of power that Burlamaqui lists are set out.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -4473,6 +4495,11 @@
     "latin": "vocabulum valde eft ambiguum",
     "nearest": "french",
     "reason": "Burlamaqui only cites Pufendorf I.1 for the ambiguity of 'droit'; the Latin § 20 opens 'Jus vocabulum valde est ambiguum' (OCR 'fares'), matching Barbeyrac's 'Le terme de Droit est fort ambigu'."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "The note names Pufendorf I.1.19, which sets out the kinds of moral power and right (perfect and imperfect, personal and communicable) that the paragraph distinguishes.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -5866,6 +5893,11 @@
     "latin": "",
     "nearest": "french",
     "reason": "Pufendorf only says right to oblige does not arise from force alone and speaks of fear from power as one component; the stronger claim that force 'enters for nothing' and merely serves is Barbeyrac's correction in his note (source text truncated)."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui quotes Barbeyrac's note (force only enables the superior to enforce his right) and says the thought is not right.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -5906,6 +5938,11 @@
     "latin": "Sequiturergo, utille obligations frcapax , qui & normam preefcriptam poteft cognofcere ὃς voluntatem haber intrinfece liberam",
     "nearest": "french",
     "reason": "Latin: capable of obligation is one who can know the prescribed norm and has an inwardly free will, and (p147.1) who is not immune from a superior's power; same two conditions as the French."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui names Pufendorf (note: DNG I.VI §§ 6, 8) for the conditions that make man susceptible of obligation, which § 6 begins to set out.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -6587,6 +6624,11 @@
     "latin": "Qua lex pertnuttit, ila neque precipit , neque vetat; adeoque circa eadem nihil agit",
     "nearest": "french",
     "reason": "Same rule in Pufendorf's text: what the law permits it neither commands nor forbids, so it does nothing about it."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui quotes Pufendorf's sentence on permission word for word and names him.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -9258,7 +9300,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n284/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui denies Pufendorf's claim that failing one condition of conformity makes an action bad; for him it is only indifferent.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 3247,
@@ -9482,6 +9529,11 @@
     "latin": "",
     "nearest": "french",
     "reason": "Barbeyrac's attack on the Scholastic 'abstraction' view of dancing is his own note; the Latin candidates (pp.106,116,117) treat indifferentia and error but not this argument."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Same refutation of the Scholastics' abstract indifference, ending with the near-identical clause on circumstances of persons, times and places.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -10531,7 +10583,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "T",
    "passage": "elle nous est suffisamment connue par des principes gravés dans notre cœur & par notre propre Raison",
    "source": "il suffit que l'on connoisse la volonté du Supérieur, de quelque maniére que ce soit, même par les lumiéres seules de la Raison",
@@ -10552,6 +10604,12 @@
     "confidence": 0.5,
     "reason": "Same argument against Hobbes in the same sequence: God's will is known from consequences reason draws from our constitution and the nature of things, reason speaks as an inner 'langage', and a law so discovered from principles counts as 'suffisamment' notified to be properly a law.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "That natural law is sufficiently notified through reason is common doctrine; Burlamaqui's list of law's conditions has nothing specific to Pufendorf II.3.20.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -13600,7 +13658,7 @@
    "locus": "Liv. II ch. III § 5",
    "page": "PUF34T1.p353",
    "inNote": false,
-   "label": "open disagreement",
+   "label": "shared argument",
    "confidence": 0.5,
    "status": "match",
    "step": "T",
@@ -13616,7 +13674,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n352/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Pufendorf only reports the voluntarist view in order to answer it, and Burlamaqui follows his answer (God was free to create man or not, but having done so...), so the two agree rather than disagree.",
+    "date": "2026-11-18",
+    "labelWas": "open disagreement"
+   }
   },
   {
    "id": 3363,
@@ -14073,7 +14137,7 @@
    "locus": "Liv. I ch. VI § 18, n. 6",
    "page": "PUF34T1.p281",
    "inNote": true,
-   "label": "open disagreement",
+   "label": "close paraphrase",
    "confidence": 0.8,
    "status": "match",
    "step": "T",
@@ -14096,6 +14160,12 @@
     "latin": "Tria' ha-c jura haud dubie omnes homines obligant, ex quo, quantum fatis eft ad eorum notitiam pervenerunt.",
     "nearest": "french",
     "reason": "Grotius himself holds that the divine voluntary law binds all men once sufficiently known to them (I.1.15), which is what Barbeyrac's note attributes to him; the chunks are Grotius pages."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui takes Barbeyrac's report of Grotius's universal voluntary divine law nearly word for word and agrees with Barbeyrac, so he does not reject this source.",
+    "date": "2026-11-18",
+    "labelWas": "open disagreement"
    }
   },
   {
@@ -14162,7 +14232,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n281/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-verbatim reuse of Barbeyrac's dilemma that binding only those who know the laws destroys their universality.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 3379,
@@ -14454,6 +14529,11 @@
     "latin": "",
     "nearest": "french",
     "reason": "Barbeyrac's note n.13 on the origin of the 'eternity' of natural laws is his own, citing Pufendorf's Apologia §26 (Eris Scandica), which is not the De jure text in the candidates."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Reworks Barbeyrac's note almost clause by clause: the eternity of natural law was said in contrast to changing civil laws, older than Minos and Solon, as old as mankind.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -15535,6 +15615,11 @@
     "latin": "",
     "nearest": "n/a",
     "reason": "The Latin of II.iii §22-23 discusses jus gentium (Hobbes, Felden, Grotius) but nowhere gives the 'man as man / man as animal' classification, so the note appears to be Barbeyrac's own report of the Roman-jurist distinction."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "The sentence on Ulpian's distinction (droit des gens fits man as man, as against man as animal) is copied word for word from Barbeyrac's note.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -16250,9 +16335,9 @@
    "locus": "Liv. I ch. VI § 7",
    "page": "PUF34T1.p258",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "shared argument",
    "confidence": 0.6,
-   "status": "match",
+   "status": "possible",
    "step": "T",
    "passage": "toutes les fois qu'il le jugera à propos",
    "source": "toutes fois & quantes que bon lui sembleroit",
@@ -16273,6 +16358,13 @@
     "latin": "fruftra ramen id eff , cum Jiberare fe arbitrio {ug citra preeftationem alicujus rei poflir",
     "nearest": "french",
     "reason": "Pufendorf argues that self-obligation is void because the obligor can release himself at will, the same argument Burlamaqui follows via Barbeyrac's French."
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "The passage is in Burlamaqui's quotation of Barbeyrac's argument (note to Grotius / Jugement), which only echoes Pufendorf's self-release argument in other words.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
    }
   },
   {
@@ -16994,7 +17086,12 @@
      "https://archive.org/details/ledroitdelanatur01pufe/page/n362/mode/1up"
     ]
    ],
-   "quoting": "Cicero, De Officiis"
+   "quoting": "Cicero, De Officiis",
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui's note reproduces the same Cicero pairing (De Off. II.3 and III.3 on Socrates) as Barbeyrac's note, and cites Pufendorf II.3.10.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 3456,
@@ -17407,7 +17504,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.6,
-   "status": "match",
+   "status": "possible",
    "step": "T",
    "passage": "NOUS jugeons de nos actions ou avant que de les faire, ou après les avoir faites",
    "source": "Cet acte de l'Entendement se fait ou (1) avant l'Action, ou après l'Action.",
@@ -17421,7 +17518,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n197/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The division of conscience into judgment before and after the action is the stock scholastic antecedent/consequent distinction; the wording parallels Pufendorf but nothing specific shows dependence.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
   },
   {
    "id": 3467,
@@ -17955,6 +18058,11 @@
     "latin": "fuafionem quidem fuam pro vera & certa habet, nec quare eam in dubium revocetidoneas rationes vider, οἵ eandem ad formam demonftrationis deducere non notit, fed topicis fere argumentis adquiefcar",
     "nearest": "french",
     "reason": "Latin: probable conscience holds its persuasion true and certain, sees no reason to doubt, cannot reduce it to demonstrative form, rests on topical arguments; same as the French."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Same definition of probable conscience, with Pufendorf-Barbeyrac's wording: convinced of the truth of its judgment but unable to demonstrate it, resting on likelihood.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -18075,6 +18183,11 @@
     "latin": "que primis principiis longius diftant, queque adeo operofiore deduchone indigent",
     "nearest": "french",
     "reason": "Latin: this holds the more for propositions that are farther from first principles and need a more laborious deduction."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Identical clause on moral maxims remote from first principles needing a long chain of reasoning, in the same context of probable conscience.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -18934,6 +19047,11 @@
     "latin": "quando plurium intereft , aftionem aliquam fieri vel non fiert, ἢ unas eorumiftam non imputaverit agenti, cxterorumjuri, quodabillo nondependet, nihil decedere",
     "nearest": "french",
     "reason": "Latin states that if one of the interested parties does not impute the act to the agent, the right of the others, which does not depend on him, is not diminished; Barbeyrac's French follows it closely and Burlamaqui follows the French."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Same clause word for word ('cela ne préjudicie en aucune manière au droit des autres, qui n'est'), in the same sequence on pardon and imputation.",
+    "date": "2026-11-18"
    }
   },
   {

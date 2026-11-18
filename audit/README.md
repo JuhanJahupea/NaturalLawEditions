@@ -100,3 +100,49 @@ Changes: close paraphrase → loose paraphrase 62; loose paraphrase → close pa
 
 Applied (Vattel 1.16, Burlamaqui 1.12): a changed row carries `labelCheck` `{was, reason, date}`, and the panel shows it. Status is unchanged.
 
+## Second precision sample (2026-11-18)
+
+`precision-2026-11-18.json` holds every verdict.
+
+After the re-judge, Claude Opus read a random sample of the match rows no audit had read (commonplaces left out): 100 of Vattel and 50 of Burlamaqui, with the task of the first audit (`tools/transcription/PRECISION_PROMPT.md`). Every match row an audit has read is right by now: weak rows became possible and wrong rows were rejected. The share of right match rows is therefore (audited + unaudited × share right in the sample) / all.
+
+| Edition | Sample | Right | Weak | Wrong | Label does not fit | Match rows | Right, all match rows (95% interval) |
+|---|---|---|---|---|---|---|---|
+| Vattel | 100 | 87 | 13 | 0 | 9 | 2,289 (283 audited) | 89% (82–93) |
+| Burlamaqui | 50 | 44 | 6 | 0 | 5 | 1,310 (150 audited) | 89% (79–95) |
+
+Weak rows by table: Vattel, Wolff *Jus gentium* 8 of 46, Formey 3 of 9, Vattel's *Questions* and *Amusemens* 2 of 4; Grotius 0 of 29. Burlamaqui, Pufendorf 5 of 22, Locke 1 of 1. No sampled row is wrong (95% interval 0–4% for Vattel, 0–7% for Burlamaqui).
+
+Applied (Vattel 1.17, Burlamaqui 1.13): the 19 weak rows have status possible, 14 labels are changed, every sampled row carries its verdict in `audit`.
+
+## Wolff loci (2026-11-18)
+
+`wolff-loci-2026-11-18.json` lists every correction.
+
+The readers of the second sample found Wolff rows whose locus is a § that the source passage only cites: Wolff's references such as "(§. 380. 547.)" stand inside his text, and the first pass read the locus from them. A script (`tools/transcription/wolff_loci.py`) placed each Wolff row's source passage in the transcription (`texts/`) and read the § it stands in. Where the passage was found on the row's page and the § differs from the locus by more than one, the locus is corrected: 191 rows (*Jus gentium* 165, *Institutiones* 26), 17% of Wolff rows. In every one the old § number is cited on that page. Each carries `locusCheck` `{was, date}`. Differences of one § were left alone: there a § marker may be missing from the transcription. 186 source passages were not found in the transcription (OCR-era wording, or text running over two pages); their loci are unchecked.
+
+## Rows added for the weak rows (2026-11-18)
+
+`additions-2026-11-18.json` holds what the readers wrote.
+
+The readers of the re-judge and of the first audit named, for many weak rows, the passage of Wolff or Grotius that Vattel follows. A script (`tools/transcription/add_cand.py`) read the named loci from the reasons: of 348 weak rows naming Wolff or Grotius, 201 already had a row at the named § in the same section. For the other 147 (in 120 sections), Claude Opus found the named passage in the transcriptions and wrote a row where Vattel takes wording, or a specific argument, definition, example or order of points, from it (`tools/transcription/ADDITIONS_PROMPT.md`). The readers wrote 193 rows and no row for 40 weak rows (the reason did not hold, or the table already had the row under another locus). After placing each passage in Vattel and each source passage on its page, and leaving out duplicates, 191 rows were added: 144 match, 47 possible (*Jus gentium* 118, Grotius 50, *Institutiones* 23). They are in `editions/vattel-1773/passes/additions.json`, step A.
+
+## Recall (2026-11-18)
+
+`recall-2026-11-18.json` holds every section's reading.
+
+Precision says how many rows are right; recall says how much reuse the tables miss. Claude Opus read 24 random sections of Vattel (Préliminaires and Livres I–IV, by §) with Wolff's *Jus gentium* and *Institutiones*, Grotius and Pufendorf (both in Barbeyrac's translation, his notes included), and listed every reuse of these four sources it found, with the row that covers it, if any (`tools/transcription/RECALL_PROMPT.md`). The reader started from the pages that rows of nearby sections cite, Vattel's own citations and the § of Wolff on the same matter, then searched each source.
+
+| Reuse found | Found | Covered by a row | Covered by a match row |
+|---|---|---|---|
+| All | 208 | 57 (27%) | 44 (21%) |
+| Confidence 0.5 or more | 121 | 44 (36%) | 41 (34%) |
+| of which *Jus gentium* | 49 | 23 (47%) | 23 (47%) |
+| of which Grotius | 34 | 13 (38%) | 11 (32%) |
+| of which Pufendorf | 25 | 5 (20%) | 5 (20%) |
+| of which *Institutiones* | 13 | 3 (23%) | 2 (15%) |
+
+Of the reuse the reader would defend (confidence 0.5 or more), the tables hold about a third (95% interval about 28–45%, wider in fact since the sample is 24 sections). The tables miss most: whole sections that follow one § of Wolff (II.92, II.101 on §§ 284–300), Pufendorf's examples and Barbeyrac's notes used beside Grotius (II.136, III.187), and Wolff's *Institutiones*, which Vattel uses beside *Jus gentium*. In 5 of the 23 sections with reuse, no row covers any of it (I.64, II.92, II.322, IV.36, IV.84); in I.80 the reader found no reuse of the four sources. The readers' own finds are not checked by a second reader; their precision is not measured.
+
+The reuse the readers found and no row covered is added: 150 rows, 76 match and 74 possible (step C). The readers judged two rows wrong (4022, Grotius; 1479, Wolff § 700); they have status `rejected`.
+

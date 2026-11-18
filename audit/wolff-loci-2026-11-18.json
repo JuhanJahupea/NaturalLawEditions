@@ -1,0 +1,1727 @@
+{
+ "format": "nle-audit/1",
+ "date": "2026-11-18",
+ "kind": "locus",
+ "description": "Wolff rows whose locus names a § the source passage only cites: the passage, placed in the transcription (texts/), stands in found_para.",
+ "rows": [
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 21,
+   "unit": "Prelim.7",
+   "locus": "§ 136",
+   "page": "JG.pdf31",
+   "found_para": 5
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 23,
+   "unit": "Prelim.8",
+   "locus": "§ 142",
+   "page": "JG.pdf31",
+   "found_para": 5
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 34,
+   "unit": "Prelim.13",
+   "locus": "§ 937",
+   "page": "JG.pdf550",
+   "found_para": 649
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 39,
+   "unit": "Prelim.14",
+   "locus": "§ 156",
+   "page": "JG.pdf584",
+   "found_para": 687
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 40,
+   "unit": "Prelim.14",
+   "locus": "§ 61",
+   "page": "JG.pdf87",
+   "found_para": 75
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 71,
+   "unit": "I.2",
+   "locus": "§ 28",
+   "page": "JG.pdf227",
+   "found_para": 255
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 95,
+   "unit": "I.16",
+   "locus": "§ 19",
+   "page": "JG.pdf52",
+   "found_para": 31
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 96,
+   "unit": "I.16",
+   "locus": "§ 144",
+   "page": "JG.pdf52",
+   "found_para": 31
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 134,
+   "unit": "I.57",
+   "locus": "§ 153",
+   "page": "JG.pdf215",
+   "found_para": 243
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 148,
+   "unit": "I.69",
+   "locus": "§ 674",
+   "page": "JG.pdf830",
+   "found_para": 1007
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 160,
+   "unit": "I.86",
+   "locus": "§ 58",
+   "page": "JG.pdf87",
+   "found_para": 75
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 166,
+   "unit": "I.89",
+   "locus": "§ 23",
+   "page": "JG.pdf76",
+   "found_para": 58
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 178,
+   "unit": "I.93",
+   "locus": "§ 187",
+   "page": "JG.pdf338",
+   "found_para": 389
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 195,
+   "unit": "I.103",
+   "locus": "§ 929",
+   "page": "JG.pdf126",
+   "found_para": 119
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 197,
+   "unit": "I.103",
+   "locus": "§ 929",
+   "page": "JG.pdf126",
+   "found_para": 119
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 267,
+   "unit": "I.193",
+   "locus": "§ 382",
+   "page": "JG.pdf92",
+   "found_para": 80
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 268,
+   "unit": "I.193",
+   "locus": "§ 55",
+   "page": "JG.pdf92",
+   "found_para": 80
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 289,
+   "unit": "I.217",
+   "locus": "§ 411",
+   "page": "JG.pdf135",
+   "found_para": 133
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 311,
+   "unit": "I.230",
+   "locus": "§ 409",
+   "page": "JG.pdf145",
+   "found_para": 148
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 314,
+   "unit": "I.231",
+   "locus": "§ 156",
+   "page": "JG.pdf146",
+   "found_para": 149
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 320,
+   "unit": "I.234",
+   "locus": "§ 7",
+   "page": "JG.pdf98",
+   "found_para": 87
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 321,
+   "unit": "I.235",
+   "locus": "§ 129",
+   "page": "JG.pdf109",
+   "found_para": 98
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 322,
+   "unit": "I.235",
+   "locus": "§ 88",
+   "page": "JG.pdf109",
+   "found_para": 98
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 347,
+   "unit": "I.253",
+   "locus": "§ 585",
+   "page": "JG.pdf122",
+   "found_para": 113
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 377,
+   "unit": "I.288",
+   "locus": "§ 690",
+   "page": "JG.pdf301",
+   "found_para": 346
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 406,
+   "unit": "II.9",
+   "locus": "§ 906",
+   "page": "JG.pdf152",
+   "found_para": 157
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 411,
+   "unit": "II.10",
+   "locus": "§ 156",
+   "page": "JG.pdf153",
+   "found_para": 159
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 421,
+   "unit": "II.14",
+   "locus": "§ 156",
+   "page": "JG.pdf171",
+   "found_para": 185
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 432,
+   "unit": "II.19",
+   "locus": "§ 3",
+   "page": "JG.pdf235",
+   "found_para": 266
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 433,
+   "unit": "II.19",
+   "locus": "§ 936",
+   "page": "JG.pdf235",
+   "found_para": 266
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 436,
+   "unit": "II.23",
+   "locus": "§ 47",
+   "page": "JG.pdf189",
+   "found_para": 205
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 440,
+   "unit": "II.25",
+   "locus": "§ 354",
+   "page": "JG.pdf177",
+   "found_para": 190
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 441,
+   "unit": "II.25",
+   "locus": "§ 61",
+   "page": "JG.pdf87",
+   "found_para": 75
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 442,
+   "unit": "II.25",
+   "locus": "§ 156",
+   "page": "JG.pdf584",
+   "found_para": 687
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 453,
+   "unit": "II.32",
+   "locus": "§ 789",
+   "page": "JG.pdf187",
+   "found_para": 202
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 455,
+   "unit": "II.33",
+   "locus": "§ 322",
+   "page": "JG.pdf194",
+   "found_para": 210
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 456,
+   "unit": "II.33",
+   "locus": "§ 440",
+   "page": "JG.pdf194",
+   "found_para": 210
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 461,
+   "unit": "II.34",
+   "locus": "§ 191",
+   "page": "JG.pdf208",
+   "found_para": 231
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 468,
+   "unit": "II.38",
+   "locus": "§ 153",
+   "page": "JG.pdf215",
+   "found_para": 243
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 476,
+   "unit": "II.43",
+   "locus": "§ 153",
+   "page": "JG.pdf218",
+   "found_para": 246
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 478,
+   "unit": "II.44",
+   "locus": "§ 42",
+   "page": "JG.pdf218",
+   "found_para": 246
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 480,
+   "unit": "II.45",
+   "locus": "§ 42",
+   "page": "JG.pdf218",
+   "found_para": 246
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 482,
+   "unit": "II.48",
+   "locus": "§ 859",
+   "page": "JG.pdf224",
+   "found_para": 251
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 496,
+   "unit": "II.58",
+   "locus": "§ 255",
+   "page": "JG.pdf229",
+   "found_para": 259
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 497,
+   "unit": "II.59",
+   "locus": "§ 255",
+   "page": "JG.pdf229",
+   "found_para": 259
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 500,
+   "unit": "II.60",
+   "locus": "§ 585",
+   "page": "JG.pdf232",
+   "found_para": 262
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 502,
+   "unit": "II.61",
+   "locus": "§ 255",
+   "page": "JG.pdf229",
+   "found_para": 259
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 503,
+   "unit": "II.61",
+   "locus": "§ 512",
+   "page": "JG.pdf469",
+   "found_para": 551
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 523,
+   "unit": "II.77",
+   "locus": "§ 318",
+   "page": "JG.pdf506",
+   "found_para": 599
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 524,
+   "unit": "II.77",
+   "locus": "§ 647",
+   "page": "JG.pdf277",
+   "found_para": 318
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 548,
+   "unit": "II.96",
+   "locus": "§ 178",
+   "page": "JG.pdf267",
+   "found_para": 308
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 562,
+   "unit": "II.106",
+   "locus": "§ 70",
+   "page": "JG.pdf198",
+   "found_para": 215
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 564,
+   "unit": "II.109",
+   "locus": "§ 35",
+   "page": "JG.pdf284",
+   "found_para": 327
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 565,
+   "unit": "II.109",
+   "locus": "§ 4",
+   "page": "JG.pdf252",
+   "found_para": 289
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 568,
+   "unit": "II.110",
+   "locus": "§ 289",
+   "page": "JG.pdf284",
+   "found_para": 327
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 569,
+   "unit": "II.111",
+   "locus": "§ 999",
+   "page": "JG.pdf284",
+   "found_para": 327
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 580,
+   "unit": "II.115",
+   "locus": "§ 30",
+   "page": "JG.pdf294",
+   "found_para": 336
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 606,
+   "unit": "II.126",
+   "locus": "§ 129",
+   "page": "JG.pdf109",
+   "found_para": 98
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 608,
+   "unit": "II.127",
+   "locus": "§ 685",
+   "page": "JG.pdf298",
+   "found_para": 343
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 611,
+   "unit": "II.128",
+   "locus": "§ 29",
+   "page": "JG.pdf305",
+   "found_para": 349
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 612,
+   "unit": "II.129",
+   "locus": "§ 343",
+   "page": "JG.pdf304",
+   "found_para": 349
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 613,
+   "unit": "II.130",
+   "locus": "§ 3",
+   "page": "JG.pdf298",
+   "found_para": 343
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 615,
+   "unit": "II.131",
+   "locus": "§ 906",
+   "page": "JG.pdf152",
+   "found_para": 157
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 617,
+   "unit": "II.132",
+   "locus": "§ 343",
+   "page": "JG.pdf301",
+   "found_para": 346
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 620,
+   "unit": "II.134",
+   "locus": "§ 70",
+   "page": "JG.pdf198",
+   "found_para": 215
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 621,
+   "unit": "II.135",
+   "locus": "§ 206",
+   "page": "JG.pdf304",
+   "found_para": 349
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 622,
+   "unit": "II.135",
+   "locus": "§ 159",
+   "page": "JG.pdf702",
+   "found_para": 826
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 625,
+   "unit": "II.137",
+   "locus": "§ 186",
+   "page": "JG.pdf303",
+   "found_para": 348
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 627,
+   "unit": "II.138",
+   "locus": "§ 156",
+   "page": "JG.pdf304",
+   "found_para": 349
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 628,
+   "unit": "II.139",
+   "locus": "§ 118",
+   "page": "JG.pdf306",
+   "found_para": 350
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 634,
+   "unit": "II.140",
+   "locus": "§ 3",
+   "page": "JG.pdf313",
+   "found_para": 358
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 652,
+   "unit": "II.148",
+   "locus": "§ 1054",
+   "page": "JG.pdf314",
+   "found_para": 359
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 655,
+   "unit": "II.150",
+   "locus": "§ 22",
+   "page": "JG.pdf320",
+   "found_para": 366
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 656,
+   "unit": "II.151",
+   "locus": "§ 578",
+   "page": "JG.pdf322",
+   "found_para": 367
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 663,
+   "unit": "II.155",
+   "locus": "§ 369",
+   "page": "JG.pdf388",
+   "found_para": 440
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 664,
+   "unit": "II.155",
+   "locus": "§ 381",
+   "page": "JG.pdf388",
+   "found_para": 440
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 670,
+   "unit": "II.158",
+   "locus": "§ 440",
+   "page": "JG.pdf362",
+   "found_para": 408
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 678,
+   "unit": "II.163",
+   "locus": "§ 33",
+   "page": "JG.pdf329",
+   "found_para": 376
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 679,
+   "unit": "II.163",
+   "locus": "§ 33",
+   "page": "JG.pdf329",
+   "found_para": 376
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 682,
+   "unit": "II.164",
+   "locus": "§ 364",
+   "page": "JG.pdf330",
+   "found_para": 377
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 685,
+   "unit": "II.165",
+   "locus": "§ 369",
+   "page": "JG.pdf388",
+   "found_para": 440
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 706,
+   "unit": "II.175",
+   "locus": "§ 269",
+   "page": "JG.pdf355",
+   "found_para": 403
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 736,
+   "unit": "II.200",
+   "locus": "§ 117",
+   "page": "JG.pdf381",
+   "found_para": 430
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 742,
+   "unit": "II.204",
+   "locus": "§ 369",
+   "page": "JG.pdf388",
+   "found_para": 440
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 759,
+   "unit": "II.212",
+   "locus": "§ 586",
+   "page": "JG.pdf409",
+   "found_para": 473
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 760,
+   "unit": "II.212",
+   "locus": "§ 393",
+   "page": "JG.pdf409",
+   "found_para": 473
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 768,
+   "unit": "II.220",
+   "locus": "§ 17",
+   "page": "JG.pdf466",
+   "found_para": 547
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 772,
+   "unit": "II.222",
+   "locus": "§ 17",
+   "page": "JG.pdf466",
+   "found_para": 547
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 782,
+   "unit": "II.230",
+   "locus": "§ 512",
+   "page": "JG.pdf469",
+   "found_para": 551
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 789,
+   "unit": "II.234",
+   "locus": "§ 660",
+   "page": "JG.pdf474",
+   "found_para": 560
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 803,
+   "unit": "II.242",
+   "locus": "§ 512",
+   "page": "JG.pdf421",
+   "found_para": 488
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 804,
+   "unit": "II.242",
+   "locus": "§ 512",
+   "page": "JG.pdf421",
+   "found_para": 488
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 807,
+   "unit": "II.245",
+   "locus": "§ 757",
+   "page": "JG.pdf460",
+   "found_para": 540
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 820,
+   "unit": "II.252",
+   "locus": "§ 368",
+   "page": "JG.pdf438",
+   "found_para": 510
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 826,
+   "unit": "II.255",
+   "locus": "§ 427",
+   "page": "JG.pdf443",
+   "found_para": 517
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 834,
+   "unit": "II.259",
+   "locus": "§ 509",
+   "page": "JG.pdf459",
+   "found_para": 539
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 837,
+   "unit": "II.261",
+   "locus": "§ 992",
+   "page": "JG.pdf457",
+   "found_para": 537
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 842,
+   "unit": "II.266",
+   "locus": "§ 972",
+   "page": "JG.pdf671",
+   "found_para": 791
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 843,
+   "unit": "II.266",
+   "locus": "§ 424",
+   "page": "JG.pdf464",
+   "found_para": 544
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 847,
+   "unit": "II.268",
+   "locus": "§ 369",
+   "page": "JG.pdf328",
+   "found_para": 375
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 888,
+   "unit": "II.300",
+   "locus": "§ 26",
+   "page": "JG.pdf371",
+   "found_para": 420
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 911,
+   "unit": "II.326",
+   "locus": "§ 564",
+   "page": "JG.pdf479",
+   "found_para": 570
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 916,
+   "unit": "II.332",
+   "locus": "§ 3",
+   "page": "JG.pdf190",
+   "found_para": 206
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 923,
+   "unit": "II.336",
+   "locus": "§ 615",
+   "page": "JG.pdf529",
+   "found_para": 629
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 924,
+   "unit": "II.337",
+   "locus": "§ 1102",
+   "page": "JG.pdf686",
+   "found_para": 808
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 929,
+   "unit": "II.339",
+   "locus": "§ 173",
+   "page": "JG.pdf537",
+   "found_para": 636
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 937,
+   "unit": "II.344",
+   "locus": "§ 1112",
+   "page": "JG.pdf499",
+   "found_para": 589
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 940,
+   "unit": "II.346",
+   "locus": "§ 2",
+   "page": "JG.pdf252",
+   "found_para": 289
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 944,
+   "unit": "II.349",
+   "locus": "§ 538",
+   "page": "JG.pdf506",
+   "found_para": 599
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 949,
+   "unit": "II.351",
+   "locus": "§ 501",
+   "page": "JG.pdf432",
+   "found_para": 503
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 978,
+   "unit": "III.11",
+   "locus": "§ 930",
+   "page": "JG.pdf644",
+   "found_para": 762
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 995,
+   "unit": "III.22",
+   "locus": "§ 684",
+   "page": "JG.pdf656",
+   "found_para": 774
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 999,
+   "unit": "III.23",
+   "locus": "§ 156",
+   "page": "JG.pdf658",
+   "found_para": 776
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1010,
+   "unit": "III.30",
+   "locus": "§ 621",
+   "page": "JG.pdf527",
+   "found_para": 628
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1014,
+   "unit": "III.33",
+   "locus": "§ 440",
+   "page": "JG.pdf523",
+   "found_para": 623
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1015,
+   "unit": "III.34",
+   "locus": "§ 13",
+   "page": "JG.pdf526",
+   "found_para": 627
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1018,
+   "unit": "III.35",
+   "locus": "§ 972",
+   "page": "JG.pdf529",
+   "found_para": 629
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1019,
+   "unit": "III.36",
+   "locus": "§ 615",
+   "page": "JG.pdf529",
+   "found_para": 629
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1025,
+   "unit": "III.38",
+   "locus": "§ 1101",
+   "page": "JG.pdf533",
+   "found_para": 632
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1026,
+   "unit": "III.38",
+   "locus": "§ 1101",
+   "page": "JG.pdf533",
+   "found_para": 632
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1027,
+   "unit": "III.38",
+   "locus": "§ 295",
+   "page": "JG.pdf744",
+   "found_para": 888
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1033,
+   "unit": "III.40",
+   "locus": "§ 1101",
+   "page": "JG.pdf533",
+   "found_para": 632
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1034,
+   "unit": "III.41",
+   "locus": "§ 12",
+   "page": "JG.pdf537",
+   "found_para": 636
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1035,
+   "unit": "III.41",
+   "locus": "§ 1065",
+   "page": "JG.pdf537",
+   "found_para": 636
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1112,
+   "unit": "III.95",
+   "locus": "§ 730",
+   "page": "JG.pdf621",
+   "found_para": 736
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1119,
+   "unit": "III.101",
+   "locus": "§ 672",
+   "page": "JG.pdf621",
+   "found_para": 736
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1127,
+   "unit": "III.105",
+   "locus": "§ 672",
+   "page": "JG.pdf621",
+   "found_para": 736
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1146,
+   "unit": "III.123",
+   "locus": "§ 55",
+   "page": "JG.pdf582",
+   "found_para": 686
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1150,
+   "unit": "III.127",
+   "locus": "§ 630",
+   "page": "JG.pdf588",
+   "found_para": 691
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1151,
+   "unit": "III.127",
+   "locus": "§ 71",
+   "page": "JG.pdf588",
+   "found_para": 691
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1159,
+   "unit": "III.134",
+   "locus": "§ 363",
+   "page": "JG.pdf593",
+   "found_para": 697
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1161,
+   "unit": "III.136",
+   "locus": "§ 613",
+   "page": "JG.pdf662",
+   "found_para": 781
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1167,
+   "unit": "III.139",
+   "locus": "§ 699",
+   "page": "JG.pdf682",
+   "found_para": 804
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1174,
+   "unit": "III.142",
+   "locus": "§ 39",
+   "page": "JG.pdf677",
+   "found_para": 797
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1208,
+   "unit": "III.172",
+   "locus": "§ 926",
+   "page": "JG.pdf698",
+   "found_para": 823
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1225,
+   "unit": "III.190",
+   "locus": "§ 158",
+   "page": "JG.pdf744",
+   "found_para": 888
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1234,
+   "unit": "III.193",
+   "locus": "§ 586",
+   "page": "JG.pdf751",
+   "found_para": 894
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1236,
+   "unit": "III.195",
+   "locus": "§ 633",
+   "page": "JG.pdf744",
+   "found_para": 888
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1237,
+   "unit": "III.195",
+   "locus": "§ 814",
+   "page": "JG.pdf751",
+   "found_para": 894
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1239,
+   "unit": "III.196",
+   "locus": "§ 120",
+   "page": "JG.pdf727",
+   "found_para": 861
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1248,
+   "unit": "III.205",
+   "locus": "§ 814",
+   "page": "JG.pdf751",
+   "found_para": 894
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1250,
+   "unit": "III.207",
+   "locus": "§ 894",
+   "page": "JG.pdf755",
+   "found_para": 898
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1252,
+   "unit": "III.209",
+   "locus": "§ 896",
+   "page": "JG.pdf759",
+   "found_para": 904
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1255,
+   "unit": "III.211",
+   "locus": "§ 4",
+   "page": "JG.pdf758",
+   "found_para": 903
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1257,
+   "unit": "III.216",
+   "locus": "§ 990",
+   "page": "JG.pdf820",
+   "found_para": 992
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1258,
+   "unit": "III.219",
+   "locus": "§ 336",
+   "page": "JG.pdf760",
+   "found_para": 905
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1275,
+   "unit": "III.236",
+   "locus": "§ 890",
+   "page": "JG.pdf792",
+   "found_para": 960
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1316,
+   "unit": "III.258",
+   "locus": "§ 836",
+   "page": "JG.pdf774",
+   "found_para": 929
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1320,
+   "unit": "III.260",
+   "locus": "§ 836",
+   "page": "JG.pdf774",
+   "found_para": 929
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1358,
+   "unit": "III.286",
+   "locus": "§ 427",
+   "page": "JG.pdf443",
+   "found_para": 517
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1369,
+   "unit": "IV.1",
+   "locus": "§ 1102",
+   "page": "JG.pdf791",
+   "found_para": 959
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1376,
+   "unit": "IV.5",
+   "locus": "§ 273",
+   "page": "JG.pdf526",
+   "found_para": 627
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1389,
+   "unit": "IV.14",
+   "locus": "§ 357",
+   "page": "JG.pdf813",
+   "found_para": 984
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1395,
+   "unit": "IV.19",
+   "locus": "§ 890",
+   "page": "JG.pdf816",
+   "found_para": 987
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1399,
+   "unit": "IV.21",
+   "locus": "§ 990",
+   "page": "JG.pdf820",
+   "found_para": 992
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1413,
+   "unit": "IV.30",
+   "locus": "§ 989",
+   "page": "JG.pdf825",
+   "found_para": 1000
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1419,
+   "unit": "IV.34",
+   "locus": "§ 986",
+   "page": "JG.pdf828",
+   "found_para": 1005
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1421,
+   "unit": "IV.34",
+   "locus": "§ 881",
+   "page": "JG.pdf828",
+   "found_para": 1005
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1444,
+   "unit": "IV.57",
+   "locus": "§ 905",
+   "page": "JG.pdf854",
+   "found_para": 1044
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1447,
+   "unit": "IV.59",
+   "locus": "§ 62",
+   "page": "JG.pdf352",
+   "found_para": 400
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1455,
+   "unit": "IV.67",
+   "locus": "§ 278",
+   "page": "JG.pdf856",
+   "found_para": 1045
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1467,
+   "unit": "IV.77",
+   "locus": "§ 662",
+   "page": "JG.pdf406",
+   "found_para": 468
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1476,
+   "unit": "IV.81",
+   "locus": "§ 613",
+   "page": "JG.pdf662",
+   "found_para": 781
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1484,
+   "unit": "IV.86",
+   "locus": "§ 969",
+   "page": "JG.pdf854",
+   "found_para": 1044
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-jus-gentium-1749",
+   "id": 1504,
+   "unit": "IV.126",
+   "locus": "§ 754",
+   "page": "JG.pdf876",
+   "found_para": 1068
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 25,
+   "unit": "Prelim.9",
+   "locus": "§ 40",
+   "page": "INST.pdf709",
+   "found_para": 1088
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 262,
+   "unit": "I.189",
+   "locus": "§ 125",
+   "page": "INST.pdf714",
+   "found_para": 1096
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 264,
+   "unit": "I.189",
+   "locus": "§ 125",
+   "page": "INST.pdf714",
+   "found_para": 1096
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 271,
+   "unit": "I.196",
+   "locus": "§ 87",
+   "page": "INST.pdf718",
+   "found_para": 1102
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 334,
+   "unit": "I.247",
+   "locus": "§ 1065",
+   "page": "INST.pdf733",
+   "found_para": 1129
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 491,
+   "unit": "II.55",
+   "locus": "§ 1089",
+   "page": "INST.pdf728",
+   "found_para": 1121
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 549,
+   "unit": "II.97",
+   "locus": "§ 210",
+   "page": "INST.pdf731",
+   "found_para": 1126
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 668,
+   "unit": "II.157",
+   "locus": "§ 318",
+   "page": "INST.pdf742",
+   "found_para": 1144
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 790,
+   "unit": "II.234",
+   "locus": "§ 271",
+   "page": "INST.pdf750",
+   "found_para": 1154
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 792,
+   "unit": "II.235",
+   "locus": "§ 442",
+   "page": "INST.pdf745",
+   "found_para": 1149
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 793,
+   "unit": "II.236",
+   "locus": "§ 442",
+   "page": "INST.pdf745",
+   "found_para": 1149
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 795,
+   "unit": "II.237",
+   "locus": "§ 442",
+   "page": "INST.pdf745",
+   "found_para": 1149
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 898,
+   "unit": "II.308",
+   "locus": "§ 409",
+   "page": "INST.pdf537",
+   "found_para": 809
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 981,
+   "unit": "III.13",
+   "locus": "§ 1037",
+   "page": "INST.pdf762",
+   "found_para": 1174
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 985,
+   "unit": "III.15",
+   "locus": "§ 1136",
+   "page": "INST.pdf763",
+   "found_para": 1174
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1068,
+   "unit": "III.62",
+   "locus": "§ 156",
+   "page": "INST.pdf770",
+   "found_para": 1183
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1085,
+   "unit": "III.77",
+   "locus": "§ 1137",
+   "page": "INST.pdf771",
+   "found_para": 1184
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1168,
+   "unit": "III.140",
+   "locus": "§ 1089",
+   "page": "INST.pdf776",
+   "found_para": 1192
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1170,
+   "unit": "III.140",
+   "locus": "§ 1089",
+   "page": "INST.pdf776",
+   "found_para": 1192
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1171,
+   "unit": "III.141",
+   "locus": "§ 90",
+   "page": "INST.pdf776",
+   "found_para": 1192
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1212,
+   "unit": "III.178",
+   "locus": "§ 90",
+   "page": "INST.pdf116",
+   "found_para": 158
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1231,
+   "unit": "III.192",
+   "locus": "§ 846",
+   "page": "INST.pdf710",
+   "found_para": 1090
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1280,
+   "unit": "III.237",
+   "locus": "§ 1066",
+   "page": "INST.pdf787",
+   "found_para": 1211
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1283,
+   "unit": "III.238",
+   "locus": "§ 1066",
+   "page": "INST.pdf787",
+   "found_para": 1211
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1303,
+   "unit": "III.248",
+   "locus": "§ 203",
+   "page": "INST.pdf787",
+   "found_para": 1211
+  },
+  {
+   "edition": "vattel-1773",
+   "table": "wolff-institutiones-1750",
+   "id": 1308,
+   "unit": "III.251",
+   "locus": "§ 203",
+   "page": "INST.pdf787",
+   "found_para": 1211
+  }
+ ]
+}

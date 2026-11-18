@@ -153,6 +153,18 @@
    }
   },
   {
+   "id": 1115,
+   "label": "shared argument",
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both use the promise-keeping example and the answer 'God commands it', but Locke uses it to show that moral rules need proof and get different reasons, while Burlamaqui asks how God's will is known.",
+    "date": "2026-11-18",
+    "labelWas": "loose paraphrase",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 1118,
    "label": "verbatim",
    "labelCheck": {
@@ -167,6 +179,14 @@
    "labelCheck": {
     "was": "loose paraphrase",
     "reason": "Same pairing 'la santé du Corps' and 'le bon état de l'Ame' in the same order, slightly reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1129,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-identical wording of the view that man is perfect only so far as his way of thinking and acting leads him to his end, happiness; Burlamaqui cites Pouilly ch. VIII.",
     "date": "2026-11-18"
    }
   },
@@ -204,6 +224,14 @@
     "labelWas": "loose paraphrase"
    },
    "label": "close paraphrase"
+  },
+  {
+   "id": 1176,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same clause 'ce seroit renoncer à son devoir, ce qui n'est jamais permis' in the same renunciation-of-rights argument.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 1181,
@@ -247,6 +275,14 @@
    }
   },
   {
+   "id": 1202,
+   "audit": {
+    "verdict": "right",
+    "reason": "The PDP repeats the PDN definition of civil society word for word.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1212,
    "label": "verbatim",
    "labelCheck": {
@@ -278,6 +314,14 @@
     "verdict": "weak",
     "reason": "The PDP sentence is a narrower case (a law forbidding even the thought) within the parallel section; only the general point that law reaches thoughts links it to this passage.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1248,
+   "audit": {
+    "verdict": "right",
+    "reason": "PDP I.1.14 has the same sentence: one rule of justice, princes' crime no less, their bad actions having worse consequences than private persons'.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -514,6 +558,14 @@
    "label": "verbatim"
   },
   {
+   "id": 1343,
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui's later Élémens restate the same sentence on man's absolute dependence on God for life, reason and their advantages.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1346,
    "audit": {
     "verdict": "right",
@@ -587,11 +639,17 @@
   },
   {
    "id": 1380,
-   "label": "verbatim",
+   "label": "close paraphrase",
    "labelCheck": {
     "was": "loose paraphrase",
     "reason": "Identical phrase except 'restriction' for 'limitation'.",
     "date": "2026-11-18"
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Same definition of obligation, but 'restriction' replaces 'resserrement, une limitation', so only the phrase 'de la liberté naturelle produite par la raison' is identical.",
+    "date": "2026-11-18",
+    "labelWas": "verbatim"
    }
   },
   {
@@ -608,6 +666,11 @@
    "labelCheck": {
     "was": "close paraphrase",
     "reason": "Long identical clauses ('le pouvoir qu'a l'homme de se servir...', 'entant que cet exercice... approuvé par la raison') with insertions only.",
+    "date": "2026-11-18"
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "The Élémens keep the same definition of droit as faculty word for word, with the Principes adding 'd'une certaine manière' and the self-regarding use.",
     "date": "2026-11-18"
    }
   },
@@ -626,6 +689,14 @@
     "verdict": "right",
     "reason": "Same transition to droit taken as loi, with the same example and the clause 'dans tous ces cas le droit est pris pour la loi'.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1398,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument in nearly the same words: reason counsels resisting a malevolent power, and a right to resist excludes the obligation to obey.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -661,6 +732,14 @@
     "verdict": "right",
     "reason": "Same sentence pattern: laws are not made 'proprement' to constrain subjects but 'plutôt' to make them act according to their true interests.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1418,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same two essential parts of law (disposition, sanction with penalty) and the sanction as the law's force, in the same sentence structure.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -809,7 +888,12 @@
    }
   },
   {
-   "id": 1500
+   "id": 1500,
+   "audit": {
+    "verdict": "right",
+    "reason": "The chapter title states the same thesis in nearly the same words as the Élémens' corresponding chapter: natural law is sufficiently notified.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 1502,
@@ -902,6 +986,14 @@
    "status": "possible"
   },
   {
+   "id": 1539,
+   "audit": {
+    "verdict": "right",
+    "reason": "The Principes and the Élémens share the clause 'défendant formellement toute violence' in the same argument that a forced promise is void.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1540,
    "audit": {
     "verdict": "weak",
@@ -953,6 +1045,14 @@
     "labelWas": "loose paraphrase"
    },
    "label": "close paraphrase"
+  },
+  {
+   "id": 1570,
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui makes the same concessive argument in the same chapter on the sanction of natural laws: even if a future state is uncertain or merely possible, a wise man should choose virtue.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 1572,

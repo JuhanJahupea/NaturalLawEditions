@@ -124,7 +124,8 @@ cat_reuse, replaced = write_tables(ED, tables, TX, STEPS,
                          'Reuse between the edition and the text, found by retrieval and judged by a language model; hand checks as in the method log. '
                          'status match: confidence >= 0.5; possible: below. Source passages are quoted from the text layer named in the catalogue.',
                          EXTRA)
-assert sum(c['rows'] for c in cat_reuse if not load_pass(ED, c['to'])) + replaced == len(ROWS)
+ADDED = collections.Counter(r['table'] for r in (load_pass(ED, 'additions') or {}).get('rows', []))   # rows of passes/additions.json
+assert sum(c['rows'] - ADDED[c['to']] for c in cat_reuse if not load_pass(ED, c['to'])) + replaced == len(ROWS)
 
 provenance(ED, 'burlamaqui-reuse/', [('edition/data.json', DATA), ('step10_elemens1783/matches_step10.json', S10)])
 entry = {'id': ED, 'path': 'editions/%s/' % ED, 'author': MAN['author'], 'authorShort': 'Burlamaqui', 'title': MAN['title'], 'short': MAN['short'],

@@ -179,12 +179,14 @@ class Split:
             if r.get(k): row[n] = r[k]
         if r.get('audit'): row['audit'] = r['audit']
         if r.get('labelCheck'): row['labelCheck'] = r['labelCheck']
+        if r.get('locusCheck'): row['locusCheck'] = r['locusCheck']
         return row
 
 
 def apply_row_edits(rows, edits):
     """Corrections (corrections.json, rowEdits) to reuse rows of data.json: label, status (rejected: the viewer does not show
-    the row), audit (a verdict and reason) and labelCheck (a label changed by the label check). Rows are named by id."""
+    the row), audit (a verdict and reason), labelCheck (a label changed by the label check), locus and locusCheck (a corrected
+    locus and the one it replaces). Rows are named by id."""
     by = {r['id']: r for r in rows}
     for e in edits:
         r = by[e['id']]
@@ -192,6 +194,8 @@ def apply_row_edits(rows, edits):
         if 'status' in e: r['status'] = e['status']
         if 'audit' in e: r['audit'] = e['audit']
         if 'labelCheck' in e: r['labelCheck'] = e['labelCheck']
+        if 'locus' in e: r['locus'] = e['locus']
+        if 'locusCheck' in e: r['locusCheck'] = e['locusCheck']
 
 
 def apply_note_moves(sections, rows, moves):
@@ -265,7 +269,8 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
     """One reuse table per source text, in the order of `texts`. Returns the catalogue entries and the number of
     working-edition rows replaced by passes.
     A text with a pass (editions/<ed>/passes/<text id>.json) takes the pass's rows and table header, and the pass's
-    text layer description; the working edition's rows for that text go to editions/<ed>/provenance/superseded/."""
+    text layer description; the working edition's rows for that text go to editions/<ed>/provenance/superseded/.
+    Rows of editions/<ed>/passes/additions.json are added to the table they name (field table), after its other rows."""
     rdir = os.path.join(ROOT, 'reuse'); sdir = os.path.join(ROOT, 'editions', ed, 'provenance', 'superseded')
     os.makedirs(rdir, exist_ok=True)
     for f in os.listdir(rdir):
@@ -277,6 +282,9 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
     A = load_pass(ed, 'attributions'); att = {}
     for a in (A or {}).get('attributions', []):
         k = (a['text'], a['unit'], a['page'], a['passage'], a['source']); assert k not in att, k; att[k] = a
+    ADD = load_pass(ed, 'additions'); adds = collections.defaultdict(list)
+    for r in (ADD or {}).get('rows', []):
+        r = dict(r); adds[r.pop('table')].append(r)
     used = set()
     def attribute(tid, rows):
         for r in rows:
@@ -287,7 +295,7 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
     for t in texts:
         rows = sorted(tables.get(t['id'], []), key=lambda r: r['id'])
         P = load_pass(ed, t['id'])
-        if not rows and not P: continue
+        if not rows and not P and not adds.get(t['id']): continue
         path = 'reuse/%s__%s.json' % (ed, t['id'])
         head = {'format': 'nle-reuse/1', 'from': ed, 'to': t['id']}
         head.update((extra or {}).get(t['id'], {}))
@@ -303,12 +311,17 @@ def write_tables(ed, tables, texts, steps, description, extra=None):
             head['steps'] = {str(k): steps[k] for k in sorted({r['step'] for r in rows}, key=str)}
             head['description'] = description
             head['rows'] = rows
+        if adds.get(t['id']):
+            ar = adds.pop(t['id']); head['rows'] = head['rows'] + ar
+            head['steps'] = dict(head.get('steps', {}), **{s: ADD['steps'][s] for s in sorted({r['step'] for r in ar})})
+            head['addedSteps'] = sorted({r['step'] for r in ar})   # the viewer's ?asbuilt=1 leaves these rows out
         attribute(t['id'], head['rows'])
         dump(head, os.path.join(ROOT, path))
         e = {'path': path, 'from': ed, 'to': t['id'], 'rows': len(head['rows'])}
         if 'toLayer' in head: e['toLayer'] = head['toLayer']
         out.append(e)
     assert used == set(att), 'attributions with no row: %s' % sorted(set(att) - used)[:5]
+    assert not adds, 'additions for tables the edition does not have: %s' % sorted(adds)
     return out, replaced
 
 

@@ -733,11 +733,110 @@
  ],
  "rowEdits": [
   {
+   "id": 13,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff §3 derives nations' use of natural law from their being persons in a state of nature, while Vattel's §5 argues from men not ceasing to be men in civil union; only the commonplace conclusion is shared, and Wolff §3 matches Vattel §6.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 20,
    "audit": {
     "verdict": "right",
     "reason": "Vattel renders Wolff's Prolegomena §4 closely: necessary law of nations contains what natural law prescribes to nations, binding them as it binds men.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 21,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Wolffian ground (Prolegomena § 5 note, not § 136) that nations are bound by natural law because men forming them remain subject to it.",
+    "date": "2026-11-18"
+   },
+   "locus": "§ 5",
+   "locusCheck": {
+    "was": "§ 136",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 23,
+   "locus": "§ 5",
+   "locusCheck": {
+    "was": "§ 142",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 25,
+   "locus": "§ 1088",
+   "locusCheck": {
+    "was": "§ 40",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 34,
+   "locus": "§ 649",
+   "locusCheck": {
+    "was": "§ 937",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 36,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's specific duty (Inst. § 1108) that a nation must contribute what it can to the preservation and perfection of others is Vattel's first general law.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 39,
+   "locus": "§ 687",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 40,
+   "locus": "§ 75",
+   "locusCheck": {
+    "was": "§ 61",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 69,
+   "label": "translation",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff's sentence word for word: distinguish the positive laws carefully from the natural or necessary law of nations without treating them separately.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase"
+   }
+  },
+  {
+   "id": 71,
+   "locus": "§ 255",
+   "locusCheck": {
+    "was": "§ 28",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 84,
+   "label": "translation",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff's definition word for word (conservatio gentis consistit in duratione consociationis), so the row is a translation.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase"
    }
   },
   {
@@ -757,11 +856,67 @@
    }
   },
   {
+   "id": 95,
+   "locus": "§ 31",
+   "locusCheck": {
+    "was": "§ 19",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 96,
+   "locus": "§ 31",
+   "locusCheck": {
+    "was": "§ 144",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 120,
    "audit": {
     "verdict": "right",
     "reason": "Wolff's ruler, holding the nation's rights, represents his nation in its dealings, which Vattel states as the sovereign's representative character.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 134,
+   "locus": "§ 243",
+   "locusCheck": {
+    "was": "§ 153",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 148,
+   "locus": "§ 1007",
+   "locusCheck": {
+    "was": "§ 674",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 160,
+   "locus": "§ 75",
+   "locusCheck": {
+    "was": "§ 58",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 166,
+   "locus": "§ 58",
+   "locusCheck": {
+    "was": "§ 23",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 178,
+   "locus": "§ 389",
+   "locusCheck": {
+    "was": "§ 187",
+    "date": "2026-11-18"
    }
   },
   {
@@ -773,11 +928,45 @@
    }
   },
   {
+   "id": 195,
+   "locus": "§ 119",
+   "locusCheck": {
+    "was": "§ 929",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 197,
+   "locus": "§ 119",
+   "locusCheck": {
+    "was": "§ 929",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 202,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's duty to coin a sufficient quantity sits beside the intrinsic/extrinsic value rule, as in Wolff's § 803 on money from which this sentence comes.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 208,
    "audit": {
     "verdict": "weak",
     "reason": "That the ruler should protect the sciences and arts is a general maxim; Wolff's definitional sentence gives nothing specific to Vattel's passage.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 219,
+   "label": "shared argument",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel builds § 120 on Wolff § 135 (self-love, then the citizen's undertaking to promote the nation's good), but he turns Wolff's argument for the nation's self-love into the citizen's love of the state.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase"
    }
   },
   {
@@ -799,6 +988,14 @@
    "label": "close paraphrase"
   },
   {
+   "id": 234,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same definition of the rights of majesty as all rights without which sovereign power cannot be exercised to the greatest public good.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 248,
    "audit": {
     "verdict": "right",
@@ -807,11 +1004,83 @@
    }
   },
   {
+   "id": 258,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's definition of a nation's glory (praise of the good and expert, earned by intellectual and moral virtues and their deeds) with the same double source, nation and citizens.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 262,
+   "locus": "§ 1096",
+   "locusCheck": {
+    "was": "§ 125",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 264,
+   "locus": "§ 1096",
+   "locusCheck": {
+    "was": "§ 125",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 266,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-translation of Wolff's proposition that a weak nation may submit on agreed terms, the pact of subjection measuring both parties' rights.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 267,
+   "locus": "§ 80",
+   "locusCheck": {
+    "was": "§ 382",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 268,
+   "locus": "§ 80",
+   "locusCheck": {
+    "was": "§ 55",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 271,
+   "locus": "§ 1102",
+   "locusCheck": {
+    "was": "§ 87",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 281,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §140 distinguishes patria from locus nativitatis, which confers no right, the distinction Vattel uses for a child born of a foreigner.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 284,
    "audit": {
     "verdict": "weak",
     "reason": "Wolff's section is about the ruler's freedom to admit a foreigner as citizen or resident, not a definition of inhabitants; it overlaps with Vattel's only in the idea of allowing a foreigner to reside.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 289,
+   "locus": "§ 133",
+   "locusCheck": {
+    "was": "§ 411",
+    "date": "2026-11-18"
    }
   },
   {
@@ -835,11 +1104,91 @@
    "label": "translation"
   },
   {
+   "id": 306,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same inference as Wolff § 145: since any right can be removed as punishment, exile can be a punishment.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 311,
+   "locus": "§ 148",
+   "locusCheck": {
+    "was": "§ 409",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 314,
+   "locus": "§ 149",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 320,
+   "locus": "§ 87",
+   "locusCheck": {
+    "was": "§ 7",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 321,
+   "locus": "§ 98",
+   "locusCheck": {
+    "was": "§ 129",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 322,
+   "locus": "§ 98",
+   "locusCheck": {
+    "was": "§ 88",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 334,
+   "locus": "§ 1129",
+   "locusCheck": {
+    "was": "§ 1065",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 341,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 111 gives the same argument and the same common-well example: the one actually using the thing uses his right and cannot be displaced.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 347,
+   "locus": "§ 113",
+   "locusCheck": {
+    "was": "§ 585",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 349,
    "audit": {
     "verdict": "weak",
     "reason": "That an owner may alienate or pledge what is its own is a stock consequence of dominion, and Wolff §484 on what nations may pledge has none of Vattel's specific argument.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 377,
+   "locus": "§ 346",
+   "locusCheck": {
+    "was": "§ 690",
+    "date": "2026-11-18"
    }
   },
   {
@@ -859,11 +1208,43 @@
    }
   },
   {
+   "id": 406,
+   "locus": "§ 157",
+   "locusCheck": {
+    "was": "§ 906",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 407,
    "audit": {
     "verdict": "right",
     "reason": "Vattel restates Wolff's two conditions for offices of humanity (the other's need, and no neglect of duty to oneself) and goes on, as Wolff § 157 does, to the asked nation's right to judge and the grain example.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 411,
+   "locus": "§ 159",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 417,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's man/citizen/nation analogy (each must perfect itself so as to be useful to others) is carried over in the same order.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 421,
+   "locus": "§ 185",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
    }
   },
   {
@@ -891,6 +1272,91 @@
    }
   },
   {
+   "id": 432,
+   "locus": "§ 266",
+   "locusCheck": {
+    "was": "§ 3",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 433,
+   "locus": "§ 266",
+   "locusCheck": {
+    "was": "§ 936",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 436,
+   "locus": "§ 205",
+   "locusCheck": {
+    "was": "§ 47",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 440,
+   "locus": "§ 190",
+   "locusCheck": {
+    "was": "§ 354",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 441,
+   "locus": "§ 75",
+   "locusCheck": {
+    "was": "§ 61",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 442,
+   "locus": "§ 687",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 447,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 194 on commercial treaties: take care to commit nothing contrary to the nation's duties to itself and to others, rendered closely.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 453,
+   "locus": "§ 202",
+   "locusCheck": {
+    "was": "§ 789",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 455,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific argument from Wolff (actually § 210): a nation abusing an exclusive sale to charge an unfair price sins against natural law but does no injury.",
+    "date": "2026-11-18"
+   },
+   "locus": "§ 210",
+   "locusCheck": {
+    "was": "§ 322",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 456,
+   "locus": "§ 210",
+   "locusCheck": {
+    "was": "§ 440",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 458,
    "audit": {
     "verdict": "right",
@@ -899,11 +1365,64 @@
    }
   },
   {
+   "id": 461,
+   "locus": "§ 231",
+   "locusCheck": {
+    "was": "§ 191",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 468,
    "audit": {
     "verdict": "right",
     "reason": "Wolff's statement that the form of the republic makes no difference to what belongs to the nation is his argument on precedence (it stands in § 243, not § 153), which Vattel restates.",
     "date": "2026-11-17"
+   },
+   "locus": "§ 243",
+   "locusCheck": {
+    "was": "§ 153",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 476,
+   "locus": "§ 246",
+   "locusCheck": {
+    "was": "§ 153",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 478,
+   "locus": "§ 246",
+   "locusCheck": {
+    "was": "§ 42",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 480,
+   "locus": "§ 246",
+   "locusCheck": {
+    "was": "§ 42",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 482,
+   "locus": "§ 251",
+   "locusCheck": {
+    "was": "§ 859",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 491,
+   "locus": "§ 1121",
+   "locusCheck": {
+    "was": "§ 1089",
+    "date": "2026-11-18"
    }
   },
   {
@@ -915,6 +1434,62 @@
    }
   },
   {
+   "id": 496,
+   "locus": "§ 259",
+   "locusCheck": {
+    "was": "§ 255",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 497,
+   "locus": "§ 259",
+   "locusCheck": {
+    "was": "§ 255",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 500,
+   "locus": "§ 262",
+   "locusCheck": {
+    "was": "§ 585",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 502,
+   "locus": "§ 259",
+   "locusCheck": {
+    "was": "§ 255",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 503,
+   "locus": "§ 551",
+   "locusCheck": {
+    "was": "§ 512",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 523,
+   "locus": "§ 599",
+   "locusCheck": {
+    "was": "§ 318",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 524,
+   "locus": "§ 318",
+   "locusCheck": {
+    "was": "§ 647",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 536,
    "audit": {
     "verdict": "right",
@@ -923,11 +1498,67 @@
    }
   },
   {
+   "id": 548,
+   "locus": "§ 308",
+   "locusCheck": {
+    "was": "§ 178",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 549,
+   "locus": "§ 1126",
+   "locusCheck": {
+    "was": "§ 210",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 553,
    "audit": {
     "verdict": "right",
     "reason": "Vattel restates Wolff 322: a later occupant of a vacant country cannot take the places or rights already occupied by another nation.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 562,
+   "locus": "§ 215",
+   "locusCheck": {
+    "was": "§ 70",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 564,
+   "locus": "§ 327",
+   "locusCheck": {
+    "was": "§ 35",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 565,
+   "locus": "§ 289",
+   "locusCheck": {
+    "was": "§ 4",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 568,
+   "locus": "§ 327",
+   "locusCheck": {
+    "was": "§ 289",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 569,
+   "locus": "§ 327",
+   "locusCheck": {
+    "was": "§ 999",
+    "date": "2026-11-18"
    }
   },
   {
@@ -947,11 +1578,197 @@
    }
   },
   {
+   "id": 576,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's reason in the same question (sovereign may forbid foreigners to own immovables) translates Wolff §333's premise that no foreigner can claim a right in another's territory.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 580,
+   "locus": "§ 336",
+   "locusCheck": {
+    "was": "§ 30",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 587,
    "audit": {
     "verdict": "right",
     "reason": "Vattel restates Wolff § 338's thesis that a nation keeps some right over another's property when deprived of a necessary use, clause by clause.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 596,
+   "label": "close paraphrase",
+   "audit": {
+    "verdict": "right",
+    "reason": "The passage renders Wolff § 341 (a people of men refused wives may take them by force, Roman example), but the Wolff note marks the following sentence that Vattel corrects, so this sentence is paraphrase rather than citation.",
+    "date": "2026-11-18",
+    "labelWas": "citation"
+   }
+  },
+  {
+   "id": 606,
+   "locus": "§ 98",
+   "locusCheck": {
+    "was": "§ 129",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 608,
+   "locus": "§ 343",
+   "locusCheck": {
+    "was": "§ 685",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 611,
+   "locus": "§ 349",
+   "locusCheck": {
+    "was": "§ 29",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 612,
+   "locus": "§ 349",
+   "locusCheck": {
+    "was": "§ 343",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 613,
+   "locus": "§ 343",
+   "locusCheck": {
+    "was": "§ 3",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 614,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's specific doctrine that the owner nation judges whether a use is innocent and others must defer; Vattel adds that reasons must be given (the passage is in JG § 349, not § 55).",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 615,
+   "locus": "§ 157",
+   "locusCheck": {
+    "was": "§ 906",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 617,
+   "locus": "§ 346",
+   "locusCheck": {
+    "was": "§ 343",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 620,
+   "locus": "§ 215",
+   "locusCheck": {
+    "was": "§ 70",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 621,
+   "locus": "§ 349",
+   "locusCheck": {
+    "was": "§ 206",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 622,
+   "locus": "§ 826",
+   "locusCheck": {
+    "was": "§ 159",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 623,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same proposition, structure and exception: a permission granted to all nations cannot be refused to one without particular cause.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 625,
+   "locus": "§ 348",
+   "locusCheck": {
+    "was": "§ 186",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 627,
+   "locus": "§ 349",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 628,
+   "locus": "§ 350",
+   "locusCheck": {
+    "was": "§ 118",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 629,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific point: a well-ordered state provides inns for travellers, recast from Wolff's negative form.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 634,
+   "locus": "§ 358",
+   "locusCheck": {
+    "was": "§ 3",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 652,
+   "locus": "§ 359",
+   "locusCheck": {
+    "was": "§ 1054",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 655,
+   "locus": "§ 366",
+   "locusCheck": {
+    "was": "§ 22",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 656,
+   "locus": "§ 367",
+   "locusCheck": {
+    "was": "§ 578",
+    "date": "2026-11-18"
    }
   },
   {
@@ -963,11 +1780,45 @@
    }
   },
   {
+   "id": 663,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same two-step theorem as Wolff: a protected nation may make treaties unless the protection treaty bars it, but never one contrary to that treaty.",
+    "date": "2026-11-18"
+   },
+   "locus": "§ 440",
+   "locusCheck": {
+    "was": "§ 369",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 664,
    "audit": {
     "verdict": "right",
     "reason": "Vattel's 'répugne en soi à tout traité de protection' renders Wolff's 'foederi omni protectionis per se inest', and the bar on aiding the protector's enemies follows from it.",
     "date": "2026-11-17"
+   },
+   "locus": "§ 440",
+   "locusCheck": {
+    "was": "§ 381",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 668,
+   "locus": "§ 1144",
+   "locusCheck": {
+    "was": "§ 318",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 670,
+   "locus": "§ 408",
+   "locusCheck": {
+    "was": "§ 440",
+    "date": "2026-11-18"
    }
   },
   {
@@ -976,6 +1827,35 @@
     "verdict": "right",
     "reason": "Vattel's sentence renders Wolff's 'nothing wins nations and their rulers more praise than entire good faith' in the same comparative structure.",
     "date": "2026-11-17"
+   },
+   "locus": "§ 376",
+   "locusCheck": {
+    "was": "§ 33",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 679,
+   "locus": "§ 376",
+   "locusCheck": {
+    "was": "§ 33",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 682,
+   "locus": "§ 377",
+   "locusCheck": {
+    "was": "§ 364",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 685,
+   "locus": "§ 440",
+   "locusCheck": {
+    "was": "§ 369",
+    "date": "2026-11-18"
    }
   },
   {
@@ -984,6 +1864,24 @@
     "verdict": "right",
     "reason": "Vattel's treaties fixing 'ce qui ne peut être déterminé en général par le droit naturel' render Wolff § 392's 'quae jure naturali in genere determinata non sunt' in a treaty context.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 706,
+   "locus": "§ 403",
+   "locusCheck": {
+    "was": "§ 269",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 709,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule that sovereigns named only to show who made the treaty does not make it personal is the Digest maxim (Pedius/Ulpian) that Vattel himself credits and calls repeated by all authors; nothing points to Wolff § 415 in particular.",
+    "date": "2026-11-18",
+    "statusWas": "match"
    }
   },
   {
@@ -997,11 +1895,149 @@
    "label": "loose paraphrase"
   },
   {
+   "id": 736,
+   "locus": "§ 430",
+   "locusCheck": {
+    "was": "§ 117",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 742,
+   "locus": "§ 440",
+   "locusCheck": {
+    "was": "§ 369",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 748,
    "audit": {
     "verdict": "right",
     "reason": "Vattel's definition of inferior powers, with magistrates and generals as examples, translates Wolff's closely.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 759,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff (§ 473-474, not § 586) holds the unratifying sovereign owes only restitution of what enriched it, the doctrine Vattel applies to Caudium.",
+    "date": "2026-11-18"
+   },
+   "locus": "§ 473",
+   "locusCheck": {
+    "was": "§ 586",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 760,
+   "locus": "§ 473",
+   "locusCheck": {
+    "was": "§ 393",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 768,
+   "locus": "§ 547",
+   "locusCheck": {
+    "was": "§ 17",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 772,
+   "locus": "§ 547",
+   "locusCheck": {
+    "was": "§ 17",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 779,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's rule restates Wolff's § 386, and the whole sentence follows Wolff § 427, which recalls § 386 in the same oath context.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 782,
+   "locus": "§ 551",
+   "locusCheck": {
+    "was": "§ 512",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 789,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's tacit faith rests on tacit consent and binds like express faith, followed by the rule on what is tacitly agreed, as in Vattel; the passage is in § 560, not § 660.",
+    "date": "2026-11-18"
+   },
+   "locus": "§ 560",
+   "locusCheck": {
+    "was": "§ 660",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 790,
+   "locus": "§ 1154",
+   "locusCheck": {
+    "was": "§ 271",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 792,
+   "locus": "§ 1149",
+   "locusCheck": {
+    "was": "§ 442",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 793,
+   "locus": "§ 1149",
+   "locusCheck": {
+    "was": "§ 442",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 795,
+   "locus": "§ 1149",
+   "locusCheck": {
+    "was": "§ 442",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 803,
+   "locus": "§ 488",
+   "locusCheck": {
+    "was": "§ 512",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 804,
+   "locus": "§ 488",
+   "locusCheck": {
+    "was": "§ 512",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 807,
+   "locus": "§ 540",
+   "locusCheck": {
+    "was": "§ 757",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1021,6 +2057,16 @@
    }
   },
   {
+   "id": 816,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The restoration rule is common (Grotius III.20.55 n. 1 has it too); Wolff § 543 is about hostages given for hostages and only recalls § 502, and Vattel's next lines reject Wolff's § 503.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 817,
    "audit": {
     "verdict": "right",
@@ -1034,6 +2080,58 @@
     "verdict": "weak",
     "reason": "Both hold the hostage liable for his own acts, but Wolff's section 533 concerns his personal suretyship for the main obligation, not crimes and private debts during hostageship (Wolff section 505).",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 820,
+   "locus": "§ 510",
+   "locusCheck": {
+    "was": "§ 368",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 821,
+   "label": "loose paraphrase",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff §§ 510-511: the sovereign's power to dispose of subjects grounds the right to give hostages, and the one given must go whether he wills or not; the wording differs.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase"
+   }
+  },
+  {
+   "id": 824,
+   "label": "loose paraphrase",
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Wolffian argument that receiving a fugitive hostage would approve his flight and break faith, but Vattel recasts the sentence and adds returning him.",
+    "date": "2026-11-18",
+    "labelWas": "close paraphrase"
+   }
+  },
+  {
+   "id": 826,
+   "locus": "§ 517",
+   "locusCheck": {
+    "was": "§ 427",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 834,
+   "locus": "§ 539",
+   "locusCheck": {
+    "was": "§ 509",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 837,
+   "locus": "§ 537",
+   "locusCheck": {
+    "was": "§ 992",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1052,7 +2150,44 @@
     "date": "2026-11-17",
     "labelWas": "close paraphrase"
    },
-   "label": "translation"
+   "label": "translation",
+   "locus": "§ 791",
+   "locusCheck": {
+    "was": "§ 972",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 843,
+   "locus": "§ 544",
+   "locusCheck": {
+    "was": "§ 424",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 844,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same rule with the same exception: the acceptor's words govern unless they refer back to the offeror's.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 847,
+   "locus": "§ 375",
+   "locusCheck": {
+    "was": "§ 369",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 865,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same interpretive rule (the sense fitting the subject matter is preferred) with the same reasoning and the truce day/night example.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 868,
@@ -1060,6 +2195,32 @@
     "verdict": "right",
     "reason": "Vattel reproduces Wolff's rule that, since parties cannot be presumed to have meant to do nothing, an interpretation voiding the act is not admitted.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 879,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the stock maxim that no one can bind himself to the illicit is shared; Vattel uses it for restrictive interpretation, while Wolff § 658 uses it on the lawfulness of war alliances, a point Grotius and Pufendorf also make.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 888,
+   "locus": "§ 420",
+   "locusCheck": {
+    "was": "§ 26",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 898,
+   "locus": "§ 809",
+   "locusCheck": {
+    "was": "§ 409",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1079,6 +2240,32 @@
    }
   },
   {
+   "id": 911,
+   "locus": "§ 570",
+   "locusCheck": {
+    "was": "§ 564",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 915,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the stock principle that force is lawful only when milder means fail is shared, and Wolff § 782 applies it to the use of force within war, not to settling disputes.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 916,
+   "locus": "§ 206",
+   "locusCheck": {
+    "was": "§ 3",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 920,
    "audit": {
     "verdict": "weak",
@@ -1089,11 +2276,61 @@
    "status": "possible"
   },
   {
+   "id": 921,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The wording is close, but in Wolff (a phrase from § 710) it is the adversary who offers equitable terms after a declaration, while Vattel makes it the sovereign's own duty to offer them.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 923,
+   "locus": "§ 629",
+   "locusCheck": {
+    "was": "§ 615",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 924,
+   "locus": "§ 808",
+   "locusCheck": {
+    "was": "§ 1102",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 929,
+   "locus": "§ 636",
+   "locusCheck": {
+    "was": "§ 173",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 932,
    "audit": {
     "verdict": "right",
     "reason": "Vattel's definition of retorsion of right renders Wolff's definition closely.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 937,
+   "locus": "§ 589",
+   "locusCheck": {
+    "was": "§ 1112",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 940,
+   "locus": "§ 289",
+   "locusCheck": {
+    "was": "§ 2",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1105,11 +2342,51 @@
    }
   },
   {
+   "id": 944,
+   "locus": "§ 599",
+   "locusCheck": {
+    "was": "§ 538",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 949,
+   "locus": "§ 503",
+   "locusCheck": {
+    "was": "§ 501",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 955,
    "audit": {
     "verdict": "right",
     "reason": "Same argument in the same order: milder means must be preferred while they suffice, reprisals are milder than war, and they must be used while they can obtain redress.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 978,
+   "locus": "§ 762",
+   "locusCheck": {
+    "was": "§ 930",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 981,
+   "locus": "§ 1174",
+   "locusCheck": {
+    "was": "§ 1037",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 985,
+   "locus": "§ 1174",
+   "locusCheck": {
+    "was": "§ 1136",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1121,11 +2398,99 @@
    }
   },
   {
+   "id": 995,
+   "locus": "§ 774",
+   "locusCheck": {
+    "was": "§ 684",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 999,
+   "locus": "§ 776",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1000,
    "audit": {
     "verdict": "right",
     "reason": "Vattel's two kinds of reasons follow Wolff's definitions (justificatory reasons from right, suasive ones from utility, each 'by which it is shown').",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1006,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates Wolff's threefold end of war and its offensive/defensive allocation almost word for word.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1010,
+   "locus": "§ 628",
+   "locusCheck": {
+    "was": "§ 621",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1014,
+   "locus": "§ 623",
+   "locusCheck": {
+    "was": "§ 440",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1015,
+   "locus": "§ 627",
+   "locusCheck": {
+    "was": "§ 13",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1018,
+   "locus": "§ 629",
+   "locusCheck": {
+    "was": "§ 972",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1019,
+   "locus": "§ 629",
+   "locusCheck": {
+    "was": "§ 615",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1025,
+   "locus": "§ 632",
+   "locusCheck": {
+    "was": "§ 1101",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1026,
+   "locus": "§ 632",
+   "locusCheck": {
+    "was": "§ 1101",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1027,
+   "locus": "§ 888",
+   "locusCheck": {
+    "was": "§ 295",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1145,11 +2510,43 @@
    }
   },
   {
+   "id": 1033,
+   "locus": "§ 632",
+   "locusCheck": {
+    "was": "§ 1101",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1034,
+   "locus": "§ 636",
+   "locusCheck": {
+    "was": "§ 12",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1035,
+   "locus": "§ 636",
+   "locusCheck": {
+    "was": "§ 1065",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1042,
    "audit": {
     "verdict": "right",
     "reason": "Same rule: if a power shows designs of domination and does even the slightest injury, the other nations may join to weaken it by arms.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1043,
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 650's specific remedy against a growing power, confederation of the threatened states for common security, beside the right of arms, is Vattel's gentler means.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1171,11 +2568,170 @@
    }
   },
   {
+   "id": 1063,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument: another nation's failure to declare war does not excuse us from declaring, since its fault does not license ours.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1064,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff §§ 716-717: declaring war is not meant to let the enemy prepare an unjust defence, so it may be made at the frontier with an army or after entering the territory.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1068,
+   "locus": "§ 1183",
+   "locusCheck": {
+    "was": "§ 156",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1085,
+   "locus": "§ 1184",
+   "locusCheck": {
+    "was": "§ 1137",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1112,
+   "locus": "§ 736",
+   "locusCheck": {
+    "was": "§ 730",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1119,
+   "locus": "§ 736",
+   "locusCheck": {
+    "was": "§ 672",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1125,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff § 678 is about a treaty of neutrality and forbids any help at all, while Vattel limits it to what serves directly in war; the list of troops and arms is common to Grotius, Barbeyrac and others.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1127,
+   "locus": "§ 736",
+   "locusCheck": {
+    "was": "§ 672",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1146,
+   "locus": "§ 686",
+   "locusCheck": {
+    "was": "§ 55",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1150,
+   "locus": "§ 691",
+   "locusCheck": {
+    "was": "§ 630",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1151,
+   "locus": "§ 691",
+   "locusCheck": {
+    "was": "§ 71",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1158,
    "audit": {
     "verdict": "right",
     "reason": "Vattel gives Wolff's two rules: whoever is granted passage repairs the damage, and the ruler sees that the injured subjects are compensated.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1159,
+   "locus": "§ 697",
+   "locusCheck": {
+    "was": "§ 363",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1161,
+   "locus": "§ 781",
+   "locusCheck": {
+    "was": "§ 613",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1163,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same voluntary-law argument as Inst. § 1215: each nation judges its own necessity and abuse is hard to determine, so hostile acts count as lawful for both sides and any excess is left to conscience.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1167,
+   "locus": "§ 804",
+   "locusCheck": {
+    "was": "§ 699",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1168,
+   "audit": {
+    "verdict": "right",
+    "reason": "Clause-by-clause rendering of Wolff's rule on quarter for those laying down arms and life for those capitulating in battle or siege, deduced from the limits of the right to kill.",
+    "date": "2026-11-18"
+   },
+   "locus": "§ 1192",
+   "locusCheck": {
+    "was": "§ 1089",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1170,
+   "locus": "§ 1192",
+   "locusCheck": {
+    "was": "§ 1089",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1171,
+   "locus": "§ 1192",
+   "locusCheck": {
+    "was": "§ 90",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1174,
+   "locus": "§ 797",
+   "locusCheck": {
+    "was": "§ 39",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1219,11 +2775,91 @@
    }
   },
   {
+   "id": 1208,
+   "locus": "§ 823",
+   "locusCheck": {
+    "was": "§ 926",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1212,
+   "locus": "§ 158",
+   "locusCheck": {
+    "was": "§ 90",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1223,
+   "audit": {
+    "verdict": "right",
+    "reason": "Near-translation of Wolff's proposition that formal war is to be held just on both sides as to its effects.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1225,
+   "locus": "§ 888",
+   "locusCheck": {
+    "was": "§ 158",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1231,
+   "locus": "§ 1090",
+   "locusCheck": {
+    "was": "§ 846",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1234,
+   "locus": "§ 894",
+   "locusCheck": {
+    "was": "§ 586",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1236,
+   "locus": "§ 888",
+   "locusCheck": {
+    "was": "§ 633",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1237,
+   "locus": "§ 894",
+   "locusCheck": {
+    "was": "§ 814",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1239,
+   "locus": "§ 861",
+   "locusCheck": {
+    "was": "§ 120",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1247,
    "audit": {
     "verdict": "right",
     "reason": "Vattel grounds postliminy, as Wolff § 894 does, in the sovereign's duty to defend subjects, with restitution of persons to all their rights and goods to their owners.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1248,
+   "locus": "§ 894",
+   "locusCheck": {
+    "was": "§ 814",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1235,11 +2871,75 @@
    }
   },
   {
+   "id": 1250,
+   "locus": "§ 898",
+   "locusCheck": {
+    "was": "§ 894",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1252,
+   "locus": "§ 904",
+   "locusCheck": {
+    "was": "§ 896",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1255,
+   "locus": "§ 903",
+   "locusCheck": {
+    "was": "§ 4",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1257,
+   "locus": "§ 992",
+   "locusCheck": {
+    "was": "§ 990",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1258,
+   "locus": "§ 905",
+   "locusCheck": {
+    "was": "§ 336",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1269,
    "audit": {
     "verdict": "right",
     "reason": "Vattel follows Wolff's note in sequence: what holds of soldiers holds of subordinate officers, who are like private persons, military law forbids acting without orders, and war's outcomes are uncertain.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1275,
+   "locus": "§ 960",
+   "locusCheck": {
+    "was": "§ 890",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1280,
+   "locus": "§ 1211",
+   "locusCheck": {
+    "was": "§ 1066",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1283,
+   "locus": "§ 1211",
+   "locusCheck": {
+    "was": "§ 1066",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1259,11 +2959,67 @@
    }
   },
   {
+   "id": 1292,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same rule and same reasoning: with an alternative of penalty or arms the choice belongs to the injured party.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1300,
    "audit": {
     "verdict": "right",
     "reason": "Wolff's specific rule that during a truce the besieged may not repair the rampart breached by enemy guns is restated by Vattel, with an echo of the enemy artillery.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1303,
+   "locus": "§ 1211",
+   "locusCheck": {
+    "was": "§ 203",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1308,
+   "locus": "§ 1211",
+   "locusCheck": {
+    "was": "§ 203",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1310,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same two-part rule as Wolff § 924, including the point that an indication that the enemy still claims an unguarded place forbids taking it.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1312,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same a fortiori rule for truces: much less may one solicit the enemy's garrisons or subjects to defect.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1316,
+   "locus": "§ 929",
+   "locusCheck": {
+    "was": "§ 836",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1320,
+   "locus": "§ 929",
+   "locusCheck": {
+    "was": "§ 836",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1293,11 +3049,51 @@
    }
   },
   {
+   "id": 1349,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same criterion in the same ransom question: the captive counts as free from the moment he is allowed to leave.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1353,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific rule from Wolff § 955: a released prisoner who has not yet paid his ransom and is taken again owes both ransoms.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1358,
+   "locus": "§ 517",
+   "locusCheck": {
+    "was": "§ 427",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1368,
    "audit": {
     "verdict": "right",
     "reason": "Vattel's claim that foreign nations may not judge between prince and subjects, grounded on non-interference, renders Wolff 1011.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 1369,
+   "locus": "§ 959",
+   "locusCheck": {
+    "was": "§ 1102",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1376,
+   "locus": "§ 627",
+   "locusCheck": {
+    "was": "§ 273",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1311,11 +3107,69 @@
    "status": "possible"
   },
   {
+   "id": 1389,
+   "locus": "§ 984",
+   "locusCheck": {
+    "was": "§ 357",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1395,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence from Wolff: no new war for the same cause, 'perpetual' peace meaning only that, special versus general transaction, and renunciation barring later proof of title.",
+    "date": "2026-11-18"
+   },
+   "locus": "§ 987",
+   "locusCheck": {
+    "was": "§ 890",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1399,
    "audit": {
     "verdict": "right",
     "reason": "Near-translation of Wolff's rule that matters on which the peace treaty is silent remain as they are.",
     "date": "2026-11-17"
+   },
+   "locus": "§ 992",
+   "locusCheck": {
+    "was": "§ 990",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1413,
+   "locus": "§ 1000",
+   "locusCheck": {
+    "was": "§ 989",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1416,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's rules on restoring places follow Wolff §§ 1001-1002: return them as taken, no demolition before restitution, wartime razing remitted by the amnesty.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1418,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same justification as Wolff § 1003: names in a peace treaty are taken in the sense the experts of the time gave them, because those who make peace are experts and mean what they then had in mind.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1419,
+   "locus": "§ 1005",
+   "locusCheck": {
+    "was": "§ 986",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1327,6 +3181,24 @@
    }
   },
   {
+   "id": 1421,
+   "locus": "§ 1005",
+   "locusCheck": {
+    "was": "§ 881",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1429,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The shared point, that a war on a new cause does not break the peace, is Grotius's, whom Vattel cites here; Vattel's point about old treaties surviving the restoration is not in Wolff § 1025.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 1435,
    "audit": {
     "verdict": "right",
@@ -1335,11 +3207,82 @@
    }
   },
   {
+   "id": 1444,
+   "locus": "§ 1044",
+   "locusCheck": {
+    "was": "§ 905",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1447,
+   "locus": "§ 400",
+   "locusCheck": {
+    "was": "§ 62",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 1455,
    "audit": {
     "verdict": "weak",
     "reason": "Both concern not refusing enemy envoys, but Wolff speaks only of manifest necessity such as peace offers, while Vattel's general maxim and its exceptions are not in this passage.",
     "date": "2026-11-17"
+   },
+   "locus": "§ 1045",
+   "locusCheck": {
+    "was": "§ 278",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1460,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's representative character par excellence, representing the master's person and dignity, is Wolff's special representative character (faculty of bearing the sender's person).",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1467,
+   "locus": "§ 468",
+   "locusCheck": {
+    "was": "§ 662",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1476,
+   "locus": "§ 781",
+   "locusCheck": {
+    "was": "§ 613",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1479,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "JG § 700 concerns which of several territories must let an army pass; Vattel's a fortiori from private travellers to ministers shares only the generic term 'passage innocent' (the real Wolffian parallel is § 1064).",
+    "date": "2026-11-18",
+    "statusWas": "possible"
+   }
+  },
+  {
+   "id": 1484,
+   "locus": "§ 1044",
+   "locusCheck": {
+    "was": "§ 969",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1504,
+   "locus": "§ 1068",
+   "locusCheck": {
+    "was": "§ 754",
+    "date": "2026-11-18"
    }
   },
   {
@@ -3481,6 +5424,16 @@
    }
   },
   {
+   "id": 2690,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "The shared clause is Wolff's stock formula of nations as free persons in the state of nature, which Vattel repeats elsewhere and Formey renders the same way; nothing ties this passage to Formey's section.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 2696,
    "label": "close paraphrase",
    "labelCheck": {
@@ -3548,6 +5501,30 @@
    }
   },
   {
+   "id": 2787,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both state the Wolffian thesis that a nation seizing unoccupied land acquires empire together with dominion, in parallel words.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2806,
+   "audit": {
+    "verdict": "right",
+    "reason": "Formey § XVII has the same Wolffian sequence (use of common things, first to lay hands on a thing for use cannot be dispossessed) in near-identical French.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2821,
+   "audit": {
+    "verdict": "right",
+    "reason": "Both give the duty to protect and favour commerce followed by care of roads and safety, then charges to cover costs, from the shared Wolffian sequence.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 2844,
    "audit": {
     "verdict": "right",
@@ -3575,6 +5552,14 @@
    "status": "possible"
   },
   {
+   "id": 2855,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's note names Montesquieu's Esprit des loix as the source of his translation of the Pomponius passage at this point.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 2857
   },
   {
@@ -3594,6 +5579,16 @@
    }
   },
   {
+   "id": 2886,
+   "label": "close paraphrase",
+   "audit": {
+    "verdict": "right",
+    "reason": "Both state that a state cannot make treaties contrary to those already binding it, in nearly the same words, so the wording is close rather than loose.",
+    "date": "2026-11-18",
+    "labelWas": "loose paraphrase"
+   }
+  },
+  {
    "id": 2892,
    "label": "close paraphrase",
    "labelCheck": {
@@ -3603,7 +5598,14 @@
    }
   },
   {
-   "id": 2898
+   "id": 2898,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both state the stock maxim that a guarantee saves a third party's right, with nothing more specific shared.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
   },
   {
    "id": 2899,
@@ -3611,6 +5613,14 @@
    "labelCheck": {
     "was": "close paraphrase",
     "reason": "Same idea of revenues in lieu of interest, recast as a conditional definition of antichresis with other wording.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 2907,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Wolffian rule in nearly the same words: contracting parties must express themselves so as to be understood by each other.",
     "date": "2026-11-18"
    }
   },
@@ -3701,6 +5711,16 @@
    }
   },
   {
+   "id": 3013,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "That a truce binds subjects only once known is a stock rule (Grotius III.21.5, Wolff); nothing specific links the two sentences beyond it.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 3020,
    "label": "loose paraphrase",
    "labelCheck": {
@@ -3728,6 +5748,11 @@
    "labelCheck": {
     "was": "close paraphrase",
     "reason": "Same doctrine that a special transaction covers only its own object, stated positively in other words where Formey speaks of claims not renounced.",
+    "date": "2026-11-18"
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Both state Wolff's general/special transaction distinction (Inst. § 764): a special transaction leaves other or later claims to the thing open.",
     "date": "2026-11-18"
    }
   },
@@ -3770,6 +5795,14 @@
    }
   },
   {
+   "id": 3075,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Westphalia courier example with nearly the same words (route marked, passports useless off it).",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 3076,
    "audit": {
     "verdict": "right",
@@ -3783,6 +5816,11 @@
    "labelCheck": {
     "was": "close paraphrase",
     "reason": "Condenses and reorders Wicquefort's anecdote (garrison fires on trumpet, Maurice resents it) into one new sentence.",
+    "date": "2026-11-18"
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Ysendick episode (garrison fires on Maurice's trumpeter, prince's resentment) retold in other words, with Wicquefort cited in the note.",
     "date": "2026-11-18"
    }
   },
@@ -3842,6 +5880,14 @@
    }
   },
   {
+   "id": 3124,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's note (a) names Bynkershoek, Juge compétent ch. 16 § 6, which treats the ambassador's immovables and unrelated movables.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 3126
   },
   {
@@ -3882,6 +5928,14 @@
     "statusWas": "match"
    },
    "status": "possible"
+  },
+  {
+   "id": 3162,
+   "audit": {
+    "verdict": "right",
+    "reason": "Same objection to the doctrine that the nation stays neutral in a succession dispute, with the same 'Quoi!' and tranquil-spectator rhetoric.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 3171,
@@ -3935,6 +5989,16 @@
    }
   },
   {
+   "id": 3212,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both rest on the administrator-not-proprietor doctrine and the phrase 'quant à la substance', but the Questions passage is about the people transferring the empire, and Vattel's is about the prince alienating public goods.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 3224,
    "label": "verbatim",
    "labelCheck": {
@@ -3944,11 +6008,37 @@
    }
   },
   {
+   "id": 3243,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's own storm-tossed ship and plague-ship example in nearly the same words and structure.",
+    "date": "2026-11-18"
+   }
+  },
+  {
    "id": 3274,
    "label": "close paraphrase",
    "labelCheck": {
     "was": "loose paraphrase",
     "reason": "The predicate 'mérite l'indignation de tous les hommes' is identical and the structure the same; only the subject is reworded.",
+    "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 3293,
+   "status": "possible",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only a stock list of bereaved families (father, son, husband) is shared, used in the dialogue for Charles XII's ruined subjects and in the Droit des gens for the reparation an unjust prince owes.",
+    "date": "2026-11-18",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 3322,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's preface takes Wolff's point that natural-law duties must be adapted to suit nations when applied to them.",
     "date": "2026-11-18"
    }
   },
@@ -3992,6 +6082,14 @@
     "date": "2026-11-18",
     "labelWas": "close paraphrase",
     "statusWas": "match"
+   }
+  },
+  {
+   "id": 3354,
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's preface restates Wolff's own preface: duties of individuals applied to nations must be modified according to the nature of their subjects.",
+    "date": "2026-11-18"
    }
   },
   {

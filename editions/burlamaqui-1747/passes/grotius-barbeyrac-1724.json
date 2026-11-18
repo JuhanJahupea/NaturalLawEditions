@@ -843,6 +843,11 @@
     "latin": "ut fit Regula afluum moralium obligans aa id quod reflum efLObligatiouein requirimus",
     "nearest": "french",
     "reason": "Grotius's definition of lex as rule of moral acts obliging to what is right is the definition Burlamaqui says he departs from."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui says he departs from Grotius's definition of law as too vague, and note (a) cites Grotius I.i.9.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -1329,6 +1334,11 @@
     "latin": "",
     "nearest": "n/a",
     "reason": "Burlamaqui merely refers to Barbeyrac's notes, and the source is Barbeyrac's own 'L'Auteur se trompe ici' comment on Grotius."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui names Barbeyrac's notes on Grotius I.1.9 (his note a), whose note 3 argues permission must be added to obligation as an effect of law, the view he adopts.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -2691,6 +2701,11 @@
     "latin": "duas res dedit , qua illum, obnoxium uteris , validijfimum facerent , rationem & foetet at em. itaque qui par efft nulli poJfcP fi diduceretur, rerum potitur. Societas illi dommium omnium animalium dedit",
     "nearest": "french",
     "reason": "Seneca's ratio and societas as compensation for weakness, quoted by Grotius's annotation; Burlamaqui is near Barbeyrac's French."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui's Seneca quotation follows Barbeyrac's French rendering (pour le dédommager, deux choses, la Raison & la Sociabilité, maître de tout), not the Latin.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -3020,6 +3035,11 @@
     "latin": "Sunt & quaedam juris naturalis non fimpheiter, lcd pro certo rerum flatu: fic communis rerum ufus naturalis fuit",
     "nearest": "french",
     "reason": "Grotius I.i.10 already distinguishes natural-law rules that hold only given a certain state of things (common use before property); Burlamaqui merely cites the passage."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Note (a) cites Grotius I.I § 10, the passage distinguishing natural law on things independent of human will from natural law on things following a human act.",
+    "date": "2026-11-18"
    }
   },
   {
@@ -4377,6 +4397,11 @@
     "latin": "",
     "nearest": "french",
     "reason": "Grotius's debt example in c64-65 (creditor remits the debt) concerns mutability of natural law, not the argument that self-imposed obligation is no obligation; the note is Barbeyrac's."
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "The objection quotes Barbeyrac's note almost word for word, including the debtor-creditor comparison and the Seneca reference.",
+    "date": "2026-11-18"
    }
   },
   {

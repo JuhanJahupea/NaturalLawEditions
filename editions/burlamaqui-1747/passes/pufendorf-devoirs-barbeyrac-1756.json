@@ -317,7 +317,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n102/mode/1up"
     ]
    ],
-   "sourcePart": "barbeyrac_note"
+   "sourcePart": "barbeyrac_note",
+   "audit": {
+    "verdict": "right",
+    "reason": "The clause 'jointes ou non, elles produisent le même effet & suivent les mêmes règles' is taken from Barbeyrac's note on ignorance and error, with the two members swapped.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4010,
@@ -1275,7 +1280,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n114/mode/1up"
     ]
    ],
-   "sourcePart": "pufendorf_text"
+   "sourcePart": "pufendorf_text",
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui copies Barbeyrac's Devoirs I.i.12 on overcoming inclinations, including the clause 'la gloire qui suit une si belle victoire'.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4040,
@@ -3449,7 +3459,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n155/mode/1up"
     ]
    ],
-   "sourcePart": "pufendorf_text"
+   "sourcePart": "pufendorf_text",
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui names Pufendorf's Abrégé, and note (b) cites Devoirs I.ii.3-5, for his account of sovereignty.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4108,
@@ -3573,6 +3588,11 @@
    "labelCheck": {
     "was": "close paraphrase",
     "reason": "Identical clause apart from 'point' for 'pas'.",
+    "date": "2026-11-18"
+   },
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui quotes and then restates Barbeyrac's definition of law with the same words 'impose la nécessité d'agir ou de ne pas agir d'une certaine maniére'.",
     "date": "2026-11-18"
    }
   },
@@ -4377,7 +4397,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n178/mode/1up"
     ]
    ],
-   "sourcePart": "pufendorf_text"
+   "sourcePart": "pufendorf_text",
+   "audit": {
+    "verdict": "right",
+    "reason": "Pufendorf's definition of positive law is followed clause by clause, with God's will in place of the legislator's.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4139,
@@ -6925,7 +6950,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n191/mode/1up"
     ]
    ],
-   "sourcePart": "pufendorf_text"
+   "sourcePart": "pufendorf_text",
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sentence sequence and many words: law said to be naturally known, but not born with us or imprinted from the first moment of existence.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4217,
@@ -9386,7 +9416,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n99/mode/1up"
     ]
    ],
-   "sourcePart": "barbeyrac_note"
+   "sourcePart": "barbeyrac_note",
+   "audit": {
+    "verdict": "right",
+    "reason": "The sentence on mistaken belief about indifferent things is the same as Barbeyrac's note, word for word.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4297,
@@ -9796,7 +9831,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n122/mode/1up"
     ]
    ],
-   "sourcePart": "barbeyrac_note"
+   "sourcePart": "barbeyrac_note",
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui follows Barbeyrac's note step by step (algebra example, then two men destined to an office), changing the professions.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4310,
@@ -10367,7 +10407,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n135/mode/1up"
     ]
    ],
-   "sourcePart": "barbeyrac_note"
+   "sourcePart": "barbeyrac_note",
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence as Barbeyrac's note (thumb-cutting Romans, then liability for undertaking what one knew or could easily know exceeds one's strength), clause nearly word for word.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4329,
@@ -10714,7 +10759,12 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n116/mode/1up"
     ]
    ],
-   "sourcePart": "pufendorf_text"
+   "sourcePart": "pufendorf_text",
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence as Pufendorf on habits: they can be shed if one wills it, they were in our power not to contract, so imputation is not lessened and good habits make actions more praiseworthy.",
+    "date": "2026-11-18"
+   }
   },
   {
    "id": 4340,

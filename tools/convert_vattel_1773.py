@@ -1,7 +1,7 @@
 # Convert the Vattel 1773 working edition (edition_data/*.json) into the collection format (docs/FORMAT.md).
 # Usage: python tools/convert_vattel_1773.py <edition_data folder>
 # Reads data.json, en_sections.json, align.json, flags.json, para_final.json. Writes editions/vattel-1773/, reuse/, catalogue.json.
-import os, re, shutil, sys
+import collections, os, re, shutil, sys
 from nle import ROOT, Split, apply_note_moves, apply_row_edits, dump, load, load_pass, provenance, update_catalogue, write_tables, write_text
 
 SRC = sys.argv[1]
@@ -148,7 +148,8 @@ cat_reuse, replaced = write_tables(ED, tables, TX, STEPS,
                          'Reuse of the source in the edition, found by retrieval and judged by a language model. '
                          'status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the text layer named in the catalogue.',
                          {'burlamaqui-1747': {'toLayer': 'Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from.'}})
-assert sum(c['rows'] for c in cat_reuse if not load_pass(ED, c['to'])) + replaced == len(ROWS)
+ADDED = collections.Counter(r['table'] for r in (load_pass(ED, 'additions') or {}).get('rows', []))   # rows of passes/additions.json
+assert sum(c['rows'] - ADDED[c['to']] for c in cat_reuse if not load_pass(ED, c['to'])) + replaced == len(ROWS)
 
 # ---------- provenance ----------
 prov = os.path.join(OUT, 'provenance'); os.makedirs(prov, exist_ok=True)
