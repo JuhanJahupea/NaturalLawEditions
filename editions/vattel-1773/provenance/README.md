@@ -4,7 +4,7 @@ Converted by `tools/convert_vattel_1773.py` from `vattel-reuse/edition_data/`:
 
 | File | Bytes | SHA-256 |
 |---|---|---|
-| `data.json` | 7538793 | `b478e9d2ff515cbca54b0d487bcf423d561e72ff151e772c7f301323313835eb` |
+| `data.json` | 7539241 | `3c569c8406f204041fdee537a30237b9600ea297b100b562435d2ff0a7e6875f` |
 | `en_sections.json` | 3174217 | `9d04494f33d0201cdacb0be8f3ad1f975c858137386173ca69bb7d90a0e061b8` |
 | `align.json` | 92540 | `9c2382bba93a7674dbde3760c72fb6ae648c8f40ece2a36a691949d9efad5ca8` |
 | `flags.json` | 77090 | `751fcd38f41920016c40e9066759d8f78ffa34568ef89f004177aad99fcf7b2c` |

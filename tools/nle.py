@@ -1,5 +1,5 @@
 # Shared conversion code: a working edition's data.json (section HTML with reuse spans) -> the collection format (docs/FORMAT.md).
-import collections, hashlib, json, os, re
+import collections, hashlib, html, json, os, re
 from html.parser import HTMLParser
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -181,6 +181,36 @@ class Split:
         if r.get('labelCheck'): row['labelCheck'] = r['labelCheck']
         if r.get('locusCheck'): row['locusCheck'] = r['locusCheck']
         return row
+
+
+def restore_pb_spaces(sections, frm, to):
+    """The working editions dropped the space between two words where a page break falls: "de<pb>régler" made the text read
+    "derégler". Each break written in data.json with template `frm` is written again with template `to`, after a space where
+    the characters on both sides of it (tags aside) are not spaces, the one before is not a hyphen, apostrophe or opening
+    bracket, and the one after is not a comma, full stop or closing bracket. Returns the number of spaces restored.
+    Used by tools/migrate_pb_spaces.py."""
+    rx = re.compile(re.escape(frm).replace(r'\{vol\}', '(?P<vol>[^:<]*?)', 1).replace(r'\{vol\}', '(?P=vol)')
+                    .replace(r'\{scan\}', r'(?P<scan>\d+)').replace(r'\{printed\}', '(?P<printed>[^<]*?)'))
+    n = [0]
+    def fix(h):
+        assert len(rx.findall(h)) == h.count('class="pb"'), h[:80]
+        out = []; last = 0
+        for m in rx.finditer(h):
+            # the space goes after the last character before the break, inside the tags that close there
+            j = m.start() - len(re.search(r'(?:<[^>]*>)*$', h[:m.start()]).group(0))
+            pre = html.unescape(h[:j][-12:])[-1:]
+            post = html.unescape(re.sub(r'^(?:<[^>]*>)+', '', h[m.end():])[:12])[:1]
+            space = bool(pre and post and not pre.isspace() and not post.isspace() and pre not in "-'’(" and post not in ',.)')
+            n[0] += space
+            g = m.groupdict()
+            out += [h[last:j], ' ' if space else '', h[j:m.start()],
+                    to.replace('{vol}', g.get('vol') or '').replace('{scan}', g['scan']).replace('{printed}', g['printed'])]
+            last = m.end()
+        return ''.join(out) + h[last:]
+    for s in sections:
+        k = s['html'].count('class="pb"'); s['html'] = fix(s['html']); assert s['html'].count('class="pb"') == k
+        for nt in s['notes']: nt['html'] = fix(nt['html'])
+    return n[0]
 
 
 def apply_row_edits(rows, edits):

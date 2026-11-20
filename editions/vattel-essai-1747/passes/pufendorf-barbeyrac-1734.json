@@ -20,7 +20,7 @@
     [
      "t",
      3,
-     218
+     219
     ]
    ],
    "family": "P",
@@ -32,7 +32,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
-   "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire, parce qu'elles ont toutes le même objet, savoir, derégler les mœurs & la conduite des hommes.",
+   "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire, parce qu'elles ont toutes le même objet, savoir, de régler les mœurs & la conduite des hommes.",
    "source": "J'entens par là , & par le nom de Morale,non seulement ce que l'on appelle ordinairement ainsi, mais encore le Droit Naturel , & la Politique , en un mot tout ce qui est nécessaire pour savoir de quelle maniére chacun doit se conduire , selon son état & sa condition.",
    "reason": "Barbeyrac puts Morale and Droit Naturel under one name because both teach how each person should conduct himself, the usage Vattel says confuses them because they share the object of regulating conduct.",
    "links": [
@@ -44,7 +44,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n31/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac stipulates a broad 'Morale' that includes droit naturel; Vattel notes such everyday confusion and then distinguishes the terms, so there is only a shared premise (both guide conduct), with no sign that he has this sentence in view.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3001,
@@ -52,8 +57,8 @@
    "at": [
     [
      "t",
-     177,
-     321
+     178,
+     322
     ]
    ],
    "family": "P",
@@ -91,8 +96,8 @@
    "at": [
     [
      "t",
-     485,
-     638
+     486,
+     639
     ]
    ],
    "family": "Bb",
@@ -130,8 +135,8 @@
    "at": [
     [
      "t",
-     702,
-     845
+     703,
+     846
     ]
    ],
    "family": "Bb",
@@ -169,8 +174,8 @@
    "at": [
     [
      "t",
-     206,
-     430
+     207,
+     431
     ]
    ],
    "family": "P",
@@ -194,7 +199,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n364/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both reply that a law invented for utility must still rest on nature, but Vattel's argument (knowing what is useful requires nature) differs from Epicurus's in Pufendorf (each naturally wants his good).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3005,
@@ -202,8 +212,8 @@
    "at": [
     [
      "t",
-     746,
-     851
+     747,
+     852
     ]
    ],
    "family": "P",
@@ -227,7 +237,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n373/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Pufendorf's remark that natural-law principles are found by considering man's nature is a stock claim; Vattel speaks of utility-inventors, and nothing specific links him to II.3.14.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3006,
@@ -236,7 +251,7 @@
     [
      "t",
      3,
-     463
+     464
     ]
    ],
    "family": "P",
@@ -248,7 +263,7 @@
    "confidence": 0.5,
    "status": "possible",
    "step": "R",
-   "passage": "Il faut en dire autant de ceux qui rapportent l'institution du droit naturel à une volonté arbitraire de Dieu. Car, dès qu'ils reconnoissentDieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
+   "passage": "Il faut en dire autant de ceux qui rapportent l'institution du droit naturel à une volonté arbitraire de Dieu. Car, dès qu'ils reconnoissent Dieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
    "source": "Car les uns établissent pour prémier principe de ce Droit , la Volonté Divine , qui étant souverainement libre leur donne lieu de conclurre que DIEU peut changer la Loi Naturelle , (1) & ordonner même le contraire , comme cela a lieu en matiére de Loix Positives. Les autres posent pour fondement la Sainteté & la Justice Essentielle de DIEU , lesquelles ne pouvant souffrir aucune altération ni aucun changement , rendent le Droit naturel absolument immuable. A l'égard de la prémiére opinion , je remarque , qu'il a bien dépendu de la Volonté Divine de produire ou de ne pas produire une Créature de telle constitution , que la Loi Naturelle lui convienne nécessairement.",
    "reason": "Pufendorf (II.3.5) takes up the voluntarist opinion and first answers that, once God created man with this constitution, natural law necessarily suits it. Vattel takes up the same opponents and gives the same first answer.",
    "links": [
@@ -274,8 +289,8 @@
    "at": [
     [
      "t",
-     464,
-     601
+     465,
+     602
     ]
    ],
    "family": "P",
@@ -312,8 +327,8 @@
    "at": [
     [
      "t",
-     464,
-     601
+     465,
+     602
     ]
    ],
    "family": "Bb",
@@ -323,7 +338,7 @@
    "inNote": true,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Disons plus : comment ces Auteurs savent-ils que Dieu a prescrit aux hommes telles & telles loix, plutôt que d'autres toutes contraires ?",
    "source": "Car , dit-il , ils peuvent aisément s'imaginer qu'il est incertain si DIEU n'a pas changé telle ou telle Loi en tel ou tel cas , & s'il ne commande pas ce que l'on croit défendu , ou au contraire s'il ne défend pas ce que l'on croit commandé ; puis qu'il le peut toûjours , sans que rien l'en empêche , selon eux.",
@@ -337,7 +352,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n352/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The note (Buddeus on voluntarists' uncertainty whether God commands a law or its contrary, followed by Barbeyrac's point that such a law could only be known through the nature of things) carries the argument Vattel uses: they can know which laws God gave only by considering nature.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3009,
@@ -345,8 +366,8 @@
    "at": [
     [
      "t",
-     602,
-     854
+     603,
+     855
     ]
    ],
    "family": "P",
@@ -354,7 +375,7 @@
    "locus": "Liv. II ch. III § 10",
    "page": "PUF34T1.p365",
    "inNote": false,
-   "label": "shared argument",
+   "label": "loose paraphrase",
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
@@ -370,7 +391,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n364/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Avantageux ... en général & ... en particulier' is a stock French doublet; Pufendorf's Epicurean argument (justice invented for the common good) is not Vattel's argument about God's wise laws, so at most a verbal echo.",
+    "date": "2026-11-20",
+    "labelWas": "shared argument"
+   }
   },
   {
    "id": 3010,
@@ -378,8 +405,8 @@
    "at": [
     [
      "t",
-     1025,
-     1087
+     1027,
+     1089
     ]
    ],
    "family": "Bb",
@@ -416,8 +443,8 @@
    "at": [
     [
      "t",
-     1217,
-     1325
+     1219,
+     1327
     ]
    ],
    "family": "Bb",
@@ -441,7 +468,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n375/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both quote Cicero's dictum, but Vattel's 'Naturâ ipsâ constitutum est jus' follows Wolff § 136 ('Ipsa natura ... constitutum jus est') after the same argument; a shared ancient tag.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3012,
@@ -474,7 +506,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n174/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Astreint par une nécessité morale' is the stock juristic definition of obligation (Inst. 3.13 'necessitate adstringimur'); Vattel's analysis of ordinary usage is closer to Burlamaqui and does not point to Pufendorf in particular.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3013,
@@ -493,7 +530,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "quoique non pas forcés, ni contraints physiquement par une cause externe, qui agisse violemment sur nous ; mais moralement, & de la maniere que des Etres libres peuvent être engagés à faire quelque chose, même contre le conseil de leurs passions.",
    "source": "Je dis , raisonnablement : car les plus étroites Obligations ne forcent jamais la Volonté , en sorte qu'elle ne puisse actuellement s'y soûstraire à ses risques , périls & fortunes ; & à cet égard , comme le dit très-bien un ancien Philosophe , (3) personne n'est maître de la Volonté d'autrui. De plus , toutes les autres choses qui font pancher la Volonté vers l'un des deux côtez opposez , ne la poussent & ne l'entraînent que comme un poids Physique , dont elle n'est pas plûtôt déchargée qu'elle revient d'elle-même à son état naturel d'indifférence. Mais l'Obligation agit moralement sur le Cœur",
@@ -507,7 +544,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's account of obligation (astreints, liés, not forced physically but moved morally, through motives that bend the will) follows Pufendorf I.6.5's contrast of obligation acting morally with a physical push; Vattel quotes this paragraph's note n.4 in §§26-27.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3014,
@@ -515,8 +558,8 @@
    "at": [
     [
      "t",
-     799,
-     978
+     800,
+     979
     ]
    ],
    "family": "Bb",
@@ -591,8 +634,8 @@
    "at": [
     [
      "t",
-     617,
-     681
+     618,
+     682
     ]
    ],
    "family": "P",
@@ -667,8 +710,8 @@
    "at": [
     [
      "t",
-     343,
-     456
+     344,
+     457
     ]
    ],
    "family": "Bb",
@@ -705,8 +748,8 @@
    "at": [
     [
      "t",
-     740,
-     904
+     741,
+     905
     ]
    ],
    "family": "P",
@@ -716,7 +759,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Dira-t-il, que c'est parce que cette obéissance est juste, conforme aux régles de l'ordre ; ou parce que ce supérieur peut nous punir, si nous lui sommes rebelles ?",
    "source": "les prémiers à la vûë de la puissance dont cet Etre est revêtu ; les autres à la vûë des raisons sur lesquelles est fondée son autorité , & qui indépendamment de tout motif de crainte & envisagées comme de simples conseils , devroient suffire pour engager à lui obéïr.",
@@ -730,7 +773,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n259/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's two possible answers to why one obeys a superior (the obedience is just, or he can punish) are Pufendorf's two grounds of authority in DNG I.6.9 (just reasons and power to harm), addressed to Barbeyrac, who follows him.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3020,
@@ -738,8 +787,8 @@
    "at": [
     [
      "t",
-     905,
-     1025
+     906,
+     1026
     ]
    ],
    "family": "Bb",
@@ -749,7 +798,7 @@
    "inNote": true,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Mais alors, il nous allégue des motifs, qui sont joints à cette action d'obéissance ; & il retombe dans notre définition",
    "source": "Il est vrai que ces deux choses se trouvent ordinairement jointes ensemble; & elles le sont toûjours en matiere des devoirs de la Loi Naturelle: mais il ne faut pas pour cela les confondre",
@@ -763,7 +812,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n255/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "In §18 (referred back to in §27, where he quotes this same note I.6.5 n.4) Vattel answers Barbeyrac's claim that the motive and the foundation of obligation are joined but must not be confused: the motives 'joints' to obedience are the obligation.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3021,
@@ -771,8 +826,8 @@
    "at": [
     [
      "t",
-     336,
-     482
+     337,
+     483
     ]
    ],
    "family": "P",
@@ -796,7 +851,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n373/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That self-love is the strongest inclination is a commonplace; Vattel's version (primitive desire for perfection of soul, body and fortune) is Wolffian, not Pufendorf's.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3022,
@@ -804,8 +864,8 @@
    "at": [
     [
      "t",
-     993,
-     1101
+     992,
+     1100
     ]
    ],
    "family": "P",
@@ -829,7 +889,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n216/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both state the scholastic axiom that we desire only what we judge good or useful (real or apparent), a common doctrine; Vattel's soul, body and fortune scheme is Wolffian.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3023,
@@ -837,7 +902,7 @@
    "at": [
     [
      "t",
-     1257,
+     1256,
      1321
     ]
    ],
@@ -850,7 +915,7 @@
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
-   "passage": "Tout motif revient dans le fonds à l'utilitéréelle ou apparente.",
+   "passage": "Tout motif revient dans le fonds à l'utilité réelle ou apparente.",
    "source": "ce qui les frappe & les meut le plus souvent, ce n'est pas le Bien réel qui est dans les Choses mêmes, mais l'apparence du Bien",
    "reason": "Barbeyrac's note likewise says men are moved by the real good or, more often, by the appearance of good.",
    "links": [
@@ -862,7 +927,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n217/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The real/apparent good distinction is a scholastic commonplace; nothing beyond it links Vattel's sentence to this Barbeyrac note.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3024,
@@ -895,7 +965,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n380/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The words 'passent avec raison pour les plus nobles' match, but it is an ordinary idiom, and Pufendorf applies it to acts done for others' utility, Vattel to motives tied to the soul's perfection.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3025,
@@ -914,7 +989,7 @@
    "inNote": true,
    "label": "open disagreement",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "nous devons en conclure, que ce bien cette utilité, est le prémier principe de toute obligation",
    "source": "En un mot, c'est brouiller les idées, & faire de l'accessoire le principal, que d'établir l'Utilité même la plus reelle & la plus universelle, pour fondement de l'Honnêteté Morale, & de l'Obligation, proprement ainsi nommée.",
@@ -928,7 +1003,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n363/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's thesis that utility is the first principle of all obligation is exactly what this note condemns; he quotes the note in full in § 30 and defends the utility principle against it.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3026,
@@ -937,7 +1018,7 @@
     [
      "t",
      271,
-     564
+     565
     ]
    ],
    "family": "Bb",
@@ -949,7 +1030,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
-   "passage": "pourvû qu'on ne la prenne pas pour le prémier principe de l'obligation, mais seulementpour le principe prochain, duquel on déduit l'obligation où sont tous les hommes, d'observer les loix qui doivent régler la société naturelle qui se trouve entr'eux, & sans lesquelles elle ne peut subsister.",
+   "passage": "pourvû qu'on ne la prenne pas pour le prémier principe de l'obligation, mais seulement pour le principe prochain, duquel on déduit l'obligation où sont tous les hommes, d'observer les loix qui doivent régler la société naturelle qui se trouve entr'eux, & sans lesquelles elle ne peut subsister.",
    "source": "La Nature Humaine, ainsi envisagée , nous découvre la volonté du Créateur, qui est seule le fondement de l'Obligation où nous sommes de suivre les régles renfermées dans ces trois grands principes de nos Devoirs. L'utilité manifeste, que nous trouvons ensuite dans leur pratique, est un motif, & un motif très-puissant, pour nous engager à les pratiquer actuellement.",
    "reason": "Like Barbeyrac's note on DNG II.3.15, Vattel keeps sociability as the principle of duties toward society but denies it is the foundation of obligation; he puts utility where Barbeyrac puts God's will and inverts Barbeyrac's subordination of utility to a mere motive.",
    "links": [
@@ -961,7 +1042,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n377/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac's note does separate sociability as the principle of social duties from the foundation of obligation, but that split was standard after Barbeyrac; Vattel's own first-vs-proximate wording is absent from the note.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3027,
@@ -1033,7 +1119,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n375/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's grounding of the duty to keep social laws in each one's own utility matches the reading Barbeyrac reports from Titius, but nothing in the wording points to this note rather than the common Pufendorfian sociability-from-need argument.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3029,
@@ -1052,7 +1143,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Il ne doit même pas balancer à leur sacrifier dans des cas particuliers un avantage présent; parce que ce sont elles qui lui assurent la paisible jouissance de tous ses autres biens.",
    "source": "Car il y a une Utilité qui ne paroît telle qu'au jugement corrompu des Passions déréglées, lesquelles, sans s'embarrasser de l'avenir, s'attachent uniquement aux avantages présens & passagers (4). Mais il y a une autre Utilité fondée sur les lumiéres de la droite Raison, qui ne considére pas seulement ce qu'on a devant les yeux, mais qui en examine les suites (5).",
@@ -1066,7 +1157,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n362/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's E.24–25 argument (sacrifice a present advantage to the general rules that secure lasting goods, repose and safety) follows DNG II.3.10's reason-versus-passion utility and its sequel; Vattel quotes the same paragraph's note 6 and its Cicero/Socrates in § 30.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3030,
@@ -1099,7 +1196,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n383/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both hold that a society serving self-interest obliges one sometimes to put the public before one's particular advantage, a commonplace; Vattel's reason, that the rules secure the enjoyment of all one's goods, is absent.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3031,
@@ -1184,7 +1286,7 @@
     [
      "t",
      294,
-     979
+     980
     ]
    ],
    "family": "Bb",
@@ -1196,7 +1298,7 @@
    "confidence": 0.97,
    "status": "match",
    "step": "R",
-   "passage": "„selon lui le devoir ou l'obligation „par rapport à l'homme ne peut être „qu'une raison ou un motif proposé „d'une maniere convenable, & qui le„détermine nécessairement à choisir „ou à présérer une maniere d'agir à „l'autre; & cette raison ou ce motif „ne peut être qu'un plus grand degré „de misère à éviter; ou de félicité à „acquérir, qu'on ne peut éviter ou „acquérir en agissant d'une autre maniere. Il ne reconnoît point d'autre obligation; ou s'il y en a quelqu'autre, il croit qu'en l'examinant „avec soin, on verra qu'elle se termine enfin à celle - là. C'est ainsi „que M. Bernard exprime les pensées de M. Gastrell. Nouvelles de „la Répub. des Lettres, Avril 1700. „p. 408.„",
+   "passage": "„selon lui le devoir ou l'obligation „par rapport à l'homme ne peut être „qu'une raison ou un motif proposé „d'une maniere convenable, & qui le „détermine nécessairement à choisir „ou à présérer une maniere d'agir à „l'autre; & cette raison ou ce motif „ne peut être qu'un plus grand degré „de misère à éviter; ou de félicité à „acquérir, qu'on ne peut éviter ou „acquérir en agissant d'une autre maniere. Il ne reconnoît point d'autre obligation; ou s'il y en a quelqu'autre, il croit qu'en l'examinant „avec soin, on verra qu'elle se termine enfin à celle - là. C'est ainsi „que M. Bernard exprime les pensées de M. Gastrell. Nouvelles de „la Répub. des Lettres, Avril 1700. „p. 408.„",
    "source": "Selon lui, le Devoir ou l'Obligation par rapport à l'Homme ne peut être qu'une raison ou un motif proposé d'une maniére convenable, & qui le détermine nécessairement à choisir ou à preferer une maniére d'agir à l'autre; & cette raison ou ce motif ne peut être qu'un plus grand degré de Misere à eviter, ou de Félicité à aquérir, qu'on ne peut éviter ou aquérir en agissant d'une autre maniére. Il ne reconnoît point d'autre Obligation, ou s'il y en a quelque autre, il croit qu'en l'examinant avec soin, on verra qu'elle se termine enfin à celle-là. C'est ainsi que Mr. Bernard exprime les pensées de Mr. GASTRELL, Nouvelles de la Républ. des Lettres, Avril, 1700. p. 408.",
    "reason": "Word-for-word quotation, in quotation marks, of Barbeyrac's summary of Gastrell (after Bernard) in note 4 to Pufendorf DNG I.6.5, including the journal reference.",
    "links": [
@@ -1222,7 +1324,7 @@
     [
      "t",
      68,
-     456
+     454
     ]
    ],
    "family": "Bb",
@@ -1234,7 +1336,7 @@
    "confidence": 0.97,
    "status": "match",
    "step": "R",
-   "passage": "On confond ici, dit-il, le „motif de l'obligation, ou ce qui „porte plus efficacement à s'y soumettre, avec le fondement de l'ob-„ligation, ou la raison pourquoi on „est tenu indispensablement de faire „telle ou telle chose. Cette raison „n'est autre chose que la volonté d'un „supérieur, dont le pouvoir par rapport à notre bonheur ou notre malheur sert ensuite à mouvoir notre „volonté,",
+   "passage": "On confond ici, dit-il, le „motif de l'obligation, ou ce qui „porte plus efficacement à s'y soumettre, avec le fondement de l'obligation, ou la raison pourquoi on „est tenu indispensablement de faire „telle ou telle chose. Cette raison „n'est autre chose que la volonté d'un „supérieur, dont le pouvoir par rapport à notre bonheur ou notre malheur sert ensuite à mouvoir notre „volonté,",
    "source": "Mais on confond ici le motif de l'Obligation, ou ce qui porte le plus efficacement à s'y soûmettre, avec le fondement de l'Obligation, ou la raison pourquoi on est tenu indispensablement de faire telle ou telle chose. Cette raison n'est autre chose, que la Volonté d'un Supérieur, dont le pouvoir par rapport à nôtre Bonheur ou nôtre Malheur sert ensuite à mouvoir nôtre Volonté",
    "reason": "Quotation, in quotation marks, of the objection in the same Barbeyrac note (DNG I.6.5 n. 4) distinguishing the motive of obligation from its foundation, the superior's will.",
    "links": [
@@ -1259,8 +1361,8 @@
    "at": [
     [
      "t",
-     457,
-     528
+     455,
+     526
     ]
    ],
    "family": "Bb",
@@ -1297,8 +1399,8 @@
    "at": [
     [
      "t",
-     531,
-     803
+     529,
+     801
     ]
    ],
    "family": "Bb",
@@ -1335,8 +1437,8 @@
    "at": [
     [
      "t",
-     1284,
-     1523
+     1283,
+     1522
     ]
    ],
    "family": "Bb",
@@ -1373,8 +1475,8 @@
    "at": [
     [
      "t",
-     1794,
-     1910
+     1793,
+     1909
     ]
    ],
    "family": "Bb",
@@ -1384,7 +1486,7 @@
    "inNote": true,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Et cela revient à mon sentiment, qui fonde l'obligation sur l'utilité; car il m'est sans doute utile d'être parfait.",
    "source": "C'est réduire tout à nôtre propre Utilité, confondre l'Honnête & l'Utile",
@@ -1398,7 +1500,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n255/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel answers this very note (L. I c. vi § 5 n. 4, named in E.26-27) and openly embraces the grounding of obligation in utility that Barbeyrac condemns there as reducing everything to one's own utility.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3039,
@@ -1406,8 +1514,8 @@
    "at": [
     [
      "t",
-     1452,
-     1488
+     1453,
+     1489
     ]
    ],
    "family": "P",
@@ -1431,7 +1539,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n160/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Tient lieu de raison' renders Juvenal's tag, which Vattel takes from Wolff § 132 as he says; Pufendorf uses it of a legislator's free departure from general reason in interpreting laws.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3040,
@@ -1478,7 +1591,7 @@
     [
      "t",
      258,
-     2849
+     2852
     ]
    ],
    "family": "Bb",
@@ -1490,7 +1603,7 @@
    "confidence": 0.97,
    "status": "match",
    "step": "R",
-   "passage": "„ Il y a ici deux extrémités „à éviter : l'une, de ceux qui en confondant l'honnête avec l'utile , &„mesurant cette utilité à leur intérêt „particulier, détruisent ainsi toute „idée de vertu & de vice, tout Droit „naturel, toute moralité ; l'autre, de „ceux qui croyant avec raison que la „pratique de toutes les vertus, de „toutes les règles du Droit naturel, est „véritablement & infailliblement avantageuse à tous les hommes en „tout & par-tout, confondent cette „utilité avec l'honnêteté naturelle des „actions. La prémiere, n'est qu'une „suite inséparable de l'autre, & un caractère auquel on peut distinguer ce „qui est véritablement honnête, d'avec ce qui ne l'est que dans l'opinion erronée des hommes. Quand je „dis : Il faut rendre le bien pour le „mal, mais non pas le mal pour le „bien : les hommes doivent obéïr à „la volonté de Dieu leur Créateur ; „il y a dans ces propositions une convenance si claire & si évidente, qu'on „ne peut s'empêcher pour peu qu'on„y fasse attention d'y acquiescer, de „trouver beau & honnête ce qu'elles „renferment , sans avoir besoin de „penser en aucune maniere à l'avantage qui revient de leur observation. „On est convaincu dès-lors , que si „l'on agit contre ces maximes, on péche contre la raison, & l'on est porté à s'en faire des reproches à soi-même. De cela seul naît l'idée du „devoir , & le but raisonnable de son „observation. Il est vrai que pour „donner une pleine force à toutes les „maximes semblables, où l'on découvre une convenance & une beauté „naturelle, il faut s'être bien persuadé de la vérité de la seconde que „j'ai donnée pour exemple. Mais „lors même qu'on réduit tout comme „il le faut à cette règle fondamentale, on n'a nul besoin pour sentir l'obligation où l'on est de s'y conformer, d'envisager l'utilité infinie qui „en résulte. Bien plus : ce n'est point„précisément à cause de cette utilité, „qu'on doit actuellement faire ce qui „est conforme à la volonté de DIEU ; „c'est uniquement parce qu'on se reconnoît dépendant de lui, & qu'il „est beau & honnête de lui obéir , encore même que par impossible , il „exigeât quelque chose d'absolument „inutile. Que si l'on pense à l'utilité, „on ne doit pas la regarder simplement en elle-même, mais en tant „qu'elle résulte de l'union naturelle & „merveilleuse que le Créateur a établie entre le devoir & la félicité de „ses créatures. En un mot, c'est „brouiller les idées & faire de l'accessoire le principal, que d'établir l'utilité même la plus réelle & la plus „universelle pour fondement de l'honnêteté morale, & de l'obligation, „proprement ainsi nommée. Aussi",
+   "passage": "„ Il y a ici deux extrémités „à éviter : l'une, de ceux qui en confondant l'honnête avec l'utile , & „mesurant cette utilité à leur intérêt „particulier, détruisent ainsi toute „idée de vertu & de vice, tout Droit „naturel, toute moralité ; l'autre, de „ceux qui croyant avec raison que la „pratique de toutes les vertus, de „toutes les règles du Droit naturel, est „véritablement & infailliblement avantageuse à tous les hommes en „tout & par-tout, confondent cette „utilité avec l'honnêteté naturelle des „actions. La prémiere, n'est qu'une „suite inséparable de l'autre, & un caractère auquel on peut distinguer ce „qui est véritablement honnête, d'avec ce qui ne l'est que dans l'opinion erronée des hommes. Quand je „dis : Il faut rendre le bien pour le „mal, mais non pas le mal pour le „bien : les hommes doivent obéir à „la volonté de Dieu leur Créateur ; „il y a dans ces propositions une convenance si claire & si évidente, qu'on „ne peut s'empêcher pour peu qu'on „y fasse attention d'y acquiescer, de „trouver beau & honnête ce qu'elles „renferment , sans avoir besoin de „penser en aucune maniere à l'avantage qui revient de leur observation. „On est convaincu dès-lors , que si „l'on agit contre ces maximes, on péche contre la raison, & l'on est porté à s'en faire des reproches à soi-même. De cela seul naît l'idée du „devoir , & le but raisonnable de son „observation. Il est vrai que pour „donner une pleine force à toutes les „maximes semblables, où l'on découvre une convenance & une beauté „naturelle, il faut s'être bien persuadé de la vérité de la seconde que „j'ai donnée pour exemple. Mais „lors même qu'on réduit tout comme „il le faut à cette règle fondamentale, on n'a nul besoin pour sentir l'obligation où l'on est de s'y conformer, d'envisager l'utilité infinie qui „en résulte. Bien plus : ce n'est point „précisément à cause de cette utilité, „qu'on doit actuellement faire ce qui „est conforme à la volonté de DIEU ; „c'est uniquement parce qu'on se reconnoît dépendant de lui, & qu'il „est beau & honnête de lui obéir , encore même que par impossible , il „exigeât quelque chose d'absolument „inutile. Que si l'on pense à l'utilité, „on ne doit pas la regarder simplement en elle-même, mais en tant „qu'elle résulte de l'union naturelle & „merveilleuse que le Créateur a établie entre le devoir & la félicité de „ses créatures. En un mot, c'est „brouiller les idées & faire de l'accessoire le principal, que d'établir l'utilité même la plus réelle & la plus „universelle pour fondement de l'honnêteté morale, & de l'obligation, „proprement ainsi nommée. Aussi",
    "source": "Il y a ici deux extrémitez à éviter. L'une, de ceux qui, en confondant l'Honnête avec l'Utile, & mesurant cette Utilité à leur intérêt particulier, détruisent ainsi toute idée de Vertu & de Vice, tout Droit Naturel, toute Moralité. L'autre, de ceux qui croiant avec raison que la pratique de toutes les Vertus, de toutes les régles du Droit Naturel, est veritablement & infailliblement avantageuse à tous les Hommes, en tout & par tout, confondent cette Utilité avec l'Honnêteté naturelle dés Actions. La prémiére n'est qu'une suite inséparable de l'autre, & un caractére auquel on peut distinguer ce qui est véritablement honnête, d'avec ce qui ne l'est que dans l'opinion erronée des Hommes. Quand je dis : Il faut rendre le bien pour le bien[?]mais non pas le mal pour le bien : Les H[?]mmes doivent obeïr à la volonté de DIEU leur Créateur; il y a dans ces Propositions une convenance si claire & si évidente, qu'on ne peut s'empêcher, pour peu qu'on y fasse attention d'y aquiescer, de trouver beau & honnête ce qu'elles renferment, sans avoir besoin de penser en aucune maniére à l'avantage qui revient de leur observation[?]On est convaincu dès-lors, que, si l'on agit contre ces maximes, on péche contre la Raison, & l'on est porté à s'en faire des reproches à soi-même. De cela seul naît l'idée du Devoir, & le but raisonnable de son observation. Il est vrai que, pour donner une pleine force à toutes les Maximes semblables où l'on découvre une convenance & une beauté naturelle, il faut s'être bien persuadé de la vérité de la seconde que j'ai donnée pour exemple. Mais lors même qu'on réduit tout, comme il le faut, à cette régle fondamentale, on n'a nul besoin, pour sentir l'obligation où l'on est de s'y conformer, d'envisager l'utilité infinie qui en résulte. Bien plus : ce n'est point précisément à cause de cette utilité, qu'on doit actuellement faire ce qui est conforme à la Volonté de DIEU : c'est uniquement parce qu'on se reconnoît dépendant de lui[?]& qu'il est beau & honnête de lui obeïr, encore même que, par impossible, il exigeât quelque chose d'absolument inutile. Que si l'on pense à l'Utilité, on ne doit pas la regarder simplement en elle-même, mais entant qu'elle résulte de l'union naturelle, & merveilleuse que le Créateur a établie entre le Devoir & la Felicité de ses Créatures. En un mot, c'est brouiller les idées, & faire de l'accessoire le principal, que d'établir l'Utilité même la plus reelle & la plus universelle, pour fondement de l'Honnêteté Morale, & de l'Obligation, proprement ainsi nommée. Aussi voions-nous, que ceux",
    "reason": "Vattel quotes in full Barbeyrac's note 6 to Pufendorf DNG II.3.10 (two extremes, utility as accessory not foundation of obligation); this row covers the part printed on p. 364.",
    "links": [
@@ -1515,8 +1628,8 @@
    "at": [
     [
      "t",
-     2850,
-     3091
+     2853,
+     3095
     ]
    ],
    "family": "Bb",
@@ -1528,7 +1641,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "„voyons-nous que ceux qui ont ignoré, ou qui n'ont connu que fort imparfaitement cette utilité, n'ont pas„laissé d'être frappés, & d'une maniere assez vive , de l'Honnêteté intrinsèque de la plupart des actions „conformes au Droit naturel. „",
+   "passage": "„voyons-nous que ceux qui ont ignoré, ou qui n'ont connu que fort imparfaitement cette utilité, n'ont pas „laissé d'être frappés, & d'une maniere assez vive , de l'Honnêteté intrinsèque de la plupart des actions „conformes au Droit naturel. „",
    "source": "qui ont ignoré, ou qui n'ont connu que fort imparfaitement, cette Utilité, n'ont pas laissé d'être frappez, & d'une maniére, assez vive, de l'Honnêteté intrinseque de la plûpart des Actions conformes au Droit Naturel.",
    "reason": "End of the same quoted note 6 (DNG II.3.10), continued on p. 365, stopping where Barbeyrac's sentence ends.",
    "links": [
@@ -1553,8 +1666,8 @@
    "at": [
     [
      "t",
-     3092,
-     3496
+     3096,
+     3500
     ]
    ],
    "family": "Bb",
@@ -1591,8 +1704,8 @@
    "at": [
     [
      "t",
-     3631,
-     3916
+     3635,
+     3921
     ]
    ],
    "family": "Bb",
@@ -1604,7 +1717,7 @@
    "confidence": 0.75,
    "status": "match",
    "step": "R",
-   "passage": "Quand on a une juste idée de l'utilité, quand on la fait consister principalement dans la perfection de l'âme ; perfection qui fait déja notre bonheur par elle-même, & qui nous concilie la bienveillance du Créateur ;quel danger y a-t-il à confondre en ce sens, l'honnête avec l'utile ?",
+   "passage": "Quand on a une juste idée de l'utilité, quand on la fait consister principalement dans la perfection de l'ame ; perfection qui fait déja notre bonheur par elle-même, & qui nous concilie la bienveillance du Créateur ; quel danger y a-t-il à confondre en ce sens, l'honnête avec l'utile ?",
    "source": "L'une, de ceux qui, en confondant l'Honnête avec l'Utile, & mesurant cette Utilité à leur intérêt particulier, détruisent ainsi toute idée de Vertu & de Vice, tout Droit Naturel, toute Moralité.",
    "reason": "Vattel denies there is any danger in 'confondre l'honnête avec l'utile', the first extreme Barbeyrac's note warns against.",
    "links": [
@@ -1629,8 +1742,8 @@
    "at": [
     [
      "t",
-     3917,
-     4214
+     3922,
+     4219
     ]
    ],
    "family": "P",
@@ -1667,8 +1780,8 @@
    "at": [
     [
      "t",
-     4262,
-     4312
+     4267,
+     4317
     ]
    ],
    "family": "Bb",
@@ -1705,8 +1818,8 @@
    "at": [
     [
      "t",
-     4313,
-     4638
+     4318,
+     4633
     ]
    ],
    "family": "Bb",
@@ -1718,7 +1831,7 @@
    "confidence": 0.7,
    "status": "match",
    "step": "R",
-   "passage": "eò deducta est, ut honestatem ab utilitate secernens, & constituerit honestum esse aliquod, quod utile non esset, & utile, quod non honestum, quâ nulla pernicies major hominum vita potuit adferri ( a ). Itaque accepimus ; socratem ex[se?]crari solitum eos, qui primùm [h?]æc, naturâ cohærentia opinione [di?]straxissent ( b )",
+   "passage": "eò deducta est, ut honestatem ab utilitate secernens, & constituerit honestum esse aliquod, quod utile non esset, & utile, quod non honestum, quâ nulla pernicies major hominum vita potuit adferri ( a ). Itaque accepimus, socratem exsecrari solitum eos, qui primùm hæc, naturâ cohærentia opinione distraxissent ( b )",
    "source": "eô deducta est, ut honestatem ab utilitate secernens, & constituerit honestum esse aliquod, quod utile non esset, & utile, quod non honestum, quâ nulla pernicies major hominum vitæ potuit adserri. De Offic. Lib. II. Cap. III. Itaque accepimus, Socratem execrari solitum eos, qui primum hac natura cohærentia [opinione?] distraxissent.",
    "reason": "Vattel copies the rest of Barbeyrac's note 3 to DNG II.3.10, the same two Cicero passages (De Off. II.3 and III.3) in the same order, moving the references into his notes.",
    "links": [
@@ -1743,8 +1856,8 @@
    "at": [
     [
      "t",
-     4744,
-     4795
+     4740,
+     4791
     ]
    ],
    "family": "Bb",
@@ -1781,8 +1894,8 @@
    "at": [
     [
      "t",
-     882,
-     1023
+     883,
+     1025
     ]
    ],
    "family": "Bb",
@@ -1794,7 +1907,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "R",
-   "passage": "Socrates , dit Ciceron, avoit en exécration ceux qui les prémiersont séparé dans leurs opinions, des choses que la nature a intimément unies.",
+   "passage": "Socrates , dit Ciceron, avoit en exécration ceux qui les prémiers ont séparé dans leurs opinions, des choses que la nature a intimément unies.",
    "source": "Itaque accepimus, Socratem execrari solitum eos, qui primum hac natura cohærentia [opinione?] distraxissent.",
    "reason": "Vattel puts into French the Cicero line (De Off. III.3) he quoted in § 30 from Barbeyrac's note 3 to DNG II.3.10.",
    "links": [
@@ -1819,8 +1932,8 @@
    "at": [
     [
      "t",
-     591,
-     822
+     592,
+     823
     ]
    ],
    "family": "P",
@@ -1858,8 +1971,8 @@
    "at": [
     [
      "t",
-     823,
-     1003
+     824,
+     1004
     ]
    ],
    "family": "P",
@@ -1883,7 +1996,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n52/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel grants Barbeyrac's general thesis that the thought of God has great 'efficace'; the shared word and concession are too common to tie the sentence to Préface § 6 in particular.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3052,
@@ -1891,8 +2009,8 @@
    "at": [
     [
      "t",
-     1926,
-     2020
+     1928,
+     2022
     ]
    ],
    "family": "Bb",
@@ -1902,7 +2020,7 @@
    "inNote": true,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Au reste, il faut remarquer, que cette idée d'une divinité n'agit sur nous que comme un motif.",
    "source": "Mais on confond ici le motif de l'Obligation, ou ce qui porte le plus efficacement à s'y soûmettre, avec le fondement de l'Obligation, ou la raison pourquoi on est tenu indispensablement de faire telle ou telle chose. Cette raison n'est autre chose, que la Volonté d'un Supérieur",
@@ -1916,7 +2034,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quoted this note's motive/ground distinction at § 27. Here, answering Barbeyrac, he corrects it: the idea of God acts only as a motive, and its obliging force comes from our felicity.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 3053,
@@ -1924,8 +2048,8 @@
    "at": [
     [
      "t",
-     347,
-     536
+     348,
+     537
     ]
    ],
    "family": "P",
@@ -1935,7 +2059,7 @@
    "inNote": false,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "C'est ici une pure pétition de principe. L'objection est fondée sur ce sentiment que nous avons assez réfuté, que toute obligation vient d'un principe externe, de la volonté d'un Supérieur.",
    "source": "Que s'il ne reconnoît aucun Supérieur , il n'y a point de principe externe assez fort pour mettre un frein à sa Liberté.",
@@ -1949,7 +2073,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n258/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The thesis Vattel calls a begging of the question, that all obligation comes from an external principle, a superior's will, is Pufendorf's DNG I.6.7-8 doctrine, down to 'principe externe' and 'Supérieur'.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   }
  ]
 }

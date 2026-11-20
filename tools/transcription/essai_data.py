@@ -6,8 +6,8 @@
 import sys, os, re, json, glob, html
 TR, OUT = sys.argv[1], sys.argv[2]
 GB = 'https://books.google.com/books?id=130TAAAAQAAJ&pg=PA%s'
-KEEP = {'t', 'il', 'ils', 'elle', 'elles', 'on', 'vous', 'nous', 'je', 'tu', 'moi', 'toi', 'lui', 'leur', 'là', 'ci', 'même', 'mêmes', 'être', 'ce', 'y', 'en', 'dire'}
-PB = ' <span class="pb" data-pg="%d">p. %s</span> '
+KEEP = {'t', 'il', 'ils', 'elle', 'elles', 'on', 'vous', 'nous', 'je', 'tu', 'moi', 'toi', 'lui', 'leur', 'là', 'ci', 'même', 'mêmes', 'être', 'ce', 'y', 'en', 'dire', 'chose'}
+PB = '<span class="pb" data-pg="%d"> p. %s </span>'
 AMBIG = {'on', 'ce', 'en', 'y', 'ci', 'je', 'il', 'le'}   # also endings of ordinary words (acti-on, essen-ce)
 VOCAB = set()
 for pg in json.load(open(TR))['pages']:
@@ -84,22 +84,37 @@ for p in pages:
         if host is None: host = cur; print('note without call on its page', p['scan'], mk)
         host['notes'].append({'mark': mk, 'raw': nt['text']})
 
-# assemble html: join text pieces; a word split over a page break is joined and the break goes after it
+# assemble html: join text pieces. A page break keeps the space between the words around it ("de" | "régler" -> "de régler");
+# a word hyphenated over a page break is joined (the hyphen kept before t-, il, vous, ...) and the break goes after it.
+MARK = '\x00%d\x00'
 for s in secs:
     if s['id'] == 'E.0': continue
-    out = ''
+    out = ''; pbs = []
     for x in s.pop('raw'):
         if x[0] == 'pb':
-            m = re.search(r'(\w)-\s*$', out)
-            if m: out = out[:m.start() + 1]; s['_hold'] = PB % (x[1], x[2])
-            else: out = out.rstrip() + PB % (x[1], x[2])
+            pbs.append(PB % (x[1], x[2]))
+            m = re.search(r'(\w)-\s*(</i>)?\s*$', out)
+            if m: s['_hold'] = (MARK % (len(pbs) - 1), m)
+            else: out = out.rstrip() + ' ' + MARK % (len(pbs) - 1) + ' '
             continue
         t = esc(reading(x[1]))
         if s.get('_hold'):
-            m = re.match(r'(\S*)(.*)', t, re.S); out += m.group(1) + s.pop('_hold') + m.group(2).lstrip()
+            mk, m = s.pop('_hold')
+            t = re.sub(r'^\s*(?:„|,,)\s*', '', t)
+            if m.group(2) and t.startswith('<i>'): t = t[3:]; ital = True
+            else: ital = False
+            w = re.match(r'[\wÀ-ÿ]+', t); w = w.group(0).lower() if w else ''
+            frag = re.search(r'[\wÀ-ÿ]+$', out[:m.start(1) + 1]).group(0).lower()
+            keep = w in KEEP and (w not in AMBIG or (frag + w) not in VOCAB)
+            out = out[:m.start(1) + 1] + ('-' if keep else '') + ('' if ital else (m.group(2) or ''))
+            m2 = re.match(r'(\S*)(.*)', t, re.S)
+            # an italic word split over the break: the italics close before the break and open again after it
+            if ital and '</i>' not in m2.group(1): out += m2.group(1) + '</i>' + mk + '<i>' + m2.group(2).lstrip()
+            else: out += m2.group(1) + mk + m2.group(2)
         else:
             out += t if out.endswith(' ') or not out else ' ' + t
-    s['html'] = re.sub(r'\s+', ' ', out).strip()
+    out = re.sub(r'\s+', ' ', out).strip()
+    s['html'] = re.sub(r'\s*\x00(\d+)\x00\s*', lambda m: ' ' + pbs[int(m.group(1))], out)
     s['notes'] = [{'mark': n['mark'], 'html': re.sub(r'\s+', ' ', esc(reading(n['raw']))).strip()} for n in s['notes']]
 json.dump({'sections': secs, 'rows': [], 'titles': {'E': title}}, open(OUT, 'w'), ensure_ascii=False, indent=1)
 print(len(secs), 'sections', sum(len(s['notes']) for s in secs), 'notes', sum(len(s['html']) for s in secs), 'chars')

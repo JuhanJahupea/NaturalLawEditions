@@ -109,8 +109,8 @@
    "at": [
     [
      "t",
-     875,
-     929
+     876,
+     930
     ]
    ],
    "family": "P",
@@ -204,8 +204,8 @@
    "at": [
     [
      "t",
-     1508,
-     1744
+     1509,
+     1745
     ]
    ],
    "family": "Bb",
@@ -240,8 +240,8 @@
    "at": [
     [
      "t",
-     2081,
-     2152
+     2083,
+     2154
     ]
    ],
    "family": "Bb",
@@ -486,7 +486,7 @@
     [
      "t",
      1734,
-     1870
+     1871
     ]
    ],
    "family": "Bb",
@@ -498,7 +498,7 @@
    "confidence": 0.45,
    "status": "possible",
    "step": "T",
-   "passage": "Maisl'IGNORANCE est INVOLONTAIRE, & l'ERREUR est INVINCIBLE, si elles sont telles que l'on n'ait pû, ni s'en ga- rantir, ni s'en relever",
+   "passage": "Mais l'IGNORANCE est INVOLONTAIRE, & l'ERREUR est INVINCIBLE, si elles sont telles que l'on n'ait pû, ni s'en ga- rantir, ni s'en relever",
    "source": "Il n'y a proprement que cette dernière sorte d'Ignorance qui soit involontaire, & capable d'excuser entiérement ; puisqu'il ne tenoit qu'à nous de ne pas tomber dans l'autre.",
    "reason": "Burlamaqui restricts involuntary ignorance to what one could neither avoid falling into nor escape, adopting Barbeyrac's correction that ignorance one could have avoided is not properly involuntary.",
    "links": [
@@ -515,8 +515,8 @@
    "at": [
     [
      "t",
-     1945,
-     2006
+     1946,
+     2007
     ]
    ],
    "family": "P",
@@ -545,8 +545,8 @@
    "at": [
     [
      "t",
-     2652,
-     2710
+     2653,
+     2711
     ]
    ],
    "family": "Bb",
@@ -575,8 +575,8 @@
    "at": [
     [
      "t",
-     2985,
-     3009
+     2986,
+     3010
     ]
    ],
    "family": "Bb",
@@ -610,8 +610,8 @@
    "at": [
     [
      "t",
-     3004,
-     3059
+     3005,
+     3060
     ]
    ],
    "family": "Bb",
@@ -640,8 +640,8 @@
    "at": [
     [
      "t",
-     3108,
-     3184
+     3109,
+     3185
     ]
    ],
    "family": "Bb",
@@ -675,8 +675,8 @@
    "at": [
     [
      "t",
-     3393,
-     3456
+     3395,
+     3458
     ]
    ],
    "family": "Bb",
@@ -711,8 +711,8 @@
    "at": [
     [
      "t",
-     3558,
-     3765
+     3560,
+     3767
     ]
    ],
    "family": "P",
@@ -909,8 +909,8 @@
    "at": [
     [
      "t",
-     451,
-     548
+     452,
+     549
     ]
    ],
    "family": "Bb",
@@ -939,8 +939,8 @@
    "at": [
     [
      "t",
-     655,
-     763
+     656,
+     764
     ]
    ],
    "family": "Bb",
@@ -969,8 +969,8 @@
    "at": [
     [
      "t",
-     1613,
-     1692
+     1614,
+     1693
     ]
    ],
    "family": "Bb",
@@ -1136,8 +1136,8 @@
    "at": [
     [
      "t",
-     2443,
-     2498
+     2444,
+     2499
     ]
    ],
    "family": "P",
@@ -1394,7 +1394,7 @@
     [
      "t",
      175,
-     387
+     388
     ]
    ],
    "family": "P",
@@ -1406,7 +1406,7 @@
    "confidence": 0.9,
    "status": "match",
    "step": "T",
-   "passage": "pour dire la même chose en d'autrestermes, QUE toute action ou omission soumise à la direction de l'homme, peut être mise sur le compte de celui au pouvoir duquel il étoit qu'elle se fit, ou qu'elle ne se fit pas",
+   "passage": "pour dire la même chose en d'autres termes, QUE toute action ou omission soumise à la direction de l'homme, peut être mise sur le compte de celui au pouvoir duquel il étoit qu'elle se fit, ou qu'elle ne se fit pas",
    "source": "pour dire la même chose en d'autres termes , que toute Action soumise à la direction des Hommes , peut être mise sur le compte de",
    "reason": "Principle of imputability restated in nearly Pufendorf's words, including the formula 'pour dire la même chose en d'autres termes'.",
    "links": [
@@ -1423,8 +1423,8 @@
    "at": [
     [
      "t",
-     389,
-     513
+     390,
+     514
     ]
    ],
    "family": "P",
@@ -1453,8 +1453,8 @@
    "at": [
     [
      "t",
-     718,
-     1000
+     719,
+     1001
     ]
    ],
    "family": "Bb",
@@ -1483,8 +1483,8 @@
    "at": [
     [
      "t",
-     859,
-     1323
+     860,
+     1324
     ]
    ],
    "family": "Bb",
@@ -1513,8 +1513,8 @@
    "at": [
     [
      "t",
-     1324,
-     1412
+     1325,
+     1413
     ]
    ],
    "family": "Bb",
@@ -1543,8 +1543,8 @@
    "at": [
     [
      "t",
-     1324,
-     1412
+     1325,
+     1413
     ]
    ],
    "family": "P",
@@ -1638,8 +1638,8 @@
    "at": [
     [
      "t",
-     501,
-     596
+     502,
+     597
     ]
    ],
    "family": "P",
@@ -1712,8 +1712,8 @@
    "at": [
     [
      "t",
-     1074,
-     1120
+     1075,
+     1121
     ]
    ],
    "family": "P",
@@ -1838,7 +1838,7 @@
     [
      "t",
      648,
-     711
+     712
     ]
    ],
    "family": "P",
@@ -1850,7 +1850,7 @@
    "confidence": 0.9,
    "status": "match",
    "step": "T",
-   "passage": "ou de faim, ou de froid, ou par les dents de quelque bêteféroce",
+   "passage": "ou de faim, ou de froid, ou par les dents de quelque bête féroce",
    "source": "ou de faim, ou de froid, ou par les dents de quelque Bête féroce",
    "reason": "Same list of the ways the solitary man perishes.",
    "links": [
@@ -1904,8 +1904,8 @@
    "at": [
     [
      "t",
-     437,
-     552
+     438,
+     553
     ]
    ],
    "family": "P",
@@ -2015,8 +2015,8 @@
    "at": [
     [
      "t",
-     116,
-     169
+     117,
+     170
     ]
    ],
    "family": "P",
@@ -2324,8 +2324,8 @@
    "at": [
     [
      "t",
-     328,
-     418
+     329,
+     419
     ]
    ],
    "family": "Bb",
@@ -2359,8 +2359,8 @@
    "at": [
     [
      "t",
-     451,
-     511
+     452,
+     512
     ]
    ],
    "family": "Bb",
@@ -2389,8 +2389,8 @@
    "at": [
     [
      "t",
-     1557,
-     1597
+     1558,
+     1598
     ]
    ],
    "family": "Bb",
@@ -2576,8 +2576,8 @@
    "at": [
     [
      "t",
-     209,
-     241
+     210,
+     242
     ]
    ],
    "family": "Bb",
@@ -2618,8 +2618,8 @@
    "at": [
     [
      "t",
-     319,
-     427
+     320,
+     428
     ]
    ],
    "family": "Bb",
@@ -2648,8 +2648,8 @@
    "at": [
     [
      "t",
-     447,
-     664
+     448,
+     665
     ]
    ],
    "family": "Bb",
@@ -2678,8 +2678,8 @@
    "at": [
     [
      "t",
-     699,
-     839
+     700,
+     840
     ]
    ],
    "family": "Bb",
@@ -2922,7 +2922,7 @@
     [
      "t",
      1138,
-     1227
+     1228
     ]
    ],
    "family": "Bb",
@@ -2934,7 +2934,7 @@
    "confidence": 0.8,
    "status": "match",
    "step": "T",
-   "passage": "c'est la dépendance naturelle où nous sommesmes de DIEU, entant qu'il nous a donné l'être",
+   "passage": "c'est la dépendance naturelle où nous sommes mes de DIEU, entant qu'il nous a donné l'être",
    "source": "C'est la dépendance naturelle où sont tous les Hommes de l'empire de la Divinité, entant qu'ils tiennent d'elle l'être",
    "reason": "Barbeyrac's single foundation of obligation restated.",
    "links": [
@@ -2951,8 +2951,8 @@
    "at": [
     [
      "t",
-     1467,
-     1539
+     1468,
+     1540
     ]
    ],
    "family": "Bb",
@@ -2981,8 +2981,8 @@
    "at": [
     [
      "t",
-     1692,
-     2030
+     1693,
+     2031
     ]
    ],
    "family": "Bb",
@@ -3041,8 +3041,8 @@
    "at": [
     [
      "t",
-     2260,
-     2380
+     2261,
+     2381
     ]
    ],
    "family": "P",
@@ -3132,7 +3132,7 @@
     [
      "t",
      197,
-     303
+     304
     ]
    ],
    "family": "Bb",
@@ -3144,7 +3144,7 @@
    "confidence": 0.65,
    "status": "match",
    "step": "T",
-   "passage": "Etre parfaitement Sage & souverainement Bon, qui ne veut fairefaire usage de sa Puissance que pour le bien",
+   "passage": "Etre parfaitement Sage & souverainement Bon, qui ne veut faire faire usage de sa Puissance que pour le bien",
    "source": "qu'il est Bon aussi-bien que Grand, & que sa volonté est nécessairement conforme à ses Perfections; sage & sainte par conséquent, & qui ne peut rien vouloir non seulement que de juste, mais encore qui ne soit pour notre bien",
    "reason": "Both ground obedience in a God who is good and wise as well as powerful, willing only our good.",
    "links": [
@@ -3632,8 +3632,8 @@
    "at": [
     [
      "t",
-     1084,
-     1123
+     1085,
+     1124
     ]
    ],
    "family": "Bb",
@@ -3813,7 +3813,7 @@
     [
      "t",
      465,
-     604
+     605
     ]
    ],
    "family": "Bb",
@@ -3825,7 +3825,7 @@
    "confidence": 0.9,
    "status": "match",
    "step": "T",
-   "passage": "il faut que la Loi P 3 soitsoit juste en elle-même, c'est-à-dire, conforme à l'ordre, à la nature des choses & à la constitution de l'homme",
+   "passage": "il faut que la Loi P 3 soit soit juste en elle-même, c'est-à-dire, conforme à l'ordre, à la nature des choses & à la constitution de l'homme",
    "source": "Il faut ajoûter une troisiéme condition, c'est que la Loi soit juste, c'est-à-dire, conforme à l'Ordre & à la nature des Choses.",
    "reason": "Burlamaqui's third condition (justice) is Barbeyrac's added third condition, copied with a short extension.",
    "links": [
@@ -4011,7 +4011,7 @@
     [
      "t",
      1175,
-     1306
+     1307
     ]
    ],
    "family": "Bb",
@@ -4023,7 +4023,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "T",
-   "passage": "il suffit que le Souverain déclare qu'il punira, en se réservant de déterminer l'epèce && le degré du châtiment suivant sa prudence",
+   "passage": "il suffit que le Souverain déclare qu'il punira, en se réservant de déterminer l'epèce & & le degré du châtiment suivant sa prudence",
    "source": "sans déterminer la peine, le Législateur n'en dispense pourtant pas, & s'en réserve seulement la détermination, selon l'exigence des cas",
    "reason": "Tacit sanction: the legislator may leave the penalty undetermined, as in Barbeyrac's note.",
    "links": [
@@ -4041,7 +4041,7 @@
     [
      "t",
      243,
-     343
+     344
     ]
    ],
    "family": "P",
@@ -4053,7 +4053,7 @@
    "confidence": 0.8,
    "status": "match",
    "step": "T",
-   "passage": "Mais chaque Q LoiLoi en particulier n'oblige que ceux des Sujets à qui la matiére de la Loi convient",
+   "passage": "Mais chaque Q Loi Loi en particulier n'oblige que ceux des Sujets à qui la matiére de la Loi convient",
    "source": "CHAQUE Loi oblige ordinairement tous ceux d'entre les personnes dépendantes du Législateur auxquels la matiére de la Loi convient",
    "reason": "Each law binds only those subjects to whom its matter applies, as in Pufendorf.",
    "links": [
@@ -4070,8 +4070,8 @@
    "at": [
     [
      "t",
-     476,
-     616
+     477,
+     617
     ]
    ],
    "family": "P",
@@ -4100,8 +4100,8 @@
    "at": [
     [
      "t",
-     840,
-     895
+     841,
+     896
     ]
    ],
    "family": "P",
@@ -4130,8 +4130,8 @@
    "at": [
     [
      "t",
-     1034,
-     1144
+     1035,
+     1145
     ]
    ],
    "family": "P",
@@ -4410,8 +4410,8 @@
    "at": [
     [
      "t",
-     1270,
-     1321
+     1271,
+     1322
     ]
    ],
    "family": "P",
@@ -4440,8 +4440,8 @@
    "at": [
     [
      "t",
-     1519,
-     1676
+     1520,
+     1677
     ]
    ],
    "family": "Bb",
@@ -4586,8 +4586,8 @@
    "at": [
     [
      "t",
-     407,
-     515
+     408,
+     516
     ]
    ],
    "family": "Bb",
@@ -4616,8 +4616,8 @@
    "at": [
     [
      "t",
-     1039,
-     1115
+     1040,
+     1116
     ]
    ],
    "family": "Bb",
@@ -4646,8 +4646,8 @@
    "at": [
     [
      "t",
-     1119,
-     1219
+     1120,
+     1220
     ]
    ],
    "family": "Bb",
@@ -4713,8 +4713,8 @@
    "at": [
     [
      "t",
-     730,
-     846
+     731,
+     847
     ]
    ],
    "family": "P",
@@ -4863,8 +4863,8 @@
    "at": [
     [
      "t",
-     945,
-     1220
+     946,
+     1221
     ]
    ],
    "family": "Bb",
@@ -4900,8 +4900,8 @@
    "at": [
     [
      "t",
-     709,
-     922
+     710,
+     923
     ]
    ],
    "family": "P",
@@ -4937,8 +4937,8 @@
    "at": [
     [
      "t",
-     509,
-     641
+     510,
+     642
     ]
    ],
    "family": "P",
@@ -4967,8 +4967,8 @@
    "at": [
     [
      "t",
-     1111,
-     1224
+     1112,
+     1225
     ]
    ],
    "family": "Bb",
@@ -5288,8 +5288,8 @@
    "at": [
     [
      "t",
-     1285,
-     1582
+     1286,
+     1583
     ]
    ],
    "family": "Bb",
@@ -5318,8 +5318,8 @@
    "at": [
     [
      "t",
-     1704,
-     1885
+     1705,
+     1886
     ]
    ],
    "family": "Bb",
@@ -5348,8 +5348,8 @@
    "at": [
     [
      "t",
-     1980,
-     2220
+     1981,
+     2221
     ]
    ],
    "family": "Bb",
@@ -5438,8 +5438,8 @@
    "at": [
     [
      "t",
-     1205,
-     1298
+     1206,
+     1299
     ]
    ],
    "family": "P",
@@ -5468,8 +5468,8 @@
    "at": [
     [
      "t",
-     1345,
-     1509
+     1346,
+     1510
     ]
    ],
    "family": "Bb",
@@ -5498,8 +5498,8 @@
    "at": [
     [
      "t",
-     1511,
-     1566
+     1512,
+     1567
     ]
    ],
    "family": "Bb",
@@ -5528,8 +5528,8 @@
    "at": [
     [
      "t",
-     1570,
-     1668
+     1571,
+     1669
     ]
    ],
    "family": "Bb",
@@ -5920,8 +5920,8 @@
    "at": [
     [
      "t",
-     743,
-     792
+     744,
+     793
     ]
    ],
    "family": "Bb",
@@ -5955,8 +5955,8 @@
    "at": [
     [
      "t",
-     862,
-     1013
+     863,
+     1014
     ]
    ],
    "family": "Bb",
@@ -6274,8 +6274,8 @@
    "at": [
     [
      "t",
-     1062,
-     1104
+     1063,
+     1105
     ]
    ],
    "family": "P",
@@ -6548,8 +6548,8 @@
    "at": [
     [
      "t",
-     292,
-     363
+     293,
+     364
     ]
    ],
    "family": "Bb",
@@ -6578,8 +6578,8 @@
    "at": [
     [
      "t",
-     436,
-     508
+     437,
+     509
     ]
    ],
    "family": "Bb",
@@ -6608,8 +6608,8 @@
    "at": [
     [
      "t",
-     513,
-     632
+     514,
+     633
     ]
    ],
    "family": "P",
@@ -6638,8 +6638,8 @@
    "at": [
     [
      "t",
-     685,
-     765
+     686,
+     766
     ]
    ],
    "family": "P",
@@ -6729,7 +6729,7 @@
     [
      "t",
      418,
-     675
+     676
     ]
    ],
    "family": "P",
@@ -6741,7 +6741,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "T",
-   "passage": "la crainte de Dieu, jointe à un parfait dévouement poursa volonté, est un motif très efficace pour engager les hommes à s'acquiter de ce qui les concerne directement eux-mêmes, & à faire pour le Prochain & pour la Société tout ce qu'ordonne la Loi Naturelle",
+   "passage": "la crainte de Dieu, jointe à un parfait dévouement pour sa volonté, est un motif très efficace pour engager les hommes à s'acquiter de ce qui les concerne directement eux-mêmes, & à faire pour le Prochain & pour la Société tout ce qu'ordonne la Loi Naturelle",
    "source": "la crainte d'une Divinité est le plus puissant motif pour porter les Hommes à s'acquitter de ce qu'ils se doivent les uns aux autres",
    "reason": "Fear of God as the strongest motive to perform duties to others follows Pufendorf's argument on religion and sociability.",
    "links": [
@@ -6795,8 +6795,8 @@
    "at": [
     [
      "t",
-     1504,
-     1669
+     1505,
+     1670
     ]
    ],
    "family": "P",
@@ -6964,7 +6964,7 @@
     [
      "t",
      845,
-     1093
+     1094
     ]
    ],
    "family": "P",
@@ -6976,7 +6976,7 @@
    "confidence": 0.9,
    "status": "match",
    "step": "T",
-   "passage": "les maximes les plus générales & les plus importantes du Droit Naturel, sont si claires & si manifestes, & ont une telleproportion avec nos idées, une telle convenance avec notre nature, que dès qu'on nous les propose, nous les approuvons aussi-tôt",
+   "passage": "les maximes les plus générales & les plus importantes du Droit Naturel, sont si claires & si manifestes, & ont une telle proportion avec nos idées, une telle convenance avec notre nature, que dès qu'on nous les propose, nous les approuvons aussi-tôt",
    "source": "les maximes les plus générales & les plus importantes en sont si claires & si manifestes, que ceux à qui on les propose les approuvent aussitôt",
    "reason": "Burlamaqui copies Pufendorf's sentence on the clearest maxims being approved as soon as proposed, inserting a clause on their fit with our nature.",
    "links": [
@@ -6993,8 +6993,8 @@
    "at": [
     [
      "t",
-     1096,
-     1220
+     1097,
+     1221
     ]
    ],
    "family": "P",
@@ -7060,8 +7060,8 @@
    "at": [
     [
      "t",
-     1468,
-     1598
+     1469,
+     1599
     ]
    ],
    "family": "P",
@@ -7120,8 +7120,8 @@
    "at": [
     [
      "t",
-     2664,
-     2782
+     2665,
+     2783
     ]
    ],
    "family": "P",
@@ -7194,8 +7194,8 @@
    "at": [
     [
      "t",
-     1611,
-     1776
+     1612,
+     1777
     ]
    ],
    "family": "P",
@@ -7397,8 +7397,8 @@
    "at": [
     [
      "t",
-     990,
-     1155
+     991,
+     1156
     ]
    ],
    "family": "Bb",
@@ -7428,7 +7428,7 @@
     [
      "t",
      307,
-     437
+     438
     ]
    ],
    "family": "Bb",
@@ -7440,7 +7440,7 @@
    "confidence": 0.35,
    "status": "possible",
    "step": "T",
-   "passage": "il estbien évident qu'il veut aussi que les Nations, qui ne sont que des Sociétez d'hommes, observent entr'elles les mêmes devoirs",
+   "passage": "il est bien évident qu'il veut aussi que les Nations, qui ne sont que des Sociétez d'hommes, observent entr'elles les mêmes devoirs",
    "source": "Et on appelle Droit des Gens, l'application des principes & des maximes de cette Loi, à ce que font les Peuples, ou leurs Chefs",
    "reason": "Both present the law of nations as the natural law's duties applied to peoples.",
    "links": [
@@ -7494,8 +7494,8 @@
    "at": [
     [
      "t",
-     2304,
-     2524
+     2305,
+     2525
     ]
    ],
    "family": "Bb",
@@ -7597,7 +7597,7 @@
     [
      "t",
      713,
-     1022
+     1023
     ]
    ],
    "family": "Lz",
@@ -7609,7 +7609,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "T",
-   "passage": "L'idée de Morale, disent-ils, renferme nécessairement celle d'obligation ; l'idée d'obligation celle de Loi ; & l'idée de Loi celle de Législateur. Si donc vous faites abstraction de toute Loi, & par conséquent dede Législateur, il n'y aura plus ni droit, ni obligation, ni devoir, ni moralité proprement dite",
+   "passage": "L'idée de Morale, disent-ils, renferme nécessairement celle d'obligation ; l'idée d'obligation celle de Loi ; & l'idée de Loi celle de Législateur. Si donc vous faites abstraction de toute Loi, & par conséquent de de Législateur, il n'y aura plus ni droit, ni obligation, ni devoir, ni moralité proprement dite",
    "source": "Cela posé, personne ne fera ce qu'il doit de son propre mouvement, ou plutôt il n'y aura point de Devoir, lorsqu'il n'y aura point de Supérieur, qui impose la nécessité de le pratiquer.",
    "reason": "Burlamaqui summarises the voluntarist chain from duty to law to lawgiver that Leibniz draws out of Pufendorf.",
    "links": [
@@ -7633,8 +7633,8 @@
    "at": [
     [
      "t",
-     1228,
-     1531
+     1229,
+     1532
     ]
    ],
    "family": "Bb",
@@ -7675,8 +7675,8 @@
    "at": [
     [
      "t",
-     1908,
-     2009
+     1910,
+     2011
     ]
    ],
    "family": "Bb",
@@ -7828,8 +7828,8 @@
    "at": [
     [
      "t",
-     1034,
-     1075
+     1035,
+     1076
     ]
    ],
    "family": "P",
@@ -8107,8 +8107,8 @@
    "at": [
     [
      "t",
-     714,
-     838
+     715,
+     839
     ]
    ],
    "family": "P",
@@ -8144,8 +8144,8 @@
    "at": [
     [
      "t",
-     770,
-     838
+     771,
+     839
     ]
    ],
    "family": "Bb",
@@ -8175,8 +8175,8 @@
    "at": [
     [
      "t",
-     3587,
-     3686
+     3589,
+     3688
     ]
    ],
    "family": "Bb",
@@ -8347,8 +8347,8 @@
    "at": [
     [
      "t",
-     343,
-     430
+     344,
+     431
     ]
    ],
    "family": "Bb",
@@ -8377,8 +8377,8 @@
    "at": [
     [
      "t",
-     796,
-     952
+     797,
+     953
     ]
    ],
    "family": "Bb",
@@ -9022,8 +9022,8 @@
    "at": [
     [
      "t",
-     1572,
-     1773
+     1573,
+     1774
     ]
    ],
    "family": "Bb",
@@ -9052,8 +9052,8 @@
    "at": [
     [
      "t",
-     1779,
-     2057
+     1780,
+     2058
     ]
    ],
    "family": "Bb",
@@ -9082,8 +9082,8 @@
    "at": [
     [
      "t",
-     2171,
-     2250
+     2172,
+     2251
     ]
    ],
    "family": "P",
@@ -9112,8 +9112,8 @@
    "at": [
     [
      "t",
-     2253,
-     2362
+     2254,
+     2363
     ]
    ],
    "family": "P",
@@ -9142,8 +9142,8 @@
    "at": [
     [
      "t",
-     2512,
-     2770
+     2514,
+     2772
     ]
    ],
    "family": "Bb",
@@ -9365,7 +9365,7 @@
     [
      "t",
      1515,
-     1694
+     1695
     ]
    ],
    "family": "Bb",
@@ -9377,7 +9377,7 @@
    "confidence": 0.7,
    "status": "match",
    "step": "T",
-   "passage": "Si au contraire elle est surmontable, & que l'on se trompe sur ce qui est ordonné ou défendu, l'on pécheégalement, soit qu'on agisse suivant sa Conscience, ou contre ses décisions",
+   "passage": "Si au contraire elle est surmontable, & que l'on se trompe sur ce qui est ordonné ou défendu, l'on péche également, soit qu'on agisse suivant sa Conscience, ou contre ses décisions",
    "source": "Ainsi on péche des deux côtés, si l'erreur est surmontable , & que ce que l'on fait comme prescrit soit défendu",
    "reason": "Same conclusion that with vincible error one sins whichever way one acts.",
    "links": [
@@ -9394,8 +9394,8 @@
    "at": [
     [
      "t",
-     1957,
-     2169
+     1958,
+     2170
     ]
    ],
    "family": "Bb",
@@ -9530,7 +9530,7 @@
     [
      "t",
      685,
-     921
+     922
     ]
    ],
    "family": "Bb",
@@ -9542,7 +9542,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "T",
-   "passage": "Les fondemens de la Conscience probable sont en général l'autorité & l'exemple, soutenus par un sentimentconfus d'une convenance naturelle, & quelquefois aussi par des raisons populaires, qui semblent tirées de la nature même des choses",
+   "passage": "Les fondemens de la Conscience probable sont en général l'autorité & l'exemple, soutenus par un sentiment confus d'une convenance naturelle, & quelquefois aussi par des raisons populaires, qui semblent tirées de la nature même des choses",
    "source": "Les fondemens de la Conscience Probable, véritablement telle, sont l'autorité & l'exemple , soutenus par un certain sentiment confus de la convenance naturelle qu'il y a dans les choses qui sont la matiére de nos Devoirs , & quelquefois aussi par des raisons populaires , qui semblent tirées de la nature des choses",
    "reason": "The foundations of probable conscience are given in nearly the same words.",
    "links": [
@@ -9559,8 +9559,8 @@
    "at": [
     [
      "t",
-     923,
-     1046
+     924,
+     1047
     ]
    ],
    "family": "P",
@@ -9594,8 +9594,8 @@
    "at": [
     [
      "t",
-     2033,
-     2137
+     2034,
+     2138
     ]
    ],
    "family": "Bb",
@@ -9624,8 +9624,8 @@
    "at": [
     [
      "t",
-     2175,
-     2340
+     2176,
+     2342
     ]
    ],
    "family": "Bb",
@@ -9637,7 +9637,7 @@
    "confidence": 0.92,
    "status": "match",
    "step": "T",
-   "passage": "l'on doit faire tous ses efforts pour augmenter le degré devraisemblance de ses opinions, afin d'approcher, autant qu'il est possible, de la Conscience démonstrative",
+   "passage": "l'on doit faire tous ses efforts pour augmenter le degré de vraisemblance de ses opinions, afin d'approcher, autant qu'il est possible, de la Conscience démonstrative",
    "source": "doivent faire tous leurs efforts pour augmenter le degré de vraisemblance de leurs opinions, & pour approcher autant qu'il est possible de la Conscience Démonstrative",
    "reason": "The tenth rule reproduces Barbeyrac's advice with minor changes.",
    "links": [
@@ -9654,8 +9654,8 @@
    "at": [
     [
      "t",
-     2363,
-     2439
+     2365,
+     2441
     ]
    ],
    "family": "Bb",
@@ -9964,8 +9964,8 @@
    "at": [
     [
      "t",
-     799,
-     886
+     800,
+     887
     ]
    ],
    "family": "Bb",
@@ -10545,8 +10545,8 @@
    "at": [
     [
      "t",
-     596,
-     739
+     597,
+     740
     ]
    ],
    "family": "P",
@@ -10575,8 +10575,8 @@
    "at": [
     [
      "t",
-     854,
-     975
+     855,
+     976
     ]
    ],
    "family": "P",
@@ -10605,8 +10605,8 @@
    "at": [
     [
      "t",
-     1284,
-     1421
+     1285,
+     1422
     ]
    ],
    "family": "Bb",
@@ -10987,8 +10987,8 @@
    "at": [
     [
      "t",
-     1191,
-     1294
+     1192,
+     1295
     ]
    ],
    "family": "Bb",
@@ -11017,8 +11017,8 @@
    "at": [
     [
      "t",
-     1296,
-     1422
+     1297,
+     1423
     ]
    ],
    "family": "Bb",
@@ -11052,8 +11052,8 @@
    "at": [
     [
      "t",
-     1526,
-     1618
+     1527,
+     1619
     ]
    ],
    "family": "Bb",
@@ -11352,8 +11352,8 @@
    "at": [
     [
      "t",
-     603,
-     656
+     604,
+     657
     ]
    ],
    "family": "P",
@@ -11387,8 +11387,8 @@
    "at": [
     [
      "t",
-     714,
-     820
+     715,
+     821
     ]
    ],
    "family": "P",
@@ -11417,8 +11417,8 @@
    "at": [
     [
      "t",
-     824,
-     906
+     825,
+     907
     ]
    ],
    "family": "P",
@@ -11447,8 +11447,8 @@
    "at": [
     [
      "t",
-     824,
-     864
+     825,
+     865
     ]
    ],
    "family": "Bb",
@@ -11484,8 +11484,8 @@
    "at": [
     [
      "t",
-     1254,
-     1507
+     1255,
+     1508
     ]
    ],
    "family": "Bb",
@@ -11514,8 +11514,8 @@
    "at": [
     [
      "t",
-     1562,
-     1636
+     1563,
+     1637
     ]
    ],
    "family": "Bb",
@@ -11544,8 +11544,8 @@
    "at": [
     [
      "t",
-     1855,
-     2015
+     1856,
+     2016
     ]
    ],
    "family": "P",
@@ -11579,8 +11579,8 @@
    "at": [
     [
      "t",
-     2166,
-     2444
+     2167,
+     2445
     ]
    ],
    "family": "Bb",
@@ -11609,8 +11609,8 @@
    "at": [
     [
      "t",
-     2621,
-     2687
+     2622,
+     2688
     ]
    ],
    "family": "P",
@@ -11644,8 +11644,8 @@
    "at": [
     [
      "t",
-     2770,
-     2939
+     2771,
+     2940
     ]
    ],
    "family": "Bb",
@@ -11795,7 +11795,7 @@
     [
      "t",
      1153,
-     1644
+     1645
     ]
    ],
    "family": "Bb",
@@ -11807,7 +11807,7 @@
    "confidence": 0.9,
    "status": "match",
    "step": "T",
-   "passage": "la raison pour laquelle un Supérieur est censé être la cause principale de ce que font ceux qui dépendent de lui, n'est pas proprement la dépendance de ces derniers ; c'est l'ordre qu'il leur donne, sans quoi on suppose que ceux-ci ne se seroient point portés d'euxmêmes à l'action dont il s'agit. D'où il suit, que toutete autre personne qui aura la même influence sur les actions de ses égaux, ou même de ses Supérieurs, en pourra être regardée par la même raison comme la Cause principale",
+   "passage": "la raison pour laquelle un Supérieur est censé être la cause principale de ce que font ceux qui dépendent de lui, n'est pas proprement la dépendance de ces derniers ; c'est l'ordre qu'il leur donne, sans quoi on suppose que ceux-ci ne se seroient point portés d'euxmêmes à l'action dont il s'agit. D'où il suit, que toute te autre personne qui aura la même influence sur les actions de ses égaux, ou même de ses Supérieurs, en pourra être regardée par la même raison comme la Cause principale",
    "source": "La raison pourquoi un Homme est la Cause Principale de ce qu'a fait par son ordre une personne qui dépend de lui, ce n'est pas précísément parce que cette personne est sous sa dépendance, autrement il faudroit imputer à un Supérieur tout ce que font ceux qui dépendent de lui : mais c'est qu'on suppose, comme il arrive aulli souvent, que l'Inférieur n'auroit pas pensé de lui-même à la chose dont il s'agit, ou ne s'y seroit pas déterminé actuellement, sans l'ordre de son Supérieur. Tout autre donc qui aura la même influence sur quelque action de ses Egaux ou même de ses Supérieurs, en pourra être regardé par cette raison comme la Cause Principale",
    "reason": "Argument that the order, not dependence, makes the superior principal cause, extended to equals and superiors, follows Barbeyrac.",
    "links": [
@@ -11824,8 +11824,8 @@
    "at": [
     [
      "t",
-     1721,
-     1896
+     1722,
+     1897
     ]
    ],
    "family": "Bb",
@@ -11854,8 +11854,8 @@
    "at": [
     [
      "t",
-     1898,
-     1996
+     1899,
+     1997
     ]
    ],
    "family": "Bb",
@@ -11979,8 +11979,8 @@
    "at": [
     [
      "t",
-     560,
-     895
+     561,
+     896
     ]
    ],
    "family": "Bb",
@@ -12141,8 +12141,8 @@
    "at": [
     [
      "t",
-     662,
-     774
+     663,
+     775
     ]
    ],
    "family": "Bb",
@@ -12171,8 +12171,8 @@
    "at": [
     [
      "t",
-     1100,
-     1310
+     1101,
+     1311
     ]
    ],
    "family": "Bb",
@@ -12201,8 +12201,8 @@
    "at": [
     [
      "t",
-     1112,
-     1310
+     1113,
+     1311
     ]
    ],
    "family": "Bb",
@@ -12231,8 +12231,8 @@
    "at": [
     [
      "t",
-     1315,
-     1548
+     1316,
+     1549
     ]
    ],
    "family": "Bb",
@@ -12266,8 +12266,8 @@
    "at": [
     [
      "t",
-     1587,
-     1888
+     1588,
+     1889
     ]
    ],
    "family": "Bb",
@@ -12430,8 +12430,8 @@
    "at": [
     [
      "t",
-     348,
-     477
+     349,
+     478
     ]
    ],
    "family": "P",
@@ -12460,8 +12460,8 @@
    "at": [
     [
      "t",
-     560,
-     617
+     561,
+     618
     ]
    ],
    "family": "P",
@@ -12490,8 +12490,8 @@
    "at": [
     [
      "t",
-     732,
-     838
+     733,
+     839
     ]
    ],
    "family": "Bb",
@@ -12520,8 +12520,8 @@
    "at": [
     [
      "t",
-     969,
-     1146
+     970,
+     1147
     ]
    ],
    "family": "Bb",
@@ -12550,8 +12550,8 @@
    "at": [
     [
      "t",
-     3070,
-     3220
+     3071,
+     3221
     ]
    ],
    "family": "Bb",

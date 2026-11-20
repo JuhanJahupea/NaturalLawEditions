@@ -20,6 +20,10 @@ TEXTS = [
      "Vision transcription (texts/grotius-barbeyrac-1724/). Barbeyrac's notes are credited to Barbeyrac (family Bb)."),
     ('BUR47', 'burlamaqui-1747', 'Jean-Jacques Burlamaqui', 'Principes du droit naturel', 'Genève, 1747', '1747', 'fr',
      'The burlamaqui-1747 edition of this collection.'),
+    ('TN1', 'wolff-theologia-naturalis-1739', 'Christian Wolff', 'Theologia naturalis, methodo scientifica pertractata, pars prior', 'Frankfurt and Leipzig: Renger, 1739', '1739', 'la',
+     'Vision transcription of the MDZ scans, §§ 948-1006 (texts/wolff-theologia-naturalis-1739/). Working French by machine.'),
+    ('LOG40', 'wolff-discursus-praeliminaris-1740', 'Christian Wolff', 'Discursus praeliminaris de philosophia in genere', 'In Philosophia rationalis sive Logica, Frankfurt and Leipzig: Renger, 1740', '1740', 'la',
+     'Vision transcription of the MDZ scans (texts/wolff-discursus-praeliminaris-1740/). Working French by machine.'),
 ]
 EXTRA = {'burlamaqui-1747': {'toLayer': "The burlamaqui-1747 edition's transcription (editions/burlamaqui-1747/text.json)."}}
 

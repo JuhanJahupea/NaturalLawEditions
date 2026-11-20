@@ -1,0 +1,767 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-essai-1747",
+ "text": "wolff-discursus-praeliminaris-1740",
+ "date": "2026-11-20",
+ "textLayer": "Vision transcription of the MDZ scans (bsb10008633), §§ 1-171 (texts/wolff-discursus-praeliminaris-1740/).",
+ "table": {
+  "pass": "editions/vattel-essai-1747/passes/wolff-discursus-praeliminaris-1740.json",
+  "steps": {
+   "R": "Reading pass: Claude Opus read each section of the Essai with the source and wrote the rows"
+  },
+  "description": "Reuse of the source in the edition, found by Claude Opus reading the whole edition with the source (candidate pages by vocabulary for the French sources; Wolff searched by the reader). status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the transcription (long s as s, line-end hyphens joined).",
+  "sourceLabel": "source (transcription)"
+ },
+ "rows": [
+  {
+   "id": 7000,
+   "unit": "E.1",
+   "at": [
+    [
+     "t",
+     60,
+     368
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 145",
+   "page": "LOG40.pdf112",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "trois choses que l'on confond souvent dans le langage ordinaire, parce qu'elles ont toutes le même objet, savoir, de régler les mœurs & la conduite des hommes. Mais quand on veut traiter clairement & solidement une matiere, il est nécessaire de distinguer avec soin les choses qui sont réellement distinctes.",
+   "source": "Quae a se invicem differentia intrinseca constante differunt, diversis quoque in philosophia nominibus insigniri debent.",
+   "french": "Les choses qui diffèrent l'une de l'autre par une différence intrinsèque constante doivent aussi être désignées en philosophie par des noms différents.",
+   "reason": "Vattel opens with the rule of the Discursus on philosophical style (§ 145, with § 144 on reducing the vague meanings of common speech to fixed ones): things really distinct, which ordinary language confuses, must be kept apart by distinct terms.",
+   "links": [
+    [
+     "MDZ scan 112",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=112"
+    ]
+   ]
+  },
+  {
+   "id": 7001,
+   "unit": "E.3",
+   "at": [
+    [
+     "t",
+     3,
+     67
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 68",
+   "page": "LOG40.pdf56",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "R",
+   "passage": "Le Droit Naturel est une théorie générale des devoirs de l'homme",
+   "source": "Facile patet, jus naturae esse theoriam philosophiae practicae (§. 62.), Ethicae scilicet, Politicae atque Oeconomicae (§. 64. & seqq.).",
+   "french": "Il est facile de voir que le droit de la nature est la théorie de la philosophie pratique (§ 62), c'est-à-dire de l'Éthique, de la Politique et de l'Économique (§ 64 et suiv.).",
+   "reason": "Vattel's calling natural right the general 'théorie' of duties, set against ethics as the practical science (§ 4), takes up Wolff's statement in Disc. praelim. § 68 that natural law is the theory of which ethics, politics and economics are the practice.",
+   "links": [
+    [
+     "MDZ scan 56",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=56"
+    ]
+   ]
+  },
+  {
+   "id": 7002,
+   "unit": "E.3",
+   "at": [
+    [
+     "t",
+     69,
+     101
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 63",
+   "page": "LOG40.pdf55",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "consideré simplement comme homme",
+   "source": "Duplici modo homo considerari potest, vel quatenus est homo, vel quatenus est civis",
+   "french": "L'homme peut être considéré de deux manières, ou en tant qu'il est homme, ou en tant qu'il est citoyen",
+   "reason": "The phrase 'consideré simplement comme homme' matches Wolff's 'considerari ... quatenus est homo' in § 63, though the man/citizen pair is also Pufendorf's (De officio hominis et civis), so the Wolffian origin is not certain.",
+   "links": [
+    [
+     "MDZ scan 55",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=55"
+    ]
+   ]
+  },
+  {
+   "id": 7003,
+   "unit": "E.3",
+   "at": [
+    [
+     "t",
+     107,
+     239
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 68",
+   "page": "LOG40.pdf56",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.75,
+   "status": "match",
+   "step": "R",
+   "passage": "une science qui nous apprend ce qui est naturellement bon, ou mauvais à l'homme ; ce qu'il doit faire, & ce qu'il doit ne pas faire.",
+   "source": "ea philosophiae pars, in qua docetur, quaenam actiones sint bonae, quaenam malae, Jus naturae appellatur. Definitur adeo Jus naturae per scientiam actionum bonarum atque malarum.",
+   "french": "cette partie de la philosophie dans laquelle on enseigne quelles actions sont bonnes et quelles sont mauvaises s'appelle Droit de la nature. On définit donc le Droit de la nature : la science des actions bonnes et mauvaises.",
+   "reason": "Vattel's second definition of natural right renders Wolff's definition in Disc. praelim. § 68 (natural law as the science that teaches which actions are good and which bad); PPU § 6 restates it, citing § 68 of the Discursus.",
+   "links": [
+    [
+     "MDZ scan 56",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=56"
+    ]
+   ]
+  },
+  {
+   "id": 7004,
+   "unit": "E.4",
+   "at": [
+    [
+     "t",
+     3,
+     177
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 62",
+   "page": "LOG40.pdf55",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.7,
+   "status": "match",
+   "step": "R",
+   "passage": "La Morale, ou l'Ethique, est une science pratique, qui nous enseigne comment nous devons diriger nos facultés pour pratiquer ce qui est bon, & pour éviter ce qui est mauvais.",
+   "source": "Est adeo philosophia practica scientia dirigendi facultatem appetitivam in eligendo bono & fugiendo malo.",
+   "french": "La philosophie pratique est donc la science de diriger la faculté appétitive dans le choix du bien et la fuite du mal.",
+   "reason": "Vattel translates Wolff's definition of practical philosophy in § 62 ('scientia dirigendi facultatem ... in eligendo bono & fugiendo malo' = 'science ... diriger nos facultés pour pratiquer ce qui est bon, & pour éviter ce qui est mauvais') but gives it to ethics, which Wolff in § 64 restricts to free actions in the state of nature.",
+   "links": [
+    [
+     "MDZ scan 55",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=55"
+    ]
+   ]
+  },
+  {
+   "id": 7005,
+   "unit": "E.4",
+   "at": [
+    [
+     "t",
+     28,
+     142
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 92",
+   "page": "LOG40.pdf79",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "est une science pratique, qui nous enseigne comment nous devons diriger nos facultés pour pratiquer ce qui est bon",
+   "source": "In Jure naturae, quod philosophiae practicae pars est (§. 68.), demonstrantur officia hominis erga Deum (§. cit.) & in Ethica docetur, quomodo homo officiis istis absque obligatione externa a potestate civili manante satisfacere queat (§. 64.).",
+   "french": "Dans le Droit de la nature, qui est une partie de la philosophie pratique (§ 68), on démontre les devoirs de l'homme envers Dieu, et dans l'Éthique on enseigne comment l'homme peut satisfaire à ces devoirs sans obligation externe venant du pouvoir civil (§ 64).",
+   "reason": "Vattel's split between natural right as the theory of duties (§ 3) and ethics as the science that teaches how to put them into practice matches Wolff's statement in § 92 that natural law demonstrates man's duties ('officia') and ethics teaches how to fulfil them.",
+   "links": [
+    [
+     "MDZ scan 79",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=79"
+    ]
+   ]
+  },
+  {
+   "id": 7006,
+   "unit": "E.4",
+   "at": [
+    [
+     "t",
+     178,
+     322
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 68",
+   "page": "LOG40.pdf56",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "On employe souvent le terme de Morale, pour désigner la science des mœurs en général ; & dans ce sens, il comprend le Droit Naturel & l'Ethique.",
+   "source": "Quamobrem cum non opus sit, theoriam a praxi distingui; jus naturae in ipsa Ethica, Oeconomica atque Politica tradi potest.",
+   "french": "C'est pourquoi, comme il n'est pas nécessaire de séparer la théorie de la pratique, le droit de la nature peut être enseigné dans l'Éthique, l'Économique et la Politique elles-mêmes.",
+   "reason": "The broad sense of 'Morale' as one science holding both natural right and ethics corresponds to Wolff's remark in § 68 that theory and practice need not be separated, so natural law can be taught inside ethics (PPU § 3 likewise lists 'Ethicam sive Philosophiam moralem' among the parts of practical philosophy).",
+   "links": [
+    [
+     "MDZ scan 56",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=56"
+    ]
+   ]
+  },
+  {
+   "id": 7007,
+   "unit": "E.4",
+   "at": [
+    [
+     "t",
+     703,
+     777
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 104",
+   "page": "LOG40.pdf85",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Mais notre distinction est plus nette & plus commode, & elle renferme tout",
+   "source": "Quodsi Jus naturae ab Ethica, Oeconomica & Politica separes, cum eo ipso theoria istarum disciplinarum contineatur (§. 68.); theoria vero tanquam praxeos fundamentum eidem sit praemittenda, de quo nemo dubitat; nemo inficiabitur, Jus naturae Ethicae, Oeconomicae atque Politicae praemitti debere.",
+   "french": "Si l'on sépare le Droit de la nature de l'Éthique, de l'Économique et de la Politique, puisqu'il contient la théorie de ces disciplines (§ 68) et que la théorie, comme fondement de la pratique, doit la précéder, ce dont personne ne doute, nul ne niera que le Droit de la nature doive être placé avant l'Éthique, l'Économique et la Politique.",
+   "reason": "The distinction Vattel prefers, natural right as theory set apart from ethics as practice and treated before it (§ 3 before § 4), is the separation and order that Wolff sets out in Disc. praelim. § 104.",
+   "links": [
+    [
+     "MDZ scan 85",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=85"
+    ]
+   ]
+  },
+  {
+   "id": 7008,
+   "unit": "E.6",
+   "at": [
+    [
+     "t",
+     120,
+     234
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 39",
+   "page": "LOG40.pdf42",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "le principe dans lequel on trouve ce qui peut servir à rendre raison pourquoi ces régles & ces préceptes sont tels",
+   "source": "Legum dantur rationes, cur potius hae, quam aliae in Rep. sint ferendae. Est igitur quaedam scientia, quae explicat istas rationes, adeoque philosophia juris (§. 31. 32.).",
+   "french": "Les lois ont leurs raisons, pourquoi celles-ci plutôt que d'autres doivent être établies dans l'État. Il y a donc une science qui explique ces raisons, et par conséquent une philosophie du droit (§ 31, 32).",
+   "reason": "Vattel's 'foundation' as the principle that gives the reason ('rendre raison') why the rules are as they are applies Wolff's account in §§ 31-32 and 39 of philosophical knowledge of laws as knowledge of their reasons; the specific source of § 6 is PPU § 137, which Vattel cites.",
+   "links": [
+    [
+     "MDZ scan 42",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=42"
+    ]
+   ]
+  },
+  {
+   "id": 7009,
+   "unit": "E.6",
+   "at": [
+    [
+     "t",
+     723,
+     782
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 26",
+   "page": "LOG40.pdf36",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Cette vérité se confirme à posteriori, ou par l'expérience.",
+   "source": "Si quis per rationem aliquid fieri posse agnovit factoque experimento idem fieri observat, is cognitionem philosophicam historica confirmat.",
+   "french": "Si quelqu'un a reconnu par la raison qu'une chose peut se faire, et qu'ayant fait l'expérience il observe qu'elle se fait, il confirme la connaissance philosophique par la connaissance historique.",
+   "reason": "The move of confirming a reasoned conclusion 'à posteriori, ou par l'expérience' is Wolff's rule in § 26 (with § 34) that philosophical knowledge is confirmed by historical knowledge drawn from experience.",
+   "links": [
+    [
+     "MDZ scan 36",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=36"
+    ]
+   ]
+  },
+  {
+   "id": 7010,
+   "unit": "E.10",
+   "at": [
+    [
+     "t",
+     783,
+     916
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 116",
+   "page": "LOG40.pdf91",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "Il est absolument nécessaire pour y réussir, de se faire une idée claire & distincte des choses, & d'en donner de bonnes definitions.",
+   "source": "In philosophia non utendum est terminis nisi accurata definitione explicatis.",
+   "french": "En philosophie, on ne doit se servir d'aucun terme qui n'ait été expliqué par une définition exacte.",
+   "reason": "Vattel makes the Discursus's first rule of method (§ 116: no term without an accurate definition) the condition for settling the dispute about obligation.",
+   "links": [
+    [
+     "MDZ scan 91",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=91"
+    ]
+   ]
+  },
+  {
+   "id": 7011,
+   "unit": "E.10",
+   "at": [
+    [
+     "t",
+     917,
+     1039
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 137",
+   "page": "LOG40.pdf106",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "Nous verrons que c'est pour avoir négligé cette régle que d'habiles Auteurs se sont si fort embarrassés dans cette matiere",
+   "source": "Hinc consequitur, neglecta methodo philosophica, nullam certam ac distinctam obtineri cognitionem. Nam si methodus philosophica negligitur, nec termini, nec propositiones sufficienter intelliguntur ( §. 136. ), adeoque nonnisi confusa est rerum notitia.",
+   "french": "Il s'ensuit que, si l'on néglige la méthode philosophique, on n'obtient aucune connaissance certaine et distincte. Car si l'on néglige la méthode philosophique, ni les termes ni les propositions ne sont suffisamment entendus, et ainsi on n'a des choses qu'une connaissance confuse.",
+   "reason": "Discursus § 137 traces confused knowledge to neglect of the method, and Vattel blames the earlier writers' confusion on neglect of the definition rule. 'Négligé' echoes 'neglecta', but the thought is a commonplace.",
+   "links": [
+    [
+     "MDZ scan 106",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=106"
+    ]
+   ]
+  },
+  {
+   "id": 7012,
+   "unit": "E.10",
+   "at": [
+    [
+     "t",
+     1041,
+     1108
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 158",
+   "page": "LOG40.pdf123",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "R",
+   "passage": "& ont paru tomber dans des sentimens si opposés les uns aux autres.",
+   "source": "Hinc consequitur, fieri posse, ut philosophiam methodo philosophica traditurus ab aliis verbis dissentiat, etsi in re sit consensus & vice versa ut in verbis sit consensus, etsi in re inter ipsos non conveniat.",
+   "french": "Il s'ensuit qu'il peut arriver que celui qui enseigne la philosophie selon la méthode philosophique diffère des autres dans les mots, bien qu'il y ait accord sur la chose, et inversement qu'il y ait accord dans les mots, bien qu'ils ne s'accordent pas sur la chose.",
+   "reason": "Vattel's 'ont paru' (an opposition that is only apparent, caused by undefined terms) is the case set out in Discursus § 158: disagreement in words with agreement in substance. This is a general maxim, so the link is weak.",
+   "links": [
+    [
+     "MDZ scan 123",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=123"
+    ]
+   ]
+  },
+  {
+   "id": 7013,
+   "unit": "E.11",
+   "at": [
+    [
+     "t",
+     4,
+     146
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 142",
+   "page": "LOG40.pdf109",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Pour déterminer ce que c'est que l'obligation, il faut examiner d'abord ce que l'on a communément dans l'esprit, quand on se sert de ce terme.",
+   "source": "In philosophia igitur a recepto verborum significatu non est recedendum, hoc est, verbis non res aliae a nobis denotandae sunt",
+   "french": "En philosophie, il ne faut donc pas s'écarter de la signification reçue des mots, c'est-à-dire que nous ne devons pas désigner par les mots d'autres choses [que celles qu'ils signifient communément].",
+   "reason": "By starting from what people commonly mean by 'obligation', Vattel follows the rule of Discursus § 142 that the received meaning of words is to be kept.",
+   "links": [
+    [
+     "MDZ scan 109",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=109"
+    ]
+   ]
+  },
+  {
+   "id": 7014,
+   "unit": "E.14",
+   "at": [
+    [
+     "t",
+     221,
+     372
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 161",
+   "page": "LOG40.pdf127",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "R",
+   "passage": "toutefois avec cette différence, que ces Auteurs se sont bornés à indiquer l'effet de l'obligation, sans expliquer distinctement en quoi elle consiste.",
+   "source": "Quodsi igitur alii terminos propositiones ingredientes vel prorsus non, vel non satis accurate definiverint, ipse autem eorum meliores tradiderit definitiones; eo ipso efficitur, ut ab aliis dicta clarius intelligantur.",
+   "french": "Si donc d'autres n'ont point défini, ou pas assez exactement, les termes qui entrent dans les propositions, et que lui en ait donné de meilleures définitions, il fait par là même que ce que les autres ont dit soit entendu plus clairement.",
+   "reason": "Vattel presents his definition as making clear what Pufendorf and Grotius left undefined, the case of Discursus § 161. This is a general maxim of method, so the link is weak.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=127"
+    ]
+   ]
+  },
+  {
+   "id": 7015,
+   "unit": "E.15",
+   "at": [
+    [
+     "t",
+     303,
+     404
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 143",
+   "page": "LOG40.pdf111",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "R",
+   "passage": "Rien n'est si commun que cette façon de parler : c'est pourquoi il im porte d'éclaircir la difficulté",
+   "source": "Nihil equidem communius est loquendi inconstantia, sed nihil quoque experimur accuratae philosophandi methodo magis adversum.",
+   "french": "Rien n'est plus commun, à la vérité, que l'inconstance dans la manière de parler, mais rien aussi ne se trouve plus contraire à la méthode exacte de philosopher.",
+   "reason": "Vattel treats the loose phrase 'c'est le devoir qui fait l'obligation' as a common way of speaking that must be cleared up, as Discursus § 143 calls loose usage the commonest of things and the most hostile to method. The echo 'Rien n'est si commun' / 'Nihil communius' is idiomatic, so the link is weak.",
+   "links": [
+    [
+     "MDZ scan 111",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=111"
+    ]
+   ]
+  },
+  {
+   "id": 7016,
+   "unit": "E.21",
+   "at": [
+    [
+     "t",
+     749,
+     880
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 1",
+   "page": "LOG40.pdf25",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "L'expérience établit manifestement cette vérité, aux yeux de quiconque veut faire quelqu'attention à ce qui se passe en lui - même.",
+   "source": "mens sibi conscia est mutationum, quae in ipsa accidunt. Nemo haec ignorat : modo ad semetipsum attendat.",
+   "french": "l'esprit a conscience des changements qui se produisent en lui. Personne ne l'ignore, pourvu qu'il fasse attention à lui-même.",
+   "reason": "Vattel appeals to an experience open to anyone who attends to what happens within himself, as Discursus § 1 grounds historical knowledge in the mind's consciousness of its own changes, known to all 'modo ad semetipsum attendat'.",
+   "links": [
+    [
+     "MDZ scan 25",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=25"
+    ]
+   ]
+  },
+  {
+   "id": 7017,
+   "unit": "E.21",
+   "at": [
+    [
+     "t",
+     992,
+     1100
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 4",
+   "page": "LOG40.pdf26",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "nous ne nous déterminons jamais à une action, que par la vue de quelque bien, que nous croyons y appercevoir",
+   "source": "Mens non appetit objectum oblatum, nisi id judicaverit bonum.",
+   "french": "L'esprit ne désire pas l'objet qui lui est présenté, à moins de l'avoir jugé bon.",
+   "reason": "Vattel's claim that we never act except for a good we believe we see renders Discursus § 4 (the mind desires nothing it has not judged good; § 3 gives 'nos nil appetere nisi sub ratione boni' as a fact known by experience), though the axiom is a scholastic commonplace.",
+   "links": [
+    [
+     "MDZ scan 26",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=26"
+    ]
+   ]
+  },
+  {
+   "id": 7018,
+   "unit": "E.22",
+   "at": [
+    [
+     "t",
+     368,
+     468
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 68",
+   "page": "LOG40.pdf56",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "le droit naturel est une science, qui nous apprend ce qui est naturellement bon ou mauvais à l'homme",
+   "source": "ea philosophiae pars, in qua docetur, quaenam actiones sint bonae, quaenam malae, Jus naturae appellatur. Definitur adeo Jus naturae per scientiam actionum bonarum atque malarum.",
+   "french": "la partie de la philosophie où l'on enseigne quelles actions sont bonnes et quelles sont mauvaises s'appelle droit de la nature. On définit donc le droit de la nature comme la science des actions bonnes et mauvaises.",
+   "reason": "Vattel restates his own § 3 definition of natural law, which closely renders Discursus § 68: the science that teaches which actions are good and which are bad.",
+   "links": [
+    [
+     "MDZ scan 56",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=56"
+    ]
+   ]
+  },
+  {
+   "id": 7019,
+   "unit": "E.27",
+   "at": [
+    [
+     "t",
+     529,
+     634
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 116",
+   "page": "LOG40.pdf91",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "Toute la difficulté, entre ce savant Commentateur & nous, vient de ce qu'il ne définit point l'obligation",
+   "source": "Si utamur terminis vel prorsus non explicatis, vel definitione minus accurata expositis, eorum significatus vel prorsus obscurus est, vel minimum ambiguus",
+   "french": "Si nous employons des termes ou bien pas du tout expliqués, ou bien exposés par une définition peu exacte, leur signification est ou tout à fait obscure, ou du moins ambiguë",
+   "reason": "Vattel traces the whole dispute to Barbeyrac's failure to define obligation, in line with the Discursus § 116 rule that undefined or ill-defined terms leave propositions obscure or ambiguous; the rule is a general Wolffian maxim, so the link is weak.",
+   "links": [
+    [
+     "MDZ scan 91",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=91"
+    ]
+   ]
+  },
+  {
+   "id": 7020,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     4,
+     213
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 158",
+   "page": "LOG40.pdf123",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "Je me flate qu'en développant soigneusement les idées, & en déterminant exactement la signification des termes, comme je me suis étudié à le faire, le Lecteur verra un moyen de concilier M. Barbeyrac avec nous",
+   "source": "Hinc consequitur, fieri posse, ut philosophiam methodo philosophica traditurus ab aliis verbis dissentiat, etsi in re sit consensus & vice versa ut in verbis sit consensus, etsi in re inter ipsos non conveniat. Qui enim methodo philosophica philosophiam tradit, voces a significatu vago ad fixum reducit (§. 144.)",
+   "french": "Il s'ensuit qu'il peut arriver que celui qui veut exposer la philosophie selon la méthode philosophique soit en désaccord avec d'autres dans les mots, alors qu'il y a accord sur la chose, et inversement qu'il y ait accord dans les mots, alors qu'ils ne s'accordent pas sur la chose. Car celui qui expose la philosophie selon la méthode philosophique ramène les mots d'une signification vague à une signification fixe (§. 144.)",
+   "reason": "Vattel expects that fixing the meaning of terms will reconcile him with Barbeyrac, applying Discursus § 158: one who reduces words to fixed meanings may differ from others in words while agreeing in substance.",
+   "links": [
+    [
+     "MDZ scan 123",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=123"
+    ]
+   ]
+  },
+  {
+   "id": 7021,
+   "unit": "E.30",
+   "at": [
+    [
+     "t",
+     33,
+     201
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 144",
+   "page": "LOG40.pdf111",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "R",
+   "passage": "Il y a quelque équivoque dans ce terme : quelques-uns le restraignent sans raison & semblent ne désigner par-là qu'une utilité grossiere & bornée aux biens de la terre.",
+   "source": "Hinc consequitur, si per inconstantiam loquendi vocis cujusdam significatus sit vagus & indeterminatus , in philosophia eum ad determinatum reduci debere.",
+   "french": "Il s'ensuit que, si par l'inconstance du langage la signification d'un mot est vague et indéterminée, on doit en philosophie la ramener à une signification déterminée.",
+   "reason": "Vattel starts his last word on utility by noting that the term is equivocal and arbitrarily narrowed, then fixes what 'utilité' must mean, the step Discursus § 144 prescribes for vague words; the move is generic and no wording is shared.",
+   "links": [
+    [
+     "MDZ scan 111",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=111"
+    ]
+   ]
+  },
+  {
+   "id": 7022,
+   "unit": "E.31",
+   "at": [
+    [
+     "t",
+     526,
+     793
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 148",
+   "page": "LOG40.pdf114",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "c'est pour faire sentir l'avantage d'une méthode exacte , & pour montrer comment en déterminant les idées, en les rendant distinctes, & en définissant les termes, on démêle presque sans peine, des questions dans lesquelles de plus savans que nous se sont embarrassés.",
+   "source": "Si termini accurata definitione explicentur, cognitionem reddunt distinctam & ad progressum scientiarum vitamque utilem.",
+   "french": "Si les termes sont expliqués par une définition exacte, ils rendent la connaissance distincte et utile au progrès des sciences et à la vie.",
+   "reason": "Vattel presents his critique of Barbeyrac as proof that an exact method (defining terms, making ideas distinct) resolves questions, which is the claim of Discursus § 148 (with §§ 136-137); the idea is a Wolffian commonplace, with 'distinctes' and 'définissant les termes' as the only echoes.",
+   "links": [
+    [
+     "MDZ scan 114",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=114"
+    ]
+   ]
+  },
+  {
+   "id": 7023,
+   "unit": "E.33",
+   "at": [
+    [
+     "t",
+     437,
+     745
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 70",
+   "page": "LOG40.pdf57",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "Quelle morale est donc la plus raisonnable & la plus utile ; celle qui fondée sur la nature de l'homme, le porte à la vertu, par la considération de ses intérêts les plus chers : ou celle qui est si pure & si noble , qu'elle se trouve hors de notre portée & absolument inefficace pour fléchir notre volonté ?",
+   "source": "Definivi eam per scientiam affectivam, quia flectit voluntatem ad appetendum & aversandum",
+   "french": "Je l'ai définie comme une science affective, parce qu'elle fléchit la volonté à désirer et à repousser",
+   "reason": "Vattel judges a morality by its power to 'fléchir notre volonté', the property by which Discursus § 70 (cf. § 62) defines practical philosophy as an affective science; 'fléchir' echoes 'flectit voluntatem', but the phrase is ordinary French.",
+   "links": [
+    [
+     "MDZ scan 57",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=57"
+    ]
+   ]
+  },
+  {
+   "id": 7024,
+   "unit": "E.39",
+   "at": [
+    [
+     "t",
+     1945,
+     2126
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Discursus praeliminaris de philosophia in genere (1740)",
+   "locus": "§ 137",
+   "page": "LOG40.pdf106",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "On n'auroit jamais avancé des paradoxes si insoutenables, si l'on s'étoit fait des notions distinctes des choses, & si l'on eût commencé par donner de bonnes définitions des termes.",
+   "source": "Hinc consequitur, neglecta methodo philosophica, nullam certam ac distinctam obtineri cognitionem. Nam si methodus philosophica negligitur, nec termini, nec propositiones sufficienter intelliguntur ( §. 136. ), adeoque nonnisi confusa est rerum notitia.",
+   "french": "Il s'ensuit que, si l'on néglige la méthode philosophique, on n'obtient aucune connaissance certaine et distincte. Car si la méthode philosophique est négligée, ni les termes ni les propositions ne sont suffisamment entendus, et la connaissance des choses n'est donc que confuse.",
+   "reason": "Vattel blames Barbeyrac's paradoxes on the lack of distinct notions and good definitions of terms, the consequence Discursus §§ 136-137 draw from neglecting the philosophical method (undefined terms, confused knowledge); the idea is a Wolffian commonplace.",
+   "links": [
+    [
+     "MDZ scan 106",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008633?page=106"
+    ]
+   ]
+  }
+ ]
+}

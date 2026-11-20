@@ -56,10 +56,10 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
 - Metadata of the base witness and of the transcription.
 - `version` (MAJOR.MINOR) and `changed` (date). See Versions below.
 - `aliases`: retired unit ids mapped to their successors. The viewer resolves them.
-- `divisions`: one entry per division, in order: `key` (the first part of the unit id), `label`, `chapters` (true when units are grouped by chapter), `chapterTitle` for a division without chapters, `unitLabel` (`{chap}`, `{n}` from the unit id), `unitMark`, `cite` (`{prefix}`, `{chap}`, `{n}`, `{unnum}`, `{page}`).
+- `divisions`: one entry per division, in order: `key` (the first part of the unit id), `label`, `chapters` (true when units are grouped by chapter), `chapterTitle` for a division without chapters, `unitLabel` (`{chap}`, `{n}` from the unit id), `unitMark`, `cite` (`{prefix}`, `{chap}`, `{n}`, `{unnum}`, `{page}`), `railUnits` (true: the contents list shows each unit of the division, with its first words, under its chapter).
 - `layers`: one entry per layer, with the `label` and `tooltip` of its checkbox and `default` (on unless false). A layer with a `file` is a layer file in `layers/`. A layer of `kind: "reuse"` is a view on one reuse table: `table` names it, `family` names the family its checkbox switches.
 - `reuse`: `families` (key, label, `chip`, `color`, `dark`, `sourceLabel`) and the wording of the source panel (`baseTag`, `sourceLabel`, `noteLabel`, `partLabels`, `earliest`, `nearer`).
-- `viewer`: brand line, start unit, search placeholder, `goto` patterns (a regular expression and an id template), citation prefix and page pattern, `volumes`, `pageLink` (template for a scan link), `pageBreak` (the HTML of a page-break marker).
+- `viewer`: brand line, start unit, search placeholder, `goto` patterns (a regular expression and an id template), citation prefix and page pattern, `volumes`, `pageLink` (template for a scan link), `pageBreak` (the HTML of a page-break marker). The marker carries no space outside its span: the space between the two words around a break is part of `text`, before the break's offset, so the text the viewer shows without the markers equals `text`.
 
 ## text.json
 
@@ -140,6 +140,17 @@ One item per comment shown under a unit. `family` (optional) gives the note the 
 - `page`: page of the printed translation. `sents`: sentences of the main text. `notes`: footnotes, not aligned.
 - `fr`: sentence spans in the unit's `text`. `align`: groups of `[[French sentence indices], [English sentence indices]]`.
 - `flags`: translation problems. `k` is the index of the alignment group.
+
+### `kind: "glosses"` (`layers/glosses.json`)
+
+English translations of passages in Latin, Greek and other languages than French. `items`:
+
+```json
+{"id": "g12", "unit": "II.112", "at": [["n0", 15, 140]], "lang": "la", "text": "...", "translation": "...", "source": "Cicero, De officiis III.29", "note": "..."}
+```
+
+- `at`: the passage (one range). `lang`: ISO 639 code (`la`, `grc`, `en`, ...). `text`: the passage as it stands in the unit. `source` (optional): the author and work quoted, where the edition names them. `note` (optional): a misprint, a doubtful reading, a translation choice.
+- The viewer underlines the passage (dotted), shows the translation on hover and lists the edition's translations under each section. The layer is left out of `?asbuilt=1`.
 
 ## Corrections (`corrections.json`)
 

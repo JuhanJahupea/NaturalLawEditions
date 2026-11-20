@@ -439,6 +439,30 @@
       "date": "1738",
       "lang": "la",
       "layer": "Vision transcription of the MDZ scans of the Halle 1744 issue (bsb10008634), which keeps the setting of 1738 (texts/wolff-philosophia-practica-1738/)."
+    },
+    {
+      "id": "wolff-theologia-naturalis-1739",
+      "sigla": [
+        "TN1"
+      ],
+      "author": "Christian Wolff",
+      "title": "Theologia naturalis, methodo scientifica pertractata, pars prior",
+      "imprint": "Frankfurt and Leipzig: Renger, 1739",
+      "date": "1739",
+      "lang": "la",
+      "layer": "Vision transcription of the MDZ scans (bsb10008642), §§ 948-1006 (texts/wolff-theologia-naturalis-1739/)."
+    },
+    {
+      "id": "wolff-discursus-praeliminaris-1740",
+      "sigla": [
+        "LOG40"
+      ],
+      "author": "Christian Wolff",
+      "title": "Discursus praeliminaris de philosophia in genere",
+      "imprint": "In Philosophia rationalis sive Logica, Frankfurt and Leipzig: Renger, 1740",
+      "date": "1740",
+      "lang": "la",
+      "layer": "Vision transcription of the MDZ scans (bsb10008633), §§ 1-171 (texts/wolff-discursus-praeliminaris-1740/)."
     }
   ],
   "reuse": [
@@ -446,13 +470,13 @@
       "path": "reuse/vattel-1773__wolff-jus-gentium-1749.json",
       "from": "vattel-1773",
       "to": "wolff-jus-gentium-1749",
-      "rows": 1370
+      "rows": 1379
     },
     {
       "path": "reuse/vattel-1773__wolff-institutiones-1750.json",
       "from": "vattel-1773",
       "to": "wolff-institutiones-1750",
-      "rows": 326
+      "rows": 334
     },
     {
       "path": "reuse/vattel-1773__wolff-jus-naturae-8-1748.json",
@@ -464,7 +488,7 @@
       "path": "reuse/vattel-1773__burlamaqui-1747.json",
       "from": "vattel-1773",
       "to": "burlamaqui-1747",
-      "rows": 62,
+      "rows": 68,
       "toLayer": "Google Books PDF text layer (OCR) of the scan the burlamaqui-1747 edition was transcribed from."
     },
     {
@@ -478,13 +502,13 @@
       "path": "reuse/vattel-1773__grotius-barbeyrac-1724.json",
       "from": "vattel-1773",
       "to": "grotius-barbeyrac-1724",
-      "rows": 1226
+      "rows": 1252
     },
     {
       "path": "reuse/vattel-1773__pufendorf-barbeyrac-1734.json",
       "from": "vattel-1773",
       "to": "pufendorf-barbeyrac-1734",
-      "rows": 626
+      "rows": 639
     },
     {
       "path": "reuse/vattel-1773__montesquieu-esprit-des-loix-1749.json",
@@ -690,6 +714,18 @@
       "to": "burlamaqui-1747",
       "rows": 68,
       "toLayer": "The burlamaqui-1747 edition's transcription (editions/burlamaqui-1747/text.json)."
+    },
+    {
+      "path": "reuse/vattel-essai-1747__wolff-theologia-naturalis-1739.json",
+      "from": "vattel-essai-1747",
+      "to": "wolff-theologia-naturalis-1739",
+      "rows": 49
+    },
+    {
+      "path": "reuse/vattel-essai-1747__wolff-discursus-praeliminaris-1740.json",
+      "from": "vattel-essai-1747",
+      "to": "wolff-discursus-praeliminaris-1740",
+      "rows": 25
     }
   ]
 }

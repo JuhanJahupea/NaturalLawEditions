@@ -2,6 +2,12 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.14 (2026-11-20)
+
+- Page breaks: the working edition dropped the space between the two words around a break ("de ses|actions" read "sesactions"). 232 spaces restored (`tools/migrate_pb_spaces.py`). The page-break marker now holds its spaces inside its span, so the text the viewer shows without markers equals `text.json`. The offsets of 378 pass rows, 4 attributions and the English sentence spans moved with the text. A few breaks fall on stray marks of the scan («, signatures); a space stands there too.
+- New layer `glosses`: English translations of 27 Latin passages (Cicero, Seneca, Hobbes, the Digest, Horace, Terence), with notes on misprints.
+- Reuse tables are unchanged.
+
 ## 1.13 (2026-11-18)
 
 - A second precision sample (50 match rows no audit had read; `audit/README.md`): 44 right, 6 weak, 0 wrong. Right match rows in all: 89% (79–95). The 6 weak rows now have status possible; 5 labels changed.

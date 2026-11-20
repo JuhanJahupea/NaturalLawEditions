@@ -85,10 +85,11 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `prec2_sample.py <dir>` and `prec2_stats.py <dir>`: the second precision sample (match rows no audit had read) and its estimate. Agent prompt `PRECISION_PROMPT.md`.
 - `wolff_loci.py <work>`: places each Wolff row's source passage in the transcription and compares the § it stands in with the row's locus.
 - `apply_checks2.py <work> <repo> <vattel data.json> <burlamaqui data.json> [--write]`: applies the second sample, the locus corrections (`locusCheck`) and the rows the recall readers judged wrong.
-- `src_pages.py <out>`: reading-form pages of Wolff's *Jus gentium* and *Institutiones* (long s as s, hyphens joined) with the offset where each § starts, for the readers below.
+- `src_pages.py <out>`: reading-form pages of Wolff's *Jus gentium*, *Institutiones*, *Philosophia practica universalis* I, *Theologia naturalis* I and *Discursus praeliminaris* (long s as s, hyphens joined) with the offset where each § starts, for the readers below.
 - `add_cand.py <work> <out>`: the weak rows whose audit reason names a passage of Wolff or Grotius that the section has no row for, in batches by section. Agent prompt `ADDITIONS_PROMPT.md` (Claude Opus, about 14 sections per agent).
 - `recall_cand.py <out> [n]`: a random sample of Vattel's sections with their rows and the source pages cited nearby. Agent prompt `RECALL_PROMPT.md` (Claude Opus, 3 sections per agent). `rec_stats.py <dir>`: the share of found reuse that rows cover.
-- `add_merge.py <work> <first id> <date> <out> A:<dir> C:<dir>`: the rows the additions and recall readers wrote become `editions/vattel-1773/passes/additions.json`, each placed on its unit and its source page, duplicates left out.
+- `add_merge.py <work> <first id> <date> <out> A:<dir> C:<dir> V:<dir> [--append]`: the rows the additions, recall and 1773-additions readers wrote become `editions/vattel-1773/passes/additions.json`, each placed on its unit and its source page, duplicates left out; `--append` keeps the rows already there.
+- `add73_cand.py <out> [per]`: the passages Vattel added in 1773 (layer `changes-1773`, additions with text), with their sections and the rows that already overlap them. Agent prompt `ADDITIONS_1773_PROMPT.md` (Claude Opus, 8 additions per agent; sources JG, INST, GRO24, PUF34 and BUR47). The readers also list the sources Vattel names there that the corpus lacks (`audit/additions-1773-2026-11-20.json`).
 
 ## 10. Vattel, Essai sur le fondement du droit naturel (1747)
 
@@ -96,6 +97,17 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `essai_data.py <LOI47.json> <data.json>`: the working edition (sections by printed paragraph number, page breaks, footnotes on the section that calls them). `tools/convert_vattel_essai_1747.py <data.json>` converts it.
 - English: `en_extract_essai.py <pdf> <out>` (Liberty Fund 2008, pp. 747–772), `plain_ed.js <edition> <out>` (each unit's plain text as the viewer builds it), `en_align_essai.py` (sentence alignment over the whole essay). Translation check: `en_flags.py` with `TRANSLATE_CHECK_PROMPT_ESSAI.md` (Claude Opus, 10 sections per agent).
 - Reuse: `src_pages.py` (reading pages of Wolff, with the offset of each §), `essai_cand.py <work> <out>` (each section with the 8 nearest pages of each French source), readers with `ESSAI_REUSE_PROMPT.md` (Claude Opus, 4 sections per agent; they search Wolff's Latin themselves with the index of his marginal summaries), `essai_merge.py <work> <dir> <date> --write` (pass files and `attributions.json`).
-- Second reading: `essai_verify.py <out>` (every match row, batches of 25), readers with `VERIFY_PROMPT_ESSAI.md` (Claude Opus), `essai_apply_verify.py <dir> <date> --write`.
+- Second reading: `essai_verify.py <out> [status]` (every match row, or every row of another status, batches of 25), readers with `VERIFY_PROMPT_ESSAI.md` (Claude Opus), `essai_apply_verify.py <dir> <date> --write`.
+- Second copy: the Zürich copy on e-rara; readers with `PAGE_CHECK_PROMPT_LOISIR.md` (Claude Sonnet, 17 pages per agent) compare each page image with the transcription.
+- Wolff's *Theologia naturalis* I (§§ 948–1006) and *Discursus praeliminaris* (§§ 1–171) from MDZ, as the *Philosophia practica*: prompts `TRANSCRIBE_PROMPT_TN1.md` and `TRANSCRIBE_PROMPT_LOG40.md`. Readers with `ESSAI_WOLFF2_PROMPT.md` (Claude Opus, about 10 sections per agent), then `essai_merge.py <work> <dir> <date> --write --only TN1,LOG40`.
+
+## 11. Text corrections and offsets
+
+- `remap_text.py <edition> <old text.json> [--base <layer>=<json>] [--layers a,b] [--write]`: after a change to an edition's text, moves the offsets of pass rows, attributions and static layers to the new text through a character diff of each part, and reads each passage again from the new text.
+- `tools/migrate_pb_spaces.py <data.json> <edition> '<old page-break template>'` (2026-11-20, once): the working editions of Vattel 1773 and Burlamaqui dropped the space between the two words around a page break; this restores it in data.json and moves the English sentence spans.
+
+## 12. Translations of foreign-language passages
+
+- `gloss_cand.py <out>`: a character-trigram model of Latin (Wolff's transcriptions), French (the editions) and English (the English layers) marks runs of three or more words that read as Latin or English, and any Greek letter; units with candidates go in batches of about 40 stretches. Readers with `GLOSS_PROMPT.md` (Claude Opus) fix each passage's extent, its language and an English translation, and skip references and French. `gloss_merge.py <dir> <date> --write`: `editions/<ed>/layers/glosses.json` and the layer's entry in `edition.json`.
 
 The converters then rebuild the editions from their working `data.json` and the pass files (`tools/convert_*.py`, `tools/nle.py`); `tools/check_all.sh` checks both.

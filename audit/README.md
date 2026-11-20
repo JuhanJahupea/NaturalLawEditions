@@ -161,5 +161,48 @@ The rows of the *Essai* were written by readers (Claude Opus) who read each sect
 | Barbeyrac's Grotius | 21 | 18 | 3 | 0 |
 | All | 198 | 170 (86%) | 28 | 0 |
 
-Weak rows rest on stock vocabulary or doctrine (the Roman-law definition of obligation, "parvenir à la connoissance"), or on a passage that has a closer source elsewhere (Wolff's *Theologia naturalis* I § 950, which Vattel cites and the corpus lacks). Applied (Essai 1.0): weak rows have status possible, 7 labels are changed, every read row carries `audit`. The 135 rows the first readers rated possible were not read again.
+Weak rows rest on stock vocabulary or doctrine (the Roman-law definition of obligation, "parvenir à la connoissance"), or on a passage that has a closer source elsewhere (Wolff's *Theologia naturalis* I § 950, which Vattel cites and the corpus lacks). Applied (Essai 1.0): weak rows have status possible, 7 labels are changed, every read row carries `audit`. 
 
+### Possible rows (2026-11-20)
+
+`essai-possible-reading-2026-11-20.json` holds every verdict. The same reader task read the 135 rows the first readers rated possible.
+
+| Table | Possible rows | Right | Weak | Wrong |
+|---|---|---|---|---|
+| Wolff, *Philosophia practica universalis* I | 35 | 18 | 17 | 0 |
+| Burlamaqui 1747 | 36 | 12 | 21 | 3 |
+| Barbeyrac's Pufendorf | 24 | 9 | 15 | 0 |
+| Barbeyrac's *Devoirs* | 21 | 7 | 13 | 1 |
+| Barbeyrac's Grotius | 19 | 8 | 10 | 1 |
+| All | 135 | 54 (40%) | 76 | 5 |
+
+Applied (Essai 1.1): right rows have status match, wrong rows `rejected`, weak rows stay possible; 9 labels are changed. The readers point to passages with no row: Burlamaqui II.7.11 for § 40 ("pétition de principe"); Wolff PPU § 224 for the definition of duty in § 17; PPU § 136 for the Cicero quotation in § 8.
+
+
+## Vattel 1773: the passages added in 1773 (2026-11-20)
+
+`additions-1773-2026-11-20.json` holds each addition with its rows, the sources Vattel names there and what the reader searched.
+
+The layer `changes-1773` has 64 additions with text: added notes, added phrases and rewordings. Claude Opus read each with Wolff's *Jus gentium* and *Institutiones*, Barbeyrac's Grotius and Pufendorf, and Burlamaqui 1747 (`tools/transcription/ADDITIONS_1773_PROMPT.md`). 34 additions have no row. 62 rows are new (step V in `editions/vattel-1773/passes/additions.json`); 3 more were already in the tables.
+
+| Table | Match | Possible |
+|---|---|---|
+| Grotius (Barbeyrac) | 4 | 22 |
+| Pufendorf (Barbeyrac) | 0 | 13 |
+| Wolff, *Jus gentium* | 1 | 8 |
+| Wolff, *Institutiones* | 1 | 7 |
+| Burlamaqui 1747 | 4 | 2 |
+
+The Burlamaqui rows are in the note to Prelim. § 6 (P1.1.1, P1.5.4–5, P1.6.9, P2.2.3, P2.5.7). Most additions are historical examples from works the corpus lacks. Named most often: Grotius, *Annales et historiae de rebus Belgicis* (10 additions); the *Lettres et négociations* of Jean de Witt, with Boreel's and Van Beuningen's letters (8); Pétis de La Croix, *Histoire de Timur-Bec* (5); Mariana, *De rege et regis institutione* (4); Xenophon (4); Velly, *Histoire de France* (3); de Thou (2); the marquis de Saint-Philippe, *Mémoires* (2). One added note cites the *Journal de Bouillon* of 1771, after Vattel's death; the editors of 1773 added it.
+
+## Essai §§ 1–8 and Wolff's *Discursus praeliminaris* (2026-11-20)
+
+The *Discursus praeliminaris de philosophia in genere* (`texts/wolff-discursus-praeliminaris-1740/`) heads Wolff's *Logica*. It defines philosophy (§ 29), divides it (§§ 55–70), orders its parts (§§ 87–104) and sets out method (§§ 115–139) and style (§§ 140–150).
+
+- Essai § 3 renders § 68: natural right is "une science qui nous apprend ce qui est naturellement bon, ou mauvais" (*scientia actionum bonarum atque malarum*), and the "théorie" of practical philosophy. "Consideré simplement comme homme" echoes § 63 (*quatenus est homo*).
+- Essai § 4 gives to ethics Wolff's definition of practical philosophy in § 62: "diriger nos facultés pour pratiquer ce qui est bon, & pour éviter ce qui est mauvais" (*dirigendi facultatem appetitivam in eligendo bono & fugiendo malo*).
+- Wolff lets natural law be taught inside ethics (§ 68). Vattel keeps natural right apart from ethics and puts it first. §§ 92 and 104 order the disciplines that way.
+- Essai § 1, on keeping distinct what ordinary speech confuses, follows the style rules of §§ 144–145.
+- Vattel takes nothing from §§ 1–54 (the three kinds of knowledge, philosophy in general), the theoretical parts, politics, economics or universal practical philosophy (§ 70). His definition of law (§ 2) comes from the *Philosophia practica universalis* §§ 131 and 135. The questions of foundation and obligation (§ 5) and the replies to the utilitarian and voluntarist accounts (§§ 7–8) have no counterpart in the *Discursus*.
+
+The rows are in `editions/vattel-essai-1747/passes/wolff-discursus-praeliminaris-1740.json`: 25 rows, 6 match. The match rows: § 3 (two, § 68), § 4 (one, § 62), § 21 (two, §§ 1 and 4: knowledge by attending to oneself; we desire nothing we have not judged good) and § 22 (one, § 68).

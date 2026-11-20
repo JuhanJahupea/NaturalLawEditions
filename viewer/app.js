@@ -6,7 +6,8 @@ const fill=(t,o)=>String(t??'').replace(/\{(\w+)\}/g,(m,k)=>o[k]??'');
 const QS=new URLSearchParams(location.search);
 let VIEW=QS.get('view')==='list'?'list':'text',LTAB='out',LCH=QS.get('ch')||'';
 let TP=null,CAT=null,ED='',BASE='',M=null,V={},RU={},DIVS={},TITLES={},FAMS=[],FAMI={},FN={},st={};
-const LAYS=[],LAY={},MAN={};
+const LAYS=[],LAY={},MAN={},GL={};
+const LANG={la:'Latin',grc:'Greek',en:'English',it:'Italian',es:'Spanish',de:'German',nl:'Dutch',pt:'Portuguese',he:'Hebrew'};
 const SEC=[],ROWS=[],byId={},rowsBySec={},CH=[],chOf={},IN={},INROWS=[];
 function save(){try{localStorage.setItem('nle:'+ED,JSON.stringify({src:st.src,pos:st.pos,att:st.att,layers:st.layers,widths:st.widths,fams:st.fams,chap:st.chap,sel:st.sel}))}catch(e){}}
 async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error(u+' ('+r.status+')');return r.json()}
@@ -46,8 +47,8 @@ function build(T,data,tables,incoming){
  TITLES=T.titles||{};DIVS=M._divs;
  const fams=RU.families||[];FAMS=fams.map(f=>[f.key,f.label]);FAMI=Object.fromEntries(fams.map(f=>[f.key,f]));FN=Object.fromEntries(FAMS);famColors(fams);
  const marks={},extra={};
- const mk=(u,kind,p)=>{const m=marks[u]=marks[u]||{reuse:{},vars:{},old:{}};return m[kind][p]=m[kind][p]||(kind==='old'?{}:[])};
- const ex=u=>extra[u]=extra[u]||{vars:[],div:[],added:new Set()};
+ const mk=(u,kind,p)=>{const m=marks[u]=marks[u]||{reuse:{},vars:{},old:{},gloss:{}};return m[kind][p]=m[kind][p]||(kind==='old'?{}:[])};
+ const ex=u=>extra[u]=extra[u]||{vars:[],div:[],added:new Set(),gl:[]};
  tables.forEach(tb=>tb.rows.forEach(r=>{const o=rowObj(r,tb);ROWS[r.id]=o;(rowsBySec[r.unit]=rowsBySec[r.unit]||[]).push(o);
   r.at.forEach(([p,a,b])=>mk(r.unit,'reuse',p).push([a,b,r.id]))}));
  // rows of other texts' tables that point into this edition
@@ -64,15 +65,17 @@ function build(T,data,tables,incoming){
    (v.otherReadings||[]).forEach(([p,pos,txt])=>{const o=mk(v.unit,'old',p);(o[pos]=o[pos]||[]).push(`<span class="old" data-v="${v.id}" title="${Compose.esc(l.otherTitle)}">${Compose.esc(txt)}</span>`)})});
   if(l.kind==='comments')L.items.forEach(d=>{const o={w:d.locus,wid:d.sourceId,rel:d.relation,sev:d.severity,c:d.comment,lat:d.sourcePassage,vp:d.passage,conf:d.confidence,q:d.question,link:d.links||[]};
    Object.defineProperty(o,'src',{value:textShort(d.text),enumerable:false});Object.defineProperty(o,'fam',{value:d.family||'',enumerable:false});ex(d.unit).div.push(o)});
+  // glosses: translations of foreign-language passages; left out of ?asbuilt=1, which rebuilds the working edition's HTML
+  if(l.kind==='glosses'&&!QS.get('asbuilt'))L.items.forEach(g=>{GL[g.id]=g;(g.at||[]).forEach(([p,a,b])=>mk(g.unit,'gloss',p).push([a,b,g.id]));ex(g.unit).gl.push(g)});
   if(l.kind==='translation')Object.assign(EN,L.units)});
  const order={},cited={};T.units.forEach((u,i)=>order[u.id]=i);
  T.units.forEach(u=>[...(u.xr||[]),...(u.notes||[]).flatMap(n=>n.xr||[])].forEach(x=>(cited[x[2]]=cited[x[2]]||new Set()).add(u.id)));
  const famOf=id=>ROWS[id].fam;
- T.units.forEach((u,i)=>{const e=extra[u.id]||{vars:[],div:[],added:new Set()};const c=Compose.composeUnit(u,marks[u.id]||{},famOf,V.pageBreak);
+ T.units.forEach((u,i)=>{const e=extra[u.id]||{vars:[],div:[],added:new Set(),gl:[]};const c=Compose.composeUnit(u,marks[u.id]||{},famOf,V.pageBreak);
   const s={id:u.id,i,book:u.div,chap:u.chap,para:u.n,margin:u.margin||'',kind:u.kind,unnum:!!u.unnumbered,html:c.html,
    notes:c.notes.map((n,k)=>({mark:n.mark,html:n.html,added:e.added.has(k)})),pages:(u.pages||[]).map(p=>Object.assign({},p,{z:pageLink(p)})),
    vars:e.vars,citedBy:[...(cited[u.id]||[])].sort((a,b)=>order[a]-order[b])};
-  if(e.div.length)s.div=e.div;
+  if(e.div.length)s.div=e.div;if(e.gl.length)Object.defineProperty(s,'gl',{value:e.gl,enumerable:false});
   const en=EN[u.id];if(en){s.en={s:en.sents,g:en.align,p:en.page,f:en.flags||[]};s.fs=en.fr}
   SEC.push(s);byId[s.id]=s});
  SEC.forEach(s=>{if(s.kind==='heading')return;const d=DIVS[s.book]||{};const k=d.chapters?s.book+'.'+s.chap:s.book;let c=CH[CH.length-1];if(!c||c.key!==k){c={key:k,book:s.book,chap:s.chap,secs:[]};CH.push(c)}c.secs.push(s);chOf[s.id]=c});
@@ -104,7 +107,7 @@ const ctitle=c=>{const d=DIVS[c.book]||{};return d.chapters?(TITLES[c.key]||''):
 const visRow=r=>st.src&&st.fams[r.fam]&&shown(r);
 function famDots(s){const c={};(rowsBySec[s.id]||[]).filter(visRow).forEach(r=>c[r.fam]=(c[r.fam]||0)+1);return FAMS.filter(f=>c[f[0]]).map(f=>`<span style="--c:var(--f${f[0]})" title="${esc(f[1])}: ${c[f[0]]}">${f[0]} ${c[f[0]]}</span>`).join('')}
 // edition menu
-function edMenu(){const s=$('edSel');s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}" title="${esc(e.author+', '+e.title+', '+e.date)}"${e.id===ED?' selected':''}>${esc(e.menu||((e.authorShort||e.author)+' '+e.date))}</option>`).join('');const E=edEntry(ED);if(E)s.title=`${E.author}, ${E.title} (${E.date})`;
+function edMenu(){const s=$('edSel');if(!s)return;s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}" title="${esc(e.author+', '+e.title+', '+e.date)}"${e.id===ED?' selected':''}>${esc(e.menu||((e.authorShort||e.author)+' '+e.date))}</option>`).join('');const E=edEntry(ED);if(E)s.title=`${E.author}, ${E.title} (${E.date})`;
  if(!edEntry(ED))s.insertAdjacentHTML('afterbegin','<option value="" selected>Choose an edition</option>');
  $('brand').textContent=CAT.title||'Natural Law Editions';
  s.onchange=()=>{if(!s.value)return;const q=new URLSearchParams(location.search);q.set('ed',s.value);location.href='?'+q.toString()+location.hash}}
@@ -115,7 +118,10 @@ const tpLabel=p=>'Title page'+(((TP&&TP.pages)||[]).length>1?', '+((V.volumes||{
 function tpHTML(p){const L=p.lines.map(([t,c])=>c==='rule'?'<hr class="tpr">':`<div class="tl ${c}">${esc(t).replace(/&lt;r&gt;(.*?)&lt;\/r&gt;/g,'<span class="rm">$1</span>')}</div>`).join('');
  return `<section class="tp" id="title-${esc(p.vol)}"><div class="chead">${esc(tpLabel(p))}</div><div class="tpg"><div class="tpt">${L}</div><figure class="tpi"><a href="${esc(p.source[1])}" title="Open the scan at the library"><img src="${esc(BASE+p.image)}" alt="${esc(tpLabel(p))}: scan" loading="lazy"></a><figcaption><a href="${esc(p.source[1])}">${esc(p.source[0])}</a></figcaption></figure></div></section>`}
 function rail(){let h='',last='';CH.forEach(c=>{const tp=tpBefore(c.secs[0].id);if(c.book!==last){if(tp)h+=`<a class="tpl" href="#title-${esc(tp.vol)}">${esc(tpLabel(tp))}</a>`;h+=`<h3>${esc(DIVS[c.book].label)}</h3>`;last=c.book}else if(tp)h+=`<a class="tpl" href="#title-${esc(tp.vol)}">${esc(tpLabel(tp))}</a>`
- const t=ctitle(c);h+=`<a href="#${c.secs[0].id}" data-ch="${c.key}" data-t="${esc(t)}"><span class="n">${DIVS[c.book].chapters?'ch. '+c.chap:''}</span><span>${esc(t)}</span><span class="meter"><b></b></span></a>`});$('rail').innerHTML=h;meters()}
+ const t=ctitle(c);h+=`<a href="#${c.secs[0].id}" data-ch="${c.key}" data-t="${esc(t)}"><span class="n">${DIVS[c.book].chapters?'ch. '+c.chap:''}</span><span>${esc(t)}</span><span class="meter"><b></b></span></a>`;
+ if(DIVS[c.book].railUnits)h+=c.secs.map(s=>`<a class="ru" href="#${s.id}" data-u="${s.id}"><span class="n">${esc(DIVS[c.book].unitMark||'')} ${s.para}</span><span>${esc(incipit(s))}</span></a>`).join('')});$('rail').innerHTML=h;meters()}
+// the opening words of a unit, after its printed number
+function incipit(s){const t=plainOf(s).replace(/^\s*\d+\s*\.\s*/,'').replace(/\s+/g,' ');return t.length>48?t.slice(0,48).replace(/\s\S*$/,'')+' …':t}
 const secOn=s=>(rowsBySec[s.id]||[]).some(visRow)||(s.div||[]).some(visDiv)||(layerOn('variants')&&(s.vars||[]).length>0);
 function meters(){const parts=['reuse'].filter(()=>st.src).concat(['comments','variants'].filter(layerOn).map(k=>LAY[k].label));
  document.querySelectorAll('.rail a[data-t]').forEach(a=>{const c=CH.find(x=>x.key===a.dataset.ch);const n=c.secs.length,m=c.secs.filter(secOn).length;a.querySelector('.meter b').style.width=Math.round(100*m/n)+'%';a.title=`${a.dataset.t} · ${m} of ${n} ${V.unitsWord||'units'} with ${parts.join(', ')||'nothing'} shown by the current filters`})}
@@ -129,12 +135,14 @@ function secHTML(s){const vars=s.vars||[];const unplaced=vars.filter(v=>!v.place
  const inc=IN[s.id]?[...new Set(IN[s.id].filter(visIn).map(r=>r.from+'#'+r.sec))]:[];
  const ri=inc.length?`<span class="rin">reused in ${inc.map(x=>{const [e,u]=x.split('#');return xref(e,u)}).join(', ')}</span>`:'';
  const notes=s.notes.length?`<div class="notes">${s.notes.map(n=>`<div class="note${n.added?' added':''}"><span class="mk">${esc(n.mark)}</span>${n.html}</div>`).join('')}</div>`:'';
+ const gls=(s.gl||[]).length?`<div class="gls">${s.gl.map(g=>`<div class="gli" id="gl-${esc(g.id)}"><span class="gll">${esc(LANG[g.lang]||g.lang)}</span> <i lang="${esc(g.lang)}">${esc(glLead(g.text))}</i> → ${esc(g.translation)}${g.source?` <span class="gsrc">(${esc(g.source)})</span>`:''}${g.note?` <small class="gsrc">${esc(g.note)}</small>`:''}</div>`).join('')}</div>`:'';
  const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}" data-fam="${esc(dvFam(d))}"${d.fam?` style="--cmt:var(--f${d.fam})"`:''}><summary><span class="wm">${esc(LC.chip)} ${esc(d.src)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
  const del=unplaced.map(v=>`<div class="del"><b style="font:12px var(--ui)">${esc(v.type)}</b> · ${esc(v.content)}${v.otherPassage?`<br>${esc(LV.otherTag)}: <i>${esc(v.otherPassage)}</i>`:''}${v.otherLink?` · <a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div>`).join('');
  return `<section class="sec" id="${s.id}"><div class="sh">${s.para?`<span class="no">${esc((DIVS[s.book]||{}).unitMark||'')} ${s.para}</span>`:''}${s.unnum?`<span class="unn" title="${esc(V.unnumberedTitle)}">${esc(V.unnumberedLabel)}</span>`:''}${(s.div||[]).length?`<button class="dvc" data-dv="${s.id}" title="${esc(LC.chipTitle)}: ${s.div.length}">${esc(LC.chip)} ${s.div.length}</button>`:''}<button class="dots" data-s="${s.id}" aria-label="Show sources for ${lbl(s.id)}">${famDots(s)}</button>
  <span class="tools">${s.en?`<button data-en="${s.id}">${esc(LAY.translation.label)}</button>`:''}<button data-copy="${s.id}">Copy citation</button><button data-link="${s.id}">Link</button></span>${s.margin?`<span class="marg">${esc(s.margin)}</span>`:''}</div>
- <div class="tx">${s.html}</div>${notes}${dvs}${del}<div class="foot">${pages}${cb}${vt}${ri}</div></section>`}
-function layerClasses(){const p=$('page');p.classList.toggle('chg',layerOn('variants'));p.classList.toggle('nodiv',!layerOn('comments'));p.classList.toggle('noen',!layerOn('translation'))}
+ <div class="tx">${s.html}</div>${notes}${gls}${dvs}${del}<div class="foot">${pages}${cb}${vt}${ri}</div></section>`}
+function glLead(t){const w=t.split(/\s+/);return w.length>8?w.slice(0,6).join(' ')+' …':t}
+function layerClasses(){const p=$('page');p.classList.toggle('nogl',!layerOn('glosses'));p.classList.toggle('chg',layerOn('variants'));p.classList.toggle('nodiv',!layerOn('comments'));p.classList.toggle('noen',!layerOn('translation'))}
 function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[0];st.chap=c.key;save();
  document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',a.dataset.ch===c.key));
  const d=DIVS[c.book]||{};const t=d.pageTitle||ctitle(c);
@@ -187,7 +195,24 @@ const COLS={
  here:{label:'Unit',key:r=>unitKey(M,r.toUnit),html:r=>`<a href="#${r.toUnit}">${esc(lbl(r.toUnit))}</a>`},
  there:{label:'Reused in',key:r=>[r.from,...unitKey(MAN[r.from],r.sec)],html:r=>xref(r.from,r.sec)+(r.via?` <span class="via">through ${esc(r.via)}</span>`:'')},
  theirs:{label:'Passage reused',key:r=>r.sp,html:r=>`<span class="pas">${esc(r.sp)}</span>`},
+ iunit:{label:'Unit',key:r=>unitKey(M,r.sec),html:r=>`<a href="#${r.sec}">${esc(lbl(r.sec))}</a>`},
+ dvsrc:{label:'Source',key:r=>r.d.src+' '+r.d.w,html:r=>`<span class="fam" style="--c:var(--f${r.d.fam||(LAY.comments||{}).family||''})">${esc(r.d.fam||(LAY.comments||{}).family||'')}</span> ${esc(r.d.src)}${r.d.w?' · '+esc(r.d.w):''}`},
+ dvrel:{label:'Relation',key:r=>-(r.d.sev||0),html:r=>esc(r.d.rel||'')+(r.d.sev?` · ${r.d.sev}`:'')},
+ dvtext:{label:'Divergence',key:r=>r.d.q||r.d.c,html:r=>(r.d.q?`<b>${esc(r.d.q)}</b> `:'')+`<span class="pas">${esc(r.d.c)}</span>`},
+ vtype:{label:'Change',key:r=>r.v.type,html:r=>esc(r.v.type)},
+ vtext:{label:'What changed',key:r=>r.v.content,html:r=>`<span class="pas">${esc(r.v.content)}</span>`},
+ gllang:{label:'Language',key:r=>LANG[r.g.lang]||r.g.lang,html:r=>esc(LANG[r.g.lang]||r.g.lang)},
+ gltext:{label:'Passage → English',key:r=>r.g.text,html:r=>`<i lang="${esc(r.g.lang)}">${esc(r.g.text)}</i> → “${esc(r.g.translation)}”${r.g.source?` <span class="gsrc">(${esc(r.g.source)})</span>`:''}${r.g.note?` <small class="gsrc">${esc(r.g.note)}</small>`:''}`},
+ tftype:{label:'Problem',key:r=>[-(r.f.sev||0),r.f.type],html:r=>esc(r.f.type)+(r.f.sev>=3?' · major':r.f.sev?` · ${r.f.sev}`:'')},
+ tftext:{label:'French → English',key:r=>r.f.fr,html:r=>`<i>${esc(r.f.fr)}</i>${r.f.en?` → “${esc(r.f.en)}”`:' → (not translated)'}. <span class="pas">${esc(r.f.note)}</span>`},
 };
+// the items of the layers other than reuse, one list per kind, for the list view
+function layerItems(inCh){const out={comments:[],variants:[],translation:[],glosses:[]};let k=0;
+ SEC.forEach(s=>{if(!inCh(s.id))return;(s.div||[]).filter(visDiv).forEach(d=>out.comments.push({id:k++,sec:s.id,d}));
+  if(layerOn('variants'))(s.vars||[]).forEach(v=>out.variants.push({id:k++,sec:s.id,v}));
+  if(s.en&&LAY.translation&&(LAY.translation.toggle===false||layerOn('translation')))(s.en.f||[]).forEach(f=>out.translation.push({id:k++,sec:s.id,f}));
+  if(layerOn('glosses'))(s.gl||[]).forEach(g=>out.glosses.push({id:k++,sec:s.id,g}))});
+ return out}
 const TBL={};
 function rowsTable(id,rows,cols){const t=TBL[id]=TBL[id]||{sort:cols[0],dir:1};t.rows=rows;t.cols=cols;
  const K=COLS[t.sort].key,v=rows.map(r=>[K(r),r]);
@@ -203,12 +228,18 @@ function setView(v){VIEW=v;viewChrome();if(v==='list')listView();else go(st.sel&
 const chLabel=c=>{const d=DIVS[c.book]||{};return (d.chapters?`${d.label.split(' · ')[0]}, ch. ${c.chap}: `:'')+ctitle(c)};
 function listView(){const C=CH.find(c=>c.key===LCH);if(!C)LCH='';
  const inCh=u=>!LCH||(chOf[u]&&chOf[u].key===LCH);
- const all=ROWS.filter(r=>r&&inCh(r.sec)),out=all.filter(visRow),inA=INROWS.filter(r=>inCh(r.toUnit)),inc=inA.filter(visIn),isIn=LTAB==='in'&&INROWS.length>0;
- const tabs=INROWS.length?`<div class="seg" role="group"><button data-ltab="out" aria-pressed="${!isIn}">Sources used (${out.length})</button><button data-ltab="in" aria-pressed="${isIn}">Reused in other editions (${inc.length})</button></div>`:'';
- const n=isIn?`${inc.length} of ${inA.length} rows`:`${out.length} of ${all.length} rows`;
+ const all=ROWS.filter(r=>r&&inCh(r.sec)),out=all.filter(visRow),inA=INROWS.filter(r=>inCh(r.toUnit)),inc=inA.filter(visIn),I=layerItems(inCh);
+ // one tab per list: the reuse rows, the rows of other editions that reuse this one, and the items of each layer that is on
+ const T=[['out','Sources used',out.length,`${out.length} of ${all.length} rows`,()=>rowsTable('list:out',out,['unit','source','label','conf','passage'])]];
+ if(INROWS.length)T.push(['in','Reused in other editions',inc.length,`${inc.length} of ${inA.length} rows`,()=>rowsTable('list:in',inc,['here','there','label','conf','theirs'])]);
+ if(layerOn('comments'))T.push(['dv',(LAY.comments||{}).label||'Comments',I.comments.length,`${I.comments.length} items`,()=>rowsTable('list:dv',I.comments,['iunit','dvsrc','dvrel','dvtext'])]);
+ if(layerOn('variants'))T.push(['var',(LAY.variants||{}).label||'Variants',I.variants.length,`${I.variants.length} items`,()=>rowsTable('list:var',I.variants,['iunit','vtype','vtext'])]);
+ if(layerOn('glosses'))T.push(['gl',(LAY.glosses||{}).label||'Translations',I.glosses.length,`${I.glosses.length} passages`,()=>rowsTable('list:gl',I.glosses,['iunit','gllang','gltext'])]);
+ if(I.translation.length)T.push(['tf','Translation problems',I.translation.length,`${I.translation.length} flags`,()=>rowsTable('list:tf',I.translation,['iunit','tftype','tftext'])]);
+ const cur=T.find(t=>t[0]===LTAB)||T[0];
+ const tabs=T.length>1?`<div class="seg ltabs" role="group">${T.map(t=>`<button data-ltab="${t[0]}" aria-pressed="${t===cur}">${esc(t[1])} (${t[2]})</button>`).join('')}</div>`:'';
  const sel=`<select id="lch" class="edsel lch" aria-label="Chapter"><option value="">All chapters</option>${CH.map(c=>`<option value="${esc(c.key)}"${c.key===LCH?' selected':''}>${esc(chLabel(c))}</option>`).join('')}</select>`;
- $('page').innerHTML=`<div class="chead">${esc(M.short)}</div><h1 class="ctitle">${C?esc(ctitle(C)):'Reuse, row by row'}</h1><div class="lbar">${sel}${tabs}</div><p class="lsub">${n} shown${C?' in this chapter':''}. The filters in the top bar apply. Click a column head to sort, a unit to read it. The contents list picks a chapter.</p>`+
-  (isIn?rowsTable('list:in',inc,['here','there','label','conf','theirs']):rowsTable('list:out',out,['unit','source','label','conf','passage']));
+ $('page').innerHTML=`<div class="chead">${esc(M.short)}</div><h1 class="ctitle">${C?esc(ctitle(C)):'All items, as a list'}</h1><div class="lbar">${sel}${tabs}</div><p class="lsub">${cur[3]} shown${C?' in this chapter':''}. The filters in the top bar apply: switch a layer on to list its items. Click a column head to sort, a unit to read it. The contents list picks a chapter.</p>`+cur[4]();
  $('lch').onchange=e=>{LCH=e.target.value;viewChrome();listView()};
  document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',!!LCH&&a.dataset.ch===LCH))}
 function resort(th){const tb=th.closest('table'),id=tb.dataset.t,t=TBL[id],c=th.dataset.sort;if(t.sort===c)t.dir=-t.dir;else{t.sort=c;t.dir=1}tb.outerHTML=rowsTable(id,t.rows,t.cols)}
@@ -237,7 +268,8 @@ function showEN(sid,idx){const s=byId[sid];if(!s||!s.en)return;const E=s.en,L=LA
 let enState=null;const plainCache={};
 function plainOf(s){if(!plainCache[s.id]){const d=document.createElement('div');d.innerHTML=s.html;d.querySelectorAll('.old,.pb').forEach(x=>x.remove());plainCache[s.id]=d.textContent}return plainCache[s.id]}
 const onSelEnd=e=>{if(e.target.closest('#enPop'))return;setTimeout(()=>{const r=selIdx();const pop=$('enPop');if(!r){pop.hidden=true;return}pop.hidden=false;pop.style.left=Math.min(innerWidth-90,r.rect.right+6)+'px';pop.style.top=Math.max(4,r.rect.top-30)+'px';pop.onclick=ev=>{ev.stopPropagation();pop.hidden=true;showEN(r.sid,r.idx)}},10)};
-document.addEventListener('mouseup',onSelEnd);document.addEventListener('touchend',e=>setTimeout(()=>onSelEnd(e),250));
+document.addEventListener('mouseup',onSelEnd);
+document.addEventListener('mouseover',e=>{const g=e.target.closest&&e.target.closest('.gl');if(!g)return;const x=GL[g.dataset.g];g.title=x&&layerOn('glosses')?(LANG[x.lang]||x.lang)+': '+x.translation:''});document.addEventListener('touchend',e=>setTimeout(()=>onSelEnd(e),250));
 $('read').addEventListener('scroll',()=>{$('enPop').hidden=true},{passive:true});
 // search, and go to a unit by the patterns in the manifest
 let plain=null;

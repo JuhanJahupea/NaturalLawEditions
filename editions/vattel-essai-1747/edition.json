@@ -1,7 +1,7 @@
 {
   "format": "nle-edition/1",
   "id": "vattel-essai-1747",
-  "version": "1.0",
+  "version": "1.1",
   "changed": "2026-11-20",
   "author": "Emer de Vattel",
   "title": "Essai sur le fondement du droit naturel, et sur le premier principe de l'obligation où se trouvent tous les hommes, d'en observer les loix",
@@ -24,7 +24,8 @@
       "chapterTitle": "Essai sur le fondement du droit naturel",
       "unitLabel": "§ {n}",
       "unitMark": "§",
-      "cite": "{prefix}, § {n}{page}."
+      "cite": "{prefix}, § {n}{page}.",
+      "railUnits": true
     }
   ],
   "layers": [
@@ -35,7 +36,8 @@
       "label": "English",
       "panelNote": "Hochstrasser's translation (Liberty Fund, 2008), p. {page}, made from the 1863 reprint. Sentence alignment by machine.",
       "toggle": false
-    }
+    },
+    {"id": "glosses", "file": "layers/glosses.json", "kind": "glosses", "label": "Translations", "default": true, "tooltip": "English translations of the Latin, Greek and other foreign-language passages, by Claude Opus. Dotted underline in the text: hover to read; the list follows each section."}
   ],
   "reuse": {
     "baseTag": "Vattel",
@@ -98,7 +100,7 @@
       "url": "https://books.google.com/books?id=130TAAAAQAAJ&pg=PA{printed}",
       "title": "Open the Google Books scan at p. {printed}"
     },
-    "pageBreak": " <span class=\"pb\" data-pg=\"{scan}\">p. {printed}</span> ",
+    "pageBreak": "<span class=\"pb\" data-pg=\"{scan}\"> p. {printed} </span>",
     "goto": [
       {
         "re": "^(?:§\\s*)?(\\d+)$",

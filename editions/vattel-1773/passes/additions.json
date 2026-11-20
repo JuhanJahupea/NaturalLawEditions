@@ -1,11 +1,12 @@
 {
  "format": "nle-additions/1",
  "edition": "vattel-1773",
- "date": "2026-11-18",
+ "date": "2026-11-20",
  "description": "Rows added to the reuse tables after the audits, judged by Claude Opus on the transcriptions. Each row names its table.",
  "steps": {
   "A": "Additions: the passage of Wolff or Grotius that an audit reader named as the one Vattel follows (audit/README.md)",
-  "C": "Recall check: reuse a reader found in a random sample of sections that no row covered (audit/README.md)"
+  "C": "Recall check: reuse a reader found in a random sample of sections that no row covered (audit/README.md)",
+  "V": "Reading of the passages added in 1773: Claude Opus read each addition (layer changes-1773) with Wolff, Grotius, Pufendorf and Burlamaqui (audit/README.md)"
  },
  "rows": [
   {
@@ -301,7 +302,7 @@
     [
      "t",
      1246,
-     1384
+     1385
     ]
    ],
    "family": "W",
@@ -313,7 +314,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "A",
-   "passage": "quoique les actions de l'une soient illégitimes & condamnables suivant les loix de la conscience , les autres sontobligées de les souffrir",
+   "passage": "quoique les actions de l'une soient illégitimes & condamnables suivant les loix de la conscience , les autres sont obligées de les souffrir",
    "source": "Probe haec notanda veniunt, ne quis existimet, quando videt tolerandam esse quandam agendi licentiam inter Gentes, Jus Gentium necessarium esse nullius utilitatis. Id enim perinde foret, ac si quis contenderet Jus naturae esse nullius utilitatis, propterea quod in statu naturali hominibus permittendus sit libertatis suae abusus, eadem in licentiam agendi versa (§. 150. 156. part. 1. Jur. nat.), nec is prohiberi possit nisi lege positiva in statu civili, ubi a superiore vi compelli possunt ad faciendum, quod sponte sua facere nolunt. Abusus potentiae illicitus manet etiam in Gentibus, quamvis impendiri nequeat.",
    "french": "Il faut bien noter ceci, de peur que quelqu'un, voyant qu'une certaine licence d'agir doit être tolérée entre les nations, ne pense que le droit des gens nécessaire n'est d'aucune utilité. Ce serait comme prétendre que le droit naturel n'est d'aucune utilité parce que, dans l'état de nature, il faut laisser aux hommes l'abus de leur liberté tourné en licence, et qu'on ne peut l'empêcher que par une loi positive dans l'état civil, où un supérieur peut les contraindre par la force à faire ce qu'ils ne veulent pas faire d'eux-mêmes. L'abus de la puissance reste illicite même chez les nations, bien qu'on ne puisse l'empêcher.",
    "reason": "Same § 6 point that between nations some licence must be tolerated although it stays illicit in conscience; Vattel grounds the toleration in liberty and independence (INST § 1089, already tabled) rather than in the lack of a superior.",
@@ -486,8 +487,8 @@
    "at": [
     [
      "t",
-     377,
-     485
+     378,
+     486
     ]
    ],
    "family": "Bb",
@@ -1635,7 +1636,7 @@
     [
      "t",
      783,
-     1045
+     1046
     ]
    ],
    "family": "W",
@@ -1647,7 +1648,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "Or quand les hommes s'unissent en société, comme la société est désormais chargée de pourvoir à la sûreté de ses membres ,tous se dépouillent en sa faveur de leur droit de punir. C'est donc à elle de venger les injuses particulieres , en protégeant les citoyens.",
+   "passage": "Or quand les hommes s'unissent en société, comme la société est désormais chargée de pourvoir à la sûreté de ses membres , tous se dépouillent en sa faveur de leur droit de punir. C'est donc à elle de venger les injuses particulieres , en protégeant les citoyens.",
    "source": "Vacuitas a metu injuriarum, quae ad finem civitatis pertinet (§. 972.), exigit, ut quilibet tutus praestetur ab injuria aliorum, consequenter non ferendum, ut quis laedatur ab alio (§. 88.), vel defraudetur (§. 286.), sed curandum, ut unicuique jus suum tribuatur (§. 86.), nimirum ut consequatur, quod ipsi ab alio debetur (§. 80.), damna data resarciantur (§. 170.) & ob injurias factas rei puniantur (§. 93.).",
    "french": "L'exemption de la crainte des injures, qui appartient à la fin de l'état, exige que chacun soit garanti de l'injure d'autrui, et par conséquent qu'on ne souffre pas que quelqu'un soit lésé par un autre ou fraudé, mais qu'on ait soin que chacun obtienne son droit, à savoir qu'il obtienne ce qui lui est dû, que les dommages soient réparés et que les coupables soient punis pour les injures faites.",
    "reason": "Vattel's step from the society's charge of its members' security to its duty of punishing private injuries follows Wolff § 1028 (security from injury belongs to the end of the state, so the guilty must be punished for injuries done), with §§ 1028-1029 on the transfer of private war to the ruler.",
@@ -1665,8 +1666,8 @@
    "at": [
     [
      "t",
-     1046,
-     1264
+     1047,
+     1265
     ]
    ],
    "family": "W",
@@ -1851,8 +1852,8 @@
    "at": [
     [
      "t",
-     784,
-     904
+     785,
+     905
     ]
    ],
    "family": "W",
@@ -1882,8 +1883,8 @@
    "at": [
     [
      "t",
-     222,
-     409
+     223,
+     410
     ]
    ],
    "family": "W",
@@ -1913,8 +1914,8 @@
    "at": [
     [
      "t",
-     714,
-     955
+     715,
+     956
     ]
    ],
    "family": "W",
@@ -1944,8 +1945,8 @@
    "at": [
     [
      "t",
-     956,
-     1140
+     957,
+     1141
     ]
    ],
    "family": "G",
@@ -1978,8 +1979,8 @@
    "at": [
     [
      "t",
-     956,
-     1140
+     957,
+     1141
     ]
    ],
    "family": "P",
@@ -2012,8 +2013,8 @@
    "at": [
     [
      "t",
-     1520,
-     1678
+     1521,
+     1679
     ]
    ],
    "family": "Bb",
@@ -2046,8 +2047,8 @@
    "at": [
     [
      "t",
-     1951,
-     2019
+     1952,
+     2020
     ]
    ],
    "family": "P",
@@ -2080,8 +2081,8 @@
    "at": [
     [
      "t",
-     2021,
-     2164
+     2022,
+     2165
     ]
    ],
    "family": "G",
@@ -2114,8 +2115,8 @@
    "at": [
     [
      "t",
-     2219,
-     2408
+     2220,
+     2409
     ]
    ],
    "family": "W",
@@ -2145,8 +2146,8 @@
    "at": [
     [
      "t",
-     2409,
-     2498
+     2410,
+     2499
     ]
    ],
    "family": "G",
@@ -2179,8 +2180,8 @@
    "at": [
     [
      "t",
-     2409,
-     2498
+     2410,
+     2499
     ]
    ],
    "family": "W",
@@ -2210,8 +2211,8 @@
    "at": [
     [
      "t",
-     2499,
-     2572
+     2500,
+     2573
     ]
    ],
    "family": "W",
@@ -2241,8 +2242,8 @@
    "at": [
     [
      "t",
-     2575,
-     2649
+     2576,
+     2650
     ]
    ],
    "family": "W",
@@ -3848,7 +3849,7 @@
     [
      "t",
      1181,
-     1296
+     1297
     ]
    ],
    "family": "P",
@@ -3860,7 +3861,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "C",
-   "passage": "Le souverain qui les reçoit peut les disperser , les distribuer dans les villes & provincesqui manquent d'habitans.",
+   "passage": "Le souverain qui les reçoit peut les disperser , les distribuer dans les villes & provinces qui manquent d'habitans.",
    "source": "s'il est avantageux que le nombre des Habitans s'augmente beaucoup; si le Païs est assez fertile pour les nourrir tous commodément; s'il y a assez de place pour loger les nouveaux Habitans, en sorte que les anciens ne se trouvent pas trop à l'étroit; si ceux qui demandent à s'établir, sont des gens industrieux & laborieux, ou si ce sont des fainéans & des bouches inutiles; si on peut les placer en sorte que l'Etat n'ait rien à appréhender de leur part, &c.",
    "reason": "Pufendorf's checklist (is more population useful, is there room, can they be placed so the state has nothing to fear) underlies Vattel's advice to disperse the newcomers in under-peopled provinces.",
    "links": [
@@ -3881,8 +3882,8 @@
    "at": [
     [
      "t",
-     1297,
-     1418
+     1298,
+     1419
     ]
    ],
    "family": "P",
@@ -4046,7 +4047,7 @@
     [
      "t",
      423,
-     615
+     616
     ]
    ],
    "family": "W",
@@ -4058,7 +4059,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "C",
-   "passage": "Ce moyen de défense contre la prescription , a étésouvent employé contre des princes, dont les forces redoutables avoient long-tems réduit au silence les foibles victimes de leurs usurpations.",
+   "passage": "Ce moyen de défense contre la prescription , a été souvent employé contre des princes, dont les forces redoutables avoient long-tems réduit au silence les foibles victimes de leurs usurpations.",
    "source": "Qui non ignorat, quantos bellum sumtus requirat & quantum cumulum malorum post se trahat, & quam parum valeant vires adversus potentiorem ; is in dubium minime revocabit, haud raro silendum esse, quod loqui non sit consultum, & commodam expectandam esse occasionem , qua oblata jus suum vi persequi datur adversus reddere nolentem.",
    "french": "Quiconque sait combien la guerre exige de dépenses et quelle foule de maux elle traîne après elle, et combien peu valent les forces contre un plus puissant, ne doutera point qu'il faut assez souvent se taire, parce qu'il n'est pas prudent de parler, et attendre une occasion favorable de poursuivre son droit par la force contre celui qui refuse de rendre.",
    "reason": "Wolff's argument (§ 359) that between nations the weak must often keep silent before a more powerful holder is the basis of Vattel's closing remark about princes whose power silenced their victims.",
@@ -4926,7 +4927,7 @@
     [
      "t",
      1110,
-     1248
+     1249
     ]
    ],
    "family": "W",
@@ -4938,7 +4939,7 @@
    "confidence": 0.7,
    "status": "match",
    "step": "A",
-   "passage": "l'état ne peut refuser de lesdédommager de leurs souffrances, de les récompenser , soit en leur personne , soit en celle de leurs proches.",
+   "passage": "l'état ne peut refuser de les dédommager de leurs souffrances, de les récompenser , soit en leur personne , soit en celle de leurs proches.",
    "source": "Civitas aut ejus Rector incommodum obsidi, quod patitur, aut proximis repensare tenetur.",
    "french": "L'État ou son chef est tenu de compenser à l'otage, ou à ses proches, le désavantage qu'il souffre.",
    "reason": "Compensation of the hostage's sufferings either to himself or to his relatives, by rewards, is Wolff's § 536 (incommodum ... obsidi aut proximis repensare; repensatio in praemiis).",
@@ -5080,8 +5081,8 @@
    "at": [
     [
      "t",
-     2184,
-     2277
+     2185,
+     2278
     ]
    ],
    "family": "W",
@@ -5111,8 +5112,8 @@
    "at": [
     [
      "t",
-     1278,
-     1382
+     1279,
+     1383
     ]
    ],
    "family": "G",
@@ -5145,8 +5146,8 @@
    "at": [
     [
      "t",
-     760,
-     915
+     761,
+     916
     ]
    ],
    "family": "W",
@@ -5242,7 +5243,7 @@
     [
      "t",
      990,
-     1087
+     1088
     ]
    ],
    "family": "W",
@@ -5254,7 +5255,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "tout ce qui charge seulement l'une des parties , ou ce qui la chargeplus que l'autre , est odieux",
+   "passage": "tout ce qui charge seulement l'une des parties , ou ce qui la charge plus que l'autre , est odieux",
    "source": "Si qua partem alteram saltem onerant, aut plus onerant alteram, cum nemo praesumatur se nimis onerare velle",
    "french": "Si certaines choses chargent seulement l'une des parties, ou la chargent plus que l'autre, comme personne n'est présumé vouloir se charger excessivement",
    "reason": "The odious counterpart follows Wolff's Inst. § 809 (partem alteram saltem onerant, aut plus onerant alteram), with its presumption that no one means to overburden himself, which Vattel also uses.",
@@ -5272,8 +5273,8 @@
    "at": [
     [
      "t",
-     254,
-     346
+     255,
+     347
     ]
    ],
    "family": "W",
@@ -5337,8 +5338,8 @@
    "at": [
     [
      "t",
-     2498,
-     2593
+     2499,
+     2594
     ]
    ],
    "family": "G",
@@ -5371,8 +5372,8 @@
    "at": [
     [
      "t",
-     2692,
-     2800
+     2693,
+     2801
     ]
    ],
    "family": "G",
@@ -5405,8 +5406,8 @@
    "at": [
     [
      "t",
-     2808,
-     2926
+     2809,
+     2927
     ]
    ],
    "family": "G",
@@ -5439,8 +5440,8 @@
    "at": [
     [
      "t",
-     3202,
-     3286
+     3204,
+     3288
     ]
    ],
    "family": "G",
@@ -5473,8 +5474,8 @@
    "at": [
     [
      "t",
-     3289,
-     3511
+     3291,
+     3513
     ]
    ],
    "family": "G",
@@ -5507,8 +5508,8 @@
    "at": [
     [
      "t",
-     399,
-     473
+     400,
+     474
     ]
    ],
    "family": "P",
@@ -5541,8 +5542,8 @@
    "at": [
     [
      "t",
-     399,
-     473
+     400,
+     474
     ]
    ],
    "family": "W",
@@ -5572,8 +5573,8 @@
    "at": [
     [
      "t",
-     399,
-     473
+     400,
+     474
     ]
    ],
    "family": "W",
@@ -5634,8 +5635,8 @@
    "at": [
     [
      "t",
-     741,
-     908
+     742,
+     909
     ]
    ],
    "family": "W",
@@ -5665,8 +5666,8 @@
    "at": [
     [
      "t",
-     909,
-     1307
+     910,
+     1308
     ]
    ],
    "family": "W",
@@ -5696,8 +5697,8 @@
    "at": [
     [
      "t",
-     1489,
-     1728
+     1490,
+     1729
     ]
    ],
    "family": "W",
@@ -5727,8 +5728,8 @@
    "at": [
     [
      "t",
-     2225,
-     2401
+     2226,
+     2402
     ]
    ],
    "family": "W",
@@ -6300,8 +6301,8 @@
    "at": [
     [
      "t",
-     1500,
-     1721
+     1501,
+     1722
     ]
    ],
    "family": "W",
@@ -6331,8 +6332,8 @@
    "at": [
     [
      "t",
-     1722,
-     2079
+     1723,
+     2080
     ]
    ],
    "family": "W",
@@ -6394,7 +6395,7 @@
     [
      "t",
      495,
-     748
+     749
     ]
    ],
    "family": "W",
@@ -6406,7 +6407,7 @@
    "confidence": 0.65,
    "status": "match",
    "step": "A",
-   "passage": "On attaque une nation , ou pour se faire donner une chose à laquelle on forme des prétentions , ou pour la punir d'une injure qu'on en a reçue , ou pour prévenircelle qu'elle se prépare à faire , & détourner un danger dont on se croit menacé de sa part.",
+   "passage": "On attaque une nation , ou pour se faire donner une chose à laquelle on forme des prétentions , ou pour la punir d'une injure qu'on en a reçue , ou pour prévenir celle qu'elle se prépare à faire , & détourner un danger dont on se croit menacé de sa part.",
    "source": "Triplex itaque belli finis est, scilicet 1. ut quod nostrum est, vel quod nobis debetur, consequamur, 2. ut laedentem puniendo securitati futurae consulamus, 3. ut vi injustae resistendo nos defendentes injuriam a nobis avertamus.",
    "french": "le but de la guerre est donc triple : 1. obtenir ce qui est à nous ou ce qui nous est dû ; 2. pourvoir à notre sûreté future en punissant celui qui nous lèse ; 3. détourner de nous l'injure en nous défendant par la résistance à une force injuste",
    "reason": "Vattel's three objects of war (obtain what is claimed, punish an injury, avert one threatened) follow Wolff's threefold end of war in JG § 619, in the same order.",
@@ -6455,8 +6456,8 @@
    "at": [
     [
      "t",
-     679,
-     871
+     680,
+     872
     ]
    ],
    "family": "W",
@@ -6868,7 +6869,7 @@
     [
      "t",
      0,
-     240
+     241
     ]
    ],
    "family": "W",
@@ -6880,7 +6881,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "On n'a point reçu d'injure de cette puissance ; la question le suppose. Il faudroit donc être fondé à s'en croire menacé, pour courir légitimement aux armes. Or la puissanceseule ne menace pas d'injure, il faut que la volonté y soit jointe.",
+   "passage": "On n'a point reçu d'injure de cette puissance ; la question le suppose. Il faudroit donc être fondé à s'en croire menacé, pour courir légitimement aux armes. Or la puissance seule ne menace pas d'injure, il faut que la volonté y soit jointe.",
    "source": "Equidem qui potens est damnum dare aut alio modo laedere potest, ac fieri potest, ut potentia sua confisus damnum aliquando dare vel alio modo laedere velit: quamdiu tamen nec actu damnum dat, aut alio modo laedit, nec animum alterutrum faciendi actu quodam externo declarat, injuria ulla nec facta, nec facienda adest",
    "french": "Celui qui est puissant peut causer du dommage ou léser autrement, et il peut arriver que, se fiant à sa puissance, il veuille un jour le faire ; mais tant qu'il ne cause pas de dommage en fait et ne déclare par aucun acte extérieur l'intention de le faire, il n'y a aucune injure ni faite ni à faire.",
    "reason": "Vattel frames the case as Wolff § 640 does: no injury received, so arms need a threatened injury (injuria facienda), and mere power without a declared intention (animus) threatens none.",
@@ -6899,7 +6900,7 @@
     [
      "t",
      158,
-     240
+     241
     ]
    ],
    "family": "G",
@@ -6911,7 +6912,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "Or la puissanceseule ne menace pas d'injure, il faut que la volonté y soit jointe.",
+   "passage": "Or la puissance seule ne menace pas d'injure, il faut que la volonté y soit jointe.",
    "source": "il ne suffit pas que l'on craigne la puissance d'un Voisin. Car la Défense n'est légitime, que quand elle est nécessaire: & elle n'est nullement nécessaire, tant qu'on n'est point assûré, & cela d'une certitude morale, que celui qu'on craint a non seulement le pouvoir, mais encore la volonté de nous attaquer.",
    "reason": "Vattel's condition that power must be joined by will (and the pouvoir/volonté pair in his next sentence) is Grotius's 'non seulement le pouvoir, mais encore la volonté', though Vattel then relaxes Grotius's moral certainty to first appearances.",
    "links": [
@@ -7090,8 +7091,8 @@
    "at": [
     [
      "t",
-     194,
-     332
+     195,
+     333
     ]
    ],
    "family": "W",
@@ -7661,7 +7662,7 @@
     [
      "t",
      356,
-     569
+     570
     ]
    ],
    "family": "W",
@@ -7673,7 +7674,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "A",
-   "passage": "Est-il fondé à prendre les armes ? Il reste encore à considérer si le bien de l'état vous permet ou vous conseille d'entrer dans sa querelle. Car le souverain ne doit user deson autorité que pour le bien de l'état",
+   "passage": "Est-il fondé à prendre les armes ? Il reste encore à considérer si le bien de l'état vous permet ou vous conseille d'entrer dans sa querelle. Car le souverain ne doit user de son autorité que pour le bien de l'état",
    "source": "Quamobrem in pangendis foederibus belli apprime attendendae sunt rationes suasoriae utrum scilicet e re civitatis sit bellum suscipi, nec ne (§. 621.): id quod etiam valet, etiamsi foedus ineundum cum eo, cujus justa sunt arma. Quoniam enim facere non licet, quod fini civitatis adversatur (§. 30. part. 8. Jur. nat.)",
    "french": "C'est pourquoi, en faisant des alliances de guerre, il faut surtout considérer les raisons de convenance, savoir s'il est de l'intérêt de l'État d'entreprendre la guerre ou non ; ce qui vaut même si l'alliance se fait avec celui dont les armes sont justes. Car il n'est pas permis de faire ce qui est contraire à la fin de l'État.",
    "reason": "Vattel's second test for an alliance with a belligerent whose cause is just, the good of the state, with the ground that the sovereign may act only for that end, is the second half of Wolff § 658 (rationes suasoriae, etiamsi justa sunt arma, finis civitatis).",
@@ -7692,7 +7693,7 @@
     [
      "t",
      241,
-     416
+     417
     ]
    ],
    "family": "W",
@@ -7704,7 +7705,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "C",
-   "passage": "Et puis, il seroit absurde que je ne puisse porter laguerre chez une nation, qui s'oppose à moi de toutes ses forces, & tarir la source des secours qu'elle donne à mon ennemi.",
+   "passage": "Et puis, il seroit absurde que je ne puisse porter la guerre chez une nation, qui s'oppose à moi de toutes ses forces, & tarir la source des secours qu'elle donne à mon ennemi.",
    "source": "Cum qui hosti meo se associat, in eum & res ejus idem liceat, quod in hostem & res hostium (§. 732.); in terras ejus vi armata ingredi & ibidem hostiliter agere, seu bellum ei inferre licet.",
    "french": "Puisqu'il est permis contre celui qui s'associe à mon ennemi, et contre ses biens, ce qui est permis contre l'ennemi et ses biens, il est permis d'entrer à main armée sur ses terres et d'y agir en ennemi, c'est-à-dire de lui faire la guerre.",
    "reason": "JG § 733: one may carry the war into the lands of him who joins my enemy, the right Vattel says it would be absurd to deny.",
@@ -7722,8 +7723,8 @@
    "at": [
     [
      "t",
-     417,
-     685
+     418,
+     686
     ]
    ],
    "family": "W",
@@ -7753,8 +7754,8 @@
    "at": [
     [
      "t",
-     686,
-     830
+     687,
+     831
     ]
    ],
    "family": "W",
@@ -7815,8 +7816,8 @@
    "at": [
     [
      "t",
-     913,
-     1043
+     914,
+     1044
     ]
    ],
    "family": "W",
@@ -7846,8 +7847,8 @@
    "at": [
     [
      "t",
-     1044,
-     1157
+     1045,
+     1158
     ]
    ],
    "family": "W",
@@ -8205,8 +8206,8 @@
    "at": [
     [
      "t",
-     2386,
-     2698
+     2387,
+     2699
     ]
    ],
    "family": "G",
@@ -8397,8 +8398,8 @@
    "at": [
     [
      "t",
-     2984,
-     3266
+     2986,
+     3268
     ]
    ],
    "family": "W",
@@ -8428,8 +8429,8 @@
    "at": [
     [
      "t",
-     3267,
-     3497
+     3269,
+     3499
     ]
    ],
    "family": "W",
@@ -8460,7 +8461,7 @@
     [
      "t",
      44,
-     292
+     293
     ]
    ],
    "family": "G",
@@ -8472,7 +8473,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "A",
-   "passage": "on doit épargner les édifices qui font honneur à l'humanité, & qui necontribuent point à rendre l'ennemi plus puissant, les temples, les tombaeux, les bâtimens publics, tous les ouvrages respectables par leur beauté. Que gagne-t-on à les détruire ?",
+   "passage": "on doit épargner les édifices qui font honneur à l'humanité, & qui ne contribuent point à rendre l'ennemi plus puissant, les temples, les tombaeux, les bâtimens publics, tous les ouvrages respectables par leur beauté. Que gagne-t-on à les détruire ?",
    "source": "POLYBE traite (2) de fureur, un acte d'hostilité par lequel on fait périr des choses, dont la destruction n'affoiblit point l'Ennemi, & n'apporte d'ailleurs aucun avantage au Destructeur, comme sont les Temples, les Portiques, les Statuës.",
    "reason": "Vattel's criterion and list (buildings whose destruction does not weaken the enemy and gains the destroyer nothing: temples, public buildings, works of art) follow Grotius III.xii.5, whose Belisarius letter he cites in the same paragraph.",
    "links": [
@@ -8719,8 +8720,8 @@
    "at": [
     [
      "t",
-     2286,
-     2390
+     2287,
+     2392
     ]
    ],
    "family": "W",
@@ -8732,7 +8733,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "A",
-   "passage": "Tel est le cas des conventions, des traités : l'engagement tacite d'y parler vrai est detoute nécessité.",
+   "passage": "Tel est le cas des conventions, des traités : l'engagement tacite d'y parler vrai est de toute nécessité.",
    "source": "Quodsi ergo dolo, hoc est simulatione, falsiloquio extra sermonem promittentem, cum in casu promittentis ad veritatem etiam hosti dicendam obligemur (§. 790. 800.)",
    "french": "Si donc par la ruse, c'est-à-dire par la feinte, par un discours faux hors des paroles par lesquelles on promet (car lorsqu'on promet, on est obligé de dire la vérité même à l'ennemi)",
    "reason": "Wolff §857 limits permitted falsiloquium in war to speech that does not promise, since in promising one must tell the truth even to an enemy, which is Vattel's exception for conventions and treaties.",
@@ -8750,8 +8751,8 @@
    "at": [
     [
      "t",
-     2391,
-     2544
+     2393,
+     2546
     ]
    ],
    "family": "W",
@@ -8781,8 +8782,8 @@
    "at": [
     [
      "t",
-     2509,
-     2544
+     2511,
+     2546
     ]
    ],
    "family": "W",
@@ -8847,7 +8848,7 @@
     [
      "t",
      476,
-     560
+     561
     ]
    ],
    "family": "G",
@@ -8859,7 +8860,7 @@
    "confidence": 0.45,
    "status": "possible",
    "step": "C",
-   "passage": "non par leur volonté propre, mais comme des instrumens dansdans la main du souverain",
+   "passage": "non par leur volonté propre, mais comme des instrumens dans dans la main du souverain",
    "source": "On suppose, que celui qui obéït, ne le fait pas volontairement, & par conséquent n'est point coupable",
    "reason": "Grotius's note on II.26.4 (acting on command is not voluntary; n. 3 adds Aristotle's slave as an inanimate instrument or the hand that strikes) gives Vattel's 'not by their own will but as instruments in the sovereign's hand'.",
    "links": [
@@ -8881,7 +8882,7 @@
     [
      "t",
      476,
-     560
+     561
     ]
    ],
    "family": "P",
@@ -8893,7 +8894,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "C",
-   "passage": "non par leur volonté propre, mais comme des instrumens dansdans la main du souverain",
+   "passage": "non par leur volonté propre, mais comme des instrumens dans dans la main du souverain",
    "source": "En effet, on peut sans contredit exécuter en qualité de (4) simple instrument une action ordonnée par le Souve-",
    "reason": "Pufendorf VIII.1.6: the subject may execute an order of the sovereign as a mere instrument; Vattel's soldiers act 'comme des instrumens dans la main du souverain'.",
    "links": [
@@ -8914,8 +8915,8 @@
    "at": [
     [
      "t",
-     563,
-     757
+     564,
+     758
     ]
    ],
    "family": "P",
@@ -8948,8 +8949,8 @@
    "at": [
     [
      "t",
-     880,
-     1062
+     881,
+     1063
     ]
    ],
    "family": "Bb",
@@ -8982,8 +8983,8 @@
    "at": [
     [
      "t",
-     1003,
-     1152
+     1004,
+     1153
     ]
    ],
    "family": "P",
@@ -9016,8 +9017,8 @@
    "at": [
     [
      "t",
-     1153,
-     1256
+     1154,
+     1257
     ]
    ],
    "family": "P",
@@ -9050,8 +9051,8 @@
    "at": [
     [
      "t",
-     1259,
-     1427
+     1260,
+     1428
     ]
    ],
    "family": "G",
@@ -9084,8 +9085,8 @@
    "at": [
     [
      "t",
-     1345,
-     1427
+     1346,
+     1428
     ]
    ],
    "family": "P",
@@ -9118,8 +9119,8 @@
    "at": [
     [
      "t",
-     1428,
-     1551
+     1429,
+     1552
     ]
    ],
    "family": "Bb",
@@ -9152,8 +9153,8 @@
    "at": [
     [
      "t",
-     1552,
-     1685
+     1553,
+     1686
     ]
    ],
    "family": "G",
@@ -9186,8 +9187,8 @@
    "at": [
     [
      "t",
-     1655,
-     1724
+     1656,
+     1725
     ]
    ],
    "family": "Bb",
@@ -9220,8 +9221,8 @@
    "at": [
     [
      "t",
-     1655,
-     1839
+     1656,
+     1840
     ]
    ],
    "family": "G",
@@ -9254,8 +9255,8 @@
    "at": [
     [
      "t",
-     1655,
-     1685
+     1656,
+     1686
     ]
    ],
    "family": "P",
@@ -9288,8 +9289,8 @@
    "at": [
     [
      "t",
-     1687,
-     1788
+     1688,
+     1789
     ]
    ],
    "family": "G",
@@ -9322,8 +9323,8 @@
    "at": [
     [
      "t",
-     1840,
-     1929
+     1841,
+     1930
     ]
    ],
    "family": "G",
@@ -9356,8 +9357,8 @@
    "at": [
     [
      "t",
-     2123,
-     2353
+     2124,
+     2354
     ]
    ],
    "family": "G",
@@ -9390,8 +9391,8 @@
    "at": [
     [
      "t",
-     2205,
-     2353
+     2206,
+     2354
     ]
    ],
    "family": "Bb",
@@ -9424,8 +9425,8 @@
    "at": [
     [
      "t",
-     2354,
-     2471
+     2355,
+     2472
     ]
    ],
    "family": "P",
@@ -9752,8 +9753,8 @@
    "at": [
     [
      "t",
-     196,
-     560
+     197,
+     561
     ]
    ],
    "family": "W",
@@ -9783,8 +9784,8 @@
    "at": [
     [
      "t",
-     762,
-     885
+     763,
+     886
     ]
    ],
    "family": "W",
@@ -9814,8 +9815,8 @@
    "at": [
     [
      "t",
-     992,
-     1167
+     993,
+     1168
     ]
    ],
    "family": "W",
@@ -9845,8 +9846,8 @@
    "at": [
     [
      "t",
-     2234,
-     2535
+     2236,
+     2537
     ]
    ],
    "family": "W",
@@ -9908,7 +9909,7 @@
     [
      "t",
      319,
-     436
+     437
     ]
    ],
    "family": "W",
@@ -9920,7 +9921,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "A",
-   "passage": "Mais l'état doit dédommager les citoyens, quiqui souffrent de ces dispositions, faites pour l'avantage commun (ibid).",
+   "passage": "Mais l'état doit dédommager les citoyens, qui qui souffrent de ces dispositions, faites pour l'avantage commun (ibid).",
    "source": "Ad quid vero deinde civitas teneatur illis, de quorum rebus vel personis fuit dispositum, id non ad pactionem pacis pertinet, & alibi demonstratum ( §. 119. part. 8. Jur. nat. ).",
    "french": "Quant à ce à quoi l'État est tenu ensuite envers ceux dont on a disposé des biens ou des personnes, cela ne regarde pas le traité de paix, et a été démontré ailleurs.",
    "reason": "Vattel ends the paragraph as Wolff ends § 1008, with what the state owes those whose goods or persons were disposed of, sent back to the general treatment (Wolff to Jus naturae VIII § 119, the weak row's source; Vattel to his I § 244).",
@@ -10063,7 +10064,7 @@
     [
      "t",
      0,
-     229
+     230
     ]
    ],
    "family": "W",
@@ -10075,7 +10076,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "A",
-   "passage": "Chacune des puissances qui se font la guerre prétendantêtre fondée en justice, & personne ne pouvant juger de cette prétention ( Liv. III, §. 188 ); l'état où les choses se trouvent, au moment du traité, doit passer pour légitime",
+   "passage": "Chacune des puissances qui se font la guerre prétendant être fondée en justice, & personne ne pouvant juger de cette prétention ( Liv. III, §. 188 ); l'état où les choses se trouvent, au moment du traité, doit passer pour légitime",
    "source": "Quoniam enim neuter paciscentium injustitiae vel injuriarum damnatur (§. 988.); quae in bello occupata sunt quasi jure occupata promiscue censentur & similiter quae utrinque facta sunt, quasi absque injuria facta intelliguntur",
    "french": "Car puisque aucun des contractants n'est condamné d'injustice ou d'injures, ce qui a été occupé dans la guerre est réputé indistinctement occupé comme de droit, et de même ce qui a été fait de part et d'autre s'entend comme fait sans injure",
    "reason": "Vattel grounds the status quo as Wolff's § 992 does: since neither side is condemned, what stands at the treaty counts as lawful; the table has only § 992's rule sentence (row 1399, locus given as § 990).",
@@ -10093,8 +10094,8 @@
    "at": [
     [
      "t",
-     462,
-     512
+     463,
+     513
     ]
    ],
    "family": "W",
@@ -10124,8 +10125,8 @@
    "at": [
     [
      "t",
-     429,
-     836
+     430,
+     837
     ]
    ],
    "family": "W",
@@ -10155,8 +10156,8 @@
    "at": [
     [
      "t",
-     735,
-     836
+     736,
+     837
     ]
    ],
    "family": "G",
@@ -10971,6 +10972,2039 @@
     [
      "PDF p. 596",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=596"
+    ]
+   ]
+  },
+  {
+   "id": 7400,
+   "table": "burlamaqui-1747",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     107,
+     198
+    ]
+   ],
+   "family": "Bu",
+   "work": "Burlamaqui, Principes du droit naturel (1747)",
+   "locus": "Liv. I ch. V § 4",
+   "page": "BUR47.p83",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "V",
+   "passage": "science dont le premier principe est cette vérité de sentiment , cet axiome incon­testable.",
+   "source": "C'est là une prémiére vérité dont nous sommes instruits par le sentiment intérieur & continuel que nous en avons.",
+   "reason": "Vattel's 'vérité de sentiment' that happiness is the end echoes Burlamaqui's 'prémiére vérité dont nous sommes instruits par le sentiment intérieur' that happiness is man's last end.",
+   "links": [
+    [
+     "Zotero p. 83",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=83"
+    ]
+   ]
+  },
+  {
+   "id": 7401,
+   "table": "burlamaqui-1747",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     199,
+     276
+    ]
+   ],
+   "family": "Bu",
+   "work": "Burlamaqui, Principes du droit naturel (1747)",
+   "locus": "Liv. I ch. V § 5",
+   "page": "BUR47.p83",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "V",
+   "passage": "La grande fin de tout être doué d'intelligence & de sentiment est le bonheur.",
+   "source": "CE Systême de la Providence s'étend à tous les Etres doués de connoissance & de sentiment.",
+   "reason": "Vattel extends the pursuit of happiness to every 'être doué d'intelligence & de sentiment', Burlamaqui's phrase 'Etres doués de connoissance & de sentiment' for the same point.",
+   "links": [
+    [
+     "Zotero p. 83",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=83"
+    ]
+   ]
+  },
+  {
+   "id": 7402,
+   "table": "burlamaqui-1747",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     277,
+     423
+    ]
+   ],
+   "family": "Bu",
+   "work": "Burlamaqui, Principes du droit naturel (1747)",
+   "locus": "Liv. I ch. VI § 9",
+   "page": "BUR47.p100",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "C'est par le seul desir de ce bonheur que l'on peut lier un être pensant , former les nœuds de l'obligation qui doit le soumettre à quelque regle.",
+   "source": "C'est-à-dire, que l'on y est déterminé par de solides raisons, & engagé par de puissans motifs, qui comme autant de liens, entrainent notre Volonté de ce côté-là.",
+   "reason": "Both explain obligation as a moral bond ('lier', 'nœuds'; 'liens') formed by the motive of one's own good, Burlamaqui's motives of reason, Vattel's desire of happiness.",
+   "links": [
+    [
+     "Zotero p. 100",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=100"
+    ]
+   ]
+  },
+  {
+   "id": 7403,
+   "table": "burlamaqui-1747",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     424,
+     713
+    ]
+   ],
+   "family": "Bu",
+   "work": "Burlamaqui, Principes du droit naturel (1747)",
+   "locus": "Liv. I ch. I § 1",
+   "page": "BUR47.p31",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "V",
+   "passage": "Or en étudiant la nature des choses & celle de l'homme en particulier , on peut en déduire les regles que l'homme doit suivre pour atteindre à sa grande fin , pour obtenir le plus parfait bonheur dont il soit capable. Nous appellons ces regles les loix naturelles ou les loix de la nature.",
+   "source": "les Régles que la seule Raison prescrit aux Hommes, pour les conduire sûrement au but qu'ils doivent se proposer, & qu'ils se proposent tous en effet, je veux dire un véritable & solide bonheur ; & c'est le systême ou l'assemblage de ces Ré-gles, considérées comme autant de Loix que Dieu impose aux hommes, que l'on appelle DROIT DE LA NATURE.",
+   "reason": "Like Burlamaqui's opening definition, Vattel presents the natural laws as the rules man must follow to reach his end, happiness, and gives them the name of laws of nature.",
+   "links": [
+    [
+     "Zotero p. 31",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=31"
+    ]
+   ]
+  },
+  {
+   "id": 7404,
+   "table": "wolff-institutiones-1750",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     424,
+     641
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 40",
+   "page": "INST.pdf50",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "Or en étudiant la nature des choses & celle de l'homme en particulier , on peut en déduire les regles que l'homme doit suivre pour atteindre à sa grande fin , pour obtenir le plus parfait bonheur dont il soit capable.",
+   "source": "Quoniam lex naturae rationem sufficientem in ipsa hominis rerumque natura habet",
+   "french": "Puisque la loi de la nature a sa raison suffisante dans la nature même de l'homme et des choses",
+   "reason": "Vattel's deduction of the natural laws from 'la nature des choses & celle de l'homme' follows Wolff's grounding of the lex naturae in 'ipsa hominis rerumque natura' (Inst. § 40), with happiness put in place of perfection.",
+   "links": [
+    [
+     "PDF p. 50",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=50"
+    ]
+   ]
+  },
+  {
+   "id": 7405,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     714,
+     925
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Discours préliminaire § 11",
+   "page": "GRO24T1.p64",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "V",
+   "passage": "Elles sont certaines , obligatoires & sacrées pour tout homme raisonnable , abstraction faite de toute autre considération que celle de sa nature & quand même on le supposeroit dans l'ignorance totale d'un Dieu.",
+   "source": "TOUT ce que nous venons de dire auroit lieu en quelque maniére, (1) quand même on accorderoit, ce qui ne se peut sans un crime horrible, qu'il n'y a point de DIEU, ou s'il y en a un, qu'il ne s'interesse point aux choses humaines.",
+   "reason": "Vattel's claim that the natural laws bind 'quand même on le supposeroit dans l'ignorance totale d'un Dieu' (and bind even the atheist) is Grotius's 'etiamsi daremus' hypothesis (Prolegomena § 11), cast in a similar 'quand même' clause.",
+   "links": [
+    [
+     "Zotero p. 64",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=64"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n63/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7406,
+   "table": "burlamaqui-1747",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     1172,
+     1347
+    ]
+   ],
+   "family": "Bu",
+   "work": "Burlamaqui, Principes du droit naturel (1747)",
+   "locus": "Liv. II ch. II § 3",
+   "page": "BUR47.p187",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "V",
+   "passage": "Il est donc souverainement bon, & il le témoigne en formant des créatures capables de bonheur. Il veut donc que ses créatures soient aussi heureuses que leurnature le comporte",
+   "source": "la perfection & le bonheur de ses créatures, autant que leur nature ou leur constitution les en rend capables.",
+   "reason": "God's goodness willing creatures 'aussi heureuses que leur nature le comporte' repeats Burlamaqui's end of God, 'le bonheur de ses créatures, autant que leur nature ... les en rend capables'.",
+   "links": [
+    [
+     "Zotero p. 187",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=187"
+    ]
+   ]
+  },
+  {
+   "id": 7407,
+   "table": "burlamaqui-1747",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     1512,
+     1690
+    ]
+   ],
+   "family": "Bu",
+   "work": "Burlamaqui, Principes du droit naturel (1747)",
+   "locus": "Liv. II ch. V § 7",
+   "page": "BUR47.p242",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "La volonté du créateur coincide ainsi parfaitement avec la simple indication de la nature , & ces deux sources produisant la même loi , se réunissent à former la méme obligation.",
+   "source": "les conseils & les maximes de la Raison nous obligent, non-seulement parce qu'ils sont en eux-mêmes très convenables, & qu'ils ont leur fondement dans la nature & dans les rélations lations immuables des choses ; mais encore par l'autorité de l'Etre Suprêm",
+   "reason": "Burlamaqui likewise makes the natural law oblige both by the fitness of its maxims in the nature of things and by God's authority, the two concurring in one obligation.",
+   "links": [
+    [
+     "Zotero p. 242",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=242"
+    ]
+   ]
+  },
+  {
+   "id": 7408,
+   "table": "wolff-institutiones-1750",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     1512,
+     1690
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 41",
+   "page": "INST.pdf50",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "V",
+   "passage": "La volonté du créateur coincide ainsi parfaitement avec la simple indication de la nature , & ces deux sources produisant la même loi , se réunissent à former la méme obligation.",
+   "source": "Autor legis naturae ipse Deus est & ad actiones suas eidem conformandas hominem obligat, sicque obligatio naturalis etiam divina est & lex naturalis lex divina",
+   "french": "Dieu lui-même est l'auteur de la loi de la nature et oblige l'homme à y conformer ses actions ; ainsi l'obligation naturelle est aussi divine, et la loi naturelle est une loi divine",
+   "reason": "Vattel's claim that the creator's will and nature's indication produce one law and one obligation restates Wolff's thesis (Inst. § 41) that the natural obligation is also divine and the natural law a divine law.",
+   "links": [
+    [
+     "PDF p. 50",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=50"
+    ]
+   ]
+  },
+  {
+   "id": 7409,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     2141,
+     2292
+    ]
+   ],
+   "family": "Bb",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. III ch. II § 9, n. 1",
+   "page": "PUF34T1.p523",
+   "inNote": true,
+   "label": "loose paraphrase",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "Celui qui les rejetteroit , qui les mépriseroit hautement, se-déclareroit par cela même l'ennemi du genre humains,& mériteroit d'être traité comme tel.",
+   "source": "lors qu'un Peuple viole de propos délibéré toutes les maximes du Droit Naturel, & que par là il se rend digne d'être traité en ennemi du Genre Humain",
+   "reason": "Barbeyrac's people that deliberately violates all the maxims of natural law and so deserves 'd'être traité en ennemi du Genre Humain' is the same judgement Vattel passes on whoever openly rejects those laws.",
+   "links": [
+    [
+     "Zotero p. 523",
+     "zotero://open-pdf/library/items/L42CQ82S?page=523"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n522/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7410,
+   "table": "wolff-institutiones-1750",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     2410,
+     2545
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 44",
+   "page": "INST.pdf52",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "seul & isolé, il ne sauroit atteindre à son grand bat , à la félicité ; c'est qu'il est fait pour vivre en société avec ses semblables.",
+   "source": "Eam hominum esse indigentiam, ut nemo solus se statumque suum perficere possit, sed unusquisque aliorum indigeat auxilio.",
+   "french": "Telle est l'indigence des hommes, que personne ne peut seul se perfectionner, lui et son état, mais que chacun a besoin du secours des autres.",
+   "reason": "The step from man's inability to reach his end alone to his being made for society is Wolff's argument from human indigence (Inst. § 44), with 'la félicité' in place of self-perfection.",
+   "links": [
+    [
+     "PDF p. 52",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=52"
+    ]
+   ]
+  },
+  {
+   "id": 7411,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "Prelim.6",
+   "at": [
+    [
+     "n1",
+     2546,
+     2593
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 7",
+   "page": "JG.pdf32",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "V",
+   "passage": "La nature elle-même a donc établi cette société",
+   "source": "Etenim ipsa natura societatem inter homines instituit & ad societatem colendam eas obligat",
+   "french": "Car la nature elle-même a établi une société entre les hommes et les oblige à la cultiver",
+   "reason": "'La nature elle-même a donc établi cette société' renders Wolff's formula 'ipsa natura societatem inter homines instituit' (JG § 7), which Vattel's main text of the Préliminaires already uses for nations.",
+   "links": [
+    [
+     "PDF p. 32",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=32"
+    ]
+   ]
+  },
+  {
+   "id": 7412,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.3",
+   "at": [
+    [
+     "n0",
+     0,
+     257
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. VII ch. V § 22",
+   "page": "PUF34T2.p365",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "Nous n'examinerons pas non plus laquelle de ces diverses sortes de gouvernemens est la meilleure. Il suffira de dire en général , que le gouvernement monarchique paroît préférable à tout autre, moyennant que le pouvoir du souverain soit limité & non absolu.",
+   "source": "Il ne s'agit donc que de savoir, quelle forme de Gouvernement est sujette à de moindres inconvéniens. La plûpart (b) prononcent en faveur de la Monarchie.",
+   "reason": "Vattel touches Pufendorf's question of the best form of government (DNG VII.5.22) and sides, with a proviso, with the majority Pufendorf reports as favouring monarchy.",
+   "links": [
+    [
+     "Zotero p. 365",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=365"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n364/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7413,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.3",
+   "at": [
+    [
+     "n0",
+     872,
+     937
+    ]
+   ],
+   "family": "Bb",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. VII ch. VI § 9, n. 1",
+   "page": "PUF34T2.p377",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "Oui , répond le roi , je la laisserai moindre , mais plus stable.",
+   "source": "La puissance, comme „ le dit fort bien Theopompus, Roi de Lacédémone , „ étoit très-assurée, lors qu'elle étoit moins enviée , „ & moins haïe.",
+   "reason": "Barbeyrac's note on limited sovereignty (DNG VII.6.9) quotes Sidney citing Theopompus that power is safest when least envied, the same saying and lesson (limited power is more stable) as Vattel's anecdote.",
+   "links": [
+    [
+     "Zotero p. 377",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=377"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n376/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7414,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.3",
+   "at": [
+    [
+     "n0",
+     938,
+     1099
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. I ch. III § 8",
+   "page": "GRO24T1.p181",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "V",
+   "passage": "Les Lacedémoniens eurent pendant un tems , deux chefs auxquels ils donnoient très-improprement le titre de rois. C'étoient des magistrats d'un pouvoir très-borné",
+   "source": "Aussi a-t-on remarqué, que le titre de Roi n'est donné que dans un sens impropre à de tels Rois qui dépendent du Peuple. C'est ainsi qu'à Lacédemone, depuis Lycurgue, & plus encore depuis l'établissement des Ephores, les Rois n'étoient tels que de nom",
+   "reason": "Vattel's Spartan 'rois' so called 'très-improprement' are Grotius's example (I.3.8.11) of kings who depend on the people and bear the title only in an improper sense, as at Lacedaemon after the Ephors.",
+   "links": [
+    [
+     "Zotero p. 181",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=181"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n180/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7415,
+   "table": "wolff-institutiones-1750",
+   "unit": "I.3",
+   "at": [
+    [
+     "n0",
+     938,
+     1099
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 1003",
+   "page": "INST.pdf645",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "Les Lacedémoniens eurent pendant un tems , deux chefs auxquels ils donnoient très-improprement le titre de rois. C'étoient des magistrats d'un pouvoir très-borné",
+   "source": "In regno igitur Laconico Rex magis suadendi , quam jubendi potestate pollet",
+   "french": "Dans le royaume laconique, donc, le roi a plutôt le pouvoir de persuader que celui de commander",
+   "reason": "Wolff's 'regnum Laconicum', in which the king has persuasive rather than commanding power (Inst. § 1003), is the Spartan type of limited kingship that Vattel's note describes.",
+   "links": [
+    [
+     "PDF p. 645",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=645"
+    ]
+   ]
+  },
+  {
+   "id": 7416,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.3",
+   "at": [
+    [
+     "n0",
+     1102,
+     1180
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. I ch. IV § 8",
+   "page": "GRO24T1.p246",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "on les traduisoit en jugement , on les arrêtoit , on les condamnoit à la mort.",
+   "source": "les Princes qui dépendent du Peuple, soit qu'ils aient été d'abord établis sur ce pié-là, ou que leur autorité aît été ainsi renduë subalterne par une convention postérieure, comme il (1) arriva autrefois à Lacédemone; peuvent non seulement être repoussez & mis à la raison par les voies de la force, mais encore punis de mort, s'il en est besoin; ainsi qu'on en usa envers Pausanias, (2) Roi de ce même Etat de l'ancienne Gréce.",
+   "reason": "That the Spartan kings could be brought to judgement and put to death is Grotius's point (I.4.8) that kings dependent on the people, as at Lacedaemon, may be punished with death, as Pausanias was.",
+   "links": [
+    [
+     "Zotero p. 246",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=246"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n245/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7417,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.45",
+   "at": [
+    [
+     "n0",
+     232,
+     296
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. I ch. III § 8",
+   "page": "GRO24T1.p184",
+   "inNote": false,
+   "label": "open disagreement",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "Il suit de ce principe que la nation est au dessus du souverain.",
+   "source": "Mais il ne s'ensuit point de là, comme on le veut, que les Peuples soient au dessus du Roi",
+   "reason": "Vattel draws the very inference Grotius denies (I.3.8.14): that because rulers exist for the governed, the people is above the king; he does not name Grotius.",
+   "links": [
+    [
+     "Zotero p. 184",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=184"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n183/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7418,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.45",
+   "at": [
+    [
+     "n0",
+     232,
+     296
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. VII ch. VI § 6",
+   "page": "PUF34T2.p372",
+   "inNote": false,
+   "label": "open disagreement",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "Il suit de ce principe que la nation est au dessus du souverain.",
+   "source": "Tout Gouvernement, dit-on, (3) est établi en faveur de ceux qui sont gouvernez, & non pas en faveur de ceux qui gouvernent; c'est-à-dire, que le Roi est pour le Peuple, & non pas le Peuple pour le Roi: donc le Peuple est au dessus du Roi.",
+   "reason": "Pufendorf (VII.6.6) states and rejects the argument that since the king exists for the people the people is above him; Vattel adopts that conclusion from Mariana's 'rector, not owner' principle.",
+   "links": [
+    [
+     "Zotero p. 372",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=372"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n371/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7419,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.46",
+   "at": [
+    [
+     "n0",
+     0,
+     106
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. I ch. IV § 14, n. 1",
+   "page": "GRO24T1.p249",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "Il y a des pays où l'on prend des précautions formelles contre l'abus du pouvoir. \" Les peuples du Brabant",
+   "source": "comme aussi dans JAQUES MEYER, Annal. Belgic. sur l'année 1339. au sujet du Brabant & de la Flandre",
+   "reason": "Grotius's own note to I.4.14 already gives Brabant (after Meyer's Annales) as an example of a reserved right to resist the prince, the example Vattel gives from Grotius's Annales.",
+   "links": [
+    [
+     "Zotero p. 249",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=249"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n248/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7420,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.46",
+   "at": [
+    [
+     "n0",
+     349,
+     680
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. I ch. IV § 12",
+   "page": "GRO24T1.p248",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "établirent chez eux ume coutume qui est telle , que jamais ils \" n'admettent leur prince dans la possession du gouvernement , sans avoir aupara- \" vant fait avec lui cette paction : que toutes les fois qu'il lui arrivera de violer les \" loix du pays , ils demeureront affranchis des liens de l'obéissance qu'ils lui avoient \" jurée",
+   "source": "en vertu d'une clause apposée à l'acte par lequel la Souveraineté avoit été déférée, & qui porte que, si (a) le Roi fait telle ou telle chose, les Sujets seront dès-lors dégagez de toute obligation de lui obéïr",
+   "reason": "The Brabant compact releasing subjects from obedience when the prince breaks the laws is a case of Grotius's clause in the act conferring sovereignty that frees subjects from obedience if the king does certain things (I.4.12).",
+   "links": [
+    [
+     "Zotero p. 248",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=248"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n247/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7421,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.46",
+   "at": [
+    [
+     "n0",
+     349,
+     680
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. VII ch. VIII § 8",
+   "page": "PUF34T2.p419",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "établirent chez eux ume coutume qui est telle , que jamais ils \" n'admettent leur prince dans la possession du gouvernement , sans avoir aupara- \" vant fait avec lui cette paction : que toutes les fois qu'il lui arrivera de violer les \" loix du pays , ils demeureront affranchis des liens de l'obéissance qu'ils lui avoient \" jurée",
+   "source": "soit en vertu d'une clause par laquelle en conférant la Souveraineté au Roi, on avoit stipulé que s'il faisoit telle ou telle chose, les Sujets seroient dès-lors entiérement affranchis de l'obéïssance qu'ils lui devoient.",
+   "reason": "Pufendorf (VII.8.8), after Grotius, admits a stipulated clause by which subjects become 'affranchis de l'obéïssance' if the king does certain things, the arrangement and nearly the words of the Brabant pact Vattel quotes.",
+   "links": [
+    [
+     "Zotero p. 419",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=419"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n418/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7422,
+   "table": "wolff-institutiones-1750",
+   "unit": "I.61",
+   "at": [
+    [
+     "n0",
+     0,
+     139
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 984",
+   "page": "INST.pdf633",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "Nimirum, quod publicæ salutis causa & communi consensu statutum est, eadem multitudinis voluntate, rebus exigentibus immutari quid obstat ?",
+   "source": "Cum vero leges fundamentales fiant consensu populi (§. 978.) ; eodem quoque tolli & mutari possunt",
+   "french": "Mais comme les lois fondamentales se font par le consentement du peuple, elles peuvent aussi être abolies et changées par ce même consentement.",
+   "reason": "The quoted Mariana sentence (what common consent established may be changed by the same will of the people) makes Wolff's point that fundamental laws made by the people's consent can be abolished and changed by that same consent; the wording is Mariana's.",
+   "links": [
+    [
+     "PDF p. 633",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=633"
+    ]
+   ]
+  },
+  {
+   "id": 7423,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.69",
+   "at": [
+    [
+     "n1",
+     207,
+     575
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. VI § 9",
+   "page": "GRO24T1.p372",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "qu'un souverain n'avoit aucun droit de disposer de ses états sans le consentement de ses barons , qui sont obligés de les défendre. Alors les seigneurs François s'écrierent tous d'une voix , qu'ils soutiendroient jusques à la mort cette vérité : qu'aucun prince ne peut , par sa seule volonté , donner son royaume ou le rendre tributaire , & asservir ainsi la noblesse",
+   "source": "Aussi voions-nous que (a) plusieurs Peuples ont regardé comme nulles (1) les inféodations, aussi bien que les aliénations faites par leurs Rois, sans leur participation.",
+   "reason": "Velly's episode of the French barons refusing to accept a king's power to make his realm a papal fief is one more instance of Grotius's claim (II.6.9) that peoples held infeudations and alienations made by their kings without their participation to be void; the wording is Velly's.",
+   "links": [
+    [
+     "Zotero p. 372",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=372"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n371/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7424,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.69",
+   "at": [
+    [
+     "n1",
+     453,
+     544
+    ]
+   ],
+   "family": "Bb",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. I ch. III § 10, n. 1",
+   "page": "GRO24T1.p247",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "qu'aucun prince ne peut , par sa seule volonté , donner son royaume ou le rendre tributaire",
+   "source": "Mais il suffit que celui qui veut assujettir ainsi son Roiaume n'ait pas droit de le faire de sa pure autorité, sans le consentement du Peuple",
+   "reason": "Barbeyrac's note on Grotius I.4.10 (making the realm tributary or feudatory) says a king may not subject his kingdom thus 'de sa pure autorité, sans le consentement du Peuple', close to the quoted 'par sa seule volonté ... le rendre tributaire', though Vattel takes the words from Velly.",
+   "links": [
+    [
+     "Zotero p. 247",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=247"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n246/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7425,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.69",
+   "at": [
+    [
+     "n1",
+     453,
+     544
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. VIII ch. V § 10",
+   "page": "PUF34T2.p559",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "qu'aucun prince ne peut , par sa seule volonté , donner son royaume ou le rendre tributaire",
+   "source": "il n'est pas permis à un Roi de rendre son Roiaume feudataire de quelque autre Puissance, (1) sans le consentement du Peuple",
+   "reason": "The barons' maxim that no prince may by his own will make his kingdom tributary restates Pufendorf VIII.5.10, that a king may not make his realm feudatory to another power without the people's consent; the words come from Velly.",
+   "links": [
+    [
+     "Zotero p. 559",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=559"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n558/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7426,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.106",
+   "at": [
+    [
+     "n0",
+     1270,
+     1389
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. V ch. I § 14",
+   "page": "PUF34T2.p25",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "Les rois avoient recours à cet étrange expédient dans des cas de nécessité urgente , mais ils en sentoient l'injustice.",
+   "source": "La nécessité de l'Etat peut excuser l'action de ce Prince; bien entendu qu'il ait rétabli ensuite les choses sur l'ancien pié, dès que ses affaires le lui permirent.",
+   "reason": "Vattel's own comment that kings debased the coin only in urgent necessity while feeling its injustice echoes Pufendorf V.1.14, where necessity excuses the Bosporan king's doubling of the coin's value provided he restored it once his affairs allowed.",
+   "links": [
+    [
+     "Zotero p. 25",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=25"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n24/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7427,
+   "table": "wolff-institutiones-1750",
+   "unit": "I.106",
+   "at": [
+    [
+     "n0",
+     1553,
+     1648
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 1036",
+   "page": "INST.pdf670",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "au transport & à la fonte des bonnes especes , à l'ap- „ port & au cours des especes étrangeres",
+   "source": "nec ferendum, ut moneta proba ad exteros exportetur, & ejus loco minus proba invehatur a trapezitis, aliisque lucri sordidi cupidis.",
+   "french": "et il ne faut pas souffrir que la bonne monnaie soit transportée chez les étrangers, et qu'à sa place une moins bonne soit introduite par les changeurs et par d'autres gens avides d'un gain sordide.",
+   "reason": "Among the harms of debasement Boizard lists the export and melting of good coin and the inflow of foreign coin, the evil Wolff (INST §1036) tells the ruler not to tolerate, good coin going abroad and worse coin coming in; the wording is Boizard's.",
+   "links": [
+    [
+     "PDF p. 670",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=670"
+    ]
+   ]
+  },
+  {
+   "id": 7428,
+   "table": "wolff-institutiones-1750",
+   "unit": "I.106",
+   "at": [
+    [
+     "n0",
+     1892,
+     2049
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 1059",
+   "page": "INST.pdf686",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "les princes qui ont pratiqué quelques - uns de ces affoiblisse- „ mens dans les tems fâcheux , ont cessé de les pratiquer au moment où la nécessité „ a cessé",
+   "source": "Quodsi ob temporum calamitates monetae ex materia vili, vel exigui, aut fere nullius pretii cusae immodicus valor extrinsecus tribuendus, ne plurimi civium ad incitas redigantur, cessantibus illis superior curare debet, ut cum moneta proba permutetur.",
+   "french": "Que si, à cause du malheur des temps, il faut donner une valeur extrinsèque excessive à une monnaie frappée d'une matière vile, ou de peu ou presque d'aucune valeur, afin que la plupart des citoyens ne soient pas réduits à l'extrémité, le supérieur doit, ces malheurs passés, faire en sorte qu'on l'échange contre de la bonne monnaie.",
+   "reason": "Boizard's remark that princes debased the coin only 'dans les tems fâcheux' and stopped once the necessity ceased illustrates Wolff's rule (INST §1059) that coin overvalued 'ob temporum calamitates' must be exchanged for good coin 'cessantibus illis', the rule Vattel's text already follows.",
+   "links": [
+    [
+     "PDF p. 686",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=686"
+    ]
+   ]
+  },
+  {
+   "id": 7429,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.106",
+   "at": [
+    [
+     "n0",
+     2434,
+     2648
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. V ch. I § 14",
+   "page": "PUF34T2.p25",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "le roi s'oblige par chartre au- „ tentique au peuple de son royaume , que ses affaires passées , il remettra la mon- „ noie en bon ordre & valeur , à ses propres coûts & dépens , & portera la perte „ & tare sur lui",
+   "source": "La nécessité de l'Etat peut excuser l'action de ce Prince; bien entendu qu'il ait rétabli ensuite les choses sur l'ancien pié, dès que ses affaires le lui permirent.",
+   "reason": "Philip the Fair's pledge, quoted from Boizard, to restore the coin at his own cost once his affairs were over is a historical instance of Pufendorf's condition that the debasing prince restore it 'dès que ses affaires le lui permirent'; the words are Boizard's.",
+   "links": [
+    [
+     "Zotero p. 25",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=25"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n24/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7430,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.135",
+   "at": [
+    [
+     "n0",
+     512,
+     692
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. XX § 50",
+   "page": "GRO24T2.p116",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "Elle n'ôte rien à la vraye religion que l'on peut embrasser avec le même amour, en supportant charitablement les hommes qui suivent un autre culte, qu'ils croyent être le meilleur.",
+   "source": "pendant DIEU, à mon avis, les supporte patiemment, parce qu'il voit que, s'ils sont dans l'erreur, ils [?]rrent par un mouvement de Piété.",
+   "reason": "Vattel's comment that one may hold the true religion while charitably bearing with those who follow another worship they believe best is close to the tolerance argument Grotius II.20.50 draws from Salvian (God bears patiently with those who err from piety), but this is common ground in the tolerance literature and no wording is shared beyond 'supporter'.",
+   "links": [
+    [
+     "Zotero p. 116",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=116"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n115/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7431,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.179",
+   "at": [
+    [
+     "n0",
+     0,
+     146
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Préface du traducteur § 9",
+   "page": "PUF34T1.p65",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "On ne peut lire sans éprouver une sorte d'indignation ce que quelques peres de l'églife ont écrit contre le mariage & pour recommander le célibat.",
+   "source": "ST. JEROME (ppp) dit à tout propos des choses contumélieuses, & contre le Mariage en général, & contre les Secondes Nôces particuliérement, usant quelquefois d'expressions si crües, (qqq) qu'après avoir employé pour les expliquer toutes les ouvertures dont il nous advise lui-même en l'Epistre qu'il escrivit à Pammachius sur ce sujet, il semble néanmoins impossible de leur ôter les sens de Tertullian, condamnez par l'Eglise comme contraires à l'honnêteté du Mariage, & à l'autorité de l'Ecriture.",
+   "reason": "Vattel's indignant remark on what Fathers wrote against marriage, illustrated by Tertullian and Jerome, takes up Barbeyrac's complaint that Jerome spoke 'contre le Mariage' in terms carrying Tertullian's condemned sense, though Vattel's Latin quotations are not in this passage.",
+   "links": [
+    [
+     "Zotero p. 65",
+     "zotero://open-pdf/library/items/L42CQ82S?page=65"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n64/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7432,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.179",
+   "at": [
+    [
+     "n0",
+     118,
+     145
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Préface du traducteur § 10",
+   "page": "PUF34T1.p78",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "pour recommander le célibat",
+   "source": "ST. JÉROME, (hh) „ qui recommandoit le Célibat, autant qu'il pou- „ voit",
+   "reason": "Barbeyrac again presents Jerome as the Father who 'recommandoit le Célibat' as far as he could, the same charge Vattel makes in nearly the same words; the link is thematic rather than a direct borrowing.",
+   "links": [
+    [
+     "Zotero p. 78",
+     "zotero://open-pdf/library/items/L42CQ82S?page=78"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n77/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7433,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "I.197",
+   "at": [
+    [
+     "n0",
+     84,
+     161
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 82",
+   "page": "JG.pdf93",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "ne voulurent plus relever de l'empire dont elles n'avoient reçu aucun secours",
+   "source": "Quamobrem minus potens pacto stare non tenetur, si potentior tutelam promissam non praestet, consequenter cum jam libera sit ab obligatione, qua ex pacto tenebatur",
+   "french": "C'est pourquoi la nation moins puissante n'est pas tenue de s'en tenir au pacte, si la plus puissante ne lui fournit pas la protection promise, et par conséquent elle est dès lors libre de l'obligation dont elle était tenue par ce pacte.",
+   "reason": "The Dutch example illustrates Wolff's rule (used by Vattel in § 196) that a weaker nation is freed from its pact when the stronger fails to give the promised protection; the example itself comes from Grotius's history.",
+   "links": [
+    [
+     "PDF p. 93",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=93"
+    ]
+   ]
+  },
+  {
+   "id": 7434,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.220",
+   "at": [
+    [
+     "n1",
+     305,
+     384
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. VIII ch. XI § 3",
+   "page": "PUF34T2.p612",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "il avoit vendu, avec la permission du roi, les biens qu'il possédoit en Livonie",
+   "source": "Car si une personne, qui n'avoit point d'engagement particulier dans un Etat, où il est permis à chacun d'en sortir quand bon lui semble, s'est allée établir dans un autre, le Souverain du prémier n'a plus aucun pouvoir sur elle, & par conséquent tous ses Avocatoires sont nuls & sans force, quand même ils menaceroient de quelque note d'infamie ceux qui n'obéiront pas au plûtôt. Mais l'Etat conserve encore son droit sur un Sujet, qui est sorti du Païs contre les Loix, ou contre les engagemens particuliers où il étoit entré , ou qui a encore des biens dans le Païs, sur tout s'ils consistent en Immeubles",
+   "reason": "Vattel stresses that Paykul had left with the king's leave and sold his Livonian estates, the two conditions under which Pufendorf says the former sovereign keeps no power over an emigrant (unlike one who left against the laws or still holds immovables there).",
+   "links": [
+    [
+     "Zotero p. 612",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=612"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n611/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7435,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "I.220",
+   "at": [
+    [
+     "n1",
+     480,
+     594
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. V § 24",
+   "page": "GRO24T1.p360",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "à moins que ce ne soit, comme nous l'observons ici, dans un tems critique où la patrie a besoin de tous ses enfans",
+   "source": "c'est qu'on ne doit pas sortir de l'Etat, si l'intérêt de la Société Civile demande qu'on y reste",
+   "reason": "Grotius's equitable limit on emigration, that one may not leave when the interest of civil society requires one to stay, is the original of the exception Vattel recalls in the note.",
+   "links": [
+    [
+     "Zotero p. 360",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=360"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n359/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7436,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "I.220",
+   "at": [
+    [
+     "n1",
+     480,
+     594
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. VIII ch. XI § 3",
+   "page": "PUF34T2.p611",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "à moins que ce ne soit, comme nous l'observons ici, dans un tems critique où la patrie a besoin de tous ses enfans",
+   "source": "il ne faut pas s'en aller à contretems, & dans des circonstances où l'Etat a un intérêt particulier que l'on reste, par exemple, (comme le dit (a) GROTIUS) lors que l'Etat est fort endetté, à moins que l'on ne veuille, avant que de quitter le païs, paier sa quote part des Dettes: ou quand le Souverain s'est engagé dans une Guerre, comptant sur le nombre des Citoiens; sur tout si l'on est à la veille d'un Siège",
+   "reason": "The exception for a critical time when the country needs all its members restates Pufendorf's (and Grotius's) rule that one must not leave at a time when the state, e.g. at war, has a particular interest in one's staying; Vattel points back to his own § 220 text.",
+   "links": [
+    [
+     "Zotero p. 611",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=611"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n610/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7437,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "II.20",
+   "at": [
+    [
+     "n0",
+     0,
+     66
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. XV § 5",
+   "page": "GRO24T1.p531",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "On peut ajouter à l'exemple des Romains, celui des anciens Anglois",
+   "source": "le Droit (8) Romain, qu'encore qu'on ne doive pas regarder comme Ennemis les Peuples avec qui on n'a aucune liaison d'Amitié, ni de droit d'Hospitalité, ni d'Alliance",
+   "reason": "The 'exemple des Romains' to which Vattel adds the English case is the Roman rule on peoples bound by no friendship, hospitality or alliance, which Grotius gives in this place (Vattel quotes it from Pomponius in II.112); the English example itself is quoted from Grotius's history.",
+   "links": [
+    [
+     "Zotero p. 531",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=531"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n530/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7438,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "II.58",
+   "at": [
+    [
+     "n0",
+     10,
+     182
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. XXV § 8",
+   "page": "GRO24T2.p183",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "quand on voit un parti acharné contre la religion que l'on professe & un prince voisin persécuter en conséquence les sujets de cette religion, il est permis de les secourir",
+   "source": "Nous voions que Constantin le Grand prit les armes contre Licinius, & que d'autres Empereurs Romains les prirent aussi, ou menacérent de les prendre contre les Perses, (c) pour empêcher qu'ils ne maltraitassent, à cause du Christianisme, ceux de leurs Sujets qui en faisoient profession.",
+   "reason": "Grotius gives the case of princes arming to protect a foreign ruler's subjects persecuted for the religion they share, but Vattel rests it on self-defence (James I) rather than on Grotius's humanity, so the link is weak.",
+   "links": [
+    [
+     "Zotero p. 183",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=183"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n182/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7439,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "II.113",
+   "at": [
+    [
+     "t",
+     0,
+     68
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 583",
+   "page": "JG.pdf492",
+   "inNote": false,
+   "label": "verbatim",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "Le droit de traite-foraine , que l'on appelle en latin jus detractûs",
+   "source": "Ita juris retorsio est, si jus detractus opponitur juri detractus, scilicet si tu civibus tuis ad me discessuris detrahis decimam bonorum partem, & ego vicissim civibus meis decimam partem detraho imperium tuum subituris",
+   "french": "Ainsi il y a rétorsion de droit si l'on oppose le droit de détraction (traite-foraine) au droit de détraction, c'est-à-dire si tu retiens la dixième partie des biens de tes citoyens qui s'en vont chez moi, et que de mon côté je retiens la dixième partie à mes citoyens qui vont passer sous ta domination",
+   "reason": "The Latin name Vattel adds is the term Wolff uses, with this very definition (a share kept from the goods of those leaving), in JG §583, which Vattel follows in II.341 on retorsion; the term was current in German law, so the borrowing is plausible but not certain.",
+   "links": [
+    [
+     "PDF p. 492",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=492"
+    ]
+   ]
+  },
+  {
+   "id": 7440,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "II.216",
+   "at": [
+    [
+     "n0",
+     0,
+     369
+    ]
+   ],
+   "family": "Bb",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. XIV § 2, n. 2",
+   "page": "GRO24T1.p518",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "V",
+   "passage": "En 1596. Philippe II. fit banqueroute à ses créanciers, sous prétexte de lézion. Ceux-ci se plaignirent hautement, disant qu'on ne pouvoit plus se fier à sa parole ni à ses traités, puisqu'il y mêloit l'autorité royale. Personne ne voulut plus lui avancer de l'argent, & ses affaires en souffrirent si fort qu'il fut obligé de rétablir les choses dans leur premier état",
+   "source": "ce que fit Philippe II. Roi d'Espagne, qui, en M. D. XCVI. abolit toutes les Dettes que ses gens avoient contractées en son nom, & se saisit de toutes les assignations qu'on avoit données à ses Créanciers. Mais ce Prince révoqua lui-même, deux ans après, son Ordonnance, & rétablit ses Créanciers dans tout leur droit.",
+   "reason": "Barbeyrac's note on a king's release from his contracts gives the same example (Philip II's 1596 cancellation of his debts, later revoked and the creditors restored), though Vattel tells it from Grotius's history of the Low Countries, not in Barbeyrac's words.",
+   "links": [
+    [
+     "Zotero p. 518",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=518"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n517/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7441,
+   "table": "wolff-institutiones-1750",
+   "unit": "II.263",
+   "at": [
+    [
+     "n0",
+     0,
+     97
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Institutiones (1750)",
+   "locus": "§ 798",
+   "page": "INST.pdf531",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "Standum omnino est iis quæ verbis expressis, quorum manifestus est significatus, indicata fuerunt",
+   "source": "Unde porro sequitur, in promissis & pactis interpretandis, a communi usu loquendi non esse recedendum, nisi adsint rationes urgentes in contrarium.",
+   "french": "D'où il suit encore que, dans l'interprétation des promesses et des pactes, il ne faut point s'écarter de l'usage commun de la langue, à moins qu'il n'y ait des raisons pressantes au contraire.",
+   "reason": "Vattel quotes Wolff's Jus naturae directly; the same rule (keep to the plain meaning of the words) appears in the Institutiones' chapter on interpretation, though in other words.",
+   "links": [
+    [
+     "PDF p. 531",
+     "file:///C:/PhD_library/vattel-reuse/sources/Institutiones_juris_naturae_et_gentium_i.pdf#page=531"
+    ]
+   ]
+  },
+  {
+   "id": 7442,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "II.345",
+   "at": [
+    [
+     "n0",
+     140,
+     338
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 603",
+   "page": "JG.pdf509",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "il ne faut pas que les représailles soient générales. Le grand pensionnaire de Witt disoit fort bien : je ne vois pas qu'il y ait de différence entre des représailles générales & une guerre ouverte.",
+   "source": "Enimvero dum repressaliae fiunt, non vi petitur totus populus, sed privati potius per vim saltem certant. Quamobrem cum bellum hoc geratur quasi inter privatos, licet autoritate publica repressaliae fuerint concessae; repressaliae bello privato magis assimilantur.",
+   "french": "Mais quand on use de représailles, ce n'est pas tout le peuple qu'on attaque par la force; ce sont plutôt des particuliers qui ne font que lutter par la force. C'est pourquoi, cette guerre se faisant comme entre particuliers, quoique les représailles aient été accordées par l'autorité publique, les représailles ressemblent plutôt à une guerre privée.",
+   "reason": "Wolff holds reprisals a species of war that differs from public war only because the whole people is not attacked, which is the line Vattel draws by forbidding general reprisals; the remark itself is de Witt's.",
+   "links": [
+    [
+     "PDF p. 509",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=509"
+    ]
+   ]
+  },
+  {
+   "id": 7443,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "II.348",
+   "at": [
+    [
+     "n0",
+     260,
+     453
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 589",
+   "page": "JG.pdf498",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "il est évident qu'il n'y a pas de souverain qui puisse accorder ou faire exécuter des représailles que pour la défense ou le dédommagement de ses sujets qu'il est obligé devant Dieu de protéger",
+   "source": "Patet autem ex antea demonstratis (§. §. cit.), repressaliis locum non esse, nisi quando alius populus nobis vel civibus nostris injuriam facit, & imploratus eam reparare intra tempus idoneum, hoc est, sine protractione, non vult. Patet etiam porro, jus repressaliarum non competere nisi Gentibus &, qui jus Gentium habent; Rectoribus civitatis.",
+   "french": "Il est clair, par ce qui a été démontré, qu'il n'y a lieu aux représailles que lorsqu'un autre peuple fait injure à nous ou à nos citoyens et que, requis de la réparer dans un temps convenable, c'est-à-dire sans délai, il ne le veut pas. Il est clair aussi que le droit de représailles n'appartient qu'aux nations et à ceux qui ont le droit des gens, les conducteurs des États.",
+   "reason": "De Witt's quoted letter states Wolff's conditions in JG §589 (reprisals only for wrongs to ourselves or our citizens, only after a request refused, only by the sovereign), but the letter is de Witt's and the conditions are common doctrine.",
+   "links": [
+    [
+     "PDF p. 498",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=498"
+    ]
+   ]
+  },
+  {
+   "id": 7444,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.109",
+   "at": [
+    [
+     "n0",
+     22,
+     214
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. IX § 2",
+   "page": "GRO24T2.p320",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "les Hollandois jugerent qu'un vaisseau entrant dans un port neutre après avoir fait des prisonniers sur les ennemis de sa nation en pleine mer, on devoit lui faire relâcher lesdits prisonniers",
+   "source": "il étoit (8) porté, que si les Prisonniers faits par les Carthaginois, sur quelque Peuple ami des Romains, venoient dans les Ports dont les Romains étoient maitres, ils pourroient être reclamez, & ils redeviendroient libres",
+   "reason": "Grotius III.9.2 gives the parallel case of prisoners brought into a third power's ports being freed, but as a treaty exception to the rule that neutral ground does not free captives; Vattel's Dutch example is drawn from elsewhere.",
+   "links": [
+    [
+     "Zotero p. 320",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=320"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n319/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7445,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "III.109",
+   "at": [
+    [
+     "n0",
+     22,
+     214
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 834",
+   "page": "JG.pdf709",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "les Hollandois jugerent qu'un vaisseau entrant dans un port neutre après avoir fait des prisonniers sur les ennemis de sa nation en pleine mer, on devoit lui faire relâcher lesdits prisonniers",
+   "source": "Per territorium pacatum captivos & res captas ducere non licet.",
+   "french": "Il n'est pas permis de conduire des prisonniers et des choses prises à travers un territoire neutre.",
+   "reason": "Wolff §834 forbids a belligerent to bring captives and prizes into neutral territory; the Dutch ruling Vattel adds applies the same principle to prisoners brought into a neutral port, though without shared wording.",
+   "links": [
+    [
+     "PDF p. 709",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=709"
+    ]
+   ]
+  },
+  {
+   "id": 7446,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.113",
+   "at": [
+    [
+     "n0",
+     593,
+     735
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. I § 5, n. 6",
+   "page": "GRO24T2.p204",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "Les provinces-Unies, obligées à plus de ménagemens, n'empêchoient point les autres nations d'exercer toutes sortes de commerce avec l'Espagne.",
+   "source": "Et lors qu'ils étoient en guerre avec l'Espagne, ils ont toûjours rendu à la France les Vaisseaux qui avoient été pris par des Hollandois, allant en Espagne, ou en revenant.",
+   "reason": "Grotius's note to III.1.5 makes the same point about Dutch restraint toward neutral trade with Spain, though Vattel's wording follows Grotius's Histoire.",
+   "links": [
+    [
+     "Zotero p. 204",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=204"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n203/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7447,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.113",
+   "at": [
+    [
+     "n0",
+     1365,
+     1505
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. I § 5, n. 6",
+   "page": "GRO24T2.p204",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "les confédérés allant assiéger les ports de leurs ennemis, feroient leur proie de tous les vaisseaux qu'ils verroient aller en ces pays - là",
+   "source": "Mais les mêmes Hollandois ne voulurent point permettre que les Anglois portassent des marchandises à Dunquerque, devant laquelle ils avoient une Flotte.",
+   "reason": "Grotius's note gives the same Dutch exception for ports they were besieging; Vattel's edict example comes from Grotius's Histoire, Liv. XV.",
+   "links": [
+    [
+     "Zotero p. 204",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=204"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n203/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7448,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.115",
+   "at": [
+    [
+     "n0",
+     89,
+     156
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. VI § 6, n. 1",
+   "page": "GRO24T2.p283",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "la prétendue loi Françoise, que robe d'ennemi confisque celle d'ami",
+   "source": "Il faut, à mon avis, expliquer de même les Loix de France, qui portent, que les Vaisseaux sont de bonne prise à cause des effets de l'Ennemi, qu'on y trouve; & les effets aussi des gens de païs neutre, à cause qu'ils se trouvent dans un Vaisseau des Ennemis.",
+   "reason": "Grotius's note to III.6.6 discusses and narrows the same French rule that Boreel's letter, quoted by Vattel, reports as annulled.",
+   "links": [
+    [
+     "Zotero p. 283",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=283"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n282/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7449,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.115",
+   "at": [
+    [
+     "n0",
+     170,
+     366
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. VI § 6",
+   "page": "GRO24T2.p283",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "s'il se trouve à l'avenir dans un vaisseau franc Hollandois, des effets appartenans aux ennemis des François, eux seuls effets seront confiscables, & l'on relâchera le vaisseau & les autres effets",
+   "source": "Les Vaisseaux appartenans à des Amis ne sont pas non plus de bonne prise, à cause des effets de l'Ennemi qui s'y trouvent",
+   "reason": "The rule Boreel obtained (only the enemy goods confiscable, the friendly ship released) is the rule Grotius states in III.6.6.2, but the wording is Boreel's.",
+   "links": [
+    [
+     "Zotero p. 283",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=283"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n282/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7450,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.143",
+   "at": [
+    [
+     "n2",
+     0,
+     54
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. XI § 16",
+   "page": "GRO24T2.p363",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "La fausse maxime que l'on tenoit autrefois à cet égard",
+   "source": "On veut que le droit du Talion, ou la nécessité d'intimider les Ennemis, ou leur résistance opiniâtre, dispensent le Vainqueur d'épargner leur vie.",
+   "reason": "Grotius III.11.16 sets out obstinate resistance as a supposed exception to sparing the defeated and rejects it, as Vattel's frame calls the maxim quoted from de Thou false.",
+   "links": [
+    [
+     "Zotero p. 363",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=363"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n362/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7451,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "III.143",
+   "at": [
+    [
+     "n2",
+     0,
+     54
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 804",
+   "page": "JG.pdf681",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "La fausse maxime que l'on tenoit autrefois à cet égard",
+   "source": "Ex eo non nascitur jus occidendi hostem, quod pertinacius restitum sit.",
+   "french": "Du fait que l'ennemi a résisté avec opiniâtreté ne naît pas le droit de le tuer.",
+   "reason": "Wolff §804, which Vattel's §143 follows, denies that obstinate resistance gives a right to kill the enemy; the added note brands the old maxim false on the same ground.",
+   "links": [
+    [
+     "PDF p. 681",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=681"
+    ]
+   ]
+  },
+  {
+   "id": 7452,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.143",
+   "at": [
+    [
+     "n2",
+     760,
+     1088
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. XI § 14",
+   "page": "GRO24T2.p362",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "C'est ainsi que César répondit aux Aduaticiens, (B. G. L. II.) qu'il épar- „ gneroit leur ville, s'ils se rendoient avant que le bélier eut touché leurs murailles, „ & que le duc d'Albe blâma beaucoup Prosper Colonnes, d'avoir reçu à composition „ un château qui n'avoit parlé de se rendre qu'après avoir essuyé le feu du canon.",
+   "source": "Les Romains en usoient de même, à l'égard des Villes assiégées, lors que les Habitans demandoient à se rendre, avant que le Bélier, sorte de machine, dont on se servoit alors, eût été dressé contre leurs murailles. Nous le voions par l'exemple de (3) César, qui déclara qu'il épargneroit la Ville des Atuaticiens, sous cette condition. Cela se pratique encore aujourd'hui dans la reddition faite avant que l'on tire le Canon, s'il s'agit d'une Place foible",
+   "reason": "Grotius III.11.14 pairs the same Caesar/Aduatuci example with the modern rule about surrender before the cannon fires; Vattel's stretch is quoted from de Thou/Hayward, so the shared example is probably indirect.",
+   "links": [
+    [
+     "Zotero p. 362",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=362"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n361/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7453,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.147",
+   "at": [
+    [
+     "n2",
+     0,
+     150
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. XII § 4",
+   "page": "GRO24T2.p373",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.65,
+   "status": "match",
+   "step": "V",
+   "passage": "Cyrus fit proposer au roi d'Assyrie d'épargner réciproquement les laboureurs, & de ne faire la guerre qu'aux gens armés, & sa proposition fut acceptée",
+   "source": "XÉNOPHON parle d'un Traité fait entre Cyrus & le Roi d'Assyrie, par lequel il fut convenu, (3) que les Laboureurs de part & d'autre vivroient en paix, & qu'on ne feroit la Guerre que contre ceux qui auroient les armes à la main.",
+   "reason": "Grotius III.12.4 reports the same Cyropaedia agreement in nearly the same terms (farmers spared on both sides, war only against armed men, agreed by both kings), which Vattel renders as 'réciproquement' and 'ne faire la guerre qu'aux gens armés'.",
+   "links": [
+    [
+     "Zotero p. 373",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=373"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n372/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7454,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.150",
+   "at": [
+    [
+     "n1",
+     96,
+     172
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. III ch. XXI § 1",
+   "page": "GRO24T2.p456",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "V",
+   "passage": "ces usages indispensables que l'on appelle, d'après Virgile, belli commercia",
+   "source": "IL Y A certains commerces de Guerre, pour parler avec (1) VIRGILE & (2) TACITE, que les Puissances Souveraines accordent de part & d'autre, sans que l'état d'Hostilité cesse.",
+   "reason": "Grotius opens III.21 (truces, safe-conducts and ransom of prisoners) by calling such conventions 'commerces de Guerre' after Virgil (note 1: 'BELLI COMMERCIA', Aen. X, 532), the term and attribution Vattel uses for ransom, exchange and contributions; Vattel may have it instead from Grotius's Historiae, which he cites.",
+   "links": [
+    [
+     "Zotero p. 456",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=456"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n455/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7455,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.158",
+   "at": [
+    [
+     "n0",
+     464,
+     684
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. XXIV § 6, n. 6",
+   "page": "GRO24T2.p173",
+   "inNote": true,
+   "label": "loose paraphrase",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "mais il représenta que, s'il avoit livré la ville aux Athéniens, ce n'étoit ni par haine pour les Lacédémoniens, ni qu'il eût été corrompu par argent, mais pour sauver les femmes & les enfans, qu'il voyoit mourir de faim",
+   "source": "Il est bien vrai, qu'Anaxilas s'excusa sur la famine, qui pressoit la Ville: mais la sentence que nôtre Auteur lui prête, ne se voit point dans l'endroit de XÉ- NOPHON, que j'ai noté, où il est parlé de ce Commandant de Byzance.",
+   "reason": "Grotius and Barbeyrac (II.24.6, n. 6) give the same Anaxilaus defence (he gave up Byzantium because of famine); Vattel's wording is his own, from Xenophon.",
+   "links": [
+    [
+     "Zotero p. 173",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=173"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n172/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7456,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "III.158",
+   "at": [
+    [
+     "n0",
+     772,
+     880
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. VI § 5, n. 1",
+   "page": "GRO24T1.p370",
+   "inNote": true,
+   "label": "loose paraphrase",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "V",
+   "passage": "Les Lacédémoniens, par un trait d'équité admirable & bien rare en pareilles occasions, le déclarerent absous",
+   "source": "C'est sur ce principe que les Lacédémoniens autrefois déclarérent absous Anaxilas , qui avoit rendu la Ville de Byzance, y étant contraint par la famine. XÉNOPHON , Hist. Græc. Lib. I.",
+   "reason": "Grotius's note to II.6.5 gives the same Xenophon example, cited to the same book (Hist. Græc. Lib. I), with the same verdict 'les Lacédémoniens ... déclarérent absous'; Vattel's much fuller account, with its page number, shows he also read Xenophon himself.",
+   "links": [
+    [
+     "Zotero p. 370",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=370"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n369/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7457,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "IV.81",
+   "at": [
+    [
+     "n0",
+     604,
+     711
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. XVIII § 11",
+   "page": "GRO24T2.p32",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "Gengis-kan lui demandu raison de cet affreux massacre & sur les délais affectés du Sultan il prit les armes",
+   "source": "les Histoires Profanes (1) sont pleines de Guerres entreprises pour tirer raison de quelque mauvais traitement fait à des Ambassadeurs",
+   "reason": "Vattel's two oriental cases (Gengis-kan, Selim) illustrate Grotius's closing remark that histories are full of wars waged to avenge mistreated ambassadors, but the examples come from Marigny and no wording beyond 'raison' is shared.",
+   "links": [
+    [
+     "Zotero p. 32",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=32"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n31/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7458,
+   "table": "pufendorf-barbeyrac-1734",
+   "unit": "IV.93",
+   "at": [
+    [
+     "n0",
+     964,
+     1190
+    ]
+   ],
+   "family": "P",
+   "work": "Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)",
+   "locus": "Liv. II ch. III § 23",
+   "page": "PUF34T1.p401",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "chaque souverain étant sans doute en droit de défendre à tous ministres étrangers de faire dans son pays des choses dont il peut résulter du désordre , & qui d'ailleurs ne sont point nécessaires à l'exercice de leurs fonctions",
+   "source": "les Ambassadeurs du moins à l'égard des choses qui concernent précisément leur caractére, doivent être hors de toute jurisdiction & de toute contrainte de la part de celui auprès de qui ils sont envoiez",
+   "reason": "Pufendorf limits the ambassador's exemption from constraint to what concerns his character, leaving the rest to the host's goodwill, the same functional limit Vattel applies, but only as a general doctrine without shared wording.",
+   "links": [
+    [
+     "Zotero p. 401",
+     "zotero://open-pdf/library/items/L42CQ82S?page=401"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n400/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7459,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "IV.93",
+   "at": [
+    [
+     "n0",
+     964,
+     1190
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 1058",
+   "page": "JG.pdf865",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "V",
+   "passage": "chaque souverain étant sans doute en droit de défendre à tous ministres étrangers de faire dans son pays des choses dont il peut résulter du désordre , & qui d'ailleurs ne sont point nécessaires à l'exercice de leurs fonctions",
+   "source": "consequenter quoad eos actus, qui negotium illud gerendum requiruntur, differunt a peregrinis aliis, qui privati sui negotii causa in territorio alieno commorantur, quoad actus vero suos privatos, qui ad negotium istud nullum respectum habent, a peregrinis aliis non differunt.",
+   "french": "par conséquent, quant aux actes que requiert la conduite de cette affaire, ils diffèrent des autres étrangers qui séjournent en territoire étranger pour leurs affaires privées ; mais quant à leurs actes privés, qui n'ont aucun rapport à cette affaire, ils ne diffèrent en rien des autres étrangers.",
+   "reason": "Vattel's objection to Louis XIV rests on the functional test (the host may forbid what is not necessary to the minister's functions) that Wolff states in §1058, but it is a common doctrine and no wording is shared.",
+   "links": [
+    [
+     "PDF p. 865",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=865"
+    ]
+   ]
+  },
+  {
+   "id": 7460,
+   "table": "grotius-barbeyrac-1724",
+   "unit": "IV.101",
+   "at": [
+    [
+     "n2",
+     186,
+     489
+    ]
+   ],
+   "family": "G",
+   "work": "Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)",
+   "locus": "Liv. II ch. XVIII § 4, n. 25",
+   "page": "GRO24T2.p27",
+   "inNote": true,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "la maxime des rois étoit de tenir pour sacrée la personne des ambassadeurs , ce qui faisoit qu'ils étoient toujours exempts de mort ou de prison , pour peu que le souverain vers lequel on les envoyoit eut de connoissance du droit des gens , & que l'ambassadeur eut de prudence pour ne point commettre de",
+   "source": "Le carac- „ tere d'Ambassadeurs est, à la vérité, sacré & respec- „ table, par tout païs : mais ils ne conservent leurs „ droits & leurs priviléges , que tant qu'ils soutien- „ nent la dignite de leurs fonctions par une conduite „ sage & reglee.",
+   "reason": "Like the Theodahad speech quoted in Grotius's note, Timur's secretary makes the ambassador's sacred character depend on his prudent conduct, but Vattel takes the speech from La Croix and the parallel is one of idea only.",
+   "links": [
+    [
+     "Zotero p. 27",
+     "zotero://open-pdf/library/items/LL8RR8X3?page=27"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-2/page/n26/mode/1up"
+    ]
+   ]
+  },
+  {
+   "id": 7461,
+   "table": "wolff-jus-gentium-1749",
+   "unit": "IV.125",
+   "at": [
+    [
+     "n0",
+     85,
+     153
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Jus gentium (1749)",
+   "locus": "§ 1068",
+   "page": "JG.pdf875",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.3,
+   "status": "possible",
+   "step": "V",
+   "passage": "quand deux princes étoient en guerre, si l'un d'eux venoit à mourir,",
+   "source": "Si legatus a mittente revocatur, vel mittens, aut is, ad quem missus, moritur; legatus desinit esse legatus.",
+   "french": "Si l'ambassadeur est rappelé par celui qui l'envoie, ou si celui qui l'envoie, ou celui auprès de qui il est envoyé, vient à mourir, l'ambassadeur cesse d'être ambassadeur.",
+   "reason": "The Joinville custom turns on the rule Wolff states in §1068 that the death of either prince ends the embassy, but Vattel cites it from Joinville as a medieval usage and takes nothing from Wolff.",
+   "links": [
+    [
+     "PDF p. 875",
+     "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=875"
     ]
    ]
   }

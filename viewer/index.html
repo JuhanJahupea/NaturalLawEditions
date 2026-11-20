@@ -88,6 +88,10 @@ body.resizing{user-select:none;cursor:col-resize}
 .tpt .device{font:12px/1.4 var(--ui);color:var(--mut);margin:12px 0;white-space:normal}.tpr{border:0;border-top:3px double var(--mut);width:60%;margin:8px auto}
 .tpi{margin:0}.tpi img{width:100%;height:auto;border:1px solid var(--line);display:block}.tpi figcaption{font:12px var(--ui);color:var(--mut);margin-top:4px}
 .rail a.tpl{font-style:italic;color:var(--mut)}
+.gl{border-bottom:1px dotted var(--mut);cursor:help}#page.nogl .gl{border-bottom:0;cursor:auto}#page.nogl .gls{display:none}.gls{margin:.5em 0 0;padding:.35em .6em;border-left:2px solid var(--line);font:13px/1.45 var(--ui);color:var(--ink)}.gli{margin:.15em 0}.gll{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}.gsrc{color:var(--mut)}
+.rail a.ru{font-size:13px;line-height:1.3;padding-left:12px}
+.rail a.ru .n{min-width:2.4em}
+h2.lh{font:18px var(--display);margin:26px 0 8px}
 @media (max-width:760px){.tpg{grid-template-columns:1fr}}
 .sec{margin:0 0 26px;scroll-margin-top:70px}
 .sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;font:13px var(--ui);color:var(--mut);margin-bottom:4px}
@@ -188,7 +192,7 @@ mark.tf.s3{border-bottom-color:#b0412e;border-bottom-width:3px}
 .ph{font:13px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:18px 0 6px}
 body.listing .page{max-width:min(1100px,100%)}
 .ver{font:12px/1.5 var(--ui);color:var(--mut);margin:28px 0 0;padding-top:8px;border-top:1px solid var(--line)}
-.lbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 6px}.lbar .seg{margin:0}.lch{max-width:min(520px,100%)}
+.lbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 6px}.lbar .seg{margin:0}.ltabs{flex-wrap:wrap}.lch{max-width:min(520px,100%)}
 .lsub{font:13px var(--ui);color:var(--mut);margin:0 0 10px}
 .rtw{overflow-x:auto;max-width:100%}
 .rt{width:100%;min-width:560px;border-collapse:collapse;font:13px/1.4 var(--ui)}
@@ -209,7 +213,6 @@ body.listing .page{max-width:min(1100px,100%)}
 <div class="app" id="app">
   <div class="bar">
     <a class="brand" id="brand" href="../" title="All editions">Natural Law Editions</a>
-    <select id="edSel" class="edsel" aria-label="Edition"></select>
     <div class="seg vt" role="group" aria-label="View"><button id="vText" aria-pressed="true">Text</button><button id="vList" aria-pressed="false" title="Every reuse row of this edition as a sortable list">List</button></div>
     <button class="btn only-narrow" id="railBtn" aria-controls="rail">Contents</button>
     <input type="search" id="q" placeholder="Search" aria-label="Search the text or go to a section">

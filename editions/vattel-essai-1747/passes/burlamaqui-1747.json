@@ -20,7 +20,7 @@
     [
      "t",
      3,
-     218
+     219
     ]
    ],
    "family": "Bu",
@@ -28,11 +28,11 @@
    "locus": "Part. I ch. II § 12",
    "page": "BUR47.p64",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "rejected",
    "step": "R",
-   "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire, parce qu'elles ont toutes le même objet, savoir, derégler les mœurs & la conduite des hommes.",
+   "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire, parce qu'elles ont toutes le même objet, savoir, de régler les mœurs & la conduite des hommes.",
    "source": "Cependant le langage commun & populaire confond le plus souvent ces deux termes; & c'est à quoi il faut faire attention, pour éviter toute équivoque. On donne aussi quelquefois le nom de MOEURS aux actions libres, entant que l'esprit les considére comme susceptibles de Régle. De-là vient qu'on appelle MORALE l'Art qui nous enseigne ces Règles de conduite & les moyens d'y conformer nos actions.",
    "reason": "Burlamaqui (same year, direction unclear) has the same cluster of common language confusing terms that precision must distinguish, followed by moeurs, rules of conduct and Morale, though the terms he distinguishes are voluntary and free.",
    "links": [
@@ -40,7 +40,14 @@
      "Zotero p. 64",
      "zotero://open-pdf/library/items/XKNMUHV3?page=64"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Burlamaqui says common language confuses 'volontaire' and 'libre'; Vattel that it confuses natural laws, natural right and morality, so only a generic remark and a stock notion of Morale are shared.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5001,
@@ -49,7 +56,7 @@
     [
      "t",
      3,
-     218
+     219
     ]
    ],
    "family": "Bu",
@@ -59,9 +66,9 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.35,
-   "status": "possible",
+   "status": "rejected",
    "step": "R",
-   "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire, parce qu'elles ont toutes le même objet, savoir, derégler les mœurs & la conduite des hommes.",
+   "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire, parce qu'elles ont toutes le même objet, savoir, de régler les mœurs & la conduite des hommes.",
    "source": "L'on entend par LOI NATURELLE, une Loi que Dieu impose à tous les hommes, & qu'ils peuvent découvrir & connoître par les seules lumiéres de leur Raison, en considérant avec attention leur nature & leur état. Le DROIT NATUREL est le Systême, l'assemblage, ou le Corps de ces mêmes Loix. Enfin, la JURISPRUDENCE NATURELLE sera l'art de parvenir à la connoissance des Loix de la Nature, de les développer & de les appliquer aux actions humaines.",
    "reason": "Burlamaqui likewise opens by defining three related terms in turn (Loi naturelle, Droit naturel, a third discipline), but his third term and his definitions differ from Vattel's.",
    "links": [
@@ -69,7 +76,13 @@
      "Zotero p. 172",
      "zotero://open-pdf/library/items/XKNMUHV3?page=172"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Vattel says laws of nature, natural law and morals are often confused and must be distinguished; Burlamaqui defines a different triad (with jurisprudence naturelle) with different definitions and no claim of confusion.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5002,
@@ -78,7 +91,7 @@
     [
      "t",
      3,
-     176
+     177
     ]
    ],
    "family": "Bu",
@@ -90,7 +103,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
-   "passage": "La Morale, ou l'Ethique, estune science pratique, qui nous enseigne comment nous devons diriger nos facultés pour pratiquer ce qui est bon, & pour éviter ce qui est mauvais.",
+   "passage": "La Morale, ou l'Ethique, est une science pratique, qui nous enseigne comment nous devons diriger nos facultés pour pratiquer ce qui est bon, & pour éviter ce qui est mauvais.",
    "source": "De-là vient qu'on appelle MORALE l'Art qui nous enseigne ces Règles de conduite & les moyens d'y conformer nos actions.",
    "reason": "Burlamaqui (same year) also defines Morale as what 'nous enseigne' how to bring our actions into line with the rules, close to Vattel's practical definition; both likely go back to Wolff's definition of Ethica.",
    "links": [
@@ -98,7 +111,12 @@
      "Zotero p. 64",
      "zotero://open-pdf/library/items/XKNMUHV3?page=64"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Defining morals as what teaches us to bring our conduct into line with the rules of good and evil is a stock definition.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5003,
@@ -106,8 +124,8 @@
    "at": [
     [
      "t",
-     702,
-     845
+     703,
+     846
     ]
    ],
    "family": "Bu",
@@ -127,7 +145,12 @@
      "Zotero p. 228",
      "zotero://open-pdf/library/items/XKNMUHV3?page=228"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both want natural law to cover more than Pufendorf's mutual duties, but this is a common Barbeyrac-derived criticism, and Burlamaqui's sentence speaks of all of man's states, not of duties to oneself.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5004,
@@ -156,7 +179,12 @@
      "Zotero p. 258",
      "zotero://open-pdf/library/items/XKNMUHV3?page=258"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That writers disagree on the first principle of obligation is a generic transition, worded independently. Burlamaqui's sentence is closer to Vattel's § 10 than to this passage.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5005,
@@ -175,7 +203,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Si par le fondement du droit naturel on entend la source de laquelle on peut en dériver les régles & les préceptes ; le principe dans lequel on trouve ce qui peut servir à rendre raison pourquoi ces régles & ces préceptes sont tels ; on ne sauroit chercher ce fondement ailleurs que dans l'essence & la nature de l'homme & des choses en général.",
    "source": "Ne cherchons donc pas ailleurs que dans la nature même des actions humaines, dans leurs différences essentielles & dans leurs suites, le vrai fondement des Loix Naturelles, & pourquoi Dieu défend certaines choses, tandis qu'il en commande d'autres.",
@@ -185,7 +213,13 @@
      "Zotero p. 239",
      "zotero://open-pdf/library/items/XKNMUHV3?page=239"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both say the foundation of natural law is to be sought nowhere else than in nature ('ne ... chercher ... ailleurs que dans') and that this explains why the laws are as they are.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5006,
@@ -194,7 +228,7 @@
     [
      "t",
      114,
-     463
+     464
     ]
    ],
    "family": "Bu",
@@ -206,7 +240,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "R",
-   "passage": "Car, dès qu'ils reconnoissentDieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
+   "passage": "Car, dès qu'ils reconnoissent Dieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
    "source": "Ce ne sont point des Loix arbitraires, ou telles que Dieu pût ne les point donner, ou en donner d'autres toutes différentes. La souveraine Sagesse, de même que la souveraine Puissance, ne va pas à faire le contradictoire & l'absurde.C'est toujours la nature des choses qui lui sert de régle dans ses déterminations. Dieu étoit le maître sans doute de créer ou de ne pas créer l'homme ; de le créer tel qu'il est, ou de lui donner une nature différente. Mais s'étant déterminé à créer un Etre raisonnable & sociable, il ne pouvoit lui prescrire que ce qui convient à une telle créature.",
    "reason": "Burlamaqui, in the same year, uses the same argument against an arbitrary divine will: God's wisdom can prescribe to man only what suits his nature. He also has the same turn \"d'autres toutes différentes\" (Vattel: \"d'autres toutes contraires\"). The common source is probably Pufendorf II.3.4–5 and Barbeyrac's notes to it.",
    "links": [
@@ -227,8 +261,8 @@
    "at": [
     [
      "t",
-     464,
-     601
+     465,
+     602
     ]
    ],
    "family": "Bu",
@@ -261,8 +295,8 @@
    "at": [
     [
      "t",
-     602,
-     854
+     603,
+     855
     ]
    ],
    "family": "Bu",
@@ -351,7 +385,12 @@
      "Zotero p. 231",
      "zotero://open-pdf/library/items/XKNMUHV3?page=231"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The shared phrase 'convenance ou disconvenance' of actions with man's nature is Grotius's stock formula, used by Burlamaqui for a different point (the object of obligatory natural law).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5011,
@@ -380,7 +419,12 @@
      "Zotero p. 172",
      "zotero://open-pdf/library/items/XKNMUHV3?page=172"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Laws found by reason from man's nature forming the 'corps' of natural law is a stock definition, and Vattel defines droit naturel otherwise (E.3, a science of duties), so nothing points to Burlamaqui's definition.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5012,
@@ -389,7 +433,7 @@
     [
      "t",
      4,
-     173
+     174
     ]
    ],
    "family": "Bu",
@@ -401,7 +445,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "R",
-   "passage": "Mais il ne suffit pas que ces loix existent & qu'elles soient connues ; il faut encore pour qu'elles se trouvent efficaces, que les hommes soientobligés de les observer.",
+   "passage": "Mais il ne suffit pas que ces loix existent & qu'elles soient connues ; il faut encore pour qu'elles se trouvent efficaces, que les hommes soient obligés de les observer.",
    "source": "C'EST déja beaucoup que de sentir & de connoître le bien & le mal : mais ce n'est point assez ; il faut encore joindre à ce sentiment & à cette connoissance, une obligation de faire l'un, & de s'abstenir de l'autre. C'est cette obligation qui forme le Devoir, sans quoi il n'y auroit point de Morale pratique ; tout se termineroit à la spéculation. Mais quelle est la cause & le principe de l'obligation & du Devoir ?",
    "reason": "Same transition: knowing the rule is not enough ('il ne suffit pas' / 'ce n'est point assez ; il faut encore'), there must be an obligation, which raises the question of its principle.",
    "links": [
@@ -422,8 +466,8 @@
    "at": [
     [
      "t",
-     174,
-     389
+     175,
+     390
     ]
    ],
    "family": "Bu",
@@ -435,7 +479,7 @@
    "confidence": 0.6,
    "status": "possible",
    "step": "R",
-   "passage": "Tout le monde convient qu'ils y sont obligés : mais les Auteurs diffèrent sur le principe de cette obligation : Quelquesuns la dérivent de l'autorité d'un supérieur, lequel ne peut être que Dieu, auteur de la nature",
+   "passage": "Tout le monde convient qu'ils y sont obligés : mais les Auteurs différent sur le principe de cette obligation : Quelquesuns la dérivent de l'autorité d'un supérieur, lequel ne peut être que Dieu, auteur de la nature",
    "source": "C'est aussi dequoi tous les Jurisconsultes & les Moralistes conviennent. Mais ils ne s'accordent pas également sur le prémier principe ou la cause primitive de l'obligation & de la Moralité. Plusieurs croyent qu'il n'y a aucun autre principe de moralité que la volonté de Dieu, manifestée par les Loix Naturelles.",
    "reason": "Same order of points: everyone agrees, but authors differ on the first principle of obligation, some deriving it from God's will alone; independent publication in 1747 leaves the direction open.",
    "links": [
@@ -458,8 +502,8 @@
    "at": [
     [
      "t",
-     392,
-     484
+     393,
+     485
     ]
    ],
    "family": "Bu",
@@ -493,8 +537,8 @@
    "at": [
     [
      "t",
-     606,
-     781
+     607,
+     782
     ]
    ],
    "family": "Bu",
@@ -527,8 +571,8 @@
    "at": [
     [
      "t",
-     782,
-     915
+     783,
+     916
     ]
    ],
    "family": "Bu",
@@ -548,7 +592,12 @@
      "Zotero p. 270",
      "zotero://open-pdf/library/items/XKNMUHV3?page=270"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both put confusion about obligation down to poor definitions, but Vattel's sentence is a general rule of method; the specific charge against Barbeyrac comes only at E.18 and E.27.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5017,
@@ -556,8 +605,8 @@
    "at": [
     [
      "t",
-     916,
-     1106
+     917,
+     1108
     ]
    ],
    "family": "Bu",
@@ -569,7 +618,7 @@
    "confidence": 0.5,
    "status": "possible",
    "step": "R",
-   "passage": "Nous verrons que c'est pour avoir négligé cette régle que d'habiles Auteurs se sont si fort embarrassésdans cette matiere, & ont paru tomber dans des sentimens si opposés les uns aux autres.",
+   "passage": "Nous verrons que c'est pour avoir négligé cette régle que d'habiles Auteurs se sont si fort embarrassés dans cette matiere, & ont paru tomber dans des sentimens si opposés les uns aux autres.",
    "source": "En démêlant bien ces idées, on trouvera peut être, que cela concilie des sentimens, qui ne paroissent s'éloigner l'un de l'autre que par un mal-entendu",
    "reason": "Same diagnosis: the authors' views only seem opposed because of confused ideas, and sorting the ideas out reconciles them.",
    "links": [
@@ -602,7 +651,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Pour déterminer ce que c'est que l'obligation, il faut examiner d'abord ce que l'on a communément dans l'esprit, quand on se sert de ce terme.",
    "source": "Car soit que l'on s'arrête au langage populaire, soit que l'on s'adresse aux Jurisconsultes ou aux Moralistes, l'on trouvera que les uns & les autres font consister proprement l'obligation dans une raison, qui étant bien comprise & approuvée, nous détermine absolument à agir d'une certaine manié-re préférablement à une autre.",
@@ -612,7 +661,13 @@
      "Zotero p. 100",
      "zotero://open-pdf/library/items/XKNMUHV3?page=100"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both define obligation by starting from what ordinary speakers mean and arrive at the same sequence: a moral, not physical, necessity, a bond ('lié') produced by motives or reasons that determine the will.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5019,
@@ -654,8 +709,8 @@
    "at": [
     [
      "t",
-     799,
-     978
+     800,
+     979
     ]
    ],
    "family": "Bu",
@@ -689,8 +744,8 @@
    "at": [
     [
      "t",
-     1054,
-     1181
+     1055,
+     1182
     ]
    ],
    "family": "Bu",
@@ -700,7 +755,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Comment sommes-nous donc obligés à faire une certaine action ? C'est par la liaison d'un motif puissant avec cette même action.",
    "source": "C'est-à-dire, que l'on y est déterminé par de solides raisons, & engagé par de puissans motifs, qui comme autant de liens, entrainent notre Volonté de ce côté-là.",
@@ -710,7 +765,13 @@
      "Zotero p. 100",
      "zotero://open-pdf/library/items/XKNMUHV3?page=100"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both explain obligation from common usage as moral, not physical, necessity produced by motives that bind the will ('puissans motifs ... liens' / 'liaison d'un motif puissant').",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5022,
@@ -719,7 +780,7 @@
     [
      "t",
      132,
-     207
+     208
     ]
    ],
    "family": "Bu",
@@ -727,11 +788,11 @@
    "locus": "Part. I ch. III § 3",
    "page": "BUR47.p70",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
-   "passage": "L'obligation passive est, une nécessité morale(1) d'agir ou de ne pas agir.",
+   "passage": "L'obligation passive est, une nécessité morale (1) d'agir ou de ne pas agir.",
    "source": "quelque nécessité morale d'agir ou de ne pas agir d'une certaine maniére; ou, ce qui revient au même, quelque obligation",
    "reason": "Burlamaqui also equates obligation with a 'nécessité morale d'agir ou de ne pas agir', the same phrase, probably from the shared Wolffian/Pufendorfian vocabulary rather than from each other.",
    "links": [
@@ -739,7 +800,13 @@
      "Zotero p. 70",
      "zotero://open-pdf/library/items/XKNMUHV3?page=70"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The shared phrase 'nécessité morale d'agir ou de ne pas agir' is Wolff's stock definition of passive obligation (§118), which both render; Burlamaqui's sentence, on imputation, does not share Vattel's sentence structure.",
+    "date": "2026-11-20",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 5023,
@@ -748,7 +815,7 @@
     [
      "t",
      181,
-     368
+     369
     ]
    ],
    "family": "Bu",
@@ -760,7 +827,7 @@
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
-   "passage": "Or il ne se forme point de volition dans l'ame sans motif. Il faut donc pour vous mettre dans la nécessitémorale de faire une certaine action, que l'on joigne à cette action quelque motif",
+   "passage": "Or il ne se forme point de volition dans l'ame sans motif. Il faut donc pour vous mettre dans la nécessité morale de faire une certaine action, que l'on joigne à cette action quelque motif",
    "source": "nécessité morale, qui consiste dans l'impression que font sur nous certains motifs, qui nous déterminent à agir d'une certaine façon, & ne nous permettent pas raisonnablement d'agir d'une maniére opposée.",
    "reason": "Burlamaqui likewise makes moral necessity consist in motives that determine the will, but in his own words; both plausibly reflect the Wolffian account rather than each other.",
    "links": [
@@ -768,7 +835,12 @@
      "Zotero p. 100",
      "zotero://open-pdf/library/items/XKNMUHV3?page=100"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both tie moral necessity to motives that determine the will, but this is the common Wolffian doctrine (Wolff § 118, cited by Vattel) worded differently.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5024,
@@ -797,7 +869,12 @@
      "Zotero p. 156",
      "zotero://open-pdf/library/items/XKNMUHV3?page=156"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both define morality as a relation of free actions to a rule, but Burlamaqui refers it to law and Vattel (after Wolff § 134) to rectitude; only the defining form is shared.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5025,
@@ -806,7 +883,7 @@
     [
      "t",
      178,
-     341
+     342
     ]
    ],
    "family": "Bu",
@@ -818,7 +895,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "R",
-   "passage": "ill'a fait envisager comme une dépendance où nous sommes de la volonté d'un supérieur, laquelle nous assujettit à conformer notre conduite aux loix de ce supérieur",
+   "passage": "il l'a fait envisager comme une dépendance où nous sommes de la volonté d'un supérieur, laquelle nous assujettit à conformer notre conduite aux loix de ce supérieur",
    "source": "«Ils établissent pour principe de l'obligation, «proprement ainsi nommée, la Volonté d'un Etre supé- «rieur, duquel on se reconnoît dépendant. Ils prétendent «qu'il n'y a que cette Volonté ou les ordres d'un tel «Etre, qui puissent mettre un frein à la Liberté, & «nous assujettir à régler nos actions d'une certaine ma- «niére.",
    "reason": "Burlamaqui summarizes the same Barbeyracian position with the same elements (dependence, will of a superior, 'nous assujettir à régler nos actions'); both likely draw on Barbeyrac's Réflexions § 15 rather than on each other.",
    "links": [
@@ -839,8 +916,8 @@
    "at": [
     [
      "t",
-     457,
-     560
+     458,
+     561
     ]
    ],
    "family": "Bu",
@@ -894,7 +971,12 @@
      "Zotero p. 258",
      "zotero://open-pdf/library/items/XKNMUHV3?page=258"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The 'first, primitive principle of obligation' is the standard framing of the debate. Burlamaqui's sentence opens a survey of opinions (closer to Vattel E.10), while E.19 sets Vattel's own requirement of one general motive from which all others derive.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5028,
@@ -913,7 +995,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "il est évident qu'on ne peut le chercher que dans un motif général, qui nous détermine, sans qu'il tire son efficace d'aucun autre, & auquel au contraire, tous les autres se rapportent, comme autant de branches, ou de motifs subalternes, qui tirent tous leur efficace de cette source commune.",
    "source": "Et même si l'on remonte jusqu'à la prémiere origine, on trouvera qu'elles dérivent toutes d'une source commune, ou d'un seul & même Principe, comme trois branches sortent du même tronc. Ce Principe général, c'est l'approbation de la Raison.",
@@ -923,7 +1005,13 @@
      "Zotero p. 280",
      "zotero://open-pdf/library/items/XKNMUHV3?page=280"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both reduce competing principles of morality and obligation to a single general principle tied to happiness, using the same image of branches from a 'source commune'.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5029,
@@ -942,7 +1030,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Les motifs n'agissant sur nous qu'en vertu de nos désirs, de nos inclinations",
    "source": "Or certainement cette raison, quelle qu'elle soit, ne devient un motif capable de déterminer la Volonté, qu'autant qu'elle nous présente quelque bien à acquérir, ou qu'elle tend à nous faire éviter quelque mal ; en un mot, qu'autant quelle peut contribuer à notre satisfaction, & à nous mettre dans un état heureux & tranquille.",
@@ -952,7 +1040,13 @@
      "Zotero p. 103",
      "zotero://open-pdf/library/items/XKNMUHV3?page=103"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both treatises, while grounding obligation, hold that a reason or motive moves the will only by engaging our desire for good or happiness, and both use this to reduce rival principles to interest.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5030,
@@ -960,8 +1054,8 @@
    "at": [
     [
      "t",
-     270,
-     539
+     271,
+     540
     ]
    ],
    "family": "Bu",
@@ -995,8 +1089,8 @@
    "at": [
     [
      "t",
-     485,
-     617
+     484,
+     616
     ]
    ],
    "family": "Bu",
@@ -1008,7 +1102,7 @@
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
-   "passage": "mais sur tous, & par préférence à toute autre chose, ce qui contribuë à la perfection de notre Ame, qui est notre grand & vrai bien.",
+   "passage": "mais sur tous, & par préférence à toute autre-chose, ce qui contribuë à la perfection de notre Ame, qui est notre grand & vrai bien.",
    "source": "Le desir de notre bonheur emporte prémiérement le soin de notre conservation. Il veut ensuite que toutes choses d'ailleurs égales, le soin de l'Ame aît la préférence sur celui du Corps.",
    "reason": "Both derive from the desire of happiness a 'préférence' of the soul's good over the body's; a common doctrine, weakly shared wording.",
    "links": [
@@ -1016,7 +1110,12 @@
      "Zotero p. 214",
      "zotero://open-pdf/library/items/XKNMUHV3?page=214"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Preferring the good of the soul to that of the body, derived from the desire of happiness, is common doctrine; Burlamaqui uses it to derive duties to oneself, Vattel to define utility.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5032,
@@ -1024,8 +1123,8 @@
    "at": [
     [
      "t",
-     656,
-     1101
+     655,
+     1100
     ]
    ],
    "family": "Bu",
@@ -1059,7 +1158,7 @@
    "at": [
     [
      "t",
-     1257,
+     1256,
      1321
     ]
    ],
@@ -1072,7 +1171,7 @@
    "confidence": 0.5,
    "status": "possible",
    "step": "R",
-   "passage": "Tout motif revient dans le fonds à l'utilitéréelle ou apparente.",
+   "passage": "Tout motif revient dans le fonds à l'utilité réelle ou apparente.",
    "source": "Or certainement cette raison, quelle qu'elle soit, ne devient un motif capable de déterminer la Volonté, qu'autant qu'elle nous présente quelque bien à acquérir, ou qu'elle tend à nous faire éviter quelque mal ; en un mot, qu'autant quelle peut contribuer à notre satisfaction, & à nous mettre dans un état heureux & tranquille. C'est la constitution même de l'homme & la nature de la Volonté qui le veulent ainsi. Car comme c'est le Bien, en général, qui est l'objet de la Volonté ; le seul motif capable de la mettre en mouvement, ou de la déterminer pour un parti préférablement à un autre, c'est l'esperance d'obtenir le bien.",
    "reason": "Burlamaqui argues against Clarke that even the beauty of virtue moves the will only as it presents some good to us; Vattel likewise reduces every motive, including the beauty of virtue, to utility.",
    "links": [
@@ -1094,8 +1193,8 @@
    "at": [
     [
      "t",
-     279,
-     724
+     280,
+     725
     ]
    ],
    "family": "Bu",
@@ -1115,7 +1214,12 @@
      "Zotero p. 330",
      "zotero://open-pdf/library/items/XKNMUHV3?page=330"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That natural laws suit our nature and so bring our happiness is a common eudaemonist claim; Vattel argues it from his own §§ 3 and 6 with nothing specific shared with Burlamaqui.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5035,
@@ -1144,7 +1248,12 @@
      "Zotero p. 216",
      "zotero://open-pdf/library/items/XKNMUHV3?page=216"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That society is natural and even necessary to a happy life is a natural-law commonplace; Burlamaqui's list of goods lost outside society adds nothing specific to Vattel's clause.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5036,
@@ -1153,7 +1262,7 @@
     [
      "t",
      271,
-     564
+     565
     ]
    ],
    "family": "Bu",
@@ -1165,7 +1274,7 @@
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
-   "passage": "pourvû qu'on ne la prenne pas pour le prémier principe de l'obligation, mais seulementpour le principe prochain, duquel on déduit l'obligation où sont tous les hommes, d'observer les loix qui doivent régler la société naturelle qui se trouve entr'eux, & sans lesquelles elle ne peut subsister.",
+   "passage": "pourvû qu'on ne la prenne pas pour le prémier principe de l'obligation, mais seulement pour le principe prochain, duquel on déduit l'obligation où sont tous les hommes, d'observer les loix qui doivent régler la société naturelle qui se trouve entr'eux, & sans lesquelles elle ne peut subsister.",
    "source": "Voilà donc le vrai principe des devoirs que la Loi Naturelle nous prescrit à l'égard des autres hommes. Les Moralistes lui ont donné le nom de SOCIABILITÉ",
    "reason": "Burlamaqui also limits sociability to the principle of duties toward others (cf. P2.4.19 against Pufendorf); Vattel restricts it to a proximate principle of the laws of natural society.",
    "links": [
@@ -1173,7 +1282,12 @@
      "Zotero p. 221",
      "zotero://open-pdf/library/items/XKNMUHV3?page=221"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Burlamaqui makes sociability the principle of duties toward others, a post-Barbeyrac commonplace; Vattel's own point, that it is only the proximate and not the first principle of obligation, is not in Burlamaqui.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5037,
@@ -1202,7 +1316,12 @@
      "Zotero p. 84",
      "zotero://open-pdf/library/items/XKNMUHV3?page=84"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That a rational being cannot act against or be indifferent to its own happiness is a commonplace; the two texts share the idea, but nothing more specific than 'contradiction'/'absurde'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5038,
@@ -1211,7 +1330,7 @@
     [
      "t",
      294,
-     518
+     519
     ]
    ],
    "family": "Bu",
@@ -1219,11 +1338,11 @@
    "locus": "Part. I ch. VI § 9",
    "page": "BUR47.p100",
    "inNote": false,
-   "label": "shared argument",
+   "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
-   "passage": "„selon lui le devoir ou l'obligation „par rapport à l'homme ne peut être „qu'une raison ou un motif proposé „d'une maniere convenable, & qui le„détermine nécessairement à choisir „ou à présérer une maniere d'agir à „l'autre;",
+   "passage": "„selon lui le devoir ou l'obligation „par rapport à l'homme ne peut être „qu'une raison ou un motif proposé „d'une maniere convenable, & qui le „détermine nécessairement à choisir „ou à présérer une maniere d'agir à „l'autre;",
    "source": "font consister proprement l'obligation dans une raison, qui étant bien comprise & approuvée, nous détermine absolument à agir d'une certaine manié-re préférablement à une autre.",
    "reason": "Burlamaqui defines obligation as a reason that determines us to prefer one way of acting to another, the same formula as the Gastrell definition Vattel quotes from Barbeyrac's note, most likely a common source rather than borrowing between the two.",
    "links": [
@@ -1231,7 +1350,14 @@
      "Zotero p. 100",
      "zotero://open-pdf/library/items/XKNMUHV3?page=100"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both define obligation as a reason (or motive) that determines us to act in one way in preference to another, in largely shared words. This is a shared definition close enough in wording to count as a paraphrase.",
+    "date": "2026-11-20",
+    "labelWas": "shared argument",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5039,
@@ -1239,8 +1365,8 @@
    "at": [
     [
      "t",
-     519,
-     630
+     520,
+     631
     ]
    ],
    "family": "Bu",
@@ -1250,7 +1376,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "& cette raison ou ce motif „ne peut être qu'un plus grand degré „de misère à éviter; ou de félicité à „acquérir",
    "source": "Or certainement cette raison, quelle qu'elle soit, ne devient un motif capable de déterminer la Volonté, qu'autant qu'elle nous présente quelque bien à acquérir, ou qu'elle tend à nous faire éviter quelque mal",
@@ -1260,7 +1386,13 @@
      "Zotero p. 103",
      "zotero://open-pdf/library/items/XKNMUHV3?page=103"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui I.vi.9-11 runs Gastrell's whole sequence (obligation as a reason determining one way of acting over another, which moves the will only as a good to gain or evil to avoid, rival accounts reducing to it), and the clause has the same 'cette raison ... ne ... que ... acquérir / éviter' build.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5040,
@@ -1268,8 +1400,8 @@
    "at": [
     [
      "t",
-     804,
-     926
+     802,
+     924
     ]
    ],
    "family": "Bu",
@@ -1289,7 +1421,12 @@
      "Zotero p. 105",
      "zotero://open-pdf/library/items/XKNMUHV3?page=105"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both answer Barbeyrac by asking what grounds the duty to obey a superior, but this is the stock Leibnizian objection (Burlamaqui cites the Jugement § 15) and they resolve it differently (reason's approval, utility).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5041,
@@ -1331,8 +1468,8 @@
    "at": [
     [
      "t",
-     752,
-     832
+     753,
+     833
     ]
    ],
    "family": "Bu",
@@ -1352,7 +1489,12 @@
      "Zotero p. 136",
      "zotero://open-pdf/library/items/XKNMUHV3?page=136"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The union of power, wisdom and goodness as the basis of a superior's right is common Leibniz-Barbeyrac stock, and the two texts use it for different points (the right to command, against trusting a will whose reasons we cannot see).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5043,
@@ -1360,8 +1502,8 @@
    "at": [
     [
      "t",
-     2074,
-     2253
+     2076,
+     2255
     ]
    ],
    "family": "Bu",
@@ -1381,7 +1523,12 @@
      "Zotero p. 230",
      "zotero://open-pdf/library/items/XKNMUHV3?page=230"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say God's will is known from the utility or necessity of duties, but Burlamaqui is ranking conflicting duties and Vattel contrasting natural with revealed law; no shared wording.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5044,
@@ -1389,8 +1536,8 @@
    "at": [
     [
      "t",
-     2628,
-     2747
+     2631,
+     2750
     ]
    ],
    "family": "Bu",
@@ -1423,8 +1570,8 @@
    "at": [
     [
      "t",
-     5644,
-     5826
+     5645,
+     5828
     ]
    ],
    "family": "Bu",
@@ -1432,11 +1579,11 @@
    "locus": "Part. I ch. VI § 12",
    "page": "BUR47.p104",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "close paraphrase",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
-   "passage": "La raison ne „peut pas non plus par elle - même „nous mettre dans une nécessité indispensable de suivre les idées de„convenance ou de disconvenance „qu'elle nous met devant les yeux,",
+   "passage": "La raison ne „peut pas non plus par elle - même „nous mettre dans une nécessité indispensable de suivre les idées de „convenance ou de disconvenance „qu'elle nous met devant les yeux,",
    "source": "Ils ajoûtent, que ni les rapports de proportion «& de convenance que nous reconnoissons dans les cho- «ses mêmes, ni l'approbation que la Raison leur donne, «ne nous mettent point dans une nécessité indispensa- «ble de suivre ces idées, comme des Régles de condui- «te.",
    "reason": "Burlamaqui's summary of Barbeyrac (via the Réflexions § 15) and Vattel's quotation from the Grotius note give the same step: reason does not impose an indispensable necessity to follow its ideas of fitness.",
    "links": [
@@ -1444,7 +1591,14 @@
      "Zotero p. 104",
      "zotero://open-pdf/library/items/XKNMUHV3?page=104"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both reproduce Barbeyrac's sentence that reason does not put us in 'une nécessité indispensable de suivre' the ideas of fitness, with the same structure and most of the same words.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5046,
@@ -1452,8 +1606,8 @@
    "at": [
     [
      "t",
-     6053,
-     6234
+     6056,
+     6237
     ]
    ],
    "family": "Bu",
@@ -1463,7 +1617,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "„De tout cela je „conclus que les maximes de la raison , quelque conformes qu'elles „soient à la nature des choses, à la „constitution de notre être, ne sont „nullement obligatoires",
    "source": "D'où l'on «conclut, QUE les maximes de la Raison, considérées en «elles-mêmes, & indépendamment de la Volonté d'un «Supérieur qui les autorise, n'ont rien d'obligatoire",
@@ -1473,7 +1627,13 @@
      "Zotero p. 104",
      "zotero://open-pdf/library/items/XKNMUHV3?page=104"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both report Barbeyrac's conclusion that the maxims of reason are not obligatory without a superior's will, in nearly the same words, and both go on to reject it.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5047,
@@ -1481,8 +1641,8 @@
    "at": [
     [
      "t",
-     7513,
-     7576
+     7517,
+     7580
     ]
    ],
    "family": "Bu",
@@ -1492,7 +1652,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.35,
-   "status": "possible",
+   "status": "rejected",
    "step": "R",
    "passage": "Plaisante preuve ! qui pose précisément ce qui est en question.",
    "source": "Cette instance roule sur une équivoque, ou suppose ce qui est en question.",
@@ -1502,7 +1662,13 @@
      "Zotero p. 270",
      "zotero://open-pdf/library/items/XKNMUHV3?page=270"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "wrong",
+    "reason": "The two answer different Barbeyrac arguments (Vattel the proof from believers' motives, Burlamaqui the no-self-obligation objection) and share only a stock charge of begging the question, whose real parallel is Essai § 40.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5048,
@@ -1510,8 +1676,8 @@
    "at": [
     [
      "t",
-     7663,
-     7821
+     7667,
+     7825
     ]
    ],
    "family": "Bu",
@@ -1545,8 +1711,8 @@
    "at": [
     [
      "t",
-     7824,
-     7907
+     7828,
+     7911
     ]
    ],
    "family": "Bu",
@@ -1579,8 +1745,8 @@
    "at": [
     [
      "t",
-     7910,
-     8113
+     7914,
+     8117
     ]
    ],
    "family": "Bu",
@@ -1613,8 +1779,8 @@
    "at": [
     [
      "t",
-     8608,
-     8842
+     8613,
+     8847
     ]
    ],
    "family": "Bu",
@@ -1624,7 +1790,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Ce n'est point déroger à l'autorité de Dieu que de dire , que tout ce qu'il nous prescrit dans les Loix naturelles est si beau & si utile par lui-même, que nous serions obligés de le pratiquer, quand même Dieu ne l'auroit pas ordonné.",
    "source": "L'on voit bien par la façon même dont il s'exprime, que sa pensée n'est pas d'exclurre du Systême du Droit Naturel la Volonté de Dieu. Ce seroit mal prendre sa pensée ; puis qu'il pose lui - même cette Volonté du Créateur comme une autre source du Droit. Il veut dire seulement, qu'indépendamment de l'intervention de Dieu considéré comme Législateur, les maximes du Droit Naturel ayant leurs fondemens dans la nature des choses & dans la Constitution humaine ; la Raison seule impose déja à l'homme la nécessité de suivre ces maximes",
@@ -1634,7 +1800,13 @@
      "Zotero p. 276",
      "zotero://open-pdf/library/items/XKNMUHV3?page=276"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both defend the thesis that natural laws would bind without God's command against the charge that it excludes or derogates from God's will, in the same anti-Barbeyrac defence of Grotius.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5052,
@@ -1642,8 +1814,8 @@
    "at": [
     [
      "t",
-     3917,
-     4214
+     3922,
+     4219
     ]
    ],
    "family": "Bu",
@@ -1676,8 +1848,8 @@
    "at": [
     [
      "t",
-     4262,
-     4638
+     4267,
+     4633
     ]
    ],
    "family": "Bu",
@@ -1689,7 +1861,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "R",
-   "passage": "in quo lapsa consuetudo deflexit de via, sensimque eò deducta est, ut honestatem ab utilitate secernens, & constituerit honestum esse aliquod, quod utile non esset, & utile, quod non honestum, quâ nulla pernicies major hominum vita potuit adferri ( a ). Itaque accepimus ; socratem ex[se?]crari solitum eos, qui primùm [h?]æc, naturâ cohærentia opinione [di?]straxissent ( b )",
+   "passage": "in quo lapsa consuetudo deflexit de via, sensimque eò deducta est, ut honestatem ab utilitate secernens, & constituerit honestum esse aliquod, quod utile non esset, & utile, quod non honestum, quâ nulla pernicies major hominum vita potuit adferri ( a ). Itaque accepimus, socratem exsecrari solitum eos, qui primùm hæc, naturâ cohærentia opinione distraxissent ( b )",
    "source": "»In quo lapsa consuetudo deflexit de via, sensimque eò deducta est, ut »honestatem ab utilitate secernens, & constituerit honestum esse aliquod quod »utile non esset & utile, quod non honestum : quâ nulla pernicies major homi- »num vitæ potuit adferri. De Offic. Lib. II. Cap. III. Itaque accepimus, SOCRA- »TEM exsecrari solitum eos, qui primum hæc naturâ cohærentia opinione distra- »xissent. Idem. Lib. III. Cap. III.",
    "reason": "Burlamaqui's note gives the identical pair of Cicero quotations (De Off. II.3, III.3), with the 'exsecrari', 'hæc', 'naturâ' readings that Vattel's text also shows; both point to Pufendorf DNG II.3.10 as the common source.",
    "links": [
@@ -1731,7 +1903,12 @@
      "Zotero p. 379",
      "zotero://open-pdf/library/items/XKNMUHV3?page=379"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both point to Leibniz's Jugement and Barbeyrac's reply and are cool toward Barbeyrac's defence, but the passages share only the reference to this well-known exchange, not wording or a specific argument.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5055,
@@ -1739,8 +1916,8 @@
    "at": [
     [
      "t",
-     1841,
-     1981
+     1843,
+     1983
     ]
    ],
    "family": "Bu",
@@ -1773,8 +1950,8 @@
    "at": [
     [
      "t",
-     882,
-     1023
+     883,
+     1025
     ]
    ],
    "family": "Bu",
@@ -1786,7 +1963,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "R",
-   "passage": "Socrates , dit Ciceron, avoit en exécration ceux qui les prémiersont séparé dans leurs opinions, des choses que la nature a intimément unies.",
+   "passage": "Socrates , dit Ciceron, avoit en exécration ceux qui les prémiers ont séparé dans leurs opinions, des choses que la nature a intimément unies.",
    "source": "SOCRATE détestoit «ces Sophistes, qui les prémiers ont séparé dans leur «opinion deux choses qui se trouvent réellement join- «tes dans la Nature",
    "reason": "Burlamaqui's French of the same Cicero line shares 'qui les prémiers ont séparé dans leur opinion' and the nature that joins them, perhaps from a common translation (Du Bois).",
    "links": [
@@ -1807,8 +1984,8 @@
    "at": [
     [
      "t",
-     1620,
-     1698
+     1622,
+     1700
     ]
    ],
    "family": "Bu",
@@ -1875,8 +2052,8 @@
    "at": [
     [
      "t",
-     380,
-     588
+     379,
+     587
     ]
    ],
    "family": "Bu",
@@ -1886,7 +2063,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Si la raison nous fait voir clairement qu'en suivant ces idées fondées sur la nature des choses, nous travaillons à notre plus grand bien, à notre vraie félicité, elle nous met dans la nécessité de les suivre",
    "source": "ni les rapports de proportion «& de convenance que nous reconnoissons dans les cho- «ses mêmes, ni l'approbation que la Raison leur donne, «ne nous mettent point dans une nécessité indispensa- «ble de suivre ces idées, comme des Régles de condui- «te.",
@@ -1896,7 +2073,13 @@
      "Zotero p. 104",
      "zotero://open-pdf/library/items/XKNMUHV3?page=104"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui quotes the same Barbeyrac thesis from Réflexions § 15 and, like Vattel, rejects it by making reason oblige through what leads to our felicity.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5060,
@@ -1904,8 +2087,8 @@
    "at": [
     [
      "t",
-     591,
-     822
+     592,
+     823
     ]
    ],
    "family": "Bu",
@@ -1938,8 +2121,8 @@
    "at": [
     [
      "t",
-     1364,
-     1925
+     1366,
+     1927
     ]
    ],
    "family": "Bu",
@@ -1959,7 +2142,12 @@
      "Zotero p. 136",
      "zotero://open-pdf/library/items/XKNMUHV3?page=136"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say that reasons are felt too weakly against passion and that a further motive from the superior is needed, but this is the standard case for sanctions; Burlamaqui applies it to sovereignty and punishment and lacks Vattel's point about acting on God's will without seeing the reasons.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5062,
@@ -1967,8 +2155,8 @@
    "at": [
     [
      "t",
-     2114,
-     2346
+     2116,
+     2349
     ]
    ],
    "family": "Bu",
@@ -1980,7 +2168,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
-   "passage": "C'est parce que nous sommes convaincus, que rien n'est plus important pour notre félicité, qu'uneparfaite obéissance envers un Etre tout-puissant, qui tient notre sort entre ses mains, & dont les ordres sont toujours sages & justes.",
+   "passage": "C'est parce que nous sommes convaincus, que rien n'est plus important pour notre félicité, qu'une parfaite obéissance envers un Etre tout-puissant, qui tient notre sort entre ses mains, & dont les ordres sont toujours sages & justes.",
    "source": "Car quoi de plus capable de déterminer finalement un Etre raisonnable, que l'assurance qu'il a de se procurer l'approbation & la bienveillance de son Supérieur, en agissant conformément à sa Volonté & à ses ordres ; & d'éviter son indignation, qui ne manqueroit pas de se faire sentir à une Créature rebelle ?",
    "reason": "Burlamaqui grounds the force of the Creator's will in the assurance of his favour or anger, as Vattel grounds it in obedience being most important to our happiness.",
    "links": [
@@ -1988,7 +2176,12 @@
      "Zotero p. 266",
      "zotero://open-pdf/library/items/XKNMUHV3?page=266"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both explain the force of God's will as a motive through our interest in the superior's favour, a common eudaemonist point with no shared wording beyond 'déterminer'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5063,
@@ -1996,8 +2189,8 @@
    "at": [
     [
      "t",
-     1770,
-     1942
+     1772,
+     1944
     ]
    ],
    "family": "Bu",
@@ -2007,7 +2200,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Je conviens que cette autre personne sera en droit de le contraindre comme on contraint un fou en le garrotant : mais elle ne pourra jamais l'obliger à agir volontairement.",
    "source": "Sans cela, on pourroit bien, par une puissance supérieure, la forcer à agir d'une certaine maniére ; mais on ne sauroit proprement l'y obliger.",
@@ -2017,7 +2210,13 @@
      "Zotero p. 138",
      "zotero://open-pdf/library/items/XKNMUHV3?page=138"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both argue that a being indifferent to its own happiness or misery could be forced by a superior power but never properly obliged, the same specific argument.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 5064,
@@ -2025,8 +2224,8 @@
    "at": [
     [
      "t",
-     3442,
-     3579
+     3444,
+     3581
     ]
    ],
    "family": "Bu",
@@ -2060,7 +2259,7 @@
     [
      "t",
      87,
-     337
+     338
     ]
    ],
    "family": "Bu",
@@ -2072,7 +2271,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "R",
-   "passage": "notre raison considérée hors de toute dépendance „du Créateur de qui nous la tenons,„n'est au fond autre chose, que nous-mêmes. Or personne ne peut s'imposer à soi même une nécessité indispensable d'agir ou de ne point „agir de telle ou telle maniere",
+   "passage": "notre raison considérée hors de toute dépendance „du Créateur de qui nous la tenons, „n'est au fond autre chose, que nous-mêmes. Or personne ne peut s'imposer à soi même une nécessité indispensable d'agir ou de ne point „agir de telle ou telle maniere",
    "source": "La droite Raison n'est au fond qu'un «attribut de la personne obligée : elle ne sauroit «donc être le principe de l'obligation ; personne «ne pouvant s'imposer à soi-même la nécessité in- «dispensable d'agir ou de ne point agir de telle ou «telle maniére.",
    "reason": "Burlamaqui reproduces the same Barbeyrac objection (reason is ourselves; no one can impose an indispensable necessity on himself) in nearly the same words, so the two share a common source.",
    "links": [
@@ -2093,8 +2292,8 @@
    "at": [
     [
      "t",
-     347,
-     536
+     348,
+     537
     ]
    ],
    "family": "Bu",
@@ -2127,8 +2326,8 @@
    "at": [
     [
      "t",
-     903,
-     1074
+     904,
+     1076
     ]
    ],
    "family": "Bu",
@@ -2140,7 +2339,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "R",
-   "passage": "Car afin que la nécessité ait lieu veritablement, il faut sans „contredit qu'elle ne puisse point„cesser au gré de celui qui y est soumis, autrement elle se réduit à rien.",
+   "passage": "Car afin que la nécessité ait lieu veritablement, il faut sans „contredit qu'elle ne puisse point „cesser au gré de celui qui y est soumis, autrement elle se réduit à rien.",
    "source": "Car afin que la nécessité aît lieu, il «faut qu'elle ne puisse pas cesser au gré de celui qui «y est soumis ; autrement elle seroit sans effet.",
    "reason": "Burlamaqui's version of the same Barbeyrac sentence, shared through the common source.",
    "links": [

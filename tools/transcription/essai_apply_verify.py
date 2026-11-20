@@ -1,6 +1,6 @@
 # essai_apply_verify.py <dir> <date> [--write]: the second reading of the Essai's match rows (VERIFY_PROMPT_ESSAI.md) into the
-# pass files: audit {verdict, reason, date, labelWas, statusWas}; weak rows become possible, wrong rows rejected; a label the
-# reader would change is changed.
+# pass files: audit {verdict, reason, date, labelWas, statusWas}; right rows are (or become) match, weak rows possible, wrong rows
+# rejected; a label the reader would change is changed.
 import os, sys, json, glob, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import ROOT
@@ -16,13 +16,13 @@ for k, v in sorted(V.items()):
     x = items[k]; p = '%s/editions/%s/passes/%s.json' % (R, ED, x['table'])
     if p not in passes: passes[p] = json.load(open(p))
     r = next(r for r in passes[p]['rows'] if r['id'] == x['id'])
-    assert r['status'] == 'match'
+    was = r['status']; assert was in ('match', 'possible') and not r.get('audit')
     a = {'verdict': v['verdict'], 'reason': v['reason'], 'date': date}
     if not v.get('label_ok', True) and v.get('better_label') and v['better_label'].strip().lower() != r['label']:
         bl = v['better_label'].strip().lower(); assert bl in LABELS, bl
         a['labelWas'] = r['label']; r['label'] = bl; labs[(a['labelWas'], bl)] += 1
-    if v['verdict'] == 'weak': r['status'] = 'possible'; a['statusWas'] = 'match'
-    if v['verdict'] == 'wrong': r['status'] = 'rejected'; a['statusWas'] = 'match'
+    new = {'right': 'match', 'weak': 'possible', 'wrong': 'rejected'}[v['verdict']]
+    if new != was: r['status'] = new; a['statusWas'] = was
     r['audit'] = a; st[v['verdict']] += 1; bytab[x['table']][v['verdict']] += 1
 print(len(V), 'of', len(items), dict(st)); [print(' ', t, dict(c)) for t, c in bytab.items()]
 print('labels', sum(labs.values()), labs.most_common())
