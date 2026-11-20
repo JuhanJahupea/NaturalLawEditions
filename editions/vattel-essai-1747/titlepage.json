@@ -1,0 +1,71 @@
+{
+ "format": "nle-titlepage/1",
+ "edition": "vattel-essai-1747",
+ "description": "Diplomatic transcription of the title page of Le loisir philosophique, line by line, with the scan. Small capitals as capitals. Line styles: xl large capitals, caps spaced capitals, icaps italic spaced capitals, it italic, device a description of the printer's device, rule an ornamental rule. The page is printed in red and black. Read from the scan; checked against it by eye.",
+ "pages": [
+  {
+   "vol": "1",
+   "before": "E.0",
+   "scan": 7,
+   "image": "images/title.jpg",
+   "source": [
+    "Google Books scan of the BCU Lausanne copy, PDF p. 7",
+    "https://books.google.com/books?id=130TAAAAQAAJ"
+   ],
+   "lines": [
+    [
+     "LE",
+     "caps"
+    ],
+    [
+     "LOISIR PHILOSOPHIQUE,",
+     "xl"
+    ],
+    [
+     "OU",
+     "caps"
+    ],
+    [
+     "PIECES DIVERSES",
+     "xl"
+    ],
+    [
+     "DE PHILOSOPHIE, DE MORALE",
+     "icaps"
+    ],
+    [
+     "ET D'AMUSEMENT.",
+     "icaps"
+    ],
+    [
+     "PAR",
+     "caps"
+    ],
+    [
+     "Mr. DE VATTEL.",
+     "xl"
+    ],
+    [
+     "A crowned shield between two laurel branches.",
+     "device"
+    ],
+    [
+     "",
+     "rule"
+    ],
+    [
+     "DRESDE 1747.",
+     "caps"
+    ],
+    [
+     "chez GEORGE CONRAD WALTHER,",
+     "it"
+    ],
+    [
+     "LIBRAIRE DU ROI.",
+     "caps"
+    ]
+   ]
+  }
+ ]
+}

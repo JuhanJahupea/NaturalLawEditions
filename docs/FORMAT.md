@@ -43,13 +43,13 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
 {
   "format": "nle-catalogue/1",
   "title": "...",
-  "editions": [{"id", "path", "author", "authorShort", "title", "short", "imprint", "date", "lang", "status"}],
+  "editions": [{"id", "path", "author", "authorShort", "title", "short", "imprint", "date", "lang", "status", "menu"}],
   "texts":    [{"id", "sigla", "author", "title", "imprint", "date", "lang", "layer"}],
   "reuse":    [{"path", "from", "to", "rows", "toLayer", "repeats"}]
 }
 ```
 
-`texts.sigla` are the prefixes of the page ids that name the text in the rows (two projects may use two). `texts.layer` says what text the comparison read (vision transcription, OCR and whose). Where `to` is an edition, `reuse.toLayer` says it, since the comparison read the OCR, not the edition's transcription.
+`editions.menu` is the edition's label in the viewer's edition menu (default: `authorShort` and `date`). `texts.sigla` are the prefixes of the page ids that name the text in the rows (two projects may use two). `texts.layer` says what text the comparison read (vision transcription, OCR and whose). Where `to` is an edition, `reuse.toLayer` says it, since the comparison read the OCR, not the edition's transcription.
 
 ## editions/&lt;id&gt;/edition.json
 

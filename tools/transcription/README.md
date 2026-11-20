@@ -90,4 +90,12 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `recall_cand.py <out> [n]`: a random sample of Vattel's sections with their rows and the source pages cited nearby. Agent prompt `RECALL_PROMPT.md` (Claude Opus, 3 sections per agent). `rec_stats.py <dir>`: the share of found reuse that rows cover.
 - `add_merge.py <work> <first id> <date> <out> A:<dir> C:<dir>`: the rows the additions and recall readers wrote become `editions/vattel-1773/passes/additions.json`, each placed on its unit and its source page, duplicates left out.
 
+## 10. Vattel, Essai sur le fondement du droit naturel (1747)
+
+- Transcription: the Loisir philosophique PDF rendered by `render2.py`; Claude Sonnet, 17 pages per agent, prompt `TRANSCRIBE_PROMPT_LOISIR.md`. Wolff's *Philosophia practica universalis* I from MDZ: `mdz_img.py` (page images), `mdz_ocr.py` (MDZ OCR, used to map the chapters), `mdz_crop.py` (full-resolution crops for the readers); Claude Sonnet, about 24 pages per agent, prompt `TRANSCRIBE_PROMPT_PPU.md`.
+- `essai_data.py <LOI47.json> <data.json>`: the working edition (sections by printed paragraph number, page breaks, footnotes on the section that calls them). `tools/convert_vattel_essai_1747.py <data.json>` converts it.
+- English: `en_extract_essai.py <pdf> <out>` (Liberty Fund 2008, pp. 747–772), `plain_ed.js <edition> <out>` (each unit's plain text as the viewer builds it), `en_align_essai.py` (sentence alignment over the whole essay). Translation check: `en_flags.py` with `TRANSLATE_CHECK_PROMPT_ESSAI.md` (Claude Opus, 10 sections per agent).
+- Reuse: `src_pages.py` (reading pages of Wolff, with the offset of each §), `essai_cand.py <work> <out>` (each section with the 8 nearest pages of each French source), readers with `ESSAI_REUSE_PROMPT.md` (Claude Opus, 4 sections per agent; they search Wolff's Latin themselves with the index of his marginal summaries), `essai_merge.py <work> <dir> <date> --write` (pass files and `attributions.json`).
+- Second reading: `essai_verify.py <out>` (every match row, batches of 25), readers with `VERIFY_PROMPT_ESSAI.md` (Claude Opus), `essai_apply_verify.py <dir> <date> --write`.
+
 The converters then rebuild the editions from their working `data.json` and the pass files (`tools/convert_*.py`, `tools/nle.py`); `tools/check_all.sh` checks both.

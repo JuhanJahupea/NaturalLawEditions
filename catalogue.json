@@ -13,7 +13,8 @@
       "imprint": "Neuchâtel: Société typographique, 1773",
       "date": "1773",
       "lang": "fr",
-      "status": "working edition"
+      "status": "working edition",
+      "menu": "Vattel, Droit des gens 1773"
     },
     {
       "id": "burlamaqui-1747",
@@ -26,6 +27,19 @@
       "date": "1747",
       "lang": "fr",
       "status": "working edition"
+    },
+    {
+      "id": "vattel-essai-1747",
+      "path": "editions/vattel-essai-1747/",
+      "author": "Emer de Vattel",
+      "authorShort": "Vattel",
+      "title": "Essai sur le fondement du droit naturel, et sur le premier principe de l'obligation où se trouvent tous les hommes, d'en observer les loix",
+      "short": "Essai sur le fondement du droit naturel · 1747",
+      "imprint": "In Le loisir philosophique, ou pièces diverses de philosophie, de morale et d'amusement. Dresde: George Conrad Walther, 1747, pp. 3–70",
+      "date": "1747",
+      "lang": "fr",
+      "status": "working edition",
+      "menu": "Vattel, Essai 1747"
     }
   ],
   "texts": [
@@ -88,7 +102,7 @@
       "imprint": "Amsterdam, 1724. 2 vols",
       "date": "1724",
       "lang": "fr",
-      "layer": "Vision transcription of the archive.org scans (texts/grotius-barbeyrac-1724/). Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+      "layer": "Vision transcription of the archive.org scans (texts/grotius-barbeyrac-1724/)."
     },
     {
       "id": "pufendorf-barbeyrac-1734",
@@ -100,7 +114,7 @@
       "imprint": "Amsterdam, 1734. 2 vols",
       "date": "1734",
       "lang": "fr",
-      "layer": "Vision transcription of the archive.org scans (texts/pufendorf-barbeyrac-1734/). Stands in for Basle 1732. Barbeyrac's notes are credited to Barbeyrac (family Bb)."
+      "layer": "Vision transcription of the archive.org scans (texts/pufendorf-barbeyrac-1734/)."
     },
     {
       "id": "montesquieu-esprit-des-loix-1749",
@@ -220,7 +234,7 @@
       "imprint": "Amsterdam and Leipzig: Arkstée et Merkus, 1756. 2 vols",
       "date": "1756",
       "lang": "fr",
-      "layer": "Vision transcription of the archive.org scans (texts/pufendorf-devoirs-barbeyrac-1756/). Barbeyrac's notes are credited to Barbeyrac (family Bb). T. II holds Leibniz's Jugement d'un anonyme with Barbeyrac's Réflexions (family Lz for Leibniz)."
+      "layer": "Vision transcription of the archive.org scans (texts/pufendorf-devoirs-barbeyrac-1756/)."
     },
     {
       "id": "locke-coste-1729",
@@ -413,6 +427,18 @@
       "date": "1783",
       "lang": "fr",
       "layer": "MDZ OCR (bsb10040023, hOCR, one unit per scan). The lecture course; printed 35 years after the 1747 text from student copies."
+    },
+    {
+      "id": "wolff-philosophia-practica-1738",
+      "sigla": [
+        "PPU1"
+      ],
+      "author": "Christian Wolff",
+      "title": "Philosophia practica universalis, methodo scientifica pertractata, pars prior",
+      "imprint": "Frankfurt and Leipzig, 1738",
+      "date": "1738",
+      "lang": "la",
+      "layer": "Vision transcription of the MDZ scans of the Halle 1744 issue (bsb10008634), which keeps the setting of 1738 (texts/wolff-philosophia-practica-1738/)."
     }
   ],
   "reuse": [
@@ -633,6 +659,37 @@
       "from": "burlamaqui-1747",
       "to": "burlamaqui-droit-politique-1751",
       "rows": 84
+    },
+    {
+      "path": "reuse/vattel-essai-1747__wolff-philosophia-practica-1738.json",
+      "from": "vattel-essai-1747",
+      "to": "wolff-philosophia-practica-1738",
+      "rows": 88
+    },
+    {
+      "path": "reuse/vattel-essai-1747__pufendorf-barbeyrac-1734.json",
+      "from": "vattel-essai-1747",
+      "to": "pufendorf-barbeyrac-1734",
+      "rows": 54
+    },
+    {
+      "path": "reuse/vattel-essai-1747__pufendorf-devoirs-barbeyrac-1756.json",
+      "from": "vattel-essai-1747",
+      "to": "pufendorf-devoirs-barbeyrac-1756",
+      "rows": 83
+    },
+    {
+      "path": "reuse/vattel-essai-1747__grotius-barbeyrac-1724.json",
+      "from": "vattel-essai-1747",
+      "to": "grotius-barbeyrac-1724",
+      "rows": 40
+    },
+    {
+      "path": "reuse/vattel-essai-1747__burlamaqui-1747.json",
+      "from": "vattel-essai-1747",
+      "to": "burlamaqui-1747",
+      "rows": 68,
+      "toLayer": "The burlamaqui-1747 edition's transcription (editions/burlamaqui-1747/text.json)."
     }
   ]
 }

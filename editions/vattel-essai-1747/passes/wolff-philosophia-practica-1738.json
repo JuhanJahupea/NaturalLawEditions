@@ -1,0 +1,2932 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-essai-1747",
+ "text": "wolff-philosophia-practica-1738",
+ "date": "2026-11-20",
+ "textLayer": "Vision transcription of the MDZ scans of the Halle 1744 issue (bsb10008634), which keeps the setting of 1738 (texts/wolff-philosophia-practica-1738/).",
+ "table": {
+  "pass": "editions/vattel-essai-1747/passes/wolff-philosophia-practica-1738.json",
+  "steps": {
+   "R": "Reading pass: Claude Opus read each section of the Essai with the source and wrote the rows"
+  },
+  "description": "Reuse of the source in the edition, found by Claude Opus reading the whole edition with the source (candidate pages by vocabulary for the French sources; Wolff searched by the reader). status match: confidence >= 0.5; possible: 0.3-0.5. Source passages are quoted from the transcription (long s as s, line-end hyphens joined).",
+  "sourceLabel": "source (transcription)"
+ },
+ "rows": [
+  {
+   "id": 1000,
+   "unit": "E.1",
+   "at": [
+    [
+     "t",
+     3,
+     123
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 136",
+   "page": "PPU1.pdf142",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire",
+   "source": "Juris enim vocabulum vulgo etiam accipitur pro lege, prouti modo annotavimus (not. §. 135.)",
+   "french": "Car le mot de droit se prend aussi communément pour la loi, comme nous venons de le remarquer (note du § 135).",
+   "reason": "Wolff notes that in common usage (vulgo) 'jus' is taken for 'lex', the confusion of natural law with natural right that Vattel ascribes to ordinary language.",
+   "links": [
+    [
+     "MDZ scan 142",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
+    ]
+   ]
+  },
+  {
+   "id": 1001,
+   "unit": "E.1",
+   "at": [
+    [
+     "t",
+     219,
+     367
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 135",
+   "page": "PPU1.pdf142",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "possible",
+   "step": "R",
+   "passage": "Mais quand on veut traiter clairement & solidement une matiere, il est nécessaire de distinguer avec soin les choses qui sont réellement distinctes.",
+   "source": "Jus naturale hic Grotio idem est, quod lex naturalis : cum tamen juris vocabulum frequentius in alio significatu accipiatur, nec aliud in eodem ipsi substitui possit, consultius diximus ambiguum significatum evitari, praesertim cum nulla necessitate ad hoc faciendum adducamur.",
+   "french": "Le droit naturel est ici pour Grotius la même chose que la loi naturelle ; mais comme le mot de droit se prend plus souvent dans un autre sens, et qu'on ne peut lui en substituer aucun autre dans celui-ci, nous avons jugé plus sage d'éviter ce sens ambigu, d'autant que rien ne nous oblige à le faire.",
+   "reason": "Wolff refuses Grotius' identification of jus naturale with lex naturalis and keeps the two terms apart to avoid ambiguity, the same call for distinguishing the terms with which Vattel opens.",
+   "links": [
+    [
+     "MDZ scan 142",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
+    ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "A generic call to distinguish terms; Wolff's note separates jus and lex against Grotius, while Vattel distinguishes natural laws, natural right and morals.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1002,
+   "unit": "E.2",
+   "at": [
+    [
+     "t",
+     3,
+     97
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 131",
+   "page": "PPU1.pdf139",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.95,
+   "status": "match",
+   "step": "R",
+   "passage": "Une Loi est en général une regle, selon laquelle nous sommes obligés de déterminer nos actions",
+   "source": "Lex dicitur regula, juxta quam actiones nostras determinare obligamur.",
+   "french": "On appelle loi une règle selon laquelle nous sommes obligés de déterminer nos actions.",
+   "reason": "Word-for-word translation of Wolff's definition of law in § 131 (regula / regle, juxta quam / selon laquelle, determinare obligamur / obligés de déterminer); 'en général' renders Wolff's 'legem quoque in genere definimus' at the end of the same paragraph.",
+   "links": [
+    [
+     "MDZ scan 139",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=139"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact French rendering of Wolff's § 131 definition of law (regula, juxta quam actiones nostras determinare obligamur).",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1003,
+   "unit": "E.2",
+   "at": [
+    [
+     "t",
+     102,
+     303
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 135",
+   "page": "PPU1.pdf141",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.9,
+   "status": "match",
+   "step": "R",
+   "passage": "les Loix Naturelles en particulier, sont celles que nous tenons de la Nature, ou dont la raison se trouve dans l'essence & dans la nature de l'homme, & dans l'essence & la nature des choses en général.",
+   "source": "Lex naturalis est, quae rationem sufficientem in ipsa hominis rerumque essentia atque natura agnoscit. Dicitur etiam Lex naturae.",
+   "french": "La loi naturelle est celle qui a sa raison suffisante dans l'essence et la nature mêmes de l'homme et des choses. On l'appelle aussi loi de la nature.",
+   "reason": "Translates Wolff's definition of natural law in § 135: its reason lies in the essence and nature of man and of things ('hominis rerumque' split into 'de l'homme' and 'des choses en général').",
+   "links": [
+    [
+     "MDZ scan 141",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=141"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Renders Wolff's § 135 definition of natural law as having its reason in the essence and nature of man and things.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1004,
+   "unit": "E.2",
+   "at": [
+    [
+     "t",
+     102,
+     178
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 136",
+   "page": "PPU1.pdf142",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "les Loix Naturelles en particulier, sont celles que nous tenons de la Nature",
+   "source": "posita hominis rerumque natura atque essentia ponitur lex naturae, consequenter ipsa essentia & natura hominis rerumque lex naturae constituta.",
+   "french": "Dès que la nature et l'essence de l'homme et des choses sont posées, la loi de la nature est posée ; par conséquent la loi de la nature est établie par l'essence et la nature mêmes de l'homme et des choses.",
+   "reason": "Vattel's gloss that natural laws are those 'we hold from Nature' matches Wolff's § 136 corollary that the law of nature is constituted by the essence and nature of man and things.",
+   "links": [
+    [
+     "MDZ scan 142",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
+    ]
+   ]
+  },
+  {
+   "id": 1005,
+   "unit": "E.3",
+   "at": [
+    [
+     "t",
+     107,
+     186
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 6",
+   "page": "PPU1.pdf28",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "possible",
+   "step": "R",
+   "passage": "une science qui nous apprend ce qui est naturellement bon, ou mauvais à l'homme",
+   "source": "Quamobrem cum Jus naturae actiones bonas atque malas a se invicem separet (§. 68. Disc. praelim.), adeoque actionum liberarum discrimen exponat",
+   "french": "Puis donc que le droit de la nature sépare les unes des autres les actions bonnes et mauvaises (§ 68 du Discours préliminaire), et expose ainsi la différence des actions libres",
+   "reason": "Wolff's description of the Jus naturae as the discipline that sorts good from bad actions (after Disc. praelim. § 68) is the second of Vattel's two definitions of Droit Naturel.",
+   "links": [
+    [
+     "MDZ scan 28",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=28"
+    ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Defining natural law as the science of what is naturally good or bad is a stock definition, and Wolff § 6 only mentions in passing that the Jus naturae separates good from bad actions.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1006,
+   "unit": "E.4",
+   "at": [
+    [
+     "t",
+     3,
+     176
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 2",
+   "page": "PPU1.pdf25",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "La Morale, ou l'Ethique, estune science pratique, qui nous enseigne comment nous devons diriger nos facultés pour pratiquer ce qui est bon, & pour éviter ce qui est mauvais.",
+   "source": "Scientia practica est scientia locomotivam facultatem vel etiam cognoscitivam determinandi ad actus externos",
+   "french": "La science pratique est la science de déterminer la faculté locomotrice, ou aussi la faculté de connaître, à des actes externes",
+   "reason": "Vattel's 'science pratique' that teaches how to direct our faculties follows Wolff's § 2 definition of scientia practica as the science of directing our faculties to act (continued on the next page: 'vel internos voluntati & noluntati conformiter exequendos vel omittendos').",
+   "links": [
+    [
+     "MDZ scan 25",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=25"
+    ]
+   ]
+  },
+  {
+   "id": 1007,
+   "unit": "E.4",
+   "at": [
+    [
+     "t",
+     177,
+     321
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 3",
+   "page": "PPU1.pdf26",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "On employe souvent le terme de Morale, pour désigner la science des mœurs en général ; & dans ce sens, il comprend le Droit Naturel & l'Ethique.",
+   "source": "Philosophia practica varias complectitur disciplinas, Jus Naturae & Gentium, Ethicam sive Philosophiam moralem, Oeconomicam atque Politicam sive Philosophiam Civilem (§. 64. & seqq. Disc. praelim.).",
+   "french": "La philosophie pratique comprend diverses disciplines : le droit de la nature et des gens, l'éthique ou philosophie morale, l'économique, et la politique ou philosophie civile (§ 64 et suiv. du Discours préliminaire).",
+   "reason": "Wolff's division of practical philosophy into Jus Naturae and 'Ethica sive Philosophia moralis' gives Vattel his pairing 'la Morale, ou l'Ethique' and the wide sense in which one science covers both Droit Naturel and Ethique.",
+   "links": [
+    [
+     "MDZ scan 26",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=26"
+    ]
+   ]
+  },
+  {
+   "id": 1008,
+   "unit": "E.6",
+   "at": [
+    [
+     "n0",
+     0,
+     47
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 137",
+   "page": "PPU1.pdf142",
+   "inNote": false,
+   "label": "citation",
+   "confidence": 1.0,
+   "status": "match",
+   "step": "R",
+   "passage": "Voyez Wolf. Phil. Pract. Univ. Part. 1. §. 137.",
+   "source": "§. 137. Quoniam lex naturae rationem sufficientem in ipsa hominis rerumque essentia atque natura agnoscit (§. 135.), per",
+   "french": "§ 137. Puisque la loi de nature reconnaît sa raison suffisante dans l'essence et la nature mêmes de l'homme et des choses (§ 135), par",
+   "reason": "Note (a) cites Wolff, PPU pars I § 137, which begins on this page.",
+   "links": [
+    [
+     "MDZ scan 142",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Note (a) explicitly cites Wolff, PPU pars I § 137.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1009,
+   "unit": "E.6",
+   "at": [
+    [
+     "t",
+     3,
+     348
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 137",
+   "page": "PPU1.pdf143",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.7,
+   "status": "match",
+   "step": "R",
+   "passage": "Si par le fondement du droit naturel on entend la source de laquelle on peut en dériver les régles & les préceptes ; le principe dans lequel on trouve ce qui peut servir à rendre raison pourquoi ces régles & ces préceptes sont tels ; on ne sauroit chercher ce fondement ailleurs que dans l'essence & la nature de l'homme & des choses en général.",
+   "source": "Ecce tibi fontem , unde derivatur lex naturae : ad quem recurrendum, si certam ejus cognitionem haurire volueris.",
+   "french": "Voilà la source d'où dérive la loi de nature : c'est à elle qu'il faut recourir si l'on veut en puiser une connaissance certaine.",
+   "reason": "\"La source de laquelle on peut en dériver les régles\" renders Wolff's \"fontem, unde derivatur lex naturae\" at the end of § 137, the paragraph Vattel cites in note (a) of this section.",
+   "links": [
+    [
+     "MDZ scan 143",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=143"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's note cites Wolff § 137, whose 'fontem, unde derivatur lex naturae' and reason in the essence of man and things he recasts, but in a different sentence structure, so the paraphrase is loose rather than close.",
+    "date": "2026-11-20",
+    "labelWas": "close paraphrase"
+   }
+  },
+  {
+   "id": 1010,
+   "unit": "E.6",
+   "at": [
+    [
+     "t",
+     3,
+     348
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 135",
+   "page": "PPU1.pdf141",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "Si par le fondement du droit naturel on entend la source de laquelle on peut en dériver les régles & les préceptes ; le principe dans lequel on trouve ce qui peut servir à rendre raison pourquoi ces régles & ces préceptes sont tels ; on ne sauroit chercher ce fondement ailleurs que dans l'essence & la nature de l'homme & des choses en général.",
+   "source": "Lex naturalis est, quae rationem sufficientem in ipsa hominis rerumque essentia atque natura agnoscit.",
+   "french": "La loi naturelle est celle qui a sa raison suffisante dans l'essence et la nature mêmes de l'homme et des choses.",
+   "reason": "Vattel's \"principle that gives the reason why these rules are what they are\", found in the essence and nature of man and of things, renders Wolff's definition of natural law by its sufficient reason in the essence and nature of man and things (§ 135).",
+   "links": [
+    [
+     "MDZ scan 141",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=141"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's foundation as the principle giving the reason of the rules, found in the essence and nature of man and things, recasts Wolff's § 135 definition (ratio sufficiens in hominis rerumque essentia atque natura).",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1011,
+   "unit": "E.6",
+   "at": [
+    [
+     "t",
+     470,
+     621
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 124",
+   "page": "PPU1.pdf133",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "R",
+   "passage": "comment déterminerons-nous ce qui lui est naturellement bon, ou mauvais, si ce n'est par son essence & sa nature, & parl'essence & la nature des choses",
+   "source": "Patet adeo fontem bonitatis ac malitiae intrinsecae esse ipsam hominis rerumque essentiam atque naturam, qua posita, ponitur etiam bonitas & malitia actionum intrinseca.",
+   "french": "Il est donc évident que la source de la bonté et de la malice intrinsèques est l'essence et la nature mêmes de l'homme et des choses ; celles-ci posées, la bonté et la malice intrinsèques des actions sont posées aussi.",
+   "reason": "That what is naturally good or bad for man is determined by his essence and nature and by that of things is Wolff's conclusion in § 124: the source of intrinsic goodness and badness is the essence and nature of man and things.",
+   "links": [
+    [
+     "MDZ scan 133",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=133"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "That natural good and bad are determined by the essence and nature of man and of things restates Wolff's § 124 conclusion on the source of intrinsic goodness and badness.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1012,
+   "unit": "E.6",
+   "at": [
+    [
+     "t",
+     782,
+     1130
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 137",
+   "page": "PPU1.pdf143",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.9,
+   "status": "match",
+   "step": "R",
+   "passage": "Que quelqu'un vous ait donné une juste idée des loix de la nature : examinez ensuite ce qui se trouve dans l'homme & dans les autres choses, en vertu de leur essence & de leur Nature, & vous verrez que vous comprendrez clairement par là, pourquoi nos actions libres doivent être réglées & déterminées de la maniere que la loi naturelle le prescrit.",
+   "source": "per ea, quae ad essentiam atque naturam hominis rerumque pertinent , seu quae homini rebusque per essentiam atque naturam insunt, intelligitur, cur actiones liberae hoc modo sint determinandae, quemadmodum vult lex naturae.",
+   "french": "par ce qui appartient à l'essence et à la nature de l'homme et des choses, c'est-à-dire par ce qui se trouve dans l'homme et dans les choses en vertu de leur essence et de leur nature, on comprend pourquoi les actions libres doivent être déterminées de cette manière, comme le veut la loi de nature.",
+   "reason": "\"Ce qui se trouve dans l'homme & dans les autres choses, en vertu de leur essence & de leur Nature ... pourquoi nos actions libres doivent être réglées & déterminées de la maniere que la loi naturelle le prescrit\" translates § 137 almost word for word, and the note cites § 137.",
+   "links": [
+    [
+     "MDZ scan 143",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=143"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates the core of § 137 almost word for word, and note (a) cites § 137.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1013,
+   "unit": "E.7",
+   "at": [
+    [
+     "t",
+     3,
+     205
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 280",
+   "page": "PPU1.pdf243",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "possible",
+   "step": "R",
+   "passage": "Tous les Auteurs des différens systêmes, sont obligés d'accorder ce que nous venons d'établir, quel que soit d'ailleurs leur sentiment sur lePrincipe de l'obligation, dont nous parlerons tout-à-l'heure.",
+   "source": "Nostrum igitur fuit hoc ostendere, ut diversas scriptorum de principio juris naturalis sententias inter se conciliemus, & quod ad nostrum reducantur patefaciamus.",
+   "french": "Il nous revenait donc de le montrer, afin de concilier entre elles les diverses opinions des écrivains sur le principe du droit naturel et de faire voir qu'elles se ramènent à la nôtre.",
+   "reason": "Wolff, like Vattel here, sets out to show that the different systems on the principle of natural law come back to his own, which is grounded in the essence and nature of man.",
+   "links": [
+    [
+     "MDZ scan 243",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=243"
+    ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff's reduction of the various principles to his own is only a general parallel; E.7's specific claim (all must grant the foundation in nature, whatever their view of obligation; the utility-inventors' case) is not in § 280.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1014,
+   "unit": "E.7",
+   "at": [
+    [
+     "t",
+     206,
+     430
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 266",
+   "page": "PPU1.pdf234",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "R",
+   "passage": "Ceux qui s'imaginent, que le Droit naturel a été inventé pour l'utilité de la société humaine, doivent convenir, que la source d'où on l'a puisé, ne peut être que la nature & l'essence des choses & de l'homme en particulier.",
+   "source": "Jus non solummodo ex utilitate constitutum est ab hominibus. Etenim lex naturae ipsa natura atque essentia hominis rerumque constituta est ( §. 136. )",
+   "french": "Le droit n'a pas été établi par les hommes seulement en vue de l'utilité. Car la loi de nature est constituée par la nature et l'essence mêmes de l'homme et des choses (§ 136).",
+   "reason": "Under the margin \"An jus sit inventum humanum\" (§ 266), Wolff answers those who hold that law was made by men for utility: natural law is constituted by the nature and essence of man and things, which is its \"fons\". Vattel's answer to the \"Inventeurs\" is the same.",
+   "links": [
+    [
+     "MDZ scan 234",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=234"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Like Wolff § 266 against Carneades, Vattel answers those who make law a human invention for utility by showing its source must still be the nature and essence of man and things.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1015,
+   "unit": "E.8",
+   "at": [
+    [
+     "t",
+     114,
+     463
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 282",
+   "page": "PPU1.pdf245",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "Car, dès qu'ils reconnoissentDieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
+   "source": "Nimirum quia velle non potuit, ut homo esset sine lege ( §. 281.), eum autem talem condidit, ut per ejus essentiam atque naturam ponatur lex naturae ( §. 136. ) & obligatio naturalis ( §. 129.) ; sibimetipsi foret contrarius, si homini legem praescriberet legi naturae contrariam.",
+   "french": "Car, puisqu'il n'a pu vouloir que l'homme fût sans loi (§ 281), et qu'il l'a créé tel que par son essence et sa nature la loi de nature (§ 136) et l'obligation naturelle (§ 129) sont posées, il serait contraire à lui-même s'il prescrivait à l'homme une loi contraire à la loi de nature.",
+   "reason": "Wolff (§§ 281–282) argues from God's wisdom that God could not prescribe to man a law other than the one posited by his essence and nature. This is the reasoning behind Vattel's \"Dieu n'a pu donner que des loix convenables ... à l'essence & à la nature de l'homme\".",
+   "links": [
+    [
+     "MDZ scan 245",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=245"
+    ]
+   ]
+  },
+  {
+   "id": 1016,
+   "unit": "E.8",
+   "at": [
+    [
+     "t",
+     602,
+     854
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 284",
+   "page": "PPU1.pdf246",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "C'est, sans-doute, parceque connoissant Dieu pour un Etre sage, ils jugent avec raison, qu'il n'a pû donner que les loix les plus convenables à l'homme, les plus avantageuses au bien de la société en général & à celui de chaque individu en particulier.",
+   "source": "Enimvero voluntas divina tendit ad id , quod in se optimum est (§. 383. Part. I. Theol. nat.), adeoque Deus velle nequit, nisi eam actionum humanarum directionem , qua homo efficitur optimus in suo genere.",
+   "french": "Or la volonté divine tend à ce qui est le meilleur en soi, de sorte que Dieu ne peut vouloir que la direction des actions humaines par laquelle l'homme devient le meilleur en son genre.",
+   "reason": "Wolff (§ 284) argues that God's will, which tends to the best, can only will the direction of actions that makes man best. This is the step Vattel takes in \"il n'a pû donner que les loix les plus convenables à l'homme\".",
+   "links": [
+    [
+     "MDZ scan 246",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=246"
+    ]
+   ]
+  },
+  {
+   "id": 1017,
+   "unit": "E.8",
+   "at": [
+    [
+     "t",
+     855,
+     1087
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 284",
+   "page": "PPU1.pdf246",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "Mais comment connoîtront-ils ces loix les plus avantageuses ? Ils considéreront la nature de l'homme & celle des choses, & ils verront quelles loix leur sont convenables.Les voilà donc obligés de puiser dans la même source que nous.",
+   "source": "Quodsi ergo quidam sint , qui principium legum naturalium convenientiam cum voluntate divina esse existiment ; non aliam tamen actionum directionem admittere censentur , quam eam , quam nos in superioribus ex hominis essentia atque natura deduximus. Quodsi enim sumatur, quicquid cum voluntate divina convenit , id est committendum ; quod eidem disconvenit, illud omittendum ; huc redit quaestio , quidnam voluntati divinae conveniat, quid disconveniat.",
+   "french": "Si donc il y en a qui pensent que le principe des lois naturelles est la conformité avec la volonté divine, ils ne sont pourtant censés admettre d'autre direction des actions que celle que nous avons déduite plus haut de l'essence et de la nature de l'homme. Car si l'on pose que ce qui s'accorde avec la volonté divine doit être fait, et ce qui ne s'accorde pas avec elle doit être omis, la question revient à savoir ce qui s'accorde avec la volonté divine et ce qui ne s'accorde pas.",
+   "reason": "Wolff's reply to those who make conformity with God's will the principle of natural law has the same conclusion as Vattel's: they must ask what agrees with God's will, and they arrive at the direction Wolff deduced from the essence and nature of man (\"la même source que nous\").",
+   "links": [
+    [
+     "MDZ scan 246",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=246"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 284 makes the same move: those who take conformity with God's will as the principle end up with the direction deduced from human essence and nature, i.e. 'la même source que nous'.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1018,
+   "unit": "E.8",
+   "at": [
+    [
+     "t",
+     1088,
+     1216
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 136",
+   "page": "PPU1.pdf142",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "C'en est assez pour faire voir, que le droit naturel est fondé sur l'essence & la nature des choses & de l'homme en particulier.",
+   "source": "posita hominis rerumque natura atque essentia ponitur lex naturae, consequenter ipsa essentia & natura hominis rerumque lex naturae constituta.",
+   "french": "la nature et l'essence de l'homme et des choses étant posées, la loi de nature est posée ; par conséquent la loi de nature est constituée par l'essence et la nature mêmes de l'homme et des choses.",
+   "reason": "Vattel's conclusion that natural law is founded on the essence and nature of things and of man is Wolff's § 136 conclusion, which is followed in both texts by the same sentence of Cicero.",
+   "links": [
+    [
+     "MDZ scan 142",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's conclusion that natural law is founded on the essence and nature of things and of man restates § 136, and both texts follow it with the same Cicero sentence.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1019,
+   "unit": "E.8",
+   "at": [
+    [
+     "t",
+     1217,
+     1325
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 136",
+   "page": "PPU1.pdf142",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.8,
+   "status": "match",
+   "step": "R",
+   "passage": "Ciceron l'a reconnu quand il a dit, que le droit est établi par la nature : Naturâ ipsâ constitutum est jus.",
+   "source": "Idem vult Cicero, quando : Ipsa natura, inquit, constitutum jus est.",
+   "french": "Cicéron veut dire la même chose quand il dit : le droit est constitué par la nature elle-même.",
+   "reason": "Vattel's appeal to Cicero translates Wolff's \"Idem vult Cicero, quando: ... inquit\" and keeps Wolff's form of the dictum, with \"ipsa\", which Cicero's text (\"natura constitutum esse jus\") lacks. It comes in the same place, right after the conclusion of § 136.",
+   "links": [
+    [
+     "MDZ scan 142",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff's 'Idem vult Cicero, quando ... inquit' right after the same conclusion of § 136, keeping Wolff's form of the dictum with 'ipsa'.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1020,
+   "unit": "E.9",
+   "at": [
+    [
+     "t",
+     63,
+     283
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 137",
+   "page": "PPU1.pdf143",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "Cette faculté de l'ame nous apprend quelle est l'essence & la nature de l'homme & des choses en général ; & elle nous fait appercevoir la convenance ou la disconvenance des actions, avec cette essence & avec cette nature",
+   "source": "per ea, quae ad essentiam atque naturam hominis rerumque pertinent , seu quae homini rebusque per essentiam atque naturam insunt, intelligitur, cur actiones liberae hoc modo sint determinandae, quemadmodum vult lex naturae. Ecce tibi fontem , unde derivatur lex naturae : ad quem recurrendum, si certam ejus cognitionem haurire volueris.",
+   "french": "par ce qui appartient à l'essence et à la nature de l'homme et des choses, c'est-à-dire ce qui est dans l'homme et dans les choses par leur essence et leur nature, on comprend pourquoi les actions libres doivent être déterminées de telle manière, comme le veut la loi de nature. Voilà la source d'où dérive la loi de nature : c'est à elle qu'il faut recourir si l'on veut en puiser une connaissance certaine.",
+   "reason": "Vattel's 'l'essence & la nature de l'homme & des choses' renders Wolff's formula 'essentia atque natura hominis rerumque', which § 137 (cited by Vattel elsewhere) makes the source from which knowledge of the law of nature is drawn.",
+   "links": [
+    [
+     "MDZ scan 143",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=143"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel restates PPU § 137 (cited in his § 6): knowledge of natural law is drawn from the essence and nature of man and things, Wolff's own formula, in other words.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1021,
+   "unit": "E.9",
+   "at": [
+    [
+     "t",
+     169,
+     283
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 188",
+   "page": "PPU1.pdf176",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "R",
+   "passage": "& elle nous fait appercevoir la convenance ou la disconvenance des actions, avec cette essence & avec cette nature",
+   "source": "Et hoc sibi volunt, qui jus naturae in convenientia & disconvenientia actionum humanarum cum natura hominis consistere affirmant : sub natura enim essentiam comprehendunt, quam ab eadem minime distinguunt.",
+   "french": "Et c'est ce que veulent dire ceux qui affirment que le droit de nature consiste dans la convenance et la disconvenance des actions humaines avec la nature de l'homme : car sous le nom de nature ils comprennent l'essence, qu'ils n'en distinguent nullement.",
+   "reason": "Vattel's 'convenance ou la disconvenance des actions, avec cette essence & avec cette nature' is Grotius's formula with Wolff's gloss in § 188 that 'nature' there includes essence.",
+   "links": [
+    [
+     "MDZ scan 176",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=176"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's convenance/disconvenance of actions with the 'essence & nature' of man and things reproduces Wolff's § 188 formula and its gloss that nature includes essence.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1022,
+   "unit": "E.9",
+   "at": [
+    [
+     "t",
+     169,
+     283
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 188",
+   "page": "PPU1.pdf175",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "& elle nous fait appercevoir la convenance ou la disconvenance des actions, avec cette essence & avec cette nature",
+   "source": "Lex naturae nos obligat ad committendas actiones essentiae & naturae nostrae convenientes & ad omittendas actiones eidem disconvenientes.",
+   "french": "La loi de nature nous oblige à faire les actions qui conviennent à notre essence et à notre nature, et à omettre celles qui en disconviennent.",
+   "reason": "Wolff's § 188 states the law of nature in terms of actions that agree or disagree with our essence and nature, the pairing Vattel uses.",
+   "links": [
+    [
+     "MDZ scan 175",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=175"
+    ]
+   ]
+  },
+  {
+   "id": 1023,
+   "unit": "E.10",
+   "at": [
+    [
+     "t",
+     286,
+     389
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 131",
+   "page": "PPU1.pdf139",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Quelquesuns la dérivent de l'autorité d'un supérieur, lequel ne peut être que Dieu, auteur de la nature",
+   "source": "Vulgo definiunt legem per jussum superioris inferiori promulgatum ipsumque obligantem ; sed haec non est definitio legis in genere. Haec definitio illorum est, qui obligationem naturalem tollunt , bonitatem ac malitiam intrinsecam actionum negantes & antecedenter ad voluntatem Dei tanquam superioris actiones in universum omnes pro indifferentibus habentes.",
+   "french": "On définit communément la loi par l'ordre d'un supérieur, promulgué à l'inférieur et l'obligeant ; mais ce n'est pas là la définition de la loi en général. C'est la définition de ceux qui suppriment l'obligation naturelle, niant la bonté et la malice intrinsèques des actions et tenant toutes les actions pour indifférentes avant la volonté de Dieu comme supérieur.",
+   "reason": "Wolff identifies the school that defines law by a superior's command and blames its definition, the position and the diagnosis Vattel takes up here.",
+   "links": [
+    [
+     "MDZ scan 139",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=139"
+    ]
+   ]
+  },
+  {
+   "id": 1024,
+   "unit": "E.10",
+   "at": [
+    [
+     "t",
+     606,
+     781
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 280",
+   "page": "PPU1.pdf243",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "R",
+   "passage": "Essayons de déterminer le vrai & le prémier principe de cette obligation, & de faire voir en quoi tous ces Auteurs s'accordent & ont raison, & en quoi péchent leurs sentimens.",
+   "source": "Sive itaque dicas id esse juris naturalis, quod rationi convenit , sive quod naturae humanae convenit, sive quod hominem decet, sive quod voluntati divinae conforme est ; revera unum idemque dicis. Etenim si demonstrare debes, quidnam rationi conveniat, quid conveniat naturae humanae, quid hominem deceat, quid voluntati divinae conforme sit, quoad actionum liberarum determinationem, modo in demonstrando fueris versatus, eandem semper reperies actionum liberarum directionem. Nostrum igitur fuit hoc ostendere, ut diversas scriptorum de principio juris naturalis sententias inter se conciliemus, & quod ad nostrum reducantur patefaciamus.",
+   "french": "Que tu dises donc qu'est de droit naturel ce qui convient à la raison, ou ce qui convient à la nature humaine, ou ce qui sied à l'homme, ou ce qui est conforme à la volonté divine, tu dis en réalité une seule et même chose. Car si tu dois démontrer ce qui convient à la raison, ce qui convient à la nature humaine, ce qui sied à l'homme, ce qui est conforme à la volonté divine, quant à la détermination des actions libres, pourvu que tu sois exercé à démontrer, tu trouveras toujours la même direction des actions libres. C'était donc à nous de le montrer, afin de concilier entre eux les divers sentiments des écrivains sur le principe du droit naturel, et de faire voir qu'ils se ramènent au nôtre.",
+   "reason": "Wolff (§ 280 note) sets out to reconcile the writers' divergent views on the principle (reason, human nature, decorum, God's will) and reduce them to his own, which is Vattel's programme here for obligation.",
+   "links": [
+    [
+     "MDZ scan 243",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=243"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's list of rival principles (God's will, beauty of virtue, rational nature) and his aim to show where they agree follow Wolff's programme of reconciling the writers' principles in § 280.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1025,
+   "unit": "E.10",
+   "at": [
+    [
+     "t",
+     782,
+     915
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 188",
+   "page": "PPU1.pdf176",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "Il est absolument nécessaire pour y réussir, de se faire une idée claire & distincte des choses, & d'en donner de bonnes definitions.",
+   "source": "Nisi convenientia & disconvenientia actionum cum natura humana distincte explicetur, quod vulgo fieri non solet, nec accurate demonstrari potest, quaenam sint illae actiones, quae naturae humanae conveniunt ; quaenam vero sint, quae eidem repugnant.",
+   "french": "Si la convenance et la disconvenance des actions avec la nature humaine n'est pas expliquée distinctement, ce qu'on ne fait pas d'ordinaire, on ne peut pas non plus démontrer exactement quelles sont les actions qui conviennent à la nature humaine, et quelles sont celles qui lui répugnent.",
+   "reason": "Wolff faults the usual accounts for not explaining their key notion distinctly, the same demand for distinct ideas and definitions Vattel makes before treating obligation.",
+   "links": [
+    [
+     "MDZ scan 176",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=176"
+    ]
+   ]
+  },
+  {
+   "id": 1026,
+   "unit": "E.10",
+   "at": [
+    [
+     "t",
+     916,
+     1106
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 284",
+   "page": "PPU1.pdf247",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Nous verrons que c'est pour avoir négligé cette régle que d'habiles Auteurs se sont si fort embarrassésdans cette matiere, & ont paru tomber dans des sentimens si opposés les uns aux autres.",
+   "source": "Non mirum hoc videbitur , nisi iis, qui methodi demonstrativae sunt ignari : ceteris enim constabit , si plures fuerint propositiones a se invicem dependentes, earum una sumta ceteras inde demonstrari. Ita in Geometria parabola plures habet proprietates. Perinde vero est, quamnam earum sumas loco definitionis, ut inde demonstrentur ceterae. Unde videas ab uno sumi, quod ab altero demonstratur. Absonum igitur est, disputare de principio Juris naturalis seu eo , quod sumitur, ut exinde demonstrentur leges naturales : modo enim ex eo, quod sumitur, demonstrare possis, quales esse debeant actiones humanae, unum idemque erit.",
+   "french": "Cela ne paraîtra étonnant qu'à ceux qui ignorent la méthode démonstrative ; les autres verront que, lorsque plusieurs propositions dépendent les unes des autres, on peut, en prenant l'une, en démontrer les autres. Ainsi en géométrie la parabole a plusieurs propriétés, et il est indifférent laquelle on prend pour définition afin d'en démontrer les autres. On voit donc l'un prendre ce que l'autre démontre. Il est donc absurde de disputer du principe du droit naturel, c'est-à-dire de ce qu'on prend pour en démontrer les lois naturelles : pourvu qu'on puisse démontrer, à partir de ce qu'on prend, quelles doivent être les actions humaines, ce sera une seule et même chose.",
+   "reason": "Wolff (§ 284 note) says the dispute over the principle of natural law only puzzles those ignorant of demonstrative method, much as Vattel blames neglect of clear definitions for the authors' seemingly opposed views.",
+   "links": [
+    [
+     "MDZ scan 247",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=247"
+    ]
+   ]
+  },
+  {
+   "id": 1027,
+   "unit": "E.11",
+   "at": [
+    [
+     "t",
+     799,
+     978
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "Ce ne peut être que des motifs ; lesquels étant présens à l'ame, apperçus & pesés par la raison, nous font sentir la nécessité d'agir d'une telle maniere, & déterminent la volonté",
+   "source": "Sine motivo nulla datur in anima volitio, nulla nolitio (§. 889. Psych. empir.). Necesse igitur est, ut cum actione tam privativa, quam positiva conjungatur motivum aliquod voluntate tua ab actione non separabile",
+   "french": "Sans motif il n'y a dans l'âme aucune volition, aucune nolition. Il est donc nécessaire qu'à l'action, tant privative que positive, soit joint quelque motif inséparable de l'action pour ta volonté",
+   "reason": "Wolff's proof in § 119 (cited by Vattel) that without a motive there is no volition, so a motive must be joined to the action, underlies Vattel's 'ce ne peut être que des motifs'.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "§ 11's claim that only motives determine the will anticipates the Wolff § 119 proof ('sine motivo nulla volitio') that Vattel translates in § 13 and cites there.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1028,
+   "unit": "E.11",
+   "at": [
+    [
+     "t",
+     1054,
+     1181
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "Comment sommes-nous donc obligés à faire une certaine action ? C'est par la liaison d'un motif puissant avec cette même action.",
+   "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "La liaison du motif avec l'action, soit positive, soit privative, s'appelle obligation active.",
+   "reason": "'La liaison d'un motif ... avec cette même action' renders Wolff's 'connexio motivi cum actione' from § 118, which Vattel cites in the next section.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La liaison d'un motif puissant avec cette même action' renders Wolff's 'connexio motivi cum actione' (cited at § 12), a translation of the defining phrase, not a loose paraphrase.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase"
+   }
+  },
+  {
+   "id": 1029,
+   "unit": "E.11",
+   "at": [
+    [
+     "t",
+     1182,
+     1392
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "Ainsi il y a deux choses à considérer dans l'obligation : 1°. Le principe d'où elle naît, ou ce qui la constitue ; ce qui fait l'obligation. 2°. L'état dans lequel nous nous trouvons, quand nous sommes obligés.",
+   "source": "Obligatio passiva venit ex activa, seu hanc praesupponit.",
+   "french": "L'obligation passive vient de l'active, autrement dit elle la présuppose.",
+   "reason": "The two aspects (the principle from which obligation arises and the state of the one obliged) prepare Wolff's active and passive obligation, the passive arising from the active (§ 119).",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's two aspects of obligation (the principle from which it arises, the state of the one obliged) set out Wolff's active and passive obligation, the passive arising from the active.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1030,
+   "unit": "E.12",
+   "at": [
+    [
+     "n0",
+     0,
+     276
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 115",
+   "page": "PPU1.pdf124",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Une chose est moralement nécessaire, lorqu'elle ne peut pas manquer d'arriver, vû la nature de l'être intelligent qui la produit ; comme on dit qu'une chose est physiquement nécessaire, lorsqu'elle ne peut manquer d'arriver vû la nature de l'agent physique qui la fait naître.",
+   "source": "Moraliter necessarium est , cujus oppositum moraliter impossibile. Nimirum in genere necessarium dicitur, cujus oppositum impossibile. Quamobrem cum aliud sit physice, aliud moraliter impossibile (§. 952. Part. I. Theol. nat.) ; fieri etiam potest, ut oppositum alicujus vel physice, vel moraliter impossibile sit.",
+   "french": "Est moralement nécessaire ce dont l'opposé est moralement impossible. En effet, on appelle en général nécessaire ce dont l'opposé est impossible. Puisque donc autre chose est l'impossible physique, autre chose l'impossible moral, il peut aussi arriver que l'opposé d'une chose soit impossible soit physiquement, soit moralement.",
+   "reason": "Note (1) defines moral necessity alongside physical necessity, as Wolff does in § 115, but with its own definition (what an intelligent being's nature cannot fail to produce) instead of Wolff's 'whose opposite is morally impossible'.",
+   "links": [
+    [
+     "MDZ scan 124",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=124"
+    ]
+   ]
+  },
+  {
+   "id": 1031,
+   "unit": "E.12",
+   "at": [
+    [
+     "n1",
+     0,
+     43
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "citation",
+   "confidence": 1.0,
+   "status": "match",
+   "step": "R",
+   "passage": "Vid. Wolf, Phil. Pract. univ. p. 1. §. 118.",
+   "source": "§. 118. Obligatio activa & passiva quidnam sit.",
+   "french": "§ 118. Ce que sont l'obligation active et l'obligation passive.",
+   "reason": "Note (a) cites PPU pars I § 118, whose marginal summary is the definition of active and passive obligation.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Note (a) to § 12 cites Wolff PPU I § 118 for the active/passive definition.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1032,
+   "unit": "E.12",
+   "at": [
+    [
+     "t",
+     4,
+     207
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.95,
+   "status": "match",
+   "step": "R",
+   "passage": "De-la vient que l'on distingue l'obligation en active, & passive. L'obligation active est, la connexion du motif avec l'action. L'obligation passive est, une nécessité morale(1) d'agir ou de ne pas agir.",
+   "source": "Necessitas moralis agendi vel non agendi dicitur obligatio passiva. Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "La nécessité morale d'agir ou de ne pas agir s'appelle obligation passive. Mais la liaison du motif avec l'action, soit positive, soit privative, s'appelle obligation active.",
+   "reason": "Vattel translates Wolff's two definitions of § 118 word for word, in reverse order, and cites the paragraph in his note (a).",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates both definitions of Wolff § 118 word for word and cites the paragraph.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1033,
+   "unit": "E.12",
+   "at": [
+    [
+     "t",
+     212,
+     325
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "Celle-là est le principe qui affecte l'Etre intelligént ; & la seconde est l'état dans lequel se trouve cet Etre.",
+   "source": "Obligatio passiva venit ex activa, seu hanc praesupponit.",
+   "french": "L'obligation passive vient de l'active, autrement dit elle la présuppose.",
+   "reason": "Making active obligation the principle and passive obligation the resulting state follows Wolff § 119, where passive obligation comes from and presupposes the active.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Making active obligation the principle and passive obligation the resulting state is Wolff's doctrine in § 119 (passive obligation comes from and presupposes the active), which Vattel cites in the next section.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1034,
+   "unit": "E.13",
+   "at": [
+    [
+     "t",
+     4,
+     85
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.9,
+   "status": "match",
+   "step": "R",
+   "passage": "L'obligation passive naît de l'obligation active, comme l'effet naît de la cause.",
+   "source": "Obligatio passiva venit ex activa, seu hanc praesupponit.",
+   "french": "L'obligation passive vient de l'obligation active, c'est-à-dire qu'elle la présuppose.",
+   "reason": "Vattel's thesis renders the proposition of Wolff's § 119 (which his note cites), adding the cause/effect simile.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's thesis renders Wolff's § 119 proposition 'obligatio passiva venit ex activa', adding the cause/effect simile.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1035,
+   "unit": "E.13",
+   "at": [
+    [
+     "t",
+     86,
+     239
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.95,
+   "status": "match",
+   "step": "R",
+   "passage": "Car s'il est moralement nécessaire que vous agissiez, il est nécessaire que vous vouliez agir. Or il ne se forme point de volition dans l'ame sans motif.",
+   "source": "Quodsi ergo moraliter necessarium est, ut agas , vel non agas , in priori casu necesse est ut agere velis, in posteriori autem ut agere nolis (§. 12.). Sine motivo nulla datur in anima volitio, nulla nolitio (§. 889. Psych. empir.).",
+   "french": "Si donc il est moralement nécessaire que tu agisses ou que tu n'agisses pas, dans le premier cas il est nécessaire que tu veuilles agir, dans le second que tu ne veuilles pas agir (§ 12). Sans motif il n'y a dans l'âme aucune volition, aucune nolition (§ 889 de la Psychologie empirique).",
+   "reason": "The two premisses of Wolff's demonstration of § 119 are translated step by step, keeping the second person and dropping only the 'non agendi' half.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates the two premisses of Wolff's PPU § 119 (moral necessity of acting entails willing; no volition without motive), which his note cites.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1036,
+   "unit": "E.13",
+   "at": [
+    [
+     "t",
+     240,
+     416
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.95,
+   "status": "match",
+   "step": "R",
+   "passage": "Il faut donc pour vous mettre dans la nécessitémorale de faire une certaine action, que l'on joigne à cette action quelque motif, qu'il ne dépende pas de vous d'en séparer (a).",
+   "source": "Necesse igitur est, ut cum actione tam privativa, quam positiva conjungatur motivum aliquod voluntate tua ab actione non separabile",
+   "french": "Il est donc nécessaire qu'à l'action, tant privative que positive, soit joint quelque motif que ta volonté ne puisse séparer de l'action.",
+   "reason": "Wolff's conclusion 'motivum ... voluntate tua ab actione non separabile' is rendered as a motive 'qu'il ne dépende pas de vous d'en séparer', with the note citing § 119.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Translation of Wolff's § 119 conclusion: a motive joined to the action that the will cannot separate from it.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1037,
+   "unit": "E.16",
+   "at": [
+    [
+     "n0",
+     133,
+     263
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 134",
+   "page": "PPU1.pdf141",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.85,
+   "status": "match",
+   "step": "R",
+   "passage": "La différence qui se trouve entre les actions libres, par rapport à cettè rectitude, est ce qu'on appelle la moralité des actions.",
+   "source": "Diximus alibi (§. 951. Part. I. Theol. nat.), differentiam actionum liberarum quoad rectitudinem esse id, quod moralitatis nomine venit.",
+   "french": "Nous avons dit ailleurs (§ 951 de la Théologie naturelle, partie I) que la différence des actions libres quant à la rectitude est ce qui porte le nom de moralité.",
+   "reason": "Vattel's definition of morality translates Wolff's note to PPU § 134 (itself recalling Theol. nat. § 951) term for term: differentia actionum liberarum quoad rectitudinem = moralitas.",
+   "links": [
+    [
+     "MDZ scan 141",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=141"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Term-for-term translation of Wolff's definition of morality as the difference of free actions as to rectitude.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1038,
+   "unit": "E.16",
+   "at": [
+    [
+     "t",
+     4,
+     144
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 114",
+   "page": "PPU1.pdf124",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "Notre devoir n'est autre chose que la maniere dont nous devons déterminer ou diriger nos actions, pour qu'elles soient bonnes & droites (a).",
+   "source": "qualis esse debeat actionum liberarum directio, ut nihil in earum rectitudine desiderari possit",
+   "french": "quelle doit être la direction des actions libres pour que rien ne manque à leur rectitude",
+   "reason": "Vattel's definition of duty (with its gloss 'En Latin rectè') echoes Wolff's phrasing of how free actions ought to be directed so as to be right; his direct source may be Theol. nat. § 950, which he cites in § 17.",
+   "links": [
+    [
+     "MDZ scan 124",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=124"
+    ]
+   ]
+  },
+  {
+   "id": 1039,
+   "unit": "E.17",
+   "at": [
+    [
+     "t",
+     7,
+     142
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 64",
+   "page": "PPU1.pdf81",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.85,
+   "status": "match",
+   "step": "R",
+   "passage": "une action libre est, bonne, ou droite, quand elle a sa raison suffisante dans l'essence, & dans les attributs de l'être qui la produit",
+   "source": "Actio humana recta est, quae rationem sufficientem in essentia & attributis hominis habet, consequenter nulli determinationi essentiali vel hinc pendenti attributo contradicit.",
+   "french": "Une action humaine est droite lorsqu'elle a sa raison suffisante dans l'essence et les attributs de l'homme, et par conséquent ne contredit aucune détermination essentielle ni aucun attribut qui en dépend.",
+   "reason": "Vattel translates Wolff's definition of the right action (PPU § 64), generalized to any agent as in Theol. nat. § 950, which Vattel cites in note (b) and to which § 64 itself refers back.",
+   "links": [
+    [
+     "MDZ scan 81",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=81"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates Wolff's definition of the right action (sufficient reason in the agent's essence and attributes), generalized to any agent as in the Theol. nat. § 950 he cites.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1040,
+   "unit": "E.17",
+   "at": [
+    [
+     "t",
+     145,
+     312
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 65",
+   "page": "PPU1.pdf82",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.7,
+   "status": "possible",
+   "step": "R",
+   "passage": "c'està-dire, quand on peut rendre raison, ou expliquer par l'essence & les attributs de cet être, pourquoi son action a dû être telle qu'il l'a faite, & non pas autre.",
+   "source": "Convenire autem cum hisce dicitur actio, quae in iis simul sumtis rationem sufficientem agnoscit, consequenter per eas explicari potest, cur talis potius sit, quam non sit, ac esse debeat (§. 56. Ontol.).",
+   "french": "On dit qu'une action s'accorde avec ces déterminations lorsqu'elle trouve en elles, prises ensemble, sa raison suffisante, et que par conséquent on peut expliquer par elles pourquoi elle est telle plutôt qu'autrement, et pourquoi elle doit l'être.",
+   "reason": "Vattel's gloss on 'raison suffisante' renders Wolff's PPU § 65 explanation: explicari potest, cur talis potius sit ... ac esse debeat.",
+   "links": [
+    [
+     "MDZ scan 82",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=82"
+    ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The wording matches Wolff's sufficient-reason formula, but Vattel's note cites Theol. nat. I § 950 (whose general definition, with the agent's 'attributs', PPU § 64-65 only restates for man), so this PPU passage is a parallel rather than shown to be the source.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1041,
+   "unit": "E.17",
+   "at": [
+    [
+     "t",
+     317,
+     541
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 188",
+   "page": "PPU1.pdf175",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "R",
+   "passage": "Ce qui revient à ce que nous avons dit, (§. 6.) de la convenanceou disconvenance des actions, avec l'essence & la nature de l'homme & des choses, qui fait le fondement du droit naturel, & la source des loix qui le composent.",
+   "source": "Quamobrem cum actiones essentiae ac naturae hominis conveniant , quae in essentia & natura ejusdem rationem sufficientem habent (§. 65.); lex naturae nos obligat ad committendas actiones essentiae ac naturae nostrae convenientes.",
+   "french": "Puisque donc s'accordent avec l'essence et la nature de l'homme les actions qui ont en elles leur raison suffisante (§ 65), la loi naturelle nous oblige à faire les actions qui conviennent à notre essence et à notre nature.",
+   "reason": "Like Wolff in PPU § 188, Vattel equates having one's sufficient reason in human essence with agreement (convenance) with the essence and nature of man and things, which grounds the natural law.",
+   "links": [
+    [
+     "MDZ scan 175",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=175"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 188 makes the same equation: having one's sufficient reason in human essence is agreement with that essence, which is what those who ground natural law in convenance/disconvenance mean.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1042,
+   "unit": "E.17",
+   "at": [
+    [
+     "t",
+     365,
+     501
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 188",
+   "page": "PPU1.pdf176",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "de la convenanceou disconvenance des actions, avec l'essence & la nature de l'homme & des choses, qui fait le fondement du droit naturel",
+   "source": "Nobis igitur non contradicunt, qui convenientiam & disconvenientiam actionum cum natura humana principium juris naturalis esse contendunt, quemadmodum facit Grotius de J. B. & P. lib. 1. c. 1. §. 10. n. 1.",
+   "french": "Ceux-là ne nous contredisent donc pas qui soutiennent que la convenance et la disconvenance des actions avec la nature humaine est le principe du droit naturel, comme le fait Grotius (DJBP I.1.10 n. 1).",
+   "reason": "Wolff's remark that making the convenientia/disconvenientia of actions with human nature the principle of natural law agrees with his own view is the reconciliation Vattel restates here.",
+   "links": [
+    [
+     "MDZ scan 176",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=176"
+    ]
+   ]
+  },
+  {
+   "id": 1043,
+   "unit": "E.17",
+   "at": [
+    [
+     "t",
+     827,
+     967
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 224",
+   "page": "PPU1.pdf202",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.9,
+   "status": "match",
+   "step": "R",
+   "passage": "un devoir en particulier, est une action déterminée conformément à la loi, en tant que nous sommes obligés à la déterminer de cette maniere.",
+   "source": "Officium dicitur actio juxta legem determinata , quatenus ad eam ita determinandam obligamur.",
+   "french": "On appelle devoir une action déterminée selon la loi, en tant que nous sommes obligés à la déterminer ainsi.",
+   "reason": "Word-for-word translation of Wolff's definition of officium (PPU § 224): actio juxta legem determinata, quatenus ad eam ita determinandam obligamur.",
+   "links": [
+    [
+     "MDZ scan 202",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=202"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact French rendering of Wolff's § 224 definition of officium (actio juxta legem determinata, quatenus ad eam ita determinandam obligamur).",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1044,
+   "unit": "E.17",
+   "at": [
+    [
+     "t",
+     968,
+     1026
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 224",
+   "page": "PPU1.pdf202",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "Car en ce sens, c'est l'obligation qui constitue le devoir",
+   "source": "Nimirum in appellatione officii potissimum habetur ratio obligationis, etsi fieri non possit, quin etiam ratio habeatur convenientiae actionis cum lege, utpote ab obligatione inseparabilis.",
+   "french": "Dans le nom de devoir on a surtout égard à l'obligation, bien qu'on ne puisse manquer d'avoir aussi égard à la convenance de l'action avec la loi, qui est inséparable de l'obligation.",
+   "reason": "Vattel's inference that in this sense obligation constitutes duty restates Wolff's note to § 224 that the name officium chiefly regards the obligation.",
+   "links": [
+    [
+     "MDZ scan 202",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=202"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates Wolff's § 224 definition of officium and restates its note that the name of duty chiefly regards obligation.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1045,
+   "unit": "E.18",
+   "at": [
+    [
+     "t",
+     832,
+     1114
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 288",
+   "page": "PPU1.pdf251",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "ou parce que ce supérieur peut nous punir, si nous lui sommes rebelles ? Mais alors, il nous allégue des motifs, qui sont joints à cette action d'obéissance ; & il retombe dans notre définition, suivant laquelle, l'ob-ligation est la connexion, ou la liaison du motif avec l'action.",
+   "source": "Obligamus alios , quando motiva actionum, sive committendarum, sive omittendarum cum iisdem connectuntur ( §. 118.). Patet adeo poenis obligari posse homines ad actiones tam ommittendas, quam committendas.",
+   "french": "Nous obligeons autrui lorsque des motifs sont liés aux actions à faire ou à omettre (§ 118). Il est donc clair que les hommes peuvent être obligés par des peines à omettre comme à faire des actions.",
+   "reason": "Wolff (PPU § 288) shows that punishment obliges only because it connects a motive with the action, per the § 118 definition, which is how Vattel brings the superior's power to punish under his definition.",
+   "links": [
+    [
+     "MDZ scan 251",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=251"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 288 brings punishment under obligation because it connects a motive with the action per the § 118 definition, the same move Vattel makes against the superior's power to punish.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1046,
+   "unit": "E.18",
+   "at": [
+    [
+     "t",
+     1045,
+     1113
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.7,
+   "status": "match",
+   "step": "R",
+   "passage": "l'ob-ligation est la connexion, ou la liaison du motif avec l'action",
+   "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "Or la connexion du motif avec l'action, qu'elle soit positive ou privative, s'appelle obligation active.",
+   "reason": "Vattel restates his definition of (active) obligation from § 12, which translates Wolff's PPU § 118, connexio motivi cum actione.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'L'obligation est la connexion ... du motif avec l'action' translates Wolff's § 118 definition of active obligation.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1047,
+   "unit": "E.20",
+   "at": [
+    [
+     "t",
+     461,
+     571
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 104",
+   "page": "PPU1.pdf117",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "l'amour de nous-mêmes, qui nous porte à souhaiter & à rechercher notre bonheur, ou la perfection de notre état",
+   "source": "actiones ad perfectionem nostram statusque nostri tendentes per se appetibiles sunt. Qui cognoscit, actionem aliquam tendere ad perfectionem suam statusque sui , is sibi eandem distincte repraesentat tanquam bonam (§. 554. Psych. empir).",
+   "french": "Les actions qui tendent à notre perfection et à celle de notre état sont désirables par elles-mêmes. Celui qui connaît qu'une action tend à sa perfection et à celle de son état se la représente distinctement comme bonne.",
+   "reason": "Wolff's thesis (PPU § 104) that what tends to the perfection of ourselves and our state is desired for its own sake underlies Vattel's identification of the object of self-love with that perfection.",
+   "links": [
+    [
+     "MDZ scan 117",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=117"
+    ]
+   ]
+  },
+  {
+   "id": 1048,
+   "unit": "E.20",
+   "at": [
+    [
+     "t",
+     526,
+     596
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 49",
+   "page": "PPU1.pdf68",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "notre bonheur, ou la perfection de notre état, tant interne qu'externe",
+   "source": "Nimirum quomodo singulae actiones liberae ad perfectionem hominis tendant, ut per eas fiat accidentaliter perfectus, & status ejus tam internus, quam externus perfectus evadat, id ipsum est, quod in omni theoria actionum liberarum demonstrandum.",
+   "french": "C'est précisément ce qu'il faut démontrer dans toute théorie des actions libres : comment chacune d'elles tend à la perfection de l'homme, de sorte qu'il en devienne accidentellement parfait et que son état, tant interne qu'externe, devienne parfait.",
+   "reason": "'La perfection de notre état, tant interne qu'externe' renders Wolff's formula for the end of free actions, status tam internus quam externus perfectus (note to PPU § 49).",
+   "links": [
+    [
+     "MDZ scan 68",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=68"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La perfection de notre état, tant interne qu'externe' renders Wolff's distinctive formula 'status tam internus quam externus perfectus' (its only occurrence in PPU), though the surrounding content differs, so this is a translated formula rather than a paraphrase.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase"
+   }
+  },
+  {
+   "id": 1049,
+   "unit": "E.20",
+   "at": [
+    [
+     "t",
+     612,
+     699
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 213",
+   "page": "PPU1.pdf193",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "la perfection de notre ame, le bien-être de notre corps, & le bon état de notre fortune",
+   "source": "Perfectio hominis non modo pro diversitate animae , corporis statusque nostri externi, verum etiam pro varietate facultatum animae ac diversitate organorum corporis eorumque, quae ad statum externum referuntur, variat & in plures partiales resolvitur.",
+   "french": "La perfection de l'homme varie non seulement selon qu'il s'agit de l'âme, du corps et de notre état externe, mais aussi selon la variété des facultés de l'âme, la diversité des organes du corps et des choses qui se rapportent à l'état externe, et elle se résout en plusieurs perfections partielles.",
+   "reason": "Vattel's division of our perfection into soul, body and fortune follows Wolff's division of human perfection into soul, body and external state (status externus, which Wolff identifies with the goods of fortune).",
+   "links": [
+    [
+     "MDZ scan 193",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=193"
+    ]
+   ]
+  },
+  {
+   "id": 1050,
+   "unit": "E.21",
+   "at": [
+    [
+     "t",
+     336,
+     483
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 75",
+   "page": "PPU1.pdf92",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "Et par là-jentens tout ce qui peut véritablement contribuer à la perfection de notre Ame, à cel-le de notre Corps & à notre bien-être dans ce monde",
+   "source": "Etenim si quid perfectionem nostram statusque nostri promovet, bonum verum est (§. 557. Psych. empir.).",
+   "french": "Car si une chose avance notre perfection et celle de notre état, c'est un vrai bien.",
+   "reason": "Vattel's 'true definition of the useful' as what truly contributes to the perfection of soul, body and our state in this world restates Wolff's true good as what really promotes the perfection of ourselves and our (external) state.",
+   "links": [
+    [
+     "MDZ scan 92",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=92"
+    ]
+   ]
+  },
+  {
+   "id": 1051,
+   "unit": "E.21",
+   "at": [
+    [
+     "t",
+     993,
+     1101
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 105",
+   "page": "PPU1.pdf118",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "nous ne nous déterminons jamais à une action, que par la vue de quelque bien, que nous croyons y appercevoir",
+   "source": "Quoniam itaque sine motivo nulla datur volitio (§. 889. Psych. empir.), necesse est ut distincta ejus cognitio nobis praebeat volitionis motivum. Enimvero motivum volitionis in distincta boni repraesentatione consistit (§. 890. Psych. empir.).",
+   "french": "Puis donc qu'il n'y a point de volition sans motif, il faut que la connoissance distincte de l'action nous fournisse le motif de la volition. Or le motif de la volition consiste dans la représentation distincte du bien.",
+   "reason": "Wolff's psychology (no volition without a motive, and the motive consists in the representation of a good) underlies Vattel's statement that we never determine ourselves except in view of some good.",
+   "links": [
+    [
+     "MDZ scan 118",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=118"
+    ]
+   ]
+  },
+  {
+   "id": 1052,
+   "unit": "E.21",
+   "at": [
+    [
+     "t",
+     1257,
+     1321
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 75",
+   "page": "PPU1.pdf92",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Tout motif revient dans le fonds à l'utilitéréelle ou apparente.",
+   "source": "bonum vero tantummodo apparens sit, quod nos statusque nostrum tantummodo perficere videtur, non vero revera perficit (§. 557. Psych. empir.)",
+   "french": "mais le bien seulement apparent est ce qui semble seulement nous perfectionner, nous et notre état, et qui ne le fait pas réellement.",
+   "reason": "The reduction of every motive to real or apparent utility uses Wolff's distinction between the true good, which really perfects us, and the apparent good, which only seems to.",
+   "links": [
+    [
+     "MDZ scan 92",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=92"
+    ]
+   ]
+  },
+  {
+   "id": 1053,
+   "unit": "E.21",
+   "at": [
+    [
+     "t",
+     1439,
+     1669
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 337",
+   "page": "PPU1.pdf288",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "les motifs qui y ont rapport, par exemple, ceux qui sont pris de l'obéissance due à un être tel que Dieu, indépendamment de toute crainte, de la beauté de la vertu, &c. ces motifs, dis-je, passent avec raison pour les plus nobles.",
+   "source": "Virtuosus motivis utitur intrinseca actionum bonitate & malitia & motivis ab attributis Dei desumtis.",
+   "french": "L'homme vertueux se sert des motifs tirés de la bonté et de la malice intrinsèques des actions, et des motifs tirés des attributs de Dieu.",
+   "reason": "Wolff assigns to the virtuous man the motives of intrinsic goodness and of God's attributes (without need of punishments, § 346), the same pair Vattel singles out as noblest.",
+   "links": [
+    [
+     "MDZ scan 288",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=288"
+    ]
+   ]
+  },
+  {
+   "id": 1054,
+   "unit": "E.22",
+   "at": [
+    [
+     "t",
+     279,
+     724
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 263",
+   "page": "PPU1.pdf232",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "possible",
+   "step": "R",
+   "passage": "Que notre utilité se trouve jointe à cette observation, cela n'est pas douteux, puisque le droit naturel est une science, qui nous apprend ce qui est naturellement bon ou mauvais à l'homme. (§. 3.) & que les loix naturelles qui constituent ce droit, ne nous prescrivent certaines actions & ne nous en défendent d'autres, qu'en conséquence de la convenance, ou de la disconvenance de ces actions avec notre nature & avec celle des choses (§. 6.).",
+   "source": "atque praeceptiva lex nos obliget ad committendas actiones, quae per se ad perfectionem nostram statusque nostri perfectionem tendunt, eas vero omittendas , quae ad imperfectionem nostram statusque nostri tendunt ( §. 152. ) ; evidens est Jus naturale facere ad promovendam perfectionem & avertendam imperfectionem nostram",
+   "french": "et que la loi préceptive nous oblige à faire les actions qui tendent par elles-mêmes à notre perfection et à celle de notre état, et à omettre celles qui tendent à notre imperfection et à celle de notre état; il est évident que le droit naturel sert à avancer notre perfection et à écarter notre imperfection.",
+   "reason": "Wolff's proof that natural law is useful (§ 263) runs exactly as Vattel's: it commands what tends to our perfection and forbids what tends to our imperfection, so it serves our good.",
+   "links": [
+    [
+     "MDZ scan 232",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=232"
+    ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That natural law is useful because it prescribes what is good for us is a commonplace; Vattel argues from his own §§ 3 and 6, not from Wolff's technical proof via rights and perfection.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1055,
+   "unit": "E.22",
+   "at": [
+    [
+     "t",
+     483,
+     715
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 152",
+   "page": "PPU1.pdf150",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "les loix naturelles qui constituent ce droit, ne nous prescrivent certaines actions & ne nous en défendent d'autres, qu'en conséquence de la convenance, ou de la disconvenance de ces actions avec notre nature & avec celle des choses",
+   "source": "Lex naturalis nos obligat ad committendas actiones, quae per se ad perfectionem nostram statusque nostri tendunt, & ad omittendas actiones, quae per se ad imperfectionem nostram statusque nostri tendunt. Quoniam per essentiam atque naturam hominis rerumque intelligitur, cur lege naturali ad hasce actiones committendas, illas vero omittendas obligemur (§. 137.)",
+   "french": "La loi naturelle nous oblige à faire les actions qui tendent par elles-mêmes à notre perfection et à celle de notre état, et à omettre celles qui tendent par elles-mêmes à notre imperfection et à celle de notre état. Puisque c'est par l'essence et la nature de l'homme et des choses qu'on comprend pourquoi la loi naturelle nous oblige à faire celles-ci et à omettre celles-là.",
+   "reason": "'notre nature & celle des choses' renders Wolff's 'hominis rerumque essentia atque natura', from which the law of nature commands some actions and forbids others (§ 152).",
+   "links": [
+    [
+     "MDZ scan 150",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=150"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's clause that natural laws command and forbid actions only according to their fit with our nature and that of things renders Wolff's § 152 grounding of the law in 'hominis rerumque essentia atque natura' (cf. his own citation of PPU § 137 in § 6).",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1056,
+   "unit": "E.23",
+   "at": [
+    [
+     "t",
+     39,
+     130
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 220",
+   "page": "PPU1.pdf198",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.35,
+   "status": "possible",
+   "step": "R",
+   "passage": "la société lui est naturelle, elle lui est même nécessaire, pour passer sa vie heureusement",
+   "source": "Nemo hominum solus se statumque suum perficere potest ; sed unusquisque aliorum indiget auxilio , nec nisi conjunctis viribus perfectio ista obtineri potest.",
+   "french": "Nul homme ne peut seul se perfectionner, lui et son état; chacun a besoin du secours des autres, et cette perfection ne s'obtient que par les forces réunies.",
+   "reason": "Wolff's § 220 (no one can perfect himself and his state alone) is the Wolffian form of Vattel's claim that society is necessary to live happily.",
+   "links": [
+    [
+     "MDZ scan 198",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=198"
+    ]
+   ]
+  },
+  {
+   "id": 1057,
+   "unit": "E.24",
+   "at": [
+    [
+     "t",
+     72,
+     124
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "& ce motif fait l'obligation dont il est susceptible",
+   "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "La liaison d'un motif avec une action, soit positive, soit privative, s'appelle obligation active.",
+   "reason": "That a motive 'fait l'obligation' applies Wolff's definition of active obligation as the connection of a motive with an action (§ 118, cited by Vattel elsewhere).",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ]
+  },
+  {
+   "id": 1058,
+   "unit": "E.24",
+   "at": [
+    [
+     "t",
+     256,
+     475
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 221",
+   "page": "PPU1.pdf200",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "Mais la société lui étant utile, & même nécessaire, & cette société ne pouvant subsister sans des loix ou des régles générales, observées par tous les membres; il est obligé en vertu de sa propre utilité à les observer.",
+   "source": "Etenim unusquisque homo per ipsam essentiam atque naturam suam obligatur ad committendas actiones , quae per se ad perfectionem suam statusque sui tendunt ( §. 128. ), seu quod perinde est, ad perfectionem suam statusque sui promovendam. Enimvero nemo hominum solus se statumque suum perficere potest , sed unusquisque aliorum indiget auxilio, nec nisi conjunctis viribus perfectio ista obtineri potest ( §. 220 ). Quamobrem necesse est, homines obligari ad perfectionem suam statusque sui conjunctis viribus promovendam.",
+   "french": "Car chaque homme est obligé par son essence et sa nature à faire les actions qui tendent par elles-mêmes à sa perfection et à celle de son état, c'est-à-dire à avancer sa perfection et celle de son état. Or nul homme ne peut seul se perfectionner, lui et son état; chacun a besoin du secours des autres, et cette perfection ne s'obtient que par les forces réunies. Il est donc nécessaire que les hommes soient obligés à avancer leur perfection et celle de leur état par leurs forces réunies.",
+   "reason": "Wolff § 221 derives the common obligation to mutual aid from each man's obligation to his own perfection, which he cannot reach alone: the same move from own good to social duty.",
+   "links": [
+    [
+     "MDZ scan 200",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=200"
+    ]
+   ]
+  },
+  {
+   "id": 1059,
+   "unit": "E.25",
+   "at": [
+    [
+     "t",
+     99,
+     705
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 266",
+   "page": "PPU1.pdf234",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Les hommes engagés par leurs besoins à former des sociétés particulieres, ne renoncérent certainement pas en y entrant, chacun à son bien & à son utilité propre. Au contraire, ce fut sans doute en vue de ce même bien, qu'ils se déterminérent à s'y engager. Mais sentant aisément quelle foule de maux & d'inconvéniens pouvoient naître parmi des êtres si souvent aveuglés ou entraînés par leurs passions, si chaque individu avoit la liberté de décider dans les cas particuliers, de ce qui lui est le plus avantageux; ils comprirent qu'il falloit établir des loix, capables d'assurer le bonheur de la société.",
+   "source": "neque etiam negari possit, quod homines in societates civiles coeuntes utilitate juris permoti leges civiles sibi fecerint",
+   "french": "et l'on ne saurait nier non plus que les hommes, en se réunissant en sociétés civiles, se sont donné des lois civiles, poussés par l'utilité du droit",
+   "reason": "Wolff concedes (against Carneades, § 266 note) that men entering civil societies made civil laws for themselves moved by utility; Vattel founds the civil laws and the duty to obey them on the same utility-driven founding, without shared wording.",
+   "links": [
+    [
+     "MDZ scan 234",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=234"
+    ]
+   ]
+  },
+  {
+   "id": 1060,
+   "unit": "E.27",
+   "at": [
+    [
+     "t",
+     1691,
+     1791
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 126",
+   "page": "PPU1.pdf135",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "„En commettant une mauvaise action, une action contraire à l'ordre & „à la perfection de votre être.",
+   "source": "cum mala sit actio, quae ad nostram imperfectionem tendit",
+   "french": "puisque l'action qui tend à notre imperfection est mauvaise",
+   "reason": "Vattel's answer defines the evil action as one contrary to the perfection of our being, Wolff's definition of an intrinsically evil action as one tending to our imperfection (§ 126).",
+   "links": [
+    [
+     "MDZ scan 135",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=135"
+    ]
+   ]
+  },
+  {
+   "id": 1061,
+   "unit": "E.29",
+   "at": [
+    [
+     "n1",
+     0,
+     79
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 132",
+   "page": "PPU1.pdf140",
+   "inNote": false,
+   "label": "verbatim",
+   "confidence": 0.9,
+   "status": "match",
+   "step": "R",
+   "passage": "Quod stet pro ratione voluntas. Wolf. Phil. Pract. univ. p. 1. §. 132. in nota.",
+   "source": "dici possit, quod stet pro ratione voluntas.",
+   "french": "on puisse dire que la volonté tient lieu de raison.",
+   "reason": "The footnote quotes Wolff's Latin words verbatim (in Wolff's 'quod stet' form, not Juvenal's 'sit') and gives the locus, PPU I § 132, remark.",
+   "links": [
+    [
+     "MDZ scan 140",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=140"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The footnote quotes Wolff's Latin 'quod stet pro ratione voluntas' verbatim and gives the PPU § 132 locus.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1062,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     450,
+     604
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 301",
+   "page": "PPU1.pdf259",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "1°. parce qu'en faisant même abstraction de la rectitude propre de l'action qui nous est prescrite, il est beau & louable d'obéir à un Supérieur légitime.",
+   "source": "Non est, quod excipias, haud repugnare, ut quis nullo poenae metu, nulla praemii spe ductus faciat, quod vult legislator, vel omittat, quod omitti jubet, hoc solo permotus, quod norit superiorem hoc velle. Ultro enim hoc concedimus : ostendemus autem suo loco, qui hoc facit, eum satisfacere obligationi naturali ad obediendum superiori.",
+   "french": "Et il ne faut pas objecter qu'il n'y a pas de contradiction à ce que quelqu'un, sans crainte d'aucune peine ni espoir d'aucune récompense, fasse ce que veut le législateur ou omette ce qu'il ordonne d'omettre, mû par cela seul qu'il sait que le supérieur le veut. Nous l'accordons volontiers ; mais nous montrerons en son lieu que celui qui agit ainsi satisfait à l'obligation naturelle d'obéir au supérieur.",
+   "reason": "Like Wolff's note to § 301, Vattel holds that obeying a superior simply because he wills it, apart from rewards and punishments, answers a natural obligation to obey a legitimate superior.",
+   "links": [
+    [
+     "MDZ scan 259",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=259"
+    ]
+   ]
+  },
+  {
+   "id": 1063,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     605,
+     751
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 302",
+   "page": "PPU1.pdf260",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "2°. Parce que ce Supérieur peut nous récompenser ou nous punir, indépendamment du bien ou du mal que notreaction entraîne naturellement après soi.",
+   "source": "Quamobrem cum tam bonum , quam malum cum actione connectatur, ut tanquam bona vel mala repraesentari possit (§. 890. Psych empir.), quod ex ea per se non sequitur ; ideo patet obligationem positivam arbitrariam esse, non necessariam.",
+   "french": "C'est pourquoi, puisque le bien comme le mal sont liés à l'action de façon à pouvoir être représentés comme bons ou mauvais, ce qui ne suit pas de l'action par elle-même, il est clair que l'obligation positive est arbitraire et non nécessaire.",
+   "reason": "Vattel's second ground is Wolff's positive obligation (§ 302): the legislator attaches to an action good or evil that does not follow from it by itself, as distinct from its natural consequences.",
+   "links": [
+    [
+     "MDZ scan 260",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=260"
+    ]
+   ]
+  },
+  {
+   "id": 1064,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     1355,
+     1488
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 132",
+   "page": "PPU1.pdf140",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.75,
+   "status": "match",
+   "step": "R",
+   "passage": "c'est en vertu de cette légitime confiance, que l'on peut dire de lui quand il prescrit une Loi, que sa volonté tient lieu de raisons",
+   "source": "etsi necesse non sit, ut legislator easdem semper notas facere teneatur & eatenus , quatenus in voluntate ejus acquiescendum, dici possit, quod stet pro ratione voluntas.",
+   "french": "bien qu'il ne soit pas nécessaire que le législateur soit toujours tenu de les faire connaître, et qu'à cet égard, en tant qu'on doit s'en remettre à sa volonté, on puisse dire que la volonté tient lieu de raison.",
+   "reason": "Vattel renders Wolff's remark to § 132, that insofar as one must acquiesce in the legislator's will it can be said that his will stands for reason, and cites it in his note.",
+   "links": [
+    [
+     "MDZ scan 140",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=140"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders 'quod stet pro ratione voluntas' in the same context (one acquiesces in the legislator's will without knowing his reasons), and his note cites Wolff § 132 in nota.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1065,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     1691,
+     1782
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 302",
+   "page": "PPU1.pdf260",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "il est le maître par sa toute-puissance, d'y attacher telle récompense qu'il juge à propros",
+   "source": "in arbitrio ejus positum est, utrum hoc, vel aliud motivum, utrum aliquod, an nullum cum actione connectere velit.",
+   "french": "il dépend de son libre arbitre de vouloir lier à l'action tel motif ou tel autre, quelque motif ou aucun.",
+   "reason": "As in Wolff's proof that positive obligation is arbitrary (§ 302), the legislator is free to join whatever reward or motive he pleases to an action.",
+   "links": [
+    [
+     "MDZ scan 260",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=260"
+    ]
+   ]
+  },
+  {
+   "id": 1066,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     2074,
+     2451
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 279",
+   "page": "PPU1.pdf242",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Car pour ce qui est des Loix naturelles, nous ne connoissons que ce sont des Loix de Dieu, que par les raisons de ces Loix, par les raisons qui en montrent la justice & l'utilité; ensorte que si nous ne voyons pas de sages raisons de faire une certaine action, ou de s'en abstenir, nous ne pouvons savoirsi c'est la volonté de Dieu, que nous la fassions ou que nous l'évitions.",
+   "source": "Patet itaque secundum rationem vivere & secundum voluntatem Dei vivere esse unum idemque, si nempe in iis acquiescas, quae lumine rationis nobis innotescunt, & de quibus solis agit philosophus.",
+   "french": "Il est donc clair que vivre selon la raison et vivre selon la volonté de Dieu sont une seule et même chose, pourvu que l'on s'en tienne à ce que la lumière de la raison nous fait connaître, et dont seul traite le philosophe.",
+   "reason": "Like Wolff (§ 279), Vattel holds that God's will in the natural law is known only through what reason shows, so that following reason and following God's will coincide.",
+   "links": [
+    [
+     "MDZ scan 242",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=242"
+    ]
+   ]
+  },
+  {
+   "id": 1067,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     7663,
+     7821
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 245",
+   "page": "PPU1.pdf215",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "que les hommes seroient obligés à l'observation des Loix naturelles, même en faisant abstraction de la volonté de Dieu ; parce qu'elles sont louables & utiles",
+   "source": "Lex naturae subsistit etiam in hypothesi impossibili athei ; hoc est, ex eo, quod atheus ponit non dari Deum, minime sequitur, non dari legem naturae.",
+   "french": "La loi naturelle subsiste même dans l'hypothèse impossible de l'athée ; c'est-à-dire que, de ce que l'athée pose qu'il n'y a point de Dieu, il ne s'ensuit nullement qu'il n'y ait point de loi naturelle.",
+   "reason": "Vattel's reply is Wolff's thesis (§ 245) that natural law and its obligation hold even on the atheist's impossible hypothesis, i.e. apart from God's will.",
+   "links": [
+    [
+     "MDZ scan 215",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=215"
+    ]
+   ]
+  },
+  {
+   "id": 1068,
+   "unit": "E.29",
+   "at": [
+    [
+     "t",
+     8608,
+     8842
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 274",
+   "page": "PPU1.pdf240",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "Ce n'est point déroger à l'autorité de Dieu que de dire , que tout ce qu'il nous prescrit dans les Loix naturelles est si beau & si utile par lui-même, que nous serions obligés de le pratiquer, quand même Dieu ne l'auroit pas ordonné.",
+   "source": "Atque adeo patet, Deo non adimi potestatem legislatoriam, utut lex naturae a natura & essentia humana rerumque derivetur.",
+   "french": "Et ainsi il est clair qu'on n'ôte pas à Dieu son pouvoir législatif, bien que la loi naturelle soit dérivée de la nature et de l'essence de l'homme et des choses.",
+   "reason": "Vattel's answer is Wolff's (note to § 274): deriving natural law from the nature of man and things takes nothing from God's legislative power.",
+   "links": [
+    [
+     "MDZ scan 240",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=240"
+    ]
+   ]
+  },
+  {
+   "id": 1069,
+   "unit": "E.30",
+   "at": [
+    [
+     "t",
+     3209,
+     3419
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 263",
+   "page": "PPU1.pdf232",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "nous parlons d'une utilité noble & bien entendue , qui se trouve principalement dans l'observation de l'ordre & dans la pratique de la vertu, parce que cette observation , cette pratique nous rend plus parfaits",
+   "source": "evidens est Jus naturale facere ad promovendam perfectionem & avertendam imperfectionem nostram, nec aliis permissum esse, ut in illa promovenda, hac avertenda nos impediant ( §. 165. ), consequenter usui nobis esse in promovenda perfectione nostra statusque nostri perfectione , & avertenda imperfectione nostra statusque nostri imperfectione",
+   "french": "il est évident que le droit naturel sert à promouvoir notre perfection et à écarter notre imperfection, et que les autres n'ont pas la permission de nous empêcher de promouvoir l'une et d'écarter l'autre, et par conséquent qu'il nous est utile pour promouvoir notre perfection et celle de notre état, et pour écarter notre imperfection et celle de notre état",
+   "reason": "Vattel's utility that lies in what makes us more perfect matches Wolff's proof (PPU § 263) that natural law is useful because it serves to promote our perfection.",
+   "links": [
+    [
+     "MDZ scan 232",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=232"
+    ]
+   ]
+  },
+  {
+   "id": 1070,
+   "unit": "E.31",
+   "at": [
+    [
+     "t",
+     1294,
+     1362
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.75,
+   "status": "match",
+   "step": "R",
+   "passage": "l'obligation n'est autre chose que la liaison du motif avec l'action",
+   "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "Mais la liaison du motif avec l'action, soit positive soit privative, s'appelle obligation active.",
+   "reason": "Vattel restates his definition of obligation (§§ 11-12), which translates Wolff's 'connexio motivi cum actione' (PPU § 118).",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La liaison du motif avec l'action' renders Wolff's 'connexio motivi cum actione' (PPU § 118), Vattel's own definition restated.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1071,
+   "unit": "E.31",
+   "at": [
+    [
+     "t",
+     2772,
+     2863
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "R",
+   "passage": "Car il ne reste aucun motif que l'on puisse joindre à l'action, dans le cas dont il s'agit.",
+   "source": "Necesse igitur est, ut cum actione tam privativa, quam positiva conjungatur motivum aliquod voluntate tua ab actione non separabile : quodsi enim hoc fieri posset, nec amplius necessitas ulla agendi, vel non agendi relinqueretur.",
+   "french": "Il est donc nécessaire qu'à l'action, tant privative que positive, soit joint quelque motif que ta volonté ne puisse séparer de l'action ; car si cela pouvait se faire, il ne resterait plus aucune nécessité d'agir ou de ne pas agir.",
+   "reason": "Vattel's objection that no motive remains to be joined to the action applies Wolff's argument (PPU § 119) that without a motive joined to the action there is no necessity to act.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's point that no motive remains to be joined to the action, so there is no obligation, applies Wolff's § 119 inference that without a motive joined to the action no necessity of acting remains.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1072,
+   "unit": "E.31",
+   "at": [
+    [
+     "t",
+     3290,
+     3396
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.5,
+   "status": "possible",
+   "step": "R",
+   "passage": "comment on pourra leur imposer une espèce de nécessité d'agir, sans les contraindre par une force physique",
+   "source": "Necessitas moralis agendi vel non agendi dicitur obligatio passiva.",
+   "french": "La nécessité morale d'agir ou de ne pas agir s'appelle obligation passive.",
+   "reason": "A 'nécessité d'agir' imposed without physical force is Wolff's passive obligation as moral (not physical) necessity of acting (PPU §§ 115, 118).",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The phrase repeats Vattel's own § 11 account of obligation as non-physical necessity; nothing specific ties it to Wolff's § 118 definition rather than the common idea of moral necessity.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1073,
+   "unit": "E.34",
+   "at": [
+    [
+     "t",
+     573,
+     706
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 255",
+   "page": "PPU1.pdf225",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Il ne dit pas que c'est les détruire tous ; au contraire, il reconnoît qu'il y auroit encore un grand nombre de devoirs pour un Athée",
+   "source": "Nimirum etsi atheus non neget dari legem naturae ( §. 245. ) ; eandem tamen non extendit ultra ea , quae homo sibimet ipsi ac aliis debet hominibus.",
+   "french": "Assurément, bien que l'athée ne nie pas qu'il y ait une loi de nature, il ne l'étend pourtant pas au-delà de ce que l'homme se doit à lui-même et doit aux autres hommes.",
+   "reason": "The view that an atheist keeps many duties but not all of them is Wolff's (PPU §§ 245, 255: the atheist admits the law of nature, though not in its full extent).",
+   "links": [
+    [
+     "MDZ scan 225",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=225"
+    ]
+   ]
+  },
+  {
+   "id": 1074,
+   "unit": "E.35",
+   "at": [
+    [
+     "t",
+     451,
+     608
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 251",
+   "page": "PPU1.pdf222",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "mais la divinité est au nombre de ces choses, dont la nature détermine les régles du Juste & de l'injuste, & fournit les motifs qui constituent l'obligation.",
+   "source": "essentiam atque naturam suam obligatur ad determinandas actiones liberas per motiva ab attributis divinis desumta.",
+   "french": "(L'homme, par son) essence et sa nature, est obligé à déterminer ses actions libres par des motifs tirés des attributs divins.",
+   "reason": "Wolff makes the divine attributes a source of motives to which human nature itself obliges us, as Vattel folds God into the 'nature des choses' that supplies obligating motives.",
+   "links": [
+    [
+     "MDZ scan 222",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=222"
+    ]
+   ]
+  },
+  {
+   "id": 1075,
+   "unit": "E.35",
+   "at": [
+    [
+     "t",
+     1104,
+     1280
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 284",
+   "page": "PPU1.pdf246",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.55,
+   "status": "match",
+   "step": "R",
+   "passage": "quelle preuve a-t-il que la volonté de Dieu soit, qu'il fasse la premiere, & qu'il s'abstienne de l'autre?Sa raison, direz-vous, lui apprend, que Dieu veut tout ce qui est bon.",
+   "source": "Quodsi enim sumatur, quicquid cum voluntate divina convenit , id est committendum ; quod eidem disconvenit, illud omittendum ; huc redit quaestio , quidnam voluntati divinae conveniat, quid disconveniat. Hoc igitur ex natura voluntatis divinae deducendum.",
+   "french": "Car si l'on pose que tout ce qui s'accorde avec la volonté divine doit être fait, et que ce qui lui répugne doit être omis, la question revient à savoir ce qui s'accorde avec la volonté divine et ce qui lui répugne. Il faut donc le déduire de la nature de la volonté divine.",
+   "reason": "Wolff (§ 284) argues that a voluntarist must still ask what agrees with God's will and deduce it from that will's tendency to the best, the same regress Vattel presses.",
+   "links": [
+    [
+     "MDZ scan 246",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=246"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same regress against the voluntarists: to know what God wills one must infer it from God's will tending to the good, so the intrinsic goodness comes first (Wolff § 284).",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1076,
+   "unit": "E.35",
+   "at": [
+    [
+     "t",
+     1292,
+     1504
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 247",
+   "page": "PPU1.pdf218",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.5,
+   "status": "possible",
+   "step": "R",
+   "passage": "Mais cette réponse même fait voir, que la qualité intrinsèque de l'action est déja une raison de la préférer, en faisant abstraction de la volonté de Dieu, & que la volonté de Dieu même se règle sur cette raison.",
+   "source": "Quamobrem intrinseca actionum bonitas & malitia demonstrari potest, etiamsi non supponas dari Deum.",
+   "french": "C'est pourquoi la bonté et la malice intrinsèques des actions peuvent être démontrées, même si l'on ne suppose pas que Dieu existe.",
+   "reason": "Vattel's 'qualité intrinsèque' that gives a reason for preference 'en faisant abstraction de la volonté de Dieu' is Wolff's intrinsic goodness demonstrable without supposing God.",
+   "links": [
+    [
+     "MDZ scan 218",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=218"
+    ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both hold intrinsic goodness independent of God, but Vattel argues from how reason knows God's will (backing Leibniz), not from Wolff's atheist-hypothesis demonstration; the thesis is common anti-voluntarist stock.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
+  },
+  {
+   "id": 1077,
+   "unit": "E.36",
+   "at": [
+    [
+     "t",
+     584,
+     745
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 128",
+   "page": "PPU1.pdf138",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.45,
+   "status": "possible",
+   "step": "R",
+   "passage": "mais l'influence que ces mêmes choses peuvent avoir en vertu de ces rapports, sur notre félicité, est un puissant motif, qui nous oblige à agir, ou à ne pas agir",
+   "source": "Homo igitur per ipsam suam rerumque essentiam atque naturam obligatur ad committendas actiones, quae per se ad perfectionem suam statusque sui tendunt, & ad omittendas actiones , quae per se ad imperfectionem suam statusque sui tendunt.",
+   "french": "L'homme est donc obligé par sa propre essence et nature et par celle des choses à faire les actions qui tendent par elles-mêmes à sa perfection et à celle de son état, et à omettre les actions qui tendent par elles-mêmes à son imperfection et à celle de son état.",
+   "reason": "Wolff (§ 128) derives obligation from the nature of man and things through the actions' tendency to our perfection, as Vattel does through their influence on our happiness.",
+   "links": [
+    [
+     "MDZ scan 138",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=138"
+    ]
+   ]
+  },
+  {
+   "id": 1078,
+   "unit": "E.36",
+   "at": [
+    [
+     "t",
+     748,
+     806
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.7,
+   "status": "match",
+   "step": "R",
+   "passage": "puisque l'obligation est la liaison du motif avec l'action",
+   "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "Mais la liaison du motif avec l'action, soit positive, soit privative, s'appelle obligation active.",
+   "reason": "Vattel's definition of obligation as the connection of motive and action translates Wolff's definition of active obligation (§ 118).",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of obligation as the connection of motive and action translates Wolff's definition of active obligation.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1079,
+   "unit": "E.37",
+   "at": [
+    [
+     "t",
+     591,
+     657
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.7,
+   "status": "match",
+   "step": "R",
+   "passage": "puisque cette nécessité n'est autre chose que l'obligation passive",
+   "source": "Necessitas moralis agendi vel non agendi dicitur obligatio passiva.",
+   "french": "La nécessité morale d'agir ou de ne pas agir s'appelle obligation passive.",
+   "reason": "Necessity as passive obligation is Wolff's § 118 definition.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'Cette nécessité ... l'obligation passive' renders Wolff's § 118 definition of moral necessity as passive obligation, a specifically Wolffian term.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1080,
+   "unit": "E.37",
+   "at": [
+    [
+     "t",
+     670,
+     768
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.75,
+   "status": "match",
+   "step": "R",
+   "passage": "laquelle naît de l'obligation active ( §.13. ) qui consiste dans la liaison du motif avec l'action",
+   "source": "Obligatio passiva venit ex activa, seu hanc praesupponit.",
+   "french": "L'obligation passive vient de l'active, ou la présuppose.",
+   "reason": "Passive obligation arising from active obligation, the connection of motive and action, translates Wolff § 119 with § 118.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'Laquelle naît de l'obligation active' restates Vattel's § 13 rendering of Wolff § 119 'obligatio passiva venit ex activa', which § 13 cites.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1081,
+   "unit": "E.38",
+   "at": [
+    [
+     "t",
+     591,
+     822
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 304",
+   "page": "PPU1.pdf263",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "Il ne peut certainement nous y assujettir que par des motifs, capables de fléchir notre volonté. Il pourroit nous forcer, par une action physique : mais ce ne seroit plus nous imposer une obligation, nous n'agirions plus librement.",
+   "source": "Nemo ad voluntatis vel noluntatis determinationem aliud quidpiam conferre valet, nisi per motiva, atque adeo nec alia concipi potest obligatio activa , nisi quae in connexione motivi cum actione consistit, & quae inde resultat obligatio passiva, non est nisi necessitas moralis, quae ex motivis resultat, minime autem physica.",
+   "french": "Personne ne peut contribuer en rien à la détermination de la volonté ou de la nolonté, sinon par des motifs ; c'est pourquoi l'on ne peut concevoir d'autre obligation active que celle qui consiste dans la liaison du motif avec l'action, et l'obligation passive qui en résulte n'est qu'une nécessité morale, qui résulte des motifs, et nullement physique.",
+   "reason": "Wolff says nothing can determine the will except motives, so obligation is moral necessity from motives, not physical, which Vattel applies to the superior.",
+   "links": [
+    [
+     "MDZ scan 263",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=263"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 304, aimed at those who admit only a superior's obligation, says nothing can determine the will except motives, so obligation is moral not physical; Vattel applies this to the superior.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1082,
+   "unit": "E.38",
+   "at": [
+    [
+     "t",
+     1572,
+     1925
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 341",
+   "page": "PPU1.pdf290",
+   "inNote": false,
+   "label": "shared argument",
+   "confidence": 0.4,
+   "status": "possible",
+   "step": "R",
+   "passage": "Mais l'idée d'un Dieu sage, bon, & juste dispensateur des biens & des maux, cette idée, dis-je, toujours présente à notre esprit, nous porte à une action que nous savons être conforme à sa volonté, quoique nous n'appercevions pas dans ce moment, les raisons prises de la nature même de cette action, qui devroient nous porter à lui donner la préférence.",
+   "source": "Qui pietatem cum virtute conjungit, actiones legi naturae conformes committit, difformes omittit, quia Deus illas committi, has omitti vult, seu actionum committendarum & omittendarum motivum a voluntate Dei desumit.",
+   "french": "Celui qui joint la piété à la vertu fait les actions conformes à la loi de nature et omet celles qui y sont contraires, parce que Dieu veut que les premières soient faites et les secondes omises, c'est-à-dire qu'il tire de la volonté de Dieu le motif des actions à faire et à omettre.",
+   "reason": "Wolff's pious man does what natural law commands because God wills it, taking his motive from God's will, as Vattel's idea of God moves us to what we know he wills.",
+   "links": [
+    [
+     "MDZ scan 290",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=290"
+    ]
+   ]
+  },
+  {
+   "id": 1083,
+   "unit": "E.39",
+   "at": [
+    [
+     "t",
+     2211,
+     2250
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.75,
+   "status": "match",
+   "step": "R",
+   "passage": "que la connexion du motif avec l'action",
+   "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "Mais la connexion du motif avec l'action, positive ou privative, s'appelle obligation active.",
+   "reason": "Vattel restates his definition of obligation (from his §§ 11-12), which translates Wolff's definition of active obligation as 'connexio motivi cum actione'.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La connexion du motif avec l'action' translates Wolff's § 118 definition of active obligation (connexio motivi cum actione).",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1084,
+   "unit": "E.39",
+   "at": [
+    [
+     "t",
+     2654,
+     2781
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 224",
+   "page": "PPU1.pdf202",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.85,
+   "status": "match",
+   "step": "R",
+   "passage": "qu'un devoir est une action déterminée conformément à la loi, en tant que nous sommes obligés de la déterminer de cette maniere",
+   "source": "Officium dicitur actio juxta legem determinata , quatenus ad eam ita determinandam obligamur.",
+   "french": "On appelle devoir une action déterminée selon la loi, en tant que nous sommes obligés de la déterminer ainsi.",
+   "reason": "Vattel's second definition of devoir is a word-for-word French rendering of Wolff's definition of officium (PPU § 224).",
+   "links": [
+    [
+     "MDZ scan 202",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=202"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact French rendering of Wolff's definition of officium.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1085,
+   "unit": "E.40",
+   "at": [
+    [
+     "t",
+     628,
+     718
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 118",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "translation",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "elle ne fait qu'apperçevoir la liaison du motif avec l'action, qui constitue l'obligation.",
+   "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
+   "french": "Mais la connexion du motif avec l'action, positive ou privative, s'appelle obligation active.",
+   "reason": "The 'liaison du motif avec l'action, qui constitue l'obligation' renders Wolff's definition of obligation as connexio motivi cum actione.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La liaison du motif avec l'action, qui constitue l'obligation' renders Wolff's definition of active obligation as connexio motivi cum actione.",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1086,
+   "unit": "E.40",
+   "at": [
+    [
+     "t",
+     719,
+     848
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 275",
+   "page": "PPU1.pdf240",
+   "inNote": false,
+   "label": "loose paraphrase",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "R",
+   "passage": "Cette liaison vient de la nature des choses, & c'est le Créateur qui l'a établie, quand il a fait les choses telles quelles sont.",
+   "source": "Obligationis naturalis autor Deus est. Obligatio enim naturalis ponitur posita hominis rerumque essentia atque natura ( §. 129. ). Quamobrem cum Deus hominem resque ceteras creaverit ( §. 379. Part. II. Theol. nat. ) & quidem liberrime ( §. 354. Part. II. Theol. nat. ), adeoque hominem & res talem essentiam atque naturam habentes non modo fecerit, verum etiam eos eam habere voluerit ; evidens est quod hominem talem creaverit, ut naturaliter obligatus sit, eumque naturaliter obligatum esse voluerit.",
+   "french": "Dieu est l'auteur de l'obligation naturelle. Car l'obligation naturelle est posée dès que sont posées l'essence et la nature de l'homme et des choses (§ 129). Puis donc que Dieu a créé l'homme et les autres choses, et cela très librement, et qu'il a non seulement fait l'homme et les choses avec une telle essence et une telle nature, mais a voulu aussi qu'ils l'eussent, il est évident qu'il a créé l'homme tel qu'il soit naturellement obligé, et qu'il a voulu qu'il le fût.",
+   "reason": "Wolff's proof that God is author of natural obligation because he created man and things with the essence and nature that ground it is Vattel's point in brief.",
+   "links": [
+    [
+     "MDZ scan 240",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=240"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific argument: obligation is posited with the nature of things, and God, by creating things with that nature, is its author (Wolff § 275).",
+    "date": "2026-11-20"
+   }
+  },
+  {
+   "id": 1087,
+   "unit": "E.40",
+   "at": [
+    [
+     "t",
+     1155,
+     1274
+    ]
+   ],
+   "family": "W",
+   "work": "Wolff, Philosophia practica universalis I (1738)",
+   "locus": "§ 119",
+   "page": "PPU1.pdf127",
+   "inNote": false,
+   "label": "close paraphrase",
+   "confidence": 0.65,
+   "status": "match",
+   "step": "R",
+   "passage": "Car il ne dépend pas de nous, de séparer un motif, d'une action à laquelle il se trouve joint par la nature des choses.",
+   "source": "Necesse igitur est, ut cum actione tam privativa, quam positiva conjungatur motivum aliquod voluntate tua ab actione non separabile : quodsi enim hoc fieri posset, nec amplius necessitas ulla agendi, vel non agendi relinqueretur.",
+   "french": "Il faut donc qu'à l'action, tant privative que positive, soit joint quelque motif que ta volonté ne puisse séparer de l'action : car si cela pouvait se faire, il ne resterait plus aucune nécessité d'agir ou de ne pas agir.",
+   "reason": "Wolff's § 119 (which Vattel cites elsewhere) says obligation needs a motive the will cannot separate from the action, otherwise no necessity would remain; Vattel uses this to answer Barbeyrac.",
+   "links": [
+    [
+     "MDZ scan 127",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
+    ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel answers Barbeyrac with Wolff's § 119 argument: the motive is joined to the action so that our will cannot separate it, otherwise no necessity would remain.",
+    "date": "2026-11-20"
+   }
+  }
+ ]
+}
