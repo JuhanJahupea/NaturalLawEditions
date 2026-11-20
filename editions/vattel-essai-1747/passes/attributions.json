@@ -783,6 +783,30 @@
    "cuePart": "t",
    "confidence": 0.95,
    "reason": "End of the quotation of Jugement § 16, word for word."
+  },
+  {
+   "text": "wolff-theologia-naturalis-1739",
+   "unit": "E.17",
+   "page": "TN1.pdf931",
+   "passage": "Or une action libre est, bonne, ou droite, quand elle a sa raison suffisante dans l'essence, & dans les attributs de l'être qui la produit",
+   "source": "ACtio libera recta est, quae rationem sufficientem in essentia & attributis agentis habet",
+   "form": "reference",
+   "cue": "Wolf. Theol. Nat. Part. I. §. 950.",
+   "cuePart": "n0",
+   "confidence": 0.97,
+   "reason": "Vattel translates the TN1 § 950 definition and cites it. PPU § 64 gives the same definition limited to man ('hominis'), whereas Vattel keeps TN1's general 'agentis' ('l'être qui la produit')."
+  },
+  {
+   "text": "wolff-theologia-naturalis-1739",
+   "unit": "E.17",
+   "page": "TN1.pdf932",
+   "passage": "c'està-dire, quand on peut rendre raison, ou expliquer par l'essence & les attributs de cet être, pourquoi son action a dû être telle qu'il l'a faite, & non pas autre.",
+   "source": "actio haec libera rationem sufficientem in essentia corporis ac inde pendente attributo ejusdem agnoscit , quatenus nempe per hoc attributum , ex essentia corporis fluente intelligitur , cur hujus cibi hac quidem quantitate sumendi electioni nihil obstet ex parte corporis nostri.",
+   "form": "reference",
+   "cue": "Wolf. Theol. Nat. Part. I. §. 950.",
+   "cuePart": "n0",
+   "confidence": 0.4,
+   "reason": "Like the food example of TN1 § 950, Vattel glosses 'having a sufficient reason in the essence' as being able to explain from it why the action is as it is. His 'a dû être telle ... & non pas autre' is closer to PPU § 65 ('cur talis potius sit, quam non sit, ac esse debeat')."
   }
  ]
 }

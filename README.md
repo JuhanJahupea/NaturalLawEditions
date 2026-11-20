@@ -22,9 +22,9 @@ tools/                  conversion and checks; tools/transcription/: the transcr
 
 | Id | Text | Units | Layers |
 |---|---|---|---|
-| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), divergences (302: Wolff 169, Grotius 89, Pufendorf 44), English 1797 (1,124 units, 278 flags), title pages (2 volumes), reuse (4,737 rows in 16 tables; Grotius and Pufendorf from transcription passes; 341 rows added after the audits; 92 rows attributed) |
-| `burlamaqui-1747` | Burlamaqui, *Principes du droit naturel*, Genève 1747 | 331: Avertissement, Partie I ch. I–XI and Partie II ch. I–XIV by § (303), part and chapter headings (27) | Élémens 1783 (323 rows, with the same/expands relation), PDP 1751 (84 rows, later text), divergences (45: Pufendorf 38, Grotius 6, Devoirs 1), English 1763 (304 units, 133 flags), reuse (1,655 rows in 20 tables, the two layers included; Grotius, Pufendorf and the *Devoirs* from transcription passes; 99 rows attributed) |
-| `vattel-essai-1747` | Vattel, *Essai sur le fondement du droit naturel*, in *Le loisir philosophique*, Dresde 1747, pp. 3–70 | 40: §§ 1–41 as printed (the print has no 28 and no 32), title (1) | English 2008 (39 units, 158 flags), title page, reuse (333 rows in 5 tables: Wolff, *Philosophia practica universalis* I 88, Barbeyrac's *Devoirs* with Leibniz's *Jugement* and his *Réflexions* 83, Burlamaqui 1747 68, Barbeyrac's Pufendorf 54, Barbeyrac's Grotius 40; all from transcription; 65 rows attributed) |
+| `vattel-1773` | Vattel, *Le droit des gens*, Neuchâtel 1773 | 1,129: Préface by printed page (24), Préliminaires and Livres I–IV by § (1,100), book headings (5) | 1773 changes (67), divergences (302: Wolff 169, Grotius 89, Pufendorf 44), English 1797 (1,124 units, 278 flags), title pages (2 volumes), translations of 120 Latin and Greek passages, reuse (4,799 rows in 16 tables; Grotius and Pufendorf from transcription passes; 403 rows added after the audits and for the 1773 additions; 92 rows attributed) |
+| `burlamaqui-1747` | Burlamaqui, *Principes du droit naturel*, Genève 1747 | 331: Avertissement, Partie I ch. I–XI and Partie II ch. I–XIV by § (303), part and chapter headings (27) | Élémens 1783 (323 rows, with the same/expands relation), PDP 1751 (84 rows, later text), divergences (45: Pufendorf 38, Grotius 6, Devoirs 1), English 1763 (304 units, 133 flags), translations of 27 Latin passages, reuse (1,655 rows in 20 tables, the two layers included; Grotius, Pufendorf and the *Devoirs* from transcription passes; 99 rows attributed) |
+| `vattel-essai-1747` | Vattel, *Essai sur le fondement du droit naturel*, in *Le loisir philosophique*, Dresde 1747, pp. 3–70 | 40: §§ 1–41 as printed (the print has no 28 and no 32), title (1) | English 2008 (39 units, 158 flags), translations of 5 Latin passages, title page, reuse (407 rows in 7 tables: Wolff, *Philosophia practica universalis* I 88, Barbeyrac's *Devoirs* with Leibniz's *Jugement* and his *Réflexions* 83, Burlamaqui 1747 68, Barbeyrac's Pufendorf 54, Wolff, *Theologia naturalis* I 49, Barbeyrac's Grotius 40, Wolff, *Discursus praeliminaris* 25; all from transcription; 67 rows attributed) |
 
 An attributed row is one where the author names the source for the passage (`passes/attributions.json`, judged by a language model), or one labelled citation. The "Attributed" option in the viewer's Layers menu hides them, to show only the reuse the author does not attribute.
 
@@ -46,7 +46,9 @@ Transcriptions made for the collection. Each folder in `texts/` has a README on 
 | `wolff-jus-gentium-1749` | Wolff, *Jus gentium methodo scientifica pertractatum*, Halle 1749 | 849 pages; Praefatio and Prolegomena from a second copy (27 units) |
 | `wolff-institutiones-1750` | Wolff, *Institutiones juris naturae et gentium*, Halle 1750 | 782 pages |
 | `wolff-philosophia-practica-1738` | Wolff, *Philosophia practica universalis*, pars prior, Frankfurt and Leipzig 1738 (MDZ copy of the Halle 1744 issue) | 317 pages, §§ 1–415 |
-| `vattel-loisir-1747` | Vattel, *Le loisir philosophique*, Dresde 1747: the *Essai sur le fondement du droit naturel* | 68 pages |
+| `wolff-theologia-naturalis-1739` | Wolff, *Theologia naturalis*, pars prior, Frankfurt and Leipzig 1739 | 54 pages, §§ 948–1006 |
+| `wolff-discursus-praeliminaris-1740` | Wolff, *Discursus praeliminaris de philosophia in genere*, in the *Logica*, Frankfurt and Leipzig 1740 | 104 pages, §§ 1–171 |
+| `vattel-loisir-1747` | Vattel, *Le loisir philosophique*, Dresde 1747: the *Essai sur le fondement du droit naturel* | 68 pages, checked against a second copy |
 
 ## Public address
 

@@ -30,7 +30,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Le Droit Naturel est une théorie générale des devoirs de l'homme, consideré simplement comme homme, ou, une science qui nous apprend ce qui est naturellement bon, ou mauvais à l'homme ; ce qu'il doit faire, & ce qu'il doit ne pas faire.",
    "source": "LES Devoirs des Hommes, & les régles de ce qu'ils sont tenus icibas de faire ou de ne pas faire, comme étant honnête ou deshonnête, découlent manifestement de trois grandes sources; savoir, des lumiéres de la Raison toute seule; des Loix Civiles; & de la Révélation. Le premier de ces Principes renferme les Devoirs les plus généraux de l'Homme, surtout ceux qui tendent à le rendre sociable.",
@@ -41,7 +41,13 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n56/mode/1up"
     ]
    ],
-   "sourcePart": "pufendorf_preface"
+   "sourcePart": "pufendorf_preface",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition takes the preface's frame: natural law as the most general duties of man as man (as against citizen and Christian), the rules of what he must do or not do.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2001,
@@ -58,9 +64,9 @@
    "locus": "Liv. I ch. I § 2, n. 2",
    "page": "DEV56T1.p85",
    "inNote": true,
-   "label": "loose paraphrase",
+   "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "rejected",
    "step": "R",
    "passage": "Quelquefois la Morale semble signifier la Théorie de nos Devoirs, en tant que nous sommes obligés à les pratiquer, pour nous mêmes, comme créatures raisonnables",
    "source": "C'est-à-dire, non seulement les mouvemens extérieurs , qui produisent des Actions sensibles, mais encore les mouvemens purement internes: quoique, selon l'usage , la considération des derniers appartienne plutôt à la Morale, prise dans un sens particulier, & distinguée du Droit Naturel , qui fait le sujet de ce Traité.",
@@ -71,7 +77,14 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n84/mode/1up"
     ]
    ],
-   "sourcePart": "barbeyrac_note"
+   "sourcePart": "barbeyrac_note",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Barbeyrac's narrow sense of Morale covers internal movements as opposed to external acts, while Vattel's covers duties to oneself as opposed to duties to others. The distinctions differ and only the topic is shared.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2002,
@@ -101,7 +114,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n239/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both tie natural law to what others 'ont droit d'exiger', but Barbeyrac is making a point about external acts, not drawing Vattel's Morale/Droit Naturel distinction, and the phrase is common.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2003,
@@ -131,7 +149,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n252/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's two questions (foundation and principle of obligation) frame the general dispute; Barbeyrac's gloss on Leibniz's efficient cause addresses only obligation, and the distinction is common.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2004,
@@ -219,7 +242,7 @@
    "locus": "Réflexions du traducteur § 6",
    "page": "DEV56T2.p234",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "shared argument",
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
@@ -232,7 +255,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n233/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the phrase 'la beauté même de la vertu' is shared: Barbeyrac speaks of it as the noblest motive to duty, not as one school's ground of obligation, so the content is not paraphrased.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase"
+   }
   },
   {
    "id": 2007,
@@ -297,7 +326,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n266/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "E.11 states Vattel's own account of motives overriding the heart's inclination; it does not take up Barbeyrac's claim, which Vattel quotes and answers only at E.38.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2009,
@@ -327,7 +361,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n274/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac does make acting by duty the ground of moral necessity, but Vattel presents 'le devoir fait l'obligation' as a common way of speaking with no echo tying it to Réflexions § 16.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2010,
@@ -356,7 +395,12 @@
      "archive.org",
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n82/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Pufendorf's is the stock definition of duty, but Vattel's wording ('action déterminée ... en tant que nous sommes obligés à la déterminer') translates Wolff PPU § 224, not Pufendorf.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2011,
@@ -375,7 +419,7 @@
    "inNote": true,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "il l'a fait envisager comme une dépendance où nous sommes de la volonté d'un supérieur, laquelle nous assujettit à conformer notre conduite aux loix de ce supérieur",
    "source": "cette nécessité ne peut être imposée que par un Principe extérieur, par un Etre qui ait droit de nous assujettir à sui-",
@@ -386,7 +430,13 @@
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n151/mode/1up"
     ]
    ],
-   "sourcePart": "barbeyrac_note"
+   "sourcePart": "barbeyrac_note",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's summary of Barbeyrac's notes on Pufendorf (obligation as dependence on a superior who 'nous assujettit') restates this note's 'Etre qui ait droit de nous assujettir à suivre certaines régles'.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2012,
@@ -405,7 +455,7 @@
    "inNote": false,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Mais c'est visiblement confondre les choses, que de prendre l'obligation pour la dépendance & pour la soumission.",
    "source": "Se conformer à cette volonté toute sainte & toute bonne, de laquelle on se reconnoît dépendant, c'est-là agir par devoir; c'est ce qui impose à tous les Hommes la nécessité morale, indépendamment de toute autre considération.",
@@ -416,7 +466,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n274/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Réflexions § 16 makes moral necessity consist in conforming to the will one depends on; Vattel, naming Barbeyrac, rejects exactly this identification of obligation with dependence and submission.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2013,
@@ -470,7 +526,7 @@
    "inNote": false,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Dira-t-il, que c'est parce que cette obéissance est juste, conforme aux régles de l'ordre",
    "source": "Tout Supérieur, au-dessous de DIEU, a une autorité fondée sur des raisons, dont la justice dépend de quelque Loi du Droit Naturel",
@@ -481,7 +537,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n289/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel asks whether Barbeyrac (named) will say obedience is due because it is just, which is Barbeyrac's answer in Réflexions § 19 (authority founded on reasons of justice), and rejects it as a motive.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2015,
@@ -545,7 +607,12 @@
      "archive.org",
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n220/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Self-love leading us to seek our good is a commonplace; the shared 'qui ... porte ... à' construction is not specific enough to tie Vattel to Devoirs I.5.1.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2017,
@@ -612,7 +679,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n274/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Obeying God out of something other than fear is a commonplace; Vattel's passing ranking of motives shares only 'indépendamment de toute crainte' with Barbeyrac (and with Pufendorf I.6.9).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2019,
@@ -642,7 +714,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n232/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's inference from utility as primitive motive to utility as first principle of obligation does contradict Barbeyrac's motive/ground split, but § 22 states the thesis without taking up Barbeyrac, who is answered only from § 27 on.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2020,
@@ -672,7 +749,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n294/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "weak",
+    "reason": "That observing natural law serves the observer's good is a commonplace; Vattel derives it from his own §§3 and 6, and nothing ties the sentence to Leibniz's §20 formula beyond the general idea.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2021,
@@ -701,7 +783,12 @@
      "archive.org",
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n186/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The premise that man cannot subsist or enjoy his goods without society is the common Pufendorfian sociability argument; Vattel's distinctive step (obligation from one's own utility) is not in I.3.7.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2022,
@@ -730,7 +817,12 @@
      "archive.org",
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n64/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The only link is the common idiom 'sans balancer' and the commonplace of putting the public good before private advantage; Vattel's reason (the rules secure his other goods) is not in Pufendorf's portrait of the good citizen.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2023,
@@ -759,7 +851,12 @@
      "archive.org",
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n496/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That the legislator's will obliges even when the reason of the law is unseen is a stock maxim (stat pro ratione voluntas, which Vattel cites via Wolff); Pufendorf states it in passing in a chapter on interpretation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2024,
@@ -1478,7 +1575,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "qu'un Athée peut bien aussi trouver des motifs suffisans en plusieurs cas, dans la seule beauté de la vertu",
    "source": "à trouver dans la pratique de la Vertu ce grand plaisir dont parle l'Anonyme, & qui est produit, non par la vue des Récompenses, moins encore par la vue des Peines d'une autre Vie, mais par de longues & sérieuses réflexions sur la beauté même de la Vertu.",
@@ -1489,7 +1586,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n233/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel points to Barbeyrac's 'deux pages suivantes', which are exactly this passage on utility in this life and the beauty of virtue as a motive apart from future rewards, the point he makes for the atheist.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2045,
@@ -1718,7 +1821,7 @@
    "inNote": false,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Sa raison, direz-vous, lui apprend, que Dieu veut tout ce qui est bon.",
    "source": "On ne sauroit s'empêcher non plus de penser, qu'il veut certainement que les Hommes suivent les lumiéres de leur Raison, comme ce qu'il y a en eux de plus excellent, comme ce qui seul peut les conduire à la destination de leur nature.",
@@ -1729,7 +1832,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n269/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "The 'direz-vous' reply voices Barbeyrac's claim in Réflexions § 15, the paragraph Vattel is answering, that reason shows God wills us to follow reason, and Vattel turns it against him.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2052,
@@ -2239,7 +2348,7 @@
    "inNote": false,
    "label": "open disagreement",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Au reste, il faut remarquer, que cette idée d'une divinité n'agit sur nous que comme un motif.",
    "source": "Ce sont certainement deux Questions différentes, Pourquoi on est obligé de faire ou de ne pas faire certaines choses? Et, Quel est le motif le plus capable de porter les Hommes à pratiquer ce qu'ils reconnoissent être de leur Devoir?",
@@ -2250,7 +2359,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n232/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "In a paragraph answering Barbeyrac by name, Vattel takes up the afterlife consideration that Réflexions § 6 treats as a motive distinct from the ground of obligation, and corrects him: the idea of God acts only as a motive, and that motive is what obliges.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 2067,

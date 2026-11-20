@@ -2,6 +2,13 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.18 (2026-11-20)
+
+- Page breaks: the working edition dropped the space between the two words around a break, so the text read "deleur" for "de leur". 446 spaces restored (`tools/migrate_pb_spaces.py`). The offsets of 511 pass rows and 2 attributions moved with the text; passages now read with their spaces. A word hyphenated over a page keeps its hyphen ("quel-que"), as before.
+- The passages Vattel added in 1773 (layer `changes-1773`, 64 additions with text) read with Wolff, Grotius, Pufendorf and Burlamaqui (step V, `passes/additions.json`, `audit/README.md`): 62 rows, 10 match and 52 possible. By table: Grotius 26, Pufendorf 13, *Jus gentium* 9, *Institutiones* 8, Burlamaqui 6. Most of the additions are historical examples from sources outside the corpus; `audit/additions-1773-2026-11-20.json` lists them.
+- New layer `glosses`: English translations of 120 passages in Latin (118) and Greek (2), with the author and work where the edition names them and notes on misprints. Dotted underline in the text; the list follows each section and has a tab in List.
+- Match rows: 2,532 → 2,542.
+
 ## 1.17 (2026-11-18)
 
 - 341 reuse rows added (`passes/additions.json`, `audit/README.md`). 191 rows give the passage of Wolff or Grotius that the audits named for weak rows (144 match, 47 possible). 150 rows give reuse found by the recall check that no row covered (76 match, 74 possible). By table: Wolff *Jus gentium* 165, Grotius 90, Pufendorf 45, Wolff *Institutiones* 41.

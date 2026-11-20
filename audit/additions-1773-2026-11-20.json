@@ -1,0 +1,581 @@
+{
+ "format": "nle-audit/1",
+ "edition": "vattel-1773",
+ "date": "2026-11-20",
+ "description": "Reading of the passages Vattel added in 1773 (layer changes-1773, 64 additions with text): per addition, the rows found (passes/additions.json, step V), the sources Vattel names there that the corpus lacks, and what the reader searched. Prompt: tools/transcription/ADDITIONS_1773_PROMPT.md.",
+ "items": [
+  {
+   "change": "Prelim.6~0",
+   "unit": "Prelim.6",
+   "rows": 13,
+   "named": [],
+   "searched": "Read the whole note (n0 plus its continuation in the next notes entry); searched INST §§ 38-44, JG prol. §§ 7-8, GRO24 prol. § 11 with Barbeyrac, BUR47 P1.1, P1.5-6, P2.1-2, P2.5, PUF34 for 'athée', 'ennemi du genre humain', 'desir de la félicité'; the loisir-1747 row 2681 is Vattel's own essay, not one of these sources."
+  },
+  {
+   "change": "Prelim.13~0",
+   "unit": "Prelim.13",
+   "rows": 0,
+   "named": [
+    "Xenophon (quotation, French translation; work and place not given)"
+   ],
+   "searched": "Searched GRO24/PUF34 for Xenophon citations and for the quote's wording ('épargner', 'avantage particulier', 'amitié', Greek 'πλεονεκτ'); the passage is not in any of the five sources."
+  },
+  {
+   "change": "Prelim.22~0",
+   "unit": "Prelim.22",
+   "rows": 0,
+   "named": [
+    "Cicero, In Verrem, actio II, lib. I, c. 15"
+   ],
+   "searched": "Searched all five sources for the Cicero (In Verrem II.1.15) words 'perturbare', 'insidiosam', 'infestamque'; not found."
+  },
+  {
+   "change": "I.3~0",
+   "unit": "I.3",
+   "rows": 5,
+   "named": [
+    "Juan de Mariana, De rege et regis institutione (1599): source of the Latin maxim and the Theopompus anecdote, introduced only as 'l'auteur' (Mariana is named in the 1773 notes to I.45 and I.50)",
+    "Theopompus, king of Sparta (saying reported via 'l'auteur'; also in Valerius Maximus IV.1 ext. 8, Plutarch, Aristotle, Politics V.11)"
+   ],
+   "searched": "Searched the Latin maxim (not in sources), Theopompus/Ephors/Lacedaemonian kings in GRO24 I.3.8-10, I.4.8 and PUF34 VII.5.22, VII.6.9, VII.8.8, Wolff INST §§ 983-1004 (regnum Laconicum, imperium limitatum); nothing on Sweden."
+  },
+  {
+   "change": "I.39~0",
+   "unit": "I.39",
+   "rows": 0,
+   "named": [
+    "Paul-François Velly, Histoire de France, t. III, p. 65 (dying words of Louis VI to Louis VII)",
+    "Histoire de Timur-bec (Sharaf al-Din Ali Yazdi, trans. Pétis de la Croix, 1722), liv. II, ch. XLI",
+    "The Koran ('l'Alcoran'), cited without place"
+   ],
+   "searched": "Searched all sources for Louis le Gros, Velly, Timur/Tamerlan, Alcoran, 'charge publique'; nothing relevant."
+  },
+  {
+   "change": "I.45~0",
+   "unit": "I.45",
+   "rows": 2,
+   "named": [
+    "Juan de Mariana, De rege et regis institutione (1599), lib. I, cap. V ('Ibid.')"
+   ],
+   "searched": "Searched for the Mariana Latin (absent) and for 'peuple au dessus du roi' in GRO24 I.3.8-9, PUF34 VII.6.5-17; Wolff INST § 996 (king superior in monarchy) is the doctrine Vattel's sentence contradicts but has no shared wording."
+  },
+  {
+   "change": "I.46~0",
+   "unit": "I.46",
+   "rows": 3,
+   "named": [
+    "Hugo Grotius, Annales et historiae de rebus Belgicis (French trans. Annales et histoires des troubles du Pays-Bas), liv. II (not De jure belli ac pacis)"
+   ],
+   "searched": "Searched 'Brabant', Grotius's Annales (not in GRO24), and the release-from-obedience clause in GRO24 I.4.12-14 and PUF34 VII.8.8."
+  },
+  {
+   "change": "I.50~0",
+   "unit": "I.50",
+   "rows": 0,
+   "named": [
+    "Juan de Mariana, De rege et regis institutione (1599), lib. I, cap. VII"
+   ],
+   "searched": "Searched 'Mariana' (only Grotius's Historia Hispaniae references and Barbeyrac's preface on Mariana's seditious maxims), 'empoisonn'/'poison' in GRO24 III.4.15-16 (poisoned drink vs weapons) and PUF34; no reuse in the Mariana note (n1 and its continuation)."
+  },
+  {
+   "change": "I.61~0",
+   "unit": "I.61",
+   "rows": 1,
+   "named": [
+    "Juan de Mariana, De rege et regis institutione (1599), Lib. I, cap. IV (\"ibid.\", the work cited in I.50-51 notes)"
+   ],
+   "searched": "Mariana in all sources (GRO24 cites only his Historia); 'immutari', 'publicae salutis', changing succession/fundamental laws by consent in JG, INST, GRO24, PUF34, BUR47; Wolff INST §984 parallel."
+  },
+  {
+   "change": "I.69~0",
+   "unit": "I.69",
+   "rows": 3,
+   "named": [
+    "Paul-François Velly, Histoire de France, tome III, p. 491"
+   ],
+   "searched": "Velly, Philip Augustus, King John, feudataire/tributaire, barons in all sources; Grotius I.4.10 and II.6.3-9, Pufendorf VIII.5.9-10, Wolff JG §§410-411 on tributary nations."
+  },
+  {
+   "change": "I.106~0",
+   "unit": "I.106",
+   "rows": 4,
+   "named": [
+    "Jean Boizard, Traité des monoyes, de leurs circonstances et dépendances (1692; 1711), chap. 29 and the chapter on the \"empirance\" of coin"
+   ],
+   "searched": "Boizard, affoiblir, Philippe le Bel/de Valois, coin debasement terms in all sources; Pufendorf V.1.13-14 with Barbeyrac's notes; Wolff INST §§1036, 1059, 534."
+  },
+  {
+   "change": "I.133~0",
+   "unit": "I.133",
+   "rows": 2,
+   "named": [
+    "Tacitus, Annales, I.73 (Tiberius: \"deorum iniurias dis curae\")"
+   ],
+   "searched": "'Diis curae', 'Deorum injuri*', 'venger les injures', Cicero's law in all sources; found Grotius II.20.44 and Barbeyrac's n. 2 (row 4097)."
+  },
+  {
+   "change": "I.135~0",
+   "unit": "I.135",
+   "rows": 1,
+   "named": [
+    "John Henry Grose, Voyage aux Indes orientales (French tr. 1758), on the gentiles of Hindustan"
+   ],
+   "searched": "Indostan, gentils, Grose, religion du cœur, tolérance, supporter/charitable in all sources; Grotius II.20.48-50 and Barbeyrac's notes; PUF34 preface (Bernier) not relevant."
+  },
+  {
+   "change": "I.137~0",
+   "unit": "I.137",
+   "rows": 0,
+   "named": [],
+   "searched": "Hochberg, Neuchâtel/Valangin, Reformation, diversity of religion of prince and people in all sources; nothing relevant."
+  },
+  {
+   "change": "I.146~0",
+   "unit": "I.146",
+   "rows": 0,
+   "named": [
+    "Gregory VII, Epistolae, in Jean Hardouin, Acta conciliorum, tome VI",
+    "Natalis Alexander (Noël Alexandre), Dissertationes historiae ecclesiasticae, saec. XI & XII, p. 384 (Gregory VII's speech to the Roman council)",
+    "Decretals of Gregory IX, I.33.6 (cap. Solitae, De majoritate et obedientia), the rubric \"Imperium non praeest sacerdotio sed subest\""
+   ],
+   "searched": "Gregory VII, Henri IV, Natalis Alexander, 'De majoritate et obedientia', sacerdotium/imperium, Boniface VIII in all sources; Grotius II.22.14 with Barbeyrac n. 5 cites contrary canons, not reused."
+  },
+  {
+   "change": "I.151~0",
+   "unit": "I.151",
+   "rows": 0,
+   "named": [
+    "Ricci, Synopsis decretorum et resolutionum S. Congregationis Immunitatis, p. 105",
+    "Urban VI, constitution in Liber septimus Decretalium (Pierre Matthieu), De foro competenti, cap. II",
+    "Jean Papon, Recueil d'arrests notables, Liv. I, tit. V, art. 34"
+   ],
+   "searched": "Immunity, Congregation of Immunity, Ricci, Urban VI, de foro competenti, Papon, clergy under secular jurisdiction in all sources, incl. Wolff JG/INST on ecclesiastics; nothing relevant."
+  },
+  {
+   "change": "I.154~0",
+   "unit": "I.154",
+   "rows": 0,
+   "named": [
+    "Paul-François Velly, Histoire de France, T. IV, p. 33 (the note continues with T. VI, p. 390)"
+   ],
+   "searched": "Searched all five for Velly, Albigeois, Toulouse/Raymond, Martin IV, Arragon, Valois, Philippe le Hardi, papal excommunication/deposition; only Barbeyrac's general remark on papal deposing (PUF34 Préface § 10), not the note's examples: no rows."
+  },
+  {
+   "change": "I.179~0",
+   "unit": "I.179",
+   "rows": 2,
+   "named": [
+    "Tertullian, De exhortatione castitatis (quoted: 'videtur esse matrimonii et stupri differentia...')",
+    "Jerome (no work given; the saying 'Hanc tantum esse differentiam inter uxorem et scortum...')"
+   ],
+   "searched": "Searched for Tertullian, Jerome, stuprum/scortum/prostitu-, exhortatio castitatis, célibat/mariage among the Fathers; quotations not in the sources, but Barbeyrac's Préface §§ 9-10 to Pufendorf makes the same complaint."
+  },
+  {
+   "change": "I.197~0",
+   "unit": "I.197",
+   "rows": 1,
+   "named": [
+    "Hugo Grotius, Annales et historiae de rebus Belgicis (French: Histoire des troubles des Pays-Bas), Liv. XVI, p. 627"
+   ],
+   "searched": "Checked Wolff JG §§ 80-84 (tutela) and INST § 1102, GRO24/PUF34 for Provinces-Unies/Empire/Espagnols; only Wolff's rule on unperformed protection (JG § 82) bears on the example."
+  },
+  {
+   "change": "I.220~0",
+   "unit": "I.220",
+   "rows": 3,
+   "named": [
+    "'Hist. intess. du Nord', p. 120 (an unidentified history of the Great Northern War; source of the Paykul case)"
+   ],
+   "searched": "Checked Wolff JG §§ 135-155 and INST §§ 1103-1107, Grotius II.5.24, Pufendorf VIII.11.2-4; no source names Paykul, but Pufendorf's conditions on emigration underlie the argument."
+  },
+  {
+   "change": "I.242~0",
+   "unit": "I.242",
+   "rows": 0,
+   "named": [],
+   "searched": "Added text is only the opening sentence on taxes (the Mariana episode in n1 is not in the added text); searched for taxes that continue/multiply once introduced in all five: no rows."
+  },
+  {
+   "change": "II.20~0",
+   "unit": "II.20",
+   "rows": 1,
+   "named": [
+    "Hugo Grotius, Annales et historiae de rebus Belgicis (French: Histoire des troubles des Pays-Bas), Liv. XVI (quoted)"
+   ],
+   "searched": "Searched for Grotius's Annales, English law, Indes, étrangers without alliance; Grotius II.15.5, III.9.18 and Pufendorf VIII.9.2 treat ancient hostility to foreigners without treaty; the English example is not in them."
+  },
+  {
+   "change": "II.40~0",
+   "unit": "II.40",
+   "rows": 0,
+   "named": [
+    "Vicente Bacallar y Sanna, marquis de Saint-Philippe, Mémoires, T. IV, p. 194"
+   ],
+   "searched": "Searched all five for Cambray, Pentherrieder, Provana, Saint-Philippe, Sardaigne and imperial pre-eminence: no rows."
+  },
+  {
+   "change": "II.43~0",
+   "unit": "II.43",
+   "rows": 0,
+   "named": [
+    "Oliver Cromwell, letter to Louis XIV (address and subscription quoted; no edition given)",
+    "Willem Borreel, letter to Grand Pensionary Johan de Witt, 25 May 1655 (no edition given)"
+   ],
+   "searched": "Searched all five for Cromwell, Protector, Borreel, de Witt, Christianissimus, formulaire/souscription and titles in letters (Wolff JG §§ 245-248, Pufendorf VIII.4): no rows."
+  },
+  {
+   "change": "II.58~0",
+   "unit": "II.58",
+   "rows": 1,
+   "named": [
+    "Michel Le Vassor, Histoire du règne de Louis XIII (James I's reply to Bouillon, envoy of Marie de Médicis)"
+   ],
+   "searched": "GRO24 II.25.8 and notes, PUF34 VIII.6.14 with Barbeyrac's notes, JG §§258-263 (intervention, religion), BUR47; only Grotius's case of emperors protecting persecuted Christians is close."
+  },
+  {
+   "change": "II.64~0",
+   "unit": "II.64",
+   "rows": 0,
+   "named": [
+    "Coenraad van Beuningen, letter to Johan de Witt of 15 Oct. 1666 (Lettres et négociations entre M. Jean de Witt et MM. les plénipotentiaires des Provinces-Unies)"
+   ],
+   "searched": "JG §§264-265 (duty of justice, the 'devoir' extended), JG §587 and GRO24 III.2.5 (foreign sentences in reprisals), PUF34/GRO24/BUR47 for exécution of foreign sentences and lettres réquisitoriales; nothing on the added text."
+  },
+  {
+   "change": "II.113~0",
+   "unit": "II.113",
+   "rows": 1,
+   "named": [],
+   "searched": "JG §§328-332 (droit d'aubaine) and §583, INST §§1107, 1138, all five sources for detract-, traite foraine, gabella, Abzug; jus detractus occurs only in JG §583."
+  },
+  {
+   "change": "II.216~0",
+   "unit": "II.216",
+   "rows": 1,
+   "named": [
+    "Hugo Grotius, Annales et Historiae de rebus Belgicis (French: Histoire des troubles des Pays-Bas), Historiae Liv. V"
+   ],
+   "searched": "GRO24 II.14.1-2 with Barbeyrac's notes (lézion, restitution of kings), PUF34 VIII.10, JG/INST on public debts, all sources for Philippe II, 1596/XCVI, banqueroute; only Barbeyrac's note on GRO II.14.2 has the case."
+  },
+  {
+   "change": "II.223~0",
+   "unit": "II.223",
+   "rows": 0,
+   "named": [
+    "Jacques-Auguste de Thou, Historiae sui temporis (Histoire universelle), Liv. XVII"
+   ],
+   "searched": "GRO24 II.13.20 notes and PUF34 IV.2.24 n.3 (papal absolution of oaths; Eugene IV and Ladislas, which bears on the 1758 text, not the addition), all sources for Caraffe, Henri II, Vaucelles, de Thou; nothing on the added quotation."
+  },
+  {
+   "change": "II.263~0",
+   "unit": "II.263",
+   "rows": 1,
+   "named": [
+    "Christian Wolff, Jus naturae methodo scientifica pertractatum, Pars VII, § 822 (note)"
+   ],
+   "searched": "INST §§794-817 (interpretation) and §449, JG §§364, 374-375, 553, all sources for verbis expressis, manifestus significatus, certitudo/negotia humana; no verbatim parallel to the quoted sentence."
+  },
+  {
+   "change": "II.345~0",
+   "unit": "II.345",
+   "rows": 1,
+   "named": [
+    "Johan de Witt (remark on general reprisals; source not given)"
+   ],
+   "searched": "JG §§586-604 (reprisals), GRO24 III.2 with Barbeyrac's notes, PUF34 VIII.6.13 with notes, BUR47; nothing on general reprisals, only Wolff's reprisals-as-war passage."
+  },
+  {
+   "change": "II.348~0",
+   "unit": "II.348",
+   "rows": 1,
+   "named": [
+    "Johan de Witt, letter on the English reprisals granted for the Knights of Malta (Lettres et négociations de Jean de Witt)",
+    "Willem Boreel, replies (dispatches from the French court) on the same affair"
+   ],
+   "searched": "JG §§586-604, GRO24 III.2.4-7 with notes, PUF34 VIII.6.13 with Barbeyrac/Buddeus note, BUR47, all sources for de Witt, Boreel, Malte, amirauté; only doctrinal parallels to the conditions in de Witt's letter."
+  },
+  {
+   "change": "III.24~0",
+   "unit": "III.24",
+   "rows": 0,
+   "named": [],
+   "searched": "JG §§617-628 and 572-582 (bellum ingentem trahit cumulum malorum), GRO24 II.24, PUF34, BUR47 for circonspection/conducteurs/importance du sujet: rhetorical close, no source."
+  },
+  {
+   "change": "III.64~0",
+   "unit": "III.64",
+   "rows": 0,
+   "named": [
+    "Charles II of Great Britain, declaration of war against France, 9 February 1668 (document; no printed source given)"
+   ],
+   "searched": "JG §§737-742 (manifesta), 835-837 (tutus abitus), GRO24 III.3-4 and notes, PUF34 for déclaration/manifeste/Charles II/1668: historical example, no source."
+  },
+  {
+   "change": "III.109~0",
+   "unit": "III.109",
+   "rows": 2,
+   "named": [],
+   "searched": "JG §§683-685, 833-834, 899; GRO24 III.4.8, III.7, III.9.2 and notes; PUF34 VIII.6.7 n.2 for port neutre/prisonniers/postliminie: only related doctrine."
+  },
+  {
+   "change": "III.113~0",
+   "unit": "III.113",
+   "rows": 4,
+   "named": [
+    "Johan de Witt, letter of 14 January 1654 (Lettres et négociations de Jean de Witt)",
+    "Hugo Grotius, Annales et Historiae de rebus Belgicis (Histoire des troubles des Pays-Bas), Liv. VI and Liv. XV, p. 572"
+   ],
+   "searched": "GRO24 III.1.5 text and nn.1-8 (row 4685), PUF34 VIII.6.7 n.2 (Pufendorf's letter), JG §§ 666, 677-685 for Elisabeth/Polonois/Danois/bled/agrêts/faim: 1597 episode shared with Grotius's note; de Witt letter not in the sources."
+  },
+  {
+   "change": "III.115~0",
+   "unit": "III.115",
+   "rows": 2,
+   "named": [
+    "Willem Boreel, letter to Johan de Witt, in Lettres et négociations de Jean de Witt, T. I, p. 80"
+   ],
+   "searched": "GRO24 III.1.5 n.6 (Consulat de la mer) and III.6.5-6 with n.1, JG §§ 727-728, 851, PUF34 for robe d'ennemi/confisque/vaisseau ami: rule and French law shared with Grotius III.6.6, wording is Boreel's."
+  },
+  {
+   "change": "III.140~0",
+   "unit": "III.140",
+   "rows": 0,
+   "named": [
+    "Hugo Grotius, Annales et Historiae de rebus Belgicis (Histoire des troubles des Pays-Bas), Liv. XIV, p. 550"
+   ],
+   "searched": "GRO24 III.11, III.4 and notes, JG §§ 794-801, PUF34 for Spinola/noyer/sur mer/quartier: historical example from Grotius's Histoire, no reuse."
+  },
+  {
+   "change": "III.142~0",
+   "unit": "III.142",
+   "rows": 0,
+   "named": [
+    "Johan de Witt, letter on the English admiralty's grant of reprisals (Lettres et négociations de Jean de Witt)",
+    "Willem Boreel, replies to de Witt (same collection)"
+   ],
+   "searched": "JG §§ 589-591, GRO24 III.2.4-7 (lettres de marque, refus de justice), PUF34 for représailles/déni de justice/étranger: de Witt's quoted conditions repeat common doctrine without shared wording, no row."
+  },
+  {
+   "change": "III.143~0",
+   "unit": "III.143",
+   "rows": 3,
+   "named": [
+    "Jacques-Auguste de Thou, Histoire universelle (French translation), T. I, p. 287 (battle of Musselburgh)",
+    "Julius Caesar, De bello Gallico, Lib. II",
+    "John Hayward, The Life and Raigne of King Edward the Sixt"
+   ],
+   "searched": "GRO24 III.11.14-16 (Atuatuci, bélier, canon, résistance opiniâtre), JG §§ 804-807, INST, PUF34 for Aduatu/bélier/Colonne/Albe/opiniâtre: shared example and rejected maxim, quote itself from de Thou."
+  },
+  {
+   "change": "III.145~0",
+   "unit": "III.143",
+   "rows": 0,
+   "named": [
+    "Histoire de Louis XI, liv. VIII (cited as 'Hist. de LOUIS XI'; probably Charles Pinot Duclos, Histoire de Louis XI, 1745)"
+   ],
+   "searched": "Wolff JG §§ 804-807 (obstinate defence), GRO24/PUF34 for Louis XI, S. Omer, Bourgogne, threats to governors or to a father: nothing beyond the anecdote's own source"
+  },
+  {
+   "change": "III.147~0",
+   "unit": "III.147",
+   "rows": 2,
+   "named": [
+    "Xenophon, Cyropaedia (Cyropédie), liv. V, p. 109 (a French translation, edition unidentified)"
+   ],
+   "searched": "GRO24 III.11.11 and III.12.4 with notes, PUF34, Wolff JG § 875 (farmers spared, general only) for Cyrus, laboureurs, Assyrie, gens armés"
+  },
+  {
+   "change": "III.150~0",
+   "unit": "III.150",
+   "rows": 2,
+   "named": [
+    "Grotius, Annales et Historiae de rebus Belgicis (cited as 'Hist. des Pays-Bas', liv. III, au commencement)",
+    "Virgil, Aeneid (named for the phrase 'belli commercia', X, 532)"
+   ],
+   "searched": "n0 and its continuation n1 read as one note; GRO24 III.14.9, III.21.1, III.12.4, III.23.5 n.1, PUF34, Wolff JG §§ 814-819, 843-844 for Fuentes, rançon, solde, belli commercia, contributions, Pays-Bas"
+  },
+  {
+   "change": "III.155~0",
+   "unit": "III.155",
+   "rows": 0,
+   "named": [
+    "Sharaf al-Din Ali Yazdi, Histoire de Timur-Bec, trans. François Pétis de La Croix (1722), liv. V, ch. XXIV (cited as 'Hist. de TIMUR-BEC')",
+    "The Qur'an ('l'alcoran'), quoted within the Timur-bec account (treachery falls back on the traitor)"
+   ],
+   "searched": "n3 and its continuation n4 read as one note; Wolff JG §§ 877-885 (poison, assassins), GRO24 II.18 and III.4, PUF34 for Timur, Tamerlan, Farrudge, ambassador-assassins: nothing"
+  },
+  {
+   "change": "III.158~0",
+   "unit": "III.158",
+   "rows": 2,
+   "named": [
+    "Xenophon, Hellenica (cited as 'Hist. Græc. Lib. I, pag. 340')",
+    "Sharaf al-Din Ali Yazdi, Histoire de Timur-Bec, trans. Pétis de La Croix, liv. V, ch. XXVII (second added note, on the melons sent to Joseph Sofy)"
+   ],
+   "searched": "GRO24, PUF34 for Anaxila, Byzance/Bysance, Alcibiade, Lacédémoniens absous; Wolff JG §§ 790-810; also the Timur melons note (n3-n4): Timur, Carezem, melons, courtesy to besieged enemies"
+  },
+  {
+   "change": "III.159~0",
+   "unit": "III.159",
+   "rows": 0,
+   "named": [
+    "'Hist. du Nord', p. 26 (unidentified history of the North; account of Charles XII at the siege of Thorn, 1703)"
+   ],
+   "searched": "GRO24 III.4 and III.11, PUF34, Wolff JG §§ 801-807 for Charles XII, Thorn, canonniers, point de quartier, threats to a garrison: nothing"
+  },
+  {
+   "change": "III.178~0",
+   "unit": "III.178",
+   "rows": 0,
+   "named": [
+    "Grotius, Annales et Historiae de rebus Belgicis (cited as 'Hist. des troubles des Pays-Bas', liv. VI)"
+   ],
+   "searched": "n0 and its continuation n1 read as one note; Wolff JG §§ 857-858, 883-885, GRO24 III.1 and III.4.18 (spies), PUF34 for Venloo, Maurice, surprendre une place, escalade, espions: nothing specific"
+  },
+  {
+   "change": "III.181~0",
+   "unit": "III.180",
+   "rows": 0,
+   "named": [
+    "Xenophon, Hellenica (cited as 'Hist. Græc. Lib. II')"
+   ],
+   "searched": "Wolff JG §§ 881-885, GRO24 III.1.21-22, PUF34 VIII.6.16 (inducing traitors) and Greek/Xenophon references for trahison, traître, guerre ouverte, se garder: the Xenophon argument is in none of them"
+  },
+  {
+   "change": "III.183~0",
+   "unit": "III.182",
+   "rows": 0,
+   "named": [
+    "Grotius, Annales et Historiae de rebus Belgicis (the Historiae, cited as 'Hist. des troubles des Pays-Bas'), Liv. I: Parma's siege of Bergen-op-Zoom"
+   ],
+   "searched": "Bergen-op-Zoom/Parma/taverne/feigned-treason terms in GRO24, PUF34, BUR47; GRO24 III.1 §§ 20-22 and notes, PUF34 VIII.6 § 16 (bribing enemy subjects) and JG §§ 857-858 (dolus, stratagemata): no source gives this example or the feigned-acceptance device; 4-gram scan empty."
+  },
+  {
+   "change": "III.213~0",
+   "unit": "III.213",
+   "rows": 0,
+   "named": [],
+   "searched": "Word-order change only ('anciens droits'); searched Portugal/Bragance in GRO24, PUF34, BUR47 and the existing GRO24 III.9 § 9 / PUF34 VIII.6 § 19 rows: the 1640 Portugal example is not in any source."
+  },
+  {
+   "change": "III.232~0",
+   "unit": "III.232",
+   "rows": 0,
+   "named": [],
+   "searched": "Philippe II/contributions/sauve-gardes/prisoner exchange in GRO24, PUF34, BUR47; JG §§ 600-602 and war sections; closest is GRO24 III.12 § 4 (contributions in the Dutch war praised), a different point and not the source of the edict story; no row."
+  },
+  {
+   "change": "III.270~0",
+   "unit": "III.268",
+   "rows": 0,
+   "named": [],
+   "searched": "Péronne/Louis XI/Liégeois/Comines in GRO24, PUF34, BUR47; GRO24 III.21 §§ 14-22 (saufconduits) with Barbeyrac's notes and JG §§ 937-947 (commeatus): no source has the Péronne example or the abused-safe-conduct argument as worded here."
+  },
+  {
+   "change": "III.292~0",
+   "unit": "III.291",
+   "rows": 0,
+   "named": [],
+   "searched": "1766 Madrid uprising postdates every source; checked JG §§ 1015-1016, GRO24 III.19 § 7, PUF34 VIII.8 § 2 (existing rows for the main text): nothing on the example."
+  },
+  {
+   "change": "III.294~0",
+   "unit": "III.294",
+   "rows": 0,
+   "named": [
+    "Henri, duc de Rohan, Mémoires (Condé's hanging of 64 Huguenot officers and Rohan's reprisals)",
+    "Grotius, Annales et Historiae de rebus Belgicis (the Annales), Liv. II: Alba and the Dutch confederates' reprisals"
+   ],
+   "searched": "Condé/Rohan/Alba/reprisals in civil war across GRO24, PUF34, BUR47 (case-sensitive name search and reprisal/prisoner-hanging patterns) and JG §§ 1010-1012: no source gives these examples."
+  },
+  {
+   "change": "IV.11~0",
+   "unit": "IV.11",
+   "rows": 0,
+   "named": [
+    "Vicente Bacallar y Sanna, marquis de Saint-Philippe (San Felipe), Mémoires pour servir à l'histoire d'Espagne sous le règne de Philippe V, tom. I, p. 29"
+   ],
+   "searched": "Renonciation/Marie-Thérèse/Anne d'Autriche/Cortès in GRO24, PUF34, BUR47 (GRO24 II.4 § 10, II.7 § 26; PUF34 IV.11 § 8 n. 4, VII.6 § 10 nn. 1-2 on the Traité des droits de la Reine) and JG § 1007: renunciation doctrine is general, the Anne/Maria Theresa example and the cardinals' ruling are in none."
+  },
+  {
+   "change": "IV.24~0",
+   "unit": "IV.24",
+   "rows": 0,
+   "named": [
+    "Lettres et négociations de Jean de Witt: Coenraad van Beuningen's letter to the Grand Pensionary de Witt, 1662",
+    "Louis XIV's letter to the comte d'Estrades, p. 399 (probably in the Lettres, mémoires et négociations du comte d'Estrades)"
+   ],
+   "searched": "Enregistrement/parlements/Chambre des comptes/aubaine/Beuningen/Estrades in GRO24, PUF34, BUR47; JG §§ 997-998 (publication of peace) and GRO24 III.21 § 5: nothing on registering treaties; the note comes from the de Witt/d'Estrades correspondence."
+  },
+  {
+   "change": "IV.82~0",
+   "unit": "IV.81",
+   "rows": 1,
+   "named": [
+    "François Augier de Marigny, Histoire des Arabes sous le gouvernement des califes (Paris, 1750), t. II, pp. 105 and 427"
+   ],
+   "searched": "Marigny anecdotes; searched GRO24 II.18 (text and Barbeyrac notes), PUF34 II.3.23 and VIII.9.12 n.1, JG §§1063-1065, INST §1244, BUR47 and all sources for Gengis/Khovarezm/Selim/Mammelus: no borrowing, only Grotius II.18.11's general remark on wars for mistreated ambassadors."
+  },
+  {
+   "change": "IV.93~0",
+   "unit": "IV.93",
+   "rows": 2,
+   "named": [],
+   "searched": "Louis XIV's letter evidently from the unnamed Lettres, mémoires et négociations du comte d'Estrades; searched JG §§1051-1061, INST §1243, GRO24 II.18, PUF34 II.3.23 and VIII.4 (precedence; Morosini margin is a different France-Spain dispute), BUR47: only the functional criterion is shared."
+  },
+  {
+   "change": "IV.98~0",
+   "unit": "IV.98",
+   "rows": 0,
+   "named": [
+    "Abraham de Wicquefort, L'Ambassadeur et ses fonctions, liv. I, sect. 27, 33 and 29"
+   ],
+   "searched": "Correction of a Wicquefort section number only; nothing to match (the Livy note beside it is in GRO24 II.18.4 n.3 but is not part of the change)."
+  },
+  {
+   "change": "IV.101~0",
+   "unit": "IV.101",
+   "rows": 1,
+   "named": [
+    "François Pétis de La Croix, Histoire de Timur-Bec, liv. II, ch. 26 (citation in the continuation of the same note, n3)"
+   ],
+   "searched": "La Croix anecdote; searched GRO24 II.18.4 notes (Thomasius, Theodahad), PUF34 II.3.23, JG §§1064-1065 and all sources for Timur/Tamerlan/Alcoran: only a parallel of idea in Barbeyrac's Grotius note."
+  },
+  {
+   "change": "IV.102~0",
+   "unit": "IV.101",
+   "rows": 0,
+   "named": [
+    "François Pétis de La Croix, Histoire de Timur-Bec, liv. V, ch. 17 (cited as 'Le même historien ... Ibid.')"
+   ],
+   "searched": "La Croix anecdote on Barcouc; searched GRO24 II.18.6 (Livy's 'crime énorme ... meurtre impie'), PUF34, JG §1064-1065, BUR47 and all sources for Barcouc/Timur: no borrowing."
+  },
+  {
+   "change": "IV.111~0",
+   "unit": "IV.110",
+   "rows": 0,
+   "named": [
+    "Journal politique, ou Gazette des gazettes (Journal de Bouillon), 1 February 1771, p. 54, and 15 January 1771, p. 57"
+   ],
+   "searched": "News item dated 1771, after Vattel's death, so an editorial addition; GRO24 II.18.9-10, JG §1065 (debts of a departing legate) and PUF34 VIII.9.12 n.1 treat debts generally, no borrowing."
+  },
+  {
+   "change": "IV.124~0",
+   "unit": "IV.124",
+   "rows": 0,
+   "named": [
+    "Du Port du Tertre, Histoire des conjurations, conspirations et révolutions célèbres, t. IV, p. 261 (cited in the continuation of the same note, n1)"
+   ],
+   "searched": "Added sentence on the ambassador's duty to restrain his suite; GRO24 II.18.8, PUF34 VIII.9.12 n.1 (Barbeyrac on domestics), JG §1060 and INST §1243 checked: no borrowing."
+  },
+  {
+   "change": "IV.125~0",
+   "unit": "IV.125",
+   "rows": 1,
+   "named": [
+    "Jean de Joinville, Histoire de saint Louis, pp. 72-73 (page reference in the continuation of the note, n1)"
+   ],
+   "searched": "Joinville custom; GRO24 II.18, PUF34, JG §§1067-1068, INST, BUR47 and all sources for Joinville searched (only unrelated Joinville mentions): only Wolff's rule on the death of a prince as context."
+  }
+ ]
+}

@@ -41,7 +41,12 @@
      "MDZ scan 142",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff notes that 'jus' is commonly taken for 'lex'; the confusion of law and right in common speech is a commonplace (Hobbes, Pufendorf), and Vattel's three-way distinction adds Morale.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1001,
@@ -166,7 +171,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "les Loix Naturelles en particulier, sont celles que nous tenons de la Nature",
    "source": "posita hominis rerumque natura atque essentia ponitur lex naturae, consequenter ipsa essentia & natura hominis rerumque lex naturae constituta.",
@@ -177,7 +182,13 @@
      "MDZ scan 142",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition, natural laws as those 'que nous tenons de la Nature' whose reason lies in the essence and nature of man and things, renders Wolff §§ 135-136 (law of nature constituted by that essence and nature).",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1005,
@@ -232,7 +243,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "La Morale, ou l'Ethique, est une science pratique, qui nous enseigne comment nous devons diriger nos facultés pour pratiquer ce qui est bon, & pour éviter ce qui est mauvais.",
    "source": "Scientia practica est scientia locomotivam facultatem vel etiam cognoscitivam determinandi ad actus externos",
@@ -243,7 +254,13 @@
      "MDZ scan 25",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=25"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'science pratique' that teaches how to direct our faculties to do good and avoid evil follows Wolff's § 2 definition of practical science as the science of directing the faculties to acts carried out or omitted according to will and nill.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1007,
@@ -260,7 +277,7 @@
    "locus": "§ 3",
    "page": "PPU1.pdf26",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "shared argument",
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
@@ -273,7 +290,13 @@
      "MDZ scan 26",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=26"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "A broader moral science covering natural law and ethics is a stock division; Wolff's genus is 'philosophia practica' with four disciplines, so even if the link held this would be a shared division, not a paraphrase.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase"
+   }
   },
   {
    "id": 1008,
@@ -539,7 +562,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Car, dès qu'ils reconnoissent Dieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
    "source": "Nimirum quia velle non potuit, ut homo esset sine lege ( §. 281.), eum autem talem condidit, ut per ejus essentiam atque naturam ponatur lex naturae ( §. 136. ) & obligatio naturalis ( §. 129.) ; sibimetipsi foret contrarius, si homini legem praescriberet legi naturae contrariam.",
@@ -550,7 +573,13 @@
      "MDZ scan 245",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=245"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §§ 281–284 argue from God's wisdom that God cannot prescribe a law other than the one posited by human essence and nature, and that voluntarists end up at the same law; Vattel § 8 makes the same argument in Wolff's terms.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1016,
@@ -569,7 +598,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "C'est, sans-doute, parceque connoissant Dieu pour un Etre sage, ils jugent avec raison, qu'il n'a pû donner que les loix les plus convenables à l'homme, les plus avantageuses au bien de la société en général & à celui de chaque individu en particulier.",
    "source": "Enimvero voluntas divina tendit ad id , quod in se optimum est (§. 383. Part. I. Theol. nat.), adeoque Deus velle nequit, nisi eam actionum humanarum directionem , qua homo efficitur optimus in suo genere.",
@@ -580,7 +609,13 @@
      "MDZ scan 246",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=246"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 284 makes the same argument: God's will tends to the best, so those who ground natural law in his will must reach the direction of actions deduced from man's nature, as Vattel's 'même source' says.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1017,
@@ -774,7 +809,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "& elle nous fait appercevoir la convenance ou la disconvenance des actions, avec cette essence & avec cette nature",
    "source": "Lex naturae nos obligat ad committendas actiones essentiae & naturae nostrae convenientes & ad omittendas actiones eidem disconvenientes.",
@@ -785,7 +820,13 @@
      "MDZ scan 175",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=175"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'convenance ou disconvenance des actions avec cette essence & avec cette nature' renders Wolff's actions 'essentiae & naturae nostrae convenientes/disconvenientes', with Wolff's essence-and-nature pairing (Wolff cited at §6).",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1023,
@@ -815,7 +856,12 @@
      "MDZ scan 139",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=139"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel only lists the superior's-authority view among others; Wolff § 131 criticises that school's definition of law, a diagnosis the passage does not take up.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1024,
@@ -880,7 +926,12 @@
      "MDZ scan 176",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=176"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The call for clear and distinct ideas and good definitions is a Wolffian commonplace; Wolff § 188 makes the narrower complaint that conformity with human nature is not explained distinctly.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1026,
@@ -910,7 +961,12 @@
      "MDZ scan 247",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=247"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say the authors' opposition over the principle is only apparent and comes from bad method, but Wolff's ground is demonstrative interdependence (the parabola); Vattel's is neglected definitions, and it concerns the principle of obligation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1027,
@@ -1046,7 +1102,12 @@
      "MDZ scan 124",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=124"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both set moral beside physical necessity, but Vattel's definition (what an intelligent being's nature cannot fail to produce) is not Wolff's (whose opposite is morally impossible).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1031,
@@ -1321,7 +1382,12 @@
      "MDZ scan 124",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=124"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Direction of free actions and their rectitude are pervasive Wolffian terms; §114 uses them in a passing scholium on harmony of actions, not as a definition of duty, so the link to this passage is not shown.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1039,
@@ -1446,7 +1512,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "de la convenance ou disconvenance des actions, avec l'essence & la nature de l'homme & des choses, qui fait le fondement du droit naturel",
    "source": "Nobis igitur non contradicunt, qui convenientiam & disconvenientiam actionum cum natura humana principium juris naturalis esse contendunt, quemadmodum facit Grotius de J. B. & P. lib. 1. c. 1. §. 10. n. 1.",
@@ -1457,7 +1523,13 @@
      "MDZ scan 176",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=176"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's remark that the sufficient-reason definition 'revient à' the convenance/disconvenance of actions with man's nature as foundation of natural law is Wolff's § 188 reconciliation with Grotius's convenientia.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1043,
@@ -1616,7 +1688,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "l'amour de nous-mêmes, qui nous porte à souhaiter & à rechercher notre bonheur, ou la perfection de notre état",
    "source": "actiones ad perfectionem nostram statusque nostri tendentes per se appetibiles sunt. Qui cognoscit, actionem aliquam tendere ad perfectionem suam statusque sui , is sibi eandem distincte repraesentat tanquam bonam (§. 554. Psych. empir).",
@@ -1627,7 +1699,13 @@
      "MDZ scan 117",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=117"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's object of self-love, 'la perfection de notre état, tant interne qu'externe', is Wolff's 'perfectio nostra statusque nostri', which § 104 declares desirable for its own sake.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1048,
@@ -1682,7 +1760,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "la perfection de notre ame, le bien-être de notre corps, & le bon état de notre fortune",
    "source": "Perfectio hominis non modo pro diversitate animae , corporis statusque nostri externi, verum etiam pro varietate facultatum animae ac diversitate organorum corporis eorumque, quae ad statum externum referuntur, variat & in plures partiales resolvitur.",
@@ -1693,7 +1771,13 @@
      "MDZ scan 193",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=193"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'perfection de notre état, tant interne qu'externe', split into soul, body and fortune, follows Wolff's division of human perfection by soul, body and external state.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1050,
@@ -1712,7 +1796,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Et par là-jentens tout ce qui peut véritablement contribuer à la perfection de notre Ame, à celle de notre Corps & à notre bien-être dans ce monde",
    "source": "Etenim si quid perfectionem nostram statusque nostri promovet, bonum verum est (§. 557. Psych. empir.).",
@@ -1723,7 +1807,13 @@
      "MDZ scan 92",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=92"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'vraie définition' of the useful (what truly contributes to the perfection of soul, body and our state in this world) restates Wolff's 'bonum verum' as what really promotes the perfection of ourselves and our state.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1051,
@@ -1753,7 +1843,12 @@
      "MDZ scan 118",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=118"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That we act only for some perceived good is the scholastic commonplace; Wolff's §105 deals with per se desirable actions, and the shared premise does not show this passage is Vattel's source.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1052,
@@ -1783,7 +1878,12 @@
      "MDZ scan 92",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=92"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's 'utilité réelle ou apparente' uses the commonplace real/apparent good distinction; Wolff's §75 makes a different point (a true good regarded as apparent because of sensual pleasure).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1053,
@@ -1813,7 +1913,12 @@
      "MDZ scan 288",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=288"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff pairs intrinsic goodness and God's attributes as the virtuous man's motives, but ranking love of God and of virtue above fear and fortune is a common theme; Wolff gives no ranking of this kind.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1054,
@@ -1914,7 +2019,12 @@
      "MDZ scan 198",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=198"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That man needs others and that society is necessary to a happy life is a commonplace of sociability, and Wolff's 'no one can perfect himself alone' shares no specific wording or argument with Vattel's sentence.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1057,
@@ -1933,7 +2043,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "& ce motif fait l'obligation dont il est susceptible",
    "source": "Connexio autem motivi cum actione, sive positiva, sive privativa obligatio activa appellatur.",
@@ -1944,7 +2054,13 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'Ce motif fait l'obligation' applies Wolff's definition of active obligation as the connection of a motive with an action (§118, which Vattel cites at §12).",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1058,
@@ -1974,7 +2090,12 @@
      "MDZ scan 200",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=200"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The move from self-interest plus need of others to social duty is common stock (Pufendorf's imbecillitas, Hobbes); Vattel argues from utility and society's general rules, not from Wolff's joint pursuit of perfection.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1059,
@@ -2004,7 +2125,12 @@
      "MDZ scan 234",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=234"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff's concession that men founding civil societies made laws out of utility is a commonplace answer to Carneades, and Vattel's account of why men entered society and made laws shares no specific wording or sequence with it.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1060,
@@ -2023,7 +2149,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "„En commettant une mauvaise action, une action contraire à l'ordre & „à la perfection de votre être.",
    "source": "cum mala sit actio, quae ad nostram imperfectionem tendit",
@@ -2034,7 +2160,13 @@
      "MDZ scan 135",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=135"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's evil action 'contraire à ... la perfection de votre être' is Wolff's definition of the evil action as one tending to our imperfection.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1061,
@@ -2088,7 +2220,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "1°. parce qu'en faisant même abstraction de la rectitude propre de l'action qui nous est prescrite, il est beau & louable d'obéir à un Supérieur légitime.",
    "source": "Non est, quod excipias, haud repugnare, ut quis nullo poenae metu, nulla praemii spe ductus faciat, quod vult legislator, vel omittat, quod omitti jubet, hoc solo permotus, quod norit superiorem hoc velle. Ultro enim hoc concedimus : ostendemus autem suo loco, qui hoc facit, eum satisfacere obligationi naturali ad obediendum superiori.",
@@ -2099,7 +2231,13 @@
      "MDZ scan 259",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=259"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's two grounds for the superior's will (1° obedience to a legitimate superior is itself laudable, 2° rewards and punishments the action does not bring by itself) match Wolff's split between the natural obligation to obey a superior and positive obligation through sanctions.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1063,
@@ -2118,7 +2256,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "2°. Parce que ce Supérieur peut nous récompenser ou nous punir, indépendamment du bien ou du mal que notre action entraîne naturellement après soi.",
    "source": "Quamobrem cum tam bonum , quam malum cum actione connectatur, ut tanquam bona vel mala repraesentari possit (§. 890. Psych empir.), quod ex ea per se non sequitur ; ideo patet obligationem positivam arbitrariam esse, non necessariam.",
@@ -2129,7 +2267,13 @@
      "MDZ scan 260",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=260"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's second ground, rewards and punishments added 'indépendamment du bien ou du mal que notre action entraîne naturellement', is Wolff's positive obligation, good or evil joined to an action 'quod ex ea per se non sequitur'.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1064,
@@ -2183,7 +2327,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "il est le maître par sa toute-puissance, d'y attacher telle récompense qu'il juge à propros",
    "source": "in arbitrio ejus positum est, utrum hoc, vel aliud motivum, utrum aliquod, an nullum cum actione connectere velit.",
@@ -2194,7 +2338,13 @@
      "MDZ scan 260",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=260"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 302: in positive obligation the legislator freely joins whatever reward or penalty he wills to an action not good in itself; Vattel says of the indifferent action that God may attach any reward he pleases.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1066,
@@ -2224,7 +2374,12 @@
      "MDZ scan 242",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=242"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both tie God's will in the natural law to what reason shows, but Wolff's identity of living by reason and by God's will is not Vattel's specific point that without seen reasons we cannot know God's will, and the idea is common stock.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1067,
@@ -2254,7 +2409,12 @@
      "MDZ scan 215",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=215"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff's atheist hypothesis and Vattel's obligation apart from God's will share the Grotian etiamsi daremus thesis; Vattel's wording comes from Barbeyrac's note and nothing ties it to § 245.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1068,
@@ -2273,7 +2433,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Ce n'est point déroger à l'autorité de Dieu que de dire , que tout ce qu'il nous prescrit dans les Loix naturelles est si beau & si utile par lui-même, que nous serions obligés de le pratiquer, quand même Dieu ne l'auroit pas ordonné.",
    "source": "Atque adeo patet, Deo non adimi potestatem legislatoriam, utut lex naturae a natura & essentia humana rerumque derivetur.",
@@ -2284,7 +2444,13 @@
      "MDZ scan 240",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=240"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's reply follows Wolff §§ 273-274: deriving natural law from the nature of man and things takes nothing from God's legislative authority ('nihil derogari', 'non adimi potestatem legislatoriam').",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1069,
@@ -2303,7 +2469,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "nous parlons d'une utilité noble & bien entendue , qui se trouve principalement dans l'observation de l'ordre & dans la pratique de la vertu, parce que cette observation , cette pratique nous rend plus parfaits",
    "source": "evidens est Jus naturale facere ad promovendam perfectionem & avertendam imperfectionem nostram, nec aliis permissum esse, ut in illa promovenda, hac avertenda nos impediant ( §. 165. ), consequenter usui nobis esse in promovenda perfectione nostra statusque nostri perfectione , & avertenda imperfectione nostra statusque nostri imperfectione",
@@ -2314,7 +2480,13 @@
      "MDZ scan 232",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=232"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's utility, lying in observing order and virtue because they make us more perfect, is the Wolffian argument of § 263 that natural law is useful because it promotes our perfection.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1070,
@@ -2450,7 +2622,12 @@
      "MDZ scan 225",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=225"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That the atheist keeps some natural duties is a topos (Grotius, Leibniz, Bayle). Vattel is defending Leibniz's own text with his own grounds (this-life utility, beauty of virtue), where Wolff's limit is the lack of duties to God.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1074,
@@ -2469,7 +2646,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "mais la divinité est au nombre de ces choses, dont la nature détermine les régles du Juste & de l'injuste, & fournit les motifs qui constituent l'obligation.",
    "source": "essentiam atque naturam suam obligatur ad determinandas actiones liberas per motiva ab attributis divinis desumta.",
@@ -2480,7 +2657,13 @@
      "MDZ scan 222",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=222"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §§ 251-252 derives the obligation to act on motives drawn from the divine attributes from the nature of God and man, not from God's will; Vattel's middle way (God among the 'choses' whose nature supplies the obliging motives) is the same specific move.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1075,
@@ -2570,7 +2753,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "mais l'influence que ces mêmes choses peuvent avoir en vertu de ces rapports, sur notre félicité, est un puissant motif, qui nous oblige à agir, ou à ne pas agir",
    "source": "Homo igitur per ipsam suam rerumque essentiam atque naturam obligatur ad committendas actiones, quae per se ad perfectionem suam statusque sui tendunt, & ad omittendas actiones , quae per se ad imperfectionem suam statusque sui tendunt.",
@@ -2581,7 +2764,13 @@
      "MDZ scan 138",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=138"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's reply that the nature of things obliges because its bearing on our happiness supplies a motive is Wolff's argument (§§ 127-128) that man's and things' nature, by joining motives to actions, obliges in the proper sense.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 1078,
@@ -2751,7 +2940,12 @@
      "MDZ scan 290",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=290"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff's pious man takes his motive from God's will, but Vattel's specific point (God's will moves us when we cannot see an action's intrinsic reasons) is not in § 341.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1083,

@@ -1,8 +1,8 @@
 {
   "format": "nle-edition/1",
   "id": "burlamaqui-1747",
-  "version": "1.13",
-  "changed": "2026-11-18",
+  "version": "1.14",
+  "changed": "2026-11-20",
   "author": "Jean-Jacques Burlamaqui",
   "title": "Principes du droit naturel",
   "short": "Principes du droit naturel · 1747",
@@ -80,7 +80,8 @@
       "label": "English",
       "panelNote": "Nugent's translation (London 1763), Liberty Fund ed. (2006), p. {page}. Sentence alignment by machine.",
       "toggle": false
-    }
+    },
+    {"id": "glosses", "file": "layers/glosses.json", "kind": "glosses", "label": "Translations", "default": true, "tooltip": "English translations of the Latin, Greek and other foreign-language passages, by Claude Opus. Dotted underline in the text: hover to read; the list follows each section."}
   ],
   "reuse": {
     "baseTag": "Burlamaqui",

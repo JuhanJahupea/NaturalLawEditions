@@ -1,6 +1,7 @@
-# add_merge.py <work> <first id> <date> <out> <kind:dir> [<kind:dir> ...]: rows written by the additions readers (ADD_PROMPT.md,
-# kind A: dir/out/*.json {"rows"}) and the recall readers (RECALL_PROMPT.md, kind C: rows found and not covered) -> rows of
-# editions/vattel-1773/passes/additions.json. Each passage is placed on the unit's text, notes or margin, each source passage
+# add_merge.py <work> <first id> <date> <out> <kind:dir> [<kind:dir> ...] [--append]: rows written by the additions readers
+# (ADD_PROMPT.md, kind A: dir/out/*.json {"rows"}), the recall readers (RECALL_PROMPT.md, kind C: rows found and not covered)
+# and the readers of the 1773 additions (ADDITIONS_1773_PROMPT.md, kind V: items[].found, rows not covered) -> rows of
+# editions/vattel-1773/passes/additions.json. --append: keep the rows <out> already has and add the new ones after them. Each passage is placed on the unit's text, notes or margin, each source passage
 # on its page; the locus, family, page and links come from the page. Rows that fail, and rows a table already has, are reported.
 import sys, os, re, json, glob, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -8,20 +9,44 @@ from paths import ROOT, WORK
 from merge_find import find
 R = ROOT
 S, first, date, out = sys.argv[1], int(sys.argv[2]), sys.argv[3], sys.argv[4]
-srcs = [a.split(':', 1) for a in sys.argv[5:]]
+APPEND = '--append' in sys.argv
+srcs = [a.split(':', 1) for a in sys.argv[5:] if not a.startswith('--')]
 ED = 'vattel-1773'
 units = {u['id']: u for u in json.load(open('%s/editions/%s/text.json' % (R, ED)))['units']}
-TABLE = {'JG': 'wolff-jus-gentium-1749', 'INST': 'wolff-institutiones-1750', 'GRO24': 'grotius-barbeyrac-1724', 'PUF34': 'pufendorf-barbeyrac-1734'}
+TABLE = {'JG': 'wolff-jus-gentium-1749', 'INST': 'wolff-institutiones-1750', 'GRO24': 'grotius-barbeyrac-1724', 'PUF34': 'pufendorf-barbeyrac-1734',
+         'BUR47': 'burlamaqui-1747'}
 WORK = {'JG': 'Wolff, Jus gentium (1749)', 'INST': 'Wolff, Institutiones (1750)',
-        'GRO24': 'Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)', 'PUF34': 'Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)'}
+        'GRO24': 'Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)', 'PUF34': 'Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)',
+        'BUR47': 'Burlamaqui, Principes du droit naturel (1747)'}
 PDF = {'JG': 'Ius_Gentium_Methodo_Scientifica_Pertract.pdf', 'INST': 'Institutiones_juris_naturae_et_gentium_i.pdf'}
 ZOT = {'GRO24T1': 'S9FQXVJC', 'GRO24T2': 'LL8RR8X3', 'PUF34T1': 'L42CQ82S', 'PUF34T2': 'S7XSE8FS'}
 IA = {'GRO24T1': 'le-droit-de-la-guerre-t-1-grotius', 'GRO24T2': 'le-droit-de-la-guerre-t-2', 'PUF34T1': 'ledroitdelanatur01pufe', 'PUF34T2': 'ledroitdelanatur02pufe'}
 AUTH = {'GRO24': 'G', 'PUF34': 'P'}
-LABELS = {'translation', 'verbatim', 'close paraphrase', 'loose paraphrase', 'citation', 'open disagreement'}
+LABELS = {'translation', 'verbatim', 'close paraphrase', 'loose paraphrase', 'shared argument', 'citation', 'open disagreement'}
 PG = {}
 for k in ('JG', 'INST'): PG.update({p['id']: (k, p) for p in json.load(open('%s/srcp/%s.json' % (S, k)))['pages']})
 for k in ('GRO24', 'PUF34'): PG.update({p['id']: (k, p) for p in json.load(open('%s/corpus/%s.json' % (S, k)))['pages']})
+# Burlamaqui: the burlamaqui-1747 edition; a page is a unit id (P1.6.9)
+ROMAN = lambda n: ['', 'I', 'II', 'III', 'IV'][n]
+def roman(n):
+    out = ''
+    for v, r in ((10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')):
+        while n >= v: out += r; n -= v
+    return out
+for u in json.load(open(R + '/editions/burlamaqui-1747/text.json'))['units']: PG[u['id']] = ('BUR47', u)
+
+def bur_source(u, sp):
+    """(locus, family, inNote, quoted text, page id) of a passage of a Burlamaqui unit, or None."""
+    for part, h in [('t', u['text'])] + [('n', n['text']) for n in u.get('notes', [])]:
+        f = find(h, sp)
+        if f:
+            scan = u['pages'][0]['scan']
+            for b in u.get('pb', []):
+                if part == 't' and b[0] <= f[0]: scan = b[2]
+            m = re.match(r'P(\d)\.(\d+)\.(\d+)$', u['id'])
+            loc = 'Liv. %s ch. %s § %s' % (ROMAN(int(m.group(1))), roman(int(m.group(2))), m.group(3)) if m else u['id']
+            return loc, 'Bu', part == 'n', h[f[0]:f[1]], 'BUR47.p%d' % scan
+    return None
 
 def place(u, passage):
     for p, h in [('t', u['text'])] + [('n%d' % i, n['text']) for i, n in enumerate(u.get('notes', []))]:
@@ -81,6 +106,10 @@ for kind, d in srcs:
         O = json.load(open(f))
         if kind == 'A':
             for r in O.get('rows', []): items.append(dict(r, _from='A', _file=os.path.basename(f)))
+        elif kind == 'V':
+            for x in O.get('items', []):
+                for r in x.get('found', []):
+                    if r.get('covered_by') is None: items.append(dict(r, unit=r.get('unit', x['unit']), _from='V', _file=os.path.basename(f)))
         else:
             for s in O.get('sections', []):
                 for r in s.get('found', []):
@@ -94,19 +123,25 @@ for it in items:
     if at is None: fails['passage'] += 1; failed.append(it); continue
     pg = PG.get(it.get('page'))
     if not pg or pg[0] != k: fails['page'] += 1; failed.append(it); continue
-    s = source(k, pg[1], it.get('source_passage', ''))
+    if k == 'BUR47':
+        s = bur_source(pg[1], it.get('source_passage', ''))
+        if s: s, bpage = s[:4], s[4]
+    else: s = source(k, pg[1], it.get('source_passage', ''))
     if not s: fails['source'] += 1; failed.append(it); continue
     loc, fam, innote, sp = s; conf = round(float(it.get('confidence', 0)), 2)
     if conf < 0.3: fails['below 0.3'] += 1; continue
     p = pg[1]
     row = {'table': TABLE[k], 'unit': u['id'], 'at': at}
     if not at: row['where'] = 'margin'
-    row.update({'family': fam, 'work': WORK[k], 'locus': loc, 'page': p['id'], 'inNote': innote, 'label': it['label'], 'confidence': conf,
-                'status': 'match' if conf >= 0.5 else 'possible', 'step': 'A' if it['_from'] == 'A' else 'C', 'passage': vp, 'source': sp})
+    row.update({'family': fam, 'work': WORK[k], 'locus': loc, 'page': bpage if k == 'BUR47' else p['id'], 'inNote': innote, 'label': it['label'], 'confidence': conf,
+                'status': 'match' if conf >= 0.5 else 'possible', 'step': it['_from'], 'passage': vp, 'source': sp})
     if k in ('JG', 'INST'):
         if it.get('french'): row['french'] = it['french']
         row['reason'] = it.get('reason', '')
         row['links'] = [['PDF p. %d' % p['scan'], 'file:///C:/PhD_library/vattel-reuse/sources/%s#page=%d' % (PDF[k], p['scan'])]]
+    elif k == 'BUR47':
+        row['reason'] = it.get('reason', ''); scan = int(bpage.split('.p')[1])
+        row['links'] = [['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/XKNMUHV3?page=%d' % scan]]
     else:
         row['reason'] = it.get('reason', '')
         vol, scan = p['id'].split('.p'); scan = int(scan)
@@ -123,10 +158,14 @@ for i, r in enumerate(rows): r.pop('_k'); r_id = first + i; rows[i] = dict({'id'
 print(len(items), 'items;', len(rows), 'rows', collections.Counter((r['step'], r['table'], r['status']) for r in rows))
 print('failed', dict(fails), '| duplicates', len(dups))
 for it in failed[:12]: print('  FAIL', it['_from'], it['_file'], it.get('unit'), it.get('text'), it.get('page'), (it.get('passage') or '')[:60], '|', (it.get('source_passage') or '')[:60])
+old = json.load(open(out))['rows'] if APPEND and os.path.exists(out) else []
+if old: assert first > max(r['id'] for r in old)
+rows = old + rows
 P = {'format': 'nle-additions/1', 'edition': ED, 'date': date,
      'description': 'Rows added to the reuse tables after the audits, judged by Claude Opus on the transcriptions. Each row names its table.',
      'steps': {'A': 'Additions: the passage of Wolff or Grotius that an audit reader named as the one Vattel follows (audit/README.md)',
-               'C': 'Recall check: reuse a reader found in a random sample of sections that no row covered (audit/README.md)'},
+               'C': 'Recall check: reuse a reader found in a random sample of sections that no row covered (audit/README.md)',
+               'V': 'Reading of the passages added in 1773: Claude Opus read each addition (layer changes-1773) with Wolff, Grotius, Pufendorf and Burlamaqui (audit/README.md)'},
      'rows': rows}
 json.dump(P, open(out, 'w'), ensure_ascii=False, indent=1)
 json.dump(failed, open(out + '.failed.json', 'w'), ensure_ascii=False, indent=1)

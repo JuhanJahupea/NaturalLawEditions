@@ -30,7 +30,7 @@
    "inNote": false,
    "label": "close paraphrase",
    "confidence": 0.3,
-   "status": "possible",
+   "status": "rejected",
    "step": "R",
    "passage": "LEs Loix naturelles, le Droit Naturel, & la Morale, sont trois choses que l'on confond souvent dans le langage ordinaire",
    "source": "Mais, quoi qu'il y aît une différence manifeste entre ces trois choses, les termes dont on se sert pour les exprimer se confondent souvent dans le langage ordinaire, & dans les Auteurs.",
@@ -44,7 +44,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n256/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Grotius-Barbeyrac's sentence is about justifying causes, motives and occasions of war; the only link is a stock phrase about terms being confused in ordinary language.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4001,
@@ -63,7 +69,7 @@
    "inNote": true,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Si par le fondement du droit naturel on entend la source de laquelle on peut en dériver les régles & les préceptes ; le principe dans lequel on trouve ce qui peut servir à rendre raison pourquoi ces régles & ces préceptes sont tels ; on ne sauroit chercher ce fondement ailleurs que dans l'essence & la nature de l'homme & des choses en général.",
    "source": "nôtre Esprit ne peut pas découvrir les idées & les relations d'où se déduisent toutes les Regles du Droit Naturel & de la Morale.",
@@ -77,7 +83,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's note, quoted by Vattel at E.29, concedes that the rules are deduced from relations in the nature of things while denying that this obliges; E.6-7 takes up exactly that sense of 'fondement' as what all authors must grant.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4002,
@@ -149,7 +161,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n106/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Following an a priori argument with an a posteriori confirmation is common method (Wolff's 'patet a posteriori ... experientia' is closer), and Vattel's appeal to experience is not Grotius's a posteriori proof from the consent of nations.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4004,
@@ -220,7 +237,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n65/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both reject utility as the source of natural law in favour of human nature, but this anti-Carneades answer was common stock; Vattel's argument and wording (utility is known only through the essence and nature of things) are Wolffian, not Grotius's.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4006,
@@ -253,7 +275,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Convenance ou disconvenance' of actions with nature is the Grotian formula in Barbeyrac's French, but by 1747 it was stock (Wolff, Barbeyrac, Burlamaqui), and Vattel's 'nature de l'homme & des choses' is Wolff's version, not Grotius's 'nature raisonnable & sociable'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4007,
@@ -363,7 +390,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac's note describes his opponents' appeal to the beauty of actions, but Vattel's 'beauté de la vertu' as a ground of obligation is a stock label for that school, with no wording that ties it to this note.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4010,
@@ -434,7 +466,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel quotes this sentence later (§ 29), but the general claim in § 10 that undefined terms make authors only seem opposed is a stock diagnosis, not specific to Barbeyrac's remark about a dispute of words.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4012,
@@ -545,7 +582,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n100/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac renders 'rectum' as 'bon & louable', but Vattel's gloss of rectitudo with stock synonyms (and its moralitas sentence) follows Wolff; the overlap is two ordinary words.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4015,
@@ -578,7 +620,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Convenance ou disconvenance' of actions with nature is Grotius's stock definition, repeated everywhere; Vattel restates his own § 6, framed in Wolff's terms (essence and nature of man and things).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4016,
@@ -687,7 +734,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n65/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That utility goes along with natural law is Grotius's dictum but also a commonplace (Wolff § 263, Pufendorf). Vattel's 'jointe' shares only the idea, and his reason for it is his own.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4019,
@@ -706,7 +758,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "les loix naturelles qui constituent ce droit, ne nous prescrivent certaines actions & ne nous en défendent d'autres, qu'en conséquence de la convenance, ou de la disconvenance de ces actions avec notre nature & avec celle des choses",
    "source": "il consiste dans certains principes de (1) la Droite Raison, qui nous sont connoître qu'une Action est moralement honnête (2) ou deshonnête, selon la convenance ou la disconvenance nécessaire qu'elle a",
@@ -720,7 +772,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel restates Grotius's definition in Barbeyrac's French: actions prescribed or forbidden as a consequence of their 'convenance ou disconvenance' with our nature (Grotius: 'par conséquent' God 'ordonne ou défend').",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4020,
@@ -775,9 +833,9 @@
    "locus": "Discours préliminaire § 8, n. 1",
    "page": "GRO24T1.p62",
    "inNote": true,
-   "label": "loose paraphrase",
+   "label": "citation",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "De-là vient que le judicieux GROTIUS a pris cette sociabilité de l'homme, pour le fondement du droit naturel",
    "source": "le desir de Societé, que GROTIUS pose pour fondement du Droit Naturel",
@@ -791,7 +849,14 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n61/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Grotius as making sociability the foundation of natural law, which is Grotius's claim at DP §8; the shared wording with Barbeyrac's note is only the stock attribution, so the row holds as a citation, not as a paraphrase of the note.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4022,
@@ -1242,7 +1307,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n65/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The Horace line with the same reference is a stock tag of the utility debate, also quoted by Pufendorf II.3.10 (whose lower-case spelling Vattel matches), and Vattel endorses it where Grotius rejects it. The shared quotation does not show Grotius as the source.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4034,
@@ -1261,7 +1331,7 @@
    "inNote": true,
    "label": "open disagreement",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "elle ajoûte seulement un grand poids à la raison prise de la nature des choses",
    "source": "la volonté & l'autorité de Dieu ne seroit ici qu'une espéce d'accessoire, qui ne seroit tout au plus que rendre l'Obligation plus forte.",
@@ -1275,7 +1345,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n103/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes this note 4 in § 29 and answers its 'accessoire' objection there; § 35 (citing § 29) restates his answer: God's will only adds great weight to the reason drawn from the nature of things.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4035,
@@ -1294,7 +1370,7 @@
    "inNote": true,
    "label": "open disagreement",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Il est vrai que ces rapports de convenance ou de disconvenance, qui sont entre les choses, ne nous engagent par eux-mêmes qu'à reconnoître ces rapports",
    "source": "La nature même des choses ne sauroit nous imposer aucune Obligation , proprement ainsi nommée. Qu'il y ait tel ou tel rapport de convenance ou de disconvenance entre nos idées , cela seul ne nous engage qu'à reconnoître ce rapport",
@@ -1308,7 +1384,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel concedes and then corrects the claim that relations of convenance only oblige us to recognise them, which this Grotius note states in nearly the same words, though his quotation follows the Réflexions.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4036,
@@ -1327,7 +1409,7 @@
    "inNote": true,
    "label": "open disagreement",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Si la raison nous fait voir clairement qu'en suivant ces idées fondées sur la nature des choses, nous travaillons à notre plus grand bien, à notre vraie félicité, elle nous met dans la nécessité de les suivre",
    "source": "La Raison, direz-vous , nous montre clairement , qu'en observant les Regles qu'elle nous propose nous agirons d'une maniere plus conforme a nos intérêts, que si nous nous laissons conduire à nos Passions.",
@@ -1341,7 +1423,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's reply (reason shows that following these ideas serves our greatest good) is the very answer Barbeyrac anticipates and rejects in note 4 ('direz-vous'); § 39 quotes the identical Réflexions version and says 'M. B. a prévû cette réponse'.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4037,
@@ -1360,7 +1448,7 @@
    "inNote": true,
    "label": "close paraphrase",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "Mais n'est-il pas libre à chacun de „renoncer à son avantage, tant qu'il „n'y a rien d'ailleurs qui l'en empêche, tant qu'il n'y a point d'autre „personne qui soit intéressée à ce „qu'il ne fasse rien de contraire à ses „intérêts, & qui ait droit d'éxiger „qu'il les procure?",
    "source": "n'est-il pas libre à chacun de renoncer à ses intérêts , tant qu'il n'y a point d'autre personne intéressée à ce qu'il ne fasse rien qui y soit contraire , & revêtuë du droit d'exiger qu'il les procure autant qu'en lui est ?",
@@ -1374,7 +1462,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "It is the same Barbeyrac sentence ('n'est-il pas libre à chacun de renoncer à ...'). Vattel quotes the Réflexions version word for word, and this Grotius note has it in near-identical words.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4038,
@@ -1393,7 +1487,7 @@
    "inNote": true,
    "label": "close paraphrase",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "R",
    "passage": "notre raison considérée hors de toute dépendance „du Créateur de qui nous la tenons, „n'est au fond autre chose, que nous-mêmes. Or personne ne peut s'imposer à soi même une nécessité indispensable d'agir ou de ne point „agir de telle ou telle maniere",
    "source": "nôtre Raison , considerée comme indépendante de celui qui nous l'a donnée, n'est au fond autre chose que nous-mêmes: or personne ne peut s'imposer à soi-même une nécessitê indispensable d'agir ou de ne point agir de telle ou telle maniere.",
@@ -1407,7 +1501,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's argument nearly word for word, the second clause verbatim; he takes it from the Réflexions but says in § 29 that note 4's proof is identical 'mot pour mot'.",
+    "date": "2026-11-20",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 4039,
@@ -1440,7 +1540,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n103/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Anonyme, ou de (feu) Mr. de Leibniz' is Barbeyrac's standing formula, repeated in several notes including the Pufendorf note Vattel cites at E.26, so nothing ties it to this Grotius note.",
+    "date": "2026-11-20"
+   }
   }
  ]
 }

@@ -1,8 +1,8 @@
 {
   "format": "nle-edition/1",
   "id": "vattel-1773",
-  "version": "1.17",
-  "changed": "2026-11-18",
+  "version": "1.18",
+  "changed": "2026-11-20",
   "author": "Emer de Vattel",
   "title": "Le droit des gens, ou principes de la loi naturelle, appliqués à la conduite et aux affaires des nations et des souverains",
   "short": "Le droit des gens · 1773",
@@ -120,7 +120,8 @@
       "label": "English",
       "panelNote": "1797 translation, Liberty Fund ed. (2008), p. {page}. Sentence alignment by machine.",
       "toggle": false
-    }
+    },
+    {"id": "glosses", "file": "layers/glosses.json", "kind": "glosses", "label": "Translations", "default": true, "tooltip": "English translations of the Latin, Greek and other foreign-language passages, by Claude Opus. Dotted underline in the text: hover to read; the list follows each section."}
   ],
   "reuse": {
     "baseTag": "Vattel",

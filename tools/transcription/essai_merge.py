@@ -1,5 +1,6 @@
-# essai_merge.py <work> <dir> <date> [--write]: the rows the Essai reuse readers wrote (ESSAI_REUSE_PROMPT.md; <dir>/out/*.json)
-# -> one pass file per source text (editions/vattel-essai-1747/passes/<text id>.json) and passes/attributions.json.
+# essai_merge.py <work> <dir> <date> [--write] [--only K,K]: the rows the Essai reuse readers wrote (ESSAI_REUSE_PROMPT.md,
+# ESSAI_WOLFF2_PROMPT.md; <dir>/out/*.json) -> one pass file per source text (editions/vattel-essai-1747/passes/<text id>.json) and
+# passes/attributions.json. --only: write the pass files of these sources only, and replace only their attributions.
 # Each passage is placed on the unit's text or a note, each source passage on its page; locus, family, source part and links
 # come from the page. Rows that fail are reported and left out; duplicates (same unit, page and passages) are merged.
 import sys, os, re, json, glob, collections
@@ -7,19 +8,24 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import ROOT, WORK
 from merge_find import find
 S, d, date = sys.argv[1:4]; WRITE = '--write' in sys.argv
+ONLY = set(sys.argv[sys.argv.index('--only') + 1].split(',')) if '--only' in sys.argv else None
 R = ROOT; ED = 'vattel-essai-1747'
 units = {u['id']: u for u in json.load(open('%s/editions/%s/text.json' % (R, ED)))['units']}
 TID = {'PPU1': 'wolff-philosophia-practica-1738', 'DEV56': 'pufendorf-devoirs-barbeyrac-1756', 'PUF34': 'pufendorf-barbeyrac-1734',
-       'GRO24': 'grotius-barbeyrac-1724', 'BUR47': 'burlamaqui-1747'}
-BASE = {'PPU1': 1000, 'DEV56': 2000, 'PUF34': 3000, 'GRO24': 4000, 'BUR47': 5000}
+       'GRO24': 'grotius-barbeyrac-1724', 'BUR47': 'burlamaqui-1747', 'TN1': 'wolff-theologia-naturalis-1739', 'LOG40': 'wolff-discursus-praeliminaris-1740'}
+BASE = {'PPU1': 1000, 'DEV56': 2000, 'PUF34': 3000, 'GRO24': 4000, 'BUR47': 5000, 'TN1': 6000, 'LOG40': 7000}
+WOLFF = {'PPU1': 'bsb10008634', 'TN1': 'bsb10008642', 'LOG40': 'bsb10008633'}
 WORK = {'PPU1': 'Wolff, Philosophia practica universalis I (1738)', 'DEV56': "Pufendorf, Devoirs de l'homme et du citoyen (Barbeyrac 1756)",
         'PUF34': 'Pufendorf-Barbeyrac, Le droit de la nature et des gens (1734)', 'GRO24': 'Grotius-Barbeyrac, Le droit de la guerre et de la paix (1724)',
-        'BUR47': 'Burlamaqui, Principes du droit naturel (1747)'}
+        'BUR47': 'Burlamaqui, Principes du droit naturel (1747)', 'TN1': 'Wolff, Theologia naturalis I (1739)',
+        'LOG40': 'Wolff, Discursus praeliminaris de philosophia in genere (1740)'}
 LAYER = {'PPU1': 'Vision transcription of the MDZ scans of the Halle 1744 issue (bsb10008634), which keeps the setting of 1738 (texts/wolff-philosophia-practica-1738/).',
          'DEV56': 'Vision transcription of the archive.org scans (texts/pufendorf-devoirs-barbeyrac-1756/).',
          'PUF34': 'Vision transcription of the archive.org scans (texts/pufendorf-barbeyrac-1734/).',
          'GRO24': 'Vision transcription of the archive.org scans (texts/grotius-barbeyrac-1724/).',
-         'BUR47': 'The burlamaqui-1747 edition (editions/burlamaqui-1747/text.json).'}
+         'BUR47': 'The burlamaqui-1747 edition (editions/burlamaqui-1747/text.json).',
+         'TN1': 'Vision transcription of the MDZ scans (bsb10008642), §§ 948-1006 (texts/wolff-theologia-naturalis-1739/).',
+         'LOG40': 'Vision transcription of the MDZ scans (bsb10008633), §§ 1-171 (texts/wolff-discursus-praeliminaris-1740/).'}
 ZOT = {'GRO24T1': 'S9FQXVJC', 'GRO24T2': 'LL8RR8X3', 'PUF34T1': 'L42CQ82S', 'PUF34T2': 'S7XSE8FS'}
 IA = {'GRO24T1': 'le-droit-de-la-guerre-t-1-grotius', 'GRO24T2': 'le-droit-de-la-guerre-t-2', 'PUF34T1': 'ledroitdelanatur01pufe',
       'PUF34T2': 'ledroitdelanatur02pufe', 'DEV56T1': 'bub_gb_dDKCHraV9BoC', 'DEV56T2': 'bub_gb_unXpgRJJud0C'}
@@ -36,7 +42,7 @@ def roman(n):
     return out
 
 PG = {}
-PG.update({p['id']: ('PPU1', p) for p in json.load(open('%s/srcp/PPU1.json' % S))['pages']})
+for k in WOLFF: PG.update({p['id']: (k, p) for p in json.load(open('%s/srcp/%s.json' % (S, k)))['pages']})
 for k in ('DEV56', 'PUF34', 'GRO24'): PG.update({p['id']: (k, p) for p in json.load(open('%s/corpus/%s.json' % (S, k)))['pages']})
 BUR = {u['id']: u for u in json.load(open(R + '/editions/burlamaqui-1747/text.json'))['units']}
 
@@ -71,7 +77,7 @@ def source(k, page, sp):
     pg = PG.get(page)
     if not pg or pg[0] != k: return None
     p = pg[1]
-    if k == 'PPU1':
+    if k in WOLFF:
         f = find(p['text'], sp)
         if f:
             par = p['carried']
@@ -102,8 +108,8 @@ def source(k, page, sp):
     return None
 
 def links(k, page):
-    if k == 'PPU1':
-        c = int(page.split('.pdf')[1]); return [['MDZ scan %d' % c, 'https://www.digitale-sammlungen.de/en/view/bsb10008634?page=%d' % c]]
+    if k in WOLFF:
+        c = int(page.split('.pdf')[1]); return [['MDZ scan %d' % c, 'https://www.digitale-sammlungen.de/en/view/%s?page=%d' % (WOLFF[k], c)]]
     if k == 'BUR47':
         s = int(page.split('.p')[1]); return [['Zotero p. %d' % s, 'zotero://open-pdf/library/items/XKNMUHV3?page=%d' % s]]
     vol, scan = page.split('.p'); scan = int(scan)
@@ -116,7 +122,7 @@ for it in items:
     k = it.get('text'); u = units.get(it.get('unit'))
     lab = (it.get('label') or '').strip().lower()
     if lab == 'quotation': lab = 'verbatim'
-    if k not in TID or not u: fails['text or unit'] += 1; failed.append(it); continue
+    if k not in TID or not u or (ONLY and k not in ONLY): fails['text or unit'] += 1; failed.append(it); continue
     if lab not in LABELS: fails['label'] += 1; failed.append(it); continue
     at, vp = place(u, it.get('passage', ''))
     if at is None: fails['passage'] += 1; failed.append(it); continue
@@ -129,7 +135,7 @@ for it in items:
     seen.add(key)
     row = {'unit': u['id'], 'at': at, 'family': fam, 'work': WORK[k], 'locus': loc, 'page': page, 'inNote': innote, 'label': lab,
            'confidence': conf, 'status': 'match' if conf >= 0.5 else 'possible', 'step': 'R', 'passage': vp, 'source': sp}
-    if k == 'PPU1' and it.get('french'): row['french'] = it['french']
+    if k in WOLFF and it.get('french'): row['french'] = it['french']
     row['reason'] = it.get('reason', ''); row['links'] = links(k, page)
     if part: row['sourcePart'] = part
     rows[k].append(row)
@@ -158,6 +164,9 @@ if WRITE:
                        'sourceLabel': 'source (transcription)'},
              'rows': rs}
         json.dump(P, open('%s/%s.json' % (pdir, TID[k]), 'w'), ensure_ascii=False, indent=1)
+    if ONLY:
+        keep = [a for a in json.load(open('%s/attributions.json' % pdir))['attributions'] if a['text'] not in {TID[k] for k in ONLY}]
+        attrs = keep + attrs
     json.dump({'format': 'nle-pass/1', 'edition': ED, 'date': date,
                'description': 'Rows where Vattel names the source for the passage, as the reuse readers marked them: form quotation or reference; cue is Vattel\'s words that name the source, in part cuePart.',
                'attributions': attrs}, open('%s/attributions.json' % pdir, 'w'), ensure_ascii=False, indent=1)
