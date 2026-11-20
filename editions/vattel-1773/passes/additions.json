@@ -301,7 +301,7 @@
     [
      "t",
      1246,
-     1384
+     1385
     ]
    ],
    "family": "W",
@@ -313,7 +313,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "A",
-   "passage": "quoique les actions de l'une soient illégitimes & condamnables suivant les loix de la conscience , les autres sontobligées de les souffrir",
+   "passage": "quoique les actions de l'une soient illégitimes & condamnables suivant les loix de la conscience , les autres sont obligées de les souffrir",
    "source": "Probe haec notanda veniunt, ne quis existimet, quando videt tolerandam esse quandam agendi licentiam inter Gentes, Jus Gentium necessarium esse nullius utilitatis. Id enim perinde foret, ac si quis contenderet Jus naturae esse nullius utilitatis, propterea quod in statu naturali hominibus permittendus sit libertatis suae abusus, eadem in licentiam agendi versa (§. 150. 156. part. 1. Jur. nat.), nec is prohiberi possit nisi lege positiva in statu civili, ubi a superiore vi compelli possunt ad faciendum, quod sponte sua facere nolunt. Abusus potentiae illicitus manet etiam in Gentibus, quamvis impendiri nequeat.",
    "french": "Il faut bien noter ceci, de peur que quelqu'un, voyant qu'une certaine licence d'agir doit être tolérée entre les nations, ne pense que le droit des gens nécessaire n'est d'aucune utilité. Ce serait comme prétendre que le droit naturel n'est d'aucune utilité parce que, dans l'état de nature, il faut laisser aux hommes l'abus de leur liberté tourné en licence, et qu'on ne peut l'empêcher que par une loi positive dans l'état civil, où un supérieur peut les contraindre par la force à faire ce qu'ils ne veulent pas faire d'eux-mêmes. L'abus de la puissance reste illicite même chez les nations, bien qu'on ne puisse l'empêcher.",
    "reason": "Same § 6 point that between nations some licence must be tolerated although it stays illicit in conscience; Vattel grounds the toleration in liberty and independence (INST § 1089, already tabled) rather than in the lack of a superior.",
@@ -486,8 +486,8 @@
    "at": [
     [
      "t",
-     377,
-     485
+     378,
+     486
     ]
    ],
    "family": "Bb",
@@ -1635,7 +1635,7 @@
     [
      "t",
      783,
-     1045
+     1046
     ]
    ],
    "family": "W",
@@ -1647,7 +1647,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "Or quand les hommes s'unissent en société, comme la société est désormais chargée de pourvoir à la sûreté de ses membres ,tous se dépouillent en sa faveur de leur droit de punir. C'est donc à elle de venger les injuses particulieres , en protégeant les citoyens.",
+   "passage": "Or quand les hommes s'unissent en société, comme la société est désormais chargée de pourvoir à la sûreté de ses membres , tous se dépouillent en sa faveur de leur droit de punir. C'est donc à elle de venger les injuses particulieres , en protégeant les citoyens.",
    "source": "Vacuitas a metu injuriarum, quae ad finem civitatis pertinet (§. 972.), exigit, ut quilibet tutus praestetur ab injuria aliorum, consequenter non ferendum, ut quis laedatur ab alio (§. 88.), vel defraudetur (§. 286.), sed curandum, ut unicuique jus suum tribuatur (§. 86.), nimirum ut consequatur, quod ipsi ab alio debetur (§. 80.), damna data resarciantur (§. 170.) & ob injurias factas rei puniantur (§. 93.).",
    "french": "L'exemption de la crainte des injures, qui appartient à la fin de l'état, exige que chacun soit garanti de l'injure d'autrui, et par conséquent qu'on ne souffre pas que quelqu'un soit lésé par un autre ou fraudé, mais qu'on ait soin que chacun obtienne son droit, à savoir qu'il obtienne ce qui lui est dû, que les dommages soient réparés et que les coupables soient punis pour les injures faites.",
    "reason": "Vattel's step from the society's charge of its members' security to its duty of punishing private injuries follows Wolff § 1028 (security from injury belongs to the end of the state, so the guilty must be punished for injuries done), with §§ 1028-1029 on the transfer of private war to the ruler.",
@@ -1665,8 +1665,8 @@
    "at": [
     [
      "t",
-     1046,
-     1264
+     1047,
+     1265
     ]
    ],
    "family": "W",
@@ -1851,8 +1851,8 @@
    "at": [
     [
      "t",
-     784,
-     904
+     785,
+     905
     ]
    ],
    "family": "W",
@@ -1882,8 +1882,8 @@
    "at": [
     [
      "t",
-     222,
-     409
+     223,
+     410
     ]
    ],
    "family": "W",
@@ -1913,8 +1913,8 @@
    "at": [
     [
      "t",
-     714,
-     955
+     715,
+     956
     ]
    ],
    "family": "W",
@@ -1944,8 +1944,8 @@
    "at": [
     [
      "t",
-     956,
-     1140
+     957,
+     1141
     ]
    ],
    "family": "G",
@@ -1978,8 +1978,8 @@
    "at": [
     [
      "t",
-     956,
-     1140
+     957,
+     1141
     ]
    ],
    "family": "P",
@@ -2012,8 +2012,8 @@
    "at": [
     [
      "t",
-     1520,
-     1678
+     1521,
+     1679
     ]
    ],
    "family": "Bb",
@@ -2046,8 +2046,8 @@
    "at": [
     [
      "t",
-     1951,
-     2019
+     1952,
+     2020
     ]
    ],
    "family": "P",
@@ -2080,8 +2080,8 @@
    "at": [
     [
      "t",
-     2021,
-     2164
+     2022,
+     2165
     ]
    ],
    "family": "G",
@@ -2114,8 +2114,8 @@
    "at": [
     [
      "t",
-     2219,
-     2408
+     2220,
+     2409
     ]
    ],
    "family": "W",
@@ -2145,8 +2145,8 @@
    "at": [
     [
      "t",
-     2409,
-     2498
+     2410,
+     2499
     ]
    ],
    "family": "G",
@@ -2179,8 +2179,8 @@
    "at": [
     [
      "t",
-     2409,
-     2498
+     2410,
+     2499
     ]
    ],
    "family": "W",
@@ -2210,8 +2210,8 @@
    "at": [
     [
      "t",
-     2499,
-     2572
+     2500,
+     2573
     ]
    ],
    "family": "W",
@@ -2241,8 +2241,8 @@
    "at": [
     [
      "t",
-     2575,
-     2649
+     2576,
+     2650
     ]
    ],
    "family": "W",
@@ -3848,7 +3848,7 @@
     [
      "t",
      1181,
-     1296
+     1297
     ]
    ],
    "family": "P",
@@ -3860,7 +3860,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "C",
-   "passage": "Le souverain qui les reçoit peut les disperser , les distribuer dans les villes & provincesqui manquent d'habitans.",
+   "passage": "Le souverain qui les reçoit peut les disperser , les distribuer dans les villes & provinces qui manquent d'habitans.",
    "source": "s'il est avantageux que le nombre des Habitans s'augmente beaucoup; si le Païs est assez fertile pour les nourrir tous commodément; s'il y a assez de place pour loger les nouveaux Habitans, en sorte que les anciens ne se trouvent pas trop à l'étroit; si ceux qui demandent à s'établir, sont des gens industrieux & laborieux, ou si ce sont des fainéans & des bouches inutiles; si on peut les placer en sorte que l'Etat n'ait rien à appréhender de leur part, &c.",
    "reason": "Pufendorf's checklist (is more population useful, is there room, can they be placed so the state has nothing to fear) underlies Vattel's advice to disperse the newcomers in under-peopled provinces.",
    "links": [
@@ -3881,8 +3881,8 @@
    "at": [
     [
      "t",
-     1297,
-     1418
+     1298,
+     1419
     ]
    ],
    "family": "P",
@@ -4046,7 +4046,7 @@
     [
      "t",
      423,
-     615
+     616
     ]
    ],
    "family": "W",
@@ -4058,7 +4058,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "C",
-   "passage": "Ce moyen de défense contre la prescription , a étésouvent employé contre des princes, dont les forces redoutables avoient long-tems réduit au silence les foibles victimes de leurs usurpations.",
+   "passage": "Ce moyen de défense contre la prescription , a été souvent employé contre des princes, dont les forces redoutables avoient long-tems réduit au silence les foibles victimes de leurs usurpations.",
    "source": "Qui non ignorat, quantos bellum sumtus requirat & quantum cumulum malorum post se trahat, & quam parum valeant vires adversus potentiorem ; is in dubium minime revocabit, haud raro silendum esse, quod loqui non sit consultum, & commodam expectandam esse occasionem , qua oblata jus suum vi persequi datur adversus reddere nolentem.",
    "french": "Quiconque sait combien la guerre exige de dépenses et quelle foule de maux elle traîne après elle, et combien peu valent les forces contre un plus puissant, ne doutera point qu'il faut assez souvent se taire, parce qu'il n'est pas prudent de parler, et attendre une occasion favorable de poursuivre son droit par la force contre celui qui refuse de rendre.",
    "reason": "Wolff's argument (§ 359) that between nations the weak must often keep silent before a more powerful holder is the basis of Vattel's closing remark about princes whose power silenced their victims.",
@@ -4926,7 +4926,7 @@
     [
      "t",
      1110,
-     1248
+     1249
     ]
    ],
    "family": "W",
@@ -4938,7 +4938,7 @@
    "confidence": 0.7,
    "status": "match",
    "step": "A",
-   "passage": "l'état ne peut refuser de lesdédommager de leurs souffrances, de les récompenser , soit en leur personne , soit en celle de leurs proches.",
+   "passage": "l'état ne peut refuser de les dédommager de leurs souffrances, de les récompenser , soit en leur personne , soit en celle de leurs proches.",
    "source": "Civitas aut ejus Rector incommodum obsidi, quod patitur, aut proximis repensare tenetur.",
    "french": "L'État ou son chef est tenu de compenser à l'otage, ou à ses proches, le désavantage qu'il souffre.",
    "reason": "Compensation of the hostage's sufferings either to himself or to his relatives, by rewards, is Wolff's § 536 (incommodum ... obsidi aut proximis repensare; repensatio in praemiis).",
@@ -5080,8 +5080,8 @@
    "at": [
     [
      "t",
-     2184,
-     2277
+     2185,
+     2278
     ]
    ],
    "family": "W",
@@ -5111,8 +5111,8 @@
    "at": [
     [
      "t",
-     1278,
-     1382
+     1279,
+     1383
     ]
    ],
    "family": "G",
@@ -5145,8 +5145,8 @@
    "at": [
     [
      "t",
-     760,
-     915
+     761,
+     916
     ]
    ],
    "family": "W",
@@ -5242,7 +5242,7 @@
     [
      "t",
      990,
-     1087
+     1088
     ]
    ],
    "family": "W",
@@ -5254,7 +5254,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "tout ce qui charge seulement l'une des parties , ou ce qui la chargeplus que l'autre , est odieux",
+   "passage": "tout ce qui charge seulement l'une des parties , ou ce qui la charge plus que l'autre , est odieux",
    "source": "Si qua partem alteram saltem onerant, aut plus onerant alteram, cum nemo praesumatur se nimis onerare velle",
    "french": "Si certaines choses chargent seulement l'une des parties, ou la chargent plus que l'autre, comme personne n'est présumé vouloir se charger excessivement",
    "reason": "The odious counterpart follows Wolff's Inst. § 809 (partem alteram saltem onerant, aut plus onerant alteram), with its presumption that no one means to overburden himself, which Vattel also uses.",
@@ -5272,8 +5272,8 @@
    "at": [
     [
      "t",
-     254,
-     346
+     255,
+     347
     ]
    ],
    "family": "W",
@@ -5337,8 +5337,8 @@
    "at": [
     [
      "t",
-     2498,
-     2593
+     2499,
+     2594
     ]
    ],
    "family": "G",
@@ -5371,8 +5371,8 @@
    "at": [
     [
      "t",
-     2692,
-     2800
+     2693,
+     2801
     ]
    ],
    "family": "G",
@@ -5405,8 +5405,8 @@
    "at": [
     [
      "t",
-     2808,
-     2926
+     2809,
+     2927
     ]
    ],
    "family": "G",
@@ -5439,8 +5439,8 @@
    "at": [
     [
      "t",
-     3202,
-     3286
+     3204,
+     3288
     ]
    ],
    "family": "G",
@@ -5473,8 +5473,8 @@
    "at": [
     [
      "t",
-     3289,
-     3511
+     3291,
+     3513
     ]
    ],
    "family": "G",
@@ -5507,8 +5507,8 @@
    "at": [
     [
      "t",
-     399,
-     473
+     400,
+     474
     ]
    ],
    "family": "P",
@@ -5541,8 +5541,8 @@
    "at": [
     [
      "t",
-     399,
-     473
+     400,
+     474
     ]
    ],
    "family": "W",
@@ -5572,8 +5572,8 @@
    "at": [
     [
      "t",
-     399,
-     473
+     400,
+     474
     ]
    ],
    "family": "W",
@@ -5634,8 +5634,8 @@
    "at": [
     [
      "t",
-     741,
-     908
+     742,
+     909
     ]
    ],
    "family": "W",
@@ -5665,8 +5665,8 @@
    "at": [
     [
      "t",
-     909,
-     1307
+     910,
+     1308
     ]
    ],
    "family": "W",
@@ -5696,8 +5696,8 @@
    "at": [
     [
      "t",
-     1489,
-     1728
+     1490,
+     1729
     ]
    ],
    "family": "W",
@@ -5727,8 +5727,8 @@
    "at": [
     [
      "t",
-     2225,
-     2401
+     2226,
+     2402
     ]
    ],
    "family": "W",
@@ -6300,8 +6300,8 @@
    "at": [
     [
      "t",
-     1500,
-     1721
+     1501,
+     1722
     ]
    ],
    "family": "W",
@@ -6331,8 +6331,8 @@
    "at": [
     [
      "t",
-     1722,
-     2079
+     1723,
+     2080
     ]
    ],
    "family": "W",
@@ -6394,7 +6394,7 @@
     [
      "t",
      495,
-     748
+     749
     ]
    ],
    "family": "W",
@@ -6406,7 +6406,7 @@
    "confidence": 0.65,
    "status": "match",
    "step": "A",
-   "passage": "On attaque une nation , ou pour se faire donner une chose à laquelle on forme des prétentions , ou pour la punir d'une injure qu'on en a reçue , ou pour prévenircelle qu'elle se prépare à faire , & détourner un danger dont on se croit menacé de sa part.",
+   "passage": "On attaque une nation , ou pour se faire donner une chose à laquelle on forme des prétentions , ou pour la punir d'une injure qu'on en a reçue , ou pour prévenir celle qu'elle se prépare à faire , & détourner un danger dont on se croit menacé de sa part.",
    "source": "Triplex itaque belli finis est, scilicet 1. ut quod nostrum est, vel quod nobis debetur, consequamur, 2. ut laedentem puniendo securitati futurae consulamus, 3. ut vi injustae resistendo nos defendentes injuriam a nobis avertamus.",
    "french": "le but de la guerre est donc triple : 1. obtenir ce qui est à nous ou ce qui nous est dû ; 2. pourvoir à notre sûreté future en punissant celui qui nous lèse ; 3. détourner de nous l'injure en nous défendant par la résistance à une force injuste",
    "reason": "Vattel's three objects of war (obtain what is claimed, punish an injury, avert one threatened) follow Wolff's threefold end of war in JG § 619, in the same order.",
@@ -6455,8 +6455,8 @@
    "at": [
     [
      "t",
-     679,
-     871
+     680,
+     872
     ]
    ],
    "family": "W",
@@ -6868,7 +6868,7 @@
     [
      "t",
      0,
-     240
+     241
     ]
    ],
    "family": "W",
@@ -6880,7 +6880,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "On n'a point reçu d'injure de cette puissance ; la question le suppose. Il faudroit donc être fondé à s'en croire menacé, pour courir légitimement aux armes. Or la puissanceseule ne menace pas d'injure, il faut que la volonté y soit jointe.",
+   "passage": "On n'a point reçu d'injure de cette puissance ; la question le suppose. Il faudroit donc être fondé à s'en croire menacé, pour courir légitimement aux armes. Or la puissance seule ne menace pas d'injure, il faut que la volonté y soit jointe.",
    "source": "Equidem qui potens est damnum dare aut alio modo laedere potest, ac fieri potest, ut potentia sua confisus damnum aliquando dare vel alio modo laedere velit: quamdiu tamen nec actu damnum dat, aut alio modo laedit, nec animum alterutrum faciendi actu quodam externo declarat, injuria ulla nec facta, nec facienda adest",
    "french": "Celui qui est puissant peut causer du dommage ou léser autrement, et il peut arriver que, se fiant à sa puissance, il veuille un jour le faire ; mais tant qu'il ne cause pas de dommage en fait et ne déclare par aucun acte extérieur l'intention de le faire, il n'y a aucune injure ni faite ni à faire.",
    "reason": "Vattel frames the case as Wolff § 640 does: no injury received, so arms need a threatened injury (injuria facienda), and mere power without a declared intention (animus) threatens none.",
@@ -6899,7 +6899,7 @@
     [
      "t",
      158,
-     240
+     241
     ]
    ],
    "family": "G",
@@ -6911,7 +6911,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "A",
-   "passage": "Or la puissanceseule ne menace pas d'injure, il faut que la volonté y soit jointe.",
+   "passage": "Or la puissance seule ne menace pas d'injure, il faut que la volonté y soit jointe.",
    "source": "il ne suffit pas que l'on craigne la puissance d'un Voisin. Car la Défense n'est légitime, que quand elle est nécessaire: & elle n'est nullement nécessaire, tant qu'on n'est point assûré, & cela d'une certitude morale, que celui qu'on craint a non seulement le pouvoir, mais encore la volonté de nous attaquer.",
    "reason": "Vattel's condition that power must be joined by will (and the pouvoir/volonté pair in his next sentence) is Grotius's 'non seulement le pouvoir, mais encore la volonté', though Vattel then relaxes Grotius's moral certainty to first appearances.",
    "links": [
@@ -7090,8 +7090,8 @@
    "at": [
     [
      "t",
-     194,
-     332
+     195,
+     333
     ]
    ],
    "family": "W",
@@ -7661,7 +7661,7 @@
     [
      "t",
      356,
-     569
+     570
     ]
    ],
    "family": "W",
@@ -7673,7 +7673,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "A",
-   "passage": "Est-il fondé à prendre les armes ? Il reste encore à considérer si le bien de l'état vous permet ou vous conseille d'entrer dans sa querelle. Car le souverain ne doit user deson autorité que pour le bien de l'état",
+   "passage": "Est-il fondé à prendre les armes ? Il reste encore à considérer si le bien de l'état vous permet ou vous conseille d'entrer dans sa querelle. Car le souverain ne doit user de son autorité que pour le bien de l'état",
    "source": "Quamobrem in pangendis foederibus belli apprime attendendae sunt rationes suasoriae utrum scilicet e re civitatis sit bellum suscipi, nec ne (§. 621.): id quod etiam valet, etiamsi foedus ineundum cum eo, cujus justa sunt arma. Quoniam enim facere non licet, quod fini civitatis adversatur (§. 30. part. 8. Jur. nat.)",
    "french": "C'est pourquoi, en faisant des alliances de guerre, il faut surtout considérer les raisons de convenance, savoir s'il est de l'intérêt de l'État d'entreprendre la guerre ou non ; ce qui vaut même si l'alliance se fait avec celui dont les armes sont justes. Car il n'est pas permis de faire ce qui est contraire à la fin de l'État.",
    "reason": "Vattel's second test for an alliance with a belligerent whose cause is just, the good of the state, with the ground that the sovereign may act only for that end, is the second half of Wolff § 658 (rationes suasoriae, etiamsi justa sunt arma, finis civitatis).",
@@ -7692,7 +7692,7 @@
     [
      "t",
      241,
-     416
+     417
     ]
    ],
    "family": "W",
@@ -7704,7 +7704,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "C",
-   "passage": "Et puis, il seroit absurde que je ne puisse porter laguerre chez une nation, qui s'oppose à moi de toutes ses forces, & tarir la source des secours qu'elle donne à mon ennemi.",
+   "passage": "Et puis, il seroit absurde que je ne puisse porter la guerre chez une nation, qui s'oppose à moi de toutes ses forces, & tarir la source des secours qu'elle donne à mon ennemi.",
    "source": "Cum qui hosti meo se associat, in eum & res ejus idem liceat, quod in hostem & res hostium (§. 732.); in terras ejus vi armata ingredi & ibidem hostiliter agere, seu bellum ei inferre licet.",
    "french": "Puisqu'il est permis contre celui qui s'associe à mon ennemi, et contre ses biens, ce qui est permis contre l'ennemi et ses biens, il est permis d'entrer à main armée sur ses terres et d'y agir en ennemi, c'est-à-dire de lui faire la guerre.",
    "reason": "JG § 733: one may carry the war into the lands of him who joins my enemy, the right Vattel says it would be absurd to deny.",
@@ -7722,8 +7722,8 @@
    "at": [
     [
      "t",
-     417,
-     685
+     418,
+     686
     ]
    ],
    "family": "W",
@@ -7753,8 +7753,8 @@
    "at": [
     [
      "t",
-     686,
-     830
+     687,
+     831
     ]
    ],
    "family": "W",
@@ -7815,8 +7815,8 @@
    "at": [
     [
      "t",
-     913,
-     1043
+     914,
+     1044
     ]
    ],
    "family": "W",
@@ -7846,8 +7846,8 @@
    "at": [
     [
      "t",
-     1044,
-     1157
+     1045,
+     1158
     ]
    ],
    "family": "W",
@@ -8205,8 +8205,8 @@
    "at": [
     [
      "t",
-     2386,
-     2698
+     2387,
+     2699
     ]
    ],
    "family": "G",
@@ -8397,8 +8397,8 @@
    "at": [
     [
      "t",
-     2984,
-     3266
+     2986,
+     3268
     ]
    ],
    "family": "W",
@@ -8428,8 +8428,8 @@
    "at": [
     [
      "t",
-     3267,
-     3497
+     3269,
+     3499
     ]
    ],
    "family": "W",
@@ -8460,7 +8460,7 @@
     [
      "t",
      44,
-     292
+     293
     ]
    ],
    "family": "G",
@@ -8472,7 +8472,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "A",
-   "passage": "on doit épargner les édifices qui font honneur à l'humanité, & qui necontribuent point à rendre l'ennemi plus puissant, les temples, les tombaeux, les bâtimens publics, tous les ouvrages respectables par leur beauté. Que gagne-t-on à les détruire ?",
+   "passage": "on doit épargner les édifices qui font honneur à l'humanité, & qui ne contribuent point à rendre l'ennemi plus puissant, les temples, les tombaeux, les bâtimens publics, tous les ouvrages respectables par leur beauté. Que gagne-t-on à les détruire ?",
    "source": "POLYBE traite (2) de fureur, un acte d'hostilité par lequel on fait périr des choses, dont la destruction n'affoiblit point l'Ennemi, & n'apporte d'ailleurs aucun avantage au Destructeur, comme sont les Temples, les Portiques, les Statuës.",
    "reason": "Vattel's criterion and list (buildings whose destruction does not weaken the enemy and gains the destroyer nothing: temples, public buildings, works of art) follow Grotius III.xii.5, whose Belisarius letter he cites in the same paragraph.",
    "links": [
@@ -8719,8 +8719,8 @@
    "at": [
     [
      "t",
-     2286,
-     2390
+     2287,
+     2392
     ]
    ],
    "family": "W",
@@ -8732,7 +8732,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "A",
-   "passage": "Tel est le cas des conventions, des traités : l'engagement tacite d'y parler vrai est detoute nécessité.",
+   "passage": "Tel est le cas des conventions, des traités : l'engagement tacite d'y parler vrai est de toute nécessité.",
    "source": "Quodsi ergo dolo, hoc est simulatione, falsiloquio extra sermonem promittentem, cum in casu promittentis ad veritatem etiam hosti dicendam obligemur (§. 790. 800.)",
    "french": "Si donc par la ruse, c'est-à-dire par la feinte, par un discours faux hors des paroles par lesquelles on promet (car lorsqu'on promet, on est obligé de dire la vérité même à l'ennemi)",
    "reason": "Wolff §857 limits permitted falsiloquium in war to speech that does not promise, since in promising one must tell the truth even to an enemy, which is Vattel's exception for conventions and treaties.",
@@ -8750,8 +8750,8 @@
    "at": [
     [
      "t",
-     2391,
-     2544
+     2393,
+     2546
     ]
    ],
    "family": "W",
@@ -8781,8 +8781,8 @@
    "at": [
     [
      "t",
-     2509,
-     2544
+     2511,
+     2546
     ]
    ],
    "family": "W",
@@ -8847,7 +8847,7 @@
     [
      "t",
      476,
-     560
+     561
     ]
    ],
    "family": "G",
@@ -8859,7 +8859,7 @@
    "confidence": 0.45,
    "status": "possible",
    "step": "C",
-   "passage": "non par leur volonté propre, mais comme des instrumens dansdans la main du souverain",
+   "passage": "non par leur volonté propre, mais comme des instrumens dans dans la main du souverain",
    "source": "On suppose, que celui qui obéït, ne le fait pas volontairement, & par conséquent n'est point coupable",
    "reason": "Grotius's note on II.26.4 (acting on command is not voluntary; n. 3 adds Aristotle's slave as an inanimate instrument or the hand that strikes) gives Vattel's 'not by their own will but as instruments in the sovereign's hand'.",
    "links": [
@@ -8881,7 +8881,7 @@
     [
      "t",
      476,
-     560
+     561
     ]
    ],
    "family": "P",
@@ -8893,7 +8893,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "C",
-   "passage": "non par leur volonté propre, mais comme des instrumens dansdans la main du souverain",
+   "passage": "non par leur volonté propre, mais comme des instrumens dans dans la main du souverain",
    "source": "En effet, on peut sans contredit exécuter en qualité de (4) simple instrument une action ordonnée par le Souve-",
    "reason": "Pufendorf VIII.1.6: the subject may execute an order of the sovereign as a mere instrument; Vattel's soldiers act 'comme des instrumens dans la main du souverain'.",
    "links": [
@@ -8914,8 +8914,8 @@
    "at": [
     [
      "t",
-     563,
-     757
+     564,
+     758
     ]
    ],
    "family": "P",
@@ -8948,8 +8948,8 @@
    "at": [
     [
      "t",
-     880,
-     1062
+     881,
+     1063
     ]
    ],
    "family": "Bb",
@@ -8982,8 +8982,8 @@
    "at": [
     [
      "t",
-     1003,
-     1152
+     1004,
+     1153
     ]
    ],
    "family": "P",
@@ -9016,8 +9016,8 @@
    "at": [
     [
      "t",
-     1153,
-     1256
+     1154,
+     1257
     ]
    ],
    "family": "P",
@@ -9050,8 +9050,8 @@
    "at": [
     [
      "t",
-     1259,
-     1427
+     1260,
+     1428
     ]
    ],
    "family": "G",
@@ -9084,8 +9084,8 @@
    "at": [
     [
      "t",
-     1345,
-     1427
+     1346,
+     1428
     ]
    ],
    "family": "P",
@@ -9118,8 +9118,8 @@
    "at": [
     [
      "t",
-     1428,
-     1551
+     1429,
+     1552
     ]
    ],
    "family": "Bb",
@@ -9152,8 +9152,8 @@
    "at": [
     [
      "t",
-     1552,
-     1685
+     1553,
+     1686
     ]
    ],
    "family": "G",
@@ -9186,8 +9186,8 @@
    "at": [
     [
      "t",
-     1655,
-     1724
+     1656,
+     1725
     ]
    ],
    "family": "Bb",
@@ -9220,8 +9220,8 @@
    "at": [
     [
      "t",
-     1655,
-     1839
+     1656,
+     1840
     ]
    ],
    "family": "G",
@@ -9254,8 +9254,8 @@
    "at": [
     [
      "t",
-     1655,
-     1685
+     1656,
+     1686
     ]
    ],
    "family": "P",
@@ -9288,8 +9288,8 @@
    "at": [
     [
      "t",
-     1687,
-     1788
+     1688,
+     1789
     ]
    ],
    "family": "G",
@@ -9322,8 +9322,8 @@
    "at": [
     [
      "t",
-     1840,
-     1929
+     1841,
+     1930
     ]
    ],
    "family": "G",
@@ -9356,8 +9356,8 @@
    "at": [
     [
      "t",
-     2123,
-     2353
+     2124,
+     2354
     ]
    ],
    "family": "G",
@@ -9390,8 +9390,8 @@
    "at": [
     [
      "t",
-     2205,
-     2353
+     2206,
+     2354
     ]
    ],
    "family": "Bb",
@@ -9424,8 +9424,8 @@
    "at": [
     [
      "t",
-     2354,
-     2471
+     2355,
+     2472
     ]
    ],
    "family": "P",
@@ -9752,8 +9752,8 @@
    "at": [
     [
      "t",
-     196,
-     560
+     197,
+     561
     ]
    ],
    "family": "W",
@@ -9783,8 +9783,8 @@
    "at": [
     [
      "t",
-     762,
-     885
+     763,
+     886
     ]
    ],
    "family": "W",
@@ -9814,8 +9814,8 @@
    "at": [
     [
      "t",
-     992,
-     1167
+     993,
+     1168
     ]
    ],
    "family": "W",
@@ -9845,8 +9845,8 @@
    "at": [
     [
      "t",
-     2234,
-     2535
+     2236,
+     2537
     ]
    ],
    "family": "W",
@@ -9908,7 +9908,7 @@
     [
      "t",
      319,
-     436
+     437
     ]
    ],
    "family": "W",
@@ -9920,7 +9920,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "A",
-   "passage": "Mais l'état doit dédommager les citoyens, quiqui souffrent de ces dispositions, faites pour l'avantage commun (ibid).",
+   "passage": "Mais l'état doit dédommager les citoyens, qui qui souffrent de ces dispositions, faites pour l'avantage commun (ibid).",
    "source": "Ad quid vero deinde civitas teneatur illis, de quorum rebus vel personis fuit dispositum, id non ad pactionem pacis pertinet, & alibi demonstratum ( §. 119. part. 8. Jur. nat. ).",
    "french": "Quant à ce à quoi l'État est tenu ensuite envers ceux dont on a disposé des biens ou des personnes, cela ne regarde pas le traité de paix, et a été démontré ailleurs.",
    "reason": "Vattel ends the paragraph as Wolff ends § 1008, with what the state owes those whose goods or persons were disposed of, sent back to the general treatment (Wolff to Jus naturae VIII § 119, the weak row's source; Vattel to his I § 244).",
@@ -10063,7 +10063,7 @@
     [
      "t",
      0,
-     229
+     230
     ]
    ],
    "family": "W",
@@ -10075,7 +10075,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "A",
-   "passage": "Chacune des puissances qui se font la guerre prétendantêtre fondée en justice, & personne ne pouvant juger de cette prétention ( Liv. III, §. 188 ); l'état où les choses se trouvent, au moment du traité, doit passer pour légitime",
+   "passage": "Chacune des puissances qui se font la guerre prétendant être fondée en justice, & personne ne pouvant juger de cette prétention ( Liv. III, §. 188 ); l'état où les choses se trouvent, au moment du traité, doit passer pour légitime",
    "source": "Quoniam enim neuter paciscentium injustitiae vel injuriarum damnatur (§. 988.); quae in bello occupata sunt quasi jure occupata promiscue censentur & similiter quae utrinque facta sunt, quasi absque injuria facta intelliguntur",
    "french": "Car puisque aucun des contractants n'est condamné d'injustice ou d'injures, ce qui a été occupé dans la guerre est réputé indistinctement occupé comme de droit, et de même ce qui a été fait de part et d'autre s'entend comme fait sans injure",
    "reason": "Vattel grounds the status quo as Wolff's § 992 does: since neither side is condemned, what stands at the treaty counts as lawful; the table has only § 992's rule sentence (row 1399, locus given as § 990).",
@@ -10093,8 +10093,8 @@
    "at": [
     [
      "t",
-     462,
-     512
+     463,
+     513
     ]
    ],
    "family": "W",
@@ -10124,8 +10124,8 @@
    "at": [
     [
      "t",
-     429,
-     836
+     430,
+     837
     ]
    ],
    "family": "W",
@@ -10155,8 +10155,8 @@
    "at": [
     [
      "t",
-     735,
-     836
+     736,
+     837
     ]
    ],
    "family": "G",

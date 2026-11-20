@@ -4,4 +4,4 @@ Converted by `tools/convert_vattel_essai_1747.py` from `texts/vattel-loisir-1747
 
 | File | Bytes | SHA-256 |
 |---|---|---|
-| `data.json` | 87893 | `091218747e8651b811feb1d2fc886cabf8365fe602ae132f98d332fd0e7bee4b` |
+| `data.json` | 87891 | `ee8388ae972568edf54cf477d0fd334e50a0b1db2dce949b8a5e1085346c9994` |

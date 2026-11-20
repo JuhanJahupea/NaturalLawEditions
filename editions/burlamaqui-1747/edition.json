@@ -235,7 +235,7 @@
       "url": "zotero://open-pdf/library/items/XKNMUHV3?page={scan}",
       "title": "Open in Zotero at scan {scan}"
     },
-    "pageBreak": " <span class=\"pb\" data-pg=\"{scan}\">p. {printed}</span> ",
+    "pageBreak": "<span class=\"pb\" data-pg=\"{scan}\"> p. {printed} </span>",
     "goto": [
       {
         "re": "^(?:p(?:art)?\\.?\\s*)?(?:2|II)[\\s.,]+(?:ch\\.?\\s*)?(\\d+)[\\s.,§]+(\\d+)$",

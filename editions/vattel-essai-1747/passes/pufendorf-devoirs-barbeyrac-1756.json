@@ -49,8 +49,8 @@
    "at": [
     [
      "t",
-     322,
-     482
+     323,
+     483
     ]
    ],
    "family": "Bb",
@@ -79,8 +79,8 @@
    "at": [
     [
      "t",
-     640,
-     701
+     641,
+     702
     ]
    ],
    "family": "Bb",
@@ -140,7 +140,7 @@
     [
      "t",
      3,
-     463
+     464
     ]
    ],
    "family": "Bb",
@@ -152,7 +152,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "R",
-   "passage": "Il faut en dire autant de ceux qui rapportent l'institution du droit naturel à une volonté arbitraire de Dieu. Car, dès qu'ils reconnoissentDieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
+   "passage": "Il faut en dire autant de ceux qui rapportent l'institution du droit naturel à une volonté arbitraire de Dieu. Car, dès qu'ils reconnoissent Dieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
    "source": "Il a reconnu aussi, qu'à l'égard des Hommes, quoique dépendans de l'empire du Créateur, ce n'est pas une volonté arbitraire de DIEU qui fait le Droit & le Juste; & que DIEU ne pouvoit, sans choquer ses perfections & se démentir lui-même, prescrire aux Hommes d'autres Régles que celles de la Justice, qui sont fondées sur leur nature.",
    "reason": "Barbeyrac's concession (Réflexions § 15) shares the wording (\"volonté arbitraire de DIEU\") and the point: God could prescribe to men only rules founded on their nature. Vattel turns it against the voluntarists.",
    "links": [
@@ -174,8 +174,8 @@
    "at": [
     [
      "t",
-     286,
-     389
+     287,
+     390
     ]
    ],
    "family": "Bb",
@@ -210,8 +210,8 @@
    "at": [
     [
      "t",
-     392,
-     484
+     393,
+     485
     ]
    ],
    "family": "Bb",
@@ -253,7 +253,7 @@
    "confidence": 0.5,
    "status": "possible",
    "step": "R",
-   "passage": "Interrogez tout homme qui dit; nous sommes dans l'obligation de faire telle chose : vous verrez qu'il veut-dire par-la, que nous sommes dans une espéce de nécessité de faire cette même chose ; que nous y sommes astraints, lies, & comme contraints",
+   "passage": "Interrogez tout homme qui dit; nous sommes dans l'obligation de faire telle chose : vous verrez qu'il veut dire par-la, que nous sommes dans une espéce de nécessité de faire cette même chose ; que nous y sommes astraints, lies, & comme contraints",
    "source": "On entend ordinairement par le mot (a) d'OBLIGATION, un lien de Droit par lequel on est astreint à faire ou à ne pas faire certaines choses.",
    "reason": "Pufendorf's 'on entend ordinairement par le mot d'Obligation' a bond by which one is 'astreint' is restated as what everyone means: 'astraints, lies'.",
    "links": [
@@ -275,8 +275,8 @@
    "at": [
     [
      "t",
-     954,
-     1053
+     955,
+     1054
     ]
    ],
    "family": "Bb",
@@ -335,8 +335,8 @@
    "at": [
     [
      "t",
-     827,
-     967
+     828,
+     968
     ]
    ],
    "family": "P",
@@ -365,7 +365,7 @@
     [
      "t",
      178,
-     341
+     342
     ]
    ],
    "family": "Bb",
@@ -377,7 +377,7 @@
    "confidence": 0.45,
    "status": "possible",
    "step": "R",
-   "passage": "ill'a fait envisager comme une dépendance où nous sommes de la volonté d'un supérieur, laquelle nous assujettit à conformer notre conduite aux loix de ce supérieur",
+   "passage": "il l'a fait envisager comme une dépendance où nous sommes de la volonté d'un supérieur, laquelle nous assujettit à conformer notre conduite aux loix de ce supérieur",
    "source": "cette nécessité ne peut être imposée que par un Principe extérieur, par un Etre qui ait droit de nous assujettir à sui-",
    "reason": "Barbeyrac's note to Devoirs I.2.3 states the same view in the same terms (a being with the right 'de nous assujettir'), part of the notes on Pufendorf Vattel names.",
    "links": [
@@ -394,8 +394,8 @@
    "at": [
     [
      "t",
-     343,
-     456
+     344,
+     457
     ]
    ],
    "family": "Bb",
@@ -424,8 +424,8 @@
    "at": [
     [
      "t",
-     561,
-     739
+     562,
+     740
     ]
    ],
    "family": "Lz",
@@ -437,7 +437,7 @@
    "confidence": 0.5,
    "status": "match",
    "step": "R",
-   "passage": "Si l'on demande à ce savant ; pourquoi dévons-nous obéir à un supérieur ? Il ne répondra pas : parce que nous y sommes obligés. Ce seroit ne rien dire, & expliquer idem per idem.",
+   "passage": "Si l'on demande à ce savant ; pourquoi devons-nous obéir à un supérieur ? Il ne répondra pas : parce que nous y sommes obligés. Ce seroit ne rien dire, & expliquer idem per idem.",
    "source": "Donc la justice des raisons est antérieure à l'établissement du Supérieur. Si, pour découvrir l'origine du Droit, il faut trouver un Supérieur; & si, d'autre côté, l'autorité du Supérieur doit être fondée sur des raisons tirées du Droit, voilà le cercle le plus manifeste où l'on soit jamais tombé.",
    "reason": "Leibniz's charge of circularity against grounding obligation in a superior (Jugement § 19) is the argument behind Vattel's 'idem per idem': the duty to obey cannot itself come from the superior.",
    "links": [
@@ -459,8 +459,8 @@
    "at": [
     [
      "t",
-     740,
-     829
+     741,
+     830
     ]
    ],
    "family": "Bb",
@@ -489,8 +489,8 @@
    "at": [
     [
      "t",
-     905,
-     1025
+     906,
+     1026
     ]
    ],
    "family": "Bb",
@@ -524,8 +524,8 @@
    "at": [
     [
      "t",
-     461,
-     539
+     462,
+     540
     ]
    ],
    "family": "P",
@@ -650,8 +650,8 @@
    "at": [
     [
      "t",
-     279,
-     357
+     280,
+     358
     ]
    ],
    "family": "Lz",
@@ -738,8 +738,8 @@
    "at": [
     [
      "t",
-     833,
-     1198
+     834,
+     1199
     ]
    ],
    "family": "P",
@@ -767,8 +767,8 @@
    "at": [
     [
      "t",
-     5871,
-     6025
+     5873,
+     6028
     ]
    ],
    "family": "Bb",
@@ -780,7 +780,7 @@
    "confidence": 0.75,
    "status": "match",
    "step": "R",
-   "passage": "( Je ne copie pas la preuve qu'en donne l'Auteur, elle se trouve mot pour mot dans sa réponse au jugement de M LEIBNITZ , que j'examinerai tout-à-l'heure.",
+   "passage": "( Je ne copie pas la preuve qu'en donne l'Auteur, elle se trouve mot pour mot dans sa réponse au jugement de M. LEIBNITZ , que j'examinerai tout-à-l'heure.",
    "source": "Car 1. les Passions opposent à ces idées abstraites & spéculatives, des idées sensibles & touchantes",
    "reason": "Vattel skips Barbeyrac's proof and refers to its parallel in the Réflexions on Leibniz's Jugement (§ 15), where point 1 on the passions begins here.",
    "links": [
@@ -802,8 +802,8 @@
    "at": [
     [
      "t",
-     5871,
-     6025
+     5873,
+     6028
     ]
    ],
    "family": "Bb",
@@ -815,7 +815,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "R",
-   "passage": "( Je ne copie pas la preuve qu'en donne l'Auteur, elle se trouve mot pour mot dans sa réponse au jugement de M LEIBNITZ , que j'examinerai tout-à-l'heure.",
+   "passage": "( Je ne copie pas la preuve qu'en donne l'Auteur, elle se trouve mot pour mot dans sa réponse au jugement de M. LEIBNITZ , que j'examinerai tout-à-l'heure.",
    "source": "2. Mais ce qu'il faut surtout bien considérer, & qui suffit pour détruire la pensée que je combats, c'est que notre Raison, considérée hors de toute dépendance du Créateur de qui nous la tenons, n'est au fond autre chose que nous-mêmes.",
    "reason": "Second point of the same proof in the Réflexions § 15 (reason, taken apart from God, is only ourselves), also covered by Vattel's reference.",
    "links": [
@@ -872,8 +872,8 @@
    "at": [
     [
      "t",
-     793,
-     1056
+     794,
+     1057
     ]
    ],
    "family": "Bb",
@@ -907,8 +907,8 @@
    "at": [
     [
      "t",
-     1057,
-     1100
+     1058,
+     1101
     ]
    ],
    "family": "Bb",
@@ -942,8 +942,8 @@
    "at": [
     [
      "t",
-     1468,
-     1825
+     1470,
+     1827
     ]
    ],
    "family": "Lz",
@@ -977,8 +977,8 @@
    "at": [
     [
      "t",
-     1841,
-     1981
+     1843,
+     1983
     ]
    ],
    "family": "Lz",
@@ -1012,8 +1012,8 @@
    "at": [
     [
      "t",
-     2193,
-     2379
+     2196,
+     2382
     ]
    ],
    "family": "Bb",
@@ -1047,8 +1047,8 @@
    "at": [
     [
      "t",
-     2380,
-     2623
+     2383,
+     2626
     ]
    ],
    "family": "Bb",
@@ -1060,7 +1060,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "„vie même , indépendamment de la „vûe des récompenses & des peines „d'une autre vie , & par cette seule „raison que ce sont des devoirs qui „nous sont imposés par le sage Auteur „de la Loi naturelle, par le conducteur souverain de l'Univers. „",
+   "passage": "„vie même , indépendamment de la „vue des récompenses & des peines „d'une autre vie , & par cette seule „raison que ce sont des devoirs qui „nous sont imposés par le sage Auteur „de la Loi naturelle, par le conducteur souverain de l'Univers. „",
    "source": "vie même, indépendamment (7) de la vue des Récompenses & des Peines d'une autre Vie, & par cette seule raison que ce sont des Devoirs qui nous sont imposés par le sage Auteur de la Loi Naturelle, par le Conducteur Souverain de l'Univers.",
    "reason": "End of the same quotation of Réflexions § 6, continued on p. 232.",
    "links": [
@@ -1082,8 +1082,8 @@
    "at": [
     [
      "t",
-     3130,
-     3287
+     3134,
+     3291
     ]
    ],
    "family": "Bb",
@@ -1117,8 +1117,8 @@
    "at": [
     [
      "t",
-     3398,
-     3599
+     3402,
+     3603
     ]
    ],
    "family": "Bb",
@@ -1153,7 +1153,7 @@
     [
      "t",
      4,
-     197
+     198
     ]
    ],
    "family": "Bb",
@@ -1165,7 +1165,7 @@
    "confidence": 0.97,
    "status": "match",
    "step": "R",
-   "passage": "„Quelle de ces deux morales, „je vous prie, ajoûte M. B. est la plus„pure, la plus noble, & la plus conforme aux idées des sages Payens, „qui ont si bien distingué entre l'honnête & l'utile ? „",
+   "passage": "„Quelle de ces deux morales, „je vous prie, ajoûte M. B. est la plus „pure, la plus noble, & la plus conforme aux idées des sages Payens, „qui ont si bien distingué entre l'honnête & l'utile ? „",
    "source": "Quelle de ces deux Morales, je vous prie, est la plus pure, la plus noble, la plus conforme aux idées des sages Payens, qui ont si bien distingué entre l'Honnête & l'Utile?",
    "reason": "Verbatim quotation of Barbeyrac's rhetorical question in Réflexions § 6.",
    "links": [
@@ -1187,8 +1187,8 @@
    "at": [
     [
      "t",
-     436,
-     744
+     437,
+     745
     ]
    ],
    "family": "Bb",
@@ -1222,8 +1222,8 @@
    "at": [
     [
      "t",
-     745,
-     881
+     746,
+     882
     ]
    ],
    "family": "Bb",
@@ -1432,8 +1432,8 @@
    "at": [
     [
      "t",
-     799,
-     858
+     800,
+     859
     ]
    ],
    "family": "Bb",
@@ -1467,8 +1467,8 @@
    "at": [
     [
      "t",
-     862,
-     969
+     863,
+     970
     ]
    ],
    "family": "Bb",
@@ -1497,8 +1497,8 @@
    "at": [
     [
      "t",
-     1041,
-     1171
+     1042,
+     1172
     ]
    ],
    "family": "Bb",
@@ -1603,7 +1603,7 @@
     [
      "t",
      320,
-     608
+     609
     ]
    ],
    "family": "Bb",
@@ -1615,7 +1615,7 @@
    "confidence": 0.85,
    "status": "match",
    "step": "R",
-   "passage": "Etpourquoi n'y auroit-il point de milieu? Il y en a un certainement; & le voici : l'obligation naît de la nature même des choses : mais la divinité est au nombre de ces choses, dont la nature détermine les régles du Juste & de l'injuste, & fournit les motifs qui constituent l'obligation.",
+   "passage": "Et pourquoi n'y auroit-il point de milieu? Il y en a un certainement; & le voici : l'obligation naît de la nature même des choses : mais la divinité est au nombre de ces choses, dont la nature détermine les régles du Juste & de l'injuste, & fournit les motifs qui constituent l'obligation.",
    "source": "Il n'y a donc point de milieu: ou l'obligation des Régles du Juste entre les",
    "reason": "Vattel denies Barbeyrac's 'point de milieu' and offers the middle way that the divinity is one of the things whose nature grounds obligation.",
    "links": [
@@ -1637,8 +1637,8 @@
    "at": [
     [
      "t",
-     737,
-     906
+     738,
+     907
     ]
    ],
    "family": "Lz",
@@ -1672,8 +1672,8 @@
    "at": [
     [
      "t",
-     908,
-     964
+     909,
+     965
     ]
    ],
    "family": "Lz",
@@ -1707,8 +1707,8 @@
    "at": [
     [
      "t",
-     1210,
-     1280
+     1212,
+     1282
     ]
    ],
    "family": "Bb",
@@ -1737,8 +1737,8 @@
    "at": [
     [
      "t",
-     1292,
-     1504
+     1294,
+     1506
     ]
    ],
    "family": "Lz",
@@ -1772,8 +1772,8 @@
    "at": [
     [
      "t",
-     1505,
-     1617
+     1507,
+     1619
     ]
    ],
    "family": "Bb",
@@ -1807,8 +1807,8 @@
    "at": [
     [
      "t",
-     1620,
-     1698
+     1622,
+     1700
     ]
    ],
    "family": "Bb",
@@ -1855,7 +1855,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "La nature des choses par „elle-même, ajoûte M. B. ( a ), ne sauroit „nous imposer une obligation, pro„prementainsi nommée. Qu'il y ait „tel ou tel rapport d'égalité & de proportion, de convenance ou de disconvenance, dans la nature des choses, cela seul ne nous engage qu'à „reconnoître ce rapport : il faut quelque chose de plus pour gêner notre „liberté, pour nous assujettir à régler „nos actions d'une certaine maniere. „",
+   "passage": "La nature des choses par „elle-même, ajoûte M. B. ( a ), ne sauroit „nous imposer une obligation, proprement ainsi nommée. Qu'il y ait „tel ou tel rapport d'égalité & de proportion, de convenance ou de disconvenance, dans la nature des choses, cela seul ne nous engage qu'à „reconnoître ce rapport : il faut quelque chose de plus pour gêner notre „liberté, pour nous assujettir à régler „nos actions d'une certaine maniere. „",
    "source": "Or la nature des choses par elle-même ne sauroit nous imposer une Obligation, proprement ainsi nommée. Qu'il y ait tel ou tel rapport d'Egalité & de Proportion, de Convenance ou de Disconvenance, dans la nature des choses, cela seul ne nous engage qu'à reconnoître ce rapport: il faut quelque chose de plus pour gêner notre liberté, pour nous assujettir à régler nos actions d'une certaine maniére.",
    "reason": "Verbatim quotation of Barbeyrac's Réflexions § 15 (1718 p. 470).",
    "links": [
@@ -1984,7 +1984,7 @@
     [
      "t",
      4,
-     379
+     378
     ]
    ],
    "family": "Bb",
@@ -1996,7 +1996,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "„La raison, dit-il, encore ( a ) „considérée en elle-même & indépendamment du Créateur qui nous l'a „donnée, ne peut pas non plus nous „mettre dans une nécessité indispensable de suivre ces idées, quoiqu'elle „les approuve, comme fondées sur la „nature des choses. Car 1. les passions opposent à ces idées abstraites „& spéculatives, des idées sensibles, & „touchantes, &c. „",
+   "passage": "„La raison, dit-il, encore ( a ) „considérée en elle-même & indépendamment du Créateur qui nous l'a „donnée, ne peut pas non plus nous „mettre dans une nécessité indispensable de suivre ces idées, quoiqu'elle „les approuve, comme fondées sur la „nature des choses. Car 1. les passions opposent à ces idées abstraites „& spéculatives, des idées sensibles & „touchantes, &c. „",
    "source": "La Raison, considérée en ellemême, & indépendamment du Créateur qui nous l'a donnée, ne peut pas non plus nous mettre dans une nécessité indispensable de suivre ces idées, quoiqu'elle les approuve, comme fondées sur la nature des choses. Car 1. les Passions opposent à ces idées abstraites & spéculatives, des idées sensibles & touchantes",
    "reason": "Verbatim quotation of Barbeyrac's Réflexions § 15 (1718 p. 471), cut off with '&c.'",
    "links": [
@@ -2018,8 +2018,8 @@
    "at": [
     [
      "t",
-     380,
-     588
+     379,
+     587
     ]
    ],
    "family": "Bb",
@@ -2053,8 +2053,8 @@
    "at": [
     [
      "t",
-     787,
-     1058
+     786,
+     1059
     ]
    ],
    "family": "Bb",
@@ -2066,7 +2066,7 @@
    "confidence": 0.65,
    "status": "match",
    "step": "R",
-   "passage": "La plus forte & la plus générale de nos passions étant l'amour de nousmêmes& le désir du bonheur ( §. 19. ) : quelle passion pourra s'opposer avec succès aux conseils de la raison, quand elle nous fera voir clairement la liaison d'une certaine action avec notre félicité?",
+   "passage": "La plus forte & la plus générale de nos passions étant l'amour de nous-mêmes & le désir du bonheur ( §. 19. ) : quelle passion pourra s'opposer avec succès aux conseils de la raison, quand elle nous fera voir clairement la liaison d'une certaine action avec notre félicité?",
    "source": "Car 1. les Passions opposent à ces idées abstraites & spéculatives, des idées sensibles & touchantes",
    "reason": "Vattel answers Barbeyrac's first argument, that the passions oppose sensible ideas to reason, by making self-love the strongest passion on reason's side.",
    "links": [
@@ -2089,7 +2089,7 @@
     [
      "t",
      4,
-     234
+     233
     ]
    ],
    "family": "Bb",
@@ -2101,7 +2101,7 @@
    "confidence": 0.9,
    "status": "match",
    "step": "R",
-   "passage": "„„Pourquoi, dit notre Auteur, „dans la même page, suivrions-nous „les lumieres de notre esprit, plutôt „que le penchant de notre cœur, s'il „n'y a aucun principe extérieur, aucun être au-dessus de nous, qui „nous y assujettisse? „",
+   "passage": "„Pourquoi, dit notre Auteur, „dans la même page, suivrions-nous „les lumieres de notre esprit, plutôt „que le penchant de notre cœur, s'il „n'y a aucun principe extérieur, aucun être au-dessus de nous, qui „nous y assujettisse? „",
    "source": "Si les lumiéres de notre esprit nous détournent de ces sortes d'actions, le panchant de notre cœur nous y entraîne avec beaucoup plus de force. Pourquoi donc suivrions-nous les premiéres plutôt que l'autre, s'il n'y a aucun Principe extérieur, aucun Etre au-dessus de nous, qui nous y assujettisse?",
    "reason": "Quotation of Barbeyrac's Réflexions § 15 'dans la même page' (1718 p. 471), compressed from two sentences.",
    "links": [
@@ -2123,8 +2123,8 @@
    "at": [
     [
      "t",
-     235,
-     590
+     234,
+     591
     ]
    ],
    "family": "Bb",
@@ -2136,7 +2136,7 @@
    "confidence": 0.6,
    "status": "match",
    "step": "R",
-   "passage": "C'est parce que nous comprenons que les lumieres de notre esprit nous conduiront plus sûrement à la félicité, que le penchant de notre cœur. Et sans cette considération, que pourroit ce principe extérieur sur notre volonté ; & comment cet être qui est au-dessusde nous, pourroit-il nous assujettir à suivre librement ses ordres, plutôt que notre penchant?",
+   "passage": "C'est parce que nous comprenons, que les lumieres de notre esprit nous conduiront plus sûrement à la félicité, que le penchant de notre cœur. Et sans cette considération, que pourroit ce principe extérieur sur notre volonté ; & comment cet être qui est au-dessus de nous, pourroit-il nous assujettir à suivre librement ses ordres, plutôt que notre penchant?",
    "source": "Mais, sans parler de ce que les Passions pourront dire pour contester cet avantage, il ne s'agit point ici d'Utilité, il s'agit de Devoir & d'Obligation.",
    "reason": "Vattel answers Barbeyrac's question with the very consideration of happiness that Barbeyrac sets aside as utility rather than obligation.",
    "links": [
@@ -2158,8 +2158,8 @@
    "at": [
     [
      "t",
-     1048,
-     1150
+     1049,
+     1151
     ]
    ],
    "family": "Lz",
@@ -2193,8 +2193,8 @@
    "at": [
     [
      "t",
-     1152,
-     1266
+     1153,
+     1267
     ]
    ],
    "family": "Lz",
@@ -2228,8 +2228,8 @@
    "at": [
     [
      "t",
-     1926,
-     2020
+     1928,
+     2022
     ]
    ],
    "family": "Bb",
@@ -2294,7 +2294,7 @@
     [
      "t",
      548,
-     852
+     853
     ]
    ],
    "family": "Bb",
@@ -2306,7 +2306,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "ce que la raison nous dicte. „Mais n'est-il pas libre à chacun de „renoncer à son avantage, tant qu'il„n'y a rien d'ailleurs qui l'en empêche, tant qu'il n'y a point d'autre „personne qui soit intéressée à ce „qu'il ne fasse rien de contraire à ses „intérêts, & qui ait droit d'éxiger „qu'il les procure?",
+   "passage": "ce que la raison nous dicte. „Mais n'est-il pas libre à chacun de „renoncer à son avantage, tant qu'il „n'y a rien d'ailleurs qui l'en empêche, tant qu'il n'y a point d'autre „personne qui soit intéressée à ce „qu'il ne fasse rien de contraire à ses „intérêts, & qui ait droit d'éxiger „qu'il les procure?",
    "source": "ce que la Raison nous dicte. Mais n'est-il pas libre à chacun de renoncer à son avantage, tant qu'il n'y a rien d'ailleurs qui l'en empêche, tant qu'il n'y a point d'autre personne qui soit intéressée à ce qu'il ne fasse rien de contraire à ses intérêts, & qui ait droit d'exiger qu'il les procure?",
    "reason": "Continuation of the quoted block from Réflexions § 15 (p. 472 of the 1718 edition), word for word.",
    "links": [
@@ -2328,8 +2328,8 @@
    "at": [
     [
      "t",
-     1046,
-     1167
+     1047,
+     1168
     ]
    ],
    "family": "Bb",
@@ -2363,8 +2363,8 @@
    "at": [
     [
      "t",
-     1356,
-     1450
+     1357,
+     1451
     ]
    ],
    "family": "Bb",
@@ -2398,8 +2398,8 @@
    "at": [
     [
      "t",
-     1598,
-     1769
+     1600,
+     1771
     ]
    ],
    "family": "Bb",
@@ -2434,7 +2434,7 @@
     [
      "t",
      32,
-     337
+     338
     ]
    ],
    "family": "Bb",
@@ -2446,7 +2446,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "Mais ce qu'il faut sur-tout bien considérer, c'est que notre raison considérée hors de toute dépendance „du Créateur de qui nous la tenons,„n'est au fond autre chose, que nous-mêmes. Or personne ne peut s'imposer à soi même une nécessité indispensable d'agir ou de ne point „agir de telle ou telle maniere",
+   "passage": "Mais ce qu'il faut sur-tout bien considérer, c'est que notre raison considérée hors de toute dépendance „du Créateur de qui nous la tenons, „n'est au fond autre chose, que nous-mêmes. Or personne ne peut s'imposer à soi même une nécessité indispensable d'agir ou de ne point „agir de telle ou telle maniere",
    "source": "Mais ce qu'il faut surtout bien considérer, & qui suffit pour détruire la pensée que je combats, c'est que notre Raison, considérée hors de toute dépendance du Créateur de qui nous la tenons, n'est au fond autre chose que nous-mêmes. Or personne ne peut s'imposer à soi-même une nécessité indispensable d'agir ou de ne point agir de telle ou telle maniére.",
    "reason": "Vattel quotes Réflexions § 15 (1718 ed. p. 472), silently dropping 'et qui suffit pour détruire la pensée que je combats'.",
    "links": [
@@ -2468,8 +2468,8 @@
    "at": [
     [
      "t",
-     347,
-     536
+     348,
+     537
     ]
    ],
    "family": "Bb",
@@ -2503,8 +2503,8 @@
    "at": [
     [
      "t",
-     537,
-     718
+     538,
+     719
     ]
    ],
    "family": "Bb",
@@ -2538,8 +2538,8 @@
    "at": [
     [
      "t",
-     719,
-     848
+     720,
+     849
     ]
    ],
    "family": "Bb",
@@ -2573,8 +2573,8 @@
    "at": [
     [
      "t",
-     903,
-     1074
+     904,
+     1076
     ]
    ],
    "family": "Bb",
@@ -2586,7 +2586,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "Car afin que la nécessité ait lieu veritablement, il faut sans „contredit qu'elle ne puisse point„cesser au gré de celui qui y est soumis, autrement elle se réduit à rien.",
+   "passage": "Car afin que la nécessité ait lieu veritablement, il faut sans „contredit qu'elle ne puisse point „cesser au gré de celui qui y est soumis, autrement elle se réduit à rien.",
    "source": "Car afin que la nécessité ait lieu véritablement, il faut sans-contredit qu'elle ne puisse point cesser au gré de celui qui y est soumis, autrement elle se réduit à rien.",
    "reason": "Second quoted block, the very next sentence of Réflexions § 15, word for word.",
    "links": [
@@ -2608,8 +2608,8 @@
    "at": [
     [
      "t",
-     1076,
-     1154
+     1078,
+     1156
     ]
    ],
    "family": "Bb",
@@ -2714,7 +2714,7 @@
     [
      "t",
      305,
-     629
+     630
     ]
    ],
    "family": "Lz",
@@ -2726,7 +2726,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "Ce „que nous venons de dire, est d'un „grand usage par rapport à la pratique de la véritable piété. Car il „ne suffit pas d'être soumis à Dieu „comme on obéiroit à un tyran : & „il ne faut pas seulement le craindre,„à cause de sa grandeur, mais encore „l'aimer à cause de sa bonté ; ce sont „des maximes de la droite raison,",
+   "passage": "Ce „que nous venons de dire, est d'un „grand usage par rapport à la pratique de la véritable piété. Car il „ne suffit pas d'être soumis à Dieu „comme on obéiroit à un tyran : & „il ne faut pas seulement le craindre, „à cause de sa grandeur, mais encore „l'aimer à cause de sa bonté ; ce sont „des maximes de la droite raison,",
    "source": "CE que nous venons de dire, est d'un grand usage par rapport à la pratique de la véritable Piété. Car il ne suffit pas d'être soumis à DIEU, comme on obéiroit à un Tyran; & il ne faut pas seulement le craindre à cause de sa Grandeur, mais encore l'aimer à cause de sa Bonté; ce sont des maximes de la droite Raison,",
    "reason": "Vattel quotes the opening of Leibniz's Jugement § 16 (1718 ed. p. 476) word for word.",
    "links": [
@@ -2748,8 +2748,8 @@
    "at": [
     [
      "t",
-     631,
-     1629
+     632,
+     1631
     ]
    ],
    "family": "Lz",
@@ -2761,7 +2761,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "aussi bien que des préceptes de l'écriture. Et c'est à quoi ménent les „bons principes de Jurisprudence, „qui s'accordent aussi avec la saine „Théologie, & qui portent à une „véritable vertu. Bien-loin que „ceux qui font de bonnes actions, „non par un motif d'espérance ou de „crainte de la part d'un Supérieur, „mais par l'effet du penchant de leur „cœur, n'agissent pas justement : ce „sont eux au contraire qui agissent „le plus justement, puisqu'ils imitent „en quelque maniere la justice de „Dieu. Car quand on fait du bien „par l'amour de Dieu ou du prochain, on trouve du plaisir dans „son action même (telle étant la nature de l'amour) & on n'a pas besoin d'autre éguillon, ou de commandement d'un Supérieur. C'est„d'une telle personne qu'il est dit, „que la Loi n'est pas faite pour le „juste ( a ). Tant il est contraire „à la raison, de dire, que la loi „seule ou la seule contrainte, fasse le „juste. Il faut avouer pourtant, „que ceux qui ne sont pas parvenus „à ce point de perfection",
+   "passage": "aussi bien que des préceptes de l'écriture. Et c'est à quoi ménent les „bons principes de Jurisprudence, „qui s'accordent aussi avec la saine „Théologie, & qui portent à une „véritable vertu. Bien-loin que „ceux qui font de bonnes actions, „non par un motif d'espérance ou de „crainte de la part d'un Supérieur, „mais par l'effet du penchant de leur „cœur, n'agissent pas justement : ce „sont eux au contraire qui agissent „le plus justement, puisqu'ils imitent „en quelque maniere la justice de „Dieu. Car quand on fait du bien „par l'amour de Dieu ou du prochain, on trouve du plaisir dans „son action même (telle étant la nature de l'amour) & on n'a pas besoin d'autre éguillon, ou de commandement d'un Supérieur. C'est „d'une telle personne qu'il est dit, „que la Loi n'est pas faite pour le „juste ( a ). Tant il est contraire „à la raison, de dire, que la loi „seule ou la seule contrainte, fasse le „juste. Il faut avouer pourtant, „que ceux qui ne sont pas parvenus „à ce point de perfection",
    "source": "aussi-bien que des Préceptes de l'Ecriture. Et c'est à quoi ménent les bons Principes de Jurisprudence, qui s'accordent aussi avec la saine Théologie, & qui portent à une véritable Vertu. Bien loin que ceux qui font de bonnes actions, non par un motif d'espérance ou de crainte de la part d'un Supérieur, mais par l'effet du panchant de leur cœur, n'agissent pas justement: ce sont eux au-contraire qui agissent le plus justement, puisqu'ils imitent en quelque maniére la Justice de DIEU. Car, quand on fait du bien par l'amour de DIEU ou du Prochain, on trouve du plaisir dans son action même, (telle étant la nature de l'Amour) & on n'a pas besoin d'autre éguillon, ou du commandement d'un Supérieur. C'est d'une telle personne qu'il est dit, Que la (a) Loi n'est pas faite pour le Juste. Tant il est contraire à la Raison, de dire que la Loi seule, ou la seule Contrainte, fasse le Juste. Il faut avouer pourtant, que ceux qui ne sont pas parvenus à ce point de",
    "reason": "Continuation of the quotation of Jugement § 16, word for word apart from capitals and 'de commandement' for 'du commandement'.",
    "links": [
@@ -2783,8 +2783,8 @@
    "at": [
     [
      "t",
-     1630,
-     1916
+     1632,
+     1918
     ]
    ],
    "family": "Lz",
@@ -2796,7 +2796,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "ne sont „susceptibles d'obligation que par „l'espérance ou la crainte ; & que „c'est sur-tout dans l'attente de la „vengeance divine, qu'on trouve une „nécessité pleine & entiére, & qui „ait de la force par rapport à tous „les hommes, d'observer les règles de „la justice & de l'équité.",
+   "passage": "ne sont „susceptibles d'obligation que par „l'espérance ou la crainte ; & que „c'est sur-tout dans l'attente de la „vengeance divine, qu'on trouve une „nécessité pleine & entiere, & qui „ait de la force par rapport à tous „les hommes, d'observer les règles de „la justice & de l'équité.",
    "source": "sont susceptibles d'Obligation que par l'espérance ou la crainte; & que c'est surtout dans l'attente de la Vengeance Divine, qu'on trouve une nécessité pleine & entiére, & qui ait de la force par rapport à tous les Hommes, d'observer les Régles de la Justice & de l'Equité.",
    "reason": "End of the quotation of Jugement § 16, word for word.",
    "links": [

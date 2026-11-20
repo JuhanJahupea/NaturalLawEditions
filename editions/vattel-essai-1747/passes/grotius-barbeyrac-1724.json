@@ -85,8 +85,8 @@
    "at": [
     [
      "t",
-     624,
-     719
+     625,
+     720
     ]
    ],
    "family": "G",
@@ -124,8 +124,8 @@
    "at": [
     [
      "t",
-     722,
-     781
+     723,
+     782
     ]
    ],
    "family": "G",
@@ -158,7 +158,7 @@
     [
      "t",
      3,
-     205
+     206
     ]
    ],
    "family": "Bb",
@@ -170,7 +170,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "R",
-   "passage": "Tous les Auteurs des différens systêmes, sont obligés d'accorder ce que nous venons d'établir, quel que soit d'ailleurs leur sentiment sur lePrincipe de l'obligation, dont nous parlerons tout-à-l'heure.",
+   "passage": "Tous les Auteurs des différens systêmes, sont obligés d'accorder ce que nous venons d'établir, quel que soit d'ailleurs leur sentiment sur le Principe de l'obligation, dont nous parlerons tout-à-l'heure.",
    "source": "On doit convenir de bonne foi avec les partisans de l'opinion, que je combats , que ces Regles sont effectivement fondees sur la nature même des choses",
    "reason": "Barbeyrac grants that the rules of natural law are founded on the nature of things and puts his disagreement only in the ground of obligation. Vattel uses that concession: all systems must grant the foundation, whatever they hold on the principle of obligation.",
    "links": [
@@ -195,8 +195,8 @@
    "at": [
     [
      "t",
-     206,
-     430
+     207,
+     431
     ]
    ],
    "family": "G",
@@ -228,8 +228,8 @@
    "at": [
     [
      "t",
-     431,
-     745
+     432,
+     746
     ]
    ],
    "family": "G",
@@ -299,8 +299,8 @@
    "at": [
     [
      "t",
-     286,
-     389
+     287,
+     390
     ]
    ],
    "family": "Bb",
@@ -338,8 +338,8 @@
    "at": [
     [
      "t",
-     392,
-     484
+     393,
+     485
     ]
    ],
    "family": "Bb",
@@ -371,8 +371,8 @@
    "at": [
     [
      "t",
-     485,
-     605
+     486,
+     606
     ]
    ],
    "family": "G",
@@ -409,8 +409,8 @@
    "at": [
     [
      "t",
-     916,
-     1106
+     917,
+     1108
     ]
    ],
    "family": "Bb",
@@ -422,7 +422,7 @@
    "confidence": 0.35,
    "status": "possible",
    "step": "R",
-   "passage": "Nous verrons que c'est pour avoir négligé cette régle que d'habiles Auteurs se sont si fort embarrassésdans cette matiere, & ont paru tomber dans des sentimens si opposés les uns aux autres.",
+   "passage": "Nous verrons que c'est pour avoir négligé cette régle que d'habiles Auteurs se sont si fort embarrassés dans cette matiere, & ont paru tomber dans des sentimens si opposés les uns aux autres.",
    "source": "Quelques-uns néanmoins raisonnent d'une manière à donner lieu d'inférer qu'il n'y a qu'une dispute de mots entr'eux , & les autres qui ne sont pas de même opinion.",
    "reason": "Barbeyrac's note 4 (cited by Vattel) already suspects that the quarrel over obligation is partly a dispute of words.",
    "links": [
@@ -442,8 +442,8 @@
    "at": [
     [
      "t",
-     682,
-     855
+     683,
+     856
     ]
    ],
    "family": "G",
@@ -480,8 +480,8 @@
    "at": [
     [
      "t",
-     682,
-     764
+     683,
+     765
     ]
    ],
    "family": "Bb",
@@ -554,7 +554,7 @@
     [
      "t",
      365,
-     501
+     502
     ]
    ],
    "family": "G",
@@ -566,7 +566,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
-   "passage": "de la convenanceou disconvenance des actions, avec l'essence & la nature de l'homme & des choses, qui fait le fondement du droit naturel",
+   "passage": "de la convenance ou disconvenance des actions, avec l'essence & la nature de l'homme & des choses, qui fait le fondement du droit naturel",
    "source": "il consiste dans certains principes de (1) la Droite Raison, qui nous sont connoître qu'une Action est moralement honnête (2) ou deshonnête, selon la convenance ou la disconvenance nécessaire qu'elle a",
    "reason": "The formula 'convenance ou disconvenance' of actions with human nature as the basis of natural law is Grotius's I.1.10 definition in Barbeyrac's wording, a passage Vattel cites in § 14.",
    "links": [
@@ -625,7 +625,7 @@
     [
      "t",
      178,
-     341
+     342
     ]
    ],
    "family": "Bb",
@@ -637,7 +637,7 @@
    "confidence": 0.55,
    "status": "match",
    "step": "R",
-   "passage": "ill'a fait envisager comme une dépendance où nous sommes de la volonté d'un supérieur, laquelle nous assujettit à conformer notre conduite aux loix de ce supérieur",
+   "passage": "il l'a fait envisager comme une dépendance où nous sommes de la volonté d'un supérieur, laquelle nous assujettit à conformer notre conduite aux loix de ce supérieur",
    "source": "il faut quelque chose de plus pour nous assujettir à y conformer nos actions & nôtre vie",
    "reason": "Vattel's 'nous assujettit à conformer notre conduite' echoes Barbeyrac's 'nous assujettir à y conformer nos actions', the role the same note gives to the superior's will.",
    "links": [
@@ -662,8 +662,8 @@
    "at": [
     [
      "t",
-     279,
-     357
+     280,
+     358
     ]
    ],
    "family": "G",
@@ -695,8 +695,8 @@
    "at": [
     [
      "t",
-     483,
-     715
+     484,
+     716
     ]
    ],
    "family": "G",
@@ -875,8 +875,8 @@
    "at": [
     [
      "t",
-     2752,
-     3754
+     2755,
+     3757
     ]
    ],
    "family": "Bb",
@@ -888,7 +888,7 @@
    "confidence": 0.97,
    "status": "match",
    "step": "R",
-   "passage": "„ L'Auteur „suppose donc ici que l'on seroit dans „quelqu'obligation de faire ou de ne „pas faire certaines choses, quand „même on n'auroit à répondre de sa „conduite à personne. Et il ne faut „pas s'étonner que ses idées là-dessus „ne fussent pas tout - à - fait justes, „puisque l'on voit encore aujourd'- „hui, non - seulement la plupart des „philosophes & des Théologiens scholastiques, mais encore quelques Au„teursd'ailleurs très-judicieux & nullement esclaves des préjugés de l'école, s'opiniâtrer à soutenir que les „régles du Droit naturel & de la Morale imposent par elles-mêmes une „nécessité indispensable de les suivre, „indépendamment de la volonté de „DIEU. Quelqués uns néant-moins „raisonnant d'une maniere à donner „lieu d'inférer qu'il n'y a qu'une dispute de mots entr'eux, & les autres „qui ne sont pas de même opinion, „je vais tâcher de mettre dans tout „son jour, quoiqu'en peu de paroles, „& l'état de la question, & les fondemens de la négative, que je prens „contre l'Auteur.",
+   "passage": "„ L'Auteur „suppose donc ici que l'on seroit dans „quelqu'obligation de faire ou de ne „pas faire certaines choses, quand „même on n'auroit à répondre de sa „conduite à personne. Et il ne faut „pas s'étonner que ses idées là-dessus „ne fussent pas tout - à - fait justes, „puisque l'on voit encore aujourd'- „hui, non - seulement la plupart des „philosophes & des Théologiens scholastiques, mais encore quelques Auteurs d'ailleurs très-judicieux & nullement esclaves des préjugés de l'école, s'opiniâtrer à soutenir que les „régles du Droit naturel & de la Morale imposent par elles-mêmes une „nécessité indispensable de les suivre, „indépendamment de la volonté de „DIEU. Quelqués uns néant-moins „raisonnant d'une maniere à donner „lieu d'inférer qu'il n'y a qu'une dispute de mots entr'eux, & les autres „qui ne sont pas de même opinion, „je vais tâcher de mettre dans tout „son jour, quoiqu'en peu de paroles, „& l'état de la question, & les fondemens de la négative, que je prens „contre l'Auteur.",
    "source": "L'Auteur suppose donc ici , que l'on seroit dans quelque obligation de faire ou de ne pas faire certaines choses , quand même on n'auroit à répondre de sa conduite à personne. Et il ne faut pas s'étonner que ses idées là-dessus ne fussent pas tout-à-fait justes , puis que l'on voit encore aujourd'hui , non seulement la plûpart des Philosophes & des Théologiens Scholastiques , mais encore quelques Auteurs d'ailleurs très-judicieux & nullement esclaves des préjugez de l'Ecole , s'opiniâtrer à soûtenir que les Régles du Droit Naturel & de la Morale imposent par elles-mêmes une nécessité indispensable de les suivre , indépendamment de la volonté de DIEU. Quelques-uns néanmoins raisonnent d'une manière à donner lieu d'inférer qu'il n'y a qu'une dispute de mots entr'eux , & les autres qui ne sont pas de même opinion. Je vàis tâcher de mettre dans tout son jour , quoi qu'en peu de paroles , & l'état de la Question , & les fondemens de la négative , que je prens contre l'Auteur.",
    "reason": "First quoted block of Barbeyrac's note 4 to Grotius DGP I.1.10, copied word for word up to the ellipsis.",
    "links": [
@@ -913,8 +913,8 @@
    "at": [
     [
      "t",
-     3761,
-     5868
+     3762,
+     5870
     ]
    ],
    "family": "Bb",
@@ -926,7 +926,7 @@
    "confidence": 0.97,
    "status": "match",
    "step": "R",
-   "passage": "Il ne s'agit donc „point ici de disputer, si en faisant „abstraction de toute volonté d'un „être intelligent, & même de la volonté de DIEU, notre esprit ne „peut pas découvrir les idées & les „relations d'où se déduisent toutes les „regles du Droit naturel & de la Mo„rale.On doit convenir de bonne „foi avec les partisans de l'opinion „que je combats, que ces règles sont „effectivement fondées sur la nature „même des choses; qu'elles sont conformes à l'ordre que l'on conçoit „qui est nécessaire pour la beauté de „l'univers; qu'il y a une certaine „proportion ou disproportion, une „certaine convenance ou disconvenance, entre la plupart des actions „& leurs objets, qui fait qu'on trouve de la beauté dans les unes, & de „la laideur dans les autres. Mais de „cela seul il ne s'ensuit pas que l'on „soit proprement obligé à faire ou ne „pas faire telle ou telle chose. La „convenance ou disconvenance, que „l'on peut appeller moralité naturelle des actions, est bien une raison qui peut porter à agir ou me point agir mais ce n'est pas une raison qui impose une nécessité indispensable, telle que l'emporte l'idée„ de l'obligation. Cette nécessité ne „peut venir que d'un Supérieur ; „c'est-à-dire , d'un être intelligent „hors de nous, qui ait le pouvoir, de „gêner notre liberté , & de nous prescrire des régles de conduite. Pour „le prouver , voici comme je raisonne. S'il y avoit quelqu'obligation, „indépendamment de la volonté d'un „Supérieur , il faudroit qu'elle nous „fût imposée ou par la nature même „des choses ou par notre propre raison, „la nature même des choses ne sauroit „nous imposer aucune obligation, proprement ainsi nommée. Qu'il y ait tel „ou tel rapport de convenance ou de „disconvenance entre nos idées,cela seul „ne nous engage qu'à reconnoître ce „rapport ; il faut quelque chose de plus „pour nous assujettir à y conformer „nos actions & notre vie. La raison ne „peut pas non plus par elle - même „nous mettre dans une nécessité indispensable de suivre les idées de„convenance ou de disconvenance „qu'elle nous met devant les yeux, „comme fondées sur la nature des „choses.",
+   "passage": "Il ne s'agit donc „point ici de disputer, si en faisant „abstraction de toute volonté d'un „être intelligent, & même de la volonté de DIEU, notre esprit ne „peut pas découvrir les idées & les „relations d'où se déduisent toutes les „regles du Droit naturel & de la Morale. On doit convenir de bonne „foi avec les partisans de l'opinion „que je combats, que ces règles sont „effectivement fondées sur la nature „même des choses; qu'elles sont conformes à l'ordre que l'on conçoit „qui est nécessaire pour la beauté de „l'univers; qu'il y a une certaine „proportion ou disproportion, une „certaine convenance ou disconvenance, entre la plupart des actions „& leurs objets, qui fait qu'on trouve de la beauté dans les unes, & de „la laideur dans les autres. Mais de „cela seul il ne s'ensuit pas que l'on „soit proprement obligé à faire ou ne „pas faire telle ou telle chose. La „convenance ou disconvenance, que „l'on peut appeller moralité naturelle des actions, est bien une raison qui peut porter à agir ou me point agir mais ce n'est pas une raison qui impose une nécessité indispensable, telle que l'emporte l'idée „ de l'obligation. Cette nécessité ne „peut venir que d'un Supérieur ; „c'est-à-dire , d'un être intelligent „hors de nous, qui ait le pouvoir de „gêner notre liberté , & de nous prescrire des régles de conduite. Pour „le prouver , voici comme je raisonne. S'il y avoit quelqu'obligation, „indépendamment de la volonté d'un „Supérieur , il faudroit qu'elle nous „fût imposée ou par la nature même „des choses ou par notre propre raison, „la nature même des choses ne sauroit „nous imposer aucune obligation, proprement ainsi nommée. Qu'il y ait tel „ou tel rapport de convenance ou de „disconvenance entre nos idées,cela seul „ne nous engage qu'à reconnoître ce „rapport ; il faut quelque chose de plus „pour nous assujettir à y conformer „nos actions & notre vie. La raison ne „peut pas non plus par elle - même „nous mettre dans une nécessité indispensable de suivre les idées de „convenance ou de disconvenance „qu'elle nous met devant les yeux, „comme fondées sur la nature des „choses.",
    "source": "point ici de disputer , si en faisant abstraction de toute volonté d'un Etre Intelligent , & même de la volonté de DIEU , nôtre Esprit ne peut pas découvrir les idées & les relations d'où se déduisent toutes les Regles du Droit Naturel & de la Morale. On doit convenir de bonne foi avec les partisans de l'opinion, que je combats , que ces Regles sont effectivement fondees sur la nature même des choses ; qu'elles sont conformes a l'Ordre que l'on conçoit qui est necessaire pour la beautê de l'Univers ; qu'il y a une certaine proportion ou disproportion, une certaine convenance ou disconvenance , entre la plûpart des Actions & leurs objets , qui fait qu'on trouve de la beauté dans les unes , & de la laideur dans les autres. Mais de cela seul il ne s'ensuit pas que l'on soit proprement obligé à faire ou ne pas faire telle ou telle chose. La convenance ou disconvenance, que l'on peut appeller moralité naturelle des Actions, est bien une raison qui peut porter à agir ou ne point agir , mais ce n'est pas une raison qui impose une nécessité indispensable , telle que l'emporte l'idée de l'Obligation. Cette nécessité ne peut venir que d'un Supérieur , c'est-à-dire , d'un Etre Intelligent hors de nous, qui ait le pouvoir de gêner nôtre liberté , & de nous prescrire des Regles de Conduite. Pour le prouver , voici comme je raisonne. S'il y avoit quelque Obligation , indépendamment de la volonté d'un Supérieur , il faudroit qu'elle nous fût imposée ou par la nature même des choses , ou par nôtre propre Raison. La nature même des choses ne sauroit nous imposer aucune Obligation , proprement ainsi nommée. Qu'il y ait tel ou tel rapport de convenance ou de disconvenance entre nos idées , cela seul ne nous engage qu'à reconnoître ce rapport ; il faut quelque chose de plus pour nous assujettir à y conformer nos actions & nôtre vie. La Raison ne peut pas non plus par elle-même nous mettre dans une nécessité indispensable de suivre les idées de convenance ou de disconvenance qu'elle nous met devant les yeux , comme fondées sur la nature des choses",
    "reason": "Second quoted block of the same note, word for word: the state of the question and the first part of Barbeyrac's proof that neither the nature of things nor reason can oblige.",
    "links": [
@@ -951,8 +951,8 @@
    "at": [
     [
      "t",
-     6053,
-     6680
+     6056,
+     6683
     ]
    ],
    "family": "Bb",
@@ -964,7 +964,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "„De tout cela je „conclus que les maximes de la raison , quelque conformes qu'elles „soient à la nature des choses, à la „constitution de notre être, ne sont „nullement obligatoires, jusqu'à ce „que cette même raison nous ait découvert l'Auteur de l'existence & „de la nature des choses, lequel par „sa volonté donne force de Loi à ces „maximes, & nous impose une nécessité indispensable de nous y conformer, en vertu du droit qu'il a „de gêner notre liberté comme il le „juge à propos, & de prescrire telles „bornes que bon lui semble aux fa„cultésqu'il nous a données. Il est „vrai que DIEU ne peut rien ordonner de contraire",
+   "passage": "„De tout cela je „conclus que les maximes de la raison , quelque conformes qu'elles „soient à la nature des choses, à la „constitution de notre être, ne sont „nullement obligatoires, jusqu'à ce „que cette même raison nous ait découvert l'Auteur de l'existence & „de la nature des choses, lequel par „sa volonté donne force de Loi à ces „maximes, & nous impose une nécessité indispensable de nous y conformer, en vertu du droit qu'il a „de gêner notre liberté comme il le „juge à propos, & de prescrire telles „bornes que bon lui semble aux facultés qu'il nous a données. Il est „vrai que DIEU ne peut rien ordonner de contraire",
    "source": "De tout cela je conclus , que les maximes de la Raison , quelque conformes qu'elles soient à la nature des choses, à la constitution de nôtre être, ne sont nullement obligatoires, jusqu'a ce que cette même Raison nous ait découvert l'Auteur de l'existence & de la nature des choses, lequel par sa volonté donne force de Loi à ce[s] [m?]aximes , & nous impose une nécessité indispensabl[e d?]e nous y conformer, en vertu du droit qu'il a de gêner nôtre liberté comme il le juge à propos, & de prescrire telles bornes que bon lui semble aux Facultez qu'il nous a donnees. Il est vrai que DIEU ne pe[ut?] rien ordonner de contraire",
    "reason": "Third quoted block: Barbeyrac's conclusion that the maxims of reason oblige only once God, their author, gives them the force of law.",
    "links": [
@@ -989,8 +989,8 @@
    "at": [
     [
      "t",
-     6681,
-     7008
+     6684,
+     7011
     ]
    ],
    "family": "Bb",
@@ -1027,8 +1027,8 @@
    "at": [
     [
      "t",
-     7015,
-     7511
+     7018,
+     7515
     ]
    ],
    "family": "Bb",
@@ -1040,7 +1040,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "Enfin une „preuve que la volonté de Dieu est la „source de tout devoir & de toute „obligation, c'est que quand ceux qui „ont une religion pratiquent les régles de la vertu , & les maximes du „Droit naturel, ils doivent le faire, „non pas principalement & précisément parce qu'ils reconnoissent que „ces régles sont conformes aux idées „naturelles & invariables de l'ordre, „de la convenance, de la justice; „mais parce que DIEU, leur Maître„souverain, veut qu'ils les suivent „dans leur conduite.",
+   "passage": "Enfin une „preuve que la volonté de Dieu est la „source de tout devoir & de toute „obligation, c'est que quand ceux qui „ont une religion pratiquent les régles de la vertu , & les maximes du „Droit naturel, ils doivent le faire, „non pas principalement & précisément parce qu'ils reconnoissent que „ces régles sont conformes aux idées „naturelles & invariables de l'ordre, „de la convenance, de la justice; „mais parce que DIEU, leur Maître „souverain, veut qu'ils les suivent „dans leur conduite.",
    "source": "Enfin, une preuve que la volonté de DIEU est la source de tout Devoir & de toute Obligation, c'est que, quand ceux qui ont une Religion pratiquent les Régles de la Vertu & les Maximes du Droit Naturel, ils doivent le faire, non pas principalement & precisément parce qu'ils reconnoissent que ces Regles sont conformes aux idées naturelles & invariables de l'Ordre, de la Convenance, de la Justice ; mais parce que DIEU , leur Maître Souverain, veut qu'ils les suivent dans leur conduite.",
    "reason": "Fourth quoted block after an ellipsis that leaves out the Epicurean-god argument: Barbeyrac's final proof from religious practice.",
    "links": [
@@ -1065,8 +1065,8 @@
    "at": [
     [
      "t",
-     7513,
-     7576
+     7517,
+     7580
     ]
    ],
    "family": "Bb",
@@ -1103,8 +1103,8 @@
    "at": [
     [
      "t",
-     7624,
-     7821
+     7628,
+     7825
     ]
    ],
    "family": "Bb",
@@ -1141,8 +1141,8 @@
    "at": [
     [
      "t",
-     8259,
-     8563
+     8263,
+     8568
     ]
    ],
    "family": "Bb",
@@ -1154,7 +1154,7 @@
    "confidence": 0.95,
    "status": "match",
    "step": "R",
-   "passage": "Ce qu'il ajoûte „qu'au fond il seroit autrement assez inutile, que Dieu leur„( aux hommes ) prescrivît rien làdessus, puisqu'ils y seroient déja „tenus d'ailleurs : la volonté & l'autorité de Dieu ne seroit ici qu'une „espèce d'accessoire, qui ne seroit „tout au plus que rendre l'obligation „plus forte.",
+   "passage": "Ce qu'il ajoûte „qu'au fond il seroit autrement assez inutile, que Dieu leur „( aux hommes ) prescrivît rien làdessus, puisqu'ils y seroient déja „tenus d'ailleurs : la volonté & l'autorité de Dieu ne seroit ici qu'une „espèce d'accessoire, qui ne seroit „tout au plus que rendre l'obligation „plus forte.",
    "source": "Et au fond, il seroit autrement assez inutile que Dieu leur prescrivit rien làdessus, puis qu'ils y seroient déja tenus d'ailleurs ; la volonté & l'autorité de Dieu ne seroit ici qu'une espéce d'accessoire, qui ne seroit tout au plus que rendre l'Obligation plus forte.",
    "reason": "Quotation of the next sentence of the same Barbeyrac note (God's will would otherwise be a mere accessory), with Vattel's gloss '( aux hommes )'.",
    "links": [
@@ -1179,8 +1179,8 @@
    "at": [
     [
      "t",
-     8566,
-     8842
+     8571,
+     8847
     ]
    ],
    "family": "Bb",
@@ -1217,8 +1217,8 @@
    "at": [
     [
      "t",
-     4744,
-     4795
+     4740,
+     4791
     ]
    ],
    "family": "G",
@@ -1250,8 +1250,8 @@
    "at": [
     [
      "t",
-     1620,
-     1698
+     1622,
+     1700
     ]
    ],
    "family": "Bb",
@@ -1316,8 +1316,8 @@
    "at": [
     [
      "t",
-     380,
-     588
+     379,
+     587
     ]
    ],
    "family": "Bb",
@@ -1350,7 +1350,7 @@
     [
      "t",
      578,
-     852
+     853
     ]
    ],
    "family": "Bb",
@@ -1362,7 +1362,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
-   "passage": "Mais n'est-il pas libre à chacun de „renoncer à son avantage, tant qu'il„n'y a rien d'ailleurs qui l'en empêche, tant qu'il n'y a point d'autre „personne qui soit intéressée à ce „qu'il ne fasse rien de contraire à ses „intérêts, & qui ait droit d'éxiger „qu'il les procure?",
+   "passage": "Mais n'est-il pas libre à chacun de „renoncer à son avantage, tant qu'il „n'y a rien d'ailleurs qui l'en empêche, tant qu'il n'y a point d'autre „personne qui soit intéressée à ce „qu'il ne fasse rien de contraire à ses „intérêts, & qui ait droit d'éxiger „qu'il les procure?",
    "source": "n'est-il pas libre à chacun de renoncer à ses intérêts , tant qu'il n'y a point d'autre personne intéressée à ce qu'il ne fasse rien qui y soit contraire , & revêtuë du droit d'exiger qu'il les procure autant qu'en lui est ?",
    "reason": "Barbeyrac's earlier note 4 on Grotius I.1.10 (which Vattel cites elsewhere) has the same sentence in slightly different words; Vattel's wording follows the Réflexions instead.",
    "links": [
@@ -1383,7 +1383,7 @@
     [
      "t",
      87,
-     337
+     338
     ]
    ],
    "family": "Bb",
@@ -1395,7 +1395,7 @@
    "confidence": 0.4,
    "status": "possible",
    "step": "R",
-   "passage": "notre raison considérée hors de toute dépendance „du Créateur de qui nous la tenons,„n'est au fond autre chose, que nous-mêmes. Or personne ne peut s'imposer à soi même une nécessité indispensable d'agir ou de ne point „agir de telle ou telle maniere",
+   "passage": "notre raison considérée hors de toute dépendance „du Créateur de qui nous la tenons, „n'est au fond autre chose, que nous-mêmes. Or personne ne peut s'imposer à soi même une nécessité indispensable d'agir ou de ne point „agir de telle ou telle maniere",
    "source": "nôtre Raison , considerée comme indépendante de celui qui nous l'a donnée, n'est au fond autre chose que nous-mêmes: or personne ne peut s'imposer à soi-même une nécessitê indispensable d'agir ou de ne point agir de telle ou telle maniere.",
    "reason": "Barbeyrac's earlier wording of the same argument in note 4 on Grotius I.1.10; Vattel's text follows the Réflexions ('hors de toute dépendance du Créateur').",
    "links": [
