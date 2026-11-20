@@ -60,7 +60,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Mais quand on veut traiter clairement & solidement une matiere, il est nécessaire de distinguer avec soin les choses qui sont réellement distinctes.",
    "source": "Jus naturale hic Grotio idem est, quod lex naturalis : cum tamen juris vocabulum frequentius in alio significatu accipiatur, nec aliud in eodem ipsi substitui possit, consultius diximus ambiguum significatum evitari, praesertim cum nulla necessitate ad hoc faciendum adducamur.",
@@ -71,7 +71,13 @@
      "MDZ scan 142",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "A generic call to distinguish terms; Wolff's note separates jus and lex against Grotius, while Vattel distinguishes natural laws, natural right and morals.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1002,
@@ -101,7 +107,12 @@
      "MDZ scan 139",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=139"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact French rendering of Wolff's § 131 definition of law (regula, juxta quam actiones nostras determinare obligamur).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1003,
@@ -131,7 +142,12 @@
      "MDZ scan 141",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=141"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Renders Wolff's § 135 definition of natural law as having its reason in the essence and nature of man and things.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1004,
@@ -180,7 +196,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "une science qui nous apprend ce qui est naturellement bon, ou mauvais à l'homme",
    "source": "Quamobrem cum Jus naturae actiones bonas atque malas a se invicem separet (§. 68. Disc. praelim.), adeoque actionum liberarum discrimen exponat",
@@ -191,7 +207,13 @@
      "MDZ scan 28",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=28"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Defining natural law as the science of what is naturally good or bad is a stock definition, and Wolff § 6 only mentions in passing that the Jus naturae separates good from bad actions.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1006,
@@ -281,7 +303,12 @@
      "MDZ scan 142",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Note (a) explicitly cites Wolff, PPU pars I § 137.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1009,
@@ -298,7 +325,7 @@
    "locus": "§ 137",
    "page": "PPU1.pdf143",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.7,
    "status": "match",
    "step": "R",
@@ -311,7 +338,13 @@
      "MDZ scan 143",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=143"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's note cites Wolff § 137, whose 'fontem, unde derivatur lex naturae' and reason in the essence of man and things he recasts, but in a different sentence structure, so the paraphrase is loose rather than close.",
+    "date": "2026-11-20",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 1010,
@@ -341,7 +374,12 @@
      "MDZ scan 141",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=141"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's foundation as the principle giving the reason of the rules, found in the essence and nature of man and things, recasts Wolff's § 135 definition (ratio sufficiens in hominis rerumque essentia atque natura).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1011,
@@ -371,7 +409,12 @@
      "MDZ scan 133",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=133"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "That natural good and bad are determined by the essence and nature of man and of things restates Wolff's § 124 conclusion on the source of intrinsic goodness and badness.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1012,
@@ -401,7 +444,12 @@
      "MDZ scan 143",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=143"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates the core of § 137 almost word for word, and note (a) cites § 137.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1013,
@@ -420,7 +468,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Tous les Auteurs des différens systêmes, sont obligés d'accorder ce que nous venons d'établir, quel que soit d'ailleurs leur sentiment sur lePrincipe de l'obligation, dont nous parlerons tout-à-l'heure.",
    "source": "Nostrum igitur fuit hoc ostendere, ut diversas scriptorum de principio juris naturalis sententias inter se conciliemus, & quod ad nostrum reducantur patefaciamus.",
@@ -431,7 +479,13 @@
      "MDZ scan 243",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=243"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff's reduction of the various principles to his own is only a general parallel; E.7's specific claim (all must grant the foundation in nature, whatever their view of obligation; the utility-inventors' case) is not in § 280.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1014,
@@ -461,7 +515,12 @@
      "MDZ scan 234",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=234"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Like Wolff § 266 against Carneades, Vattel answers those who make law a human invention for utility by showing its source must still be the nature and essence of man and things.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1015,
@@ -551,7 +610,12 @@
      "MDZ scan 246",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=246"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 284 makes the same move: those who take conformity with God's will as the principle end up with the direction deduced from human essence and nature, i.e. 'la même source que nous'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1018,
@@ -581,7 +645,12 @@
      "MDZ scan 142",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's conclusion that natural law is founded on the essence and nature of things and of man restates § 136, and both texts follow it with the same Cicero sentence.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1019,
@@ -611,7 +680,12 @@
      "MDZ scan 142",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=142"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff's 'Idem vult Cicero, quando ... inquit' right after the same conclusion of § 136, keeping Wolff's form of the dictum with 'ipsa'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1020,
@@ -641,7 +715,12 @@
      "MDZ scan 143",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=143"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel restates PPU § 137 (cited in his § 6): knowledge of natural law is drawn from the essence and nature of man and things, Wolff's own formula, in other words.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1021,
@@ -671,7 +750,12 @@
      "MDZ scan 176",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=176"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's convenance/disconvenance of actions with the 'essence & nature' of man and things reproduces Wolff's § 188 formula and its gloss that nature includes essence.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1022,
@@ -761,7 +845,12 @@
      "MDZ scan 243",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=243"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's list of rival principles (God's will, beauty of virtue, rational nature) and his aim to show where they agree follow Wolff's programme of reconciling the writers' principles in § 280.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1025,
@@ -851,7 +940,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "§ 11's claim that only motives determine the will anticipates the Wolff § 119 proof ('sine motivo nulla volitio') that Vattel translates in § 13 and cites there.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1028,
@@ -868,7 +962,7 @@
    "locus": "§ 118",
    "page": "PPU1.pdf127",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "translation",
    "confidence": 0.6,
    "status": "match",
    "step": "R",
@@ -881,7 +975,13 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La liaison d'un motif puissant avec cette même action' renders Wolff's 'connexio motivi cum actione' (cited at § 12), a translation of the defining phrase, not a loose paraphrase.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase"
+   }
   },
   {
    "id": 1029,
@@ -911,7 +1011,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's two aspects of obligation (the principle from which it arises, the state of the one obliged) set out Wolff's active and passive obligation, the passive arising from the active.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1030,
@@ -971,7 +1076,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Note (a) to § 12 cites Wolff PPU I § 118 for the active/passive definition.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1032,
@@ -1001,7 +1111,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates both definitions of Wolff § 118 word for word and cites the paragraph.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1033,
@@ -1031,7 +1146,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Making active obligation the principle and passive obligation the resulting state is Wolff's doctrine in § 119 (passive obligation comes from and presupposes the active), which Vattel cites in the next section.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1034,
@@ -1061,7 +1181,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's thesis renders Wolff's § 119 proposition 'obligatio passiva venit ex activa', adding the cause/effect simile.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1035,
@@ -1091,7 +1216,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates the two premisses of Wolff's PPU § 119 (moral necessity of acting entails willing; no volition without motive), which his note cites.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1036,
@@ -1121,7 +1251,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Translation of Wolff's § 119 conclusion: a motive joined to the action that the will cannot separate from it.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1037,
@@ -1151,7 +1286,12 @@
      "MDZ scan 141",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=141"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Term-for-term translation of Wolff's definition of morality as the difference of free actions as to rectitude.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1038,
@@ -1211,7 +1351,12 @@
      "MDZ scan 81",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=81"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates Wolff's definition of the right action (sufficient reason in the agent's essence and attributes), generalized to any agent as in the Theol. nat. § 950 he cites.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1040,
@@ -1230,7 +1375,7 @@
    "inNote": false,
    "label": "translation",
    "confidence": 0.7,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "c'està-dire, quand on peut rendre raison, ou expliquer par l'essence & les attributs de cet être, pourquoi son action a dû être telle qu'il l'a faite, & non pas autre.",
    "source": "Convenire autem cum hisce dicitur actio, quae in iis simul sumtis rationem sufficientem agnoscit, consequenter per eas explicari potest, cur talis potius sit, quam non sit, ac esse debeat (§. 56. Ontol.).",
@@ -1241,7 +1386,13 @@
      "MDZ scan 82",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=82"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The wording matches Wolff's sufficient-reason formula, but Vattel's note cites Theol. nat. I § 950 (whose general definition, with the agent's 'attributs', PPU § 64-65 only restates for man), so this PPU passage is a parallel rather than shown to be the source.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1041,
@@ -1271,7 +1422,12 @@
      "MDZ scan 175",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=175"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 188 makes the same equation: having one's sufficient reason in human essence is agreement with that essence, which is what those who ground natural law in convenance/disconvenance mean.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1042,
@@ -1331,7 +1487,12 @@
      "MDZ scan 202",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=202"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact French rendering of Wolff's § 224 definition of officium (actio juxta legem determinata, quatenus ad eam ita determinandam obligamur).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1044,
@@ -1361,7 +1522,12 @@
      "MDZ scan 202",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=202"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates Wolff's § 224 definition of officium and restates its note that the name of duty chiefly regards obligation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1045,
@@ -1391,7 +1557,12 @@
      "MDZ scan 251",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=251"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 288 brings punishment under obligation because it connects a motive with the action per the § 118 definition, the same move Vattel makes against the superior's power to punish.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1046,
@@ -1421,7 +1592,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'L'obligation est la connexion ... du motif avec l'action' translates Wolff's § 118 definition of active obligation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1047,
@@ -1468,7 +1644,7 @@
    "locus": "§ 49",
    "page": "PPU1.pdf68",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "translation",
    "confidence": 0.5,
    "status": "match",
    "step": "R",
@@ -1481,7 +1657,13 @@
      "MDZ scan 68",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=68"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La perfection de notre état, tant interne qu'externe' renders Wolff's distinctive formula 'status tam internus quam externus perfectus' (its only occurrence in PPU), though the surrounding content differs, so this is a translated formula rather than a paraphrase.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase"
+   }
   },
   {
    "id": 1049,
@@ -1650,7 +1832,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Que notre utilité se trouve jointe à cette observation, cela n'est pas douteux, puisque le droit naturel est une science, qui nous apprend ce qui est naturellement bon ou mauvais à l'homme. (§. 3.) & que les loix naturelles qui constituent ce droit, ne nous prescrivent certaines actions & ne nous en défendent d'autres, qu'en conséquence de la convenance, ou de la disconvenance de ces actions avec notre nature & avec celle des choses (§. 6.).",
    "source": "atque praeceptiva lex nos obliget ad committendas actiones, quae per se ad perfectionem nostram statusque nostri perfectionem tendunt, eas vero omittendas , quae ad imperfectionem nostram statusque nostri tendunt ( §. 152. ) ; evidens est Jus naturale facere ad promovendam perfectionem & avertendam imperfectionem nostram",
@@ -1661,7 +1843,13 @@
      "MDZ scan 232",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=232"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That natural law is useful because it prescribes what is good for us is a commonplace; Vattel argues from his own §§ 3 and 6, not from Wolff's technical proof via rights and perfection.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1055,
@@ -1691,7 +1879,12 @@
      "MDZ scan 150",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=150"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's clause that natural laws command and forbid actions only according to their fit with our nature and that of things renders Wolff's § 152 grounding of the law in 'hominis rerumque essentia atque natura' (cf. his own citation of PPU § 137 in § 6).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1056,
@@ -1871,7 +2064,12 @@
      "MDZ scan 140",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=140"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The footnote quotes Wolff's Latin 'quod stet pro ratione voluntas' verbatim and gives the PPU § 132 locus.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1062,
@@ -1961,7 +2159,12 @@
      "MDZ scan 140",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=140"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders 'quod stet pro ratione voluntas' in the same context (one acquiesces in the legislator's will without knowing his reasons), and his note cites Wolff § 132 in nota.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1065,
@@ -2141,7 +2344,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La liaison du motif avec l'action' renders Wolff's 'connexio motivi cum actione' (PPU § 118), Vattel's own definition restated.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1071,
@@ -2171,7 +2379,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's point that no motive remains to be joined to the action, so there is no obligation, applies Wolff's § 119 inference that without a motive joined to the action no necessity of acting remains.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1072,
@@ -2190,7 +2403,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "comment on pourra leur imposer une espèce de nécessité d'agir, sans les contraindre par une force physique",
    "source": "Necessitas moralis agendi vel non agendi dicitur obligatio passiva.",
@@ -2201,7 +2414,13 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The phrase repeats Vattel's own § 11 account of obligation as non-physical necessity; nothing specific ties it to Wolff's § 118 definition rather than the common idea of moral necessity.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1073,
@@ -2291,7 +2510,12 @@
      "MDZ scan 246",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=246"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same regress against the voluntarists: to know what God wills one must infer it from God's will tending to the good, so the intrinsic goodness comes first (Wolff § 284).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1076,
@@ -2310,7 +2534,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Mais cette réponse même fait voir, que la qualité intrinsèque de l'action est déja une raison de la préférer, en faisant abstraction de la volonté de Dieu, & que la volonté de Dieu même se règle sur cette raison.",
    "source": "Quamobrem intrinseca actionum bonitas & malitia demonstrari potest, etiamsi non supponas dari Deum.",
@@ -2321,7 +2545,13 @@
      "MDZ scan 218",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=218"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both hold intrinsic goodness independent of God, but Vattel argues from how reason knows God's will (backing Leibniz), not from Wolff's atheist-hypothesis demonstration; the thesis is common anti-voluntarist stock.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 1077,
@@ -2381,7 +2611,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's definition of obligation as the connection of motive and action translates Wolff's definition of active obligation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1079,
@@ -2411,7 +2646,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'Cette nécessité ... l'obligation passive' renders Wolff's § 118 definition of moral necessity as passive obligation, a specifically Wolffian term.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1080,
@@ -2441,7 +2681,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'Laquelle naît de l'obligation active' restates Vattel's § 13 rendering of Wolff § 119 'obligatio passiva venit ex activa', which § 13 cites.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1081,
@@ -2471,7 +2716,12 @@
      "MDZ scan 263",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=263"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 304, aimed at those who admit only a superior's obligation, says nothing can determine the will except motives, so obligation is moral not physical; Vattel applies this to the superior.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1082,
@@ -2531,7 +2781,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La connexion du motif avec l'action' translates Wolff's § 118 definition of active obligation (connexio motivi cum actione).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1084,
@@ -2561,7 +2816,12 @@
      "MDZ scan 202",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=202"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact French rendering of Wolff's definition of officium.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1085,
@@ -2591,7 +2851,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La liaison du motif avec l'action, qui constitue l'obligation' renders Wolff's definition of active obligation as connexio motivi cum actione.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1086,
@@ -2621,7 +2886,12 @@
      "MDZ scan 240",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=240"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific argument: obligation is posited with the nature of things, and God, by creating things with that nature, is its author (Wolff § 275).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 1087,
@@ -2651,7 +2921,12 @@
      "MDZ scan 127",
      "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=127"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel answers Barbeyrac with Wolff's § 119 argument: the motive is joined to the action so that our will cannot separate it, otherwise no necessity would remain.",
+    "date": "2026-11-20"
+   }
   }
  ]
 }

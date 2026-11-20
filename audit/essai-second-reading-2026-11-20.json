@@ -1,0 +1,1395 @@
+{
+ "format": "nle-audit/1",
+ "date": "2026-11-20",
+ "kind": "second reading",
+ "edition": "vattel-essai-1747",
+ "description": "Every match row of the Essai's reuse tables, read by a second reader (Claude Opus, tools/transcription/VERIFY_PROMPT_ESSAI.md): right, weak or wrong, and whether the label fits.",
+ "rows": [
+  {
+   "0": "§ 135",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "A generic call to distinguish terms; Wolff's note separates jus and lex against Grotius, while Vattel distinguishes natural laws, natural right and morals."
+  },
+  {
+   "1": "§ 131",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Exact French rendering of Wolff's § 131 definition of law (regula, juxta quam actiones nostras determinare obligamur)."
+  },
+  {
+   "2": "§ 135",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Renders Wolff's § 135 definition of natural law as having its reason in the essence and nature of man and things."
+  },
+  {
+   "3": "§ 6",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Defining natural law as the science of what is naturally good or bad is a stock definition, and Wolff § 6 only mentions in passing that the Jus naturae separates good from bad actions."
+  },
+  {
+   "4": "§ 137",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Note (a) explicitly cites Wolff, PPU pars I § 137."
+  },
+  {
+   "5": "§ 137",
+   "verdict": "right",
+   "labelOk": false,
+   "betterLabel": "loose paraphrase",
+   "reason": "Vattel's note cites Wolff § 137, whose 'fontem, unde derivatur lex naturae' and reason in the essence of man and things he recasts, but in a different sentence structure, so the paraphrase is loose rather than close."
+  },
+  {
+   "6": "§ 135",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's foundation as the principle giving the reason of the rules, found in the essence and nature of man and things, recasts Wolff's § 135 definition (ratio sufficiens in hominis rerumque essentia atque natura)."
+  },
+  {
+   "7": "§ 124",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "That natural good and bad are determined by the essence and nature of man and of things restates Wolff's § 124 conclusion on the source of intrinsic goodness and badness."
+  },
+  {
+   "8": "§ 137",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel translates the core of § 137 almost word for word, and note (a) cites § 137."
+  },
+  {
+   "9": "§ 280",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Wolff's reduction of the various principles to his own is only a general parallel; E.7's specific claim (all must grant the foundation in nature, whatever their view of obligation; the utility-inventors' case) is not in § 280."
+  },
+  {
+   "10": "§ 266",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Like Wolff § 266 against Carneades, Vattel answers those who make law a human invention for utility by showing its source must still be the nature and essence of man and things."
+  },
+  {
+   "11": "§ 284",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Wolff § 284 makes the same move: those who take conformity with God's will as the principle end up with the direction deduced from human essence and nature, i.e. 'la même source que nous'."
+  },
+  {
+   "12": "§ 136",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's conclusion that natural law is founded on the essence and nature of things and of man restates § 136, and both texts follow it with the same Cicero sentence."
+  },
+  {
+   "13": "§ 136",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel renders Wolff's 'Idem vult Cicero, quando ... inquit' right after the same conclusion of § 136, keeping Wolff's form of the dictum with 'ipsa'."
+  },
+  {
+   "14": "§ 137",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel restates PPU § 137 (cited in his § 6): knowledge of natural law is drawn from the essence and nature of man and things, Wolff's own formula, in other words."
+  },
+  {
+   "15": "§ 188",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's convenance/disconvenance of actions with the 'essence & nature' of man and things reproduces Wolff's § 188 formula and its gloss that nature includes essence."
+  },
+  {
+   "16": "§ 280",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's list of rival principles (God's will, beauty of virtue, rational nature) and his aim to show where they agree follow Wolff's programme of reconciling the writers' principles in § 280."
+  },
+  {
+   "17": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "§ 11's claim that only motives determine the will anticipates the Wolff § 119 proof ('sine motivo nulla volitio') that Vattel translates in § 13 and cites there."
+  },
+  {
+   "18": "§ 118",
+   "verdict": "right",
+   "labelOk": false,
+   "betterLabel": "translation",
+   "reason": "'La liaison d'un motif puissant avec cette même action' renders Wolff's 'connexio motivi cum actione' (cited at § 12), a translation of the defining phrase, not a loose paraphrase."
+  },
+  {
+   "19": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's two aspects of obligation (the principle from which it arises, the state of the one obliged) set out Wolff's active and passive obligation, the passive arising from the active."
+  },
+  {
+   "20": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Note (a) to § 12 cites Wolff PPU I § 118 for the active/passive definition."
+  },
+  {
+   "21": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel translates both definitions of Wolff § 118 word for word and cites the paragraph."
+  },
+  {
+   "22": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Making active obligation the principle and passive obligation the resulting state is Wolff's doctrine in § 119 (passive obligation comes from and presupposes the active), which Vattel cites in the next section."
+  },
+  {
+   "23": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's thesis renders Wolff's § 119 proposition 'obligatio passiva venit ex activa', adding the cause/effect simile."
+  },
+  {
+   "24": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel translates the two premisses of Wolff's PPU § 119 (moral necessity of acting entails willing; no volition without motive), which his note cites."
+  },
+  {
+   "25": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Translation of Wolff's § 119 conclusion: a motive joined to the action that the will cannot separate from it."
+  },
+  {
+   "26": "§ 134",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Term-for-term translation of Wolff's definition of morality as the difference of free actions as to rectitude."
+  },
+  {
+   "27": "§ 64",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel translates Wolff's definition of the right action (sufficient reason in the agent's essence and attributes), generalized to any agent as in the Theol. nat. § 950 he cites."
+  },
+  {
+   "28": "§ 65",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The wording matches Wolff's sufficient-reason formula, but Vattel's note cites Theol. nat. I § 950 (whose general definition, with the agent's 'attributs', PPU § 64-65 only restates for man), so this PPU passage is a parallel rather than shown to be the source."
+  },
+  {
+   "29": "§ 188",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Wolff § 188 makes the same equation: having one's sufficient reason in human essence is agreement with that essence, which is what those who ground natural law in convenance/disconvenance mean."
+  },
+  {
+   "30": "§ 224",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Exact French rendering of Wolff's § 224 definition of officium (actio juxta legem determinata, quatenus ad eam ita determinandam obligamur)."
+  },
+  {
+   "31": "§ 224",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel translates Wolff's § 224 definition of officium and restates its note that the name of duty chiefly regards obligation."
+  },
+  {
+   "32": "§ 288",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Wolff § 288 brings punishment under obligation because it connects a motive with the action per the § 118 definition, the same move Vattel makes against the superior's power to punish."
+  },
+  {
+   "33": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'L'obligation est la connexion ... du motif avec l'action' translates Wolff's § 118 definition of active obligation."
+  },
+  {
+   "34": "§ 49",
+   "verdict": "right",
+   "labelOk": false,
+   "betterLabel": "translation",
+   "reason": "'La perfection de notre état, tant interne qu'externe' renders Wolff's distinctive formula 'status tam internus quam externus perfectus' (its only occurrence in PPU), though the surrounding content differs, so this is a translated formula rather than a paraphrase."
+  },
+  {
+   "35": "§ 263",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "That natural law is useful because it prescribes what is good for us is a commonplace; Vattel argues from his own §§ 3 and 6, not from Wolff's technical proof via rights and perfection."
+  },
+  {
+   "36": "§ 152",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's clause that natural laws command and forbid actions only according to their fit with our nature and that of things renders Wolff's § 152 grounding of the law in 'hominis rerumque essentia atque natura' (cf. his own citation of PPU § 137 in § 6)."
+  },
+  {
+   "37": "§ 132",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The footnote quotes Wolff's Latin 'quod stet pro ratione voluntas' verbatim and gives the PPU § 132 locus."
+  },
+  {
+   "38": "§ 132",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel renders 'quod stet pro ratione voluntas' in the same context (one acquiesces in the legislator's will without knowing his reasons), and his note cites Wolff § 132 in nota."
+  },
+  {
+   "39": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'La liaison du motif avec l'action' renders Wolff's 'connexio motivi cum actione' (PPU § 118), Vattel's own definition restated."
+  },
+  {
+   "40": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's point that no motive remains to be joined to the action, so there is no obligation, applies Wolff's § 119 inference that without a motive joined to the action no necessity of acting remains."
+  },
+  {
+   "41": "§ 118",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The phrase repeats Vattel's own § 11 account of obligation as non-physical necessity; nothing specific ties it to Wolff's § 118 definition rather than the common idea of moral necessity."
+  },
+  {
+   "42": "§ 284",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same regress against the voluntarists: to know what God wills one must infer it from God's will tending to the good, so the intrinsic goodness comes first (Wolff § 284)."
+  },
+  {
+   "43": "§ 247",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both hold intrinsic goodness independent of God, but Vattel argues from how reason knows God's will (backing Leibniz), not from Wolff's atheist-hypothesis demonstration; the thesis is common anti-voluntarist stock."
+  },
+  {
+   "44": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's definition of obligation as the connection of motive and action translates Wolff's definition of active obligation."
+  },
+  {
+   "45": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'Cette nécessité ... l'obligation passive' renders Wolff's § 118 definition of moral necessity as passive obligation, a specifically Wolffian term."
+  },
+  {
+   "46": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'Laquelle naît de l'obligation active' restates Vattel's § 13 rendering of Wolff § 119 'obligatio passiva venit ex activa', which § 13 cites."
+  },
+  {
+   "47": "§ 304",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Wolff § 304, aimed at those who admit only a superior's obligation, says nothing can determine the will except motives, so obligation is moral not physical; Vattel applies this to the superior."
+  },
+  {
+   "48": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'La connexion du motif avec l'action' translates Wolff's § 118 definition of active obligation (connexio motivi cum actione)."
+  },
+  {
+   "49": "§ 224",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Exact French rendering of Wolff's definition of officium."
+  },
+  {
+   "50": "§ 118",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'La liaison du motif avec l'action, qui constitue l'obligation' renders Wolff's definition of active obligation as connexio motivi cum actione."
+  },
+  {
+   "51": "§ 275",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same specific argument: obligation is posited with the nature of things, and God, by creating things with that nature, is its author (Wolff § 275)."
+  },
+  {
+   "52": "§ 119",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel answers Barbeyrac with Wolff's § 119 argument: the motive is joined to the action so that our will cannot separate it, otherwise no necessity would remain."
+  },
+  {
+   "53": "Préface du traducteur § 1",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Barbeyrac's note does widen 'Morale' (Science des Mœurs) to take in natural law, but Vattel reports a common usage ('on employe souvent') and nothing specific ties it to this note."
+  },
+  {
+   "54": "Liv. II ch. III § 15, n. 5",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's usage (the same duties viewed as owed to others) only loosely matches Barbeyrac's report that Pufendorf treats only mutual duties; the restricted notion of natural law is common (Pufendorf, Thomasius)."
+  },
+  {
+   "55": "Liv. II ch. III § 15, n. 5",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both hold that natural law includes duties to oneself, but Vattel's claim follows from his Wolffian definitions and nothing specific ties it to Barbeyrac's note."
+  },
+  {
+   "56": "Liv. II ch. III § 5",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both reply to the voluntarist opinion that natural law must suit the nature God gave man, but Pufendorf argues from God's free creation of that constitution, Vattel from God's wisdom; a common anti-voluntarist point."
+  },
+  {
+   "57": "Liv. II ch. III § 5",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same objection to the voluntarists: one still has to know how God's will is discovered and why he put 'telle ou telle chose' into natural law."
+  },
+  {
+   "58": "Liv. II ch. III § 5, n. 3",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Barbeyrac's note to DNG II.3.5 (with Pufendorf's 'il reste encore à savoir par où l'on peut découvrir la Volonté de Dieu') gives the specific argument that voluntarists need a rule drawn from nature to know God's will, so their system does not really differ."
+  },
+  {
+   "59": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The motive-determines-the-will thesis of § 11 is the view Barbeyrac's note reports from Bernard/Gastrell ('ne peut être qu'une raison ou un motif ... qui le détermine'), which Vattel in § 26 quotes as identical to his own."
+  },
+  {
+   "60": "Liv. I ch. I § 21",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Pufendorf's definition of obligation by name, word for word from Barbeyrac's French."
+  },
+  {
+   "61": "Liv. I ch. I § 21",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Pufendorf's definition of obligation (note cites DNG I.1.21) and faults it for not saying what the moral quality consists in."
+  },
+  {
+   "62": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Note 4 to DNG I.6.5 makes the will of a superior the ground of obligation, separate from motives; Vattel names Barbeyrac's notes and rejects exactly this."
+  },
+  {
+   "63": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel rejects this note's doctrine that obligation rests on a superior's will, turning its charge of confusion back on Barbeyrac; at § 27 he quotes the note and refers back to this § 18."
+  },
+  {
+   "64": "Liv. II ch. III § 16",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Deriving the obligation to keep social rules from self-interest is a commonplace (Hobbes, Grotius Prol.), and nothing in Vattel's wording points to Pufendorf II.3.16 in particular."
+  },
+  {
+   "65": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's note correctly names DNG I.6.5 n. 4, the Barbeyrac note from which he quotes the Bernard/Gastrell passage."
+  },
+  {
+   "66": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's lead-in reuses Barbeyrac's own words introducing Gastrell ('Anglois ... dans les mêmes idées') immediately before quoting the rest of the note, though he turns the ideas into his own."
+  },
+  {
+   "67": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's summary of Gastrell in note 4 to DNG I.6.5, journal reference included."
+  },
+  {
+   "68": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of the objection in Barbeyrac's note 4 to DNG I.6.5, which Vattel introduces as 'dans la même note'."
+  },
+  {
+   "69": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The closing words of Barbeyrac's note 4 to DNG I.6.5, which Vattel quotes verbatim."
+  },
+  {
+   "70": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes this note's motive/foundation distinction (utility the motive, the superior's will the foundation) and then attacks it."
+  },
+  {
+   "71": "Liv. I ch. VI § 5, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's imagined reply (duty to a legitimate superior survives when punishment cannot follow) is the argument of Barbeyrac's dispossessed-prince example in the same note, which he then rejects."
+  },
+  {
+   "72": "Liv. II ch. III § 10",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's remark on the equivocal term 'utilité' takes up Pufendorf's point on the two senses of 'utile' in DNG II.3.10, whose note 6 he then quotes."
+  },
+  {
+   "73": "Liv. II ch. III § 10, n. 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's note 6 to Pufendorf DNG II.3.10 word for word, naming it as 'cette note de M. Barbeyrac'."
+  },
+  {
+   "74": "Liv. II ch. III § 10, n. 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word end of Vattel's quotation of Barbeyrac's note on DNG II.3.10."
+  },
+  {
+   "75": "Liv. II ch. III § 10, n. 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's claim that utility cannot found obligation and answers it by redefining utility as noble, well-understood utility."
+  },
+  {
+   "76": "Liv. II ch. III § 10, n. 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's note 6 to DNG II.3.10 and then denies that there is any danger in confounding the honest with the useful, the first extreme the note warns against."
+  },
+  {
+   "77": "Liv. II ch. III § 10",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same sentence on separating honest and useful (honest things not useful, useful not honest, most pernicious), followed by the same Cicero quotations Barbeyrac gives in note 3 to DNG II.3.10, with its '& constituerit' reading."
+  },
+  {
+   "78": "Liv. II ch. III § 10, n. 3",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Cicero exactly as Barbeyrac's note 3 to DNG II.3.10 gives it, with the same two passages (II.3 and III.3) in the same order."
+  },
+  {
+   "79": "Liv. II ch. III § 10, n. 3",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel copies the two Cicero passages (De Off. II.3 and III.3) that Barbeyrac's note juxtaposes, in the same order and wording."
+  },
+  {
+   "80": "Liv. II ch. III § 10, n. 1",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Exact Horace line with the reference format of Barbeyrac's note 1 to DNG II.3.10; Vattel's paragraph also takes the two Cicero quotations of note 3 and the 'deux extrémités' note 6 to the same section."
+  },
+  {
+   "81": "Liv. II ch. III § 10, n. 3",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel translates the Cicero line on Socrates he had quoted in § 30 from Barbeyrac's note 3, including its 'Lib. III. Cap. III.' reference."
+  },
+  {
+   "82": "Liv. I ch. VI § 5",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both say obligation works morally on a free will through motives, not by physical force, and share 'fléchir la volonté', but Pufendorf's point is self-condemnation, and the moral/physical contrast was common stock by 1747."
+  },
+  {
+   "83": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel holds the voluntarists to the concession Barbeyrac records: not an arbitrary will of God, God could prescribe to men only rules founded on their nature."
+  },
+  {
+   "84": "Réflexions du traducteur § 15",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "A stock doxographic summary of the voluntarist position; nothing ties it to this Barbeyrac sentence (which reports Pufendorf's view) rather than to Pufendorf or the voluntarists generally."
+  },
+  {
+   "85": "Liv. I ch. II § 3",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The shared terms (ordinary sense, 'lien', 'astreint') come from the Roman-law definition of obligation that every jurist repeated; Burlamaqui I.6.9 is a far closer parallel."
+  },
+  {
+   "86": "Jugement d'un anonyme § 19",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's 'idem per idem' and his appeal to the justice of obedience restate Leibniz's circularity charge: the superior's authority presupposes prior reasons of right."
+  },
+  {
+   "87": "Réflexions du traducteur § 19",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Barbeyrac puts the foundation of obligation in the will and the motives in God's goodness and power; Vattel argues that pleading such motives (justice, punishment) brings him back to obligation as the link of motive and action."
+  },
+  {
+   "88": "Réflexions du traducteur § 6",
+   "verdict": "weak",
+   "labelOk": false,
+   "betterLabel": "shared argument",
+   "reason": "Both rank the beauty of virtue, free of fear of punishment, as the nobler motive, but this is a commonplace and Vattel's ranking of motives within utility does not restate Barbeyrac's sentence."
+  },
+  {
+   "89": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel says the proof he skips is 'mot pour mot' in Barbeyrac's reply to Leibniz; Réflexions § 15 (p. 471) indeed carries the same proof beginning 'Car 1. les Passions opposent'."
+  },
+  {
+   "90": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel names Barbeyrac's reply to Leibniz as containing the omitted proof, and Réflexions § 15 does contain its second point (reason apart from God is only ourselves) nearly word for word."
+  },
+  {
+   "91": "Réflexions du traducteur",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel names Barbeyrac's reflections on Leibniz's judgement printed at the end of his translation of the Devoirs."
+  },
+  {
+   "92": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 6 charging Leibniz with confusing duty with its motives."
+  },
+  {
+   "93": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel explicitly corrects Barbeyrac's 'la plupart' in the sentence he has just quoted from Réflexions § 6."
+  },
+  {
+   "94": "Jugement d'un anonyme § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Exact quotation of Leibniz, Jugement § 6, in Barbeyrac's translation."
+  },
+  {
+   "95": "Jugement d'un anonyme § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel condenses Leibniz's question (Jugement § 6, his note: p. 441) about losing one's goods and life for the fatherland or 'pour le maintien du Droit & de la Justice', keeping its list and wording."
+  },
+  {
+   "96": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Verbatim quotation of Réflexions § 6, introduced with 'dit-il'."
+  },
+  {
+   "97": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's reflection on Jugement § 6 (Vattel's note: p. 445)."
+  },
+  {
+   "98": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's answer collapses Barbeyrac's distinction between why we are obliged and what motive moves people, which Barbeyrac draws right after the sentence Vattel quotes."
+  },
+  {
+   "99": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel repeats word for word the clause of Barbeyrac's Réflexions § 6 he has just quoted (duties imposed by the wise Author of natural law)."
+  },
+  {
+   "100": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Verbatim quotation, attributed to 'M. B.', of Barbeyrac's question about the two moralities."
+  },
+  {
+   "101": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's question about the 'purer and nobler' morality and turns it against him."
+  },
+  {
+   "102": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel takes up and denies Barbeyrac's claim, quoted in the same section, that the wise pagans distinguished so well between the honest and the useful."
+  },
+  {
+   "103": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Verbatim quotation of Barbeyrac's Réflexions § 6 charging Leibniz with contradiction."
+  },
+  {
+   "104": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Barbeyrac charges Leibniz with a 'contradiction palpable' right after the passage Vattel quotes; Vattel answers that Leibniz did not contradict himself."
+  },
+  {
+   "105": "Jugement d'un anonyme § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Verbatim quotation of Leibniz's Jugement § 6, with an ellipsis and page reference."
+  },
+  {
+   "106": "Jugement d'un anonyme § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Exact quotation of the end of the Leibniz sentence (Jugement § 6), with 'en même tems' dropped at the ellipsis."
+  },
+  {
+   "107": "Jugement d'un anonyme § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel restates in other words Leibniz's own admission (Jugement § 6) of a degree of natural law, hence duties, that holds even for an atheist."
+  },
+  {
+   "108": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel points to Barbeyrac's following pages, where Barbeyrac grants that utility alone, apart from another life, gives reason for virtue, which makes us happier in this world."
+  },
+  {
+   "109": "Réflexions du traducteur § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel points to the pages just after Barbeyrac's charge of contradiction, where Barbeyrac grants that utility alone, apart from the afterlife, gives good reason for virtue."
+  },
+  {
+   "110": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word opening of the dilemma quoted from Réflexions § 15."
+  },
+  {
+   "111": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Continuation of the quoted dilemma, word for word from Barbeyrac's Réflexions § 15."
+  },
+  {
+   "112": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's 'point de milieu' dilemma and rejects it by offering a middle way."
+  },
+  {
+   "113": "Jugement d'un anonyme § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel names Leibniz and restates his verdict that deriving all right from a superior's will is false."
+  },
+  {
+   "114": "Jugement d'un anonyme § 13",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel attributes to Leibniz the claim that right must be sought in the nature of things, not in a superior's will, which is the charge of Jugement § 13 (taken up again in § 15)."
+  },
+  {
+   "115": "Jugement d'un anonyme § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel sets out to prove Leibniz's claim and reaches Leibniz's thesis that God's own will follows the intrinsic nature of the just rather than founding it."
+  },
+  {
+   "116": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Barbeyrac makes God's will the proper and direct reason of obligation; Vattel takes this up and concludes that will is not the first principle."
+  },
+  {
+   "117": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Answering Réflexions § 15, Vattel holds that God's will adds only weight to the reason from nature, the 'accessoire' role Barbeyrac rejects there."
+  },
+  {
+   "118": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 15 that the nature of things cannot by itself impose obligation."
+  },
+  {
+   "119": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's claim that relations of convenance only oblige us to recognise them, concedes the wording and corrects it by supplying the motive as the 'something more'."
+  },
+  {
+   "120": "Jugement d'un anonyme § 17",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Leibniz's passing claim that the nature of things and care for our happiness require actions of us is the position Vattel defends, but Vattel's reply (relations bind only through their effect on happiness, as motive) has no specific tie to this sentence and rests on his own Wolffian premises."
+  },
+  {
+   "121": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel takes back Barbeyrac's own words 'quelque chose de plus pour gêner notre liberté' and answers that the motive of happiness supplies it."
+  },
+  {
+   "122": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Verbatim quotation of Barbeyrac's Réflexions § 15, cut off with '&c.'"
+  },
+  {
+   "123": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel takes up, in nearly the same words, the objection Barbeyrac states and dismisses (reason shows our interest in following rules based on the nature of things) and draws from it the necessity Barbeyrac denies."
+  },
+  {
+   "124": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's first argument (passions oppose sensible ideas to reason) and answers it by making self-love, the strongest passion, side with reason."
+  },
+  {
+   "125": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Quotation of Barbeyrac's question ('s'il n'y a aucun principe extérieur, aucun être au-dessus de nous, qui nous y assujettisse'), verbatim for the clause though compressed."
+  },
+  {
+   "126": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel answers Barbeyrac's question with exactly the reply Barbeyrac had anticipated and set aside a few lines later in § 15 ('il ne s'agit point ici d'Utilité'), thus rejecting that dismissal."
+  },
+  {
+   "127": "Jugement d'un anonyme § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Leibniz's Jugement § 6 word for word and names him."
+  },
+  {
+   "128": "Jugement d'un anonyme § 6",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Leibniz by name word for word, only 'cette Science' becoming 'le Droit naturel'."
+  },
+  {
+   "129": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 15 (Vattel's note: pp. 471-472), with the cut marked by dots."
+  },
+  {
+   "130": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 15 (renouncing one's own advantage)."
+  },
+  {
+   "131": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel re-quotes Barbeyrac's own concession from Réflexions § 15 ('tout bien compté, notre intérêt demande que nous suivions'), word for word."
+  },
+  {
+   "132": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's claim that each may renounce his advantage and rejects it as abolishing obligation."
+  },
+  {
+   "133": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel takes up Barbeyrac's two provisos ('rien d'ailleurs qui l'en empêche', another interested person with a right to exact) and rejects them."
+  },
+  {
+   "134": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Verbatim quotation of Réflexions § 15, omitting only one clause."
+  },
+  {
+   "135": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel rejects as begging the question the premise, stated by Barbeyrac in this sentence, that obligation needs an external principle or superior."
+  },
+  {
+   "136": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's claim that no one can impose a necessity on himself and rejects it: reason imposes nothing, it only perceives the motive-action connection."
+  },
+  {
+   "137": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Against Barbeyrac's claim in the same § 15 that the nature of things cannot impose obligation, Vattel asserts that the connection constituting obligation comes from the nature of things, set there by the Creator."
+  },
+  {
+   "138": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's sentence."
+  },
+  {
+   "139": "Réflexions du traducteur § 15",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel grants that a necessity must not cease at the subject's will but denies Barbeyrac's conclusion that a self-imposed necessity could be shaken off, since the motive-action link does not depend on us."
+  },
+  {
+   "140": "Jugement d'un anonyme § 16",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's footnote to the verbatim Leibniz quotation reproduces the Jugement's marginal reference to 1 Tim. 1, misnumbering verse 9 as 8."
+  },
+  {
+   "141": "Réflexions du traducteur",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel explicitly names Barbeyrac's objections to Leibniz's Jugement d'un anonyme (the Réflexions printed with it) as the text his preceding sections answered."
+  },
+  {
+   "142": "Jugement d'un anonyme § 16",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of the opening of Leibniz's Jugement § 16, which Vattel cites (p. 476)."
+  },
+  {
+   "143": "Jugement d'un anonyme § 16",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Continuation of Vattel's quotation of Leibniz's Jugement § 16, word for word."
+  },
+  {
+   "144": "Jugement d'un anonyme § 16",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word end of the quoted Leibniz Jugement § 16."
+  },
+  {
+   "145": "Liv. I ch. I § 12",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'Convenance ou disconvenance' with human nature is the stock Grotian formula; Vattel's a posteriori proof comes from Wolff § 137 (his own note), not Grotius's consent of nations."
+  },
+  {
+   "146": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's claim that all systems must grant the foundation in the nature of things, whatever their view of obligation, uses Barbeyrac's concession in this note, which he quotes in E.29."
+  },
+  {
+   "147": "Liv. I ch. I § 10",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's account of reason showing the 'convenance ou la disconvenance' of actions with nature restates Grotius's I.1.10 definition in Barbeyrac's wording, a paragraph Vattel cites."
+  },
+  {
+   "148": "Liv. I ch. I § 10, n. 4",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "A doxographic line on the superior-will school; nothing beyond the standard voluntarist thesis ties it to Barbeyrac's note, and Vattel cites nothing here."
+  },
+  {
+   "149": "Liv. I ch. I § 10",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The third opinion paraphrases Grotius's definition of natural law by agreement with a rational and sociable nature."
+  },
+  {
+   "150": "Liv. I ch. I § 10",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's note (a) cites De jure B. & P. I.1.10, whose definition speaks of moral necessity (Barbeyrac: 'moralement honnête'), for Grotius's expression."
+  },
+  {
+   "151": "Liv. I ch. I § 10, n. 2",
+   "verdict": "weak",
+   "labelOk": false,
+   "betterLabel": "loose paraphrase",
+   "reason": "Vattel cites the Latin Grotius (De jure B. & P. I.1.10), so 'moralement nécessaire' may come from Grotius's own 'necessitas moralis' as easily as from Barbeyrac's note; the sentences are not close paraphrases either."
+  },
+  {
+   "152": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel names Barbeyrac's notes, reduces them to 'no obligation without a superior' (the thesis of note 4 to DGP I.1.10) and rejects it as confusing obligation with dependence."
+  },
+  {
+   "153": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel names Barbeyrac's notes on Grotius and summarizes their superior-will doctrine, echoing the note's 'nous assujettir à y conformer nos actions'."
+  },
+  {
+   "154": "Discours préliminaire § 8",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel names Grotius as making sociability the foundation of natural law, the claim of the Discours préliminaire § 8 ('maintenir la Société ... est la source du Droit')."
+  },
+  {
+   "155": "Discours préliminaire § 19",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Grotius's answer to Carneades (give up a present advantage for the laws because they secure one's lasting interest) is the reason Vattel gives, with the same 'avantage présent'."
+  },
+  {
+   "156": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel's footnote gives the exact locus of the Barbeyrac note on 'actus debiti aut illiciti per se' that he quotes."
+  },
+  {
+   "157": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "First quoted block of Barbeyrac's note 4 to DGP I.1.10, copied word for word."
+  },
+  {
+   "158": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's note 4 on Grotius I.1.10, which Vattel cites in his note."
+  },
+  {
+   "159": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's conclusion from his note on Grotius I.1.10 word for word."
+  },
+  {
+   "160": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's note on Grotius I.1.10 (God's will alone imposes the necessity)."
+  },
+  {
+   "161": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Word-for-word quotation of Barbeyrac's note on Grotius I.1.10 (proof from religious practice that God's will is the source of obligation)."
+  },
+  {
+   "162": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "'Plaisante preuve!' directly dismisses the last proof of Barbeyrac's Grotius note 4 (quoted in full just before) as begging the question."
+  },
+  {
+   "163": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "After quoting Barbeyrac's conclusion that rational maxims oblige only through God's will, Vattel replies that natural laws would oblige even setting God's will aside."
+  },
+  {
+   "164": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Verbatim quotation of the next sentence of Barbeyrac's note 4 to Grotius I.1.10 (God's will would be a mere accessory)."
+  },
+  {
+   "165": "Liv. I ch. I § 10, n. 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Vattel quotes Barbeyrac's 'accessoire' objection from Grotius note 4 and openly rebuts it."
+  },
+  {
+   "166": "Part. II ch. V § 5",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same specific argument against an arbitrary divine will: God's wisdom can give only laws suited to human nature, with the shared turn 'd'autres toutes différentes/contraires' and the question how one would otherwise know what God commands."
+  },
+  {
+   "167": "Part. II ch. V § 5",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both argue that God gives only laws suited to human nature and that we could not otherwise know he commands one thing rather than another ('plutôt qu'une autre' / 'plutôt que d'autres toutes contraires')."
+  },
+  {
+   "168": "Part. II ch. V § 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both texts ground the content of natural law in God's wisdom giving only laws suited to man's nature and to the good of society and individuals, within the same argument that otherwise we could not know why God commands these laws rather than others (Burlamaqui II.5.4-5)."
+  },
+  {
+   "169": "Part. II ch. IV § 5",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "That natural laws are known by studying man's nature is common stock; the only shared wording is the ordinary phrase 'parvenir à la connoissance', and Vattel's version is Wolffian (essence, convenance) rather than Burlamaqui's relations and states."
+  },
+  {
+   "170": "Part. II ch. VII § 5",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same transition with the same build: knowing is not enough, 'il faut encore' an obligation, and then the question of its principle (nature of things or God's will)."
+  },
+  {
+   "171": "Part. II ch. VII § 1",
+   "verdict": "weak",
+   "labelOk": false,
+   "betterLabel": "loose paraphrase",
+   "reason": "Both open with 'all agree, but authors differ on the first principle of obligation, some deriving it from God's will', but this doxographic opening is common stock and the wording and list of views diverge beyond the first clauses."
+  },
+  {
+   "172": "Part. I ch. VI § 11",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both report the beauty-of-virtue ground of obligation, a stock item of the doxography; Vattel only names the opinion, while Burlamaqui's sentence reduces it to a reason for preference, and the shared 'préférer' is too slight."
+  },
+  {
+   "173": "Part. I ch. VI § 13",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both announce the same programme of showing that the rival systems on the principle of obligation, which seem opposed, in fact agree once properly understood."
+  },
+  {
+   "174": "Part. I ch. IX § 12",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "The diagnosis that views on obligation only seem opposed through confused ideas, and can be reconciled by clarifying them, is a common move in this debate (Barbeyrac too calls it a 'dispute de mots') and shares little wording."
+  },
+  {
+   "175": "Part. I ch. VI § 9",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same sequence in both: appeal to the common use of the word, obligation as a bond that is moral rather than physical or external, and its force lying in motives weighed by reason."
+  },
+  {
+   "176": "Part. I ch. VI § 9",
+   "verdict": "right",
+   "labelOk": false,
+   "betterLabel": "loose paraphrase",
+   "reason": "Burlamaqui I.6.9 shares the specific sequence (ordinary sense, moral not physical necessity, motives determining us to act in a certain way), but Vattel recasts the sentence rather than following its structure."
+  },
+  {
+   "177": "Part. I ch. VI § 12",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both texts summarize Barbeyrac's position in the same terms (will of a superior, dependence, 'nous assujettir à' regulate/conform our actions) and both then judge it insufficient."
+  },
+  {
+   "178": "Part. I ch. VI § 12",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both answer Barbeyrac's superior thesis by name with the same objection: dependence on a superior does not itself explain why his will binds, so one must go back to a prior reason."
+  },
+  {
+   "179": "Part. I ch. V § 4",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Self-love and the desire for happiness as the primitive spring of all desires is common eudaemonist stock; the 'little reflection' framing is generic and Vattel's perfection terms are Wolffian."
+  },
+  {
+   "180": "Part. I ch. V § 4",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both say we seek our own good in all our determinations and appeal to inner experience, but this eudaemonist commonplace and introspective proof are shared stock with no distinctive wording beyond 'toutes nos déterminations'."
+  },
+  {
+   "181": "Part. I ch. VI § 11",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "That every motive comes down to some real or apparent good is the stock principle that the will moves only toward good; nothing in the wording or argument ties Vattel's maxim to Burlamaqui's passage."
+  },
+  {
+   "182": "Part. I ch. VI § 12",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both grant that a superior's will obliges while denying it is the primitive principle of obligation, as a conciliatory answer to the same Barbeyrac view."
+  },
+  {
+   "183": "Part. I ch. VI § 13",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both present their account of obligation as reconciling systems that only seem opposed at first ('paroissent d'abord'), and Vattel's conciliation (the superior's will adds a solid proximate motive) matches Burlamaqui's external obligation strengthening internal."
+  },
+  {
+   "184": "Part. II ch. VII § 8",
+   "verdict": "weak",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both hold obligation exists abstracting from any superior, but this Grotian 'etiamsi daremus' thesis (also in Leibniz's Jugement) is common, and the grounds differ (reason vs. praiseworthiness and utility)."
+  },
+  {
+   "185": "Part. II ch. VII § 13",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same reconciling move: natural laws oblige by themselves and God's will adds force or weight to that obligation (Burlamaqui 'ajoûte une nouvelle force', Vattel 'ajoute un très-grand poids')."
+  },
+  {
+   "186": "Part. I ch. VI § 13",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both offer a reconciliation in which the superior's will adds force to obligation but draws its own force from a prior ground (Vattel: our utility; Burlamaqui: internal obligation)."
+  },
+  {
+   "187": "Part. II ch. VIII § 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both give the same Cicero De Off. II.3 sentence in nearly the same French (taken from Pufendorf DNG II.3.10), with the Socrates sequel, to argue that honesty and true utility cannot be separated."
+  },
+  {
+   "188": "Part. II ch. VIII § 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both give the same pair of Cicero quotations (De Off. II.3, III.3) word for word, in the same argument that the honest and the useful are inseparable."
+  },
+  {
+   "189": "Part. II ch. XIV § 16",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both paraphrase Leibniz's Jugement argument with the same structure and words ('sacrifier ... ou [pour/au] maintien du Droit & de la Justice'): without future sanctions, sacrifice for society or justice cannot be grounded."
+  },
+  {
+   "190": "Part. II ch. VIII § 4",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both use Cicero's Socrates line in the same argument that the honest and the useful are naturally joined, with the same French 'qui les premiers ont séparé dans leur(s) opinion(s)' and the same tense."
+  },
+  {
+   "191": "Part. II ch. VII § 13",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both answer Barbeyrac's 'no middle' dilemma with the same middle position: God's will adds force/weight to an obligation already grounded in the nature of things."
+  },
+  {
+   "192": "Part. I ch. VI § 11",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Same specific argument against the fitness theory: relations of convenance by themselves do not bind, they become a motive able to move the will only through their bearing on our happiness."
+  },
+  {
+   "193": "Part. I ch. VI § 12",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both answer Barbeyrac's superior thesis the same way: a superior's power without inner motive yields only external constraint, not an obligation that bends ('fléchir') the will freely."
+  },
+  {
+   "194": "Part. II ch. VII § 12",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Replying to the same Barbeyrac objection, both distinguish senses of 'devoir' and define the narrow sense as what another has a right to exact from us."
+  },
+  {
+   "195": "Part. II ch. VII § 9",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both reproduce Barbeyrac's objection (reason is only ourselves; no one can impose an indispensable necessity on himself), with the second sentence almost word for word."
+  },
+  {
+   "196": "Part. II ch. VII § 11",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both answer the same Barbeyrac objection (one cannot oblige oneself) the same way: it begs the question by assuming all obligation comes from a superior."
+  },
+  {
+   "197": "Part. II ch. VII § 9",
+   "verdict": "right",
+   "labelOk": true,
+   "betterLabel": "",
+   "reason": "Both texts give the same Barbeyrac sentence ('Car afin que la nécessité ait lieu ... au gré de celui qui y est soumis'), nearly word for word."
+  }
+ ]
+}

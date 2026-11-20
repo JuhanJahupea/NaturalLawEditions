@@ -96,7 +96,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "en considérant la convenance, ou la disconvenance des actions avec cette essence & cette nature",
    "source": "La prémiére, qui est plus subtile & plus abstraite, consiste à montrer la convenance ou disconvenance nécessaire d'une chose avec une Nature Raisonnable & Sociable, telle qu'est celle de l'Homme.",
@@ -110,7 +110,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n106/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "'Convenance ou disconvenance' with human nature is the stock Grotian formula; Vattel's a posteriori proof comes from Wolff § 137 (his own note), not Grotius's consent of nations.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 4003,
@@ -176,7 +182,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's claim that all systems must grant the foundation in the nature of things, whatever their view of obligation, uses Barbeyrac's concession in this note, which he quotes in E.29.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4005,
@@ -275,7 +286,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's account of reason showing the 'convenance ou la disconvenance' of actions with nature restates Grotius's I.1.10 definition in Barbeyrac's wording, a paragraph Vattel cites.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4008,
@@ -294,7 +310,7 @@
    "inNote": true,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Quelquesuns la dérivent de l'autorité d'un supérieur, lequel ne peut être que Dieu, auteur de la nature",
    "source": "Cette nécessité ne peut venir que d'un Supérieur , c'est-à-dire , d'un Etre Intelligent hors de nous, qui ait le pouvoir de gêner nôtre liberté , & de nous prescrire des Regles de Conduite.",
@@ -308,7 +324,13 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "A doxographic line on the superior-will school; nothing beyond the standard voluntarist thesis ties it to Barbeyrac's note, and Vattel cites nothing here.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 4009,
@@ -374,7 +396,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The third opinion paraphrases Grotius's definition of natural law by agreement with a rational and sociable nature.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4011,
@@ -440,7 +467,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's note (a) cites De jure B. & P. I.1.10, whose definition speaks of moral necessity (Barbeyrac: 'moralement honnête'), for Grotius's expression.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4013,
@@ -457,9 +489,9 @@
    "locus": "Liv. I ch. I § 10, n. 2",
    "page": "GRO24T1.p102",
    "inNote": true,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.65,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "GROTIUS se sert aussi de cette expression, qu'une action est moralement nécessaire",
    "source": "L'Auteur dit , moralement nécessaire : mais le terme , dont je me suis servi , est plus clair , & l'opposition plus juste.",
@@ -473,7 +505,14 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel cites the Latin Grotius (De jure B. & P. I.1.10), so 'moralement nécessaire' may come from Grotius's own 'necessitas moralis' as easily as from Barbeyrac's note; the sentences are not close paraphrases either.",
+    "date": "2026-11-20",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
   },
   {
    "id": 4014,
@@ -572,7 +611,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Barbeyrac's notes, reduces them to 'no obligation without a superior' (the thesis of note 4 to DGP I.1.10) and rejects it as confusing obligation with dependence.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4017,
@@ -605,7 +649,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Barbeyrac's notes on Grotius and summarizes their superior-will doctrine, echoing the note's 'nous assujettir à y conformer nos actions'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4018,
@@ -704,7 +753,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n61/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Grotius as making sociability the foundation of natural law, the claim of the Discours préliminaire § 8 ('maintenir la Société ... est la source du Droit').",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4021,
@@ -770,7 +824,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n66/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Grotius's answer to Carneades (give up a present advantage for the laws because they secure one's lasting interest) is the reason Vattel gives, with the same 'avantage présent'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4023,
@@ -803,7 +862,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's footnote gives the exact locus of the Barbeyrac note on 'actus debiti aut illiciti per se' that he quotes.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4024,
@@ -836,7 +900,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n101/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "First quoted block of Barbeyrac's note 4 to DGP I.1.10, copied word for word.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4025,
@@ -869,7 +938,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's note 4 on Grotius I.1.10, which Vattel cites in his note.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4026,
@@ -902,7 +976,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's conclusion from his note on Grotius I.1.10 word for word.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4027,
@@ -935,7 +1014,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n103/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's note on Grotius I.1.10 (God's will alone imposes the necessity).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4028,
@@ -968,7 +1052,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n103/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's note on Grotius I.1.10 (proof from religious practice that God's will is the source of obligation).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4029,
@@ -1001,7 +1090,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n103/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'Plaisante preuve!' directly dismisses the last proof of Barbeyrac's Grotius note 4 (quoted in full just before) as begging the question.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4030,
@@ -1034,7 +1128,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "After quoting Barbeyrac's conclusion that rational maxims oblige only through God's will, Vattel replies that natural laws would oblige even setting God's will aside.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4031,
@@ -1067,7 +1166,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n103/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Verbatim quotation of the next sentence of Barbeyrac's note 4 to Grotius I.1.10 (God's will would be a mere accessory).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4032,
@@ -1100,7 +1204,12 @@
      "archive.org",
      "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n103/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's 'accessoire' objection from Grotius note 4 and openly rebuts it.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 4033,

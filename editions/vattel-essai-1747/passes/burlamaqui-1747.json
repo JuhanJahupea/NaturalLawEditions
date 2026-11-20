@@ -214,7 +214,12 @@
      "Zotero p. 239",
      "zotero://open-pdf/library/items/XKNMUHV3?page=239"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific argument against an arbitrary divine will: God's wisdom can give only laws suited to human nature, with the shared turn 'd'autres toutes différentes/contraires' and the question how one would otherwise know what God commands.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5007,
@@ -243,7 +248,12 @@
      "Zotero p. 240",
      "zotero://open-pdf/library/items/XKNMUHV3?page=240"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both argue that God gives only laws suited to human nature and that we could not otherwise know he commands one thing rather than another ('plutôt qu'une autre' / 'plutôt que d'autres toutes contraires').",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5008,
@@ -272,7 +282,12 @@
      "Zotero p. 238",
      "zotero://open-pdf/library/items/XKNMUHV3?page=238"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both texts ground the content of natural law in God's wisdom giving only laws suited to man's nature and to the good of society and individuals, within the same argument that otherwise we could not know why God commands these laws rather than others (Burlamaqui II.5.4-5).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5009,
@@ -291,7 +306,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Nous parvenons à la connoissance de ces loix par la raison.",
    "source": "LE seul moyen de parvenir à la connoissance des Loix Naturelles, c'est de considérer avec attention la nature de l'homme, sa constitution, les rélations qu'il a avec les êtres qui l'environnent, & les états qui en résultent.",
@@ -301,7 +316,13 @@
      "Zotero p. 208",
      "zotero://open-pdf/library/items/XKNMUHV3?page=208"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That natural laws are known by studying man's nature is common stock; the only shared wording is the ordinary phrase 'parvenir à la connoissance', and Vattel's version is Wolffian (essence, convenance) rather than Burlamaqui's relations and states.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5010,
@@ -388,7 +409,12 @@
      "Zotero p. 263",
      "zotero://open-pdf/library/items/XKNMUHV3?page=263"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same transition with the same build: knowing is not enough, 'il faut encore' an obligation, and then the question of its principle (nature of things or God's will).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5013,
@@ -405,9 +431,9 @@
    "locus": "Part. II ch. VII § 1",
    "page": "BUR47.p258",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.6,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Tout le monde convient qu'ils y sont obligés : mais les Auteurs diffèrent sur le principe de cette obligation : Quelquesuns la dérivent de l'autorité d'un supérieur, lequel ne peut être que Dieu, auteur de la nature",
    "source": "C'est aussi dequoi tous les Jurisconsultes & les Moralistes conviennent. Mais ils ne s'accordent pas également sur le prémier principe ou la cause primitive de l'obligation & de la Moralité. Plusieurs croyent qu'il n'y a aucun autre principe de moralité que la volonté de Dieu, manifestée par les Loix Naturelles.",
@@ -417,7 +443,14 @@
      "Zotero p. 258",
      "zotero://open-pdf/library/items/XKNMUHV3?page=258"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both open with 'all agree, but authors differ on the first principle of obligation, some deriving it from God's will', but this doxographic opening is common stock and the wording and list of views diverge beyond the first clauses.",
+    "date": "2026-11-20",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5014,
@@ -436,7 +469,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "d'autres la fondent sur la beauté même de la vertu, qui de sa nature est préférable au vice.",
    "source": "Car dire que la Vertu a par elle-même une beauté naturelle, qui fait qu'elle mérite d'êtretre pratiquée, & qu'au contraire le Vice mérite, par lui-même, notre aversion ; n'est-ce pas reconnoître que nous avons une raison de préférer l'un à l'autre ?",
@@ -446,7 +479,13 @@
      "Zotero p. 102",
      "zotero://open-pdf/library/items/XKNMUHV3?page=102"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both report the beauty-of-virtue ground of obligation, a stock item of the doxography; Vattel only names the opinion, while Burlamaqui's sentence reduces it to a reason for preference, and the shared 'préférer' is too slight.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5015,
@@ -475,7 +514,12 @@
      "Zotero p. 105",
      "zotero://open-pdf/library/items/XKNMUHV3?page=105"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both announce the same programme of showing that the rival systems on the principle of obligation, which seem opposed, in fact agree once properly understood.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5016,
@@ -523,7 +567,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Nous verrons que c'est pour avoir négligé cette régle que d'habiles Auteurs se sont si fort embarrassésdans cette matiere, & ont paru tomber dans des sentimens si opposés les uns aux autres.",
    "source": "En démêlant bien ces idées, on trouvera peut être, que cela concilie des sentimens, qui ne paroissent s'éloigner l'un de l'autre que par un mal-entendu",
@@ -533,7 +577,13 @@
      "Zotero p. 141",
      "zotero://open-pdf/library/items/XKNMUHV3?page=141"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The diagnosis that views on obligation only seem opposed through confused ideas, and can be reconciled by clarifying them, is a common move in this debate (Barbeyrac too calls it a 'dispute de mots') and shares little wording.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5018,
@@ -591,7 +641,12 @@
      "Zotero p. 101",
      "zotero://open-pdf/library/items/XKNMUHV3?page=101"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence in both: appeal to the common use of the word, obligation as a bond that is moral rather than physical or external, and its force lying in motives weighed by reason.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5020,
@@ -608,7 +663,7 @@
    "locus": "Part. I ch. VI § 9",
    "page": "BUR47.p100",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.55,
    "status": "match",
    "step": "R",
@@ -620,7 +675,13 @@
      "Zotero p. 100",
      "zotero://open-pdf/library/items/XKNMUHV3?page=100"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Burlamaqui I.6.9 shares the specific sequence (ordinary sense, moral not physical necessity, motives determining us to act in a certain way), but Vattel recasts the sentence rather than following its structure.",
+    "date": "2026-11-20",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 5021,
@@ -765,7 +826,12 @@
      "Zotero p. 104",
      "zotero://open-pdf/library/items/XKNMUHV3?page=104"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both texts summarize Barbeyrac's position in the same terms (will of a superior, dependence, 'nous assujettir à' regulate/conform our actions) and both then judge it insufficient.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5026,
@@ -794,7 +860,12 @@
      "Zotero p. 104",
      "zotero://open-pdf/library/items/XKNMUHV3?page=104"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both answer Barbeyrac's superior thesis by name with the same objection: dependence on a superior does not itself explain why his will binds, so one must go back to a prior reason.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5027,
@@ -900,7 +971,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Il n'est pas besoin de longues méditations pour se convaincre, qu'aucun penchant, aucun désir, aucune affection ne nous est plus essentielle, n'est en nous plus primitive & plus générale que l'amour de nous-mêmes, qui nous porte à souhaiter & à rechercher notre bonheur",
    "source": "OR, pour peu que l'homme réfléchisse sur lui-même, il reconnoît bien-tôt QU'IL ne fait rien qu'en vue de son Bonheur, & que c'est la derniére fin qu'il se propose dans toutes ses actions, ou le dernier terme auquel il les rapporte. C'est là une prémiére vérité dont nous sommes instruits par le sentiment intérieur & continuel que nous en avons. Telle est, en effet, la nature de l'homme , qu'il s'aime nécessairement luimême, qu'il cherche en tout & par-tout son avantage, & qu'il ne sauroit jamais s'en détacher.",
@@ -910,7 +981,13 @@
      "Zotero p. 83",
      "zotero://open-pdf/library/items/XKNMUHV3?page=83"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Self-love and the desire for happiness as the primitive spring of all desires is common eudaemonist stock; the 'little reflection' framing is generic and Vattel's perfection terms are Wolffian.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5031,
@@ -958,7 +1035,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.55,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "C'est donc notre utilité qui est le principe général & primitif de toutes nos déterminations. L'expérience établit manifestement cette vérité, aux yeux de quiconque veut faire quelqu'attention à ce qui se passe en lui - même. Sondons - nous avec soin, examinons attentivement la maniere dont se forment nos volitions, & nous verrons que nous ne nous déterminons jamais à une action, que par la vue de quelque bien, que nous croyons y appercevoir",
    "source": "OR, pour peu que l'homme réfléchisse sur lui-même, il reconnoît bien-tôt QU'IL ne fait rien qu'en vue de son Bonheur, & que c'est la derniére fin qu'il se propose dans toutes ses actions, ou le dernier terme auquel il les rapporte. C'est là une prémiére vérité dont nous sommes instruits par le sentiment intérieur & continuel que nous en avons. Telle est, en effet, la nature de l'homme , qu'il s'aime nécessairement luimême, qu'il cherche en tout & par-tout son avantage, & qu'il ne sauroit jamais s'en détacher. Nous desirons naturellement le Bien, & nous le voulons nécessairement. Ce desir précéde toutes nos réflexions & n'est point laissé à notre choix. Il domine en nous, il devient le mobile de toutes nos déterminations",
@@ -968,7 +1045,13 @@
      "Zotero p. 83",
      "zotero://open-pdf/library/items/XKNMUHV3?page=83"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say we seek our own good in all our determinations and appeal to inner experience, but this eudaemonist commonplace and introspective proof are shared stock with no distinctive wording beyond 'toutes nos déterminations'.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5033,
@@ -987,7 +1070,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Tout motif revient dans le fonds à l'utilitéréelle ou apparente.",
    "source": "Or certainement cette raison, quelle qu'elle soit, ne devient un motif capable de déterminer la Volonté, qu'autant qu'elle nous présente quelque bien à acquérir, ou qu'elle tend à nous faire éviter quelque mal ; en un mot, qu'autant quelle peut contribuer à notre satisfaction, & à nous mettre dans un état heureux & tranquille. C'est la constitution même de l'homme & la nature de la Volonté qui le veulent ainsi. Car comme c'est le Bien, en général, qui est l'objet de la Volonté ; le seul motif capable de la mettre en mouvement, ou de la déterminer pour un parti préférablement à un autre, c'est l'esperance d'obtenir le bien.",
@@ -997,7 +1080,13 @@
      "Zotero p. 103",
      "zotero://open-pdf/library/items/XKNMUHV3?page=103"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That every motive comes down to some real or apparent good is the stock principle that the will moves only toward good; nothing in the wording or argument ties Vattel's maxim to Burlamaqui's passage.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5034,
@@ -1229,7 +1318,12 @@
      "Zotero p. 104",
      "zotero://open-pdf/library/items/XKNMUHV3?page=104"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both grant that a superior's will obliges while denying it is the primitive principle of obligation, as a conciliatory answer to the same Barbeyrac view.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5042,
@@ -1316,7 +1410,12 @@
      "Zotero p. 105",
      "zotero://open-pdf/library/items/XKNMUHV3?page=105"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both present their account of obligation as reconciling systems that only seem opposed at first ('paroissent d'abord'), and Vattel's conciliation (the superior's will adds a solid proximate motive) matches Burlamaqui's external obligation strengthening internal.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5045,
@@ -1422,7 +1521,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "que les hommes seroient obligés à l'observation des Loix naturelles, même en faisant abstraction de la volonté de Dieu ; parce qu'elles sont louables & utiles",
    "source": "il s'ensuit que la RAISON seule, indépendamment de la LOI, suffit pour imposer quelque obligation à l'homme, & par conséquent pour donner lieu à la Moralité & au Devoir, à la louange & au blâme. Il ne restera aucun doute là-dessus, si en faisant abstraction pour un moment de tout Supérieur & de toute Loi, on considére d'abord l'état d'un homme seul",
@@ -1432,7 +1531,13 @@
      "Zotero p. 266",
      "zotero://open-pdf/library/items/XKNMUHV3?page=266"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both hold obligation exists abstracting from any superior, but this Grotian 'etiamsi daremus' thesis (also in Leibniz's Jugement) is common, and the grounds differ (reason vs. praiseworthiness and utility).",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 5049,
@@ -1461,7 +1566,12 @@
      "Zotero p. 274",
      "zotero://open-pdf/library/items/XKNMUHV3?page=274"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same reconciling move: natural laws oblige by themselves and God's will adds force or weight to that obligation (Burlamaqui 'ajoûte une nouvelle force', Vattel 'ajoute un très-grand poids').",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5050,
@@ -1490,7 +1600,12 @@
      "Zotero p. 106",
      "zotero://open-pdf/library/items/XKNMUHV3?page=106"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both offer a reconciliation in which the superior's will adds force to obligation but draws its own force from a prior ground (Vattel: our utility; Burlamaqui: internal obligation).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5051,
@@ -1548,7 +1663,12 @@
      "Zotero p. 281",
      "zotero://open-pdf/library/items/XKNMUHV3?page=281"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both give the same Cicero De Off. II.3 sentence in nearly the same French (taken from Pufendorf DNG II.3.10), with the Socrates sequel, to argue that honesty and true utility cannot be separated.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5053,
@@ -1577,7 +1697,12 @@
      "Zotero p. 281",
      "zotero://open-pdf/library/items/XKNMUHV3?page=281"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both give the same pair of Cicero quotations (De Off. II.3, III.3) word for word, in the same argument that the honest and the useful are inseparable.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5054,
@@ -1635,7 +1760,12 @@
      "Zotero p. 380",
      "zotero://open-pdf/library/items/XKNMUHV3?page=380"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both paraphrase Leibniz's Jugement argument with the same structure and words ('sacrifier ... ou [pour/au] maintien du Droit & de la Justice'): without future sanctions, sacrifice for society or justice cannot be grounded.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5056,
@@ -1664,7 +1794,12 @@
      "Zotero p. 281",
      "zotero://open-pdf/library/items/XKNMUHV3?page=281"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both use Cicero's Socrates line in the same argument that the honest and the useful are naturally joined, with the same French 'qui les premiers ont séparé dans leur(s) opinion(s)' and the same tense.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5057,
@@ -1693,7 +1828,12 @@
      "Zotero p. 274",
      "zotero://open-pdf/library/items/XKNMUHV3?page=274"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both answer Barbeyrac's 'no middle' dilemma with the same middle position: God's will adds force/weight to an obligation already grounded in the nature of things.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5058,
@@ -1722,7 +1862,12 @@
      "Zotero p. 103",
      "zotero://open-pdf/library/items/XKNMUHV3?page=103"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same specific argument against the fitness theory: relations of convenance by themselves do not bind, they become a motive able to move the will only through their bearing on our happiness.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5059,
@@ -1780,7 +1925,12 @@
      "Zotero p. 105",
      "zotero://open-pdf/library/items/XKNMUHV3?page=105"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both answer Barbeyrac's superior thesis the same way: a superior's power without inner motive yields only external constraint, not an obligation that bends ('fléchir') the will freely.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5061,
@@ -1896,7 +2046,12 @@
      "Zotero p. 271",
      "zotero://open-pdf/library/items/XKNMUHV3?page=271"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Replying to the same Barbeyrac objection, both distinguish senses of 'devoir' and define the narrow sense as what another has a right to exact from us.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5065,
@@ -1925,7 +2080,12 @@
      "Zotero p. 268",
      "zotero://open-pdf/library/items/XKNMUHV3?page=268"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both reproduce Barbeyrac's objection (reason is only ourselves; no one can impose an indispensable necessity on himself), with the second sentence almost word for word.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5066,
@@ -1954,7 +2114,12 @@
      "Zotero p. 270",
      "zotero://open-pdf/library/items/XKNMUHV3?page=270"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both answer the same Barbeyrac objection (one cannot oblige oneself) the same way: it begs the question by assuming all obligation comes from a superior.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 5067,
@@ -1983,7 +2148,12 @@
      "Zotero p. 268",
      "zotero://open-pdf/library/items/XKNMUHV3?page=268"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Both texts give the same Barbeyrac sentence ('Car afin que la nécessité ait lieu ... au gré de celui qui y est soumis'), nearly word for word.",
+    "date": "2026-11-20"
+   }
   }
  ]
 }

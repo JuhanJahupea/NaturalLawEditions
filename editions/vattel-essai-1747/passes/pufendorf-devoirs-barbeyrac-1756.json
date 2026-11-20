@@ -161,7 +161,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n262/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel holds the voluntarists to the concession Barbeyrac records: not an arbitrary will of God, God could prescribe to men only rules founded on their nature.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2005,
@@ -180,7 +185,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.55,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Quelquesuns la dérivent de l'autorité d'un supérieur, lequel ne peut être que Dieu, auteur de la nature",
    "source": "Mais il soutient qu'avec tout cela, la raison propre & directe pourquoi les Hommes sont obligés de suivre les Régles de la Justice, ce qui leur impose la nécessité morale de s'y conformer, c'est la volonté de DIEU, qui en qualité de leur Maître Souverain a plein droit de gêner leur Liberté naturelle, comme il le juge à propos.",
@@ -191,7 +196,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n262/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "A stock doxographic summary of the voluntarist position; nothing ties it to this Barbeyrac sentence (which reports Pufendorf's view) rather than to Pufendorf or the voluntarists generally.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 2006,
@@ -240,7 +251,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Interrogez tout homme qui dit; nous sommes dans l'obligation de faire telle chose : vous verrez qu'il veut-dire par-la, que nous sommes dans une espéce de nécessité de faire cette même chose ; que nous y sommes astraints, lies, & comme contraints",
    "source": "On entend ordinairement par le mot (a) d'OBLIGATION, un lien de Droit par lequel on est astreint à faire ou à ne pas faire certaines choses.",
@@ -250,7 +261,13 @@
      "archive.org",
      "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n150/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The shared terms (ordinary sense, 'lien', 'astreint') come from the Roman-law definition of obligation that every jurist repeated; Burlamaqui I.6.9 is a far closer parallel.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 2008,
@@ -429,7 +446,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n284/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'idem per idem' and his appeal to the justice of obedience restate Leibniz's circularity charge: the superior's authority presupposes prior reasons of right.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2014,
@@ -489,7 +511,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n290/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac puts the foundation of obligation in the will and the motives in God's goodness and power; Vattel argues that pleading such motives (justice, punishment) brings him back to obligation as the link of motive and action.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2016,
@@ -535,9 +562,9 @@
    "locus": "Réflexions du traducteur § 6",
    "page": "DEV56T2.p234",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "les motifs qui y ont rapport, par exemple, ceux qui sont pris de l'obéissance due à un être tel que Dieu, indépendamment de toute crainte, de la beauté de la vertu, &c. ces motifs, dis-je, passent avec raison pour les plus nobles.",
    "source": "de les amener par-là peu à peu à s'acquiter de leur Devoir par un plus noble motif; à trouver dans la pratique de la Vertu ce grand plaisir dont parle l'Anonyme, & qui est produit, non par la vue des Récompenses, moins encore par la vue des Peines d'une autre Vie, mais par de longues & sérieuses réflexions sur la beauté même de la Vertu.",
@@ -548,7 +575,14 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n233/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both rank the beauty of virtue, free of fear of punishment, as the nobler motive, but this is a commonplace and Vattel's ranking of motives within utility does not restate Barbeyrac's sentence.",
+    "date": "2026-11-20",
+    "labelWas": "loose paraphrase",
+    "statusWas": "match"
+   }
   },
   {
    "id": 2018,
@@ -755,7 +789,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel says the proof he skips is 'mot pour mot' in Barbeyrac's reply to Leibniz; Réflexions § 15 (p. 471) indeed carries the same proof beginning 'Car 1. les Passions opposent'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2025,
@@ -785,7 +824,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Barbeyrac's reply to Leibniz as containing the omitted proof, and Réflexions § 15 does contain its second point (reason apart from God is only ourselves) nearly word for word.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2026,
@@ -815,7 +859,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n206/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Barbeyrac's reflections on Leibniz's judgement printed at the end of his translation of the Devoirs.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2027,
@@ -845,7 +894,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n229/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 6 charging Leibniz with confusing duty with its motives.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2028,
@@ -875,7 +929,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n229/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel explicitly corrects Barbeyrac's 'la plupart' in the sentence he has just quoted from Réflexions § 6.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2029,
@@ -905,7 +964,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n227/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact quotation of Leibniz, Jugement § 6, in Barbeyrac's translation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2030,
@@ -935,7 +999,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n226/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel condenses Leibniz's question (Jugement § 6, his note: p. 441) about losing one's goods and life for the fatherland or 'pour le maintien du Droit & de la Justice', keeping its list and wording.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2031,
@@ -965,7 +1034,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n230/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Verbatim quotation of Réflexions § 6, introduced with 'dit-il'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2032,
@@ -995,7 +1069,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's reflection on Jugement § 6 (Vattel's note: p. 445).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2033,
@@ -1025,7 +1104,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n232/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's answer collapses Barbeyrac's distinction between why we are obliged and what motive moves people, which Barbeyrac draws right after the sentence Vattel quotes.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2034,
@@ -1055,7 +1139,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel repeats word for word the clause of Barbeyrac's Réflexions § 6 he has just quoted (duties imposed by the wise Author of natural law).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2035,
@@ -1085,7 +1174,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Verbatim quotation, attributed to 'M. B.', of Barbeyrac's question about the two moralities.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2036,
@@ -1115,7 +1209,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's question about the 'purer and nobler' morality and turns it against him.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2037,
@@ -1145,7 +1244,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes up and denies Barbeyrac's claim, quoted in the same section, that the wise pagans distinguished so well between the honest and the useful.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2038,
@@ -1175,7 +1279,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Verbatim quotation of Barbeyrac's Réflexions § 6 charging Leibniz with contradiction.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2039,
@@ -1205,7 +1314,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac charges Leibniz with a 'contradiction palpable' right after the passage Vattel quotes; Vattel answers that Leibniz did not contradict himself.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2040,
@@ -1235,7 +1349,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n225/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Verbatim quotation of Leibniz's Jugement § 6, with an ellipsis and page reference.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2041,
@@ -1265,7 +1384,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n226/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact quotation of the end of the Leibniz sentence (Jugement § 6), with 'en même tems' dropped at the ellipsis.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2042,
@@ -1295,7 +1419,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n225/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel restates in other words Leibniz's own admission (Jugement § 6) of a degree of natural law, hence duties, that holds even for an atheist.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2043,
@@ -1325,7 +1454,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n234/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel points to Barbeyrac's following pages, where Barbeyrac grants that utility alone, apart from another life, gives reason for virtue, which makes us happier in this world.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2044,
@@ -1385,7 +1519,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n233/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel points to the pages just after Barbeyrac's charge of contradiction, where Barbeyrac grants that utility alone, apart from the afterlife, gives good reason for virtue.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2046,
@@ -1415,7 +1554,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n264/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word opening of the dilemma quoted from Réflexions § 15.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2047,
@@ -1445,7 +1589,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Continuation of the quoted dilemma, word for word from Barbeyrac's Réflexions § 15.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2048,
@@ -1475,7 +1624,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n264/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's 'point de milieu' dilemma and rejects it by offering a middle way.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2049,
@@ -1505,7 +1659,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n257/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names Leibniz and restates his verdict that deriving all right from a superior's will is false.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2050,
@@ -1535,7 +1694,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n251/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel attributes to Leibniz the claim that right must be sought in the nature of things, not in a superior's will, which is the charge of Jugement § 13 (taken up again in § 15).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2051,
@@ -1595,7 +1759,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n258/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel sets out to prove Leibniz's claim and reaches Leibniz's thesis that God's own will follows the intrinsic nature of the just rather than founding it.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2053,
@@ -1625,7 +1794,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n262/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac makes God's will the proper and direct reason of obligation; Vattel takes this up and concludes that will is not the first principle.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2054,
@@ -1655,7 +1829,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n270/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Answering Réflexions § 15, Vattel holds that God's will adds only weight to the reason from nature, the 'accessoire' role Barbeyrac rejects there.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2055,
@@ -1685,7 +1864,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 15 that the nature of things cannot by itself impose obligation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2056,
@@ -1715,7 +1899,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's claim that relations of convenance only oblige us to recognise them, concedes the wording and corrects it by supplying the motive as the 'something more'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2057,
@@ -1734,7 +1923,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "mais l'influence que ces mêmes choses peuvent avoir en vertu de ces rapports, sur notre félicité, est un puissant motif, qui nous oblige à agir, ou à ne pas agir",
    "source": "Comme si la nature même des choses, & le soin de notre propre bonheur & de notre conservation, n'exigeoit pas de nous certaines choses!",
@@ -1745,7 +1934,13 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n278/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Leibniz's passing claim that the nature of things and care for our happiness require actions of us is the position Vattel defends, but Vattel's reply (relations bind only through their effect on happiness, as motive) has no specific tie to this sentence and rests on his own Wolffian premises.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 2058,
@@ -1775,7 +1970,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes back Barbeyrac's own words 'quelque chose de plus pour gêner notre liberté' and answers that the motive of happiness supplies it.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2059,
@@ -1805,7 +2005,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Verbatim quotation of Barbeyrac's Réflexions § 15, cut off with '&c.'",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2060,
@@ -1835,7 +2040,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n266/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes up, in nearly the same words, the objection Barbeyrac states and dismisses (reason shows our interest in following rules based on the nature of things) and draws from it the necessity Barbeyrac denies.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2061,
@@ -1865,7 +2075,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's first argument (passions oppose sensible ideas to reason) and answers it by making self-love, the strongest passion, side with reason.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2062,
@@ -1895,7 +2110,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n266/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Quotation of Barbeyrac's question ('s'il n'y a aucun principe extérieur, aucun être au-dessus de nous, qui nous y assujettisse'), verbatim for the clause though compressed.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2063,
@@ -1925,7 +2145,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n266/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel answers Barbeyrac's question with exactly the reply Barbeyrac had anticipated and set aside a few lines later in § 15 ('il ne s'agit point ici d'Utilité'), thus rejecting that dismissal.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2064,
@@ -1955,7 +2180,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n225/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Leibniz's Jugement § 6 word for word and names him.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2065,
@@ -1985,7 +2215,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n226/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Leibniz by name word for word, only 'cette Science' becoming 'le Droit naturel'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2066,
@@ -2045,7 +2280,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n266/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 15 (Vattel's note: pp. 471-472), with the cut marked by dots.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2068,
@@ -2075,7 +2315,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's Réflexions § 15 (renouncing one's own advantage).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2069,
@@ -2105,7 +2350,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n266/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel re-quotes Barbeyrac's own concession from Réflexions § 15 ('tout bien compté, notre intérêt demande que nous suivions'), word for word.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2070,
@@ -2135,7 +2385,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's claim that each may renounce his advantage and rejects it as abolishing obligation.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2071,
@@ -2165,7 +2420,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes up Barbeyrac's two provisos ('rien d'ailleurs qui l'en empêche', another interested person with a right to exact) and rejects them.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2072,
@@ -2195,7 +2455,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Verbatim quotation of Réflexions § 15, omitting only one clause.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2073,
@@ -2225,7 +2490,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n266/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel rejects as begging the question the premise, stated by Barbeyrac in this sentence, that obligation needs an external principle or superior.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2074,
@@ -2255,7 +2525,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's claim that no one can impose a necessity on himself and rejects it: reason imposes nothing, it only perceives the motive-action connection.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2075,
@@ -2285,7 +2560,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Against Barbeyrac's claim in the same § 15 that the nature of things cannot impose obligation, Vattel asserts that the connection constituting obligation comes from the nature of things, set there by the Creator.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2076,
@@ -2315,7 +2595,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's sentence.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2077,
@@ -2345,7 +2630,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n268/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel grants that a necessity must not cease at the subject's will but denies Barbeyrac's conclusion that a self-imposed necessity could be shaken off, since the motive-action link does not depend on us.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2078,
@@ -2375,7 +2665,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n272/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's footnote to the verbatim Leibniz quotation reproduces the Jugement's marginal reference to 1 Tim. 1, misnumbering verse 9 as 8.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2079,
@@ -2405,7 +2700,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n206/mode/1up"
     ]
    ],
-   "sourcePart": "reflexions"
+   "sourcePart": "reflexions",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel explicitly names Barbeyrac's objections to Leibniz's Jugement d'un anonyme (the Réflexions printed with it) as the text his preceding sections answered.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2080,
@@ -2435,7 +2735,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n271/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of the opening of Leibniz's Jugement § 16, which Vattel cites (p. 476).",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2081,
@@ -2465,7 +2770,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n272/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Continuation of Vattel's quotation of Leibniz's Jugement § 16, word for word.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 2082,
@@ -2495,7 +2805,12 @@
      "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n273/mode/1up"
     ]
    ],
-   "sourcePart": "jugement"
+   "sourcePart": "jugement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word end of the quoted Leibniz Jugement § 16.",
+    "date": "2026-11-20"
+   }
   }
  ]
 }

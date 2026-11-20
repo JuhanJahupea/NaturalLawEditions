@@ -63,7 +63,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.6,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "On employe souvent le terme de Morale, pour désigner la science des mœurs en général ; & dans ce sens, il comprend le Droit Naturel & l'Ethique.",
    "source": "J'entens par là , & par le nom de Morale,non seulement ce que l'on appelle ordinairement ainsi, mais encore le Droit Naturel , & la Politique , en un mot tout ce qui est nécessaire pour savoir de quelle maniére chacun doit se conduire , selon son état & sa condition.",
@@ -77,7 +77,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n31/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac's note does widen 'Morale' (Science des Mœurs) to take in natural law, but Vattel reports a common usage ('on employe souvent') and nothing specific ties it to this note.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 3002,
@@ -96,7 +102,7 @@
    "inNote": true,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "& le Droit Naturel comprend la Théorie des mêmes Devoirs, en tant que nous y sommes obligés envers les autres hommes, comme membres de la societé humaine",
    "source": "Nôtre Auteur déclare ( au commencement dit §. suivant de ce Chap. & dans son Specimen controvers. Cap. V. §. 25. comme aussi dans le Spicilegium controversiarum &c. Cap. I. §. 14 ) qu'il n'a prétendu proprement expliquer ici que les Devoirs mutuels des Hommes.",
@@ -110,7 +116,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n376/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's usage (the same duties viewed as owed to others) only loosely matches Barbeyrac's report that Pufendorf treats only mutual duties; the restricted notion of natural law is common (Pufendorf, Thomasius).",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 3003,
@@ -129,7 +141,7 @@
    "inNote": true,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Mais notre distinction est plus nette & plus commode, & elle renferme tout ; car le Droit Naturel comprend aussi nos Devoirs envers nous-mêmes.",
    "source": "J'avoue pourtant qu'il auroit bien fait de prévenir ces chicanes, en donnant un Traité complet de tous les Devoirs de l'Homme dont on peut connoître la nécessité par les seules lumiéres de la Raison, & qui, aussi, à bien prendre la chose, sont renfermez dans l'idée de la Loi Naturelle.",
@@ -143,7 +155,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n376/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both hold that natural law includes duties to oneself, but Vattel's claim follows from his Wolffian definitions and nothing specific ties it to Barbeyrac's note.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 3004,
@@ -228,7 +246,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Il faut en dire autant de ceux qui rapportent l'institution du droit naturel à une volonté arbitraire de Dieu. Car, dès qu'ils reconnoissentDieu pour un Etre sage, qui n'ordonne rien qu'avec sagesse, ils doivent convenir, que Dieu n'a pu donner que des loix convenables à la nature des choses & particulierement a l'essence & à la nature de l'homme, a qui il en prescrit l'observation ; des loix dont la raison se trouve dans cette essence & dans cette nature.",
    "source": "Car les uns établissent pour prémier principe de ce Droit , la Volonté Divine , qui étant souverainement libre leur donne lieu de conclurre que DIEU peut changer la Loi Naturelle , (1) & ordonner même le contraire , comme cela a lieu en matiére de Loix Positives. Les autres posent pour fondement la Sainteté & la Justice Essentielle de DIEU , lesquelles ne pouvant souffrir aucune altération ni aucun changement , rendent le Droit naturel absolument immuable. A l'égard de la prémiére opinion , je remarque , qu'il a bien dépendu de la Volonté Divine de produire ou de ne pas produire une Créature de telle constitution , que la Loi Naturelle lui convienne nécessairement.",
@@ -242,7 +260,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n352/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both reply to the voluntarist opinion that natural law must suit the nature God gave man, but Pufendorf argues from God's free creation of that constitution, Vattel from God's wisdom; a common anti-voluntarist point.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 3007,
@@ -275,7 +299,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n353/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same objection to the voluntarists: one still has to know how God's will is discovered and why he put 'telle ou telle chose' into natural law.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3008,
@@ -374,7 +403,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n353/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's note to DNG II.3.5 (with Pufendorf's 'il reste encore à savoir par où l'on peut découvrir la Volonté de Dieu') gives the specific argument that voluntarists need a rule drawn from nature to know God's will, so their system does not really differ.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3011,
@@ -506,7 +540,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The motive-determines-the-will thesis of § 11 is the view Barbeyrac's note reports from Bernard/Gastrell ('ne peut être qu'une raison ou un motif ... qui le détermine'), which Vattel in § 26 quotes as identical to his own.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3015,
@@ -539,7 +578,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n174/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Pufendorf's definition of obligation by name, word for word from Barbeyrac's French.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3016,
@@ -572,7 +616,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n174/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Pufendorf's definition of obligation (note cites DNG I.1.21) and faults it for not saying what the moral quality consists in.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3017,
@@ -605,7 +654,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Note 4 to DNG I.6.5 makes the will of a superior the ground of obligation, separate from motives; Vattel names Barbeyrac's notes and rejects exactly this.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3018,
@@ -638,7 +692,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel rejects this note's doctrine that obligation rests on a superior's will, turning its charge of confusion back on Barbeyrac; at § 27 he quotes the note and refers back to this § 18.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3019,
@@ -921,7 +980,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.55,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Mais la société lui étant utile, & même nécessaire, & cette société ne pouvant subsister sans des loix ou des régles générales, observées par tous les membres; il est obligé en vertu de sa propre utilité à les observer.",
    "source": "Ainsi le soin même de nôtre propre conservation nous impose la nécessité d'observer les Devoirs de la Sociabilité, sans la pratique desquels nous ne saurions nous maintenir long-tems en repos & en sûreté.",
@@ -935,7 +994,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n379/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Deriving the obligation to keep social rules from self-interest is a commonplace (Hobbes, Grotius Prol.), and nothing in Vattel's wording points to Pufendorf II.3.16 in particular.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 3028,
@@ -1067,7 +1132,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's note correctly names DNG I.6.5 n. 4, the Barbeyrac note from which he quotes the Bernard/Gastrell passage.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3032,
@@ -1100,7 +1170,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's lead-in reuses Barbeyrac's own words introducing Gastrell ('Anglois ... dans les mêmes idées') immediately before quoting the rest of the note, though he turns the ideas into his own.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3033,
@@ -1133,7 +1208,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of Barbeyrac's summary of Gastrell in note 4 to DNG I.6.5, journal reference included.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3034,
@@ -1166,7 +1246,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word quotation of the objection in Barbeyrac's note 4 to DNG I.6.5, which Vattel introduces as 'dans la même note'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3035,
@@ -1199,7 +1284,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n255/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The closing words of Barbeyrac's note 4 to DNG I.6.5, which Vattel quotes verbatim.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3036,
@@ -1232,7 +1322,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes this note's motive/foundation distinction (utility the motive, the superior's will the foundation) and then attacks it.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3037,
@@ -1265,7 +1360,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n255/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's imagined reply (duty to a legitimate superior survives when punishment cannot follow) is the argument of Barbeyrac's dispossessed-prince example in the same note, which he then rejects.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3038,
@@ -1364,7 +1464,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n362/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's remark on the equivocal term 'utilité' takes up Pufendorf's point on the two senses of 'utile' in DNG II.3.10, whose note 6 he then quotes.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3041,
@@ -1397,7 +1502,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n363/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's note 6 to Pufendorf DNG II.3.10 word for word, naming it as 'cette note de M. Barbeyrac'.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3042,
@@ -1430,7 +1540,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n364/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Word-for-word end of Vattel's quotation of Barbeyrac's note on DNG II.3.10.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3043,
@@ -1463,7 +1578,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n363/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's claim that utility cannot found obligation and answers it by redefining utility as noble, well-understood utility.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3044,
@@ -1496,7 +1616,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n363/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Barbeyrac's note 6 to DNG II.3.10 and then denies that there is any danger in confounding the honest with the useful, the first extreme the note warns against.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3045,
@@ -1529,7 +1654,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n362/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sentence on separating honest and useful (honest things not useful, useful not honest, most pernicious), followed by the same Cicero quotations Barbeyrac gives in note 3 to DNG II.3.10, with its '& constituerit' reading.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3046,
@@ -1562,7 +1692,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n361/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel quotes Cicero exactly as Barbeyrac's note 3 to DNG II.3.10 gives it, with the same two passages (II.3 and III.3) in the same order.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3047,
@@ -1595,7 +1730,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n362/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel copies the two Cicero passages (De Off. II.3 and III.3) that Barbeyrac's note juxtaposes, in the same order and wording.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3048,
@@ -1628,7 +1768,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n361/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Exact Horace line with the reference format of Barbeyrac's note 1 to DNG II.3.10; Vattel's paragraph also takes the two Cicero quotations of note 3 and the 'deux extrémités' note 6 to the same section.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3049,
@@ -1661,7 +1806,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n362/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel translates the Cicero line on Socrates he had quoted in § 30 from Barbeyrac's note 3, including its 'Lib. III. Cap. III.' reference.",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": 3050,
@@ -1680,7 +1830,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "R",
    "passage": "Il ne peut certainement nous y assujettir que par des motifs, capables de fléchir notre volonté. Il pourroit nous forcer, par une action physique : mais ce ne seroit plus nous imposer une obligation, nous n'agirions plus librement.",
    "source": "De plus , toutes les autres choses qui font pancher la Volonté vers l'un des deux côtez opposez , ne la poussent & ne l'entraînent que comme un poids Physique , dont elle n'est pas plûtôt déchargée qu'elle revient d'elle-même à son état naturel d'indifférence. Mais l'Obligation agit moralement sur le Cœur , & le penétre d'un sentiment particulier qui force les Hommes à blâmer euxmêmes leur propre conduite , & à se juger dignes de châtiment lors qu'ils ne se sont pas conformez à la Régle prescrite : motif qui seul est capable de donner à l'Obligation assez de force pour fléchir la Volonté.",
@@ -1694,7 +1844,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say obligation works morally on a free will through motives, not by physical force, and share 'fléchir la volonté', but Pufendorf's point is self-condemnation, and the moral/physical contrast was common stock by 1747.",
+    "date": "2026-11-20",
+    "statusWas": "match"
+   }
   },
   {
    "id": 3051,

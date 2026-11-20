@@ -146,3 +146,20 @@ Of the reuse the reader would defend (confidence 0.5 or more), the tables hold a
 
 The reuse the readers found and no row covered is added: 150 rows, 76 match and 74 possible (step C). The readers judged two rows wrong (4022, Grotius; 1479, Wolff § 700); they have status `rejected`.
 
+## Vattel, Essai sur le fondement du droit naturel: second reading (2026-11-20)
+
+`essai-second-reading-2026-11-20.json` holds every verdict.
+
+The rows of the *Essai* were written by readers (Claude Opus) who read each section with its sources. A second reader (Claude Opus, `tools/transcription/VERIFY_PROMPT_ESSAI.md`, the task of the precision audit) read every match row: 198 rows.
+
+| Table | Match rows | Right | Weak | Wrong |
+|---|---|---|---|---|
+| Wolff, *Philosophia practica universalis* I | 53 | 46 | 7 | 0 |
+| Barbeyrac's *Devoirs* (Leibniz's *Jugement*, Barbeyrac's *Réflexions*) | 62 | 58 | 4 | 0 |
+| Burlamaqui 1747 | 32 | 24 | 8 | 0 |
+| Barbeyrac's Pufendorf | 30 | 24 | 6 | 0 |
+| Barbeyrac's Grotius | 21 | 18 | 3 | 0 |
+| All | 198 | 170 (86%) | 28 | 0 |
+
+Weak rows rest on stock vocabulary or doctrine (the Roman-law definition of obligation, "parvenir à la connoissance"), or on a passage that has a closer source elsewhere (Wolff's *Theologia naturalis* I § 950, which Vattel cites and the corpus lacks). Applied (Essai 1.0): weak rows have status possible, 7 labels are changed, every read row carries `audit`. The 135 rows the first readers rated possible were not read again.
+
