@@ -104,7 +104,7 @@ const ctitle=c=>{const d=DIVS[c.book]||{};return d.chapters?(TITLES[c.key]||''):
 const visRow=r=>st.src&&st.fams[r.fam]&&shown(r);
 function famDots(s){const c={};(rowsBySec[s.id]||[]).filter(visRow).forEach(r=>c[r.fam]=(c[r.fam]||0)+1);return FAMS.filter(f=>c[f[0]]).map(f=>`<span style="--c:var(--f${f[0]})" title="${esc(f[1])}: ${c[f[0]]}">${f[0]} ${c[f[0]]}</span>`).join('')}
 // edition menu
-function edMenu(){const s=$('edSel');s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}" title="${esc(e.author+', '+e.title+', '+e.date)}"${e.id===ED?' selected':''}>${esc((e.authorShort||e.author)+' '+e.date)}</option>`).join('');const E=edEntry(ED);if(E)s.title=`${E.author}, ${E.title} (${E.date})`;
+function edMenu(){const s=$('edSel');s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}" title="${esc(e.author+', '+e.title+', '+e.date)}"${e.id===ED?' selected':''}>${esc(e.menu||((e.authorShort||e.author)+' '+e.date))}</option>`).join('');const E=edEntry(ED);if(E)s.title=`${E.author}, ${E.title} (${E.date})`;
  if(!edEntry(ED))s.insertAdjacentHTML('afterbegin','<option value="" selected>Choose an edition</option>');
  $('brand').textContent=CAT.title||'Natural Law Editions';
  s.onchange=()=>{if(!s.value)return;const q=new URLSearchParams(location.search);q.set('ed',s.value);location.href='?'+q.toString()+location.hash}}

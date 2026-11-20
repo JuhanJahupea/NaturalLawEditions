@@ -13,7 +13,8 @@
       "imprint": "Neuchâtel: Société typographique, 1773",
       "date": "1773",
       "lang": "fr",
-      "status": "working edition"
+      "status": "working edition",
+      "menu": "Vattel, Droit des gens 1773"
     },
     {
       "id": "burlamaqui-1747",
@@ -26,6 +27,19 @@
       "date": "1747",
       "lang": "fr",
       "status": "working edition"
+    },
+    {
+      "id": "vattel-essai-1747",
+      "path": "editions/vattel-essai-1747/",
+      "author": "Emer de Vattel",
+      "authorShort": "Vattel",
+      "title": "Essai sur le fondement du droit naturel, et sur le premier principe de l'obligation où se trouvent tous les hommes, d'en observer les loix",
+      "short": "Essai sur le fondement du droit naturel · 1747",
+      "imprint": "In Le loisir philosophique, ou pièces diverses de philosophie, de morale et d'amusement. Dresde: George Conrad Walther, 1747, pp. 3–70",
+      "date": "1747",
+      "lang": "fr",
+      "status": "working edition",
+      "menu": "Vattel, Essai 1747"
     }
   ],
   "texts": [

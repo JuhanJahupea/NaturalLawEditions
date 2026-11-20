@@ -1,0 +1,109 @@
+{
+  "format": "nle-edition/1",
+  "id": "vattel-essai-1747",
+  "version": "0.1",
+  "changed": "2026-11-20",
+  "author": "Emer de Vattel",
+  "title": "Essai sur le fondement du droit naturel, et sur le premier principe de l'obligation où se trouvent tous les hommes, d'en observer les loix",
+  "short": "Essai sur le fondement du droit naturel · 1747",
+  "imprint": "In Le loisir philosophique, ou pièces diverses de philosophie, de morale et d'amusement. Dresde: George Conrad Walther, 1747, pp. 3–70",
+  "date": "1747",
+  "lang": "fr",
+  "witness": {
+    "copy": "BCU Lausanne copy, Google Books scan (id 130TAAAAQAAJ), 332 PDF pages",
+    "contents": "Essai, pdf 19–86, printed pp. 3–70: title and §§ 1–41 (the print has no § 28 and no § 32)"
+  },
+  "transcription": "Vision transcription of the page images, one diplomatic file per scan (texts/vattel-loisir-1747/LOI47.json); reading text with long s resolved and line-end hyphens joined. Catchwords, running heads and signatures are left out.",
+  "text": "text.json",
+  "titlePage": "titlepage.json",
+  "aliases": {},
+  "divisions": [
+    {
+      "key": "E",
+      "label": "Essai",
+      "chapterTitle": "Essai sur le fondement du droit naturel",
+      "unitLabel": "§ {n}",
+      "unitMark": "§",
+      "cite": "{prefix}, § {n}{page}."
+    }
+  ],
+  "layers": [
+    {
+      "id": "english",
+      "file": "layers/english.json",
+      "kind": "translation",
+      "label": "English",
+      "panelNote": "Hochstrasser's translation (Liberty Fund, 2008), p. {page}, made from the 1863 reprint. Sentence alignment by machine.",
+      "toggle": false
+    }
+  ],
+  "reuse": {
+    "baseTag": "Vattel",
+    "sourceLabel": "source (transcription)",
+    "frenchLabel": "working French",
+    "noteLabel": "(Barbeyrac's note)",
+    "partLabels": {
+      "reflexions": "(Barbeyrac, Réflexions on Leibniz)",
+      "discours": "(Discours)",
+      "jugement": "(Leibniz, Jugement)"
+    },
+    "families": [
+      {
+        "key": "W",
+        "label": "Wolff",
+        "sourceLabel": "Wolff (Latin)",
+        "color": "#b5462f",
+        "dark": "#f08a72"
+      },
+      {
+        "key": "P",
+        "label": "Pufendorf",
+        "color": "#2c4f86",
+        "dark": "#8fb0ea"
+      },
+      {
+        "key": "Bb",
+        "label": "Barbeyrac",
+        "color": "#8a5a00",
+        "dark": "#e3b65a"
+      },
+      {
+        "key": "Lz",
+        "label": "Leibniz",
+        "color": "#7a7a74",
+        "dark": "#a9aaa4"
+      },
+      {
+        "key": "G",
+        "label": "Grotius",
+        "color": "#2f6b4f",
+        "dark": "#7cc4a0"
+      },
+      {
+        "key": "Bu",
+        "label": "Burlamaqui",
+        "color": "#7a3e8f",
+        "dark": "#c69ad2"
+      }
+    ]
+  },
+  "viewer": {
+    "brand": "Essai sur le fondement du droit naturel · 1747",
+    "start": "E.1",
+    "searchPlaceholder": "Search, or go to § 13",
+    "unitsWord": "§§",
+    "citePrefix": "Vattel, « Essai sur le fondement du droit naturel », Le loisir philosophique (Dresde 1747)",
+    "citePage": ", p. {printed}",
+    "pageLink": {
+      "url": "https://books.google.com/books?id=130TAAAAQAAJ&pg=PA{printed}",
+      "title": "Open the Google Books scan at p. {printed}"
+    },
+    "pageBreak": " <span class=\"pb\" data-pg=\"{scan}\">p. {printed}</span> ",
+    "goto": [
+      {
+        "re": "^(?:§\\s*)?(\\d+)$",
+        "id": "E.{1}"
+      }
+    ]
+  }
+}
