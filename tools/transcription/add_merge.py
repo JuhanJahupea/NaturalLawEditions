@@ -27,6 +27,11 @@ LABELS = {'translation', 'verbatim', 'close paraphrase', 'loose paraphrase', 'sh
 PG = {}
 for k in ('JG', 'INST'): PG.update({p['id']: (k, p) for p in json.load(open('%s/srcp/%s.json' % (S, k)))['pages']})
 for k in ('GRO24', 'PUF34'): PG.update({p['id']: (k, p) for p in json.load(open('%s/corpus/%s.json' % (S, k)))['pages']})
+# Wolff's Praefatio and Prolegomena from the second copy (texts/wolff-jus-gentium-1749/WJG_praef_prol.json): a page per unit, read with
+# long s as s, italics dropped and line breaks as spaces (the form of the table's Praefatio rows); page ids WJG.Praef.<n> name the Praefatio
+for u in json.load(open(R + '/texts/wolff-jus-gentium-1749/WJG_praef_prol.json'))['units']:
+    t = re.sub(r' +', ' ', re.sub(r'</?i>', '', u['text'].replace('ſ', 's')).replace('\n', ' ')).strip()
+    PG[u['id']] = ('JG', {'id': u['id'], 'text': t, 'margin': [], 'starts': [], 'carried': None, 'wjg': u['part'], 'para': u['para']})
 # Burlamaqui: the burlamaqui-1747 edition; a page is a unit id (P1.6.9)
 ROMAN = lambda n: ['', 'I', 'II', 'III', 'IV'][n]
 def roman(n):
@@ -59,6 +64,9 @@ def place(u, passage):
 
 def source(k, p, sp):
     """(locus, family, inNote, quoted text) of a source passage on its page, or None."""
+    if p.get('wjg'):
+        f = find(p['text'], sp)
+        return (('Prolegomena §. %d' % p['para']) if p['wjg'] == 'Prol' else '', 'W', False, p['text'][f[0]:f[1]]) if f else None
     if k in ('JG', 'INST'):
         f = find(p['text'], sp)
         if not f:
@@ -122,7 +130,7 @@ for it in items:
     if it.get('label') not in LABELS: fails['label'] += 1; failed.append(it); continue
     at, vp = place(u, it.get('passage', ''))
     if at is None: fails['passage'] += 1; failed.append(it); continue
-    pg = PG.get(it.get('page'))
+    pg = PG.get(it.get('page')) or (PG.get('WJG.Praef') if str(it.get('page', '')).startswith('WJG.Praef') else None)
     if not pg or pg[0] != k: fails['page'] += 1; failed.append(it); continue
     if k == 'BUR47':
         s = bur_source(pg[1], it.get('source_passage', ''))
@@ -134,12 +142,12 @@ for it in items:
     p = pg[1]
     row = {'table': TABLE[k], 'unit': u['id'], 'at': at}
     if not at: row['where'] = 'margin'
-    row.update({'family': fam, 'work': WORK[k], 'locus': loc, 'page': bpage if k == 'BUR47' else p['id'], 'inNote': innote, 'label': it['label'], 'confidence': conf,
+    row.update({'family': fam, 'work': WORK[k], 'locus': loc, 'page': bpage if k == 'BUR47' else (it['page'] if p.get('wjg') else p['id']), 'inNote': innote, 'label': it['label'], 'confidence': conf,
                 'status': 'match' if conf >= 0.5 else 'possible', 'step': it['_from'], 'passage': vp, 'source': sp})
     if k in ('JG', 'INST'):
         if it.get('french'): row['french'] = it['french']
         row['reason'] = it.get('reason', '')
-        row['links'] = [['PDF p. %d' % p['scan'], 'file:///C:/PhD_library/vattel-reuse/sources/%s#page=%d' % (PDF[k], p['scan'])]]
+        row['links'] = [] if p.get('wjg') else [['PDF p. %d' % p['scan'], 'file:///C:/PhD_library/vattel-reuse/sources/%s#page=%d' % (PDF[k], p['scan'])]]
     elif k == 'BUR47':
         row['reason'] = it.get('reason', ''); scan = int(bpage.split('.p')[1])
         row['links'] = [['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/XKNMUHV3?page=%d' % scan]]
