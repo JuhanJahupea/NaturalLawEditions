@@ -101,6 +101,10 @@ for c in cat['reuse']:
     if c['from'] != ED or c['to'] not in TABLE.values(): continue
     for r in json.load(open(R + '/' + c['path']))['rows']:
         if r['status'] != 'rejected': have[(r['unit'], c['to'])].append(r)
+# with --append, the rows <out> already holds count as well (the tables may not have been rebuilt since)
+if APPEND and os.path.exists(out):
+    for r in json.load(open(out))['rows']:
+        if r['status'] != 'rejected': have[(r['unit'], r['table'])].append(r)
 def dup(row):
     for o in have[(row['unit'], TABLE[row['_k']])]:
         if o.get('page') == row['page'] and o['at'] and row['at'] and o['at'][0][0] == row['at'][0][0]:
