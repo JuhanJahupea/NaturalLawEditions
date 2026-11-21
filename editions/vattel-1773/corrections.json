@@ -880,6 +880,14 @@
    }
   },
   {
+   "id": 126,
+   "locus": "§ 38",
+   "locusCheck": {
+    "was": "§ 29",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 134,
    "locus": "§ 243",
    "locusCheck": {
@@ -917,6 +925,14 @@
    "locusCheck": {
     "was": "§ 187",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 182,
+   "locus": "§ 78",
+   "locusCheck": {
+    "was": "§ 1024",
+    "date": "2026-11-21"
    }
   },
   {
@@ -1009,6 +1025,19 @@
     "verdict": "right",
     "reason": "Wolff's definition of a nation's glory (praise of the good and expert, earned by intellectual and moral virtues and their deeds) with the same double source, nation and citizens.",
     "date": "2026-11-18"
+   },
+   "locus": "§ 48",
+   "locusCheck": {
+    "was": "§ 43",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": 259,
+   "locus": "§ 1096",
+   "locusCheck": {
+    "was": "§ 125",
+    "date": "2026-11-21"
    }
   },
   {
@@ -1184,6 +1213,14 @@
    }
   },
   {
+   "id": 352,
+   "locus": "§ 106",
+   "locusCheck": {
+    "was": "§ 78",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 377,
    "locus": "§ 346",
    "locusCheck": {
@@ -1269,6 +1306,14 @@
     "verdict": "right",
     "reason": "Same Wolffian prohibition on hindering another nation from attaining the end of civil society, with near-identical structure.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 430,
+   "locus": "§ 266",
+   "locusCheck": {
+    "was": "§ 264",
+    "date": "2026-11-21"
    }
   },
   {
@@ -1474,6 +1519,14 @@
    }
   },
   {
+   "id": 522,
+   "locus": "§ 1063",
+   "locusCheck": {
+    "was": "§ 303",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 523,
    "locus": "§ 599",
    "locusCheck": {
@@ -1490,11 +1543,27 @@
    }
   },
   {
+   "id": 525,
+   "locus": "§ 627",
+   "locusCheck": {
+    "was": "§ 1102",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 536,
    "audit": {
     "verdict": "right",
     "reason": "Same argument that ceding uncultivated land to incoming settlers is both a benefit to them and a gain in population and power for the nation.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 538,
+   "locus": "§ 87",
+   "locusCheck": {
+    "was": "§ 7",
+    "date": "2026-11-21"
    }
   },
   {
@@ -1578,6 +1647,14 @@
    }
   },
   {
+   "id": 573,
+   "locus": "§ 1138",
+   "locusCheck": {
+    "was": "§ 1131",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 576,
    "audit": {
     "verdict": "right",
@@ -1657,6 +1734,11 @@
     "verdict": "right",
     "reason": "Wolff's specific doctrine that the owner nation judges whether a use is innocent and others must defer; Vattel adds that reasons must be given (the passage is in JG § 349, not § 55).",
     "date": "2026-11-18"
+   },
+   "locus": "§ 349",
+   "locusCheck": {
+    "was": "§ 55",
+    "date": "2026-11-21"
    }
   },
   {
@@ -1745,6 +1827,14 @@
    "locusCheck": {
     "was": "§ 3",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 651,
+   "locus": "§ 359",
+   "locusCheck": {
+    "was": "§ 1054",
+    "date": "2026-11-21"
    }
   },
   {
@@ -2017,6 +2107,14 @@
    }
   },
   {
+   "id": 799,
+   "locus": "§ 1149",
+   "locusCheck": {
+    "was": "§ 442",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 803,
    "locus": "§ 488",
    "locusCheck": {
@@ -2124,6 +2222,14 @@
    "locusCheck": {
     "was": "§ 509",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 836,
+   "locus": "§ 537",
+   "locusCheck": {
+    "was": "§ 24",
+    "date": "2026-11-21"
    }
   },
   {
@@ -2248,6 +2354,14 @@
    }
   },
   {
+   "id": 912,
+   "locus": "§ 764",
+   "locusCheck": {
+    "was": "§ 438",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 915,
    "status": "possible",
    "audit": {
@@ -2366,6 +2480,14 @@
    }
   },
   {
+   "id": 960,
+   "locus": "§ 608",
+   "locusCheck": {
+    "was": "§ 4",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 978,
    "locus": "§ 762",
    "locusCheck": {
@@ -2406,6 +2528,14 @@
    }
   },
   {
+   "id": 997,
+   "locus": "§ 800",
+   "locusCheck": {
+    "was": "§ 759",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 999,
    "locus": "§ 776",
    "locusCheck": {
@@ -2427,6 +2557,14 @@
     "verdict": "right",
     "reason": "Vattel translates Wolff's threefold end of war and its offensive/defensive allocation almost word for word.",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1009,
+   "locus": "§ 628",
+   "locusCheck": {
+    "was": "§ 240",
+    "date": "2026-11-21"
    }
   },
   {
@@ -2626,6 +2764,14 @@
    }
   },
   {
+   "id": 1126,
+   "locus": "§ 736",
+   "locusCheck": {
+    "was": "§ 730",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 1127,
    "locus": "§ 736",
    "locusCheck": {
@@ -2655,6 +2801,14 @@
    "locusCheck": {
     "was": "§ 71",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1157,
+   "locus": "§ 834",
+   "locusCheck": {
+    "was": "§ 295",
+    "date": "2026-11-21"
    }
   },
   {
@@ -2887,6 +3041,14 @@
    }
   },
   {
+   "id": 1254,
+   "locus": "§ 800",
+   "locusCheck": {
+    "was": "§ 759",
+    "date": "2026-11-21"
+   }
+  },
+  {
    "id": 1255,
    "locus": "§ 903",
    "locusCheck": {
@@ -3004,6 +3166,14 @@
     "verdict": "right",
     "reason": "Same a fortiori rule for truces: much less may one solicit the enemy's garrisons or subjects to defect.",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1314,
+   "locus": "§ 922",
+   "locusCheck": {
+    "was": "§ 918",
+    "date": "2026-11-21"
    }
   },
   {
@@ -3178,6 +3348,11 @@
     "verdict": "right",
     "reason": "Same specific rule as Wolff: a peace treaty may include stipulations unrelated to the war only if they are expressly stated.",
     "date": "2026-11-17"
+   },
+   "locus": "§ 1005",
+   "locusCheck": {
+    "was": "§ 986",
+    "date": "2026-11-21"
    }
   },
   {
@@ -3267,6 +3442,22 @@
     "reason": "JG § 700 concerns which of several territories must let an army pass; Vattel's a fortiori from private travellers to ministers shares only the generic term 'passage innocent' (the real Wolffian parallel is § 1064).",
     "date": "2026-11-18",
     "statusWas": "possible"
+   }
+  },
+  {
+   "id": 1481,
+   "locus": "§ 808",
+   "locusCheck": {
+    "was": "§ 572",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": 1483,
+   "locus": "§ 1064",
+   "locusCheck": {
+    "was": "§ 1044",
+    "date": "2026-11-21"
    }
   },
   {
