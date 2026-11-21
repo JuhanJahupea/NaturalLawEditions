@@ -1,6 +1,7 @@
 # add_merge.py <work> <first id> <date> <out> <kind:dir> [<kind:dir> ...] [--append]: rows written by the additions readers
 # (ADD_PROMPT.md, kind A: dir/out/*.json {"rows"}), the recall readers (RECALL_PROMPT.md, kind C: rows found and not covered)
-# and the readers of the 1773 additions (ADDITIONS_1773_PROMPT.md, kind V: items[].found, rows not covered) -> rows of
+# the readers of the 1773 additions (ADDITIONS_1773_PROMPT.md, kind V: items[].found, rows not covered) and the full pass
+# (FULL_PASS_PROMPT.md, kind F: as kind C) -> rows of
 # editions/vattel-1773/passes/additions.json. --append: keep the rows <out> already has and add the new ones after them. Each passage is placed on the unit's text, notes or margin, each source passage
 # on its page; the locus, family, page and links come from the page. Rows that fail, and rows a table already has, are reported.
 import sys, os, re, json, glob, collections
@@ -113,7 +114,7 @@ for kind, d in srcs:
         else:
             for s in O.get('sections', []):
                 for r in s.get('found', []):
-                    if r.get('covered_by') is None: items.append(dict(r, unit=r.get('unit', s['unit']), _from='C', _file=os.path.basename(f)))
+                    if r.get('covered_by') is None: items.append(dict(r, unit=r.get('unit', s['unit']), _from=kind, _file=os.path.basename(f)))
 rows = []; fails = collections.Counter(); failed = []; dups = []
 for it in items:
     k = it.get('text'); u = units.get(it.get('unit'))
@@ -165,6 +166,7 @@ P = {'format': 'nle-additions/1', 'edition': ED, 'date': date,
      'description': 'Rows added to the reuse tables after the audits, judged by Claude Opus on the transcriptions. Each row names its table.',
      'steps': {'A': 'Additions: the passage of Wolff or Grotius that an audit reader named as the one Vattel follows (audit/README.md)',
                'C': 'Recall check: reuse a reader found in a random sample of sections that no row covered (audit/README.md)',
+               'F': 'Full pass: Claude Opus read every section with the §§ of the Jus gentium it follows and pages of Barbeyrac\'s Pufendorf, and wrote the reuse no row covered (audit/README.md)',
                'V': 'Reading of the passages added in 1773: Claude Opus read each addition (layer changes-1773) with Wolff, Grotius, Pufendorf and Burlamaqui (audit/README.md)'},
      'rows': rows}
 json.dump(P, open(out, 'w'), ensure_ascii=False, indent=1)
