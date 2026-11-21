@@ -1,6 +1,7 @@
 # add_merge.py <work> <first id> <date> <out> <kind:dir> [<kind:dir> ...] [--append]: rows written by the additions readers
 # (ADD_PROMPT.md, kind A: dir/out/*.json {"rows"}), the recall readers (RECALL_PROMPT.md, kind C: rows found and not covered)
-# and the readers of the 1773 additions (ADDITIONS_1773_PROMPT.md, kind V: items[].found, rows not covered) -> rows of
+# the readers of the 1773 additions (ADDITIONS_1773_PROMPT.md, kind V: items[].found, rows not covered) and the full pass
+# (FULL_PASS_PROMPT.md, kind F: as kind C) -> rows of
 # editions/vattel-1773/passes/additions.json. --append: keep the rows <out> already has and add the new ones after them. Each passage is placed on the unit's text, notes or margin, each source passage
 # on its page; the locus, family, page and links come from the page. Rows that fail, and rows a table already has, are reported.
 import sys, os, re, json, glob, collections
@@ -26,6 +27,11 @@ LABELS = {'translation', 'verbatim', 'close paraphrase', 'loose paraphrase', 'sh
 PG = {}
 for k in ('JG', 'INST'): PG.update({p['id']: (k, p) for p in json.load(open('%s/srcp/%s.json' % (S, k)))['pages']})
 for k in ('GRO24', 'PUF34'): PG.update({p['id']: (k, p) for p in json.load(open('%s/corpus/%s.json' % (S, k)))['pages']})
+# Wolff's Praefatio and Prolegomena from the second copy (texts/wolff-jus-gentium-1749/WJG_praef_prol.json): a page per unit, read with
+# long s as s, italics dropped and line breaks as spaces (the form of the table's Praefatio rows); page ids WJG.Praef.<n> name the Praefatio
+for u in json.load(open(R + '/texts/wolff-jus-gentium-1749/WJG_praef_prol.json'))['units']:
+    t = re.sub(r' +', ' ', re.sub(r'</?i>', '', u['text'].replace('ſ', 's')).replace('\n', ' ')).strip()
+    PG[u['id']] = ('JG', {'id': u['id'], 'text': t, 'margin': [], 'starts': [], 'carried': None, 'wjg': u['part'], 'para': u['para']})
 # Burlamaqui: the burlamaqui-1747 edition; a page is a unit id (P1.6.9)
 ROMAN = lambda n: ['', 'I', 'II', 'III', 'IV'][n]
 def roman(n):
@@ -58,6 +64,9 @@ def place(u, passage):
 
 def source(k, p, sp):
     """(locus, family, inNote, quoted text) of a source passage on its page, or None."""
+    if p.get('wjg'):
+        f = find(p['text'], sp)
+        return (('Prolegomena §. %d' % p['para']) if p['wjg'] == 'Prol' else '', 'W', False, p['text'][f[0]:f[1]]) if f else None
     if k in ('JG', 'INST'):
         f = find(p['text'], sp)
         if not f:
@@ -92,6 +101,10 @@ for c in cat['reuse']:
     if c['from'] != ED or c['to'] not in TABLE.values(): continue
     for r in json.load(open(R + '/' + c['path']))['rows']:
         if r['status'] != 'rejected': have[(r['unit'], c['to'])].append(r)
+# with --append, the rows <out> already holds count as well (the tables may not have been rebuilt since)
+if APPEND and os.path.exists(out):
+    for r in json.load(open(out))['rows']:
+        if r['status'] != 'rejected': have[(r['unit'], r['table'])].append(r)
 def dup(row):
     for o in have[(row['unit'], TABLE[row['_k']])]:
         if o.get('page') == row['page'] and o['at'] and row['at'] and o['at'][0][0] == row['at'][0][0]:
@@ -113,7 +126,7 @@ for kind, d in srcs:
         else:
             for s in O.get('sections', []):
                 for r in s.get('found', []):
-                    if r.get('covered_by') is None: items.append(dict(r, unit=r.get('unit', s['unit']), _from='C', _file=os.path.basename(f)))
+                    if r.get('covered_by') is None: items.append(dict(r, unit=r.get('unit', s['unit']), _from=kind, _file=os.path.basename(f)))
 rows = []; fails = collections.Counter(); failed = []; dups = []
 for it in items:
     k = it.get('text'); u = units.get(it.get('unit'))
@@ -121,7 +134,7 @@ for it in items:
     if it.get('label') not in LABELS: fails['label'] += 1; failed.append(it); continue
     at, vp = place(u, it.get('passage', ''))
     if at is None: fails['passage'] += 1; failed.append(it); continue
-    pg = PG.get(it.get('page'))
+    pg = PG.get(it.get('page')) or (PG.get('WJG.Praef') if str(it.get('page', '')).startswith('WJG.Praef') else None)
     if not pg or pg[0] != k: fails['page'] += 1; failed.append(it); continue
     if k == 'BUR47':
         s = bur_source(pg[1], it.get('source_passage', ''))
@@ -133,12 +146,12 @@ for it in items:
     p = pg[1]
     row = {'table': TABLE[k], 'unit': u['id'], 'at': at}
     if not at: row['where'] = 'margin'
-    row.update({'family': fam, 'work': WORK[k], 'locus': loc, 'page': bpage if k == 'BUR47' else p['id'], 'inNote': innote, 'label': it['label'], 'confidence': conf,
+    row.update({'family': fam, 'work': WORK[k], 'locus': loc, 'page': bpage if k == 'BUR47' else (it['page'] if p.get('wjg') else p['id']), 'inNote': innote, 'label': it['label'], 'confidence': conf,
                 'status': 'match' if conf >= 0.5 else 'possible', 'step': it['_from'], 'passage': vp, 'source': sp})
     if k in ('JG', 'INST'):
         if it.get('french'): row['french'] = it['french']
         row['reason'] = it.get('reason', '')
-        row['links'] = [['PDF p. %d' % p['scan'], 'file:///C:/PhD_library/vattel-reuse/sources/%s#page=%d' % (PDF[k], p['scan'])]]
+        row['links'] = [] if p.get('wjg') else [['PDF p. %d' % p['scan'], 'file:///C:/PhD_library/vattel-reuse/sources/%s#page=%d' % (PDF[k], p['scan'])]]
     elif k == 'BUR47':
         row['reason'] = it.get('reason', ''); scan = int(bpage.split('.p')[1])
         row['links'] = [['Zotero p. %d' % scan, 'zotero://open-pdf/library/items/XKNMUHV3?page=%d' % scan]]
@@ -165,6 +178,7 @@ P = {'format': 'nle-additions/1', 'edition': ED, 'date': date,
      'description': 'Rows added to the reuse tables after the audits, judged by Claude Opus on the transcriptions. Each row names its table.',
      'steps': {'A': 'Additions: the passage of Wolff or Grotius that an audit reader named as the one Vattel follows (audit/README.md)',
                'C': 'Recall check: reuse a reader found in a random sample of sections that no row covered (audit/README.md)',
+               'F': 'Full pass: Claude Opus read every section with the §§ of the Jus gentium it follows and pages of Barbeyrac\'s Pufendorf, and wrote the reuse no row covered (audit/README.md)',
                'V': 'Reading of the passages added in 1773: Claude Opus read each addition (layer changes-1773) with Wolff, Grotius, Pufendorf and Burlamaqui (audit/README.md)'},
      'rows': rows}
 json.dump(P, open(out, 'w'), ensure_ascii=False, indent=1)

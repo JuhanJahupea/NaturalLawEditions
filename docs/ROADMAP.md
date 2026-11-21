@@ -4,9 +4,9 @@ Planned work, in order of priority. Each item names what it would add and how to
 
 ## Vattel 1773
 
-1. A full Wolff *Jus gentium* pass. Vattel follows *Jus gentium* in Wolff's order. Read each Vattel section side by side with the § of Wolff it follows, and add the reuse the tables miss. The recall check of 2026-11-18 (`audit/README.md`) found that the tables hold about half of the defensible reuse of *Jus gentium* and about a quarter of that of the *Institutiones*.
-2. A Pufendorf pass on Barbeyrac's notes and Pufendorf's examples. Recall is lowest there: about a fifth of the defensible reuse of Pufendorf is in the tables. The misses are mostly Pufendorf's examples and Barbeyrac's notes used beside Grotius.
-3. A precision check of the 341 rows added on 2026-11-18 (`editions/vattel-1773/passes/additions.json`). Each was judged by one reader. A random sample read by a second reader would measure them, as `audit/precision-2026-11-18.json` did for the older rows.
+1. A full pass with Grotius (Barbeyrac's translation) and with the *Institutiones*, as done for the *Jus gentium* and Pufendorf on 2026-11-21 (`tools/transcription/full_cand.py`, `FULL_PASS_PROMPT.md`). The Grotius table comes from retrieval only; the *Institutiones* hold about a quarter of the reuse a reader finds.
+2. The possible rows of the full pass (1,657). A second reader rated a third of a sample right and most of the rest weak. Read them all and promote the right ones, as was done for the Essai.
+3. A recall check after the full pass: the same 24 random sections as on 2026-11-18, to measure what the tables now hold.
 4. Sources of the 1773 additions. Most additions take their examples from works the corpus lacks: Grotius, *Annales et historiae de rebus Belgicis* (10 additions), the *Lettres et négociations* of Jean de Witt (8), *Histoire de Timur-Bec* (5), Mariana, *De rege* (4). Transcribing the passages cited would let a pass test them (`audit/additions-1773-2026-11-20.json`).
 5. Words hyphenated over a page break keep their hyphen in `text.json` ("quel-que"): 180 in Vattel 1773, 67 in Burlamaqui. Join them where the joined word occurs elsewhere in the edition, as `tools/transcription/essai_data.py` does for the Essai.
 

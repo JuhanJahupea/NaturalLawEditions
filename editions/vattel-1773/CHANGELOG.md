@@ -2,6 +2,14 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.19 (2026-11-21)
+
+- A full pass with Wolff's *Jus gentium* and Barbeyrac's Pufendorf (step F in `passes/additions.json`, `audit/README.md`). Claude Opus read every section, each beside the §§ of the *Jus gentium* it follows and pages of Pufendorf with Barbeyrac's notes, and listed the reuse no row covered. 3,260 rows on 978 of 1,124 sections: *Jus gentium* 1,773 (1,119 match), Pufendorf 1,485 (482 match; 420 of them in Barbeyrac's notes). The *Jus gentium* table holds 3,153 rows (was 1,370), the Pufendorf table 2,125 (was 626).
+- A second reader checked a random sample of the new rows: of 80 match rows, 71 right (89%, 80–94), 9 weak, none wrong; of 40 possible rows, 13 right, 25 weak, 2 wrong. The readers of the pass judged 49 existing rows wrong; the second reader agreed for 11 (now `rejected`) and found 34 weak. Read rows carry `audit`.
+- The 403 rows added before (steps A, C, V) were read again: of 230 match rows, 215 right (93%, 90–96), 15 weak (now possible), none wrong; of 173 possible rows, 71 right (now match), 96 weak, 6 wrong (now rejected). 37 labels changed (`audit/additions-second-reading-2026-11-21.json`).
+- 25 Wolff rows named a § that their source passage only cites; each now names the § where the passage stands (`locusCheck` keeps the old one). `tools/transcription/wolff_loci2.py` places the rows of the old text layer (et/&, ae, j/i, v/u).
+- Match rows: 2,542 → 4,196. The edition holds 8,059 reuse rows.
+
 ## 1.18 (2026-11-20)
 
 - Page breaks: the working edition dropped the space between the two words around a break, so the text read "deleur" for "de leur". 446 spaces restored (`tools/migrate_pb_spaces.py`). The offsets of 511 pass rows and 2 attributions moved with the text; passages now read with their spaces. A word hyphenated over a page keeps its hyphen ("quel-que"), as before.
