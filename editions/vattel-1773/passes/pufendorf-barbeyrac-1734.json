@@ -540,6 +540,12 @@
     "confidence": 0.45,
     "reason": "The sentence is Vattel's translation of Wolff's preface ('Jus Gentium indubitate Juris naturae est'), and the claim that the law of nations belongs to natural law is stock; Vattel uses this Pufendorf/Hobbes passage at Pref.6-7, not here.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "The passage is Vattel's translation of Wolff's Praefatio; Pufendorf's report of Hobbes shares only the stock identification of the law of nations with natural law.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel is translating Wolff's Praefatio ('sicque Jus Gentium indubitate Juris naturæ est', row 3365); Hobbes's sentence in Pufendorf II.3.23 is not its source."
    }
   },
   {
@@ -944,6 +950,12 @@
     "confidence": 0.55,
     "reason": "The near-identical phrase 'loix de la société que la nature a établie' is a stock formula (Wolff's 'societas quam natura inter homines constituit', Cicero), and Vattel uses it in his own argument about repressing violators, unrelated to the Rhodian corn-merchant case.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Near-verbatim stock formula ('les loix de la société que la nature a établie entre...') in unrelated arguments (Cicero's Rhodes merchant vs. repressing violators of the law of nations); a commonplace, as labelled.",
+    "date": "2026-11-21",
+    "flaggedBy": "Phrase match only: the Pufendorf passage is Antipater's line in Cicero's Rhodes grain-merchant dialogue (V.iii.4); 'les loix de la société que la nature a établie' is a stock formula and the arguments are unrelated."
    }
   },
   {
@@ -1654,7 +1666,7 @@
    "inNote": false,
    "label": "commonplace",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "T",
    "passage": "Salus populi suprema lex, le salut du peuple est la loi suprême",
    "source": "Bien du Peuple est la Souveraine Loi",
@@ -1669,7 +1681,14 @@
      "https://archive.org/details/ledroitdelanatur02pufe/page/n428/mode/1up"
     ]
    ],
-   "quoting": "Cicero, De legibus"
+   "quoting": "Cicero, De legibus",
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both only cite the maxim salus populi suprema lex; Pufendorf uses it of the sovereign's duties in general, Vattel of changing the order of succession.",
+    "date": "2026-11-21",
+    "flaggedBy": "Commonplace maxim from Cicero; Vattel quotes the Latin and renders it 'le salut du peuple est la loi suprême', not Barbeyrac's 'Bien du Peuple est la Souveraine Loi'. No wording or argument specific to Pufendorf.",
+    "statusWas": "match"
+   }
   },
   {
    "id": 6043,
@@ -3922,7 +3941,7 @@
    "inNote": false,
    "label": "commonplace",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "rejected",
    "step": "T",
    "passage": "Le lit abandonné accroît par moitié aux terres contigues de part & d'autre , si elles sont arcisinies",
    "source": "les confins sont alors censez être au milieu du Canal que la Riviére a quitté",
@@ -3943,6 +3962,13 @@
     "confidence": 0.4,
     "reason": "Vattel's passage gives the Roman-law division of an abandoned bed by halves between riparian owners inside a state, while Pufendorf's sentence (copied from Grotius II.3.17) places the boundary between states in the middle of the abandoned channel; only the stock midline rule is shared.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "wrong",
+    "reason": "The Pufendorf sentence puts the frontier between two states in the middle of the abandoned channel; the paired Vattel sentence is the private rule inside one state, where Pufendorf gives the bed to a different owner.",
+    "date": "2026-11-21",
+    "flaggedBy": "The PUF sentence fixes the frontier between two states in the abandoned channel (Vattel's earlier 'le lit qu'il abandonne reste alors pour limites'); the paired Vattel sentence is the private-law rule for a river inside one state, where Pufendorf (p. 792) gives the bed to a different owner.",
+    "statusWas": "possible"
    }
   },
   {
@@ -5055,6 +5081,12 @@
     "confidence": 0.5,
     "reason": "'ne donne qu'un droit imparfait' is the stock formula for duties of humanity; Vattel's sentence on the imperfect obligation to trade follows Wolff JG §189, and Pufendorf's page is about the definition of injury.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Stock phrase: a duty of natural law gives only an imperfect right; there is no shared argument about trade.",
+    "date": "2026-11-21",
+    "flaggedBy": "Stock phrase only: Pufendorf I.7 §15 defines injury; Vattel's imperfect obligation of commerce comes from Wolff §§189-190 and his own Prélim. §17."
    }
   },
   {
@@ -6949,6 +6981,12 @@
     "confidence": 0.5,
     "reason": "Abandonment inferred from outward signs or acts is Grotius's tacit-dereliction doctrine, which Pufendorf only reports; Vattel's 'indique suffisamment' follows Wolff and shares no wording with this page.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Abandonment inferred from outward signs is the stock Grotian basis of prescription; Vattel's formulation follows Wolff, and the commonplace label fits.",
+    "date": "2026-11-21",
+    "flaggedBy": "Only the commonplace that renunciation must be shown by signs; Vattel's wording and order follow JG § 365, with nothing taken from this sentence of Pufendorf IV.XII § 8."
    }
   },
   {
@@ -7107,6 +7145,12 @@
     "confidence": 0.55,
     "reason": "Justifying prescription by peace and settled possessions is a stock Roman-law and Grotian rationale; Pufendorf's passage argues that prescription is not a penalty, an argument Vattel does not follow.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both justify prescription by the peace of society, a stock argument; Pufendorf's sentence is about civil prescription and penalties, and nothing ties Vattel's wording to it.",
+    "date": "2026-11-21",
+    "flaggedBy": "Pufendorf IV.XII § 6 argues that extinguishing the right beats fining the owner; Vattel's sentence on the uncertainty of nations' possessions and wars renders JG § 366. Only a generic peace motive is shared."
    }
   },
   {
@@ -8983,6 +9027,12 @@
     "confidence": 0.55,
     "reason": "The definition of a personal alliance as one that ends with the king is the standard Grotian division; Vattel's actual point, that it ends when either ruler ceases to reign for any cause, renders Wolff § 414 ('quacunque de causa imperare desinat'), not Pufendorf.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "The personal/real alliance division is the stock Grotian one; Vattel's specific point (the alliance lapses when either ceases to reign, though alive) is not in Pufendorf's sentence.",
+    "date": "2026-11-21",
+    "flaggedBy": "Commonplace definition only: the Vattel stretch (personal alliance expires when a contracting sovereign ceases to reign, for whatever cause) translates Wolff §414; Pufendorf's definition shares no wording beyond 'expire'."
    }
   },
   {
@@ -11413,6 +11463,12 @@
     "confidence": 0.4,
     "reason": "The only common ground is the Ciceronian maxim that intention rather than bare words governs promises; Pufendorf's marked sentence stresses the outward signs, and no wording is shared.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "That intention, not bare words, fixes what a promise binds is a commonplace (Cicero, Grotius); Pufendorf's § argues for interpreting by signs, and nothing ties Vattel's rule to it.",
+    "date": "2026-11-21",
+    "flaggedBy": "Generic doctrine with no shared wording: Vattel's sentence renders Wolff (INST 801, row 858), not Pufendorf's statement of the promisee's right to compel."
    }
   },
   {
@@ -16166,6 +16222,12 @@
     "confidence": 0.5,
     "reason": "Trying gentle means before arms is a stock rule; Vattel's specific point, offering equitable terms also after war has begun, is not in Pufendorf's passage and nothing in the wording ties them.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Stock precept that peaceful means should be tried before taking up arms.",
+    "date": "2026-11-21",
+    "flaggedBy": "Pufendorf's VIII.6.4 sentence (try a conference, arbitration or the lot before war) is a commonplace and says nothing of offering equitable conditions before and after arms; its real parallel is II.331, where it is reported."
    }
   },
   {
@@ -16418,6 +16480,12 @@
     "confidence": 0.45,
     "reason": "Holding seized goods as a pledge until satisfaction and then disposing of them is standard reprisal doctrine from Grotius, which Barbeyrac's note itself summarizes; the note's hostage and sale details are not in Vattel.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Holding seized goods until satisfaction and confiscating them afterwards is stock reprisal doctrine; Barbeyrac's note concerns persons held as hostages, and the commonplace label fits.",
+    "date": "2026-11-21",
+    "flaggedBy": "Barbeyrac's sentence is about persons seized in reprisals, kept unharmed as hostages; Vattel's stretch is about goods held in pledge, which comes from JG §586. Only a stock phrase is shared."
    }
   },
   {
@@ -17220,6 +17288,12 @@
     "confidence": 0.5,
     "reason": "Both use the Latin term sponsio for an engagement made beyond one's authority, but this is the standard Grotian term (Barbeyrac himself refers to Grotius II.15.3), and Vattel refers back to his own treatment in Book II.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the Latin term 'sponsio' for an unauthorised engagement is shared; Vattel follows Wolff JG §773 here, and Barbeyrac's lexical note is common stock.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel takes 'sponsio' from Wolff §773 (spospondisse/sponsio), which he is translating; Barbeyrac's lexical note shares only the common Latin term."
    }
   },
   {
@@ -17500,6 +17574,12 @@
     "confidence": 0.5,
     "reason": "Avarice and ambition for dominion and conquest as wrongful motives of war are a classical commonplace that Pufendorf takes from Grotius, and Vattel's longer list of passions shares no wording beyond 'désir' and 'conquêtes'.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Ambition, avarice and conquest as vicious motives for war are stock items of the unjust-causes list; the commonplace label fits.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel's list of vicious motives follows Wolff §628 item by item (ostentatio virium, divitiae, imperii limites, vindicta); Pufendorf's avarice/ambition pair in VIII.6.5 shares only generic words."
    }
   },
   {
@@ -18060,6 +18140,12 @@
     "confidence": 0.45,
     "reason": "Trying peaceful redress before arms is a stock precept of the tradition (Grotius II.23); no wording, sequence or example ties Vattel's clause to Pufendorf VIII.6.4.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule of trying gentle means of redress before arms is a commonplace; the label fits.",
+    "date": "2026-11-21",
+    "flaggedBy": "Generic precept (try gentle means before arms) with no shared wording; Vattel refers back to his own §§ 26 and 51, and the nearer source is JG § 719 'tentatis mediis lenioribus'."
    }
   },
   {
@@ -18300,6 +18386,12 @@
     "confidence": 0.55,
     "reason": "That impossibility excuses performance is the stock maxim 'Nul n'est tenu à l'impossible', which Pufendorf himself calls a common maxim.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Inability excusing performance is the stock maxim 'nul n'est tenu a l'impossible', which Pufendorf himself calls a common maxim; nothing ties Vattel to this page.",
+    "date": "2026-11-21",
+    "flaggedBy": "'Nul n'est tenu à l'impossible' is a stock maxim with no shared wording; Vattel's clause follows Wolff §665 ('quod in potestate sua non habet')."
    }
   },
   {
@@ -18539,6 +18631,12 @@
     "confidence": 0.8,
     "reason": "The duty to repair damage caused by one's own fault is a stock rule (also in Grotius II.17.1 and Wolff), and Pufendorf states it in an unrelated context of drunkenness, so the shared formula cannot tie Vattel's alliance passage to this page.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Stock rule that one must repair damage caused by one's fault; Pufendorf states it in passing about drunkenness.",
+    "date": "2026-11-21",
+    "flaggedBy": "Pufendorf's sentence belongs to contract law (broken windows, III.vi.5); Vattel's clause translates Wolff §671 ('culpa sua ... resarcire'), and the shared wording is a stock maxim."
    }
   },
   {
@@ -18838,6 +18936,12 @@
     "confidence": 0.45,
     "reason": "That a sovereign may refuse passage for good reasons is shared by Grotius (II.2.13.8), Pufendorf and Wolff, and Vattel frames it in Wolff's terms of innocent passage, whereas the marked Pufendorf sentence gives the broader prudential advice that refusing is always safest.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both allow refusing passage of troops when there is reason to fear; Pufendorf's general advice to refuse differs from Vattel's innocent-passage rule, so only the stock conclusion is shared.",
+    "date": "2026-11-21",
+    "flaggedBy": "Pufendorf's 'Le plus sûr est donc de refuser' counsels refusing passage as a general precaution, while Vattel holds passage due unless good reasons make it harmful (from Wolff §701 and his own II.127). A commonplace, with no shared argument or wording."
    }
   },
   {
@@ -19295,6 +19399,12 @@
     "confidence": 0.45,
     "reason": "That war may be pursued until justice and security for the future are obtained is a stock idea, and Pufendorf uses it to justify unlimited hostility while Vattel confines the belligerent to necessary means.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say hostilities may continue until justice and security for the future are obtained, a stock point; Vattel derives it from the end of war, sharing only the idea and the word 'sûreté'.",
+    "date": "2026-11-21",
+    "flaggedBy": "Only the commonplace word 'sûreté' is shared; Pufendorf VIII.6.7 sets how long hostilities may last, while Vattel's clause restates his own III.28, which VIII.6.3 (row 6488) matches better."
    }
   },
   {
@@ -21055,7 +21165,7 @@
    "inNote": false,
    "label": "commonplace",
    "confidence": 0.3,
-   "status": "possible",
+   "status": "rejected",
    "step": "T",
    "passage": "si des paysans commettent d'eux - mêmes quelques hostilités, l'ennemi les traite sans ménagement , & les fait pendre, comme il feroit des voleurs ou des brigands",
    "source": "Les actes d'hostilité, qui n'ont pas été précédez d'une Déclaration de Guerre dans les formes, passent presque pour des courses ou de purs brigandages",
@@ -21076,6 +21186,13 @@
     "confidence": 0.35,
     "reason": "Treating hostilities without public authority as brigandage is the stock Roman-law definition of the enemy; Pufendorf applies it to hostilities without declaration, Vattel to peasants and privateers acting without the sovereign's order or commission.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Pufendorf calls undeclared hostilities near brigandage; Vattel's point is the opposite case, peasants acting without orders even when war has been declared.",
+    "date": "2026-11-21",
+    "flaggedBy": "Pufendorf VIII.6.9 speaks of hostilities without a declaration of war, which pass for brigandage. Vattel speaks of peasants acting without orders in a declared war. Only the commonplace comparison with brigands is shared.",
+    "statusWas": "possible"
    }
   },
   {
@@ -21155,6 +21272,12 @@
     "confidence": 0.6,
     "reason": "The truce as a suspension of acts of war that does not end the war is the standard Grotian definition (III.21.1) and Wolff's (JG 913-914, 'actus bellici tantummodo suspenduntur'), which Vattel's 'en suspend seulement les actes' follows; nothing ties it to Pufendorf's passing definition in I.1.8.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Truce as suspension of hostilities while the war continues is the stock definition (Grotius, Pufendorf, Wolff); commonplace fits.",
+    "date": "2026-11-21",
+    "flaggedBy": "Commonplace definition of a truce from Pufendorf's survey of moral states (Liv. I ch. I § 8), not the truce chapter; Vattel's sentence renders JG § 914 (rows 1272-1273)."
    }
   },
   {
@@ -23824,6 +23947,12 @@
     "confidence": 0.45,
     "reason": "Grounding envoys' security in nations' need to negotiate is the stock functional argument of the tradition; Barbeyrac's theological chain (peace and commerce, hence God forbids harm) shares no wording with Vattel's 'moyens sûrs de se faire des propositions réciproques', and his point about envoys of princes who break the law of nations is absent.",
     "date": "2026-11-11"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Grounding envoys' safety in the need of nations to negotiate is a stock argument; Barbeyrac's sentence on peace and commerce gives nothing specific to Vattel's case of the assassins' envoy.",
+    "date": "2026-11-21",
+    "flaggedBy": "Commonplace (embassies are needed for peace and friendship) with no shared wording; Vattel's point, that safety extends even to envoys of princes who break the law of nations, is not in the note's sentence."
    }
   },
   {

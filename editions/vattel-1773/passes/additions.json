@@ -13615,8 +13615,14 @@
    ],
    "audit": {
     "verdict": "weak",
-    "reason": "The Brabant pact is quoted from Grotius's Annales; Pufendorf's general case of a clause freeing subjects from obedience shares the idea and the phrase 'affranchis de l'obéissance', which likely comes from the Annales translation.",
-    "date": "2026-11-21"
+    "reason": "Pufendorf's general rule on a clause freeing subjects from obedience matches the point of the Brabant pact, but Vattel's note quotes Grotius's history, not Pufendorf.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel's note quotes Grotius's Annals on the Brabant 'Joyeuse Entrée'; PUF34 has nothing on Brabant, and the shared phrase about release from obedience is not taken from Pufendorf's general clause (VII.VIII.8).",
+    "earlier": {
+     "verdict": "weak",
+     "reason": "The Brabant pact is quoted from Grotius's Annales; Pufendorf's general case of a clause freeing subjects from obedience shares the idea and the phrase 'affranchis de l'obéissance', which likely comes from the Annales translation.",
+     "date": "2026-11-21"
+    }
    }
   },
   {
@@ -13651,8 +13657,14 @@
    ],
    "audit": {
     "verdict": "weak",
-    "reason": "The note quotes Mariana. 'What common consent established, the same will can change' is a commonplace maxim that Wolff § 984 also states, with a proviso Vattel does not use.",
-    "date": "2026-11-21"
+    "reason": "The note quotes Mariana's words; it shares Wolff's stock principle that what consent established, consent can change, but Wolff adds a protection of the ruler's acquired right, and nothing ties the note to Wolff.",
+    "date": "2026-11-21",
+    "flaggedBy": "The Vattel passage is a quotation from Mariana in a note, not Vattel's use of Wolff; the only shared point is a general one (what consent establishes, consent may change).",
+    "earlier": {
+     "verdict": "weak",
+     "reason": "The note quotes Mariana. 'What common consent established, the same will can change' is a commonplace maxim that Wolff § 984 also states, with a proviso Vattel does not use.",
+     "date": "2026-11-21"
+    }
    }
   },
   {
@@ -13880,8 +13892,14 @@
    ],
    "audit": {
     "verdict": "weak",
-    "reason": "The note quotes Boizard on princes who stopped debasing coin once the need passed; this is close in idea to Wolff's rule that bad coin be exchanged after a crisis, but it is a third author's text and nothing shows Wolff behind it.",
-    "date": "2026-11-21"
+    "reason": "The note quotes Boizard on princes stopping debasement when the need ceased; this is near Wolff's rule on redeeming overvalued coin (which Vattel's main text follows) but not taken from it.",
+    "date": "2026-11-21",
+    "flaggedBy": "Quoted from Boizard's Traité des monnoies (Philip the Fair's practice), not taken from Wolff; only the subject is shared.",
+    "earlier": {
+     "verdict": "weak",
+     "reason": "The note quotes Boizard on princes who stopped debasing coin once the need passed; this is close in idea to Wolff's rule that bad coin be exchanged after a crisis, but it is a third author's text and nothing shows Wolff behind it.",
+     "date": "2026-11-21"
+    }
    }
   },
   {
@@ -13902,7 +13920,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.3,
-   "status": "possible",
+   "status": "rejected",
    "step": "V",
    "passage": "le roi s'oblige par chartre au- „ tentique au peuple de son royaume , que ses affaires passées , il remettra la mon- „ noie en bon ordre & valeur , à ses propres coûts & dépens , & portera la perte „ & tare sur lui",
    "source": "La nécessité de l'Etat peut excuser l'action de ce Prince; bien entendu qu'il ait rétabli ensuite les choses sur l'ancien pié, dès que ses affaires le lui permirent.",
@@ -13918,9 +13936,16 @@
     ]
    ],
    "audit": {
-    "verdict": "weak",
-    "reason": "The words are Boizard's quotation of Philip the Fair's 1295 ordinance; they share with Pufendorf V.1.14 only the idea that a prince who debases coin should restore it later, which does not show any borrowing from Pufendorf.",
-    "date": "2026-11-21"
+    "verdict": "wrong",
+    "reason": "The note quotes Boizard's record of Philip the Fair's 1295 ordinance; Pufendorf's sentence concerns a Bosporan king, and nothing in the quoted document draws on Pufendorf beyond the general idea of restoring the coin.",
+    "date": "2026-11-21",
+    "flaggedBy": "Boizard's quotation of Philip the Fair's charter, not Vattel's use of Pufendorf; the parallel is in subject only.",
+    "statusWas": "possible",
+    "earlier": {
+     "verdict": "weak",
+     "reason": "The words are Boizard's quotation of Philip the Fair's 1295 ordinance; they share with Pufendorf V.1.14 only the idea that a prince who debases coin should restore it later, which does not show any borrowing from Pufendorf.",
+     "date": "2026-11-21"
+    }
    }
   },
   {
@@ -14454,8 +14479,14 @@
    ],
    "audit": {
     "verdict": "weak",
-    "reason": "De Witt's quoted letter shares Wolff § 589's conditions for reprisals (only for one's own subjects, after justice is refused), but these are common doctrine and the text is de Witt's.",
-    "date": "2026-11-21"
+    "reason": "De Witt's quoted letter states the same conditions of reprisals as Wolff §589 (own subjects only, refusal of justice, sovereign only), but it is de Witt's text and the doctrine is common, so it does not draw on Wolff.",
+    "date": "2026-11-21",
+    "flaggedBy": "The Vattel passage is de Witt's letter, quoted in the note; it does not reuse Wolff, and §589 says nothing about reprisals for foreigners.",
+    "earlier": {
+     "verdict": "weak",
+     "reason": "De Witt's quoted letter shares Wolff § 589's conditions for reprisals (only for one's own subjects, after justice is refused), but these are common doctrine and the text is de Witt's.",
+     "date": "2026-11-21"
+    }
    }
   },
   {
@@ -15937,7 +15968,12 @@
    "source": "ac ideo ad eas applicanda sunt officia cum erga seipsum, tum erga alios & inde nascentia jura, quæ lege naturæ præscribuntur atque dantur ho- minibus singulis",
    "french": "et c'est pourquoi il faut leur appliquer les devoirs tant envers soi-même qu'envers autrui, et les droits qui en naissent, que la loi de nature prescrit et donne aux hommes pris individuellement",
    "reason": "Vattel's announced translation of the Praefatio; this clause falls between rows 3363 (preceding clause) and 3364 (continuation in Pref.11), so no row of this section holds it.",
-   "links": []
+   "links": [],
+   "audit": {
+    "verdict": "right",
+    "reason": "This is part of Vattel's announced translation of Wolff's Praefatio, rendering 'ad eas applicanda sunt officia ... et inde nascentia jura'.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8025,
@@ -16178,7 +16214,12 @@
      "PDF p. 737",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=737"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel names JG §878 and rejects its claim that poisoned weapons are naturally lawful.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8033,
@@ -16721,7 +16762,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "Il suffit donc , encore un coup , que les nations se conforment à ce qu'exige d'elles la société naturelle & générale , établie entre tous les hommes.",
    "source": "Quamobrem societas, quae inter singulos natura instituit, adhuc subsistit inter Gentes",
@@ -16732,7 +16773,13 @@
      "PDF p. 32",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=32"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "In a passage engaging Wolff by name, Vattel accepts Wolff 7's natural society among men subsisting between nations while rejecting the civitas maxima; 'societe naturelle ... etablie entre tous les hommes' echoes 'societas quae inter singulos natura instituit'.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 8051,
@@ -18000,7 +18047,12 @@
      "PDF p. 31",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=31"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's recall that men united in society remain subject to the obligations of human nature restates Wolff JG § 5's 'non exuunt naturam humanam ... legi naturae subjecti manent'.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8093,
@@ -18601,7 +18653,12 @@
      "PDF p. 40",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=40"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's paragraph renders Wolff §§ 16-17: natural equality of men, hence of nations, and the same rights and obligations, with Wolff's dwarf-and-giant comparison.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8112,
@@ -20214,7 +20271,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n326/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the Roman habit of honouring princes with the title of friend is shared; Pufendorf discusses who may confer royal titles, Vattel the lost statehood of Rome's dependants.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8162,
@@ -24318,7 +24380,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "de peser la sagesse ou la justice des commandemens souverains ; cet examen appartient au prince",
    "source": "c’est sans contredit une opinion séditieuse, que d’attribuer aux Particuliers le droit de juger, si les moiens dont le Prince ordonne de se servir pour l’avancement du Bien Public, sont convenables, ou non, à cette fin",
@@ -24332,7 +24394,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n447/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Pufendorf VIII.1.5-6 denies subjects the right to judge the suitability of the prince's measures and, in doubt, presumes his orders just with the fault on him: Vattel's sequence in I.53.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 8287,
@@ -26866,7 +26934,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "à faire régner dans l'état une heureuse abondance de toutes les choses nécessaires à la vie, même des commodités & des agrémens innocens & louables",
    "source": "ad finem vero civitatis pertineat sufficientia vitae (§. 13. part. 5. Jur. nat.); consequenter abundantia eorum, quae ad vitae necessitatem, commoditatem & jucunditatem requiruntur",
@@ -26877,7 +26945,13 @@
      "PDF p. 75",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=75"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same Wolffian derivation: the end of the state requires an abundance of what serves the necessity, convenience and pleasure of life.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 8363,
@@ -27698,7 +27772,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n547/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same argument from freedom to buy or not, but Vattel's wording ('de l'un plutôt que de l'autre', no nation may sell to a people unwilling) follows Wolff JG § 58; nothing specific ties it to Pufendorf.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8389,
@@ -30870,9 +30949,9 @@
    "locus": "Liv. II ch. III § 19, n. 2",
    "page": "PUF34T1.p386",
    "inNote": true,
-   "label": "shared argument",
+   "label": "open disagreement",
    "confidence": 0.3,
-   "status": "possible",
+   "status": "rejected",
    "step": "F",
    "passage": "La piété aveugle ne fait que des superstitieux, des fanatiques & des persécuteurs , plus dangereux mille fois, plus funestes à la société, que les libertins.",
    "source": "On prétend ici faire compensation du manque de ce frein, par les désordres qu'enfante la Superstition & le faux Zele. Et j'avoue que ces inconvéniens, qui naissent de l'abus de la Religion, sont grands: mais l'extinction de tout sentiment d'une Divinité en produiroit, à mon avis, de bien plus fâcheux.",
@@ -30886,7 +30965,14 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n385/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Barbeyrac holds that the extinction of religion is worse than superstition; Vattel says blind piety is far more dangerous than libertines, the contrary Baylean view, and does not take up the note, so no shared argument.",
+    "date": "2026-11-21",
+    "labelWas": "shared argument",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 8488,
@@ -33191,7 +33277,7 @@
    "inNote": true,
    "label": "loose paraphrase",
    "confidence": 0.55,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "Par le moyen des mêmes armes spirituelles , le clergé attiroit tout à lui, usurpoit l'autorité des tribunaux, & troubloit l'ordre de la justice. Il prétendoit prendre connoissance de tous les procès",
    "source": "Comme les Ecclésiastiques s'emparérent adroitement du droit de juger de la validité des Sermens, ils attirérent à eux par ce moïen la connoissance de presque toutes les Causes Civiles.",
@@ -33205,7 +33291,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n717/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say the clergy drew civil causes to their courts, but by different devices (oaths in Barbeyrac, excommunication and ratione peccati in Vattel); a common anti-clerical point with Vattel's details from elsewhere.",
+    "date": "2026-11-21",
+    "statusWas": "match"
+   }
   },
   {
    "id": 8557,
@@ -34190,9 +34282,9 @@
    "locus": "Liv. VII ch. IX § 7",
    "page": "PUF34T2.p433",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.55,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "C'est par le fondement même du droit de punir, par la fin légitime des peines, qu'il faut les retenir dans leurs justes bornes. Puisqu'elles sont destinées à procurer la sûreté de l'état & des citoyens ; elles ne doivent jamais s'étendre au - delà de ce qu'exige cette sûreté.",
    "source": "on doit de l'autre, les proportionner à cette fin, en sorte qu'on ne fasse pas souffrir à ceux qui violent les Loix plus de mal que ne le demande le Bien Public.",
@@ -34206,7 +34298,14 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n432/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Measuring punishments by their end and never beyond what it requires is stock doctrine (Wolff and Grotius say the same) and nothing ties Vattel to this Pufendorf sentence; the wording differs, so close paraphrase would not fit in any case.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase",
+    "statusWas": "match"
+   }
   },
   {
    "id": 8587,
@@ -35752,7 +35851,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "Les biens des particuliers augmentent réellement les forces de l'état",
    "source": "que d'ailleurs la force d'un Etat consiste dans les richesses, aussi bien que dans la bravoure des Citoiens: il ne doit rien négliger, pour procurer l'entretien & l'augmentation des biens (1) des Particuliers.",
@@ -35766,7 +35865,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n435/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "That private wealth is the state's strength is a commonplace; Vattel's paragraph follows Wolff §§ 65-69, and his reasons (contributions, eminent domain) are not in Pufendorf.",
+    "date": "2026-11-21",
+    "statusWas": "match"
+   }
   },
   {
    "id": 8634,
@@ -36283,7 +36388,12 @@
      "PDF p. 66",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=66"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's double title of national glory (what the nation does as a body through its government, and the merit of individuals) is Wolff §48's distinction, inside Wolff §47's definition of glory.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8650,
@@ -36376,7 +36486,12 @@
      "PDF p. 68",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=68"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same chain as Wolff § 51: the nation's glory depends on its perfection, perfecting it is the ruler's charge, so he must refer his royal acts to that glory.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8653,
@@ -36593,7 +36708,12 @@
      "PDF p. 62",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=62"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel I.189 follows JG §43: qualities of the many are predicated of the nation, with parallel examples, and the plurality judged by comparison with other nations ('en plus grand nombre qu'ailleurs').",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8660,
@@ -36704,7 +36824,7 @@
    "locus": "§ 44",
    "page": "JG.pdf63",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.55,
    "status": "match",
    "step": "F",
@@ -36717,7 +36837,13 @@
      "PDF p. 63",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=63"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'nouveau motif' takes Wolff §44's 'novum motivum' within a section following §§43-45, but turns it into a motive to avoid shameful acts (§45) rather than keeping Wolff's sentence.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 8664,
@@ -37051,7 +37177,7 @@
    "locus": "§ 81",
    "page": "JG.pdf93",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.55,
    "status": "match",
    "step": "F",
@@ -37064,7 +37190,13 @@
      "PDF p. 93",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=93"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel I.192-196 follows Wolff §§ 80-82; partial sovereignty restricted 'à certains égards' renders § 81's subjection 'cum imminutione ... quoad certos actus', though in a different sentence.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 8675,
@@ -37454,7 +37586,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n558/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say members of a state are taken to have agreed to stay united, but Pufendorf uses it against alienating a part, Vattel against a part detaching itself; a general idea with no specific tie.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8687,
@@ -37946,7 +38083,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n762/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's distinctive theory (a declared will to occupy forestalls others but lapses unless actual possession follows when possible) is exactly Vattel's 'suffisamment marqué sa volonté' plus the proviso of real possession.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8702,
@@ -38863,7 +39005,12 @@
      "PDF p. 137",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=137"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's domicile paragraph follows Wolff §§ 137-138 step by step, and his envoy sentence condenses Wolff's example of the legate who keeps no domicile at the court where he lives.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8731,
@@ -40124,7 +40271,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n539/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Contagious disease as a ground for refusing strangers is in Pufendorf III.iii.8 (with corruption of morals in §9) and not in Wolff or Grotius, and the clause 'infectés de quelque maladie contagieuse' is shared.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8770,
@@ -40732,7 +40884,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n556/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the stock duty to apply state revenues to the public good is shared; Vattel's point that the prince alone decides their use and owes no account is not in Pufendorf, who gives the king mere tutor-like administration.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8789,
@@ -40797,7 +40954,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n553/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Taxation in proportion to means and to the advantages drawn from society is a stock maxim (Hobbes, Pufendorf, Wolff 'pro modo facultatum'); nothing ties Vattel's short sentence to this Pufendorf passage.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8791,
@@ -41413,7 +41575,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n764/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Pufendorf speaks of the prince's right to allocate hunting among private persons, Vattel of police rules on hunting and fishing as use of common goods for the public good; only the topic is shared.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8810,
@@ -43147,7 +43314,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n756/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac (after Bynkershoek) gives the Dutch flag treaties including 1667 as limited acknowledgement; Vattel uses the same example with the same reserve, in a section that also follows the note's Bodin and Selden references.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8864,
@@ -43478,7 +43650,12 @@
      "PDF p. 311",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=311"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "In a section following Wolff §§355-356 (innocent passage, refusal only on just fear), Vattel's precautions and formalities render Wolff's caution and conditions the occupier may require.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8874,
@@ -43775,7 +43952,12 @@
      "PDF p. 312",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=312"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §357: empire and dominion are distinct rights, one able to exist without the other, so empire over the sea can be held without dominion; Vattel makes the same claim in the same sea context.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8883,
@@ -44057,7 +44239,12 @@
      "PDF p. 156",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=156"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel II.2 follows Wolff §164 in applying the offices of humanity (promoting another's happiness) to the duties of nations toward nations.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8892,
@@ -45370,7 +45557,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n639/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Pufendorf states the general contract rule (released or may compel the defaulting party); Vattel's choice between arms and rupture follows Wolff JG §430, so nothing ties it to Pufendorf rather than the common doctrine.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 8933,
@@ -45757,7 +45949,12 @@
      "PDF p. 118",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=118"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel gives Wolff §108's specific answer to the objection of loss: the opposite bank loses by the destruction of its own land, not by the other's enrichment from its property.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9006,
@@ -46407,7 +46604,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n752/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence as Pufendorf IV.5.4: land was divided because it needs cultivation, but that particular reason 'n'a point de lieu' for inexhaustible things like the ocean.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9026,
@@ -48495,7 +48697,12 @@
      "PDF p. 161",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=161"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel II.18 follows Wolff §§ 173-174 (laedere, imperfection of a nation and its state); the ban on harm as the general rule for what nations must not do is Wolff's.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9091,
@@ -49529,7 +49736,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "les nations ne peuvent compter que sur des généralités, comme la liberté qui appartient à chacune d'exercer le commerce",
    "source": "Apparet itaque, solo jure, quod naturaliter Gentibus ad commercia competit, ea stare minime posse, cum ferendum sit, si qua Gens commercia cum alia exercere nequit",
@@ -49540,7 +49747,13 @@
      "PDF p. 177",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=177"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence as Wolff §§190-191: the natural right to trade is imperfect and depends on others' judgment, so anything certain must be secured by treaties.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 9124,
@@ -49783,7 +49996,12 @@
      "PDF p. 182",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=182"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's margin answers Wolff's §196 question, and the section gives Wolff's argument: nothing can be granted to a third party against a treaty, since it is no longer in one's power.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9132,
@@ -50181,7 +50399,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "Lors donc qu'une nation possede seule certaines choses, une autre peut légitimement se procurer par un traité l'avantage de les acheter seule, pour les revendre à toute la terre.",
    "source": "Un Peuple, qui a abondance de certaines sortes de Marchandises, peut aussi légitimement s'engager par un Traité avec quelque autre Peuple, de ne les vendre qu'à lui seul.",
@@ -50195,7 +50413,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n83/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The lawfulness of exclusive-sale treaties is common to Grotius, Pufendorf and Wolff, and Vattel's surrounding argument (gain lawfully taken first) follows Wolff §208; nothing is specific to Pufendorf V.5.7.",
+    "date": "2026-11-21",
+    "statusWas": "match"
+   }
   },
   {
    "id": 9145,
@@ -50226,7 +50450,12 @@
      "PDF p. 194",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=194"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes the rule Wolff § 210 reports from Grotius (exclusive purchase of a product found nowhere else, resold at a fair price) together with Wolff's verdict that overpricing is a sin but no injury.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9146,
@@ -50602,7 +50831,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "comme il est sous la protection particuliere du souverain qui l'emploie",
    "source": "Quoniam consules manent subditi ejus, a quo constituuntur (§. 232.); constituens quoque eos protegere tenetur",
@@ -50613,7 +50842,13 @@
      "PDF p. 211",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=211"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's consul passage follows Wolff §§232-236: the consul stays his sovereign's subject, under his protection, and is sent back to him for punishment.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 9158,
@@ -51065,7 +51300,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n532/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel reports current practice (Venice and the United Provinces); Pufendorf says a republic's ambassador must yield to a king, though not necessarily to a king's ambassador, so only the general point on precedence is shared.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9172,
@@ -51229,7 +51469,12 @@
      "PDF p. 215",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=215"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff §244's proposition (the nation is free to choose its ruler's name and titles) and its ground (it alone fixes the terms on which it confers power), in inverted order.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9177,
@@ -51870,7 +52115,12 @@
      "PDF p. 223",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=223"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §250 limits the rule of equality to the duties and honour owed a ruler as such while allowing accidental pre-eminence; Vattel limits the natural precept in the same way and then grants great monarchs ceremonial honours.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9197,
@@ -51932,7 +52182,12 @@
      "PDF p. 222",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=222"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's §250 note keeps rulers equal while allowing accidental pre-eminence, for example of a ruler of a powerful kingdom, to count in the honours paid; Vattel gives the great monarch ceremonial honours on the same terms.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9199,
@@ -52257,7 +52512,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n449/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The right to security for the future against an aggressor (and to put him out of the way of harm) is common stock; Vattel's sequence of security, reparation and punishment follows Wolff JG §§253, 271-273 rather than Pufendorf II.5.3.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9209,
@@ -53090,7 +53350,12 @@
      "PDF p. 230",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=230"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel II.60 follows Wolff 261 (persuading other nations to the true religion is an office of humanity promoting their happiness, done through missionaries); the clause restates Wolff's ground.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9235,
@@ -55102,7 +55367,7 @@
    "locus": "§ 276",
    "page": "JG.pdf243",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.65,
    "status": "match",
    "step": "F",
@@ -55115,7 +55380,13 @@
      "PDF p. 243",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=243"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff §§275-276 on deserted lands within the territory, and 'elle ne doit compte à personne de la maniere dont elle use de son bien' renders the owner's free choice whether to use his property, in other words.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 9298,
@@ -56392,7 +56663,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n312/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Pufendorf states the same tacit submission of whoever enters a state, but Vattel's wording (access granted under a tacit condition, the stranger submits tacitly on entering) follows Wolff JG §303.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9338,
@@ -57138,7 +57414,7 @@
    "locus": "§ 326",
    "page": "JG.pdf283",
    "inNote": false,
-   "label": "shared argument",
+   "label": "loose paraphrase",
    "confidence": 0.6,
    "status": "match",
    "step": "F",
@@ -57151,7 +57427,13 @@
      "PDF p. 283",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=283"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's clause renders Wolff §326's premise (the foreigner stays a citizen, so his acts fall under home law), and the paragraph goes on to Wolff's own widow's-portion case; it is a paraphrase, not just a shared argument.",
+    "date": "2026-11-21",
+    "labelWas": "shared argument"
+   }
   },
   {
    "id": 9362,
@@ -57792,7 +58074,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n46/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both pay for ships taken into service in a necessity, but Vattel's list comes from Wolff § 342, and paying for such use is a general rule; nothing specific ties his practice sentence to Pufendorf.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9382,
@@ -58513,7 +58800,12 @@
      "PDF p. 126",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=126"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's specific rule that no one can acquire dominion of things of inexhaustible use (JG §121) is restated by Vattel in the same terms.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9404,
@@ -59036,7 +59328,12 @@
      "PDF p. 311",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=311"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'Doit alléguer ses raisons' renders Wolff §356's 'rationes allegare debet', together with the owner's judgment of innocent use, which Vattel generalizes.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9420,
@@ -59327,7 +59624,12 @@
      "PDF p. 589",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=589"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both hold that an owed passage may not be burdened, but Wolff §693 concerns the passage of troops and argues that it must be free; the principle is general, and nothing specific ties Vattel's sentence on peaceful passage to this section.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9429,
@@ -60780,7 +61082,12 @@
      "PDF p. 806",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=806"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Wolff 978 requires express ratification of peace made under a general mandate because of the danger to the state; Vattel's remark on the modern practice of reserving ratification is a general point (closer to Wolff 469 or Grotius) with no specific tie.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9475,
@@ -60811,7 +61118,12 @@
      "PDF p. 362",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=362"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "'La lézion ne peut donc rendre un traité invalide' translates the proposition of JG §408, drawn from §407 as Vattel draws it from II.157.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9476,
@@ -61257,7 +61569,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n557/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both argue that human order and safety depend on keeping faith, but this is the common Ciceronian commonplace; the wording and sequence do not tie Vattel to Pufendorf's §.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9490,
@@ -62406,7 +62723,12 @@
      "PDF p. 345",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=345"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel II.172 follows Wolff §396 on equal treaties, including the example (via Grotius) of equal aid in cavalry, infantry and ships, and Wolff's closing remark that generalities suffice.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9526,
@@ -62489,7 +62811,7 @@
    "locus": "§ 395",
    "page": "JG.pdf345",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.7,
    "status": "match",
    "step": "F",
@@ -62502,7 +62824,13 @@
      "PDF p. 345",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=345"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's list of equal treaties (commerce, no fortresses in certain places, passage refused to the ally's enemies) and his 'les généralités suffisent' come from JG §§395-396, but recombined in one sentence and reordered.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 9529,
@@ -64496,7 +64824,7 @@
    "inNote": false,
    "label": "close paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "Un pareil traité doit donc passer pour réel",
    "source": "Si le Roi avoit contracté entant que Chef de son Peuple, & en vûe du bien de l'Etat; (1) l'Alliance doit passer pour Réelle",
@@ -64510,7 +64838,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n601/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule that a treaty made for the good of the state is real comes from Grotius and is shared by Pufendorf and Wolff; Vattel's condition (a lasting advantage) is Wolff §419's, and 'doit passer pour réel' is an ordinary idiom.",
+    "date": "2026-11-21",
+    "statusWas": "match"
+   }
   },
   {
    "id": 9592,
@@ -64541,7 +64875,12 @@
      "PDF p. 369",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=369"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel II.189 follows Wolff §§418-419 step by step; his exception for an advantage granted in consideration of the reigning prince's person is Wolff's reservation for utilities that regard the person of the contractors.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9593,
@@ -64891,7 +65230,12 @@
      "PDF p. 370",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=370"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel II.190 follows JG §420 (presumption real for favourable, personal for odious) and takes its example that equal commercial treaties count among favourable matters.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9604,
@@ -66866,7 +67210,12 @@
      "PDF p. 412",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=412"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "In the section on the sovereign's contracts with private persons, Vattel's margin translates the end of Wolff 478's proposition 'Gentem quoque & successores obligat'.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9666,
@@ -67654,7 +68003,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n516/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both reserve the status of common enemy for those who scorn all faith ('sans se mettre en peine'), but Pufendorf's limit (keeping faith with some) differs from Vattel's (plausible reasons or pretexts); a stock idea.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9691,
@@ -68942,7 +69296,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n133/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The Roman-law distinction between pledge and hypothec is a stock definition; Vattel's sequence of pledge, hypothec and antichresis between nations follows Wolff's Jus gentium, not this Pufendorf section.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9731,
@@ -70617,7 +70976,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n459/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Pufendorf VIII.2.6 has the near-verbatim 'gage ... de la bonne foi de celui qui les donne', in the same argument that breaking faith wrongs the hostages and they may be abandoned in extremity.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9786,
@@ -73842,9 +74206,9 @@
    "locus": "Liv. IV ch. XIII § 5",
    "page": "PUF34T1.p862",
    "inNote": false,
-   "label": "shared argument",
+   "label": "commonplace",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "On doit rendre le dépôt : le rendrai - je au voleur qui me l'a confié, dans le tems que le vrai propriétaire se fait connoître à moi & me demande son bien ?",
    "source": "c'est celui d'une chose dérobée, reçuë en dépôt: car (3) les Jurisconsultes soûtiennent, qu'on doit la rendre à son Maître, & non pas au Voleur de qui on la tient.",
@@ -73858,7 +74222,14 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n861/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same Roman-law example of a stolen deposit, but Pufendorf uses it for restitution prevailing over contract; Vattel's pair of deposit examples as exceptions in restrictive interpretation follows Grotius II.xvi.26.",
+    "date": "2026-11-21",
+    "labelWas": "shared argument",
+    "statusWas": "match"
+   }
   },
   {
    "id": 9884,
@@ -75620,7 +75991,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n165/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes Pufendorf's Caecina case with the same Digest law and concedes Barbeyrac's and Thomasius' objection that the decision also rests on the reason of the law.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9937,
@@ -76113,7 +76489,7 @@
    "inNote": false,
    "label": "close paraphrase",
    "confidence": 0.7,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "ou en possession de se gouverner par ses propres loix ( a )",
    "source": "la Liberté, ou (b) le droit de se gouverner par ses propres Loix",
@@ -76127,7 +76503,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n168/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The gloss 'ou en possession de se gouverner par ses propres loix' is verbatim Barbeyrac's Grotius II.16.15, which Vattel names; Pufendorf's similar gloss on the same Carthage case is a plausible but unproven link for this clause.",
+    "date": "2026-11-21",
+    "statusWas": "match"
+   }
   },
   {
    "id": 9952,
@@ -77423,7 +77805,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n187/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The mediator-versus-arbiter distinction is stock; Vattel's point that the mediator should not insist on strict justice is not in this sentence, though his later 'feu de la guerre' clause does echo the same Pufendorf paragraph.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 9992,
@@ -77777,7 +78164,12 @@
      "PDF p. 480",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=480"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's sequence (the means need the parties to meet and confer, so conferences are a means natural law prescribes) follows Wolff 571, and the clause renders 'media ... quae Jus naturae praescribit'.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10003,
@@ -78855,7 +79247,12 @@
      "PDF p. 494",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=494"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders Wolff 585 closely: prohibitions one cannot complain of and must even approve, yet against which retorsion may be needed, illustrated by export bans on goods.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10037,
@@ -79648,7 +80045,12 @@
      "PDF p. 500",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=500"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel renders JG §593 (men seized as pledges to compel a nation refusing justice) and then §595's rule that they may not be killed or corporally punished.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10062,
@@ -80975,7 +81377,7 @@
    "locus": "§ 750",
    "page": "JG.pdf634",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.65,
    "status": "match",
    "step": "F",
@@ -80988,7 +81390,13 @@
      "PDF p. 634",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=634"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's preference for volunteers comes in Wolff's §§749-751 sequence (all must serve in need, only the fit, no one enlisted unwillingly when volunteers exist), but in other words and sentence form.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 10103,
@@ -81375,7 +81783,12 @@
      "PDF p. 648",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=648"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Mercenaries as foreign volunteers bound by pact, the name 'capitulation' and the duty to keep what is promised all come from Wolff §765.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10115,
@@ -81471,7 +81884,12 @@
      "PDF p. 636",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=636"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff's note to §753 (citizens may not leave without the express or tacit consent of the ruler; his permission frees them) is Vattel's two-step answer on mercenary service, in the same terms.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10118,
@@ -82253,7 +82671,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "Ils ne vont point sans les raisons justificatives , car il n'est jamais véritablement avantageux de violer la justice.",
    "source": "Supponitur hic, bellum suscipi propter rationes justificas & suasorias conjunctim, ita ut propter neutras solas susciperetur.",
@@ -82264,7 +82682,13 @@
      "PDF p. 527",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=527"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's honest motives taken from the state's good that go with justifying reasons render Wolff §628's equitable suasory reasons 'si justificis accedunt', which the note says are taken jointly.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 10143,
@@ -83581,7 +84005,12 @@
      "PDF p. 609",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=609"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff §§ 716-717 in order: no duty to give time for an unjust defence, declaration at the frontier, and even after entering the territory provided no hostility has begun.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10184,
@@ -83612,7 +84041,12 @@
      "PDF p. 609",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=609"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 716 has the same argument: one may declare war on reaching the frontier with an army, since delay must not harm the declarer and the declaration's only end is that the adversary offer terms and avert war.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10185,
@@ -83957,7 +84391,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "Un prince doit garder la plus noble décence dans ses discours & dans ses écrits",
    "source": "Multo magis igitur dedecet Rectores civitatum, qui actus regios, in quorum numero etiam est belli declaratio (§. 284. part. 8. Jur. nat. & §. 740. h.), ad gloriam Gentis suae referre debent (§. 51.), si perversos illorum mores imitentur, quos in ipsis tolerare non debent (§. 650. part. 8. Jur. nat.).",
@@ -83968,7 +84402,13 @@
      "PDF p. 626",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=626"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel III.65 follows Wolff 742 (no hateful words in declarations of war; intemperate language even more unbecoming in rulers than in scholars); the prince's 'noble decence' renders that argument.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 10196,
@@ -84358,7 +84798,12 @@
      "PDF p. 613",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=613"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's hostis/inimicus distinction follows JG §722: the private enemy hates, the public enemy pursues a right real or believed ('vrais ou prétendus').",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10208,
@@ -85043,7 +85488,12 @@
      "PDF p. 558",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=558"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 659 has the same sequence: war alliances only for just war, so a peacetime alliance carries the tacit clause, since an alliance for unjust war is invalid and may not be made otherwise.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10230,
@@ -85108,7 +85558,12 @@
      "PDF p. 560",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=560"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel adds to the tacit just-war clause of every alliance the limit that it covers only an evidently unjust war, which is Wolff § 662's 'manifesto injusta arma'.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10232,
@@ -85588,7 +86043,12 @@
      "PDF p. 562",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=562"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel III.92 follows JG §665: a war alliance carries a tacit exception for the promisor's own need, the ally implicated in war is excused, and each judges his own capacity.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10247,
@@ -85608,7 +86068,7 @@
    "inNote": false,
    "label": "loose paraphrase",
    "confidence": 0.5,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "celui-là est dispensé d'envoyer du secours à son allié, qui se trouve lui-même embarrassé dans une guerre, pour laquelle il a besoin de toutes ses forces.",
    "source": "on sera dispensé de fournir des Troupes auxiliaires, tant qu'on en aura besoin pour sa propre defense. Car un Prince étant obligé avant toutes choses de défendre son Peuple; dans tous les Traitez qu'il fait, il sousentend toûjours cette condition, que la conservation de ses propres Etats lui permette de faire ce à quoi il s'engage envers une autre Puissance.",
@@ -85622,7 +86082,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n178/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same exception, but it is the Grotian stock example (II.16.27); Vattel's wording and sequence ('embarrassé dans une guerre', yet bound if able, each judges his forces, same for provisions) follow Wolff JG § 665.",
+    "date": "2026-11-21",
+    "statusWas": "match"
+   }
   },
   {
    "id": 10248,
@@ -86421,7 +86887,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n567/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's two duties of neutrals (no war supplies to either; non-war goods given to one must be given to the other) match Vattel's 1° and 2° in order and content.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10273,
@@ -88539,7 +89010,12 @@
      "PDF p. 671",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=671"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same sequence as Wolff 792: counted among enemies, yet not resisting, so no right to mistreat, use violence or kill, with the same list of women, children, aged and sick.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10339,
@@ -89578,7 +90054,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "Qu'estce que la vie, sans la liberté ? Si quelqu'un regarde encore la vie comme une faveur, quand on la lui donne avec des chaînes, à la bonne - heure",
    "source": "dubitari adhuc poterat, utrum servitus istiusmodi sit praeferenda morti, an non mortem praestet, quam eam subire",
@@ -89589,7 +90065,13 @@
      "PDF p. 691",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=691"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel III.152 follows Wolff 814 (slavery only for a personal crime; the ancients enslaved captives they thought they could kill), and his question about life in chains takes up Wolff's doubt whether such slavery is better than death.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 10372,
@@ -89620,7 +90102,12 @@
      "PDF p. 692",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=692"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 815's two ends of detention (prevent further resistance until the war ends; held for satisfaction until right is done) reappear in the same order and sense.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10373,
@@ -89747,7 +90234,12 @@
      "PDF p. 693",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=693"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff 816-817: captives are taken for their nation's cause, so it must pay their maintenance and free them; Vattel III.154 has the same obligation and the same reason.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10377,
@@ -89905,7 +90397,12 @@
      "PDF p. 736",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=736"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel rejects Wolff's §877 view that the manner of killing is indifferent and presses the very objection Wolff dismisses (secret means cannot be guarded against); he even reuses Wolff's camp-and-tent example.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10382,
@@ -90289,7 +90786,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n578/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Pufendorf warns that the example set in bribing enemy subjects may rebound on oneself; Vattel's point about assassination and poison shares only this general idea, and his sources here are Grotius and Justin.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 10394,
@@ -91868,7 +92370,7 @@
    "locus": "§ 826",
    "page": "JG.pdf702",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.55,
    "status": "match",
    "step": "F",
@@ -91881,7 +92383,13 @@
      "PDF p. 702",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=702"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel turns Wolff's transition from the natural-law ban on needless destruction to 'quid inter Gentes impune tolerandum' into his voluntary-law rule; same words but an assertion, not Wolff's announced question.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 10444,
@@ -92387,7 +92895,7 @@
    "inNote": true,
    "label": "shared argument",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "ils ont prononcé qu'il faut, en toute rencontre, parler selon la vérité connue, si l'on ne peut se taire & offrir comme en sacrifice à leur divinité les intérêts les plus précieux, plutôt que de lui manquer de respect.",
    "source": "un mensonge, il faudroit éviter le mensonge, & laisser périr tout le Genre Humain.",
@@ -92401,7 +92909,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n660/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's note sets the rigid theologians' maxims (let mankind perish rather than lie) against truth grounded in society's needs and against no wrong to those with no right to the truth; Vattel III.177 follows that sequence.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 10460,
@@ -93745,7 +94259,7 @@
    "inNote": true,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "Dans toutes les occasions susceptibles de doute, la nation entiere, les particuliers, & singuliérement les gens de guerre, doivent s'en ra porter à ceux qui gouvernent, au souverain.",
    "source": "Ainsi pour l’ordinaire la plûpart des gens que le Souverain enrolle dans les Etats, ne peuvent pas s’excuser sur les doutes qu’ils ont au sujet de la justice de la Guerre où on les fait marcher ; parce que cela demande une discussion qui est au dessus de leur portée",
@@ -93759,7 +94273,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n449/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's note (soldiers cannot excuse themselves on doubts about the war's justice; otherwise the prince's authority would be nullified) is the argument Vattel generalises to the nation and ministers of the sovereign.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 10501,
@@ -97375,7 +97895,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n516/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Professional robbers and assassins as enemies of all men is a commonplace; Pufendorf's point is the loss of esteem, while Vattel's is the right of all nations to unite against such peoples.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12212,
@@ -97914,7 +98439,12 @@
      "PDF p. 535",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=535"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's clause translates Wolff §633's comparison: contrary opinions cannot be true at the same time.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12229,
@@ -97971,7 +98501,12 @@
      "PDF p. 535",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=535"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel III.39-40 follows Wolff §§633-635: war cannot be just on both sides, yet both may act in good faith, and invincible error is not imputed.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12231,
@@ -98316,7 +98851,12 @@
      "PDF p. 538",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=538"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'only the offended may punish independent persons', followed by rejecting punishment of nations for impiety or vice, is the sequence of JG §636-637 (punitive war only for the injured, hence none against a nation for crimes against God).",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12242,
@@ -99750,7 +100290,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur01pufe/page/n489/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Barbeyrac's added condition (only when the master of the place cannot defend it himself), absent from Grotius, reappears almost word for word in Vattel's rule on seizing a neutral place.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12286,
@@ -103359,7 +103904,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n581/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Locke's limit on the conqueror rests on the personal guilt of combatants and their heirs' rights; Vattel's rests on war being between sovereigns; only the conclusion that private goods are spared is shared.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12398,
@@ -103377,7 +103927,7 @@
    "locus": "§ 866",
    "page": "JG.pdf729",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.6,
    "status": "match",
    "step": "F",
@@ -103390,7 +103940,13 @@
      "PDF p. 729",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=729"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff § 866's distinction (conquest takes the nation's domain, private lands remain their owners') is Vattel's rule, restated in a compressed, differently built sentence.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 12399,
@@ -103904,7 +104460,12 @@
      "PDF p. 734",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=734"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's options for the conqueror (incorporate, step into the dispossessed sovereign's place keeping the state as it was, or rule it as a separate state) follow the alternatives of Wolff § 873.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12415,
@@ -103924,7 +104485,7 @@
    "inNote": false,
    "label": "close paraphrase",
    "confidence": 0.55,
-   "status": "match",
+   "status": "possible",
    "step": "F",
    "passage": "Enfin le conquérant peut gouverner sa conquête comme un état à part, en y laissant subsister la forme du gouvernement.",
    "source": "pourvû que le Vainqueur, qui en est devenu maître, le veuille désormais gouverner comme un Roiaume à part, & non pas comme une Province aanexée à ses anciens Etats.",
@@ -103938,7 +104499,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n616/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both contrast governing a conquest 'comme un état/Roiaume à part' with annexation, but Pufendorf uses it for state identity while Vattel's list of options (Romans, Tartars in China) follows Montesquieu; the phrase alone is not specific.",
+    "date": "2026-11-21",
+    "statusWas": "match"
+   }
   },
   {
    "id": 12416,
@@ -104218,7 +104785,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.45,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "Ce droit a donc lieu aussi-tôt que ces personnes ou ces choses prises par l'ennemi tombent entre les mains des soldats de la même nation , ou se retrouvent dans l'armée , dans le camp, dans les terres de leur souverain, dans les lieux où il commande.",
    "source": "si tamen reditus ita explicetur, ut redire idem sit, ac venire in potestatem Gentis suae ex potestate hostis, in qua fuerant, quemadmodum capere idem significat ac redigere in suam potestatem, & potestas in sensu physico accipiatur",
@@ -104229,7 +104796,13 @@
      "PDF p. 754",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=754"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel III.206 takes Wolff 897's account of postliminium as coming back into the nation's (physical) power and infers that it applies once persons or things reach the nation's soldiers, army or lands.",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 12425,
@@ -105441,7 +106014,7 @@
    "locus": "§ 932",
    "page": "JG.pdf776",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.65,
    "status": "match",
    "step": "F",
@@ -105454,7 +106027,13 @@
      "PDF p. 776",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=776"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel follows Wolff §932 (general truces only by the sovereign, particular truces by generals when circumstances require, with the burial and siege examples), but rewrites the clause with additions rather than keeping its structure.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 12463,
@@ -105573,7 +106152,12 @@
      "PDF p. 777",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=777"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §933: truces are made by the sovereign or by generals acting by his right, and rest on his faith; Vattel's sentence and margin ('engagent la foi du souverain') condense this.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12467,
@@ -106028,7 +106612,7 @@
    "locus": "§ 936",
    "page": "JG.pdf779",
    "inNote": false,
-   "label": "close paraphrase",
+   "label": "loose paraphrase",
    "confidence": 0.55,
    "status": "match",
    "step": "F",
@@ -106041,7 +106625,13 @@
      "PDF p. 779",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=779"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel III.243 follows Wolff 936 (choice belongs to the injured party, since an infractor's option would make the alternative vain), but this sentence restates the conclusion in a different structure, not a close paraphrase.",
+    "date": "2026-11-21",
+    "labelWas": "close paraphrase"
+   }
   },
   {
    "id": 12482,
@@ -107162,7 +107752,12 @@
      "PDF p. 770",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=770"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Same argument as Wolff §922: no postliminium during a truce because all stays as it is, so what was captured cannot be restored to its former state.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12518,
@@ -109454,7 +110049,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n76/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "The difference between a mere agreement to sell and a sale that transfers property is a stock civil-law distinction; Barbeyrac's note does not deal with ransom, and nothing ties Vattel's case to it.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12589,
@@ -110166,7 +110766,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n414/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both reverse the charge of rebellion against arbitrary power, a common Lockean idea; Vattel's point about self-interested ministers is not in the note, and no wording ties the two.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12611,
@@ -111011,7 +111616,12 @@
      "PDF p. 793",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=793"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §§962-964: the ruler owes the care of peace to his subjects as a perfect debt grounded in the transfer of sovereignty for the public good, and owes it also to other nations; this is Vattel's double bond.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12637,
@@ -113408,7 +114018,12 @@
      "PDF p. 826",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=826"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Wolff §1002: fortifications razed during the war are remitted by the amnesty; Vattel follows the whole section (no demolishing before restitution, new works may be removed).",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12713,
@@ -113561,7 +114176,12 @@
      "PDF p. 826",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=826"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "The margin renders Wolff's §1003 heading in short, and the section gives Wolff's rule on names of ceded countries (usage of the skilled at the time).",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12718,
@@ -113850,7 +114470,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n591/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Pufendorf VIII.8.1 lets a nation forced into peace by an unjust aggressor shake it off when it safely can, 'à la prémiére occasion favorable'; Vattel's exception to the plea of fear makes the same argument in other words.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12727,
@@ -114490,7 +115115,7 @@
    "locus": "Liv. VIII ch. VIII § 4",
    "page": "PUF34T2.p593",
    "inNote": false,
-   "label": "loose paraphrase",
+   "label": "shared argument",
    "confidence": 0.4,
    "status": "possible",
    "step": "F",
@@ -114506,7 +115131,13 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n592/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both treat delay in executing a peace treaty and bad intent, but Pufendorf's point is the strict term with force-majeure excuse while Vattel equates affected delays with refusal; topical overlap, not the same content.",
+    "date": "2026-11-21",
+    "labelWas": "loose paraphrase"
+   }
   },
   {
    "id": 12747,
@@ -114859,7 +115490,12 @@
      "PDF p. 847",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=847"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel IV.54 follows Wolff § 1033 step by step (injured party may break or keep the treaty, absurd that the violator be freed by his own breach, keep it and claim reparation).",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12758,
@@ -114924,7 +115560,12 @@
      "PDF p. 854",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=854"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel opens with Wolff §1044's premise, the necessity of public business between nations, built on the same grounds (common good, settling disputes, not harming), and draws the right to treat.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12760,
@@ -116453,9 +117094,9 @@
    "locus": "§ 1043",
    "page": "JG.pdf853",
    "inNote": false,
-   "label": "shared argument",
+   "label": "open disagreement",
    "confidence": 0.4,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "Mais on leur doit une protection plus particuliere qu'à d'autres étrangers ou citoyens",
    "source": "peregrini, jure non alio utuntur quam peregrinorum in territorio alieno degentium",
@@ -116466,7 +117107,14 @@
      "PDF p. 853",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=853"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel takes up Wolff §1043's rule that agents have only the rights of foreigners or citizens and corrects it: they are owed more particular protection.",
+    "date": "2026-11-21",
+    "labelWas": "shared argument",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 12808,
@@ -116515,9 +117163,9 @@
    "locus": "§ 1057",
    "page": "JG.pdf865",
    "inNote": false,
-   "label": "shared argument",
+   "label": "open disagreement",
    "confidence": 0.35,
-   "status": "possible",
+   "status": "rejected",
    "step": "F",
    "passage": "Si ce prince reçoit le ministre, il ne peut le recevoir que dans la qualité que lui donnent ses lettres de créance.",
    "source": "Non a sola voluntate mittentis dependet, quem characterem imprimere velit legato suo",
@@ -116528,7 +117176,14 @@
      "PDF p. 865",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=865"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Wolff § 1057 says a receiving nation need not recognise the sender's special representative character; Vattel's rule that a received minister must be taken in the quality of his credentials takes the opposite line and draws on § 1067, so no argument is shared.",
+    "date": "2026-11-21",
+    "labelWas": "shared argument",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 12810,
@@ -116949,7 +117604,12 @@
      "PDF p. 871",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=871"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both derive the envoy's honour from the sender's dignity, a stock point of embassy law; Vattel grounds it on the representative character that Wolff's § 1064 expressly rejects, and gives a different reason for the severity of the offence.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12823,
@@ -117396,7 +118056,7 @@
    "inNote": false,
    "label": "shared argument",
    "confidence": 0.35,
-   "status": "possible",
+   "status": "match",
    "step": "F",
    "passage": "A la vérité, le prince seul, à qui le ministre est envoyé, se trouve obligé & particuliérement engagé à le faire jouir de tous les droits attachés à son caractere",
    "source": "tacite quoque uti honorem legato debitum, ita quoque securitatem illam eminentem promittit",
@@ -117407,7 +118067,13 @@
      "PDF p. 871",
      "file:///C:/PhD_library/vattel-reuse/sources/Ius_Gentium_Methodo_Scientifica_Pertract.pdf#page=871"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel's 'particulièrement engagé' recalls IV.82, where admitting a minister is an engagement to protect him: Wolff's tacit promise of honour and security on admission (§1064).",
+    "date": "2026-11-21",
+    "statusWas": "possible"
+   }
   },
   {
    "id": 12837,
@@ -119601,7 +120267,12 @@
      "archive.org",
      "https://archive.org/details/ledroitdelanatur02pufe/page/n604/mode/1up"
     ]
-   ]
+   ],
+   "audit": {
+    "verdict": "weak",
+    "reason": "Barbeyrac's note shares only the reason that seizure presupposes jurisdiction; Vattel's distinction between commercial effects and debts from the minister's household follows Bynkershoek.",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": 12904,

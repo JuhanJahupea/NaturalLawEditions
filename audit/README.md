@@ -206,3 +206,32 @@ The *Discursus praeliminaris de philosophia in genere* (`texts/wolff-discursus-p
 - Vattel takes nothing from §§ 1–54 (the three kinds of knowledge, philosophy in general), the theoretical parts, politics, economics or universal practical philosophy (§ 70). His definition of law (§ 2) comes from the *Philosophia practica universalis* §§ 131 and 135. The questions of foundation and obligation (§ 5) and the replies to the utilitarian and voluntarist accounts (§§ 7–8) have no counterpart in the *Discursus*.
 
 The rows are in `editions/vattel-essai-1747/passes/wolff-discursus-praeliminaris-1740.json`: 25 rows, 6 match. The match rows: § 3 (two, § 68), § 4 (one, § 62), § 21 (two, §§ 1 and 4: knowledge by attending to oneself; we desire nothing we have not judged good) and § 22 (one, § 68).
+
+## Vattel 1773: second reading of the added rows (2026-11-21)
+
+`additions-second-reading-2026-11-21.json` holds every verdict. A second reader (Claude Opus, `tools/transcription/PRECISION_PROMPT.md`) read all 403 rows of `editions/vattel-1773/passes/additions.json` (steps A, C and V).
+
+| Status before | Rows | Right | Weak | Wrong |
+|---|---|---|---|---|
+| match | 230 | 215 (93%, 90–96) | 15 | 0 |
+| possible | 173 | 71 | 96 | 6 |
+
+By table: *Jus gentium* 152 right of 174, *Institutiones* 37 of 49, Grotius 69 of 116, Pufendorf 24 of 58, Burlamaqui 4 of 6. Applied (Vattel 1.19): right rows have status match, weak rows possible, wrong rows `rejected`; 37 labels changed.
+
+## Vattel 1773: full pass with the *Jus gentium* and Pufendorf (2026-11-21)
+
+Claude Opus read every section of the Préface, the Préliminaires and Livres I–IV in 72 batches of about 22,000 characters (`tools/transcription/full_cand.py`, `FULL_PASS_PROMPT.md`). Each section came with the §§ of the *Jus gentium* it follows (those its rows cite, or the §§ between its neighbours'), pages of Barbeyrac's Pufendorf (cited by rows nearby, cited by Vattel, or nearest by vocabulary), and its rows in the *Jus gentium*, *Institutiones* and Pufendorf tables. The readers listed every reuse and whether a row covers it.
+
+The reuse no row covered became 3,260 rows (step F): *Jus gentium* 1,773 (1,119 match), Pufendorf 1,485 (482 match; 420 in Barbeyrac's notes). 978 of 1,124 sections have one or more. The *Jus gentium* table grew from 1,370 rows to 3,153, the Pufendorf table from 626 to 2,125.
+
+`fullpass-second-reading-2026-11-21.json` holds the second reading (`tools/transcription/fullpass_check.py`, `fullpass_apply.py`):
+
+| Rows read | Rows | Right | Weak | Wrong |
+|---|---|---|---|---|
+| New match rows, random | 80 | 71 (89%, 80–94) | 9 | 0 |
+| New possible rows, random | 40 | 13 | 25 | 2 |
+| Rows the readers judged wrong | 49 | 4 | 34 | 11 |
+
+The new match rows are as precise as the older ones (89% in the precision sample of 2026-11-18). Weak sampled rows have status possible, right ones match; flagged rows the second reader found wrong are `rejected`.
+
+The readers also named Wolff rows whose locus is a § the passage only cites. `tools/transcription/wolff_loci2.py` placed every Wolff row with the old text layer's spelling folded (et/&, ae, j/i, v/u): 43 stand in another §. The 25 two or more §§ away now name the § where the passage stands (`locusCheck`); 18 that straddle two neighbouring §§ keep their locus.

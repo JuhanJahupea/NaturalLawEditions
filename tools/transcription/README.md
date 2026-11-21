@@ -101,6 +101,9 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - Second copy: the Zürich copy on e-rara; readers with `PAGE_CHECK_PROMPT_LOISIR.md` (Claude Sonnet, 17 pages per agent) compare each page image with the transcription.
 - Wolff's *Theologia naturalis* I (§§ 948–1006) and *Discursus praeliminaris* (§§ 1–171) from MDZ, as the *Philosophia practica*: prompts `TRANSCRIBE_PROMPT_TN1.md` and `TRANSCRIBE_PROMPT_LOG40.md`. Readers with `ESSAI_WOLFF2_PROMPT.md` (Claude Opus, about 10 sections per agent), then `essai_merge.py <work> <dir> <date> --write --only TN1,LOG40`.
 
+- Full pass (2026-11-21): `full_cand.py <out> [chars]` (every section with its Jus gentium §§ and Pufendorf pages, batches by size), readers with `FULL_PASS_PROMPT.md` (Claude Opus), `add_merge.py <work> <first id> <date> <out> F:<dir> --append`. Second reading: `fullpass_check.py <dir> <out> [n match] [n possible]` (rows the readers judged wrong and a random sample of the new rows), readers with `PRECISION_PROMPT.md`, `fullpass_apply.py <dir> <date> <vattel data.json> --write`. The added rows of earlier steps: `addv_items.py <out>`, `addv_apply.py <dir> <date> --write`.
+- `wolff_loci2.py <work>`: places Wolff rows whose source passage comes from the old text layer (et/&, ae, j/i, v/u folded) and lists those whose locus names another §.
+
 ## 11. Text corrections and offsets
 
 - `remap_text.py <edition> <old text.json> [--base <layer>=<json>] [--layers a,b] [--write]`: after a change to an edition's text, moves the offsets of pass rows, attributions and static layers to the new text through a character diff of each part, and reads each passage again from the new text.

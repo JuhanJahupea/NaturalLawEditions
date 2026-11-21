@@ -812,6 +812,17 @@
    }
   },
   {
+   "id": 57,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Wolff §205 measures each nation's duty to trade by the end of its own state; Vattel measures the right of all nations over each by the end of their common society (Wolff's §14 civitas maxima point).",
+    "date": "2026-11-21",
+    "flaggedBy": "§ 205 says each nation measures its own obligation to trade by the end of its own state; Vattel's sentence on the common right of nations over each state translates § 14 ('ex fine civitatis maximae metiendum'), not § 205.",
+    "statusWas": "match"
+   }
+  },
+  {
    "id": 69,
    "label": "translation",
    "audit": {
@@ -827,6 +838,15 @@
    "locusCheck": {
     "was": "§ 28",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 77,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only the topic of unequal alliances is shared: Vattel uses Aristotle's dictum via Grotius, Wolff gives a different stock definition; the commonplace label fits.",
+    "date": "2026-11-21",
+    "flaggedBy": "Commonplace definition: Vattel's honour-and-aid formula is Aristotle via Grotius I.iii.21, and Wolff's definition of unequal treaties by unequal promises shares no wording with it."
    }
   },
   {
@@ -869,6 +889,17 @@
    "locusCheck": {
     "was": "§ 144",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 106,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Vattel I.23 concerns the right to the means of perfection and translates Wolff §37; §34 is the conservation counterpart, which Vattel only recalls through his own §18.",
+    "date": "2026-11-21",
+    "flaggedBy": "I.23 translates JG §37 (right to the means of perfection); §34 is the right to avert destruction and shares only the general 'jus ad ea' formula.",
+    "statusWas": "possible"
    }
   },
   {
@@ -1086,6 +1117,14 @@
    "locusCheck": {
     "was": "§ 87",
     "date": "2026-11-18"
+   },
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Inst. § 1102 concerns a protector who usurps more right than the pact gives, the case of Vattel I.198 (which even cites 'résister & implorer un secours étranger'); I.196 is the protector's failure to protect (Wolff JG § 82).",
+    "date": "2026-11-21",
+    "flaggedBy": "The source ('vi resistere et alienum auxilium implorare licet') is Wolff's remedy against a protector who usurps rights, the case of JG § 83 / I.198 (see row 275), not the case of failed protection; Vattel's clause follows JG § 82 (row 270).",
+    "statusWas": "possible"
    }
   },
   {
@@ -1181,6 +1220,15 @@
    }
   },
   {
+   "id": 328,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Only pro-rata contribution is shared: Wolff speaks of members of a corporation paying for corporate property, Vattel of state taxes in proportion to means and advantages.",
+    "date": "2026-11-21",
+    "flaggedBy": "Wolff's § 116 has the members of a corporation contributing pro rata to the upkeep of its common property; Vattel's taxation by faculties and advantages comes from Pufendorf, and 'pro rata' alone is a commonplace."
+   }
+  },
+  {
    "id": 334,
    "locus": "§ 1129",
    "locusCheck": {
@@ -1242,6 +1290,15 @@
     "verdict": "right",
     "reason": "Vattel's general principle renders Wolff's: a nation owes another what it owes itself, insofar as the other needs it and it can give it without neglecting its duties to itself.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 400,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Vattel's no-compulsion-of-benefits point rests on the stock principle of natural liberty (no right over another's actions); the specific argument is in JG §167, not INST §76.",
+    "date": "2026-11-21",
+    "flaggedBy": "INST § 76 states only the general maxim that no one has a right over another's actions; no shared wording or specific argument. Vattel's sentence follows the note to JG § 167 (obtrusio beneficii repugnat libertati naturali)."
    }
   },
   {
@@ -1444,6 +1501,14 @@
    "locusCheck": {
     "was": "§ 42",
     "date": "2026-11-18"
+   },
+   "label": "shared argument",
+   "audit": {
+    "verdict": "right",
+    "reason": "Not a commonplace: Vattel II.41-44 follows Wolff §§ 244-249 (foreign nations need not grant a title the ruler takes; a title contrary to usage may be refused) and uses Wolff's own example of the king who wants the title of Majesty.",
+    "date": "2026-11-21",
+    "flaggedBy": "Wolff's hypothetical (a ruler wanting to be called King with the title of Majesty) says nothing about usage reserving majesty to monarchs of great nations; that sentence follows Pufendorf VII.3.3, and Wolff's example matches Vattel's later 'petit prince' sentence instead.",
+    "labelWas": "commonplace"
    }
   },
   {
@@ -1468,6 +1533,15 @@
    "locusCheck": {
     "was": "§ 1089",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 494,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Same rule that no nation must suffer interference in its government, but § 1044 only recalls it in passing in the argument for embassies; Vattel's actual source is Wolff § 269 ('jus non patiendi ut alia se regimini immisceat').",
+    "date": "2026-11-21",
+    "flaggedBy": "§1044 (right of legation) only lists in passing, by cross-reference, the right not to suffer interference; Vattel's sentence follows §269 itself, the proposition after §§256-257."
    }
   },
   {
@@ -1516,6 +1590,23 @@
    "locusCheck": {
     "was": "§ 512",
     "date": "2026-11-18"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "Shared commonplace premise (every nation thinks its religion true) used in different arguments (missions in Vattel, faith of treaties in Wolff).",
+    "date": "2026-11-21",
+    "flaggedBy": "§551 makes the same general remark in the context of keeping faith in treaties with nations of another religion; Vattel's section on missions follows §259 (row 502), not §551."
+   }
+  },
+  {
+   "id": 505,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Wolff's sentence (263) extends charity regardless of religion from individuals to nations; Vattel's clause concerns the duty of justice, which Wolff treats in 264-266, so the passages do not match.",
+    "date": "2026-11-21",
+    "flaggedBy": "The §263 sentence concludes that charity is owed regardless of religion; the parallel for Vattel's point on justice binding nations is §264 (reported separately).",
+    "statusWas": "possible"
    }
   },
   {
@@ -1946,6 +2037,21 @@
    "locusCheck": {
     "was": "§ 369",
     "date": "2026-11-18"
+   },
+   "audit": {
+    "verdict": "weak",
+    "reason": "The rule is Wolff's, but this clause is his cross-reference in the section on protected nations; Vattel's general paragraph follows §§ 381-383, the passage this clause points back to.",
+    "date": "2026-11-21",
+    "flaggedBy": "§440 concerns treaties of a nation under protection and only recalls §381 in passing; Vattel's sentence follows §381 (Foedera inire non licet ... contraria), not this passage."
+   }
+  },
+  {
+   "id": 691,
+   "audit": {
+    "verdict": "weak",
+    "reason": "That one may not aid an unjust belligerent is a stock maxim, mentioned only in passing in Wolff 696 on passage; commonplace fits.",
+    "date": "2026-11-21",
+    "flaggedBy": "§696 is about letting the stronger belligerent through one's territory; its passing maxim (from §656) is a commonplace. Vattel's argument about allies follows §§658, 667-668."
    }
   },
   {
@@ -1962,6 +2068,14 @@
    "locusCheck": {
     "was": "§ 269",
     "date": "2026-11-18"
+   },
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Wolff's §403 sentence is the opposite case (a promise to make war on no one without consent, which does diminish sovereignty) and concerns the weaker ally's right of self-defence; Vattel's sentence on not attacking a certain nation renders §399 ('bellum facere certae cuidam Genti'), not this passage.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel's example (promising not to attack a certain nation without consent, which leaves sovereignty intact) comes from JG § 399 ('certae cuidam Genti'); the § 403 passage paired is about the weaker ally keeping the right of defensive war, a different point.",
+    "statusWas": "match"
    }
   },
   {
@@ -2288,6 +2402,15 @@
    }
   },
   {
+   "id": 862,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Rejecting an absurd reading is a stock interpretive rule; Vattel's point on figurative expressions shares only that maxim with Wolff Inst. 804.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel speaks of idioms whose literal sense would be absurd; Wolff's rule rejecting interpretations that lead to absurdity is the source of Vattel's later section on absurdity, not of this one."
+   }
+  },
+  {
    "id": 865,
    "audit": {
     "verdict": "right",
@@ -2437,6 +2560,17 @@
    "locusCheck": {
     "was": "§ 1112",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 939,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "INST §1164 says citizens' liberty is pledged for the state's debts (androlepsia); Vattel's sentence is about the state owing indemnity shared pro rata, which is INST §1166-1167 / JG §601, not this passage.",
+    "date": "2026-11-21",
+    "flaggedBy": "INST's fragment says citizens' goods are liable for the state's debts (Vattel §344's point); Vattel's stretch says the state owes the citizen indemnity shared pro rata, which comes from JG §601.",
+    "statusWas": "possible"
    }
   },
   {
@@ -2648,6 +2782,17 @@
    }
   },
   {
+   "id": 1032,
+   "label": "shared argument",
+   "audit": {
+    "verdict": "right",
+    "reason": "Vattel does not reject Wolff 634: III.39-40 repeat its thesis (war cannot be just on both sides, though both may act in good faith) and add the external-effects rule that Wolff also grants under voluntary law (888).",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel does not reject §634 here: this stretch renders the voluntary-law rule of §888 (row 7210), and the §634 clause about both belligerents believing their cause just answers Vattel's preceding 'bonne-foi' sentence, not this one.",
+    "labelWas": "open disagreement"
+   }
+  },
+  {
    "id": 1033,
    "locus": "§ 632",
    "locusCheck": {
@@ -2777,6 +2922,17 @@
    "locusCheck": {
     "was": "§ 672",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1132,
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Wolff gives the belligerent's interest in keeping a neighbour neutral, which Vattel uses in III.107; III.108 offers 'another reason', the neutral's own peace with both sides, so the passages make different points.",
+    "date": "2026-11-21",
+    "flaggedBy": "§673's 'foedus neutralitatis pangi solet' only says such treaties are usual; Vattel's stretch on treaties with both sides when war is near comes from §682.",
+    "statusWas": "possible"
    }
   },
   {
@@ -2974,6 +3130,14 @@
    "locusCheck": {
     "was": "§ 586",
     "date": "2026-11-18"
+   },
+   "status": "rejected",
+   "audit": {
+    "verdict": "wrong",
+    "reason": "Wolff § 894 is on postliminium; 'in compensationem debiti' is a passing clause about what the enemy took, not the doctrine that just war is a means of acquiring by expletio juris (that is Wolff § 781/586).",
+    "date": "2026-11-21",
+    "flaggedBy": "JG §894 is on postliminium; its parenthetical 'in compensationem debiti' is incidental. Vattel's expletio juris passage follows §859 (row 7294), not §894.",
+    "statusWas": "possible"
    }
   },
   {
@@ -3424,6 +3588,24 @@
    "locusCheck": {
     "was": "§ 662",
     "date": "2026-11-18"
+   }
+  },
+  {
+   "id": 1469,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Both say an agent's engagement binds the sovereign only if ratified, but Wolff's thesis concerns the unauthorized sponsio while Vattel states a modern usage for all ministers' engagements.",
+    "date": "2026-11-21",
+    "flaggedBy": "Wolff's thesis on sponsio (a pact made without mandate) is a different case from Vattel's modern usage of ratifying a mandated minister's engagements; the reused passage is the note on conventio ministri (row 1467)."
+   }
+  },
+  {
+   "id": 1471,
+   "audit": {
+    "verdict": "weak",
+    "reason": "Every sovereign's right of legation is stock doctrine; Vattel argues it here from sovereign dignity, not from Wolff's grounds.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel's conclusion concerns the right of small sovereigns to send ambassadors of the first order and rests on the equality of dignity; Wolff's thesis on the natural right to send envoys is a commonplace with no shared wording or argument here."
    }
   },
   {
@@ -6276,6 +6458,15 @@
    }
   },
   {
+   "id": 3350,
+   "audit": {
+    "verdict": "weak",
+    "reason": "The sentence is Vattel's quotation of Barbeyrac's note on Grotius I.1.14; it shares Wolff's thesis that the difference lies in the application to nations, but nothing ties these words to Wolff.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel's words here are Barbeyrac's, quoted from his note on Grotius I.1.14 n.3, not taken from Wolff's Prolegomena §3."
+   }
+  },
+  {
    "id": 3354,
    "audit": {
     "verdict": "right",
@@ -6306,6 +6497,28 @@
     "verdict": "right",
     "reason": "Vattel's quoted preface renders Wolff's sentence on natural and necessary law of nations word for word.",
     "date": "2026-11-17"
+   }
+  },
+  {
+   "id": 3370,
+   "label": "shared argument",
+   "audit": {
+    "verdict": "right",
+    "reason": "Not a commonplace: Vattel's quotation translates Wolff's own Praefatio, and Prolegomena §3 states the same Wolffian doctrine that the nature of a nation differs from human nature, so natural law must be modified in its application.",
+    "date": "2026-11-21",
+    "flaggedBy": "The stretch is Vattel's announced translation of the Praefatio (row 3367); Prolegomena §3 is only a parallel statement elsewhere in Wolff, not the passage reused.",
+    "labelWas": "commonplace"
+   }
+  },
+  {
+   "id": 3389,
+   "label": "open disagreement",
+   "audit": {
+    "verdict": "right",
+    "reason": "Pref.17-18 takes up this preface argument (natural law's rigour modified for nations by analogy with civil laws) and corrects it, deriving the changes from natural liberty as Wolff did for individuals in his Jus naturae; a correction, not a paraphrase.",
+    "date": "2026-11-21",
+    "flaggedBy": "Vattel refers to Wolff's reasoning on internal and external right in the Jus naturae, not to the civil-law analogy of the Praefatio, which he has just rejected (Pref.17).",
+    "labelWas": "loose paraphrase"
    }
   },
   {
