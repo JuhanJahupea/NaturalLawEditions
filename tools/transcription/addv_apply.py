@@ -7,7 +7,7 @@ from paths import ROOT
 d, date = sys.argv[1:3]; WRITE = '--write' in sys.argv
 p = ROOT + '/editions/vattel-1773/passes/additions.json'; P = json.load(open(p)); by = {r['id']: r for r in P['rows']}
 items = {x['key']: x for x in json.load(open(d + '/items.json'))}
-V = {it['key']: it for f in sorted(glob.glob(d + '/out/*.json')) for it in json.load(open(f))['items']}
+V = {int(it['key']): it for f in sorted(glob.glob(d + '/out/*.json')) for it in json.load(open(f))['items']}
 LABELS = {'verbatim', 'close paraphrase', 'loose paraphrase', 'translation', 'shared argument', 'citation', 'open disagreement', 'commonplace'}
 st = collections.Counter(); bystep = collections.defaultdict(collections.Counter); bytab = collections.defaultdict(collections.Counter); labs = collections.Counter()
 for k, v in sorted(V.items()):
