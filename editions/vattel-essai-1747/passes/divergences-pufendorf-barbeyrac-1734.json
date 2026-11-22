@@ -1,0 +1,277 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-essai-1747",
+ "text": "pufendorf-barbeyrac-1734",
+ "date": "2026-11-22",
+ "source": "Pufendorf, Le droit de la nature et des gens, trad. Barbeyrac (Amsterdam 1734), with his notes, from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "E.2",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. I ch. VI § 4",
+   "sourceId": "PUF34.1.6.4",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What is a law in general?",
+   "comment": "Pufendorf, DNG I.6.4 defines law in general as the will of a superior who imposes on his dependants the obligation to act as he prescribes, and he rejects Grotius's definition of law as a rule of moral actions because it would put something just before law. Vattel takes Wolff's definition of law as a rule according to which we are obliged to determine our actions (PPU I § 131) and places the reason of natural laws in the essence and nature of man and of things. Wolff framed this definition against the definition of law as a superior's command, and Vattel's definition has no superior in it.",
+   "passage": "Une Loi est en général une regle, selon laquelle nous sommes obligés de déterminer nos actions",
+   "sourcePassage": "La LOI donc en général n'est autre chose , à mon avis , qu'une Volonté d'un Supérieur , par laquelle il impose à ceux qui dépendent de lui l'obligation d'agir d'une certaine maniere qu'il leur prescrit",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 253",
+     "zotero://open-pdf/library/items/L42CQ82S?page=253"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n252/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.14",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. I ch. I § 21",
+   "sourceId": "PUF34.1.1.21",
+   "relation": "partly",
+   "severity": 1,
+   "question": "what obligation is and in what it consists",
+   "comment": "Pufendorf, DNG I.1.21 defines obligation as a moral quality by virtue of which one is bound by moral necessity to do, receive or suffer something. Vattel quotes the definition and accepts it as a definition of passive obligation only. He objects that it names the effect of obligation without saying in what the moral quality consists, which for him is the connection of a motive with the action (§ 12).",
+   "passage": "Mais il ne nous dit point en quoi consiste cette qualité morale.",
+   "sourcePassage": "L'OBLIGATION est une Qualité Morale, en vertu de laquelle on est astreint, par une necessité Morale, à faire, recevoir, ou souffrir quelque chose.",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 175",
+     "zotero://open-pdf/library/items/L42CQ82S?page=175"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n174/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.17",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. I ch. VII § 3",
+   "sourceId": "PUF34.1.7.3",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "what makes a free action morally good or right",
+   "comment": "Pufendorf, DNG I.7.3 holds that the moral goodness of actions consists essentially in their relation to an obligatory law, and sets aside the natural goodness by which actions contribute to someone's perfection. Vattel holds that a free action is good or right when it has its sufficient reason in the essence and attributes of the agent. Pufendorf locates rectitude in a relation to law and Vattel in the agreement of the action with the agent's nature, which § 17 links to the convenance of § 6.",
+   "passage": "Or une action libre est, bonne, ou droite, quand elle a sa raison suffisante dans l'essence, & dans les attributs de l'être qui la produit",
+   "sourcePassage": "la Bonté & la Malice des Actions consistent essentiellement dans un rapport à la Régle qui doit les diriger , je veux dire , à la Loi.",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 283",
+     "zotero://open-pdf/library/items/L42CQ82S?page=283"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n282/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.18",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. I ch. VI § 9",
+   "sourceId": "PUF34.1.6.9",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What obligation is and why we must obey a superior",
+   "comment": "Pufendorf, DNG I.6.9 holds that obligation is imposed by a superior who has both the force to harm those who disobey and just reasons for restricting their liberty, and that force alone yields compliance only while the fear lasts. Vattel treats the justice of obedience and the superior's power to punish as motives joined to obedience, either of which brings the account back to obligation as the connection of motive with action. Vattel takes over Pufendorf's two grounds of a superior's right, makes each a motive, and drops the requirement that both concur.",
+   "passage": "Mais alors, il nous allégue des motifs, qui sont joints à cette action d'obéissance",
+   "sourcePassage": "celui qui impose l'Obligation & qui en imprime le sentiment dans le cœur de l'Homme , c'est proprement un Supérieur , c'est-à-dire , un Etre qui a non seulement (1) des forces suffisantes pour faire souffrir quelque mal aux contrevenans , (2) mais encore de justes raisons de prétendre gêner , comme il le juge à propos , la Liberté de ceux qui dépendent de lui.",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 259",
+     "zotero://open-pdf/library/items/L42CQ82S?page=259"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n258/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.21",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. I ch. IV § 4, n. 2",
+   "sourceId": "PUF34.1.4.4.n2",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What our good or utility consists in",
+   "comment": "Barbeyrac, DNG I.4.4 n. 2 prefers Locke's definition of good as whatever produces or increases pleasure or lessens pain, and denies that a thing we believe fit to preserve or perfect us is good for us until it excites some desire or agreeable feeling. Vattel defines our good or utility as whatever can truly contribute to the perfection of our soul, our body and our well-being, above all of the soul. Vattel stays with the perfection-based definition of Pufendorf's text against Barbeyrac's note and names the pleasure of the soul only as one of the goods in view.",
+   "passage": "Et par là-jentens tout ce qui peut véritablement contribuer à la perfection de notre Ame, à celle de notre Corps & à notre bien-être dans ce monde, mais sur tous, & par préférence à toute autre-chose, ce qui contribuë à la perfection de notre Ame, qui est notre grand & vrai bien.",
+   "sourcePassage": "Encore même que nous croiyons une chose capable de contribuer à nôtre conservation, ou à nôtre perfection, ou à nôtre utilité en général : tant qu'elle ne fait pas certaines impressions , qui excitent en nous quelque désir, ou quelque sentiment agreable, jusques-là nous ne la regardons pas comme Bonne par rapport à nous.",
+   "confidence": 0.65,
+   "family": "Bb",
+   "links": [
+    [
+     "Zotero p. 217",
+     "zotero://open-pdf/library/items/L42CQ82S?page=217"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n216/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.22",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 20",
+   "sourceId": "PUF34.2.3.20",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Can utility by itself bind us to observe natural law?",
+   "comment": "Pufendorf, DNG II.3.20 holds that the utility of the precepts of reason, however evident, cannot by itself bind man to practise them, and derives the obligation of natural law from God as Creator and Ruler of mankind. Vattel makes our utility the first principle of all obligation, including the obligation to observe natural law. Vattel accepts the evident utility that Pufendorf grants to natural law and gives it the binding force that Pufendorf denies it.",
+   "passage": "Notre utilité, notre bien étant donc le motif le plus général, le motif primitif qui nous détermine, nous devons en conclure, que ce bien cette utilité, est le prémier principe de toute obligation, & en particulier de celle qui nous astraint à l'observation du droit naturel.",
+   "sourcePassage": "En effet, quoi que leur utilité soit de la derniére évidence, cette considération seule ne seroit pas assez forte pour convaincre l'Homme qu'il est dans une nécessité indispensable de les pratiquer, toutes les fois qu'il voudroit renoncer aux avantages qui reviennent de leur observation, ou qu'il croiroit avoir en main des moiens plus propres à avancer ses intérêts.",
+   "confidence": 0.85,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 387",
+     "zotero://open-pdf/library/items/L42CQ82S?page=387"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n386/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.23",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 15, n. 1",
+   "sourceId": "PUF34.2.3.15.n1",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Is sociability the foundation of natural law, and what stands above it?",
+   "comment": "Barbeyrac, DNG II.3.15 n. 1 holds that sociability does not supply the proper and direct ground of all the duties of natural law, and faults Pufendorf for deducing all natural laws from a single principle and for making too much of utility. Vattel accepts sociability as the foundation of natural law, as the proximate principle of the duties of natural society, and places utility above it as the first principle of obligation. Vattel follows Pufendorf's own ground that society is necessary to man's happiness and gives utility the primacy that Barbeyrac thinks Pufendorf already overstated.",
+   "passage": "cela est très-raisonnable, pourvû qu'on ne la prenne pas pour le prémier principe de l'obligation, mais seulement pour le principe prochain, duquel on déduit l'obligation où sont tous les hommes, d'observer les loix qui doivent régler la société naturelle qui se trouve entr'eux, & sans lesquelles elle ne peut subsister.",
+   "sourcePassage": "Nôtre Auteur s'est trompé, d'un côté, pour avoir cru que toutes les Loix Naturelles devoient être déduites d'un principe unique, ce qui n'est nullement nécessaire ; & lui-même établissoit d'abord (dans ses Elem. Jurispr. Univ. pag. 431 , & seqq.) deux principes distincts, l'Amour de soi même, & la Sociabilité: De l'autre, pour avoir trop fait valoir ici l'Utilité, & l'avoir envisagée autrement qu'on ne doit, selon ce que j'ai remarqué ci-dessus, §. 10. Note 6.",
+   "confidence": 0.55,
+   "family": "Bb",
+   "links": [
+    [
+     "Zotero p. 376",
+     "zotero://open-pdf/library/items/L42CQ82S?page=376"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n375/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.24",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 18",
+   "sourceId": "PUF34.2.3.18",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "ground of the duties of sociability",
+   "comment": "Pufendorf, DNG II.3.18 holds that the natural laws of sociability are always advantageous but that their foundation lies in the likeness of a common nature and must not be sought in the utility drawn from them. Vattel grounds the obligation to observe the rules of society on the individual's own utility. Pufendorf also says that a man who enters a particular society with his own interest first in view is still obliged at times to prefer the public advantage, and Vattel derives that same preference from the man's own interest.",
+   "passage": "il est obligé en vertu de sa propre utilité à les observer",
+   "sourcePassage": "cependant quand il s'agit d'en établir le fondement, il ne faut pas le chercher dans l'utilité qu'on en retire; mais dans la conformité d'une même Nature.",
+   "confidence": 0.8,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 383",
+     "zotero://open-pdf/library/items/L42CQ82S?page=383"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n382/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.27",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. I ch. VI § 5, n. 4",
+   "sourceId": "PUF34.1.6.5.n4",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether utility is only the motive or also the foundation of obligation",
+   "comment": "Barbeyrac, DNG I.6.5 n. 4 distinguishes the motive of obligation, utility, from its foundation, the will of a superior, and holds that duty survives where the motive of utility ceases, as with the subjects of a dispossessed prince. Vattel quotes the note and rejects the distinction: pressed on why one must avoid a bad action that brings no punishment, he finds no reasonable answer except that it is contrary to the order and perfection of one's being. He concludes that obligation rests on utility, since it is useful to be perfect.",
+   "passage": "Et cela revient à mon sentiment, qui fonde l'obligation sur l'utilité; car il m'est sans doute utile d'être parfait.",
+   "sourcePassage": "Cette raison n'est autre chose, que la Volonté d'un Supérieur, dont le pouvoir par rapport à nôtre Bonheur ou nôtre Malheur sert ensuite à mouvoir nôtre Volonté",
+   "confidence": 0.95,
+   "family": "Bb",
+   "links": [
+    [
+     "Zotero p. 255",
+     "zotero://open-pdf/library/items/L42CQ82S?page=255"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n254/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.29",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. V ch. XII § 10",
+   "sourceId": "PUF34.5.12.10",
+   "relation": "partly",
+   "severity": 2,
+   "question": "Can a superior's will oblige without known reasons?",
+   "comment": "Pufendorf, DNG V.12.10 holds that a superior's will may depart from what a general reason requires and still take the place of reason for his subjects, so that his clearly manifested will obliges even when he offends against prudence. Vattel lets a superior's will stand in place of reasons only where the superior is known to be supremely wise and omnipotent, on the ground of a legitimate confidence in his wisdom and goodness. He reserves that unbounded confidence to God and confines its use to revealed law. Vattel keeps the formula and withdraws it from human superiors.",
+   "passage": "Dieu seul étant un Supérieur infiniment sage & tout-puissant, cette confiance sans bornes n'est due qu'à lui.",
+   "sourcePassage": "quoi qu'en se déterminant de cette maniére il péche souvent contre les Loix de la Prudence, sa volonté clairement manifestée suffit néanmoins pour imposer l'Obligation de s'y conformer",
+   "confidence": 0.6,
+   "family": "P",
+   "links": [
+    [
+     "Zotero p. 162",
+     "zotero://open-pdf/library/items/S7XSE8FS?page=162"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur02pufe/page/n161/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.30",
+   "text": "pufendorf-barbeyrac-1734",
+   "locus": "Droit de la nature et des gens, Liv. II ch. III § 10, n. 6",
+   "sourceId": "PUF34.2.3.10.n6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Is utility the foundation of moral goodness and obligation?",
+   "comment": "Barbeyrac, DNG II.3.10 n. 6 holds that the utility of virtue is only an inseparable consequence and a mark of what is truly honest, and that to make even the most real and universal utility the foundation of obligation is to turn the accessory into the principal. Vattel holds that utility rightly understood, which lies chiefly in the perfection of the soul, is the foundation of obligation, and that the honest may be identified with the useful in that sense. Vattel quotes the note in full and cites the same passages of Cicero that Pufendorf gives in this section. He ends with the verse of Horace that Pufendorf cites as the view of those who deny natural law.",
+   "passage": "quand nous disons que l'utilité fait le fondement ou le principe de l'obligation, nous parlons d'une utilité noble & bien entendue , qui se trouve principalement dans l'observation de l'ordre & dans la pratique de la vertu, parce que cette observation , cette pratique nous rend plus parfaits",
+   "sourcePassage": "La prémiére n'est qu'une suite inséparable de l'autre, & un caractére auquel on peut distinguer ce qui est véritablement honnête, d'avec ce qui ne l'est que dans l'opinion erronée des Hommes.",
+   "confidence": 0.9,
+   "family": "Bb",
+   "links": [
+    [
+     "Zotero p. 364",
+     "zotero://open-pdf/library/items/L42CQ82S?page=364"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/ledroitdelanatur01pufe/page/n363/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  }
+ ]
+}

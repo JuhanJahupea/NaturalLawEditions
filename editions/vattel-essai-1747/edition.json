@@ -1,8 +1,8 @@
 {
   "format": "nle-edition/1",
   "id": "vattel-essai-1747",
-  "version": "1.1",
-  "changed": "2026-11-20",
+  "version": "1.2",
+  "changed": "2026-11-22",
   "author": "Emer de Vattel",
   "title": "Essai sur le fondement du droit naturel, et sur le premier principe de l'obligation où se trouvent tous les hommes, d'en observer les loix",
   "short": "Essai sur le fondement du droit naturel · 1747",
@@ -29,6 +29,7 @@
     }
   ],
   "layers": [
+    {"id": "divergences", "file": "layers/divergences.json", "kind": "comments", "label": "Divergences", "default": true, "tooltip": "Places where a source answers the question of the section and Vattel answers it differently: he could have used the source, and made a different or opposite point. Shown as notes under the section.", "chip": "≠", "chipTitle": "A source answers this question differently", "sourceTag": "source", "baseTag": "Vattel", "family": "W"},
     {
       "id": "english",
       "file": "layers/english.json",

@@ -36,6 +36,22 @@ def unit_head(s):
 SECS = D['sections']; ROWS = D['rows']; assert not ROWS
 X = Split(SECS, unit_head, MAN['viewer']['pageBreak'])
 write_text(ED, D['titles'], X.units)
+
+# ---------- divergences: from passes (editions/<ed>/passes/divergences-<text id>.json) ----------
+div, div_sources = [], []
+for t in TEXTS:
+    P = load_pass(ED, 'divergences-' + t[1])
+    if P: div += P['items']; div_sources.append(P['source'])
+if div:
+    order = {u['id']: i for i, u in enumerate(X.units)}
+    div.sort(key=lambda d: (order[d['unit']], -d['severity']))
+    dump({'format': 'nle-layer/1', 'edition': ED, 'layer': 'divergences', 'kind': 'comments',
+          'description': "Places where a source answers the question of a section and Vattel answers it differently: he could have used the source "
+                         "(and sometimes used part of it) and made a different or opposite point. Sources: %s. "
+                         "relation: diverges or partly. severity: 3 incompatible answers, 2 different ground or a condition that changes cases, 1 a qualification. "
+                         "family: the source family whose colour the note takes; author: the author of a part of the source volume (Leibniz, Barbeyrac). "
+                         "Machine judgements, not checked by hand." % '; '.join(div_sources),
+          'items': div}, os.path.join(ROOT, 'editions', ED, 'layers', 'divergences.json'))
 TX = [{'id': t[1], 'sigla': [t[0]], 'author': t[2], 'title': t[3], 'imprint': t[4], 'date': t[5], 'lang': t[6], 'layer': t[7]} for t in TEXTS]
 cat_reuse, replaced = write_tables(ED, {}, TX, {}, '', EXTRA)
 assert replaced == 0
@@ -45,4 +61,4 @@ entry = {'id': ED, 'path': 'editions/%s/' % ED, 'author': MAN['author'], 'author
 used = {c['to'] for c in cat_reuse}
 update_catalogue(entry, [t for t in TX if t['id'] in used], cat_reuse)
 print('units', len(X.units), dict(collections.Counter(u['kind'] for u in X.units)), 'notes', sum(len(u.get('notes', [])) for u in X.units),
-      'pb', sum(len(u.get('pb', [])) for u in X.units), 'tables', [(c['to'], c['rows']) for c in cat_reuse])
+      'pb', sum(len(u.get('pb', [])) for u in X.units), 'tables', [(c['to'], c['rows']) for c in cat_reuse], 'divergences', len(div))

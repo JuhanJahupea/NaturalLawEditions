@@ -1,0 +1,109 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-essai-1747",
+ "text": "wolff-philosophia-practica-1738",
+ "date": "2026-11-22",
+ "source": "Wolff, Philosophia practica universalis, pars prior (Frankfurt and Leipzig 1738), from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "E.12",
+   "text": "wolff-philosophia-practica-1738",
+   "locus": "Philosophia practica universalis I, § 115",
+   "sourceId": "PPU1.115",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What is moral necessity?",
+   "comment": "Wolff, PPU I § 115 defines the morally necessary as that whose opposite is morally impossible, that is, cannot be done without loss of the rectitude of the action; his rich man can as well refuse alms as give them, and God's command makes the giving necessary. Vattel defines the morally necessary as what cannot fail to happen given the nature of the intelligent being that produces it, on the model of physical necessity. Vattel takes active and passive obligation from Wolff, PPU I § 118, which he cites, but measures moral necessity by the nature of the agent and not by the rectitude of the action.",
+   "passage": "Une chose est moralement nécessaire, lorqu'elle ne peut pas manquer d'arriver, vû la nature de l'être intelligent qui la produit",
+   "sourcePassage": "Moraliter necessarium est , cujus oppositum moraliter impossibile.",
+   "confidence": 0.65,
+   "family": "W",
+   "links": [
+    [
+     "MDZ scan 124",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=124"
+    ]
+   ]
+  },
+  {
+   "unit": "E.21",
+   "text": "wolff-philosophia-practica-1738",
+   "locus": "Philosophia practica universalis I, § 262",
+   "sourceId": "PPU1.262",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What the useful is",
+   "comment": "Wolff, PPU I § 262 defines the useful as whatever can serve some use of ours, of whatever kind, and notes that people measure utility differently according to the uses they care for. Vattel gives as the true definition of the useful whatever can truly contribute to the perfection of our soul, our body and our well-being, above all of the soul. Vattel defines utility by what Wolff calls the true good, what really promotes our perfection and that of our state (PPU I § 75), and on that definition makes utility the general and primitive principle of all our determinations.",
+   "passage": "Et par là-jentens tout ce qui peut véritablement contribuer à la perfection de notre Ame, à celle de notre Corps & à notre bien-être dans ce monde, mais sur tous, & par préférence à toute autre-chose, ce qui contribuë à la perfection de notre Ame, qui est notre grand & vrai bien.",
+   "sourcePassage": "Utile nobis dicitur omne id, cujus aliquem facere possumus usum, seu quicquid usui cuidam nostro inservire potest.",
+   "confidence": 0.6,
+   "family": "W",
+   "links": [
+    [
+     "MDZ scan 231",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=231"
+    ]
+   ]
+  },
+  {
+   "unit": "E.25",
+   "text": "wolff-philosophia-practica-1738",
+   "locus": "Philosophia practica universalis I, § 266",
+   "sourceId": "PPU1.266",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether utility is the source of right and of the obligation to obey civil laws",
+   "comment": "Wolff, PPU I § 266 concedes that all right is useful and that men entering civil societies made civil laws moved by utility, but denies that utility is the source of right, which flows from the essence and nature of man and things. He adds that the law of nature often obliges us to others without any utility to ourselves, as in giving alms. Vattel makes the individual's own utility the foundation of civil laws and the true principle of the obligation to observe them, every sacrifice of a present advantage being made to a greater good. He keeps Wolff's concession about the origin of civil laws and drops the denial.",
+   "passage": "il faut leur sacrifier dans l'occasion un avantage présent, comme à un plus grand bien; puisqu'elles sont la base de notre repos & de notre sureté",
+   "sourcePassage": "Carneadi adeo rectius responderi nequit, quam si concedatur juris omnis utilitas ( §. 263. ), negetur tamen utilitatem esse fontem omnis juris ( §. 265. )",
+   "confidence": 0.8,
+   "family": "W",
+   "links": [
+    [
+     "MDZ scan 234",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=234"
+    ]
+   ]
+  },
+  {
+   "unit": "E.27",
+   "text": "wolff-philosophia-practica-1738",
+   "locus": "Philosophia practica universalis I, § 266",
+   "sourceId": "PPU1.266",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Is utility the foundation of obligation?",
+   "comment": "Wolff, PPU I § 266 grants that all right is useful but denies that utility is the source of right, since natural law flows from the essence and nature of man and things. He adds that the law of nature often obliges us toward others without any utility of our own, as in almsgiving. Vattel founds obligation on utility and counts the agent's own perfection as part of it. The disagreement turns on the sense of utility, which Wolff takes narrowly and Vattel extends to perfection.",
+   "passage": "Et cela revient à mon sentiment, qui fonde l'obligation sur l'utilité; car il m'est sans doute utile d'être parfait.",
+   "sourcePassage": "Lex autem naturae nos obligat alteri haud raro absque utilitate nostra",
+   "confidence": 0.7,
+   "family": "W",
+   "links": [
+    [
+     "MDZ scan 235",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=235"
+    ]
+   ]
+  },
+  {
+   "unit": "E.34",
+   "text": "wolff-philosophia-practica-1738",
+   "locus": "Philosophia practica universalis I, § 255",
+   "sourceId": "PPU1.255",
+   "relation": "partly",
+   "severity": 2,
+   "question": "which duties of natural law remain for an atheist",
+   "comment": "Wolff, PPU I § 255 holds that the atheist admits the law of nature only as far as what man owes to himself and to other men, because in denying God he lacks the obligation to direct his actions to God's glory and does not fully perceive man's perfection. Vattel holds that an atheist keeps many duties whose motives lie in their utility in this life or in the beauty of virtue, while the neglect of a future life destroys several duties of life. Wolff draws the line at duties towards God and grounds the loss in ignorance of God, and Vattel draws it by the presence or absence of a motive, so that duties to others that demand sacrifice can fall as well.",
+   "passage": "Il ne dit pas que c'est les détruire tous ; au contraire, il reconnoît qu'il y auroit encore un grand nombre de devoirs pour un Athée ; parce qu'il y en a en effet plusieurs dont les raisons, ou les motifs qui nous y obligent, se trouvent dans leur utilité, même par rapport à cette vie, & qu'un Athée peut bien aussi trouver des motifs suffisans en plusieurs cas, dans la seule beauté de la vertu.",
+   "sourcePassage": "Nimirum etsi atheus non neget dari legem naturae ( §. 245. ) ; eandem tamen non extendit ultra ea , quae homo sibimet ipsi ac aliis debet hominibus.",
+   "confidence": 0.6,
+   "family": "W",
+   "links": [
+    [
+     "MDZ scan 225",
+     "https://www.digitale-sammlungen.de/en/view/bsb10008634?page=225"
+    ]
+   ]
+  }
+ ]
+}

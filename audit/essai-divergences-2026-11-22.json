@@ -1,0 +1,766 @@
+{
+ "format": "nle-audit/1",
+ "date": "2026-11-22",
+ "kind": "divergence pass",
+ "edition": "vattel-essai-1747",
+ "description": "Verdicts of the second reader on the 67 flagged pairs (ESSAI_DIV_VERIFY_PROMPT.md) and the notes the merge reader dropped as repeats (ESSAI_DIV_MERGE_PROMPT.md). The kept notes are in editions/vattel-essai-1747/passes/divergences-*.json.",
+ "verify": [
+  {
+   "vattel_sec": "E.2",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. VI § 4",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.85,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.2",
+   "source": "BUR47",
+   "source_ref": "Part. I ch. VIII § 3",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.75,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.2",
+   "source": "GRO24",
+   "source_ref": "Liv. I ch. I § 9",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.85,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.2",
+   "source": "BUR47",
+   "source_ref": "Part. II ch. I § 2",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.6,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.4",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 7",
+   "verdict": "reject",
+   "relation": null,
+   "severity": null,
+   "confidence": 0.75,
+   "reject_reason": "Barbeyrac's § 7 asks whether natural law governs inner as well as outer acts and keeps each man's judgement of his own actions within it, so it neither answers Vattel's question of how ethics differs from natural law nor holds the restriction of natural law to duties towards others that Vattel rejects."
+  },
+  {
+   "vattel_sec": "E.11",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. I § 21",
+   "verdict": "reject",
+   "relation": null,
+   "severity": null,
+   "confidence": 0.75,
+   "reject_reason": "Pufendorf's § 21 gives only the definition of obligation as a moral necessity, which Vattel keeps as passive obligation and expressly endorses in § 14, where he adds what Pufendorf left unexplained instead of answering differently."
+  },
+  {
+   "vattel_sec": "E.11",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.95,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.12",
+   "source": "PPU1",
+   "source_ref": "§ 115",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.65,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.13",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 16",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.75,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.14",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. I § 21",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 1,
+   "confidence": 0.6,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.15",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 16",
+   "verdict": "reject",
+   "relation": null,
+   "severity": null,
+   "confidence": 0.75,
+   "reject_reason": "Barbeyrac grounds moral necessity in God's will and treats acting from duty as conformity to that will, so he does not hold the view that duty makes obligation which § 15 only announces, and his disagreement with Vattel on moral necessity is recorded at § 13."
+  },
+  {
+   "vattel_sec": "E.16",
+   "source": "BUR47",
+   "source_ref": "Part. I ch. XI § 1",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.75,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.16",
+   "source": "DEV56",
+   "source_ref": "Liv. I ch. I § 1",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.7,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.17",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 16",
+   "verdict": "reject",
+   "relation": null,
+   "severity": null,
+   "confidence": 0.7,
+   "reject_reason": "Barbeyrac's § 16 concerns the motive from which one acts and the dependence of the just on God's will, which Vattel takes up at §§ 13, 18 and 35, and its view that the superior's will makes duty matches the second sense of § 17 in which obligation constitutes duty."
+  },
+  {
+   "vattel_sec": "E.17",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. VII § 3",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.8,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.17",
+   "source": "BUR47",
+   "source_ref": "Part. I ch. XI § 4",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.8,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.18",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. VI § 5",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.85,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.18",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. VI § 9",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.6,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.18",
+   "source": "DEV56",
+   "source_ref": "Liv. I ch. II § 3",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.75,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.18",
+   "source": "BUR47",
+   "source_ref": "Part. I ch. VI § 12",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 1,
+   "confidence": 0.5,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.21",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. IV § 4",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.65,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.21",
+   "source": "PUF34",
+   "source_ref": "Liv. II ch. III § 16",
+   "verdict": "reject",
+   "relation": null,
+   "severity": null,
+   "confidence": 0.7,
+   "reject_reason": "Pufendorf ranks actions done for the utility of others above the pursuit of one's sole interest in an argument against Hobbes on sociability, while Vattel ranks one's own motives by the part of one's good they serve, so the two passages answer different questions and do not conflict."
+  },
+  {
+   "vattel_sec": "E.21",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 6",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.75,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.21",
+   "source": "PPU1",
+   "source_ref": "§ 262",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.6,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.22",
+   "source": "PUF34",
+   "source_ref": "Liv. II ch. III § 10",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.75,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.22",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 6",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.85,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.22",
+   "source": "GRO24",
+   "source_ref": "Discours préliminaire § 17",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.7,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.22",
+   "source": "PUF34",
+   "source_ref": "Liv. II ch. III § 20",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.85,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.22",
+   "source": "BUR47",
+   "source_ref": "Part. II ch. VII § 13",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 2,
+   "confidence": 0.55,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.23",
+   "source": "PUF34",
+   "source_ref": "Liv. II ch. III § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.55,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.23",
+   "source": "GRO24",
+   "source_ref": "Discours préliminaire § 8",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 1,
+   "confidence": 0.5,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.23",
+   "source": "GRO24",
+   "source_ref": "Discours préliminaire § 17",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.65,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.24",
+   "source": "PUF34",
+   "source_ref": "Liv. II ch. III § 16",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.85,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.24",
+   "source": "PUF34",
+   "source_ref": "Liv. II ch. III § 18",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.8,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.24",
+   "source": "DEV56",
+   "source_ref": "Liv. II ch. V § 5",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.5,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.24",
+   "source": "GRO24",
+   "source_ref": "Discours préliminaire § 19",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 2,
+   "confidence": 0.75,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.24",
+   "source": "BUR47",
+   "source_ref": "Part. II ch. IV § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.7,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.25",
+   "source": "PPU1",
+   "source_ref": "§ 266",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.8,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.25",
+   "source": "GRO24",
+   "source_ref": "Discours préliminaire § 17",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.8,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.27",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. VI § 5",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.95,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.27",
+   "source": "PPU1",
+   "source_ref": "§ 266",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.7,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.29",
+   "source": "PUF34",
+   "source_ref": "Liv. V ch. XII § 10",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 2,
+   "confidence": 0.6,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.29",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.9,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.29",
+   "source": "GRO24",
+   "source_ref": "Liv. I ch. I § 10",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.95,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.30",
+   "source": "PUF34",
+   "source_ref": "Liv. II ch. III § 10",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.9,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.30",
+   "source": "GRO24",
+   "source_ref": "Discours préliminaire § 17",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.75,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.30",
+   "source": "BUR47",
+   "source_ref": "Part. II ch. VIII § 4",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 1,
+   "confidence": 0.6,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.30",
+   "source": "BUR47",
+   "source_ref": "Part. II ch. VIII § 3",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 1,
+   "confidence": 0.55,
+   "reject_reason": null
+  },
+  {
+   "vattel_sec": "E.31",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 6",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.93,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.31",
+   "source": "BUR47",
+   "source_ref": "Part. II ch. XIV § 16",
+   "verdict": "reject",
+   "relation": "",
+   "severity": 0,
+   "confidence": 0.75,
+   "reject_reason": "Burlamaqui gives the same answer as Vattel, that without a future state the duties of sacrificing one's advantage to society or justice lose their solid ground, and differs only in the hedged strength of his wording."
+  },
+  {
+   "vattel_sec": "E.33",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 6",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.88,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.34",
+   "source": "PPU1",
+   "source_ref": "§ 255",
+   "verdict": "keep",
+   "relation": "partly",
+   "severity": 2,
+   "confidence": 0.6,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.34",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 6",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.92,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.35",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.93,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.36",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.92,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.37",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.92,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.37",
+   "source": "GRO24",
+   "source_ref": "Liv. I ch. I § 10",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.85,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.38",
+   "source": "PUF34",
+   "source_ref": "Liv. I ch. VI § 5",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.85,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.38",
+   "source": "PUF34",
+   "source_ref": "Préface du traducteur § 6",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.75,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.38",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.9,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.38",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 6",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.8,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.39",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.95,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.39",
+   "source": "GRO24",
+   "source_ref": "Liv. I ch. I § 10",
+   "verdict": "reject",
+   "relation": "",
+   "severity": null,
+   "confidence": 0.8,
+   "reject_reason": "The supplied text of note 4 breaks off before Barbeyrac's argument that each may renounce his own advantage, so no exact passage answering the question can be cited, and the same answer is recorded against Barbeyrac, Réflexions § 15, the text Vattel quotes (p. 471-472)."
+  },
+  {
+   "vattel_sec": "E.40",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 15",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.9,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.40",
+   "source": "GRO24",
+   "source_ref": "Liv. I ch. I § 10",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.75,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.40",
+   "source": "BUR47",
+   "source_ref": "Part. II ch. VII § 11",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 2,
+   "confidence": 0.8,
+   "reject_reason": ""
+  },
+  {
+   "vattel_sec": "E.41",
+   "source": "DEV56",
+   "source_ref": "Réflexions du traducteur § 16",
+   "verdict": "keep",
+   "relation": "diverges",
+   "severity": 3,
+   "confidence": 0.75,
+   "reject_reason": ""
+  }
+ ],
+ "merged": [
+  {
+   "key": "E.13|DEV56|Réflexions du traducteur § 16",
+   "kept": "E.11|DEV56|Réflexions du traducteur § 15",
+   "reason": "Same Barbeyrac doctrine that God's will as sovereign, not a motive, imposes moral necessity, against Vattel's definition of obligation as the connection of a motive with the action, which he states most fully in § 11 against Barbeyrac's most exact wording in Réflexions § 15."
+  },
+  {
+   "key": "E.18|PUF34|Liv. I ch. VI § 5",
+   "kept": "E.11|DEV56|Réflexions du traducteur § 15",
+   "reason": "Same Barbeyrac doctrine that a superior's will, not the motive, grounds obligation, against the same answer that obligation is the connection of a motive with the action, which § 18 only refers back to and § 11 states most fully."
+  },
+  {
+   "key": "E.18|DEV56|Liv. I ch. II § 3",
+   "kept": "E.11|DEV56|Réflexions du traducteur § 15",
+   "reason": "Same Barbeyrac doctrine that only a superior with the right to subject us can impose moral necessity, against the same motive-connection definition of obligation, kept at § 11 where Vattel states it most fully."
+  },
+  {
+   "key": "E.38|PUF34|Liv. I ch. VI § 5",
+   "kept": "E.11|DEV56|Réflexions du traducteur § 15",
+   "reason": "Same note DNG I.6.5 n. 4 and same difference (superior's will as ground against obligation as motive connection) already recorded, kept at § 11 where Vattel states his definition most fully."
+  },
+  {
+   "key": "E.38|PUF34|Préface du traducteur § 6",
+   "kept": "E.11|DEV56|Réflexions du traducteur § 15",
+   "reason": "Same Barbeyrac doctrine that a superior with right must subject us, against Vattel's answer that a superior obliges only through motives, which is his motive-connection definition of obligation stated most fully in § 11."
+  },
+  {
+   "key": "E.38|DEV56|Réflexions du traducteur § 15",
+   "kept": "E.11|DEV56|Réflexions du traducteur § 15",
+   "reason": "The exterior principle that must subject us is the same Barbeyrac doctrine that a superior's will imposes obligation, and Vattel's reply that such a being binds only through motives is the definition stated most fully in § 11."
+  },
+  {
+   "key": "E.22|DEV56|Réflexions du traducteur § 6",
+   "kept": "E.27|PUF34|Liv. I ch. VI § 5",
+   "reason": "Same Barbeyrac distinction between the motive of obligation and its ground, against Vattel's thesis that utility grounds obligation, which he defends against that distinction most fully in § 27."
+  },
+  {
+   "key": "E.22|PUF34|Liv. II ch. III § 10",
+   "kept": "E.30|PUF34|Liv. II ch. III § 10",
+   "reason": "Same note DNG II.3.10 n. 6 that utility is only a consequence and mark of honesty, which Vattel quotes in full and answers in § 30."
+  },
+  {
+   "key": "E.29|DEV56|Réflexions du traducteur § 15",
+   "kept": "E.29|GRO24|Liv. I ch. I § 10",
+   "reason": "Same Barbeyrac doctrine that men are not obliged apart from God's will, recorded twice at § 29, where Vattel quotes and answers the note on Grotius DGP I.1.10."
+  },
+  {
+   "key": "E.37|GRO24|Liv. I ch. I § 10",
+   "kept": "E.37|DEV56|Réflexions du traducteur § 15",
+   "reason": "Same Barbeyrac argument that reason alone cannot necessitate us against the passions; at § 37 Vattel quotes and answers the wording of Réflexions § 15."
+  },
+  {
+   "key": "E.40|GRO24|Liv. I ch. I § 10",
+   "kept": "E.40|DEV56|Réflexions du traducteur § 15",
+   "reason": "Same Barbeyrac argument that reason apart from God is ourselves and a self-imposed obligation could cease at will; at § 40 Vattel quotes and answers the wording of Réflexions § 15."
+  },
+  {
+   "key": "E.38|DEV56|Réflexions du traducteur § 6",
+   "kept": "E.31|DEV56|Réflexions du traducteur § 6",
+   "reason": "Same Barbeyrac doctrine in Réflexions § 6 that duty binds apart from the motives drawn from another life, against Vattel's answer that duties have no force without motives, which he states most fully in § 31."
+  },
+  {
+   "key": "E.24|PUF34|Liv. II ch. III § 16",
+   "kept": "E.22|PUF34|Liv. II ch. III § 20",
+   "reason": "Same Pufendorf doctrine (DNG II.3.16, restated in II.3.20) that evident utility cannot by itself give natural law the force of obligation, against Vattel's thesis that utility is the first principle of obligation, stated most fully in § 22."
+  },
+  {
+   "key": "E.22|GRO24|Discours préliminaire § 17",
+   "kept": "E.30|GRO24|Discours préliminaire § 17",
+   "reason": "Same Grotius doctrine of Prol. 17 that human nature, not utility, is the mother of natural law, against Vattel's thesis that utility is its source, which he states most fully in § 30 by adopting the verse of Horace that Grotius rejects."
+  },
+  {
+   "key": "E.23|GRO24|Discours préliminaire § 8",
+   "kept": "E.23|GRO24|Discours préliminaire § 17",
+   "reason": "Same Grotius foundation of natural law in sociability, which Vattel accepts in § 23 only as a proximate principle resting on utility; Prol. 17 states more exactly that this nature acts even without need."
+  },
+  {
+   "key": "E.30|BUR47|Part. II ch. VIII § 4",
+   "kept": "E.30|BUR47|Part. II ch. VIII § 3",
+   "reason": "Same Burlamaqui doctrine that the honest and the useful are distinct and utility is not their foundation, answered once in § 30; Principes II.8.3 states the distinction most exactly."
+  },
+  {
+   "key": "E.16|BUR47|Part. I ch. XI § 1",
+   "kept": "E.17|BUR47|Part. I ch. XI § 4",
+   "reason": "Same Burlamaqui doctrine that morality and moral goodness lie in conformity to law, against Vattel's rectitude grounded in the agent's essence, which he states fully in § 17."
+  }
+ ]
+}

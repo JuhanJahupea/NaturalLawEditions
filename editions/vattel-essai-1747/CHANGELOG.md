@@ -2,6 +2,11 @@
 
 Versions are MAJOR.MINOR. MAJOR goes up when a unit id is retired or takes a new meaning. MINOR goes up for any other change to the text, its layers or its reuse tables. Unit ids are the stable part of a citation. A retired id gets an entry in `aliases` in `edition.json`, and the viewer resolves it.
 
+## 1.2 (2026-11-22)
+
+- New layer `divergences`: 43 places where a source answers the question of a section and Vattel answers it differently (36 diverges, 7 partly; severity 3: 17, 2: 23, 1: 3), in 24 sections. By author: Barbeyrac 18 (his *Réflexions*, his notes to Pufendorf and Grotius, his preface to Pufendorf), Burlamaqui 8, Pufendorf 8, Wolff 5, Grotius 4. Claude Opus screened 614 pairs of an Essai section and a source section; a second reader kept 60 of the 67 flagged pairs; a third merged 17 notes that repeated another. Machine judgements, not checked by hand (`audit/README.md`).
+- A divergence note can name its author where it is not the text's author (`author`: Leibniz, Barbeyrac).
+
 ## 1.1 (2026-11-20)
 
 - Text checked against a second copy, Zentralbibliothek Zürich 25.933 (e-rara): 20 misreadings corrected in `texts/vattel-loisir-1747/LOI47.json` (1.9 per 1,000 words), among them "obéïr", "vûe", "„„Pourquoi" and the three words under the ink blot on p. 46.

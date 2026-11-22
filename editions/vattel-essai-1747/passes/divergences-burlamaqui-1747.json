@@ -1,0 +1,169 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-essai-1747",
+ "text": "burlamaqui-1747",
+ "date": "2026-11-22",
+ "source": "Burlamaqui, Principes du droit naturel (Genève 1747), the burlamaqui-1747 edition, from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "E.2",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. I ch. VIII § 3",
+   "sourceId": "BUR47.P1.8.3",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What is a law in general?",
+   "comment": "Burlamaqui, Principes I.8.3 defines law as a rule prescribed by the sovereign of a society to his subjects, either imposing an obligation under threat of a penalty or leaving them liberty in other things. Vattel, following Wolff, PPU I § 131, defines law as a rule according to which we are obliged to determine our actions. Vattel's definition names no sovereign and no penalty, and it reduces the effect of law to obligation without Burlamaqui's permission.",
+   "passage": "Une Loi est en général une regle, selon laquelle nous sommes obligés de déterminer nos actions",
+   "sourcePassage": "JE définis la LOI une Régle prescrite par le Souverain d'une Société à ses Sujets ; soit pour leur imposer l'obligation de faire ou de ne pas faire certaines choses, sous la menace de quelque peine",
+   "confidence": 0.75,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 119",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=119"
+    ]
+   ]
+  },
+  {
+   "unit": "E.2",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. II ch. I § 2",
+   "sourceId": "BUR47.P2.1.2",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What are natural laws?",
+   "comment": "Burlamaqui, Principes II.1.2 defines natural law as a law that God imposes on all men and that they can discover by reason alone, by considering their nature and state. Vattel defines natural laws as those we hold from nature, whose reason lies in the essence and nature of man and of things in general. Both send the reader to the nature of man, but Vattel leaves God's imposition out of the definition and admits God's will only as a proximate principle of obligation (§§ 29, 35).",
+   "passage": "les Loix Naturelles en particulier, sont celles que nous tenons de la Nature, ou dont la raison se trouve dans l'essence & dans la nature de l'homme, & dans l'essence & la nature des choses en général",
+   "sourcePassage": "L'on entend par LOI NATURELLE, une Loi que Dieu impose à tous les hommes, & qu'ils peuvent découvrir & connoître par les seules lumiéres de leur Raison, en considérant avec attention leur nature & leur état.",
+   "confidence": 0.6,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 172",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=172"
+    ]
+   ]
+  },
+  {
+   "unit": "E.17",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. I ch. XI § 4",
+   "sourceId": "BUR47.P1.11.4",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "what makes a free action morally good or right",
+   "comment": "Burlamaqui, Principes I.11.4 defines a morally good or just action as one exactly conformable to an obligatory law and done in the dispositions the legislator intends, and leaves aside the intrinsic natural goodness of actions. Vattel holds that a free action is good or right when it has its sufficient reason in the essence and attributes of the agent. Moral goodness depends on a law and a legislator in Burlamaqui and on the agent's own essence in Vattel.",
+   "passage": "Or une action libre est, bonne, ou droite, quand elle a sa raison suffisante dans l'essence, & dans les attributs de l'être qui la produit",
+   "sourcePassage": "Une ACTION MORALEMENT BONNE ou JUSTE est celle qui est en elle-même exactement conforme à la disposition de quelque Loi obligatoire, & qui d'ailleurs est faite dans les dispositions & accompagnées des circonstances conformes à l'intention du Législateur.",
+   "confidence": 0.8,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 158",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=158"
+    ]
+   ]
+  },
+  {
+   "unit": "E.18",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. I ch. VI § 12",
+   "sourceId": "BUR47.P1.6.12",
+   "relation": "partly",
+   "severity": 1,
+   "question": "What obligation is and why we must obey a superior",
+   "comment": "Burlamaqui, Principes I.6.12 holds that a superior's will obliges only so far as reason approves it, and that without this approval it produces only an external constraint quite different from obligation. Vattel counts the superior's power to punish, like the justice of obedience, as a motive joined to obedience that falls under his definition of obligation. Both refuse to stop at the superior's will; Burlamaqui keeps a line between obligation and constraint that Vattel's definition does not draw.",
+   "passage": "Mais alors, il nous allégue des motifs, qui sont joints à cette action d'obéissance ; & il retombe dans notre définition, suivant laquelle, l'obligation est la connexion, ou la liaison du motif avec l'action.",
+   "sourcePassage": "Mais si l'on ne remonte pas plus haut, en fondant l'autorité même de ce Supérieur sur l'approbation que la Raison lui donne, elle ne produira jamais qu'une contrainte extérieure, bien différente de l'obligation",
+   "confidence": 0.5,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 105",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=105"
+    ]
+   ]
+  },
+  {
+   "unit": "E.22",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. II ch. VII § 13",
+   "sourceId": "BUR47.P2.7.13",
+   "relation": "partly",
+   "severity": 2,
+   "question": "What is the first principle of obligation?",
+   "comment": "Burlamaqui, Principes II.7.13 makes reason the first principle of morality and the immediate cause of all primitive obligation, and adds the will of God as a second principle whose law yields the most perfect obligation. Vattel makes our utility, the most general motive, the first principle of all obligation, including the obligation to observe natural law. Vattel admits no second, independent principle of obligation beside it.",
+   "passage": "Notre utilité, notre bien étant donc le motif le plus général, le motif primitif qui nous détermine, nous devons en conclure, que ce bien cette utilité, est le prémier principe de toute obligation, & en particulier de celle qui nous astraint à l'observation du droit naturel.",
+   "sourcePassage": "Mais l'homme étant, par sa nature & par son état, dans une dépendance nécessaire du Créateur, qui l'a formé avec dessein & avec sagesse, & qui en le créant, s'est proposé de certaines fins ; la Volonté de Dieu est une autre Régle des actions de l'homme, un autre principe de moralité, d'obligation & de devoir.",
+   "confidence": 0.55,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 272",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=272"
+    ]
+   ]
+  },
+  {
+   "unit": "E.24",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. II ch. IV § 15",
+   "sourceId": "BUR47.P2.4.15",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "principle of the duties owed to others in society",
+   "comment": "Burlamaqui, Principes II.4.15 argues that since human society cannot subsist without mutual affection and benevolence, God wills that each maintain it, and he makes this sociability, which always subordinates particular advantage to the common good, the true principle of the duties toward others. Vattel argues from the same necessity of society to the individual's own utility as the ground of his obligation to observe its rules. Both reason from what society needs in order to subsist, and Burlamaqui ends in the will of God where Vattel ends in self-interest.",
+   "passage": "Mais la société lui étant utile, & même nécessaire, & cette société ne pouvant subsister sans des loix ou des régles générales, observées par tous les membres; il est obligé en vertu de sa propre utilité à les observer.",
+   "sourcePassage": "il s'ensuit que Dieu notre Créateur & notre Pére commun, veut que chacun soit animé de ces sentimens, & fasse tout ce qui est en son pouvoir pour maintenir cette Société dans un état avantageux & agréable, & pour en resserrer de plus en plus les nœuds par des services & des bienfaits réciproques.",
+   "confidence": 0.7,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 221",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=221"
+    ]
+   ]
+  },
+  {
+   "unit": "E.30",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. II ch. VIII § 3",
+   "sourceId": "BUR47.P2.8.3",
+   "relation": "partly",
+   "severity": 1,
+   "question": "May the honest be identified with the useful?",
+   "comment": "Burlamaqui, Principes II.8.3 holds that the just, the useful and the honest are three distinct notions that must not be confounded, though all derive from one principle, the approbation of reason, which approves whatever leads to true happiness. Vattel sees no danger in confounding the honest with the useful once utility is placed chiefly in the perfection of the soul, and he makes utility the foundation of obligation. Both root duty in true happiness. The difference lies in whether utility is the root or one of three branches.",
+   "passage": "Quand on a une juste idée de l'utilité, quand on la fait consister principalement dans la perfection de l'ame ; perfection qui fait déja notre bonheur par elle-même, & qui nous concilie la bienveillance du Créateur ; quel danger y a-t-il à confondre en ce sens, l'honnête avec l'utile ?",
+   "sourcePassage": "IL ne faut donc pas confondre le juste, l'utile & l'honnête : ce seroit brouiller les idées, puisque ce sont - là trois notions différentes.",
+   "confidence": 0.55,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 280",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=280"
+    ]
+   ]
+  },
+  {
+   "unit": "E.40",
+   "text": "burlamaqui-1747",
+   "locus": "Principes du droit naturel, Part. II ch. VII § 11",
+   "sourceId": "BUR47.P2.7.11",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What imposes natural obligation if not a superior, and can it cease at our will?",
+   "comment": "Burlamaqui, Principes II.7.11, answers the same objection of Barbeyrac by holding that reason itself imposes obligation, a moral bond that is always the work of reason, and by granting that man can escape it at his own risk, as he can escape the obligation of a law. Vattel denies that reason imposes the obligation: it only perceives the connexion of motive and action that the Creator set in the nature of things. He infers that the obligation cannot cease at our will, since that connexion does not depend on us. Both call the objection a begging of the question and differ on what imposes the obligation.",
+   "passage": "D'ailleurs, il faut remarquer, que ce n'est pas notre raison qui nous impose l'obligation, elle ne fait qu'apperçevoir la liaison du motif avec l'action, qui constitue l'obligation.",
+   "sourcePassage": "Il est vrai que l'homme peut, s'il le veut, se soustraire aux obligations que la Raison lui impose : mais, s'il le fait, c'est à ses périls & risques, & il est forcé de reconnoître lui-même qu'une telle conduite est déraisonnable.",
+   "confidence": 0.8,
+   "family": "Bu",
+   "links": [
+    [
+     "Zotero p. 271",
+     "zotero://open-pdf/library/items/XKNMUHV3?page=271"
+    ]
+   ]
+  }
+ ]
+}
