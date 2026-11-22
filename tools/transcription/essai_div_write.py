@@ -1,14 +1,18 @@
-# essai_div_write.py <screen dir> <verify dir> <date> [--write]: the kept verdicts of the Essai divergence verify step ->
+# essai_div_write.py <screen dir> <verify dir> <date> [--dump <file>] [--drop <file>] [--write]: the kept verdicts of the Essai
+# divergence verify step ->
 # editions/vattel-essai-1747/passes/divergences-<text id>.json (nle-pass/1, items of the comments layer). Vattel's and the
 # source's passages are placed exactly (or with free whitespace, or fuzzy >= 0.9) or the item is reported. A source passage
 # in a note gets the note's locus, and Barbeyrac's family and name when the note is his; Leibniz's Jugement and Barbeyrac's
-# Réflexions get theirs.
+# Réflexions get theirs. --dump writes every placed note with its key for the merge reader (ESSAI_DIV_MERGE_PROMPT.md);
+# --drop reads that reader's output and leaves out the notes it found to repeat another.
 import sys, os, re, json, glob, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import ROOT, WORK
 from merge_find import find
 from corpus import unroman
 sd, vd, date = sys.argv[1:4]; WRITE = '--write' in sys.argv
+arg = lambda k: sys.argv[sys.argv.index(k) + 1] if k in sys.argv else None
+DROP = {d['key']: d for d in json.load(open(arg('--drop')))['drop']} if arg('--drop') else {}
 ED = 'vattel-essai-1747'
 TID = {'PPU1': 'wolff-philosophia-practica-1738', 'TN1': 'wolff-theologia-naturalis-1739', 'LOG40': 'wolff-discursus-praeliminaris-1740',
        'PUF34': 'pufendorf-barbeyrac-1734', 'DEV56': 'pufendorf-devoirs-barbeyrac-1756', 'GRO24': 'grotius-barbeyrac-1724', 'BUR47': 'burlamaqui-1747'}
@@ -105,8 +109,13 @@ for f in sorted(glob.glob(vd + '/out/v*.json')):
               'comment': v['comment'].strip(), 'passage': vp, 'sourcePassage': gp, 'confidence': round(float(v['confidence']), 2),
               'family': fam or FAM[c], 'links': links(c, pg)}
         if author: it['author'] = author
+        it['_key'] = '%s|%s|%s' % key
+        if it['_key'] in DROP: fails['repeats another note'] += 1; continue
         items[c].append(it)
 tot = 0
+if arg('--dump'): json.dump([{k: v for k, v in d.items() if k not in ('links', 'family')} for its in items.values() for d in its], open(arg('--dump'), 'w'), ensure_ascii=False, indent=1)
+for its in items.values():
+    for d in its: del d['_key']
 for c, its in items.items():
     its.sort(key=lambda d: (order.index(d['unit']), -d['severity'])); tot += len(its)
     P = {'format': 'nle-pass/1', 'edition': ED, 'text': TID[c], 'date': date,
