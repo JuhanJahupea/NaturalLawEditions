@@ -9,7 +9,7 @@ let TP=null,CAT=null,ED='',BASE='',M=null,V={},RU={},DIVS={},TITLES={},FAMS=[],F
 const LAYS=[],LAY={},MAN={},GL={};
 const LANG={la:'Latin',grc:'Greek',en:'English',it:'Italian',es:'Spanish',de:'German',nl:'Dutch',pt:'Portuguese',he:'Hebrew'};
 const SEC=[],ROWS=[],byId={},rowsBySec={},CH=[],chOf={},IN={},INROWS=[];
-function save(){try{localStorage.setItem('nle:'+ED,JSON.stringify({src:st.src,pos:st.pos,att:st.att,layers:st.layers,widths:st.widths,fams:st.fams,chap:st.chap,sel:st.sel}))}catch(e){}}
+function save(){try{localStorage.setItem('nle:'+ED,JSON.stringify({src:st.src,pos:st.pos,att:st.att,layers:st.layers,widths:st.widths,fams:st.fams,chap:st.chap,sel:st.sel,fold:st.fold}))}catch(e){}}
 async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error(u+' ('+r.status+')');return r.json()}
 function fail(h){$('page').innerHTML=`<div class="msg">${h}</div>`}
 const edEntry=id=>CAT.editions.find(e=>e.id===id);
@@ -42,7 +42,7 @@ function rowObj(r,tb){const o={id:r.id,sec:r.unit,fam:r.family,work:r.work,locus
   where:r.at.length?r.at[0][0]:r.where==='margin'?'m':'',step:r.step};
  if(r.french)o.fr=r.french;if(r.earliest)o.ew=r.earliest;if(r.nearer)o.near=r.nearer;if(r.quoting)o.qa=r.quoting;if(r.noteRef)o.noteref=r.noteRef;if(r.sourcePart)o.part=r.sourcePart;
  o.to=tb.to;if(r.toUnit)o.toUnit=r.toUnit;if(r.repeats)o.rep=r.repeats;if(r.review)o.rev=r.review;if(r.attributed)o.attr=r.attributed;if(r.audit)o.audit=r.audit;if(r.labelCheck)o.labelCheck=r.labelCheck;if(r.locusCheck)o.locusCheck=r.locusCheck;
- if(tb.sourceLabel)Object.defineProperty(o,'slab',{value:tb.sourceLabel,enumerable:false});return o}
+ if(tb.sourceLabel)Object.defineProperty(o,'slab',{value:tb.sourceLabel,enumerable:false});Object.defineProperty(o,'at',{value:r.at||[],enumerable:false});return o}
 function build(T,data,tables,incoming){
  TITLES=T.titles||{};DIVS=M._divs;
  const fams=RU.families||[];FAMS=fams.map(f=>[f.key,f.label]);FAMI=Object.fromEntries(fams.map(f=>[f.key,f]));FN=Object.fromEntries(FAMS);famColors(fams);
@@ -58,12 +58,16 @@ function build(T,data,tables,incoming){
   if(!u&&r.repeats&&r.repeats.edition===ED){u=r.repeats.unit;via=textShort(tb.to)+' '+(((CAT.texts||[]).find(x=>x.id===tb.to)||{}).date||'')}
   if(!u)return;const o=Object.assign(rowObj(r,tb),{from:tb.from,toUnit:u,via});INROWS.push(o);(IN[u]=IN[u]||[]).push(o)}));
  const EN={};
+ // every edition with divergences has a Divergences layer (kind comments): the rows labelled open disagreement, and the notes of a
+ // comments layer where the edition has one
+ if(!M.layers.some(l=>l.kind==='comments')&&ROWS.some(r=>r&&isDg(r)))M.layers.push({id:'divergences',kind:'comments',label:'Divergences',default:true,chip:'≠',chipTitle:'Divergences from a source',
+  tooltip:`Passages where ${RU.baseTag||'the author'} openly disagrees with a source: rows labelled open disagreement. Wavy underline in the text; the ≠ mark by the section number counts them.`,baseTag:RU.baseTag});
  M.layers.forEach(l=>{const L=data[l.id];LAYS.push(l);if(!LAY[l.kind])LAY[l.kind]=l;
   if(l.kind==='variants')L.items.forEach(v=>{const e=ex(v.unit);
    e.vars.push({id:v.id,type:v.type,content:v.content,passage:v.passage,otherPassage:v.otherPassage,otherPages:v.otherPages,otherLink:v.otherLink,placed:v.placed});
    (v.at||[]).forEach(([p,a,b])=>mk(v.unit,'vars',p).push([a,b,v.id]));(v.wholeNotes||[]).forEach(n=>e.added.add(n));
    (v.otherReadings||[]).forEach(([p,pos,txt])=>{const o=mk(v.unit,'old',p);(o[pos]=o[pos]||[]).push(`<span class="old" data-v="${v.id}" title="${Compose.esc(l.otherTitle)}">${Compose.esc(txt)}</span>`)})});
-  if(l.kind==='comments')L.items.forEach(d=>{const o={w:d.locus,wid:d.sourceId,rel:d.relation,sev:d.severity,c:d.comment,lat:d.sourcePassage,vp:d.passage,conf:d.confidence,q:d.question,link:d.links||[]};
+  if(l.kind==='comments'&&L)L.items.forEach(d=>{const o={w:d.locus,wid:d.sourceId,rel:d.relation,sev:d.severity,c:d.comment,lat:d.sourcePassage,vp:d.passage,conf:d.confidence,q:d.question,link:d.links||[]};
    Object.defineProperty(o,'src',{value:textShort(d.text),enumerable:false});Object.defineProperty(o,'fam',{value:d.family||'',enumerable:false});ex(d.unit).div.push(o)});
   // glosses: translations of foreign-language passages; left out of ?asbuilt=1, which rebuilds the working edition's HTML
   if(l.kind==='glosses'&&!QS.get('asbuilt'))L.items.forEach(g=>{GL[g.id]=g;(g.at||[]).forEach(([p,a,b])=>mk(g.unit,'gloss',p).push([a,b,g.id]));ex(g.unit).gl.push(g)});
@@ -72,14 +76,14 @@ function build(T,data,tables,incoming){
  T.units.forEach(u=>[...(u.xr||[]),...(u.notes||[]).flatMap(n=>n.xr||[])].forEach(x=>(cited[x[2]]=cited[x[2]]||new Set()).add(u.id)));
  const famOf=id=>ROWS[id].fam;
  T.units.forEach((u,i)=>{const e=extra[u.id]||{vars:[],div:[],added:new Set(),gl:[]};const c=Compose.composeUnit(u,marks[u.id]||{},famOf,V.pageBreak);
-  const s={id:u.id,i,book:u.div,chap:u.chap,para:u.n,margin:u.margin||'',kind:u.kind,unnum:!!u.unnumbered,html:c.html,
+  const s={id:u.id,i,book:u.div,chap:u.chap,para:u.n,margin:u.margin||'',kind:u.kind,len:(u.text||'').length+(u.notes||[]).reduce((a,n)=>a+(n.text||'').length,0),unnum:!!u.unnumbered,html:c.html,
    notes:c.notes.map((n,k)=>({mark:n.mark,html:n.html,added:e.added.has(k)})),pages:(u.pages||[]).map(p=>Object.assign({},p,{z:pageLink(p)})),
    vars:e.vars,citedBy:[...(cited[u.id]||[])].sort((a,b)=>order[a]-order[b])};
   if(e.div.length)s.div=e.div;if(e.gl.length)Object.defineProperty(s,'gl',{value:e.gl,enumerable:false});
   const en=EN[u.id];if(en){s.en={s:en.sents,g:en.align,p:en.page,f:en.flags||[]};s.fs=en.fr}
   SEC.push(s);byId[s.id]=s});
  SEC.forEach(s=>{if(s.kind==='heading')return;const d=DIVS[s.book]||{};const k=d.chapters?s.book+'.'+s.chap:s.book;let c=CH[CH.length-1];if(!c||c.key!==k){c={key:k,book:s.book,chap:s.chap,secs:[]};CH.push(c)}c.secs.push(s);chOf[s.id]=c});
- st={src:true,pos:false,att:true,layers:{},fams:Object.fromEntries(FAMS.map(f=>[f[0],true])),chap:null,sel:null};
+ st={src:true,pos:false,att:true,layers:{},fams:Object.fromEntries(FAMS.map(f=>[f[0],true])),chap:null,sel:null,fold:false};
  LAYS.forEach(l=>{if(l.kind==='reuse'){if(l.default===false)st.fams[l.family]=false}else st.layers[l.id]=l.default!==false});
  try{const s=JSON.parse(localStorage.getItem('nle:'+ED)||'{}');Object.assign(st,s,{fams:Object.assign(st.fams,s.fams||{}),layers:Object.assign(st.layers,s.layers||{})})}catch(e){}
  LAYS.forEach(l=>{if(l.toggle===false)st.layers[l.id]=true})}
@@ -102,10 +106,14 @@ const isAtt=r=>!!r.attr||r.label==='citation';
 const dvFam=d=>d.fam||((LAY.comments||{}).family)||'';
 const visDiv=d=>layerOn('comments')&&(!dvFam(d)||!!st.fams[dvFam(d)]);
 const shown=r=>r.status!=='rejected'&&((r.status==='match'&&r.label!=='commonplace')||st.pos)&&(st.att||!isAtt(r));
-const visIn=r=>st.src&&shown(r);
+// rows labelled open disagreement belong to the Divergences layer (kind comments), all other rows to Reuse
+const isDg=r=>r.label==='open disagreement';
+const kindOn=r=>isDg(r)?layerOn('comments'):st.src;
+const visIn=r=>kindOn(r)&&shown(r);
 const ctitle=c=>{const d=DIVS[c.book]||{};return d.chapters?(TITLES[c.key]||''):(d.chapterTitle||'')};
-const visRow=r=>st.src&&st.fams[r.fam]&&shown(r);
-function famDots(s){const c={};(rowsBySec[s.id]||[]).filter(visRow).forEach(r=>c[r.fam]=(c[r.fam]||0)+1);return FAMS.filter(f=>c[f[0]]).map(f=>`<span style="--c:var(--f${f[0]})" title="${esc(f[1])}: ${c[f[0]]}">${f[0]} ${c[f[0]]}</span>`).join('')}
+const visRow=r=>kindOn(r)&&st.fams[r.fam]&&shown(r);
+const dgOf=s=>(rowsBySec[s.id]||[]).filter(r=>isDg(r)&&visRow(r));
+function famDots(s){const c={};(rowsBySec[s.id]||[]).filter(r=>!isDg(r)&&visRow(r)).forEach(r=>c[r.fam]=(c[r.fam]||0)+1);return FAMS.filter(f=>c[f[0]]).map(f=>`<span style="--c:var(--f${f[0]})" title="${esc(f[1])}: ${c[f[0]]}">${f[0]} ${c[f[0]]}</span>`).join('')}
 // edition menu
 function edMenu(){const s=$('edSel');if(!s)return;s.innerHTML=CAT.editions.map(e=>`<option value="${esc(e.id)}" title="${esc(e.author+', '+e.title+', '+e.date)}"${e.id===ED?' selected':''}>${esc(e.menu||((e.authorShort||e.author)+' '+e.date))}</option>`).join('');const E=edEntry(ED);if(E)s.title=`${E.author}, ${E.title} (${E.date})`;
  if(!edEntry(ED))s.insertAdjacentHTML('afterbegin','<option value="" selected>Choose an edition</option>');
@@ -119,12 +127,20 @@ function tpHTML(p){const L=p.lines.map(([t,c])=>c==='rule'?'<hr class="tpr">':`<
  return `<section class="tp" id="title-${esc(p.vol)}"><div class="chead">${esc(tpLabel(p))}</div><div class="tpg"><div class="tpt">${L}</div><figure class="tpi"><a href="${esc(p.source[1])}" title="Open the scan at the library"><img src="${esc(BASE+p.image)}" alt="${esc(tpLabel(p))}: scan" loading="lazy"></a><figcaption><a href="${esc(p.source[1])}">${esc(p.source[0])}</a></figcaption></figure></div></section>`}
 function rail(){let h='',last='';CH.forEach(c=>{const tp=tpBefore(c.secs[0].id);if(c.book!==last){if(tp)h+=`<a class="tpl" href="#title-${esc(tp.vol)}">${esc(tpLabel(tp))}</a>`;h+=`<h3>${esc(DIVS[c.book].label)}</h3>`;last=c.book}else if(tp)h+=`<a class="tpl" href="#title-${esc(tp.vol)}">${esc(tpLabel(tp))}</a>`
  const t=ctitle(c);h+=`<a href="#${c.secs[0].id}" data-ch="${c.key}" data-t="${esc(t)}"><span class="n">${DIVS[c.book].chapters?'ch. '+c.chap:''}</span><span>${esc(t)}</span><span class="meter"><b></b></span></a>`;
- if(DIVS[c.book].railUnits)h+=c.secs.map(s=>`<a class="ru" href="#${s.id}" data-u="${s.id}"><span class="n">${esc(DIVS[c.book].unitMark||'')} ${s.para}</span><span>${esc(incipit(s))}</span></a>`).join('')});$('rail').innerHTML=h;meters()}
+ if(DIVS[c.book].railUnits)h+=c.secs.map(s=>`<a class="ru" href="#${s.id}" data-u="${s.id}"><span class="n">${esc(DIVS[c.book].unitMark||'')} ${s.para}</span><span>${esc(incipit(s))}</span><span class="meter"><b></b></span></a>`).join('')});$('rail').innerHTML=h;meters()}
 // the opening words of a unit, after its printed number
 function incipit(s){const t=plainOf(s).replace(/^\s*\d+\s*\.\s*/,'').replace(/\s+/g,' ');return t.length>48?t.slice(0,48).replace(/\s\S*$/,'')+' …':t}
 const secOn=s=>(rowsBySec[s.id]||[]).some(visRow)||(s.div||[]).some(visDiv)||(layerOn('variants')&&(s.vars||[]).length>0);
-function meters(){const parts=['reuse'].filter(()=>st.src).concat(['comments','variants'].filter(layerOn).map(k=>LAY[k].label));
- document.querySelectorAll('.rail a[data-t]').forEach(a=>{const c=CH.find(x=>x.key===a.dataset.ch);const n=c.secs.length,m=c.secs.filter(secOn).length;a.querySelector('.meter b').style.width=Math.round(100*m/n)+'%';a.title=`${a.dataset.t} · ${m} of ${n} ${V.unitsWord||'units'} with ${parts.join(', ')||'nothing'} shown by the current filters`})}
+// characters of a unit (text and notes) under the rows the filters show
+function cover(s){const P={};(rowsBySec[s.id]||[]).filter(visRow).forEach(r=>r.at.forEach(([p,a,b])=>(P[p]=P[p]||[]).push([a,b])));let n=0;
+ for(const k in P){let e=-1;P[k].sort((x,y)=>x[0]-y[0]).forEach(([a,b])=>{if(b>e){n+=b-Math.max(a,e);e=b}})}return n}
+// rail meters: the share of the text under the rows the filters show, for each chapter and each unit the rail lists
+function meters(){const C={};SEC.forEach(s=>{if(s.kind!=='heading')C[s.id]=[cover(s),s.len]});
+ const parts=[st.src?'reuse':'',layerOn('comments')?String(LAY.comments.label).toLowerCase():''].filter(Boolean).join(' and ')||'nothing';
+ const bar=(a,c,n)=>{const p=n?c/n:0;a.querySelector('.meter b').style.width=(c?Math.max(6,Math.round(100*p)):0)+'%';return Math.round(100*p)};
+ document.querySelectorAll('.rail a[data-t]').forEach(a=>{const c=CH.find(x=>x.key===a.dataset.ch);const cv=c.secs.reduce((x,s)=>x+C[s.id][0],0),ln=c.secs.reduce((x,s)=>x+C[s.id][1],0);
+  const n=c.secs.length,m=c.secs.filter(secOn).length;a.title=`${a.dataset.t} · ${bar(a,cv,ln)}% of the text under ${parts} shown by the current filters · ${m} of ${n} ${V.unitsWord||'units'} with something shown`});
+ document.querySelectorAll('.rail a[data-u]').forEach(a=>{const s=byId[a.dataset.u];if(!C[s.id])return;a.title=`${lbl(s.id)} · ${bar(a,...C[s.id])}% of the text under ${parts} shown by the current filters`})}
 // render chapter
 function cite(s){const d=DIVS[s.book]||{},pg=s.pages[0];
  return fill(d.cite,{prefix:V.citePrefix,n:s.para,chap:s.chap,unnum:s.unnum?V.citeUnnumbered:'',page:pg?fill(V.citePage,{vol:((V.volumes||{})[pg.vol]||{}).label||pg.vol,printed:pg.printed||'?'}):''})}
@@ -138,7 +154,7 @@ function secHTML(s){const vars=s.vars||[];const unplaced=vars.filter(v=>!v.place
  const gls=(s.gl||[]).length?`<div class="gls">${s.gl.map(g=>`<div class="gli" id="gl-${esc(g.id)}"><span class="gll">${esc(LANG[g.lang]||g.lang)}</span> <i lang="${esc(g.lang)}">${esc(glLead(g.text))}</i> → ${esc(g.translation)}${g.source?` <span class="gsrc">(${esc(g.source)})</span>`:''}${g.note?` <small class="gsrc">${esc(g.note)}</small>`:''}</div>`).join('')}</div>`:'';
  const dvs=(s.div||[]).length?`<div class="dvs">${s.div.map((d,i)=>`<details class="dv ${d.rel}" id="dv-${s.id}-${i}" data-fam="${esc(dvFam(d))}"${d.fam?` style="--cmt:var(--f${d.fam})"`:''}><summary><span class="wm">${esc(LC.chip)} ${esc(d.src)}</span><span class="q">${esc(d.q||'')}</span><span>${esc(d.w)}${d.rel==='partly'?' · partly':''}</span></summary><div class="dvb">${esc(d.c)}${d.lat?`<div class="q la"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}${d.vp?`<div class="q fr"><small>${esc(LC.baseTag)}</small>${esc(d.vp)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}${d.conf?` · confidence ${Number(d.conf).toFixed(2)}`:''}</div></div></details>`).join('')}</div>`:'';
  const del=unplaced.map(v=>`<div class="del"><b style="font:12px var(--ui)">${esc(v.type)}</b> · ${esc(v.content)}${v.otherPassage?`<br>${esc(LV.otherTag)}: <i>${esc(v.otherPassage)}</i>`:''}${v.otherLink?` · <a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div>`).join('');
- return `<section class="sec" id="${s.id}"><div class="sh">${s.para?`<span class="no">${esc((DIVS[s.book]||{}).unitMark||'')} ${s.para}</span>`:''}${s.unnum?`<span class="unn" title="${esc(V.unnumberedTitle)}">${esc(V.unnumberedLabel)}</span>`:''}${(s.div||[]).length?`<button class="dvc" data-dv="${s.id}" title="${esc(LC.chipTitle)}: ${s.div.length}">${esc(LC.chip)} ${s.div.length}</button>`:''}<button class="dots" data-s="${s.id}" aria-label="Show sources for ${lbl(s.id)}">${famDots(s)}</button>
+ return `<section class="sec" id="${s.id}"><div class="sh">${s.para?`<span class="no">${esc((DIVS[s.book]||{}).unitMark||'')} ${s.para}</span>`:''}${s.unnum?`<span class="unn" title="${esc(V.unnumberedTitle)}">${esc(V.unnumberedLabel)}</span>`:''}${(s.div||[]).length||(rowsBySec[s.id]||[]).some(isDg)?`<button class="dvc" data-dv="${s.id}" title="${esc(LC.chipTitle)}">${esc(LC.chip)}</button>`:''}<button class="dots" data-s="${s.id}" aria-label="Show sources for ${lbl(s.id)}">${famDots(s)}</button>
  <span class="tools">${s.en?`<button data-en="${s.id}">${esc(LAY.translation.label)}</button>`:''}<button data-copy="${s.id}">Copy citation</button><button data-link="${s.id}">Link</button></span>${s.margin?`<span class="marg">${esc(s.margin)}</span>`:''}</div>
  <div class="tx">${s.html}</div>${notes}${gls}${dvs}${del}<div class="foot">${pages}${cb}${vt}${ri}</div></section>`}
 function glLead(t){const w=t.split(/\s+/);return w.length>8?w.slice(0,6).join(' ')+' …':t}
@@ -146,7 +162,7 @@ function layerClasses(){const p=$('page');p.classList.toggle('nogl',!layerOn('gl
 function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[0];st.chap=c.key;save();
  document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',a.dataset.ch===c.key));
  const d=DIVS[c.book]||{};const t=d.pageTitle||ctitle(c);
- const nr=c.secs.reduce((a,s)=>a+(rowsBySec[s.id]||[]).filter(visRow).length,0);
+ const nr=c.secs.reduce((a,s)=>a+(rowsBySec[s.id]||[]).filter(r=>!isDg(r)&&visRow(r)).length,0);
  const h=`<div class="chead">${esc(d.label)}${d.chapters?' · '+esc(V.chapterWord)+' '+c.chap:''}</div><h1 class="ctitle">${esc(t)}</h1>${nr?`<p class="lsub"><a href="?ed=${encodeURIComponent(ED)}&view=list&ch=${encodeURIComponent(c.key)}" data-chlist="${esc(c.key)}">${nr} reuse rows in this chapter, as a list</a></p>`:''}`+c.secs.map((s,i)=>{const tp=i?tpBefore(s.id):null;return (tp?tpHTML(tp):'')+secHTML(s)}).join('');
  const tp0=tpBefore(c.secs[0].id);
  $('page').innerHTML=(tp0?tpHTML(tp0):'')+h;layerClasses();applyFilters();
@@ -155,7 +171,8 @@ function show(chKey,target,keep){const c=CH.find(x=>x.key===chKey)||CH[0];st.cha
 function applyFilters(){if(VIEW==='list')listView();document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('off',!ids.length);u.classList.toggle('multi',new Set(ids.map(i=>ROWS[i].fam)).size>1);u.classList.toggle('poss',ids.length>0&&ids.every(i=>ROWS[i].status!=='match'||ROWS[i].label==='commonplace'));u.classList.toggle('att',ids.length>0&&ids.every(i=>isAtt(ROWS[i])));if(ids.length)u.style.setProperty('--c',`var(--f${ROWS[ids[0]].fam})`)});
  document.querySelectorAll('#page .dots').forEach(b=>b.innerHTML=famDots(byId[b.dataset.s]));
  document.querySelectorAll('#page details.dv').forEach(x=>{x.hidden=!!x.dataset.fam&&!st.fams[x.dataset.fam]});
- document.querySelectorAll('#page .dvc').forEach(b=>{const n=(byId[b.dataset.dv].div||[]).filter(d=>!dvFam(d)||st.fams[dvFam(d)]).length;b.hidden=!n;b.textContent=`${(LAY.comments||{}).chip||''} ${n}`});meters()}
+ document.querySelectorAll('#page .u').forEach(u=>{const ids=u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i]));u.classList.toggle('dg',ids.length>0&&ids.every(i=>isDg(ROWS[i])))});
+ document.querySelectorAll('#page .dvc').forEach(b=>{const s=byId[b.dataset.dv],LC=LAY.comments||{};const n=(s.div||[]).filter(visDiv).length+dgOf(s).length;b.hidden=!n;b.textContent=`${LC.chip||''} ${n}`;b.title=`${LC.chipTitle||''}: ${n}`});meters()}
 // panel
 function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{})[w]??w;
  const loc=ew.locus&&!(C.hideLocusFor||[]).includes(w)&&(!C.locusNeedsLatin||ew.latin);
@@ -165,26 +182,38 @@ function ewHTML(ew){const C=RU.earliest||{},w=ew.witness,wl=(C.witnessLabels||{}
  if(C.nearestPrefix&&ew.nearest&&ew.nearest!=='n/a'){const nl=C.nearestLabels||{};h+=`<div class="why">${esc(C.nearestPrefix)}${esc(nl[ew.nearest]||nl['*']||ew.nearest)}</div>`}
  if(C.showReason&&ew.reason)h+=`<div class="why">${esc(ew.reason)}</div>`;
  return h+'</div>'}
-function rowHTML(r,hl){const l=r.links.map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join('');const N=RU.nearer||{},P=RU.partLabels||{};
+// a card's header: a click folds the card to the header
+const mhAttr=fold=>` role="button" tabindex="0" aria-expanded="${!fold}" title="Click to fold or unfold"`;
+function rowHTML(r,hl,fold){const l=r.links.map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join('');const N=RU.nearer||{},P=RU.partLabels||{};
  const near=r.near&&N.title?`<div class="ew"><b>${esc(N.title)}</b> ${esc(N.prefix)}${esc((N.labels||{})[r.near]||(N.labels||{})['*']||r.near)}</div>`:'';
- return `<div class="m${hl?' hl':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${repLink(r)}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${esc(r.label)}</span>${r.attr?`<span class="att" title="${esc(r.attr.reason)}">${r.attr.form==='quotation'?'quoted from':'names'} ${esc(r.attr.cue.length>70?r.attr.cue.slice(0,68)+'…':r.attr.cue)}</span>`:''}<span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
+ return `<div class="m${hl?' hl':''}${fold?' fold':''}${isDg(r)?' dg':''}" style="--c:var(--f${r.fam})" id="r${r.id}"><div class="mh"${mhAttr(fold)}><span class="fam">${r.fam}</span><b>${esc(r.work)}</b>${r.locus?`<span>${esc(r.locus)}</span>`:''}${r.toUnit&&MAN[r.to]?xref(r.to,r.toUnit):''}${repLink(r)}${r.noteref?`<span>${esc(r.noteref)}</span>`:''}${r.note?`<span>${esc(RU.noteLabel||'(note)')}</span>`:''}${r.part&&P[r.part]?`<span>${esc(P[r.part])}</span>`:''}${r.qa?`<span>quoting ${esc(r.qa)}</span>`:''}<span class="lab">${isDg(r)?esc((LAY.comments||{}).chip||'')+' ':''}${esc(r.label)}</span>${r.attr?`<span class="att" title="${esc(r.attr.reason)}">${r.attr.form==='quotation'?'quoted from':'names'} ${esc(r.attr.cue.length>70?r.attr.cue.slice(0,68)+'…':r.attr.cue)}</span>`:''}<span style="color:var(--mut)">${r.conf.toFixed(2)}${r.status==='possible'?' · possible':''}</span></div>
  <div class="q"><small>${esc(RU.baseTag)}</small>${esc(r.vp)}</div><div class="q src"><small>${esc(r.slab||(FAMI[r.fam]||{}).sourceLabel||RU.sourceLabel)}</small>${esc(r.sp)}</div>${r.fr?`<div class="q src"><small>${esc(RU.frenchLabel||'working French')}</small>${esc(r.fr)}</div>`:''}${r.ew?ewHTML(r.ew):''}${near}<div class="why">${esc(r.reason)}</div>${r.audit?`<div class="why rv"><b>Audit:</b> ${esc(r.audit.verdict)}${r.audit.statusWas?` (was ${esc(r.audit.statusWas)})`:''}${r.audit.labelWas?` (label was ${esc(r.audit.labelWas)})`:''}. ${esc(r.audit.reason)}</div>`:''}${r.labelCheck?`<div class="why rv"><b>Label check:</b> was ${esc(r.labelCheck.was)}. ${esc(r.labelCheck.reason)}</div>`:''}${r.locusCheck?`<div class="why rv"><b>Locus corrected:</b> was ${esc(r.locusCheck.was)}, a reference the source passage cites.</div>`:''}${r.rev?`<div class="why rv"><b>Second judge:</b> ${esc(r.rev.verdict)}${r.rev.verdict==='keep'?` ${Number(r.rev.confidence).toFixed(2)}`:''}. ${esc(r.rev.reason)}</div>`:''}<div class="lk">${l}<span style="color:var(--mut)">${esc(r.page)}</span></div></div>`}
+function dvCard(d){const LC=LAY.comments||{},f=dvFam(d);
+ return `<div class="m"${f?` style="--c:var(--f${f})"`:''}><div class="mh"${mhAttr(false)}>${f?`<span class="fam">${esc(f)}</span>`:''}<b>${esc(d.src)}</b>${d.w?`<span>${esc(d.w)}</span>`:''}<span class="lab">${esc(LC.chip||'')} ${esc(d.rel||'')}</span>${d.conf?`<span style="color:var(--mut)">${Number(d.conf).toFixed(2)}</span>`:''}</div>
+ ${d.q?`<div class="why" style="color:var(--fg)"><b>${esc(d.q)}</b></div>`:''}<div class="why" style="color:var(--fg)">${esc(d.c)}</div>${d.vp?`<div class="q"><small>${esc(LC.baseTag||RU.baseTag)}</small>${esc(d.vp)}</div>`:''}${d.lat?`<div class="q src"><small>${esc(d.src||LC.sourceTag)}</small>${esc(d.lat)}</div>`:''}<div class="lk">${(d.link||[]).map(([t,u])=>`<a href="${u}">${esc(t)}</a>`).join(' ')}</div></div>`}
+const varCard=v=>{const LV=LAY.variants||{};return `<div class="m" style="--c:var(--add-line)"><div class="mh"${mhAttr(false)}><span class="fam" style="--c:var(--add-line)">${esc(LV.tag)}</span><b>${esc(v.type)}</b>${v.otherLink?`<a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div><div class="why" style="color:var(--fg)">${esc(v.content)}</div>${v.otherPassage?`<div class="q src"><small>${esc(LV.otherTag)}</small>${esc(v.otherPassage)}</div>`:''}</div>`};
+const glCard=g=>`<div class="m"><div class="mh"${mhAttr(false)}><b>${esc(LANG[g.lang]||g.lang)}</b>${g.source?`<span>${esc(g.source)}</span>`:''}</div><div class="q"><small>${esc(LANG[g.lang]||g.lang)}</small><i lang="${esc(g.lang)}">${esc(g.text)}</i></div><div class="q src"><small>English</small>${esc(g.translation)}</div>${g.note?`<div class="why">${esc(g.note)}</div>`:''}</div>`;
+// fold or unfold every card in the panel
+const foldBar=n=>n>1?`<div class="pfold"><button class="lnk" data-fold="1">Fold all</button> · <button class="lnk" data-fold="0">Unfold all</button></div>`:'';
 function select(sid,ids){const s=byId[sid];if(!s)return;st.sel=sid;save();document.querySelectorAll('.sec.sel').forEach(e=>e.classList.remove('sel'));const el=$(sid);if(el)el.classList.add('sel');
  const focus=ids&&ids.length;
  const all=(rowsBySec[sid]||[]).filter(visRow);
  const rs=(focus?all.filter(r=>ids.includes(r.id)):all).sort((a,b)=>b.conf-a.conf);
  const hidden=focus?0:(rowsBySec[sid]||[]).length-rs.length;
  const more=focus&&all.length>rs.length?`<p><button class="btn" data-all="${sid}">All ${all.length} sources for this section</button></p>`:'';
- const LV=LAY.variants||{};const vars=(s.vars||[]).map(v=>`<div class="m" style="--c:var(--add-line)"><div class="mh"><span class="fam" style="--c:var(--add-line)">${esc(LV.tag)}</span><b>${esc(v.type)}</b>${v.otherLink?`<a href="${v.otherLink}">${esc(LV.otherLinkLabel)}</a>`:''}</div><div class="why" style="color:var(--fg)">${esc(v.content)}</div></div>`).join('');
+ const vars=(s.vars||[]).map(varCard).join('');
  const ins=focus?[]:(IN[sid]||[]).filter(visIn);
  const inH=ins.length?`<h3 class="ph">Reused in other editions</h3>`+rowsTable('in:'+sid,ins,['there','label','conf','theirs']):'';
- panel(`<h2>${lbl(s.id)}</h2><div class="sub">${esc(s.margin)}</div>${rs.length?rs.map(r=>rowHTML(r,false)).join(''):'<p class="empty">No source shown for this section with the current filters.</p>'}${more}${hidden?`<p class="empty">${hidden} more hidden by filters (possible matches, commonplaces, attributed rows or a switched-off source).</p>`:''}${focus?'':vars}${inH}`);
+ // reuse rows first, then the open disagreements under the Divergences heading; a whole section opens with the cards folded if the reader folded them last
+ const fold=!focus&&!!st.fold,ru=rs.filter(r=>!isDg(r)),dg=rs.filter(isDg);
+ const cards=ru.map(r=>rowHTML(r,false,fold)).join('')+(dg.length?`<h3 class="ph">${esc((LAY.comments||{}).label||'Divergences')}</h3>`+dg.map(r=>rowHTML(r,false,fold)).join(''):'');
+ panel(`<h2>${lbl(s.id)}</h2><div class="sub">${esc(s.margin)}</div>${foldBar(rs.length+(focus?0:(s.vars||[]).length))}${rs.length?cards:'<p class="empty">No source shown for this section with the current filters.</p>'}${more}${hidden?`<p class="empty">${hidden} more hidden by filters (possible matches, commonplaces, attributed rows, or a source or layer switched off).</p>`:''}${focus?'':vars}${inH}`);
  if(innerWidth<=1100&&ids)$('panel').dataset.open='true'}
 function panel(h){$('panel').innerHTML=`<button class="btn only-narrow" data-close style="float:right">Close</button>${h}${verLine()}`;$('panel').scrollTop=0}
 // the edition's version, at the foot of every panel
 const verLine=()=>`<p class="ver">${esc(M.short)} · version ${esc(M.version||'?')}${M.changed?' of '+esc(M.changed):''} · <a href="${BASE}CHANGELOG.md">changes</a></p>`;
 function edInfo(){const n=SEC.filter(s=>s.kind!=='heading').length;
- panel(`<h2>${esc(M.short)}</h2><div class="sub">${esc(M.author)}, ${esc(M.title)}. ${esc(M.imprint)}.</div><p class="lsub">${n} units · ${ROWS.filter(Boolean).length} reuse rows${INROWS.length?` · ${INROWS.length} rows of other editions reuse it`:''}</p>`)}
+ panel(`<h2>${esc(M.short)}</h2><div class="sub">${esc(M.author)}, ${esc(M.title)}. ${esc(M.imprint)}.</div><p class="lsub">${n} units · ${ROWS.filter(r=>r&&!isDg(r)).length} reuse rows${LAY.comments?` · ${ROWS.filter(r=>r&&isDg(r)).length+SEC.reduce((a,s)=>a+(s.div||[]).length,0)} divergences`:''}${INROWS.length?` · ${INROWS.length} rows of other editions reuse it`:''}</p>`)}
 // a sortable table of reuse rows; the list view and the panel's 'reused in' use it
 const COLS={
  unit:{label:'Unit',key:r=>unitKey(M,r.sec),html:r=>`<a href="#${r.sec}" data-row="${r.id}">${esc(lbl(r.sec))}</a>`},
@@ -196,8 +225,8 @@ const COLS={
  there:{label:'Reused in',key:r=>[r.from,...unitKey(MAN[r.from],r.sec)],html:r=>xref(r.from,r.sec)+(r.via?` <span class="via">through ${esc(r.via)}</span>`:'')},
  theirs:{label:'Passage reused',key:r=>r.sp,html:r=>`<span class="pas">${esc(r.sp)}</span>`},
  iunit:{label:'Unit',key:r=>unitKey(M,r.sec),html:r=>`<a href="#${r.sec}">${esc(lbl(r.sec))}</a>`},
- dvsrc:{label:'Source',key:r=>r.d.src+' '+r.d.w,html:r=>`<span class="fam" style="--c:var(--f${r.d.fam||(LAY.comments||{}).family||''})">${esc(r.d.fam||(LAY.comments||{}).family||'')}</span> ${esc(r.d.src)}${r.d.w?' · '+esc(r.d.w):''}`},
- dvrel:{label:'Relation',key:r=>-(r.d.sev||0),html:r=>esc(r.d.rel||'')+(r.d.sev?` · ${r.d.sev}`:'')},
+ dvsrc:{label:'Source',key:r=>r.d.src+' '+(r.d.w||''),html:r=>`<span class="fam" style="--c:var(--f${r.d.fam||(LAY.comments||{}).family||''})">${esc(r.d.fam||(LAY.comments||{}).family||'')}</span> ${esc(r.d.src)}${r.d.w?' · '+esc(r.d.w):''}`},
+ dvrel:{label:'Relation',key:r=>r.r?[1,-r.r.conf]:[0,-(r.d.sev||0)],html:r=>esc(r.d.rel||'')+(r.r?` · ${r.r.conf.toFixed(2)}${r.r.status==='possible'?' <span class="poss">possible</span>':''}`:r.d.sev?` · ${r.d.sev}`:'')},
  dvtext:{label:'Divergence',key:r=>r.d.q||r.d.c,html:r=>(r.d.q?`<b>${esc(r.d.q)}</b> `:'')+`<span class="pas">${esc(r.d.c)}</span>`},
  vtype:{label:'Change',key:r=>r.v.type,html:r=>esc(r.v.type)},
  vtext:{label:'What changed',key:r=>r.v.content,html:r=>`<span class="pas">${esc(r.v.content)}</span>`},
@@ -208,17 +237,19 @@ const COLS={
 };
 // the items of the layers other than reuse, one list per kind, for the list view
 function layerItems(inCh){const out={comments:[],variants:[],translation:[],glosses:[]};let k=0;
- SEC.forEach(s=>{if(!inCh(s.id))return;(s.div||[]).filter(visDiv).forEach(d=>out.comments.push({id:k++,sec:s.id,d}));
+ // an open-disagreement row in the shape of a divergence note, with the row itself for the panel
+ const dgNote=r=>({src:r.work,w:r.locus,fam:r.fam,rel:r.label,c:r.vp});
+ SEC.forEach(s=>{if(!inCh(s.id))return;dgOf(s).forEach(r=>out.comments.push({id:k++,sec:s.id,d:dgNote(r),r}));(s.div||[]).filter(visDiv).forEach(d=>out.comments.push({id:k++,sec:s.id,d}));
   if(layerOn('variants'))(s.vars||[]).forEach(v=>out.variants.push({id:k++,sec:s.id,v}));
   if(s.en&&LAY.translation&&(LAY.translation.toggle===false||layerOn('translation')))(s.en.f||[]).forEach(f=>out.translation.push({id:k++,sec:s.id,f}));
   if(layerOn('glosses'))(s.gl||[]).forEach(g=>out.glosses.push({id:k++,sec:s.id,g}))});
  return out}
 const TBL={};
 function rowsTable(id,rows,cols){const t=TBL[id]=TBL[id]||{sort:cols[0],dir:1};t.rows=rows;t.cols=cols;
- const K=COLS[t.sort].key,v=rows.map(r=>[K(r),r]);
+ const K=COLS[t.sort].key,v=rows.map(r=>[K(r),r]),ix=new Map(rows.map((r,i)=>[r,i]));
  v.sort((a,b)=>{const x=a[0],y=b[0];const c=Array.isArray(x)?cmpKey(x,y):x<y?-1:x>y?1:0;return c*t.dir||a[1].id-b[1].id});
  return `<div class="rtw"><table class="rt" data-t="${esc(id)}"><thead><tr>${cols.map(c=>`<th data-sort="${c}" aria-sort="${t.sort===c?(t.dir>0?'ascending':'descending'):'none'}">${COLS[c].label}</th>`).join('')}</tr></thead>
- <tbody>${v.map(([,r])=>`<tr>${cols.map(c=>`<td class="c-${c}">${COLS[c].html(r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
+ <tbody>${v.map(([,r])=>`<tr data-i="${ix.get(r)}">${cols.map(c=>`<td class="c-${c}">${COLS[c].html(r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
 // list view: viewer/?ed=<id>&view=list
 function viewChrome(){const q=new URLSearchParams(location.search),v=VIEW;if(v==='list')q.set('view','list');else q.delete('view');if(v==='list'&&LCH)q.set('ch',LCH);else q.delete('ch');
  history.replaceState(null,'','?'+q.toString()+(v==='text'&&st.sel?'#'+st.sel:''));$('vText').setAttribute('aria-pressed',v==='text');$('vList').setAttribute('aria-pressed',v==='list');
@@ -228,20 +259,29 @@ function setView(v){VIEW=v;viewChrome();if(v==='list')listView();else go(st.sel&
 const chLabel=c=>{const d=DIVS[c.book]||{};return (d.chapters?`${d.label.split(' · ')[0]}, ch. ${c.chap}: `:'')+ctitle(c)};
 function listView(){const C=CH.find(c=>c.key===LCH);if(!C)LCH='';
  const inCh=u=>!LCH||(chOf[u]&&chOf[u].key===LCH);
- const all=ROWS.filter(r=>r&&inCh(r.sec)),out=all.filter(visRow),inA=INROWS.filter(r=>inCh(r.toUnit)),inc=inA.filter(visIn),I=layerItems(inCh);
+ const all=ROWS.filter(r=>r&&!isDg(r)&&inCh(r.sec)),out=all.filter(visRow),inA=INROWS.filter(r=>inCh(r.toUnit)),inc=inA.filter(visIn),I=layerItems(inCh);
  // one tab per list: the reuse rows, the rows of other editions that reuse this one, and the items of each layer that is on
  const T=[['out','Sources used',out.length,`${out.length} of ${all.length} rows`,()=>rowsTable('list:out',out,['unit','source','label','conf','passage'])]];
  if(INROWS.length)T.push(['in','Reused in other editions',inc.length,`${inc.length} of ${inA.length} rows`,()=>rowsTable('list:in',inc,['here','there','label','conf','theirs'])]);
- if(layerOn('comments'))T.push(['dv',(LAY.comments||{}).label||'Comments',I.comments.length,`${I.comments.length} items`,()=>rowsTable('list:dv',I.comments,['iunit','dvsrc','dvrel','dvtext'])]);
+ if(layerOn('comments'))T.push(['dv',(LAY.comments||{}).label||'Divergences',I.comments.length,`${I.comments.length} items`,()=>rowsTable('list:dv',I.comments,['iunit','dvsrc','dvrel','dvtext'])]);
  if(layerOn('variants'))T.push(['var',(LAY.variants||{}).label||'Variants',I.variants.length,`${I.variants.length} items`,()=>rowsTable('list:var',I.variants,['iunit','vtype','vtext'])]);
  if(layerOn('glosses'))T.push(['gl',(LAY.glosses||{}).label||'Translations',I.glosses.length,`${I.glosses.length} passages`,()=>rowsTable('list:gl',I.glosses,['iunit','gllang','gltext'])]);
  if(I.translation.length)T.push(['tf','Translation problems',I.translation.length,`${I.translation.length} flags`,()=>rowsTable('list:tf',I.translation,['iunit','tftype','tftext'])]);
  const cur=T.find(t=>t[0]===LTAB)||T[0];
  const tabs=T.length>1?`<div class="seg ltabs" role="group">${T.map(t=>`<button data-ltab="${t[0]}" aria-pressed="${t===cur}">${esc(t[1])} (${t[2]})</button>`).join('')}</div>`:'';
  const sel=`<select id="lch" class="edsel lch" aria-label="Chapter"><option value="">All chapters</option>${CH.map(c=>`<option value="${esc(c.key)}"${c.key===LCH?' selected':''}>${esc(chLabel(c))}</option>`).join('')}</select>`;
- $('page').innerHTML=`<div class="chead">${esc(M.short)}</div><h1 class="ctitle">${C?esc(ctitle(C)):'All items, as a list'}</h1><div class="lbar">${sel}${tabs}</div><p class="lsub">${cur[3]} shown${C?' in this chapter':''}. The filters in the top bar apply: switch a layer on to list its items. Click a column head to sort, a unit to read it. The contents list picks a chapter.</p>`+cur[4]();
+ $('page').innerHTML=`<div class="chead">${esc(M.short)}</div><h1 class="ctitle">${C?esc(ctitle(C)):'All items, as a list'}</h1><div class="lbar">${sel}${tabs}</div><p class="lsub">${cur[3]} shown${C?' in this chapter':''}. The filters in the top bar apply: switch a layer on to list its items. Click a row to see it on the right, a column head to sort, a unit to read it. The contents list picks a chapter.</p>`+cur[4]();
  $('lch').onchange=e=>{LCH=e.target.value;viewChrome();listView()};
  document.querySelectorAll('.rail a').forEach(a=>a.classList.toggle('on',!!LCH&&a.dataset.ch===LCH))}
+// the panel for a row of the list view: the item in full, with a link to its unit in the text
+function itemPanel(tab,x){const read=u=>`<a href="#${u}">Read ${esc(lbl(u))} in the text</a>`;let h;
+ if(tab==='list:tf'){const s=byId[x.sec],g=s&&s.en&&s.en.g[x.f.k];if(g){showEN(x.sec,g[0]);return}h=''}
+ if(tab==='list:out')h=`<h2>${lbl(x.sec)}</h2><div class="sub">${read(x.sec)}</div>${rowHTML(x,false)}`;
+ else if(tab==='list:in')h=`<h2>${lbl(x.toUnit)}</h2><div class="sub">Reused in ${xref(x.from,x.sec)} · ${read(x.toUnit)}</div>${rowHTML(x,false)}`;
+ else if(tab==='list:dv')h=`<h2>${lbl(x.sec)}</h2><div class="sub">${read(x.sec)}</div>${x.r?rowHTML(x.r,false):dvCard(x.d)}`;
+ else if(tab==='list:var')h=`<h2>${lbl(x.sec)}</h2><div class="sub">${read(x.sec)}</div>${varCard(x.v)}`;
+ else if(tab==='list:gl')h=`<h2>${lbl(x.sec)}</h2><div class="sub">${read(x.sec)}</div>${glCard(x.g)}`;
+ if(h===undefined)return;panel(h);$('panel').dataset.open='true'}
 function resort(th){const tb=th.closest('table'),id=tb.dataset.t,t=TBL[id],c=th.dataset.sort;if(t.sort===c)t.dir=-t.dir;else{t.sort=c;t.dir=1}tb.outerHTML=rowsTable(id,t.rows,t.cols)}
 // translation layer
 let enMode='tr';try{enMode=localStorage.getItem('nleEnMode')||'tr'}catch(e){}
@@ -297,7 +337,10 @@ function markHits(id,q){if(window.CSS&&CSS.highlights)CSS.highlights.delete('shl
 function toast(t){const e=document.createElement('div');e.className='toast';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),1600)}
 function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Copied')).catch(()=>{const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast('Copied')}catch(e){toast(t)}ta.remove()})}
 // events
-document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('panel').dataset.open='false';return}const u=e.target.closest('.u:not(.off)');if(u){e.preventDefault();document.querySelectorAll('.u.hit').forEach(x=>x.classList.remove('hit'));u.classList.add('hit');const sec=u.closest('.sec');select(sec.id,u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i])));return}
+document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('panel').dataset.open='false';return}
+ const mh=e.target.closest('.m>.mh');if(mh&&!e.target.closest('a,button,input,select')){const m=mh.parentElement;m.classList.toggle('fold');mh.setAttribute('aria-expanded',!m.classList.contains('fold'));return}
+ const fa=e.target.closest('[data-fold]');if(fa){st.fold=fa.dataset.fold==='1';save();document.querySelectorAll('#panel .m').forEach(m=>{m.classList.toggle('fold',st.fold);const h=m.querySelector('.mh');if(h)h.setAttribute('aria-expanded',!st.fold)});return}
+ const tr=e.target.closest('#page table.rt tbody tr');if(tr&&!e.target.closest('a,button')){const tb=tr.closest('table'),t=TBL[tb.dataset.t];if(t&&tb.dataset.t.startsWith('list:')){tb.querySelectorAll('tr.on').forEach(x=>x.classList.remove('on'));tr.classList.add('on');itemPanel(tb.dataset.t,t.rows[Number(tr.dataset.i)])}return}const u=e.target.closest('.u:not(.off)');if(u){e.preventDefault();document.querySelectorAll('.u.hit').forEach(x=>x.classList.remove('hit'));u.classList.add('hit');const sec=u.closest('.sec');select(sec.id,u.dataset.m.split(',').map(Number).filter(i=>visRow(ROWS[i])));return}
  const th=e.target.closest('th[data-sort]');if(th){resort(th);return}
  const lt=e.target.closest('[data-ltab]');if(lt){LTAB=lt.dataset.ltab;listView();return}
  const cl=e.target.closest('[data-chlist]');if(cl){e.preventDefault();LCH=cl.dataset.chlist;setView('list');edInfo();return}
@@ -308,37 +351,42 @@ document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){$('pa
  const ea=e.target.closest('[data-enall]');if(ea){showEN(ea.dataset.enall,null);return}
  const em=e.target.closest('[data-enmode]');if(em){enMode=em.dataset.enmode;try{localStorage.setItem('nleEnMode',enMode)}catch(x){}if(enState)showEN(enState.sid,enState.idx);return}
  const d=e.target.closest('.dots');if(d){select(d.dataset.s);if(innerWidth<=1100)$('panel').dataset.open='true';return}
- const dv=e.target.closest('[data-dv]');if(dv){if(!layerOn('comments')){setLayer(LAY.comments,true)}document.querySelectorAll(`#${CSS.escape(dv.dataset.dv)} details.dv:not([hidden])`).forEach((x,i)=>{x.open=true;if(!i)x.scrollIntoView({block:'nearest'})});return}
+ const dv=e.target.closest('[data-dv]');if(dv){if(!layerOn('comments')){setLayer(LAY.comments,true)}document.querySelectorAll(`#${CSS.escape(dv.dataset.dv)} details.dv:not([hidden])`).forEach((x,i)=>{x.open=true;if(!i)x.scrollIntoView({block:'nearest'})});
+  const ids=dgOf(byId[dv.dataset.dv]).map(r=>r.id);if(ids.length){select(dv.dataset.dv,ids);if(innerWidth<=1100)$('panel').dataset.open='true'}return}
  const c=e.target.closest('[data-copy]');if(c){copy(cite(byId[c.dataset.copy]));return}
  const l=e.target.closest('[data-link]');if(l){copy(location.href.split('#')[0]+'#'+l.dataset.link);return}
  const hit=e.target.closest('[data-hit]');if(hit){e.preventDefault();document.querySelectorAll('.res a.on').forEach(x=>x.classList.remove('on'));hit.classList.add('on');go(hit.dataset.hit,true);markHits(hit.dataset.hit,lastQ);return}
  const a=e.target.closest('a[href^="#"]');if(a){e.preventDefault();go(a.getAttribute('href').slice(1));return}
  const sec=e.target.closest('.sec');if(sec&&!e.target.closest('a')){if(getSelection().toString().trim())return;if(window.CSS&&CSS.highlights)CSS.highlights.delete('shl');select(sec.id)}});
 $('q').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch(e.target.value)});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('.m>.mh')){e.preventDefault();e.target.click()}});
 // filters: the Authors menu (source families; applies to reuse rows and divergence notes) and the Layers menu
 // (reuse with its options, divergences, variants)
 function redraw(){save();applyFilters();if(st.sel&&VIEW==='text')select(st.sel);srcPop();layPop()}
 function setLayer(l,on){if(l.kind==='reuse'){setFams({[l.family]:on});return}
- st.layers[l.id]=on;layerClasses();applyFilters();if(l.kind==='translation'&&!on)$('enPop').hidden=true;save();srcPop();layPop()}
+ st.layers[l.id]=on;layerClasses();applyFilters();if(l.kind==='translation'&&!on)$('enPop').hidden=true;save();srcPop();layPop();
+ // the Divergences layer holds rows: redraw the panel's list of sources
+ if(l.kind==='comments'&&st.sel&&VIEW==='text')select(st.sel)}
 // families: switch some on or off, then redraw everything that shows them
 function setFams(ch){Object.assign(st.fams,ch);redraw()}
 // the Authors menu: one line per family with its colour, what it shows under the current layers, a bar, and "only"
-function srcPop(){const n={};ROWS.forEach(r=>{if(r&&st.src&&shown(r))n[r.fam]=(n[r.fam]||0)+1});
+function srcPop(){const n={};ROWS.forEach(r=>{if(r&&kindOn(r)&&shown(r))n[r.fam]=(n[r.fam]||0)+1});
  if(layerOn('comments'))SEC.forEach(s=>(s.div||[]).forEach(d=>{const f=dvFam(d);if(f)n[f]=(n[f]||0)+1}));
  const fs=FAMS.map(([k,l])=>({k,l,n:n[k]||0})).sort((a,b)=>b.n-a.n),max=Math.max(1,...fs.map(f=>f.n)),on=fs.filter(f=>st.fams[f.k]);
  $('srcDots').innerHTML=on.slice(0,12).map(f=>`<i style="--c:var(--f${f.k})"></i>`).join('');$('srcN').textContent=`${on.length}/${fs.length}`;
- const what=[st.src?'reuse rows'+(st.pos?' (possible matches included)':'')+(st.att?'':' (attributed rows left out)'):'',layerOn('comments')?'divergence notes':''].filter(Boolean);
+ const what=[st.src?'reuse rows'+(st.pos?' (possible matches included)':'')+(st.att?'':' (attributed rows left out)'):'',layerOn('comments')?'divergences':''].filter(Boolean);
  $('srcPop').innerHTML=`<div class="sph"><b>Authors</b><span class="spa"><button class="btn" data-fa="all">All</button><button class="btn" data-fa="none">None</button></span></div>
  <ul>${fs.map(f=>`<li class="${st.fams[f.k]?'':'off'}" style="--c:var(--f${f.k})"><label title="${esc(f.l)}"><input type="checkbox" data-f="${f.k}"${st.fams[f.k]?' checked':''}><i></i><span>${esc(f.l)}</span></label><span class="mb"><b style="width:${Math.round(100*f.n/max)}%"></b></span><span class="n">${f.n}</span><button class="only" data-only="${f.k}">only</button></li>`).join('')}</ul>
  <p class="spn">${what.length?'Counts: '+what.join(' and ')+'. The Layers menu sets which.':'No layer that shows sources is on. Turn on Reuse or Divergences in the Layers menu.'}</p>`}
 // the Layers menu: Reuse (with possible matches, attributed rows and the edition's reuse layers), then every other layer
-function layPop(){const RL=LAYS.filter(l=>l.kind==='reuse'&&l.toggle!==false),OL=LAYS.filter(l=>l.kind!=='reuse'&&l.toggle!==false&&l.kind!=='translation'),hasRows=ROWS.length>0;
+const KORD={comments:0,variants:1,glosses:2};
+function layPop(){const RL=LAYS.filter(l=>l.kind==='reuse'&&l.toggle!==false),OL=LAYS.filter(l=>l.kind!=='reuse'&&l.toggle!==false&&l.kind!=='translation').sort((a,b)=>(KORD[a.kind]??3)-(KORD[b.kind]??3)),hasRows=ROWS.length>0;
  const cb=(attrs,on,label,tip,cls)=>`<label class="tg${cls?' '+cls:''}"${tip?` title="${esc(tip)}"`:''}><input type="checkbox" ${attrs}${on?' checked':''}> ${label}</label>`;
- const sub=[cb('id="tPos"',st.pos,'<span class="dash">Possible matches</span>','Rows the judge rated below 0.5, and commonplaces'),
+ const sub=[cb('id="tPos"',st.pos,'<span class="dash">Possible matches</span>','Rows the judge rated below 0.5, and commonplaces. Applies to reuse and divergence rows.'),
   cb('id="tAtt"',st.att!==false,'<span class="dotu">Attributed</span>','Rows where the author names the source for the passage: attributed quotations and paraphrases, and citations. Untick to see only unattributed reuse.'),
   ...RL.map(l=>cb(`data-l="${esc(l.id)}"`,st.fams[l.family],esc(l.label),l.tooltip))].join('');
- $('layPop').innerHTML=(hasRows?`<div class="lg">${cb('id="tSrc"',st.src,'<b>Reuse</b>','Underline the passages a source reuses, and list the rows in the panel')}<div class="lsub${st.src?'':' dis'}">${sub}</div></div>`:'')+
-  OL.map(l=>`<div class="lg">${cb(`data-l="${esc(l.id)}"`,!!st.layers[l.id],`<b>${esc(l.label)}</b>`,l.tooltip)}${l.tooltip?`<p class="ld">${esc(l.tooltip)}</p>`:''}</div>`).join('');
+ $('layPop').innerHTML=(hasRows?`<div class="lg">${cb('id="tSrc"',st.src,'<b>Reuse</b>','Underline the passages a source reuses, and list the rows in the panel')}<div class="lsub${st.src||layerOn('comments')?'':' dis'}">${sub}</div></div>`:'')+
+  OL.map(l=>`<div class="lg">${cb(`data-l="${esc(l.id)}"`,!!st.layers[l.id],`<b${l.kind==='comments'?' class="wavy"':''}>${esc(l.label)}</b>`,l.tooltip)}${l.tooltip?`<p class="ld">${esc(l.tooltip)}</p>`:''}</div>`).join('');
  const act=(hasRows&&st.src?1:0)+OL.filter(l=>st.layers[l.id]).length,tot=(hasRows?1:0)+OL.length;$('layN').textContent=`${act}/${tot}`}
 function filters(){const hasRows=ROWS.length>0;$('srcW').hidden=!hasRows&&!LAY.comments;
  const LV=LAY.variants;if(LV)document.documentElement.style.setProperty('--old-tag',JSON.stringify((LV.otherTag||'')+' '));

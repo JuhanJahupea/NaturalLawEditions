@@ -111,6 +111,8 @@ h2.lh{font:18px var(--display);margin:26px 0 8px}
 .u.multi{text-decoration-style:double}
 .u.poss{text-decoration-style:dashed;text-decoration-thickness:1.5px}
 .u.att{text-decoration-style:dotted;text-decoration-thickness:2.5px}
+.u.dg{text-decoration-style:wavy;text-decoration-thickness:1.5px}
+.wavy{text-decoration:underline wavy;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .dotu{text-decoration:underline dotted;text-decoration-thickness:2px;text-underline-offset:3px}
 .mh .att{font-style:italic;color:var(--mut)}
 .u.off{text-decoration:none;cursor:auto}
@@ -152,6 +154,10 @@ h2.lh{font:18px var(--display);margin:26px 0 8px}
 .panel .sub{color:var(--mut);font-size:13px;margin-bottom:10px}
 .m{border-top:1px solid var(--line);padding:10px 0}
 .m.hl{background:var(--accent-soft);margin-inline:-16px;padding-inline:16px}
+/* a card's header folds it */
+.m>.mh{cursor:pointer}.m>.mh::before{content:'\25BE';color:var(--mut);font-size:10px;width:9px;flex:none}.m.fold>.mh::before{content:'\25B8'}
+.m>.mh:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.m.fold>:not(.mh){display:none}.m.fold{padding:7px 0}
+.pfold{font:12px var(--ui);color:var(--mut);margin:6px 0 2px}.lnk{background:none;border:0;padding:0;color:var(--accent);cursor:pointer;font:inherit}.lnk:hover{text-decoration:underline}
 .mh{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;font-size:13px}
 .fam{font:600 11px var(--ui);color:var(--paper);background:var(--c);border-radius:8px;padding:0 6px}
 .lab{border:1px solid var(--line);border-radius:3px;padding:0 5px;font-size:12px}
@@ -200,6 +206,7 @@ body.listing .page{max-width:min(1100px,100%)}
 .rt th[aria-sort=ascending]::after{content:" ▲";font-size:10px}.rt th[aria-sort=descending]::after{content:" ▼";font-size:10px}
 .rt td{padding:5px 8px 5px 0;border-top:1px solid var(--line);vertical-align:top}
 .rt td.c-conf{font-variant-numeric:tabular-nums;white-space:nowrap}
+.listing #page .rt tbody tr{cursor:pointer}.listing #page .rt tbody tr:hover{background:var(--soft)}.listing #page .rt tbody tr.on{background:var(--accent-soft)}
 .rt td.c-unit a,.rt td.c-here a{white-space:nowrap;text-decoration:none}
 .rt .pas{font:13.5px/1.45 var(--text);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .rt .poss{color:var(--mut);font-size:11px}

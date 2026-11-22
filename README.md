@@ -28,6 +28,8 @@ tools/                  conversion and checks; tools/transcription/: the transcr
 
 An attributed row is one where the author names the source for the passage (`passes/attributions.json`, judged by a language model), or one labelled citation. The "Attributed" option in the viewer's Layers menu hides them, to show only the reuse the author does not attribute.
 
+Rows labelled open disagreement form the viewer's Divergences layer in every edition, with the divergence notes where an edition has them. The Reuse layer holds the other rows. In the contents list, each chapter and each listed unit has a bar for the share of its text under the rows shown. In the panel, a click on a source card's header folds it. In the list view, a click on a row shows the item in the panel.
+
 Each edition was converted from its working edition's `data.json` by `tools/convert_<edition>.py`, which use `tools/nle.py`. `tools/link_editions.py` then links the rows whose source is itself an edition (Vattel → Burlamaqui 1747) to that edition's units. `tools/check_edition.js` loads the viewer in Chromium and compares every unit and reuse row it builds with the original `data.json`.
 
 ## Accuracy
