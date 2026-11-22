@@ -1,0 +1,23 @@
+{
+ "format": "nle-reports/1",
+ "reports": [
+  {
+   "id": "vattel-jus-gentium",
+   "kind": "report",
+   "title": "Vattel's Droit des gens and Wolff's Jus gentium: the order of reuse",
+   "summary": "Vattel follows Wolff chapter by chapter: rank correlation 0.93 over 2,117 rows. Where he leaves Wolff.",
+   "date": "2026-11-22",
+   "file": "vattel-jus-gentium.md",
+   "editions": [
+    "vattel-1773"
+   ],
+   "texts": [
+    "wolff-jus-gentium-1749"
+   ],
+   "versions": {
+    "vattel-1773": "1.19"
+   },
+   "generator": "tools/reports/vattel_jus_gentium.py"
+  }
+ ]
+}
