@@ -235,3 +235,14 @@ The reuse no row covered became 3,260 rows (step F): *Jus gentium* 1,773 (1,119 
 The new match rows are as precise as the older ones (89% in the precision sample of 2026-11-18). Weak sampled rows have status possible, right ones match; flagged rows the second reader found wrong are `rejected`.
 
 The readers also named Wolff rows whose locus is a § the passage only cites. `tools/transcription/wolff_loci2.py` placed every Wolff row with the old text layer's spelling folded (et/&, ae, j/i, v/u): 43 stand in another §. The 25 two or more §§ away now name the § where the passage stands (`locusCheck`); 18 that straddle two neighbouring §§ keep their locus.
+
+## Vattel, Essai: divergences (2026-11-22)
+
+A divergence is a place where a source offered Vattel an answer to the question his section treats, so that he could have used it (and sometimes used part of it), and he made a different or opposite point. It is not a list of counter-arguments: an open rebuttal counts where the two answers differ in substance, once for the question.
+
+- Screen (`tools/transcription/essai_div.py`, `ESSAI_DIV_SCREEN_PROMPT.md`): Claude Opus read each of the 39 sections, in 20 batches, with up to 14 candidate source sections: those its reuse rows and its neighbours' use, and the two nearest by vocabulary in each French source. Readers could search every source section themselves and added sections they found. 614 pairs: 222 follows, 32 partly, 57 diverges, 303 not the same question.
+- Verify (`essai_div_verify.py`, `ESSAI_DIV_VERIFY_PROMPT.md`): a second reader read the 67 flagged pairs (confidence 0.5 or more) with the whole source section and its notes. Kept 60, rejected 7.
+- Merge (`ESSAI_DIV_MERGE_PROMPT.md`): a third reader grouped the notes that record the same doctrine of one author against the same answer of Vattel's, and kept one per group: 12 groups, 17 notes dropped. The largest group is Barbeyrac's thesis that a superior's will makes obligation; it is kept at § 11, where Vattel gives his definition, against *Réflexions* § 15.
+- Result (`essai_div_write.py`): 43 notes in `editions/vattel-essai-1747/passes/divergences-<text id>.json`, all passages placed exactly. Barbeyrac 18, Burlamaqui 8, Pufendorf 8, Wolff 5 (PPU I §§ 115, 255, 262, 266 twice), Grotius 4.
+- Open: Burlamaqui's *Principes* was printed in 1747, and parts of the Essai were written by 1742 (note to § 29). The 8 Burlamaqui notes compare Vattel with the printed text; Vattel could have known Burlamaqui's Geneva lectures, not the print. The verify verdicts (with the reasons for the 7 rejected pairs) and the 17 merged notes are in `audit/essai-divergences-2026-11-22.json`.
+

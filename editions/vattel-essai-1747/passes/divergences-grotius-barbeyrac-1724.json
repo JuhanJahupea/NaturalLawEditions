@@ -1,0 +1,155 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-essai-1747",
+ "text": "grotius-barbeyrac-1724",
+ "date": "2026-11-22",
+ "source": "Grotius, Le droit de la guerre et de la paix, trad. Barbeyrac (Amsterdam 1724), with his notes, from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "E.2",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 9, n. 3",
+   "sourceId": "GRO24.1.1.9.n3",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "What is a law in general?",
+   "comment": "Barbeyrac, DGP I.1.9 n. 3 objects to Grotius's definition of law as a rule of moral actions that obliges: a law does not oblige by itself as a rule but draws its obliging force from a superior who prescribes it, and permission belongs to law as much as obligation. Vattel keeps law as a rule according to which we are obliged to determine our actions, with no superior and no permission in the definition. Vattel sides with Grotius and Wolff against Barbeyrac's correction and attacks the thesis that there is no obligation without a superior in § 18.",
+   "passage": "Une Loi est en général une regle, selon laquelle nous sommes obligés de déterminer nos actions",
+   "sourcePassage": "L'Auteur s'exprime d'une maniére à faire croire que la Loi oblige par elle-même , & purement en qualité de Régle , d'où qu'elle vienne : au lieu que toute Loi tire la vertu qu'elle a d'obliger , d'un Supérieur qui la prescrit",
+   "confidence": 0.85,
+   "family": "Bb",
+   "links": [
+    [
+     "Zotero p. 100",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=100"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n99/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.23",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Discours préliminaire § 17",
+   "sourceId": "GRO24.Prol.17",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Does sociability rest on human nature itself or on its use for a happy life?",
+   "comment": "Grotius, DGP Prol. 17 holds that human nature itself is the mother of natural law, since it would lead us to seek the company of our fellows even if we needed nothing, and that utility only accompanies natural law. Vattel grounds man's sociability in the necessity of society for a happy life and accepts it as the foundation of natural law only as a proximate principle, with utility as the first principle of obligation. Vattel takes over Grotius's foundation and rests it on the utility that Grotius treats as a mere accompaniment.",
+   "passage": "L'homme est d'une nature sociable; la société lui est naturelle, elle lui est même nécessaire, pour passer sa vie heureusement.",
+   "sourcePassage": "Car la Mére du Droit Naturel est la Nature Humaine elle-même, qui nous porteroit à rechercher le commerce de nos semblables, quand même nous n'aurions besoin de rien.",
+   "confidence": 0.65,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 66",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=66"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n65/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.24",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Discours préliminaire § 19",
+   "sourceId": "GRO24.Prol.19",
+   "relation": "partly",
+   "severity": 2,
+   "question": "why one should keep the rules of right against a present advantage",
+   "comment": "Grotius, DGP Prol. 19 argues that a citizen who breaks the law of his country for a present advantage undermines his lasting interest, and adds that observing the rules of right would still be wisdom if no utility at all were expected from it, since our nature draws us to it. Vattel takes over the argument from lasting interest and rests the obligation on the individual's own utility alone. He drops the ground in nature that Grotius keeps for the case where utility fails.",
+   "passage": "Il ne doit même pas balancer à leur sacrifier dans des cas particuliers un avantage présent; parce que ce sont elles qui lui assurent la paisible jouissance de tous ses autres biens.",
+   "sourcePassage": "Mais, quand même on ne se promettroit aucune utilité de l'observation des Régles du Droit, ce seroit toûjours sagesse, & nullement folie, de se porter où nous nous sentons entraînez par nôtre nature.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 67",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=67"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n66/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.25",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Discours préliminaire § 17",
+   "sourceId": "GRO24.Prol.17",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "foundation of civil laws and of the obligation to obey them",
+   "comment": "Grotius, DGP Prol. 17 denies that utility is properly the mother of justice and makes the mother of civil law the obligation men laid on themselves by their own consent, which draws its force from natural law, while utility only gave the occasion for civil laws. Vattel makes the individual's own utility the foundation of civil laws and the principle of the submission owed to them. He takes over Grotius's point that men formed societies with a view to their advantage and turns that occasion into the ground of the obligation.",
+   "passage": "C'est - là le fondement des loix civiles, & le principe de la soumission que nous leur devons.",
+   "sourcePassage": "Et la Mére du Droit Civil est l'obligation que l'on s'est imposée par son propre consentement; obligation qui tirant sa force du Droit Naturel, donne lieu de regarder la Nature comme la bisaïeule, pour ainsi dire, du Droit Civil.",
+   "confidence": 0.8,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 66",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=66"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n65/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.29",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Liv. I ch. I § 10, n. 4",
+   "sourceId": "GRO24.1.1.10.n4",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Would men be obliged to natural law apart from God's will?",
+   "comment": "Barbeyrac, DGP I.1.10 n. 4 grants that the rules of natural law are founded on the nature of things but denies that this alone obliges, since the indispensable necessity of obligation can come only from a superior, and in the end only from God's will. Vattel holds that men would be obliged to observe the natural laws even abstracting from God's will, because they are laudable and useful. For Vattel God's will adds great weight and is a solid foundation, but a derivative one that draws its force from our utility. Vattel quotes the note at length and defends the position of Grotius that it attacks.",
+   "passage": "Nous répondons à tout ce raisonnement, que les hommes seroient obligés à l'observation des Loix naturelles, même en faisant abstraction de la volonté de Dieu ; parce qu'elles sont louables & utiles",
+   "sourcePassage": "Cette nécessité ne peut venir que d'un Supérieur , c'est-à-dire , d'un Etre Intelligent hors de nous, qui ait le pouvoir de gêner nôtre liberté , & de nous prescrire des Regles de Conduite.",
+   "confidence": 0.95,
+   "family": "Bb",
+   "links": [
+    [
+     "Zotero p. 103",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=103"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n102/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.30",
+   "text": "grotius-barbeyrac-1724",
+   "locus": "Droit de la guerre et de la paix, Discours préliminaire § 17",
+   "sourceId": "GRO24.Prol.17",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Is utility the mother of justice?",
+   "comment": "Grotius, DGP Prol. 17 denies that utility is the mother of justice and equity, since the mother of natural law is human nature itself, which would lead us to seek society even if we needed nothing, and utility only accompanies natural law. Vattel makes utility, understood as the perfection of the soul, the foundation of obligation and concludes with Horace that utility is nearly the mother of justice. Vattel adopts as his conclusion the verse that Grotius cites in order to reject it. The opposition rests in part on Vattel's wider sense of utility.",
+   "passage": "Maintenant donc que nous savons ce que l'on doit entendre par le mot d'utilité , concluons avec Horace : Atque ipsa utilitas, justi prope mater & æqui",
+   "sourcePassage": "Car la Mére du Droit Naturel est la Nature Humaine elle-même, qui nous porteroit à rechercher le commerce de nos semblables, quand même nous n'aurions besoin de rien.",
+   "confidence": 0.75,
+   "family": "G",
+   "links": [
+    [
+     "Zotero p. 66",
+     "zotero://open-pdf/library/items/S9FQXVJC?page=66"
+    ],
+    [
+     "archive.org",
+     "https://archive.org/details/le-droit-de-la-guerre-t-1-grotius/page/n65/mode/1up"
+    ]
+   ]
+  }
+ ]
+}

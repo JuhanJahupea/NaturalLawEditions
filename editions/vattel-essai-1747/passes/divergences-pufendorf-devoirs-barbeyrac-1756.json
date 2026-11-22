@@ -1,0 +1,281 @@
+{
+ "format": "nle-pass/1",
+ "edition": "vattel-essai-1747",
+ "text": "pufendorf-devoirs-barbeyrac-1756",
+ "date": "2026-11-22",
+ "source": "Pufendorf, Les devoirs de l'homme et du citoyen, trad. Barbeyrac (1756), with Leibniz's Jugement and Barbeyrac's Réflexions, from the transcription: pairs screened by one model, kept or rejected by a second",
+ "items": [
+  {
+   "unit": "E.11",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 15",
+   "sourceId": "DEV56.Refl.15",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "What produces obligation in a free being?",
+   "comment": "Barbeyrac, Réflexions § 15 holds that the proper and direct reason why men are obliged to follow the rules of justice is the will of God as their sovereign master. He denies that the nature of things or reason by itself can impose an obligation, since the passions resist reason and no one can bind himself. Vattel holds that only motives weighed by reason determine a free being, even against its passions, and that we are obliged to an action by the connection of a powerful motive with it. Vattel quotes and answers this passage in §§ 36-40.",
+   "passage": "Comment sommes-nous donc obligés à faire une certaine action ? C'est par la liaison d'un motif puissant avec cette même action.",
+   "sourcePassage": "la raison propre & directe pourquoi les Hommes sont obligés de suivre les Régles de la Justice, ce qui leur impose la nécessité morale de s'y conformer, c'est la volonté de DIEU, qui en qualité de leur Maître Souverain a plein droit de gêner leur Liberté naturelle, comme il le juge à propos.",
+   "confidence": 0.95,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n262/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.16",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Devoirs de l'homme et du citoyen, Liv. I ch. I § 1, n. 1",
+   "sourceId": "DEV56.1.1.1.n1",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "what duty is",
+   "comment": "Pufendorf, Devoirs I.1.1 defines duty as a human action exactly conformable to the laws that impose the obligation to it. Barbeyrac, Devoirs I.1.1 n. 1 rejects the Stoic definition of duty as action according to reason as too vague, since an action against reason is not morally bad where no obligation requires the contrary. Vattel defines duty as the manner of directing our actions so that they are good and right, and § 17 grounds this rectitude in the agreement of actions with the essence and nature of man. He admits Pufendorf's sense in § 17 only as a second meaning, in which obligation constitutes duty.",
+   "passage": "Notre devoir n'est autre chose que la maniere dont nous devons déterminer ou diriger nos actions, pour qu'elles soient bonnes & droites",
+   "sourcePassage": "Car on peut agir contre la Raison , & ne faire rien néanmoins qui soit moralement mauvais.",
+   "confidence": 0.7,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_dDKCHraV9BoC/page/n83/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.21",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 6",
+   "sourceId": "DEV56.Refl.6",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "Which motives are noblest and whether all reduce to utility",
+   "comment": "Barbeyrac, Réflexions § 6 grants that utility, above all the prospect of rewards and punishments, moves most people, but holds that revelation aims to lead them beyond interest to a nobler motive, the pleasure found in reflecting on the beauty of virtue itself. Vattel holds that every motive comes down to real or apparent utility, and ranks obedience to God apart from fear and the beauty of virtue as the noblest motives because they bear on the perfection of the soul, our greatest good. Vattel names the same noble motives as Barbeyrac and grounds their rank in utility, where Barbeyrac sets them apart from interest in line with the ancients' distinction between the honest and the useful.",
+   "passage": "Mais il faut observer pour le dire en passant, que notre plus grand bien consistant dans la perfection de notre ame, les motifs qui y ont rapport, par exemple, ceux qui sont pris de l'obéissance due à un être tel que Dieu, indépendamment de toute crainte, de la beauté de la vertu, &c. ces motifs, dis-je, passent avec raison pour les plus nobles.",
+   "sourcePassage": "Révélation néanmoins, dont le but n'est pas de porter les Hommes à la Vertu, & de les détourner du Vice, uniquement par la considération de leur intérêt; mais de les amener par-là peu à peu à s'acquiter de leur Devoir par un plus noble motif; à trouver dans la pratique de la Vertu ce grand plaisir dont parle l'Anonyme, & qui est produit, non par la vue des Récompenses, moins encore par la vue des Peines d'une autre Vie, mais par de longues & sérieuses réflexions sur la beauté même de la Vertu.",
+   "confidence": 0.75,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n233/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.24",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Devoirs de l'homme et du citoyen, Liv. II ch. V § 5",
+   "sourceId": "DEV56.2.5.5",
+   "relation": "diverges",
+   "severity": 2,
+   "question": "on what motive the individual puts society's rules before his own advantage",
+   "comment": "Pufendorf, Devoirs II.5.5 describes the good citizen as one who prefers the public good to his private interest without hesitating, calls this a disinterested sentiment, and finds it in few men, most being held only by fear of punishment. Vattel asks the same readiness to sacrifice a present advantage of every individual and grounds it in his own interest, since the laws secure him the peaceful enjoyment of his other goods. Vattel repeats Pufendorf's phrase about not hesitating and turns a rare disinterested virtue into a dictate of self-interest.",
+   "passage": "Il ne doit même pas balancer à leur sacrifier dans des cas particuliers un avantage présent; parce que ce sont elles qui lui assurent la paisible jouissance de tous ses autres biens.",
+   "sourcePassage": "le préfére sans balancer à son intérêt particulier; qui même ne regarde rien comme avantageux pour lui, s'il ne l'est aussi pour le Public",
+   "confidence": 0.5,
+   "family": "P",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n64/mode/1up"
+    ]
+   ]
+  },
+  {
+   "unit": "E.31",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 6",
+   "sourceId": "DEV56.Refl.6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether duty obliges where no motive remains",
+   "comment": "Barbeyrac, Réflexions § 6 holds that one is obliged to sacrifice goods, honours and life apart from the rewards and punishments of a future life, solely because God as author of natural law imposes these duties. Vattel holds that duties have no force without motives for any man, since obligation is the connection of a motive with an action, so that a man with no hope of a future life and no love of virtue is under no obligation to the sacrifice. Vattel grants that the sacrifice is a rule of right and a maxim of virtue and denies only that it binds such a man.",
+   "passage": "Car ce que dit M. de Leibnitz , que les devoirs n'ont aucune force sans motifs, est vrai à l'égard de tous les hommes, sans exception ; comme nous l'avons établi ci-dessus, en faisant voir que l'obligation n'est autre chose que la liaison du motif avec l'action (11. & 12.)",
+   "sourcePassage": "on est obligé non seulement de ne faire du mal à personne, pour se procurer à soi-même quelque avantage, mais encore de sacrifier quelquefois ses biens, ses honneurs, & sa vie même, indépendamment (7) de la vue des Récompenses & des Peines d'une autre Vie, & par cette seule raison que ce sont des Devoirs qui nous sont imposés par le sage Auteur de la Loi Naturelle, par le Conducteur Souverain de l'Univers.",
+   "confidence": 0.93,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n230/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.33",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 6",
+   "sourceId": "DEV56.Refl.6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether a morality moving men by interest is inferior to one that obliges apart from it",
+   "comment": "Barbeyrac, Réflexions § 6 holds that a morality binding men to duty apart from future rewards and punishments, solely by God's command, is purer, nobler and closer to the wise pagans, who distinguished the honest from the useful. Vattel sets aside the epithets pure and noble and prefers the morality founded on human nature that moves men to virtue through their dearest interests, because a morality that cannot bend the will misses the aim of moral teaching. Vattel denies that the wisest pagans separated the honest from the useful and cites Socrates through Cicero.",
+   "passage": "Quelle morale est donc la plus raisonnable & la plus utile ; celle qui fondée sur la nature de l'homme, le porte à la vertu, par la considération de ses intérêts les plus chers : ou celle qui est si pure & si noble , qu'elle se trouve hors de notre portée & absolument inefficace pour fléchir notre volonté ?",
+   "sourcePassage": "Quelle de ces deux Morales, je vous prie, est la plus pure, la plus noble, la plus conforme aux idées des sages Payens, qui ont si bien distingué entre l'Honnête & l'Utile?",
+   "confidence": 0.88,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.34",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 6",
+   "sourceId": "DEV56.Refl.6",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether some obligation without God entails all duties except those towards God",
+   "comment": "Barbeyrac, Réflexions § 6 holds that Leibniz palpably contradicts himself, since any obligation admitted apart from a future life and from God's existence entails that all duties except those directly towards God hold. Vattel holds that Leibniz is consistent, because neglect of a future life destroys several duties, not all, and an atheist keeps many duties whose motives lie in their utility in this life or in the beauty of virtue. Vattel rejects the inference from some obligation without God to every duty except those towards God, and he points to Barbeyrac's next pages, where utility alone is said to give good reason to follow virtue in this life.",
+   "passage": "Il ne dit pas que c'est les détruire tous ; au contraire, il reconnoît qu'il y auroit encore un grand nombre de devoirs pour un Athée",
+   "sourcePassage": "Car, du moment que vous poserez qu'il peut y avoir quelque obligation proprement ainsi nommée, quelque que nécessité indispensable d'agir ou de ne point agir d'une certaine maniére, indépendamment non seulement d'une autre Vie, mais encore de l'existence de DIEU; tous les Devoirs, à la reserve de ceux qui regardent DIEU même directement, auront lieu",
+   "confidence": 0.92,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n231/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.35",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 15",
+   "sourceId": "DEV56.Refl.15",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether obligation rests on the nature of things or on God's will",
+   "comment": "Barbeyrac, Réflexions § 15 holds that there is no middle between an obligation wholly independent of God and founded on the nature of things and one not founded on that nature at all, and he places the direct ground of obligation in God's will as sovereign master. Vattel holds that obligation arises from the nature of things, God being one of those things, and that God's will is an immediate principle of obligation without being the first ground of the preference of good over evil. Vattel gives God's will the role of adding great weight to the reason drawn from the nature of things, the accessory role that Barbeyrac expressly rejects.",
+   "passage": "Il y en a un certainement; & le voici : l'obligation naît de la nature même des choses : mais la divinité est au nombre de ces choses, dont la nature détermine les régles du Juste & de l'injuste, & fournit les motifs qui constituent l'obligation.",
+   "sourcePassage": "Il n'y a donc point de milieu: ou l'obligation des Régles du Juste entre les les Hommes est absolument indépendante de la Divinité, & fondée uniquement sur la nature même des choses, comme les principes de l'Arithmétique & de la Géométrie; ou elle n'est point du tout fondée sur la nature des choses.",
+   "confidence": 0.93,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n264/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.36",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 15",
+   "sourceId": "DEV56.Refl.15",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether the nature of things alone can impose obligation",
+   "comment": "Barbeyrac, Réflexions § 15 holds that the nature of things cannot by itself impose an obligation properly so called, since relations of fitness only bind us to recognise them and something more, the will of a superior, is needed to restrain our liberty. Vattel grants that relations of fitness by themselves bind only to recognition and holds that the influence of things on our happiness is a motive that obliges, since obligation is the connection of a motive with an action. Vattel finds Barbeyrac's something more in the motive of happiness, which Barbeyrac had set aside as a matter of prudence and not of duty.",
+   "passage": "mais l'influence que ces mêmes choses peuvent avoir en vertu de ces rapports, sur notre félicité, est un puissant motif, qui nous oblige à agir, ou à ne pas agir : puisque l'obligation est la liaison du motif avec l'action ( §. 12. )",
+   "sourcePassage": "Or la nature des choses par elle-même ne sauroit nous imposer une Obligation, proprement ainsi nommée.",
+   "confidence": 0.92,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.37",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 15",
+   "sourceId": "DEV56.Refl.15",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "whether reason alone can bind us to follow its ideas against the passions",
+   "comment": "Barbeyrac, Réflexions § 15 holds that reason taken apart from its Creator cannot put us under an indispensable necessity to follow its ideas, because the passions oppose livelier ideas and because the interest that reason shows concerns utility, not duty. Vattel holds that when reason shows clearly that following these ideas makes our greatest good, it does put us under that necessity, which is passive obligation arising from the connection of motive and action, and self-love then carries the passions to duty. Vattel's answer is the appeal to interest that Barbeyrac had anticipated and dismissed.",
+   "passage": "Si la raison nous fait voir clairement qu'en suivant ces idées fondées sur la nature des choses, nous travaillons à notre plus grand bien, à notre vraie félicité, elle nous met dans la nécessité de les suivre",
+   "sourcePassage": "La Raison, considérée en ellemême, & indépendamment du Créateur qui nous l'a donnée, ne peut pas non plus nous mettre dans une nécessité indispensable de suivre ces idées, quoiqu'elle les approuve, comme fondées sur la nature des choses.",
+   "confidence": 0.92,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n265/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.39",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 15",
+   "sourceId": "DEV56.Refl.15",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether one is free to renounce one's own greatest advantage",
+   "comment": "Barbeyrac, Réflexions § 15, grants that our interest on balance requires us to follow reason, but holds that each is free to renounce his advantage when no other person has a right to require it, so that acting against reason is imprudence and not a breach of duty. Vattel answers that the interest in question is our greatest interest, temporal and eternal, and that a man able to renounce it would have no obligation and no duty in any sense. He concedes only that small interests and advantages of fortune may be renounced. The difference follows from his definition of obligation as the connection of a motive with an action (§§ 11-12).",
+   "passage": "Nous avons prouvé ( §. 11. & 12. ), que l'on ne peut entendre par celui d'obligation, que la connexion du motif avec l'action ; d'où il paroît, qu'il n'y a point d'obligation pour un homme qui renonce à tous ses intérêts.",
+   "sourcePassage": "Mais n'est-il pas libre à chacun de renoncer à son avantage, tant qu'il n'y a rien d'ailleurs qui l'en empêche, tant qu'il n'y a point d'autre personne qui soit intéressée à ce qu'il ne fasse rien de contraire à ses intérêts, & qui ait droit d'exiger qu'il les procure?",
+   "confidence": 0.95,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n267/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.40",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 15",
+   "sourceId": "DEV56.Refl.15",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Whether obligation known by reason alone can cease at our will",
+   "comment": "Barbeyrac, Réflexions § 15, argues that reason taken apart from the Creator is only ourselves, that a necessity imposed by oneself can be lifted at will and is no true obligation, and that obligation must therefore come from a superior. Vattel calls this a petitio principii and holds that reason imposes nothing but perceives the connection of motive and action, which the Creator set in the nature of things. Vattel accepts Barbeyrac's premise that a true necessity cannot cease at the will of the one bound, and answers that no one can separate a motive from an action joined to it by nature.",
+   "passage": "D'ailleurs, il faut remarquer, que ce n'est pas notre raison qui nous impose l'obligation, elle ne fait qu'apperçevoir la liaison du motif avec l'action, qui constitue l'obligation.",
+   "sourcePassage": "Si donc celui à qui la nécessité est imposée, est le même que celui qui l'impose, il pourra s'en dégager toutes & quantes fois que bon lui semblera: ou plutôt il n'y aura point de véritable Obligation",
+   "confidence": 0.9,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n268/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  },
+  {
+   "unit": "E.41",
+   "text": "pufendorf-devoirs-barbeyrac-1756",
+   "locus": "Réflexions du traducteur § 16",
+   "sourceId": "DEV56.Refl.16",
+   "relation": "diverges",
+   "severity": 3,
+   "question": "Who acts most justly: the man who does good from love and inclination, or from hope and fear, or by overcoming resistance?",
+   "comment": "Barbeyrac, Réflexions § 16, holds that the question who acts more justly, from hope and fear or from inclination, is beside the point, and that a happy inclination is good fortune rather than merit, so that the man who overcomes his temperament is more just than one to whom virtue costs nothing. Vattel ends the Essai by quoting with approval the paragraph of Leibniz that Barbeyrac answered: those who do good from love and the inclination of the heart, not from hope or fear of a superior, act most justly, since they imitate God's justice. He passes over Barbeyrac's reply without answering it.",
+   "passage": "Bien-loin que „ceux qui font de bonnes actions, „non par un motif d'espérance ou de „crainte de la part d'un Supérieur, „mais par l'effet du penchant de leur „cœur, n'agissent pas justement : ce „sont eux au contraire qui agissent „le plus justement, puisqu'ils imitent „en quelque maniere la justice de „Dieu.",
+   "sourcePassage": "Desorte que celui qui trouvant de grands obstacles ou dans son tempérament, ou dans les mauvaises habitudes qu'on lui a laissé contracter dès son enfance, travaille à les surmonter, & en vient à bout, est sans- sans-contredit plus juste & plus louable, qu'un autre à qui il n'a presque rien couté d'être Homme-de-bien.",
+   "confidence": 0.75,
+   "family": "Bb",
+   "links": [
+    [
+     "archive.org",
+     "https://archive.org/details/bub_gb_unXpgRJJud0C/page/n276/mode/1up"
+    ]
+   ],
+   "author": "Barbeyrac"
+  }
+ ]
+}
