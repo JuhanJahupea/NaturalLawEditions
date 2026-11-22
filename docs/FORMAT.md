@@ -119,9 +119,7 @@ One item per change between the base printing and another printing.
 
 ### `kind: "comments"` (`layers/divergences.json`)
 
-One item per comment shown under a unit. `family` (optional) gives the note the colour of that source family instead of the layer's.
-
-The viewer has one Divergences layer for every edition. It holds the reuse rows labelled `open disagreement` (wavy underline) and, where the edition has a comments layer, its notes. An edition with such rows and no comments layer gets the layer from the viewer. The ≠ mark by a unit's number counts both. The Reuse layer holds all other rows.
+One item per comment shown under a unit. `family` (optional) gives the note the colour of that source family instead of the layer's. `author` (optional) names the author of a part of the source volume (Leibniz's *Jugement*, Barbeyrac's notes) where it is not the text's author.
 
 ```json
 {
@@ -210,7 +208,6 @@ Named by `titlePage` in `edition.json`. One page per volume:
 - `repeats`: where `to` is a later text that repeats an edition (Burlamaqui's PDP 1751 repeats his 1747 text), the unit of that edition the source passage repeats: `{edition, unit, route, score}`. Route `table`: the edition's own table for the later text has a row on the same page whose passage overlaps (≥ 0.5). Route `text`: the passage's wording stands in that unit (≥ 0.7). Set by `tools/link_editions.py`; the catalogue entry of such a table carries `repeats: <edition>`. The viewer shows the link and lists the row under that unit as "reused in … through PDP 1751".
 - Optional fields: `nearer` (`DNG` or `Devoirs`: which of the two Pufendorf texts the wording is nearer), `quoting` (an author quoted inside the source passage), `noteRef`, `sourcePart` (the part of the source volume: `barbeyrac_note`, `reflexions`, …), `relation` (in a table whose header lists `relations`), `review` (a second judge's verdict on a row the first judge rated possible: `{step, verdict, confidence, reason, date}`; verdict `keep`, `commonplace` or `drop`; dropped rows are not in the table), `audit` (a verdict of an audit, `audit/`: `{verdict, reason, date, labelWas, statusWas, earlier}`; verdict `right`, `weak` or `wrong`; `labelWas` is the label before an audit changed it; `statusWas` is the status before the audit changed it (a weak match row becomes `possible`, a wrong row `rejected`); `earlier` is an earlier audit's verdict, reason and date), `labelCheck` (a label changed by the label check, `audit/`: `{was, reason, date}`), `locusCheck` (a corrected locus: `{was, date}`; `was` is the old locus, a § the source passage only cites), `attributed` (the author names the source for this passage: `{form, cue, cuePart, confidence, reason, review}`; `review` is a second reader's verdict, `correct` or `unsure`; form `quotation` or `reference`; `cue` is the edition's words that name the source, in part `cuePart`; copied from `passes/attributions.json`).
 - Attributed rows: rows with `attributed` and rows labelled `citation`. The viewer marks their passages with a dotted underline and hides them when "Attributed" is off.
-- Rows labelled `open disagreement` belong to the viewer's Divergences layer, not to Reuse (see `kind: "comments"`).
 - A table header can carry `sourceLabel`, the label the viewer puts on the table's source passages (it overrides the family's and the edition's).
 
 ## Later passes

@@ -50,6 +50,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `build_verify.py <screen dir> <dir>`: the flagged pairs with the whole source § and Barbeyrac's notes. A pair the screen names outside its candidates can be added by hand as an extra screen file.
 - Agent prompt `DIV_VERIFY_PROMPT_<work>.md`: keep or reject, relation, severity and a comment.
 - `write_div.py <work> <screen dir> <verify dir> <text id> <out> [date]`: writes `editions/<edition>/passes/divergences-<text id>.json`.
+- Essai (all seven sources in one pass): `essai_div.py <dir>` builds the screen batches (each § with the source sections its reuse rows and its neighbours' use, and the two nearest by vocabulary per French source; `<dir>/sections.json` holds every source section for the readers' own searches). Agent prompt `ESSAI_DIV_SCREEN_PROMPT.md`. `essai_div_verify.py <screen dir> <dir>` takes the flagged pairs to `ESSAI_DIV_VERIFY_PROMPT.md`. `essai_div_write.py <screen dir> <verify dir> <date> --write` writes one `passes/divergences-<text id>.json` per source.
 
 ## 6. Attributions
 

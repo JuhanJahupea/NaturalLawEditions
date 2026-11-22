@@ -106,7 +106,7 @@
       "kind": "comments",
       "label": "Divergences",
       "default": true,
-      "tooltip": "Places where Vattel departs from a source. Rows labelled open disagreement: wavy underline in the text. Notes where a source answers the question of the section and Vattel answers it differently: under the section. The ≠ mark by the section number counts both.",
+      "tooltip": "Places where a source answers the question of the section and Vattel answers it differently. Shown as notes under the section.",
       "chip": "≠",
       "chipTitle": "A source answers this question differently",
       "sourceTag": "source",
