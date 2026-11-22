@@ -66,12 +66,15 @@ footer{margin-top:48px;padding-top:12px;border-top:1px solid var(--line);font:13
   <header>
     <h1 id="title">Natural Law Editions</h1>
     <p class="lead" id="desc"></p>
-    <nav><a href="#editions">Editions</a><a href="#reports">Reports and essays</a><a href="#sources">Source texts</a><a href="https://github.com/JuhanJahupea/NaturalLawEditions">Repository</a></nav>
+    <nav><a href="#editions">Editions</a><a href="#reports">Reports and essays</a><a href="#issues">Issues</a><a href="#sources">Source texts</a><a href="https://github.com/JuhanJahupea/NaturalLawEditions">Repository</a></nav>
   </header>
   <section id="editions"><h2>Editions <span class="n" id="edN"></span></h2><div class="grid" id="eds"></div></section>
   <section id="reports"><h2>Reports and essays <span class="n" id="repN"></span></h2>
     <p class="sub">Data reports are built by a script from the reuse tables and are built again when the tables change. Essays argue from the editions and the secondary literature; each names the edition versions it was written against, and the list marks it when the data has changed since.</p>
     <div class="filt" id="filt" hidden></div><div id="reps"></div></section>
+  <section id="issues"><h2>Genealogies of issues <span class="n" id="issN"></span></h2>
+    <p class="sub">One question followed from text to text: who takes over an answer, who cites it, who rejects it, who answers otherwise. Each issue has sub-questions, so that one passage can belong to several without tangling them.</p>
+    <div id="iss"></div></section>
   <section id="sources"><h2>Source texts <span class="n" id="srcN"></span></h2>
     <p class="sub">Rows of reuse between each edition (column) and each source text (row). A dot marks a text transcribed for the collection.</p>
     <div class="mw"><table><thead id="mh"></thead><tbody id="mb"></tbody></table></div></section>
@@ -106,12 +109,16 @@ const KIND={report:'Data report',essay:'Essay'};
  const draw=()=>{const L=R.filter(r=>!kind||r.kind===kind);
   $('reps').innerHTML=L.length?L.map(r=>{const ch=Object.entries(r.versions||{}).filter(([e,v])=>M[e]&&M[e].version&&M[e].version!==v);
    return `<div class="rep"><span class="kind">${esc(KIND[r.kind]||r.kind)}</span><div><a class="ti" href="reports/?r=${encodeURIComponent(r.id)}">${esc(r.title)}</a>
-   ${r.summary?`<p>${esc(r.summary)}</p>`:''}<div class="meta">${esc(r.date)} · ${(r.editions||[]).map(e=>esc((edOf[e]||{}).menu||e)).join(', ')}${ch.length?` · <span class="stale">data changed since: ${ch.map(([e,v])=>`${esc((edOf[e]||{}).authorShort||e)} ${esc(v)} → ${esc(M[e].version)}`).join(', ')}</span>`:''}</div></div></div>`}).join('')
+   ${r.summary?`<p>${esc(r.summary)}</p>`:''}<div class="meta">${esc(r.date)} · ${(r.editions||[]).map(e=>{const x=edOf[e]||{};return esc(x.menu||(x.authorShort?x.authorShort+' '+x.date:e))}).join(', ')}${ch.length?` · <span class="stale">data changed since: ${ch.map(([e,v])=>`${esc((edOf[e]||{}).authorShort||e)} ${esc(v)} → ${esc(M[e].version)}`).join(', ')}</span>`:''}</div></div></div>`}).join('')
    :'<p class="empty">None yet.</p>'};
  const kinds=[...new Set(R.map(r=>r.kind))];
  if(kinds.length>1){$('filt').hidden=false;$('filt').innerHTML=[['','All'],...kinds.map(k=>[k,(KIND[k]||k)+'s'])].map(([k,l])=>`<button data-k="${k}" aria-pressed="${k===kind}">${esc(l)}</button>`).join('');
   $('filt').onclick=e=>{const b=e.target.closest('button');if(!b)return;kind=b.dataset.k;$('filt').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw()}}
  draw();
+ // genealogies of issues
+ const IS=await fetch('issues/index.json').then(r=>r.json()).catch(()=>({issues:[]}));
+ $('issN').textContent=(IS.issues||[]).length||'';
+ $('iss').innerHTML=(IS.issues||[]).length?IS.issues.map(i=>`<div class="rep"><span class="kind">Issue</span><div><a class="ti" href="issues/?i=${encodeURIComponent(i.id)}">${esc(i.title)}</a><p>${esc(i.question)}</p><div class="meta">${num(i.nodes)} passages · ${num(i.edges)} links · ${esc((i.authors||[]).join(', '))}</div></div></div>`).join(''):'<p class="empty">None yet.</p>';
  // source texts × editions
  const T=Object.fromEntries((C.texts||[]).map(t=>[t.id,t]));C.editions.forEach(e=>T[e.id]=T[e.id]||Object.assign({edition:true},e));
  const used=[...new Set((C.reuse||[]).map(r=>r.to))].map(id=>T[id]||{id}).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.author).localeCompare(String(b.author)));

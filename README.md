@@ -17,6 +17,7 @@ reuse/                  reuse tables between texts
 texts/<id>/             transcriptions of source texts made for the collection
 audit/                  audits of the editions' data, with every verdict
 reports/                data reports and essays: reports/index.json lists them, reports/?r=<id> shows one; tools/reports/ builds the data reports
+issues/                 genealogies of issues: issues/index.json lists them, issues/?i=<id> shows one; tools/issues/ builds them
 docs/FORMAT.md          the file formats
 tools/                  conversion and checks; tools/transcription/: the transcription and later-pass pipeline
 ```

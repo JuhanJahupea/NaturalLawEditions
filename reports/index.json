@@ -18,6 +18,27 @@
     "vattel-1773": "1.19"
    },
    "generator": "tools/reports/vattel_jus_gentium.py"
+  },
+  {
+   "id": "vattel-essai-obligation",
+   "kind": "essay",
+   "title": "Obligation without a superior: Vattel's Essai between Wolff and Barbeyrac",
+   "summary": "Vattel answers Barbeyrac with Wolff's definition of obligation, but grounds it in the agent's own utility, a step Wolff had refused.",
+   "date": "2026-11-22",
+   "file": "vattel-essai-obligation.md",
+   "editions": [
+    "vattel-essai-1747",
+    "burlamaqui-1747"
+   ],
+   "texts": [
+    "wolff-philosophia-practica-1738",
+    "pufendorf-devoirs-barbeyrac-1756",
+    "pufendorf-barbeyrac-1734"
+   ],
+   "versions": {
+    "vattel-essai-1747": "1.2",
+    "burlamaqui-1747": "1.14"
+   }
   }
  ]
 }
