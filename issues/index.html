@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Genealogy of an issue · Natural Law Editions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* The genealogy of one issue: issues/?i=<id>, from issues/<id>.json (tools/issues/issue_build.py). Columns are texts (or parts of
+   a volume) in order of first printing; boxes are passages; lines run from a later passage to the earlier one it takes over,
+   cites, rejects, or answers differently. */
+:root{--bg:#f5f6f3;--paper:#fbfbf9;--fg:#1d211f;--mut:#5e6662;--line:#d9ddd6;--soft:#eceee9;--accent:#27507c;--accent-soft:#e3eaf2;
+  --takes:#27507c;--quotes:#5f8f55;--cites:#7a7a74;--rejects:#b5462f;--diverges:#b5462f;--partly:#c07a12;--note:#9aa39e;
+  --display:"IM Fell French Canon SC",Georgia,serif;--text:"Source Serif 4",Georgia,serif;--ui:"IBM Plex Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--soft:#202522;--accent:#8fb3dc;--accent-soft:#1e2a37;
+  --takes:#8fb3dc;--quotes:#8cc580;--cites:#a9aaa4;--rejects:#f08a72;--diverges:#f08a72;--partly:#e3b65a;--note:#5e6662;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--soft:#202522;--accent:#8fb3dc;--accent-soft:#1e2a37;
+  --takes:#8fb3dc;--quotes:#8cc580;--cites:#a9aaa4;--rejects:#f08a72;--diverges:#f08a72;--partly:#e3b65a;--note:#5e6662;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 var(--text);display:flex;flex-direction:column}
+header{padding:18px 20px 10px;border-bottom:1px solid var(--line)}
+.top{font:13.5px var(--ui)}.top a{color:var(--accent);text-decoration:none}
+h1{font:30px/1.2 var(--display);margin:8px 0 2px}
+.q{font-style:italic;color:var(--mut);margin:0}
+.desc{font:13px/1.5 var(--ui);color:var(--mut);margin:6px 0 0;max-width:900px}
+.bar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:10px;font:13px var(--ui)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chips button{font:12.5px var(--ui);color:var(--fg);background:none;border:1px solid var(--line);border-radius:14px;padding:1px 10px;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.leg{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--mut)}
+.leg i{display:inline-block;width:22px;height:0;border-top:2px solid;vertical-align:middle;margin-right:5px}
+.wrap{flex:1;display:grid;grid-template-columns:minmax(0,1fr) 380px;min-height:0}
+.graph{overflow:auto;position:relative;background:var(--paper)}
+.panel{overflow:auto;border-left:1px solid var(--line);padding:14px 16px 40px;font-size:14.5px}
+.panel h2{font:20px/1.25 var(--display);margin:0 0 2px}
+.panel .sub{font:13px var(--ui);color:var(--mut)}
+.panel .ex{font:13px/1.5 var(--ui);color:var(--mut)}
+.it{border-top:1px solid var(--line);padding:10px 0}
+.it .h{font:12.5px var(--ui);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.rel{font:600 11px var(--ui);text-transform:uppercase;letter-spacing:.05em;color:var(--paper);border-radius:8px;padding:0 6px}
+.it .p{border-left:3px solid var(--line);padding-left:8px;margin:6px 0 0;font-size:14px}
+.it .p small{display:block;font:10.5px var(--ui);text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+.it .c{font:12.5px/1.5 var(--ui);color:var(--mut);margin-top:6px}
+a{color:var(--accent)}
+svg text{font-family:var(--ui)}
+.colh{font-size:11.5px;fill:var(--mut)}
+.colh.y{font-weight:600;fill:var(--fg)}
+.nd rect{fill:var(--bg);stroke:var(--line)}
+.nd text{font-size:11.5px;fill:var(--fg);pointer-events:none}
+.nd{cursor:pointer}
+.nd:hover rect,.nd.on rect{stroke:var(--accent);stroke-width:1.5}
+.nd.on rect{fill:var(--accent-soft)}
+.ed path{fill:none;stroke-opacity:.55}svg.all .ed path{stroke-opacity:.16}
+svg.focus .ed path{stroke-opacity:.07}svg.focus .ed path.hi{stroke-opacity:.95}
+svg.focus .nd{opacity:.3}svg.focus .nd.hi{opacity:1}
+@media (max-width:860px){.wrap{grid-template-columns:1fr;grid-template-rows:60vh auto}.panel{border-left:0;border-top:1px solid var(--line)}}
+</style>
+</head><body>
+<header>
+  <div class="top"><a href="../">← Natural Law Editions</a></div>
+  <h1 id="title">Genealogy of an issue</h1>
+  <p class="q" id="q"></p>
+  <p class="desc" id="desc"></p>
+  <div class="bar"><div class="chips" id="chips"></div>
+    <div class="leg"><span><i style="border-color:var(--takes)"></i>takes over</span><span><i style="border-color:var(--quotes)"></i>quotes</span><span><i style="border-color:var(--cites);border-top-style:dashed"></i>cites</span><span><i style="border-color:var(--rejects)"></i>rejects openly</span><span><i style="border-color:var(--diverges);border-top-style:dashed"></i>answers differently</span><span><i style="border-color:var(--partly);border-top-style:dashed"></i>partly</span><span><i style="border-color:var(--note);border-top-style:dotted"></i>note on</span></div></div>
+</header>
+<div class="wrap"><div class="graph" id="graph"></div><aside class="panel" id="panel"><p class="ex">Columns are texts in order of first printing. A box is a passage; a line runs from a later passage to the earlier one it takes over, cites, rejects or answers differently. Hover a box to see its lines, click it to read the passages. The chips keep one sub-question; All shows every line faintly.</p></aside></div>
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const REL={takes:'takes over',quotes:'quotes',cites:'cites',rejects:'rejects openly',diverges:'answers differently',partly:'partly differently',note:'note on'};
+const DASH={cites:'5 4',diverges:'6 4',partly:'6 4',note:'2 3'};
+let D,sub='',sel=null;
+const CW=132,GAP=46,RH=22,TOP=46,NW=CW;
+function vis(){const ok=e=>!sub||e.subs.includes(sub)||(e.rel==='note');
+ const E=D.edges.filter(ok);const used=new Set();E.forEach(e=>{used.add(e.from);used.add(e.to)});
+ const N=D.nodes.filter(n=>used.has(n.id)&&(!sub||n.subs.includes(sub)||E.some(e=>e.rel==='note'&&(e.from===n.id||e.to===n.id))));
+ const ids=new Set(N.map(n=>n.id));return {N,E:E.filter(e=>ids.has(e.from)&&ids.has(e.to))}}
+function draw(){const {N,E}=vis();const cols=D.columns.filter(c=>N.some(n=>n.col===c.id));
+ const pos={},cx={};cols.forEach((c,i)=>{cx[c.id]=12+i*(CW+GAP);let k=0;N.filter(n=>n.col===c.id).forEach(n=>{pos[n.id]=[cx[c.id],TOP+k*RH];k++})});
+ const W=12+cols.length*(CW+GAP),H=TOP+Math.max(1,...cols.map(c=>N.filter(n=>n.col===c.id).length))*RH+20;
+ const lab=c=>{const s=c.label;return s.length>24?s.slice(0,23)+'…':s};
+ let h=`<svg id="svg" class="${sub?'':'all'}" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(D.title)}">`;
+ h+=cols.map(c=>`<text class="colh y" x="${cx[c.id]}" y="16"><title>${esc(c.label)}</title>${c.date<0?esc(-c.date)+' BC':esc(c.date)}</text><text class="colh" x="${cx[c.id]}" y="32"><title>${esc(c.label)}</title>${esc(lab(c))}</text>`).join('');
+ h+='<g class="ed">'+E.map((e,i)=>{const a=pos[e.from],b=pos[e.to];const ax=a[0],ay=a[1]+RH/2-3,bx=b[0]+NW,by=b[1]+RH/2-3;
+  const same=a[0]===b[0];const d=same?`M${ax+NW} ${ay} C${ax+NW+30} ${ay},${bx+30} ${by},${bx} ${by}`:(ax>bx?`M${ax} ${ay} C${ax-GAP*0.8} ${ay},${bx+GAP*0.8} ${by},${bx} ${by}`:`M${ax+NW} ${ay} C${ax+NW+GAP*0.8} ${ay},${b[0]-GAP*0.8} ${by},${b[0]} ${by}`);
+  return `<path data-e="${i}" data-a="${esc(e.from)}" data-b="${esc(e.to)}" d="${d}" stroke="var(--${e.rel})" stroke-width="${(1+Math.log2(e.n)).toFixed(2)}"${DASH[e.rel]?` stroke-dasharray="${DASH[e.rel]}"`:''}><title>${esc(REL[e.rel])}${e.n>1?' · '+e.n+' rows':''}</title></path>`}).join('')+'</g>';
+ h+=N.map(n=>{const p=pos[n.id];const t=n.label.length>19?n.label.slice(0,18)+'…':n.label;
+  return `<g class="nd${n.id===sel?' on':''}" data-n="${esc(n.id)}" transform="translate(${p[0]} ${p[1]})" tabindex="0" role="button" aria-label="${esc(n.label)}"><title>${esc(n.full||n.label)}: ${esc(n.text)}</title><rect width="${NW}" height="${RH-6}" rx="3"/><text x="6" y="${RH-10}">${esc(t)}</text></g>`}).join('');
+ $('graph').innerHTML=h+'</svg>';VE=E}
+let VE=[];
+function focus(id){const s=$('svg');if(!s)return;if(!id){s.classList.remove('focus');return}s.classList.add('focus');
+ const near=new Set([id]);s.querySelectorAll('.ed path').forEach(p=>{const on=p.dataset.a===id||p.dataset.b===id;p.classList.toggle('hi',on);if(on){near.add(p.dataset.a);near.add(p.dataset.b)}});
+ s.querySelectorAll('.nd').forEach(g=>g.classList.toggle('hi',near.has(g.dataset.n)))}
+const nodeOf=id=>D.nodes.find(n=>n.id===id),colOf=id=>D.columns.find(c=>c.id===id);
+function show(id){sel=id;const n=nodeOf(id),c=colOf(n.col);
+ const E=VE.filter(e=>e.from===id||e.to===id);
+ const items=E.flatMap(e=>{const other=nodeOf(e.from===id?e.to:e.from),oc=colOf(other.col),out=e.from===id;
+  const head=`<span class="rel" style="background:var(--${e.rel})">${esc(REL[e.rel])}</span> ${out?'':'by '}<a href="#" data-go="${esc(other.id)}">${esc(oc.label)}, ${esc(other.full||other.label)}</a>`;
+  if(!e.items||!e.items.length)return [`<div class="it"><div class="h">${head}</div></div>`];
+  return e.items.filter(x=>!sub||x.sub===sub).map(x=>`<div class="it"><div class="h">${head}<span>${esc(x.kind==='note'?'divergence note':x.label)}${x.sub?' · '+esc(x.sub):''} · ${Number(x.conf).toFixed(2)}</span></div>
+   <div class="p"><small>${esc(out?c.label:oc.label)}</small>${esc(x.passage)}</div><div class="p"><small>${esc(out?oc.label:c.label)}</small>${esc(x.source)}</div>${x.comment?`<div class="c">${esc(x.comment)}</div>`:''}</div>`)});
+ $('panel').innerHTML=`<h2>${esc(c.label)}, ${esc(n.full||n.label)}</h2><div class="sub">${c.date<0?-c.date+' BC':c.date} · ${esc(c.author)}${n.link?` · <a href="${esc(n.link)}">${n.link.startsWith('../viewer')?'read in the edition':'scan'}</a>`:''}</div>
+  <p class="ex">${esc(n.text)}</p>${items.join('')||'<p class="ex">No line under this filter.</p>'}`;
+ document.querySelectorAll('.nd').forEach(g=>g.classList.toggle('on',g.dataset.n===id))}
+(async()=>{const id=new URLSearchParams(location.search).get('i');
+ if(!id){const I=await fetch('index.json').then(r=>r.json());location.replace('?i='+encodeURIComponent(I.issues[0].id));return}
+ D=await fetch(id+'.json').then(r=>r.json());document.title=D.title+' · Natural Law Editions';
+ $('title').textContent=D.title;$('q').textContent=D.question;$('desc').textContent=D.description;
+ const cnt=s=>D.edges.filter(e=>e.subs.includes(s)).length;sub=new URLSearchParams(location.search).get('s')??[...D.subs].sort((a,b)=>cnt(b.id)-cnt(a.id))[0].id;
+ $('chips').innerHTML=[['','All']].concat(D.subs.filter(s=>D.edges.some(e=>e.subs.includes(s.id))).map(s=>[s.id,s.label])).map(([k,l])=>`<button data-s="${k}" aria-pressed="${k===sub}">${esc(l)}</button>`).join('');
+ $('chips').onclick=e=>{const b=e.target.closest('button');if(!b)return;sub=b.dataset.s;$('chips').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw();if(sel&&vis().N.some(n=>n.id===sel))show(sel)};
+ draw();
+ const G=$('graph');
+ G.addEventListener('mouseover',e=>{const g=e.target.closest('.nd');focus(g?g.dataset.n:sel)});
+ G.addEventListener('mouseleave',()=>focus(sel));
+ G.addEventListener('click',e=>{const g=e.target.closest('.nd');if(g){show(g.dataset.n);focus(g.dataset.n)}});
+ G.addEventListener('keydown',e=>{const g=e.target.closest('.nd');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();show(g.dataset.n);focus(g.dataset.n)}});
+ $('panel').addEventListener('click',e=>{const a=e.target.closest('[data-go]');if(!a)return;e.preventDefault();show(a.dataset.go);focus(a.dataset.go);
+  const el=document.querySelector(`.nd[data-n="${CSS.escape(a.dataset.go)}"]`);if(el)el.scrollIntoView({block:'center',inline:'center',behavior:'smooth'})});
+})();
+</script>
+</body></html>

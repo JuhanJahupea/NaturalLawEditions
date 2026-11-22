@@ -1,0 +1,32 @@
+{
+ "format": "nle-issues/1",
+ "issues": [
+  {
+   "id": "ground-of-obligation",
+   "title": "The ground of obligation",
+   "question": "What is obligation, and what makes it binding?",
+   "nodes": 255,
+   "edges": 473,
+   "authors": [
+    "Barbeyrac",
+    "Burlamaqui",
+    "Cicero",
+    "Clarke",
+    "Cumberland",
+    "Formey",
+    "Grotius",
+    "Hutcheson",
+    "Leibniz",
+    "Locke",
+    "Pufendorf",
+    "Vattel",
+    "Wolff"
+   ],
+   "versions": {
+    "vattel-essai-1747": "1.2",
+    "burlamaqui-1747": "1.14",
+    "vattel-1773": "1.19"
+   }
+  }
+ ]
+}

@@ -233,3 +233,13 @@ A working edition is converted once from its `data.json`. A later pass replaces 
 - `file`: Markdown in `reports/`, shown by `reports/?r=<id>`. Figures sit beside it.
 - `versions`: the edition versions the text was built or written against. The collection page and the report page mark a report whose editions have a newer version: a data report is then built again, an essay read again.
 
+## Genealogies of issues (`issues/<id>.json`)
+
+One question followed through the collection's texts. `tools/issues/issue_cand.py` gathers candidate reuse rows and divergence notes; model readers tag each with the issue and one sub-issue (`tools/issues/ISSUE_TAG_PROMPT.md`; the tags are kept in `audit/`); `tools/issues/issue_build.py` writes the file.
+
+- `subs`: the sub-issues, `{id, label}`. A passage belongs to every sub-issue its links carry.
+- `columns`: a text, or a part of a volume (Barbeyrac's notes, Leibniz's *Jugement*, his *Réflexions*), with the date of first printing and its author, in date order.
+- `nodes`: `{id, col, label, full, text, link, subs}`. An edition's unit (`ed:<edition>#<unit>`) or a source passage (`src:<column>|<locus>`).
+- `edges`: `{from, to, rel, n, subs, items}`, from the later passage to the earlier. `rel`: `takes` (translation, paraphrase, shared argument), `quotes` (verbatim), `cites`, `rejects` (open disagreement), `diverges` and `partly` (divergence notes), `note` (a Barbeyrac note on its §). `items` are the rows and notes behind the link, with both passages.
+- `issues/index.json` lists the issues for the collection page.
+
