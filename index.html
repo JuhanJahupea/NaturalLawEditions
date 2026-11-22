@@ -4,49 +4,124 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-:root{--bg:#f5f6f3;--paper:#fbfbf9;--fg:#1d211f;--mut:#5e6662;--line:#d9ddd6;--accent:#27507c;
+/* The collection: editions (catalogue.json, each edition's manifest), reports and essays (reports/index.json), and the
+   source texts each edition is compared with (catalogue.json reuse tables), as a matrix that grows by a column per edition. */
+:root{--bg:#f5f6f3;--paper:#fbfbf9;--fg:#1d211f;--mut:#5e6662;--line:#d9ddd6;--soft:#eceee9;--accent:#27507c;--accent-soft:#e3eaf2;--warn:#8a5a00;
   --display:"IM Fell French Canon SC",Georgia,serif;--text:"Source Serif 4",Georgia,serif;--ui:"IBM Plex Sans",system-ui,sans-serif}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--accent:#8fb3dc;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--accent:#8fb3dc;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--soft:#202522;--accent:#8fb3dc;--accent-soft:#1e2a37;--warn:#e3b65a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--soft:#202522;--accent:#8fb3dc;--accent-soft:#1e2a37;--warn:#e3b65a;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--text)}
-main{max-width:760px;margin:0 auto;padding:40px 16px 80px}
-h1{font:34px/1.2 var(--display);margin:0 0 6px}
-h2{font:13px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:36px 0 8px}
-.lead{color:var(--mut);margin:0 0 24px}
+main{max-width:1040px;margin:0 auto;padding:40px 16px 80px}
 a{color:var(--accent)}
-.ed{display:block;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;text-decoration:none;color:var(--fg);margin-bottom:10px}
+header h1{font:40px/1.15 var(--display);margin:0 0 8px}
+.lead{color:var(--mut);margin:0;max-width:680px}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px;font:14px var(--ui);margin:18px 0 0}
+nav a{text-decoration:none}nav a:hover{text-decoration:underline}
+section{margin-top:44px}
+h2{display:flex;align-items:baseline;gap:10px;font:13px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h2 .n{font-variant-numeric:tabular-nums;letter-spacing:0}
+.sub{font:14px/1.5 var(--ui);color:var(--mut);margin:-4px 0 14px;max-width:680px}
+/* editions */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.ed{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px 12px}
 .ed:hover{border-color:var(--accent)}
-.ed b{display:block;font:22px/1.3 var(--display)}
-.ed span{font:13.5px var(--ui);color:var(--mut)}
-table{width:100%;border-collapse:collapse;font:13.5px/1.45 var(--ui)}
-td,th{text-align:left;padding:5px 8px 5px 0;border-top:1px solid var(--line);vertical-align:top}
-th{color:var(--mut);font-weight:500}
-td.n{text-align:right;font-variant-numeric:tabular-nums;padding-right:0}
-tr.grp th{color:var(--fg);font-weight:600;padding-top:18px;border-top:0}
-.foot{margin-top:36px;font:13px var(--ui);color:var(--mut)}
+.ed .au{font:13px var(--ui);color:var(--mut)}
+.ed .ti{font:22px/1.25 var(--display);margin:2px 0 4px;color:var(--fg);text-decoration:none}
+.ed .ti:hover{color:var(--accent)}
+.ed .im{font:13px/1.45 var(--ui);color:var(--mut)}
+.ed .st{font:13px/1.5 var(--ui);margin-top:10px;font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.chip{font:12px var(--ui);color:var(--mut);background:var(--soft);border-radius:3px;padding:0 6px}
+.ed .ac{display:flex;gap:14px;align-items:baseline;margin-top:auto;padding-top:12px;font:13.5px var(--ui)}
+.ed .ac .v{margin-left:auto;color:var(--mut);font-size:12px}
+/* reports */
+.filt{display:flex;gap:6px;margin:0 0 12px}
+.filt button{font:13px var(--ui);color:var(--fg);background:none;border:1px solid var(--line);border-radius:14px;padding:2px 11px;cursor:pointer}
+.filt button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.rep{display:grid;grid-template-columns:110px 1fr;gap:4px 16px;padding:12px 0;border-top:1px solid var(--line)}
+.rep:first-child{border-top:0}
+.kind{font:600 11px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);padding-top:4px}
+.rep .ti{font:19px/1.3 var(--display);text-decoration:none;color:var(--fg)}
+.rep .ti:hover{color:var(--accent)}
+.rep p{margin:2px 0 0;font-size:15px}
+.rep .meta{font:13px var(--ui);color:var(--mut);margin-top:4px}
+.stale{color:var(--warn)}
+.empty{font:14px var(--ui);color:var(--mut)}
+/* sources */
+.mw{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--paper)}
+table{border-collapse:collapse;font:13.5px/1.4 var(--ui);width:100%}
+th,td{text-align:left;padding:6px 10px;border-top:1px solid var(--line);vertical-align:top}
+thead th{border-top:0;color:var(--mut);font-weight:500;white-space:nowrap;position:sticky;top:0;background:var(--paper)}
+th.c,td.c{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.c.z{color:var(--line)}
+td .y{color:var(--mut)}
+td .tr{font-size:11.5px;color:var(--mut)}
+tr.ed2 td:first-child{font-style:italic}
+footer{margin-top:48px;padding-top:12px;border-top:1px solid var(--line);font:13px var(--ui);color:var(--mut)}
+@media (max-width:600px){header h1{font-size:32px}.rep{grid-template-columns:1fr}.kind{padding:0}}
 </style>
 </head><body>
 <main>
-  <h1 id="title">Natural Law Editions</h1>
-  <p class="lead" id="desc"></p>
-  <h2>Editions</h2>
-  <div id="eds"></div>
-  <h2>Reuse tables</h2>
-  <table><thead><tr><th>Source text</th><th>Text layer compared</th><th style="text-align:right">Rows</th></tr></thead><tbody id="reuse"></tbody></table>
-  <p class="foot">Format: <a href="docs/FORMAT.md">docs/FORMAT.md</a>. Data: <a href="catalogue.json">catalogue.json</a>.</p>
+  <header>
+    <h1 id="title">Natural Law Editions</h1>
+    <p class="lead" id="desc"></p>
+    <nav><a href="#editions">Editions</a><a href="#reports">Reports and essays</a><a href="#sources">Source texts</a><a href="https://github.com/JuhanJahupea/NaturalLawEditions">Repository</a></nav>
+  </header>
+  <section id="editions"><h2>Editions <span class="n" id="edN"></span></h2><div class="grid" id="eds"></div></section>
+  <section id="reports"><h2>Reports and essays <span class="n" id="repN"></span></h2>
+    <p class="sub">Data reports are built by a script from the reuse tables and are built again when the tables change. Essays argue from the editions and the secondary literature; each names the edition versions it was written against, and the list marks it when the data has changed since.</p>
+    <div class="filt" id="filt" hidden></div><div id="reps"></div></section>
+  <section id="sources"><h2>Source texts <span class="n" id="srcN"></span></h2>
+    <p class="sub">Rows of reuse between each edition (column) and each source text (row). A dot marks a text transcribed for the collection.</p>
+    <div class="mw"><table><thead id="mh"></thead><tbody id="mb"></tbody></table></div></section>
+  <footer>Formats: <a href="docs/FORMAT.md">docs/FORMAT.md</a> · Data: <a href="catalogue.json">catalogue.json</a> · Audits: <a href="audit/README.md">audit/README.md</a></footer>
 </main>
 <script>
-const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-fetch('catalogue.json').then(r=>r.json()).then(c=>{
-  document.getElementById('desc').textContent=c.description||'';
-  document.getElementById('eds').innerHTML=c.editions.map(e=>`<a class="ed" href="viewer/?ed=${encodeURIComponent(e.id)}"><b>${esc(e.author)}, ${esc(e.short||e.title)}</b><span>${esc(e.imprint)} · ${esc(e.status)}</span></a>`).join('');
-  const T=Object.fromEntries((c.texts||[]).map(t=>[t.id,t]));c.editions.forEach(e=>T[e.id]=Object.assign({edition:true},e));
-  const rows=c.editions.flatMap(e=>{const tb=(c.reuse||[]).filter(r=>r.from===e.id);if(!tb.length)return [];
-   return [`<tr class="grp"><th colspan="3">${esc(e.author)}, <i>${esc(e.title)}</i> (${esc(e.date)}): ${tb.reduce((a,r)=>a+r.rows,0)} rows in ${tb.length} tables</th></tr>`]
-    .concat(tb.map(r=>{const t=T[r.to]||{};const name=`${esc(t.author||r.to)}, <i>${esc(t.title||'')}</i>${t.date?` (${esc(t.date)})`:''}`;
-     return `<tr><td>${t.edition?`<a href="viewer/?ed=${encodeURIComponent(r.to)}">${name}</a> · edition`:name}</td><td>${esc(r.toLayer||t.layer||'')}</td><td class="n">${r.rows}</td></tr>`}))});
-  document.getElementById('reuse').innerHTML=rows.join('')||'<tr><td colspan="3">None yet.</td></tr>';
-}).catch(()=>{document.getElementById('eds').textContent='Could not read catalogue.json.'});
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num=n=>Number(n).toLocaleString('en');
+const KIND={report:'Data report',essay:'Essay'};
+(async()=>{
+ const C=await fetch('catalogue.json').then(r=>r.json()).catch(()=>null);
+ if(!C){$('eds').textContent='Could not read catalogue.json.';return}
+ $('desc').textContent=C.description||'';
+ const eds=[...C.editions].sort((a,b)=>String(a.date).localeCompare(String(b.date))||a.id.localeCompare(b.id));
+ // each edition's manifest: version, date of change, layers
+ const M=Object.fromEntries(await Promise.all(eds.map(async e=>[e.id,await fetch(e.path+'edition.json').then(r=>r.json()).catch(()=>({}))])));
+ const tabs=id=>(C.reuse||[]).filter(r=>r.from===id);
+ $('edN').textContent=eds.length;
+ $('eds').innerHTML=eds.map(e=>{const m=M[e.id]||{},tb=tabs(e.id),rows=tb.reduce((a,r)=>a+r.rows,0);
+  const lay=(m.layers||[]).filter(l=>l.kind!=='reuse').map(l=>l.label);
+  return `<div class="ed"><span class="au">${esc(e.author)} · ${esc(e.date)}</span><a class="ti" href="viewer/?ed=${encodeURIComponent(e.id)}">${esc((e.short||e.title).replace(/\s*·\s*\d{4}$/,''))}</a>
+  <span class="im">${esc(e.imprint)}</span>
+  <span class="st">${num(rows)} reuse rows from ${tb.length} source text${tb.length===1?'':'s'}</span>
+  ${lay.length?`<div class="chips">${lay.map(l=>`<span class="chip">${esc(l)}</span>`).join('')}</div>`:''}
+  <div class="ac"><a href="viewer/?ed=${encodeURIComponent(e.id)}">Read</a><a href="viewer/?ed=${encodeURIComponent(e.id)}&view=list">Reuse list</a>${m.version?`<span class="v">${esc(e.status||'')} · v${esc(m.version)}</span>`:''}</div></div>`}).join('');
+ // reports and essays
+ const I=await fetch('reports/index.json').then(r=>r.json()).catch(()=>({reports:[]}));
+ const R=[...(I.reports||[])].sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+ $('repN').textContent=R.length||'';
+ const edOf=Object.fromEntries(C.editions.map(e=>[e.id,e]));
+ let kind='';
+ const draw=()=>{const L=R.filter(r=>!kind||r.kind===kind);
+  $('reps').innerHTML=L.length?L.map(r=>{const ch=Object.entries(r.versions||{}).filter(([e,v])=>M[e]&&M[e].version&&M[e].version!==v);
+   return `<div class="rep"><span class="kind">${esc(KIND[r.kind]||r.kind)}</span><div><a class="ti" href="reports/?r=${encodeURIComponent(r.id)}">${esc(r.title)}</a>
+   ${r.summary?`<p>${esc(r.summary)}</p>`:''}<div class="meta">${esc(r.date)} · ${(r.editions||[]).map(e=>esc((edOf[e]||{}).menu||e)).join(', ')}${ch.length?` · <span class="stale">data changed since: ${ch.map(([e,v])=>`${esc((edOf[e]||{}).authorShort||e)} ${esc(v)} → ${esc(M[e].version)}`).join(', ')}</span>`:''}</div></div></div>`}).join('')
+   :'<p class="empty">None yet.</p>'};
+ const kinds=[...new Set(R.map(r=>r.kind))];
+ if(kinds.length>1){$('filt').hidden=false;$('filt').innerHTML=[['','All'],...kinds.map(k=>[k,(KIND[k]||k)+'s'])].map(([k,l])=>`<button data-k="${k}" aria-pressed="${k===kind}">${esc(l)}</button>`).join('');
+  $('filt').onclick=e=>{const b=e.target.closest('button');if(!b)return;kind=b.dataset.k;$('filt').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw()}}
+ draw();
+ // source texts × editions
+ const T=Object.fromEntries((C.texts||[]).map(t=>[t.id,t]));C.editions.forEach(e=>T[e.id]=T[e.id]||Object.assign({edition:true},e));
+ const used=[...new Set((C.reuse||[]).map(r=>r.to))].map(id=>T[id]||{id}).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.author).localeCompare(String(b.author)));
+ const cell={};(C.reuse||[]).forEach(r=>{cell[r.to+'|'+r.from]=(cell[r.to+'|'+r.from]||0)+r.rows});
+ const withT=eds.filter(e=>tabs(e.id).length);
+ $('srcN').textContent=used.length;
+ $('mh').innerHTML=`<tr><th>Source text</th>${withT.map(e=>`<th class="c" title="${esc(e.author+', '+e.title)}">${esc(e.authorShort||e.author)} ${esc(e.date)}</th>`).join('')}</tr>`;
+ $('mb').innerHTML=used.map(t=>{const id=t.id,tr=/transcri/i.test(t.layer||'')&&!t.edition;
+  return `<tr${t.edition?' class="ed2"':''}><td>${tr?'<span class="tr" title="Transcribed for the collection">● </span>':''}${esc(t.author||id)}, ${t.edition?`<a href="viewer/?ed=${encodeURIComponent(id)}">${esc(t.title)}</a> (edition)`:`<i>${esc(t.title||'')}</i>`} <span class="y">${esc(t.date||'')}</span></td>`+
+   withT.map(e=>{const n=cell[id+'|'+e.id];return n?`<td class="c" title="${esc(t.layer||'')}">${num(n)}</td>`:'<td class="c z">·</td>'}).join('')+'</tr>'}).join('');
+})();
 </script>
 </body></html>

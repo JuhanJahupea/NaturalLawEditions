@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Report · Natural Law Editions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* One report or essay of the collection: reports/?r=<id>, read from reports/index.json and the Markdown file it names. */
+:root{--bg:#f5f6f3;--paper:#fbfbf9;--fg:#1d211f;--mut:#5e6662;--line:#d9ddd6;--soft:#eceee9;--accent:#27507c;--accent-soft:#e3eaf2;--warn:#8a5a00;
+  --display:"IM Fell French Canon SC",Georgia,serif;--text:"Source Serif 4",Georgia,serif;--ui:"IBM Plex Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--soft:#202522;--accent:#8fb3dc;--accent-soft:#1e2a37;--warn:#e3b65a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121514;--paper:#181c1a;--fg:#e2e5e1;--mut:#9aa39e;--line:#2c322f;--soft:#202522;--accent:#8fb3dc;--accent-soft:#1e2a37;--warn:#e3b65a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--text)}
+main{max-width:760px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)}
+.top{font:13.5px var(--ui);margin-bottom:28px}.top a{text-decoration:none}
+.kind{display:inline-block;font:600 11px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:9px;padding:0 7px}
+.meta{font:13.5px/1.5 var(--ui);color:var(--mut);margin:10px 0 0}
+.stale{font:13.5px/1.5 var(--ui);color:var(--warn);background:var(--soft);border-radius:4px;padding:6px 10px;margin-top:10px}
+article h1{font:32px/1.2 var(--display);margin:10px 0 0}
+article h2{font:22px/1.3 var(--display);margin:32px 0 6px}
+article h3{font:600 15px var(--ui);margin:24px 0 4px}
+article img{max-width:100%;height:auto;display:block;margin:18px 0 6px;background:var(--paper);border:1px solid var(--line);border-radius:6px}
+article table{width:100%;border-collapse:collapse;font:13.5px/1.45 var(--ui);margin:16px 0;display:block;overflow-x:auto}
+article td,article th{text-align:left;padding:5px 10px 5px 0;border-top:1px solid var(--line);vertical-align:top}
+article th{color:var(--mut);font-weight:500}
+article code{font-size:.85em;background:var(--soft);padding:0 4px;border-radius:3px;word-break:break-word}
+article blockquote{margin:14px 0;padding-left:14px;border-left:3px solid var(--line);color:var(--mut)}
+article h1+p{font:14px/1.5 var(--ui);color:var(--mut)}
+.msg{font:15px var(--ui);color:var(--mut)}
+</style>
+</head><body>
+<main>
+  <div class="top"><a href="../">← Natural Law Editions</a></div>
+  <div id="head"></div>
+  <article id="body"><p class="msg">Loading…</p></article>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KIND={report:'Data report',essay:'Essay'};
+(async()=>{
+ const id=new URLSearchParams(location.search).get('r');
+ if(!id){location.replace('../#reports');return}
+ try{
+  const [I,C]=await Promise.all([fetch('index.json').then(r=>r.json()),fetch('../catalogue.json').then(r=>r.json())]);
+  const R=I.reports.find(r=>r.id===id);if(!R)throw new Error('no report '+id);
+  const md=await fetch(R.file).then(r=>{if(!r.ok)throw new Error(R.file);return r.text()});
+  document.title=R.title+' · Natural Law Editions';
+  const ed=Object.fromEntries(C.editions.map(e=>[e.id,e]));
+  // versions now, to say whether the data changed since the report was written
+  const now=Object.fromEntries(await Promise.all(Object.keys(R.versions||{}).map(async e=>{try{const m=await fetch('../'+ed[e].path+'edition.json').then(r=>r.json());return [e,m.version]}catch(x){return [e,null]}})));
+  const changed=Object.entries(R.versions||{}).filter(([e,v])=>now[e]&&now[e]!==v);
+  const eds=(R.editions||[]).map(e=>ed[e]?`<a href="../viewer/?ed=${encodeURIComponent(e)}">${esc(ed[e].authorShort||ed[e].author)}, ${esc(ed[e].short||ed[e].title)}</a>`:esc(e)).join(' · ');
+  $('head').innerHTML=`<span class="kind">${esc(KIND[R.kind]||R.kind)}</span><p class="meta">${esc(R.date)}${eds?' · '+eds:''}${Object.keys(R.versions||{}).length?' · data: '+Object.entries(R.versions).map(([e,v])=>`${esc((ed[e]||{}).authorShort||e)} ${esc(v)}`).join(', '):''}</p>`+
+   (changed.length?`<div class="stale">The data changed since this ${R.kind==='essay'?'essay was written':'report was built'}: ${changed.map(([e,v])=>`${esc((ed[e]||{}).authorShort||e)} ${esc(v)} → ${esc(now[e])}`).join(', ')}.${R.generator?` Run <code>${esc(R.generator)}</code> again.`:' Its claims need a new reading.'}</div>`:'');
+  $('body').innerHTML=marked.parse(md);
+ }catch(e){$('body').innerHTML=`<p class="msg">Could not open the report: ${esc(e.message)}</p>`}
+})();
+</script>
+</body></html>

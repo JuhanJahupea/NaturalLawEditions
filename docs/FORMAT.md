@@ -221,3 +221,15 @@ A working edition is converted once from its `data.json`. A later pass replaces 
 
 `tools/check_edition.js` loads the viewer twice. With `?asbuilt=1` the viewer swaps each pass table back for its superseded rows; that edition must rebuild `data.json` exactly. Without it, every pass row and item must appear as the pass file has it, and every attribution must sit on exactly one row.
 
+## Reports and essays (`reports/index.json`)
+
+```json
+{"format": "nle-reports/1", "reports": [{"id": "vattel-jus-gentium", "kind": "report", "title": "...", "summary": "...", "date": "2026-11-22",
+  "file": "vattel-jus-gentium.md", "editions": ["vattel-1773"], "texts": ["wolff-jus-gentium-1749"], "versions": {"vattel-1773": "1.19"},
+  "generator": "tools/reports/vattel_jus_gentium.py"}]}
+```
+
+- `kind`: `report` (built by a script from the data; `generator` names it) or `essay` (written; cites units as `../viewer/?ed=<edition>#<unit>`).
+- `file`: Markdown in `reports/`, shown by `reports/?r=<id>`. Figures sit beside it.
+- `versions`: the edition versions the text was built or written against. The collection page and the report page mark a report whose editions have a newer version: a data report is then built again, an essay read again.
+

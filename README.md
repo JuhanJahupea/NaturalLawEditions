@@ -1,5 +1,7 @@
 # Natural Law Editions
 
+**[Open the collection](https://juhanjahupea.github.io/NaturalLawEditions/)**
+
 Text-compared editions of early modern natural law texts compiled by AI for scholarly use.
 
 Each edition is a base text cut into units with fixed ids, plus layers on that text: variants between printings, comments, translations. Reuse between texts sits in tables of its own, so one source text can serve several editions.
@@ -14,6 +16,7 @@ editions/<id>/          one folder per edition: manifest, text, layers, changelo
 reuse/                  reuse tables between texts
 texts/<id>/             transcriptions of source texts made for the collection
 audit/                  audits of the editions' data, with every verdict
+reports/                data reports and essays: reports/index.json lists them, reports/?r=<id> shows one; tools/reports/ builds the data reports
 docs/FORMAT.md          the file formats
 tools/                  conversion and checks; tools/transcription/: the transcription and later-pass pipeline
 ```
@@ -54,11 +57,7 @@ Transcriptions made for the collection. Each folder in `texts/` has a README on 
 
 ## Public address
 
-GitHub Pages serves the repository root from branch `main`.
-
-- Collection: https://juhanjahupea.github.io/NaturalLawEditions/
-- Vattel viewer: https://juhanjahupea.github.io/NaturalLawEditions/viewer/?ed=vattel-1773
-- A unit: https://juhanjahupea.github.io/NaturalLawEditions/viewer/?ed=vattel-1773#II.45
+GitHub Pages serves the repository root from branch `main`: https://juhanjahupea.github.io/NaturalLawEditions/. A unit has the address `viewer/?ed=<edition id>#<unit id>`.
 
 ## Checks
 
