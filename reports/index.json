@@ -20,21 +20,21 @@
    "generator": "tools/reports/vattel_jus_gentium.py"
   },
   {
-   "id": "vattel-essai-findings",
-   "kind": "findings",
-   "title": "Five findings on Vattel's Essai sur le fondement du droit naturel",
-   "summary": "Vattel's Cicero comes from the Barbeyrac page he attacks; the word-for-word Wolff stops at PPU § 266; Vattel reads Barbeyrac's voluntarism in the notes; Burlamaqui's answer to Barbeyrac is new in 1747; the 1773 note to Préliminaires § 6 reads like a digest of Burlamaqui.",
+   "id": "vattel-1773-note",
+   "kind": "essay",
+   "title": "Whose foundations? The note of 1773 to the Préliminaires of Le droit des gens",
+   "summary": "The one statement of natural law's foundations in Le droit des gens is a posthumous note of 1773. The edition says its notes were made by others from Vattel's unfinished materials, one was written after his death, and this one speaks Burlamaqui's language, not Vattel's.",
    "date": "2026-11-23",
-   "file": "vattel-essai-findings.md",
+   "file": "vattel-1773-note.md",
    "editions": [
+    "vattel-1773",
     "vattel-essai-1747",
-    "burlamaqui-1747",
-    "vattel-1773"
+    "burlamaqui-1747"
    ],
    "versions": {
+    "vattel-1773": "1.19",
     "vattel-essai-1747": "1.2",
-    "burlamaqui-1747": "1.14",
-    "vattel-1773": "1.19"
+    "burlamaqui-1747": "1.14"
    }
   }
  ]
