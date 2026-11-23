@@ -10,3 +10,5 @@ The search behind `reports/data/vattel-american-reuse.json` and the data report 
 6. `final.py`: one row per document and section; three uses found by searching the corpus for the wording of verified matches are added by hand (`ADD`).
 
 The judge, probe and second-reading outputs are in `audit/american-reuse-2026-11-23.json`.
+
+7. `translation.py <epub>`: which English each reuse follows. The EPUB is the Google Books download of the 1760 London translation (MRo2AQAAMAAJ, University of Michigan); it is not kept here. For each reuse, the share of its word 4-grams in the 1760 text and in the section's 1797 text, written as `en1760` and `en1797`.

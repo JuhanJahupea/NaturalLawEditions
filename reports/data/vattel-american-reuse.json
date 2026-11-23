@@ -159,7 +159,9 @@
    "pages": "106, 110",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "The note, which opens on p. 109 with I.34 (V19), runs on into the whole of I.210 ('antient', 'ought also to extend') and signs it 'D' Vattel', backing the memorial's claim that the colonies are part of the state and that acts against the fundamental principles of the constitution are void. The first judge's reading is right."
+   "note": "The note, which opens on p. 109 with I.34 (V19), runs on into the whole of I.210 ('antient', 'ought also to extend') and signs it 'D' Vattel', backing the memorial's claim that the colonies are part of the state and that acts against the fundamental principles of the constitution are void. The first judge's reading is right.",
+   "en1760": 0.52,
+   "en1797": 0.45
   },
   {
    "doc": "thacher-1764",
@@ -178,7 +180,9 @@
    "pages": "Thacher, 4",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Thacher cites Vattel's praise of the English constitution to show the British are jealous of their liberties, and argues that the colonists share those rights, which the Sugar Act wounds; he swells Vattel's \"rivers\" (French \"ruisseaux\") into \"seas\" of blood. The judge named the wrong author: the pamphlet is by Oxenbridge Thacher, not James Thacher."
+   "note": "Thacher cites Vattel's praise of the English constitution to show the British are jealous of their liberties, and argues that the colonists share those rights, which the Sugar Act wounds; he swells Vattel's \"rivers\" (French \"ruisseaux\") into \"seas\" of blood. The judge named the wrong author: the pamphlet is by Oxenbridge Thacher, not James Thacher.",
+   "en1760": 0.47,
+   "en1797": 0.47
   },
   {
    "doc": "otis-1764",
@@ -208,7 +212,9 @@
    "pages": "109",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "The note, apparently keyed to 'acts against the fundamental principles of the British constitution are void', reproduces I.34 from 'A very important question here presents itself' to 'submit the constitution itself to their pleasure', so that Parliament cannot change the constitution under which the colonists hold their rights. The judge called it unnamed, but the same note runs straight on into I.210 and is signed 'D' Vattel', so quotation fits better than verbatim."
+   "note": "The note, apparently keyed to 'acts against the fundamental principles of the British constitution are void', reproduces I.34 from 'A very important question here presents itself' to 'submit the constitution itself to their pleasure', so that Parliament cannot change the constitution under which the colonists hold their rights. The judge called it unnamed, but the same note runs straight on into I.210 and is signed 'D' Vattel', so quotation fits better than verbatim.",
+   "en1760": 0.48,
+   "en1797": 0.35
   },
   {
    "doc": "otis-1764",
@@ -248,7 +254,9 @@
    "pages": "111–112",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Otis quotes III.201 at length in the 1760 London translation, from \"But if the whole state be conquered\" through \"the state of war subsists\" plus the sentence on a sovereign who would enslave a conquered people, to deny that Parliament could vote the King absolute; the judge's match is only the middle of a longer quotation that runs from p. 111 to p. 112. The French covers the sentence where Vattel calls the conqueror's absolute mastery a monstrous principle, against Wolff, JG §§ 870-871 (and Grotius III.8.1)."
+   "note": "Otis quotes III.201 at length in the 1760 London translation, from \"But if the whole state be conquered\" through \"the state of war subsists\" plus the sentence on a sovereign who would enslave a conquered people, to deny that Parliament could vote the King absolute; the judge's match is only the middle of a longer quotation that runs from p. 111 to p. 112. The French covers the sentence where Vattel calls the conqueror's absolute mastery a monstrous principle, against Wolff, JG §§ 870-871 (and Grotius III.8.1).",
+   "en1760": 0.58,
+   "en1797": 0.46
   },
   {
    "doc": "jadams-1765",
@@ -273,7 +281,9 @@
    "pages": "Works of John Adams, 166",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Adams quotes II.282's rule against absurd interpretation and adds, outside the marks, his own condensation of Vattel's next sentence ('On appelle absurde, non seulement ce qui est impossible physiquement, mais encore ce qui l'est moralement'), presumably aimed at the impossibility of obtaining stamps. The first judge's reading is right."
+   "note": "Adams quotes II.282's rule against absurd interpretation and adds, outside the marks, his own condensation of Vattel's next sentence ('On appelle absurde, non seulement ce qui est impossible physiquement, mais encore ce qui l'est moralement'), presumably aimed at the impossibility of obtaining stamps. The first judge's reading is right.",
+   "en1760": 0.4,
+   "en1797": 0.4
   },
   {
    "doc": "jadams-1765",
@@ -303,7 +313,9 @@
    "pages": "Works of John Adams, 166",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Adams copies three of Vattel's rules of interpretation (II.297, II.292, II.282) in the 1760 translation, whose 'If a case be presented in which one cannot absolutely apply' follows the French more closely than the 1797 text, as ammunition for having the courts proceed without stamps by following the lawgiver's reason over the letter. The first judge's reading is right."
+   "note": "Adams copies three of Vattel's rules of interpretation (II.297, II.292, II.282) in the 1760 translation, whose 'If a case be presented in which one cannot absolutely apply' follows the French more closely than the 1797 text, as ammunition for having the courts proceed without stamps by following the lawgiver's reason over the letter. The first judge's reading is right.",
+   "en1760": 0.79,
+   "en1797": 0.38
   },
   {
    "doc": "jadams-1765",
@@ -358,7 +370,9 @@
    "pages": "Works of John Adams, 166",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "During the Stamp Act closure of the courts, Adams copies three interpretation rules (II.297, II.292, II.282) with page references to the English translation, to argue that the courts may proceed without stamps. His wording (\"author of the disposition\", \"the act\", \"had he been present\") is the earlier translation's and stays closer to the French than the 1797 text. The judge's reading is right."
+   "note": "During the Stamp Act closure of the courts, Adams copies three interpretation rules (II.297, II.292, II.282) with page references to the English translation, to argue that the courts may proceed without stamps. His wording (\"author of the disposition\", \"the act\", \"had he been present\") is the earlier translation's and stays closer to the French than the 1797 text. The judge's reading is right.",
+   "en1760": 0.71,
+   "en1797": 0.45
   },
   {
    "doc": "bland-1766",
@@ -393,7 +407,9 @@
    "pages": "[10]",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "Bland restates Vattel I.2 (\"Member\" for \"citizen\", \"that Body\" for \"the entire body\") in a social-contract argument: those excluded from the franchise remain bound by implicit consent but keep a natural right to emigrate. The first judge's reading is right."
+   "note": "Bland restates Vattel I.2 (\"Member\" for \"citizen\", \"that Body\" for \"the entire body\") in a social-contract argument: those excluded from the franchise remain bound by implicit consent but keep a natural right to emigrate. The first judge's reading is right.",
+   "en1760": 0.35,
+   "en1797": 0.29
   },
   {
    "doc": "bland-1766",
@@ -433,7 +449,9 @@
    "pages": "[27]",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "Bland follows III.290 through a whole sentence (\"great and manifest Oppressions\", complaints at the foot of the throne, patient suffering rather than disturbing the peace, excused only by a denial of justice) to set the colonists' remedy for loss of civil rights; the denial-of-justice exception is Vattel's, since the Wolff rows allow petition only. The judge's confidence was too low."
+   "note": "Bland follows III.290 through a whole sentence (\"great and manifest Oppressions\", complaints at the foot of the throne, patient suffering rather than disturbing the peace, excused only by a denial of justice) to set the colonists' remedy for loss of civil rights; the denial-of-justice exception is Vattel's, since the Wolff rows allow petition only. The judge's confidence was too low.",
+   "en1760": 0.25,
+   "en1797": 0.29
   },
   {
    "doc": "house-1768a",
@@ -452,7 +470,9 @@
    "pages": "Bradford 140; Cushing I, 158",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "The House uses Vattel's point that a nation's silence while Parliament changes the constitution counts as approval to justify its protest against the Townshend duties. The judge left the letter as \"a British peer\" (it is Shelburne) and missed that p. 138 of the same letter (\"In all free states, the constitution is fixed ... it cannot change the constitution without destroying its own foundation\") also paraphrases I.34."
+   "note": "The House uses Vattel's point that a nation's silence while Parliament changes the constitution counts as approval to justify its protest against the Townshend duties. The judge left the letter as \"a British peer\" (it is Shelburne) and missed that p. 138 of the same letter (\"In all free states, the constitution is fixed ... it cannot change the constitution without destroying its own foundation\") also paraphrases I.34.",
+   "en1760": 0.52,
+   "en1797": 0.41
   },
   {
    "doc": "house-1768b",
@@ -482,7 +502,9 @@
    "pages": "Cushing I, 176",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "The House calls the Mutiny Act's requisition on the colonies 'a great change; and in its nature delicate', not to be made 'without the most pressing reason, or an absolute necessity', applying Vattel's caution on constitutional change to Parliament. Only a phrase is verbatim, so close paraphrase fits better than verbatim; the letter is the Camden letter, which reuses I.36 a page later."
+   "note": "The House calls the Mutiny Act's requisition on the colonies 'a great change; and in its nature delicate', not to be made 'without the most pressing reason, or an absolute necessity', applying Vattel's caution on constitutional change to Parliament. Only a phrase is verbatim, so close paraphrase fits better than verbatim; the letter is the Camden letter, which reuses I.36 a page later.",
+   "en1760": 0.33,
+   "en1797": 0.33
   },
   {
    "doc": "house-1768b",
@@ -512,7 +534,9 @@
    "pages": "Cushing I, 177",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "The House drops Vattel's 'alone' and restates his rule that disputes on the public administration are for the nation to judge by its constitution, then says the end of the British constitution is liberty and appeals to Camden. The judge was right on the substance; the addressee is Lord Camden."
+   "note": "The House drops Vattel's 'alone' and restates his rule that disputes on the public administration are for the nation to judge by its constitution, then says the end of the British constitution is liberty and appeals to Camden. The judge was right on the substance; the addressee is Lord Camden.",
+   "en1760": 0.22,
+   "en1797": 0.11
   },
   {
    "doc": "sadams-1771a",
@@ -531,7 +555,9 @@
    "pages": "Cushing II, 143",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "Adams moves Vattel's praise of the English constitution to jury trial: 'constitution' becomes 'institution' and 'this great end' becomes 'the great end of society, the distributing justice', while 'a spirit of true patriotism, which is zealously employed for the publick welfare' keeps the older translation's wording. The marks show a quotation, but the 'great writer' named just before speaks to a different point, so Vattel is not named."
+   "note": "Adams moves Vattel's praise of the English constitution to jury trial: 'constitution' becomes 'institution' and 'this great end' becomes 'the great end of society, the distributing justice', while 'a spirit of true patriotism, which is zealously employed for the publick welfare' keeps the older translation's wording. The marks show a quotation, but the 'great writer' named just before speaks to a different point, so Vattel is not named.",
+   "en1760": 0.46,
+   "en1797": 0.13
   },
   {
    "doc": "sadams-1771a",
@@ -561,7 +587,9 @@
    "pages": "Cushing II, 151",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "Adams quotes I.30 against Philanthrop's call for subordination. He inserts 'and the true patriot will watch' and 'the people' to make the body of the people the guardian of the constitution, and he leaves the middle sentence on violating the laws as a capital crime outside the marks."
+   "note": "Adams quotes I.30 against Philanthrop's call for subordination. He inserts 'and the true patriot will watch' and 'the people' to make the body of the people the guardian of the constitution, and he leaves the middle sentence on violating the laws as a capital crime outside the marks.",
+   "en1760": 0.54,
+   "en1797": 0.42
   },
   {
    "doc": "house-1771",
@@ -580,7 +608,9 @@
    "pages": "Cushing II, 178",
    "in_studies": false,
    "found_by": "search",
-   "note": "The House applies the silence clause to the provincial assemblies and concludes: 'It is therefore our duty to declare our Rights'."
+   "note": "The House applies the silence clause to the provincial assemblies and concludes: 'It is therefore our duty to declare our Rights'.",
+   "en1760": 0.13,
+   "en1797": 0.08
   },
   {
    "doc": "sadams-1771b",
@@ -599,7 +629,9 @@
    "pages": "Cushing II, 202",
    "in_studies": false,
    "found_by": "search",
-   "note": "Adams applies the silence clause to the remaining tea duty: silence would be construed as acquiescence."
+   "note": "Adams applies the silence clause to the remaining tea duty: silence would be construed as acquiescence.",
+   "en1760": 0.03,
+   "en1797": 0.0
   },
   {
    "doc": "sadams-1771c",
@@ -624,7 +656,9 @@
    "pages": "Cushing II, 254-255",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "Just before the quotation Adams paraphrases the end of I.34 ('if we are voluntarily silent... it will be consider'd as an approbation of the change'). He then quotes Vattel on the two houses, adding 'be so infatuated', and goes from there to the people's right to resist a minister who sets up his instructions to Hutchinson as laws. The judge's 'attrib.' and undated essay is the Candidus article of October 14, 1771."
+   "note": "Just before the quotation Adams paraphrases the end of I.34 ('if we are voluntarily silent... it will be consider'd as an approbation of the change'). He then quotes Vattel on the two houses, adding 'be so infatuated', and goes from there to the people's right to resist a minister who sets up his instructions to Hutchinson as laws. The judge's 'attrib.' and undated essay is the Candidus article of October 14, 1771.",
+   "en1760": 0.5,
+   "en1797": 0.36
   },
   {
    "doc": "sadams-1771d",
@@ -659,7 +693,9 @@
    "pages": "Cushing II, 258",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Adams sets Vattel beside Locke against Hutchinson's claim that allegiance is perpetual and unalienable, and he silently drops the condition that the emigrant compensate the society ('en la dédommageant...'). The words are covered only by Burlamaqui and Pufendorf-Barbeyrac rows. The free right to leave that they state is the point on which Vattel departs from Wolff, Inst. § 1019, which requires the superior's consent."
+   "note": "Adams sets Vattel beside Locke against Hutchinson's claim that allegiance is perpetual and unalienable, and he silently drops the condition that the emigrant compensate the society ('en la dédommageant...'). The words are covered only by Burlamaqui and Pufendorf-Barbeyrac rows. The free right to leave that they state is the point on which Vattel departs from Wolff, Inst. § 1019, which requires the superior's consent.",
+   "en1760": 0.52,
+   "en1797": 0.35
   },
   {
    "doc": "sadams-1771d",
@@ -689,7 +725,9 @@
    "pages": "Cushing II, 258",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Adams uses the absolute right to renounce one's country against Hutchinson's perpetual allegiance. He then paraphrases Vattel's third case, the sovereign or majority allowing only one religion, to say the Puritans left England lawfully (covered by Wolff JG § 153, shared argument, and a § 153 divergence). The quoted sentence itself has only a Pufendorf-Barbeyrac note row and is the point Vattel holds against Wolff, JG § 154."
+   "note": "Adams uses the absolute right to renounce one's country against Hutchinson's perpetual allegiance. He then paraphrases Vattel's third case, the sovereign or majority allowing only one religion, to say the Puritans left England lawfully (covered by Wolff JG § 153, shared argument, and a § 153 divergence). The quoted sentence itself has only a Pufendorf-Barbeyrac note row and is the point Vattel holds against Wolff, JG § 154.",
+   "en1760": 0.71,
+   "en1797": 0.88
   },
   {
    "doc": "sadams-1772",
@@ -719,7 +757,9 @@
    "pages": "Cushing II, 325-326",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Adams strings together three sentences of I.34 in marks to argue that, as Magna Charta declares the fundamental laws, Parliament cannot alter it and an act against it is void. The same article quotes the earlier part of I.34 (legislators' authority \"does not extend so far\", fundamental laws \"sacred\", constitution \"fixed\") just before and its England example just after, so the whole run on pp. 325-326 quotes nearly all of the section; the wording (\"to their pleasure\") is the earlier English translation."
+   "note": "Adams strings together three sentences of I.34 in marks to argue that, as Magna Charta declares the fundamental laws, Parliament cannot alter it and an act against it is void. The same article quotes the earlier part of I.34 (legislators' authority \"does not extend so far\", fundamental laws \"sacred\", constitution \"fixed\") just before and its England example just after, so the whole run on pp. 325-326 quotes nearly all of the section; the wording (\"to their pleasure\") is the earlier English translation.",
+   "en1760": 0.4,
+   "en1797": 0.29
   },
   {
    "doc": "sadams-1772",
@@ -744,7 +784,9 @@
    "pages": "Cushing II, 323",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "Adams quotes Vattel to defend jealousy as a political virtue and the \"patriots\" Chronus derides, silently dropping Vattel's proviso that their zeal be tempered with moderation and prudence. His wording (\"in vindication of their rights\", \"hold out their hands to chains\", \"suffer the strokes of arbitrary power\") follows an earlier English translation closer to the French (tendent les mains à l'esclavage, sous les coups) than the 1797 text; the quotation sits on p. 323 only, not 322-323."
+   "note": "Adams quotes Vattel to defend jealousy as a political virtue and the \"patriots\" Chronus derides, silently dropping Vattel's proviso that their zeal be tempered with moderation and prudence. His wording (\"in vindication of their rights\", \"hold out their hands to chains\", \"suffer the strokes of arbitrary power\") follows an earlier English translation closer to the French (tendent les mains à l'esclavage, sous les coups) than the 1797 text; the quotation sits on p. 323 only, not 322-323.",
+   "en1760": 0.67,
+   "en1797": 0.43
   },
   {
    "doc": "boston-1772",
@@ -789,7 +831,9 @@
    "pages": "Cushing II, 356",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "Adams opens the colonists' rights as subjects with Vattel's definition of the state, grafting Locke's \"Common Wealth\" and \"civil society\" onto it (hence the note \"See Lock and Vatel\") and rendering \"à forces réunies\" as \"by means of their union\", apparently the earlier English translation. The I.1 form fits better than Prelim.1 (V32), which it restates; behind both lies Wolff's definition of civitas (Jus gentium § 9)."
+   "note": "Adams opens the colonists' rights as subjects with Vattel's definition of the state, grafting Locke's \"Common Wealth\" and \"civil society\" onto it (hence the note \"See Lock and Vatel\") and rendering \"à forces réunies\" as \"by means of their union\", apparently the earlier English translation. The I.1 form fits better than Prelim.1 (V32), which it restates; behind both lies Wolff's definition of civitas (Jus gentium § 9).",
+   "en1760": 0.24,
+   "en1797": 0.12
   },
   {
    "doc": "hutchinson-1773",
@@ -814,7 +858,9 @@
    "pages": "Bradford 337",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Hutchinson quotes I.210 to argue that the colony, as a settlement of the nation, has always been subject to Parliament's supreme authority. He drops \"a colony\" after \"settles\"; his \"or mother country\" is in the English translation only (the French has just \"l'établissement principal\"), so he used the English Vattel."
+   "note": "Hutchinson quotes I.210 to argue that the colony, as a settlement of the nation, has always been subject to Parliament's supreme authority. He drops \"a colony\" after \"settles\"; his \"or mother country\" is in the English translation only (the French has just \"l'établissement principal\"), so he used the English Vattel.",
+   "en1760": 0.75,
+   "en1797": 0.91
   },
   {
    "doc": "house-1773a",
@@ -844,7 +890,9 @@
    "pages": "Cushing II, 421–422; Bradford 362",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "The House quotes I.34 to argue that the fundamentals of the province's constitution are fixed in the charter, so no provincial acts referring to acts of Parliament can be taken as conceding Parliament's supreme authority. The date is 26 January 1773; the wording (\"fixed\", \"trusted\") is the earlier English translation."
+   "note": "The House quotes I.34 to argue that the fundamentals of the province's constitution are fixed in the charter, so no provincial acts referring to acts of Parliament can be taken as conceding Parliament's supreme authority. The date is 26 January 1773; the wording (\"fixed\", \"trusted\") is the earlier English translation.",
+   "en1760": 0.83,
+   "en1797": 0.61
   },
   {
    "doc": "house-1773a",
@@ -869,7 +917,9 @@
    "pages": "Cushing II, 410; Bradford 356",
    "in_studies": true,
    "found_by": "search",
-   "note": "The House turns the Governor's author against him: Parliament, even as a party to the charter, could not interpret it at pleasure. The wording is not the 1797 translation's."
+   "note": "The House turns the Governor's author against him: Parliament, even as a party to the charter, could not interpret it at pleasure. The wording is not the 1797 translation's.",
+   "en1760": 0.33,
+   "en1797": 0.11
   },
   {
    "doc": "house-1773a",
@@ -888,7 +938,9 @@
    "pages": "Cushing II, 411; Bradford 356",
    "in_studies": false,
    "found_by": "retrieval",
-   "note": "The House turns Vattel's rules of interpretation against the Governor: after quoting \"the celebrated author\" that no contracting party may interpret at pleasure (apparently II.265), it quotes II.283 so that the charter's grant of legislative power must be read to take effect, not be nullified by Parliament's reserved power. The judge's page (421) is wrong: the passage is on p. 411; no source row covers this sentence, though the rule in the sentences before it has Wolff, Institutiones § 804 behind it."
+   "note": "The House turns Vattel's rules of interpretation against the Governor: after quoting \"the celebrated author\" that no contracting party may interpret at pleasure (apparently II.265), it quotes II.283 so that the charter's grant of legislative power must be read to take effect, not be nullified by Parliament's reserved power. The judge's page (421) is wrong: the passage is on p. 411; no source row covers this sentence, though the rule in the sentences before it has Wolff, Institutiones § 804 behind it.",
+   "en1760": 0.6,
+   "en1797": 0.53
   },
   {
    "doc": "house-1773b",
@@ -918,7 +970,9 @@
    "pages": "Cushing II, 452; Bradford 395",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Complaining that the Governor has not answered \"that great man\", the House restates I.34 in Vattel's words without marks (the fundamentals \"excepted from the commission of the Legislators\" unless the people \"in very express terms\" gave the power), now applied to the General Assembly. The judge's date is wrong: this is the reply of 2 March 1773, on p. 452."
+   "note": "Complaining that the Governor has not answered \"that great man\", the House restates I.34 in Vattel's words without marks (the fundamentals \"excepted from the commission of the Legislators\" unless the people \"in very express terms\" gave the power), now applied to the General Assembly. The judge's date is wrong: this is the reply of 2 March 1773, on p. 452.",
+   "en1760": 0.17,
+   "en1797": 0.06
   },
   {
    "doc": "leonard-1775",
@@ -943,7 +997,9 @@
    "pages": "1819, 170",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "Leonard sets Vattel I.210, unnamed, as what 'the best writers upon the law of nations tell us', between 'The colonies are a part of the British empire' and the imperium in imperio argument, to conclude that the colonies are subject to Parliament. Author is Daniel Leonard; the judge's Jonathan Sewall follows the 1819 title page."
+   "note": "Leonard sets Vattel I.210, unnamed, as what 'the best writers upon the law of nations tell us', between 'The colonies are a part of the British empire' and the imperium in imperio argument, to conclude that the colonies are subject to Parliament. Author is Daniel Leonard; the judge's Jonathan Sewall follows the 1819 title page.",
+   "en1760": 0.51,
+   "en1797": 0.58
   },
   {
    "doc": "jadams-1775",
@@ -968,7 +1024,13 @@
    "pages": "1819, 80",
    "in_studies": true,
    "found_by": "retrieval",
-   "note": "The 1819 text of the same passage as V12: Adams quotes Leonard's unnamed Vattel and complains 'We are not told who these \"best writers\" are', so the label is verbatim, not quotation. The judge (following the 1819 title page) gives Massachusettensis to Jonathan Sewall; the author was Daniel Leonard."
+   "note": "The 1819 text of the same passage as V12: Adams quotes Leonard's unnamed Vattel and complains 'We are not told who these \"best writers\" are', so the label is verbatim, not quotation. The judge (following the 1819 title page) gives Massachusettensis to Jonathan Sewall; the author was Daniel Leonard.",
+   "en1760": 0.51,
+   "en1797": 0.58
   }
- ]
+ ],
+ "translations": {
+  "1760": "The Law of Nations, London: J. Newbery et al., 1760 (vol. II: J. Coote, 1759); Google Books MRo2AQAAMAAJ, OCR text",
+  "1797": "The Law of Nations, London, 1797, as in the edition's English layer (ed. Kapossy and Whatmore)"
+ }
 }
