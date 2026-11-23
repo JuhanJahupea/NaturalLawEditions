@@ -230,7 +230,7 @@ A working edition is converted once from its `data.json`. A later pass replaces 
   "generator": "tools/reports/vattel_jus_gentium.py"}]}
 ```
 
-- `kind`: `report` (built by a script from the data; `generator` names it), `findings` (short numbered claims from the reuse rows and divergence notes, each set against the secondary literature) or `essay` (written; cites units as `../viewer/?ed=<edition>#<unit>`).
+- `kind`: `report` (built by a script from the data; `generator` names it) or `essay` (one argument from the editions and the literature; cites units as `../viewer/?ed=<edition>#<unit>`).
 - `file`: Markdown in `reports/`, shown by `reports/?r=<id>`. Figures sit beside it.
 - `versions`: the edition versions the text was built or written against. The collection page and the report page mark a report whose editions have a newer version: a data report is then built again, an essay read again.
 
