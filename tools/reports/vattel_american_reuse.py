@@ -45,13 +45,34 @@ The last sentence of [I § 34](../viewer/?ed=%(ed)s#I.34), on a nation's silence
 
 ## The reuses
 
-| date | document | § | form | Vattel named | source of the French words | in the studies | pages |
-|---|---|---|---|---|---|---|---|
+| date | document | § | form | Vattel named | source of the French words | in the studies | pages | 1760 / 1797 |
+|---|---|---|---|---|---|---|---|---|
 ''' % dict(w=ck['wolff'] + cn['wolff'], nn=len(new), ed=ED, sl=len(silence),
            sll='; '.join('%s, %s (%s)' % (r['author'].split(' (')[0], r['document'], r['pages']) for r in silence))
 for r in X:
-    md += '| %s | %s, %s | %s | %s | %s | %s | %s | %s |\n' % (r['date'], r['author'], r['document'], link(r['unit']), LAB.get(r['label'], r['label']),
-        'yes' if r['named'] else '', REL.get(r['relation'], r['relation']), 'yes' if r['in_studies'] else '', r['pages'])
+    md += '| %s | %s, %s | %s | %s | %s | %s | %s | %s | %s |\n' % (r['date'], r['author'], r['document'], link(r['unit']), LAB.get(r['label'], r['label']),
+        'yes' if r['named'] else '', REL.get(r['relation'], r['relation']), 'yes' if r['in_studies'] else '', r['pages'],
+        '%.2f / %.2f' % (r['en1760'], r['en1797']) if r.get('en1760') is not None else '')
+tr = [r for r in X if r.get('en1760') is not None and r['label'] in ('quotation', 'verbatim', 'close paraphrase')]
+n60 = sum(1 for r in tr if r['en1760'] > r['en1797'] + 0.1); n97 = sum(1 for r in tr if r['en1797'] > r['en1760'] + 0.1)
+md += '''
+## Which English
+
+The first English translation (London, 1760; vol. II dated 1759) was compared with each quotation and paraphrase: the share of its word sequences of four found in the 1760 text, and in the section's text of 1797. Of %(n)d, %(n60)d share more with 1760 and %(n97)d more with 1797. The two nearer 1797 are Hutchinson's I § 210 and Samuel Adams's I § 223; in both the 1760 copy's OCR prints a word that breaks the comparison ("mothercountry"; a marginal note run into the text). No American text follows a reading peculiar to 1797.
+
+- I § 210 in 1760 has both sentences, in the words of Otis's memorial: "antient possessions", "ought also to extend to its colonies". Hutchinson's quotation leaves out the second sentence and the words "a colony".
+- I § 34 in 1760 has the memorial's and the House's words: "It is here demanded whether, if their power extends so far as to the fundamental laws", "the constitution of the state ought to be fixed" (1797: "It is asked whether their power extends to the fundamental laws", "ought to possess stability"). Somos's remark that the 1764 memorial was "not using the 1760 English translation" (2021, 210) does not hold.
+- I § 24 in 1760 reads "it has cost rivers of blood". Thacher's "seas of blood" is his.
+- III § 201 stands in chapter XIII in 1760, as in the French. Otis's "B. 3. C. 10." is a slip; Ossipow and Gerber's text gives the same chapter (2017, 534), their table XIII.
+- I § 36 in 1760 reads "to judge and determine them, in conformity to its political constitution", the House's words of 1768 (1797: "conformably to"). II § 265 reads "neither the one nor the other of the interested, or contracting powers, has a right to interpret the act, or treaty, at his pleasure", the House's words of 1773 (1797: "according to his own fancy").
+
+## The Declaration of Independence
+
+The *Journals* hold Jefferson's draft and the adopted text. No passage of either shares wording with Vattel: the nearest sections reach a cosine of 0.11 to 0.14, against 0.25 to 0.55 for the quotations above. The sections that Ossipow and Gerber and Schmeeckle propose as its sources share a phrase or nothing.
+
+One sentence joins Locke and Vattel. "All experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed" takes Locke's "the people, who are more disposed to suffer than right themselves by resistance, are not apt to stir" (*Second Treatise* § 230) and adds "while evils are sufferable". That clause is the distinction of [III § 290](../viewer/?ed=%(ed)s#III.290), which the 1760 translation words "Every citizen should even patiently suffer supportable evils, rather than disturb the public peace" (1797: "patiently endure evils which are not insupportable"). Bland had paraphrased the same sentence at Williamsburg in 1766: "to suffer patiently rather than disturb the publick Peace". Samuel Adams quoted another passage of III § 290 in 1772. Schmeeckle proposes III § 290 for the Declaration's sentence; the wording shows a shared verb and noun, not a quotation.
+
+''' % dict(n=len(tr), n60=n60, n97=n97, ed=ED)
 md += '''
 ## Checks
 
