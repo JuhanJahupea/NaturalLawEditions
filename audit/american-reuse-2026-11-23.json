@@ -1,0 +1,2763 @@
+{
+ "format": "nle-audit/1",
+ "pass": "american-reuse",
+ "date": "2026-11-23",
+ "description": "Reuse of Vattel in American documents, 1762–1776. First judges (Sonnet, AM_JUDGE_PROMPT.md) on 210 passages with 236 candidate sections; a recall probe of 36 candidates below the threshold; second readers (Opus, AM_VERIFY_PROMPT.md) on all 38 matches.",
+ "judge": {
+  "batch00": {
+   "matches": [
+    {
+     "id": "P001",
+     "unit": "I.2",
+     "passage": "it is evident, by the very Act of \nAssociation, that each Member subjects himself to the \nAuthority of that Body",
+     "vattel": "by the very act of the civil or political association, each citizen subjects himself to the authority of the entire body",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "named": true,
+     "document": "Richard Bland, An Inquiry into the Rights of the British Colonies, 1766",
+     "quoted_by": "",
+     "reason": "Bland restates Vattel on the act of association subjecting each member to the whole body, in a paragraph footnoted to Vattel (\"Fattel's Law of Nature\")."
+    },
+    {
+     "id": "P002",
+     "unit": "III.290",
+     "passage": "lay their Complaints at the Foot of the Throne, and \nto suffer patiently rather than disturb the publick Peace, \nwhich nothing but a Denial of Justice can excuse them \nin breaking.",
+     "vattel": "lay their complaints at the foot of the throne. Every citizen should even patiently endure evils which are not insupportable, rather than disturb the public peace",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "named": false,
+     "document": "Richard Bland, An Inquiry into the Rights of the British Colonies, 1766",
+     "quoted_by": "",
+     "reason": "Complaints at the foot of the throne, patient suffering rather than disturbing the public peace, excused only by denial of justice follows Vattel III.290 closely."
+    },
+    {
+     "id": "P004",
+     "unit": "Prelim.1",
+     "passage": "Body politick \nor civil Society of Men, united together to promote their mutual Safety, and 1 + \nMeans of their Union",
+     "vattel": "societies of men united together for the purpose of promoting their mutual safety and advantage by the joint efforts of their combined strength",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "named": true,
+     "document": "Boston Town Meeting, Rights of the Colonists (Votes and Proceedings of the Town of Boston, 1772)",
+     "quoted_by": "",
+     "reason": "Definition of a state as a body politic of men united for mutual safety matches Vattel, with a footnote \"See Locke and Vatel\"."
+    },
+    {
+     "id": "P004",
+     "unit": "I.1",
+     "passage": "Body politick \nor civil Society of Men, united together to promote their mutual Safety, and 1 + \nMeans of their Union",
+     "vattel": "a body politic, or a society of men united together for the purpose of promoting their mutual safety and advantage by their combined strength",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "named": true,
+     "document": "Boston Town Meeting, Rights of the Colonists (Votes and Proceedings of the Town of Boston, 1772)",
+     "quoted_by": "",
+     "reason": "Same definition as Prelim.1 repeated at I.1; footnote names Vattel."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P000",
+     "unit": "IV.100",
+     "reason": "Editorial introduction; no Vattel."
+    },
+    {
+     "id": "P003",
+     "unit": "III.187",
+     "reason": "Follows Locke (cited); nothing from Vattel III.187."
+    },
+    {
+     "id": "P005",
+     "unit": "IV.104",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P006",
+     "unit": "II.334",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P007",
+     "unit": "I.98",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P008",
+     "unit": "I.83",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P009",
+     "unit": "III.204",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P010",
+     "unit": "IV.73",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P011",
+     "unit": "I.129",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    }
+   ]
+  },
+  "batch01": {
+   "matches": [
+    {
+     "id": "P012",
+     "unit": "I.34",
+     "passage": "if the Parliament \nshould make any considerable change in the constitution, and the \nnation should be voluntarily silent upon it, this would be considered as an approbation of the act",
+     "vattel": "if the parliament entered into a debate on making so considerable a change, and the whole nation was voluntarily silent upon it, this would be considered as an approbation of the act",
+     "label": "verbatim",
+     "confidence": 0.85,
+     "named": false,
+     "document": "Massachusetts House of Representatives, letter to a British peer (\"Your Lordship\"), 1768 (Massachusetts State Papers)",
+     "quoted_by": "",
+     "reason": "Attributed to \"the greatest writers on the law of nature and nations\", the clause on the nation being voluntarily silent and this being considered an approbation of the act reproduces Vattel I.34 almost word for word."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P013",
+     "unit": "III.49",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P014",
+     "unit": "I.54",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P015",
+     "unit": "I.130",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P016",
+     "unit": "I.45",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P017",
+     "unit": "II.216",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P018",
+     "unit": "III.127",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P019",
+     "unit": "I.45",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P020",
+     "unit": "III.38",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P021",
+     "unit": "I.45",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P022",
+     "unit": "II.191",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P023",
+     "unit": "II.110",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    }
+   ]
+  },
+  "batch02": {
+   "matches": [
+    {
+     "id": "P024",
+     "unit": "I.210",
+     "passage": "when a nation takes possession of a distant \ncountry, and settles there, that country, though separated from the \nprincipal establishment, or mother country, naturally becomes a \npart of the state, equally with its ancient possessions.",
+     "vattel": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions.",
+     "label": "quotation",
+     "confidence": 0.95,
+     "named": false,
+     "document": "Thomas Hutchinson, speech to the General Court, 6 Jan. 1773 (Massachusetts State Papers)",
+     "quoted_by": "",
+     "reason": "Quoted in marks from \"the most celebrated writers upon the law of nations\"; the words are Vattel I.210 verbatim."
+    },
+    {
+     "id": "P025",
+     "unit": "II.283",
+     "passage": "An agreement ought to be interpreted \" in such a manner as that it may have its effect.\"",
+     "vattel": "It ought to be interpreted in such a manner, as that it may have its effect",
+     "label": "quotation",
+     "confidence": 0.75,
+     "named": false,
+     "document": "Massachusetts House of Representatives, answer to Governor Hutchinson's speech, 26 Jan. 1773 (Massachusetts State Papers)",
+     "quoted_by": "",
+     "reason": "The House quotes, from \"the celebrated author, whom your Excellency has quoted\", the rule that a deed be interpreted so that it may have its effect, which is Vattel II.283 (the author Hutchinson had cited)."
+    },
+    {
+     "id": "P026",
+     "unit": "I.34",
+     "passage": "does not extend so far as the fundamentals \nof the constitution. They ought to consider the fundamental \nlaws as sacred, if the nation has not in very express terms, given \nthem the power to change them. For the constitution of the state \nought to be fixed ; and since that was first established by the nation, which afterwards trusted certain persons with the Legislative \npower, the fundamental laws are excepted from their commission.\"",
+     "vattel": "authority of these legislators does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them. For the constitution of the state ought to possess stability: and since that was first established by the nation, which afterwards intrusted certain persons with the legislative power, the fundamental laws are excepted from their commission",
+     "label": "quotation",
+     "confidence": 0.95,
+     "named": false,
+     "document": "Massachusetts House of Representatives, answer to Governor Hutchinson's speech, 26 Jan. 1773 (Massachusetts State Papers)",
+     "quoted_by": "",
+     "reason": "Quoted in marks from \"the same author who is quoted by your Excellency\": Vattel I.34 on the legislature not reaching the fundamental laws, nearly verbatim."
+    },
+    {
+     "id": "P028",
+     "unit": "I.34",
+     "passage": "the fundamentals of the constitution \nbeing excepted from the commission of the Legislators, none ot \nthe acts or doings of the General Assembly, however deliberate \n&nd solemn, could avail to change tliem, if the people have not, in \nvery express terms, given them the power to do it",
+     "vattel": "if the nation has not, in very express terms, given them power to change them. For the constitution of the state ought to possess stability: and since that was first established by the nation, which afterwards intrusted certain persons with the legislative power, the fundamental laws are excepted from their commission",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "named": false,
+     "document": "Massachusetts House of Representatives, answer to Governor Hutchinson's speech, 26 Jan. 1773 (Massachusetts State Papers)",
+     "quoted_by": "",
+     "reason": "Refers back to the \"learned writer on the laws of nature and nations\" quoted earlier and restates Vattel I.34 (fundamentals excepted from legislators' commission unless expressly given power to change them)."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P027",
+     "unit": "II.286",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P029",
+     "unit": "Prelim.15",
+     "reason": "Follows Burlamaqui (cited in footnote) on natural liberty and independence; no Vattel wording."
+    },
+    {
+     "id": "P030",
+     "unit": "Prelim.27",
+     "reason": "Quotes Burlamaqui against Grotius on a positive law of nations; not Vattel Prelim.27."
+    },
+    {
+     "id": "P031",
+     "unit": "III.262",
+     "reason": "Modern editor's introduction to Dickinson's Farmer letters; no Vattel."
+    },
+    {
+     "id": "P032",
+     "unit": "I.251",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P033",
+     "unit": "II.179",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P034",
+     "unit": "I.91",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    },
+    {
+     "id": "P035",
+     "unit": "I.45",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument."
+    }
+   ]
+  },
+  "batch03": {
+   "matches": [
+    {
+     "id": "P045",
+     "unit": "II.297",
+     "passage": "In unforeseen cases, that is, when the state of \nthings is found such as the author of the disposition has not \nforeseen, and could not have thought of, we should rather follow \nhis intention than his words, and interpret the act as he himself \nwould have interpreted it, had he been present, or conformably \nto what he would have done if he had foreseen the things that \nhappened. This rule is of great use to Judges",
+     "vattel": "In unforeseen cases, that is to say, when the state of things happens to be such as the author of a deed has not foreseen, and could not have thought of, we should rather be guided by his intention than by his words, and interpret the instrument as he himself would interpret it if he were on the spot, or conformably to what he would have done if he had foreseen the circumstances which are at present known. This rule is of great use to judges",
+     "label": "quotation",
+     "confidence": 0.97,
+     "named": true,
+     "document": "John Adams, Diary, 27 Dec. 1765 (Works vol. 2), notes from Vattel",
+     "quoted_by": "",
+     "reason": "Adams copies Vattel on interpreting unforeseen cases and cites Vattel, book 2, ch. 17, s. 297."
+    },
+    {
+     "id": "P045",
+     "unit": "II.292",
+     "passage": "If a case be presented in which one cannot \nabsolutely apply the well known reason of a law or a promise, \nthis case ought to be excepted",
+     "vattel": "if a case occurs, to which the well-known reason of a law or promise is utterly inapplicable, that case ought to be excepted",
+     "label": "quotation",
+     "confidence": 0.9,
+     "named": true,
+     "document": "John Adams, Diary, 27 Dec. 1765 (Works vol. 2), notes from Vattel",
+     "quoted_by": "",
+     "reason": "Adams quotes (1760 wording) Vattel on restrictive interpretation, citing book 2, ch. 17, s. 292."
+    },
+    {
+     "id": "P045",
+     "unit": "II.282",
+     "passage": "Every \ninterpretation that leads to an absurdity, ought to be rejected.\" \nPage 222, book 2, ch. 17, s. 282. Every impossibility, physical \nand moral, is an absurdity",
+     "vattel": "Every interpretation that leads to an absurdity, ought to be rejected; or, in other words, we should not give to any piece a meaning from which any absurd consequences would follow, but must interpret it in such a manner as to avoid absurdity. As it is not to be presumed that any one means what is absurd, it cannot be supposed that the person speaking intended that his words should be understood in a manner from which an absurdity would follow. Neither is it allowable to presume that he meant to indulge a sportive levity in a serious deed: for what is shameful and unlawful is not to be presumed. We call absurd not only what is physically impossible, but what is morally so",
+     "label": "quotation",
+     "confidence": 0.93,
+     "named": true,
+     "document": "John Adams, Diary, 27 Dec. 1765 (Works vol. 2), notes from Vattel",
+     "quoted_by": "",
+     "reason": "Adams quotes Vattel II.282 on rejecting absurd interpretations, with the section cited, and adds the physical and moral gloss."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P036",
+     "unit": "I.216",
+     "reason": "Dulany on colonial consent and taxation; no Vattel wording on birth at sea."
+    },
+    {
+     "id": "P037",
+     "unit": "I.98",
+     "reason": "General balance-of-trade discussion; shares only the phrase, no wording or argument from Vattel."
+    },
+    {
+     "id": "P038",
+     "unit": "III.109",
+     "reason": "Passage is OCR noise plus a title page; no usable text."
+    },
+    {
+     "id": "P038",
+     "unit": "III.155",
+     "reason": "Passage is OCR noise plus a title page; no usable text."
+    },
+    {
+     "id": "P038",
+     "unit": "III.70",
+     "reason": "Passage is OCR noise plus a title page; no usable text."
+    },
+    {
+     "id": "P039",
+     "unit": "I.86",
+     "reason": "Argument about commerce and war is generic; no Vattel wording."
+    },
+    {
+     "id": "P040",
+     "unit": "I.79",
+     "reason": "Flax-seed trade facts; no Vattel wording."
+    },
+    {
+     "id": "P041",
+     "unit": "II.3",
+     "reason": "Adams diary on the nature of matter and God; unrelated to Vattel II.3."
+    },
+    {
+     "id": "P042",
+     "unit": "III.114",
+     "reason": "Diary entry on mercantile law; no use of Vattel on search of neutral ships."
+    },
+    {
+     "id": "P043",
+     "unit": "I.250",
+     "reason": "Diary on machines and taverns; no use of Vattel on common wells."
+    },
+    {
+     "id": "P044",
+     "unit": "IV.8",
+     "reason": "Diary narrative; unrelated to Vattel IV.8."
+    },
+    {
+     "id": "P045",
+     "unit": "II.298",
+     "reason": "Adams cites s. 297, 292 and 282 only; no use of the section on possible events (298)."
+    },
+    {
+     "id": "P046",
+     "unit": "I.182",
+     "reason": "Letter of the Sons of Liberty; no Vattel wording on wealth or appeals."
+    },
+    {
+     "id": "P046",
+     "unit": "I.165",
+     "reason": "Letter of the Sons of Liberty; no Vattel wording on wealth or appeals."
+    },
+    {
+     "id": "P046",
+     "unit": "I.172",
+     "reason": "Letter of the Sons of Liberty; no Vattel wording on wealth or appeals."
+    },
+    {
+     "id": "P047",
+     "unit": "III.109",
+     "reason": "Diary narrative on Massachusetts politics; no Vattel wording."
+    }
+   ]
+  },
+  "batch04": {
+   "matches": [],
+   "no_match": [
+    {
+     "id": "P048",
+     "unit": "I.216",
+     "reason": "Diary narrative; nothing on birth at sea."
+    },
+    {
+     "id": "P049",
+     "unit": "I.14",
+     "reason": "Adams on the end of government and rewards; no Vattel wording or argument."
+    },
+    {
+     "id": "P049",
+     "unit": "II.6",
+     "reason": "Adams on the end of government and rewards; no Vattel wording or argument."
+    },
+    {
+     "id": "P050",
+     "unit": "I.98",
+     "reason": "Diary entry; no Vattel wording on balance of trade."
+    },
+    {
+     "id": "P051",
+     "unit": "III.27",
+     "reason": "Diary and a Clarke sermon; unrelated to Vattel on just war."
+    },
+    {
+     "id": "P052",
+     "unit": "I.226",
+     "reason": "Congress debate notes on emigration and allegiance; shares the topic only, no Vattel wording and no reference to him."
+    },
+    {
+     "id": "P053",
+     "unit": "I.130",
+     "reason": "Debate notes on independence and allegiance; no Vattel wording on religion."
+    },
+    {
+     "id": "P054",
+     "unit": "II.104",
+     "reason": "Adams essay on revenge and honour; no Vattel wording on hospitality."
+    },
+    {
+     "id": "P055",
+     "unit": "III.30",
+     "reason": "Adams essay on self-delusion; unrelated to Vattel on motives of war."
+    },
+    {
+     "id": "P056",
+     "unit": "I.130",
+     "reason": "Adams essay on duelling and honour; no Vattel wording on religion."
+    },
+    {
+     "id": "P057",
+     "unit": "I.95",
+     "reason": "Adams on the British constitution and the public good; unrelated to Vattel on rights by custom."
+    },
+    {
+     "id": "P058",
+     "unit": "IV.100",
+     "reason": "Adams essays and editorial note; nothing on embassadors as enemies."
+    },
+    {
+     "id": "P059",
+     "unit": "III.74",
+     "reason": "Adams on judges commissions at common law; unrelated to Vattel on enemy property."
+    }
+   ]
+  },
+  "batch05": {
+   "matches": [
+    {
+     "id": "P065",
+     "unit": "I.210",
+     "passage": "when \na nation takes possession of a distant country, and settles there, \nthat country, though separated from the principal establishment, \nor mother country, naturally becomes a part of the state, equal \nwith its ancient possessions",
+     "vattel": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions",
+     "label": "quotation",
+     "confidence": 0.95,
+     "named": false,
+     "document": "John Adams (Novanglus), reply to Massachusettensis, Boston Gazette, Feb. 1775",
+     "quoted_by": "Daniel Leonard (Massachusettensis)",
+     "reason": "Adams quotes Massachusettensis quoting, without naming Vattel, the \"best writers upon the law of nations\" in Vattel I.210 wording, and then disputes it."
+    },
+    {
+     "id": "P066",
+     "unit": "I.210",
+     "passage": "when a nation takes possession of a distant country, \nand settles there, that country, though separated from the principal establishment, or mother country, naturally becomes a part of the state, equal with its \nancient possessions",
+     "vattel": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions",
+     "label": "quotation",
+     "confidence": 0.95,
+     "named": false,
+     "document": "John Adams (Novanglus), reply to Massachusettensis, Boston Gazette, Feb. 1775",
+     "quoted_by": "Daniel Leonard (Massachusettensis)",
+     "reason": "Footnote reprints Massachusettensis giving Vattel I.210 almost word for word as what \"the best writers upon the law of nations\" say; Adams rejects it."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P060",
+     "unit": "III.40",
+     "reason": "Novanglus polemic against Massachusettensis; no Vattel wording on doubtful just causes of war."
+    },
+    {
+     "id": "P061",
+     "unit": "II.66",
+     "reason": "Novanglus on whigs and tories; no Vattel wording on perfect rights."
+    },
+    {
+     "id": "P062",
+     "unit": "III.291",
+     "reason": "Quotation is from Sidney (cited), not Vattel; no Vattel wording on sedition."
+    },
+    {
+     "id": "P063",
+     "unit": "I.176",
+     "reason": "Continues the Sidney extract on judicial and extrajudicial remedies; nothing from Vattel on duelling."
+    },
+    {
+     "id": "P064",
+     "unit": "III.109",
+     "reason": "Passage ends as Adams begins to quote Massachusettensis; the only candidate concerns neutrality and does not match."
+    },
+    {
+     "id": "P067",
+     "unit": "I.265",
+     "reason": "Adams on the meaning of empire; the dismemberment passage in Vattel is not used."
+    },
+    {
+     "id": "P068",
+     "unit": "IV.68",
+     "reason": "Legal argument from Coke and Moore on allegiance; nothing on recognising a usurper."
+    },
+    {
+     "id": "P069",
+     "unit": "I.243",
+     "reason": "Irish and American status in the realm; no Vattel wording on taxation by princes."
+    },
+    {
+     "id": "P070",
+     "unit": "I.138",
+     "reason": "Text of the Massachusetts constitution of 1780 with editor notes; no Vattel wording on worship."
+    },
+    {
+     "id": "P071",
+     "unit": "II.276",
+     "reason": "Massachusetts constitution on Harvard College; unrelated to Vattel on technical terms."
+    }
+   ]
+  },
+  "batch06": {
+   "matches": [],
+   "no_match": [
+    {
+     "id": "P072",
+     "unit": "II.350",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P073",
+     "unit": "II.343",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P073",
+     "unit": "IV.40",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P074",
+     "unit": "I.243",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P075",
+     "unit": "III.109",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P075",
+     "unit": "IV.9",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P075",
+     "unit": "III.140",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P076",
+     "unit": "III.6",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P077",
+     "unit": "IV.91",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P077",
+     "unit": "IV.87",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P078",
+     "unit": "III.6",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P079",
+     "unit": "I.98",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P079",
+     "unit": "I.105",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P080",
+     "unit": "II.102",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P081",
+     "unit": "II.280",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P081",
+     "unit": "III.196",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P082",
+     "unit": "III.113",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P083",
+     "unit": "I.280",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    }
+   ]
+  },
+  "batch07": {
+   "matches": [],
+   "no_match": [
+    {
+     "id": "P084",
+     "unit": "IV.110",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P085",
+     "unit": "I.83",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P086",
+     "unit": "III.109",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P087",
+     "unit": "I.85",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P088",
+     "unit": "II.168",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P089",
+     "unit": "II.204",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P090",
+     "unit": "IV.104",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P090",
+     "unit": "IV.60",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P091",
+     "unit": "II.353",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P092",
+     "unit": "III.229",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P093",
+     "unit": "II.329",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P094",
+     "unit": "III.239",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P095",
+     "unit": "II.76",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P095",
+     "unit": "IV.98",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    }
+   ]
+  },
+  "batch08": {
+   "matches": [],
+   "no_match": [
+    {
+     "id": "P096",
+     "unit": "III.210",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P096",
+     "unit": "III.280",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P097",
+     "unit": "I.105",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P097",
+     "unit": "I.98",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P098",
+     "unit": "II.333",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P099",
+     "unit": "I.178",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P100",
+     "unit": "III.138",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P101",
+     "unit": "I.160",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P102",
+     "unit": "I.12",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P103",
+     "unit": "III.106",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P104",
+     "unit": "III.114",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P105",
+     "unit": "I.289",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P106",
+     "unit": "I.98",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P106",
+     "unit": "I.105",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    },
+    {
+     "id": "P107",
+     "unit": "I.98",
+     "reason": "Journals of Congress text (resolutions, treaty articles, debates or drafts) shares only topic vocabulary with this section; no shared wording, argument or reference to Vattel."
+    }
+   ]
+  },
+  "batch09": {
+   "matches": [],
+   "no_match": [
+    {
+     "id": "P108",
+     "unit": "II.129",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P109",
+     "unit": "I.98",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P109",
+     "unit": "I.105",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P110",
+     "unit": "III.106",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P111",
+     "unit": "I.289",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P112",
+     "unit": "IV.19",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P113",
+     "unit": "II.207",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P114",
+     "unit": "III.115",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P115",
+     "unit": "II.343",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P116",
+     "unit": "III.40",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P117",
+     "unit": "II.66",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P118",
+     "unit": "III.291",
+     "reason": "Passage is Sidney (Discourses) quoting the French saying about the scabbard; not taken from Vattel."
+    },
+    {
+     "id": "P119",
+     "unit": "I.176",
+     "reason": "Passage is Sidney (Discourses), not Vattel; scabbard saying is a shared proverb."
+    }
+   ]
+  },
+  "batch10": {
+   "matches": [
+    {
+     "id": "P121",
+     "unit": "I.210",
+     "passage": "\"The best writers upon the law of nations, tell us, that when a\nnation takes possession of a distant country and settles there,\nthat country, though separated from the principal establishment, or\nmother country, naturally becomes a part of the state, equal with\nits ancient possessions.\"",
+     "vattel": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions.",
+     "label": "quotation",
+     "confidence": 0.93,
+     "named": false,
+     "document": "John Adams, Novanglus (letter, Boston, 1774-75), quoting Massachusettensis",
+     "quoted_by": "Jonathan Sewall (Massachusettensis)",
+     "reason": "Adams quotes Massachusettensis, whose \"best writers upon the law of nations\" sentence is Vattel I.210 almost word for word, and then disputes it."
+    },
+    {
+     "id": "P122",
+     "unit": "I.210",
+     "passage": "when a nation takes possession\nof a distant territory, that becomes a part of the state equally\nwith its ancient possessions.",
+     "vattel": "naturally becomes a part of the state, equally with its ancient possessions.",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "named": false,
+     "document": "John Adams, Novanglus (letter, Boston, 1774-75)",
+     "quoted_by": "Jonathan Sewall (Massachusettensis)",
+     "reason": "Adams restates the Massachusettensis claim, itself drawn from Vattel I.210, that a distant territory becomes part of the state equally with its ancient possessions."
+    },
+    {
+     "id": "P127",
+     "unit": "I.210",
+     "passage": "The best writers upon the law of\nnations tell us, that when a nation takes possession of a distant\ncountry, and settles there, that country, though separated from the\nprincipal establishment, or mother country, naturally becomes a\npart of the state, equal with its ancient possessions.",
+     "vattel": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions.",
+     "label": "verbatim",
+     "confidence": 0.95,
+     "named": false,
+     "document": "Jonathan Sewall (Massachusettensis), letter, Boston, 1774-75",
+     "quoted_by": "",
+     "reason": "Sentence follows Vattel I.210 nearly word for word without naming him, attributing it to \"the best writers upon the law of nations\"."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P120",
+     "unit": "III.109",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P123",
+     "unit": "I.265",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P124",
+     "unit": "III.113",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P125",
+     "unit": "IV.68",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P126",
+     "unit": "I.243",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P128",
+     "unit": "III.109",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P129",
+     "unit": "II.339",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P130",
+     "unit": "III.109",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P131",
+     "unit": "III.291",
+     "reason": "Scabbard proverb is a commonplace (also in Sidney); no other shared wording with Vattel III.291."
+    }
+   ]
+  },
+  "batch11": {
+   "matches": [
+    {
+     "id": "P135",
+     "unit": "I.210",
+     "passage": "though separated from the principal establishment, or mother country, naturally become \npart of the hate with its ancient possessions",
+     "vattel": "though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions",
+     "label": "verbatim",
+     "confidence": 0.88,
+     "named": false,
+     "document": "James Otis, The Rights of the British Colonies Asserted and Proved (1764), appended memorial of the Massachusetts House of Representatives to Jasper Mauduit",
+     "quoted_by": "",
+     "reason": "The memorial reuses the clause of Vattel I.210 on a distant colony becoming part of the state with its ancient possessions, with small changes and no attribution."
+    },
+    {
+     "id": "P136",
+     "unit": "I.210",
+     "passage": "W hen a nation takes po/Teffion of a diilant country, and settles a colony there, that country though separated from the \nprincipal eRablifhment, or mother country, naturally becomes \na part of the ilate, equally with its antient pofTeffions. W henever the political laws, or treaties, make no dihindion between them, every thing said of the territory of a nation, \nought also to extend to its colonies” D’ Vattel.",
+     "vattel": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions. Whenever therefore the political laws, or treaties, make no distinction between them, every thing said of the territory of a nation, must also extend to its colonies.",
+     "label": "quotation",
+     "confidence": 0.97,
+     "named": true,
+     "document": "James Otis, The Rights of the British Colonies Asserted and Proved (1764), footnote",
+     "quoted_by": "",
+     "reason": "Footnote quotes Vattel I.210 in the 1760 wording and signs it D' Vattel."
+    },
+    {
+     "id": "P136",
+     "unit": "I.34",
+     "passage": "It essentially belongs to the lociety to make laws both in relation \nto tae manner in which it delires to be governed, and to the \nconduct of the citizens : this is called the Lcgijlativc Power. \nThe nation may entrud the exerci/e of it to the prince, or to \nan aflembly $ or to the a/Tembly and the Prince jointly ; who \niiaye then a right of making new, and abrogating old laws. \nIt is here demanded whether, if their power extends lo far as \nto .he fundamental laws, they may change the conditution of \nthe (later 1 he principles we have laid down lead us to decide \nthis point with certainty, that the authority of these legiilators \ndoes not extend fo far, and that they ought to consider the \nundamental laws as sacred, if the nation has not in very expre.s terms given them the power to change them. For the \ncom the ought to be fix d ; and fmee that was \n\nnrlt eftabhmed by the nation, which afterwards trusted certain \npersons with the legislative power, the fundamental laws are \nexcepted from their commiflion It appears that the society \n°nl X.0 ^ve<^ to make provision for the date’s being always \nurnilhed with laws suited to particular conjunctures, and gave \nt e. egiflatures for that purpose, the power of abrogating the \nanoent civil and political laws, that were not fundamental, \nTn 0 m*. £ ne'lV ones : bur nothing leads us to think that",
+     "vattel": "It essentially belongs to the society to make laws both in relation to the manner in which it desires to be governed, and to the conduct of the citizens:—this is called the legislative power. The nation may intrust the exercise of it to the prince, or to an assembly; or to that assembly and the prince jointly; who have then a right to make new laws and to repeal old ones. It is asked whether their power extends to the fundamental laws,—whether they may change the constitution of the state? The principles we have laid down lead us to decide with certainty, that the authority of these legislators does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them. For the constitution of the state ought to possess stability: and since that was first established by the nation, which afterwards intrusted certain persons with the legislative power, the fundamental laws are excepted from their commission. It is visible that the society only intended to make provision for having the state constantly furnished with laws suited to particular conjunctures, and, for that purpose, gave the legislature the power of abrogating the ancient civil and political laws that were not fundamental, and of making new ones: but nothing leads us to think that",
+     "label": "verbatim",
+     "confidence": 0.9,
+     "named": false,
+     "document": "James Otis, The Rights of the British Colonies Asserted and Proved (1764), footnote",
+     "quoted_by": "",
+     "reason": "Footnote reproduces Vattel I.34 on the legislature and fundamental laws at length, without naming him at this point."
+    },
+    {
+     "id": "P137",
+     "unit": "III.201",
+     "passage": "Some have dared to advance this mondrous principle, that the conqueror is absolute mafler of his conqued ; \nthat he may dispose of it as his property, treat it as he pleases’ \naccording to the common expreflion of treating a Jiate as a conquered country ; and hence they derive one of the sources of despotic government : but enough of those that reduce men to the \nItate of transferable goods, or use them like beads of burthenr",
+     "vattel": "Some have dared to advance this monstrous principle, that the conqueror is absolute master of his conquest,—that he may dispose of it as his property,—that he may treat it as he pleases, according to the common expression of treating a state as a conquered country; and hence they derive one of the sources of despotic government. But, disregarding such writers, who reduce men to the state of transferable goods, or beasts of burthen",
+     "label": "quotation",
+     "confidence": 0.96,
+     "named": true,
+     "document": "James Otis, The Rights of the British Colonies Asserted and Proved (1764), footnote",
+     "quoted_by": "",
+     "reason": "Footnote quotes Vattel III.201 on the rights of a conqueror and cites Mr. D' Vattel, B. 3. C. 10. sec. 201."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P132",
+     "unit": "I.61",
+     "reason": "Salus populi suprema lex is a commonplace maxim; the passage follows Locke, not Vattel I.61."
+    },
+    {
+     "id": "P133",
+     "unit": "III.109",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P134",
+     "unit": "III.52",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P138",
+     "unit": "I.45",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P139",
+     "unit": "I.128",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P140",
+     "unit": "Pref.12",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P141",
+     "unit": "III.251",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P142",
+     "unit": "II.179",
+     "reason": "Topical overlap only; no shared wording or argument."
+    },
+    {
+     "id": "P143",
+     "unit": "III.109",
+     "reason": "Topical overlap only; no shared wording or argument."
+    }
+   ]
+  },
+  "batch12": {
+   "matches": [
+    {
+     "id": "P154",
+     "unit": "I.34",
+     "passage": "voluntarily \nsilent upon it, this would be considered as an approbation of the act",
+     "vattel": "voluntarily silent upon it, this would be considered as an approbation of the act",
+     "label": "verbatim",
+     "confidence": 0.9,
+     "named": false,
+     "document": "Massachusetts House of Representatives (drafted by Samuel Adams), letter to a peer ('your Lordship'), early 1768, in Writings of Samuel Adams vol. 1",
+     "quoted_by": "",
+     "reason": "Adams repeats Vattel's sentence on a nation voluntarily silent when parliament changes the constitution, attributing it only to 'the greatest writers on the law of nature and nations'."
+    },
+    {
+     "id": "P155",
+     "unit": "I.35",
+     "passage": "without the most pressing reason, or an absolute necessity",
+     "vattel": "without the most pressing reasons, or an absolute necessity",
+     "label": "verbatim",
+     "confidence": 0.75,
+     "named": false,
+     "document": "Massachusetts House of Representatives (drafted by Samuel Adams), letter to a peer ('your Lordship'), early 1768, in Writings of Samuel Adams vol. 1",
+     "quoted_by": "",
+     "reason": "Same clause on great changes being delicate and made only for pressing reasons or absolute necessity, in the same context of constitutional change."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P144",
+     "unit": "Pref.8",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P145",
+     "unit": "I.128",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P146",
+     "unit": "III.106",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P147",
+     "unit": "III.29",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P148",
+     "unit": "II.43",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P149",
+     "unit": "I.45",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P150",
+     "unit": "Pref.8",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P151",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P152",
+     "unit": "I.128",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P153",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    }
+   ]
+  },
+  "batch13": {
+   "matches": [
+    {
+     "id": "P156",
+     "unit": "I.36",
+     "passage": "the nation will judge and determine in conformity to \nits political constitution",
+     "vattel": "it belongs to the nation alone to judge and determine them conformably to its political constitution",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "named": false,
+     "document": "Massachusetts House of Representatives (drafted by Samuel Adams), letter to a peer ('your Lordship'), early 1768, in Writings of Samuel Adams vol. 1",
+     "quoted_by": "",
+     "reason": "Adams restates Vattel's rule that disputes on public administration are for the nation to judge and determine conformably to its political constitution."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P157",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P158",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P159",
+     "unit": "III.49",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P160",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P161",
+     "unit": "II.343",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P162",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P163",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P164",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P165",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P166",
+     "unit": "II.300",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P167",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    }
+   ]
+  },
+  "batch14": {
+   "matches": [
+    {
+     "id": "P177",
+     "unit": "I.24",
+     "passage": "It is an admirable institution, by which every \ncitizen may be plac'd in a situation, that enables him \nto contribute to the great end of society, the dis \ntributing justice ; and it every where diffuses a spirit \nof true patriotism, which is zealously employed for \nthe publick welfare.",
+     "vattel": "An admirable constitution there places every citizen in a situation that enables him to contribute to this great end, and every-where diffuses that spirit of genuine patriotism which zealously exerts itself for the public welfare",
+     "label": "quotation",
+     "confidence": 0.85,
+     "named": false,
+     "document": "Samuel Adams, article signed 'Vindex', Boston Gazette, 1771 (reply to Philanthrop), in Writings of Samuel Adams vol. 2",
+     "quoted_by": "",
+     "reason": "Quoted sentence (jury trial) adapts Vattel's praise of the English constitution that enables every citizen to contribute to the great end and diffuses genuine patriotism, with only a few words changed."
+    },
+    {
+     "id": "P178",
+     "unit": "I.30",
+     "passage": "The constitution and its \nlaws are the basis of the public tranquility — the firm \nest support of the public authority, and the pledge of \nthe liberty of the citizens : But the constitution is a \nvain Phantom, and the best laws are useless, if they \nare not religiously observed. The nation ought then \nto watch, and the true patriot will watch very atten \ntively, in order to render them equally respected, by \nthose who govern, and the people destin'd to obey \" — \nTo violate the laws of the state is a capital crime ; \nand if those guilty of it, are invested with authority, \nthey add to this crime, a perfidious abuse of the \npower with which they are entrusted : \" The nation \ntherefore, the people, ought to suppress those abuses \nwith their utmost care & vigilance",
+     "vattel": "The constitution and laws of a state are the basis of the public tranquillity, the firmest support of political authority, and a security for the liberty of the citizens. But this constitution is a vain <10> phantom, and the best laws are useless, if they be not religiously observed: the nation ought then to watch very attentively, in order to render them equally respected by those who govern, and by the people destined to obey. To attack the constitution of the state, and to violate its laws, is a capital crime against society; and if those guilty of it are invested with authority, they add to this crime a perfidious abuse of the power with which they are intrusted. The nation ought constantly to repress them with its utmost vigour and vigilance",
+     "label": "quotation",
+     "confidence": 0.95,
+     "named": false,
+     "document": "Samuel Adams, article signed 'Vindex', Boston Gazette, 1771 (reply to Philanthrop), in Writings of Samuel Adams vol. 2",
+     "quoted_by": "",
+     "reason": "Adams quotes (in quotation marks, as 'a very celebrated author') Vattel's paragraph on the constitution and laws as basis of tranquillity, the nation's duty to watch and suppress abuses."
+    },
+    {
+     "id": "P179",
+     "unit": "I.30",
+     "passage": "It is against silent & slow attacks that a nation ought \nto be particularly on its guard.",
+     "vattel": "it is against silent and gradual attacks that a nation ought to be particularly on its guard",
+     "label": "quotation",
+     "confidence": 0.85,
+     "named": false,
+     "document": "Samuel Adams, article signed 'Vindex', Boston Gazette, 1771 (reply to Philanthrop), in Writings of Samuel Adams vol. 2",
+     "quoted_by": "",
+     "reason": "Quoted maxim on silent attacks on the constitution matches Vattel I.30; the earlier phrase on laws and constitution being openly and boldly opposed also echoes it."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P168",
+     "unit": "I.45",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P169",
+     "unit": "II.111",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P170",
+     "unit": "II.76",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P171",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P172",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P173",
+     "unit": "II.333",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P174",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P175",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P176",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P178",
+     "unit": "I.160",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    },
+    {
+     "id": "P179",
+     "unit": "I.128",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel."
+    }
+   ]
+  },
+  "batch15": {
+   "matches": [
+    {
+     "id": "P182",
+     "unit": "I.34",
+     "passage": "\" By the \nfundamental laws of England, the two houses of par \nliament in concert with the King, exercise the legisla \ntive power : But if the two houses should be so \ninfatuated, as to resolve to suppress their powers, and \n\n\ni77i] SAMUEL ADAMS. 255 \n\ninvest the King with the full and absolute government, \ncertainly the nation would not suffer it.\"",
+     "vattel": "By the fundamental laws of England, the two houses of parliament, in concert with the king, exercise the legislative power: but if the two houses should resolve to suppress themselves, and to invest the king with full and absolute authority, certainly the nation would",
+     "label": "quotation",
+     "confidence": 0.9,
+     "named": false,
+     "document": "Samuel Adams (attrib.), Boston Gazette essay, 1771 (Writings vol. 2 pp. 254-255)",
+     "quoted_by": "",
+     "reason": "Quotation marks give Vattel I.34 on the two houses of parliament and the King, attributed only to \"a celebrated writer who thoroughly understood his subject\"."
+    },
+    {
+     "id": "P183",
+     "unit": "I.220",
+     "passage": "Every man being born free, says another distin \nguished writer, the son of a citizen, arrived at the \nyears of discretion, may examine whether it be con \nvenient for him to join in the society for which he was \ndestined by birth*. If he finds that it will be no ad \nvantage for him to remain in it, he is at liberty to \nleave it, preserving as much as his new engagements \nwill allow him, the love and gratitude he owes it.",
+     "vattel": "But every man is born free; and the son of a citizen, when come to the years of discretion, may examine whether it be convenient for him to join the society for which he was destined by his birth. If he does not find it advantageous to remain in it, he is at liberty to quit it on making it a compensation for what it has done in his favour,* and preserving, as far as his new engagements will allow him, the sentiments of love and gratitude he owes it.",
+     "label": "quotation",
+     "confidence": 0.93,
+     "named": true,
+     "document": "Samuel Adams, Boston Gazette essay on the colonists and the historian (answer to Hutchinson's History), 1771",
+     "quoted_by": "",
+     "reason": "Near-verbatim rendering of Vattel I.220, with footnote \"Mr. Vattel, law of nature and nations\"."
+    },
+    {
+     "id": "P183",
+     "unit": "I.223",
+     "passage": "There are cases in which a citizen \nhas an absolute right to renounce his country, and \nabandon it for ever",
+     "vattel": "There are cases in which a citizen has an absolute right to renounce his country, and abandon it entirely",
+     "label": "quotation",
+     "confidence": 0.93,
+     "named": true,
+     "document": "Samuel Adams, Boston Gazette essay on the colonists and the historian, 1771",
+     "quoted_by": "",
+     "reason": "Quoted in marks as \"He further says\" after the Vattel footnote; the religion case that follows is Vattel I.223 point 3."
+    },
+    {
+     "id": "P186",
+     "unit": "III.290",
+     "passage": "Tyrants alone, \nsays the great Vatei, will treat as seditious, those \nbrave and resolute citizens, who exhort the people to \npreserve themselves from oppression, in vindication \nof their rights and privileges : A good prince, says \n\nhe, will commend such virtuoiis patriots \" and \n\nwill \" mistrust the selfish suggestions of a minister, \nwho represents to him as rebels, all those citizens who \ndo not hold out their hands to chains, who refuse \ntamely to suffer the strokes of arbitrary power.\"",
+     "vattel": "tyrants alone will treat, as seditious, those brave and resolute citizens who exhort the people to preserve themselves from oppression, and to vindicate their rights and privileges: a good prince will commend such virtuous patriots, provided their zeal be tempered with moderation and prudence. If he has justice and his duty at heart,—if he aspires to that immortal and unsullied glory of being the father of his people, let him mistrust the selfish suggestions of that minister who represents to him as rebels all those citizens who do not stretch out their necks to the yoke of slavery,—who refuse tamely to crouch under the rod of arbitrary power.",
+     "label": "quotation",
+     "confidence": 0.93,
+     "named": true,
+     "document": "Samuel Adams (\"Candidus\"), Boston Gazette reply to \"Chronus\", 1772 (Writings vol. 2 pp. 322-323)",
+     "quoted_by": "",
+     "reason": "Quotes Vattel III.290 in marks as \"the great Vatei\" on tyrants calling vigilant citizens seditious and the good prince mistrusting the minister."
+    },
+    {
+     "id": "P187",
+     "unit": "I.34",
+     "passage": "The \nfundamental laws,\" says Vatel, \" are excepted from \ntheir (legislators) commission,\" \" nothing leads us to \nthink that the nation was willing to submit the cons ft326 THE WRITINGS OF [1772 \n\ntution itself to their pleasure.\" \" They derive their \nauthority from the constitution, how then can they \nchange it without destroying the foundation of their \nown authority ? \"",
+     "vattel": "the fundamental laws are excepted from their commission. It is visible that the society only intended to make provision for having the state constantly furnished with laws suited to particular conjunctures, and, for that purpose, gave the legislature the power of abrogating the ancient civil and political laws that were not fundamental, and of making new ones: but nothing leads us to think that it meant to submit the constitution itself to their will. In short, it is from the constitution that those legislators derive their power: how then can they change it, without destroying the foundation of their own authority?",
+     "label": "quotation",
+     "confidence": 0.95,
+     "named": true,
+     "document": "Samuel Adams (\"Candidus\"), Boston Gazette reply to \"Chronus\", 1772 (Writings vol. 2 pp. 324-326)",
+     "quoted_by": "",
+     "reason": "Names \"Vatel\" and quotes I.34 on the legislature and fundamental laws in marks, then quotes its parliament-and-King example."
+    },
+    {
+     "id": "P191",
+     "unit": "Prelim.1",
+     "passage": "A Common Wealth or state is a body politick or \ncivil society of men, united together to promote their \nmutual safety and prosperity, by means of their \nunion.*",
+     "vattel": "societies of men united together for the purpose of promoting their mutual safety and advantage by the joint efforts of their combined strength",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "named": true,
+     "document": "Samuel Adams, Rights of the Colonists (Boston Committee of Correspondence report), Nov. 1772",
+     "quoted_by": "",
+     "reason": "Definition of a state follows Vattel Prelim.1 closely, with note \"See Lock and Vatel\"."
+    },
+    {
+     "id": "P191",
+     "unit": "I.1",
+     "passage": "A Common Wealth or state is a body politick or \ncivil society of men, united together to promote their \nmutual safety and prosperity, by means of their \nunion.*",
+     "vattel": "a body politic, or a society of men united together for the purpose of promoting their mutual safety and advantage by their combined strength",
+     "label": "close paraphrase",
+     "confidence": 0.65,
+     "named": true,
+     "document": "Samuel Adams, Rights of the Colonists (Boston Committee of Correspondence report), Nov. 1772",
+     "quoted_by": "",
+     "reason": "Same definition as Prelim.1, repeated at the head of I.1; note cites Locke and Vatel."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P180",
+     "unit": "I.34",
+     "reason": "Passage on parliament and tacit consent shows no Vattel wording; the I.34 words appear in later documents."
+    },
+    {
+     "id": "P181",
+     "unit": "I.128",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P184",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P185",
+     "unit": "III.232",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P188",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P189",
+     "unit": "III.187",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P190",
+     "unit": "I.138",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    }
+   ]
+  },
+  "batch16": {
+   "matches": [
+    {
+     "id": "P193",
+     "unit": "II.283",
+     "passage": "An agreement ought to be in \nterpreted \" in such a manner as that it may have its \neffect.\"",
+     "vattel": "in such a manner, as that it may have its effect",
+     "label": "quotation",
+     "confidence": 0.85,
+     "named": false,
+     "document": "Massachusetts House of Representatives, answer to the Governor's speech, Jan.-Feb. 1773 (Writings vol. 2 p. 421)",
+     "quoted_by": "",
+     "reason": "Quotes Vattel II.283 on interpreting an agreement so it has effect, from \"the celebrated author, whom your Excellency has quoted\" (unnamed here)."
+    },
+    {
+     "id": "P194",
+     "unit": "I.34",
+     "passage": "does not extend so far \nas the fundamentals of the constitution. They ought \nto consider the fundamental laws as sacred, if the \nnation has not in very express terms, given them the \npower to change them. For the constitution of the \nstate ought to be fixed ; and since that was first \nestablished by the nation, which afterwards trusted \ncertain persons with the Legislative power, the funda \nmental laws are excepted from their commission.\"",
+     "vattel": "does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them. For the constitution of the state ought to possess stability: and since that was first established by the nation, which afterwards intrusted certain persons with the legislative power, the fundamental laws are excepted from their commission",
+     "label": "quotation",
+     "confidence": 0.95,
+     "named": false,
+     "document": "Massachusetts House of Representatives, answer to the Governor's speech, Jan.-Feb. 1773 (Writings vol. 2 pp. 421-422)",
+     "quoted_by": "",
+     "reason": "Long quotation of Vattel I.34 on legislators and fundamental laws, attributed to \"the same author who is quoted by your Excellency\"."
+    },
+    {
+     "id": "P198",
+     "unit": "I.34",
+     "passage": "the reasoning of a learned writer on the laws \nof nature and nations, quoted by us, on this occasion, \nto shew that the authority of the Legislature does not \nextend so far as the fundamentals of the constitution. \nWe are unhappy in not having your remarks upon the \nreasoning of that great man ; and, until it is confuted, \nwe shall remain of the opinion, that the fundamentals \nof the constitution being excepted from the commis \nsion of the Legislators, none of the acts or doings of \nthe General Assembly, however deliberate and solemn, \ncould avail to change them, if the people have not, in \nvery express terms, given them the power to do it",
+     "vattel": "does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "named": false,
+     "document": "Massachusetts House of Representatives, reply to the Governor, Feb. 1773 (Writings vol. 2 pp. 451-452)",
+     "quoted_by": "",
+     "reason": "Restates Vattel I.34 (fundamentals excepted from the legislators' commission unless the people expressly give power) and points back to the earlier quotation from \"a learned writer on the laws of nature and nations\"."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P192",
+     "unit": "I.61",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P195",
+     "unit": "II.286",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P196",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P197",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P199",
+     "unit": "I.34",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P200",
+     "unit": "II.178",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P201",
+     "unit": "I.243",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P202",
+     "unit": "I.128",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P203",
+     "unit": "II.350",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    }
+   ]
+  },
+  "batch17": {
+   "matches": [
+    {
+     "id": "P208",
+     "unit": "I.24",
+     "passage": "their present \nhappy constitution hath cost them seas of blood ; \nbut they have not purchased it too dear.”",
+     "vattel": "it has cost rivers of blood; but they have not purchased it too dear",
+     "label": "quotation",
+     "confidence": 0.93,
+     "named": true,
+     "document": "James Thacher (attrib.), The Sentiments of a British American, Boston, 1764",
+     "quoted_by": "",
+     "reason": "Quotation marks, \"It is observed by Vattel\", render I.24 on the English constitution with \"seas\" for \"rivers\" of blood."
+    }
+   ],
+   "no_match": [
+    {
+     "id": "P204",
+     "unit": "I.128",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P205",
+     "unit": "III.32",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P206",
+     "unit": "I.154",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P207",
+     "unit": "III.113",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    },
+    {
+     "id": "P209",
+     "unit": "IV.123",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with this section."
+    }
+   ]
+  }
+ },
+ "probe": {
+  "probe0": {
+   "matches": [],
+   "no_match": [
+    {
+     "id": "Q000",
+     "unit": "III.152",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q001",
+     "unit": "III.47",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q002",
+     "unit": "IV.100",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q003",
+     "unit": "II.111",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q004",
+     "unit": "I.205",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q005",
+     "unit": "I.45",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q006",
+     "unit": "II.122",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q007",
+     "unit": "IV.123",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q008",
+     "unit": "I.19",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q009",
+     "unit": "III.147",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q010",
+     "unit": "I.125",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q011",
+     "unit": "IV.122",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q012",
+     "unit": "Prelim.17",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q013",
+     "unit": "I.58",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q014",
+     "unit": "I.18",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q015",
+     "unit": "II.289",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q016",
+     "unit": "III.17",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q017",
+     "unit": "II.16",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    }
+   ]
+  },
+  "probe1": {
+   "matches": [],
+   "no_match": [
+    {
+     "id": "Q018",
+     "unit": "Prelim.27",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q019",
+     "unit": "I.228",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q020",
+     "unit": "III.281",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q021",
+     "unit": "II.333",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q022",
+     "unit": "Prelim.25",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q023",
+     "unit": "III.232",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q024",
+     "unit": "I.287",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q025",
+     "unit": "II.226",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q026",
+     "unit": "III.287",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q027",
+     "unit": "II.327",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q028",
+     "unit": "II.19",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q029",
+     "unit": "II.19",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q030",
+     "unit": "I.271",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q031",
+     "unit": "II.199",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q032",
+     "unit": "II.277",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q033",
+     "unit": "III.29",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q034",
+     "unit": "IV.123",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    },
+    {
+     "id": "Q035",
+     "unit": "II.216",
+     "reason": "Shared topic or vocabulary only; no shared wording or argument with Vattel at this point."
+    }
+   ]
+  }
+ },
+ "verify": {
+  "v0": {
+   "items": [
+    {
+     "key": "V00",
+     "id": "P001",
+     "unit": "I.2",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "document": "Richard Bland, An Inquiry into the Rights of the British Colonies (Williamsburg, 1766)",
+     "page": "10 (head [9] precedes; [10] lost in OCR)",
+     "own_or_quoted": "own text of Bland; footnote at the preceding sentence cites \"Fattel's Law of Nature\" with Locke and Wollaston",
+     "french": "On conçoit que par l'acte d'association civile ou politique , chaque citoyen se soumet à l'autorité du corps entier",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 255",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. IV § 2",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. II § 5",
+       "label": "commonplace"
+      }
+     ],
+     "relation": "wolff-loose",
+     "note": "Bland restates Vattel I.2 (\"Member\" for \"citizen\", \"that Body\" for \"the entire body\") in a social-contract argument: those excluded from the franchise remain bound by implicit consent but keep a natural right to emigrate. The first judge's reading is right."
+    },
+    {
+     "key": "V01",
+     "id": "P002",
+     "unit": "III.290",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "document": "Richard Bland, An Inquiry into the Rights of the British Colonies (Williamsburg, 1766)",
+     "page": "27 (between heads [26] and [28])",
+     "own_or_quoted": "own text of Bland",
+     "french": "ils peuvent porter leurs plaintes au pied du trône. Tout citoyen doit même souffrir patiemment des maux supportables, plutôt que de troubler la paix publique. Il n'y a qu'un déni de justice de la part du souverain , ou des délais affectés , qui puissent excuser l'emportement d'un peuple poussé à bout, le justifier même , si les maux sont intolérables , l'oppression grande & manifeste.",
+     "source": [
+      {
+       "text": "wolff-institutiones-1750",
+       "locus": "§ 1080",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 1010",
+       "label": "shared argument"
+      },
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 1012",
+       "label": "shared argument"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. VIII § 5",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff-loose",
+     "note": "Bland follows III.290 through a whole sentence (\"great and manifest Oppressions\", complaints at the foot of the throne, patient suffering rather than disturbing the peace, excused only by a denial of justice) to set the colonists' remedy for loss of civil rights; the denial-of-justice exception is Vattel's, since the Wolff rows allow petition only. The judge's confidence was too low."
+    },
+    {
+     "key": "V02",
+     "id": "P004",
+     "unit": "Prelim.1",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.65,
+     "document": "Boston town meeting, \"The State of the Rights of the Colonists\" (report of the committee of correspondence, drafted by Samuel Adams), section 3, \"The Rights of the Colonists as Subjects\", in The Votes and Proceedings of the Freeholders and Other Inhabitants of the Town of Boston (Boston, 1772); adopted 20 Nov. 1772",
+     "page": "6 (OCR head reads \"61\", probably [6]; OCR very poor)",
+     "own_or_quoted": "own text of the Boston committee; footnote \"See Locke and Vatel\"",
+     "french": "LES NATIONS ou états, sont des corps politiques, des sociétés d'hommes unis ensemble pour procurer leur salut & leur avantage , à forces réunies.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 9",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 2",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "§ 108",
+       "label": "commonplace"
+      },
+      {
+       "text": "burlamaqui-droit-politique-1751",
+       "locus": "Part. I ch. ? § 9",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "burlamaqui-1747",
+       "locus": "Liv. II ch. VI § 6",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "vattel-questions-1762",
+       "locus": "",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. II § 5",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The committee opens the colonists' rights as subjects with Vattel's definition of the state (\"A Commonwealth or State is a Body politick or civil Society of Men, united together to promote their mutual Safety and Prosperity, by Means of their Union\"), footnoted to Locke and Vattel. This is the same reuse as V03 (I.1 repeats the definition), so count it once; the I.1 form is slightly closer."
+    },
+    {
+     "key": "V03",
+     "id": "P004",
+     "unit": "I.1",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "document": "Boston town meeting, \"The State of the Rights of the Colonists\" (report of the committee of correspondence, drafted by Samuel Adams), section 3, \"The Rights of the Colonists as Subjects\", in The Votes and Proceedings of the Freeholders and Other Inhabitants of the Town of Boston (Boston, 1772); adopted 20 Nov. 1772",
+     "page": "6 (OCR head reads \"61\", probably [6]; OCR very poor)",
+     "own_or_quoted": "own text of the Boston committee; footnote \"See Locke and Vatel\"",
+     "french": "UNE nation , un état est, comme nous l'avons dit dès l'entrée de cet ouvrage, un corps politique, ou une société d'hommes unis ensemble pour procurer leur avantage & leur sûreté , à forces réunies.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 9",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "formey-principes-1758",
+       "locus": "Liv. VIII ch. I § VIII",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "burlamaqui-droit-politique-1751",
+       "locus": "§ IX",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "vattel-questions-1762",
+       "locus": "",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. VI § 7",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff-loose",
+     "note": "Same Boston sentence as V02. Its form, \"X or State is a Body politick or civil Society of Men\", follows I.1 (\"a nation or a state is ... a body politic, or a society of men\") a little more closely than Prelim.1, so this is the better unit for the one reuse."
+    },
+    {
+     "key": "V04",
+     "id": "P012",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "verbatim",
+     "confidence": 0.85,
+     "document": "Massachusetts House of Representatives, letter to the Earl of Shelburne, Secretary of State, 15 Jan. 1768, in Massachusetts State Papers (Bradford, Speeches of the Governors of Massachusetts, 1818)",
+     "page": "140",
+     "own_or_quoted": "own text of the House; the words are given as \"the opinion of the greatest writers on the law of nature and nations\", without quotation marks or Vattel's name",
+     "french": "Mais si le parlement délibéroit de faire un changement si considérable , & que la nation entiere gardât volontairement le silence , elle seroit censée approuver le fait de ses réprésentans.",
+     "source": "none",
+     "relation": "own",
+     "note": "The House uses Vattel's point that a nation's silence while Parliament changes the constitution counts as approval to justify its protest against the Townshend duties. The judge left the letter as \"a British peer\" (it is Shelburne) and missed that p. 138 of the same letter (\"In all free states, the constitution is fixed ... it cannot change the constitution without destroying its own foundation\") also paraphrases I.34."
+    },
+    {
+     "key": "V05",
+     "id": "P024",
+     "unit": "I.210",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Governor Thomas Hutchinson, speech to the two Houses, 6 Jan. 1773, in Massachusetts State Papers (Bradford, 1818)",
+     "page": "337",
+     "own_or_quoted": "own text of the Governor, quoting Vattel in marks as \"the most celebrated writers upon the law of nations\"",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Hutchinson quotes I.210 to argue that the colony, as a settlement of the nation, has always been subject to Parliament's supreme authority. He drops \"a colony\" after \"settles\"; his \"or mother country\" is in the English translation only (the French has just \"l'établissement principal\"), so he used the English Vattel."
+    },
+    {
+     "key": "V06",
+     "id": "P025",
+     "unit": "II.283",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.85,
+     "document": "Massachusetts House of Representatives, answer to the Governor's speech of 6 Jan., 26 Jan. 1773, in Massachusetts State Papers (Bradford, 1818)",
+     "page": "356",
+     "own_or_quoted": "own text of the House, quoting in marks \"the celebrated author, whom your Excellency has quoted\" (Vattel)",
+     "french": "Il faut l'interpréter de maniere qu'il puisse avoir son effet",
+     "source": "none",
+     "relation": "own",
+     "note": "Turning Hutchinson's own authority against him, the House quotes Vattel twice (first, apparently II.265, that neither party may interpret at pleasure, then this II.283 rule) to argue that reading the charter clause as reserving power to Parliament would leave the General Court's grant without effect. No row covers this sentence, though the sentences just before it in II.283 come from Wolff, Institutiones § 804."
+    },
+    {
+     "key": "V07",
+     "id": "P026",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Massachusetts House of Representatives, answer to the Governor's speech of 6 Jan., 26 Jan. 1773, in Massachusetts State Papers (Bradford, 1818)",
+     "page": "362",
+     "own_or_quoted": "own text of the House, quoting in marks \"the same author who is quoted by your Excellency\" (Vattel)",
+     "french": "l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission.",
+     "source": [
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "formey-principes-1758",
+       "locus": "Principes, droit public (lois fondamentales)",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The House quotes I.34 (in the earlier English, \"ought to be fixed\" for the 1797 \"possess stability\") and applies it to the charter as the province's fundamental law: acts of the Assembly referring to acts of Parliament cannot concede Parliament's supremacy. The judge's reading is right."
+    },
+    {
+     "key": "V08",
+     "id": "P028",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "document": "Massachusetts House of Representatives, answer to the Governor's speech of 16 Feb., 2 Mar. 1773, in Massachusetts State Papers (Bradford, 1818)",
+     "page": "395",
+     "own_or_quoted": "own text of the House, restating \"a learned writer on the laws of nature and nations, quoted by us\" (Vattel, unnamed)",
+     "french": "l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission.",
+     "source": [
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "formey-principes-1758",
+       "locus": "Principes, droit public (lois fondamentales)",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The House points out that Hutchinson never answered \"that great man\" and restates I.34 against him: the fundamentals are excepted from the legislators' commission, so no act of the General Assembly could change them. The judge misdated the document: this is the House's second answer, of 2 Mar. 1773, not the answer of 26 Jan."
+    },
+    {
+     "key": "V09",
+     "id": "P045",
+     "unit": "II.297",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.97,
+     "document": "John Adams, Diary, Friday 27 Dec. 1765, in The Works of John Adams, ed. C. F. Adams, vol. 2",
+     "page": "166",
+     "own_or_quoted": "own diary entry of Adams, copying Vattel in marks with references (\"Vattel, p. 230; book 2, ch. 17, s. 297\"); the bracketed footnote is a later insertion",
+     "french": "Dans les cas imprévus , c'est - à - dire , lorsque l'état des choses se trouve tel , que l'auteur d'une disposition ne l'a point prévu , & n'a pu y penser , il faut suivre plutôt son intention que ses paroles , & interpréter l'acte comme il l'interpréteroit lui - même s'il étoit présent , ou conformément à ce qu'il eut fait , s'il eut prévû les choses que l'on connoît présentement. Cette regle est d'un grand usage pour les juger",
+     "source": [
+      {
+       "text": "wolff-institutiones-1750",
+       "locus": "§ 816",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "wolff-institutiones-1750",
+       "locus": "§ 810",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. V ch. XII § 21",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. V ch. XII § 19, n. 2",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. V ch. XII § 21",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "grotius-barbeyrac-1724",
+       "locus": "Liv. II ch. XVI § 26",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "grotius-barbeyrac-1724",
+       "locus": "Liv. II ch. XVI § 22, n. 1",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff-loose",
+     "note": "During the Stamp Act closure of the courts, Adams copies three interpretation rules (II.297, II.292, II.282) with page references to the English translation, to argue that the courts may proceed without stamps. His wording (\"author of the disposition\", \"the act\", \"had he been present\") is the earlier translation's and stays closer to the French than the 1797 text. The judge's reading is right."
+    }
+   ]
+  },
+  "v1": {
+   "items": [
+    {
+     "key": "V10",
+     "id": "P045",
+     "unit": "II.292",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "John Adams, Diary, Friday 27 December 1765, extracts from Vattel made while the Stamp Act kept the courts shut (Works of John Adams, vol. 2)",
+     "page": "166",
+     "own_or_quoted": "Adams's own diary entry, quoting Vattel in quotation marks with references to the 1760 English translation (p. 230, p. 222); the bracketed footnote is Adams's later account inserted by the editor",
+     "french": "s'il se présente un cas auquel on ne puisse absolument point appliquer la raison bien connue d'une loi, ou d'une promesse, ce cas doit être excepté",
+     "source": [
+      {
+       "text": "wolff-institutiones-1750",
+       "locus": "§ 813",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. V ch. XII § 19",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Adams copies three of Vattel's rules of interpretation (II.297, II.292, II.282) in the 1760 translation, whose 'If a case be presented in which one cannot absolutely apply' follows the French more closely than the 1797 text, as ammunition for having the courts proceed without stamps by following the lawgiver's reason over the letter. The first judge's reading is right."
+    },
+    {
+     "key": "V11",
+     "id": "P045",
+     "unit": "II.282",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.93,
+     "document": "John Adams, Diary, Friday 27 December 1765, extracts from Vattel made while the Stamp Act kept the courts shut (Works of John Adams, vol. 2)",
+     "page": "166",
+     "own_or_quoted": "Adams's own diary entry: the rule is inside his quotation marks with 'Page 222, book 2, ch. 17, s. 282' (1760 translation); the closing sentence 'Every impossibility, physical and moral, is an absurdity' is Adams's own gloss",
+     "french": "Toute interprétation qui mene à l'absurde doit être rejettée",
+     "source": [
+      {
+       "text": "wolff-institutiones-1750",
+       "locus": "§ 804",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Adams quotes II.282's rule against absurd interpretation and adds, outside the marks, his own condensation of Vattel's next sentence ('On appelle absurde, non seulement ce qui est impossible physiquement, mais encore ce qui l'est moralement'), presumably aimed at the impossibility of obtaining stamps. The first judge's reading is right."
+    },
+    {
+     "key": "V12",
+     "id": "P065",
+     "unit": "I.210",
+     "verdict": "relabel",
+     "label": "verbatim",
+     "confidence": 0.9,
+     "document": "John Adams, Novanglus No. VII, 'To the Inhabitants of the Colony of Massachusetts Bay', Boston Gazette, 6 March 1775, answering Massachusettensis of 9 January 1775 (Works of John Adams, vol. 4)",
+     "page": "102",
+     "own_or_quoted": "Adams quoting Massachusettensis (Daniel Leonard, letter of 9 January 1775) in quotation marks; Leonard gives Vattel's words without naming him",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Adams quotes Leonard's unnamed use of Vattel I.210 ('The best writers upon the law of nations tell us'), asks to be introduced to these writers, and argues a colony becomes part of the state only by contract or new law; the marks belong to Adams's quoting of Leonard and Vattel is never named, so verbatim rather than quotation, and the date is 6 March 1775, not February. Leonard drops 'a colony' and writes 'equal' for 'equally'; 'or mother country' comes from the English translation and is not in the French."
+    },
+    {
+     "key": "V13",
+     "id": "P066",
+     "unit": "I.210",
+     "verdict": "relabel",
+     "label": "verbatim",
+     "confidence": 0.9,
+     "document": "Editor's footnote to John Adams, Novanglus No. VII, 'To the Inhabitants of the Colony of Massachusetts Bay', Boston Gazette, 6 March 1775, answering Massachusettensis of 9 January 1775 (Works of John Adams, vol. 4), reprinting the paragraph of Massachusettensis (Daniel Leonard), 9 January 1775",
+     "page": "105",
+     "own_or_quoted": "editor's note (C. F. Adams) quoting Massachusettensis; Leonard's sentence gives Vattel's words unnamed",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The editor prints Leonard's paragraph as the source of the 'position of Massachusettensis' that Adams denies in the text above; Leonard's sentence is Vattel I.210 almost word for word, but Vattel is unnamed and the marks are the editor's quoting of Leonard, so verbatim rather than quotation. The stretch is an editor's note, not Adams's own reply as the judge implies."
+    },
+    {
+     "key": "V14",
+     "id": "P121",
+     "unit": "I.210",
+     "verdict": "relabel",
+     "label": "verbatim",
+     "confidence": 0.9,
+     "document": "John Adams, Novanglus [No. VII], 'To the Inhabitants of the Colony of Massachusetts Bay', 6 March 1775, answering Massachusettensis of 9 January 1775; in Novanglus and Massachusettensis (Boston, 1819), Project Gutenberg text",
+     "page": "",
+     "own_or_quoted": "Adams quoting Massachusettensis (Daniel Leonard, 9 January 1775) in quotation marks; Leonard gives Vattel's words unnamed",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The 1819 text of the same passage as V12: Adams quotes Leonard's unnamed Vattel and complains 'We are not told who these \"best writers\" are', so the label is verbatim, not quotation. The judge (following the 1819 title page) gives Massachusettensis to Jonathan Sewall; the author was Daniel Leonard."
+    },
+    {
+     "key": "V15",
+     "id": "P122",
+     "unit": "I.210",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "document": "John Adams, Novanglus [No. VII], 'To the Inhabitants of the Colony of Massachusetts Bay', 6 March 1775, answering Massachusettensis of 9 January 1775; in Novanglus and Massachusettensis (Boston, 1819), Project Gutenberg text",
+     "page": "",
+     "own_or_quoted": "Adams's own text restating the position of Massachusettensis (no quotation marks in this edition; Works vol. 4, p. 105 prints it in marks)",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Adams condenses Leonard's sentence to 'when a nation takes possession of a distant territory, that becomes a part of the state equally with its ancient possessions' in order to deny that free nations or the best writers warrant it; through Leonard it renders the whole first sentence of I.210, not only its last clause as the judge's Vattel span suggests. Massachusettensis was Daniel Leonard, not Sewall."
+    },
+    {
+     "key": "V16",
+     "id": "P127",
+     "unit": "I.210",
+     "verdict": "keep",
+     "label": "verbatim",
+     "confidence": 0.95,
+     "document": "Daniel Leonard ('Massachusettensis'), letter 'To the Inhabitants of the Province of Massachusetts Bay', 9 January 1775 (Massachusetts Gazette and Boston Post-Boy), in Novanglus and Massachusettensis (Boston, 1819), Project Gutenberg text",
+     "page": "",
+     "own_or_quoted": "Leonard's own text",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Leonard sets Vattel I.210, unnamed, as what 'the best writers upon the law of nations tell us', between 'The colonies are a part of the British empire' and the imperium in imperio argument, to conclude that the colonies are subject to Parliament. Author is Daniel Leonard; the judge's Jonathan Sewall follows the 1819 title page."
+    },
+    {
+     "key": "V17",
+     "id": "P135",
+     "unit": "I.210",
+     "verdict": "keep",
+     "label": "verbatim",
+     "confidence": 0.85,
+     "document": "'Substance of a Memorial presented the House, in pursuance of the above Instructions; and by them voted to be transmitted to Jasper Mauduit, Esq; Agent for this Province', Massachusetts House of Representatives, 1764, 'drawn up by one of the House' (presumably Otis); appendix to James Otis, The Rights of the British Colonies Asserted and Proved (Boston, 1764)",
+     "page": "106",
+     "own_or_quoted": "the memorial's own text (a House paper drawn up by one member), printed by Otis",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The memorial rebuilds Vattel's sentence: the distant country becomes 'a desert, uncultivated and uninhabited country, or purchases of Savages', and it is the colonists who 'naturally become part of the state with its ancient possessions' and so are 'intitled to all the essential rights of the mother country'; the authority invoked is 'the laws of nature and of nations', while Vattel is named in the memorial's footnote (V18)."
+    },
+    {
+     "key": "V18",
+     "id": "P136",
+     "unit": "I.210",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Footnote to the 'Substance of a Memorial presented the House, in pursuance of the above Instructions; and by them voted to be transmitted to Jasper Mauduit, Esq; Agent for this Province', Massachusetts House of Representatives, 1764, 'drawn up by one of the House' (presumably Otis); appendix to James Otis, The Rights of the British Colonies Asserted and Proved (Boston, 1764)",
+     "page": "110",
+     "own_or_quoted": "footnote of the memorial as printed by Otis (author's note, not a modern editor's), quoting Vattel in the 1760 translation and signed 'D' Vattel'",
+     "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions. Toutes les fois donc que les loix politiques ou les traités n'y apportent point de différence , tout ce qui se dit du territoire d'une nation doit s'entendre aussi de ses colonies.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 292",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VIII ch. XI § 6",
+       "label": "shared argument"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The note, which opens on p. 109 with I.34 (V19), runs on into the whole of I.210 ('antient', 'ought also to extend') and signs it 'D' Vattel', backing the memorial's claim that the colonies are part of the state and that acts against the fundamental principles of the constitution are void. The first judge's reading is right."
+    },
+    {
+     "key": "V19",
+     "id": "P136",
+     "unit": "I.34",
+     "verdict": "relabel",
+     "label": "quotation",
+     "confidence": 0.75,
+     "document": "Footnote to the 'Substance of a Memorial presented the House, in pursuance of the above Instructions; and by them voted to be transmitted to Jasper Mauduit, Esq; Agent for this Province', Massachusetts House of Representatives, 1764, 'drawn up by one of the House' (presumably Otis); appendix to James Otis, The Rights of the British Colonies Asserted and Proved (Boston, 1764)",
+     "page": "109",
+     "own_or_quoted": "footnote of the memorial as printed by Otis, quoting Vattel in the 1760 translation; the note continues with I.210 and is signed 'D' Vattel' on p. 110",
+     "french": "Il se présente encore ici une question très - importante. Il appartient essentiellement à la société de faire des loix sur la maniere dont elle prétend être gouvernée , & sur la conduite des citoyens : ce pouvoir s'appelle puissance législative. La nation peut en confier l'exercice au prince , ou à une assemblée , ou à cette assemblée & au prince conjointement ; lesquels sont dès lors en droit de faire des loix nouvelles & d'abroger les anciennes. On demande si leur pouvoir s'étend jusques sur les loix fondamentales , s'ils peuvent changer la constitution de l'état. Les principes que nous avons posés nous conduisent certainement à décider que l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission. On voit que la société a seulement voulu pourvoir à ce que l'état fut toujours muni de loix convenables aux conjonctures , & donner pour cet effet aux législateurs le pouvoir d'abroger les anciennes loix civiles & les loix politiques non fondamentales , & d'en faire de nouvelles ; mais rien ne conduit à penser qu'elle ait voulu soumettre sa constitution même à leur volonté.",
+     "source": [
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "formey-principes-1758",
+       "locus": "Principes, droit public (lois fondamentales)",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The note, apparently keyed to 'acts against the fundamental principles of the British constitution are void', reproduces I.34 from 'A very important question here presents itself' to 'submit the constitution itself to their pleasure', so that Parliament cannot change the constitution under which the colonists hold their rights. The judge called it unnamed, but the same note runs straight on into I.210 and is signed 'D' Vattel', so quotation fits better than verbatim."
+    }
+   ]
+  },
+  "v2": {
+   "items": [
+    {
+     "key": "V20",
+     "id": "P137",
+     "unit": "III.201",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.97,
+     "document": "James Otis, The Rights of the British Colonies Asserted and Proved (Boston 1764; London reprint for J. Almon, 1765), footnote to the passage on Parliament voting the King absolute",
+     "page": "111-112",
+     "own_or_quoted": "author's own footnote, quoting Vattel in marks and closing with the citation \"Mr. D' Vattel, B. 3. C. 10. sec. 201\"",
+     "french": "Quelques - uns ont osé avancer ce principe monstrueux , que le conquérant est maître absolu de sa conquête , qu'il peut en disposer comme de son propre, la traiter comme il lui plaît, suivant l'expression commune, traiter un état en pays conquis : & de-là ils tirent l'une des sources du gouvernement despotique. Laissons des gens qui traitent les hommes comme des effets commerçables , ou comme des bêtes de charge",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 870",
+       "label": "open disagreement"
+      },
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 871",
+       "label": "open disagreement"
+      },
+      {
+       "text": "grotius-barbeyrac-1724",
+       "locus": "Liv. III ch. VIII § 1",
+       "label": "open disagreement"
+      },
+      {
+       "text": "grotius-barbeyrac-1724",
+       "locus": "Droit de la guerre et de la paix, Liv. III ch. VIII § 1",
+       "label": "divergence (severity 3)"
+      }
+     ],
+     "relation": "against-wolff",
+     "note": "Otis quotes III.201 at length in the 1760 London translation, from \"But if the whole state be conquered\" through \"the state of war subsists\" plus the sentence on a sovereign who would enslave a conquered people, to deny that Parliament could vote the King absolute; the judge's match is only the middle of a longer quotation that runs from p. 111 to p. 112. The French covers the sentence where Vattel calls the conqueror's absolute mastery a monstrous principle, against Wolff, JG §§ 870-871 (and Grotius III.8.1)."
+    },
+    {
+     "key": "V21",
+     "id": "P154",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "verbatim",
+     "confidence": 0.8,
+     "document": "Massachusetts House of Representatives, letter to the Earl of Shelburne, January 15, 1768 (one of the January 1768 letters attributed to Samuel Adams; the editor says authorship is not conclusively determined), Writings of Samuel Adams vol. 1",
+     "page": "158",
+     "own_or_quoted": "the House's own text; the reuse is attributed only to 'the greatest writers on the law of nature and nations'",
+     "french": "Mais si le parlement délibéroit de faire un changement si considérable , & que la nation entiere gardât volontairement le silence , elle seroit censée approuver le fait de ses réprésentans",
+     "source": "none",
+     "relation": "own",
+     "note": "The House turns Vattel's rule that a nation voluntarily silent on a change of its constitution is deemed to approve it into a reason for protesting the Townshend duties, so that colonial silence is not read as consent. The letter is to Shelburne, dated January 15, 1768, not an unnamed peer."
+    },
+    {
+     "key": "V22",
+     "id": "P155",
+     "unit": "I.35",
+     "verdict": "relabel",
+     "label": "close paraphrase",
+     "confidence": 0.6,
+     "document": "Massachusetts House of Representatives, letter to Lord Camden, January 29, 1768 (attributed to Samuel Adams, authorship not conclusively determined), Writings of Samuel Adams vol. 1",
+     "page": "176",
+     "own_or_quoted": "the House's own text",
+     "french": "les grands changemens dans l'état étant des opérations délicates , pleines de dangers , & la fréquence des changemens nuisible en elle - même , un peuple doit être trèscirconspect sur cette matiere , & ne se porter jamais aux nouveautés , sans les raisons les plus pressantes , ou sans nécessité",
+     "source": [
+      {
+       "text": "burlamaqui-droit-politique-1751",
+       "locus": "Part. III ch. ? ",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. V § 9",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "other",
+     "note": "The House calls the Mutiny Act's requisition on the colonies 'a great change; and in its nature delicate', not to be made 'without the most pressing reason, or an absolute necessity', applying Vattel's caution on constitutional change to Parliament. Only a phrase is verbatim, so close paraphrase fits better than verbatim; the letter is the Camden letter, which reuses I.36 a page later."
+    },
+    {
+     "key": "V23",
+     "id": "P156",
+     "unit": "I.36",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.75,
+     "document": "Massachusetts House of Representatives, letter to Lord Camden, January 29, 1768 (attributed to Samuel Adams, authorship not conclusively determined), Writings of Samuel Adams vol. 1",
+     "page": "177",
+     "own_or_quoted": "the House's own text, closing paragraph of the letter",
+     "french": "s'il s'éleve dans l'état des contestations sur les loix fondamentales , sur l'administration publique , sur les droits des différentes puissances qui y ont part , il appartient uniquement à la nation d'en juger & de les terminer conformément à sa constitution politique",
+     "source": [
+      {
+       "text": "vattel-questions-1762",
+       "locus": "Sur le § 821 (loix fondamentales)",
+       "label": "shared argument"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. VII § 6, n. 1",
+       "label": "shared argument"
+      }
+     ],
+     "relation": "other",
+     "note": "The House drops Vattel's 'alone' and restates his rule that disputes on the public administration are for the nation to judge by its constitution, then says the end of the British constitution is liberty and appeals to Camden. The judge was right on the substance; the addressee is Lord Camden."
+    },
+    {
+     "key": "V24",
+     "id": "P177",
+     "unit": "I.24",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.85,
+     "document": "Samuel Adams, article signed \"Vindex\", Boston Gazette, January 21, 1771, on the trial of the soldiers for the Boston Massacre (the same article later answers Philanthrop), Writings of Samuel Adams vol. 2",
+     "page": "143",
+     "own_or_quoted": "author's own text; the sentence is set in quotation marks but not attributed",
+     "french": "Une constitution admirable y met tout citoyen en état de concourir à cette grande fin , & répand par-tout cet esprit de vrai patriotisme , qui s'occupe avec zele du bien public.",
+     "source": "none",
+     "relation": "own",
+     "note": "Adams moves Vattel's praise of the English constitution to jury trial: 'constitution' becomes 'institution' and 'this great end' becomes 'the great end of society, the distributing justice', while 'a spirit of true patriotism, which is zealously employed for the publick welfare' keeps the older translation's wording. The marks show a quotation, but the 'great writer' named just before speaks to a different point, so Vattel is not named."
+    },
+    {
+     "key": "V25",
+     "id": "P178",
+     "unit": "I.30",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Samuel Adams, article signed \"Vindex\", Boston Gazette, January 21, 1771, part answering Philanthrop, Writings of Samuel Adams vol. 2",
+     "page": "151",
+     "own_or_quoted": "author's own text quoting Vattel in marks, introduced afterwards as 'the language of a very celebrated author' whom Philanthrop will accept as an authority",
+     "french": "La constitution de l'état & ses loix sont la base de la tranquillité publique , le plus ferme appui de l'autorité politique & le gage de la liberté des citoyens. Mais cette constitution est un vain fantôme , & les meilleures loix sont inutiles , si on ne les observe pas religieusement. La nation doit donc veiller sans relâche à les faire également respecter & de ceux qui gouvernent , & du peuple destiné à obéir. Attaquer la constitution de l'état , violer ses loix , c'est un crime capital contre la société ; & si ceux qui s'en rendent coupables sont des personnes revêtues d'autorité , ils ajoutent au crime en lui - même , un perfide abus du pouvoir qui leur est confié. La nation doit constamment les réprimer avec toute la vigueur & la vigilance que demande l'importance du sujet.",
+     "source": [
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. IX § 6",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. IX § 4, n. 1",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "other",
+     "note": "Adams quotes I.30 against Philanthrop's call for subordination. He inserts 'and the true patriot will watch' and 'the people' to make the body of the people the guardian of the constitution, and he leaves the middle sentence on violating the laws as a capital crime outside the marks."
+    },
+    {
+     "key": "V26",
+     "id": "P179",
+     "unit": "I.30",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.9,
+     "document": "Samuel Adams, article signed \"Vindex\", Boston Gazette, January 21, 1771, closing paragraph of the answer to Philanthrop, Writings of Samuel Adams vol. 2",
+     "page": "153",
+     "own_or_quoted": "author's own text quoting Vattel in marks, unnamed (the 'very celebrated author' of p. 151)",
+     "french": "c'est contre les attaques sourdes & lentes que la nation devroit être particuliérement en garde.",
+     "source": "none",
+     "relation": "own",
+     "note": "Adams ends the article with the rest of I.30. It is 'uncommon' for the constitution to be 'openly and boldly oppos'd'; he cites the maxim 'no less essential in politicks than in morals', principiis obsta; sudden force 'strikes the imagination'; and he quotes 'Important changes insensibly happen: It is against silent & slow attacks...' to warn that Philanthrop's principles open the way to despotism. Only the maxim principiis obsta has a row (a possible Pufendorf-Barbeyrac citation); the sentence on silent attacks has none."
+    },
+    {
+     "key": "V27",
+     "id": "P182",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Samuel Adams, article signed \"Candidus\", Boston Gazette, October 14, 1771, Writings of Samuel Adams vol. 2",
+     "page": "254-255",
+     "own_or_quoted": "author's own text quoting Vattel in marks, attributed to 'a celebrated writer, who thoroughly understood his subject'",
+     "french": "Par les loix fondamentales de l'Angleterre , les deux chambres du parlement , de concert avec le roi , exercent la puissance législative. S'il prenoit envie aux deux chambres de se supprimer ellesmêmes , & de revêtir le roi de l'empire plein & absolu , certainement la nation ne le souffriroit pas.",
+     "source": [
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. VIII § 8",
+       "label": "shared argument"
+      }
+     ],
+     "relation": "other",
+     "note": "Just before the quotation Adams paraphrases the end of I.34 ('if we are voluntarily silent... it will be consider'd as an approbation of the change'). He then quotes Vattel on the two houses, adding 'be so infatuated', and goes from there to the people's right to resist a minister who sets up his instructions to Hutchinson as laws. The judge's 'attrib.' and undated essay is the Candidus article of October 14, 1771."
+    },
+    {
+     "key": "V28",
+     "id": "P183",
+     "unit": "I.220",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Samuel Adams, article signed \"Valerius Poplicola\" (as headed in the edition), Boston Gazette, October 28, 1771, answering Hutchinson's History of Massachusetts Bay on the colonists' subjection to the parent state, Writings of Samuel Adams vol. 2",
+     "page": "258",
+     "own_or_quoted": "author's own text giving Vattel's words without marks but named in a footnote ('Mr. Vattel, law of nature and nations') as 'another distinguished writer' after Locke",
+     "french": "Mais tout homme naît libre ; le fils d'un citoyen, parvenu à l'âge de raison, peut examiner s'il lui convient de se joindre à la société que sa naissance lui destine. S'il ne trouve point qu'il lui soit avantageux d'y rester, il est le maître de la quitter, en la dédommageant de ce qu'elle pourroit avoir fait en sa faveur ( * ), & en conservant pour elle, autant que ses nouveaux engagemens le lui permettront, les sentimens d'amour & de reconnoissance qu'il lui doit.",
+     "source": [
+      {
+       "text": "burlamaqui-droit-politique-1751",
+       "locus": "Part. I ch. V § 9-10",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VIII ch. XI § 2, n. 1",
+       "label": "shared argument"
+      },
+      {
+       "text": "wolff-institutiones-1750",
+       "locus": "Institutiones § 1019",
+       "label": "divergence (severity 3)"
+      }
+     ],
+     "relation": "against-wolff",
+     "note": "Adams sets Vattel beside Locke against Hutchinson's claim that allegiance is perpetual and unalienable, and he silently drops the condition that the emigrant compensate the society ('en la dédommageant...'). The words are covered only by Burlamaqui and Pufendorf-Barbeyrac rows. The free right to leave that they state is the point on which Vattel departs from Wolff, Inst. § 1019, which requires the superior's consent."
+    },
+    {
+     "key": "V29",
+     "id": "P183",
+     "unit": "I.223",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Samuel Adams, article signed \"Valerius Poplicola\" (as headed in the edition), Boston Gazette, October 28, 1771, answering Hutchinson's History, Writings of Samuel Adams vol. 2",
+     "page": "258",
+     "own_or_quoted": "author's own text quoting Vattel in marks ('He further says'), named in the footnote to the preceding sentence",
+     "french": "Il est des cas dans lesquels un citoyen est absolument en droit, par des raisons prises du pacte même de la société politique, de renoncer à sa patrie & de l'abandonner.",
+     "source": [
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VIII ch. XI § 4, n. 1",
+       "label": "shared argument"
+      },
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "Jus gentium § 154",
+       "label": "divergence (severity 2)"
+      }
+     ],
+     "relation": "against-wolff",
+     "note": "Adams uses the absolute right to renounce one's country against Hutchinson's perpetual allegiance. He then paraphrases Vattel's third case, the sovereign or majority allowing only one religion, to say the Puritans left England lawfully (covered by Wolff JG § 153, shared argument, and a § 153 divergence). The quoted sentence itself has only a Pufendorf-Barbeyrac note row and is the point Vattel holds against Wolff, JG § 154."
+    }
+   ]
+  },
+  "v3": {
+   "items": [
+    {
+     "key": "V30",
+     "id": "P186",
+     "unit": "III.290",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.97,
+     "document": "Samuel Adams, article signed \"Candidus\", Boston Gazette, 27 January 1772, answering \"Chronus\" (The Writings of Samuel Adams, vol. 2)",
+     "page": "323",
+     "own_or_quoted": "Adams's own text, quoting Vattel by name (\"the great Vatei\")",
+     "french": "les tyrans seuls traiteront de séditieux ces citoyens courageux & fermes , qui exhortent le peuple à se garantir de l'oppression, à maintenir ses droits & ses privileges: un bon prince louera ces vertueux patriotes, pourvu que leur zele soit tempéré par la modération & la prudence. S'il aime la justice & son devoir, s'il aspire à la gloire immortelle & si pure d'être le pere de son peuple , qu'il se défie des suggestions intéressées d'un ministre qui lui peint comme des rebelles tous les citoyens qui ne ten-dent pas les mains à l'esclavage, qui refusent de plier sans murmure , sous les coups d'un pouvoir arbitraire.",
+     "source": [
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. VII § 6, n. 1",
+       "label": "shared argument"
+      }
+     ],
+     "relation": "other",
+     "note": "Adams quotes Vattel to defend jealousy as a political virtue and the \"patriots\" Chronus derides, silently dropping Vattel's proviso that their zeal be tempered with moderation and prudence. His wording (\"in vindication of their rights\", \"hold out their hands to chains\", \"suffer the strokes of arbitrary power\") follows an earlier English translation closer to the French (tendent les mains à l'esclavage, sous les coups) than the 1797 text; the quotation sits on p. 323 only, not 322-323."
+    },
+    {
+     "key": "V31",
+     "id": "P187",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.97,
+     "document": "Samuel Adams, article signed \"Candidus\", Boston Gazette, 27 January 1772, answering \"Chronus\" (The Writings of Samuel Adams, vol. 2)",
+     "page": "325-326",
+     "own_or_quoted": "Adams's own text, quoting Vattel by name (\"says Vatel\")",
+     "french": "les loix fondamentales sont exceptées de leur commission. On voit que la société a seulement voulu pourvoir à ce que l'état fut toujours muni de loix convenables aux conjonctures , & donner pour cet effet aux législateurs le pouvoir d'abroger les anciennes loix civiles & les loix politiques non fondamentales , & d'en faire de nouvelles ; mais rien ne conduit à penser qu'elle ait voulu soumettre sa constitution même à leur volonté. Enfin , c'est de la constitution que ces législateurs tiennent leur pouvoir ; comment pourroient - ils la changer , sans détruire le fondement de leur autorité ?",
+     "source": [
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "§ 820",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Adams strings together three sentences of I.34 in marks to argue that, as Magna Charta declares the fundamental laws, Parliament cannot alter it and an act against it is void. The same article quotes the earlier part of I.34 (legislators' authority \"does not extend so far\", fundamental laws \"sacred\", constitution \"fixed\") just before and its England example just after, so the whole run on pp. 325-326 quotes nearly all of the section; the wording (\"to their pleasure\") is the earlier English translation."
+    },
+    {
+     "key": "V32",
+     "id": "P191",
+     "unit": "Prelim.1",
+     "verdict": "reject",
+     "label": "close paraphrase",
+     "confidence": 0.7,
+     "document": "Samuel Adams, \"The Rights of the Colonists\" (report of the Boston Committee of Correspondence to the town meeting), November 1772, section \"3d. The Rights of the Colonists as Subjects\" (The Writings of Samuel Adams, vol. 2)",
+     "page": "356",
+     "own_or_quoted": "own text of the report (Adams), with footnote \"See Lock and Vatel\"",
+     "french": "des corps politiques, des sociétés d'hommes unis ensemble pour procurer leur salut & leur avantage , à forces réunies.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 9",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 2",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "§ 108",
+       "label": "commonplace"
+      },
+      {
+       "text": "burlamaqui-1747",
+       "locus": "Liv. II ch. VI § 6",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "burlamaqui-droit-politique-1751",
+       "locus": "Part. I ch. ? § 9",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. II § 5",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "vattel-questions-1762",
+       "locus": "",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Same passage as V33: Adams's \"a body politick or civil society of men\" follows the I.1 form (\"un corps politique, ou une société d'hommes\"), which restates this definition, so the reuse should be counted once, under I.1. The definition itself is Wolff's (Jus gentium § 9), here a close paraphrase."
+    },
+    {
+     "key": "V33",
+     "id": "P191",
+     "unit": "I.1",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.8,
+     "document": "Samuel Adams, \"The Rights of the Colonists\" (report of the Boston Committee of Correspondence to the town meeting), November 1772, section \"3d. The Rights of the Colonists as Subjects\" (The Writings of Samuel Adams, vol. 2)",
+     "page": "356",
+     "own_or_quoted": "own text of the report (Adams), with footnote \"See Lock and Vatel\"",
+     "french": "un corps politique, ou une société d'hommes unis ensemble pour procurer leur avantage & leur sûreté , à forces réunies.",
+     "source": [
+      {
+       "text": "wolff-jus-gentium-1749",
+       "locus": "§ 9",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "formey-principes-1758",
+       "locus": "Liv. VIII ch. I § VIII",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "burlamaqui-droit-politique-1751",
+       "locus": "§ IX",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "vattel-questions-1762",
+       "locus": "",
+       "label": "loose paraphrase"
+      },
+      {
+       "text": "pufendorf-barbeyrac-1734",
+       "locus": "Liv. VII ch. VI § 7",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff-loose",
+     "note": "Adams opens the colonists' rights as subjects with Vattel's definition of the state, grafting Locke's \"Common Wealth\" and \"civil society\" onto it (hence the note \"See Lock and Vatel\") and rendering \"à forces réunies\" as \"by means of their union\", apparently the earlier English translation. The I.1 form fits better than Prelim.1 (V32), which it restates; behind both lies Wolff's definition of civitas (Jus gentium § 9)."
+    },
+    {
+     "key": "V34",
+     "id": "P193",
+     "unit": "II.283",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.8,
+     "document": "Massachusetts House of Representatives to Governor Hutchinson, answer to his speech of 6 January, dated 26 January 1773 (drafted by Samuel Adams with committee; The Writings of Samuel Adams, vol. 2; Massachusetts State Papers pp. 351-364)",
+     "page": "411",
+     "own_or_quoted": "own text of the House, quoting Vattel (\"the celebrated author, whom your Excellency has quoted\") without naming him",
+     "french": "Il faut l'interpréter de maniere qu'il puisse avoir son effet",
+     "source": "none",
+     "relation": "own",
+     "note": "The House turns Vattel's rules of interpretation against the Governor: after quoting \"the celebrated author\" that no contracting party may interpret at pleasure (apparently II.265), it quotes II.283 so that the charter's grant of legislative power must be read to take effect, not be nullified by Parliament's reserved power. The judge's page (421) is wrong: the passage is on p. 411; no source row covers this sentence, though the rule in the sentences before it has Wolff, Institutiones § 804 behind it."
+    },
+    {
+     "key": "V35",
+     "id": "P194",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.97,
+     "document": "Massachusetts House of Representatives to Governor Hutchinson, answer to his speech of 6 January, dated 26 January 1773 (drafted by Samuel Adams with committee; The Writings of Samuel Adams, vol. 2; Massachusetts State Papers pp. 351-364)",
+     "page": "421-422",
+     "own_or_quoted": "own text of the House, quoting Vattel (\"the same author who is quoted by your Excellency\") without naming him",
+     "french": "l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission.",
+     "source": [
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "formey-principes-1758",
+       "locus": "Principes, droit public (lois fondamentales)",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "The House quotes I.34 to argue that the fundamentals of the province's constitution are fixed in the charter, so no provincial acts referring to acts of Parliament can be taken as conceding Parliament's supreme authority. The date is 26 January 1773; the wording (\"fixed\", \"trusted\") is the earlier English translation."
+    },
+    {
+     "key": "V36",
+     "id": "P198",
+     "unit": "I.34",
+     "verdict": "keep",
+     "label": "close paraphrase",
+     "confidence": 0.85,
+     "document": "Massachusetts House of Representatives to Governor Hutchinson, 2 March 1773, reply to his speech of 16 February 1773 (The Writings of Samuel Adams, vol. 2; Massachusetts State Papers pp. 384-396)",
+     "page": "452",
+     "own_or_quoted": "own text of the House, recalling its earlier quotation of \"a learned writer on the laws of nature and nations\"",
+     "french": "l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission.",
+     "source": [
+      {
+       "text": "wolff-jus-naturae-8-1748",
+       "locus": "",
+       "label": "close paraphrase"
+      },
+      {
+       "text": "formey-principes-1758",
+       "locus": "Principes, droit public (lois fondamentales)",
+       "label": "loose paraphrase"
+      }
+     ],
+     "relation": "wolff",
+     "note": "Complaining that the Governor has not answered \"that great man\", the House restates I.34 in Vattel's words without marks (the fundamentals \"excepted from the commission of the Legislators\" unless the people \"in very express terms\" gave the power), now applied to the General Assembly. The judge's date is wrong: this is the reply of 2 March 1773, on p. 452."
+    },
+    {
+     "key": "V37",
+     "id": "P208",
+     "unit": "I.24",
+     "verdict": "keep",
+     "label": "quotation",
+     "confidence": 0.95,
+     "document": "Oxenbridge Thacher, The Sentiments of a British American, pamphlet, Boston: Edes & Gill, 1764",
+     "page": "4",
+     "own_or_quoted": "author's own text, quoting Vattel by name (\"It is observed by Vattel\")",
+     "french": "Heureuse constitution ! à laquelle on n'a pu parvenir tout d'un coup , qui a coûté , il est vrai , des ruisseaux de sang , mais que l'on n'a point achetée trop cher.",
+     "source": "none",
+     "relation": "own",
+     "note": "Thacher cites Vattel's praise of the English constitution to show the British are jealous of their liberties, and argues that the colonists share those rights, which the Sugar Act wounds; he swells Vattel's \"rivers\" (French \"ruisseaux\") into \"seas\" of blood. The judge named the wrong author: the pamphlet is by Oxenbridge Thacher, not James Thacher."
+    }
+   ]
+  }
+ }
+}

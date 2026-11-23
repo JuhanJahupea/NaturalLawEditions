@@ -1,0 +1,974 @@
+{
+ "format": "nle-american-reuse/1",
+ "date": "2026-11-23",
+ "description": "Passages of Vattel's Droit des gens reused in American documents of 1762–1776, found by a search of the corpus below against the English translation (London, 1797) and read twice by language models; each with the French words it renders and the edition's sources for them. Built by tools/american/.",
+ "corpus": [
+  {
+   "id": "otis_vindication_1762",
+   "archive": "bim_eighteenth-century_a-vindication-of-the-con_otis-james-advocate_1762"
+  },
+  {
+   "id": "otis_rights_1764",
+   "archive": "rightsofbritishc00otis"
+  },
+  {
+   "id": "thacher_sentiments_1764",
+   "archive": "sentimentsofbrit00thac"
+  },
+  {
+   "id": "otis_vindication_1765",
+   "archive": "vindicationofbri00otis"
+  },
+  {
+   "id": "dulany_considerations_1765",
+   "archive": "considerationson00dula"
+  },
+  {
+   "id": "bland_inquiry_1766",
+   "archive": "inquirytotherights00blanrich"
+  },
+  {
+   "id": "examination_rights_1766",
+   "archive": "bim_eighteenth-century_an-examination-of-the-ri_gentleman-at-the-bar_1766"
+  },
+  {
+   "id": "dickinson_farmer_1768",
+   "archive": "farmerpennsylva00dickrich"
+  },
+  {
+   "id": "rights_colonies_1769",
+   "archive": "rightsofcolonies00unkn"
+  },
+  {
+   "id": "boston_votes_1772",
+   "archive": "bim_eighteenth-century_votes-and-proceedings-_boston-massachusetts-t_1772"
+  },
+  {
+   "id": "sadams_v1",
+   "archive": "writingsofsamuel0001harr"
+  },
+  {
+   "id": "sadams_v2",
+   "archive": "writitngssamadam02adamrich"
+  },
+  {
+   "id": "sadams_v3",
+   "archive": "writingsofsamuel0003adam"
+  },
+  {
+   "id": "jadams_works_v2",
+   "archive": "worksofjohnadams02adam"
+  },
+  {
+   "id": "jadams_works_v3",
+   "archive": "worksofjohnadams0003char"
+  },
+  {
+   "id": "jadams_works_v4",
+   "archive": "worksofjohnadams04adam"
+  },
+  {
+   "id": "jefferson_summary_1774",
+   "archive": "summaryviewofrig00jeff"
+  },
+  {
+   "id": "wilson_considerations_1774",
+   "archive": "bim_eighteenth-century_considerations-on-the-na_wilson-james_1774"
+  },
+  {
+   "id": "dickinson_essay_1774",
+   "archive": "essayonconstitut00dick_0"
+  },
+  {
+   "id": "hamilton_vindication_1774",
+   "archive": "fullvindicationo00hami"
+  },
+  {
+   "id": "seabury_freethoughts_1774",
+   "archive": "bim_eighteenth-century_free-thoughts-on-the-pr_seabury-samuel_1774"
+  },
+  {
+   "id": "seabury_view_1774",
+   "archive": "viewofcontrovers00seab"
+  },
+  {
+   "id": "paine_commonsense_1776",
+   "archive": "commonsenseaddre00pain_3"
+  },
+  {
+   "id": "jcc_v1",
+   "archive": "journalsofcontin01unit"
+  },
+  {
+   "id": "jcc_v2",
+   "archive": "journalsofcontin02unit"
+  },
+  {
+   "id": "jcc_v3",
+   "archive": "journalsofcontin03unit"
+  },
+  {
+   "id": "jcc_v4",
+   "archive": "journalsofcontin04unit"
+  },
+  {
+   "id": "jcc_v5",
+   "archive": "journalsofcontin05unit"
+  },
+  {
+   "id": "bradford_speeches_1765_1775",
+   "archive": "speechesofgovern00brad"
+  },
+  {
+   "id": "novanglus_massachusettensis_1774_1775",
+   "archive": "novanglusandmass45205gut"
+  }
+ ],
+ "cuts": {
+  "sadams_v3": "documents to the end of 1776",
+  "jadams_works_v2": "Diary to the end of 1776",
+  "jadams_works_v3": "Essays only (from the Dissertation on the Canon and Feudal Law)",
+  "jadams_works_v4": "before the Defence of the Constitutions"
+ },
+ "reuses": [
+  {
+   "doc": "otis-1764",
+   "author": "James Otis",
+   "document": "The Rights of the British Colonies Asserted and Proved (Boston, 1764): the memorial of the House and its notes",
+   "date": "1764",
+   "unit": "I.210",
+   "label": "quotation",
+   "named": true,
+   "american": "W hen a nation takes po/Teffion of a diilant country, and settles a colony there, that country though separated from the \nprincipal eRablifhment, or mother country, naturally becomes \na part of the ilate, equally with its antient pofTeffions. W henever the political laws, or treaties, make no dihindion between them, every thing said of the territory of a nation, \nought also to extend to its colonies” D’ Vattel.",
+   "vattel_1797": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions. Whenever therefore the political laws, or treaties, make no distinction between them, every thing said of the territory of a nation, must also extend to its colonies.",
+   "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions. Toutes les fois donc que les loix politiques ou les traités n'y apportent point de différence , tout ce qui se dit du territoire d'une nation doit s'entendre aussi de ses colonies.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 292",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VIII ch. XI § 6",
+     "label": "shared argument"
+    }
+   ],
+   "edition": "Otis, Rights (Boston, 1764)",
+   "pages": "106, 110",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "The note, which opens on p. 109 with I.34 (V19), runs on into the whole of I.210 ('antient', 'ought also to extend') and signs it 'D' Vattel', backing the memorial's claim that the colonies are part of the state and that acts against the fundamental principles of the constitution are void. The first judge's reading is right."
+  },
+  {
+   "doc": "thacher-1764",
+   "author": "Oxenbridge Thacher",
+   "document": "The Sentiments of a British American (Boston, 1764)",
+   "date": "1764",
+   "unit": "I.24",
+   "label": "quotation",
+   "named": true,
+   "american": "their present \nhappy constitution hath cost them seas of blood ; \nbut they have not purchased it too dear.”",
+   "vattel_1797": "it has cost rivers of blood; but they have not purchased it too dear",
+   "french": "Heureuse constitution ! à laquelle on n'a pu parvenir tout d'un coup , qui a coûté , il est vrai , des ruisseaux de sang , mais que l'on n'a point achetée trop cher.",
+   "relation": "own",
+   "sources": [],
+   "edition": "Thacher, Sentiments (Boston, 1764)",
+   "pages": "Thacher, 4",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Thacher cites Vattel's praise of the English constitution to show the British are jealous of their liberties, and argues that the colonists share those rights, which the Sugar Act wounds; he swells Vattel's \"rivers\" (French \"ruisseaux\") into \"seas\" of blood. The judge named the wrong author: the pamphlet is by Oxenbridge Thacher, not James Thacher."
+  },
+  {
+   "doc": "otis-1764",
+   "author": "James Otis",
+   "document": "The Rights of the British Colonies Asserted and Proved (Boston, 1764): the memorial of the House and its notes",
+   "date": "1764",
+   "unit": "I.34",
+   "label": "quotation",
+   "named": false,
+   "american": "It essentially belongs to the lociety to make laws both in relation \nto tae manner in which it delires to be governed, and to the \nconduct of the citizens : this is called the Lcgijlativc Power. \nThe nation may entrud the exerci/e of it to the prince, or to \nan aflembly $ or to the a/Tembly and the Prince jointly ; who \niiaye then a right of making new, and abrogating old laws. \nIt is here demanded whether, if their power extends lo far as \nto .he fundamental laws, they may change the conditution of \nthe (later 1 he principles we have laid down lead us to decide \nthis point with certainty, that the authority of these legiilators \ndoes not extend fo far, and that they ought to consider the \nundamental laws as sacred, if the nation has not in very expre.s terms given them the power to change them. For the \ncom the ought to be fix d ; and fmee that was \n\nnrlt eftabhmed by the nation, which afterwards trusted certain \npersons with the legislative power, the fundamental laws are \nexcepted from their commiflion It appears that the society \n°nl X.0 ^ve<^ to make provision for the date’s being always \nurnilhed with laws suited to particular conjunctures, and gave \nt e. egiflatures for that purpose, the power of abrogating the \nanoent civil and political laws, that were not fundamental, \nTn 0 m*. £ ne'lV ones : bur nothing leads us to think that",
+   "vattel_1797": "It essentially belongs to the society to make laws both in relation to the manner in which it desires to be governed, and to the conduct of the citizens:—this is called the legislative power. The nation may intrust the exercise of it to the prince, or to an assembly; or to that assembly and the prince jointly; who have then a right to make new laws and to repeal old ones. It is asked whether their power extends to the fundamental laws,—whether they may change the constitution of the state? The principles we have laid down lead us to decide with certainty, that the authority of these legislators does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them. For the constitution of the state ought to possess stability: and since that was first established by the nation, which afterwards intrusted certain persons with the legislative power, the fundamental laws are excepted from their commission. It is visible that the society only intended to make provision for having the state constantly furnished with laws suited to particular conjunctures, and, for that purpose, gave the legislature the power of abrogating the ancient civil and political laws that were not fundamental, and of making new ones: but nothing leads us to think that",
+   "french": "Il se présente encore ici une question très - importante. Il appartient essentiellement à la société de faire des loix sur la maniere dont elle prétend être gouvernée , & sur la conduite des citoyens : ce pouvoir s'appelle puissance législative. La nation peut en confier l'exercice au prince , ou à une assemblée , ou à cette assemblée & au prince conjointement ; lesquels sont dès lors en droit de faire des loix nouvelles & d'abroger les anciennes. On demande si leur pouvoir s'étend jusques sur les loix fondamentales , s'ils peuvent changer la constitution de l'état. Les principes que nous avons posés nous conduisent certainement à décider que l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission. On voit que la société a seulement voulu pourvoir à ce que l'état fut toujours muni de loix convenables aux conjonctures , & donner pour cet effet aux législateurs le pouvoir d'abroger les anciennes loix civiles & les loix politiques non fondamentales , & d'en faire de nouvelles ; mais rien ne conduit à penser qu'elle ait voulu soumettre sa constitution même à leur volonté.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-naturae-8-1748",
+     "locus": "",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "formey-principes-1758",
+     "locus": "Principes, droit public (lois fondamentales)",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Otis, Rights (Boston, 1764)",
+   "pages": "109",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "The note, apparently keyed to 'acts against the fundamental principles of the British constitution are void', reproduces I.34 from 'A very important question here presents itself' to 'submit the constitution itself to their pleasure', so that Parliament cannot change the constitution under which the colonists hold their rights. The judge called it unnamed, but the same note runs straight on into I.210 and is signed 'D' Vattel', so quotation fits better than verbatim."
+  },
+  {
+   "doc": "otis-1764",
+   "author": "James Otis",
+   "document": "The Rights of the British Colonies Asserted and Proved (Boston, 1764): the memorial of the House and its notes",
+   "date": "1764",
+   "unit": "III.201",
+   "label": "quotation",
+   "named": true,
+   "american": "Some have dared to advance this mondrous principle, that the conqueror is absolute mafler of his conqued ; \nthat he may dispose of it as his property, treat it as he pleases’ \naccording to the common expreflion of treating a Jiate as a conquered country ; and hence they derive one of the sources of despotic government : but enough of those that reduce men to the \nItate of transferable goods, or use them like beads of burthenr",
+   "vattel_1797": "Some have dared to advance this monstrous principle, that the conqueror is absolute master of his conquest,—that he may dispose of it as his property,—that he may treat it as he pleases, according to the common expression of treating a state as a conquered country; and hence they derive one of the sources of despotic government. But, disregarding such writers, who reduce men to the state of transferable goods, or beasts of burthen",
+   "french": "Quelques - uns ont osé avancer ce principe monstrueux , que le conquérant est maître absolu de sa conquête , qu'il peut en disposer comme de son propre, la traiter comme il lui plaît, suivant l'expression commune, traiter un état en pays conquis : & de-là ils tirent l'une des sources du gouvernement despotique. Laissons des gens qui traitent les hommes comme des effets commerçables , ou comme des bêtes de charge",
+   "relation": "against-wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 870",
+     "label": "open disagreement"
+    },
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 871",
+     "label": "open disagreement"
+    },
+    {
+     "text": "grotius-barbeyrac-1724",
+     "locus": "Liv. III ch. VIII § 1",
+     "label": "open disagreement"
+    },
+    {
+     "text": "grotius-barbeyrac-1724",
+     "locus": "Droit de la guerre et de la paix, Liv. III ch. VIII § 1",
+     "label": "divergence (severity 3)"
+    }
+   ],
+   "edition": "Otis, Rights (Boston, 1764)",
+   "pages": "111–112",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Otis quotes III.201 at length in the 1760 London translation, from \"But if the whole state be conquered\" through \"the state of war subsists\" plus the sentence on a sovereign who would enslave a conquered people, to deny that Parliament could vote the King absolute; the judge's match is only the middle of a longer quotation that runs from p. 111 to p. 112. The French covers the sentence where Vattel calls the conqueror's absolute mastery a monstrous principle, against Wolff, JG §§ 870-871 (and Grotius III.8.1)."
+  },
+  {
+   "doc": "jadams-1765",
+   "author": "John Adams",
+   "document": "Diary, 27 December 1765",
+   "date": "1765-12-27",
+   "unit": "II.282",
+   "label": "quotation",
+   "named": true,
+   "american": "Every \ninterpretation that leads to an absurdity, ought to be rejected.\" \nPage 222, book 2, ch. 17, s. 282. Every impossibility, physical \nand moral, is an absurdity",
+   "vattel_1797": "Every interpretation that leads to an absurdity, ought to be rejected; or, in other words, we should not give to any piece a meaning from which any absurd consequences would follow, but must interpret it in such a manner as to avoid absurdity. As it is not to be presumed that any one means what is absurd, it cannot be supposed that the person speaking intended that his words should be understood in a manner from which an absurdity would follow. Neither is it allowable to presume that he meant to indulge a sportive levity in a serious deed: for what is shameful and unlawful is not to be presumed. We call absurd not only what is physically impossible, but what is morally so",
+   "french": "Toute interprétation qui mene à l'absurde doit être rejettée",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-institutiones-1750",
+     "locus": "§ 804",
+     "label": "close paraphrase"
+    }
+   ],
+   "edition": "Works of John Adams, ed. C. F. Adams, II (1850)",
+   "pages": "Works of John Adams, 166",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Adams quotes II.282's rule against absurd interpretation and adds, outside the marks, his own condensation of Vattel's next sentence ('On appelle absurde, non seulement ce qui est impossible physiquement, mais encore ce qui l'est moralement'), presumably aimed at the impossibility of obtaining stamps. The first judge's reading is right."
+  },
+  {
+   "doc": "jadams-1765",
+   "author": "John Adams",
+   "document": "Diary, 27 December 1765",
+   "date": "1765-12-27",
+   "unit": "II.292",
+   "label": "quotation",
+   "named": true,
+   "american": "If a case be presented in which one cannot \nabsolutely apply the well known reason of a law or a promise, \nthis case ought to be excepted",
+   "vattel_1797": "if a case occurs, to which the well-known reason of a law or promise is utterly inapplicable, that case ought to be excepted",
+   "french": "s'il se présente un cas auquel on ne puisse absolument point appliquer la raison bien connue d'une loi, ou d'une promesse, ce cas doit être excepté",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-institutiones-1750",
+     "locus": "§ 813",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. V ch. XII § 19",
+     "label": "close paraphrase"
+    }
+   ],
+   "edition": "Works of John Adams, ed. C. F. Adams, II (1850)",
+   "pages": "Works of John Adams, 166",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Adams copies three of Vattel's rules of interpretation (II.297, II.292, II.282) in the 1760 translation, whose 'If a case be presented in which one cannot absolutely apply' follows the French more closely than the 1797 text, as ammunition for having the courts proceed without stamps by following the lawgiver's reason over the letter. The first judge's reading is right."
+  },
+  {
+   "doc": "jadams-1765",
+   "author": "John Adams",
+   "document": "Diary, 27 December 1765",
+   "date": "1765-12-27",
+   "unit": "II.297",
+   "label": "quotation",
+   "named": true,
+   "american": "In unforeseen cases, that is, when the state of \nthings is found such as the author of the disposition has not \nforeseen, and could not have thought of, we should rather follow \nhis intention than his words, and interpret the act as he himself \nwould have interpreted it, had he been present, or conformably \nto what he would have done if he had foreseen the things that \nhappened. This rule is of great use to Judges",
+   "vattel_1797": "In unforeseen cases, that is to say, when the state of things happens to be such as the author of a deed has not foreseen, and could not have thought of, we should rather be guided by his intention than by his words, and interpret the instrument as he himself would interpret it if he were on the spot, or conformably to what he would have done if he had foreseen the circumstances which are at present known. This rule is of great use to judges",
+   "french": "Dans les cas imprévus , c'est - à - dire , lorsque l'état des choses se trouve tel , que l'auteur d'une disposition ne l'a point prévu , & n'a pu y penser , il faut suivre plutôt son intention que ses paroles , & interpréter l'acte comme il l'interpréteroit lui - même s'il étoit présent , ou conformément à ce qu'il eut fait , s'il eut prévû les choses que l'on connoît présentement. Cette regle est d'un grand usage pour les juger",
+   "relation": "wolff-loose",
+   "sources": [
+    {
+     "text": "wolff-institutiones-1750",
+     "locus": "§ 816",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "wolff-institutiones-1750",
+     "locus": "§ 810",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. V ch. XII § 21",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. V ch. XII § 19, n. 2",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. V ch. XII § 21",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "grotius-barbeyrac-1724",
+     "locus": "Liv. II ch. XVI § 26",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "grotius-barbeyrac-1724",
+     "locus": "Liv. II ch. XVI § 22, n. 1",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Works of John Adams, ed. C. F. Adams, II (1850)",
+   "pages": "Works of John Adams, 166",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "During the Stamp Act closure of the courts, Adams copies three interpretation rules (II.297, II.292, II.282) with page references to the English translation, to argue that the courts may proceed without stamps. His wording (\"author of the disposition\", \"the act\", \"had he been present\") is the earlier translation's and stays closer to the French than the 1797 text. The judge's reading is right."
+  },
+  {
+   "doc": "bland-1766",
+   "author": "Richard Bland",
+   "document": "An Inquiry into the Rights of the British Colonies (Williamsburg, 1766)",
+   "date": "1766",
+   "unit": "I.2",
+   "label": "close paraphrase",
+   "named": true,
+   "american": "it is evident, by the very Act of \nAssociation, that each Member subjects himself to the \nAuthority of that Body",
+   "vattel_1797": "by the very act of the civil or political association, each citizen subjects himself to the authority of the entire body",
+   "french": "On conçoit que par l'acte d'association civile ou politique , chaque citoyen se soumet à l'autorité du corps entier",
+   "relation": "wolff-loose",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 255",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. IV § 2",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. II § 5",
+     "label": "commonplace"
+    }
+   ],
+   "edition": "Bland, Inquiry (Williamsburg, 1766; repr. 1922)",
+   "pages": "[10]",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "Bland restates Vattel I.2 (\"Member\" for \"citizen\", \"that Body\" for \"the entire body\") in a social-contract argument: those excluded from the franchise remain bound by implicit consent but keep a natural right to emigrate. The first judge's reading is right."
+  },
+  {
+   "doc": "bland-1766",
+   "author": "Richard Bland",
+   "document": "An Inquiry into the Rights of the British Colonies (Williamsburg, 1766)",
+   "date": "1766",
+   "unit": "III.290",
+   "label": "close paraphrase",
+   "named": false,
+   "american": "lay their Complaints at the Foot of the Throne, and \nto suffer patiently rather than disturb the publick Peace, \nwhich nothing but a Denial of Justice can excuse them \nin breaking.",
+   "vattel_1797": "lay their complaints at the foot of the throne. Every citizen should even patiently endure evils which are not insupportable, rather than disturb the public peace",
+   "french": "ils peuvent porter leurs plaintes au pied du trône. Tout citoyen doit même souffrir patiemment des maux supportables, plutôt que de troubler la paix publique. Il n'y a qu'un déni de justice de la part du souverain , ou des délais affectés , qui puissent excuser l'emportement d'un peuple poussé à bout, le justifier même , si les maux sont intolérables , l'oppression grande & manifeste.",
+   "relation": "wolff-loose",
+   "sources": [
+    {
+     "text": "wolff-institutiones-1750",
+     "locus": "§ 1080",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 1010",
+     "label": "shared argument"
+    },
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 1012",
+     "label": "shared argument"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. VIII § 5",
+     "label": "close paraphrase"
+    }
+   ],
+   "edition": "Bland, Inquiry (Williamsburg, 1766; repr. 1922)",
+   "pages": "[27]",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "Bland follows III.290 through a whole sentence (\"great and manifest Oppressions\", complaints at the foot of the throne, patient suffering rather than disturbing the peace, excused only by a denial of justice) to set the colonists' remedy for loss of civil rights; the denial-of-justice exception is Vattel's, since the Wolff rows allow petition only. The judge's confidence was too low."
+  },
+  {
+   "doc": "house-1768a",
+   "author": "Massachusetts House of Representatives (Samuel Adams)",
+   "document": "Letter to the Earl of Shelburne, 15 January 1768",
+   "date": "1768-01-15",
+   "unit": "I.34",
+   "label": "verbatim",
+   "named": false,
+   "american": "if the Parliament \nshould make any considerable change in the constitution, and the \nnation should be voluntarily silent upon it, this would be considered as an approbation of the act",
+   "vattel_1797": "if the parliament entered into a debate on making so considerable a change, and the whole nation was voluntarily silent upon it, this would be considered as an approbation of the act",
+   "french": "Mais si le parlement délibéroit de faire un changement si considérable , & que la nation entiere gardât volontairement le silence , elle seroit censée approuver le fait de ses réprésentans.",
+   "relation": "own",
+   "sources": [],
+   "edition": "Bradford, Speeches of the Governors (1818)",
+   "pages": "Bradford 140; Cushing I, 158",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "The House uses Vattel's point that a nation's silence while Parliament changes the constitution counts as approval to justify its protest against the Townshend duties. The judge left the letter as \"a British peer\" (it is Shelburne) and missed that p. 138 of the same letter (\"In all free states, the constitution is fixed ... it cannot change the constitution without destroying its own foundation\") also paraphrases I.34."
+  },
+  {
+   "doc": "house-1768b",
+   "author": "Massachusetts House of Representatives (Samuel Adams)",
+   "document": "Letter to Lord Camden, 29 January 1768",
+   "date": "1768-01-29",
+   "unit": "I.35",
+   "label": "close paraphrase",
+   "named": false,
+   "american": "without the most pressing reason, or an absolute necessity",
+   "vattel_1797": "without the most pressing reasons, or an absolute necessity",
+   "french": "les grands changemens dans l'état étant des opérations délicates , pleines de dangers , & la fréquence des changemens nuisible en elle - même , un peuple doit être trèscirconspect sur cette matiere , & ne se porter jamais aux nouveautés , sans les raisons les plus pressantes , ou sans nécessité",
+   "relation": "other",
+   "sources": [
+    {
+     "text": "burlamaqui-droit-politique-1751",
+     "locus": "Part. III ch. ? ",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. V § 9",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, I (1904)",
+   "pages": "Cushing I, 176",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "The House calls the Mutiny Act's requisition on the colonies 'a great change; and in its nature delicate', not to be made 'without the most pressing reason, or an absolute necessity', applying Vattel's caution on constitutional change to Parliament. Only a phrase is verbatim, so close paraphrase fits better than verbatim; the letter is the Camden letter, which reuses I.36 a page later."
+  },
+  {
+   "doc": "house-1768b",
+   "author": "Massachusetts House of Representatives (Samuel Adams)",
+   "document": "Letter to Lord Camden, 29 January 1768",
+   "date": "1768-01-29",
+   "unit": "I.36",
+   "label": "close paraphrase",
+   "named": false,
+   "american": "the nation will judge and determine in conformity to \nits political constitution",
+   "vattel_1797": "it belongs to the nation alone to judge and determine them conformably to its political constitution",
+   "french": "s'il s'éleve dans l'état des contestations sur les loix fondamentales , sur l'administration publique , sur les droits des différentes puissances qui y ont part , il appartient uniquement à la nation d'en juger & de les terminer conformément à sa constitution politique",
+   "relation": "other",
+   "sources": [
+    {
+     "text": "vattel-questions-1762",
+     "locus": "Sur le § 821 (loix fondamentales)",
+     "label": "shared argument"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. VII § 6, n. 1",
+     "label": "shared argument"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, I (1904)",
+   "pages": "Cushing I, 177",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "The House drops Vattel's 'alone' and restates his rule that disputes on the public administration are for the nation to judge by its constitution, then says the end of the British constitution is liberty and appeals to Camden. The judge was right on the substance; the addressee is Lord Camden."
+  },
+  {
+   "doc": "sadams-1771a",
+   "author": "Samuel Adams",
+   "document": "\"Vindex\", Boston Gazette, 21 January 1771",
+   "date": "1771-01-21",
+   "unit": "I.24",
+   "label": "quotation",
+   "named": false,
+   "american": "It is an admirable institution, by which every \ncitizen may be plac'd in a situation, that enables him \nto contribute to the great end of society, the dis \ntributing justice ; and it every where diffuses a spirit \nof true patriotism, which is zealously employed for \nthe publick welfare.",
+   "vattel_1797": "An admirable constitution there places every citizen in a situation that enables him to contribute to this great end, and every-where diffuses that spirit of genuine patriotism which zealously exerts itself for the public welfare",
+   "french": "Une constitution admirable y met tout citoyen en état de concourir à cette grande fin , & répand par-tout cet esprit de vrai patriotisme , qui s'occupe avec zele du bien public.",
+   "relation": "own",
+   "sources": [],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 143",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "Adams moves Vattel's praise of the English constitution to jury trial: 'constitution' becomes 'institution' and 'this great end' becomes 'the great end of society, the distributing justice', while 'a spirit of true patriotism, which is zealously employed for the publick welfare' keeps the older translation's wording. The marks show a quotation, but the 'great writer' named just before speaks to a different point, so Vattel is not named."
+  },
+  {
+   "doc": "sadams-1771a",
+   "author": "Samuel Adams",
+   "document": "\"Vindex\", Boston Gazette, 21 January 1771",
+   "date": "1771-01-21",
+   "unit": "I.30",
+   "label": "quotation",
+   "named": false,
+   "american": "The constitution and its \nlaws are the basis of the public tranquility — the firm \nest support of the public authority, and the pledge of \nthe liberty of the citizens : But the constitution is a \nvain Phantom, and the best laws are useless, if they \nare not religiously observed. The nation ought then \nto watch, and the true patriot will watch very atten \ntively, in order to render them equally respected, by \nthose who govern, and the people destin'd to obey \" — \nTo violate the laws of the state is a capital crime ; \nand if those guilty of it, are invested with authority, \nthey add to this crime, a perfidious abuse of the \npower with which they are entrusted : \" The nation \ntherefore, the people, ought to suppress those abuses \nwith their utmost care & vigilance",
+   "vattel_1797": "The constitution and laws of a state are the basis of the public tranquillity, the firmest support of political authority, and a security for the liberty of the citizens. But this constitution is a vain <10> phantom, and the best laws are useless, if they be not religiously observed: the nation ought then to watch very attentively, in order to render them equally respected by those who govern, and by the people destined to obey. To attack the constitution of the state, and to violate its laws, is a capital crime against society; and if those guilty of it are invested with authority, they add to this crime a perfidious abuse of the power with which they are intrusted. The nation ought constantly to repress them with its utmost vigour and vigilance",
+   "french": "La constitution de l'état & ses loix sont la base de la tranquillité publique , le plus ferme appui de l'autorité politique & le gage de la liberté des citoyens. Mais cette constitution est un vain fantôme , & les meilleures loix sont inutiles , si on ne les observe pas religieusement. La nation doit donc veiller sans relâche à les faire également respecter & de ceux qui gouvernent , & du peuple destiné à obéir. Attaquer la constitution de l'état , violer ses loix , c'est un crime capital contre la société ; & si ceux qui s'en rendent coupables sont des personnes revêtues d'autorité , ils ajoutent au crime en lui - même , un perfide abus du pouvoir qui leur est confié. La nation doit constamment les réprimer avec toute la vigueur & la vigilance que demande l'importance du sujet.",
+   "relation": "other+own",
+   "sources": [
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. IX § 6",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. IX § 4, n. 1",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 151",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "Adams quotes I.30 against Philanthrop's call for subordination. He inserts 'and the true patriot will watch' and 'the people' to make the body of the people the guardian of the constitution, and he leaves the middle sentence on violating the laws as a capital crime outside the marks."
+  },
+  {
+   "doc": "house-1771",
+   "author": "Massachusetts House of Representatives (Samuel Adams)",
+   "document": "Letter to Benjamin Franklin, 29 June 1771",
+   "date": "1771-06-29",
+   "unit": "I.34",
+   "label": "close paraphrase",
+   "named": false,
+   "american": "If ever the provincial assemblies should be voluntarily silent, on the Parliament's taking upon themselves a power thus to violate our constitutional and Charter Rights, it might be considered as an approbation of it, or at least a tacit consent",
+   "vattel_1797": "if the parliament entered into a deliberation to make so important a change, and the whole nation was voluntarily silent upon it, this would be considered as an approbation of the act of its representatives",
+   "french": "Mais si le parlement délibéroit de faire un changement si considérable , & que la nation entiere gardât volontairement le silence , elle seroit censée approuver le fait de ses réprésentans.",
+   "relation": "own",
+   "sources": [],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 178",
+   "in_studies": false,
+   "found_by": "search",
+   "note": "The House applies the silence clause to the provincial assemblies and concludes: 'It is therefore our duty to declare our Rights'."
+  },
+  {
+   "doc": "sadams-1771b",
+   "author": "Samuel Adams",
+   "document": "\"Candidus\", Boston Gazette, 19 August 1771",
+   "date": "1771-08-19",
+   "unit": "I.34",
+   "label": "close paraphrase",
+   "named": false,
+   "american": "If therefore we are voluntarily silent while the single duty on tea is continued, or do any act, however innocent, simply considered, which may be construed by the tools of administration ... as an acquiescence in the measure, we are in extreme hazard",
+   "vattel_1797": "if the parliament entered into a deliberation to make so important a change, and the whole nation was voluntarily silent upon it, this would be considered as an approbation of the act of its representatives",
+   "french": "Mais si le parlement délibéroit de faire un changement si considérable , & que la nation entiere gardât volontairement le silence , elle seroit censée approuver le fait de ses réprésentans.",
+   "relation": "own",
+   "sources": [],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 202",
+   "in_studies": false,
+   "found_by": "search",
+   "note": "Adams applies the silence clause to the remaining tea duty: silence would be construed as acquiescence."
+  },
+  {
+   "doc": "sadams-1771c",
+   "author": "Samuel Adams",
+   "document": "\"Candidus\", Boston Gazette, 14 October 1771",
+   "date": "1771-10-14",
+   "unit": "I.34",
+   "label": "quotation",
+   "named": false,
+   "american": "\" By the \nfundamental laws of England, the two houses of par \nliament in concert with the King, exercise the legisla \ntive power : But if the two houses should be so \ninfatuated, as to resolve to suppress their powers, and \n\n\ni77i] SAMUEL ADAMS. 255 \n\ninvest the King with the full and absolute government, \ncertainly the nation would not suffer it.\"",
+   "vattel_1797": "By the fundamental laws of England, the two houses of parliament, in concert with the king, exercise the legislative power: but if the two houses should resolve to suppress themselves, and to invest the king with full and absolute authority, certainly the nation would",
+   "french": "Par les loix fondamentales de l'Angleterre , les deux chambres du parlement , de concert avec le roi , exercent la puissance législative. S'il prenoit envie aux deux chambres de se supprimer ellesmêmes , & de revêtir le roi de l'empire plein & absolu , certainement la nation ne le souffriroit pas.",
+   "relation": "own+other",
+   "sources": [
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. VIII § 8",
+     "label": "shared argument"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 254-255",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "Just before the quotation Adams paraphrases the end of I.34 ('if we are voluntarily silent... it will be consider'd as an approbation of the change'). He then quotes Vattel on the two houses, adding 'be so infatuated', and goes from there to the people's right to resist a minister who sets up his instructions to Hutchinson as laws. The judge's 'attrib.' and undated essay is the Candidus article of October 14, 1771."
+  },
+  {
+   "doc": "sadams-1771d",
+   "author": "Samuel Adams",
+   "document": "\"Valerius Poplicola\", Boston Gazette, 28 October 1771",
+   "date": "1771-10-28",
+   "unit": "I.220",
+   "label": "quotation",
+   "named": true,
+   "american": "Every man being born free, says another distin \nguished writer, the son of a citizen, arrived at the \nyears of discretion, may examine whether it be con \nvenient for him to join in the society for which he was \ndestined by birth*. If he finds that it will be no ad \nvantage for him to remain in it, he is at liberty to \nleave it, preserving as much as his new engagements \nwill allow him, the love and gratitude he owes it.",
+   "vattel_1797": "But every man is born free; and the son of a citizen, when come to the years of discretion, may examine whether it be convenient for him to join the society for which he was destined by his birth. If he does not find it advantageous to remain in it, he is at liberty to quit it on making it a compensation for what it has done in his favour,* and preserving, as far as his new engagements will allow him, the sentiments of love and gratitude he owes it.",
+   "french": "Mais tout homme naît libre ; le fils d'un citoyen, parvenu à l'âge de raison, peut examiner s'il lui convient de se joindre à la société que sa naissance lui destine. S'il ne trouve point qu'il lui soit avantageux d'y rester, il est le maître de la quitter, en la dédommageant de ce qu'elle pourroit avoir fait en sa faveur ( * ), & en conservant pour elle, autant que ses nouveaux engagemens le lui permettront, les sentimens d'amour & de reconnoissance qu'il lui doit.",
+   "relation": "against-wolff",
+   "sources": [
+    {
+     "text": "burlamaqui-droit-politique-1751",
+     "locus": "Part. I ch. V § 9-10",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VIII ch. XI § 2, n. 1",
+     "label": "shared argument"
+    },
+    {
+     "text": "wolff-institutiones-1750",
+     "locus": "Institutiones § 1019",
+     "label": "divergence (severity 3)"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 258",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Adams sets Vattel beside Locke against Hutchinson's claim that allegiance is perpetual and unalienable, and he silently drops the condition that the emigrant compensate the society ('en la dédommageant...'). The words are covered only by Burlamaqui and Pufendorf-Barbeyrac rows. The free right to leave that they state is the point on which Vattel departs from Wolff, Inst. § 1019, which requires the superior's consent."
+  },
+  {
+   "doc": "sadams-1771d",
+   "author": "Samuel Adams",
+   "document": "\"Valerius Poplicola\", Boston Gazette, 28 October 1771",
+   "date": "1771-10-28",
+   "unit": "I.223",
+   "label": "quotation",
+   "named": true,
+   "american": "There are cases in which a citizen \nhas an absolute right to renounce his country, and \nabandon it for ever",
+   "vattel_1797": "There are cases in which a citizen has an absolute right to renounce his country, and abandon it entirely",
+   "french": "Il est des cas dans lesquels un citoyen est absolument en droit, par des raisons prises du pacte même de la société politique, de renoncer à sa patrie & de l'abandonner.",
+   "relation": "against-wolff",
+   "sources": [
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VIII ch. XI § 4, n. 1",
+     "label": "shared argument"
+    },
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "Jus gentium § 154",
+     "label": "divergence (severity 2)"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 258",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Adams uses the absolute right to renounce one's country against Hutchinson's perpetual allegiance. He then paraphrases Vattel's third case, the sovereign or majority allowing only one religion, to say the Puritans left England lawfully (covered by Wolff JG § 153, shared argument, and a § 153 divergence). The quoted sentence itself has only a Pufendorf-Barbeyrac note row and is the point Vattel holds against Wolff, JG § 154."
+  },
+  {
+   "doc": "sadams-1772",
+   "author": "Samuel Adams",
+   "document": "\"Candidus\", Boston Gazette, 27 January 1772",
+   "date": "1772-01-27",
+   "unit": "I.34",
+   "label": "quotation",
+   "named": true,
+   "american": "The \nfundamental laws,\" says Vatel, \" are excepted from \ntheir (legislators) commission,\" \" nothing leads us to \nthink that the nation was willing to submit the cons ft326 THE WRITINGS OF [1772 \n\ntution itself to their pleasure.\" \" They derive their \nauthority from the constitution, how then can they \nchange it without destroying the foundation of their \nown authority ? \"",
+   "vattel_1797": "the fundamental laws are excepted from their commission. It is visible that the society only intended to make provision for having the state constantly furnished with laws suited to particular conjunctures, and, for that purpose, gave the legislature the power of abrogating the ancient civil and political laws that were not fundamental, and of making new ones: but nothing leads us to think that it meant to submit the constitution itself to their will. In short, it is from the constitution that those legislators derive their power: how then can they change it, without destroying the foundation of their own authority?",
+   "french": "les loix fondamentales sont exceptées de leur commission. On voit que la société a seulement voulu pourvoir à ce que l'état fut toujours muni de loix convenables aux conjonctures , & donner pour cet effet aux législateurs le pouvoir d'abroger les anciennes loix civiles & les loix politiques non fondamentales , & d'en faire de nouvelles ; mais rien ne conduit à penser qu'elle ait voulu soumettre sa constitution même à leur volonté. Enfin , c'est de la constitution que ces législateurs tiennent leur pouvoir ; comment pourroient - ils la changer , sans détruire le fondement de leur autorité ?",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-naturae-8-1748",
+     "locus": "",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "wolff-jus-naturae-8-1748",
+     "locus": "§ 820",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 325-326",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Adams strings together three sentences of I.34 in marks to argue that, as Magna Charta declares the fundamental laws, Parliament cannot alter it and an act against it is void. The same article quotes the earlier part of I.34 (legislators' authority \"does not extend so far\", fundamental laws \"sacred\", constitution \"fixed\") just before and its England example just after, so the whole run on pp. 325-326 quotes nearly all of the section; the wording (\"to their pleasure\") is the earlier English translation."
+  },
+  {
+   "doc": "sadams-1772",
+   "author": "Samuel Adams",
+   "document": "\"Candidus\", Boston Gazette, 27 January 1772",
+   "date": "1772-01-27",
+   "unit": "III.290",
+   "label": "quotation",
+   "named": true,
+   "american": "Tyrants alone, \nsays the great Vatei, will treat as seditious, those \nbrave and resolute citizens, who exhort the people to \npreserve themselves from oppression, in vindication \nof their rights and privileges : A good prince, says \n\nhe, will commend such virtuoiis patriots \" and \n\nwill \" mistrust the selfish suggestions of a minister, \nwho represents to him as rebels, all those citizens who \ndo not hold out their hands to chains, who refuse \ntamely to suffer the strokes of arbitrary power.\"",
+   "vattel_1797": "tyrants alone will treat, as seditious, those brave and resolute citizens who exhort the people to preserve themselves from oppression, and to vindicate their rights and privileges: a good prince will commend such virtuous patriots, provided their zeal be tempered with moderation and prudence. If he has justice and his duty at heart,—if he aspires to that immortal and unsullied glory of being the father of his people, let him mistrust the selfish suggestions of that minister who represents to him as rebels all those citizens who do not stretch out their necks to the yoke of slavery,—who refuse tamely to crouch under the rod of arbitrary power.",
+   "french": "les tyrans seuls traiteront de séditieux ces citoyens courageux & fermes , qui exhortent le peuple à se garantir de l'oppression, à maintenir ses droits & ses privileges: un bon prince louera ces vertueux patriotes, pourvu que leur zele soit tempéré par la modération & la prudence. S'il aime la justice & son devoir, s'il aspire à la gloire immortelle & si pure d'être le pere de son peuple , qu'il se défie des suggestions intéressées d'un ministre qui lui peint comme des rebelles tous les citoyens qui ne ten-dent pas les mains à l'esclavage, qui refusent de plier sans murmure , sous les coups d'un pouvoir arbitraire.",
+   "relation": "other",
+   "sources": [
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. VII § 6, n. 1",
+     "label": "shared argument"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 323",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "Adams quotes Vattel to defend jealousy as a political virtue and the \"patriots\" Chronus derides, silently dropping Vattel's proviso that their zeal be tempered with moderation and prudence. His wording (\"in vindication of their rights\", \"hold out their hands to chains\", \"suffer the strokes of arbitrary power\") follows an earlier English translation closer to the French (tendent les mains à l'esclavage, sous les coups) than the 1797 text; the quotation sits on p. 323 only, not 322-323."
+  },
+  {
+   "doc": "boston-1772",
+   "author": "Boston town meeting (Samuel Adams)",
+   "document": "The State of the Rights of the Colonists, 20 November 1772",
+   "date": "1772-11-20",
+   "unit": "I.1",
+   "label": "close paraphrase",
+   "named": true,
+   "american": "A Common Wealth or state is a body politick or \ncivil society of men, united together to promote their \nmutual safety and prosperity, by means of their \nunion.*",
+   "vattel_1797": "a body politic, or a society of men united together for the purpose of promoting their mutual safety and advantage by their combined strength",
+   "french": "un corps politique, ou une société d'hommes unis ensemble pour procurer leur avantage & leur sûreté , à forces réunies.",
+   "relation": "wolff-loose",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 9",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "formey-principes-1758",
+     "locus": "Liv. VIII ch. I § VIII",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "burlamaqui-droit-politique-1751",
+     "locus": "§ IX",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "vattel-questions-1762",
+     "locus": "",
+     "label": "loose paraphrase"
+    },
+    {
+     "text": "pufendorf-barbeyrac-1734",
+     "locus": "Liv. VII ch. VI § 7",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 356",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "Adams opens the colonists' rights as subjects with Vattel's definition of the state, grafting Locke's \"Common Wealth\" and \"civil society\" onto it (hence the note \"See Lock and Vatel\") and rendering \"à forces réunies\" as \"by means of their union\", apparently the earlier English translation. The I.1 form fits better than Prelim.1 (V32), which it restates; behind both lies Wolff's definition of civitas (Jus gentium § 9)."
+  },
+  {
+   "doc": "hutchinson-1773",
+   "author": "Thomas Hutchinson",
+   "document": "Speech to the two Houses, 6 January 1773",
+   "date": "1773-01-06",
+   "unit": "I.210",
+   "label": "quotation",
+   "named": false,
+   "american": "when a nation takes possession of a distant \ncountry, and settles there, that country, though separated from the \nprincipal establishment, or mother country, naturally becomes a \npart of the state, equally with its ancient possessions.",
+   "vattel_1797": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions.",
+   "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 292",
+     "label": "close paraphrase"
+    }
+   ],
+   "edition": "Bradford, Speeches of the Governors (1818)",
+   "pages": "Bradford 337",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Hutchinson quotes I.210 to argue that the colony, as a settlement of the nation, has always been subject to Parliament's supreme authority. He drops \"a colony\" after \"settles\"; his \"or mother country\" is in the English translation only (the French has just \"l'établissement principal\"), so he used the English Vattel."
+  },
+  {
+   "doc": "house-1773a",
+   "author": "Massachusetts House of Representatives",
+   "document": "Answer to the Governor, 26 January 1773",
+   "date": "1773-01-26",
+   "unit": "I.34",
+   "label": "quotation",
+   "named": false,
+   "american": "does not extend so far \nas the fundamentals of the constitution. They ought \nto consider the fundamental laws as sacred, if the \nnation has not in very express terms, given them the \npower to change them. For the constitution of the \nstate ought to be fixed ; and since that was first \nestablished by the nation, which afterwards trusted \ncertain persons with the Legislative power, the funda \nmental laws are excepted from their commission.\"",
+   "vattel_1797": "does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them. For the constitution of the state ought to possess stability: and since that was first established by the nation, which afterwards intrusted certain persons with the legislative power, the fundamental laws are excepted from their commission",
+   "french": "l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-naturae-8-1748",
+     "locus": "",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "formey-principes-1758",
+     "locus": "Principes, droit public (lois fondamentales)",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 421–422; Bradford 362",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "The House quotes I.34 to argue that the fundamentals of the province's constitution are fixed in the charter, so no provincial acts referring to acts of Parliament can be taken as conceding Parliament's supreme authority. The date is 26 January 1773; the wording (\"fixed\", \"trusted\") is the earlier English translation."
+  },
+  {
+   "doc": "house-1773a",
+   "author": "Massachusetts House of Representatives",
+   "document": "Answer to the Governor, 26 January 1773",
+   "date": "1773-01-26",
+   "unit": "II.265",
+   "label": "quotation",
+   "named": false,
+   "american": "The celebrated author, whom your Excellency has quoted, tells us, that, \" neither the one or the other of the interested, or contracting powers, hath a right to interpret at pleasure.\"",
+   "vattel_1797": "Neither the one nor the other of the parties interested in the contract has a right to interpret the deed or treaty according to his own fancy.",
+   "french": "ni l'un ni l'autre des intéressés, ou des contractans n'est en droit d'interpréter à son gré l'acte, ou le traité.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 375",
+     "label": "close paraphrase"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 410; Bradford 356",
+   "in_studies": true,
+   "found_by": "search",
+   "note": "The House turns the Governor's author against him: Parliament, even as a party to the charter, could not interpret it at pleasure. The wording is not the 1797 translation's."
+  },
+  {
+   "doc": "house-1773a",
+   "author": "Massachusetts House of Representatives",
+   "document": "Answer to the Governor, 26 January 1773",
+   "date": "1773-01-26",
+   "unit": "II.283",
+   "label": "quotation",
+   "named": false,
+   "american": "An agreement ought to be in \nterpreted \" in such a manner as that it may have its \neffect.\"",
+   "vattel_1797": "in such a manner, as that it may have its effect",
+   "french": "Il faut l'interpréter de maniere qu'il puisse avoir son effet",
+   "relation": "own",
+   "sources": [],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 411; Bradford 356",
+   "in_studies": false,
+   "found_by": "retrieval",
+   "note": "The House turns Vattel's rules of interpretation against the Governor: after quoting \"the celebrated author\" that no contracting party may interpret at pleasure (apparently II.265), it quotes II.283 so that the charter's grant of legislative power must be read to take effect, not be nullified by Parliament's reserved power. The judge's page (421) is wrong: the passage is on p. 411; no source row covers this sentence, though the rule in the sentences before it has Wolff, Institutiones § 804 behind it."
+  },
+  {
+   "doc": "house-1773b",
+   "author": "Massachusetts House of Representatives",
+   "document": "Answer to the Governor, 2 March 1773",
+   "date": "1773-03-02",
+   "unit": "I.34",
+   "label": "close paraphrase",
+   "named": false,
+   "american": "the reasoning of a learned writer on the laws \nof nature and nations, quoted by us, on this occasion, \nto shew that the authority of the Legislature does not \nextend so far as the fundamentals of the constitution. \nWe are unhappy in not having your remarks upon the \nreasoning of that great man ; and, until it is confuted, \nwe shall remain of the opinion, that the fundamentals \nof the constitution being excepted from the commis \nsion of the Legislators, none of the acts or doings of \nthe General Assembly, however deliberate and solemn, \ncould avail to change them, if the people have not, in \nvery express terms, given them the power to do it",
+   "vattel_1797": "does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them",
+   "french": "l'autorité de ces législateurs ne va pas si loin , & que les loix fondamentales doivent être sacrées pour eux , si la nation ne leur a pas donné très - expressément le pouvoir de les changer. Car la constitution de l'état doit être stable : & puisque la nation l'a premiérement établie , & qu'elle a ensuite confié la puissance législative à certaines personnes , les loix fondamentales sont exceptées de leur commission.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-naturae-8-1748",
+     "locus": "",
+     "label": "close paraphrase"
+    },
+    {
+     "text": "formey-principes-1758",
+     "locus": "Principes, droit public (lois fondamentales)",
+     "label": "loose paraphrase"
+    }
+   ],
+   "edition": "Writings of Samuel Adams, ed. Cushing, II (1906)",
+   "pages": "Cushing II, 452; Bradford 395",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Complaining that the Governor has not answered \"that great man\", the House restates I.34 in Vattel's words without marks (the fundamentals \"excepted from the commission of the Legislators\" unless the people \"in very express terms\" gave the power), now applied to the General Assembly. The judge's date is wrong: this is the reply of 2 March 1773, on p. 452."
+  },
+  {
+   "doc": "leonard-1775",
+   "author": "Daniel Leonard",
+   "document": "\"Massachusettensis\", Massachusetts Gazette, 9 January 1775",
+   "date": "1775-01-09",
+   "unit": "I.210",
+   "label": "verbatim",
+   "named": false,
+   "american": "The best writers upon the law of\nnations tell us, that when a nation takes possession of a distant\ncountry, and settles there, that country, though separated from the\nprincipal establishment, or mother country, naturally becomes a\npart of the state, equal with its ancient possessions.",
+   "vattel_1797": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions.",
+   "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 292",
+     "label": "close paraphrase"
+    }
+   ],
+   "edition": "Novanglus, and Massachusettensis (Boston, 1819)",
+   "pages": "1819, 170",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "Leonard sets Vattel I.210, unnamed, as what 'the best writers upon the law of nations tell us', between 'The colonies are a part of the British empire' and the imperium in imperio argument, to conclude that the colonies are subject to Parliament. Author is Daniel Leonard; the judge's Jonathan Sewall follows the 1819 title page."
+  },
+  {
+   "doc": "jadams-1775",
+   "author": "John Adams",
+   "document": "\"Novanglus\" no. VII, Boston Gazette, 6 March 1775",
+   "date": "1775-03-06",
+   "unit": "I.210",
+   "label": "quotes Leonard",
+   "named": false,
+   "american": "\"The best writers upon the law of nations, tell us, that when a\nnation takes possession of a distant country and settles there,\nthat country, though separated from the principal establishment, or\nmother country, naturally becomes a part of the state, equal with\nits ancient possessions.\"",
+   "vattel_1797": "When a nation takes possession of a distant country, and settles a colony there, that country, though separated from the principal establishment, or mother-country, naturally becomes a part of the state, equally with its ancient possessions.",
+   "french": "Lorsqu'une nation s'empare d'un pays éloigné , & y établit une colonie , ce pays , quoique séparé de l'établissement principal , fait naturellement partie de l'état ; tout comme ses anciennes possessions.",
+   "relation": "wolff",
+   "sources": [
+    {
+     "text": "wolff-jus-gentium-1749",
+     "locus": "§ 292",
+     "label": "close paraphrase"
+    }
+   ],
+   "edition": "Novanglus, and Massachusettensis (Boston, 1819)",
+   "pages": "1819, 80",
+   "in_studies": true,
+   "found_by": "retrieval",
+   "note": "The 1819 text of the same passage as V12: Adams quotes Leonard's unnamed Vattel and complains 'We are not told who these \"best writers\" are', so the label is verbatim, not quotation. The judge (following the 1819 title page) gives Massachusettensis to Jonathan Sewall; the author was Daniel Leonard."
+  }
+ ]
+}
