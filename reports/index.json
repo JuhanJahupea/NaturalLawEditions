@@ -20,24 +20,21 @@
    "generator": "tools/reports/vattel_jus_gentium.py"
   },
   {
-   "id": "vattel-essai-obligation",
-   "kind": "essay",
-   "title": "Obligation without a superior: Vattel's Essai between Wolff and Barbeyrac",
-   "summary": "Vattel answers Barbeyrac with Wolff's definition of obligation, but grounds it in the agent's own utility, a step Wolff had refused.",
-   "date": "2026-11-22",
-   "file": "vattel-essai-obligation.md",
+   "id": "vattel-essai-findings",
+   "kind": "findings",
+   "title": "Five findings on Vattel's Essai sur le fondement du droit naturel",
+   "summary": "Vattel's Cicero comes from the Barbeyrac page he attacks; the word-for-word Wolff stops at PPU § 266; Vattel reads Barbeyrac's voluntarism in the notes; Burlamaqui's answer to Barbeyrac is new in 1747; the 1773 note to Préliminaires § 6 reads like a digest of Burlamaqui.",
+   "date": "2026-11-23",
+   "file": "vattel-essai-findings.md",
    "editions": [
     "vattel-essai-1747",
-    "burlamaqui-1747"
-   ],
-   "texts": [
-    "wolff-philosophia-practica-1738",
-    "pufendorf-devoirs-barbeyrac-1756",
-    "pufendorf-barbeyrac-1734"
+    "burlamaqui-1747",
+    "vattel-1773"
    ],
    "versions": {
     "vattel-essai-1747": "1.2",
-    "burlamaqui-1747": "1.14"
+    "burlamaqui-1747": "1.14",
+    "vattel-1773": "1.19"
    }
   }
  ]
