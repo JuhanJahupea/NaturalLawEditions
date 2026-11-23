@@ -2,6 +2,35 @@
  "format": "nle-reports/1",
  "reports": [
   {
+   "id": "vattel-massachusetts",
+   "kind": "essay",
+   "title": "The sentences left out: Wolff's rules and Vattel's provisos in Massachusetts, 1764–1775",
+   "summary": "The two passages of Vattel most cited in the Massachusetts dispute, I § 210 and I § 34, state rules of Wolff's and add sentences of Vattel's own. The quotations of 1773 and 1775 give the rules and leave out Vattel's sentences; the disputants argued from them in their own words.",
+   "date": "2026-11-23",
+   "file": "vattel-massachusetts.md",
+   "editions": [
+    "vattel-1773"
+   ],
+   "versions": {
+    "vattel-1773": "1.19"
+   }
+  },
+  {
+   "id": "vattel-american-sources",
+   "kind": "report",
+   "title": "Which Vattel did the colonists cite? Sources of the passages, 1762–1776",
+   "summary": "42 §§ of Le droit des gens cited by American writers, 1762–1776, traced to their sources: 24 to close paraphrases of Wolff, 4 departing from him.",
+   "date": "2026-11-23",
+   "file": "vattel-american-sources.md",
+   "editions": [
+    "vattel-1773"
+   ],
+   "versions": {
+    "vattel-1773": "1.19"
+   },
+   "generator": "tools/reports/vattel_american.py"
+  },
+  {
    "id": "vattel-jus-gentium",
    "kind": "report",
    "title": "Vattel's Droit des gens and Wolff's Jus gentium: the order of reuse",

@@ -232,6 +232,7 @@ A working edition is converted once from its `data.json`. A later pass replaces 
 
 - `kind`: `report` (built by a script from the data; `generator` names it) or `essay` (one argument from the editions and the literature; cites units as `../viewer/?ed=<edition>#<unit>`).
 - `file`: Markdown in `reports/`, shown by `reports/?r=<id>`. Figures sit beside it.
+- `reports/data/`: data a report draws on that is not in an edition. `vattel-american-citations.json` (`nle-citations/1`) lists the §§ of *Le droit des gens* that American writers cited in 1762–1776, as three studies report them: `citations` (`scholar`, `page`, `document`, `author`, `date`, `locus` as printed and normalised, `loci` as single §§, `explicit`, `argument`, `vattel_text_used`, `note`), `hypotexts` (§§ the studies propose as sources of documents that do not cite Vattel), `advertisements`, and `meta` (conventions and discrepancies between the studies).
 - `versions`: the edition versions the text was built or written against. The collection page and the report page mark a report whose editions have a newer version: a data report is then built again, an essay read again.
 
 ## Genealogies of issues (`issues/<id>.json`)
