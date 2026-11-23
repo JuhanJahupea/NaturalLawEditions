@@ -38,7 +38,7 @@ article h1+p{font:14px/1.5 var(--ui);color:var(--mut)}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
 <script>
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const KIND={report:'Data report',essay:'Essay'};
+const KIND={report:'Data report',essay:'Essay',findings:'Findings'};
 (async()=>{
  const id=new URLSearchParams(location.search).get('r');
  if(!id){location.replace('../#reports');return}

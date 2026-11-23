@@ -70,7 +70,7 @@ footer{margin-top:48px;padding-top:12px;border-top:1px solid var(--line);font:13
   </header>
   <section id="editions"><h2>Editions <span class="n" id="edN"></span></h2><div class="grid" id="eds"></div></section>
   <section id="reports"><h2>Reports and essays <span class="n" id="repN"></span></h2>
-    <p class="sub">Data reports are built by a script from the reuse tables and are built again when the tables change. Essays argue from the editions and the secondary literature; each names the edition versions it was written against, and the list marks it when the data has changed since.</p>
+    <p class="sub">Data reports are built by a script from the reuse tables and are built again when the tables change. Findings are short claims drawn from the reuse rows and divergence notes and set against the secondary literature; each names the edition versions it rests on, and the list marks it when the data has changed since.</p>
     <div class="filt" id="filt" hidden></div><div id="reps"></div></section>
   <section id="issues"><h2>Genealogies of issues <span class="n" id="issN"></span></h2>
     <p class="sub">One question followed from text to text: who takes over an answer, who cites it, who rejects it, who answers otherwise. Each issue has sub-questions, so that one passage can belong to several without tangling them.</p>
@@ -83,7 +83,7 @@ footer{margin-top:48px;padding-top:12px;border-top:1px solid var(--line);font:13
 <script>
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const num=n=>Number(n).toLocaleString('en');
-const KIND={report:'Data report',essay:'Essay'};
+const KIND={report:'Data report',essay:'Essay',findings:'Findings'};
 (async()=>{
  const C=await fetch('catalogue.json').then(r=>r.json()).catch(()=>null);
  if(!C){$('eds').textContent='Could not read catalogue.json.';return}
