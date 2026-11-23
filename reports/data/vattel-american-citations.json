@@ -1,0 +1,2218 @@
+{
+ "format": "nle-citations/1",
+ "description": "Citations of Vattel's Droit des gens / Law of Nations by American writers, 1762-1776, as reported by three studies, with the §§ each concerns. Compiled by a language model from the studies and checked against the 1773 text; see meta for conventions, discrepancies and the compiler's own identifications.",
+ "meta": {
+  "sources": {
+   "Ossipow & Gerber 2017": "W. Ossipow and D. Gerber, 'The Reception of Vattel's Law of Nations in the American Colonies', American Journal of Legal History 57 (2017) 521-555; pages are given as in the archive PDF (1-35) with the journal page (= PDF + 520) in brackets.",
+   "Somos 2021": "M. Somos, 'Vattel's Reception in British America, 1761-1775', in P. Schröder (ed.), Concepts and Contexts of Vattel's Political and Legal Thought (2021), 203-219; book pages.",
+   "Schmeeckle 2006/2016": "J. S. Schmeeckle, 'Vattel's \"The Law of Nations\" and the Declaration of Independence' (written 2006, author's note 2016); unpaginated, so positions are given by endnote number. The endnotes are missing from in.txt and were read from in.doc."
+  },
+  "locus_format": "Book.§ with Vattel's continuous § numbering per book; 'Prelim' = Préliminaires; ranges as 'I.200-202'; chapter-level references as 'I.ch.XIX'; several loci comma-separated. 'loci' expands each locus to single §§ (chapter-level references expand to nothing).",
+  "explicit_values": "'explicit' / 'silent' as coded by the scholar ('unclear' where the scholar's wording leaves it open). Somos counts only explicit references (Vattel named).",
+  "compiler_identifications": "Where a scholar quotes an American's Vattel wording without a locus, the compiler identified the § and says so in 'note' (Schmeeckle's Otis and Samuel Adams quotations; Leonard's 'next paragraph'). Section headings and wording were checked against the Neuchâtel 1773 text of Le droit des gens in this repository (editions/vattel-1773).",
+  "discrepancies": [
+   "O&G F3.3: Table 1 has 3, XIII, §201; the text (PDF p. 14) has '3, X, § 201'. §201 is in III.ch.XIII.",
+   "O&G F8: Table 1 codes 'Valerius Poplicola' silent (I §220); the text (p. 15) says Adams refers explicitly; Somos (p. 213) gives I-xix-223, and the words he quotes belong to I §223.",
+   "Somos p. 217 'LN, I-ii-9' (Britannus): §9 is in Book I ch. I (two states under one prince).",
+   "Schmeeckle gives the sentence 'Happiness is the point where center all those duties...' as Book 1, Chap. 2, § 15 in the DI comparison but as Book 1, Chap. 11, § 110 at n. 28; it is I §110.",
+   "Franklin to Dumas: 9 Dec. 1775 (O&G, Somos) vs 19 Dec. 1775 (Schmeeckle); Schmeeckle calls Dumas's edition the '[1774] edition'.",
+   "Schmeeckle's first Otis 'quotation' from Vattel ('It is contrary to reason that the supreme power...') is not Vattel's wording; Somos (p. 210) treats that passage as the Assembly's paraphrase of I §34 with its own addition about slavery.",
+   "Somos disputes O&G's F4 (Thacher) and F7 (Circular Letter) as 'tenuous' (p. 212 n. 28)."
+  ],
+  "counts": {
+   "citations": 81,
+   "citations_by_scholar": {
+    "Ossipow & Gerber 2017": 30,
+    "Somos 2021": 45,
+    "Schmeeckle 2006/2016": 6
+   },
+   "citations_with_locus": 63,
+   "hypotexts": 53,
+   "hypotexts_by_scholar": {
+    "Ossipow & Gerber 2017": 35,
+    "Schmeeckle 2006/2016": 18
+   },
+   "advertisements": 20
+  },
+  "distinct_loci_cited": [
+   "Prelim.1",
+   "Prelim.2",
+   "Prelim.4",
+   "Prelim.5",
+   "Prelim.6",
+   "Prelim.7",
+   "Prelim.8",
+   "Prelim.13",
+   "Prelim.15",
+   "Prelim.18",
+   "Prelim.21",
+   "I.4",
+   "I.9",
+   "I.24",
+   "I.29",
+   "I.30",
+   "I.31",
+   "I.34",
+   "I.51",
+   "I.120",
+   "I.121",
+   "I.123",
+   "I.124",
+   "I.128",
+   "I.200",
+   "I.201",
+   "I.202",
+   "I.210",
+   "I.220",
+   "I.223",
+   "II.53",
+   "II.54",
+   "II.56",
+   "II.57",
+   "II.191",
+   "II.265",
+   "II.282",
+   "II.292",
+   "II.297",
+   "III.51",
+   "III.52",
+   "III.201"
+  ],
+  "distinct_loci_hypotexts": [
+   "Prelim.3",
+   "Prelim.4",
+   "Prelim.10",
+   "Prelim.11",
+   "Prelim.15",
+   "Prelim.18",
+   "Prelim.23",
+   "I.4",
+   "I.10",
+   "I.15",
+   "I.26",
+   "I.30",
+   "I.31",
+   "I.32",
+   "I.35",
+   "I.45",
+   "I.51",
+   "I.61",
+   "I.110",
+   "I.200",
+   "I.202",
+   "II.16",
+   "III.51",
+   "III.52",
+   "III.56",
+   "III.290"
+  ],
+  "chapter_level_references": [
+   "I.ch.XIX",
+   "I.ch.XVII",
+   "III.ch.IV"
+  ]
+ },
+ "citations": [
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 9 [journal p. 529]",
+   "document": "The New-York Gazette, advertisement (F1)",
+   "author": "Garrat Noel (bookseller)",
+   "date": "1762-11-29",
+   "locus": null,
+   "locus_as_printed": "\"GARRAT NOEL Has just imported from London (. . .) The Law of Nations (. . .) By M. de Vattel.\"",
+   "explicit": "explicit",
+   "argument": "book advertised for sale (earliest evidence of Vattel in America)",
+   "vattel_text_used": "English 1760 (the 1760 London edition, PDF p. 9)",
+   "note": "F1. Mention only, no passage. Figure 1 reproduces the advertisement (PDF p. 9).",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]",
+   "document": "Diary (F2)",
+   "author": "John Adams",
+   "date": "1763-02-01",
+   "locus": null,
+   "locus_as_printed": "\"The idea of M. de Vattel indeed, scowling and frowning, haunted me.\"",
+   "explicit": "explicit",
+   "argument": "Adams reproaching himself over Vattel (no argument)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F2. Mention only, no passage. Butterfield ed., Diary 1:235 (n. 37).",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]; PDF p. 14 [journal p. 534]",
+   "document": "The Rights of the British Colonies Asserted and Proved (F3.1)",
+   "author": "James Otis",
+   "date": "1764",
+   "locus": "I.210",
+   "locus_as_printed": "1, XVIII, §210",
+   "explicit": "explicit",
+   "argument": "status of colonies as part of the mother state",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F3.1. O&G p. 14: on the colonies' status as appendages subject to British law 'Vattel would assent' (F3.1, F11, F15). Samuelson ed. 119, 121, 175 (n. 34). Somos (p. 209-210) places the same three Vattel passages (I.34, I.210, III.201) in the Assembly memorandum appended to Rights.",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 14 [journal p. 534]",
+   "document": "The Rights of the British Colonies Asserted and Proved (F3.2)",
+   "author": "James Otis",
+   "date": "1764",
+   "locus": "I.34",
+   "locus_as_printed": "1, III, §34",
+   "explicit": "explicit",
+   "argument": "legislature cannot change the fundamental laws (constitution)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F3.2. O&G p. 14: I §34 is the most quoted paragraph (four times: F3.2, F7, F12.1, F13) and itself draws on Locke, Second Treatise ch. XI. O&G quote: 'the authority of these legislators does not extend so far, and that they ought to consider the fundamental laws as sacred, if the nation has not, in very express terms, given them power to change them.'",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 14 [journal p. 534]",
+   "document": "The Rights of the British Colonies Asserted and Proved (F3.3)",
+   "author": "James Otis",
+   "date": "1764",
+   "locus": "III.201",
+   "locus_as_printed": "3, XIII, §201 (Table 1); '3, X, § 201' in text p. 14",
+   "explicit": "explicit",
+   "argument": "limited rights of a conqueror over a conquered country",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F3.3. Otis 'extracts a long quotation'; O&G relate it to Locke, Second Treatise §222. The chapter numeral X on p. 14 is a slip: §201 lies in Book III ch. XIII (§§193-203).",
+   "loci": [
+    "III.201"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]",
+   "document": "Sentiments of a British American (F4)",
+   "author": "Oxenbridge Thacher",
+   "date": "1764",
+   "locus": "I.24",
+   "locus_as_printed": "1, II, §24",
+   "explicit": "explicit",
+   "argument": "not stated by O&G (I.24 is Vattel's example of England's admirable constitution)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F4. Bailyn, Pamphlets 1:490 (n. 35). Somos (p. 212 n. 28) calls this attribution 'tenuous'.",
+   "loci": [
+    "I.24"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]",
+   "document": "Diary (F5.1)",
+   "author": "John Adams",
+   "date": "1765-12-27",
+   "locus": "II.282",
+   "locus_as_printed": "2, XVII, §282",
+   "explicit": "explicit",
+   "argument": "not stated by O&G (Vattel's rules for interpreting laws/acts, II.ch.XVII)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F5.1. Butterfield ed., Diary 1:278 (n. 37). Somos (p. 212) discusses the same diary entry as judicial-review reasoning.",
+   "loci": [
+    "II.282"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]",
+   "document": "Diary (F5.2)",
+   "author": "John Adams",
+   "date": "1765-12-27",
+   "locus": "II.292",
+   "locus_as_printed": "2, XVII, §292",
+   "explicit": "explicit",
+   "argument": "not stated by O&G (Vattel's rules for interpreting laws/acts, II.ch.XVII)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F5.2. Butterfield ed., Diary 1:278 (n. 37). Somos (p. 212) discusses the same diary entry as judicial-review reasoning.",
+   "loci": [
+    "II.292"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]",
+   "document": "Diary (F5.3)",
+   "author": "John Adams",
+   "date": "1765-12-27",
+   "locus": "II.297",
+   "locus_as_printed": "2, XVII, §297",
+   "explicit": "explicit",
+   "argument": "not stated by O&G (Vattel's rules for interpreting laws/acts, II.ch.XVII)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F5.3. Butterfield ed., Diary 1:278 (n. 37). Somos (p. 212) discusses the same diary entry as judicial-review reasoning.",
+   "loci": [
+    "II.297"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 13 [journal p. 533]; PDF p. 15 [journal p. 535]",
+   "document": "An Inquiry into the Rights of the British Colonies (F6)",
+   "author": "Richard Bland",
+   "date": "1766",
+   "locus": "Prelim.4-5",
+   "locus_as_printed": "Preliminaries, §4-5",
+   "explicit": "explicit",
+   "argument": "men born free and independent; government by consent (compact)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F6. In a footnote Bland names 'Yattel (sic)' beside Locke; O&G relate Prelim. §§4-5 to Locke, Second Treatise ch. VIII §95 ff. (p. 15). The only distinctly Vattelian fragment from the middle or southern colonies (p. 13). Jensen, Tracts 112 (n. 39).",
+   "loci": [
+    "Prelim.4",
+    "Prelim.5"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 14 [journal p. 534]",
+   "document": "Massachusetts Circular Letter (F7)",
+   "author": "Samuel Adams",
+   "date": "1768-02-11",
+   "locus": "I.34",
+   "locus_as_printed": "1, III, §34",
+   "explicit": "silent",
+   "argument": "legislature cannot change the constitution",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F7. Bradford, Speeches of the Governors 134 (n. 36). Somos (p. 212 n. 28) calls this reading 'equally tenuous'.",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 15 [journal p. 535]",
+   "document": "Boston Gazette, essay signed 'Valerius Poplicola' (F8)",
+   "author": "Samuel Adams",
+   "date": "1771-10-28",
+   "locus": "I.220",
+   "locus_as_printed": "1, XIX, §220",
+   "explicit": "silent",
+   "argument": "right of a person to leave his or her country",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F8. Inconsistency in O&G: Table 1 codes it S (silent) but the text (p. 15) says Adams 'explicitly refers to the Vattelian hypotext of 1, XIX, § 220'. Locke is named and Second Treatise ch. VIII (§115) paraphrased. Writings of Samuel Adams 2:258 (n. 36). Somos (p. 213) gives I-xix-223 for the same essay.",
+   "loci": [
+    "I.220"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]; PDF p. 13 [journal p. 533]",
+   "document": "Massachusetts Spy, essay signed 'Agricola' (F9.1)",
+   "author": "'Agricola' (pseud.; O&G suspect John Adams or someone in his circle, n. 44)",
+   "date": "1772-10-22",
+   "locus": "Prelim.13",
+   "locus_as_printed": "Preliminaries, §13",
+   "explicit": "silent",
+   "argument": "not stated by O&G (section topic: general obligation natural society imposes on nations)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F9.1. Massachusetts Spy, 22 Oct. 1772 (n. 38). Somos (p. 214) analyses the same essay with different loci.",
+   "loci": [
+    "Prelim.13"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]; PDF p. 13 [journal p. 533]",
+   "document": "Massachusetts Spy, essay signed 'Agricola' (F9.2)",
+   "author": "'Agricola' (pseud.; O&G suspect John Adams or someone in his circle, n. 44)",
+   "date": "1772-10-22",
+   "locus": "Prelim.15",
+   "locus_as_printed": "Preliminaries, §15",
+   "explicit": "silent",
+   "argument": "not stated by O&G (section topic: liberty and independence of nations)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F9.2. Massachusetts Spy, 22 Oct. 1772 (n. 38). Somos (p. 214) analyses the same essay with different loci.",
+   "loci": [
+    "Prelim.15"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]; PDF p. 13 [journal p. 533]",
+   "document": "Massachusetts Spy, essay signed 'Agricola' (F9.3)",
+   "author": "'Agricola' (pseud.; O&G suspect John Adams or someone in his circle, n. 44)",
+   "date": "1772-10-22",
+   "locus": "Prelim.18",
+   "locus_as_printed": "Preliminaries, §18",
+   "explicit": "silent",
+   "argument": "not stated by O&G (section topic: equality of nations)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F9.3. Massachusetts Spy, 22 Oct. 1772 (n. 38). Somos (p. 214) analyses the same essay with different loci.",
+   "loci": [
+    "Prelim.18"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]; PDF p. 13 [journal p. 533]",
+   "document": "Massachusetts Spy, essay signed 'Agricola' (F9.4)",
+   "author": "'Agricola' (pseud.; O&G suspect John Adams or someone in his circle, n. 44)",
+   "date": "1772-10-22",
+   "locus": "Prelim.2",
+   "locus_as_printed": "Preliminaries, §2",
+   "explicit": "silent",
+   "argument": "not stated by O&G (section topic: a nation is a moral person)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F9.4. Massachusetts Spy, 22 Oct. 1772 (n. 38). Somos (p. 214) analyses the same essay with different loci.",
+   "loci": [
+    "Prelim.2"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]; PDF p. 13 [journal p. 533]",
+   "document": "Massachusetts Spy, essay signed 'Agricola' (F9.5)",
+   "author": "'Agricola' (pseud.; O&G suspect John Adams or someone in his circle, n. 44)",
+   "date": "1772-10-22",
+   "locus": "Prelim.5",
+   "locus_as_printed": "Preliminaries, §5",
+   "explicit": "silent",
+   "argument": "not stated by O&G (section topic: laws to which nations are subject)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F9.5. Massachusetts Spy, 22 Oct. 1772 (n. 38). Somos (p. 214) analyses the same essay with different loci.",
+   "loci": [
+    "Prelim.5"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]; PDF p. 13 [journal p. 533]",
+   "document": "Massachusetts Spy, essay signed 'Agricola' (F9.6)",
+   "author": "'Agricola' (pseud.; O&G suspect John Adams or someone in his circle, n. 44)",
+   "date": "1772-10-22",
+   "locus": "Prelim.8",
+   "locus_as_printed": "Preliminaries, §8",
+   "explicit": "silent",
+   "argument": "not stated by O&G (section topic: the necessary law of nations is immutable)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F9.6. Massachusetts Spy, 22 Oct. 1772 (n. 38). Somos (p. 214) analyses the same essay with different loci.",
+   "loci": [
+    "Prelim.8"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 11 [journal p. 531]; PDF p. 10 [journal p. 530]",
+   "document": "Connecticut Courant, 'The Just Ruler', signed 'Amicus Judicum Bonorum' (F10)",
+   "author": "'Amicus Judicum Bonorum' (pseud.)",
+   "date": "1772-12-29",
+   "locus": "I.30",
+   "locus_as_printed": "1, III, §30",
+   "explicit": "explicit",
+   "argument": "not stated by O&G (section topic: maintaining the constitution and obedience to the laws)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F10. The only Connecticut document in the table (p. 10).",
+   "loci": [
+    "I.30"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 14 [journal p. 534]",
+   "document": "Address to the Massachusetts House of Representatives (F11)",
+   "author": "Thomas Hutchinson (Governor)",
+   "date": "1773-01-06",
+   "locus": "I.210",
+   "locus_as_printed": "1, XVIII, §210",
+   "explicit": "explicit",
+   "argument": "colonies part of the British state, subject to Parliament",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F11. Bradford, Speeches of the Governors 337 (n. 37). A loyalist use of Vattel.",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 14 [journal p. 534]",
+   "document": "Reply of the Massachusetts House to Hutchinson's First Message (F12.1)",
+   "author": "Massachusetts House of Representatives",
+   "date": "1773-01-26",
+   "locus": "I.34",
+   "locus_as_printed": "1, III, §34",
+   "explicit": "explicit",
+   "argument": "Parliament cannot change the fundamental laws",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F12.1. Speeches of the Governors 362 (n. 37). O&G count it among texts 'involving John Adams'.",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]",
+   "document": "Reply of the Massachusetts House to Hutchinson's First Message (F12.2)",
+   "author": "Massachusetts House of Representatives",
+   "date": "1773-01-26",
+   "locus": "II.265",
+   "locus_as_printed": "2, XVII, §265",
+   "explicit": "explicit",
+   "argument": "not stated by O&G (II.265: neither party may interpret a compact at its pleasure; cf. Somos p. 216 on charter interpretation)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F12.2. Speeches of the Governors 356 (n. 37).",
+   "loci": [
+    "II.265"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 14 [journal p. 534]",
+   "document": "Reply of the Massachusetts House to Hutchinson's Second Message (F13)",
+   "author": "Massachusetts House of Representatives",
+   "date": "1773-03-02",
+   "locus": "I.34",
+   "locus_as_printed": "1, III, §34",
+   "explicit": "explicit",
+   "argument": "Parliament cannot change the fundamental laws",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F13. Speeches of the Governors 395 (n. 37).",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 13 [journal p. 533]",
+   "document": "Letter to James Madison (F14)",
+   "author": "William Bradford",
+   "date": "1774-10-17",
+   "locus": null,
+   "locus_as_printed": "\"Vattel, Barlemaqui [sic] Locke & Montesquie[u] seem to be the standar[d]s to which [Congressmen] refer ...\"",
+   "explicit": "explicit",
+   "argument": "Vattel among Congress's standards for settling colonial rights",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F14. Mentions Vattel without quoting him (n. 39). Papers of James Madison 1:126.",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 10 [journal p. 530]; PDF p. 14 [journal p. 534]",
+   "document": "Massachusetts Gazette, letter signed 'Massachusettensis' (F15)",
+   "author": "Daniel Leonard",
+   "date": "1775-01-09",
+   "locus": "I.210",
+   "locus_as_printed": "1, XVIII, §210",
+   "explicit": "explicit",
+   "argument": "colonies part of the British state (against colonial autonomy)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F15. A paraphrase introduced with 'the best writers upon the law of nations tell us that...'; O&G code such unmistakable paraphrases as explicit (n. 33). Novanglus and Massachusettensis (1819) 170 (n. 37).",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 14 [journal p. 534]",
+   "document": "Boston Gazette, letter signed 'Novanglus' (seventh letter) (F16)",
+   "author": "John Adams",
+   "date": "1775-03-06",
+   "locus": "I.9",
+   "locus_as_printed": "1, I, §9",
+   "explicit": "explicit",
+   "argument": "several independent states may have the same king",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F16. Allegiance to the king does not preclude being a free and independent state (p. 14). Novanglus and Massachusettensis (1819) 83 (n. 37).",
+   "loci": [
+    "I.9"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 10 [journal p. 530]",
+   "document": "Boston Gazette, letter signed 'Novanglus' (F16, per n. 33)",
+   "author": "John Adams",
+   "date": "1775-03-06",
+   "locus": "I.210",
+   "locus_as_printed": "Vattel's I § 210 (n. 33: Novanglus 'repeats (and vigurously criticizes) the same paraphrase')",
+   "explicit": "explicit",
+   "argument": "rebutting Massachusettensis's paraphrase of I.210",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "Not a separate Table 1 row: O&G's n. 33 says that in F16 Adams repeats and criticises the I §210 paraphrase of F15. Somos (p. 218 n. 43) reports the same.",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 13 [journal p. 533]; PDF p. 25 [journal p. 545]",
+   "document": "Declaration ... Setting Forth the Causes and Necessity of Their Taking Up Arms (F17)",
+   "author": "Second Continental Congress [drafted by John Dickinson and Thomas Jefferson]",
+   "date": "1775-07-06",
+   "locus": "III.51-52",
+   "locus_as_printed": "3, IV, §51-52",
+   "explicit": "silent",
+   "argument": "declaring war: just cause and setting forth the reasons for taking up arms",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F17. O&G call it the turning point at which Vattel shapes a message of the highest colonial body (p. 13; Somos n. 21 contests this, pointing to the 1764 Assembly memorandum). PDF pp. 25-26 give the parallels (title ~ III §52; 'Our cause is just' ~ III §51); see hypotexts.",
+   "loci": [
+    "III.51",
+    "III.52"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 12 [journal p. 532]; PDF p. 3 [journal p. 523]; PDF p. 4 [journal p. 524]",
+   "document": "Letter to C. G. F. Dumas (F18)",
+   "author": "Benjamin Franklin",
+   "date": "1775-12-09",
+   "locus": null,
+   "locus_as_printed": "\"[The Law of Nations] has been continually in the hands of the members of our congress, now sitting.\"",
+   "explicit": "explicit",
+   "argument": "Congress consulting the law of nations for a rising state",
+   "vattel_text_used": "Dumas 1775 (new French edition introduced and annotated by Dumas; three copies sent, PDF p. 3)",
+   "note": "F18. Mention only, no passage. Papers of Benjamin Franklin 22:287 (n. 8).",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 13 [journal p. 533]",
+   "document": "Pennsylvania Evening Post, article signed 'Candidus' (F19)",
+   "author": "Samuel Adams",
+   "date": "1776-02-03",
+   "locus": "Prelim.2",
+   "locus_as_printed": "Preliminaries, §2",
+   "explicit": "explicit",
+   "argument": "not stated by O&G (section topic: a nation is a moral person)",
+   "vattel_text_used": "American's text not stated; O&G's reference edition for Vattel quotations is Kapossy & Whatmore (Liberty Fund 2008) unless otherwise specified (n. 32)",
+   "note": "F19. Writings of Samuel Adams 3:266 (n. 36). Somos (n. 9) excludes it as beyond his 1775 cut-off.",
+   "loci": [
+    "Prelim.2"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "203, 219",
+   "document": "Letter to Charles W. F. Dumas",
+   "author": "Benjamin Franklin",
+   "date": "1775-12-09",
+   "locus": null,
+   "locus_as_printed": "none (thanks for 'three copies of Le droit des gens')",
+   "explicit": "explicit",
+   "argument": "Congress consulting the law of nations (Franklin 'politely disingenuous': Congress had used Vattel as its 'standard' for over a year)",
+   "vattel_text_used": "Dumas's French edition (copies sent to Franklin; others to the Library Company and Harvard, n. 3)",
+   "note": "Mention only.",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "206",
+   "document": "Diary",
+   "author": "John Adams",
+   "date": "1763-02-01",
+   "locus": null,
+   "locus_as_printed": "none",
+   "explicit": "explicit",
+   "argument": "Adams reproaches himself for neglecting Vattel; Somos suggests he was reading Vattel to help Otis on judicial review",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Works II.141 (n. 11). Somos argues Vattel played no part in Otis's 1761 Paxton's Case speech.",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208",
+   "document": "The Rights of the British Colonies Asserted and Proved, p. 6",
+   "author": "James Otis",
+   "date": "1764",
+   "locus": null,
+   "locus_as_printed": "none ('consult Locke, Vattel')",
+   "explicit": "explicit",
+   "argument": "origin of government: readers referred to Locke, Vattel and their own conscience",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Otis, Rights 6; also 118-120 (n. 18). Mention, no passage.",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "209-210",
+   "document": "Memorandum (instructions) of the Massachusetts House to agent Jasper Mauduit, drafted by Otis, printed as appendix to Otis, Rights",
+   "author": "James Otis for the Massachusetts House of Representatives",
+   "date": "1764",
+   "locus": "I.34",
+   "locus_as_printed": "LN, I-iii-34 (long passage in English in a footnote 'without identifying book, chapter or verse', intercut with I-xviii-210)",
+   "explicit": "explicit",
+   "argument": "legislative cannot change the constitution at will; acts against fundamental principles void (judicial review)",
+   "vattel_text_used": "not the 1760 English translation (Somos p. 210)",
+   "note": "Rights, appendix 72-73; footnote at 109-110 (nn. 22-23). The footnote also cites Bonham's Case. Same loci as O&G F3.1-F3.3.",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "209-210, 216",
+   "document": "Memorandum (instructions) of the Massachusetts House to agent Jasper Mauduit, drafted by Otis, printed as appendix to Otis, Rights",
+   "author": "James Otis for the Massachusetts House of Representatives",
+   "date": "1764",
+   "locus": "I.210",
+   "locus_as_printed": "LN, I-xviii-210 (intercut with I-iii-34 in the same footnote)",
+   "explicit": "explicit",
+   "argument": "colonies are integral parts of the state, so colonists share the same rights",
+   "vattel_text_used": "not the 1760 English translation (Somos p. 210)",
+   "note": "Somos p. 216: Hutchinson later turned the same passage against the Assembly.",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "210",
+   "document": "Memorandum (instructions) of the Massachusetts House to agent Jasper Mauduit, drafted by Otis, printed as appendix to Otis, Rights",
+   "author": "James Otis for the Massachusetts House of Representatives",
+   "date": "1764",
+   "locus": "I.34",
+   "locus_as_printed": "'a paraphrase of the rest of Vattel's LN, I-iii-34' (main text after the footnote)",
+   "explicit": "silent",
+   "argument": "absurd for the legislature to alter the English constitution; Assembly adds that Parliament could not trade the people's liberty for slavery",
+   "vattel_text_used": "not the 1760 English translation (Somos p. 210)",
+   "note": "Vattel rephrased as the Assembly's own words ('Unnoticed in existing secondary literature').",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "210",
+   "document": "Memorandum (instructions) of the Massachusetts House to agent Jasper Mauduit, drafted by Otis, printed as appendix to Otis, Rights",
+   "author": "James Otis for the Massachusetts House of Representatives",
+   "date": "1764",
+   "locus": "III.201",
+   "locus_as_printed": "LN, III-xiii-201 (second long footnote)",
+   "explicit": "explicit",
+   "argument": "even the conqueror of a whole state has limited rights over the conquered",
+   "vattel_text_used": "not the 1760 English translation (Somos p. 210)",
+   "note": "Somos finds the point incongruous unless meant as an extreme case.",
+   "loci": [
+    "III.201"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "211-212",
+   "document": "Argument against the Stamp Act's closure of the courts, made to Governor Bernard",
+   "author": "James Otis, John Adams and other Boston lawyers",
+   "date": "1765-12-05",
+   "locus": null,
+   "locus_as_printed": "'Vattel, p. 20'",
+   "explicit": "explicit",
+   "argument": "a King who shuts his courts 'unkings himself'",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Quincy's Reports 205 (n. 28). Somos identifies neither the edition nor the passage behind 'p. 20'. Missing from O&G.",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "212",
+   "document": "Diary",
+   "author": "John Adams",
+   "date": "1765-12-27",
+   "locus": "II.297",
+   "locus_as_printed": "LN, II-xvii-297",
+   "explicit": "explicit",
+   "argument": "judicial review: interpret laws by the legislator's intention for cases he could not foresee",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Works II.166 (n. 29); the three passages are listed in this order. Somos adds that II-xvii-300 and 307 are 'adjacent passages relevant to judicial review' (not cited by Adams). Same entry as O&G F5.1-3.",
+   "loci": [
+    "II.297"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "212",
+   "document": "Diary",
+   "author": "John Adams",
+   "date": "1765-12-27",
+   "locus": "II.292",
+   "locus_as_printed": "LN, II-xvii-292",
+   "explicit": "explicit",
+   "argument": "judicial review: interpretations leading to absurdity must be rejected",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Works II.166 (n. 29); the three passages are listed in this order. Somos adds that II-xvii-300 and 307 are 'adjacent passages relevant to judicial review' (not cited by Adams). Same entry as O&G F5.1-3.",
+   "loci": [
+    "II.292"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "212",
+   "document": "Diary",
+   "author": "John Adams",
+   "date": "1765-12-27",
+   "locus": "II.282",
+   "locus_as_printed": "LN, II-xvii-282",
+   "explicit": "explicit",
+   "argument": "judicial review: interpretations leading to physical or moral impossibility are absurd",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Works II.166 (n. 29); the three passages are listed in this order. Somos adds that II-xvii-300 and 307 are 'adjacent passages relevant to judicial review' (not cited by Adams). Same entry as O&G F5.1-3.",
+   "loci": [
+    "II.282"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "212-213",
+   "document": "An Inquiry into the Rights of the British Colonies",
+   "author": "Richard Bland",
+   "date": "1766-03 (week of 7-14 March)",
+   "locus": null,
+   "locus_as_printed": "'Vattel's Law of Nature. Locke on Civil Govern. Wollaston's Rel. of Nat.'",
+   "explicit": "explicit",
+   "argument": "people's natural liberty in the state of nature",
+   "vattel_text_used": "not stated (Bland calls the work 'Law of Nature')",
+   "note": "Somos gives no locus (O&G F6: Prelim. §§4-5).",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "213",
+   "document": "Massachusetts Spy, letter VII signed 'Centinel'",
+   "author": "'Centinel' (pseud.)",
+   "date": "1771-06-13",
+   "locus": "I.ch.XIX",
+   "locus_as_printed": "LN, I.xix",
+   "explicit": "explicit",
+   "argument": "first settlers' absolute right to leave; they became independent, so George III may not send troops",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Chapter-level reference (I.ch.XIX = §§211-233). Missing from O&G (n. 34). Somos adds that Centinel 'could have also used LN, II-iv-50' (not a citation).",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "213 n. 33",
+   "document": "Massachusetts Spy, letter VII signed 'Centinel'",
+   "author": "'Centinel' (pseud.)",
+   "date": "1771-06-13",
+   "locus": "I.128",
+   "locus_as_printed": "'Also Vattel, LN, I-xii-128' (n. 33)",
+   "explicit": "unclear",
+   "argument": "right to leave when the monarch violates freedom of conscience",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Footnote to the sentence on Centinel's use of I.xix; unclear whether Centinel cites I.128 or Somos adds it.",
+   "loci": [
+    "I.128"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "213",
+   "document": "Massachusetts Spy, letter VII signed 'Centinel'",
+   "author": "'Centinel' (pseud.)",
+   "date": "1771-06-13",
+   "locus": null,
+   "locus_as_printed": "none",
+   "explicit": "explicit",
+   "argument": "a state seeking protection keeps its sovereignty; the protector must observe the conditions of obedience",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "'Centinel explains Vattel's view'; Somos gives no locus. Compiler: the doctrine is that of Book I ch. XVI (§§192-199).",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "213-214",
+   "document": "Boston Gazette, essay signed 'Valerius Poplicola'",
+   "author": "Samuel Adams (probably, per Somos)",
+   "date": "1771-10-28",
+   "locus": "I.223",
+   "locus_as_printed": "LN, I-xix-223",
+   "explicit": "explicit",
+   "argument": "citizens' 'absolute right' to leave (e.g. when only one religion is permitted); first settlers left intending independence",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Inserted 'in between long citations from Locke's Second Treatise'. O&G (F8) give I.220 and code it silent; the words Somos quotes ('the sovereign, or the greater part of the nation will permit the exercise of only one religion') belong to I.223.",
+   "loci": [
+    "I.223"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214",
+   "document": "Massachusetts Spy, essay XXIII signed 'Centinel'",
+   "author": "'Centinel' (pseud.)",
+   "date": "1771-11-28",
+   "locus": null,
+   "locus_as_printed": "none",
+   "explicit": "explicit",
+   "argument": "Britain acquired no rights beyond those the independent first settlers surrendered; taxation without consent is illegal force",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Missing from O&G (n. 35).",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "Prelim.5-8",
+   "locus_as_printed": "LN, prelim. 5-8",
+   "explicit": "explicit",
+   "argument": "origin of society and of the law of nations",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "Prelim.5",
+    "Prelim.6",
+    "Prelim.7",
+    "Prelim.8"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "Prelim.13",
+   "locus_as_printed": "LN, prelim. ... 13",
+   "explicit": "explicit",
+   "argument": "natural obligations of states toward one another",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "Prelim.13"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "Prelim.15",
+   "locus_as_printed": "LN, prelim. ... 15",
+   "explicit": "explicit",
+   "argument": "a sovereign state's right to determine its own actions",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "Prelim.15"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "Prelim.18",
+   "locus_as_printed": "LN, prelim. ... 18",
+   "explicit": "explicit",
+   "argument": "equal sovereignty of states ('a dwarf is as much a man as a giant')",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "Prelim.18"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "Prelim.21",
+   "locus_as_printed": "LN, prelim. ... 21",
+   "explicit": "explicit",
+   "argument": "other states may not deny a sovereign state's right to set its own course",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "Prelim.21"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "II.56",
+   "locus_as_printed": "II-iv-56",
+   "explicit": "explicit",
+   "argument": "exception: subjects resisting a prince who attacks the fundamental laws may call in foreign help",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "II.56"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "I.29-31",
+   "locus_as_printed": "I-iii-29-31",
+   "explicit": "explicit",
+   "argument": "society's duty to choose the best constitution and 'constantly to suppress' violations",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "I.29",
+    "I.30",
+    "I.31"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "I.51",
+   "locus_as_printed": "I-iv-51",
+   "explicit": "explicit",
+   "argument": "a prince who violates the constitution breaks the contract; people may seek foreign intervention",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "I.51"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "I.120-121",
+   "locus_as_printed": "I-xi-120-121",
+   "explicit": "explicit",
+   "argument": "patriotism: love of country binding citizens and sovereign",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "I.120",
+    "I.121"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "214-215",
+   "document": "Massachusetts Spy, essay signed 'Agricola'",
+   "author": "'Agricola' (pseud.)",
+   "date": "1772-10-22",
+   "locus": "I.123-124",
+   "locus_as_printed": "[I-xi-]123-124",
+   "explicit": "explicit",
+   "argument": "patriotism: duties of patriots resisting an unjust sovereign",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos p. 214: an 'extraordinary selective paraphrasing, entirely from Vattel', after the author says he has bought copies of Vattel and Mably and will send extracts; passages listed 'in this order'. Somos p. 215: a creative 'remix' dropping Vattel's calls for patience. O&G (F9.1-6) code the essay silent with Prelim. 13, 15, 18, 2, 5, 8. 'explicit' here means Vattel is named as the source of the extracts; the passages themselves carry no references.",
+   "loci": [
+    "I.123",
+    "I.124"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "215",
+   "document": "Boston Gazette, letter signed 'A Tenant'",
+   "author": "'A Tenant' (pseud.)",
+   "date": "1772-11-30",
+   "locus": null,
+   "locus_as_printed": "none (Sidney, Locke and Vattel cited)",
+   "explicit": "explicit",
+   "argument": "popular sovereignty, defending freedom of assembly (against 'A Landlord')",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Missing from O&G (n. 36).",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "215",
+   "document": "The Boston Pamphlet: 'The votes and proceedings of the freeholders and other inhabitants of the town of Boston' (rights of the colonists as subjects)",
+   "author": "Boston Committee of Correspondence (Samuel Adams, James Otis, Joseph Warren)",
+   "date": "1772-11 (town meetings of 28 Oct. and 2 Nov. 1772)",
+   "locus": null,
+   "locus_as_printed": "none (Locke and Vattel cited 'without reference to a passage'; n. 37 'P8')",
+   "explicit": "explicit",
+   "argument": "definition of the state as a body politic united for mutual safety and prosperity",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Missing from O&G. Compiler: the definition echoes Prelim. §1 ('societies of men united together for the purpose of promoting their mutual safety and advantage').",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216",
+   "document": "Speech to the two houses of the Massachusetts General Court",
+   "author": "Thomas Hutchinson (Governor)",
+   "date": "1773-01-06",
+   "locus": "I.210",
+   "locus_as_printed": "LN, I-xviii-210",
+   "explicit": "explicit",
+   "argument": "the Assembly cannot challenge Westminster; colonists owe the same obligations (allegiance to Crown and Parliament)",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Bradford, Speeches 336-342 at 337 (n. 39). Same as O&G F11.",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216",
+   "document": "Reply of the Massachusetts House of Representatives to Governor Hutchinson",
+   "author": "Massachusetts House of Representatives (probably Samuel Adams, Hawley, Thayer or another House writer, per Somos)",
+   "date": "1773-01-26",
+   "locus": null,
+   "locus_as_printed": "none ('Vattel's principles of interpretation')",
+   "explicit": "explicit",
+   "argument": "charter privileges remain effective and non-derogable",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Speeches 351-365 at 356 (n. 40). Somos gives no locus; O&G F12.2 give II §265 (and F12.1 I §34) for this reply.",
+   "loci": []
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216",
+   "document": "Reply of the Massachusetts House of Representatives to Governor Hutchinson",
+   "author": "Massachusetts House of Representatives",
+   "date": "1773-01-26",
+   "locus": "I.200-202",
+   "locus_as_printed": "LN, I-xvii-200-202 (alluded to)",
+   "explicit": "silent",
+   "argument": "separation is justified when the mother country cannot protect the colonies",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "An allusion: 'another vital argument frequently drawn from Vattel'.",
+   "loci": [
+    "I.200",
+    "I.201",
+    "I.202"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "II.191",
+   "locus_as_printed": "LN, II-xii-191",
+   "explicit": "explicit",
+   "argument": "charters are interstate treaties (treaties)",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41).",
+   "loci": [
+    "II.191"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "II.54",
+   "locus_as_printed": "LN, II-iv-54",
+   "explicit": "explicit",
+   "argument": "equality of states",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41). First of two citations of II.54.",
+   "loci": [
+    "II.54"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "I.9",
+   "locus_as_printed": "LN, I-ii-9",
+   "explicit": "explicit",
+   "argument": "two independent states with the same prince",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41). Printed 'I-ii-9': §9 is in Book I ch. I, so the chapter numeral is a slip (O&G F16 have 1, I, §9).",
+   "loci": [
+    "I.9"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "Prelim.1",
+   "locus_as_printed": "LN, Prelim. 1 [and 18]",
+   "explicit": "explicit",
+   "argument": "definition and generation of states",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41).",
+   "loci": [
+    "Prelim.1"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "Prelim.18",
+   "locus_as_printed": "LN, Prelim. [1 and] 18",
+   "explicit": "explicit",
+   "argument": "equality of states",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41).",
+   "loci": [
+    "Prelim.18"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "I.4",
+   "locus_as_printed": "LN, I-i-4",
+   "explicit": "explicit",
+   "argument": "equality of states",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41).",
+   "loci": [
+    "I.4"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "II.54",
+   "locus_as_printed": "LN, II-iv-54 again",
+   "explicit": "explicit",
+   "argument": "restraints upon the state affording protection to another",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41). Second citation of II.54.",
+   "loci": [
+    "II.54"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "216-217",
+   "document": "Massachusetts Spy, essay signed 'Britannus Septentrionalis'",
+   "author": "'Britannus Septentrionalis' (pseud.)",
+   "date": "1773-11-11",
+   "locus": "II.57",
+   "locus_as_printed": "LN, II-iv-57",
+   "explicit": "explicit",
+   "argument": "restraints upon the state affording protection to another",
+   "vattel_text_used": "English 1760 ('cites from the 1760 English edition', Somos p. 217)",
+   "note": "Cited 'in quick succession' with 'several paraphrases' (no loci). Missing from O&G (n. 41).",
+   "loci": [
+    "II.57"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "217-218",
+   "document": "Massachusetts Spy, 'To All Nations of Men', signed 'Massachusettensis'",
+   "author": "Daniel Leonard (then still a Patriot, per Somos)",
+   "date": "1773-11-18",
+   "locus": "II.53",
+   "locus_as_printed": "'Vatell [sic] B II. C. IV. § 53'",
+   "explicit": "explicit",
+   "argument": "Britain's attempt to diminish the sovereignty of free self-governing states violates the law of nations and is punishable by all",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Quotes: 'If then there is any where a nation of a restless and mischievous disposition ...'. Missing from O&G (n. 42). Somos adds that Leonard 'could have also used LN, II-v-70, 77' (not a citation).",
+   "loci": [
+    "II.53"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "218",
+   "document": "Massachusetts Spy, 'To All Nations of Men', signed 'Massachusettensis'",
+   "author": "Daniel Leonard",
+   "date": "1773-11-18",
+   "locus": "II.54",
+   "locus_as_printed": "'in the next paragraph' [after B II. C. IV. § 53]",
+   "explicit": "explicit",
+   "argument": "interference with their government and diminution of their sovereignty are capital injuries",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "The § number is inferred by the compiler from 'the next paragraph'.",
+   "loci": [
+    "II.54"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "218 n. 43",
+   "document": "Massachusetts Gazette, letter signed 'Massachusettensis'",
+   "author": "Daniel Leonard",
+   "date": "1775-01-09",
+   "locus": "I.210",
+   "locus_as_printed": "LN, I-xviii-210",
+   "explicit": "explicit",
+   "argument": "colonies are part of the British empire and owe allegiance (no imperium in imperio)",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Same as O&G F15.",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "218 n. 43",
+   "document": "Boston Gazette, letter signed 'Novanglus'",
+   "author": "John Adams",
+   "date": "1775-03-06",
+   "locus": "I.210",
+   "locus_as_printed": "'citing Vattel's passage' [I-xviii-210, as quoted by Leonard]",
+   "explicit": "explicit",
+   "argument": "the law of nations does not require emigrants to remain part of the state",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Somos does not mention the I §9 citation O&G record for this letter (F16).",
+   "loci": [
+    "I.210"
+   ]
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "218-219",
+   "document": "Letter to James Madison",
+   "author": "William Bradford",
+   "date": "1774-10-17",
+   "locus": null,
+   "locus_as_printed": "none ('Vattel, Barlemaqui Locke & Montesquie [sic] seem to be the standars [sic]')",
+   "explicit": "explicit",
+   "argument": "Vattel one of Congress's 'standards' for colonial rights",
+   "vattel_text_used": "not stated (Somos gives LN loci only; his chapter names no edition for them)",
+   "note": "Mention only. Same as O&G F14.",
+   "loci": []
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 2",
+   "document": "Letter to James Madison",
+   "author": "William Bradford",
+   "date": "1774 [17 Oct.]",
+   "locus": null,
+   "locus_as_printed": "none (Vattel named among Congress's 'standar[d]s')",
+   "explicit": "explicit",
+   "argument": "Vattel and Burlamaqui ranked ahead of Locke and Montesquieu as Congress's authorities",
+   "vattel_text_used": "American's text not stated; Schmeeckle quotes the London 1797 English edition (online at lonang.com, n. 1)",
+   "note": "Mention only. Papers of Madison 1:126 (n. 2).",
+   "loci": []
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 19",
+   "document": "The Rights of the British Colonies Asserted and Proved",
+   "author": "James Otis",
+   "date": "1764",
+   "locus": null,
+   "locus_as_printed": "none",
+   "explicit": "explicit",
+   "argument": "Vattel cited with Locke as an authority on natural law",
+   "vattel_text_used": "American's text not stated; Schmeeckle quotes the London 1797 English edition (online at lonang.com, n. 1)",
+   "note": "Mention, no passage.",
+   "loci": []
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 20",
+   "document": "The Rights of the British Colonies Asserted and Proved (appendix; Bailyn, Pamphlets 476-77)",
+   "author": "James Otis",
+   "date": "1764",
+   "locus": "I.34",
+   "locus_as_printed": "none (Schmeeckle quotes, n. 20: 'It is contrary to reason that the supreme power should have right to alter the constitution ...')",
+   "explicit": "explicit",
+   "argument": "an act of Parliament against the constitution is void (foreshadowing judicial review)",
+   "vattel_text_used": "American's text not stated; Schmeeckle quotes the London 1797 English edition (online at lonang.com, n. 1)",
+   "note": "Schmeeckle says Otis 'quoted from Vattel (in part)' and 'provided two sizeable quotations'. The wording is not Vattel's: it matches what Somos (p. 210) calls the memorandum's paraphrase of the rest of I.34 with the Assembly's own addition about slavery. Locus identified by the compiler.",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 20",
+   "document": "The Rights of the British Colonies Asserted and Proved (appendix, 'the following page')",
+   "author": "James Otis",
+   "date": "1764",
+   "locus": "III.201",
+   "locus_as_printed": "none (n. 20: 'But enough of those that reduce men to the state of transferable goods or use of them like beasts of burden ...')",
+   "explicit": "explicit",
+   "argument": "Vattel's 'contemptuous dismissal of chattel slavery'",
+   "vattel_text_used": "American's text not stated; Schmeeckle quotes the London 1797 English edition (online at lonang.com, n. 1)",
+   "note": "Locus identified by the compiler: the words translate III §201 ('Laissons des gens qui traitent les hommes comme des effets commerçables, ou comme des bêtes de charge ...'), which O&G (F3.3) and Somos (p. 210) cite for Otis/the memorandum.",
+   "loci": [
+    "III.201"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 24",
+   "document": "Writing of 1772 (Writings of Samuel Adams, ed. Cushing, 2:325; title not given)",
+   "author": "Samuel Adams",
+   "date": "1772",
+   "locus": "I.34",
+   "locus_as_printed": "none (quotes 'the supreme legislative cannot change the constitution', 'that their authority does not extend so far', 'that they ought to consider the fundamental laws as sacred ...')",
+   "explicit": "explicit",
+   "argument": "the supreme legislative cannot change the constitution",
+   "vattel_text_used": "American's text not stated; Schmeeckle quotes the London 1797 English edition (online at lonang.com, n. 1)",
+   "note": "'Vattel tells us plainly and without hesitation ...'. Locus identified by the compiler: the quoted words are I §34 (the marginal title and its text).",
+   "loci": [
+    "I.34"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 35",
+   "document": "Letter to Charles W. F. Dumas",
+   "author": "Benjamin Franklin",
+   "date": "1775-12-19 (as printed; O&G and Somos: 9 Dec.)",
+   "locus": null,
+   "locus_as_printed": "none",
+   "explicit": "explicit",
+   "argument": "Congress continually consulting Vattel; Dumas's notes and preface admired",
+   "vattel_text_used": "Dumas edition (Schmeeckle brackets it as 'your [1774] edition')",
+   "note": "Quoted via G. G. Wilson 1938 (n. 35). Mention only.",
+   "loci": []
+  }
+ ],
+ "hypotexts": [
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 17 [journal p. 537]; PDF p. 18 [journal p. 538]",
+   "document": "John Adams, Thoughts on Government (published anonymously, Philadelphia, April 1776)",
+   "fragment": "In the present exigency of American affairs, when by an act of Parliament we are put out of the royal protection and consequently discharged from our allegiance, and it has become necessary to assume government for our immediate security, ...",
+   "locus": "I.ch.XVII",
+   "locus_as_printed": "title of Chapter XVII of the first book",
+   "parallel": "This political reasoning ... is directly inspired by the title of Chapter XVII of the first book of Vattel's Law of Nations: 'How a Nation may separate itself from the State of which it is a Member; or renounce its Allegiance to its Sovereign when it is not protected.'",
+   "note": "The 'Vattel-Adams argument'. Chapter-level (I.ch.XVII = §§200-202). Further layers: Paine's Common Sense, the Prohibitory Act/Proclamation, Hobbes, Leviathan ch. XXI.",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 19 [journal p. 539]; PDF p. 33 [journal p. 553]",
+   "document": "John Adams, Thoughts on Government (published anonymously, Philadelphia, April 1776)",
+   "fragment": "In the present exigency of American affairs, when by an act of Parliament we are put out of the royal protection and consequently discharged from our allegiance, and it has become necessary to assume government for our immediate security, ...",
+   "locus": "I.200",
+   "locus_as_printed": "1, XVII, § 200",
+   "parallel": "Book 1, Chapter XVII ... deals with a nation 'released from its engagements as soon as the protection fails' (1, XVII, § 200)",
+   "note": "O&G: 'what Vattel develops in 1, XVII, §§ 200-202 is what one century later would be termed a right to secession' (p. 19); 'The Vattel-Adams argument ... was based on The Law of Nations (1, XVII, § 200-202)' (p. 33).",
+   "loci": [
+    "I.200"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 19 [journal p. 539]; PDF p. 33 [journal p. 553]",
+   "document": "John Adams, Thoughts on Government (published anonymously, Philadelphia, April 1776)",
+   "fragment": "In the present exigency of American affairs, when by an act of Parliament we are put out of the royal protection and consequently discharged from our allegiance, and it has become necessary to assume government for our immediate security, ...",
+   "locus": "I.202",
+   "locus_as_printed": "1, XVII, § 202",
+   "parallel": "argues that people 'being thus abandoned, become perfectly free to provide for their own safety and preservation in whatever manner they find most convenient' (1, XVII, § 202)",
+   "note": "p. 33 also quotes I §202 on the Swiss separating from the Empire, 'which never protected them'.",
+   "loci": [
+    "I.202"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 17 [journal p. 537]",
+   "document": "John Adams to Horatio Gates, 23 March 1776",
+   "fragment": "the 'act of independency', which 'throws thirteen colonies out of the royal protection, levels all distinctions and makes us independent in spite of our supplications and entreaties'",
+   "locus": "I.ch.XVII",
+   "locus_as_printed": "none (implicit: the Vattel-Adams argument)",
+   "parallel": "Adams 'interchangeably spoke of the \"prohibitory,\" \"piratical,\" or \"plundering\" act, and yet of the \"act of independency\"' (n. 55)",
+   "note": "O&G pair no Vattel passage with the letter directly; the link runs through the Vattel-Adams argument.",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 17 [journal p. 537]",
+   "document": "Declaration of Independence, para. 3 (grievances), 4 July 1776",
+   "fragment": "He has abdicated government here, by declaring us out of his protection and waging war against us.",
+   "locus": "I.ch.XVII",
+   "locus_as_printed": "none (implicit: the Vattel-Adams argument)",
+   "parallel": "'The same rhetoric was later echoed in the DI' (n. 55)",
+   "note": "Implicit link only, via Adams's loss-of-protection rhetoric.",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 21 [journal p. 541]",
+   "document": "John Adams, Preamble to the Resolution on Independent Governments (resolution of 10 May; preamble adopted 15 May 1776)",
+   "fragment": "Whereas his Britannic Majesty, in conjunction with the lords and commons of Great Britain, has, by a late act of Parliament, excluded the inhabitants of these United Colonies from the protection of his crown...",
+   "locus": "I.ch.XVII",
+   "locus_as_printed": "none (the Vattel-Adams argument)",
+   "parallel": "In this preamble John Adams remained faithful to the Vattel-Adams argument—the nexus between the ascertainment that the British Parliament had excluded the colonists from the protection of the crown and the claim that each colony should dissociate from British authority and set up their own governments.",
+   "note": "",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 21 [journal p. 541]; PDF p. 22 [journal p. 542]",
+   "document": "Virginia Convention, Preamble and Resolution, 15 May 1776",
+   "fragment": "By a late act all these Colonies are declared to be in rebellion, and out of the protection of the British Crown [...] a total separation from the Crown and Government of Great Britain [...] forming alliances with foreign Powers [...] free and independent States",
+   "locus": "I.ch.XVII",
+   "locus_as_printed": "none (the Vattel-Adams argument)",
+   "parallel": "In strong resemblance to Adams's preamble ... the resolution subsequently invokes the Vattel-Adams argument ... The language of the Resolution ... is admittedly richer than the Vattel-Adams argument, but it is no less Vattelian in temper.",
+   "note": "",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 22 [journal p. 542]",
+   "document": "Virginia Convention, Preamble and Resolution, 15 May 1776",
+   "fragment": "free and independent States",
+   "locus": "Prelim.4, Prelim.15, Prelim.23, I.4",
+   "locus_as_printed": "Prelim. § 4; § 15; § 23; bk.1, ch. I, § 4 (n. 70)",
+   "parallel": "Lexemes such as free and independent States lie at the very core of Vattel's Law of Nations and of his theory of an international society whose constituents are emphatically free and independent. [n. 70: Consider for example Prelim. § 4; § 15; § 23; bk.1, ch. I, § 4.]",
+   "note": "O&G also quote Armitage on Vattel's 'free and independent' states (p. 22).",
+   "loci": [
+    "Prelim.4",
+    "Prelim.15",
+    "Prelim.23",
+    "I.4"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 22 [journal p. 542]",
+   "document": "Lee Resolution, moved by Richard Henry Lee in the Continental Congress, 7 June 1776",
+   "fragment": "Resolved, That these United Colonies are, and of right ought to be, free and independent States, that they are absolved from all allegiance to the British Crown, and that all political connection between them and the State of Great Britain is, and ought to be, totally dissolved.",
+   "locus": "I.ch.XVII",
+   "locus_as_printed": "none (the Vattel-Adams argument)",
+   "parallel": "With its wording, its institutional logic, and the rationalization of cutting all ties with Great Britain, Lee's resolution reiterates the Vattel-Adams argument.",
+   "note": "O&G add that the 'plan of confederation' goes beyond the argument. For the lexeme 'free and independent States' see n. 70 (Prelim. 4, 15, 23; I.4).",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 23 [journal p. 543]; PDF p. 30 [journal p. 550]",
+   "document": "Virginia Declaration of Rights (George Mason), adopted 12 June 1776, para. I",
+   "fragment": "'free and independent', 'happiness', 'safety' (with the Lockean 'life', 'liberty', 'property')",
+   "locus": null,
+   "locus_as_printed": "none",
+   "parallel": "Paragraph I uses the Lockean lexemes 'life,' 'liberty,' 'property' and the Vattelian ones 'free and independent,' 'happiness,' and 'safety.' (n. 74)",
+   "note": "n. 93 (p. 30): Mason's Declaration 'exhibits a conglomerate of Lockean and Vattelian hypotext' and may have drawn Jefferson to these themes.",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 23 [journal p. 543]",
+   "document": "Virginia Declaration of Rights (George Mason), adopted 12 June 1776, para. III",
+   "fragment": "'happiness' and 'safety'; 'government instituted for the common benefit of the people, nation or community'",
+   "locus": null,
+   "locus_as_printed": "none",
+   "parallel": "Paragraph III also mixes Lockean and Vattelian lexemes: 'happiness' and 'safety,' 'government instituted for the common benefit of the people, nation or community.' (n. 74)",
+   "note": "",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 25 [journal p. 545]",
+   "document": "Second Continental Congress, Declaration ... Setting Forth the Causes and Necessity of Their Taking Up Arms, 6 July 1775 (DA; = F17)",
+   "fragment": "Declaration (. . .) Setting Forth the Causes and Necessity of Their Taking Up Arms",
+   "locus": "III.52",
+   "locus_as_printed": "3, IV, § 52",
+   "parallel": "(. . .) to set forth the reasons which have induced us to take up arms (3, IV, § 52)",
+   "note": "1775, not 1776; included because the DI analysis builds on it. O&G: the drafters were inspired by Vattel's chapter on declaring war (III.ch.IV).",
+   "loci": [
+    "III.52"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 25 [journal p. 545]",
+   "document": "Second Continental Congress, Declaration ... Setting Forth the Causes and Necessity of Their Taking Up Arms, 6 July 1775 (DA; = F17)",
+   "fragment": "'Our cause is just'; 'we esteem ourselves bound by obligation of respect to the rest of the world, to make known the justice of our cause'",
+   "locus": "III.51",
+   "locus_as_printed": "3, IV, § 51",
+   "parallel": "they closely followed Vattel's appeal for justificatory rigor: '(. . .) in order to be justifiable in taking up arms, it is necessary – 1. That we have a just cause of complaint (. . .)' (3, IV, § 51)",
+   "note": "O&G also link the DA's hope for reconciliation to the ancient purpose of declaring war and to 'the Roman manner of proceeding' (3, IV, § 51).",
+   "loci": [
+    "III.51"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 26 [journal p. 546]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1, fragment 1",
+   "fragment": "When in the course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume...",
+   "locus": "I.ch.XVII",
+   "locus_as_printed": "none (via Thoughts on Government)",
+   "parallel": "Jefferson silently quotes John Adams's sentence in Thoughts on Government: when in / when by; it becomes necessary / it has become necessary; to dissolve the political bands / [we are] discharged from our allegiance; and to assume / to assume government",
+   "note": "Vattel mediated by the Vattel-Adams argument; the direct hypotext is Adams's text.",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 26 [journal p. 546]; PDF p. 27 [journal p. 547]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1, fragment 2",
+   "fragment": "among the powers of the earth",
+   "locus": "Prelim.11",
+   "locus_as_printed": "Preliminaries § 11",
+   "parallel": "among the universal society of human race (Preliminaries § 11)",
+   "note": "p. 27: 'the hypotext is mainly located in § 11 of the Preliminaries ... entitled \"[Society established by nature] and between nations\"'; each free and independent nation has rights and duties towards others.",
+   "loci": [
+    "Prelim.11"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 26 [journal p. 546]; PDF p. 27 [journal p. 547]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1, fragment 2",
+   "fragment": "among the powers of the earth",
+   "locus": "III.52",
+   "locus_as_printed": "3, IV, § 52",
+   "parallel": "among the powers of Europe (3, IV, § 52)",
+   "note": "",
+   "loci": [
+    "III.52"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 26 [journal p. 546]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1, fragment 2",
+   "fragment": "the separate and equal station",
+   "locus": "Prelim.11",
+   "locus_as_printed": "Preliminaries § 11",
+   "parallel": "in whatever stations they are placed (. . .) for the purpose of forming a separate state or nation (Preliminaries § 11)",
+   "note": "",
+   "loci": [
+    "Prelim.11"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 26 [journal p. 546]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1, fragment 2",
+   "fragment": "the laws of nature (. . .) entitle them",
+   "locus": "Prelim.11",
+   "locus_as_printed": "Preliminaries § 11",
+   "parallel": "according to the laws of natural society (Preliminaries § 11)",
+   "note": "",
+   "loci": [
+    "Prelim.11"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 27 [journal p. 547]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1, fragment 3",
+   "fragment": "requires that they should declare the causes",
+   "locus": "III.52",
+   "locus_as_printed": "3, IV, § 52",
+   "parallel": "it ought (. . .) to set forth the reasons (3, IV, § 52)",
+   "note": "The first phrase, 'A decent respect to the opinions of mankind', is paired with the DA ('to sight justice and the opinion of mankind'), not with Vattel.",
+   "loci": [
+    "III.52"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 27 [journal p. 547]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1, fragment 3",
+   "fragment": "which impel them to the separation",
+   "locus": "III.52",
+   "locus_as_printed": "3, IV, § 52",
+   "parallel": "which have induced us to take up arms (3, IV, § 52)",
+   "note": "",
+   "loci": [
+    "III.52"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 27 [journal p. 547]",
+   "document": "Declaration of Independence, 4 July 1776, para. 1 (whole)",
+   "fragment": "the whole first paragraph",
+   "locus": "III.ch.IV, III.52",
+   "locus_as_printed": "3, IV; 3, IV, § 52",
+   "parallel": "This third fragment, and eventually the whole first paragraph, contains a clear intertextual reference to the procedure of the declaration of war, as developed by Vattel (3, IV) ... as Vattel has it, '[t]his is at present the constant practice among the powers of Europe' (3, IV, § 52).",
+   "note": "",
+   "loci": [
+    "III.52"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 29 [journal p. 549]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "We hold these truths to be self-evident, that all men are created equal",
+   "locus": "Prelim.18",
+   "locus_as_printed": "Preliminaries § 18",
+   "parallel": "Since men are naturally equal, and a perfect equality prevails in their rights and obligations (Preliminaries § 18)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. Locke hypotext: 'This equality of men by nature (. . .) as so evident in itself' (II, § 5).",
+   "loci": [
+    "Prelim.18"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 29 [journal p. 549]; PDF p. 31 [journal p. 551]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness",
+   "locus": "I.15",
+   "locus_as_printed": "1, II, § 15",
+   "parallel": "the end or object of civil society is to procure (. . .) whatever constitutes happiness, —with the peaceful possession of property, (. . .) justice with security, (. . .) a mutual defence against all external violence (1, II, § 15)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. Locke: 'the mutual preservation of their lives, liberties, and estates' (IX, § 123). p. 31: Jefferson 'borrowed from Vattel the concept of happiness', following Mason's 'pursuit of happiness'.",
+   "loci": [
+    "I.15"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 29 [journal p. 549]; PDF p. 31 [journal p. 551]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed",
+   "locus": "I.31",
+   "locus_as_printed": "1, III, § 31",
+   "parallel": "Government is established only for the sake of the nation, with a view to its safety and happiness (1, III, § 31)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. Locke: XI, § 134 (twice). p. 31 lists 'Governments are instituted' as Vattelian in tone.",
+   "loci": [
+    "I.31"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 29 [journal p. 549]; PDF p. 30 [journal p. 550]; PDF p. 31 [journal p. 551]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness",
+   "locus": "I.31",
+   "locus_as_printed": "1, III, §31",
+   "parallel": "a nation has an indisputable right to form, maintain, and perfect its constitution,—to regulate at pleasure every thing relating to the government (1, III, §31)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. Locke: XIX, § 220. p. 31 lists 'Government becomes destructive' as Vattelian in tone.",
+   "loci": [
+    "I.31"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 29 [journal p. 549]; PDF p. 30 [journal p. 550]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness",
+   "locus": "I.61",
+   "locus_as_printed": "1, V, § 61",
+   "parallel": "If it happened then that the order established in this respect became destructive to the state, the nation would certainly have a right to change it by a new law (1, V, § 61)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. ",
+   "loci": [
+    "I.61"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 30 [journal p. 550]; PDF p. 31 [journal p. 551]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed",
+   "locus": "I.35",
+   "locus_as_printed": "1, III, § 35",
+   "parallel": "a people ought to be very circumspect (. . .), and never be inclined to make innovations without the most pressing reasons, or an absolute necessity (1, III, § 35)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. Locke: XIX, § 223. p. 31 lists 'prudence (. . .) will dictate' as Vattelian in tone.",
+   "loci": [
+    "I.35"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 30 [journal p. 550]; PDF p. 31 [journal p. 551]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism",
+   "locus": "I.30",
+   "locus_as_printed": "1, III, § 30",
+   "parallel": "But we overlook the changes that insensibly happen by a long train of steps that are but slightly marked (1, III, § 30)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. Locke: 'But if a long train of abuses ...' (XIX, § 225); p. 31 calls the 'long train' clause Lockean.",
+   "loci": [
+    "I.30"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 30 [journal p. 550]; PDF p. 31 [journal p. 551]",
+   "document": "Declaration of Independence, 4 July 1776, para. 2",
+   "fragment": "it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security",
+   "locus": "I.200",
+   "locus_as_printed": "1, XVII, § 200",
+   "parallel": "[a free nation's] duty towards itself obliges it to take fresh methods to provide for its own security (1, XVII, § 200)",
+   "note": "Table 2, 'Lockean and Vattelian hypotext in the 2nd paragraph'. Locke: XIX, § 226. p. 31: in the main clause Jefferson 'rejoins Vattel' ('it is their right, it is their duty (. . .) to provide new Guards').",
+   "loci": [
+    "I.200"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 31 [journal p. 551]; PDF p. 32 [journal p. 552]",
+   "document": "Declaration of Independence, 4 July 1776, para. 5",
+   "fragment": "We, therefore, the Representatives of the united States of America, in General Congress, Assembled",
+   "locus": "I.51",
+   "locus_as_printed": "1, IV, § 51",
+   "parallel": "In so doing, they recall Vattel: 'But it is of the utmost importance to observe, that this judgment [to withdraw itself from a tyrant's obedience] can only be passed by the nation, or by a body which represents it. . ..' (1, IV, § 51)",
+   "note": "O&G set this against Locke, Second Treatise XIX §§240-241 ('The people shall be judge').",
+   "loci": [
+    "I.51"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 32 [journal p. 552]; PDF p. 33 [journal p. 553]",
+   "document": "Declaration of Independence, 4 July 1776, para. 5",
+   "fragment": "solemnly publish and declare",
+   "locus": "III.56",
+   "locus_as_printed": "3, IV, § 56",
+   "parallel": "He wrote that 'it is necessary for a nation to publish the declaration of war' (3, IV, § 56), while Jefferson maintains the two dimensions of publishing and declaring",
+   "note": "pp. 32-33 quote III §56 again: a nation must 'publish' its declaration 'for the instruction and direction of her [its] own subjects, in order to fix the date of the rights which belong to them from the moment of this declaration ...'.",
+   "loci": [
+    "III.56"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 32 [journal p. 552]",
+   "document": "Declaration of Independence, 4 July 1776, para. 5",
+   "fragment": "these United Colonies are, and of Right ought to be Free and Independent States; that they are Absolved from all Allegiance to the British Crown",
+   "locus": null,
+   "locus_as_printed": "none (via Lee's Resolution)",
+   "parallel": "the fifth paragraph invokes the core of Lee's Resolution, which Jefferson and the Continental Congress inserted in the DI along with its Vattelian language ('Free and Independent States' that are 'Absolved from all Allegiance')",
+   "note": "No locus at this point; O&G's n. 70 (p. 22) gives Prelim. 4, 15, 23 and I.4 for 'free and independent'.",
+   "loci": []
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 32 [journal p. 552]",
+   "document": "Declaration of Independence, 4 July 1776, para. 5",
+   "fragment": "full Power to levy War, conclude Peace, contract Alliances, establish Commerce, and to do all other Acts and Things which Independent States may of right do",
+   "locus": "I.45",
+   "locus_as_printed": "1, IV, § 45",
+   "parallel": "Vattel developed a similar theory ...: 'If the nation has plainly and simply invested [the prince] with the sovereignty without limitation or division, he is supposed to be invested with all the prerogatives ... These are called royal prerogatives or the prerogatives of majesty' (1, IV, § 45)",
+   "note": "Locke hypotext: Second Treatise §146 (federative power).",
+   "loci": [
+    "I.45"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 34 [journal p. 554]",
+   "document": "Articles of Confederation (agreed by Congress Nov. 1777, in force 1 March 1781; drafting began 1776), Art. II",
+   "fragment": "Each state retains its sovereignty, freedom, and independence, and every power, jurisdiction, and right, which is not by this Confederation expressly delegated to the United States",
+   "locus": "Prelim.4",
+   "locus_as_printed": "Preliminaries §4",
+   "parallel": "It easy to recognize the basic language of Vattel, with lexemes such as sovereignty, freedom, and independence. ... 'Nations being composed of men naturally free and independent ... remains absolutely free and independent with respect to all other men, all other nations, as long as it has not voluntarily submitted to them' (Preliminaries §4)",
+   "note": "Outside the 1776 limit; included because O&G treat it as the sequel of the DI's Vattelian language.",
+   "loci": [
+    "Prelim.4"
+   ]
+  },
+  {
+   "scholar": "Ossipow & Gerber 2017",
+   "page": "PDF p. 34 [journal p. 554]",
+   "document": "Articles of Confederation (agreed by Congress Nov. 1777, in force 1 March 1781; drafting began 1776)",
+   "fragment": "the confederation of sovereign states",
+   "locus": "I.10",
+   "locus_as_printed": "1, I, § 10",
+   "parallel": "With regards to confederations, Vattel ... gave the following definition: 'Several sovereign and independent states may unite themselves together by a perpetual confederacy, without ceasing to be, each individually, a perfect state ...' (1, I, § 10)",
+   "note": "Outside the 1776 limit (see above).",
+   "loci": [
+    "I.10"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at nn. 32-33",
+   "document": "Virginia Declaration of Rights, committee draft (George Mason), published late May 1776",
+   "fragment": "certain inherent natural rights ... the enjoyment of life and liberty, with the means of acquiring and possessing property, and pursuing and obtaining happiness and safety",
+   "locus": "I.15",
+   "locus_as_printed": "Book 1, Chap. 2, § 15",
+   "parallel": "Compare with this quote from Vattel: 'The end or object of civil society is to procure for the citizens whatever they stand in need of for the necessities, the conveniences, the accommodation of life, and, in general, whatever constitutes happiness, -- with the peaceful possession of property, a method of obtaining justice with security, and, finally, a mutual defense against all external violence.'",
+   "note": "Schmeeckle follows Maier: Jefferson began from this draft.",
+   "loci": [
+    "I.15"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "We hold these truths to be self-evident: that all men are created equal; that they are endowed by their creator with certain inalienable rights; that among these are life, liberty & the pursuit of happiness",
+   "locus": "I.15",
+   "locus_as_printed": "Book 1, Chap. 2, § 15",
+   "parallel": "Happiness is the point where center all those duties which individuals and nations owe to themselves; and this is the great end of the law of nature.",
+   "note": "Locus discrepancy: this sentence is from I §110 (Book I ch. XI), as Schmeeckle himself gives it at n. 28; I §15 is the 'end or object of civil society' passage he quotes at n. 33.",
+   "loci": [
+    "I.15"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "We hold these truths to be self-evident: that all men are created equal; that they are endowed by their creator with certain inalienable rights; that among these are life, liberty & the pursuit of happiness",
+   "locus": "Prelim.10",
+   "locus_as_printed": "Preliminaries, § 10",
+   "parallel": "Man is so formed by nature, that he cannot supply all his own wants ... a law which our own safety, our happiness, our dearest interests, ought to render sacred to every one of us ... Let us therefore endeavor to promote the general happiness of mankind; all mankind, in return, will endeavor to promote ours, and thus we shall establish our felicity on the most solid foundations.",
+   "note": "",
+   "loci": [
+    "Prelim.10"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "that to secure these rights, governments are instituted among men, deriving their just powers from the consent of the governed",
+   "locus": "I.31",
+   "locus_as_printed": "Book 1, Chap. 3, § 31",
+   "parallel": "Government is established only for the sake of the nation, with a view to its safety and happiness.",
+   "note": "n. 29: Schmeeckle calls 'safety and happiness' 'Vattel's anti-Lockean phrase'.",
+   "loci": [
+    "I.31"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "that to secure these rights, governments are instituted among men, deriving their just powers from the consent of the governed",
+   "locus": "Prelim.4",
+   "locus_as_printed": "Preliminaries, § 4",
+   "parallel": "It is a settled point with writers on the natural law, that all men inherit from nature a perfect liberty and independence, of which they cannot be deprived without their own consent.",
+   "note": "",
+   "loci": [
+    "Prelim.4"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "that whenever any form of government becomes destructive of these ends, it is the right of the people to alter or to abolish it",
+   "locus": "I.51",
+   "locus_as_printed": "Book 1, Chap. 4, § 51",
+   "parallel": "As soon as a prince attacks the constitution of the state, he breaks the contract which bound the people to him; the people became free by the act of the sovereign, and can no longer view him but as an usurper who would load them with oppression.",
+   "note": "",
+   "loci": [
+    "I.51"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "that whenever any form of government becomes destructive of these ends, it is the right of the people to alter or to abolish it",
+   "locus": "I.30",
+   "locus_as_printed": "Book 1, Chap. 3, § 30",
+   "parallel": "To attack the constitution of the state and to violate its laws, is a capital crime against society; and if those guilty of it are invested with authority, they add to this crime a perfidious abuse of the power with which they are intrusted.",
+   "note": "",
+   "loci": [
+    "I.30"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "& to institute new government, laying its foundation on such principles, & organizing its powers in such form, as to them shell seem most likely to effect their safety & happiness",
+   "locus": "I.26",
+   "locus_as_printed": "Book 1, Chap. 3, § 26",
+   "parallel": "We have seen already that every political society must necessarily establish a public authority to regulate their common affairs ... This authority essentially belongs to the body of the society; but it may be exercised in a variety of ways; and every society has a right to choose that mode which suits it best.",
+   "note": "",
+   "loci": [
+    "I.26"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "& to institute new government, laying its foundation on such principles, & organizing its powers in such form, as to them shell seem most likely to effect their safety & happiness",
+   "locus": "I.31",
+   "locus_as_printed": "Book 1, Chap. 3, § 31",
+   "parallel": "Government is established only for the sake of the nation, with a view to its safety and happiness.",
+   "note": "",
+   "loci": [
+    "I.31"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "Prudence indeed will dictate that governments long established should not be changed for light & transient causes; and accordingly all experience hath shewn that mankind are more disposed to suffer while evils are sufferable than to right themselves by abolishing the form to which they are accustomed",
+   "locus": "III.290",
+   "locus_as_printed": "Book 3, Chap. 18, § 290",
+   "parallel": "Every citizen should even patiently endure evils, which are not insupportable, rather than disturb the public peace. A denial of justice on the part of the sovereign, or affected delays can alone excuse the furious transports of a people whose patience has been exhausted,--and even justify them, if the evils be intolerable, and the oppression great and manifest.",
+   "note": "",
+   "loci": [
+    "III.290"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "But when a long train of abuses & usurpations, pursuing invariably the same object, evinces a design to reduce them under absolute despotism",
+   "locus": "I.30",
+   "locus_as_printed": "Book 1, Chap. 3, § 30",
+   "parallel": "It is very uncommon to see the laws and constitution of a state openly and boldly opposed: it is against silent and gradual attacks that a nation ought to be particularly on its guard. Sudden revolutions strike the imaginations of men ... But we overlook the changes that insensibly happen by a long train of steps that are but slightly marked.",
+   "note": "",
+   "loci": [
+    "I.30"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "it is their right, it is their duty",
+   "locus": "Prelim.3",
+   "locus_as_printed": "Preliminaries, § 3",
+   "parallel": "For, the right being nothing more than the power of doing what is morally possible, that is to say, what is proper and consistent with duty-it is evident that right is derived from duty, or passive obligation-the obligation we lie under to act in such or such a manner.",
+   "note": "Schmeeckle calls the association of right with duty the 'rosetta stone' of the Declaration.",
+   "loci": [
+    "Prelim.3"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "to throw off such government, & to provide new guards for their future security",
+   "locus": "I.32",
+   "locus_as_printed": "Book 1, Chap. 3, § 32",
+   "parallel": "If any nation is dissatisfied with the public administration, it may apply the necessary remedies, and reform the government.",
+   "note": "",
+   "loci": [
+    "I.32"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "to throw off such government, & to provide new guards for their future security",
+   "locus": "I.30",
+   "locus_as_printed": "Book 1, Chap. 3, § 30",
+   "parallel": "The constitution and laws of a state are the basis of public tranquility, the firmest support of political authority, and a security for the liberty of the citizens.",
+   "note": "",
+   "loci": [
+    "I.30"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, after DI preamble section",
+   "document": "Declaration of Independence (Jefferson's text, preamble), 1776",
+   "fragment": "life, liberty & the pursuit of happiness (commentary)",
+   "locus": "II.16",
+   "locus_as_printed": "Book 2, Chap. 1, §16",
+   "parallel": "Our duty to promote the happiness of our fellow humans is the complement of our right to the pursuit of our own happiness ... 'How happy would mankind be, were these amiable precepts of nature everywhere observed! ... men would live everywhere like brothers, and each individual a citizen of the universe.'",
+   "note": "Adduced in Schmeeckle's commentary, not set against a single phrase.",
+   "loci": [
+    "II.16"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 28",
+   "document": "Declaration of Independence, 1776 (Jefferson on happiness, as read by Garry Wills)",
+   "fragment": "the pursuit of happiness",
+   "locus": "I.110",
+   "locus_as_printed": "Book 1, Chap. 11, § 110",
+   "parallel": "Garry Wills never mentions Vattel in his book, but his interpretation of Jefferson on happiness corresponds closely with Vattel's thinking: 'Experience shows that a people may be unhappy in the midst of all earthly enjoyments ... Happiness is the point where center all those duties ...' Thus Vattel employs the term 'happiness' as both having the force of a physical law ... and as a moral obligation.",
+   "note": "",
+   "loci": [
+    "I.110"
+   ]
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, after n. 40",
+   "document": "Declaration of Independence, 1776, grievances (13th clause; also 11th, 12th and arguably 10th)",
+   "fragment": "the catalogue of grievances",
+   "locus": null,
+   "locus_as_printed": "none",
+   "parallel": "The omnibus thirteenth clause is a list of violations of Vattel's doctrine that a nation's constitution should not be arbitrarily changed without the consent of the people ... The same goes for the eleventh and twelfth clause, and arguably the tenth clause also.",
+   "note": "No locus given (the doctrine is that of Book I ch. III, e.g. §§31-34).",
+   "loci": []
+  },
+  {
+   "scholar": "Schmeeckle 2006/2016",
+   "page": "unpaginated, at n. 31",
+   "document": "Pittsfield (Massachusetts) petitions, 1775-76 (date not given; cited via Forrest McDonald)",
+   "fragment": "the people had 'fallen into a state of Nature' and must draw up and approve a new 'fundamental Constitution'",
+   "locus": null,
+   "locus_as_printed": "none",
+   "parallel": "It seems clear that the Pittsfield reference to a 'fundamental Constitution,' with the claim that the people must approve it, shows the imprint of Vattel's thinking, not Locke.",
+   "note": "",
+   "loci": []
+  }
+ ],
+ "advertisements": [
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "New-York Gazette",
+   "date": "1762-11-29",
+   "advertiser": "Garrat Noel",
+   "note": "also O&G F1"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "New-York Gazette",
+   "date": "1763-01-31",
+   "advertiser": "Garrat Noel",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "New-York Gazette",
+   "date": "1763-03-14",
+   "advertiser": "Garrat Noel",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston News-Letter",
+   "date": "1764-12-06",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston News-Letter",
+   "date": "1764-12-13",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1764-12-10",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1764-12-17",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1764-12-31",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1765-01-21",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1765-02-04",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Post-Boy",
+   "date": "1764-12-31",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Post-Boy",
+   "date": "1765-01-07",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Evening-Post",
+   "date": "1765-02-18",
+   "advertiser": "Rivington & Miller",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1770-12-24",
+   "advertiser": "John Langdon III",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1771-06-10",
+   "advertiser": "John Langdon III",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Boston Gazette",
+   "date": "1771-06-17",
+   "advertiser": "John Langdon III",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Pennsylvania Gazette",
+   "date": "1764-11-08",
+   "advertiser": "Rivington's Philadelphia associate Brown",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Pennsylvania Gazette",
+   "date": "1764-12-06",
+   "advertiser": "Rivington's Philadelphia associate Brown",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Pennsylvania Gazette",
+   "date": "1765-10-10",
+   "advertiser": "Rivington's Philadelphia associate Brown",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  },
+  {
+   "scholar": "Somos 2021",
+   "page": "208 n. 17",
+   "newspaper": "Pennsylvania Gazette",
+   "date": "1768-06-16",
+   "advertiser": "John Elliott",
+   "note": "one of the nineteen advertisements Somos says O&G miss"
+  }
+ ]
+}
