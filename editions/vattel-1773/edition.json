@@ -26,6 +26,7 @@
   "transcription": "Vision transcription of the page images, one diplomatic file per scan; reading text with long s resolved and line-end hyphens joined. Paragraph breaks inside a § checked against the scans (provenance/para_final.json).",
   "text": "text.json",
   "titlePage": "titlepage.json",
+  "thumbnail": "images/thumb.jpg",
   "aliases": {
     "Preface": "Pref.1",
     "Pref.25": "Pref.21",

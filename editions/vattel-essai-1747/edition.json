@@ -16,6 +16,7 @@
   "transcription": "Vision transcription of the page images, one diplomatic file per scan (texts/vattel-loisir-1747/LOI47.json); reading text with long s resolved and line-end hyphens joined. Catchwords, running heads and signatures are left out.",
   "text": "text.json",
   "titlePage": "titlepage.json",
+  "thumbnail": "images/thumb.jpg",
   "aliases": {},
   "divisions": [
     {

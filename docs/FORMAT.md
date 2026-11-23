@@ -56,6 +56,7 @@ Positions are 0-based, end-exclusive offsets into the `text` of a unit or of one
 - Metadata of the base witness and of the transcription.
 - `version` (MAJOR.MINOR) and `changed` (date). See Versions below.
 - `aliases`: retired unit ids mapped to their successors. The viewer resolves them.
+- `thumbnail` (optional): an image of the edition (a printer's device, a title), relative to the edition folder. The collection page shows it faintly behind the edition's card and clearly on hover.
 - `divisions`: one entry per division, in order: `key` (the first part of the unit id), `label`, `chapters` (true when units are grouped by chapter), `chapterTitle` for a division without chapters, `unitLabel` (`{chap}`, `{n}` from the unit id), `unitMark`, `cite` (`{prefix}`, `{chap}`, `{n}`, `{unnum}`, `{page}`), `railUnits` (true: the contents list shows each unit of the division, with its first words, under its chapter). Each chapter and each listed unit in the contents list has a bar: the share of its text (main text and notes) under the rows the current filters show.
 - `layers`: one entry per layer, with the `label` and `tooltip` of its checkbox and `default` (on unless false). A layer with a `file` is a layer file in `layers/`. A layer of `kind: "reuse"` is a view on one reuse table: `table` names it, `family` names the family its checkbox switches.
 - `reuse`: `families` (key, label, `chip`, `color`, `dark`, `sourceLabel`) and the wording of the source panel (`baseTag`, `sourceLabel`, `noteLabel`, `partLabels`, `earliest`, `nearer`).

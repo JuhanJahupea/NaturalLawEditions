@@ -16,6 +16,7 @@
   "transcription": "Vision transcription of the page images, one diplomatic file per scan; reading text with long s resolved and line-end hyphens joined. § numbers restart in each chapter. The Table (pdf 11–30) was not transcribed.",
   "text": "text.json",
   "titlePage": "titlepage.json",
+  "thumbnail": "images/thumb.jpg",
   "aliases": {},
   "divisions": [
     {

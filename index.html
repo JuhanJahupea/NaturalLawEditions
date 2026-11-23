@@ -24,7 +24,13 @@ h2 .n{font-variant-numeric:tabular-nums;letter-spacing:0}
 .sub{font:14px/1.5 var(--ui);color:var(--mut);margin:-4px 0 14px;max-width:680px}
 /* editions */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
-.ed{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px 12px}
+.ed{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px 12px;position:relative;overflow:hidden;isolation:isolate}
+/* the edition's printer's device or title, faint behind the text, clear on hover */
+.ed .th{position:absolute;inset:10px;z-index:-1;background:center/contain no-repeat;opacity:.13;mix-blend-mode:multiply;transition:opacity .35s ease;pointer-events:none}
+.ed:hover .th,.ed:focus-within .th{opacity:.92}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ed .th{filter:invert(1);mix-blend-mode:screen}}
+:root[data-theme="dark"] .ed .th{filter:invert(1);mix-blend-mode:screen}
+@media (prefers-reduced-motion:reduce){.ed .th{transition:none}}
 .ed:hover{border-color:var(--accent)}
 .ed .au{font:13px var(--ui);color:var(--mut)}
 .ed .ti{font:22px/1.25 var(--display);margin:2px 0 4px;color:var(--fg);text-decoration:none}
@@ -95,7 +101,7 @@ const KIND={report:'Data report',essay:'Essay',findings:'Findings'};
  $('edN').textContent=eds.length;
  $('eds').innerHTML=eds.map(e=>{const m=M[e.id]||{},tb=tabs(e.id),rows=tb.reduce((a,r)=>a+r.rows,0);
   const lay=(m.layers||[]).filter(l=>l.kind!=='reuse').map(l=>l.label);
-  return `<div class="ed"><span class="au">${esc(e.author)} · ${esc(e.date)}</span><a class="ti" href="viewer/?ed=${encodeURIComponent(e.id)}">${esc((e.short||e.title).replace(/\s*·\s*\d{4}$/,''))}</a>
+  return `<div class="ed">${m.thumbnail?`<span class="th" aria-hidden="true" style="background-image:url('${esc(e.path+m.thumbnail)}')"></span>`:''}<span class="au">${esc(e.author)} · ${esc(e.date)}</span><a class="ti" href="viewer/?ed=${encodeURIComponent(e.id)}">${esc((e.short||e.title).replace(/\s*·\s*\d{4}$/,''))}</a>
   <span class="im">${esc(e.imprint)}</span>
   <span class="st">${num(rows)} reuse rows from ${tb.length} source text${tb.length===1?'':'s'}</span>
   ${lay.length?`<div class="chips">${lay.map(l=>`<span class="chip">${esc(l)}</span>`).join('')}</div>`:''}
