@@ -2,10 +2,25 @@
  "format": "nle-reports/1",
  "reports": [
   {
+   "id": "vattel-american-reuse",
+   "kind": "report",
+   "title": "Vattel in American documents, 1762–1776: a search of thirty volumes",
+   "summary": "29 reuses of Vattel in 18 documents, 13 of them not reported before. Every reuse of a passage Vattel took closely from Wolff was known; the new ones are of Vattel's own sentences, above all the silence clause of I § 34.",
+   "date": "2026-11-23",
+   "file": "vattel-american-reuse.md",
+   "editions": [
+    "vattel-1773"
+   ],
+   "versions": {
+    "vattel-1773": "1.19"
+   },
+   "generator": "tools/reports/vattel_american_reuse.py"
+  },
+  {
    "id": "vattel-massachusetts",
    "kind": "essay",
    "title": "The sentences left out: Wolff's rules and Vattel's provisos in Massachusetts, 1764–1775",
-   "summary": "The two passages of Vattel most cited in the Massachusetts dispute, I § 210 and I § 34, state rules of Wolff's and add sentences of Vattel's own. The quotations of 1773 and 1775 give the rules and leave out Vattel's sentences; the disputants argued from them in their own words.",
+   "summary": "The two passages of Vattel most cited in the Massachusetts dispute, I § 210 and I § 34, state rules of Wolff's and add sentences of Vattel's own. The House used the closing sentence of § 34 from 1768 to 1771; the quotations of 1773 and 1775 give the rules alone, and the arguments of Vattel's sentences went on in the disputants' own words.",
    "date": "2026-11-23",
    "file": "vattel-massachusetts.md",
    "editions": [

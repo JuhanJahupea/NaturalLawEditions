@@ -19,7 +19,7 @@ audit/                  audits of the editions' data, with every verdict
 reports/                data reports and essays: reports/index.json lists them, reports/?r=<id> shows one; tools/reports/ builds the data reports
 issues/                 genealogies of issues: issues/index.json lists them, issues/?i=<id> shows one; tools/issues/ builds them
 docs/FORMAT.md          the file formats
-tools/                  conversion and checks; tools/transcription/: the transcription and later-pass pipeline
+tools/                  conversion and checks; tools/transcription/: the transcription and later-pass pipeline; tools/american/: the search for Vattel in American documents, 1762–1776
 ```
 
 ## Editions
