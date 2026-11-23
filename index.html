@@ -26,11 +26,14 @@ h2 .n{font-variant-numeric:tabular-nums;letter-spacing:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
 .ed{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px 12px;position:relative;overflow:hidden;isolation:isolate}
 /* the edition's printer's device or title, faint behind the text, clear on hover */
-.ed .th{position:absolute;inset:10px;z-index:-1;background:center/contain no-repeat;opacity:.13;mix-blend-mode:multiply;transition:opacity .35s ease;pointer-events:none}
-.ed:hover .th,.ed:focus-within .th{opacity:.92}
+.ed .th{position:absolute;inset:10px;z-index:-1;background:center/contain no-repeat;opacity:.09;mix-blend-mode:multiply;transition:opacity .15s ease;pointer-events:none}
+.ed:hover .th,.ed:focus-within .th{opacity:.95}
+/* on hover the image takes over: the text fades, the links stay */
+.ed>*:not(.th):not(.ac){transition:opacity .15s ease}
+.ed:hover>*:not(.th):not(.ac){opacity:.08}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ed .th{filter:invert(1);mix-blend-mode:screen}}
 :root[data-theme="dark"] .ed .th{filter:invert(1);mix-blend-mode:screen}
-@media (prefers-reduced-motion:reduce){.ed .th{transition:none}}
+@media (prefers-reduced-motion:reduce){.ed .th,.ed>*{transition:none}}
 .ed:hover{border-color:var(--accent)}
 .ed .au{font:13px var(--ui);color:var(--mut)}
 .ed .ti{font:22px/1.25 var(--display);margin:2px 0 4px;color:var(--fg);text-decoration:none}
