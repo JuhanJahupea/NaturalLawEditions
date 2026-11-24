@@ -1,5 +1,6 @@
 # render2.py <pdf> <outdir>: each page trimmed to its printed area and scaled to fit 1300 x 1560 px (grayscale JPEG),
-# plus clips.json with the page-coordinate clip of each image, for crop2.py.
+# plus clips.json with the page-coordinate clip of each image, for crop2.py. PDF annotations (a reader's highlights) are
+# not drawn.
 import sys, os, json
 import pymupdf as fitz
 pdf, out = sys.argv[1], sys.argv[2]
@@ -10,7 +11,7 @@ for i, pg in enumerate(d, 1):
     p = os.path.join(out, 'p%04d.jpg' % i)
     if os.path.exists(p) and str(i) in clips: continue
     r = pg.rect; z = 400 / r.width
-    pm = pg.get_pixmap(matrix=fitz.Matrix(z, z), colorspace=fitz.csGRAY)
+    pm = pg.get_pixmap(matrix=fitz.Matrix(z, z), colorspace=fitz.csGRAY, annots=False)
     w, h, s = pm.width, pm.height, pm.samples
     cols = [0] * w; rows = [0] * h
     for y in range(h):
@@ -25,7 +26,7 @@ for i, pg in enumerate(d, 1):
     else:
         clip = r
     sc = min(1300 / clip.width, 1560 / clip.height)
-    pg.get_pixmap(matrix=fitz.Matrix(sc, sc), clip=clip, colorspace=fitz.csGRAY).save(p, jpg_quality=82)
+    pg.get_pixmap(matrix=fitz.Matrix(sc, sc), clip=clip, colorspace=fitz.csGRAY, annots=False).save(p, jpg_quality=82)
     clips[str(i)] = [clip.x0, clip.y0, clip.x1, clip.y1]
     if i % 50 == 0: json.dump(clips, open(cj, 'w'))
 json.dump(clips, open(cj, 'w'))
