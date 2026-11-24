@@ -2,6 +2,20 @@
  "format": "nle-reports/1",
  "reports": [
   {
+   "id": "vattel-massachusetts-evidence",
+   "kind": "essay",
+   "title": "Vattel in Massachusetts, 1764–1776: what the texts show",
+   "summary": "Twenty-nine reuses of Vattel in thirty American volumes: a Massachusetts author of 1764–1773, read in the London English of 1760, used for the constitution of a state. Both sides cited Wolff's rules; the patriots argued from Vattel's own sentences, above all the one that makes silence consent, and drew from it a duty to declare their rights.",
+   "date": "2026-11-24",
+   "file": "vattel-massachusetts-evidence.md",
+   "editions": [
+    "vattel-1773"
+   ],
+   "versions": {
+    "vattel-1773": "1.19"
+   }
+  },
+  {
    "id": "vattel-american-reuse",
    "kind": "report",
    "title": "Vattel in American documents, 1762–1776: a search of thirty volumes",
