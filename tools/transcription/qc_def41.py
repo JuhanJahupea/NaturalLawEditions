@@ -14,8 +14,10 @@ import pymupdf as fitz
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 W = json.load(open(os.path.join(ROOT, 'editions/vattel-defense-1741/provenance/witness.json')))
 front = [(f['label'], f['scan']) for f in W['scan_map']['front']]
-text = sorted(((int(p), s) for p, s in W['scan_map']['text'].items()), key=lambda x: x[1])
+text = sorted(((int(p), s) for p, s in W['scan_map']['text'].items() if s), key=lambda x: x[1])
 order = [(lab, s) for lab, s in front] + [(str(p), s) for p, s in text]
+order += [(i['label'], i['scan']) for i in W['scan_map'].get('inserted', [])]
+order.sort(key=lambda x: x[1])
 TR = os.path.join(WORK, 'tr', 'DEF41')
 pdf = fitz.open(os.path.join(WORK, 'scans', 'pdf', 'DEF41.pdf'))
 def fold(s):
