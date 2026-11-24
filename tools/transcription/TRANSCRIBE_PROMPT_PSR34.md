@@ -10,7 +10,7 @@ You are transcribing scanned pages of an 18th-century Latin book: Christian Wolf
 
 ## Diplomatic rules
 - Keep original spelling, accents (quàm, ità, à), capitalization and punctuation exactly, including spaces before ; : ? ! and inside "( §. 612. )". Do not keep the irregular space before commas.
-- Long s: write ſ wherever the print has a long s ("eſt", "ſyſtema"). Round s stays s.
+- Long s: write ſ wherever the print has a long s ("eſt", "ſyſtema"). Round s stays s. This print sets a double s as round s followed by long s: "esſe", "necesſe", "posſit".
 - "&" as printed; æ / œ as printed; ct, st and other ligatures as plain letters.
 - Line breaks as "\n"; keep end-of-line hyphens exactly as printed ("cor-\npus"). Do not join words.
 - Italics: <i>…</i>. Wolff sets each proposition (the first sentence or two of a §) in italics, and names in the text ("<i>Leibnitius</i>"). Small capitals and capitals: as capital letters, no markup. A large decorated initial is written as a normal capital joined to its word ("In omni").
