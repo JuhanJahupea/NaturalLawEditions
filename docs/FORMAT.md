@@ -17,8 +17,11 @@ editions/<edition id>/
   passes/<name>.json            later passes that replace part of what the working edition built (see below)
   provenance/                   inputs kept to check the text against; superseded/ holds the rows a pass replaced
 reuse/<from>__<to>.json         reuse table between two texts
+texts/<text id>/                source texts made for the collection, with a README on copy and method
 tools/                          conversion and checks
 ```
+
+Source texts in `texts/` come in two forms. `nle-transcription/1`: page transcriptions, one record per scan (`scan`, `kind`, `page`, `head`, `body` with marker lines such as `<<§ n>>`, `margin`, `notes`, `catch`, `notes_scan`). `nle-sections/1`: a text taken from a published digital edition, one record per section (`id`, `part`, `label`, `text`, `scan` with the archive.org `item`, `leaf` and `url` of the page of a period edition where the section begins, `approx` where the leaf is placed between its neighbours); `source` names both.
 
 ## Identifiers
 
