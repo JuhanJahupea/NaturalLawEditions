@@ -33,7 +33,9 @@ pages = []; lastpar = None; struct = []
 for lab, s in order:
     f = os.path.join(TR, 's%04d.json' % s)
     if not os.path.exists(f): rep['missing'].append(s); pages.append(None); continue
-    d = json.load(open(f)); pages.append(d)
+    d = json.load(open(f))
+    d['notes'] = [n if isinstance(n, dict) else {'mark': n[0], 'text': n[1] if len(n) > 1 else ''} for n in d.get('notes', [])]
+    pages.append(d)
     for m in re.finditer(r'<<\s*(PARTIE|CHAP|SECTION|§|DEDICACE|PREFACE)\s*(\d*)\s*>>', d.get('body', '')):
         k, n = m.group(1), m.group(2)
         if k == '§':
@@ -52,7 +54,7 @@ for lab, s in order:
 for i in range(len(order) - 1):
     a, b = pages[i], pages[i + 1]
     if not a or not b or not a.get('catch'): continue
-    c, w = fold(a['catch']).strip('-'), fold(first_word(b.get('body', '')))
+    c, w = fold(re.sub(r'<[^>]+>', '', a['catch'])).strip('-'), fold(first_word(b.get('body', '')))
     c = re.sub(r'[^a-z]', '', c); w = re.sub(r'[^a-z]', '', w)
     if c and w and not (w.startswith(c[:4]) or c.startswith(w[:4])): rep['catch'].append({'scan': order[i][1], 'catch': a['catch'], 'next': first_word(b.get('body', ''))})
 rep['structure'] = [{'scan': s, 'marker': k, 'n': n} for s, k, n in struct]
