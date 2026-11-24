@@ -31,20 +31,6 @@
    "generator": "tools/reports/vattel_american_reuse.py"
   },
   {
-   "id": "vattel-massachusetts",
-   "kind": "essay",
-   "title": "The sentences left out: Wolff's rules and Vattel's provisos in Massachusetts, 1764–1775",
-   "summary": "The two passages of Vattel most cited in the Massachusetts dispute, I § 210 and I § 34, state rules of Wolff's and add sentences of Vattel's own. The House used the closing sentence of § 34 from 1768 to 1771; the quotations of 1773 and 1775 give the rules alone, and the arguments of Vattel's sentences went on in the disputants' own words.",
-   "date": "2026-11-23",
-   "file": "vattel-massachusetts.md",
-   "editions": [
-    "vattel-1773"
-   ],
-   "versions": {
-    "vattel-1773": "1.19"
-   }
-  },
-  {
    "id": "vattel-american-sources",
    "kind": "report",
    "title": "Which Vattel did the colonists cite? Sources of the passages, 1762–1776",
