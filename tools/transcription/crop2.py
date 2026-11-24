@@ -14,5 +14,5 @@ d = fitz.open('%s/pdf/%s.pdf' % (B, sig)); pg = d[page - 1]
 W, H = c[2] - c[0], c[3] - c[1]
 clip = fitz.Rect(c[0] + fx0 * W, c[1] + fy0 * H, c[0] + fx1 * W, c[1] + fy1 * H)
 sc = min(1560 / clip.width, 1560 / clip.height, 4 * 1300 / W)
-pg.get_pixmap(matrix=fitz.Matrix(sc, sc), clip=clip, colorspace=fitz.csGRAY).save(out, jpg_quality=85)
+pg.get_pixmap(matrix=fitz.Matrix(sc, sc), clip=clip, colorspace=fitz.csGRAY, annots=False).save(out, jpg_quality=85)
 print(out)

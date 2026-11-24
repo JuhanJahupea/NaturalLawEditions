@@ -24,7 +24,8 @@
    "353-373": "repeated at 375-395 (pp. 267-287); the first scans are used",
    "374": "p. 288; the repeat at 396 is sharper and is used",
    "375-395": "repeat of pp. 267-287",
-   "703-708": "blank leaves and binding"
+   "703-708": "blank leaves and binding",
+   "555-556": "fold-out table and its verso (kept in scan_map.inserted)"
   }
  },
  "second_scan": {
@@ -839,19 +840,19 @@
    "444": 552,
    "445": 553,
    "446": 554,
-   "447": 555,
-   "448": 556,
-   "449": 557,
-   "450": 558,
-   "451": 559,
-   "452": 560,
-   "453": 561,
-   "454": 562,
-   "455": 563,
-   "456": 564,
-   "457": 565,
-   "458": 566,
-   "459": 567,
+   "447": 557,
+   "448": 558,
+   "449": 559,
+   "450": 560,
+   "451": 561,
+   "452": 562,
+   "453": 563,
+   "454": 564,
+   "455": 565,
+   "456": 566,
+   "457": 567,
+   "458": null,
+   "459": null,
    "460": 568,
    "461": 569,
    "462": 570,
@@ -989,12 +990,29 @@
   "errata": [
    701,
    702
+  ],
+  "inserted": [
+   {
+    "label": "fold-out table (head \"Pag. 444\"): the Réponse §§ answering each objection; left columns cut off in the scan",
+    "scan": 555
+   },
+   {
+    "label": "blank verso of the fold-out",
+    "scan": 556
+   }
   ]
  },
  "checks": [
   "Every text page 1-592 has one scan; the parity of each mapped page agrees with its running head on the 550 pages where the head can be read.",
   "Dedication and Préface: catchwords run on from page to page; the errata's \"Préface p. 31, l. 16\" (s'écrie) falls on base scan 65, Préface page 31.",
-  "The second scan was aligned page by page with the base scan by shared vocabulary."
+  "The second scan was aligned page by page with the base scan by shared vocabulary.",
+  "Pages 447-457 are base scans 557-567: the fold-out (555-556) has no page number. Found when the transcription read the printed numbers."
  ],
- "images": "tools/transcription/render2.py <base PDF> <WORK>/scans/img/DEF41: p<scan>.jpg, trimmed to the printed area, grayscale, at most 1300 x 1560 px."
+ "images": "tools/transcription/render2.py <base PDF> <WORK>/scans/img/DEF41: p<scan>.jpg, trimmed to the printed area, grayscale, at most 1300 x 1560 px.",
+ "lacunae": [
+  {
+   "pages": "458-459",
+   "note": "One leaf is wanting in the Lausanne copy: neither Google scan has it (base scan 567 is p. 457, 568 is p. 460; archive.org scan 523 is p. 457, 524 is p. 460). The catchword of p. 457 (\"&\") does not lead into p. 460. §§ 345 and 346 begin on the missing pages."
+  }
+ ]
 }
