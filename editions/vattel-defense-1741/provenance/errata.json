@@ -1,0 +1,329 @@
+{
+ "source": "Errata, base scans 701-702, read from the page images",
+ "items": [
+  {
+   "page": "Préface 31",
+   "line": "16",
+   "misprint": "s'écrie",
+   "correction": "s'égaie",
+   "instruction": null
+  },
+  {
+   "page": "29",
+   "line": "2",
+   "misprint": "pouvions",
+   "correction": "devions",
+   "instruction": null
+  },
+  {
+   "page": "52",
+   "line": "8",
+   "misprint": "ont",
+   "correction": "a",
+   "instruction": null
+  },
+  {
+   "page": "53",
+   "line": "1",
+   "misprint": "Espèces",
+   "correction": "Essences",
+   "instruction": null
+  },
+  {
+   "page": "53",
+   "line": "17",
+   "misprint": "raison",
+   "correction": "liaison",
+   "instruction": null
+  },
+  {
+   "page": "61",
+   "line": "note",
+   "misprint": "emendatoene",
+   "correction": "emendatione",
+   "instruction": null
+  },
+  {
+   "page": "63",
+   "line": "dernière",
+   "misprint": "formula",
+   "correction": "formale",
+   "instruction": null
+  },
+  {
+   "page": "70",
+   "line": "22",
+   "misprint": "contenu",
+   "correction": "continu",
+   "instruction": null
+  },
+  {
+   "page": "89",
+   "line": "19",
+   "misprint": "& la sagesse de l'Intelligence",
+   "correction": "la sagesse & l'Intelligence",
+   "instruction": null
+  },
+  {
+   "page": "107",
+   "line": "10, à la fin",
+   "misprint": "Les",
+   "correction": "Ces",
+   "instruction": null
+  },
+  {
+   "page": "150",
+   "line": "21",
+   "misprint": "moïen",
+   "correction": "moïens",
+   "instruction": null
+  },
+  {
+   "page": "153",
+   "line": "6-7",
+   "misprint": "représentant",
+   "correction": "représentent",
+   "instruction": null
+  },
+  {
+   "page": "162",
+   "line": "antepenult.",
+   "misprint": "le long d'un",
+   "correction": "le long d'une Corde, ou qu'une liqueur qui coule le long d'un",
+   "instruction": null
+  },
+  {
+   "page": "167",
+   "line": "6-7",
+   "misprint": "l'Ame se laisse",
+   "correction": "l'Ame est imparfaite, & que ses perceptions sont confuses, Dieu a accommodé l'Ame au Corps, ensorte que l'Ame se laisse",
+   "instruction": null
+  },
+  {
+   "page": "168",
+   "line": "10 et suivantes",
+   "misprint": null,
+   "correction": null,
+   "instruction": "effacez les Guillemets"
+  },
+  {
+   "page": "180",
+   "line": "24",
+   "misprint": "unie",
+   "correction": "muë",
+   "instruction": null
+  },
+  {
+   "page": "214",
+   "line": "2",
+   "misprint": "Voux",
+   "correction": "Vous",
+   "instruction": null
+  },
+  {
+   "page": "216",
+   "line": "6",
+   "misprint": "sur les",
+   "correction": "sur ses",
+   "instruction": null
+  },
+  {
+   "page": "225",
+   "line": "22",
+   "misprint": "exemplo",
+   "correction": "extemplo",
+   "instruction": null
+  },
+  {
+   "page": "231",
+   "line": "au bas",
+   "misprint": "spectateur F",
+   "correction": "spectateur, T.",
+   "instruction": null,
+   "check": "page or reading uncertain on the scan"
+  },
+  {
+   "page": "250",
+   "line": "13",
+   "misprint": "303, 307",
+   "correction": "303-307",
+   "instruction": null
+  },
+  {
+   "page": "266",
+   "line": "3 et dernière",
+   "misprint": "Baridan",
+   "correction": "Buridan",
+   "instruction": null
+  },
+  {
+   "page": "286",
+   "line": "16",
+   "misprint": "que la vois",
+   "correction": "que vous la faites; & non pas, que vous la faites, parce que je la vois",
+   "instruction": null
+  },
+  {
+   "page": "297",
+   "line": "11",
+   "misprint": "font",
+   "correction": "sont",
+   "instruction": null
+  },
+  {
+   "page": "300",
+   "line": "9",
+   "misprint": "incertitude",
+   "correction": "certitude",
+   "instruction": null
+  },
+  {
+   "page": "310",
+   "line": "11-15",
+   "misprint": null,
+   "correction": null,
+   "instruction": "effacez les Guillemets"
+  },
+  {
+   "page": "346",
+   "line": "dernière",
+   "misprint": null,
+   "correction": "& d'aprendre qu'on n'a aucune punition à craindre.",
+   "instruction": "après intérieur, ajoutez"
+  },
+  {
+   "page": "363",
+   "line": "2",
+   "misprint": null,
+   "correction": "qui a formé ce Corps",
+   "instruction": "après Corps, ajoutez"
+  },
+  {
+   "page": "369",
+   "line": "21",
+   "misprint": "à l'égard des Causes finales",
+   "correction": "à l'égard des Causes efficientes, & non point à l'égard des Causes finales",
+   "instruction": null
+  },
+  {
+   "page": "375",
+   "line": "penult.",
+   "misprint": "ses Livres",
+   "correction": "ses deux Livres",
+   "instruction": null
+  },
+  {
+   "page": "384",
+   "line": "19",
+   "misprint": "Esprit qui",
+   "correction": "Esprit",
+   "instruction": null
+  },
+  {
+   "page": "387",
+   "line": "19",
+   "misprint": "à la pag. 1.",
+   "correction": "à la pag. 18.",
+   "instruction": null
+  },
+  {
+   "page": "388",
+   "line": "12",
+   "misprint": "hazard? Heureusement, tout",
+   "correction": "hazard, heureusement? Tout",
+   "instruction": null
+  },
+  {
+   "page": "419",
+   "line": "19",
+   "misprint": "ses",
+   "correction": "ces",
+   "instruction": null,
+   "check": "page or reading uncertain on the scan"
+  },
+  {
+   "page": "420",
+   "line": "23",
+   "misprint": "provenir",
+   "correction": "survenir",
+   "instruction": null
+  },
+  {
+   "page": "438",
+   "line": "7",
+   "misprint": "l'Univers, :",
+   "correction": "l'Univers,)",
+   "instruction": null
+  },
+  {
+   "page": "510",
+   "line": "penult.",
+   "misprint": "tems",
+   "correction": "sens",
+   "instruction": null
+  },
+  {
+   "page": "511",
+   "line": "22",
+   "misprint": "s'y",
+   "correction": "l'y",
+   "instruction": null
+  },
+  {
+   "page": "512",
+   "line": "20",
+   "misprint": null,
+   "correction": "& il arrive",
+   "instruction": "après active, ajoutez"
+  },
+  {
+   "page": "520",
+   "line": "2-4",
+   "misprint": null,
+   "correction": null,
+   "instruction": "ces lignes ne doivent point être en Caractères Italiques"
+  },
+  {
+   "page": "541",
+   "line": "5",
+   "misprint": "forment",
+   "correction": "meut",
+   "instruction": null
+  },
+  {
+   "page": "544",
+   "line": "9",
+   "misprint": "Boadwardin",
+   "correction": "Bradwardin",
+   "instruction": null
+  },
+  {
+   "page": "545",
+   "line": "1",
+   "misprint": "le",
+   "correction": "l'a",
+   "instruction": null
+  },
+  {
+   "page": "549",
+   "line": "23",
+   "misprint": "que la",
+   "correction": "que par la",
+   "instruction": null
+  },
+  {
+   "page": "575",
+   "line": "9",
+   "misprint": "Arrêt",
+   "correction": "Arrêt du Parnasse",
+   "instruction": null
+  },
+  {
+   "page": "585",
+   "line": "16",
+   "misprint": "retraindre",
+   "correction": "restraindre",
+   "instruction": null
+  }
+ ]
+}

@@ -6,7 +6,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 
 ## 1. Scans
 
-- `render2.py <pdf> <WORK>/scans/img/<SIGLUM>`: every page trimmed to its printed area, at most 1300 × 1560 px, grayscale, with `clips.json` for the crops. The PDF is the archive.org item's PDF; page numbers are PDF pages.
+- `render2.py <pdf> <WORK>/scans/img/<SIGLUM>`: every page trimmed to its printed area, at most 1300 × 1560 px, grayscale, with `clips.json` for the crops. PDF annotations (a reader's highlights) are not drawn. The PDF is the archive.org item's PDF; page numbers are PDF pages.
 - `crop2.py <SIGLUM> <page> <x0> <y0> <x1> <y1>`: a region of a page at high resolution, for the small type of notes and margins.
 - archive.org's OCR of the same item (`<item>_hocr_pageindex.json.gz`, `<item>_hocr_searchtext.txt.gz`) goes to `<WORK>/scans/ocr/<SIGLUM>_…`. It serves the checks only.
 
