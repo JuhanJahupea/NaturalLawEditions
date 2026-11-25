@@ -21,7 +21,7 @@ texts/<text id>/                source texts made for the collection, with a REA
 tools/                          conversion and checks
 ```
 
-Source texts in `texts/` come in two forms. `nle-transcription/1`: page transcriptions, one record per scan (`scan`, `kind`, `page`, `head`, `body` with marker lines such as `<<§ n>>`, `margin`, `notes`, `catch`, `notes_scan`). `nle-sections/1`: a text taken from a published digital edition, one record per section (`id`, `part`, `label`, `text`, `scan` with the archive.org `item`, `leaf` and `url` of the page of a period edition where the section begins, `approx` where the leaf is placed between its neighbours); `source` names both.
+Source texts in `texts/` come in two forms. `nle-transcription/1`: page transcriptions, one record per scan (`scan`, `kind`, `page`, `head`, `body` with marker lines such as `<<§ n>>`, `margin`, `notes`, `catch`, `notes_scan`). `nle-sections/1`: a text taken from a published digital edition, one record per section (`id`, `part`, `label`, `text`, `scan` with the archive.org `item`, `leaf` and `url` of the page of a period edition where the section begins, `approx` where the leaf is placed between its neighbours); `source` names both. `nle-ocr/1`: the OCR text layer of a PDF, one record per printed page (`scan`, `page`, `part`, `head` = the running head line, `text` with the line breaks of the OCR); `source` names the copy and the layer.
 
 ## Identifiers
 
