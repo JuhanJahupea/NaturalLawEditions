@@ -1,0 +1,3443 @@
+{
+ "format": "nle-quoted/1",
+ "text": "roques-lettres-1737-1739",
+ "source": "Pierre Roques, letters on Leibniz's system to Abraham Ruchat (Mercure suisse, Dec. 1737; Journal helvétique, Jan. 1738) and to Louis Bourguet (Journal helvétique, Nov. 1738, Feb. and Mar. 1739), as quoted by Vattel, Défense du système leibnitien (1741), Partie II ch. VIII. The journals were not available; these passages stand in for the letters.",
+ "letters": {
+  "1": {
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737"
+  },
+  "2": {
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738"
+  },
+  "3": {
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738"
+  },
+  "4": {
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739"
+  }
+ },
+ "passages": [
+  {
+   "id": "ROQ.1",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "69, 70",
+   "resolved": false,
+   "kind": "report",
+   "text": "Il reconnoit, que Mr. DE LEIBNITZ a cru, & enseigné, que l'Ame est véritablement libre; & il le prouve par quelques passages de la Théodicée",
+   "at": {
+    "unit": "D.354",
+    "where": "text",
+    "start": 439,
+    "end": 579,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page from note (a)"
+  },
+  {
+   "id": "ROQ.2",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "68, 69",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Ne semble-t-il pas",
+   "at": {
+    "unit": "D.354",
+    "where": "text",
+    "start": 950,
+    "end": 968,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.3",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "68, 69",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que cela signifie, que l'Ame & le Corps ont été formés d'une telle sorte, que ces deux substances sont tout ce qu'on y remarque, en conséquence des Loix, qui leur ont été fixées?",
+   "at": {
+    "unit": "D.354",
+    "where": "text",
+    "start": 999,
+    "end": 1177,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.4",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "68, 69",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Or, comme les Loix du Corps opèrent nécessairement, il semble qu'on doit aussi en conclure que l'Ame est mue, par la nécessité de sa constitution, à avoir toutes les pensées, & à former tous les jugemens qui se succèdent en elle.",
+   "at": {
+    "unit": "D.354",
+    "where": "text",
+    "start": 1585,
+    "end": 1814,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page carried"
+  },
+  {
+   "id": "ROQ.5",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "69, 70",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Voici encore un Passage, où il semble que Mr. DE LEIBNITZ enlève toute Liberté à l'Ame, & la transforme en une Machine spirituelle.",
+   "at": {
+    "unit": "D.355",
+    "where": "text",
+    "start": 26,
+    "end": 157,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page carried from note (a) of D.354; Mr. DE LEIBNITZ in roman inside the italics"
+  },
+  {
+   "id": "ROQ.6",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "69, 70",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Il semble par là, que Dieu a disposé originairement l'ordre des pensées, qu'elle doit avoir, tout comme il a déterminé tous les mouvemens que le Corps doit produire; donc l'Ame agiroit aussi nécessairement que le Corps, & l'Homme n'auroit aucune liberté.",
+   "at": {
+    "unit": "D.355",
+    "where": "text",
+    "start": 390,
+    "end": 644,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.7",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "70",
+   "resolved": false,
+   "kind": "report",
+   "text": "reconnoissant même (p. 70.), que Mr. DE LEIBNITZ est un grand Défenseur de la Liberté, bien loin qu'il la détruise.",
+   "at": {
+    "unit": "D.355",
+    "where": "text",
+    "start": 2048,
+    "end": 2163,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.8",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "71",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "l'Ame se modifie elle-même, sans recevoir quoi que ce soit de la part du Corps, ni à l'occasion de ce qui s'y passe;",
+   "at": {
+    "unit": "D.356",
+    "where": "text",
+    "start": 79,
+    "end": 195,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.9",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "71",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Il enseigne",
+   "at": {
+    "unit": "D.356",
+    "where": "text",
+    "start": 770,
+    "end": 781,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.10",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "71",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que l'Ame n'a aucun Empire sur les mouvemens du Corps.",
+   "at": {
+    "unit": "D.356",
+    "where": "text",
+    "start": 800,
+    "end": 854,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.11",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "72",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "D'abord il me paroit, que Mr. DE LEIBNITZ attribue à l'Ame un pouvoir trop étendu, & que l'expérience nous engage de lui refuser; suivant ce grand Philosophe, l'Ame est l'Auteur immédiat de toutes ses Actions, & de tout ce qui se passe au dedans d'elle.",
+   "at": {
+    "unit": "D.357",
+    "where": "text",
+    "start": 95,
+    "end": 348,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.12",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "72",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "c'est attribuer à l'Ame un pouvoir trop étendu,",
+   "at": {
+    "unit": "D.357",
+    "where": "text",
+    "start": 2045,
+    "end": 2092,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo of the first passage"
+  },
+  {
+   "id": "ROQ.13",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "73",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "I. Si nous avions",
+   "at": {
+    "unit": "D.358",
+    "where": "text",
+    "start": 299,
+    "end": 316,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.14",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "73",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "sussions comment nous devons nous disposer, pour éprouver telle ou telle sensation. Quelqu'un sait-il comment il doit se modifier intérieurement, pour éprouver la douceur d'un excellent Raisin, ou le goût d'une bonne Pêche?",
+   "at": {
+    "unit": "D.358",
+    "where": "text",
+    "start": 368,
+    "end": 591,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "roman words 'ce pouvoir, il faudroit que nous' between the two italic runs left out"
+  },
+  {
+   "id": "ROQ.15",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "73",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "si ces sensations dépendoient uniquement de l'Ame, & qu'aucun Etre, que nous, n'y contribuât en rien, ne bannirions-nous pas à jamais toutes les sensations désagréables, pour ne nous donner que celles qui peuvent causer du plaisir?",
+   "at": {
+    "unit": "D.359",
+    "where": "text",
+    "start": 24,
+    "end": 255,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page carried; OCR glitch 'plai_sir?_' kept as in the unit"
+  },
+  {
+   "id": "ROQ.16",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "73",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "De plus, si nous étions les Auteurs immédiats de nos sensations, ne pourrions-nous pas rapeller, toutes les fois que nous voudrions, celles qui nous ont causé du plaisir?",
+   "at": {
+    "unit": "D.359",
+    "where": "text",
+    "start": 445,
+    "end": 615,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page carried"
+  },
+  {
+   "id": "ROQ.17",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "74",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "nous ne serions pas surpris par des sensations subites, auxquelles nous ne pensions point auparavant, s'il étoit vrai que l'Ame fût, à la rigueur, l'Auteur immédiat de toutes ses sensations.",
+   "at": {
+    "unit": "D.359",
+    "where": "text",
+    "start": 958,
+    "end": 1148,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.18",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "74",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Une Cause intelligente sait ce qu'elle veut faire, avant de mettre la main à l'œuvre, & elle n'est pas surprise par une Action qu'elle vient de produire.",
+   "at": {
+    "unit": "D.359",
+    "where": "text",
+    "start": 1160,
+    "end": 1313,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.19",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "74",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Pourquoi les sourds n'ont-ils pas les sensations du son, & les Aveugles celles des couleurs?",
+   "at": {
+    "unit": "D.360",
+    "where": "text",
+    "start": 45,
+    "end": 137,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page stated just before in (p. 74.) of D.359"
+  },
+  {
+   "id": "ROQ.20",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "75",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "ce qu'il vient de dire des sensations, aux images des objets extérieurs.",
+   "at": {
+    "unit": "D.361",
+    "where": "text",
+    "start": 54,
+    "end": 126,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.21",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "75",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Il ne me paroit point",
+   "at": {
+    "unit": "D.361",
+    "where": "text",
+    "start": 1040,
+    "end": 1061,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.22",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "75",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que l'Ame les produise (les",
+   "at": {
+    "unit": "D.361",
+    "where": "text",
+    "start": 1071,
+    "end": 1098,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "'Images' after the closing mark is Vattel's gloss"
+  },
+  {
+   "id": "ROQ.23",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "75",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Prémièrement",
+   "at": {
+    "unit": "D.361",
+    "where": "text",
+    "start": 1154,
+    "end": 1166,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.24",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "75",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "pour se former les images des Objets corporels, il faudroit que l'Ame connût antecédemment ces objets.",
+   "at": {
+    "unit": "D.361",
+    "where": "text",
+    "start": 1189,
+    "end": 1291,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.25",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "76",
+   "resolved": false,
+   "kind": "report",
+   "text": "Venons à la 2e. Raison que Mr. ROQUES allègue, pour faire voir que l'Ame ne produit pas les images des objets.",
+   "at": {
+    "unit": "D.362",
+    "where": "text",
+    "start": 5,
+    "end": 115,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page from the following citation"
+  },
+  {
+   "id": "ROQ.26",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "76",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Il faudroit",
+   "at": {
+    "unit": "D.362",
+    "where": "text",
+    "start": 116,
+    "end": 127,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.27",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "76",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que l'Ame produisit ces merveilleux Ouvrages avec une rapidité inconcevable. Lorsqu'on ouvre les yeux sur la Campagne, sur un Parterre émaillé de mille fleurs, sur une foule de Personnes, le prémier coup d'œil offre un nombre innombrable d'objets différents, réprésentés avec toutes leurs couleurs. Et l'Ame seroit capable de produire subitement, en elle-même, ce merveilleux spectacle?",
+   "at": {
+    "unit": "D.362",
+    "where": "text",
+    "start": 147,
+    "end": 533,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.28",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "76",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "merveilleux Spectacle.",
+   "at": {
+    "unit": "D.362",
+    "where": "text",
+    "start": 810,
+    "end": 832,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.29",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "77",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Nous ne voïons pas les objets",
+   "at": {
+    "unit": "D.363",
+    "where": "text",
+    "start": 31,
+    "end": 60,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.30",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "77",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "précisément tels qu'ils sont en eux-mêmes; mais conformément à la distance, dans laquelle ils se trouvent par raport à nous. . . . Or suivant quelles règles notre Ame se formeroit-elle les images des Objets, proportionellement à la distance, dans laquelle ils sont entre eux, & par raport à nous?",
+   "at": {
+    "unit": "D.363",
+    "where": "text",
+    "start": 88,
+    "end": 384,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "contains Roques's own ellipsis dots"
+  },
+  {
+   "id": "ROQ.31",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "77",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Pourquoi, lorsque les objets ne se présentent plus à nous , ou que nous venons à fermer les yeux , disparoissent subitement toutes ces Images,que nous contemplions avec tant de plaisir , & que nous voudrions contempler encôre? Notre propre Ouvrage nous échape - t'il malgré nous mêmes?",
+   "at": {
+    "unit": "D.364",
+    "where": "text",
+    "start": 83,
+    "end": 368,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "no page given; carried from D.363, uncertain"
+  },
+  {
+   "id": "ROQ.32",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "77",
+   "resolved": true,
+   "kind": "report",
+   "text": "Nous retenons nos Idées distinctes , nous les rapellons, il est vrai, comme le dit Mr. ROQUES",
+   "at": {
+    "unit": "D.364",
+    "where": "text",
+    "start": 494,
+    "end": 587,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page carried, uncertain"
+  },
+  {
+   "id": "ROQ.33",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "78",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "L'Ame",
+   "at": {
+    "unit": "D.365",
+    "where": "text",
+    "start": 172,
+    "end": 177,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.34",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "78",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "est souvent occupée par des Images, qui l'inquiètent & l'épouvantent. Une Personne attaquée d'une Fièvre ardente est en proie à des images bisarres, qu'elle voudroit chasser. Cependant, soit qu'elle ferme les yeux, soit qu'elle les ouvre, ces images restent, ou ne disparoissent, que pour céder la place à d'autres, qu'on ne voit pas paroitre avec plus de plaisir. Or, si notre Ame étoit la Cause productrice de ces représentations, ne tomberoit-elle pas avec elle-même dans une contradiction ridicule & inexplicable, de vouloir, & de ne vouloir pas, en mêmetems, l'existence de telle ou de telle image?",
+   "at": {
+    "unit": "D.365",
+    "where": "text",
+    "start": 195,
+    "end": 798,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.35",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "78",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "en voulant & ne voulant pas, en même tems, l'existence de telle ou de telle image.",
+   "at": {
+    "unit": "D.365",
+    "where": "text",
+    "start": 1070,
+    "end": 1152,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.36",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "78",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "que ce soit assez pour prouver que notre Ame n'est pas l'Auteur de ses sensations & des images des choses sensibles , de dire qu'elle ignore comment il faudroit s'y prendre pour produire toutes ces modifications, qui nous étonnent",
+   "at": {
+    "unit": "D.367",
+    "where": "text",
+    "start": 78,
+    "end": 308,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page follows in (p. 78.)"
+  },
+  {
+   "id": "ROQ.37",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "78",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Il est évident que la véritable cause efficiente d'un effet doit le connoitre , & savoir aussi de quelle manière il le faut produire. Cela n'est pas nécessaire,quand on n'est que l'instrument de cette cause , ou que le sujet passif de son Action ; Mais l'on ne sauroit concevoir , que cela ne soit point nécessaire à un véritable Agent.",
+   "at": {
+    "unit": "D.367",
+    "where": "text",
+    "start": 370,
+    "end": 706,
+    "match": 1.0
+   },
+   "embedded": [
+    {
+     "author": "Bayle",
+     "locus": "Réponse au Provincial, chap. 141",
+     "text": "_Il est évident que la véritable cause_ [p. 497]_efficiente d'un effet doit le connoitre , & savoir aussi de quelle manière il le faut produire. Cela n'est pas nécessaire,quand on n'est que l'instrument de cette cause , ou que le sujet passif de son Action ; Mais l'on ne sauroit concevoir , que cela ne soit point nécessaire à un véritable Agent._"
+    }
+   ],
+   "note": "Bayle's words (Réponse au Provincial) as Roques reproduces them; Vattel's italics"
+  },
+  {
+   "id": "ROQ.38",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "79",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "cette difficulté lui paroit fort naturelle , & fort solide.",
+   "at": {
+    "unit": "D.367",
+    "where": "text",
+    "start": 798,
+    "end": 857,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.39",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "78",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que l'Ame ignore comment il faudroit s'y prendre pour produire",
+   "at": {
+    "unit": "D.367",
+    "where": "text",
+    "start": 2213,
+    "end": 2275,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.40",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "79",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Je ne sai",
+   "at": {
+    "unit": "D.369",
+    "where": "text",
+    "start": 88,
+    "end": 97,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.41",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "79",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "si Mr. BAYLE avoit vu cette Réponse, s'il ne se seroit pas écrié à son tour: Voila une étrange manière de répondre! On y compare des Agens d'une nature totalement diférente, des Corps inanimés, avec des Esprits intelligens & libres. Mr. DE LEIBNITZ prétend-il donc, que l'Ame agit comme les Sels, les Métaux, les Plantes, les Planètes! Ne seroit-ce point dégrader l'Ame, en faire un pur Automate spirituel, après lui avoir cependant accordé l'intelligence, le choix, & le pouvoir de produire tout ce qui l'affecte?",
+   "at": {
+    "unit": "D.369",
+    "where": "text",
+    "start": 116,
+    "end": 630,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Bayle in roman inside the italics"
+  },
+  {
+   "id": "ROQ.42",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "80",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Les Corps",
+   "at": {
+    "unit": "D.369",
+    "where": "text",
+    "start": 2371,
+    "end": 2380,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.43",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "80",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "ne sont qu'en aparence les causes efficientes de ce qu'on leur voit faire ; dans la réalité , ce ne sont que des Etres passifs . . . . Ces comparaisons pourroient bien avoir lieu dans l'Hypothèse Cartésienne , à l'égard des sensations & des images , puisqu'on y enseigne que l'Ame est alors purement passive , mais elles ne servent point à prouver ce que Mr. DE LEIBNITZ prétend, que l'Ame est l'Auteur immédiat de toutes ses sensations , & de toutes ses perceptions , quoiqu'elle ignore ce qu'elle fait",
+   "at": {
+    "unit": "D.369",
+    "where": "text",
+    "start": 2399,
+    "end": 2902,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Vattel's parenthesis follows"
+  },
+  {
+   "id": "ROQ.44",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "79",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "les Animaux sont ici",
+   "at": {
+    "unit": "D.369",
+    "where": "note (a)",
+    "start": 43,
+    "end": 63,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Roques's note p. 79"
+  },
+  {
+   "id": "ROQ.45",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "79",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "mal associés avec les Métaux & les Plantes. On soutiendra, que les Animaux savent ce qu'ils font.",
+   "at": {
+    "unit": "D.369",
+    "where": "note (a)",
+    "start": 101,
+    "end": 198,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.46",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "80",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "accorde à l'Ame le pouvoir de produire tout ce qui l'affecte",
+   "at": {
+    "unit": "D.369",
+    "where": "note (a)",
+    "start": 625,
+    "end": 685,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.47",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "81",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Il auroit falu, pour répondre à l'objection de Mr. BAYLE, aporter l'exemple d'un Agent intelligent & libre, qui ne laisse pas de faire plusieurs choses étonnantes & merveilleuses, sans le savoir",
+   "at": {
+    "unit": "D.370",
+    "where": "text",
+    "start": 40,
+    "end": 234,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page from (p.81.) before"
+  },
+  {
+   "id": "ROQ.48",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "81",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Mais cet exemple auroit été difficile à trouver, pour ne pas dire impossible.",
+   "at": {
+    "unit": "D.370",
+    "where": "text",
+    "start": 310,
+    "end": 387,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.49",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "81",
+   "resolved": false,
+   "kind": "report",
+   "text": "Si donc il accorde que l'Ame est l'Auteur immédiat de ses Volitions, & même d'une partie de ses Idées (p. 81.)",
+   "at": {
+    "unit": "D.370",
+    "where": "text",
+    "start": 1404,
+    "end": 1514,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.50",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "82",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Le secours le plus éficace,",
+   "at": {
+    "unit": "D.372",
+    "where": "text",
+    "start": 128,
+    "end": 155,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.51",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "82",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que nous aïons, pour faire des progrès dans la science, est de commercer avec les autres Hommes, qui nous font part de leurs découvertes. Cependant c'est là un secours, que Mr. DE LEIBNITZ nous retranche, en soutenant que nous ne recevons aucune idée à l'occasion de ce qui se passe au dehors de nous.",
+   "at": {
+    "unit": "D.372",
+    "where": "text",
+    "start": 164,
+    "end": 465,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.52",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "82",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que nous ne recevons aucune idée à l'occasion de ce qui se passe au dehors de nous;",
+   "at": {
+    "unit": "D.372",
+    "where": "text",
+    "start": 1559,
+    "end": 1642,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.53",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "84",
+   "resolved": false,
+   "kind": "report",
+   "text": "Question des Idées innées, que Mr. ROQUES entame ici (pag. 84.)",
+   "at": {
+    "unit": "D.373",
+    "where": "text",
+    "start": 30,
+    "end": 93,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.54",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "85",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "les objections nombreuses & pressantes de Mr. LOCKE n'ont fait aucune peine au grand Philosophe de l'Allemagne",
+   "at": {
+    "unit": "D.373",
+    "where": "text",
+    "start": 192,
+    "end": 302,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.55",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "84",
+   "resolved": true,
+   "kind": "report",
+   "text": "Il remarque dans la précédente, que Mr. DE LEIBNITZ est obligé, suivant son Système, de reconnoitre, que les Idées composées sont innées, aussi bien que les Idées simples.",
+   "at": {
+    "unit": "D.373",
+    "where": "text",
+    "start": 922,
+    "end": 1093,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "'la précédente' = p. 84"
+  },
+  {
+   "id": "ROQ.56",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "85",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "a trouvé en lui-même quoique ce soit,qui l'ait dû conduireà une telle supposition, que l'Univers idéal est concentré dans l'Ame? Comment a-t'il découvert ce Mistère inconcevable?",
+   "at": {
+    "unit": "D.373",
+    "where": "text",
+    "start": 1875,
+    "end": 2053,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page carried"
+  },
+  {
+   "id": "ROQ.57",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "85",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "suposons",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 48,
+    "end": 56,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page given as 'p. [p. 512]85.'"
+  },
+  {
+   "id": "ROQ.58",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "85",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que toutes les idées, les images & les sensations, se trouvent originairement dans l'Ame, à quoi est-ce que tout cela lui sert dans les occasions où elle a besoin de telle ou de telle idée, de telle ou de telle image, de telle ou de telle sensation? Comment choisira-t'elle, dans cet amas confus & imperceptible, ce qui est requis pour voir & connoitre ce qui se passe au dehors & dans son propre Corps?",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 83,
+    "end": 486,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.59",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "85",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "voir, & de connoitre ce qui se passe au dehors?",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 702,
+    "end": 749,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.60",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "86",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "on demandera, quel est l'Agent, qui réveille & dévelope ces Idées",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 1235,
+    "end": 1300,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.61",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "86",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "ce que c'est que ces idées concentrées",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 1554,
+    "end": 1592,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.62",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "86",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "J'ai dans ce moment",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 2956,
+    "end": 2975,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "no page given; carried, uncertain"
+  },
+  {
+   "id": "ROQ.63",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "86",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "l'idée d'un Cheval, & tout de suite mon Ame pense aux satellites de Jupiter. Par quel moïen, ces idées se présentent-elles à moi, si ma volonté n'y a aucune part?",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 2985,
+    "end": 3147,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Jupiter in roman inside the italics"
+  },
+  {
+   "id": "ROQ.64",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "74",
+   "resolved": false,
+   "kind": "report",
+   "text": "aïant soutenu (pag. 74. & passim) qu'elles ne dépendent aucunement de la Volonté",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 3218,
+    "end": 3298,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.65",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "86",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Est-il à présumer, que l'Etre infiniment sage leur ait assigné un ordre bisarre, souvent très-brouillé & très-mal assorti",
+   "at": {
+    "unit": "D.374",
+    "where": "text",
+    "start": 4672,
+    "end": 4793,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page carried, uncertain"
+  },
+  {
+   "id": "ROQ.66",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "87",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "si toutes nos idées & nos perceptions sont originairement formées au dedans de nous, je ne vois pas comment Mr. DE LEIBNITZ peut assurer, qu'à la rigueur l'Ame est la Cause efficiente de tout ce qui se passe en elle. Car, si le Monde idéal se trouve dans l'Ame, il y est sans aucune opération de notre part.",
+   "at": {
+    "unit": "D.375",
+    "where": "text",
+    "start": 140,
+    "end": 447,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.67",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "87",
+   "resolved": true,
+   "kind": "report",
+   "text": "Mr. ROQUES prétend, que, si ce dévelopement est dû à la préformation de l'Ame, à notre Nature, nous n'en sommes pas les Auteurs immédiats, les Causes efficientes.",
+   "at": {
+    "unit": "D.375",
+    "where": "text",
+    "start": 998,
+    "end": 1160,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.68",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "87",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "notre volonté n'y concourt point, l'on peut même ajouter que notre entendement ne sait pas ce qui se fait.",
+   "at": {
+    "unit": "D.375",
+    "where": "text",
+    "start": 1418,
+    "end": 1524,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "roman words 'point', 'ne sait pas' belong to Roques's sentence"
+  },
+  {
+   "id": "ROQ.69",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "88",
+   "resolved": false,
+   "kind": "report",
+   "text": "L'habile Adversaire, dans sa quatrième Objection (pag. 88.) confond les Idées distinctes, avec les perceptions confuses.",
+   "at": {
+    "unit": "D.376",
+    "where": "text",
+    "start": 5,
+    "end": 125,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.70",
+   "letter": 1,
+   "title": "Première lettre à M. Ruchat",
+   "journal": "Mercure suisse",
+   "issue": "décembre 1737",
+   "page": "91",
+   "resolved": false,
+   "kind": "report",
+   "text": "Mr. ROQUES témoigne (pag. 91.) ne point entendre un passage de Mr. DE LEIBNITZ, qu'il rapporte.",
+   "at": {
+    "unit": "D.376",
+    "where": "text",
+    "start": 1145,
+    "end": 1240,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.71",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "106",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "que, suivant Mr. DE LEIBNITZ, l'Ame, ni aucune autre Intelligence, ne dirige aucun mouvement du Corps, ni comme cause efficiente, ni comme cause occasionelle",
+   "at": {
+    "unit": "D.378",
+    "where": "text",
+    "start": 282,
+    "end": 439,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.72",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "108",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "que, suivant lui, la Langue a prononcé toutes ces merveilles, sans que l'Ame dirigeât ce qui se passoit au dehors; & sans avoir influé, d'une manière directe, ou indirecte, sur ce qui a été fait par un Corps, sur lequel elle n'a aucun empire, & dont aussi elle n'a reçu aucune impression",
+   "at": {
+    "unit": "D.378",
+    "where": "text",
+    "start": 1745,
+    "end": 2032,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.73",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "",
+   "resolved": false,
+   "kind": "report",
+   "text": "qu'il est impossible que toutes les actions du Corps humain s'exécutent par les Loix d'un pur Méchanisme.",
+   "at": {
+    "unit": "D.379",
+    "where": "text",
+    "start": 115,
+    "end": 220,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "no page given"
+  },
+  {
+   "id": "ROQ.74",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "110",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Il s'agit seulement",
+   "at": {
+    "unit": "D.380",
+    "where": "text",
+    "start": 94,
+    "end": 113,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.75",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "110",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "de savoir si le Méchanisme, qui agit par des Loix certaines, fixes, invariables, peut imiter l'action d'un Etre libre, dont les pensées, & les désirs, ne sont astreints à aucun ordre, qui passe rapidement d'un sujet à un autre, & qui, quelque tems après, revient au prémier,qui l'avoit occupé.",
+   "at": {
+    "unit": "D.380",
+    "where": "text",
+    "start": 135,
+    "end": 428,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.76",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "110",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "certaines, fixes, invariables ;",
+   "at": {
+    "unit": "D.380",
+    "where": "text",
+    "start": 756,
+    "end": 787,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "short echo of Roques's words in Vattel's reply"
+  },
+  {
+   "id": "ROQ.77",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "110",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que les pensées, & les désirs d'un Etre libre",
+   "at": {
+    "unit": "D.380",
+    "where": "text",
+    "start": 1012,
+    "end": 1057,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "short echo"
+  },
+  {
+   "id": "ROQ.78",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "110",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Ce qui n'est dû qu'aux Loix invariables du Méchanisme s'éxécute suivant un certain ordre déterminé.",
+   "at": {
+    "unit": "D.380",
+    "where": "text",
+    "start": 1408,
+    "end": 1507,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.79",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "110",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Et on y peut remarquer des révolutions , qui sont toujours les mêmes.",
+   "at": {
+    "unit": "D.380",
+    "where": "text",
+    "start": 1522,
+    "end": 1591,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.80",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "110",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "dans ce qui n'est dû qu'aux Loix du Méchanisme, des révolutions qui sont toujours les mêmes.",
+   "at": {
+    "unit": "D.380",
+    "where": "text",
+    "start": 2169,
+    "end": 2261,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.81",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "112",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "non seulement",
+   "at": {
+    "unit": "D.381",
+    "where": "text",
+    "start": 18,
+    "end": 31,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.82",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "112",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "les Corps, qui ne se meuvent, que par les Loix du Méchanisme suivent des règles invariables ; mais de plus les mêmes Objets produisent sur eux des impressions égales, & y excitent des mouvemens qui se ressemblent.",
+   "at": {
+    "unit": "D.381",
+    "where": "text",
+    "start": 60,
+    "end": 273,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.83",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "113",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "un Corps, qui se meut par les seules Loix du Méchanisme, agit de la même manière dans les mêmes circonstances ;",
+   "at": {
+    "unit": "D.382",
+    "where": "text",
+    "start": 62,
+    "end": 173,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.84",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "114",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Si le Corps ne se mouvoit que par les Loix du Méchanisme, il demeureroit toujours dans le même état, lorsque les Objets, qui l'environnent, feroient sur lui les mêmes impressions. . . . Cela étant un Homme assis dans un fauteuil, dans une chambre où il est seul, & où tous les objets, qui l'environnent, restent dans la même situation à son égard, devroit toujours demeurer assis, pendant que tout ce qui l'environne est immobile",
+   "at": {
+    "unit": "D.382",
+    "where": "text",
+    "start": 447,
+    "end": 876,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.85",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "114",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "changer de situation, que lorsqu'elle y est forcée par quelque agent extérieur ;",
+   "at": {
+    "unit": "D.382",
+    "where": "text",
+    "start": 1593,
+    "end": 1673,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.86",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "114",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "surement ces mouvemens arrivent parce que le Corps obéït aux Volontés de l'Ame",
+   "at": {
+    "unit": "D.382",
+    "where": "text",
+    "start": 2536,
+    "end": 2614,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.87",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "114-115",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Une seconde conséquence générale, qui découle du système de Mr. DE LEIBNITZ, c'est que tous les mouvemens du Corps devroient nous paroitre également involontaires. Car , si le Corps est tellement disposé qu'il doive faire nécessairement tout ce qu'il fait, tous ses mouvemens sont dans la même indépendance par raport à l'Ame.",
+   "at": {
+    "unit": "D.383",
+    "where": "text",
+    "start": 110,
+    "end": 436,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.88",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "116",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "que les Corps humains pourroient faire ce qu'ils exécutent , sans le secours d'aucune Ame qui leur fût unie",
+   "at": {
+    "unit": "D.384",
+    "where": "text",
+    "start": 77,
+    "end": 184,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.89",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "123",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "on évite ces inconveniens dans le système des Causes occasionnelles.",
+   "at": {
+    "unit": "D.384",
+    "where": "text",
+    "start": 1414,
+    "end": 1482,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.90",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "121",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "l'Harmonie pré - établie nous rend très - incertaine l'existence des Corps (page 121.)",
+   "at": {
+    "unit": "D.384",
+    "where": "text",
+    "start": 1905,
+    "end": 1991,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.91",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "121",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Voici une quatrième Conséquence",
+   "at": {
+    "unit": "D.385",
+    "where": "text",
+    "start": 5,
+    "end": 36,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page not stated; carried over"
+  },
+  {
+   "id": "ROQ.92",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "121",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "c'est que toutes les actions extérieures de l'Homme arrivent nécessairement & d'une nécessité physique , l'Ame n'y peut rien changer.",
+   "at": {
+    "unit": "D.385",
+    "where": "text",
+    "start": 67,
+    "end": 200,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page not stated; carried over"
+  },
+  {
+   "id": "ROQ.93",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "123",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "La prémière",
+   "at": {
+    "unit": "D.385",
+    "where": "text",
+    "start": 946,
+    "end": 957,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.94",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "123",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "c'est que toutes les exhortations, les menaces, les promesses, & les loix sont parfaitement inutiles. Car I. Elles ne peuvent pas agir sur l'Ame.",
+   "at": {
+    "unit": "D.385",
+    "where": "text",
+    "start": 976,
+    "end": 1121,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.95",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "123",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Tous ces moïens extérieurs",
+   "at": {
+    "unit": "D.385",
+    "where": "text",
+    "start": 1827,
+    "end": 1853,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.96",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "123",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "dont on se sert pour porter l'Homme à son devoir, ne produisent rien sur son Corps.",
+   "at": {
+    "unit": "D.385",
+    "where": "text",
+    "start": 1884,
+    "end": 1967,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.97",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "124",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Toutes les punitions seroient injustes & inutiles, dans-le système de Mr. de LEIBNITZ. 1. Injustes, parce que l'Homme n'étoit pas libre de ne point faire ce qu'il a exécuté par son Corps.",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 31,
+    "end": 218,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.98",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "124",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Il a pris un pistolet, dont il a cassé la tête à une autre figure comme lui. Le Corps agresseur est aussi peu coupable de cette Action, qu'une tuile",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 323,
+    "end": 471,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.99",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "125",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "L'Ame du Corps meurtrier ne peut pas être accusée de cet homicide , parce qu'elle a été placée dans ce Corps , déjà tout monté pour exécuter l'action dont on l'accuse.",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 754,
+    "end": 921,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.100",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "125",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "le Coupable pourroit, ce semble, répondre, qu'outre que son Corps avoit été formé longtems avant son Ame.",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 1705,
+    "end": 1810,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.101",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "125",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "admet l'hypothèse de la pré-existence de tous les hommes",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 1949,
+    "end": 2005,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Roques's words per Vattel's note (a)"
+  },
+  {
+   "id": "ROQ.102",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "125",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "dans les flancs de la prémière Femme",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 2024,
+    "end": 2060,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Roques's words per Vattel's note (a)"
+  },
+  {
+   "id": "ROQ.103",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "125",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Il n'étoit point appellé",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 2200,
+    "end": 2224,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.104",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "125",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "à avoir nécessairement la volonté qu'il a eue, & par conséquent, qu'il ne devoit pas être mis dans la nécessité de la faire.",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 2246,
+    "end": 2370,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.105",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "125",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Comme la liberté accompagne les volontés morales de l'Ame, la même liberté doit se trouver dans les mouvemens du Corps, qui y répondent, pour que tout soit harmonique. La nécessité & la liberté forment une très - grande dissonnance.",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 2527,
+    "end": 2759,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.106",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "126-127",
+   "resolved": false,
+   "kind": "report",
+   "text": "l'inutilité des peines, que l'on nous objecte ici (p. 126. 127.)",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 3670,
+    "end": 3734,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.107",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "126",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "si les Corps humains sont montés, de façon qu'ils doivent faire un certain nombre d'actions , ni plus ni moins, le carcan, ni le fouet, ne changeront rien dans la disposition des organes du Corps, pour le mettre hors d'état de se porter à des actions violentes. Il vaudroit autant mettre une Pendule au Pilori, pour l'engager à marquer dans la suite les Heures plus régulièrement qu'elle n'a fait jusques-là.",
+   "at": {
+    "unit": "D.386",
+    "where": "text",
+    "start": 3991,
+    "end": 4399,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.108",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "128",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "„ Puisqu'il est sûr & expérimenté, que la crainte des chatimens, „ & l'espérance des récompenses sert à faire abstenir les Hommes du mal, & les oblige à tâcher de bien faire, on auroit raison & droit de s'en servir, quand même les Hommes agiroient nécessairement, par quelque espèce de nécessité que ce pourroit être.\"",
+   "at": {
+    "unit": "D.387",
+    "where": "text",
+    "start": 226,
+    "end": 544,
+    "match": 1.0
+   },
+   "embedded": [
+    {
+     "author": "Leibniz",
+     "locus": "Théod. §. 71",
+     "text": "Puisqu'il est sûr & expérimenté, que la crainte des chatimens, [p. 543]„ & l'espérance des récompenses sert à faire abstenir les Hommes du mal, & les oblige à tâcher de bien faire, on auroit raison & droit de s'en servir, quand même les Hommes agiroient nécessairement, par quelque espèce de nécessité que ce pourroit être."
+    }
+   ],
+   "note": "Roques's citation of Leibniz; whole passage is the quotation"
+  },
+  {
+   "id": "ROQ.109",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "128",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Mais 1.",
+   "at": {
+    "unit": "D.387",
+    "where": "text",
+    "start": 545,
+    "end": 552,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.110",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "128",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "par quel droit pourroit - on faire souffrir une peine à un Etre, qui a été nécessité par sa nature à se conduire comme il a fait ?",
+   "at": {
+    "unit": "D.387",
+    "where": "text",
+    "start": 570,
+    "end": 700,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.111",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": false,
+   "kind": "report",
+   "text": "Ce grand Philosophe n'est point intéressé à plaider pour les systèmes de BOADWARDIN, de WICLEF , d'HOBBES, & de SPINOSA ; quoique Mr. ROQUES n'ait pas craint d'avancer le contraire (p. 129.)",
+   "at": {
+    "unit": "D.387",
+    "where": "text",
+    "start": 1594,
+    "end": 1784,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Vattel's report of Roques's contrary claim"
+  },
+  {
+   "id": "ROQ.112",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "que Mr. de LEIBNITZ ne doit pas se distinguer de ceux qui établissent une nécessité absolue. Il est vrai, dit-il, que, par raport à l'Ame, il admet une parfaite liberté ; mais, par raport aux actions corporelles, il n'y a point de Fataliste qui ne pense comme lui, & qui ne croie que tout ce qui est opéré par le Corps arrive nécessairement.",
+   "at": {
+    "unit": "D.388",
+    "where": "text",
+    "start": 34,
+    "end": 375,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.113",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "sont là les actions, que l'on punit devant les Tribunaux humains.",
+   "at": {
+    "unit": "D.388",
+    "where": "text",
+    "start": 389,
+    "end": 454,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.114",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que Mr. de LEIBNITZ admet une parfaite liberté par raport à l'Ame",
+   "at": {
+    "unit": "D.388",
+    "where": "text",
+    "start": 766,
+    "end": 831,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.115",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que ce sont les actions du Corps, que l'on punit devant les Tribunaux humains.",
+   "at": {
+    "unit": "D.388",
+    "where": "text",
+    "start": 1069,
+    "end": 1147,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.116",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Le subtil & savant Philosophe auroit dû nous montrer par quel moïen les châtimens peuvent corriger les Brutes, s'il est vrai qu'elles n'aient que du sentiment sans reflexion.",
+   "at": {
+    "unit": "D.389",
+    "where": "text",
+    "start": 153,
+    "end": 327,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.117",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Je ne vois pas même plus clairement",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 5,
+    "end": 40,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.118",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "comment les châtimens & les supplices peuvent corriger les Hommes. Car enfin ce que l'on fait à leur Corps ne passe point jusques à l'Ame, &c.",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 73,
+    "end": 215,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.119",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "„ La Loi du changement de la substance de l'Animal, le porte de la joie à la douleur, dans le moment qu'il se fait une solution de continu dans son Corps &c. \"",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 389,
+    "end": 548,
+    "match": 1.0
+   },
+   "embedded": [
+    {
+     "author": "Leibniz",
+     "locus": "",
+     "text": "La Loi du changement de la substance de l'Animal, le porte de la joie à la douleur, dans le moment qu'il se fait une solution de continu dans son Corps &c. "
+    }
+   ],
+   "note": "Roques's citation of Leibniz; page uncertain"
+  },
+  {
+   "id": "ROQ.120",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "129",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Quelle est la cause efficiente de cette désagréable sensation? C'est l'Ame elle-même, répond Mr. LEIBNITZ. . . . En vérité cette Ame est bien bonne, de se rendre voLONTAIREMENT malheureuse pour un Corps, dont elle ne tire aucun avantage. Elle n'a qu'à voir tranquilement ce qui lui arrive, puisque toutes les douleurs de l'Ame ne peuvent changer la disposition du Corps, ni lui aporter le moindre remède.",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 561,
+    "end": 965,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page not stated; carried over"
+  },
+  {
+   "id": "ROQ.121",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "132",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Le trosième Corollaire",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 1962,
+    "end": 1984,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.122",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "132",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "c'est que tous les Maitres . . . . sont parfaitement inutiles. Le quatrième enfin",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 2024,
+    "end": 2105,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.123",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "134",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": ". . . . c'est que l'on ne voit point dans ce Système de quel usage peuvent être les sensations.",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 2118,
+    "end": 2213,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.124",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "133",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Pourquoi, si la voix, la présence du Maitre, ses gestes, &c.",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 2466,
+    "end": 2526,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.125",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "133",
+   "resolved": true,
+   "kind": "report",
+   "text": "servent à disposer les ressorts du Corps du Disciple pour agir avec régularité, pourquoi ils ne les disposent pas comme il convient, du prémier abord?",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 2527,
+    "end": 2677,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Vattel's continuation of Roques's question, roman"
+  },
+  {
+   "id": "ROQ.126",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "133",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Est-ce donc",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 2678,
+    "end": 2689,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.127",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "133",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que le pur Méchanisme va par essais?",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 2699,
+    "end": 2735,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.128",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "133-134",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Comme les connoissances de l'Ame",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 3153,
+    "end": 3185,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.129",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "133-134",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "& son attention , s'aquièrent peu à peu , il faut aussi que ces progrès se remarquent dans l'instrument, dont elle se sert",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 3212,
+    "end": 3334,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.130",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "133-134",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "pour les manifester au dehors.",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 3377,
+    "end": 3407,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.131",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "134-136",
+   "resolved": false,
+   "kind": "report",
+   "text": "indique fort judicieusement l'usage des sensations (pag. 134-136.)",
+   "at": {
+    "unit": "D.390",
+    "where": "text",
+    "start": 3701,
+    "end": 3767,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.132",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "137",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "il ne lui paroit pas, que cette prétendue harmonie soit aussi régulière, qu'on peut le faire acroire",
+   "at": {
+    "unit": "D.391",
+    "where": "text",
+    "start": 113,
+    "end": 213,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.133",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "137",
+   "resolved": true,
+   "kind": "report",
+   "text": "1°. Par l'exemple des mouvemens convulsifs, que l'Ame ne peut pas arrêter. 2°. Parce que nous ne pouvons pas nous empêcher de tomber, lorsque nous avons perdu l'équilibre. 3° Il allègue, que, pendant le sommeil, presque toute l'harmonie cesse entre la Volonté & les mouvemens du Corps.",
+   "at": {
+    "unit": "D.391",
+    "where": "text",
+    "start": 259,
+    "end": 544,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.134",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "137",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "les parties, sur lesquelles nous avons le plus d'empire;",
+   "at": {
+    "unit": "D.391",
+    "where": "text",
+    "start": 844,
+    "end": 900,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo; probably Roques's words"
+  },
+  {
+   "id": "ROQ.135",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "138",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "regarde l'union de l'Ame avec le Corps. Il est vrai",
+   "at": {
+    "unit": "D.392",
+    "where": "text",
+    "start": 46,
+    "end": 97,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "opening words may be Vattel's"
+  },
+  {
+   "id": "ROQ.136",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "138",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que Mr. DE LEIBNITZ l'enseigne; mais la nature de cette Union, telle qu'il la conçoit, ne forme point un tout réel du Corps & de l'Ame . . . . Au moins faut-il",
+   "at": {
+    "unit": "D.392",
+    "where": "text",
+    "start": 117,
+    "end": 276,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.137",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "138",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que l'une & l'autre partie soit dans quelque dépendance, l'une à l'égard de l'autre. C'est ce qui se voit dans l'Homme, en suivant le Système des Causes occasionelles. Mais, dans l'Harmonie pré-établie, ce n'est qu'une Union métaphisique, idéale, de pure relation.",
+   "at": {
+    "unit": "D.392",
+    "where": "text",
+    "start": 303,
+    "end": 567,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.138",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "139",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Par ces principes",
+   "at": {
+    "unit": "D.392",
+    "where": "text",
+    "start": 1937,
+    "end": 1954,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.139",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "139",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "en pourroit soutenir, que deux Pendules, qui seroient tellement disposées que tous leurs mouvemens fussent égaux, par raport au tems & à la force, ne formeroient qu'un même tout.",
+   "at": {
+    "unit": "D.392",
+    "where": "text",
+    "start": 2016,
+    "end": 2194,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.140",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "139",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Par les mêmes principes",
+   "at": {
+    "unit": "D.393",
+    "where": "text",
+    "start": 5,
+    "end": 28,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.141",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "139",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "une Ame pourroit être unie à un Corps, éloigné d'elle de cent mille lieues, si le Corps étoit tellement disposé, qu'il correspondît dans ses mouvemens aux volontés de l'Ame. Donc une Ame pourroit être unie tout à la fois à des Corps, qui se trouveroient à Pékin, à Paris, & à Rome.",
+   "at": {
+    "unit": "D.393",
+    "where": "text",
+    "start": 51,
+    "end": 332,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.142",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "140",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "que, lorsque les effets peuvent s'expliquer par l'éficace accordée aux Causes secondes, il faut s'en tenir là, en Philosophant.",
+   "at": {
+    "unit": "D.394",
+    "where": "text",
+    "start": 337,
+    "end": 464,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.143",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "140",
+   "resolved": true,
+   "kind": "report",
+   "text": "que l'accord, qui règne entre l'Ame & le Corps, la production des perceptions dans l'Ame, & des mouvemens dans le Corps, ne peuvent s'expliquer par l'efficace des causes secondes.",
+   "at": {
+    "unit": "D.394",
+    "where": "text",
+    "start": 483,
+    "end": 662,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.144",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "141",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "devroit moins, que qui que ce soit, se récrier, que l'on fait ici intervenir l'action immédiate de la Divinité, lui qui adopte l'hypothèse de la Création continuelle, pour expliquer la Conservation des Créatures.",
+   "at": {
+    "unit": "D.394",
+    "where": "text",
+    "start": 1209,
+    "end": 1421,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "roman tail probably Roques's"
+  },
+  {
+   "id": "ROQ.145",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "La seconde dificulté de",
+   "at": {
+    "unit": "D.395",
+    "where": "text",
+    "start": 5,
+    "end": 28,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.146",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "est celle-ci, que le sentiment des Causes oecasionelles, introduit des Miracles perpétuels, pour faire le Commerce entre l'Ame & le Corps. Mais l'on nie, que ces éfets soient tout autant de Miracles, parce qu'ils sont une suite ordinaire de la Loi générale, que Dieu a établie entre l'Ame & le Corps.",
+   "at": {
+    "unit": "D.395",
+    "where": "text",
+    "start": 83,
+    "end": 383,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.147",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "La troisième difficulté",
+   "at": {
+    "unit": "D.396",
+    "where": "text",
+    "start": 5,
+    "end": 28,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page not stated; carried over"
+  },
+  {
+   "id": "ROQ.148",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que Mr. DE LEIBNITZ opose aux Sectateurs des Causes occasionelles",
+   "at": {
+    "unit": "D.396",
+    "where": "text",
+    "start": 58,
+    "end": 123,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.149",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Ces Loix sont; 1. Que la force absolue; qui se conserve en effet, est différente de la quantité de mouvement.",
+   "at": {
+    "unit": "D.396",
+    "where": "text",
+    "start": 306,
+    "end": 415,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "roman tail may be Vattel's"
+  },
+  {
+   "id": "ROQ.150",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Pour moi",
+   "at": {
+    "unit": "D.396",
+    "where": "text",
+    "start": 612,
+    "end": 620,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.151",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "qui ai cru jusques ici, que la force des Corps est la même chose que leur mouvement, je me suis aussi imaginé, que, si la même quantité de force est conservée, il y a par conséquent toujours une égale quantité de mouvement.",
+   "at": {
+    "unit": "D.396",
+    "where": "text",
+    "start": 630,
+    "end": 853,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.152",
+   "letter": 2,
+   "title": "Seconde lettre à M. Ruchat",
+   "journal": "Journal helvétique",
+   "issue": "janvier 1738",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "cru jusques ici, que la force des Corps est la même chose, que leur mouvement.",
+   "at": {
+    "unit": "D.396",
+    "where": "text",
+    "start": 1305,
+    "end": 1383,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.153",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "421",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Il paroit, que Mr. de LEIBNITZ enlève à l'Ame la Liberté dans plusieurs de ses Actions; car voici comment il s'exprime: „ Tout ce qui arrive à l'Ame dépend d'elle; mais il ne dépend pas toujours de sa volonté; ce feroit trop. Il n'est pas même toujours connu de son entendement, ou apperçu distinctement (b)\"",
+   "at": {
+    "unit": "D.398",
+    "where": "text",
+    "start": 699,
+    "end": 1007,
+    "match": 1.0
+   },
+   "embedded": [
+    {
+     "author": "Leibniz",
+     "locus": "Théodicée §. 64",
+     "text": "Tout ce qui arrive à l'Ame dépend d'elle; mais il ne dépend pas toujours de sa volonté; ce feroit trop. Il n'est pas même toujours connu de son entendement, ou apperçu distinctement"
+    }
+   ],
+   "note": "page from note (a)"
+  },
+  {
+   "id": "ROQ.154",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "432",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "La force de la vérité a engagé le célèbre Mr. WOLFF à avouër; Que le Méchanisme du Corps, tel qu'il est établi dans sistème de l'Harmonie pré-établie, est incompréhensible: & il le prouve fort bien. Il est vrai qu'il ajoute, que, malgré cela, ce Méchanisme n'est pas destitué de probabilité; Mais ce qu'il dit pour établir cette probabilité, ne me paroit ni clair , ni convainquant. Et comment peut - on affirmer, sans trop hasarder, qu'un Méchanisme, que nous ne comprenons pas, est ou probable, ou impossible ?",
+   "at": {
+    "unit": "D.399",
+    "where": "text",
+    "start": 56,
+    "end": 568,
+    "match": 1.0
+   },
+   "embedded": [
+    {
+     "author": "Wolff",
+     "locus": "",
+     "text": "Que le Méchanisme du Corps, tel qu'il est établi dans sistème de l'Harmonie pré-établie, est incompréhensible"
+    },
+    {
+     "author": "Wolff",
+     "locus": "",
+     "text": "ce Méchanisme n'est pas destitué de probabilité"
+    }
+   ],
+   "note": "Roques's French rendering of Wolff mixed in"
+  },
+  {
+   "id": "ROQ.155",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "432",
+   "resolved": true,
+   "kind": "report",
+   "text": "Le savant Critique rapporte ces dernières paroles de Mr. WOLFF; & il prétend faire voir par-là, que cet Illustre Philosophe s'est contredit.",
+   "at": {
+    "unit": "D.399",
+    "where": "text",
+    "start": 1517,
+    "end": 1657,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.156",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "439",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "En vérité, Monsieur,",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 131,
+    "end": 151,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.157",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "439",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "c'est plûtôt pour vous marquer ma docilité, que j'ai entrepris cette lecture,",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 184,
+    "end": 261,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.158",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "439",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "que dans l'espérance d'y trouver de l'agrément. Je savois par autrui, & par moi-même, que cet Auteur fatigue étrangement ceux qui le lisent.",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 305,
+    "end": 445,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.159",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "441",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Cette Méthode, sans le rendre beaucoup plus clair, le rend très-difus, & peut-être un peu ennuïeux, s'il est permis de dire tout haut, ce que plusieurs pensent tout bas.",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 469,
+    "end": 638,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.160",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "442",
+   "resolved": false,
+   "kind": "report",
+   "text": "qu'il n'a point assez de flegme pour s'accommoder de cette manière d'écrire.",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 801,
+    "end": 877,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.161",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "442",
+   "resolved": true,
+   "kind": "report",
+   "text": "a trouvé tout-à-fait de son gout l'Extrait de la Théologie naturelle de Mr. WOLFF",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 1464,
+    "end": 1545,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "page not stated"
+  },
+  {
+   "id": "ROQ.162",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "441",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Cet Extrait",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 1595,
+    "end": 1606,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.163",
+   "letter": 3,
+   "title": "Lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "novembre 1738",
+   "page": "441",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "ne laissera pas de plaire au Prince des Philosophes de l'Allemagne, si en Homme d'Esprit, tel qu'il est , il entend la fine raillerie",
+   "at": {
+    "unit": "D.400",
+    "where": "text",
+    "start": 1625,
+    "end": 1758,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.164",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "143",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Mr. Wolff",
+   "at": {
+    "unit": "D.401",
+    "where": "text",
+    "start": 120,
+    "end": 129,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.165",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "donne cette définition de l'Essence de l'Ame : Essentia Animæ consistit in vi representativa universi, situ corporis organici in universo materialiter & constitutione organorum sensoriorum formaliter limitata.",
+   "at": {
+    "unit": "D.401",
+    "where": "text",
+    "start": 153,
+    "end": 362,
+    "match": 1.0
+   },
+   "embedded": [
+    {
+     "author": "Wolff",
+     "locus": "",
+     "text": "Essentia Animæ consistit in vi representativa universi, situ corporis organici in universo materialiter & constitutione organorum sensoriorum formaliter limitata."
+    }
+   ],
+   "note": "letter 4 inferred from 'deuxième Lettre'"
+  },
+  {
+   "id": "ROQ.166",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "143",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "Et tout cela sans aucune preuve.",
+   "at": {
+    "unit": "D.401",
+    "where": "text",
+    "start": 363,
+    "end": 395,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.167",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "146",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Je trouve ici deux diférences bien marquées. 1°. Lorsque l'Ame juge, elle le sait, elle le sent ; mais elle ne sait point,qu'elle tire ses idées de son fond . . .",
+   "at": {
+    "unit": "D.402",
+    "where": "text",
+    "start": 347,
+    "end": 509,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.168",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "146",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "2°. Dans le tems que l'Ame forme des jugemens & des raisonnemens, non seulement elle éprouve ce qui se passe en elle-même ; mais de plus elle sait la part qu'elle y a, & comment elle doit agir pour produire ces Actes. Elle sait,qu'elle doit se rendre atentive à la considération des idées qu'elle veut comparer, examiner si elles conviennent entre elles, ou si elles sont oposées, & conclure ensuite affirmativement, ou négativement, en conséquence d'un tel examen. Mais je ne sai point ce que je dois faire, pour produire la sensation de chaleur, ou de lumière, ni quelle part mon Ame peut avoir dans une telle production.",
+   "at": {
+    "unit": "D.402",
+    "where": "text",
+    "start": 510,
+    "end": 1133,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.169",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "146",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "comment-elle doit agir, pour produire",
+   "at": {
+    "unit": "D.402",
+    "where": "text",
+    "start": 2194,
+    "end": 2231,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo"
+  },
+  {
+   "id": "ROQ.170",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "146",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "qu'elle doit se rendre atentive à la considération des idées, examiner si elles conviennent entre elles, & conclure ensuite &c.",
+   "at": {
+    "unit": "D.402",
+    "where": "text",
+    "start": 2292,
+    "end": 2419,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "echo; page 146 carried over"
+  },
+  {
+   "id": "ROQ.171",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "148",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "si ces idées",
+   "at": {
+    "unit": "D.403",
+    "where": "text",
+    "start": 60,
+    "end": 72,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.172",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "148",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "sont réellement dans l'Ame, il faut avouer que la capacité de l'Ame est infinie.",
+   "at": {
+    "unit": "D.403",
+    "where": "text",
+    "start": 116,
+    "end": 196,
+    "match": 1.0
+   },
+   "embedded": []
+  },
+  {
+   "id": "ROQ.173",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "228",
+   "resolved": false,
+   "kind": "verbatim",
+   "text": "Quod si ostendi non possit possibile esse, ut harmonia corporis & animæ per naturam harum substantiarum obtineatur, miracula adversus systema Causarum occasionalium urgeri nequeunt.",
+   "at": {
+    "unit": "D.404",
+    "where": "text",
+    "start": 355,
+    "end": 536,
+    "match": 1.0
+   },
+   "embedded": [
+    {
+     "author": "Wolff",
+     "locus": "Psychol. ration. §. 604",
+     "text": "Quod si ostendi non possit possibile esse, ut harmonia corporis & animæ per naturam harum substantiarum obtineatur, miracula adversus systema Causarum occasionalium urgeri nequeunt."
+    }
+   ],
+   "note": "letter 4 (Mars 1739)"
+  },
+  {
+   "id": "ROQ.174",
+   "letter": 4,
+   "title": "Seconde lettre à M. Bourguet",
+   "journal": "Journal helvétique",
+   "issue": "février et mars 1739",
+   "page": "228",
+   "resolved": true,
+   "kind": "verbatim",
+   "text": "s'il n'est pas possible de montrer, que l'Harmonie entre l'Ame & le Corps s'opère &c.",
+   "at": {
+    "unit": "D.404",
+    "where": "text",
+    "start": 567,
+    "end": 652,
+    "match": 1.0
+   },
+   "embedded": [],
+   "note": "Roques's translation of Wolff"
+  }
+ ]
+}

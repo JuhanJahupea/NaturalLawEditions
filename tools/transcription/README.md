@@ -22,6 +22,7 @@ Needs Python 3, PyMuPDF and NLTK (French Snowball stemmer).
 - `export_tr.py <text id> <SIGLUM>…`: the pages, one file per volume, into `texts/<text id>/<SIGLUM>.json`.
 - Vattel's *Défense* (DEF41): `TRANSCRIBE_PROMPT_DEF41.md`, `CHECK_PROMPT_DEF41.md` (second reading), `qc_def41.py`, `fix_def41.py`, `export_def41.py`; units `def41_data.py`; gold set of citations `GOLD_PROMPT_DEF41.md`, `gold_def41.py`.
 - Wolff's *Psychologia rationalis* (PSR34): `TRANSCRIBE_PROMPT_PSR34.md`, `CHECK_PROMPT_PSR34.md`, `fix_psr34.py` (catchword lines, double s, space before comma; logged), `qc_psr34.py [--export]`.
+- `ROQUES_QUOTES_PROMPT.md` and `roques_quoted.py <data.json> <reader outputs>…`: Roques's letters as Vattel quotes them in the *Défense*, Partie II ch. VIII (`texts/roques-lettres-1737-1739/`).
 - `crousaz_ocr.py`: Crousaz's *Examen* (1737) and *Commentaire* (1738) by printed page from the Google OCR text layer of the PDFs in `<WORK>/scans/pdf/` (`texts/crousaz-examen-1737/`, `texts/crousaz-commentaire-1738/`).
 - `theodicee_text.py <epub> <vol I leaves> <vol II leaves> <out>`: Leibniz's *Théodicée* by section from the Wikisource EPUB, each section linked to its leaf in the 1734 edition (`texts/leibniz-theodicee-1734/`).
 

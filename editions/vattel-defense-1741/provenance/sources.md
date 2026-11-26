@@ -6,7 +6,7 @@
 | Crousaz, *Commentaire* (1738) | `texts/crousaz-commentaire-1738/` | Google OCR by page |
 | Leibniz, *Théodicée* (1734) | `texts/leibniz-theodicee-1734/` | Wikisource text by section, linked to the 1734 scans |
 | Wolff, *Psychologia rationalis* (1734) | `texts/wolff-psychologia-rationalis-1734/` | transcription of §§ 480–642; the rest as archive.org OCR |
-| Roques, letters to Ruchat (*Mercure suisse*, Dec. 1737; *Journal helvétique*, Jan. 1738) and to Bourguet (*Journal helvétique*, Nov. 1738, Feb. and Mar. 1739) | none | wanting |
+| Roques, letters to Ruchat (*Mercure suisse*, Dec. 1737; *Journal helvétique*, Jan. 1738) and to Bourguet (*Journal helvétique*, Nov. 1738, Feb. and Mar. 1739) | `texts/roques-lettres-1737-1739/` | the letters as Vattel quotes them in Partie II ch. VIII: 174 passages; the journals themselves wanting |
 
 Roques's letters: no scan of these issues was found on archive.org, and Google Books, e-rara and Gallica refuse downloads from the working environment. Vattel's later collections do not reprint them or any other piece of the exchange (checked 2026-11-25):
 - *Poliergie* (1757): whole text searched; no piece and no quoted phrase of Roques.
