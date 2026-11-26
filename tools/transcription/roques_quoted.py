@@ -3,6 +3,8 @@
 # found; Vattel's quotations stand in for them. Readers (ROQUES_QUOTES_PROMPT.md) listed every passage of Roques with
 # its exact words; each is placed here in the reading text of its unit (exact, or fuzzy at 0.9 or more), and written to
 # texts/roques-lettres-1737-1739/ROQ.json (format nle-quoted/1).
+# Reported passages that only point to pages, with nothing of what Roques says, are left out (DROP), and so is a passage
+# that lies inside another one of the same unit.
 import sys, os, re, json, html, difflib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import ROOT
@@ -30,9 +32,12 @@ def place(needle, hay):
         r = difflib.SequenceMatcher(None, seg[:len(needle)], needle, autojunk=False).ratio()
         if r > best[2]: best = (a, a + len(needle), r)
     return best
-out, miss = [], []
+DROP = [('D.376', "Toutes les Conséquences, qu"), ('D.384', "les trois Conséquences"), ('D.384', "Le raisonnement de Mr. RE"),
+        ('D.390', "Tout ce que l'Auteur ajoute"), ('D.394', "Mr. ROQUES semble insinuer")]
+out, miss, dropped = [], [], 0
 for f in OUTS:
     for p in json.load(open(f))['passages']:
+        if any(p['unit'] == du and p['text'].startswith(dt) for du, dt in DROP): dropped += 1; continue
         u = U[p['unit']]
         if p.get('where', 'text') == 'text': hay = reading(u['html'])
         else:
@@ -48,6 +53,10 @@ for f in OUTS:
              'embedded': p.get('embedded') or []}
         if p.get('note'): q['note'] = p['note']
         out.append(q)
+inside = [q for q in out if any(o is not q and o['at']['unit'] == q['at']['unit'] and o['at']['where'] == q['at']['where']
+                                 and o['at']['start'] <= q['at']['start'] and q['at']['end'] <= o['at']['end'] for o in out)]
+out = [q for q in out if q not in inside]                 # a passage inside another one of the same unit is left out
+for i, q in enumerate(out, 1): q['id'] = 'ROQ.%d' % i
 doc = {'format': 'nle-quoted/1', 'text': 'roques-lettres-1737-1739',
        'source': 'Pierre Roques, letters on Leibniz\'s system to Abraham Ruchat (Mercure suisse, Dec. 1737; Journal helvétique, Jan. 1738) and to Louis Bourguet (Journal helvétique, Nov. 1738, Feb. and Mar. 1739), as quoted by Vattel, Défense du système leibnitien (1741), Partie II ch. VIII. The journals were not available; these passages stand in for the letters.',
        'letters': {str(k): v for k, v in LETTERS.items() if k},
@@ -57,4 +66,4 @@ json.dump(doc, open(os.path.join(d, 'ROQ.json'), 'w', encoding='utf-8'), ensure_
 from collections import Counter
 print(len(out), 'passages placed;', dict(Counter(q['kind'] for q in out)), dict(Counter(q['letter'] for q in out)),
       sum(1 for q in out if q['at']['match'] < 1), 'fuzzy;', sum(len(q['text'].split()) for q in out), 'words')
-print('not placed:', len(miss)); [print('  ', m) for m in miss]
+print('left out as page pointers:', dropped, '| inside another passage:', len(inside), '| not placed:', len(miss)); [print('  ', m) for m in miss]
