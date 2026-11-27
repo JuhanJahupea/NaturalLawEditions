@@ -29,7 +29,7 @@
     "form": "reference",
     "cue": "(Psychol. Ration. in nota §. 605.)"
    },
-   "id": 776
+   "id": 758
   },
   {
    "key": "b000.1",
@@ -51,7 +51,7 @@
     "form": "reference",
     "cue": "(Psychol. Ration. in nota §. 605.)"
    },
-   "id": 777
+   "id": 759
   },
   {
    "key": "b000.2",
@@ -69,7 +69,7 @@
    "source": "innocentiam in impietatem prolabantur",
    "reason": "Continuation of the Wolff quotation begun in Pref.9 (named there).",
    "stance": "adopts",
-   "id": 778
+   "id": 760
   },
   {
    "key": "b000.3",
@@ -87,7 +87,7 @@
    "source": "Hoc pacto culpa non autorum hypothesium, sed consequentiariorum eas pervertentium incidunt improvidi in errores impios. Atque hæc ratio haud levis est, cur in imputanda hypothesibus innocentibus impietate non adeo faciles esse debeant, qui dissentientes ferre nesciunt.",
    "reason": "Wolff's Latin quoted, with small omissions, as the end of the same quotation.",
    "stance": "adopts",
-   "id": 779
+   "id": 761
   },
   {
    "key": "b000.4",
@@ -100,7 +100,7 @@
    "label": "loose paraphrase",
    "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "n'est-il pas indifférent , soit par rapport à la Question de la Liberté ; soit pour tout autre point de Morale & de Religion , de quelle façon l'on conçoive le comment de cette union , de ce commerce qui s'observe entre les deux substances dont nous sommes composés , pourvu que l'on convienne du fait?",
    "source": "Salvo quocunque Systemate de commercio inter mentem & corpus libertas & defendi, & negari potest.",
    "reason": "Vattel gives Wolff's thesis that freedom is unaffected by the choice of system of mind-body commerce, citing section 536.",
@@ -109,7 +109,13 @@
     "form": "reference",
     "cue": "Psychol. Ration. §. 536."
    },
-   "id": 780
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel restates the thesis of Psych. rat. § 536 (freedom is untouched whatever system of mind-body commerce one adopts), widening it to morals and religion, and cites § 536 in note (a).",
+    "date": "2026-11-27"
+   },
+   "id": 762
   },
   {
    "key": "b000.5",
@@ -131,7 +137,7 @@
     "form": "reference",
     "cue": "Ibid. §. 546."
    },
-   "id": 781
+   "id": 763
   },
   {
    "key": "b000.6",
@@ -153,7 +159,7 @@
     "form": "reference",
     "cue": "Ibid. §. 546."
    },
-   "id": 782
+   "id": 764
   },
   {
    "key": "b000.7",
@@ -171,7 +177,7 @@
    "source": "detortis hominibus profanis ac impiis ansam præbeant scripturam sacram suggillandi, suamque autoritatem prostituant",
    "reason": "End of the Wolff quotation begun in Pref.11.",
    "stance": "adopts",
-   "id": 783
+   "id": 765
   },
   {
    "key": "b006.3",
@@ -193,7 +199,7 @@
     "form": "reference",
     "cue": "( Psychol. ration. §. 536.)"
    },
-   "id": 784
+   "id": 766
   },
   {
    "key": "b006.4",
@@ -215,7 +221,7 @@
     "form": "reference",
     "cue": "( Psychol. ration. §. 536.)"
    },
-   "id": 785
+   "id": 767
   },
   {
    "key": "b006.5",
@@ -237,7 +243,7 @@
     "form": "reference",
     "cue": "( Psychol. ration. §. 536.)"
    },
-   "id": 786
+   "id": 768
   },
   {
    "key": "b006.6",
@@ -255,7 +261,7 @@
    "source": "Enimvero appetitiones & aversiones eodem modo dependent a sensationibus, quocunque tandem modo sensationes a corpore dependeant",
    "reason": "Close French rendering of Wolff's sentence.",
    "stance": "adopts",
-   "id": 787
+   "id": 769
   },
   {
    "key": "b006.7",
@@ -273,7 +279,7 @@
    "source": "cumque motus voluntarii in corpore appetitiones & aversiones demum sequantur, modus quo hæ determinantur dependere nequit a modo, quo illi has sequuntur",
    "reason": "Close French rendering of Wolff's closing step.",
    "stance": "adopts",
-   "id": 788
+   "id": 770
   },
   {
    "key": "b008.2",
@@ -295,7 +301,7 @@
     "form": "reference",
     "cue": "Wolffii Psychol. ration._ §. 527."
    },
-   "id": 789
+   "id": 771
   },
   {
    "key": "b008.3",
@@ -317,7 +323,7 @@
     "form": "reference",
     "cue": "Wolffii Psychol. ration._ §. 527."
    },
-   "id": 790
+   "id": 772
   },
   {
    "key": "b009.0",
@@ -339,7 +345,7 @@
     "form": "reference",
     "cue": "WOLFII _Psychol._ §. 625."
    },
-   "id": 791
+   "id": 773
   },
   {
    "key": "b009.1",
@@ -361,7 +367,7 @@
     "form": "reference",
     "cue": "WOLFII _Psychol._ §. 625."
    },
-   "id": 792
+   "id": 774
   },
   {
    "key": "b009.2",
@@ -383,7 +389,7 @@
     "form": "reference",
     "cue": "WOLFII _Psychol._ §. 625."
    },
-   "id": 793
+   "id": 775
   },
   {
    "key": "b009.3",
@@ -405,7 +411,7 @@
     "form": "reference",
     "cue": "WOLFII _Psychol._ §. 625."
    },
-   "id": 794
+   "id": 776
   },
   {
    "key": "b009.4",
@@ -427,7 +433,7 @@
     "form": "reference",
     "cue": "WOLFII _Psychol._ §. 625."
    },
-   "id": 795
+   "id": 777
   },
   {
    "key": "b009.8",
@@ -449,7 +455,7 @@
     "form": "reference",
     "cue": "_In nota §._ 638. _Psychol. ration._"
    },
-   "id": 796
+   "id": 778
   },
   {
    "key": "b009.9",
@@ -471,7 +477,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 633."
    },
-   "id": 797
+   "id": 779
   },
   {
    "key": "b009.10",
@@ -493,7 +499,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 633."
    },
-   "id": 798
+   "id": 780
   },
   {
    "key": "b009.11",
@@ -515,7 +521,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 633."
    },
-   "id": 799
+   "id": 781
   },
   {
    "key": "b009.12",
@@ -537,7 +543,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 633."
    },
-   "id": 800
+   "id": 782
   },
   {
    "key": "b009.13",
@@ -559,7 +565,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 633."
    },
-   "id": 801
+   "id": 783
   },
   {
    "key": "b009.14",
@@ -581,7 +587,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 633."
    },
-   "id": 802
+   "id": 784
   },
   {
    "key": "b009.15",
@@ -603,7 +609,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 633."
    },
-   "id": 803
+   "id": 785
   },
   {
    "key": "b010.0",
@@ -625,7 +631,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 628."
    },
-   "id": 804
+   "id": 786
   },
   {
    "key": "b010.1",
@@ -647,7 +653,7 @@
     "form": "quotation",
     "cue": "Mr. WOLFF remarque avec raison"
    },
-   "id": 805
+   "id": 787
   },
   {
    "key": "b010.2",
@@ -658,9 +664,9 @@
    "locus": "Psychologia rationalis § 632",
    "page": "PSR34.632",
    "label": "close paraphrase",
-   "confidence": 0.7,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Enfin cette Hypothèse est, sans doute, favorable à la Liberté, puisqu'elle porte, que l'Ame est la source & la seule cause , non seulement de ses actions , mais même de ses perceptions & de toutes ses pensées (c)",
    "source": "Quoniam perceptiones in systemate harmoniæ præstabilitæ ab anima vi propria producuntur prorsus independenter a corpore ( §. 613. 614 ), cum ex adverso in systemate influxus physici anima in percipiendo a corpore pendeat ( §. 565 ) ; systema harmoniæ præstabilitæ multum favere libertati rectius judicant alii.",
    "reason": "Vattel's claim that the hypothesis favours liberty because the soul produces its own perceptions renders Wolff's note, which note (c) quotes.",
@@ -669,7 +675,13 @@
     "form": "reference",
     "cue": "Ibid. §. 632. in notâ."
    },
-   "id": 806
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel's text renders in French the Psychologia rationalis §632 note (soul produces its perceptions by its own force, so the system favours liberty) that his note (c) quotes verbatim.",
+    "date": "2026-11-27"
+   },
+   "id": 788
   },
   {
    "key": "b010.3",
@@ -691,7 +703,7 @@
     "form": "reference",
     "cue": "Ibid. §. 632. in notâ."
    },
-   "id": 807
+   "id": 789
   },
   {
    "key": "b027.2",
@@ -713,7 +725,7 @@
     "form": "reference",
     "cue": "Psycholog. ration. §. 638."
    },
-   "id": 808
+   "id": 790
   },
   {
    "key": "b027.3",
@@ -736,7 +748,7 @@
     "form": "reference",
     "cue": "Psycholog. ration. §. 638."
    },
-   "id": 809
+   "id": 791
   },
   {
    "key": "b027.4",
@@ -758,7 +770,7 @@
     "form": "reference",
     "cue": "Psycholog. ration. §. 638."
    },
-   "id": 810
+   "id": 792
   },
   {
    "key": "b027.5",
@@ -769,14 +781,20 @@
    "locus": "Psychologia rationalis § 637",
    "page": "PSR34.637",
    "label": "close paraphrase",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "il dit, que nous ne pouvons pas expliquer distinctement en quoi le Méchanisme du Corps consiste",
    "source": "Nemo itaque hominum vel in uno corpore explicare distincte potest, quomodo motus isti producantur",
    "reason": "Vattel summarizes Wolff's ground that the mechanism cannot be explained distinctly.",
    "stance": "adopts",
-   "id": 811
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel restates Wolff's demonstration that no one can explain distinctly how these motions are produced, then quotes the next step verbatim; the words stand in § 637, though Vattel cites '§. 638.'.",
+    "date": "2026-11-27"
+   },
+   "id": 793
   },
   {
    "key": "b027.6",
@@ -798,44 +816,7 @@
     "form": "reference",
     "cue": "Psycholog. ration. §. 638."
    },
-   "id": 812
-  },
-  {
-   "key": "b027.7",
-   "unit": "D.401",
-   "where": "text",
-   "family": "W",
-   "work": "Wolff, Psychologia rationalis (1734)",
-   "locus": "Psychologia rationalis § 547",
-   "page": "PSR34.547",
-   "label": "quotation",
-   "confidence": 0.7,
-   "status": "match",
-   "step": "J",
-   "passage": "Essentia Animæ consistit in vi representativa universi, situ corporis organici in universo materialiter & constitutione organorum sensoriorum formaliter limitata.",
-   "source": "vis sibi repræsentandi hoc universum situ corporis organici in universo materialiter, constitutione organorum sensoriorum formaliter limitata",
-   "reason": "Roques's Latin definition of the soul's essence, whose wording recurs in Wolff §547 (the defining §63 is not among the segments).",
-   "stance": "adopts",
-   "via": "Roques",
-   "id": 813
-  },
-  {
-   "key": "b027.8",
-   "unit": "D.401",
-   "where": "text",
-   "family": "W",
-   "work": "Wolff, Psychologia rationalis (1734)",
-   "locus": "Psychologia rationalis § 547",
-   "page": "PSR34.547",
-   "label": "close paraphrase",
-   "confidence": 0.6,
-   "status": "match",
-   "step": "J",
-   "passage": "Il en conclud avec raison, que l'Essence de l'Ame consiste dans cette force représentative de l'Univers, limitée par la situation de son Corps organique, & par la constitution de ses organes sensitifs.",
-   "source": "essentiam atque naturam animæ in vi repræsentativa universi pro situ corporis organici in universo convenienter mutationibus, quæ in organis sensoriis contingunt, consistere",
-   "reason": "Vattel restates Wolff's doctrine of the essence of the soul as limited representative force.",
-   "stance": "adopts",
-   "id": 814
+   "id": 794
   },
   {
    "key": "b027.9",
@@ -858,7 +839,7 @@
     "form": "reference",
     "cue": "Psychol. ration. §. 604."
    },
-   "id": 815
+   "id": 795
   },
   {
    "key": "b027.10",
@@ -868,15 +849,21 @@
    "work": "Wolff, Psychologia rationalis (1734)",
    "locus": "Psychologia rationalis § 604",
    "page": "PSR34.604",
-   "label": "shared argument",
-   "confidence": 0.6,
+   "label": "loose paraphrase",
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "dès qu'on ne peut point faire voir, qu'un effet est explicable par la nature des choses , il faut bien recourir à l'opération immédiate de la Cause prémière",
    "source": "Quamdiu enim ostendi nequit, harmoniam animæ ac corporis per naturam utriusque substantiæ subsistere posse, haud prorsus improbabile videtur id fieri non posse.",
    "reason": "Vattel spells out Wolff's reasoning that where natural explanation cannot be shown, recourse to the first cause is no objectionable miracle.",
    "stance": "adopts",
-   "id": 816
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel glosses the § 604 he cites in note (b) by restating the steps of Wolff's demonstration (natural possibility not shown, so recourse to the first cause is blameless and miracles cannot be objected), generalised from the harmony to any effect.",
+    "date": "2026-11-27"
+   },
+   "id": 796
   },
   {
    "key": "b027.11",
@@ -894,7 +881,7 @@
    "source": "nulla necessitas urget ut, neglectis causis secundis, ad causam primam provoces & per operationes Numinis supernaturales explices, quod per naturam animæ ac corporis explicari potest",
    "reason": "Vattel takes up Wolff's second half: when natural harmony can be shown, appeal to miracles is unnecessary.",
    "stance": "adopts",
-   "id": 817
+   "id": 797
   }
  ]
 }

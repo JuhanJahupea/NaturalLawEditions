@@ -105,10 +105,10 @@
    "work": "Crousaz, Commentaire sur la traduction de Du Resnel (1738)",
    "locus": "Commentaire, p. 41",
    "page": "COM38.p41",
-   "label": "close paraphrase",
-   "confidence": 0.55,
+   "label": "quotation",
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Et il décide nettement , que Dieu pourroit choisir indifféremment entre deux plans également parfaits, & que c'est une conclusion trop hardie & trop téméraire de dire , que le plan , auquel Dieu a donné la préférence, doit surpasser tous les autres en bonté (Com. pag. 41, 42.)",
    "source": "C'est par un choix tout libre , & infiniment libre,de son infinieBonté, qu'il s'estdéterminé lui-même à donner l'exiftence àdes Créatures. Dès qu'il a bien voulu créer l'Univers , il a vu qu'un Ouvrage plus parfait feroit plus digne de lui qu'unmoins accompli. Mais c'est une conclufion : trop",
    "reason": "Vattel summarizes Crousaz's Com. p. 41-42 position that God chooses freely and need not take the most perfect plan.",
@@ -116,6 +116,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(Com. pag. 41, 42.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites Com. pp. 41-42 and quotes in italics 'c'est une conclusion trop hardie & trop téméraire', which begins at the foot of p. 41 and runs onto p. 42, and he paraphrases the surrounding argument.",
+    "date": "2026-11-27"
    },
    "id": 4
   },
@@ -656,9 +662,9 @@
    "locus": "Commentaire, p. 366",
    "page": "COM38.p366",
    "label": "open disagreement",
-   "confidence": 0.55,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "quoi qu'en dise Mr. DE CROUSAZ, que Dieu ne veut pas nous jetter dans une suite perpétuelle d'illusions, dont nous n'aurions aucun moien de nous tirer",
    "source": "par une fuite inévitable d'illusions, & d'imaginations",
    "reason": "Vattel denies, against Crousaz, that the system leaves us in a perpetual series of illusions.",
@@ -666,6 +672,12 @@
    "attributed": {
     "form": "reference",
     "cue": "quoi qu'en dise Mr. DE CROUSAZ"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel rejects the 'suite inévitable d'illusions' of Com. p. 366, which he quoted with citation in D.298.",
+    "date": "2026-11-27"
    },
    "id": 29
   },
@@ -744,13 +756,19 @@
    "locus": "Commentaire, p. 362",
    "page": "COM38.p362",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "ces Vers, cette Musique, ces sublimes Idées des prémières Têtes de l'Univers sont dues uniquement à la substance pensante de notre Célèbre Adversaire, il n'y auroit point de proportion entre la cause & les effets",
    "source": "j'aurois l'honneur d'être admis à l'entretien des premiéres Têtes de l'Univers , il se trouveroit quela substance qui pense en moi,& que j'appelle moi , par une successiond'idées qui se sont passées en elle , parviendroit àundegré de génie & d'élévation",
    "reason": "Vattel takes up Crousaz's Opera/Académie example (poet, musician, premières Têtes de l'Univers) to deny the disproportion of cause and effect.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel takes up Crousaz's verses, music and 'premières Têtes de l'Univers' example from Com. pp. 361-362, which he quoted with citation in D.300, to answer the disproportion charge.",
+    "date": "2026-11-27"
+   },
    "id": 33
   },
   {
@@ -762,13 +780,19 @@
    "locus": "Commentaire, p. 356",
    "page": "COM38.p356",
    "label": "open disagreement",
-   "confidence": 0.6,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "il n'y auroit point de proportion entre la cause & les effets",
    "source": "les effets sont proportionnésaux causes qu'on leur assigne",
    "reason": "Answers Crousaz's maxim that effects must be proportioned to causes.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel answers the maxim that effects must be proportioned to their causes, which he quoted from Com. p. 356 with citation in D.300.",
+    "date": "2026-11-27"
+   },
    "id": 34
   },
   {
@@ -779,14 +803,20 @@
    "work": "Crousaz, Commentaire sur la traduction de Du Resnel (1738)",
    "locus": "Commentaire, p. 356",
    "page": "COM38.p356",
-   "label": "shared argument",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "label": "close paraphrase",
+   "confidence": 0.65,
+   "status": "match",
+   "step": "C",
    "passage": "Ces sons, ni ces caractères, ne signifient rien par eux-mêmes, leur signification est arbitraire",
    "source": "Les sons& les caractéres, c'est-à-dire, les figuresdes lettres & leur arrangement, n'ont qu'une valeur arbitraire",
    "reason": "Vattel takes up Crousaz's premise that sounds and characters have an arbitrary value, to turn it against him.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel takes up Crousaz's own example from Com. p. 356, that sounds and characters have only an arbitrary value for signifying, and uses it to answer the objection that example was meant to support.",
+    "date": "2026-11-27"
+   },
    "id": 35
   },
   {
@@ -820,9 +850,9 @@
    "locus": "Commentaire, p. 363",
    "page": "COM38.p363",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Il repete encore la même chose (p. 116. 197. & Com. p. 363.)",
    "source": "A des esprits serviles se font joints des esprits libertins.",
    "reason": "Vattel cites this page as repeating the stupid/libertine charge.",
@@ -830,6 +860,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 116. 197. & Com. p. 363.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites Commentaire p. 363, which states the two classes outright: 'A des esprits serviles se sont joints des esprits libertins.'",
+    "date": "2026-11-27"
    },
    "id": 37
   },
@@ -842,9 +878,9 @@
    "locus": "Commentaire, p. 71",
    "page": "COM38.p71",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Mr. de CROUSAZ l'a ensuite reconnu lui-même dans son Commentaire (pag. 71.).",
    "source": "Mais s'il va jusqu'à infinuër , que ces deux événemens sont pour lui des objets d'indifférence , c'est faire tort à sa justice.",
    "reason": "Vattel cites Commentaire p. 71, where Crousaz treats the Pope passage more mildly.",
@@ -852,6 +888,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 71.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Explicit Commentaire p. 71, where Crousaz grants Pope's hero/sparrow line a sound sense ('chacun doit penser comme lui') and objects only to an implied indifference, as Vattel says.",
+    "date": "2026-11-27"
    },
    "id": 38
   },
@@ -930,9 +972,9 @@
    "locus": "Commentaire, p. 19",
    "page": "COM38.p19",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "J'en trouve d'abord un (pag. 19.) qui mérite quelque attention.",
    "source": "Je m'étois laissé éblouïr par le Systême de la Fatalité.",
    "reason": "Vattel cites p. 19, where Crousaz treats predestinarian doctrine as Fatalism, and answers it.",
@@ -940,6 +982,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 19.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Commentaire p. 19 has the speaker dazzled by the 'Systême de la Fatalité' of a severe theologian and fighting his conscience, which is what Vattel summarises as Crousaz calling predestinarian doctrine fatalism.",
+    "date": "2026-11-27"
    },
    "id": 42
   },
@@ -1128,14 +1176,20 @@
    "locus": "Commentaire, p. 43",
    "page": "COM38.p43",
    "label": "quotation",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Dieu a donné la préférence au Plan le plus parfait",
    "source": "a donné la préférence au Plan le plus parfait",
    "reason": "Pope's line, which Crousaz quotes on p. 43 and Vattel quotes as the point of departure.",
    "stance": "neutral",
    "quoting": "Pope",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel quotes Pope's line exactly as Crousaz quotes it on Commentaire p. 43 ('a donné la préférence au Plan le plus parfait') before Crousaz's remark.",
+    "date": "2026-11-27"
+   },
    "id": 51
   },
   {
@@ -1236,13 +1290,19 @@
    "locus": "Commentaire, p. 58",
    "page": "COM38.p58",
    "label": "close paraphrase",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Il faut avoir assisté au céleste Conseil",
    "source": "Au céleste Conseil a-t-il donc assisté ?",
    "reason": "Vattel turns Crousaz's rhetorical question into an italicised phrase.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel turns Crousaz's p. 58 jibe at Pope, 'Au céleste Conseil a-t-il donc assisté ?', into the italicised phrase 'avoir assisté au céleste Conseil', in a paragraph that quotes p. 58 throughout.",
+    "date": "2026-11-27"
+   },
    "id": 56
   },
   {
@@ -1388,9 +1448,9 @@
    "locus": "Commentaire, p. 147",
    "page": "COM38.p147",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "dans l'odieux Portrait qu'il fait (p. 147.)",
    "source": "Ton esprit qui sur tout vainement se fati- 55 gue, Avide de sçavoir , ne connoitpoint de digue",
    "reason": "Vattel cites Crousaz p. 147 (the portrait of a learned man, which Vattel suspects aims at Leibniz).",
@@ -1398,6 +1458,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 147.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Commentaire p. 147 holds the portrait Vattel means (a learned man ruled by 'l'ambition, l'envie, & une fureur de primer' with 'effets scandaleux', set against Newton), and Vattel also quotes its words.",
+    "date": "2026-11-27"
    },
    "id": 64
   },
@@ -1498,13 +1564,19 @@
    "locus": "Commentaire, p. 195",
    "page": "COM38.p195",
    "label": "quotation",
-   "confidence": 0.7,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Dieu a été inévitablement déterminé à créer un Univers, & à le créer tel que nous le voïons:",
    "source": "il ait été déterminé inévitablement à créer un Univers , & à le créer tel que nous le voyons",
    "reason": "Vattel repeats Crousaz's formula to deny that Leibniz said it.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel repeats in italics the formula he has just quoted from Crousaz's declamation on p. 195 (running onto p. 196) in order to deny that Leibniz ever said it.",
+    "date": "2026-11-27"
+   },
    "id": 69
   },
   {
@@ -1582,9 +1654,9 @@
    "locus": "Commentaire, p. 299",
    "page": "COM38.p299",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "raisonne cependant tout comme lui (p. 299. 300.)",
    "source": "il est facile: de comprendre , que les écarts de celles qui ne font malheureuses que par leur faute",
    "reason": "Vattel cites pp. 299-300, where Crousaz speaks of the good God draws from men's abuse of liberty, as Leibniz does.",
@@ -1592,6 +1664,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 299. 300.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel's reference 'p. 299. 300.' points to this page, where Crousaz says the devout glorify God by a virtue that would not exist without the disorders of which the wicked are the only cause, i.e. the use Vattel says Crousaz makes of vice like Leibniz.",
+    "date": "2026-11-27"
    },
    "id": 73
   },
@@ -1604,9 +1682,9 @@
    "locus": "Commentaire, p. 300",
    "page": "COM38.p300",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "raisonne cependant tout comme lui (p. 299. 300.)",
    "source": "Dieu ne fait pas naître le vice pour donner lieu à cette vertu , mais fa sagesse & fabonté nous font la graced'en tirer ce bon effet.",
    "reason": "Vattel cites pp. 299-300; this sentence of Crousaz matches Leibniz's use of evil.",
@@ -1614,6 +1692,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 299. 300.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The cited p. 300 holds the very point Vattel means: God does not cause vice, but his wisdom and goodness draw good from it.",
+    "date": "2026-11-27"
    },
    "id": 74
   },
@@ -1732,9 +1816,9 @@
    "locus": "Commentaire, p. 365",
    "page": "COM38.p365",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Le Lecteur en trouvera encore une au commencement de la p. 365.",
    "source": "l'on se permet de foutenir que l'infinie perfection de l'Etre éternel l'a inévitablement déterminé à créer un Univers composé de ces deux sortes de parties",
    "reason": "Vattel points to the start of p. 365 as another magisterial pronouncement on the Leibnizian system; the page opens with Crousaz's charge about inevitable determination of God.",
@@ -1742,6 +1826,12 @@
    "attributed": {
     "form": "reference",
     "cue": "au commencement de la p. 365."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The start of p. 365 is just the kind of declamation Vattel describes, built on a false account of the system: God 'inévitablement déterminé' to create machines and spirits, and the mind's 'égaremens' through vanity.",
+    "date": "2026-11-27"
    },
    "id": 80
   },
@@ -1754,9 +1844,9 @@
    "locus": "Commentaire, p. 368",
    "page": "COM38.p368",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "à quel autre principe pourroit-on attribuer la manière, avec laquelle il semble applaudir aux impostures des Ennemis de Mr. WOLFF (pag. 368.), en insultant au malheur de ce Grand Philosophe",
    "source": "afin qu'elle fût entre les Philosophes , ce qu'un jeune & illustre Prince sera un jour entre les Rois",
    "reason": "Vattel cites p. 368 for Crousaz's ironic remark about the philosopher's recall by a prince, which he reads as insulting Wolff's disgrace.",
@@ -1764,6 +1854,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 368.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The cited p. 368 is the right page: Crousaz mocks the 'transmigration du Philosophe & de ses causes', meaning Wolff's expulsion, which is the insult Vattel means (the matched prince sentence belongs to the same mockery).",
+    "date": "2026-11-27"
    },
    "id": 81
   },
@@ -1820,9 +1916,9 @@
    "locus": "Commentaire, p. 366",
    "page": "COM38.p366",
    "label": "close paraphrase",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Or la Monade du Leibnitien est inévitablement déterminée à penser comme elle fait.",
    "source": "Or la machine du Leibnitien est inévitablement déterminée à parler & à écrire comme elle parle & écrit.",
    "reason": "Vattel condenses Crousaz's machine/monade determinism step into one sentence inside his italicised summary.",
@@ -1830,6 +1926,12 @@
    "attributed": {
     "form": "quotation",
     "cue": "(pag. 366.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "In his summary of Crousaz's argument Vattel merges its two steps (the Leibnizian machine is inevitably determined to speak, its Monad to think) into one sentence.",
+    "date": "2026-11-27"
    },
    "id": 84
   },

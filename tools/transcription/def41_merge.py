@@ -40,11 +40,22 @@ REV = {}
 if CD:
     for f in glob.glob(os.path.join(CD, '*.json')):
         for v in json.load(open(f))['verdicts']: REV[v['key']] = v
+# Rows the second reader dropped as pointing to the wrong segment, where it named the segment that holds the words: the
+# row is moved there (source passage checked by hand in that segment).
+RETARGET = {
+    'b005.2': ('THEO.T.353', 'dans ce système tout est lié et harmonique', 'close paraphrase', 0.7),
+    'b012.16': ('THEO.T.303', 'ce petit détour des atomes, arrivant sans sujet et sans raison au sentiment d’Épicure', 'close paraphrase', 0.6),
+    'b014.13': ('THEO.T.231', 'Dieu décerna de l’admettre à l’existence tel qu’il l’a vu : ce décret ne change point la nature des objets', 'close paraphrase', 0.8)}
 rows, bad = {}, []
 for f in sorted(glob.glob(os.path.join(JD, 'b*.json'))):
     b = os.path.basename(f)[:-5]
     for i, r in enumerate(json.load(open(f)).get('rows', [])):
-        key = '%s.%d' % (b, i); it = ITEMS.get(r.get('unit')); seg = SEG.get(r.get('seg', ''))
+        key = '%s.%d' % (b, i)
+        if key in RETARGET:
+            sg, sp, lb, cf = RETARGET[key]
+            r = dict(r, seg=sg, source_passage=sp, label=lb, confidence=cf,
+                     reason=r.get('reason', '') + ' [Moved to %s after the check: the words stand there.]' % sg)
+        it = ITEMS.get(r.get('unit')); seg = SEG.get(r.get('seg', ''))
         if not it or not seg: bad.append((key, 'unit or segment unknown', r.get('unit'), r.get('seg'))); continue
         fp = found(r['passage'], hay_of(it, r.get('where', 'text'))); fs = found(r['source_passage'], seg['text'])
         if fp < 0.9 or fs < 0.9: bad.append((key, 'passage %.2f source %.2f' % (fp, fs), r['unit'], r['seg'])); continue
@@ -52,8 +63,9 @@ for f in sorted(glob.glob(os.path.join(JD, 'b*.json'))):
         review = None
         if key in REV:
             v = REV[key]; review = {'step': 'C', 'verdict': v['verdict'], 'reason': v.get('reason', ''), 'date': TODAY}
-            if v['verdict'] == 'drop': continue
-            conf = float(v.get('confidence', conf)); label = v.get('label') or label
+            if v['verdict'] == 'drop' and key not in RETARGET: continue
+            if key in RETARGET: v = dict(v, verdict='keep', confidence=r['confidence'], label=r['label'])
+            conf = float(v.get('confidence') or conf); label = v.get('label') or label
             if v['verdict'] == 'weak': conf = min(conf, 0.45)
         if conf < 0.3: continue
         src = seg['src']; tid, fam, work = SRC[src]

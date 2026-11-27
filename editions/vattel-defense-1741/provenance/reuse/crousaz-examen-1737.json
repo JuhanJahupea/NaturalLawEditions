@@ -17,15 +17,21 @@
    "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
    "locus": "Examen, p. 13",
    "page": "EXA37.p13",
-   "label": "verbatim",
-   "confidence": 0.5,
+   "label": "quotation",
+   "confidence": 0.6,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "dans les divers dégrés de la vie & des sens , il devoit y avoir quelque part un Etre tel que l'Homme",
    "source": "dans les diversdegrés de la vie & des sens , il doit y avoir quelque part un Etre tel que Phomme",
    "reason": "Vattel's note quotes Pope's line, which Crousaz also cites on p. 13 as the consequence drawn from Leibniz; probably shared quotation of Pope rather than borrowing from Crousaz.",
    "stance": "neutral",
    "quoting": "Pope",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The note gives Pope's line in the exact French wording Crousaz quotes on Examen p. 13, the only place where Crousaz says Pope draws it from Leibniz's system, which is the claim Vattel's note answers through Bourguet.",
+    "date": "2026-11-27"
+   },
    "id": 87
   },
   {
@@ -389,13 +395,19 @@
    "locus": "Examen, p. 59",
    "page": "EXA37.p59",
    "label": "verbatim",
-   "confidence": 0.4,
+   "confidence": 0.35,
    "status": "possible",
-   "step": "J",
+   "step": "C",
    "passage": "d'un prémier branle imprimé à l'Univers",
    "source": "il n'y a aucun effet , dont la naiffance ne soit une suite immanquable du premier branle imprimé à l'Univers",
    "reason": "Same phrase 'premier branle imprimé à l'Univers' recurs in Crousaz p. 59, though Vattel cites p. 64.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "weak",
+    "reason": "The phrase 'premier branle imprimé à l'Univers' is verbatim on p. 59, but Vattel's sentence takes up and cites Exam. p. 64 ('toutes nos pensées, toutes nos actions... par l'efficace' of a 'branle' God 'imprima'), and the formula recurs at pp. 167-168, so p. 59 need not be his source.",
+    "date": "2026-11-27"
+   },
    "id": 104
   },
   {
@@ -561,13 +573,19 @@
    "locus": "Examen, p. 49",
    "page": "EXA37.p49",
    "label": "open disagreement",
-   "confidence": 0.55,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Pourquoi les blamez vous, lui dira quelque Rabbin Sophistique, quel malheur je vous prie, s'il n'avoient pas crucifié Jésus-Christ ?",
    "source": "car quel malheur , je vous prie , si j'avois moins bû",
    "reason": "Vattel parodies Crousaz's drunkard speech ('quel malheur, je vous prie, si...') to turn the objection back on him.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel quotes the drunkard's speech from Exam. p. 49 in D.282, then turns its formula ('quel malheur je vous prie, si...', praise rather than blame) back on Crousaz with the crucifixion.",
+    "date": "2026-11-27"
+   },
    "id": 112
   },
   {
@@ -667,9 +685,9 @@
    "locus": "Examen, p. 97",
    "page": "EXA37.p97",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "La même chose à peu-près se trouve repetée p. 97.",
    "source": "par des suites toutes nécessaires , quoiqu'elles leur paroiffent libres",
    "reason": "Vattel cites p. 97 as repeating the charge; the passage on this page is the closest match.",
@@ -677,6 +695,12 @@
    "attributed": {
     "form": "reference",
     "cue": "p. 97. & 204."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites Exam. p. 97 as repeating the charge of p. 64, and p. 97 does present monads moved 'par des suites toutes nécessaires, quoiqu'elles leur paroissent libres'.",
+    "date": "2026-11-27"
    },
    "id": 117
   },
@@ -689,9 +713,9 @@
    "locus": "Examen, p. 204",
    "page": "EXA37.p204",
    "label": "citation",
-   "confidence": 0.45,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.7,
+   "status": "match",
+   "step": "C",
    "passage": "& 204.",
    "source": "se sont imaginés d'avoir reçu de lui ce qu'elles ont reçu d'une suite inombrable& inévitable de combinaisons",
    "reason": "Vattel cites p. 204 as repeating the charge; the passage here is a candidate for it.",
@@ -699,6 +723,12 @@
    "attributed": {
     "form": "reference",
     "cue": "p. 97. & 204."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites Exam. p. 204 as repeating the same charge, and p. 204 does make souls receive their ideas from 'une suite innombrable & inévitable de combinaisons'.",
+    "date": "2026-11-27"
    },
    "id": 118
   },
@@ -861,9 +891,9 @@
    "locus": "Examen, p. 1",
    "page": "EXA37.p1",
    "label": "loose paraphrase",
-   "confidence": 0.5,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "qu'il est ennemi de l'Esprit de Critique",
    "source": "ne vous avisez pas de regarder ce que je vais vous écrire , fur le pié d'une Critique",
    "reason": "Vattel summarises Crousaz's disclaimer that his letter is not a Critique.",
@@ -871,6 +901,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 1. 2.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel summarises the disclaimer that opens Exam. pp. 1-2 (the letter is not to be taken as a 'Critique'), cites it, and goes on to quote it.",
+    "date": "2026-11-27"
    },
    "id": 126
   },
@@ -906,9 +942,9 @@
    "locus": "Examen, p. 13",
    "page": "EXA37.p13",
    "label": "open disagreement",
-   "confidence": 0.75,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "il veut, dis-je, que ces paroles soient tirées du Système de Mr. DE LEIBNITZ",
    "source": "Cette conféquence qu'il donne pour fi manifeste il la tire du sistème de Mr. : LEIB-",
    "reason": "Vattel reports and rejects Crousaz's claim that Pope's line comes from Leibniz's system.",
@@ -916,6 +952,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 13.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites Exam. p. 13, where Crousaz says Pope draws his line about 'un Etre tel que l'homme' from Leibniz's system, and he rejects the claim.",
+    "date": "2026-11-27"
    },
    "id": 128
   },
@@ -1038,9 +1080,9 @@
    "locus": "Examen, p. 16",
    "page": "EXA37.p16",
    "label": "loose paraphrase",
-   "confidence": 0.6,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "les Esprits sont des espèces de machines.",
    "source": "Entre ces machines qui tiennent leur existence de l'Eternel Créateur , nous en connoiffons de deux genres , les unes fimplement corporelles , les autres capables de penfées , de sentimens , de desirs &c. & à celles-ci on a donné le nom d'esprits ou de subHances intellectuelles",
    "reason": "Vattel presents as Crousaz's claim (p. 16) that minds are a kind of machine.",
@@ -1048,6 +1090,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 16.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 16 and restates as Crousaz's claim that minds are a kind of machine, which matches p. 16 where thinking beings are the second 'genre' of 'ces machines' called 'esprits'.",
+    "date": "2026-11-27"
    },
    "id": 134
   },
@@ -1082,9 +1130,9 @@
    "locus": "Examen, p. 17",
    "page": "EXA37.p17",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.9,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Quant à la Comparaison de deux Horloges, dont il fait mention à la fin de la page 17.",
    "source": "Ils expliquent leur Sistème par une comparaison , figurés-vous deux Horloges construits avec tant d'habileté , que jamais leurs aiguilles ni leurs timbres ne varient de la plus petite mi nute; on pourroit s'imaginer que l'un des deux a de Pinfluence sur Pautre , aulieu que c'est simplement une har monie qui résulte de l'exactitude de leur construction",
    "reason": "Vattel cites Crousaz's two-clocks comparison on p. 17 and corrects its use.",
@@ -1092,6 +1140,12 @@
    "attributed": {
     "form": "reference",
     "cue": "à la fin de la page 17."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel points to the two-clocks comparison 'à la fin de la page 17', and p. 17 does end with 'figurés-vous deux Horloges'.",
+    "date": "2026-11-27"
    },
    "id": 136
   },
@@ -1104,9 +1158,9 @@
    "locus": "Examen, p. 18",
    "page": "EXA37.p18",
    "label": "loose paraphrase",
-   "confidence": 0.65,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "La page 18. contient la même objection, que nous avons réfutée (301): L'Auteur prétend, que, dans notre système, les hommes ne sont pas les causes des actions qu'on leur attribue",
    "source": "nos deux machines corporelles n'ont que faire de l'influence de nos ames , pour se donner les mouvemens , l'une de dicter , & lautre d'écrire",
    "reason": "Vattel summarises Crousaz's p. 18 claim that men are not causes of their actions.",
@@ -1114,6 +1168,12 @@
    "attributed": {
     "form": "reference",
     "cue": "La page 18."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel sums up p. 18, where the dictation and copyist example has the soul only imagining it causes what the body does ('mon ame s'imagine ... d'être cause des paroles'), as the claim that men are not causes of their actions.",
+    "date": "2026-11-27"
    },
    "id": 137
   },
@@ -1170,13 +1230,19 @@
    "locus": "Examen, p. 20",
    "page": "EXA37.p20",
    "label": "open disagreement",
-   "confidence": 0.6,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Ne semble-t il pas, qu'il veuille insinuer, que cet accord de l'Ame, & du Corps, arrive, par un effét du hazard ?",
    "source": "Ce pro jet , quoique bien clair & bien lié dans toutes ses parties , demeureroit fans effet , s'il ne se trouvoit heureu sement",
    "reason": "Vattel answers the implication of Crousaz's architect example that soul-body accord is chance.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Right after quoting p. 20's 'demeureroit sans effet, s'il ne se trouvoit heureusement une machine corporelle', Vattel picks up 'heureusement' and rejects the suggestion that soul-body accord happens by chance.",
+    "date": "2026-11-27"
+   },
    "id": 140
   },
   {
@@ -1188,9 +1254,9 @@
    "locus": "Examen, p. 21",
    "page": "EXA37.p21",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Elle revient (pag. 20. & 21.) C'est toujours, sous un autre exemple, la même que nous venons de voir à la pag. 1.",
    "source": "alors toutes ces machines se trouveroient montées à conftruire une partie de l'ouvrage",
    "reason": "Vattel refers to Crousaz's mason/interpreter example on pp. 20-21 as the same objection against harmony.",
@@ -1198,6 +1264,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 20. & 21.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel names pp. 20-21 as the same objection under another example, and p. 21 continues the architect, masons and interpreters example against pre-established harmony.",
+    "date": "2026-11-27"
    },
    "id": 141
   },
@@ -1250,13 +1322,19 @@
    "locus": "Examen, p. 116",
    "page": "EXA37.p116",
    "label": "loose paraphrase",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "C",
    "passage": "il faut avoir une excessive opinion de son Autorité, & regarder ses Lecteurs comme de grands Idiots",
    "source": "Il faut avoir une excessive présomption en faveur de soi même , & regarder le reste des hommes avec le dernier mépris",
    "reason": "Vattel turns Crousaz's own construction 'il faut avoir une excessive ... & regarder ... les hommes' back on him.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel turns p. 116's 'Il faut avoir une excessive présomption ... & regarder le reste des hommes avec le dernier mépris' (about readers too stupid to see the 'renversement de toute Religion') back on Crousaz in the same order and on the same charge, which is too specific to be a stock phrase.",
+    "date": "2026-11-27"
+   },
    "id": 144
   },
   {
@@ -1290,9 +1368,9 @@
    "locus": "Examen, p. 23",
    "page": "EXA37.p23",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Nous avons répondu plus haut (281) à ce qui suit dans la page 23.",
    "source": "Il en est de même des crimes , puisqu'on a vû des parricides , il étoit effentiel à la perfection de l'Univers qu'il y en eut",
    "reason": "Vattel refers to Crousaz p. 23 (crimes necessary to the perfection of the universe) for a prior answer.",
@@ -1300,6 +1378,12 @@
    "attributed": {
     "form": "reference",
     "cue": "la page 23"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel refers to what follows on p. 23, the claim that crimes and parricides were essential to the perfection of the universe, and sends the reader to his earlier answer (281).",
+    "date": "2026-11-27"
    },
    "id": 146
   },
@@ -1312,13 +1396,19 @@
    "locus": "Examen, p. 23",
    "page": "EXA37.p23",
    "label": "open disagreement",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Nous ne disons point, que les parricides soient essentiels, par eux-mêmes, entant que parricides, à la perfection de l'Univers",
    "source": "il étoit effentiel à la perfection de l'Univers qu'il y en eut",
    "reason": "Vattel denies Crousaz's claim that parricides are essential to the perfection of the universe.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel denies almost word for word p. 23's 'il étoit essentiel à la perfection de l'Univers qu'il y en eût' (parricides).",
+    "date": "2026-11-27"
+   },
    "id": 147
   },
   {
@@ -1330,13 +1420,19 @@
    "locus": "Examen, p. 24",
    "page": "EXA37.p24",
    "label": "citation",
-   "confidence": 0.55,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "La fin de cette même page, & le commencement de la suivante, contiennent une raillerie, qui ne peut être qu'insipide",
    "source": "Une femme se détermine a faire af faffiner son mari",
    "reason": "Vattel refers to the start of p. 24 (the murderess example) as a mockery.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The segment is right, but the 'raillerie' spanning the end of p. 23 and the start of p. 24 is the Athens jest ('l'Univers étoit encore imparfait dans ces siècles-là; il y manquoit des Parricides') that Vattel answers next, not the murderess example.",
+    "date": "2026-11-27"
+   },
    "id": 148
   },
   {
@@ -1348,9 +1444,9 @@
    "locus": "Examen, p. 24",
    "page": "EXA37.p24",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Les réflexions, que fait Mr. DE CROUSAZ sur les deux Exemples, qu'il rapporte (p. 24. & 25.)",
    "source": "Une femme se détermine a faire af faffiner son mari",
    "reason": "Vattel refers to the murderess example on p. 24.",
@@ -1358,6 +1454,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 24. & 25.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites 'les deux Exemples' of pp. 24-25, and p. 24 holds the first of them, the woman who has her husband murdered.",
+    "date": "2026-11-27"
    },
    "id": 149
   },
@@ -1370,9 +1472,9 @@
    "locus": "Examen, p. 25",
    "page": "EXA37.p25",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Les réflexions, que fait Mr. DE CROUSAZ sur les deux Exemples, qu'il rapporte (p. 24. & 25.)",
    "source": "On m'a afsuré qu'en Ecoffe un Ministre affaffina son fils",
    "reason": "Vattel refers to the Scottish minister example on p. 25.",
@@ -1380,6 +1482,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 24. & 25.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites 'les deux Exemples' of pp. 24-25, and p. 25 holds the second of them, the Scottish minister who killed his son, followed by the 'Voilà ... une idée du Système' sentence that Vattel quotes.",
+    "date": "2026-11-27"
    },
    "id": 150
   },
@@ -1450,9 +1558,9 @@
    "locus": "Examen, p. 26",
    "page": "EXA37.p26",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Sur les pag. 26. & 27. voïez cidessus (285, 286.)",
    "source": "TOUT CE QUI EST , EST BIEN , dit-il , en finissant fon premier Livre",
    "reason": "Vattel refers back to his answer on Crousaz pp. 26-27.",
@@ -1460,6 +1568,12 @@
    "attributed": {
     "form": "reference",
     "cue": "Sur les pag. 26. & 27."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel refers explicitly to pp. 26-27 (Pope's 'Tout ce qui est, est bien') and sends the reader to his earlier answer (285-286).",
+    "date": "2026-11-27"
    },
    "id": 154
   },
@@ -1472,9 +1586,9 @@
    "locus": "Examen, p. 27",
    "page": "EXA37.p27",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Sur les pag. 26. & 27. voïez cidessus (285, 286.)",
    "source": "vue de CHARLES I. perdant la tête fur un Echaffaut",
    "reason": "Vattel refers back to his answer on Crousaz pp. 26-27.",
@@ -1482,6 +1596,12 @@
    "attributed": {
     "form": "reference",
     "cue": "Sur les pag. 26. & 27."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel refers explicitly to pp. 26-27, and p. 27 carries on the 'Cela est bien' satire on Pope's maxim.",
+    "date": "2026-11-27"
    },
    "id": 155
   },
@@ -1516,13 +1636,19 @@
    "locus": "Examen, p. 28",
    "page": "EXA37.p28",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Assurément, c'est être bien hardi, que de soutenir, que tout ce que Dieu fait ne sauroit être mieux fait ; & qu'il ne fait pas la moindre chose sans raison. C'est-là fonder les profondeurs de la Nature Divine, avec une étrange témérité.",
    "source": "sonder les profondeurs de la Natu- ,, re Divine",
    "reason": "Vattel ironically returns Crousaz's charge of sounding the depths of the divine nature.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel ironically hands back p. 28's 'Comment oses-tu ... sonder les profondeurs de la Nature Divine? Comment oses-tu compter assez hardiment' with 'bien hardi' and 'sonder les profondeurs de la Nature Divine'.",
+    "date": "2026-11-27"
+   },
    "id": 157
   },
   {
@@ -1534,9 +1660,9 @@
    "locus": "Examen, p. 29",
    "page": "EXA37.p29",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "MR. DE CROUSAZ exprime mal (p. 29.) le principe de Mr. DE LEIBNITZ, de l'identité des indiscernables",
    "source": "que deux Etres finis P'un & l'autre , mais entièrement égaux ne seroient qu'un seul & mème Etre",
    "reason": "Vattel corrects Crousaz's statement of the identity of indiscernibles (two equal finite beings would be one).",
@@ -1544,6 +1670,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 29.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel says p. 29 misstates the identity of indiscernibles, and p. 29 gives it as the 'étrange Paradoxe' that two equal finite beings would be one and the same being.",
+    "date": "2026-11-27"
    },
    "id": 158
   },
@@ -1600,13 +1732,19 @@
    "locus": "Examen, p. 30",
    "page": "EXA37.p30",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "je ne vois pas comment il prétend, que cette pensée nous engage bien plus fortement à admirer & à célébrer la Bonté de Dieu, qui nous a créés",
    "source": "Leur obligation à lui rendre graces est d'une toute autre force , leur reconnoiffance est d'une toute autre vivacité , & leur admiration pour sa bonté s'élève à des mouvemens d'un tout autre degré , quand elles viennent à penfer qu'il ne tenoit qu'à lui de ne les point produire",
    "reason": "Vattel contests Crousaz's claim that God's freedom not to create heightens our admiration of his goodness.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 30 ('il ne tenoit qu'à Dieu, de ne point produire les Créatures') and rejects its claim that this thought raises our admiration of God's goodness ('leur admiration pour sa bonté s'élève').",
+    "date": "2026-11-27"
+   },
    "id": 161
   },
   {
@@ -1618,9 +1756,9 @@
    "locus": "Examen, p. 32",
    "page": "EXA37.p32",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "L'Auteur continue à nous reprocher la Fatalité (pag. 30. 32, 33.)",
    "source": "dont la puissance ne s'est déployée qu'à faire des machines de toute espèce",
    "reason": "Vattel refers to Crousaz's fatalism charge on p. 32.",
@@ -1628,6 +1766,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 30. 32, 33.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 32 among the pages that reproach the Leibnizians with fatalism, and p. 32 holds the charge of a Creator who only makes machines and gives them their first push.",
+    "date": "2026-11-27"
    },
    "id": 162
   },
@@ -1640,9 +1784,9 @@
    "locus": "Examen, p. 33",
    "page": "EXA37.p33",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "L'Auteur continue à nous reprocher la Fatalité (pag. 30. 32, 33.)",
    "source": "reduit la Liberté à une simple apparence,& la foûmet àune nécessité réelle",
    "reason": "Vattel refers to Crousaz's fatalism charge on p. 33.",
@@ -1650,6 +1794,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 30. 32, 33.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 33 among the pages that reproach the Leibnizians with fatalism, and p. 33 holds the charge of a system that 'reduit la Liberté à une simple apparence' under real necessity.",
+    "date": "2026-11-27"
    },
    "id": 163
   },
@@ -1706,9 +1856,9 @@
    "locus": "Examen, p. 34",
    "page": "EXA37.p34",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Je tombe d'accord de ce que dit Mr. DE CROUSAZ, au commencement de la page 34.",
    "source": "De plus finous ne nous déterminons pas nous-mêmes & fi tous nos actes de volonté, font réellement des effets des Causes auxquelles nous sommes assujetis , nous ne nous rendons point coupables",
    "reason": "Vattel agrees with Crousaz's opening statement on p. 34 (if we do not determine ourselves we are not guilty).",
@@ -1716,6 +1866,12 @@
    "attributed": {
     "form": "reference",
     "cue": "au commencement de la page 34."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel names the opening of Examen p. 34 and answers its 'si nous ne nous déterminons pas nous-mêmes ... Causes auxquelles nous sommes assujetis' with 'se détermine véritablement elle même ... ne peut-être assujettie'.",
+    "date": "2026-11-27"
    },
    "id": 166
   },
@@ -1750,13 +1906,19 @@
    "locus": "Examen, p. 35",
    "page": "EXA37.p35",
    "label": "close paraphrase",
-   "confidence": 0.65,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Nous convenons, que ce qui différentie les Objets, ne nous est pas toujours connu distinctement, ni même clairement",
    "source": "ce qui diffe- ,, rencie les objets doit nous échapper in- ,, failliblement",
    "reason": "Vattel concedes the passage's point that what distinguishes objects escapes us.",
    "stance": "neutral",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 35 l. 15-20 ('Dès là, &c.') and concedes, in close wording, the Bibliothèque Germanique passage quoted there that what differentiates objects escapes us.",
+    "date": "2026-11-27"
+   },
    "id": 168
   },
   {
@@ -1768,9 +1930,9 @@
    "locus": "Examen, p. 35",
    "page": "EXA37.p35",
    "label": "close paraphrase",
-   "confidence": 0.65,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Nous reconnoissons aussi, que l'Ame est souvent en suspens, & en doute entre deux partis.",
    "source": "dans plusieurs occafions l'Ame doit se trouver dans un état de,, doute & de suspension",
    "reason": "Vattel concedes that the soul is often in doubt and suspense.",
@@ -1778,6 +1940,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(l. 21. suiv.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Under 'l. 21 suiv.' Vattel concedes the next clause of the same quoted passage, the soul in a state of 'doute & de suspension' between two parties.",
+    "date": "2026-11-27"
    },
    "id": 169
   },
@@ -1808,9 +1976,9 @@
    "locus": "Examen, p. 36",
    "page": "EXA37.p36",
    "label": "open disagreement",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Les Causes de détermination, que l'on allègue (p. 36. L. 3-15.) ne sont pas suffisantes.",
    "source": "parce qu'il nous importe d'a- ,gir , & qu'une trop longue irrésolu- ,,tion nous feroit préjudiciable",
    "reason": "Vattel rejects the causes of determination Crousaz's passage lists for a case of equilibrium.",
@@ -1818,6 +1986,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 36. L. 3-15.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 36 l. 3-15 and rejects the two causes listed there (need to act promptly, wish to use one's power), which he restates.",
+    "date": "2026-11-27"
    },
    "id": 171
   },
@@ -1852,9 +2026,9 @@
    "locus": "Examen, p. 36",
    "page": "EXA37.p36",
    "label": "close paraphrase",
-   "confidence": 0.6,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Le plaisir de faire montre de sa Liberté, en préférant le moindre avantage, peut être une raison suffisante pour nous y déterminer",
    "source": "lorsque je veux faire montre de ma Liberté , pré férer un moindre avantage à un plus grand",
    "reason": "Vattel takes up the case of showing one's liberty by preferring a lesser advantage and turns it into a reason.",
@@ -1862,6 +2036,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 36. l. 21. suiv.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel takes up, from p. 36 l. 21 ff., Crousaz's case of showing one's liberty by preferring a lesser advantage, in nearly the same words, and turns it into a sufficient reason.",
+    "date": "2026-11-27"
    },
    "id": 173
   },
@@ -2020,9 +2200,9 @@
    "locus": "Examen, p. 39",
    "page": "EXA37.p39",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.65,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Nous avons répondu ( 303 ) à l'objection qui suit (p. 39).",
    "source": "Est-ce là une suite de leur primitive constitution, Pharmonie préétablie le demande ainsi",
    "reason": "Vattel refers to the objection on p. 39.",
@@ -2030,6 +2210,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 39)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel refers to the objection on p. 39 (the soul consenting while the body's machine acts under pre-established harmony) and sends the reader back to his § 303.",
+    "date": "2026-11-27"
    },
    "id": 181
   },
@@ -2064,13 +2250,19 @@
    "locus": "Examen, p. 40",
    "page": "EXA37.p40",
    "label": "open disagreement",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "nous sommes convaincus de refuser à Dieu la Liberté",
    "source": "ils aiment mieux la refuser à Dieu que de ne pas regarder cette idée, comme une contradiction",
    "reason": "Vattel answers Crousaz's charge that Leibnizians refuse liberty to God.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel answers p. 40, from which he also quotes 'se rendre aux preuves qui le détruisent' and 'faux-fuyants', its charge that Leibnizians 'aiment mieux la refuser à Dieu'.",
+    "date": "2026-11-27"
+   },
    "id": 183
   },
   {
@@ -2081,10 +2273,10 @@
    "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
    "locus": "Examen, p. 41",
    "page": "EXA37.p41",
-   "label": "close paraphrase",
-   "confidence": 0.7,
+   "label": "loose paraphrase",
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "de placer telle Montagne d'une autre manière",
    "source": "n'auroit-elle pas pû être placée au fixiéme fans inconvénient",
    "reason": "Vattel summarises Crousaz's mountain-chain example.",
@@ -2092,6 +2284,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p.40,41,42.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel compresses Crousaz's examples of the mountain chain moved from the third to the sixth degree (p. 41) and the swapped hemisphere with America (p. 42), which he told the reader to read in the Examen.",
+    "date": "2026-11-27"
    },
    "id": 184
   },
@@ -2144,9 +2342,9 @@
    "locus": "Examen, p. 43",
    "page": "EXA37.p43",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.6,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Les pages 43-48. ne contenant que des railleries, ou des invectives",
    "source": "Dans la République des Lettres , il se trouve de même un grand nombre de Particu liers",
    "reason": "Vattel dismisses pp. 43-48 as raillery; p. 43 opens the section on partisans who avoid examination.",
@@ -2154,6 +2352,12 @@
    "attributed": {
     "form": "reference",
     "cue": "Les pages 43-48."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel dismisses Examen pp. 43-48 as raillery, and p. 43 opens that section on followers of the system who shun careful examination.",
+    "date": "2026-11-27"
    },
    "id": 187
   },
@@ -2166,13 +2370,19 @@
    "locus": "Examen, p. 43",
    "page": "EXA37.p43",
    "label": "loose paraphrase",
-   "confidence": 0.45,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "C",
    "passage": "ceux qui, suivant lui, blâment, ou approuvent, sans examen",
    "source": "un examen attentif, circonfpect , foutenu & depréoccupé , paroit de beaucoup trop pénible",
    "reason": "Crousaz says many in the republic of letters shun careful examination; Vattel restates the charge.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel's 'blâment, ou approuvent, sans examen' summarises the passage that starts on p. 43 (examination too painful, continued on p. 44 with 'examen très leger'), the first of the charges he lists from pp. 43-47.",
+    "date": "2026-11-27"
+   },
    "id": 188
   },
   {
@@ -2206,9 +2416,9 @@
    "locus": "Examen, p. 47",
    "page": "EXA37.p47",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "en distribuant tous les Partisans de Mr. DE LEIBNITZ en deux Classes: l'une de Stupides ; l'autre de Libertins (p. 47.)",
    "source": "Ils ne font non plus rien moins que disposés à donner tète baiffée dans les fantaisies d'un autre",
    "reason": "Vattel summarizes Crousaz's two classes of Leibnizians (servile followers, libertines) and rejects it.",
@@ -2216,6 +2426,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 47.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 47 and quotes from it 'n'ont garde d'en envier la gloire à leur Auteur', the passage that sets the libertines apart from those of heavy, servile mind, and he rejects the division.",
+    "date": "2026-11-27"
    },
    "id": 190
   },
@@ -2250,9 +2466,9 @@
    "locus": "Examen, p. 116",
    "page": "EXA37.p116",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.55,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Il repete encore la même chose (p. 116. 197. & Com. p. 363.)",
    "source": "Il faut avoir une excessive présomption en faveur de soi même , & regarder le reste des hommes avec le dernier mépris , pour s'imaginer qu'il s'en trouvera d'asses stupides",
    "reason": "Vattel cites this page as repeating the stupid/libertine charge.",
@@ -2260,6 +2476,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 116. 197. & Com. p. 363.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 116 for the same charge, and that page says one would need excessive presumption to think anyone stupid enough not to see the philosophy overturns all religion, a looser echo of the stupid/irreligious pairing.",
+    "date": "2026-11-27"
    },
    "id": 192
   },
@@ -2272,9 +2494,9 @@
    "locus": "Examen, p. 197",
    "page": "EXA37.p197",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Il repete encore la même chose (p. 116. 197. & Com. p. 363.)",
    "source": "ou d'une imagination pesante & servile , entêtée pour un s'ystème auquel elle se dévoue quoiqu'elle nel'entende pas, ou d'un Esprit plus vif mais ennemi de la contrainte",
    "reason": "Vattel cites this page as repeating the stupid/libertine charge.",
@@ -2282,6 +2504,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 116. 197. & Com. p. 363.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 197, where Crousaz says the system's enthusiasm comes 'ou d'une imagination pesante & servile ... ou d'un Esprit plus vif mais ennemi de la contrainte', the two classes again.",
+    "date": "2026-11-27"
    },
    "id": 193
   },
@@ -2315,10 +2543,10 @@
    "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
    "locus": "Examen, p. 48",
    "page": "EXA37.p48",
-   "label": "citation",
-   "confidence": 0.65,
+   "label": "open disagreement",
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "je regarde tout ce qu'il dit là-dessus (p. 47. & 48.) comme une Déclamation",
    "source": "Il est pourtant difficile de se livrer à cet injuste goût , & de fouler aux piés les plus respectables Maximes , sans être , de tems en tems , agité de quelques inquiétudes.",
    "reason": "Vattel names pp. 47-48 and calls them declamation.",
@@ -2326,6 +2554,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 47. & 48.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel calls the passage of pp. 47-48 a declamation, the one where the system calms the libertine's 'inquiétudes', which he restates as adopting it 'pour étouffer les remords de sa Conscience'.",
+    "date": "2026-11-27"
    },
    "id": 195
   },
@@ -2338,9 +2572,9 @@
    "locus": "Examen, p. 49",
    "page": "EXA37.p49",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.65,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Je ne m'arrête pas à l'objection, contenue à la page 49.",
    "source": "Quelle honteuse contradiction ! on ne veut pas tomber d'accord d'ètre en pouvoir de se déterminer soi-même",
    "reason": "Vattel cites p. 49 and declines to answer again.",
@@ -2348,6 +2582,12 @@
    "attributed": {
     "form": "reference",
     "cue": "à la page 49."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 49, the drunkard's excuse from necessity and Crousaz's reply to it, and declines to answer, referring to his § 282.",
+    "date": "2026-11-27"
    },
    "id": 196
   },
@@ -2426,9 +2666,9 @@
    "locus": "Examen, p. 54",
    "page": "EXA37.p54",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.65,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Il y a dans le détail de cet exemple, & dans le suivant (p. 53—56.) une infinité de choses",
    "source": "Les deux machines corporelles sont déterminées par les influences d'une concateration de plusieurs fiécles à faire jouer les foufflets& les coups de poingt",
    "reason": "The duel example of pp. 53-56, cited for the necessity of bodily motions.",
@@ -2436,6 +2676,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 53—56.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites pp. 53-56 for the quarrel and duel worked out by machines, whose claimed necessity of bodily motions he names, and p. 54 holds that example.",
+    "date": "2026-11-27"
    },
    "id": 200
   },
@@ -2450,7 +2696,7 @@
    "label": "citation",
    "confidence": 0.6,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Il y a dans le détail de cet exemple, & dans le suivant (p. 53—56.) une infinité de choses",
    "source": "Une machine corporelle encore est déterminée par la force d'une invincible succession àtrancher la tête du condamné.",
    "reason": "Continuation of the same example.",
@@ -2458,6 +2704,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 53—56.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Page 55 continues the same duel-and-execution example from Vattel's cited range pp. 53-56.",
+    "date": "2026-11-27"
    },
    "id": 201
   },
@@ -2514,9 +2766,9 @@
    "locus": "Examen, p. 58",
    "page": "EXA37.p58",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "La voici qui renaît sous une autre forme (p. 57-59.).",
    "source": "L'ame de Mr. LEIBNITS , non plus que lesamesde ses plus-zélés &plus infatigables Partifans , n'ont jamais eu le pouvoir d'instruire les ames de ceux qui so comptent pour leurs Disciples",
    "reason": "Vattel cites pp. 57-59 where the objection that Leibniz could have no disciples reappears.",
@@ -2524,6 +2776,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 57-59.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel's range p. 57-59 covers p. 58, where Crousaz says Leibniz's soul could never instruct those who count themselves his disciples, the objection Vattel then answers.",
+    "date": "2026-11-27"
    },
    "id": 204
   },
@@ -2536,9 +2794,9 @@
    "locus": "Examen, p. 59",
    "page": "EXA37.p59",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "La voici qui renaît sous une autre forme (p. 57-59.).",
    "source": "C'est donc par un effet de la destinée qu'un grand nombre d'Intelligences sont venues à penser comme Mr.LE IBNITS.",
    "reason": "Vattel cites pp. 57-59 where the objection that Leibniz could have no disciples reappears.",
@@ -2546,6 +2804,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 57-59.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The range p. 57-59 includes p. 59, where the disciples objection ends with the claim that many minds came to think like Leibniz by destiny alone.",
+    "date": "2026-11-27"
    },
    "id": 205
   },
@@ -2558,13 +2822,19 @@
    "locus": "Examen, p. 57",
    "page": "EXA37.p57",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Le Lecteur y verra comment il est très-vrai dans notre Système, que Mr. DE LEIBNITZ s'est fait des Disciples, qu'il les a instruits, & qu'il a enrichi leurs Ames de sublimes Idées",
    "source": "dès qu'on attribue à Mr. LEIBNITS la gloire de s'être fait des Dif ciples",
    "reason": "Vattel answers Crousaz's claim that the system forbids saying Leibniz made disciples.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel answers in nearly Crousaz's words (p. 57: 'attribue à Mr. LEIBNITS la gloire de s'être fait des Disciples') that Leibniz did make disciples in this system.",
+    "date": "2026-11-27"
+   },
    "id": 206
   },
   {
@@ -2576,9 +2846,9 @@
    "locus": "Examen, p. 59",
    "page": "EXA37.p59",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "On nous prête (pag. 59.) un raisonnement très-ridicule",
    "source": "C'est inutilement que quelques ins d'eux seroient affez visionnaires pour conclure de la multitude de ces idées uniformes",
    "reason": "Vattel cites p. 59 for the argument he rejects.",
@@ -2586,6 +2856,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 59.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Explicit 'pag. 59' for the reasoning Crousaz lends the Leibnizians, that the many uniform ideas prove the system true because the first cause does everything.",
+    "date": "2026-11-27"
    },
    "id": 207
   },
@@ -2731,13 +3007,19 @@
    "locus": "Examen, p. 62",
    "page": "EXA37.p62",
    "label": "open disagreement",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "C",
    "passage": "il leur attribue des expressions de Mr. POPE , qu'aucun d'eux n'a jamais adoptées",
    "source": "Ceux qui pensent ainsi comment se font-ils avisés de dire que Dieu a été inévitablement déterminé",
    "reason": "Vattel answers the way Crousaz pins Pope's expressions on Leibnizians on pp. 62-63.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 62 and the next page, where Crousaz pins Pope's hero/sparrow line ('Aux yeux de Dieu la chute de l'un est comme la chute de l'autre') on those who say God was determined to create the most perfect world, which is the attribution Vattel rejects.",
+    "date": "2026-11-27"
+   },
    "id": 214
   },
   {
@@ -2749,9 +3031,9 @@
    "locus": "Examen, p. 64",
    "page": "EXA37.p64",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Nous avons examiné ailleurs ( 275. 276.) les pages 64. & 66.",
    "source": "Le Leibnicien qui pose en fait que tout est l'ouvrage de Dieu",
    "reason": "Vattel refers to pp. 64 and 66.",
@@ -2759,6 +3041,12 @@
    "attributed": {
     "form": "reference",
     "cue": "les pages 64. & 66."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "A bare page reference to Examen p. 64, where the 'Leibnicien' is made to say all is God's work from an inevitable first impulse, the charge Vattel answered at 275-276.",
+    "date": "2026-11-27"
    },
    "id": 215
   },
@@ -2771,9 +3059,9 @@
    "locus": "Examen, p. 66",
    "page": "EXA37.p66",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Cette dernière contient une raillerie trèsmal fondée.",
    "source": "Ce Sistème est le vrai , disent-ils , & ceux qui le critiquent s'en prennent à la Providence & critiquent les voyes de Dieu , Quelle témérité !",
    "reason": "Page 66 is the raillery; Vattel cites it.",
@@ -2781,6 +3069,12 @@
    "attributed": {
     "form": "reference",
     "cue": "les pages 64. & 66."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "'Cette dernière' is p. 66, whose raillery is the Leibnizians' 'Quelle témérité!' against critics of their system.",
+    "date": "2026-11-27"
    },
    "id": 216
   },
@@ -2793,13 +3087,19 @@
    "locus": "Examen, p. 66",
    "page": "EXA37.p66",
    "label": "open disagreement",
-   "confidence": 0.85,
+   "confidence": 0.9,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Mr. DE LEIBNITZ , ni ses Disciples, ne disent point, que ce soit une témérité de critiquer leur système: Ils appliquent ces mots , quelle témérité! à ceux qui critiquent les voies de la Providence.",
    "source": "Ce Sistème est le vrai , disent-ils , & ceux qui le critiquent s'en prennent à la Providence & critiquent les voyes de Dieu , Quelle témérité !",
    "reason": "Vattel denies Crousaz's claim that Leibnizians cry \"Quelle témérité!\" at critics of their system.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel takes up Crousaz's p. 66 claim that Leibnizians cry 'Quelle témérité!' at critics of their system and denies it, restoring the phrase to Théodicée § 134.",
+    "date": "2026-11-27"
+   },
    "id": 217
   },
   {
@@ -2811,9 +3111,9 @@
    "locus": "Examen, p. 67",
    "page": "EXA37.p67",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Mr. DE CROUSAZ repète encore ( pag. 66—67.) ce que nous venons de réfuter (321.).",
    "source": "Vôtre zèle ne vous est-il point suf- „ pect",
    "reason": "Vattel cites pp. 66-67 as repeating Crousaz's charge.",
@@ -2821,6 +3121,12 @@
    "attributed": {
     "form": "reference",
     "cue": "( pag. 66—67.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Explicit pp. 66-67, where Crousaz repeats the p. 59 argument that both the Leibnizian's and his critic's thoughts come from the same chain directed by the first cause ('Vôtre zèle ne vous est-il point suspect').",
+    "date": "2026-11-27"
    },
    "id": 218
   },
@@ -2855,9 +3161,9 @@
    "locus": "Examen, p. 82",
    "page": "EXA37.p82",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Sur les pages 82. & 86. voïez ci-dessus (278. & 273.)",
    "source": "Ces paroles n'ont aucun sens que dans le sistéme Leibnicien, qui confond le moral avec le physique",
    "reason": "Citation of p. 82.",
@@ -2865,6 +3171,12 @@
    "attributed": {
     "form": "reference",
     "cue": "les pages 82. & 86."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Explicit p. 82, whose words 'confond le moral avec le physique ... enchainure éternelle' Vattel quotes at 278, the section he refers to.",
+    "date": "2026-11-27"
    },
    "id": 220
   },
@@ -2877,9 +3189,9 @@
    "locus": "Examen, p. 86",
    "page": "EXA37.p86",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.65,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Sur les pages 82. & 86. voïez ci-dessus (278. & 273.)",
    "source": "Ilme paroit encore , & il n'est pas enmonpouvoirde penser autrement, qu'un Univers qui renferme des Intelligences libres & actives",
    "reason": "Citation of p. 86.",
@@ -2887,6 +3199,12 @@
    "attributed": {
     "form": "reference",
     "cue": "les pages 82. & 86."
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Explicit p. 86, the right page, though the point referred to 273 is Crousaz's free choice among species ('s'il en avoit omis une ... ajouté une de plus'), not the sentence on free intelligences.",
+    "date": "2026-11-27"
    },
    "id": 221
   },
@@ -2898,10 +3216,10 @@
    "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
    "locus": "Examen, p. 87",
    "page": "EXA37.p87",
-   "label": "open disagreement",
-   "confidence": 0.7,
+   "label": "citation",
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "L'Auteur s'oppose (pag. 87. suiv.) à la liaison exacte & pré établie des choses, tant co-ëxistantes, que successives.",
    "source": "Un degré ôté , toutes les proportionsfont renversées.",
    "reason": "Crousaz p. 87 ff. attacks the exact connection of things.",
@@ -2909,6 +3227,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(pag. 87. suiv.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "'pag. 87. suiv.' points to Crousaz's attack on Pope's 'Un degré ôté, toutes les proportions sont renversées' as Cyrano physics, the start of his case against the exact connection of things.",
+    "date": "2026-11-27"
    },
    "id": 222
   },
@@ -3009,13 +3333,19 @@
    "locus": "Examen, p. 88",
    "page": "EXA37.p88",
    "label": "open disagreement",
-   "confidence": 0.5,
+   "confidence": 0.6,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "ceux qui établissent une semblable connexion, ne peuvent point avoir les vues odieuses, que Mr. DE CROUSAZ leur prête gratuitement",
    "source": "les Partisans du Fatalisme n'ont eu garde de laiffer échaper une si spécieuse occafion de secouer tout joug.",
    "reason": "Vattel rejects Crousaz's charge that the connection of things serves fatalists.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The 'vues odieuses' Vattel rejects are those Crousaz states on p. 88 right after the passage Vattel quotes: fatalists join the chain to shake off every yoke and have nothing to reproach themselves with.",
+    "date": "2026-11-27"
+   },
    "id": 227
   },
   {
@@ -3027,9 +3357,9 @@
    "locus": "Examen, p. 88",
    "page": "EXA37.p88",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Il nous oppose encore (p. 88.), qu'une si parfaite connexion",
    "source": "Seroit-ce une preuve de l'habileté d'un Architecte",
    "reason": "Citation of p. 88.",
@@ -3037,6 +3367,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 88.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Explicit p. 88, where Vattel paraphrases the architect argument (a house in which no stone can be moved without overturning it) before quoting the card-castle and engineer lines.",
+    "date": "2026-11-27"
    },
    "id": 228
   },
@@ -3093,13 +3429,19 @@
    "locus": "Examen, p. 88",
    "page": "EXA37.p88",
    "label": "open disagreement",
-   "confidence": 0.85,
+   "confidence": 0.9,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "pour me servir de l'exemple que l'Auteur allègue, l'Ouvrage de cet Ingénieur ne seroit-il pas excellent, si, ni l'effort d'un boulet, ni l'effet d'une mine, ne pouvoient déplacer une seule pierre de la Courtine ?",
    "source": "auroit tellement agencé les pierres d'une Courtine entiére",
    "reason": "Vattel turns the engineer example against Crousaz.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel turns Crousaz's p. 88 engineer-and-curtain-wall example against him: a wall no cannonball could breach would be excellent.",
+    "date": "2026-11-27"
+   },
    "id": 231
   },
   {
@@ -3154,10 +3496,10 @@
    "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
    "locus": "Examen, p. 89",
    "page": "EXA37.p89",
-   "label": "close paraphrase",
-   "confidence": 0.7,
+   "label": "citation",
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "le dernier est équivalent à celui qui le précéde, & que nous avons déjà examiné (325)",
    "source": "Il y a des Etoiles fixes qui disfparoiffent & reparoiffent : S'aperçoit-on le moins du monde , qu'un si grand effet s'étende fur leurs voifines ?",
    "reason": "The second example (fixed stars), which Vattel equates with the Jupiter bands answered at 325.",
@@ -3165,6 +3507,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(l. 6. & l. 15.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "The second example on p. 89 (l. 15) is the fixed stars that vanish and reappear, which Vattel calls equivalent to the Jupiter bands already answered; he refers to it without paraphrasing it, so citation, not close paraphrase.",
+    "date": "2026-11-27"
    },
    "id": 234
   },
@@ -3221,9 +3569,9 @@
    "locus": "Examen, p. 91",
    "page": "EXA37.p91",
    "label": "open disagreement",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Mais il semble que Mr. DE CROUSAZ trouve ridicule de dire , que les petits évènemens sont liés les uns avec les autres, aussi bien que les grands",
    "source": "Dans le Sistème de PUnivers tout est lié , le plus grand comme le plus petit.",
    "reason": "Vattel answers Crousaz's mockery of the claim that small events are connected like great ones.",
@@ -3231,6 +3579,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 91. l. 24. &c. p. 92. l. 1-6. & p. 94.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel answers Crousaz's p. 91 mockery 'Dans le Sistème de l'Univers tout est lié, le plus grand comme le plus petit', which he cites at 'p. 91. l. 24'.",
+    "date": "2026-11-27"
    },
    "id": 237
   },
@@ -3375,13 +3729,19 @@
    "locus": "Examen, p. 93",
    "page": "EXA37.p93",
    "label": "open disagreement",
-   "confidence": 0.8,
+   "confidence": 0.9,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "On ne peut donc pas dire, que ces opérations, où il paroit de l'intelligence, s'exécutent, sans qu'aucune Intelligence s'en mêle.",
    "source": "sans qu'aucune intelligence s'en mêle",
    "reason": "Vattel turns Crousaz's phrase against him: the soul is the final cause of the body's actions.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel quotes Crousaz's p. 93 phrase 'sans qu'aucune intelligence s'en mêle' word for word and turns it back, making the soul the final cause and God the efficient cause.",
+    "date": "2026-11-27"
+   },
    "id": 244
   },
   {
@@ -3393,13 +3753,19 @@
    "locus": "Examen, p. 90",
    "page": "EXA37.p90",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.6,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Les pages 90. & 93. contiennent la repetition de quelques Objections",
    "source": "Je me suis enyvré , il le falloit „bien , car tout est lié dans l'Univers",
    "reason": "Vattel cites pp. 90 and 93 as repeating the fatalism objection (p. 90 has the drunkard argument 'tout est lié').",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel's page reference fits p. 90, where Crousaz's drunkard and Nero 'il le falloit, tout est lié' caricature repeats the fatalism objection answered at §279 ff.",
+    "date": "2026-11-27"
+   },
    "id": 245
   },
   {
@@ -3411,13 +3777,19 @@
    "locus": "Examen, p. 98",
    "page": "EXA37.p98",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Dans les pages 97. & 98. on objecte encore la Fatalité contre l'Hypothèse de l'Harmonie pré-établie.",
    "source": "Sa machine l'a faitnéceffairement & en vertu de l'Harmonie Préétablie , son ame l'a voulu inévitablement",
    "reason": "Pages 97-98 present the pre-established harmony as making crime inevitable; Vattel cites them to refer back to his earlier answers.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 98 states exactly what Vattel reports, that the machine acted necessarily 'en vertu de l'Harmonie Préétablie' and the soul willed inevitably, i.e. fatality charged on the harmony.",
+    "date": "2026-11-27"
+   },
    "id": 246
   },
   {
@@ -3428,14 +3800,20 @@
    "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
    "locus": "Examen, p. 97",
    "page": "EXA37.p97",
-   "label": "citation",
-   "confidence": 0.6,
+   "label": "open disagreement",
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "L'Auteur affecte aussi (p. 97. & 98.) de mêler le Système Leibnitien avec le Spinosisme",
    "source": "qui dans Spinosa est tout & n'est rien, caché sous des termes vagues qui ne donnent rien de réel à faifir , qui dans un autre est la grande Monade",
    "reason": "p. 97 couples Spinoza with the Leibnizian 'grande Monade', the confusion Vattel denounces.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 97 lines up 'Spinosa' with the Leibnizian 'grande Monade' in one list, which is the conflation Vattel names by page and rejects as absurd.",
+    "date": "2026-11-27"
+   },
    "id": 247
   },
   {
@@ -3447,13 +3825,19 @@
    "locus": "Examen, p. 98",
    "page": "EXA37.p98",
    "label": "open disagreement",
-   "confidence": 0.6,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Mr. DE CROUCROUSAZ en prend occasion (p. 98.), d'appuïer la calomnie impertinente de ceux qui ont osé accuser les Leibnitiens d'Athéïsme.",
    "source": "il se fait soupçonner d'Athéïfme",
    "reason": "Vattel rebuts the suspicion of atheism that Crousaz raises on p. 98.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 98 for Crousaz's 'il se fait soupçonner d'Athéïsme' and rejects it as an impertinent calumny.",
+    "date": "2026-11-27"
+   },
    "id": 248
   },
   {
@@ -3465,13 +3849,19 @@
    "locus": "Examen, p. 99",
    "page": "EXA37.p99",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Et notre réponse suffit à repousser l'odieuse imputation, dont on charge notre Système (p. 99. au commencement).",
    "source": "Auteur du crime dans les scelerats & les abominables",
    "reason": "p. 99 opens with the charge that God is author of crime, the imputation Vattel refers to.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 99 does open with the charge that the system's God is 'Auteur du crime dans les scelerats', the odious imputation Vattel locates 'au commencement' of that page.",
+    "date": "2026-11-27"
+   },
    "id": 249
   },
   {
@@ -3505,9 +3895,9 @@
    "locus": "Examen, p. 106",
    "page": "EXA37.p106",
    "label": "open disagreement",
-   "confidence": 0.65,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Comment les accorder avec ce joli Tableau du Système Leibnitien, que l'on trouve peu de pages après (p. 106) ?",
    "source": "On le conçoit dans la nécessité de créer un monde tel que nous le voyons",
    "reason": "Vattel points to Crousaz's p. 106 portrait of the Leibnizian system (God bound to create this world) to reject the odious sentiments imputed to Leibniz.",
@@ -3515,6 +3905,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 106)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 106 holds the 'Tableau' Vattel attacks (God denied power to create free beings, bound to create this world, made author of the horrible), and he rejects these imputations to Leibniz.",
+    "date": "2026-11-27"
    },
    "id": 251
   },
@@ -3549,13 +3945,19 @@
    "locus": "Examen, p. 115",
    "page": "EXA37.p115",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.6,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Les pages 115-118. ne contiennent rien de nouveau.",
    "source": "Le bien même de l'Univers demandoit que NERON vécut comme il a fait",
    "reason": "Vattel dismisses pp. 115-118 as repeating the fatalism objection.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 115 falls in the cited range 115-118 and repeats the Nero/good-of-the-Universe fatalism and harmony objection Vattel sends back to §279 ff.",
+    "date": "2026-11-27"
+   },
    "id": 253
   },
   {
@@ -3567,13 +3969,19 @@
    "locus": "Examen, p. 119",
    "page": "EXA37.p119",
    "label": "citation",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "C",
    "passage": "sur la page 119. voïez (276, 277.)",
    "source": "Mais pour n'en être point coupable il ne fuffit pas de reconnoitre une différence entre la vertu & le vice",
    "reason": "Vattel only cites p. 119 and refers back to earlier answers.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 119 is the cited page and its objection (God equally author of vice and virtue, vice a sequel of the universe's 'premier branle') is what §276-277 answer, though the better anchor is 'si Dieu étoit également Autheur de l'un & de l'autre'.",
+    "date": "2026-11-27"
+   },
    "id": 254
   },
   {
@@ -3607,13 +4015,19 @@
    "locus": "Examen, p. 120",
    "page": "EXA37.p120",
    "label": "citation",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "C",
    "passage": "Je n'ai rien de nouveau à dire sur les pages 120. & 121.",
    "source": "un fatalifte affermi dans ses sublimes spéculations , se contentera de dire quel bonheur",
    "reason": "Vattel only cites pp. 120-121 as already answered.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 120 gives the fatalist's 'quel bonheur' over an assassination, the very objection Vattel refers to his §279 ff for pp. 120-121.",
+    "date": "2026-11-27"
+   },
    "id": 256
   },
   {
@@ -3625,13 +4039,19 @@
    "locus": "Examen, p. 130",
    "page": "EXA37.p130",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "L'Auteur continue (p. 130, 131.) à représenter notre Système comme introduisant la Fatalité.",
    "source": "si je prens le parti de regarder l'Univers comme un affemblage de refforts , fi liés dès le commencement , & fi exactement proportionés , que leur jeu ne fauroit jamais être détourné ni interrompu",
    "reason": "Pages 130-131 argue that the system makes prayer useless by inevitable determination; Vattel cites them as the fatalism charge.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 130's universe of springs making prayers useless is the fatality charge Vattel cites and reduces to the lazy sophism solved at §206.",
+    "date": "2026-11-27"
+   },
    "id": 257
   },
   {
@@ -3643,13 +4063,19 @@
    "locus": "Examen, p. 133",
    "page": "EXA37.p133",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "sentiment toutes-fois qu'il attribue, sans hésiter, aux Newtoniens. (p. 133. & 134.).",
    "source": "les Newtoniens sont très éloignés de concevoir , que Pattraction d'une paille par un bâton de cire",
    "reason": "Vattel takes up Crousaz's claim about the Newtonians and the straw and wax stick, to reject it.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites pp. 133-134 for Crousaz's claim that Newtonians would never link the straw and wax-stick attraction to planetary attraction, and refutes it.",
+    "date": "2026-11-27"
+   },
    "id": 258
   },
   {
@@ -3661,13 +4087,19 @@
    "locus": "Examen, p. 134",
    "page": "EXA37.p134",
    "label": "open disagreement",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "il faut toujours convenir, loin d'y trouver de l'absurdité, que ces attractions influent les unes sur les autres",
    "source": "ils fentent bien Pabsurdité qu'il y auroit à penser, que ces attractions influassent les unes fur les autres",
    "reason": "Vattel contradicts Crousaz's statement that the Newtonians see absurdity in these attractions influencing one another.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel echoes and reverses Crousaz's words, 'loin d'y trouver de l'absurdité, que ces attractions influent les unes sur les autres' against 'l'absurdité qu'il y auroit à penser, que ces attractions influassent les unes sur les autres'.",
+    "date": "2026-11-27"
+   },
    "id": 259
   },
   {
@@ -3701,9 +4133,9 @@
    "locus": "Examen, p. 148",
    "page": "EXA37.p148",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "On repête (p. 148.) que l'Harmonie pré établie, & le Système en général, ôte, non seulement la liberté aux Ames, mais encore l'activité.",
    "source": "si nos corps ne sont que des machines , dont les refforts suivent les mouvemens d'un agent extérieur , comme on en voit fur les Théatres , & fi les substances pensantes qui les accompagnent , sont inevitablementdéterminées à tous les sentimens & les volontés qui naiffent en elles , leur punition ne seroit pas moins contraire à la justice qu'à la bonté",
    "reason": "Vattel cites p. 148, where Crousaz argues that machine bodies and determined souls remove liberty and activity.",
@@ -3711,6 +4143,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 148.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 148 says souls are inevitably determined and only under the illusion of being active, matching Vattel's summary that the system removes both liberty and activity.",
+    "date": "2026-11-27"
    },
    "id": 261
   },
@@ -3723,9 +4161,9 @@
    "locus": "Examen, p. 150",
    "page": "EXA37.p150",
    "label": "citation",
-   "confidence": 0.65,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "L'Objection favorite de l'Auteur contre l'Harmonie pré-établie, revient encore (p. 149, 150.)",
    "source": "Ce sont comme deux Horloges toûjours en harmonie , parce qu'ils font faits par le même Maître , mais dont les mouvemens de l'un n'ont absolument aucune influence sur les mouvemens de l'autre",
    "reason": "pp. 149-150 give the master/disciple and two-clocks objection against pre-established harmony.",
@@ -3733,6 +4171,12 @@
    "attributed": {
     "form": "reference",
     "cue": "(p. 149, 150.)"
+   },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 150 gives the musician example and the 'deux Horloges' with no mutual influence, followed by the declamations on the author's 'entêtement' that Vattel mentions.",
+    "date": "2026-11-27"
    },
    "id": 262
   },
@@ -3745,13 +4189,19 @@
    "locus": "Examen, p. 157",
    "page": "EXA37.p157",
    "label": "citation",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.65,
+   "status": "match",
+   "step": "C",
    "passage": "Sur les pages 155. & 156. voïez (277, 278. & 283. seqq.) L'Objection favorite se retrouve (p 157.)",
    "source": "dont les discours , résultats des refforts de fa machine",
    "reason": "Vattel only cites pp. 155-157 as repeating earlier objections.",
    "stance": "rejects",
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 157 restates the favourite objection (a teacher's speeches as products of his machine's springs that only seem to act on his hearers), so the cite of that page is accurate.",
+    "date": "2026-11-27"
+   },
    "id": 263
   },
   {
@@ -3785,9 +4235,9 @@
    "locus": "Examen, p. 118",
    "page": "EXA37.p118",
    "label": "citation",
-   "confidence": 0.7,
+   "confidence": 0.8,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "n'est-ce pas là-dessus qu'il nous traite de Fous (p. 118.)?",
    "source": "En vérité il y a là plus qu'il n'en faut pour rendre fou",
    "reason": "Back-reference to Crousaz's insult on p. 118.",
@@ -3796,25 +4246,13 @@
     "form": "reference",
     "cue": "(p. 118.)"
    },
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel refers back to p. 118, 'il y a là plus qu'il n'en faut pour rendre fou', which he had quoted in §333.",
+    "date": "2026-11-27"
+   },
    "id": 265
-  },
-  {
-   "key": "b022.27",
-   "unit": "D.336",
-   "where": "text",
-   "family": "Cr",
-   "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
-   "locus": "Examen, p. 59",
-   "page": "EXA37.p59",
-   "label": "verbatim",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
-   "passage": "de ce prémier branle imprimé à l'Univers",
-   "source": "premier branle imprimé à l'Univers",
-   "reason": "The phrase 'premier branle imprimé à l'Univers' is Crousaz's formula for the system, repeated here.",
-   "stance": "rejects",
-   "id": 266
   },
   {
    "key": "b022.28",
@@ -3825,9 +4263,9 @@
    "locus": "Examen, p. 168",
    "page": "EXA37.p168",
    "label": "close paraphrase",
-   "confidence": 0.7,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "tout devient passif (p. 168.)",
    "source": "tout est réellement paffif",
    "reason": "Vattel restates Crousaz's claim that in the system everything is passive.",
@@ -3836,7 +4274,13 @@
     "form": "reference",
     "cue": "(p. 168.)"
    },
-   "id": 267
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel's 'tout devient passif (p. 168.)' restates p. 168's 'tout est réellement passif & que rien n'est actif qu'en apparence'.",
+    "date": "2026-11-27"
+   },
+   "id": 266
   },
   {
    "key": "b022.29",
@@ -3847,9 +4291,9 @@
    "locus": "Examen, p. 184",
    "page": "EXA37.p184",
    "label": "citation",
-   "confidence": 0.55,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Sur les pages 184, 185. voïez le même article (277.), où nous expliquons ce que c'est que ces prétendus ressorts, dont parle ici le savant Adversaire.",
    "source": "l'assemblage de ces refforts fans nombre qui tiennent l'un à l'autre",
    "reason": "Vattel refers to the 'ressorts' that Crousaz mocks on pp. 184-185.",
@@ -3858,7 +4302,13 @@
     "form": "reference",
     "cue": "Sur les pages 184, 185."
    },
-   "id": 268
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 184 has 'l'assemblage de ces ressorts sans nombre qui tiennent l'un à l'autre' (and p. 185 the 'ressort cassé'), the alleged springs Vattel cites and sends back to §277.",
+    "date": "2026-11-27"
+   },
+   "id": 267
   },
   {
    "key": "b022.31",
@@ -3880,7 +4330,7 @@
     "form": "reference",
     "cue": "(p. 198.)"
    },
-   "id": 269
+   "id": 268
   },
   {
    "key": "b022.32",
@@ -3891,14 +4341,20 @@
    "locus": "Examen, p. 199",
    "page": "EXA37.p199",
    "label": "citation",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.65,
+   "status": "match",
+   "step": "C",
    "passage": "La page 199. a été examinée (283. suiv.)",
    "source": "Quand Mr. POPE fait confiderer -la Vertu comme faisant seule le bon- -heur de l'homme",
    "reason": "Vattel only cites p. 199.",
    "stance": "rejects",
-   "id": 270
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "p. 199 charges the system with letting the vicious man think everything he did is 'BIEN' and tied to the good of the whole, the objection examined at §283 ff.",
+    "date": "2026-11-27"
+   },
+   "id": 269
   },
   {
    "key": "b022.33",
@@ -3909,14 +4365,20 @@
    "locus": "Examen, p. 202",
    "page": "EXA37.p202",
    "label": "citation",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "C",
    "passage": "Voïez aussi le même article sur la page 202.",
    "source": "tout ce que j'ai pensé & tout ce que j'ai écri devoit arriver inévitablement",
    "reason": "Vattel only cites p. 202.",
    "stance": "rejects",
-   "id": 271
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel refers the reader to his §283 ff. for p. 202, where Crousaz says that on Pope's system everything he wrote had to happen and is linked into the great chain, the same point as p. 199.",
+    "date": "2026-11-27"
+   },
+   "id": 270
   },
   {
    "key": "b022.34",
@@ -3938,7 +4400,7 @@
     "form": "reference",
     "cue": "(p. 203.)"
    },
-   "id": 272
+   "id": 271
   },
   {
    "key": "b022.35",
@@ -3960,7 +4422,7 @@
     "form": "quotation",
     "cue": "dit-il"
    },
-   "id": 273
+   "id": 272
   },
   {
    "key": "b022.36",
@@ -3971,14 +4433,20 @@
    "locus": "Examen, p. 203",
    "page": "EXA37.p203",
    "label": "citation",
-   "confidence": 0.65,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Les pages 203. & 204. nous présentent encore une nouvelle repetition de l'Objection favorite de l'Auteur",
    "source": "n'en ont reçu aucune impreffion , non plus qu'une pendule , placée près des fenêtres , n'est dirigée par celle qui touche la Porte",
    "reason": "pp. 203-204 repeat the pendulum objection against pre-established harmony.",
    "stance": "rejects",
-   "id": 274
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "P. 203 has Crousaz's machine-soul objection to pre-established harmony (readers' souls get no impression from Pope, like a pendulum not set by the door's), which Vattel names and answers at §301.",
+    "date": "2026-11-27"
+   },
+   "id": 273
   },
   {
    "key": "b022.37",
@@ -3989,9 +4457,9 @@
    "locus": "Examen, p. 204",
    "page": "EXA37.p204",
    "label": "open disagreement",
-   "confidence": 0.7,
+   "confidence": 0.65,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Mais il ne veut point dire par-là, que l'on ne sauroit estimer la Vertu, s'il n'y avoit point de Vice, avec lequel on pût la comparer",
    "source": "pourquoi la laideur du vice ne seroit-elle pasnécessairepourrehauffer labeautédela",
    "reason": "Vattel answers Crousaz's use (pp. 204-207) of Leibniz's remark that vice sets off virtue.",
@@ -4000,7 +4468,13 @@
     "form": "reference",
     "cue": "Dans les pages 204—207."
    },
-   "id": 275
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel denies that Leibniz meant what the young man claims on p. 204, that vice is needed to heighten virtue's beauty, i.e. that virtue could not be prized without vice.",
+    "date": "2026-11-27"
+   },
+   "id": 274
   },
   {
    "key": "b022.38",
@@ -4011,14 +4485,20 @@
    "locus": "Examen, p. 206",
    "page": "EXA37.p206",
    "label": "open disagreement",
-   "confidence": 0.6,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "& que le Vice a dû être produit tout exprès pour cet usage",
    "source": "c'est dans ce deffein que le Créateur del'Univers a déploié sa toute puissance , pour peupler la Terrede vices& de vicieux",
    "reason": "Vattel denies the consequence Crousaz draws on p. 206 (vice created expressly to heighten virtue).",
    "stance": "rejects",
-   "id": 276
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel rejects the consequence Crousaz draws on p. 206, that the Creator used his omnipotence 'dans ce dessein' to fill the earth with vices, i.e. that vice was made expressly for this use.",
+    "date": "2026-11-27"
+   },
+   "id": 275
   },
   {
    "key": "b022.40",
@@ -4029,9 +4509,9 @@
    "locus": "Examen, p. 207",
    "page": "EXA37.p207",
    "label": "citation",
-   "confidence": 0.5,
+   "confidence": 0.65,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "pour repousser ce que Mr. DE CROUSAZ lui impute (p. 206 207.)",
    "source": "Quiconque a besoin que la vuë du Vice lui rende plus aimable la beauté de la vertu",
    "reason": "Vattel cites pp. 206-207 where Crousaz attributes the use of vice to the Leibnizian God.",
@@ -4040,7 +4520,13 @@
     "form": "reference",
     "cue": "(p. 206 207.)"
    },
-   "id": 277
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites pp. 206-207, where Crousaz imputes to the Leibnizian 'cause Universelle' the creation of wickedness in two sons to increase a father's pleasure in the virtue of four.",
+    "date": "2026-11-27"
+   },
+   "id": 276
   },
   {
    "key": "b022.41",
@@ -4050,10 +4536,10 @@
    "work": "Crousaz, Examen de l'Essay de M. Pope sur l'homme (1737)",
    "locus": "Examen, p. 208",
    "page": "EXA37.p208",
-   "label": "close paraphrase",
-   "confidence": 0.7,
+   "label": "loose paraphrase",
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Cependant il dit (p. 208. init.), que cette Conduite, à l'égard du célèbre Anglois, est chez lui un effet d'une Liberté de pleine indifférence.",
    "source": "la Politeffe me conseilloit ce parti; maisje n'ai point senti qu'elle me l'ordonnât , je l'ai pris parce que j'aibien voulu le prendre , c'est moi qui m'y suisdéterminé par un choix tout libre",
    "reason": "Vattel restates Crousaz's claim that his courtesy to Pope was a free choice, and mocks it.",
@@ -4062,7 +4548,13 @@
     "form": "reference",
     "cue": "(p. 208. init.)"
    },
-   "id": 278
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel restates and glosses the beginning of p. 208, where Crousaz says his courtesy to Pope was 'un choix tout libre' and a sure proof of his liberty, as liberty of indifference.",
+    "date": "2026-11-27"
+   },
+   "id": 277
   },
   {
    "key": "b022.42",
@@ -4073,9 +4565,9 @@
    "locus": "Examen, p. 208",
    "page": "EXA37.p208",
    "label": "citation",
-   "confidence": 0.55,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "On peut voir les jolis Complimens, dont il le fait régaler par un Ami (p. 208—211.).",
    "source": "J'ai lûl'Essai deMr. POPE , &jamais je n'eus plus besoin de patience",
    "reason": "Vattel cites the friend's compliments to Pope in pp. 208-211.",
@@ -4084,7 +4576,13 @@
     "form": "reference",
     "cue": "(p. 208—211.)"
    },
-   "id": 279
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites pp. 208-211, the friend's tirade against Pope's Essay, which starts on p. 208 ('m'a répondu cet ami; J'ai lû l'Essai de Mr. POPE').",
+    "date": "2026-11-27"
+   },
+   "id": 278
   },
   {
    "key": "b022.43",
@@ -4095,9 +4593,9 @@
    "locus": "Examen, p. 210",
    "page": "EXA37.p210",
    "label": "close paraphrase",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "accuser le célèbre Mr. POPE, d'être zélé pour la Religion commune aux hommes avec les bêtes",
    "source": "par zèle pour l'ancienne Religioncommune auxhommes avecles bêtes",
    "reason": "Vattel restates the friend's accusation reported on p. 210.",
@@ -4106,7 +4604,13 @@
     "form": "reference",
     "cue": "La page 210."
    },
-   "id": 280
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel repeats nearly word for word the accusation on p. 210, zeal 'pour l'ancienne Religion commune aux hommes avec les bêtes', and names the page.",
+    "date": "2026-11-27"
+   },
+   "id": 279
   },
   {
    "key": "b022.44",
@@ -4128,7 +4632,7 @@
     "form": "reference",
     "cue": "(pag. 211.)"
    },
-   "id": 281
+   "id": 280
   },
   {
    "key": "b022.45",
@@ -4139,9 +4643,9 @@
    "locus": "Examen, p. 212",
    "page": "EXA37.p212",
    "label": "citation",
-   "confidence": 0.6,
+   "confidence": 0.7,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "On peut lire le reste (p. 212.)",
    "source": "Ainsi tout l'Univers est formé pour servir , tantôt auxbesoins , tantôt aux extravagances de nous autres Momades",
    "reason": "Vattel refers to p. 212 for the rest of the objection.",
@@ -4150,7 +4654,13 @@
     "form": "reference",
     "cue": "(p. 212.)"
    },
-   "id": 282
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "After quoting p. 211, Vattel sends the reader to p. 212 for the rest of the objection, where the universe is built so that human bodies carry out the soul-monads' wishes and so is made for us.",
+    "date": "2026-11-27"
+   },
+   "id": 281
   },
   {
    "key": "b022.46",
@@ -4161,14 +4671,20 @@
    "locus": "Examen, p. 212",
    "page": "EXA37.p212",
    "label": "open disagreement",
-   "confidence": 0.6,
+   "confidence": 0.75,
    "status": "match",
-   "step": "J",
+   "step": "C",
    "passage": "Quand donc nous disons, que le Monde est tellement construit, que le Corps de chaque homme ne peut manquer d'exécuter les actions que son Ame ordonnera",
    "source": "les machines corps humains , éxecutent ponctuellement toutes les volontés de certaines Monades",
    "reason": "Vattel answers the inference that the whole universe is made for man from the body's exact execution of the soul's wishes.",
    "stance": "rejects",
-   "id": 283
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel restates Crousaz's p. 212 premise (the universe constructed so that human body-machines carry out the souls' wills) and rejects the inference that the whole universe is made for man.",
+    "date": "2026-11-27"
+   },
+   "id": 282
   },
   {
    "key": "b022.47",
@@ -4179,9 +4695,9 @@
    "locus": "Examen, p. 213",
    "page": "EXA37.p213",
    "label": "citation",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.6,
+   "status": "match",
+   "step": "C",
    "passage": "Sur ce qui suit (p. 213.) voïez ci-dessus (301. & 288.)",
    "source": "Mais quand on démontreque leRenversement de la Religion est suite naturelle de ce Sistème",
    "reason": "Vattel only cites p. 213.",
@@ -4190,7 +4706,13 @@
     "form": "reference",
     "cue": "(p. 213.)"
    },
-   "id": 284
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 213 (the monad's fatalist reply and the claim that the system overturns religion) and refers back to his §§301 and 288.",
+    "date": "2026-11-27"
+   },
+   "id": 283
   },
   {
    "key": "b022.48",
@@ -4201,9 +4723,9 @@
    "locus": "Examen, p. 212",
    "page": "EXA37.p212",
    "label": "citation",
-   "confidence": 0.4,
-   "status": "possible",
-   "step": "J",
+   "confidence": 0.5,
+   "status": "match",
+   "step": "C",
    "passage": "il leur prête même les discours de ces Gens-là (p. 212.), comme s'ils avouoient eux-mêmes, qu'ils sont Ennemis de la Religion",
    "source": "On pourroit pouffer ce raisonnement, & un homme traitté par M. POPE d'Etre petit , aveugle & foible pourroit repliquer",
    "reason": "Vattel cites p. 212 (the imagined speech of a Leibnizian 'Monade'); the libertine speeches proper run on to p. 213.",
@@ -4212,7 +4734,13 @@
     "form": "reference",
     "cue": "(p. 212.)"
    },
-   "id": 285
+   "review": {
+    "step": "C",
+    "verdict": "keep",
+    "reason": "Vattel cites p. 212, where the imagined Leibnizian monad's libertine reply begins; the speeches that read as avowed irreligion ('disent ils', Bayle, society of atheists) carry on to p. 213.",
+    "date": "2026-11-27"
+   },
+   "id": 284
   },
   {
    "key": "b022.49",
@@ -4234,7 +4762,7 @@
     "form": "reference",
     "cue": "à conclure dévotement son Livre en ces termes"
    },
-   "id": 286
+   "id": 285
   },
   {
    "key": "b023.25",
@@ -4256,7 +4784,7 @@
     "form": "reference",
     "cue": "(Exam. p. 27. Comm. p. 340. &c.)"
    },
-   "id": 287
+   "id": 286
   }
  ]
 }
